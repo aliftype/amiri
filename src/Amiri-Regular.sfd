@@ -14,12 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 621 1891244130 3162803]
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1225479212
-ModificationTime: 1225479235
+ModificationTime: 1226090487
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -38,11 +39,10 @@ DEI: 91125
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -72
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 8 2
-OnlyBitmaps: 1
-BeginChars: 65536 0
+WinInfo: 1548 12 10
+BeginChars: 65583 0
 EndChars
 EndSplineFont
