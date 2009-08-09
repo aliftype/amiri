@@ -25,15 +25,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
+     inkscape:window-height="721"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
-     guidetolerance="10.0"
-     gridtolerance="10.0"
-     objecttolerance="10.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
@@ -41,12 +40,14 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="0.51"
-     inkscape:cx="498.03922"
-     inkscape:cy="253.57881"
+     inkscape:zoom="0.454"
+     inkscape:cx="500"
+     inkscape:cy="500"
      inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:current-layer="svg5496">
+     inkscape:window-y="28"
+     inkscape:current-layer="svg5496"
+     inkscape:window-width="1280"
+     inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="horizontal"
        position="200"
@@ -60,20 +61,29 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="1000 : 500 : 1"
        inkscape:persp3d-origin="500 : 333.33333 : 1"
-       id="perspective8" />
+       id="perspective3735" />
     <inkscape:perspective
-       id="perspective2388"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       id="perspective3721"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
        inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
   </defs>
   <g
-     id="layer1"
-     transform="matrix(1.3,0,0,1.3,-421.67849,10.11098)" />
-  <path
-     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 399.40625 448.9375 C 280.32187 448.95416 115.33888 635.13356 60.8125 704.1875 C 42.916024 703.51044 23.83706 703.58226 5.6875 701.25 L -3.8125 800 C 0.73326203 801.59799 6.7856127 803.14706 12.34375 803.40625 C 2.7241787 823.86366 -5.09418 846.52211 -8.125 867.21875 C -13.393081 903.19302 25.871243 902.46711 34.40625 877.34375 C 42.095607 854.7096 49.740112 836.227 66.125 808.9375 C 129.93161 813.80547 360.41449 792.26977 468.5625 684.25 C 480.44227 672.38432 507.60915 604.79082 511.71875 558.75 C 516.87313 501.51047 430.54999 448.93312 399.40625 448.9375 z M 323.4375 562.8125 C 344.78004 562.66174 395.09051 575.6844 436.59375 607.5 C 440.87543 610.78225 442.57651 614.95797 439.25 619.03125 C 405.1708 660.76076 279.10999 709.5884 131.6875 707.34375 C 172.82566 646.79046 267.58912 578.66808 316.15625 563.6875 C 317.91243 563.14581 320.38857 562.83404 323.4375 562.8125 z "
-     id="path2394" />
+     id="layer1" />
+  <g
+     id="g3709"
+     transform="translate(-11.443774,-6.73485)"
+     style="fill:#000000;stroke:#000000;stroke-opacity:1;fill-opacity:1">
+    <g
+       transform="matrix(1.3,0,0,1.3,-421.67849,10.11098)"
+       id="layer1-7"
+       style="fill:#000000;stroke:#000000;stroke-opacity:1;fill-opacity:1" />
+    <path
+       id="path2394"
+       d="m 387.29171,457.74807 c -98.73365,3.36557 -250.47706,182.8921 -298.39551,251.94604 -17.896476,-0.67706 -57.349889,2.6987 -75.499449,0.36646 l -0.689427,95.9967 c 4.545762,1.59799 23.813972,0.39375 29.372109,0.65294 -3.562302,11.09618 -7.398164,31.57003 -8.904873,41.78607 -3.202662,21.71521 17.426517,29.63737 25.460765,10.125 6.994426,-16.98701 14.23254,-40.56609 19.604212,-51.88643 73.167843,-2.84128 274.465693,-21.62367 372.701813,-114.7756 12.18383,-11.55326 53.9145,-93.2257 58.0241,-139.26652 5.15438,-57.23953 -90.55372,-96.00546 -121.67374,-94.94466 z M 436.59375,607.5 c 4.46319,3.02865 4.59796,6.4331 0.70937,9.97375 -40.69859,37.05699 -169.87441,76.92899 -302.50061,91.4275 43.08504,-57.82765 126.58346,-126.79026 175.5131,-136.2581 40.64548,-7.86487 93.40391,12.5489 126.27814,34.85685 z"
+       style="fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       sodipodi:nodetypes="cccccsscscscscss" />
+  </g>
 </svg>
