@@ -1,0 +1,56 @@
+SplineFontDB: 3.0
+FontName: BulaqNaskh
+FullName: Bulaq Naskh
+FamilyName: Bulaq Naskh
+Weight: Regular
+Copyright: Copyright (C) 2009  Khaled Hosny <khaledhosny@elug.org>\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n
+UComments: "2009-12-17: Created." 
+Version: 000.100
+ItalicAngle: 0
+UnderlinePosition: -100
+UnderlineWidth: 50
+Ascent: 800
+Descent: 200
+LayerCount: 2
+Layer: 0 0 "Back"  1
+Layer: 1 0 "Fore"  0
+XUID: [1021 862 584604386 14697072]
+FSType: 0
+OS2Version: 1
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1261055077
+ModificationTime: 1261056126
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 0
+VLineGap: 0
+OS2TypoAscent: 800
+OS2TypoAOffset: 0
+OS2TypoDescent: -200
+OS2TypoDOffset: 0
+OS2TypoLinegap: 0
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 800
+HheadAOffset: 0
+HheadDescent: -200
+HheadDOffset: 0
+OS2Vendor: 'Blq '
+MarkAttachClasses: 1
+DEI: 91125
+LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
+Encoding: UnicodeBmp
+UnicodeInterp: none
+NameList: AGL without afii
+DisplaySize: -72
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 64 8 2
+OnlyBitmaps: 1
+BeginChars: 65536 0
+EndChars
+EndSplineFont
