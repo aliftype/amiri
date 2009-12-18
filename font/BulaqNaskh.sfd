@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261159061
+ModificationTime: 1261165173
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -40,6 +40,7 @@ HheadAOffset: 0
 HheadDescent: -200
 HheadDOffset: 0
 OS2Vendor: 'Blq '
+Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition lookup"  {"'ccmp' Glyph Composition/Decomposition lookup-1"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
@@ -187,6 +188,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 44 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol.base dot.below
 EndChar
 
 StartChar: uni0629
@@ -197,6 +199,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 58 -1 N 1 0 0 1 -0.000473022 0.000244141 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh.isol.base ddots.above
 EndChar
 
 StartChar: uni062A
@@ -207,6 +210,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 44 -1 N 1 0 0 1 0.000427246 -0.000183105 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol.base ddots.above
 EndChar
 
 StartChar: uni062B
@@ -217,6 +221,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 44 -1 N 1 0 0 1 0.000427246 -0.000183105 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol.base tdots.above
 EndChar
 
 StartChar: uni062C
@@ -227,6 +232,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 -0.000427246 -0.000259399 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol.base dot.below
 EndChar
 
 StartChar: uni062D
@@ -237,6 +243,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol.base
 EndChar
 
 StartChar: uni062E
@@ -247,6 +254,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 -0.000427246 -0.000259399 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol.base dot.above
 EndChar
 
 StartChar: uni062F
@@ -257,6 +265,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 46 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal.isol.base
 EndChar
 
 StartChar: uni0630
@@ -267,6 +276,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 46 -1 N 1 0 0 1 0 0.000457764 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal.isol.base dot.above
 EndChar
 
 StartChar: uni0631
@@ -277,6 +287,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 47 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa.isol.base
 EndChar
 
 StartChar: uni0632
@@ -287,6 +298,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 47 -1 N 1 0 0 1 -0.000274658 -0.000228882 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa.isol.base dot.above
 EndChar
 
 StartChar: uni0633
@@ -297,6 +309,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 48 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen.isol.base
 EndChar
 
 StartChar: uni0634
@@ -307,6 +320,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 48 -1 N 1 0 0 1 0.000366211 9.15527e-05 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen.isol.base tdots.above
 EndChar
 
 StartChar: uni0635
@@ -317,6 +331,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 49 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad.isol.base
 EndChar
 
 StartChar: uni0636
@@ -327,6 +342,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 49 -1 N 1 0 0 1 0.00012207 0.000244141 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad.isol.base dot.above
 EndChar
 
 StartChar: uni0637
@@ -337,6 +353,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 50 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa.isol.base
 EndChar
 
 StartChar: uni0638
@@ -347,6 +364,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 50 -1 N 1 0 0 1 -0.000488281 0.000244141 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa.isol.base dot.above
 EndChar
 
 StartChar: uni0639
@@ -357,6 +375,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 51 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn.isol.base
 EndChar
 
 StartChar: uni063A
@@ -367,6 +386,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 51 -1 N 1 0 0 1 -0.000244141 0.000335693 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn.isol.base dot.above
 EndChar
 
 StartChar: uni0641
@@ -377,6 +397,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 52 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" faa.isol.base dot.above
 EndChar
 
 StartChar: uni0642
@@ -387,6 +408,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 53 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" qaf.isol.base dot.above
 EndChar
 
 StartChar: uni0643
@@ -414,6 +436,7 @@ SplineSet
  171.487 490.119 231.588 563.251 278.519 583.272 c 1
 EndSplineSet
 Refer: 54 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" kaf.isol.base
 EndChar
 
 StartChar: uni0644
@@ -424,6 +447,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 55 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" lam.isol.base
 EndChar
 
 StartChar: uni0645
@@ -434,6 +458,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 56 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" meem.isol.base
 EndChar
 
 StartChar: uni0646
@@ -444,6 +469,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 57 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" noon.isol.base dot.above
 EndChar
 
 StartChar: uni0647
@@ -454,6 +480,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 58 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh.isol.base
 EndChar
 
 StartChar: uni0648
@@ -464,6 +491,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 59 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw.isol.base
 EndChar
 
 StartChar: uni0649
@@ -474,6 +502,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 60 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol.base
 EndChar
 
 StartChar: uni064A
@@ -484,6 +513,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 60 -1 N 1 0 0 1 -6.10352e-05 -0.000457764 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol.base ddots.below
 EndChar
 
 StartChar: dot.above
