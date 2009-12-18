@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 862 584604386 14697072]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261165173
+ModificationTime: 1261171465
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -50,8 +51,8 @@ NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1530 17 7
-BeginChars: 65560 61
+WinInfo: 1547 17 7
+BeginChars: 65572 65
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -61,23 +62,23 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-157.257 258.521 m 4
- 183.507 273.926 198.6 283.07 217.854 283.709 c 4
- 294.767 286.261 316.859 209.355 301.99 171.906 c 4
- 290.217 142.256 267.979 120.233 228 114 c 4
- 205.344 110.469 171.806 119.259 154.523 135.397 c 4
- 123.498 164.369 87.499 235.679 95.2627 322.164 c 4
- 102.137 399.102 150.216 477.438 218.907 535.057 c 4
- 232.942 546.83 255.034 531.658 235.939 512.485 c 4
- 217.472 493.942 138.278 419.872 130.868 350.877 c 4
- 127.527 319.763 127.969 291.088 144.486 262.813 c 4
- 148.092 256.642 151.366 255.064 157.257 258.521 c 4
-280.415 11.2324 m 5
- 280.415 11.2324 l 5
- 280.415 -17.3145 257.246 -40.4834 228.698 -40.4834 c 4
- 200.151 -40.4834 176.982 -17.3145 176.982 11.2324 c 4
- 176.982 39.7803 200.151 62.9482 228.698 62.9482 c 4
- 257.246 62.9482 280.415 39.7803 280.415 11.2324 c 5
+157.257 258.521 m 0
+ 183.507 273.926 198.6 283.07 217.854 283.709 c 0
+ 294.767 286.261 316.859 209.355 301.99 171.906 c 0
+ 290.217 142.256 267.979 120.233 228 114 c 0
+ 205.344 110.469 171.806 119.259 154.523 135.397 c 0
+ 123.498 164.369 87.499 235.679 95.2627 322.164 c 0
+ 102.137 399.102 150.216 477.438 218.907 535.057 c 0
+ 232.942 546.83 255.034 531.658 235.939 512.485 c 0
+ 217.472 493.942 138.278 419.872 130.868 350.877 c 0
+ 127.527 319.763 127.969 291.088 144.486 262.813 c 0
+ 148.092 256.642 151.366 255.064 157.257 258.521 c 0
+280.415 11.2324 m 1
+ 280.415 11.2324 l 1
+ 280.415 -17.3145 257.246 -40.4834 228.698 -40.4834 c 0
+ 200.151 -40.4834 176.982 -17.3145 176.982 11.2324 c 0
+ 176.982 39.7803 200.151 62.9482 228.698 62.9482 c 0
+ 257.246 62.9482 280.415 39.7803 280.415 11.2324 c 1
 EndSplineSet
 EndChar
 
@@ -127,7 +128,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 43 -1 N 1 0 0 1 3.8147e-05 0.000427246 2
+Refer: 45 -1 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0623
@@ -137,7 +138,8 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 43 -1 N 1 0 0 1 3.8147e-05 0.000427246 2
+Refer: 45 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alif.isol.base hamza.above
 EndChar
 
 StartChar: uni0624
@@ -147,7 +149,8 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 59 -1 N 1 0 0 1 -0.000488281 0.000244141 2
+Refer: 61 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw.isol.base hamza.above
 EndChar
 
 StartChar: uni0625
@@ -157,7 +160,8 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 43 -1 N 1 0 0 1 3.8147e-05 0.000427246 2
+Refer: 45 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alif.isol.base hamza.below
 EndChar
 
 StartChar: uni0626
@@ -167,7 +171,8 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 -6.10352e-05 -0.000457764 2
+Refer: 62 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol.base hamza.above
 EndChar
 
 StartChar: uni0627
@@ -177,7 +182,8 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 43 -1 N 1 0 0 1 0 0 2
+Refer: 45 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alif.isol.base
 EndChar
 
 StartChar: uni0628
@@ -187,7 +193,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 44 -1 N 1 0 0 1 0 0 2
+Refer: 46 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol.base dot.below
 EndChar
 
@@ -198,7 +204,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 58 -1 N 1 0 0 1 -0.000473022 0.000244141 2
+Refer: 60 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh.isol.base ddots.above
 EndChar
 
@@ -209,7 +215,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 44 -1 N 1 0 0 1 0.000427246 -0.000183105 2
+Refer: 46 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol.base ddots.above
 EndChar
 
@@ -220,7 +226,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 44 -1 N 1 0 0 1 0.000427246 -0.000183105 2
+Refer: 46 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol.base tdots.above
 EndChar
 
@@ -231,7 +237,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 45 -1 N 1 0 0 1 -0.000427246 -0.000259399 2
+Refer: 47 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol.base dot.below
 EndChar
 
@@ -242,7 +248,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 45 -1 N 1 0 0 1 0 0 2
+Refer: 47 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol.base
 EndChar
 
@@ -253,7 +259,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 45 -1 N 1 0 0 1 -0.000427246 -0.000259399 2
+Refer: 47 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol.base dot.above
 EndChar
 
@@ -264,7 +270,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 46 -1 N 1 0 0 1 0 0 2
+Refer: 48 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal.isol.base
 EndChar
 
@@ -275,7 +281,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 46 -1 N 1 0 0 1 0 0.000457764 2
+Refer: 48 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal.isol.base dot.above
 EndChar
 
@@ -286,7 +292,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 47 -1 N 1 0 0 1 0 0 2
+Refer: 49 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa.isol.base
 EndChar
 
@@ -297,7 +303,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 47 -1 N 1 0 0 1 -0.000274658 -0.000228882 2
+Refer: 49 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa.isol.base dot.above
 EndChar
 
@@ -308,7 +314,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 48 -1 N 1 0 0 1 0 0 2
+Refer: 50 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen.isol.base
 EndChar
 
@@ -319,7 +325,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 48 -1 N 1 0 0 1 0.000366211 9.15527e-05 2
+Refer: 50 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen.isol.base tdots.above
 EndChar
 
@@ -330,7 +336,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 49 -1 N 1 0 0 1 0 0 2
+Refer: 51 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad.isol.base
 EndChar
 
@@ -341,7 +347,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 49 -1 N 1 0 0 1 0.00012207 0.000244141 2
+Refer: 51 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad.isol.base dot.above
 EndChar
 
@@ -352,7 +358,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 50 -1 N 1 0 0 1 0 0 2
+Refer: 52 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa.isol.base
 EndChar
 
@@ -363,7 +369,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 50 -1 N 1 0 0 1 -0.000488281 0.000244141 2
+Refer: 52 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa.isol.base dot.above
 EndChar
 
@@ -374,7 +380,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0 0 2
+Refer: 53 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn.isol.base
 EndChar
 
@@ -385,7 +391,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 -0.000244141 0.000335693 2
+Refer: 53 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn.isol.base dot.above
 EndChar
 
@@ -396,7 +402,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 52 -1 N 1 0 0 1 0 0 2
+Refer: 54 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" faa.isol.base dot.above
 EndChar
 
@@ -407,7 +413,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 53 -1 N 1 0 0 1 0 0 2
+Refer: 55 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" qaf.isol.base dot.above
 EndChar
 
@@ -435,7 +441,7 @@ SplineSet
  162.953 368.566 148.146 392.021 153.705 415.382 c 0
  171.487 490.119 231.588 563.251 278.519 583.272 c 1
 EndSplineSet
-Refer: 54 -1 N 1 0 0 1 0 0 2
+Refer: 56 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" kaf.isol.base
 EndChar
 
@@ -446,7 +452,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 55 -1 N 1 0 0 1 0 0 2
+Refer: 57 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" lam.isol.base
 EndChar
 
@@ -457,7 +463,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 56 -1 N 1 0 0 1 0 0 2
+Refer: 58 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" meem.isol.base
 EndChar
 
@@ -468,7 +474,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0 0 2
+Refer: 59 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" noon.isol.base dot.above
 EndChar
 
@@ -479,7 +485,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 58 -1 N 1 0 0 1 0 0 2
+Refer: 60 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh.isol.base
 EndChar
 
@@ -490,7 +496,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 59 -1 N 1 0 0 1 0 0 2
+Refer: 61 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw.isol.base
 EndChar
 
@@ -501,7 +507,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 0 0 2
+Refer: 62 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol.base
 EndChar
 
@@ -512,7 +518,7 @@ VWidth: 1399
 Flags: W
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 -6.10352e-05 -0.000457764 2
+Refer: 62 -1 N 1 0 0 1 0 0 2
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol.base ddots.below
 EndChar
 
@@ -633,8 +639,47 @@ Fore
 Refer: 41 -1 N 1 0 0 1 0.000198126 0 2
 EndChar
 
-StartChar: alif.isol.base
+StartChar: hamza.above
 Encoding: 65542 -1 43
+Width: 0
+VWidth: 1399
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+101.108 64.834 m 2
+ 98.667 59.9521 92.667 54.7725 85.6895 52.498 c 1
+ 24.5625 46.2852 -68.8467 16.3721 -103.582 2 c 1
+ -118.236 -2.28125 -122.236 9.12891 -117.46 19.1543 c 1
+ -107.044 34.1055 -88.458 47.1621 -67.3467 57.8945 c 1
+ -85.8584 70.2236 -106.72 91.2881 -110.521 104.152 c 0
+ -118.749 131.998 -100.644 176.982 -80.5156 202.885 c 0
+ -60.3867 228.788 -27.2031 250.423 10.1348 244.469 c 0
+ 29.6123 241.362 39.8096 230.023 46.3701 219.412 c 0
+ 51.3613 211.339 50.7656 202.708 47.1416 194.355 c 1
+ 36.8154 176.902 27.9346 163.369 15.917 150.025 c 0
+ 7.06836 140.199 1.65137 142.415 -3.35645 150.025 c 0
+ -9.96973 160.074 -23.75 177.5 -36.8438 179.364 c 0
+ -50.1553 181.258 -58.3887 177.029 -63.1064 168.914 c 1
+ -60.0742 149.604 -30.6992 103.103 39.0459 98.7559 c 1
+ 62.9111 101.548 85.9785 105.663 108.818 105.31 c 0
+ 116.381 104.521 121.3 99.2617 118.648 92.0098 c 1
+ 101.108 64.834 l 2
+EndSplineSet
+EndChar
+
+StartChar: hamza.below
+Encoding: 65543 -1 44
+Width: 0
+VWidth: 1399
+Flags: W
+LayerCount: 2
+Fore
+Refer: 43 -1 N 1 0 0 1 -0.00031662 0 2
+EndChar
+
+StartChar: alif.isol.base
+Encoding: 65554 -1 45
 Width: 203
 VWidth: 1399
 Flags: W
@@ -655,7 +700,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.isol.base
-Encoding: 65543 -1 44
+Encoding: 65555 -1 46
 Width: 924
 VWidth: 1399
 Flags: W
@@ -679,7 +724,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.isol.base
-Encoding: 65544 -1 45
+Encoding: 65556 -1 47
 Width: 719
 VWidth: 1399
 Flags: W
@@ -708,7 +753,7 @@ EndSplineSet
 EndChar
 
 StartChar: dal.isol.base
-Encoding: 65545 -1 46
+Encoding: 65557 -1 48
 Width: 424
 VWidth: 1399
 Flags: W
@@ -735,7 +780,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.isol.base
-Encoding: 65546 -1 47
+Encoding: 65558 -1 49
 Width: 361
 VWidth: 1399
 Flags: W
@@ -761,7 +806,7 @@ EndSplineSet
 EndChar
 
 StartChar: seen.isol.base
-Encoding: 65547 -1 48
+Encoding: 65559 -1 50
 Width: 1125
 VWidth: 1399
 Flags: W
@@ -800,7 +845,7 @@ EndSplineSet
 EndChar
 
 StartChar: sad.isol.base
-Encoding: 65548 -1 49
+Encoding: 65560 -1 51
 Width: 1252
 VWidth: 1399
 Flags: W
@@ -838,7 +883,7 @@ EndSplineSet
 EndChar
 
 StartChar: taa.isol.base
-Encoding: 65549 -1 50
+Encoding: 65561 -1 52
 Width: 792
 VWidth: 1399
 Flags: W
@@ -878,7 +923,7 @@ EndSplineSet
 EndChar
 
 StartChar: ayn.isol.base
-Encoding: 65550 -1 51
+Encoding: 65562 -1 53
 Width: 688
 VWidth: 1399
 Flags: W
@@ -913,7 +958,7 @@ EndSplineSet
 EndChar
 
 StartChar: faa.isol.base
-Encoding: 65551 -1 52
+Encoding: 65563 -1 54
 Width: 988
 VWidth: 1399
 Flags: W
@@ -945,7 +990,7 @@ EndSplineSet
 EndChar
 
 StartChar: qaf.isol.base
-Encoding: 65552 -1 53
+Encoding: 65564 -1 55
 Width: 695
 VWidth: 1399
 Flags: W
@@ -973,7 +1018,7 @@ EndSplineSet
 EndChar
 
 StartChar: kaf.isol.base
-Encoding: 65553 -1 54
+Encoding: 65565 -1 56
 Width: 641
 VWidth: 1399
 Flags: W
@@ -1000,7 +1045,7 @@ EndSplineSet
 EndChar
 
 StartChar: lam.isol.base
-Encoding: 65554 -1 55
+Encoding: 65566 -1 57
 Width: 604
 VWidth: 1399
 Flags: W
@@ -1034,7 +1079,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.isol.base
-Encoding: 65555 -1 56
+Encoding: 65567 -1 58
 Width: 397
 VWidth: 1399
 Flags: W
@@ -1064,7 +1109,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.isol.base
-Encoding: 65556 -1 57
+Encoding: 65568 -1 59
 Width: 574
 VWidth: 1399
 Flags: W
@@ -1088,7 +1133,7 @@ EndSplineSet
 EndChar
 
 StartChar: heh.isol.base
-Encoding: 65557 -1 58
+Encoding: 65569 -1 60
 Width: 343
 VWidth: 1399
 Flags: W
@@ -1114,7 +1159,7 @@ EndSplineSet
 EndChar
 
 StartChar: waw.isol.base
-Encoding: 65558 -1 59
+Encoding: 65570 -1 61
 Width: 390
 VWidth: 1399
 Flags: W
@@ -1142,7 +1187,7 @@ EndSplineSet
 EndChar
 
 StartChar: yaa.isol.base
-Encoding: 65559 -1 60
+Encoding: 65571 -1 62
 Width: 771
 VWidth: 1399
 Flags: W
@@ -1169,6 +1214,26 @@ SplineSet
  708.173 397.329 698.128 371.105 690.298 349.483 c 0
  687.831 342.672 684.802 339.749 681.211 346.853 c 0
 EndSplineSet
+EndChar
+
+StartChar: uni0654
+Encoding: 1620 1620 63
+Width: 0
+VWidth: 1399
+Flags: W
+LayerCount: 2
+Fore
+Refer: 43 -1 N 1 0 0 1 0 600 2
+EndChar
+
+StartChar: uni0655
+Encoding: 1621 1621 64
+Width: 0
+VWidth: 1399
+Flags: W
+LayerCount: 2
+Fore
+Refer: 43 -1 N 1 0 0 1 0 -500 2
 EndChar
 EndChars
 EndSplineFont
