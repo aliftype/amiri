@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 14697072]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261245871
+ModificationTime: 1261247382
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -42,6 +41,7 @@ HheadDescent: -200
 HheadDOffset: 0
 OS2Vendor: 'Blq '
 Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition lookup"  {"'ccmp' Glyph Composition/Decomposition lookup-1"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'init' Initial Forms"  {"'init' Initial Forms-1" ("init" ) } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
@@ -51,8 +51,8 @@ NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65467 17 7
-BeginChars: 65572 67
+WinInfo: 65484 17 7
+BeginChars: 65593 78
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -129,7 +129,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef.isol madda.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef madda.above
 EndChar
 
 StartChar: uni0623
@@ -140,7 +140,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef.isol hamza.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef hamza.above
 EndChar
 
 StartChar: uni0624
@@ -151,7 +151,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 61 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw.isol hamza.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw hamza.above
 EndChar
 
 StartChar: uni0625
@@ -162,7 +162,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef.isol hamza.below
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef hamza.below
 EndChar
 
 StartChar: uni0626
@@ -173,7 +173,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 62 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol hamza.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa hamza.above
 EndChar
 
 StartChar: uni0627
@@ -184,7 +184,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alef
 EndChar
 
 StartChar: uni0628
@@ -195,7 +195,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 46 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol dot.below
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa dot.below
 EndChar
 
 StartChar: uni0629
@@ -206,7 +206,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 60 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh.isol ddots.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh ddots.above
 EndChar
 
 StartChar: uni062A
@@ -217,7 +217,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 46 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol ddots.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa ddots.above
 EndChar
 
 StartChar: uni062B
@@ -228,7 +228,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 46 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa.isol tdots.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" baa tdots.above
 EndChar
 
 StartChar: uni062C
@@ -239,7 +239,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 47 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol dot.below
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa dot.below
 EndChar
 
 StartChar: uni062D
@@ -250,7 +250,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 47 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa
 EndChar
 
 StartChar: uni062E
@@ -261,7 +261,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 47 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" haa dot.above
 EndChar
 
 StartChar: uni062F
@@ -272,7 +272,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 48 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal
 EndChar
 
 StartChar: uni0630
@@ -283,7 +283,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 48 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" dal dot.above
 EndChar
 
 StartChar: uni0631
@@ -294,7 +294,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 49 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa
 EndChar
 
 StartChar: uni0632
@@ -305,7 +305,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 49 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" raa dot.above
 EndChar
 
 StartChar: uni0633
@@ -316,7 +316,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 50 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen
 EndChar
 
 StartChar: uni0634
@@ -327,7 +327,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 50 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen.isol tdots.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" seen tdots.above
 EndChar
 
 StartChar: uni0635
@@ -338,7 +338,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 51 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad
 EndChar
 
 StartChar: uni0636
@@ -349,7 +349,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 51 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" sad dot.above
 EndChar
 
 StartChar: uni0637
@@ -360,7 +360,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 52 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa
 EndChar
 
 StartChar: uni0638
@@ -371,7 +371,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 52 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" taa dot.above
 EndChar
 
 StartChar: uni0639
@@ -382,7 +382,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 53 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn
 EndChar
 
 StartChar: uni063A
@@ -393,7 +393,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 53 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" ayn dot.above
 EndChar
 
 StartChar: uni0641
@@ -404,7 +404,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 54 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" faa.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" faa dot.above
 EndChar
 
 StartChar: uni0642
@@ -415,7 +415,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 55 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" qaf.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" qaf dot.above
 EndChar
 
 StartChar: uni0643
@@ -443,7 +443,7 @@ SplineSet
  171.487 490.119 231.588 563.251 278.519 583.272 c 1
 EndSplineSet
 Refer: 56 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" kaf.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" kaf
 EndChar
 
 StartChar: uni0644
@@ -454,7 +454,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 57 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" lam.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" lam
 EndChar
 
 StartChar: uni0645
@@ -465,7 +465,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 58 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" meem.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" meem
 EndChar
 
 StartChar: uni0646
@@ -476,7 +476,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 59 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" noon.isol dot.above
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" noon dot.above
 EndChar
 
 StartChar: uni0647
@@ -487,7 +487,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 60 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" heh
 EndChar
 
 StartChar: uni0648
@@ -498,7 +498,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 61 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" waw
 EndChar
 
 StartChar: uni0649
@@ -509,7 +509,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 62 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa
 EndChar
 
 StartChar: uni064A
@@ -520,7 +520,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 62 -1 N 1 0 0 1 0 0 2
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa.isol ddots.below
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" yaa ddots.below
 EndChar
 
 StartChar: dot.above
@@ -679,7 +679,7 @@ Fore
 Refer: 43 -1 N 1 0 0 1 -0.00031662 0 2
 EndChar
 
-StartChar: alef.isol
+StartChar: alef
 Encoding: 65554 -1 45
 Width: 203
 VWidth: 1399
@@ -700,7 +700,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: baa.isol
+StartChar: baa
 Encoding: 65555 -1 46
 Width: 924
 VWidth: 1399
@@ -722,9 +722,10 @@ SplineSet
  787.962 304.309 796.499 329.255 807.925 352.716 c 0
  811.242 359.529 817.746 362.658 826.564 352.716 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" baa.init
 EndChar
 
-StartChar: haa.isol
+StartChar: haa
 Encoding: 65556 -1 47
 Width: 719
 VWidth: 1399
@@ -751,9 +752,10 @@ SplineSet
  411.032 242.593 514.078 234.129 592.115 250.752 c 0
  608.165 254.171 617.025 244.982 613.561 238.178 c 2
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" haa.init
 EndChar
 
-StartChar: dal.isol
+StartChar: dal
 Encoding: 65557 -1 48
 Width: 424
 VWidth: 1399
@@ -780,7 +782,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: raa.isol
+StartChar: raa
 Encoding: 65558 -1 49
 Width: 361
 VWidth: 1399
@@ -806,7 +808,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: seen.isol
+StartChar: seen
 Encoding: 65559 -1 50
 Width: 1125
 VWidth: 1399
@@ -843,9 +845,10 @@ SplineSet
  887.179 191.215 886.766 193.011 888.167 197.528 c 2
  916.985 290.454 l 1
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" seen.init
 EndChar
 
-StartChar: sad.isol
+StartChar: sad
 Encoding: 65560 -1 51
 Width: 1252
 VWidth: 1399
@@ -881,9 +884,10 @@ SplineSet
  894.066 84.9746 1025.83 98.9414 1111.81 163.562 c 1
  1074.12 197.792 1036.67 208.998 1002.47 208.438 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" sad.init
 EndChar
 
-StartChar: taa.isol
+StartChar: taa
 Encoding: 65561 -1 52
 Width: 792
 VWidth: 1399
@@ -921,9 +925,10 @@ SplineSet
  411.938 142.44 558.004 161.441 658.062 215.969 c 1
  646.255 239.327 619.246 262.524 570.969 262.625 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" taa.init
 EndChar
 
-StartChar: ayn.isol
+StartChar: ayn
 Encoding: 65562 -1 53
 Width: 688
 VWidth: 1399
@@ -956,9 +961,10 @@ SplineSet
  121.1 388.848 173.462 448.117 216.489 462.83 c 0
  221.771 464.637 227.382 465.511 233.177 465.611 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" ayn.init
 EndChar
 
-StartChar: faa.isol
+StartChar: faa
 Encoding: 65563 -1 54
 Width: 988
 VWidth: 1399
@@ -988,9 +994,10 @@ SplineSet
  841.543 391.47 852.942 398.519 865.594 410.188 c 1
  858.275 419.75 831.843 441.871 816.469 441.969 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" faa.init
 EndChar
 
-StartChar: qaf.isol
+StartChar: qaf
 Encoding: 65564 -1 55
 Width: 695
 VWidth: 1399
@@ -1016,9 +1023,10 @@ SplineSet
  488.643 322.178 521.879 320.508 543.188 340.281 c 1
  529.643 355.028 515.47 366.518 501.094 366.312 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" faa.init
 EndChar
 
-StartChar: kaf.isol
+StartChar: kaf
 Encoding: 65565 -1 56
 Width: 641
 VWidth: 1399
@@ -1043,9 +1051,10 @@ SplineSet
  485.657 796.687 l 2
  491.018 803.727 499.031 801.902 501.053 788.059 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" kaf.init
 EndChar
 
-StartChar: lam.isol
+StartChar: lam
 Encoding: 65566 -1 57
 Width: 604
 VWidth: 1399
@@ -1077,9 +1086,10 @@ SplineSet
  430.025 394.297 416.574 483.937 410.925 579.978 c 1
  414.943 632.656 418.451 654.9 425.25 662.947 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" lam.init
 EndChar
 
-StartChar: meem.isol
+StartChar: meem
 Encoding: 65567 -1 58
 Width: 397
 VWidth: 1399
@@ -1107,9 +1117,10 @@ SplineSet
  63.5967 -150.09 22.3555 -24.1045 32.6611 45.3496 c 0
  39.6807 92.6631 51.0645 130.47 73.0674 156.818 c 1
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" meem.init
 EndChar
 
-StartChar: noon.isol
+StartChar: noon
 Encoding: 65568 -1 59
 Width: 574
 VWidth: 1399
@@ -1131,9 +1142,10 @@ SplineSet
  436.591 496.555 l 2
  438.835 503.851 445.125 505.203 451.035 495.481 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" baa.init
 EndChar
 
-StartChar: heh.isol
+StartChar: heh
 Encoding: 65569 -1 60
 Width: 343
 VWidth: 1399
@@ -1157,9 +1169,10 @@ SplineSet
  259.73 143.919 263.434 153.766 259 160.219 c 0
  235.367 201.82 180.25 237.795 143.75 237.844 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" heh.init
 EndChar
 
-StartChar: waw.isol
+StartChar: waw
 Encoding: 65570 -1 61
 Width: 390
 VWidth: 1399
@@ -1187,7 +1200,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: yaa.isol
+StartChar: yaa
 Encoding: 65571 -1 62
 Width: 771
 VWidth: 1399
@@ -1215,6 +1228,7 @@ SplineSet
  708.173 397.329 698.128 371.105 690.298 349.483 c 0
  687.831 342.672 684.802 339.749 681.211 346.853 c 0
 EndSplineSet
+Substitution2: "'init' Initial Forms-1" baa.init
 EndChar
 
 StartChar: uni0654
@@ -1269,7 +1283,7 @@ StartChar: madda.above
 Encoding: 65544 -1 66
 Width: 0
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -1284,6 +1298,323 @@ SplineSet
  -207.118 92.0801 -204.871 97.8721 -187.827 123.194 c 0
  -180.713 133.764 -166.868 131.609 -159.945 129.199 c 0
  -26.4053 102.136 70.6396 101.011 193.513 147.303 c 0
+EndSplineSet
+EndChar
+
+StartChar: baa.init
+Encoding: 65582 -1 67
+Width: 143
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+69.1299 303.713 m 0
+ 72.3281 308.659 78.8887 310.546 82.291 302.448 c 0
+ 96.5811 268.433 111.88 229.272 99.248 124.522 c 0
+ 89.0352 39.834 45.4863 18.2646 -0.217773 0 c 1
+ 0.0351562 100.298 l 1
+ 24.623 106.107 46.8232 123.096 60.1221 135.329 c 0
+ 62.6592 137.662 61.8594 140.344 61.1406 142.801 c 0
+ 54.2383 166.408 41.5049 186.188 28.1279 205.513 c 0
+ 22.8477 213.142 23.5439 222.217 26.3564 228.797 c 0
+ 37.9121 255.838 57.4834 285.703 69.1299 303.713 c 0
+EndSplineSet
+EndChar
+
+StartChar: haa.init
+Encoding: 65583 -1 68
+Width: 674
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+5.09863 238.971 m 0
+ 15.3984 275.103 65.626 338.081 130.901 337.372 c 0
+ 215.514 336.458 370.89 205.358 616.863 212.206 c 0
+ 642.004 212.903 633.426 198.21 630.564 193.088 c 2
+ 598.701 136.054 l 2
+ 592.587 125.108 582.008 125.486 575.123 126.813 c 0
+ 376.982 165.022 178.25 56.8037 2.44727 0 c 1
+ 2.44727 105.147 l 1
+ 87.0732 120.086 191.415 135.547 276.942 175.509 c 1
+ 182.681 226.599 132.216 243.498 22.0088 223.49 c 0
+ 10.4844 221.397 1.97754 228.021 5.09863 238.971 c 0
+EndSplineSet
+EndChar
+
+StartChar: seen.init
+Encoding: 65584 -1 69
+Width: 592
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+529.949 311.919 m 0
+ 532.323 312.022 534.551 308.92 536.083 306.312 c 0
+ 554.85 274.373 570.202 193.953 508.986 93.2344 c 0
+ 503.855 84.793 493.402 78.9453 484.043 77.4316 c 0
+ 458.634 73.3203 386.444 93.335 349.249 131.666 c 1
+ 322.919 80.9297 290.871 38.2793 242.608 24.375 c 1
+ 191.395 12.7275 142.209 39.7139 114.477 87.8311 c 1
+ 75.2295 37.1221 31.7676 7.19824 0.645508 0 c 1
+ 0.645508 106.396 l 1
+ 72.959 113.415 124.97 145.378 166.396 208.365 c 0
+ 174.738 221.051 185.107 212.34 182.605 206.091 c 0
+ 177.389 193.062 171.848 181.068 166.111 169.894 c 1
+ 178.65 147.253 208.514 120.888 251.708 127.115 c 0
+ 342.229 140.167 359.793 222.164 388.371 273.935 c 0
+ 394.894 285.751 410.102 278.251 405.393 266.053 c 0
+ 399.623 251.108 393.782 235.443 387.68 219.537 c 1
+ 420.671 185.23 493.087 168.704 504.802 185.859 c 0
+ 510.381 194.028 502.803 232.471 495.377 249.763 c 0
+ 493.478 254.186 494.94 255.758 497.489 260.447 c 0
+ 506.051 276.195 516.251 292.749 526.699 309.44 c 0
+ 527.781 311.17 528.869 311.872 529.949 311.919 c 0
+EndSplineSet
+EndChar
+
+StartChar: sad.init
+Encoding: 65585 -1 70
+Width: 537
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+375.848 348.986 m 0
+ 406.968 350.048 502.676 311.281 497.521 254.042 c 0
+ 493.412 208.001 451.682 126.329 439.498 114.775 c 0
+ 341.262 21.624 139.964 2.8418 66.7959 0 c 1
+ 61.4238 -11.3203 54.1855 -34.8994 47.1914 -51.8867 c 0
+ 39.1572 -71.3984 18.5283 -63.4766 21.7305 -41.7617 c 0
+ 23.2373 -31.5449 27.0732 -11.0713 30.6357 0.0244141 c 1
+ 25.0771 0.28418 5.80957 -0.919922 1.26367 0.677734 c 1
+ 1.95312 96.6738 l 1
+ 20.1025 94.3418 59.5557 97.7178 77.4521 97.041 c 1
+ 125.371 166.095 277.114 345.621 375.848 348.986 c 0
+425.15 199.234 m 0
+ 392.275 221.543 339.518 241.957 298.872 234.092 c 0
+ 249.942 224.624 166.443 155.661 123.358 97.834 c 1
+ 255.985 112.332 385.161 152.204 425.859 189.261 c 0
+ 429.748 192.802 429.613 196.206 425.15 199.234 c 0
+EndSplineSet
+EndChar
+
+StartChar: taa.init
+Encoding: 65586 -1 71
+Width: 584
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+145.393 813.594 m 0
+ 149.532 813.986 153.521 809.771 155.33 804.844 c 0
+ 171.238 761.507 191.72 749.726 215.268 727.312 c 0
+ 220.509 722.322 220.081 716.469 215.08 711.219 c 0
+ 201.059 696.499 190.099 681.239 179.174 668 c 0
+ 173.894 661.601 174.346 654.284 174.893 645.844 c 0
+ 180.103 565.441 195.142 460.758 196.361 369.469 c 0
+ 197.301 299.17 188.221 240.691 174.111 200.594 c 0
+ 173.693 199.405 173.281 198.271 172.861 197.156 c 1
+ 259.812 267.088 354.822 330.122 406.83 344.156 c 0
+ 431.388 350.783 453.578 352.448 471.799 345.562 c 0
+ 500.348 334.774 524.838 305.26 541.799 272.344 c 0
+ 545.691 264.789 545.207 250.396 542.83 241.875 c 0
+ 530.003 195.888 514.017 156.476 488.018 118.656 c 1
+ 471.743 91.6895 413.361 68.8066 382.018 61.4375 c 0
+ 245.121 29.7041 140.453 9.21484 0.267578 0 c 1
+ -0.0292969 29.5547 -0.504883 73.7461 0.955078 103.125 c 1
+ 24.6357 103.829 49.6113 103.653 68.3926 105.656 c 1
+ 92.2363 128.71 119.586 153.066 148.393 177.094 c 0
+ 148.493 177.884 148.628 178.722 148.83 179.594 c 0
+ 152.656 196.056 152.749 208.492 153.143 219 c 0
+ 156.552 371.883 133.331 538.576 113.518 703.188 c 0
+ 112.303 713.28 109.064 718.426 107.486 726.375 c 0
+ 106.393 731.891 106.493 735.257 108.736 741.219 c 0
+ 113.97 755.124 128.39 790.613 139.08 808.625 c 0
+ 141.036 811.92 143.225 813.388 145.393 813.594 c 0
+368.205 246.25 m 0
+ 360.61 246.345 353.066 245.362 345.643 243.156 c 0
+ 275.553 222.329 187.315 159.722 139.83 109.688 c 1
+ 250.089 118.959 376.117 139.189 470.861 173.094 c 0
+ 474.237 174.302 475.775 177.29 473.643 180.469 c 0
+ 450.935 214.323 409.219 245.74 368.205 246.25 c 0
+EndSplineSet
+EndChar
+
+StartChar: ayn.init
+Encoding: 65587 -1 72
+Width: 477
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+437.164 265.549 m 0
+ 437.164 265.549 423.499 213.536 415.237 181.102 c 0
+ 413.241 173.264 405.193 168.95 397.341 166.069 c 0
+ 257.514 114.76 0 0 0 0 c 1
+ -0.71875 96.6172 l 1
+ 20.041 102.821 43.0391 112.934 73.0225 125.968 c 1
+ 53.3213 146.455 26.2803 165.789 35.791 221.906 c 0
+ 51.3975 313.979 124.023 392.807 202.626 418.781 c 0
+ 240.995 431.459 301.764 397.538 345.809 349.334 c 0
+ 361.067 332.635 345.612 315.686 327.911 322.854 c 0
+ 245.213 356.335 120.3 328.582 95.9326 269.166 c 0
+ 86.3281 245.745 143.054 197.532 178.287 193.247 c 0
+ 283.385 180.378 359.62 246.633 423.11 279.153 c 0
+ 433.318 284.382 437.999 275.474 437.164 265.549 c 0
+EndSplineSet
+EndChar
+
+StartChar: faa.init
+Encoding: 65588 -1 73
+Width: 284
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+123.031 424.844 m 0
+ 154.988 424.51 251.02 331.217 244.25 202.406 c 0
+ 239.513 112.255 198.315 65.5537 128.938 33 c 0
+ 85.7881 12.7539 49.1113 5.42188 3.46875 0 c 1
+ 3.84375 94.8125 l 1
+ 84.2744 102.197 162.372 142.398 198.688 167.688 c 1
+ 200.997 195.49 193.595 207.543 185.344 213.656 c 0
+ 178.031 219.074 173.083 217.515 171.438 213.188 c 0
+ 150.288 157.562 92.5049 142.208 42.6562 166.969 c 0
+ 19.5303 178.456 10.2559 209.711 13.1562 248.094 c 0
+ 18.5215 319.107 78.5684 425.307 123.031 424.844 c 0
+88.6875 312.094 m 0
+ 71.8555 311.703 64.9023 288.469 60.0938 272.312 c 0
+ 59.4648 270.199 60.0098 266.564 62 265.938 c 0
+ 86.1455 258.326 105.529 261.122 124.625 269.531 c 0
+ 126.433 270.327 126.572 272.099 126.125 273.406 c 0
+ 120.722 289.207 103.484 312.437 88.6875 312.094 c 0
+EndSplineSet
+EndChar
+
+StartChar: kaf.init
+Encoding: 65589 -1 74
+Width: 587
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+545.562 786.245 m 2
+ 525.488 743.506 l 2
+ 522.176 736.453 514.198 730.109 507.216 728.537 c 0
+ 348.308 692.753 178.279 649.504 23.8691 556.522 c 0
+ 20.4219 554.447 21.6182 549.359 25.1123 544.342 c 0
+ 111.023 420.964 193.844 304.641 158.097 129.419 c 0
+ 138.664 33.9512 70.0166 20.0195 0.200195 -1.45215 c 1
+ 0.0576172 98.582 l 1
+ 11.6826 97.4062 115.303 126.947 132.216 142.635 c 1
+ 142.055 168.824 102.028 267.807 41.0811 379.419 c 0
+ 35.1455 390.29 29.1455 393.793 21.5332 391.533 c 2
+ 3.91211 386.302 l 2
+ -3.84961 383.998 -10.7471 388.252 -14.5352 394.011 c 2
+ -62.874 467.513 l 2
+ -69.5254 477.627 -66.7227 483.159 -65.5996 489.356 c 0
+ -58.9863 525.837 -39.1855 568.282 -23.6211 585.365 c 0
+ 52.4834 668.898 325.928 783.559 531.445 806.731 c 0
+ 537.798 807.447 552.851 801.764 545.562 786.245 c 2
+EndSplineSet
+EndChar
+
+StartChar: lam.init
+Encoding: 65590 -1 75
+Width: 288
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+148.401 701.635 m 2
+ 152.124 722.939 166.039 712.02 171.851 699.802 c 0
+ 180.73 681.13 189.327 661.376 206.029 648.68 c 0
+ 216.614 640.633 226.449 631.393 224.719 619.087 c 0
+ 222.231 601.389 219.154 573.421 196.59 573.196 c 1
+ 210.988 461.031 242.267 283.612 245.833 260.956 c 0
+ 249.398 238.301 249.886 208.522 247.064 185.102 c 0
+ 241.956 142.692 237.845 81.3701 209.144 45.9258 c 1
+ 174.395 5.04199 115.805 -2.11426 -0.576172 1.1416 c 1
+ -0.576172 1.1416 -1.20996 90.2324 -0.482422 96.9434 c 1
+ 92.0928 95.1504 157.68 93.0518 211.913 135.003 c 1
+ 216.415 171.369 198.322 270.184 180.518 363.748 c 0
+ 163.327 454.08 155.877 514.539 145.286 592.609 c 0
+ 145.009 594.652 131.538 605.143 134.384 621.424 c 2
+ 148.401 701.635 l 2
+EndSplineSet
+EndChar
+
+StartChar: meem.init
+Encoding: 65591 -1 76
+Width: 382
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+246 326.094 m 0
+ 252.686 326.229 259.675 325.233 267.031 322.906 c 0
+ 318.965 306.479 333.808 221.012 342.312 153.469 c 0
+ 343.027 147.748 343.545 141.493 339.438 136.281 c 2
+ 282.781 64.3438 l 2
+ 279.251 59.8643 273.933 54.125 262.969 57.3125 c 0
+ 216.153 70.9258 165.779 94.7256 121.938 131.438 c 1
+ 104.52 91.0195 58.7822 11.3496 4.4375 0 c 1
+ 4.4375 96.1875 l 1
+ 37.0059 99.374 68.3965 116.324 96.0625 152.031 c 0
+ 145.845 216.281 181.374 324.784 246 326.094 c 0
+213.844 241.562 m 0
+ 197.99 241.853 181.41 233.854 171.438 224.344 c 1
+ 191.006 205.535 225.124 184.968 264.594 176.281 c 1
+ 265.466 200.082 257.778 222.677 231.688 237 c 0
+ 226.137 240.047 220.048 241.449 213.844 241.562 c 0
+EndSplineSet
+EndChar
+
+StartChar: heh.init
+Encoding: 65592 -1 77
+Width: 449
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+91.2041 330.406 m 0
+ 100.012 357.443 128.338 423.066 161.61 422.906 c 0
+ 204.886 422.697 257.272 371.727 293.298 336.531 c 0
+ 338.595 292.276 399.395 225.07 406.673 182.844 c 0
+ 414.849 135.401 404.633 22.4697 336.113 36.3623 c 0
+ 283.624 47.0039 208.667 61.0469 141.946 84.8496 c 1
+ 92.5576 41.9365 38.3721 14.0605 -0.264648 0 c 1
+ 1.04492 88.0293 l 1
+ 24.8975 97.3711 49.2666 110.004 68.7686 120.183 c 1
+ 48.1748 137.229 49.541 157.366 57.5293 181.563 c 0
+ 67.3018 213.067 90.2754 259.016 134.468 297.615 c 1
+ 136.109 304.826 111.512 317.19 97.7354 318.031 c 0
+ 91.46 318.414 89.7246 325.81 91.2041 330.406 c 0
+158.642 266.812 m 0
+ 138.032 266.963 106.168 243.121 91.1416 218.062 c 0
+ 79.1172 198.012 105.584 180.535 170.586 163.607 c 1
+ 181.802 169.225 191.042 174.052 202.153 180.108 c 0
+ 205.374 181.863 205.107 183.645 204.809 187.369 c 0
+ 202.287 218.766 190.396 258.291 164.642 265.969 c 0
+ 162.781 266.523 160.773 266.797 158.642 266.812 c 0
+246.158 241.764 m 0
+ 243.654 243.58 241.283 243.108 242.409 239.93 c 0
+ 247.208 211.792 214.271 163.474 205.072 154.352 c 1
+ 269.076 137.717 337.1 118.238 361.235 118.594 c 0
+ 366.897 118.677 370.086 121.925 366.332 127.061 c 0
+ 333.863 171.489 293.131 207.697 246.158 241.764 c 0
 EndSplineSet
 EndChar
 EndChars
