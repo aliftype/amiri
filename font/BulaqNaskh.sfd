@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261173192
+ModificationTime: 1261245871
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -46,13 +46,14 @@ MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
 Encoding: UnicodeBmp
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1547 17 7
-BeginChars: 65572 66
+WinInfo: 0 17 7
+BeginChars: 65572 67
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -129,6 +130,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 45 -1 N 1 0 0 1 0 0 2
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition lookup-1" alif.isol.base madda.above
 EndChar
 
 StartChar: uni0623
@@ -1261,6 +1263,28 @@ SplineSet
  218.804 158.238 230.574 175.919 257.463 180.454 c 0
  266.412 181.964 274.343 171.916 271.529 163.131 c 2
  259.982 127.084 l 1
+EndSplineSet
+EndChar
+
+StartChar: madda.above
+Encoding: 65544 -1 66
+Width: 0
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+193.513 147.303 m 0
+ 203.009 150.88 213.455 147.66 216.852 138.542 c 0
+ 220.061 129.924 216.398 118.863 209.071 114.072 c 0
+ 102.891 44.6504 -32.1035 34.8047 -139.355 45.5527 c 1
+ -139.568 33.6895 -145.853 15.459 -151.067 5.99414 c 0
+ -153.96 0.746094 -157.154 0.412109 -161.687 4.45117 c 0
+ -180.016 20.7803 -196.874 34.8965 -214.423 51.9873 c 0
+ -220.54 57.9453 -217.471 67.3438 -215.28 72.5771 c 0
+ -207.118 92.0801 -204.871 97.8721 -187.827 123.194 c 0
+ -180.713 133.764 -166.868 131.609 -159.945 129.199 c 0
+ -26.4053 102.136 70.6396 101.011 193.513 147.303 c 0
 EndSplineSet
 EndChar
 EndChars
