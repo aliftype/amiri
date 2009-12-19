@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261257875
+ModificationTime: 1261259497
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -45,6 +45,9 @@ Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition lookup"  {"'ccmp' Glyph Co
 Lookup: 1 0 0 "'init' Initial Forms"  {"'init' Initial Forms-1" ("init" ) } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "'medi' Medial Forms"  {"'medi' Medial Forms-1" ("medi" ) } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "'fina' Terminal Forms"  {"'fina' Terminal Forms-1" ("fina" ) } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dot Positioning"  {"'mark' Dot Positioning-2"  "'mark' Dot Positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Positioning"  {"'mark' Hamza Positioning-2"  "'mark' Hamza Positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Madda Positioning"  {"'mark' Madda Positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
@@ -54,7 +57,8 @@ NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1581 17 7
+WinInfo: 0 17 7
+AnchorClass2: "madda.above"  "'mark' Madda Positioning-1" "hamza.below"  "'mark' Hamza Positioning-2" "hamza.above"  "'mark' Hamza Positioning-1" "dot.below"  "'mark' Dot Positioning-2" "dot.above"  "'mark' Dot Positioning-1" 
 BeginChars: 65642 110
 
 StartChar: uni061B
@@ -514,6 +518,7 @@ Encoding: 65536 -1 37
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 0 70 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -534,6 +539,7 @@ Encoding: 65537 -1 38
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.below" 0 70 mark 0
 LayerCount: 2
 Fore
 Refer: 37 -1 N 1 0 0 1 -0.000273705 0 2
@@ -544,6 +550,7 @@ Encoding: 65538 -1 39
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 0 90 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -573,6 +580,7 @@ Encoding: 65539 -1 40
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.below" 0 90 mark 0
 LayerCount: 2
 Fore
 Refer: 39 -1 N 1 0 0 1 0.000198126 0 2
@@ -583,6 +591,7 @@ Encoding: 65540 -1 41
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 0 140 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -621,6 +630,7 @@ Encoding: 65541 -1 42
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.below" 0 140 mark 0
 LayerCount: 2
 Fore
 Refer: 41 -1 N 1 0 0 1 0.000198126 0 2
@@ -631,6 +641,7 @@ Encoding: 65542 -1 43
 Width: 0
 VWidth: 1399
 Flags: W
+AnchorPoint: "hamza.above" 0 30 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -660,6 +671,7 @@ Encoding: 65543 -1 44
 Width: 0
 VWidth: 1399
 Flags: W
+AnchorPoint: "hamza.below" 0 250 mark 0
 LayerCount: 2
 Fore
 Refer: 43 -1 N 1 0 0 1 -0.00031662 0 2
@@ -670,6 +682,9 @@ Encoding: 65554 -1 45
 Width: 203
 VWidth: 1399
 Flags: W
+AnchorPoint: "madda.above" 84 752 basechar 0
+AnchorPoint: "hamza.below" 110 -54 basechar 0
+AnchorPoint: "hamza.above" 84 752 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -692,6 +707,8 @@ Encoding: 65555 -1 46
 Width: 789
 VWidth: 1201
 Flags: W
+AnchorPoint: "dot.above" 392 355 basechar 0
+AnchorPoint: "dot.below" 402 -140 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -719,6 +736,8 @@ Encoding: 65556 -1 47
 Width: 583
 VWidth: 1399
 Flags: W
+AnchorPoint: "dot.above" 314 345 basechar 0
+AnchorPoint: "dot.below" 349 -156 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -751,6 +770,8 @@ Encoding: 65557 -1 48
 Width: 335
 VWidth: 1207
 Flags: W
+AnchorPoint: "dot.above" 130 526 basechar 0
+AnchorPoint: "dot.below" 170 -135 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -779,6 +800,8 @@ Encoding: 65558 -1 49
 Width: 361
 VWidth: 1399
 Flags: W
+AnchorPoint: "dot.above" 225 375 basechar 0
+AnchorPoint: "dot.below" 159 -312 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -806,6 +829,8 @@ Encoding: 65559 -1 50
 Width: 863
 VWidth: 1169
 Flags: W
+AnchorPoint: "dot.above" 648 381 basechar 0
+AnchorPoint: "dot.below" 699 -126 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -848,6 +873,8 @@ Encoding: 65560 -1 51
 Width: 1064
 VWidth: 1173
 Flags: W
+AnchorPoint: "dot.above" 777 444 basechar 0
+AnchorPoint: "dot.below" 819 -147 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -889,6 +916,8 @@ Encoding: 65561 -1 52
 Width: 665
 VWidth: 1240
 Flags: W
+AnchorPoint: "dot.below" 498 -90 basechar 0
+AnchorPoint: "dot.above" 456 501 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -932,6 +961,8 @@ Encoding: 65562 -1 53
 Width: 515
 VWidth: 1399
 Flags: W
+AnchorPoint: "dot.below" 285 -84 basechar 0
+AnchorPoint: "dot.above" 138 516 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -970,6 +1001,8 @@ Encoding: 65563 -1 54
 Width: 827
 VWidth: 1218
 Flags: W
+AnchorPoint: "dot.below" 714 -39 basechar 0
+AnchorPoint: "dot.above" 705 603 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1005,6 +1038,8 @@ Encoding: 65564 -1 55
 Width: 582
 VWidth: 1204
 Flags: W
+AnchorPoint: "dot.below" 273 -213 basechar 0
+AnchorPoint: "dot.above" 447 570 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1151,6 +1186,8 @@ Encoding: 65568 -1 59
 Width: 475
 VWidth: 1399
 Flags: W
+AnchorPoint: "dot.below" 255 -192 basechar 0
+AnchorPoint: "dot.above" 213 399 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1178,6 +1215,8 @@ Encoding: 65569 -1 60
 Width: 292
 VWidth: 1399
 Flags: W
+AnchorPoint: "dot.below" 153 -138 basechar 0
+AnchorPoint: "dot.above" 144 456 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1207,6 +1246,9 @@ Encoding: 65570 -1 61
 Width: 390
 VWidth: 1399
 Flags: W
+AnchorPoint: "hamza.above" 270 411 basechar 0
+AnchorPoint: "dot.below" 312 -234 basechar 0
+AnchorPoint: "dot.above" 270 411 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1236,6 +1278,9 @@ Encoding: 65571 -1 62
 Width: 771
 VWidth: 1399
 Flags: W
+AnchorPoint: "hamza.above" 164 384 basechar 0
+AnchorPoint: "dot.below" 315 -276 basechar 0
+AnchorPoint: "dot.above" 297 495 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1317,6 +1362,7 @@ Encoding: 65544 -1 66
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "madda.above" 0 33 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1339,6 +1385,10 @@ Encoding: 65582 -1 67
 Width: 119
 VWidth: 24
 Flags: W
+AnchorPoint: "hamza.below" 55 -151 basechar 0
+AnchorPoint: "hamza.above" 54 423 basechar 0
+AnchorPoint: "dot.below" 54 -150 basechar 0
+AnchorPoint: "dot.above" 54 423 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1360,6 +1410,8 @@ Encoding: 65583 -1 68
 Width: 564
 VWidth: 26
 Flags: W
+AnchorPoint: "dot.above" 114 453 basechar 0
+AnchorPoint: "dot.below" 312 -57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1382,6 +1434,8 @@ Encoding: 65584 -1 69
 Width: 496
 VWidth: 24
 Flags: W
+AnchorPoint: "dot.above" 276 432 basechar 0
+AnchorPoint: "dot.below" 276 -141 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1414,6 +1468,8 @@ Encoding: 65585 -1 70
 Width: 449
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 159 420 basechar 0
+AnchorPoint: "dot.below" 240 -114 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1441,6 +1497,8 @@ Encoding: 65586 -1 71
 Width: 490
 VWidth: 65
 Flags: W
+AnchorPoint: "dot.above" 315 498 basechar 0
+AnchorPoint: "dot.below" 315 -75 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1481,26 +1539,28 @@ EndChar
 
 StartChar: ayn.init
 Encoding: 65587 -1 72
-Width: 477
+Width: 400
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 94.9199 497.279 basechar 0
+AnchorPoint: "dot.below" 220.92 -26.04 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-437.164 265.549 m 0
- 437.164 265.549 423.499 213.536 415.237 181.102 c 0
- 413.241 173.264 405.193 168.95 397.341 166.069 c 0
- 257.514 114.76 0 0 0 0 c 1
- -0.71875 96.6172 l 1
- 20.041 102.821 43.0391 112.934 73.0225 125.968 c 1
- 53.3213 146.455 26.2803 165.789 35.791 221.906 c 0
- 51.3975 313.979 124.023 392.807 202.626 418.781 c 0
- 240.995 431.459 301.764 397.538 345.809 349.334 c 0
- 361.067 332.635 345.612 315.686 327.911 322.854 c 0
- 245.213 356.335 120.3 328.582 95.9326 269.166 c 0
- 86.3281 245.745 143.054 197.532 178.287 193.247 c 0
- 283.385 180.378 359.62 246.633 423.11 279.153 c 0
- 433.318 284.382 437.999 275.474 437.164 265.549 c 0
+367.218 223.061 m 0
+ 367.218 223.061 355.738 179.37 348.799 152.125 c 0
+ 347.122 145.541 340.361 141.918 333.766 139.497 c 0
+ 216.312 96.3975 0 0 0 0 c 1
+ -0.604492 81.1582 l 1
+ 16.834 86.3691 36.1523 94.8643 61.3389 105.812 c 1
+ 44.7891 123.021 22.0752 139.263 30.0645 186.4 c 0
+ 43.1738 263.742 104.179 329.957 170.205 351.775 c 0
+ 202.436 362.425 253.481 333.932 290.479 293.44 c 0
+ 303.296 279.413 290.313 265.176 275.445 271.197 c 0
+ 205.979 299.321 101.052 276.009 80.583 226.099 c 0
+ 72.5156 206.426 120.165 165.927 149.761 162.327 c 0
+ 238.043 151.517 302.08 207.171 355.412 234.488 c 0
+ 363.986 238.881 367.919 231.397 367.218 223.061 c 0
 EndSplineSet
 EndChar
 
@@ -1509,6 +1569,8 @@ Encoding: 65588 -1 73
 Width: 280
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 114 549 basechar 0
+AnchorPoint: "dot.below" 117 -57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1563,54 +1625,54 @@ EndChar
 
 StartChar: lam.init
 Encoding: 65590 -1 75
-Width: 162
+Width: 135
 VWidth: 0
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-0 90.3936 m 1
- 32.2529 95.2383 60.3447 105.226 85.9131 125.003 c 1
- 90.415 161.369 72.3223 260.184 54.5176 353.748 c 0
- 37.3271 444.08 29.877 504.539 19.2861 582.609 c 0
- 19.0088 584.652 5.53809 595.143 8.38379 611.424 c 2
- 22.4014 691.635 l 2
- 26.124 712.939 40.0391 702.02 45.8506 689.802 c 0
- 54.7305 671.13 63.3271 651.376 80.0293 638.68 c 0
- 90.6143 630.633 100.449 621.393 98.7188 609.087 c 0
- 96.2314 591.389 93.1543 563.421 70.5898 563.196 c 1
- 84.9883 451.031 116.267 273.612 119.833 250.956 c 0
- 123.398 228.301 123.886 198.522 121.064 175.102 c 0
- 115.956 132.692 111.845 71.3701 83.1436 35.9258 c 1
- 64.2734 13.7236 38.3711 1.46777 0 -4.5752 c 1
- 0 90.3936 l 1
+0.160156 79.7529 m 1
+ 27.252 83.8223 50.8496 92.2119 72.3271 108.825 c 1
+ 76.1084 139.372 60.9102 222.377 45.9541 300.971 c 0
+ 31.5146 376.85 25.2568 427.635 16.3604 493.214 c 0
+ 16.127 494.93 4.81152 503.742 7.20215 517.418 c 2
+ 18.9766 584.796 l 2
+ 22.1035 602.691 33.793 593.519 38.6738 583.256 c 0
+ 46.1338 567.571 53.3545 550.979 67.3848 540.313 c 0
+ 76.2754 533.554 84.5371 525.792 83.084 515.455 c 0
+ 80.9941 500.589 78.4092 477.096 59.4551 476.907 c 1
+ 71.5498 382.688 97.8242 233.656 100.819 214.625 c 0
+ 103.814 195.595 104.224 170.581 101.854 150.908 c 0
+ 97.5625 115.283 94.1094 63.7734 70 34 c 1
+ 54.1494 15.3496 32.3916 5.05469 0.160156 -0.0205078 c 1
+ 0.160156 79.7529 l 1
 EndSplineSet
 EndChar
 
 StartChar: meem.init
 Encoding: 65591 -1 76
-Width: 378
-VWidth: 0
+Width: 316
+VWidth: 26
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-242 326.094 m 0
- 248.686 326.229 255.675 325.233 263.031 322.906 c 0
- 314.965 306.479 329.808 221.012 338.312 153.469 c 0
- 339.027 147.748 339.545 141.493 335.438 136.281 c 2
- 278.781 64.3438 l 2
- 275.251 59.8643 269.933 54.125 258.969 57.3125 c 0
- 212.153 70.9258 161.779 94.7256 117.938 131.438 c 1
- 100.52 91.0195 54.7822 11.3496 0.4375 0 c 1
- 0.4375 96.1875 l 1
- 33.0059 99.374 64.3965 116.324 92.0625 152.031 c 0
- 141.845 216.281 177.374 324.784 242 326.094 c 0
-209.844 241.562 m 0
- 193.99 241.853 177.41 233.854 167.438 224.344 c 1
- 187.006 205.535 221.124 184.968 260.594 176.281 c 1
- 261.466 200.082 253.778 222.677 227.688 237 c 0
- 222.137 240.047 216.048 241.449 209.844 241.562 c 0
+202.912 273.919 m 0
+ 208.528 274.032 214.399 273.195 220.578 271.24 c 0
+ 264.203 257.442 276.671 185.649 283.814 128.913 c 0
+ 284.415 124.108 284.85 118.854 281.4 114.476 c 2
+ 233.809 54.0488 l 2
+ 230.843 50.2852 226.376 45.4648 217.166 48.1426 c 0
+ 177.841 59.5771 135.526 79.5693 98.7002 110.407 c 1
+ 84.0693 76.4561 45.6494 9.5332 0 0 c 1
+ 0 80.7969 l 1
+ 27.3574 83.4736 53.7256 97.7119 76.9648 127.706 c 0
+ 118.782 181.676 148.626 272.818 202.912 273.919 c 0
+175.901 202.912 m 0
+ 162.584 203.156 148.656 196.437 140.28 188.448 c 1
+ 156.718 172.649 185.376 155.373 218.531 148.075 c 1
+ 219.264 168.068 212.806 187.048 190.891 199.08 c 0
+ 186.228 201.639 181.112 202.816 175.901 202.912 c 0
 EndSplineSet
 EndChar
 
@@ -1656,6 +1718,10 @@ Encoding: 65603 -1 78
 Width: 190
 VWidth: 0
 Flags: W
+AnchorPoint: "hamza.above" 87 394 basechar 0
+AnchorPoint: "hamza.below" 102 -177 basechar 0
+AnchorPoint: "dot.above" 87 393 basechar 0
+AnchorPoint: "dot.below" 102 -177 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1679,6 +1745,8 @@ Encoding: 65604 -1 79
 Width: 524
 VWidth: 25
 Flags: W
+AnchorPoint: "dot.above" 102 432 basechar 0
+AnchorPoint: "dot.below" 219 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1715,6 +1783,8 @@ Encoding: 65605 -1 80
 Width: 508
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 297 327 basechar 0
+AnchorPoint: "dot.below" 291 -129 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1752,6 +1822,8 @@ Encoding: 65606 -1 81
 Width: 683
 VWidth: 17
 Flags: W
+AnchorPoint: "dot.above" 306 351 basechar 0
+AnchorPoint: "dot.below" 408 -150 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1788,6 +1860,8 @@ Encoding: 65607 -1 82
 Width: 450
 VWidth: 63
 Flags: W
+AnchorPoint: "dot.above" 282 447 basechar 0
+AnchorPoint: "dot.below" 282 -126 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1830,6 +1904,8 @@ Encoding: 65608 -1 83
 Width: 312
 VWidth: 24
 Flags: W
+AnchorPoint: "dot.above" 147 450 basechar 0
+AnchorPoint: "dot.below" 147 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1853,6 +1929,8 @@ Encoding: 65609 -1 84
 Width: 313
 VWidth: 32
 Flags: W
+AnchorPoint: "dot.above" 261 489 basechar 0
+AnchorPoint: "dot.below" 174 -111 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2004,6 +2082,8 @@ Encoding: 65624 -1 89
 Width: 168
 VWidth: 0
 Flags: W
+AnchorPoint: "hamza.above" 56 780 basechar 0
+AnchorPoint: "hamza.below" 80 -60 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2026,6 +2106,8 @@ Encoding: 65625 -1 90
 Width: 758
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 369 342 basechar 0
+AnchorPoint: "dot.below" 297 -195 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2053,6 +2135,8 @@ Encoding: 65626 -1 91
 Width: 565
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 315 387 basechar 0
+AnchorPoint: "dot.below" 315 -186 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2088,6 +2172,8 @@ Encoding: 65627 -1 92
 Width: 421
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 291 600 basechar 0
+AnchorPoint: "dot.below" 165 -99 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2117,6 +2203,8 @@ Encoding: 65628 -1 93
 Width: 308
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 213 288 basechar 0
+AnchorPoint: "dot.below" 213 -285 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2145,6 +2233,8 @@ Encoding: 65629 -1 94
 Width: 894
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 642 330 basechar 0
+AnchorPoint: "dot.below" 666 -138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2186,6 +2276,8 @@ Encoding: 65630 -1 95
 Width: 1026
 VWidth: 3
 Flags: W
+AnchorPoint: "dot.above" 663 354 basechar 0
+AnchorPoint: "dot.below" 744 -138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2228,6 +2320,8 @@ Encoding: 65631 -1 96
 Width: 649
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 435 426 basechar 0
+AnchorPoint: "dot.below" 435 -147 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2272,6 +2366,8 @@ Encoding: 65632 -1 97
 Width: 421
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 258 378 basechar 0
+AnchorPoint: "dot.below" 258 -195 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2308,6 +2404,8 @@ Encoding: 65633 -1 98
 Width: 899
 VWidth: 23
 Flags: W
+AnchorPoint: "dot.above" 750 474 basechar 0
+AnchorPoint: "dot.below" 750 -99 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2336,6 +2434,8 @@ Encoding: 65634 -1 99
 Width: 598
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 456 351 basechar 0
+AnchorPoint: "dot.below" 273 -390 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2471,6 +2571,8 @@ Encoding: 65638 -1 103
 Width: 537
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 258 183 basechar 0
+AnchorPoint: "dot.below" 258 -390 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2500,6 +2602,8 @@ Encoding: 65639 -1 104
 Width: 332
 VWidth: 0
 Flags: W
+AnchorPoint: "dot.above" 117 480 basechar 0
+AnchorPoint: "dot.below" 117 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2533,6 +2637,9 @@ Encoding: 65640 -1 105
 Width: 303
 VWidth: 0
 Flags: W
+AnchorPoint: "hamza.above" 219 336 basechar 0
+AnchorPoint: "dot.above" 219 336 basechar 0
+AnchorPoint: "dot.below" 219 -237 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2567,6 +2674,9 @@ Encoding: 65641 -1 106
 Width: 582
 VWidth: 0
 Flags: W
+AnchorPoint: "hamza.above" 130 193 basechar 0
+AnchorPoint: "dot.above" 309 162 basechar 0
+AnchorPoint: "dot.below" 303 -450 basechar 0
 LayerCount: 2
 Fore
 SplineSet
