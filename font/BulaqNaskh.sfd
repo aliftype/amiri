@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 862 584604386 14697072]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261684411
+ModificationTime: 1261691330
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -140,7 +141,7 @@ NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1564 17 7
+WinInfo: 65552 17 7
 AnchorClass2: "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
 BeginChars: 65668 131
 
@@ -634,7 +635,7 @@ StartChar: ddots.above
 Encoding: 65538 -1 39
 Width: 0
 VWidth: 0
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" -22 206 basemark 0
 AnchorPoint: "dot.above" 0 90 mark 0
 LayerCount: 2
@@ -677,7 +678,7 @@ StartChar: tdots.above
 Encoding: 65540 -1 41
 Width: 0
 VWidth: 0
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" -42 326 basemark 0
 AnchorPoint: "dot.above" 0 140 mark 0
 LayerCount: 2
@@ -729,7 +730,7 @@ StartChar: hamza.above
 Encoding: 65542 -1 43
 Width: 0
 VWidth: 1399
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" -75 270 basemark 0
 AnchorPoint: "hamza.above" 0 30 mark 0
 LayerCount: 2
@@ -773,6 +774,8 @@ Encoding: 65554 -1 45
 Width: 203
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 84 752 basechar 0
+AnchorPoint: "tashkil.below" 110 -54 basechar 0
 AnchorPoint: "madda.above" 84 752 basechar 0
 AnchorPoint: "hamza.below" 110 -54 basechar 0
 AnchorPoint: "hamza.above" 84 752 basechar 0
@@ -798,6 +801,8 @@ Encoding: 65555 -1 46
 Width: 789
 VWidth: 1201
 Flags: W
+AnchorPoint: "tashkil.below" 402 -140 basechar 0
+AnchorPoint: "tashkil.above" 392 355 basechar 0
 AnchorPoint: "dot.above" 392 355 basechar 0
 AnchorPoint: "dot.below" 402 -140 basechar 0
 LayerCount: 2
@@ -827,6 +832,8 @@ Encoding: 65556 -1 47
 Width: 583
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.below" 349 -156 basechar 0
+AnchorPoint: "tashkil.above" 314 345 basechar 0
 AnchorPoint: "dot.above" 314 345 basechar 0
 AnchorPoint: "dot.below" 349 -156 basechar 0
 LayerCount: 2
@@ -861,6 +868,8 @@ Encoding: 65557 -1 48
 Width: 335
 VWidth: 1207
 Flags: W
+AnchorPoint: "tashkil.below" 170 -135 basechar 0
+AnchorPoint: "tashkil.above" 130 526 basechar 0
 AnchorPoint: "dot.above" 130 526 basechar 0
 AnchorPoint: "dot.below" 170 -135 basechar 0
 LayerCount: 2
@@ -891,6 +900,8 @@ Encoding: 65558 -1 49
 Width: 361
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.below" 159 -312 basechar 0
+AnchorPoint: "tashkil.above" 225 375 basechar 0
 AnchorPoint: "dot.above" 225 375 basechar 0
 AnchorPoint: "dot.below" 159 -312 basechar 0
 LayerCount: 2
@@ -920,6 +931,8 @@ Encoding: 65559 -1 50
 Width: 863
 VWidth: 1169
 Flags: W
+AnchorPoint: "tashkil.below" 699 -126 basechar 0
+AnchorPoint: "tashkil.above" 648 381 basechar 0
 AnchorPoint: "dot.above" 648 381 basechar 0
 AnchorPoint: "dot.below" 699 -126 basechar 0
 LayerCount: 2
@@ -964,6 +977,8 @@ Encoding: 65560 -1 51
 Width: 1064
 VWidth: 1173
 Flags: W
+AnchorPoint: "tashkil.below" 819 -147 basechar 0
+AnchorPoint: "tashkil.above" 777 444 basechar 0
 AnchorPoint: "dot.above" 777 444 basechar 0
 AnchorPoint: "dot.below" 819 -147 basechar 0
 LayerCount: 2
@@ -1007,6 +1022,8 @@ Encoding: 65561 -1 52
 Width: 665
 VWidth: 1240
 Flags: W
+AnchorPoint: "tashkil.above" 456 501 basechar 0
+AnchorPoint: "tashkil.below" 498 -90 basechar 0
 AnchorPoint: "dot.below" 498 -90 basechar 0
 AnchorPoint: "dot.above" 456 501 basechar 0
 LayerCount: 2
@@ -1052,6 +1069,8 @@ Encoding: 65562 -1 53
 Width: 515
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 138 516 basechar 0
+AnchorPoint: "tashkil.below" 285 -84 basechar 0
 AnchorPoint: "dot.below" 285 -84 basechar 0
 AnchorPoint: "dot.above" 138 516 basechar 0
 LayerCount: 2
@@ -1092,6 +1111,8 @@ Encoding: 65563 -1 54
 Width: 827
 VWidth: 1218
 Flags: W
+AnchorPoint: "tashkil.above" 705 603 basechar 0
+AnchorPoint: "tashkil.below" 714 -39 basechar 0
 AnchorPoint: "dot.below" 714 -39 basechar 0
 AnchorPoint: "dot.above" 705 603 basechar 0
 LayerCount: 2
@@ -1129,6 +1150,8 @@ Encoding: 65564 -1 55
 Width: 582
 VWidth: 1204
 Flags: W
+AnchorPoint: "tashkil.above" 447 570 basechar 0
+AnchorPoint: "tashkil.below" 273 -213 basechar 0
 AnchorPoint: "dot.below" 273 -213 basechar 0
 AnchorPoint: "dot.above" 447 570 basechar 0
 LayerCount: 2
@@ -1162,6 +1185,8 @@ Encoding: 65565 -1 56
 Width: 548
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.below" 266 -106 basechar 0
+AnchorPoint: "tashkil.above" 210 662 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1207,6 +1232,8 @@ Encoding: 65566 -1 57
 Width: 477
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 186 550 basechar 0
+AnchorPoint: "tashkil.below" 220 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1244,6 +1271,8 @@ Encoding: 65567 -1 58
 Width: 365
 VWidth: 1163
 Flags: W
+AnchorPoint: "tashkil.above" 184 386 basechar 0
+AnchorPoint: "tashkil.below" 280 -140 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1277,6 +1306,8 @@ Encoding: 65568 -1 59
 Width: 475
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 213 399 basechar 0
+AnchorPoint: "tashkil.below" 255 -192 basechar 0
 AnchorPoint: "dot.below" 255 -192 basechar 0
 AnchorPoint: "dot.above" 213 399 basechar 0
 LayerCount: 2
@@ -1306,6 +1337,8 @@ Encoding: 65569 -1 60
 Width: 292
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 144 456 basechar 0
+AnchorPoint: "tashkil.below" 153 -138 basechar 0
 AnchorPoint: "dot.below" 153 -138 basechar 0
 AnchorPoint: "dot.above" 144 456 basechar 0
 LayerCount: 2
@@ -1337,6 +1370,8 @@ Encoding: 65570 -1 61
 Width: 390
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 270 411 basechar 0
+AnchorPoint: "tashkil.below" 312 -234 basechar 0
 AnchorPoint: "hamza.above" 270 411 basechar 0
 AnchorPoint: "dot.below" 312 -234 basechar 0
 AnchorPoint: "dot.above" 270 411 basechar 0
@@ -1369,6 +1404,8 @@ Encoding: 65571 -1 62
 Width: 771
 VWidth: 1399
 Flags: W
+AnchorPoint: "tashkil.above" 297 495 basechar 0
+AnchorPoint: "tashkil.below" 315 -276 basechar 0
 AnchorPoint: "hamza.above" 164 384 basechar 0
 AnchorPoint: "dot.below" 315 -276 basechar 0
 AnchorPoint: "dot.above" 297 495 basechar 0
@@ -1478,6 +1515,8 @@ Encoding: 65582 -1 67
 Width: 119
 VWidth: 24
 Flags: W
+AnchorPoint: "tashkil.above" 54 423 basechar 0
+AnchorPoint: "tashkil.below" 54 -150 basechar 0
 AnchorPoint: "hamza.below" 55 -151 basechar 0
 AnchorPoint: "hamza.above" 54 423 basechar 0
 AnchorPoint: "dot.below" 54 -150 basechar 0
@@ -1504,6 +1543,8 @@ Encoding: 65583 -1 68
 Width: 564
 VWidth: 26
 Flags: W
+AnchorPoint: "tashkil.below" 312 -57 basechar 0
+AnchorPoint: "tashkil.above" 114 453 basechar 0
 AnchorPoint: "dot.above" 114 453 basechar 0
 AnchorPoint: "dot.below" 312 -57 basechar 0
 LayerCount: 2
@@ -1528,6 +1569,8 @@ Encoding: 65584 -1 69
 Width: 496
 VWidth: 24
 Flags: W
+AnchorPoint: "tashkil.below" 276 -141 basechar 0
+AnchorPoint: "tashkil.above" 276 432 basechar 0
 AnchorPoint: "dot.above" 276 432 basechar 0
 AnchorPoint: "dot.below" 276 -141 basechar 0
 LayerCount: 2
@@ -1562,6 +1605,8 @@ Encoding: 65585 -1 70
 Width: 449
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 240 -114 basechar 0
+AnchorPoint: "tashkil.above" 159 420 basechar 0
 AnchorPoint: "dot.above" 159 420 basechar 0
 AnchorPoint: "dot.below" 240 -114 basechar 0
 LayerCount: 2
@@ -1591,6 +1636,8 @@ Encoding: 65586 -1 71
 Width: 490
 VWidth: 65
 Flags: W
+AnchorPoint: "tashkil.below" 315 -75 basechar 0
+AnchorPoint: "tashkil.above" 315 498 basechar 0
 AnchorPoint: "dot.above" 315 498 basechar 0
 AnchorPoint: "dot.below" 315 -75 basechar 0
 LayerCount: 2
@@ -1636,6 +1683,8 @@ Encoding: 65587 -1 72
 Width: 400
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 220.92 -26.04 basechar 0
+AnchorPoint: "tashkil.above" 94.9199 497.279 basechar 0
 AnchorPoint: "dot.above" 94.9199 497.279 basechar 0
 AnchorPoint: "dot.below" 220.92 -26.04 basechar 0
 LayerCount: 2
@@ -1665,6 +1714,8 @@ Encoding: 65588 -1 73
 Width: 280
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 117 -57 basechar 0
+AnchorPoint: "tashkil.above" 114 549 basechar 0
 AnchorPoint: "dot.above" 114 549 basechar 0
 AnchorPoint: "dot.below" 117 -57 basechar 0
 LayerCount: 2
@@ -1695,6 +1746,8 @@ Encoding: 65589 -1 74
 Width: 492
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 82 672 basechar 0
+AnchorPoint: "tashkil.below" 66 -104 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1724,6 +1777,8 @@ Encoding: 65590 -1 75
 Width: 135
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 16 676 basechar 0
+AnchorPoint: "tashkil.below" 38 -112 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1751,6 +1806,8 @@ Encoding: 65591 -1 76
 Width: 316
 VWidth: 26
 Flags: W
+AnchorPoint: "tashkil.above" 122 364 basechar 0
+AnchorPoint: "tashkil.below" 162 -124 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1778,6 +1835,8 @@ Encoding: 65592 -1 77
 Width: 449
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 166 562 basechar 0
+AnchorPoint: "tashkil.below" 200 -86 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1815,6 +1874,8 @@ Encoding: 65603 -1 78
 Width: 190
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 102 -177 basechar 0
+AnchorPoint: "tashkil.above" 87 393 basechar 0
 AnchorPoint: "hamza.above" 87 394 basechar 0
 AnchorPoint: "hamza.below" 102 -177 basechar 0
 AnchorPoint: "dot.above" 87 393 basechar 0
@@ -1842,6 +1903,8 @@ Encoding: 65604 -1 79
 Width: 524
 VWidth: 25
 Flags: W
+AnchorPoint: "tashkil.below" 219 -123 basechar 0
+AnchorPoint: "tashkil.above" 102 432 basechar 0
 AnchorPoint: "dot.above" 102 432 basechar 0
 AnchorPoint: "dot.below" 219 -123 basechar 0
 LayerCount: 2
@@ -1881,6 +1944,8 @@ Encoding: 65605 -1 80
 Width: 508
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 291 -129 basechar 0
+AnchorPoint: "tashkil.above" 297 327 basechar 0
 AnchorPoint: "dot.above" 297 327 basechar 0
 AnchorPoint: "dot.below" 291 -129 basechar 0
 LayerCount: 2
@@ -1921,6 +1986,8 @@ Encoding: 65606 -1 81
 Width: 683
 VWidth: 17
 Flags: W
+AnchorPoint: "tashkil.below" 408 -150 basechar 0
+AnchorPoint: "tashkil.above" 306 351 basechar 0
 AnchorPoint: "dot.above" 306 351 basechar 0
 AnchorPoint: "dot.below" 408 -150 basechar 0
 LayerCount: 2
@@ -1959,6 +2026,8 @@ Encoding: 65607 -1 82
 Width: 450
 VWidth: 63
 Flags: W
+AnchorPoint: "tashkil.below" 282 -126 basechar 0
+AnchorPoint: "tashkil.above" 282 447 basechar 0
 AnchorPoint: "dot.above" 282 447 basechar 0
 AnchorPoint: "dot.below" 282 -126 basechar 0
 LayerCount: 2
@@ -2003,6 +2072,8 @@ Encoding: 65608 -1 83
 Width: 312
 VWidth: 24
 Flags: W
+AnchorPoint: "tashkil.below" 147 -123 basechar 0
+AnchorPoint: "tashkil.above" 147 450 basechar 0
 AnchorPoint: "dot.above" 147 450 basechar 0
 AnchorPoint: "dot.below" 147 -123 basechar 0
 LayerCount: 2
@@ -2028,6 +2099,8 @@ Encoding: 65609 -1 84
 Width: 313
 VWidth: 32
 Flags: W
+AnchorPoint: "tashkil.below" 174 -111 basechar 0
+AnchorPoint: "tashkil.above" 261 489 basechar 0
 AnchorPoint: "dot.above" 261 489 basechar 0
 AnchorPoint: "dot.below" 174 -111 basechar 0
 LayerCount: 2
@@ -2059,6 +2132,8 @@ Encoding: 65610 -1 85
 Width: 411
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 72 728 basechar 0
+AnchorPoint: "tashkil.below" 184 -128 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2088,6 +2163,8 @@ Encoding: 65611 -1 86
 Width: 177
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 66 738 basechar 0
+AnchorPoint: "tashkil.below" 78 -122 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2113,6 +2190,8 @@ Encoding: 65612 -1 87
 Width: 424
 VWidth: 14
 Flags: W
+AnchorPoint: "tashkil.above" 216 442 basechar 0
+AnchorPoint: "tashkil.below" 216 -138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2147,6 +2226,8 @@ Encoding: 65613 -1 88
 Width: 381
 VWidth: 14
 Flags: W
+AnchorPoint: "tashkil.above" 228 450 basechar 0
+AnchorPoint: "tashkil.below" 224 -280 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2208,7 +2289,9 @@ StartChar: baa.fina
 Encoding: 65625 -1 90
 Width: 758
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "tashkil.below" 297 -195 basechar 0
+AnchorPoint: "tashkil.above" 369 342 basechar 0
 AnchorPoint: "dot.above" 369 342 basechar 0
 AnchorPoint: "dot.below" 297 -195 basechar 0
 LayerCount: 2
@@ -2238,6 +2321,8 @@ Encoding: 65626 -1 91
 Width: 565
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 315 -186 basechar 0
+AnchorPoint: "tashkil.above" 315 387 basechar 0
 AnchorPoint: "dot.above" 315 387 basechar 0
 AnchorPoint: "dot.below" 315 -186 basechar 0
 LayerCount: 2
@@ -2275,6 +2360,8 @@ Encoding: 65627 -1 92
 Width: 421
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 165 -99 basechar 0
+AnchorPoint: "tashkil.above" 291 600 basechar 0
 AnchorPoint: "dot.above" 291 600 basechar 0
 AnchorPoint: "dot.below" 165 -99 basechar 0
 LayerCount: 2
@@ -2306,6 +2393,8 @@ Encoding: 65628 -1 93
 Width: 308
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 213 -285 basechar 0
+AnchorPoint: "tashkil.above" 213 288 basechar 0
 AnchorPoint: "dot.above" 213 288 basechar 0
 AnchorPoint: "dot.below" 213 -285 basechar 0
 LayerCount: 2
@@ -2336,6 +2425,8 @@ Encoding: 65629 -1 94
 Width: 894
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 666 -138 basechar 0
+AnchorPoint: "tashkil.above" 642 330 basechar 0
 AnchorPoint: "dot.above" 642 330 basechar 0
 AnchorPoint: "dot.below" 666 -138 basechar 0
 LayerCount: 2
@@ -2379,6 +2470,8 @@ Encoding: 65630 -1 95
 Width: 1026
 VWidth: 3
 Flags: W
+AnchorPoint: "tashkil.below" 744 -138 basechar 0
+AnchorPoint: "tashkil.above" 663 354 basechar 0
 AnchorPoint: "dot.above" 663 354 basechar 0
 AnchorPoint: "dot.below" 744 -138 basechar 0
 LayerCount: 2
@@ -2423,6 +2516,8 @@ Encoding: 65631 -1 96
 Width: 649
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 435 -147 basechar 0
+AnchorPoint: "tashkil.above" 435 426 basechar 0
 AnchorPoint: "dot.above" 435 426 basechar 0
 AnchorPoint: "dot.below" 435 -147 basechar 0
 LayerCount: 2
@@ -2469,6 +2564,8 @@ Encoding: 65632 -1 97
 Width: 421
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 258 -195 basechar 0
+AnchorPoint: "tashkil.above" 258 378 basechar 0
 AnchorPoint: "dot.above" 258 378 basechar 0
 AnchorPoint: "dot.below" 258 -195 basechar 0
 LayerCount: 2
@@ -2507,6 +2604,8 @@ Encoding: 65633 -1 98
 Width: 899
 VWidth: 23
 Flags: W
+AnchorPoint: "tashkil.below" 750 -99 basechar 0
+AnchorPoint: "tashkil.above" 750 474 basechar 0
 AnchorPoint: "dot.above" 750 474 basechar 0
 AnchorPoint: "dot.below" 750 -99 basechar 0
 LayerCount: 2
@@ -2537,6 +2636,8 @@ Encoding: 65634 -1 99
 Width: 598
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 273 -390 basechar 0
+AnchorPoint: "tashkil.above" 456 351 basechar 0
 AnchorPoint: "dot.above" 456 351 basechar 0
 AnchorPoint: "dot.below" 273 -390 basechar 0
 LayerCount: 2
@@ -2573,6 +2674,8 @@ Encoding: 65635 -1 100
 Width: 731
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 338 656 basechar 0
+AnchorPoint: "tashkil.below" 322 -142 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2616,6 +2719,8 @@ Encoding: 65636 -1 101
 Width: 510
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 152 404 basechar 0
+AnchorPoint: "tashkil.below" 224 -430 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2646,6 +2751,8 @@ Encoding: 65637 -1 102
 Width: 449
 VWidth: -30
 Flags: W
+AnchorPoint: "tashkil.above" 208 318 basechar 0
+AnchorPoint: "tashkil.below" 268 -240 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2674,6 +2781,8 @@ Encoding: 65638 -1 103
 Width: 537
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 258 -390 basechar 0
+AnchorPoint: "tashkil.above" 258 183 basechar 0
 AnchorPoint: "dot.above" 258 183 basechar 0
 AnchorPoint: "dot.below" 258 -390 basechar 0
 LayerCount: 2
@@ -2705,6 +2814,8 @@ Encoding: 65639 -1 104
 Width: 332
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 117 -93 basechar 0
+AnchorPoint: "tashkil.above" 117 480 basechar 0
 AnchorPoint: "dot.above" 117 480 basechar 0
 AnchorPoint: "dot.below" 117 -93 basechar 0
 LayerCount: 2
@@ -2740,6 +2851,8 @@ Encoding: 65640 -1 105
 Width: 303
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 219 -237 basechar 0
+AnchorPoint: "tashkil.above" 219 336 basechar 0
 AnchorPoint: "hamza.above" 219 336 basechar 0
 AnchorPoint: "dot.above" 219 336 basechar 0
 AnchorPoint: "dot.below" 219 -237 basechar 0
@@ -2777,6 +2890,8 @@ Encoding: 65641 -1 106
 Width: 582
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.below" 303 -450 basechar 0
+AnchorPoint: "tashkil.above" 309 162 basechar 0
 AnchorPoint: "hamza.above" 130 193 basechar 0
 AnchorPoint: "dot.above" 309 162 basechar 0
 AnchorPoint: "dot.below" 303 -450 basechar 0
@@ -2869,6 +2984,8 @@ Encoding: 65652 -1 110
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" -228 830 basechar 0
+AnchorPoint: "tashkil.below" 16 -94 basechar 0
 AnchorPoint: "hamza.below" 16 -94 basechar 0
 AnchorPoint: "hamza.above" -228 830 basechar 0
 AnchorPoint: "madda.above" -228 830 basechar 0
@@ -2938,6 +3055,8 @@ Encoding: 65653 -1 111
 Width: 183
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 70 894 basechar 0
+AnchorPoint: "tashkil.below" 70 -100 basechar 0
 AnchorPoint: "curs" -90 88 exit 0
 LayerCount: 2
 Back
@@ -2998,6 +3117,8 @@ Encoding: 65654 -1 112
 Width: 0
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" -212 692 basechar 0
+AnchorPoint: "tashkil.below" 150 -118 basechar 0
 AnchorPoint: "hamza.below" 150 -118 basechar 0
 AnchorPoint: "hamza.above" -212 692 basechar 0
 AnchorPoint: "madda.above" -212 692 basechar 0
@@ -3051,6 +3172,8 @@ Encoding: 65655 -1 113
 Width: 290
 VWidth: 0
 Flags: W
+AnchorPoint: "tashkil.above" 124 856 basechar 0
+AnchorPoint: "tashkil.below" 182 -152 basechar 0
 AnchorPoint: "curs" 42 194 exit 0
 LayerCount: 2
 Back
@@ -3105,9 +3228,9 @@ StartChar: seen_BaaSeen
 Encoding: 65656 -1 114
 Width: 473
 VWidth: 0
-Flags: HW
-AnchorPoint: "tashkil.below" 314 -128 basechar 0
-AnchorPoint: "tashkil.above" 308 436 basechar 0
+Flags: W
+AnchorPoint: "tashkil.below" 314.597 -128 basechar 0
+AnchorPoint: "tashkil.above" 308.597 436 basechar 0
 AnchorPoint: "dot.above" 308.597 436 basechar 0
 AnchorPoint: "dot.below" 314.597 -128 basechar 0
 AnchorPoint: "curs" 518.596 200 entry 0
@@ -3181,9 +3304,9 @@ StartChar: baa_BaaSeen
 Encoding: 65657 -1 115
 Width: 231
 VWidth: 0
-Flags: HW
-AnchorPoint: "tashkil.above" 72 694 basechar 0
+Flags: W
 AnchorPoint: "tashkil.below" 118 -114 basechar 0
+AnchorPoint: "tashkil.above" 72 694 basechar 0
 AnchorPoint: "dot.above" 72 694 basechar 0
 AnchorPoint: "dot.below" 118 -114 basechar 0
 AnchorPoint: "curs" 0 200 exit 0
@@ -3247,7 +3370,12 @@ StartChar: AlefTatweel.fina
 Encoding: 65658 -1 116
 Width: 766
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "madda.above" 60 882 basechar 0
+AnchorPoint: "hamza.above" 60 882 basechar 0
+AnchorPoint: "tashkil.above" 60 882 basechar 0
+AnchorPoint: "hamza.below" 70 -142 basechar 0
+AnchorPoint: "tashkil.below" 70 -142 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3270,6 +3398,7 @@ SplineSet
  21.8057 658.209 27.4424 708.371 31.5967 727.383 c 0
  40.2373 766.937 75.375 820.041 143.286 824.005 c 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'liga' Extra Ligatures-1" uni0640 alef.fina
 EndChar
 
@@ -3277,7 +3406,7 @@ StartChar: uni0640
 Encoding: 1600 1600 117
 Width: 500
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3293,7 +3422,9 @@ StartChar: haa_AynHaa.init
 Encoding: 65659 -1 118
 Width: 635
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "tashkil.below" 381 -54 basechar 0
+AnchorPoint: "tashkil.above" 15 503 basechar 0
 AnchorPoint: "dot.above" 15 503 basechar 0
 AnchorPoint: "dot.below" 381 -54 basechar 0
 AnchorPoint: "curs" 98 254 entry 0
@@ -3349,7 +3480,9 @@ StartChar: ayn_AynHaa.init
 Encoding: 65660 -1 119
 Width: 630
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "tashkil.below" 470 -76 basechar 0
+AnchorPoint: "tashkil.above" 339 709 basechar 0
 AnchorPoint: "dot.above" 339 709 basechar 0
 AnchorPoint: "curs" 98 254 exit 0
 LayerCount: 2
@@ -3408,7 +3541,9 @@ StartChar: meem_AynMeem.init
 Encoding: 65661 -1 120
 Width: 292
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "tashkil.above" 82 420 basechar 0
+AnchorPoint: "tashkil.below" 246 -74 basechar 0
 AnchorPoint: "curs" 186 216 entry 0
 LayerCount: 2
 Back
@@ -3465,7 +3600,9 @@ StartChar: ayn_AynMeem.init
 Encoding: 65662 -1 121
 Width: 700
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "tashkil.below" 522 110 basechar 0
+AnchorPoint: "tashkil.above" 422 704 basechar 0
 AnchorPoint: "dot.above" 422 704 basechar 0
 AnchorPoint: "curs" 186 216 exit 0
 LayerCount: 2
@@ -3528,7 +3665,7 @@ Encoding: 1611 1611 122
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" 15 693 mark 0
 AnchorPoint: "tashkil.above" 13 693 mark 0
 LayerCount: 2
@@ -3565,7 +3702,7 @@ Encoding: 1612 1612 123
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" 24 696 mark 0
 AnchorPoint: "tashkil.above" 21.5 690 mark 0
 LayerCount: 2
@@ -3606,7 +3743,7 @@ Encoding: 1613 1613 124
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.below" -20.5 -375 mark 0
 AnchorPoint: "tashkil.below" -20.5 -375 mark 0
 LayerCount: 2
@@ -3644,7 +3781,7 @@ Encoding: 1614 1614 125
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" 13 693 mark 0
 AnchorPoint: "tashkil.above" 13 693 mark 0
 LayerCount: 2
@@ -3670,7 +3807,7 @@ Encoding: 1615 1615 126
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" 39.5 690 mark 0
 AnchorPoint: "tashkil.above" 39.5 690 mark 0
 LayerCount: 2
@@ -3705,7 +3842,7 @@ Encoding: 1616 1616 127
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.below" -20.5 -375 mark 0
 AnchorPoint: "tashkil.below" -20.5 -375 mark 0
 LayerCount: 2
@@ -3731,7 +3868,7 @@ Encoding: 1617 1617 128
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" 11.5 690 mark 0
 AnchorPoint: "tashkil.above" 11.5 690 mark 0
 LayerCount: 2
@@ -3763,7 +3900,7 @@ Encoding: 1618 1618 129
 Width: 0
 VWidth: 1399
 GlyphClass: 4
-Flags: HW
+Flags: W
 AnchorPoint: "tashkildot.above" -9 645 mark 0
 AnchorPoint: "tashkil.above" -9 645 mark 0
 LayerCount: 2
