@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261680967
+ModificationTime: 1261682185
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -130,7 +130,8 @@ ChainSub2: coverage "'calt' LamAlef-1"  0 0 0 1
  1
   SeqLookup: 0 "LamAlef.isol" 
 EndFPST
-LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
+LangName: 3073 "" "" "+BjkGJwYvBkoA" "" "" "" "" "" "" "+BkUGLQZFBi8A +BiwGOQZBBjEA" 
+LangName: 1033 "" "" "" "Bulaq Naskh" "" "" "" "" "" "Muhammad Ja'far" "" "" "" "GPLv3" "http://www.gnu.org/licenses/gpl.html" "" "Bulaq Naskh" "Regular" 
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL without afii
