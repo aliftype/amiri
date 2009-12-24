@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261684264
+ModificationTime: 1261684411
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -54,9 +54,9 @@ Lookup: 1 0 0 "LamAlef.fina"  {"LamAlef.fina-1"  } []
 Lookup: 1 0 0 "BaaSeen"  {"BaaSeen-1"  } []
 Lookup: 1 0 0 "AynHaa"  {"AynHaa-1"  } []
 Lookup: 1 0 0 "AynMeem"  {"AynMeem-1"  } []
-Lookup: 260 0 0 "'mark' Dot Positioning"  {"'mark' Dot Positioning-2"  "'mark' Dot Positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Hamza Positioning"  {"'mark' Hamza Positioning-2"  "'mark' Hamza Positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Madda Positioning"  {"'mark' Madda Positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dots"  {"'mark' Dots-2"  "'mark' Dots-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Hamza"  {"'mark' Hamza-2"  "'mark' Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Madda"  {"'mark' Madda-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Tashkil"  {"'mark' Tashkil-2"  "'mark' Tashkil-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'hebr' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Tashkil to Dot"  {"'mkmk' Tashkil to Dot-2"  "'mkmk' Tashkil to Dot-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -141,7 +141,7 @@ DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
 WinInfo: 1564 17 7
-AnchorClass2: "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda Positioning-1" "hamza.below"  "'mark' Hamza Positioning-2" "hamza.above"  "'mark' Hamza Positioning-1" "dot.below"  "'mark' Dot Positioning-2" "dot.above"  "'mark' Dot Positioning-1" 
+AnchorClass2: "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
 BeginChars: 65668 131
 
 StartChar: uni061B
