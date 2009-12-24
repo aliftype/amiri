@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 14697072]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261691330
+ModificationTime: 1261692477
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -60,6 +59,7 @@ Lookup: 260 0 0 "'mark' Hamza"  {"'mark' Hamza-2"  "'mark' Hamza-1"  } ['mark' (
 Lookup: 260 0 0 "'mark' Madda"  {"'mark' Madda-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Tashkil"  {"'mark' Tashkil-2"  "'mark' Tashkil-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'hebr' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Tashkil to Dot"  {"'mkmk' Tashkil to Dot-2"  "'mkmk' Tashkil to Dot-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil"  {"'mkmk' Tashkil to Tashkil-2"  "'mkmk' Tashkil to Tashkil-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -141,8 +141,8 @@ NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65552 17 7
-AnchorClass2: "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
+WinInfo: 1581 17 7
+AnchorClass2: "2tashkil.below"  "'mkmk' Tashkil to Tashkil-2" "2tashkil.above"  "'mkmk' Tashkil to Tashkil-1" "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
 BeginChars: 65668 131
 
 StartChar: uni061B
@@ -3666,6 +3666,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 15 693 mark 0
 AnchorPoint: "tashkildot.above" 15 693 mark 0
 AnchorPoint: "tashkil.above" 13 693 mark 0
 LayerCount: 2
@@ -3703,6 +3704,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 24 696 mark 0
 AnchorPoint: "tashkildot.above" 24 696 mark 0
 AnchorPoint: "tashkil.above" 21.5 690 mark 0
 LayerCount: 2
@@ -3782,6 +3784,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 13 693 mark 0
 AnchorPoint: "tashkildot.above" 13 693 mark 0
 AnchorPoint: "tashkil.above" 13 693 mark 0
 LayerCount: 2
@@ -3808,6 +3811,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 39.5 690 mark 0
 AnchorPoint: "tashkildot.above" 39.5 690 mark 0
 AnchorPoint: "tashkil.above" 39.5 690 mark 0
 LayerCount: 2
@@ -3869,6 +3873,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 0 939 basemark 0
 AnchorPoint: "tashkildot.above" 11.5 690 mark 0
 AnchorPoint: "tashkil.above" 11.5 690 mark 0
 LayerCount: 2
@@ -3901,6 +3906,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" -9 545 mark 0
 AnchorPoint: "tashkildot.above" -9 645 mark 0
 AnchorPoint: "tashkil.above" -9 645 mark 0
 LayerCount: 2
