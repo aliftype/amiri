@@ -2,17 +2,19 @@ import tempfile
 import subprocess
 import os
 
-viewer = "fv"
+viewer    = "fv"
+tempnames = {}
 
 def Preview(re, font):
-	otf = "%s/%s.otf" %(tempfile.gettempdir(), font.fontname)
+	otf = tempfile.NamedTemporaryFile(suffix=".otf", delete=False).name
 	cmd = "%s %s" %(viewer, otf)
-	if re and os.path.isfile(otf):
-		font.generate(otf)
+	if re and os.path.isfile(tempnames[font.fontname]):
+		font.generate(tempnames[font.fontname])
 	else:
+		tempnames[font.fontname] = otf
 		font.generate(otf)
 		subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
 
-fontforge.registerMenuItem(Preview, None, None, "Font", None, "Preview font")
-fontforge.registerMenuItem(Preview, None, True, "Font", None, "Re-preview font")
+fontforge.registerMenuItem(Preview, None, None, ("Font", "Glyph"), "P", "Preview font")
+fontforge.registerMenuItem(Preview, None, True, ("Font", "Glyph"), "R", "Re-preview font")
