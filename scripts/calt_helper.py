@@ -6,6 +6,7 @@ def addLookups(font, name):
 	font.addLookupSubtable(name,  name+"-1" )
 	font.addLookupSubtable(cname, cname+"-2")
 	font.addLookupSubtable(cname, cname+"-1")
+	fontforge.postNotice("Lookups created", "Created `%s' and `%s' lookups" %(name, cname))
 
 def addData(font, glyphs, name):
 	for g in glyphs:
@@ -14,12 +15,12 @@ def addData(font, glyphs, name):
 		b.addPosSub(name+"-1", g.glyphname)
 
 def buildCalt(data, font):
-	name      = fontforge.askString("Rule name", "Type lookup name")
 	selection = font.selection.byGlyphs
-	if name:
-		addLookups(font, name)
-		addData(font, selection, name)
-	else:
-		fontforge.postError("No name specified", "You didn't specify a name. Doing nothing")
+	for g in selection:
+		name = g.glyphname.split(".")[-2]
+		name = name.split("_")[-1]
+		break
+	addLookups(font, name)
+	addData(font, selection, name)
 
 fontforge.registerMenuItem(buildCalt, None, None, "Font", "C", "Build Contextual Alternatives")
