@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261692477
+ModificationTime: 1261743898
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3666,6 +3666,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 8 934 basemark 0
 AnchorPoint: "2tashkil.above" 15 693 mark 0
 AnchorPoint: "tashkildot.above" 15 693 mark 0
 AnchorPoint: "tashkil.above" 13 693 mark 0
@@ -3704,6 +3705,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" -12 942 basemark 0
 AnchorPoint: "2tashkil.above" 24 696 mark 0
 AnchorPoint: "tashkildot.above" 24 696 mark 0
 AnchorPoint: "tashkil.above" 21.5 690 mark 0
@@ -3746,6 +3748,8 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.below" -16 -378 mark 0
+AnchorPoint: "2tashkil.below" -10 -632 basemark 0
 AnchorPoint: "tashkildot.below" -20.5 -375 mark 0
 AnchorPoint: "tashkil.below" -20.5 -375 mark 0
 LayerCount: 2
@@ -3784,6 +3788,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 11 828 basemark 0
 AnchorPoint: "2tashkil.above" 13 693 mark 0
 AnchorPoint: "tashkildot.above" 13 693 mark 0
 AnchorPoint: "tashkil.above" 13 693 mark 0
@@ -3811,6 +3816,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" -30 952 basemark 0
 AnchorPoint: "2tashkil.above" 39.5 690 mark 0
 AnchorPoint: "tashkildot.above" 39.5 690 mark 0
 AnchorPoint: "tashkil.above" 39.5 690 mark 0
@@ -3847,6 +3853,8 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.below" -22 -372 mark 0
+AnchorPoint: "2tashkil.below" -18 -524 basemark 0
 AnchorPoint: "tashkildot.below" -20.5 -375 mark 0
 AnchorPoint: "tashkil.below" -20.5 -375 mark 0
 LayerCount: 2
@@ -3873,6 +3881,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" 15 690 mark 0
 AnchorPoint: "2tashkil.above" 0 939 basemark 0
 AnchorPoint: "tashkildot.above" 11.5 690 mark 0
 AnchorPoint: "tashkil.above" 11.5 690 mark 0
@@ -3906,6 +3915,7 @@ Width: 0
 VWidth: 1399
 GlyphClass: 4
 Flags: W
+AnchorPoint: "2tashkil.above" -10 926 basemark 0
 AnchorPoint: "2tashkil.above" -9 545 mark 0
 AnchorPoint: "tashkildot.above" -9 645 mark 0
 AnchorPoint: "tashkil.above" -9 645 mark 0
