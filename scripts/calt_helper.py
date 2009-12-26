@@ -17,8 +17,7 @@ def addData(font, glyphs, name):
 def buildCalt(data, font):
 	selection = font.selection.byGlyphs
 	for g in selection:
-		name = g.glyphname.split(".")[-2]
-		name = name.split("_")[-1]
+		name = g.glyphname.split("_")[-1]
 		break
 	addLookups(font, name)
 	addData(font, selection, name)
