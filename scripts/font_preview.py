@@ -16,5 +16,5 @@ def Preview(re, font):
 		subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
 
-fontforge.registerMenuItem(Preview, None, None, ("Font", "Glyph"), "P", "Preview font")
-fontforge.registerMenuItem(Preview, None, True, ("Font", "Glyph"), "R", "Re-preview font")
+fontforge.registerMenuItem(Preview, None, None, "Font", "P", "Preview", "Preview font")
+fontforge.registerMenuItem(Preview, None, True, "Font", "R", "Preview", "Re-preview font")
