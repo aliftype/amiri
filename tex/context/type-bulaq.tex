@@ -1,0 +1,12 @@
+\definefontfeature[arabic-slant][arabic][slant=-.15]
+
+\starttypescript [serif] [bulaq]
+ \definefontsynonym [Serif]           [file:BulaqNaskh.otf] [features=arabic]
+ \definefontsynonym [SerifBold]       [file:BulaqNaskh.otf] [features=arabic]
+ \definefontsynonym [SerifItalic]     [file:BulaqNaskh.otf] [features=arabic-slant]
+ \definefontsynonym [SerifBoldItalic] [file:BulaqNaskh.otf] [features=arabic-slant]
+\stoptypescript
+
+\starttypescript [bulaq]
+  \definetypeface [bulaq] [rm] [serif] [bulaq] [default]
+\stoptypescript
