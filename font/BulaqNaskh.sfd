@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 14697072]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1261926701
+ModificationTime: 1262035634
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -60,6 +59,8 @@ Lookup: 6 8 0 "'calt' BaaHeh.init"  {"'calt' BaaHeh.init-1"  "'calt' BaaHeh.init
 Lookup: 6 8 0 "'calt' BaaMeem.fina"  {"'calt' BaaMeem.fina-1"  "'calt' BaaMeem.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' HaaMeem.init"  {"'calt' HaaMeem.init-1"  "'calt' HaaMeem.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' SeenMeem"  {"'calt' SeenMeem-1"  "'calt' SeenMeem-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > 'hebr' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' BaaNoon.isol"  {"'calt' BaaNoon.isol-1"  "'calt' BaaNoon.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' BaaNoon.fina"  {"'calt' BaaNoon.fina-1"  "'calt' BaaNoon.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "Lellah"  {"Lellah-1"  } []
 Lookup: 1 0 0 "LamAlef.isol"  {"LamAlef.isol-1"  } []
 Lookup: 1 0 0 "LamAlef.fina"  {"LamAlef.fina-1"  } []
@@ -75,6 +76,8 @@ Lookup: 1 8 0 "BaaHeh.init"  {"BaaHeh.init-1"  } []
 Lookup: 1 8 0 "BaaMeem.fina"  {"BaaMeem.fina-1"  } []
 Lookup: 1 8 0 "HaaMeem.init"  {"HaaMeem.init-1"  } []
 Lookup: 1 0 0 "SeenMeem"  {"SeenMeem-1"  } []
+Lookup: 1 8 0 "BaaNoon.isol"  {"BaaNoon.isol-1"  } []
+Lookup: 1 8 0 "BaaNoon.fina"  {"BaaNoon.fina-1"  } []
 Lookup: 260 0 0 "'mark' Dots"  {"'mark' Dots-2"  "'mark' Dots-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza"  {"'mark' Hamza-2"  "'mark' Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Madda"  {"'mark' Madda-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -85,6 +88,34 @@ Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } [
 MarkAttachClasses: 2
 "tashkil" 63 uni064B uni064C uni064D uni064E uni064F uni0650 uni0651 uni0652
 DEI: 91125
+ChainSub2: coverage "'calt' BaaNoon.fina-2"  0 0 0 1
+ 1 1 0
+  Coverage: 9 noon.fina
+  BCoverage: 21 baa.medi_BaaNoon.fina
+ 1
+  SeqLookup: 0 "BaaNoon.fina" 
+EndFPST
+ChainSub2: coverage "'calt' BaaNoon.fina-1"  0 0 0 1
+ 1 0 1
+  Coverage: 8 baa.medi
+  FCoverage: 9 noon.fina
+ 1
+  SeqLookup: 0 "BaaNoon.fina" 
+EndFPST
+ChainSub2: coverage "'calt' BaaNoon.isol-2"  0 0 0 1
+ 1 1 0
+  Coverage: 9 noon.fina
+  BCoverage: 21 baa.init_BaaNoon.isol
+ 1
+  SeqLookup: 0 "BaaNoon.isol" 
+EndFPST
+ChainSub2: coverage "'calt' BaaNoon.isol-1"  0 0 0 1
+ 1 0 1
+  Coverage: 8 baa.init
+  FCoverage: 9 noon.fina
+ 1
+  SeqLookup: 0 "BaaNoon.isol" 
+EndFPST
 ChainSub2: coverage "'calt' SeenMeem-2"  0 0 0 1
  1 1 0
   Coverage: 9 meem.fina
@@ -306,9 +337,9 @@ NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65569 17 7
+WinInfo: 65586 17 7
 AnchorClass2: "2tashkil.below"  "'mkmk' Tashkil to Tashkil-2" "2tashkil.above"  "'mkmk' Tashkil to Tashkil-1" "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
-BeginChars: 65686 153
+BeginChars: 65696 157
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -1708,6 +1739,7 @@ SplineSet
  19.5433 179.153 19.96 186.662 22.3223 192.189 c 0
  32.0293 214.904 48.4688 239.991 58.252 255.119 c 0
 EndSplineSet
+Substitution2: "BaaNoon.isol-1" baa.init_BaaNoon.isol
 Substitution2: "BaaHeh.isol-1" baa.init_BaaHeh.isol
 Substitution2: "BaaHeh.init-1" baa.init_BaaHeh.init
 Substitution2: "BaaHaa.isol-1" baa.init_BaaHaa.isol
@@ -2077,6 +2109,7 @@ SplineSet
  121.171 128.638 122.221 116.37 131.295 107.877 c 0
  142.416 97.4678 165.014 87.7568 190.149 81.9971 c 1
 EndSplineSet
+Substitution2: "BaaNoon.fina-1" baa.medi_BaaNoon.fina
 Substitution2: "BaaMeem.fina-1" baa.medi_BaaMeem.fina
 EndChar
 
@@ -2998,6 +3031,8 @@ SplineSet
  442.765 128.651 l 2
  447.56 139.115 451.626 134.967 455.143 129.279 c 0
 EndSplineSet
+Substitution2: "BaaNoon.isol-1" noon.fina_BaaNoon.isol
+Substitution2: "BaaNoon.fina-1" noon.fina_BaaNoon.fina
 EndChar
 
 StartChar: heh.fina
@@ -5336,6 +5371,233 @@ SplineSet
  255.166 152.132 246.72 162.562 237.566 172.938 c 0
  234.519 176.393 234.765 178.141 236.3 182.974 c 0
  243.551 205.8 254.888 243.563 264.354 274.224 c 0
+EndSplineSet
+EndChar
+
+StartChar: noon.fina_BaaNoon.fina
+Encoding: 65686 -1 153
+Width: 591
+VWidth: 0
+Flags: MW
+AnchorPoint: "dot.below" 312 -330 basechar 0
+AnchorPoint: "dot.above" 312 243 basechar 0
+AnchorPoint: "tashkil.above" 312 243 basechar 0
+AnchorPoint: "tashkil.below" 312 -330 basechar 0
+AnchorPoint: "curs" 551.576 188 entry 0
+LayerCount: 2
+Back
+SplineSet
+802.957 2 m 1
+ 774.336 -2.36719 748.342 12.832 734.371 37.6875 c 0
+ 719.487 64.167 704.188 155.827 690.423 222.836 c 0
+ 689.609 226.795 688.135 226.956 686.45 223.481 c 0
+ 671.557 192.748 645.846 151.585 592.283 143.494 c 0
+ 588.187 142.876 588.689 141.968 588.814 138.264 c 0
+ 590.111 99.7432 591.643 41.9424 570.404 -17.8955 c 0
+ 536.65 -113 446.302 -203.321 275.102 -209.198 c 0
+ 35.1299 -217.397 38.4873 -41.7461 59.2422 41.9033 c 0
+ 70.9053 88.9082 92.6719 136.703 120.365 180.119 c 0
+ 135.005 203.07 153.376 197.448 140.74 172.961 c 0
+ 125.346 143.127 76.6719 50.3887 105.478 -22.209 c 0
+ 123.671 -68.0625 185.406 -112.802 287.216 -105.674 c 0
+ 435.82 -95.2695 521.585 -40.5273 549.37 12.0029 c 0
+ 550.25 13.665 550.996 16.1846 551.376 18.0205 c 0
+ 556.663 43.6074 537.589 136.863 507.512 188.359 c 0
+ 504.065 194.26 506.865 197.588 508.27 201.917 c 2
+ 530.872 271.609 l 2
+ 532.659 277.119 532.106 277.75 537.12 275.175 c 0
+ 552.972 267.033 564.822 233.405 575.062 230.418 c 0
+ 595.685 224.403 650.021 233.658 664.709 251.213 c 0
+ 681.314 271.059 688.955 292.337 699.987 313.689 c 0
+ 703.881 321.227 711.759 319.091 715.228 312.852 c 0
+ 731.6 283.4 741.199 173.367 760.913 119.4 c 0
+ 769.227 96.6406 781.219 85.4648 801.533 90.3613 c 1
+ 802.957 2 l 1
+EndSplineSet
+Fore
+SplineSet
+591.859 143.494 m 0
+ 587.762 142.876 588.266 141.968 588.391 138.264 c 0
+ 589.688 99.7432 591.219 41.9424 569.98 -17.8955 c 0
+ 536.227 -113 445.877 -203.321 274.678 -209.198 c 0
+ 34.7051 -217.397 38.0625 -41.7461 58.8174 41.9033 c 0
+ 70.4805 88.9082 92.2471 136.703 119.94 180.119 c 0
+ 134.58 203.07 152.951 197.448 140.316 172.961 c 0
+ 124.921 143.127 76.2471 50.3887 105.053 -22.209 c 0
+ 123.246 -68.0625 184.982 -112.802 286.791 -105.674 c 0
+ 435.396 -95.2695 521.16 -40.5273 548.945 12.0029 c 0
+ 549.826 13.665 550.572 16.1846 550.951 18.0205 c 0
+ 556.238 43.6074 537.164 136.863 507.088 188.359 c 0
+ 503.641 194.26 506.441 197.588 507.846 201.917 c 2
+ 530.447 271.609 l 2
+ 532.234 277.119 531.682 277.75 536.695 275.175 c 0
+ 552.547 267.033 564.398 233.405 574.637 230.418 c 0
+ 591.859 143.494 l 0
+EndSplineSet
+EndChar
+
+StartChar: baa.medi_BaaNoon.fina
+Encoding: 65687 -1 154
+Width: 302
+VWidth: 0
+Flags: MW
+AnchorPoint: "dot.below" 156 -135 basechar 0
+AnchorPoint: "dot.above" 141 435 basechar 0
+AnchorPoint: "hamza.below" 156 -135 basechar 0
+AnchorPoint: "hamza.above" 141 436 basechar 0
+AnchorPoint: "tashkil.above" 141 435 basechar 0
+AnchorPoint: "tashkil.below" 156 -135 basechar 0
+AnchorPoint: "curs" 51.5762 188 exit 0
+LayerCount: 2
+Back
+SplineSet
+302.957 2 m 1
+ 274.336 -2.36719 248.342 12.832 234.371 37.6875 c 0
+ 219.487 64.167 204.188 155.827 190.423 222.836 c 0
+ 189.609 226.795 188.135 226.956 186.45 223.481 c 0
+ 171.557 192.748 145.846 151.585 92.2832 143.494 c 0
+ 88.1865 142.876 88.6895 141.968 88.8145 138.264 c 0
+ 90.1113 99.7432 91.6426 41.9424 70.4043 -17.8955 c 0
+ 36.6504 -113 -53.6982 -203.321 -224.898 -209.198 c 0
+ -464.87 -217.397 -461.513 -41.7461 -440.758 41.9033 c 0
+ -429.095 88.9082 -407.328 136.703 -379.635 180.119 c 0
+ -364.995 203.07 -346.624 197.448 -359.26 172.961 c 0
+ -374.654 143.127 -423.328 50.3887 -394.522 -22.209 c 0
+ -376.329 -68.0625 -314.594 -112.802 -212.784 -105.674 c 0
+ -64.1797 -95.2695 21.585 -40.5273 49.3701 12.0029 c 0
+ 50.25 13.665 50.9961 16.1846 51.376 18.0205 c 0
+ 56.6631 43.6074 37.5889 136.863 7.51172 188.359 c 0
+ 4.06543 194.26 6.86523 197.588 8.26953 201.917 c 2
+ 30.8721 271.609 l 2
+ 32.6592 277.119 32.1064 277.75 37.1201 275.175 c 0
+ 52.9717 267.033 64.8223 233.405 75.0615 230.418 c 0
+ 95.6846 224.403 150.021 233.658 164.709 251.213 c 0
+ 181.314 271.059 188.955 292.337 199.987 313.689 c 0
+ 203.881 321.227 211.759 319.091 215.228 312.852 c 0
+ 231.6 283.4 241.199 173.367 260.913 119.4 c 0
+ 269.227 96.6406 281.219 85.4648 301.533 90.3613 c 1
+ 302.957 2 l 1
+EndSplineSet
+Fore
+SplineSet
+74.6367 230.418 m 0
+ 95.2598 224.403 149.598 233.658 164.285 251.213 c 0
+ 180.891 271.059 188.531 292.337 199.562 313.689 c 0
+ 203.457 321.227 211.334 319.091 214.803 312.852 c 0
+ 231.176 283.4 240.775 173.367 260.488 119.4 c 0
+ 268.803 96.6406 280.795 85.4648 301.109 90.3613 c 1
+ 302.533 2 l 1
+ 273.912 -2.36719 247.918 12.832 233.947 37.6875 c 0
+ 219.062 64.167 203.764 155.827 189.998 222.836 c 0
+ 189.186 226.795 187.711 226.956 186.025 223.481 c 0
+ 171.133 192.748 145.422 151.585 91.8594 143.494 c 0
+ 74.6367 230.418 l 0
+EndSplineSet
+EndChar
+
+StartChar: noon.fina_BaaNoon.isol
+Encoding: 65688 -1 155
+Width: 615
+VWidth: 0
+Flags: MW
+AnchorPoint: "tashkil.below" 312 -444 basechar 0
+AnchorPoint: "tashkil.above" 312 129 basechar 0
+AnchorPoint: "dot.above" 312 129 basechar 0
+AnchorPoint: "dot.below" 312 -444 basechar 0
+AnchorPoint: "curs" 556.462 64 entry 0
+LayerCount: 2
+Back
+SplineSet
+719.899 193.105 m 4
+ 729.612 90.9951 707.289 18.3252 614.714 -2.07227 c 4
+ 610.164 -3.0752 610.348 -5.8457 609.78 -9.81836 c 4
+ 599.649 -80.667 578.432 -175.312 552.54 -217.214 c 4
+ 505.604 -293.175 401.682 -367.114 261.033 -366.339 c 4
+ 116.811 -365.543 50.2236 -277.967 49.542 -174.483 c 4
+ 49.0459 -98.6191 97.0684 15.3975 122.873 60.3135 c 4
+ 129.653 72.1172 144.561 60.3877 140.054 50.291 c 4
+ 122.989 12.0693 91.4648 -45.7471 91.4707 -97.1787 c 4
+ 91.4785 -168.82 140.203 -243.429 274.635 -246.074 c 4
+ 402.797 -248.596 523.822 -175.661 554.104 -127.643 c 4
+ 557.092 -122.903 558.45 -118.294 559.187 -112.924 c 4
+ 568.698 -43.5713 551.948 21.1582 522.322 83.2207 c 4
+ 519.463 89.2109 517.569 94.2871 519.372 100.654 c 4
+ 525.895 123.697 542.88 159.146 549.438 173.166 c 4
+ 552.12 178.899 556.016 181.381 561.397 176.702 c 4
+ 576.272 163.773 586.266 148.645 596.338 129.107 c 4
+ 599.808 122.377 604.818 118.998 611.39 116.259 c 4
+ 629.276 108.803 665.381 113.337 676.311 123.155 c 4
+ 687.877 133.545 693.604 166.273 695.56 191.674 c 4
+ 697.175 212.651 718.475 208.076 719.899 193.105 c 4
+EndSplineSet
+Fore
+SplineSet
+615.176 -2.07227 m 0
+ 610.626 -3.0752 610.81 -5.8457 610.242 -9.81836 c 0
+ 600.111 -80.667 578.894 -175.312 553.002 -217.214 c 0
+ 506.065 -293.175 402.144 -367.114 261.495 -366.339 c 0
+ 117.272 -365.543 50.6855 -277.967 50.0039 -174.483 c 0
+ 49.5078 -98.6191 97.5303 15.3975 123.335 60.3135 c 0
+ 130.115 72.1172 145.022 60.3877 140.516 50.291 c 0
+ 123.451 12.0693 91.9268 -45.7471 91.9326 -97.1787 c 0
+ 91.9404 -168.82 140.665 -243.429 275.097 -246.074 c 0
+ 403.259 -248.596 524.284 -175.661 554.565 -127.643 c 0
+ 557.554 -122.903 558.912 -118.294 559.648 -112.924 c 0
+ 569.16 -43.5713 552.41 21.1582 522.784 83.2207 c 0
+ 519.925 89.2109 518.031 94.2871 519.834 100.654 c 0
+ 526.356 123.697 543.342 159.146 549.899 173.166 c 0
+ 552.582 178.899 556.478 181.381 561.859 176.702 c 0
+ 576.734 163.773 586.728 148.645 596.8 129.107 c 0
+ 600.27 122.377 605.28 118.998 611.852 116.259 c 0
+ 615.176 -2.07227 l 0
+EndSplineSet
+EndChar
+
+StartChar: baa.init_BaaNoon.isol
+Encoding: 65689 -1 156
+Width: 162
+VWidth: 0
+Flags: MW
+AnchorPoint: "dot.above" 20 377 basechar 0
+AnchorPoint: "dot.below" 88 -156 basechar 0
+AnchorPoint: "hamza.above" 20 377 basechar 0
+AnchorPoint: "hamza.below" 89 -157 basechar 0
+AnchorPoint: "tashkil.below" 88 -156 basechar 0
+AnchorPoint: "tashkil.above" 20 377 basechar 0
+AnchorPoint: "curs" -53.5381 64 exit 0
+LayerCount: 2
+Back
+SplineSet
+109.899 193.105 m 0
+ 119.612 90.9951 97.2891 18.3252 4.71387 -2.07227 c 0
+ 0.164062 -3.0752 0.347656 -5.8457 -0.219727 -9.81836 c 0
+ -10.3506 -80.667 -31.5684 -175.312 -57.46 -217.214 c 0
+ -104.396 -293.175 -208.318 -367.114 -348.967 -366.339 c 0
+ -493.189 -365.543 -559.776 -277.967 -560.458 -174.483 c 0
+ -560.954 -98.6191 -512.932 15.3975 -487.127 60.3135 c 0
+ -480.347 72.1172 -465.439 60.3877 -469.946 50.291 c 0
+ -487.011 12.0693 -518.535 -45.7471 -518.529 -97.1787 c 0
+ -518.521 -168.82 -469.797 -243.429 -335.365 -246.074 c 0
+ -207.203 -248.596 -86.1777 -175.661 -55.8965 -127.643 c 0
+ -52.9082 -122.903 -51.5498 -118.294 -50.8135 -112.924 c 0
+ -41.3018 -43.5713 -58.0518 21.1582 -87.6777 83.2207 c 0
+ -90.5371 89.2109 -92.4307 94.2871 -90.6279 100.654 c 0
+ -84.1055 123.697 -67.1201 159.146 -60.5625 173.166 c 0
+ -57.8799 178.899 -53.9844 181.381 -48.6025 176.702 c 0
+ -33.7275 163.773 -23.7344 148.645 -13.6621 129.107 c 0
+ -10.1924 122.377 -5.18164 118.998 1.38965 116.259 c 0
+ 19.2764 108.803 55.3809 113.337 66.3105 123.155 c 0
+ 77.877 133.545 83.6045 166.273 85.5596 191.674 c 0
+ 87.1748 212.651 108.475 208.076 109.899 193.105 c 0
+EndSplineSet
+Fore
+SplineSet
+1.85156 116.259 m 0
+ 19.7383 108.803 55.8428 113.337 66.7725 123.155 c 0
+ 78.3389 133.545 84.0664 166.273 86.0215 191.674 c 0
+ 87.6367 212.651 108.937 208.076 110.361 193.105 c 0
+ 120.074 90.9951 97.751 18.3252 5.17578 -2.07227 c 0
+ 1.85156 116.259 l 0
 EndSplineSet
 EndChar
 EndChars
