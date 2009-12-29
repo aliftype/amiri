@@ -9,3 +9,13 @@
     ItalicFeatures = {FakeSlant=-.15},
         ItalicFont = {BulaqNaskh.otf}
             ]{BulaqNaskh.otf}
+
+\ExplSyntaxOn
+
+\newcommand{\rtl} [1] {
+  \xetex_or_luatex:nn {
+    \TeXXeTstate=1\beginR #1\endR
+   }{
+    \luatextextdir TRT #1
+   }
+}
