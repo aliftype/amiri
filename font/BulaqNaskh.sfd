@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1262350023
+ModificationTime: 1262350993
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -106,7 +106,7 @@ ChainSub2: coverage "'calt' BaaMeem.init-1"  0 0 0 1
 EndFPST
 ChainSub2: coverage "'calt' BaaNoon.fina-2"  0 0 0 1
  1 1 0
-  Coverage: 9 noon.fina
+  Coverage: 18 noon.fina raa.fina
   BCoverage: 21 baa.medi_BaaNoon.fina
  1
   SeqLookup: 0 "BaaNoon.fina" 
@@ -114,13 +114,13 @@ EndFPST
 ChainSub2: coverage "'calt' BaaNoon.fina-1"  0 0 0 1
  1 0 1
   Coverage: 8 baa.medi
-  FCoverage: 9 noon.fina
+  FCoverage: 18 noon.fina raa.fina
  1
   SeqLookup: 0 "BaaNoon.fina" 
 EndFPST
 ChainSub2: coverage "'calt' BaaNoon.isol-2"  0 0 0 1
  1 1 0
-  Coverage: 9 noon.fina
+  Coverage: 18 noon.fina raa.fina
   BCoverage: 21 baa.init_BaaNoon.isol
  1
   SeqLookup: 0 "BaaNoon.isol" 
@@ -128,7 +128,7 @@ EndFPST
 ChainSub2: coverage "'calt' BaaNoon.isol-1"  0 0 0 1
  1 0 1
   Coverage: 8 baa.init
-  FCoverage: 9 noon.fina
+  FCoverage: 18 noon.fina raa.fina
  1
   SeqLookup: 0 "BaaNoon.isol" 
 EndFPST
@@ -355,7 +355,7 @@ AntiAlias: 1
 FitToEm: 1
 WinInfo: 65586 17 7
 AnchorClass2: "2tashkil.below"  "'mkmk' Tashkil to Tashkil-2" "2tashkil.above"  "'mkmk' Tashkil to Tashkil-1" "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
-BeginChars: 65696 159
+BeginChars: 65696 160
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -2658,6 +2658,8 @@ SplineSet
  200.852 43.3018 199.16 44.5439 200.429 48.9209 c 0
  208.671 77.3691 217.775 102.416 228.541 127.728 c 0
 EndSplineSet
+Substitution2: "BaaNoon.isol-1" raa.fina_BaaRaa.fina
+Substitution2: "BaaNoon.fina-1" raa.fina_BaaRaa.fina
 EndChar
 
 StartChar: seen.fina
@@ -5715,6 +5717,56 @@ SplineSet
  203.815 382.319 172.907 356.92 155.567 319.302 c 0
  153.688 315.226 153.227 310.842 154.08 306.741 c 0
  122.47 327.863 l 0
+EndSplineSet
+EndChar
+
+StartChar: raa.fina_BaaRaa.fina
+Encoding: 65692 -1 159
+Width: 407
+VWidth: 0
+Flags: MW
+AnchorPoint: "curs" 374 162 entry 0
+LayerCount: 2
+Back
+SplineSet
+633.455 91.1143 m 0
+ 628.782 0 l 1
+ 549.401 5.33008 538.691 65.3545 526.29 201.086 c 0
+ 525.927 205.057 523.662 205.31 521.939 201.483 c 0
+ 484.752 118.905 446.548 120.891 408.955 113.969 c 0
+ 405.659 113.365 405.93 112.765 405.62 109.382 c 0
+ 403.209 83.1074 402.207 52.8984 392.848 11.0703 c 0
+ 374.025 -73.0469 267.945 -191.429 207.478 -204.033 c 0
+ 156.04 -214.755 70.1562 -181.021 7.51953 -156.159 c 0
+ -1.18359 -152.705 -2.10547 -139.91 16.9668 -140.679 c 0
+ 74.1445 -142.981 128.09 -152.599 185.303 -137.061 c 0
+ 263.973 -115.694 342.528 -29.8477 374.078 23.9775 c 0
+ 374.766 25.1514 375.711 27.083 375.688 28.8135 c 0
+ 375.147 70.2217 346.138 110.279 329.793 131.875 c 0
+ 328.223 133.951 328.189 135.081 328.885 137.788 c 0
+ 337.871 172.787 347.737 206.801 357.847 242.064 c 0
+ 359.253 246.968 364.529 246.29 368.612 243.338 c 0
+ 382.654 233.184 387.294 203.404 407.617 202.67 c 0
+ 484.898 199.879 508.667 231.574 530.854 305.854 c 0
+ 535.352 320.911 552.916 317.302 554.801 304.297 c 0
+ 572.985 179.642 558.359 117.396 633.455 91.1143 c 0
+EndSplineSet
+Fore
+SplineSet
+405.62 109.382 m 0
+ 403.209 83.1074 402.207 52.8984 392.848 11.0703 c 0
+ 374.025 -73.0469 267.945 -191.429 207.478 -204.033 c 0
+ 156.04 -214.755 70.1562 -181.021 7.51953 -156.159 c 0
+ -1.18359 -152.705 -2.10547 -139.91 16.9668 -140.679 c 0
+ 74.1445 -142.981 128.09 -152.599 185.303 -137.061 c 0
+ 263.973 -115.694 342.528 -29.8477 374.078 23.9775 c 0
+ 374.766 25.1514 375.711 27.083 375.688 28.8135 c 0
+ 375.147 70.2217 346.138 110.279 329.793 131.875 c 0
+ 328.223 133.951 328.189 135.081 328.885 137.788 c 0
+ 337.871 172.787 347.737 206.801 357.847 242.064 c 0
+ 359.253 246.968 364.529 246.29 368.612 243.338 c 0
+ 382.654 233.184 387.294 203.404 407.617 202.67 c 0
+ 405.62 109.382 l 0
 EndSplineSet
 EndChar
 EndChars
