@@ -22,4 +22,4 @@ def buildCalt(data, font):
 	addLookups(font, name)
 	addData(font, selection, name)
 
-fontforge.registerMenuItem(buildCalt, None, None, "Font", "C", "Build Contextual Alternatives")
+fontforge.registerMenuItem(buildCalt, None, None, "Font", "C", "Bulaq", "Build Contextual Alternatives")
