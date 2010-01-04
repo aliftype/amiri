@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1262548908
+ModificationTime: 1262581579
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -49,7 +49,7 @@ Lookup: 6 264 0 "'calt' Lellah"  {"'calt' Lellah-1"  "'calt' Lellah-2"  "'calt' 
 Lookup: 6 8 0 "'calt' LamAlef"  {"'calt' LamAlef-1"  "'calt' LamAlef-2"  "'calt' LamAlef-3"  "'calt' LamAlef-4"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaSeen"  {"'calt' BaaSeen-1"  "'calt' BaaSeen-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' AynHaa"  {"'calt' AynHaa-1"  "'calt' AynHaa-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 6 8 0 "'calt' AynMeem"  {"'calt' AynMeem-1"  "'calt' AynMeem-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' preMeem"  {"'calt' preMeem-1"  "'calt' preMeem-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' AynYaa.isol"  {"'calt' AynYaa.isol-1"  "'calt' AynYaa.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' AynYaa.fina"  {"'calt' AynYaa.fina-1"  "'calt' AynYaa.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaHaa.isol"  {"'calt' BaaHaa.isol-1"  "'calt' BaaHaa.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -57,13 +57,11 @@ Lookup: 6 8 0 "'calt' BaaHaa.init"  {"'calt' BaaHaa.init-1"  "'calt' BaaHaa.init
 Lookup: 6 8 0 "'calt' BaaHeh.isol"  {"'calt' BaaHeh.isol-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaHeh.init"  {"'calt' BaaHeh.init-1"  "'calt' BaaHeh.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaMeem.fina"  {"'calt' BaaMeem.fina-1"  "'calt' BaaMeem.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 6 8 0 "'calt' HaaMeem.init"  {"'calt' HaaMeem.init-1"  "'calt' HaaMeem.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' SeenMeem"  {"'calt' SeenMeem-1"  "'calt' SeenMeem-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaNoon.isol"  {"'calt' BaaNoon.isol-1"  "'calt' BaaNoon.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaNoon.fina"  {"'calt' BaaNoon.fina-1"  "'calt' BaaNoon.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaMeem.init"  {"'calt' BaaMeem.init-1"  "'calt' BaaMeem.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' BaaYaa.isol"  {"'calt' BaaYaa.isol-1"  "'calt' BaaYaa.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 6 8 0 "'calt' FaaMeem.init"  {"'calt' FaaMeem.init-1"  "'calt' FaaMeem.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' FaaHaa.init"  {"'calt' FaaHaa.init-1"  "'calt' FaaHaa.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' FaaYaa.isol"  {"'calt' FaaYaa.isol-1"  "'calt' FaaYaa.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' FaaYaa.fina"  {"'calt' FaaYaa.fina-1"  "'calt' FaaYaa.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -74,7 +72,7 @@ Lookup: 1 0 0 "LamAlef.isol"  {"LamAlef.isol-1"  } []
 Lookup: 1 0 0 "LamAlef.fina"  {"LamAlef.fina-1"  } []
 Lookup: 1 0 0 "BaaSeen"  {"BaaSeen-1"  } []
 Lookup: 1 0 0 "AynHaa"  {"AynHaa-1"  } []
-Lookup: 1 0 0 "AynMeem"  {"AynMeem-1"  } []
+Lookup: 1 0 0 "preMeem"  {"preMeem-1"  } []
 Lookup: 1 0 0 "AynYaa.isol"  {"AynYaa.isol-1"  } []
 Lookup: 1 8 0 "AynYaa.fina"  {"AynYaa.fina-1"  } []
 Lookup: 1 8 0 "BaaHaa.isol"  {"BaaHaa.isol-1"  } []
@@ -82,13 +80,11 @@ Lookup: 1 8 0 "BaaHaa.init"  {"BaaHaa.init-1"  } []
 Lookup: 1 8 0 "BaaHeh.isol"  {"BaaHeh.isol-1"  } []
 Lookup: 1 8 0 "BaaHeh.init"  {"BaaHeh.init-1"  } []
 Lookup: 1 8 0 "BaaMeem.fina"  {"BaaMeem.fina-1"  } []
-Lookup: 1 8 0 "HaaMeem.init"  {"HaaMeem.init-1"  } []
 Lookup: 1 0 0 "SeenMeem"  {"SeenMeem-1"  } []
 Lookup: 1 8 0 "BaaNoon.isol"  {"BaaNoon.isol-1"  } []
 Lookup: 1 8 0 "BaaNoon.fina"  {"BaaNoon.fina-1"  } []
 Lookup: 1 8 0 "BaaMeem.init"  {"BaaMeem.init-1"  } []
 Lookup: 1 8 0 "BaaYaa.isol"  {"BaaYaa.isol-1"  } []
-Lookup: 1 8 0 "FaaMeem.init"  {"FaaMeem.init-1"  } []
 Lookup: 1 8 0 "FaaHaa.init"  {"FaaHaa.init-1"  } []
 Lookup: 1 8 0 "FaaYaa.isol"  {"FaaYaa.isol-1"  } []
 Lookup: 1 8 0 "FaaYaa.fina"  {"FaaYaa.fina-1"  } []
@@ -166,20 +162,6 @@ ChainSub2: coverage "'calt' FaaHaa.init-1"  0 0 0 1
   FCoverage: 8 haa.medi
  1
   SeqLookup: 0 "FaaHaa.init" 
-EndFPST
-ChainSub2: coverage "'calt' FaaMeem.init-2"  0 0 0 1
- 1 1 0
-  Coverage: 9 meem.medi
-  BCoverage: 21 faa.init_FaaMeem.init
- 1
-  SeqLookup: 0 "FaaMeem.init" 
-EndFPST
-ChainSub2: coverage "'calt' FaaMeem.init-1"  0 0 0 1
- 1 0 1
-  Coverage: 8 faa.init
-  FCoverage: 9 meem.medi
- 1
-  SeqLookup: 0 "FaaMeem.init" 
 EndFPST
 ChainSub2: coverage "'calt' BaaYaa.isol-2"  0 0 0 1
  1 1 0
@@ -264,20 +246,6 @@ ChainSub2: coverage "'calt' BaaMeem.fina-1"  0 0 0 1
   FCoverage: 9 meem.fina
  1
   SeqLookup: 0 "BaaMeem.fina" 
-EndFPST
-ChainSub2: coverage "'calt' HaaMeem.init-2"  0 0 0 1
- 1 1 0
-  Coverage: 9 meem.medi
-  BCoverage: 21 haa.init_HaaMeem.init
- 1
-  SeqLookup: 0 "HaaMeem.init" 
-EndFPST
-ChainSub2: coverage "'calt' HaaMeem.init-1"  0 0 0 1
- 1 0 1
-  Coverage: 8 haa.init
-  FCoverage: 9 meem.medi
- 1
-  SeqLookup: 0 "HaaMeem.init" 
 EndFPST
 ChainSub2: coverage "'calt' Lellah-3"  0 0 0 1
  1 2 0
@@ -380,19 +348,19 @@ ChainSub2: coverage "'calt' AynYaa.isol-1"  0 0 0 1
  1
   SeqLookup: 0 "AynYaa.isol" 
 EndFPST
-ChainSub2: coverage "'calt' AynMeem-2"  0 0 0 1
+ChainSub2: coverage "'calt' preMeem-2"  0 0 0 1
  1 1 0
   Coverage: 9 meem.medi
-  BCoverage: 16 ayn_AynMeem.init
+  BCoverage: 50 ayn.init_preMeem faa.init_preMeem haa.init_preMeem
  1
-  SeqLookup: 0 "AynMeem" 
+  SeqLookup: 0 "preMeem" 
 EndFPST
-ChainSub2: coverage "'calt' AynMeem-1"  0 0 0 1
+ChainSub2: coverage "'calt' preMeem-1"  0 0 0 1
  1 0 1
-  Coverage: 8 ayn.init
+  Coverage: 26 ayn.init faa.init haa.init
   FCoverage: 9 meem.medi
  1
-  SeqLookup: 0 "AynMeem" 
+  SeqLookup: 0 "preMeem" 
 EndFPST
 ChainSub2: coverage "'calt' AynHaa-2"  0 0 0 1
  1 1 0
@@ -460,7 +428,7 @@ AntiAlias: 1
 FitToEm: 1
 WinInfo: 65603 17 7
 AnchorClass2: "2tashkil.below"  "'mkmk' Tashkil to Tashkil-2" "2tashkil.above"  "'mkmk' Tashkil to Tashkil-1" "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
-BeginChars: 65722 174
+BeginChars: 65722 172
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -1894,9 +1862,9 @@ SplineSet
  151.396 190.343 109.006 204.538 16.4316 187.731 c 0
  6.75098 185.974 -0.394531 191.538 2.22754 200.735 c 0
 EndSplineSet
+Substitution2: "preMeem-1" haa.init_preMeem
 Substitution2: "HaaHaa.init-1" haa.init_HaaHaa.init
 Substitution2: "HaaAlt-1" haa.init.alt
-Substitution2: "HaaMeem.init-1" haa.init_HaaMeem.init
 EndChar
 
 StartChar: seen.init
@@ -2042,7 +2010,7 @@ SplineSet
  363.986 238.881 367.919 231.397 367.218 223.061 c 0
 EndSplineSet
 Substitution2: "AynYaa.isol-1" ayn.init_AynYaa.isol
-Substitution2: "AynMeem-1" ayn_AynMeem.init
+Substitution2: "preMeem-1" ayn.init_preMeem
 Substitution2: "AynHaa-1" ayn_AynHaa.init
 EndChar
 
@@ -2076,8 +2044,8 @@ SplineSet
  122.433 270.327 122.572 272.099 122.125 273.406 c 0
  116.722 289.207 99.4844 312.438 84.6875 312.094 c 0
 EndSplineSet
+Substitution2: "preMeem-1" faa.init_preMeem
 Substitution2: "FaaYaa.isol-1" faa.init_FaaYaa.isol
-Substitution2: "FaaMeem.init-1" faa.init_FaaMeem.init
 Substitution2: "FaaHaa.init-1" faa.init_FaaHaa.init
 EndChar
 
@@ -2569,10 +2537,8 @@ SplineSet
  239.789 110.701 223.32 151.008 212.096 167.3 c 0
  210.465 169.665 209.729 171.208 207.554 171.106 c 0
 EndSplineSet
-Substitution2: "FaaMeem.init-1" meem.medi_FaaMeem.init
 Substitution2: "BaaMeem.init-1" meem.medi_BaaMeem.init
-Substitution2: "HaaMeem.init-1" meem.medi_HaaMeem.init
-Substitution2: "AynMeem-1" meem_AynMeem.init
+Substitution2: "preMeem-1" meem.medi_preMeem
 EndChar
 
 StartChar: heh.medi
@@ -2993,7 +2959,7 @@ StartChar: qaf.fina
 Encoding: 65634 -1 99
 Width: 598
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 273 -390 basechar 0
 AnchorPoint: "tashkil.above" 456 351 basechar 0
 AnchorPoint: "dot.above" 456 351 basechar 0
@@ -3031,7 +2997,7 @@ StartChar: kaf.fina
 Encoding: 65635 -1 100
 Width: 731
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 338 656 basechar 0
 AnchorPoint: "tashkil.below" 322 -142 basechar 0
 LayerCount: 2
@@ -3076,7 +3042,7 @@ StartChar: lam.fina
 Encoding: 65636 -1 101
 Width: 510
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 152 404 basechar 0
 AnchorPoint: "tashkil.below" 224 -430 basechar 0
 LayerCount: 2
@@ -3108,7 +3074,7 @@ StartChar: meem.fina
 Encoding: 65637 -1 102
 Width: 449
 VWidth: -30
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 208 318 basechar 0
 AnchorPoint: "tashkil.below" 268 -240 basechar 0
 LayerCount: 2
@@ -3140,7 +3106,7 @@ StartChar: noon.fina
 Encoding: 65638 -1 103
 Width: 537
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 258 -390 basechar 0
 AnchorPoint: "tashkil.above" 258 183 basechar 0
 AnchorPoint: "dot.above" 258 183 basechar 0
@@ -3175,7 +3141,7 @@ StartChar: heh.fina
 Encoding: 65639 -1 104
 Width: 332
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "curs" 332.402 53.7324 entry 0
 AnchorPoint: "tashkil.below" 117 -93 basechar 0
 AnchorPoint: "tashkil.above" 117 480 basechar 0
@@ -3214,7 +3180,7 @@ StartChar: waw.fina
 Encoding: 65640 -1 105
 Width: 303
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 219 -237 basechar 0
 AnchorPoint: "tashkil.above" 219 336 basechar 0
 AnchorPoint: "hamza.above" 219 336 basechar 0
@@ -3253,7 +3219,7 @@ StartChar: yaa.fina
 Encoding: 65641 -1 106
 Width: 582
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 303 -450 basechar 0
 AnchorPoint: "tashkil.above" 309 162 basechar 0
 AnchorPoint: "hamza.above" 130 193 basechar 0
@@ -3540,7 +3506,7 @@ StartChar: lam_LamAlef.fina
 Encoding: 65655 -1 113
 Width: 290
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 124 856 basechar 0
 AnchorPoint: "tashkil.below" 182 -152 basechar 0
 AnchorPoint: "curs" 42 194 exit 0
@@ -3597,7 +3563,7 @@ StartChar: seen.medi_BaaSeen
 Encoding: 65656 -1 114
 Width: 473
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 314.597 -128 basechar 0
 AnchorPoint: "tashkil.above" 308.597 436 basechar 0
 AnchorPoint: "dot.above" 308.597 436 basechar 0
@@ -3674,7 +3640,7 @@ StartChar: baa.init_BaaSeen
 Encoding: 65657 -1 115
 Width: 231
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 118 -114 basechar 0
 AnchorPoint: "tashkil.above" 72 694 basechar 0
 AnchorPoint: "dot.above" 72 694 basechar 0
@@ -3740,7 +3706,7 @@ StartChar: AlefTatweel.fina
 Encoding: 65658 -1 116
 Width: 766
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "madda.above" 60 882 basechar 0
 AnchorPoint: "hamza.above" 60 882 basechar 0
 AnchorPoint: "tashkil.above" 60 882 basechar 0
@@ -3791,7 +3757,7 @@ StartChar: haa_AynHaa.init
 Encoding: 65659 -1 118
 Width: 635
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 381 -54 basechar 0
 AnchorPoint: "tashkil.above" 15 503 basechar 0
 AnchorPoint: "dot.above" 15 503 basechar 0
@@ -3849,7 +3815,7 @@ StartChar: ayn_AynHaa.init
 Encoding: 65660 -1 119
 Width: 630
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 470 -76 basechar 0
 AnchorPoint: "tashkil.above" 339 709 basechar 0
 AnchorPoint: "dot.above" 339 709 basechar 0
@@ -3906,11 +3872,11 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: meem_AynMeem.init
+StartChar: meem.medi_preMeem
 Encoding: 65661 -1 120
 Width: 292
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 82 420 basechar 0
 AnchorPoint: "tashkil.below" 246 -74 basechar 0
 AnchorPoint: "curs" 186 216 entry 0
@@ -3965,11 +3931,11 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ayn_AynMeem.init
+StartChar: ayn.init_preMeem
 Encoding: 65662 -1 121
 Width: 700
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 522 110 basechar 0
 AnchorPoint: "tashkil.above" 422 704 basechar 0
 AnchorPoint: "dot.above" 422 704 basechar 0
@@ -4318,7 +4284,7 @@ StartChar: yaa.fina_AynYaa.isol
 Encoding: 65663 -1 131
 Width: 725
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.above" 298 456 basechar 0
 AnchorPoint: "tashkil.above" 298 456 basechar 0
 AnchorPoint: "dot.below" 224 -306 basechar 0
@@ -4382,7 +4348,7 @@ StartChar: ayn.init_AynYaa.isol
 Encoding: 65664 -1 132
 Width: 587
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.below" 406 148 basechar 0
 AnchorPoint: "tashkil.below" 406 148 basechar 0
 AnchorPoint: "dot.above" 226 642 basechar 0
@@ -4444,7 +4410,7 @@ StartChar: yaa.fina_AynYaa.fina
 Encoding: 65665 -1 133
 Width: 931
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 302 -400 basechar 0
 AnchorPoint: "hamza.above" 138 204 basechar 0
 AnchorPoint: "dot.below" 304 -400 basechar 0
@@ -4511,7 +4477,7 @@ StartChar: ayn.medi_AynYaa.fina
 Encoding: 65666 -1 134
 Width: 931
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.below" 823 -193 basechar 0
 AnchorPoint: "dot.above" 737 450 basechar 0
 AnchorPoint: "tashkil.above" 737 450 basechar 0
@@ -4576,7 +4542,7 @@ StartChar: haa.medi_BaaHaa.init
 Encoding: 65667 -1 135
 Width: 630
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.below" 229 -61 basechar 0
 AnchorPoint: "dot.above" 72 490 basechar 0
 AnchorPoint: "tashkil.above" 72 490 basechar 0
@@ -4628,7 +4594,7 @@ StartChar: baa.init_BaaHaa.init
 Encoding: 65668 -1 136
 Width: 534
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.above" 414 703 basechar 0
 AnchorPoint: "dot.below" 484 -2 basechar 0
 AnchorPoint: "hamza.above" 414 703 basechar 0
@@ -4680,7 +4646,7 @@ StartChar: haa.fina_BaaHaa.isol
 Encoding: 65669 -1 137
 Width: 1000
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.below" 303 42 basechar 0
 AnchorPoint: "dot.above" 89 731 basechar 0
 AnchorPoint: "tashkil.above" 89 731 basechar 0
@@ -4741,7 +4707,7 @@ StartChar: baa.init_BaaHaa.isol
 Encoding: 65670 -1 138
 Width: 527
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 402 951 basechar 0
 AnchorPoint: "tashkil.below" 560 212 basechar 0
 AnchorPoint: "hamza.below" 561 211 basechar 0
@@ -4798,7 +4764,7 @@ StartChar: heh.medi_BaaHeh.init
 Encoding: 65671 -1 139
 Width: 198
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 124 -370 basechar 0
 AnchorPoint: "tashkil.above" 128 360 basechar 0
 AnchorPoint: "curs" 126 -168 entry 0
@@ -4847,7 +4813,7 @@ StartChar: baa.init_BaaHeh.init
 Encoding: 65672 -1 140
 Width: 569
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 394 385 basechar 0
 AnchorPoint: "tashkil.below" 374 -78 basechar 0
 AnchorPoint: "hamza.below" 375 -79 basechar 0
@@ -4902,7 +4868,7 @@ StartChar: baa.init_BaaHeh.isol
 Encoding: 65674 -1 141
 Width: 479
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.above" 407.758 399.875 basechar 0
 AnchorPoint: "dot.below" 396.758 -67.916 basechar 0
 AnchorPoint: "hamza.above" 407.758 399.875 basechar 0
@@ -4962,7 +4928,7 @@ StartChar: heh.fina_Lellah.isol
 Encoding: 65675 -1 142
 Width: 340
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 85 472 basechar 0
 AnchorPoint: "tashkil.below" 85 -101 basechar 0
 AnchorPoint: "curs" 304 62 entry 0
@@ -5030,7 +4996,7 @@ StartChar: lam.medi_Lellah.isol
 Encoding: 65676 -1 143
 Width: 516
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 436 -80 basechar 0
 AnchorPoint: "tashkil.above" 378 640 basechar 0
 AnchorPoint: "curs" 550 78 entry 0
@@ -5094,7 +5060,7 @@ StartChar: lam.init_Lellah.isol
 Encoding: 65677 -1 144
 Width: 696
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 558 640 basechar 0
 AnchorPoint: "tashkil.below" 616 -80 basechar 0
 AnchorPoint: "curs" 550 78 exit 0
@@ -5152,122 +5118,67 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: meem.medi_HaaMeem.init
-Encoding: 65678 -1 145
-Width: 307
+StartChar: haa.init_preMeem
+Encoding: 65679 -1 145
+Width: 615
 VWidth: 0
-Flags: W
-AnchorPoint: "tashkil.below" 172 -58 basechar 0
-AnchorPoint: "tashkil.above" 28 488 basechar 0
-AnchorPoint: "curs" 210 250 entry 0
+Flags: MW
+AnchorPoint: "dot.below" 372 59 basechar 0
+AnchorPoint: "dot.above" 130 585 basechar 0
+AnchorPoint: "tashkil.above" 130 585 basechar 0
+AnchorPoint: "tashkil.below" 372 59 basechar 0
+AnchorPoint: "curs" 80 250 exit 0
 LayerCount: 2
 Back
 SplineSet
-264.875 465.156 m 0
- 269.033 465.24 273.121 465.097 277.125 464.688 c 0
- 345.27 459.045 410.489 398.344 488.656 365.562 c 0
- 553.745 338.314 624.324 314.115 687.969 306.375 c 0
- 691.432 305.954 696.539 302.23 695.844 296.906 c 0
- 692.308 269.827 680.968 253.81 667.906 231.75 c 0
- 665.045 226.918 658.777 223.856 652.531 226.031 c 0
- 497.419 280.048 387.919 289.756 270.75 253.906 c 1
- 320.357 190.61 316.947 109.579 278.375 70.4375 c 0
- 255.873 47.6035 163.938 73.7676 100.969 113.094 c 1
- 75.002 35.2158 20.3008 10.584 0.75 0 c 1
- 1.65625 89.9062 l 1
- 18.1416 94.0654 57.8809 106.511 84.4375 129.625 c 0
- 87.04 131.891 87.8486 136.675 87.7812 139.969 c 0
- 86.5654 199.997 123.26 247.503 144.625 262 c 0
- 203.361 301.854 312.401 307.392 371.562 317.844 c 1
- 331.038 346.357 272.986 396.026 145.344 372.25 c 0
- 134.945 370.313 134.727 381.621 139.875 388.594 c 0
- 178.06 440.303 224.679 464.348 264.875 465.156 c 0
-160.625 225.5 m 0
- 145.505 225.576 130.735 221.077 124.594 206.156 c 1
- 142.996 180.733 207.14 147.904 265.594 141.031 c 1
- 253.076 172.485 231.143 199.421 201.188 216.188 c 0
- 195.338 219.462 177.762 225.413 160.625 225.5 c 0
+134.875 465.156 m 0
+ 139.033 465.24 143.121 465.097 147.125 464.688 c 0
+ 215.27 459.045 280.489 398.344 358.656 365.562 c 0
+ 423.745 338.314 494.324 314.115 557.969 306.375 c 0
+ 561.432 305.954 566.539 302.23 565.844 296.906 c 0
+ 562.308 269.827 550.968 253.81 537.906 231.75 c 0
+ 535.045 226.918 528.777 223.856 522.531 226.031 c 0
+ 367.419 280.048 257.919 289.756 140.75 253.906 c 1
+ 190.357 190.61 186.947 109.579 148.375 70.4375 c 0
+ 125.873 47.6035 33.9385 73.7676 -29.0312 113.094 c 1
+ -54.998 35.2158 -109.699 10.584 -129.25 0 c 1
+ -128.344 89.9062 l 1
+ -111.858 94.0654 -72.1191 106.511 -45.5625 129.625 c 0
+ -42.96 131.891 -42.1514 136.675 -42.2188 139.969 c 0
+ -43.4346 199.997 -6.74023 247.503 14.625 262 c 0
+ 73.3613 301.854 182.401 307.392 241.562 317.844 c 1
+ 201.038 346.357 142.986 396.026 15.3438 372.25 c 0
+ 4.94531 370.312 4.72656 381.621 9.875 388.594 c 0
+ 48.0596 440.303 94.6787 464.348 134.875 465.156 c 0
+30.625 225.5 m 0
+ 15.5049 225.576 0.735352 221.077 -5.40625 206.156 c 1
+ 12.9961 180.733 77.1396 147.904 135.594 141.031 c 1
+ 123.076 172.485 101.143 199.421 71.1885 216.188 c 0
+ 65.3379 219.462 47.7617 225.413 30.625 225.5 c 0
 EndSplineSet
 Fore
 SplineSet
-270.75 253.906 m 1
- 320.357 190.61 316.947 109.579 278.375 70.4375 c 0
- 255.873 47.6035 163.938 73.7676 100.969 113.094 c 1
- 75.002 35.2158 20.3008 10.584 0.75 0 c 1
- 1.65625 89.9062 l 1
- 18.1416 94.0654 57.8809 106.511 84.4375 129.625 c 0
- 87.04 131.891 87.8486 136.675 87.7812 139.969 c 0
- 86.5654 199.997 123.26 247.503 144.625 262 c 0
- 270.75 253.906 l 1
-160.625 225.5 m 0
- 145.505 225.576 130.735 221.077 124.594 206.156 c 1
- 142.996 180.733 207.14 147.904 265.594 141.031 c 1
- 253.076 172.485 231.143 199.421 201.188 216.188 c 0
- 195.338 219.462 177.762 225.413 160.625 225.5 c 0
-EndSplineSet
-EndChar
-
-StartChar: haa.init_HaaMeem.init
-Encoding: 65679 -1 146
-Width: 745
-VWidth: 0
-Flags: W
-AnchorPoint: "dot.below" 502 59 basechar 0
-AnchorPoint: "dot.above" 260 585 basechar 0
-AnchorPoint: "tashkil.above" 260 585 basechar 0
-AnchorPoint: "tashkil.below" 502 59 basechar 0
-AnchorPoint: "curs" 210 250 exit 0
-LayerCount: 2
-Back
-SplineSet
-264.875 465.156 m 0
- 269.033 465.24 273.121 465.097 277.125 464.688 c 0
- 345.27 459.045 410.489 398.344 488.656 365.562 c 0
- 553.745 338.314 624.324 314.115 687.969 306.375 c 0
- 691.432 305.954 696.539 302.23 695.844 296.906 c 0
- 692.308 269.827 680.968 253.81 667.906 231.75 c 0
- 665.045 226.918 658.777 223.856 652.531 226.031 c 0
- 497.419 280.048 387.919 289.756 270.75 253.906 c 1
- 320.357 190.61 316.947 109.579 278.375 70.4375 c 0
- 255.873 47.6035 163.938 73.7676 100.969 113.094 c 1
- 75.002 35.2158 20.3008 10.584 0.75 0 c 1
- 1.65625 89.9062 l 1
- 18.1416 94.0654 57.8809 106.511 84.4375 129.625 c 0
- 87.04 131.891 87.8486 136.675 87.7812 139.969 c 0
- 86.5654 199.997 123.26 247.503 144.625 262 c 0
- 203.361 301.854 312.401 307.392 371.562 317.844 c 1
- 331.038 346.357 272.986 396.026 145.344 372.25 c 0
- 134.945 370.313 134.727 381.621 139.875 388.594 c 0
- 178.06 440.303 224.679 464.348 264.875 465.156 c 0
-160.625 225.5 m 0
- 145.505 225.576 130.735 221.077 124.594 206.156 c 1
- 142.996 180.733 207.14 147.904 265.594 141.031 c 1
- 253.076 172.485 231.143 199.421 201.188 216.188 c 0
- 195.338 219.462 177.762 225.413 160.625 225.5 c 0
-EndSplineSet
-Fore
-SplineSet
-144.625 262 m 0
- 203.361 301.854 312.401 307.392 371.562 317.844 c 1
- 331.038 346.357 272.986 396.026 145.344 372.25 c 0
- 134.945 370.313 134.727 381.621 139.875 388.594 c 0
- 178.06 440.303 224.679 464.348 264.875 465.156 c 0
- 269.033 465.24 273.121 465.097 277.125 464.688 c 0
- 345.27 459.045 410.489 398.344 488.656 365.562 c 0
- 553.745 338.314 624.324 314.115 687.969 306.375 c 0
- 691.432 305.954 696.539 302.23 695.844 296.906 c 0
- 692.308 269.827 680.968 253.81 667.906 231.75 c 0
- 665.045 226.918 658.777 223.856 652.531 226.031 c 0
- 497.419 280.048 387.919 289.756 270.75 253.906 c 1
- 144.625 262 l 0
+14.625 262 m 0
+ 73.3613 301.854 182.401 307.392 241.562 317.844 c 1
+ 201.038 346.357 142.986 396.026 15.3438 372.25 c 0
+ 4.94531 370.312 4.72656 381.621 9.875 388.594 c 0
+ 48.0596 440.303 94.6787 464.348 134.875 465.156 c 0
+ 139.033 465.24 143.121 465.097 147.125 464.688 c 0
+ 215.27 459.045 280.489 398.344 358.656 365.562 c 0
+ 423.745 338.314 494.324 314.115 557.969 306.375 c 0
+ 561.432 305.954 566.539 302.23 565.844 296.906 c 0
+ 562.308 269.827 550.968 253.81 537.906 231.75 c 0
+ 535.045 226.918 528.777 223.856 522.531 226.031 c 0
+ 367.419 280.048 257.919 289.756 140.75 253.906 c 1
+ 14.625 262 l 0
 EndSplineSet
 EndChar
 
 StartChar: meem.fina_BaaMeem.fina
-Encoding: 65680 -1 147
+Encoding: 65680 -1 146
 Width: 362
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 260 -278 basechar 0
 AnchorPoint: "tashkil.above" 136 252 basechar 0
 AnchorPoint: "curs" 158 38 entry 0
@@ -5316,10 +5227,10 @@ EndSplineSet
 EndChar
 
 StartChar: baa.medi_BaaMeem.fina
-Encoding: 65681 -1 148
+Encoding: 65681 -1 147
 Width: 522
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.below" 396 -285 basechar 0
 AnchorPoint: "dot.above" 369 357 basechar 0
 AnchorPoint: "hamza.below" 396 -285 basechar 0
@@ -5363,10 +5274,10 @@ EndSplineSet
 EndChar
 
 StartChar: meem.fina_SeenMeem.fina
-Encoding: 65682 -1 149
+Encoding: 65682 -1 148
 Width: 522
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.above" 156 304 basechar 0
 AnchorPoint: "tashkil.below" 260 -278 basechar 0
 LayerCount: 2
@@ -5395,10 +5306,10 @@ EndSplineSet
 EndChar
 
 StartChar: seen.medi_BaaSeen_SeenMeem.fina
-Encoding: 65683 -1 150
+Encoding: 65683 -1 149
 Width: 295
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dot.below" 146.597 -142 basechar 0
 AnchorPoint: "dot.above" 140.597 422 basechar 0
 AnchorPoint: "tashkil.above" 140.597 422 basechar 0
@@ -5453,10 +5364,10 @@ EndSplineSet
 EndChar
 
 StartChar: seen.medi_SeenMeem.fina
-Encoding: 65684 -1 151
+Encoding: 65684 -1 150
 Width: 411
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 176.597 -144 basechar 0
 AnchorPoint: "tashkil.above" 170.597 420 basechar 0
 AnchorPoint: "dot.above" 170.597 420 basechar 0
@@ -5484,10 +5395,10 @@ EndSplineSet
 EndChar
 
 StartChar: seen.init_SeenMeem.isol
-Encoding: 65685 -1 152
+Encoding: 65685 -1 151
 Width: 351
 VWidth: 0
-Flags: W
+Flags: MW
 AnchorPoint: "tashkil.below" 130.597 -110 basechar 0
 AnchorPoint: "tashkil.above" 124.597 454 basechar 0
 AnchorPoint: "dot.above" 124.597 454 basechar 0
@@ -5514,7 +5425,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.fina_BaaNoon.fina
-Encoding: 65686 -1 153
+Encoding: 65686 -1 152
 Width: 591
 VWidth: 0
 Flags: MW
@@ -5576,7 +5487,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.medi_BaaNoon.fina
-Encoding: 65687 -1 154
+Encoding: 65687 -1 153
 Width: 302
 VWidth: 0
 Flags: MW
@@ -5635,7 +5546,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.fina_BaaNoon.isol
-Encoding: 65688 -1 155
+Encoding: 65688 -1 154
 Width: 615
 VWidth: 0
 Flags: MW
@@ -5693,7 +5604,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaNoon.isol
-Encoding: 65689 -1 156
+Encoding: 65689 -1 155
 Width: 162
 VWidth: 0
 Flags: MW
@@ -5741,7 +5652,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.medi_BaaMeem.init
-Encoding: 65690 -1 157
+Encoding: 65690 -1 156
 Width: 398
 VWidth: 0
 Flags: MW
@@ -5790,7 +5701,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaMeem.init
-Encoding: 65691 -1 158
+Encoding: 65691 -1 157
 Width: 452
 VWidth: 0
 Flags: MW
@@ -5840,7 +5751,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina_BaaRaa.fina
-Encoding: 65692 -1 159
+Encoding: 65692 -1 158
 Width: 407
 VWidth: 0
 Flags: MW
@@ -5890,7 +5801,7 @@ EndSplineSet
 EndChar
 
 StartChar: yaa.fina_BaaYaa.isol
-Encoding: 65693 -1 160
+Encoding: 65693 -1 159
 Width: 750
 VWidth: 0
 Flags: MW
@@ -5949,7 +5860,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaYaa.isol
-Encoding: 65694 -1 161
+Encoding: 65694 -1 160
 Width: 750
 VWidth: 0
 Flags: MW
@@ -6004,7 +5915,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi_FaaHaa.init
-Encoding: 65695 -1 162
+Encoding: 65695 -1 161
 Width: 655
 VWidth: 0
 Flags: MW
@@ -6060,7 +5971,7 @@ EndSplineSet
 EndChar
 
 StartChar: faa.init_FaaHaa.init
-Encoding: 65696 -1 163
+Encoding: 65696 -1 162
 Width: 655
 VWidth: 0
 Flags: MW
@@ -6119,131 +6030,72 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: meem.medi_FaaMeem.init
-Encoding: 65697 -1 164
-Width: 419
+StartChar: faa.init_preMeem
+Encoding: 65698 -1 163
+Width: 279
 VWidth: 0
 Flags: MW
-AnchorPoint: "tashkil.above" 30 432 basechar 0
-AnchorPoint: "tashkil.below" 174 -114 basechar 0
-AnchorPoint: "curs" 256 224 entry 0
+AnchorPoint: "tashkil.below" 231 -113 basechar 0
+AnchorPoint: "tashkil.above" 112 767 basechar 0
+AnchorPoint: "dot.above" 112 767 basechar 0
+AnchorPoint: "dot.below" 231 -113 basechar 0
+AnchorPoint: "curs" 110 240 exit 0
 LayerCount: 2
 Back
 SplineSet
-254.281 593.5 m 1
- 283.192 592.263 310.842 553.327 329.344 526.031 c 0
- 369.993 466.062 376.144 363.479 363.094 306.5 c 0
- 354.348 268.312 328.483 244.684 312.875 229.5 c 1
- 329.401 206.065 348.092 165.745 341.906 130.844 c 0
- 334.305 87.9551 296.935 37.0176 290.344 35.2812 c 0
- 248.345 24.2168 175.949 68.9609 124.594 92.9062 c 1
- 98.7617 47.2783 23.4307 0.986328 1.375 0 c 1
- 1.5625 85.125 l 1
- 21.8721 85.25 75.2139 96.5869 112.594 121.031 c 1
- 120.893 166.463 136.196 206.826 174.438 237.75 c 0
- 217.366 272.464 295.093 273.158 332.938 307.812 c 0
- 335.496 310.158 336.901 313.692 336.594 316.875 c 0
- 333.719 346.578 315.826 382.215 300.594 384.156 c 1
- 275.262 318.308 231.019 325.287 204.312 328.531 c 0
- 134.658 336.991 135.018 425.223 152.094 474.031 c 0
- 169.007 522.372 202.52 579.182 254.281 593.5 c 1
-223.469 479.812 m 0
- 212.391 479.839 201.239 473.776 191.531 460.125 c 0
- 187.94 455.075 189.144 449.106 193.781 444.781 c 0
- 212.903 426.95 238.415 427.674 260.031 440.938 c 0
- 264.906 443.929 265.842 447.706 262.625 452.75 c 0
- 251.83 469.679 237.712 479.779 223.469 479.812 c 0
-203.406 201.312 m 0
- 184.299 201.511 170.266 192.83 161.25 179.906 c 1
- 169.216 160.155 284.188 119.777 299.469 124.312 c 1
- 298.127 137.342 286.464 168.995 243.312 190.375 c 0
- 228.17 197.878 214.871 201.193 203.406 201.312 c 0
+114.281 593.5 m 1
+ 143.192 592.263 170.842 553.327 189.344 526.031 c 0
+ 229.993 466.062 236.144 363.479 223.094 306.5 c 0
+ 214.348 268.312 188.483 244.684 172.875 229.5 c 1
+ 189.401 206.065 208.092 165.745 201.906 130.844 c 0
+ 194.305 87.9551 156.935 37.0176 150.344 35.2812 c 0
+ 108.345 24.2168 35.9492 68.9609 -15.4062 92.9062 c 1
+ -41.2383 47.2783 -116.569 0.986328 -138.625 0 c 1
+ -138.438 85.125 l 1
+ -118.128 85.25 -64.7861 96.5869 -27.4062 121.031 c 1
+ -19.1074 166.463 -3.80371 206.826 34.4385 237.75 c 0
+ 77.3662 272.464 155.093 273.158 192.938 307.812 c 0
+ 195.496 310.158 196.901 313.692 196.594 316.875 c 0
+ 193.719 346.578 175.826 382.215 160.594 384.156 c 1
+ 135.262 318.308 91.0186 325.287 64.3115 328.531 c 0
+ -5.3418 336.991 -4.98242 425.223 12.0938 474.031 c 0
+ 29.0068 522.372 62.5195 579.182 114.281 593.5 c 1
+83.4688 479.812 m 0
+ 72.3906 479.839 61.2393 473.776 51.5312 460.125 c 0
+ 47.9404 455.075 49.1436 449.106 53.7812 444.781 c 0
+ 72.9033 426.95 98.415 427.674 120.031 440.938 c 0
+ 124.906 443.929 125.842 447.706 122.625 452.75 c 0
+ 111.83 469.679 97.7119 479.779 83.4688 479.812 c 0
+63.4062 201.312 m 0
+ 44.2988 201.511 30.2656 192.83 21.25 179.906 c 1
+ 29.2158 160.155 144.188 119.777 159.469 124.312 c 1
+ 158.127 137.342 146.464 168.995 103.312 190.375 c 0
+ 88.1699 197.878 74.8711 201.193 63.4062 201.312 c 0
 EndSplineSet
 Fore
 SplineSet
-312.875 229.5 m 1
- 329.401 206.065 348.092 165.745 341.906 130.844 c 0
- 334.305 87.9551 296.935 37.0176 290.344 35.2812 c 0
- 248.345 24.2168 175.949 68.9609 124.594 92.9062 c 1
- 98.7617 47.2783 23.4307 0.986328 1.375 0 c 1
- 1.5625 85.125 l 1
- 21.8721 85.25 75.2139 96.5869 112.594 121.031 c 1
- 120.893 166.463 136.196 206.826 174.438 237.75 c 0
- 312.875 229.5 l 1
-203.406 201.312 m 0
- 184.299 201.511 170.266 192.83 161.25 179.906 c 1
- 169.216 160.155 284.188 119.777 299.469 124.312 c 1
- 298.127 137.342 286.464 168.995 243.312 190.375 c 0
- 228.17 197.878 214.871 201.193 203.406 201.312 c 0
-EndSplineSet
-EndChar
-
-StartChar: faa.init_FaaMeem.init
-Encoding: 65698 -1 165
-Width: 419
-VWidth: 0
-Flags: MW
-AnchorPoint: "tashkil.below" 371 -113 basechar 0
-AnchorPoint: "tashkil.above" 252 767 basechar 0
-AnchorPoint: "dot.above" 252 767 basechar 0
-AnchorPoint: "dot.below" 371 -113 basechar 0
-AnchorPoint: "curs" 256 224 exit 0
-LayerCount: 2
-Back
-SplineSet
-254.281 593.5 m 1
- 283.192 592.263 310.842 553.327 329.344 526.031 c 0
- 369.993 466.062 376.144 363.479 363.094 306.5 c 0
- 354.348 268.312 328.483 244.684 312.875 229.5 c 1
- 329.401 206.065 348.092 165.745 341.906 130.844 c 0
- 334.305 87.9551 296.935 37.0176 290.344 35.2812 c 0
- 248.345 24.2168 175.949 68.9609 124.594 92.9062 c 1
- 98.7617 47.2783 23.4307 0.986328 1.375 0 c 1
- 1.5625 85.125 l 1
- 21.8721 85.25 75.2139 96.5869 112.594 121.031 c 1
- 120.893 166.463 136.196 206.826 174.438 237.75 c 0
- 217.366 272.464 295.093 273.158 332.938 307.812 c 0
- 335.496 310.158 336.901 313.692 336.594 316.875 c 0
- 333.719 346.578 315.826 382.215 300.594 384.156 c 1
- 275.262 318.308 231.019 325.287 204.312 328.531 c 0
- 134.658 336.991 135.018 425.223 152.094 474.031 c 0
- 169.007 522.372 202.52 579.182 254.281 593.5 c 1
-223.469 479.812 m 0
- 212.391 479.839 201.239 473.776 191.531 460.125 c 0
- 187.94 455.075 189.144 449.106 193.781 444.781 c 0
- 212.903 426.95 238.415 427.674 260.031 440.938 c 0
- 264.906 443.929 265.842 447.706 262.625 452.75 c 0
- 251.83 469.679 237.712 479.779 223.469 479.812 c 0
-203.406 201.312 m 0
- 184.299 201.511 170.266 192.83 161.25 179.906 c 1
- 169.216 160.155 284.188 119.777 299.469 124.312 c 1
- 298.127 137.342 286.464 168.995 243.312 190.375 c 0
- 228.17 197.878 214.871 201.193 203.406 201.312 c 0
-EndSplineSet
-Fore
-SplineSet
-174.438 237.75 m 0
- 217.366 272.464 295.093 273.158 332.938 307.812 c 0
- 335.496 310.158 336.901 313.692 336.594 316.875 c 0
- 333.719 346.578 315.826 382.215 300.594 384.156 c 1
- 275.262 318.308 231.019 325.287 204.312 328.531 c 0
- 134.658 336.991 135.018 425.223 152.094 474.031 c 0
- 169.007 522.372 202.52 579.182 254.281 593.5 c 1
- 283.192 592.263 310.842 553.327 329.344 526.031 c 0
- 369.993 466.062 376.144 363.479 363.094 306.5 c 0
- 354.348 268.312 328.483 244.684 312.875 229.5 c 1
- 174.438 237.75 l 0
-223.469 479.812 m 0
- 212.391 479.839 201.239 473.776 191.531 460.125 c 0
- 187.94 455.075 189.144 449.106 193.781 444.781 c 0
- 212.903 426.95 238.415 427.674 260.031 440.938 c 0
- 264.906 443.929 265.842 447.706 262.625 452.75 c 0
- 251.83 469.679 237.712 479.779 223.469 479.812 c 0
+34.4385 237.75 m 0
+ 77.3662 272.464 155.093 273.158 192.938 307.812 c 0
+ 195.496 310.158 196.901 313.692 196.594 316.875 c 0
+ 193.719 346.578 175.826 382.215 160.594 384.156 c 1
+ 135.262 318.308 91.0186 325.287 64.3115 328.531 c 0
+ -5.3418 336.991 -4.98242 425.223 12.0938 474.031 c 0
+ 29.0068 522.372 62.5195 579.182 114.281 593.5 c 1
+ 143.192 592.263 170.842 553.327 189.344 526.031 c 0
+ 229.993 466.062 236.144 363.479 223.094 306.5 c 0
+ 214.348 268.312 188.483 244.684 172.875 229.5 c 1
+ 34.4385 237.75 l 0
+83.4688 479.812 m 0
+ 72.3906 479.839 61.2393 473.776 51.5312 460.125 c 0
+ 47.9404 455.075 49.1436 449.106 53.7812 444.781 c 0
+ 72.9033 426.95 98.415 427.674 120.031 440.938 c 0
+ 124.906 443.929 125.842 447.706 122.625 452.75 c 0
+ 111.83 469.679 97.7119 479.779 83.4688 479.812 c 0
 EndSplineSet
 EndChar
 
 StartChar: faa.medi_FaaYaa.fina
-Encoding: 65699 -1 166
+Encoding: 65699 -1 164
 Width: 638
 VWidth: 0
 Flags: MW
@@ -6309,7 +6161,7 @@ EndSplineSet
 EndChar
 
 StartChar: yaa.fina_FaaYaa.fina
-Encoding: 65700 -1 167
+Encoding: 65700 -1 165
 Width: 629
 VWidth: 0
 Flags: MW
@@ -6375,7 +6227,7 @@ EndSplineSet
 EndChar
 
 StartChar: yaa.fina_FaaYaa.isol
-Encoding: 65701 -1 168
+Encoding: 65701 -1 166
 Width: 679
 VWidth: 0
 Flags: MW
@@ -6437,7 +6289,7 @@ EndSplineSet
 EndChar
 
 StartChar: faa.init_FaaYaa.isol
-Encoding: 65702 -1 169
+Encoding: 65702 -1 167
 Width: 658
 VWidth: 0
 Flags: MW
@@ -6503,7 +6355,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.init.alt
-Encoding: 65703 -1 170
+Encoding: 65703 -1 168
 Width: 633
 VWidth: 0
 Flags: MW
@@ -6534,7 +6386,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi.alt
-Encoding: 65704 -1 171
+Encoding: 65704 -1 169
 Width: 595
 VWidth: 0
 Flags: MW
@@ -6576,7 +6428,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi_HaaHaa.init
-Encoding: 65705 -1 172
+Encoding: 65705 -1 170
 Width: 614
 VWidth: 0
 Flags: MW
@@ -6633,7 +6485,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.init_HaaHaa.init
-Encoding: 65706 -1 173
+Encoding: 65706 -1 171
 Width: 718
 VWidth: 0
 Flags: MW
