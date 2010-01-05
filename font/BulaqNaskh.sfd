@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1262581579
+ModificationTime: 1262719726
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -102,7 +102,7 @@ MarkAttachClasses: 2
 DEI: 91125
 ChainSub2: coverage "'calt' HaaHaa.init-2"  0 0 0 1
  1 1 0
-  Coverage: 8 haa.medi
+  Coverage: 21 haa.medi haa.medi.alt
   BCoverage: 20 haa.init_HaaHaa.init
  1
   SeqLookup: 0 "HaaHaa.init" 
@@ -110,7 +110,7 @@ EndFPST
 ChainSub2: coverage "'calt' HaaHaa.init-1"  0 0 0 1
  1 0 1
   Coverage: 8 haa.init
-  FCoverage: 8 haa.medi
+  FCoverage: 21 haa.medi haa.medi.alt
  1
   SeqLookup: 0 "HaaHaa.init" 
 EndFPST
@@ -6425,6 +6425,7 @@ SplineSet
  286.489 192.108 250.865 200.904 214.25 207.594 c 0
  185.574 212.832 156.692 217.305 131.281 217.531 c 0
 EndSplineSet
+Substitution2: "HaaHaa.init-1" haa.medi_HaaHaa.init
 EndChar
 
 StartChar: haa.medi_HaaHaa.init
