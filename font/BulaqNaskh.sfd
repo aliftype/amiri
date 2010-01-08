@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1262979159
+ModificationTime: 1262987745
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -71,6 +71,8 @@ Lookup: 6 8 0 "'calt' HaaYaa.isol"  {"'calt' HaaYaa.isol-1"  "'calt' HaaYaa.isol
 Lookup: 6 8 0 "'calt' HaaRaa.isol"  {"'calt' HaaRaa.isol-1"  "'calt' HaaRaa.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' KafAlef.isol"  {"'calt' KafAlef.isol-1"  "'calt' KafAlef.isol-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' KafAlef.fina"  {"'calt' KafAlef.fina-1"  "'calt' KafAlef.fina-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' KafBaa.init"  {"'calt' KafBaa.init-1"  "'calt' KafBaa.init-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' KafBaa.medi"  {"'calt' KafBaa.medi-1"  "'calt' KafBaa.medi-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "Lellah"  {"Lellah-1"  } []
 Lookup: 1 0 0 "LamAlef.isol"  {"LamAlef.isol-1"  } []
 Lookup: 1 0 0 "LamAlef.fina"  {"LamAlef.fina-1"  } []
@@ -98,6 +100,8 @@ Lookup: 1 8 0 "HaaYaa.isol"  {"HaaYaa.isol-1"  } []
 Lookup: 1 8 0 "HaaRaa.isol"  {"HaaRaa.isol-1"  } []
 Lookup: 1 8 0 "KafAlef.isol"  {"KafAlef.isol-1"  } []
 Lookup: 1 8 0 "KafAlef.fina"  {"KafAlef.fina-1"  } []
+Lookup: 1 8 0 "KafBaa.init"  {"KafBaa.init-1"  } []
+Lookup: 1 8 0 "KafBaa.medi"  {"KafBaa.medi-1"  } []
 Lookup: 260 0 0 "'mark' Dots"  {"'mark' Dots-2"  "'mark' Dots-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza"  {"'mark' Hamza-2"  "'mark' Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Madda"  {"'mark' Madda-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -108,6 +112,36 @@ Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } [
 MarkAttachClasses: 2
 "tashkil" 63 uni064B uni064C uni064D uni064E uni064F uni0650 uni0651 uni0652
 DEI: 91125
+ChainSub2: coverage "'calt' KafBaa.init-2"  0 0 0 1
+ 1 1 0
+  Coverage: 8 baa.medi
+  BCoverage: 20 kaf.init_KafBaa.init
+ 1
+  SeqLookup: 0 "KafBaa.init" 
+EndFPST
+ChainSub2: coverage "'calt' KafBaa.init-1"  0 0 0 1
+ 1 0 2
+  Coverage: 8 kaf.init
+  FCoverage: 8 baa.medi
+  FCoverage: 52 alef.fina lam_LamAlef.fina lam_LamAlef.isol lam.fina
+ 1
+  SeqLookup: 0 "KafBaa.init" 
+EndFPST
+ChainSub2: coverage "'calt' KafBaa.medi-2"  0 0 0 1
+ 1 1 0
+  Coverage: 8 baa.medi
+  BCoverage: 20 kaf.medi_KafBaa.medi
+ 1
+  SeqLookup: 0 "KafBaa.medi" 
+EndFPST
+ChainSub2: coverage "'calt' KafBaa.medi-1"  0 0 0 1
+ 1 0 2
+  Coverage: 8 kaf.medi
+  FCoverage: 8 baa.medi
+  FCoverage: 52 alef.fina lam.fina lam_LamAlef.fina lam_LamAlef.isol
+ 1
+  SeqLookup: 0 "KafBaa.medi" 
+EndFPST
 ChainSub2: coverage "'calt' KafAlef.fina-2"  0 0 0 1
  1 1 0
   Coverage: 9 alef.fina
@@ -492,7 +526,7 @@ AntiAlias: 1
 FitToEm: 1
 WinInfo: 65603 17 7
 AnchorClass2: "2tashkil.below"  "'mkmk' Tashkil to Tashkil-2" "2tashkil.above"  "'mkmk' Tashkil to Tashkil-1" "tashkildot.below"  "'mkmk' Tashkil to Dot-2" "tashkildot.above"  "'mkmk' Tashkil to Dot-1" "tashkil.below"  "'mark' Tashkil-2" "tashkil.above"  "'mark' Tashkil-1" "curs"  "'curs' Cursive Attachment-1" "madda.above"  "'mark' Madda-1" "hamza.below"  "'mark' Hamza-2" "hamza.above"  "'mark' Hamza-1" "dot.below"  "'mark' Dots-2" "dot.above"  "'mark' Dots-1" 
-BeginChars: 65722 182
+BeginChars: 65722 186
 
 StartChar: uni061B
 Encoding: 1563 1563 0
@@ -2144,6 +2178,7 @@ SplineSet
  43.918 563.095 273.611 659.41 446.245 678.874 c 0
  451.582 679.476 464.227 674.702 458.104 661.666 c 2
 EndSplineSet
+Substitution2: "KafBaa.init-1" kaf.init_KafBaa.init
 Substitution2: "KafAlef.isol-1" kaf.init_KafAlef.isol
 EndChar
 
@@ -2274,6 +2309,8 @@ SplineSet
  121.171 128.638 122.221 116.37 131.295 107.877 c 0
  142.416 97.4678 165.014 87.7568 190.149 81.9971 c 1
 EndSplineSet
+Substitution2: "KafBaa.medi-1" baa.medi_KafBaa.medi
+Substitution2: "KafBaa.init-1" baa.medi_KafBaa.init
 Substitution2: "BaaNoon.fina-1" baa.medi_BaaNoon.fina
 Substitution2: "BaaMeem.fina-1" baa.medi_BaaMeem.fina
 EndChar
@@ -2543,6 +2580,7 @@ SplineSet
  -3.4707 468.947 -7.29883 477.763 -5.50586 488.986 c 0
  6.7373 538.152 40.2881 590.524 73.2383 616.74 c 0
 EndSplineSet
+Substitution2: "KafBaa.medi-1" kaf.medi_KafBaa.medi
 Substitution2: "KafAlef.fina-1" kaf.medi_KafAlef.fina
 EndChar
 
@@ -7245,6 +7283,224 @@ SplineSet
  291.566 113.5 340.031 134.794 386.062 176.844 c 1
  379.142 244.739 172.186 348.28 96.5312 365.375 c 1
  88.3125 465.656 l 1
+EndSplineSet
+EndChar
+
+StartChar: baa.medi_KafBaa.init
+Encoding: 65717 -1 182
+Width: 242
+VWidth: 0
+Flags: MW
+AnchorPoint: "dot.below" 122 -117 basechar 0
+AnchorPoint: "dot.above" 17 689 basechar 0
+AnchorPoint: "hamza.below" 122 -117 basechar 0
+AnchorPoint: "hamza.above" 17 690 basechar 0
+AnchorPoint: "tashkil.above" 17 689 basechar 0
+AnchorPoint: "tashkil.below" 122 -117 basechar 0
+AnchorPoint: "curs" 226 70 entry 0
+LayerCount: 2
+Back
+SplineSet
+514.705 645.207 m 0
+ 357.638 596.272 144.169 517.846 -42.2334 406.033 c 0
+ -46.4971 403.476 -47.8467 398.509 -43.373 397.137 c 0
+ 180.534 328.466 346.569 272.811 335.897 121.212 c 0
+ 334.137 96.1934 333.347 46.8906 310.478 32.7861 c 0
+ 255.789 -0.945312 157.159 61.6162 128.865 87.6396 c 0
+ 124.569 91.5918 121.626 91.3916 117.579 87.7871 c 0
+ 80.0342 54.3467 50.2783 19.9326 -1.55762 0 c 1
+ 5.22363 100.23 l 1
+ 56.5391 93.1406 112.112 122.217 132.502 150.903 c 0
+ 133.138 151.797 135.256 152.093 136.771 150.883 c 0
+ 171.924 122.827 283.896 66.1133 311.172 102.211 c 0
+ 312.015 103.327 313.494 104.818 312.863 107.018 c 0
+ 280.467 220.034 53.7559 270.477 -48.3223 302.098 c 0
+ -63.6104 306.833 -69.4531 310.199 -73.8994 327.64 c 0
+ -85.1738 371.87 -62.6133 454.068 -53.3164 462.579 c 0
+ 54.0303 560.846 358.753 671.25 532.383 733.396 c 0
+ 539.653 735.998 548.933 728.899 545.916 720.608 c 2
+ 520.438 650.602 l 2
+ 519.045 646.772 518.243 646.309 514.705 645.207 c 0
+EndSplineSet
+Fore
+SplineSet
+242 27.0135 m 1
+ 195.498 38.2816 147.282 70.7008 128.865 87.6396 c 0
+ 124.569 91.5918 121.626 91.3916 117.579 87.7871 c 0
+ 80.0342 54.3467 50.2783 19.9326 -1.55762 0 c 1
+ 5.22363 100.23 l 1
+ 56.5391 93.1406 112.112 122.217 132.502 150.903 c 0
+ 133.138 151.797 135.256 152.093 136.771 150.883 c 0
+ 156.834 134.871 201.919 109.524 242 97.4234 c 1
+ 242 27.0135 l 1
+EndSplineSet
+EndChar
+
+StartChar: kaf.init_KafBaa.init
+Encoding: 65718 -1 183
+Width: 396
+VWidth: 0
+Flags: MW
+AnchorPoint: "tashkil.below" 366 -100 basechar 0
+AnchorPoint: "tashkil.above" 254 756 basechar 0
+AnchorPoint: "curs" 226 70 exit 0
+LayerCount: 2
+Back
+SplineSet
+514.705 645.207 m 0
+ 357.638 596.272 144.169 517.846 -42.2334 406.033 c 0
+ -46.4971 403.476 -47.8467 398.509 -43.373 397.137 c 0
+ 180.534 328.466 346.569 272.811 335.897 121.212 c 0
+ 334.137 96.1934 333.347 46.8906 310.478 32.7861 c 0
+ 255.789 -0.945312 157.159 61.6162 128.865 87.6396 c 0
+ 124.569 91.5918 121.626 91.3916 117.579 87.7871 c 0
+ 80.0342 54.3467 50.2783 19.9326 -1.55762 0 c 1
+ 5.22363 100.23 l 1
+ 56.5391 93.1406 112.112 122.217 132.502 150.903 c 0
+ 133.138 151.797 135.256 152.093 136.771 150.883 c 0
+ 171.924 122.827 283.896 66.1133 311.172 102.211 c 0
+ 312.015 103.327 313.494 104.818 312.863 107.018 c 0
+ 280.467 220.034 53.7559 270.477 -48.3223 302.098 c 0
+ -63.6104 306.833 -69.4531 310.199 -73.8994 327.64 c 0
+ -85.1738 371.87 -62.6133 454.068 -53.3164 462.579 c 0
+ 54.0303 560.846 358.753 671.25 532.383 733.396 c 0
+ 539.653 735.998 548.933 728.899 545.916 720.608 c 2
+ 520.438 650.602 l 2
+ 519.045 646.772 518.243 646.309 514.705 645.207 c 0
+EndSplineSet
+Fore
+SplineSet
+242 97.4234 m 1
+ 272.147 88.3223 299.463 86.7153 311.172 102.211 c 0
+ 312.015 103.327 313.494 104.818 312.863 107.018 c 0
+ 280.467 220.034 53.7559 270.477 -48.3223 302.098 c 0
+ -63.6104 306.833 -69.4531 310.199 -73.8994 327.64 c 0
+ -85.1738 371.87 -62.6133 454.068 -53.3164 462.579 c 0
+ 54.0303 560.846 358.753 671.25 532.383 733.396 c 0
+ 539.653 735.998 548.933 728.899 545.916 720.608 c 2
+ 520.438 650.602 l 2
+ 519.045 646.772 518.243 646.309 514.705 645.207 c 0
+ 357.638 596.272 144.169 517.846 -42.2334 406.033 c 0
+ -46.4971 403.476 -47.8467 398.509 -43.373 397.137 c 0
+ 180.534 328.466 346.569 272.811 335.897 121.212 c 0
+ 334.137 96.1934 333.347 46.8906 310.478 32.7861 c 0
+ 291.386 21.0107 266.94 20.9701 242 27.0135 c 1
+ 242 97.4234 l 1
+EndSplineSet
+EndChar
+
+StartChar: baa.medi_KafBaa.medi
+Encoding: 65719 -1 184
+Width: 194
+VWidth: 0
+Flags: MW
+AnchorPoint: "tashkil.above" 17 689 basechar 0
+AnchorPoint: "hamza.above" 17 690 basechar 0
+AnchorPoint: "dot.above" 17 689 basechar 0
+AnchorPoint: "tashkil.below" 108 -101 basechar 0
+AnchorPoint: "hamza.below" 108 -101 basechar 0
+AnchorPoint: "dot.below" 108 -101 basechar 0
+AnchorPoint: "curs" 180 70 entry 0
+LayerCount: 2
+Back
+SplineSet
+584.783 756.451 m 2
+ 561.655 681.36 l 2
+ 560.236 676.751 558.415 674.034 553.726 672.652 c 0
+ 356.691 614.561 -5.2832 459.057 -49.834 412.762 c 0
+ -51.6162 410.909 -52.1592 405.596 -49.082 405.234 c 0
+ 47.6025 393.886 171.805 343.791 277.86 282.304 c 0
+ 351.568 239.57 552.523 85.2705 597.565 82.375 c 1
+ 596.826 -18.7686 l 1
+ 565.906 -17.6279 481.583 42.584 421.659 90.1113 c 0
+ 378.615 124.25 334.529 160.388 281.954 188.252 c 0
+ 278.363 190.155 277.461 188.193 279.231 184.85 c 0
+ 300.447 144.778 328.713 66.5986 298.509 31.6953 c 0
+ 246.958 -27.877 116.423 60.1201 97.3232 80.4561 c 1
+ 66.3311 32.6035 16.6152 -0.572266 1.5918 0 c 1
+ 2.14258 101.615 l 1
+ 42.2666 101.553 73.0332 121.296 102.813 142.661 c 1
+ 141.499 104.161 192.117 89.3066 271.392 100.974 c 0
+ 276.691 101.754 278.646 105.806 277.104 111.27 c 0
+ 245.137 224.431 35.6982 291.802 -67.2295 324.776 c 0
+ -72.499 326.465 -81.1426 331.635 -83.8037 337.9 c 0
+ -88.6426 349.296 -92.4404 372.744 -92.3975 392.635 c 0
+ -92.3281 424.527 -83.2432 452.585 -75.7324 462.422 c 0
+ -19.8779 535.576 321.108 681.583 559.013 773.322 c 0
+ 573.291 778.829 589.115 770.519 584.783 756.451 c 2
+EndSplineSet
+Fore
+SplineSet
+194 22.8648 m 1
+ 149.339 39.5575 107.503 69.6172 97.3232 80.4561 c 1
+ 66.3311 32.6035 16.6152 -0.572266 1.5918 0 c 1
+ 2.14258 101.615 l 1
+ 42.2666 101.553 73.0332 121.296 102.813 142.661 c 1
+ 127.117 118.474 156.13 103.619 194 98.8102 c 1
+ 194 22.8648 l 1
+EndSplineSet
+EndChar
+
+StartChar: kaf.medi_KafBaa.medi
+Encoding: 65720 -1 185
+Width: 598
+VWidth: 0
+Flags: MW
+AnchorPoint: "tashkil.above" 300 774 basechar 0
+AnchorPoint: "tashkil.below" 410 -108 basechar 0
+AnchorPoint: "curs" 180 70 entry 0
+LayerCount: 2
+Back
+SplineSet
+584.783 756.451 m 2
+ 561.655 681.36 l 2
+ 560.236 676.751 558.415 674.034 553.726 672.652 c 0
+ 356.691 614.561 -5.2832 459.057 -49.834 412.762 c 0
+ -51.6162 410.909 -52.1592 405.596 -49.082 405.234 c 0
+ 47.6025 393.886 171.805 343.791 277.86 282.304 c 0
+ 351.568 239.57 552.523 85.2705 597.565 82.375 c 1
+ 596.826 -18.7686 l 1
+ 565.906 -17.6279 481.583 42.584 421.659 90.1113 c 0
+ 378.615 124.25 334.529 160.388 281.954 188.252 c 0
+ 278.363 190.155 277.461 188.193 279.231 184.85 c 0
+ 300.447 144.778 328.713 66.5986 298.509 31.6953 c 0
+ 246.958 -27.877 116.423 60.1201 97.3232 80.4561 c 1
+ 66.3311 32.6035 16.6152 -0.572266 1.5918 0 c 1
+ 2.14258 101.615 l 1
+ 42.2666 101.553 73.0332 121.296 102.813 142.661 c 1
+ 141.499 104.161 192.117 89.3066 271.392 100.974 c 0
+ 276.691 101.754 278.646 105.806 277.104 111.27 c 0
+ 245.137 224.431 35.6982 291.802 -67.2295 324.776 c 0
+ -72.499 326.465 -81.1426 331.635 -83.8037 337.9 c 0
+ -88.6426 349.296 -92.4404 372.744 -92.3975 392.635 c 0
+ -92.3281 424.527 -83.2432 452.585 -75.7324 462.422 c 0
+ -19.8779 535.576 321.108 681.583 559.013 773.322 c 0
+ 573.291 778.829 589.115 770.519 584.783 756.451 c 2
+EndSplineSet
+Fore
+SplineSet
+194 98.8102 m 1
+ 216.41 95.9644 241.92 96.6363 271.392 100.974 c 0
+ 276.691 101.754 278.646 105.806 277.104 111.27 c 0
+ 245.137 224.431 35.6982 291.802 -67.2295 324.776 c 0
+ -72.499 326.465 -81.1426 331.635 -83.8037 337.9 c 0
+ -88.6426 349.296 -92.4404 372.744 -92.3975 392.635 c 0
+ -92.3281 424.527 -83.2432 452.585 -75.7324 462.422 c 0
+ -19.8779 535.576 321.108 681.583 559.013 773.322 c 0
+ 573.291 778.829 589.115 770.519 584.783 756.451 c 2
+ 561.655 681.36 l 2
+ 560.236 676.751 558.415 674.034 553.726 672.652 c 0
+ 356.691 614.561 -5.2832 459.057 -49.834 412.762 c 0
+ -51.6162 410.909 -52.1592 405.596 -49.082 405.234 c 0
+ 47.6025 393.886 171.805 343.791 277.86 282.304 c 0
+ 351.568 239.57 552.523 85.2705 597.565 82.375 c 1
+ 596.826 -18.7686 l 1
+ 565.906 -17.6279 481.583 42.584 421.659 90.1113 c 0
+ 378.615 124.25 334.529 160.388 281.954 188.252 c 0
+ 278.363 190.155 277.461 188.193 279.231 184.85 c 0
+ 300.447 144.778 328.713 66.5986 298.509 31.6953 c 0
+ 274.434 3.87433 233.133 8.23829 194 22.8648 c 1
+ 194 98.8102 l 1
 EndSplineSet
 EndChar
 EndChars
