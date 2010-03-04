@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1261055077
-ModificationTime: 1267679715
+ModificationTime: 1267679835
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -6138,6 +6138,10 @@ Encoding: 65692 -1 158
 Width: 407
 VWidth: 0
 Flags: MW
+AnchorPoint: "dot.below" 341 -211 basechar 0
+AnchorPoint: "dot.above" 341 362 basechar 0
+AnchorPoint: "tashkil.above" 239 362 basechar 0
+AnchorPoint: "tashkil.below" 341 -211 basechar 0
 AnchorPoint: "curs" 374 162 entry 0
 LayerCount: 2
 Back
