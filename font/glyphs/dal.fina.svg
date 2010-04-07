@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,7 +14,7 @@
    height="1000"
    id="svg5496"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.47pre4 r22446"
    sodipodi:docname="dal.fina.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <metadata
@@ -44,8 +45,11 @@
      inkscape:cx="514.24798"
      inkscape:cy="514.46816"
      inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:current-layer="svg5496">
+     inkscape:window-y="24"
+     inkscape:current-layer="svg5496"
+     inkscape:window-width="1280"
+     inkscape:window-height="725"
+     inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="horizontal"
        position="200"
@@ -67,13 +71,29 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5308"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <g
      id="layer1"
      transform="translate(-269.44818,27.515446)" />
-  <path
-     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 454.99839,695.37445 C 432.78372,694.50822 406.65934,692.13417 387.81777,659.5815 C 365.82793,621.58955 339.30738,398.00569 324.65306,271.84949 C 323.19088,259.26181 318.12979,255.11593 312.45829,263.4687 C 300.85872,280.5521 289.16214,301.29768 277.85847,319.58797 C 272.08942,328.92276 272.27321,336.30073 274.16486,351.56268 C 278.01903,382.65847 288.25839,448.66346 296.64349,503.64823 C 302.96217,545.08258 308.93821,580.37848 306.31997,589.09691 C 298.32398,615.72257 271.64571,647.36745 247.03665,655.08381 C 194.40417,671.58713 102.63784,670.54933 68.169917,659.45634 C 46.594887,652.50461 31.115957,636.21569 24.582057,620.59052 C 21.805707,613.95113 14.281937,612.31831 11.520667,624.52723 C 2.1407669,666.00026 -11.628073,739.01693 40.806987,749.88986 C 102.62711,762.70889 197.53105,753.47219 232.21599,740.80195 C 283.11825,722.2076 297.97983,673.57982 316.78253,621.58591 C 335.54147,704.4074 348.18861,743.01168 373.84926,767.1403 C 398.56059,790.37629 428.23096,795.51184 457.20103,800 L 454.99839,695.37445 z"
-     id="path2394"
-     sodipodi:nodetypes="cssssssssssssscscc" />
+  <g
+     id="g5296"
+     transform="matrix(0.98397004,0,0,0.98397004,-4.035154,33.690519)"
+     style="fill:#ff0000;fill-opacity:0.60784314;stroke:#000000;stroke-opacity:1">
+    <g
+       transform="translate(-269.44818,27.515446)"
+       id="layer1-8"
+       style="fill:#ff0000;fill-opacity:0.60784314;stroke:#000000;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cssssssssssssssscc"
+       id="path2394-7"
+       d="m 420.35643,686.89185 c -28.21277,-8.36386 -38.78653,-46.78829 -45.95903,-75.37966 -11.73269,-46.76944 -39.5886,-213.5065 -54.24292,-339.6627 -1.46218,-12.58768 -14.69317,-13.04063 -18.94263,-3.88221 -8.4186,18.14372 -16.54829,34.08016 -23.35338,51.62069 -3.96913,10.23065 -5.58526,16.71276 -3.69361,31.97471 3.85417,31.09579 14.09353,97.10078 22.47863,152.08555 6.31868,41.43435 11.75742,76.58663 9.67648,85.44868 -5.37182,22.87685 -27.99967,46.27138 -51.78569,56.23999 -39.37842,16.50332 -124.90498,28.96124 -177.367211,11.12039 -21.460362,-7.29804 -23.966226,-25.67186 -30.50012,-41.29703 -2.776356,-6.63939 -18.481203,-11.97559 -26.406408,9.67753 -11.6564,31.84742 -33.425468,118.85932 19.046921,129.55065 81.313948,16.56784 160.838038,1.31388 194.941108,-13.58649 51.07483,-22.3157 75.78688,-89.7198 81.88754,-107.72127 1.19423,-3.52388 4.43577,-5.9921 5.79815,0.15676 14.50313,65.45699 29.98419,143.13129 98.28166,145.55607 l 0.14051,-91.90166 z"
+       style="fill:#ff0000;fill-opacity:0.60784314;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
 </svg>
