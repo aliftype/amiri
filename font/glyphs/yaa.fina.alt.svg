@@ -14,8 +14,8 @@
    height="1000"
    id="svg5496"
    sodipodi:version="0.32"
-   inkscape:version="0.47pre0 r21549"
-   sodipodi:docname="yaa.alt.fina.svg"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="yaa.fina.alt.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <metadata
      id="metadata5594">
@@ -30,7 +30,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     inkscape:window-height="618"
+     inkscape:window-height="725"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -44,8 +44,10 @@
      inkscape:cx="730.91794"
      inkscape:cy="440.00656"
      inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:current-layer="svg5496">
+     inkscape:window-y="24"
+     inkscape:current-layer="svg5496"
+     inkscape:window-width="1280"
+     inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="horizontal"
        position="200"
@@ -74,13 +76,20 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3694"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <g
      id="layer1"
      transform="translate(-160.79295,470.78077)" />
   <path
-     style="color:#000000;fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     d="M 699.59435,715.39137 C 613.65815,714.18535 600.72894,611.95962 557.8534,613.0523 c -79.58951,2.02832 -225.94064,164.25602 -217.90884,251.47006 7.19778,78.15781 249.7706,57.9635 277.06581,86.79291 3.28026,3.10693 3.93102,4.40851 0.0236,6.12505 C 540.81266,996.37715 413.39221,1046.5475 280.35856,1058.0422 189.24079,1065.9152 56.844949,1025.6745 43.240049,911.63686 33.045279,826.18329 77.591779,753.13954 101.87455,709.38944 112.3698,690.48022 93.694679,684.99252 85.292659,698.25882 4.5317985,825.77551 -15.631081,960.4648 7.4565885,1019.5608 33.769479,1086.9122 116.42389,1177.8708 297.89194,1154.6075 481.21758,1131.1061 634.08192,1044.7329 656.11785,1003.919 677.25437,964.77096 680.33877,885.36771 630.20228,867.88088 602.33476,858.16112 556.31974,855.57479 508.5366,849.77293 453.25387,843.06046 382.61709,819.63249 394.58505,778.369 401.88737,753.19182 490.64842,699.05554 525.28752,695.92257 569.62985,691.91197 597.28085,814.65974 700.09776,800 l -0.50341,-84.60863 z"
-     id="path3760"
-     sodipodi:nodetypes="cssccssssssssssscc" />
+     style="color:#000000;fill:#ff0000;fill-opacity:0.60784314;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="m 667.69533,709.2604 c -71.2985,-11.5295 -83.6503,-100.0681 -125.1315,-99.0109 -77.0013,1.9623 -218.5933,158.9144 -210.8226,243.2922 6.9637,75.61622 241.6482,56.07862 268.0557,83.97052 3.1737,3.006 3.8034,4.2651 0.024,5.9259 -73.7426,37.6706 -197.0194,86.20948 -325.7269,97.33028 -88.1546,7.6171 -216.245094,-31.3151 -229.407494,-141.6443 -9.8633,-82.6747 33.2345,-153.3431 56.727694,-195.6704 10.154,-18.2943 -7.913894,-23.6035 -16.042694,-10.7687 -78.1344002,123.37 -97.6417,253.67922 -75.3048,310.8535 25.4571,65.1612 105.423694,153.1618 280.990494,130.655 177.3641,-22.7372 320.2469,-109.4501 346.5766,-145.78818 26.3707,-36.3946 25.5703,-108.16132 -22.9355,-125.07952 -26.9614,-9.4036 -79.5387,-15.4799 -125.768,-21.0931 -53.485,-6.4941 -115.903,-32.1211 -104.3243,-72.0426 7.0648,-24.3585 97.3366,-76.3401 130.8933,-73.8438 47.3414,3.5217 49.1398,98.2215 152.6843,103.6537 l -0.4871,-90.7396 0,0 0,0 0,0 z"
+     id="path3760-9"
+     sodipodi:nodetypes="cssccsssssssssssccccc" />
 </svg>
