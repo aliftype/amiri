@@ -45,10 +45,10 @@
      inkscape:cx="500"
      inkscape:cy="500"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="24"
      inkscape:current-layer="svg5496"
      inkscape:window-width="1280"
-     inkscape:window-height="722"
+     inkscape:window-height="725"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="horizontal"
@@ -78,13 +78,20 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3804"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <g
      id="layer1"
      transform="matrix(1.3,0,0,1.3,-398.20873,-188.60133)" />
   <path
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 437.1643,534.451 c 0.8345,-9.925 -3.8455,-18.833 -14.0538,-13.604 -63.4906,32.52 -139.7259,98.775 -244.8238,85.906 -35.2327,-4.285 -91.9587,-52.498 -82.3537,-75.919 24.3672,-59.416 149.2798,-87.169 231.9777,-53.687 17.7015,7.167 33.1567,-9.782 17.8981,-26.481 C 301.7632,402.462 240.9951,368.541 202.626,381.219 124.0235,407.193 51.397,486.021 35.7914,578.094 26.2802,634.211 53.3211,653.545 73.0224,674.032 43.0387,687.066 20.041,697.179 -0.719,703.383 L 0,800 c 0,0 257.5132,-114.76 397.3412,-166.069 7.8523,-2.881 15.9002,-7.195 17.8964,-15.033 8.2613,-32.434 21.9267,-84.447 21.9267,-84.447 z"
-     id="path2394-7"
+     style="fill:#ff0000;fill-opacity:0.60784314;fill-rule:evenodd;stroke:#000000;stroke-width:0.94761032px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 414.262,548.363 c 0.791,-9.405 -3.644,-17.8463 -13.317,-12.8913 -60.165,30.8163 -132.406,93.6002 -231.999,81.4054 -33.386,-4.0604 -87.141,-49.7476 -78.039,-71.9416 23.09201,-56.30319 141.459,-82.60219 219.825,-50.87429 16.774,6.79149 31.42,-9.2696 16.961,-25.0937 -41.738,-45.6786 -99.323,-77.8225 -135.683,-65.8087 -74.48299,24.6132 -143.306,99.31139 -158.093,186.56079 -9.012,53.177 16.612,71.4981 35.28,90.9118 -28.413,12.3511 -50.206,21.9343 -69.878,27.8134 L 0,800 c 0,0 244.023,-108.7478 376.526,-157.3687 7.44,-2.7301 15.066,-6.818 16.958,-14.2454 7.828,-30.7348 20.778,-80.0229 20.778,-80.0229 z"
+     id="path2394-7-9"
      sodipodi:nodetypes="cssssssscccsss" />
 </svg>
