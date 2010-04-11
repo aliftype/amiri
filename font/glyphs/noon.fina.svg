@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,7 +14,7 @@
    height="1000"
    id="svg5496"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.47pre4 r22446"
    sodipodi:docname="noon.fina.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <metadata
@@ -44,8 +45,11 @@
      inkscape:cx="500"
      inkscape:cy="264.70588"
      inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:current-layer="svg5496">
+     inkscape:window-y="24"
+     inkscape:current-layer="svg5496"
+     inkscape:window-width="1280"
+     inkscape:window-height="725"
+     inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="horizontal"
        position="200"
@@ -67,13 +71,20 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5023"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <g
      id="layer1"
      transform="matrix(1.3,0,0,1.3,-0.4398047,-240)" />
   <path
-     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 515.92888,630.69257 C 511.74186,623.92211 506.90097,618.98323 501.19327,631.43914 L 467.39618,705.19444 C 464.05852,712.47823 470.1026,717.49283 472.63704,723.12072 C 498.76049,781.12934 508.15269,858.96578 491.62723,934.65672 C 489.53008,944.30762 483.50265,952.36516 478.62693,957.19838 C 402.13254,1033.0261 258.94955,1048.0591 163.56536,1024.7478 C -25.364146,978.57471 65.417558,780.51276 96.983547,743.84902 C 105.35849,734.12158 90.691781,722.80017 83.106788,733.96035 C 4.4935003,849.62798 -30.615265,980.73511 32.723221,1060.5941 C 67.787926,1104.8047 108.56185,1127.3375 178.75103,1131.0474 C 297.28593,1137.3396 433.78234,1096.1497 499.60333,986.36602 C 526.22028,941.97126 540.83842,878.69633 554.34309,800 C 554.34309,800 596.35676,792.40717 612.04862,788.86386 C 615.99868,787.9719 614.30848,699.24299 614.30848,699.24299 C 595.0874,699.26113 568.16079,697.47031 557.52674,692.06876 C 550.75063,688.62685 546.33568,686.04256 543.68477,680.086 C 534.82445,660.17699 525.51915,646.20014 515.92888,630.69257 z"
-     id="path2394"
-     sodipodi:nodetypes="cssssssssssscscsss" />
+     style="fill:#ff0000;fill-opacity:0.60784313999999995;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 472.18252,644.06245 c -2.96377,0.012 -5.91809,2.183 -8.46875,8.125 l -28.75,67.00001 c -2.98306,6.9493 2.54525,11.5941 4.9375,16.9063 22.85683,54.79244 29.52411,130.86374 19.71875,200.68744 -29.56957,43.4426 -137.39059,93.2759 -251.46875,91.0313 C 86.50723,1025.419 48.401255,957.8899 48.401255,893.0625 48.397255,846.5234 78.83778,796.2213 94.46377,761.7188 101.68277,745.77756 82.94252,739.88186 76.80752,750.56246 46.130945,797.487 3.026252,900.3392 0.276252,963.0312 c -3.994,91.0485 65.057478,172.8738 195.562518,173.5938 127.271,0.7021 221.30925,-52.2017 263.78125,-120.9375 31.27948,-67.0142 48.54769,-139.8083 61.8125,-215.6875 0,0 15.09483,2.2507 29.90625,-1.0938 -0.19712,-15.4971 -0.21875,-90.31244 -0.21875,-90.31244 -14.34913,0.144 -32.82673,-4.5476 -40.46875,-18.0938 -9.10332,-13.6105 -20.82283,-32.5145 -29.875,-41.65621 -2.64341,-2.6696 -5.62998,-4.7936 -8.59375,-4.7813 z"
+     id="path2394-9"
+     sodipodi:nodetypes="cccccscccsscccccsc" />
 </svg>
