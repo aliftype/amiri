@@ -42,8 +42,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.908"
-     inkscape:cx="434.72203"
-     inkscape:cy="460.50896"
+     inkscape:cx="221.80262"
+     inkscape:cy="521.22995"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:current-layer="svg5496"
@@ -78,6 +78,48 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective2846" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective7409" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2401" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2388-6" />
+    <inkscape:perspective
+       id="perspective8-4"
+       inkscape:persp3d-origin="500 : 333.33333 : 1"
+       inkscape:vp_z="1000 : 500 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 500 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2898"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <g
      id="layer1"
@@ -87,4 +129,17 @@
      d="m 380.089,562.4967 c 21.4667,41.23319 24.5016,65.01799 22.9155,95.1378 -2.2175,42.1121 -20.679,72.0914 -37.8003,86.3853 -30.8863,25.7857 -69.0265,31.1042 -102.6171,21.2681 C 217.1665,751.9877 187.8625,725.2505 157.5442,695.5036 115.5523,732.0036 60.3413,773.3509 0,800 l 0.2665,-90.9012 c 70.3064,-18.9912 115.7004,-41.1392 164.2578,-93.49221 9.2379,-9.96 20.0634,-8.0119 25.8891,-1.1793 11.1171,13.0382 30.0836,36.7905 67.6268,54.42281 25.6121,12.0288 58.5664,17.4493 99.8332,6.2607 1.7862,-0.4843 3.4141,-2.2887 3.0885,-4.4805 -1.5059,-10.2013 -9.6188,-20.97751 -15.2728,-27.39781 -2.8676,-3.2564 -2.717,-6.8918 -1.8108,-9.5737 l 23.5485,-69.69599 c 3.0841,-9.1278 9.6166,-7.3159 12.6622,-1.4661 z"
      id="path2394-6"
      sodipodi:nodetypes="cssscccsssssssss" />
+  <g
+     id="layer1-2"
+     transform="translate(98.081816,-352.82027)" />
+  <path
+     sodipodi:nodetypes="ccssssssss"
+     id="path2886"
+     d="M 262.5871,765.2879 C 226.15798,756.51928 187.8625,725.2505 157.5442,695.5036 115.5523,732.0036 60.306077,773.27306 0,800 c -4.6561984,2.06357 -12.721582,-17.5975 -24.179167,-47.82005 -9.519382,-25.11 -3.207965,-36.13157 24.445667,-43.08115 67.59726,-16.98774 115.7004,-41.1392 164.2578,-93.49221 9.2379,-9.96 20.0634,-8.0119 25.8891,-1.1793 11.1171,13.0382 37.13579,42.83656 67.6268,54.42281 51.921,19.72941 53.69707,37.07156 45.2118,59.77409 -7.5417,20.178 -6.21159,44.95675 -40.6649,36.66371 z"
+     style="fill:#ff0000;fill-opacity:0.60784314;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     style="fill:#ff0000;fill-opacity:0.60784314;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 380.089,562.4967 c 21.4667,41.23319 24.5016,65.01799 22.9155,95.1378 -2.2175,42.1121 -21.51441,71.14639 -37.8003,86.3853 -30.8863,28.90071 -74.69191,29.32167 -102.6171,21.2681 -60.39507,-17.41782 -75.80913,-57.71714 -59.62324,-83.80065 11.54618,-18.60663 23.6817,-26.29265 55.07634,-12.63715 26.40456,11.485 58.5664,17.4493 99.8332,6.2607 1.7862,-0.4843 3.4141,-2.2887 3.0885,-4.4805 -1.5059,-10.2013 -9.6188,-20.97751 -15.2728,-27.39781 -2.8676,-3.2564 -2.717,-6.8918 -1.8108,-9.5737 l 23.5485,-69.69599 c 3.0841,-9.1278 9.6166,-7.3159 12.6622,-1.4661 z"
+     id="path2888"
+     sodipodi:nodetypes="csssssssssss" />
 </svg>
