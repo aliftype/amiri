@@ -1,0 +1,57 @@
+SplineFontDB: 3.0
+FontName: AmiriText-Regular
+FullName: Amiri Text Regular
+FamilyName: Amiri Text
+Weight: Regular
+Copyright: Copyright (C) 2010  Khaled Hosny <khaledhosny@elug.org>
+UComments: "2010-5-8: Created." 
+Version: 000.001
+ItalicAngle: 0
+UnderlinePosition: -100
+UnderlineWidth: 50
+Ascent: 800
+Descent: 200
+LayerCount: 2
+Layer: 0 0 "Back"  1
+Layer: 1 0 "Fore"  0
+XUID: [1021 862 584604386 637949]
+FSType: 8
+OS2Version: 0
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1273266481
+ModificationTime: 1273266795
+PfmFamily: 17
+TTFWeight: 500
+TTFWidth: 5
+LineGap: 90
+VLineGap: 0
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 90
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+OS2Vendor: 'PfEd'
+MarkAttachClasses: 1
+DEI: 91125
+LangName: 3073 "" "" "+BjkGJwYvBkoA" "" "" "" "" "" "" "+BkUGLQZFBi8A +BiwGOQZBBjEA" 
+LangName: 1033 "" "" "" "" "" "" "" "" "" "Muhammad Ja'far" 
+Encoding: UnicodeBmp
+UnicodeInterp: none
+NameList: Adobe Glyph List
+DisplaySize: -72
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 64 8 2
+OnlyBitmaps: 1
+BeginChars: 65536 0
+EndChars
+EndSplineFont
