@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1273590045
+ModificationTime: 1273425376
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -41,17 +41,20 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 Lookup: 2 0 0 "'ccmp' Glyph Decomposition"  {"'ccmp' Glyph Decomposition-1"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 259 0 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 3073 "" "" "+BjkGJwYvBkoA" "" "" "" "" "" "" "+BkUGLQZFBi8A +BiwGOQZBBjEA" 
 LangName: 1033 "" "" "" "" "" "" "" "" "" "Muhammad Ja'far" 
 Encoding: UnicodeBmp
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL without afii
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1547 17 7
+WinInfo: 119 17 7
+AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
 BeginChars: 65722 224
 
 StartChar: alef.fina.alt
@@ -127,6 +130,7 @@ StartChar: ayn+haa.init
 Encoding: 65539 -1 3
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 90 244 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -166,6 +170,7 @@ StartChar: ayn+meem.init
 Encoding: 65540 -1 4
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 170 212 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -210,6 +215,7 @@ StartChar: ayn+yaa.fina
 Encoding: 65541 -1 5
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 415 119 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -253,6 +259,7 @@ StartChar: ayn+yaa.isol
 Encoding: 65542 -1 6
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 426 124 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -439,6 +446,8 @@ StartChar: baa+baa+haa.init
 Encoding: 65548 -1 12
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 516 323 entry 0
+AnchorPoint: "cursive" 65 251 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -479,6 +488,8 @@ StartChar: baa+baa+meem.init
 Encoding: 65549 -1 13
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 367 291 entry 0
+AnchorPoint: "cursive" 132 292 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -521,6 +532,8 @@ StartChar: baa+baa+yaa.isol
 Encoding: 65550 -1 14
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 614 183 entry 0
+AnchorPoint: "cursive" 322 96 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -561,25 +574,10 @@ StartChar: baa+baa.init.alt
 Encoding: 65551 -1 15
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 248 51 exit 0
 LayerCount: 2
 Fore
 SplineSet
-287.407 250.054 m 2
- 290.935 262.183 294.257 260.585 300.578 254.393 c 0
- 325.85 229.639 335.36 152.692 325.979 103.946 c 0
- 316.652 55.4805 291.879 -0.904297 252.691 -3.17871 c 0
- 182.207 -7.26953 149.848 44.8213 101.635 150.402 c 1
- 63.1367 20.1279 23.9404 1.84277 0 0 c 1
- 0.258789 91.4668 l 1
- 76.0732 110.462 79.0127 139.436 85.0742 162.479 c 0
- 92.4502 190.526 61.9912 280.513 48.208 330.916 c 0
- 44.2119 345.529 46.958 349.635 50.1396 357.339 c 0
- 58.7812 378.26 76.4404 415.662 76.4404 415.662 c 2
- 79.7139 423.836 88.5098 419.348 90.3047 413.522 c 0
- 108.633 354.043 151.009 130.689 240.867 108.966 c 0
- 260.553 104.207 279.292 104.268 290.045 109.13 c 1
- 289.491 131.263 275.44 155.432 263.273 167.07 c 1
- 287.407 250.054 l 2
 287.407 250.054 m 2
  290.935 262.183 294.855 261.142 300.578 254.393 c 0
  321.566 229.639 331.36 152.692 321.979 103.946 c 0
@@ -610,6 +608,7 @@ StartChar: baa+baa.init
 Encoding: 65552 -1 16
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 251 90 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -642,6 +641,7 @@ StartChar: baa+baa.isol
 Encoding: 65553 -1 17
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 716 141 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -679,6 +679,7 @@ StartChar: baa+dal.isol
 Encoding: 65554 -1 18
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 420 58 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -716,6 +717,8 @@ StartChar: baa+haa+meem.init
 Encoding: 65555 -1 19
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 164 363 entry 0
+AnchorPoint: "cursive" 199 199 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -765,6 +768,7 @@ StartChar: baa+haa.init
 Encoding: 65556 -1 20
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 38 233 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -838,6 +842,7 @@ StartChar: baa+heh.init
 Encoding: 65558 -1 22
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 146 16 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -874,6 +879,7 @@ StartChar: baa+heh.medi
 Encoding: 65559 -1 23
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 166 11 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -910,6 +916,8 @@ StartChar: baa+meem+alef.fina
 Encoding: 65560 -1 24
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 139 40 exit 0
+AnchorPoint: "cursive" 194 108 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -951,6 +959,8 @@ StartChar: baa+meem+haa.init
 Encoding: 65561 -1 25
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 338 360 entry 0
+AnchorPoint: "cursive" 78 248 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -993,6 +1003,7 @@ StartChar: baa+meem.fina
 Encoding: 65562 -1 26
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 155 59 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1028,6 +1039,7 @@ StartChar: baa+meem.init
 Encoding: 65563 -1 27
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 170 144 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1064,6 +1076,7 @@ StartChar: baa+meem.isol
 Encoding: 65564 -1 28
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 136 503 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1099,6 +1112,7 @@ StartChar: baa+noon.fina
 Encoding: 65565 -1 29
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 490 169 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1138,6 +1152,7 @@ StartChar: baa+noon.isol
 Encoding: 65566 -1 30
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 499 180 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1172,6 +1187,7 @@ StartChar: baa+raa.fina
 Encoding: 65567 -1 31
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 376 163 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1208,6 +1224,7 @@ StartChar: baa+raa.isol
 Encoding: 65568 -1 32
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 382 135 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1239,6 +1256,7 @@ StartChar: baa+seen.init.alt
 Encoding: 65569 -1 33
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 292 151 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1282,6 +1300,7 @@ StartChar: baa+seen.init
 Encoding: 65570 -1 34
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 492 199 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1327,6 +1346,7 @@ StartChar: baa+yaa.isol
 Encoding: 65571 -1 35
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 418 99 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1674,6 +1694,7 @@ StartChar: faa+haa.init
 Encoding: 65584 -1 49
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 61 247 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1714,6 +1735,7 @@ StartChar: faa+meem.init
 Encoding: 65585 -1 50
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 242 241 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1757,6 +1779,7 @@ StartChar: faa+yaa.fina
 Encoding: 65586 -1 51
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 407 79 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1804,6 +1827,7 @@ StartChar: faa+yaa.isol
 Encoding: 65587 -1 52
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 429 108 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1960,6 +1984,7 @@ StartChar: haa+haa.init
 Encoding: 65592 -1 57
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 32 221 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2000,6 +2025,7 @@ StartChar: haa+meem.init
 Encoding: 65593 -1 58
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 186 238 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2037,6 +2063,7 @@ StartChar: haa+raa.isol
 Encoding: 65594 -1 59
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 384 82 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2079,6 +2106,7 @@ StartChar: haa+yaa.isol
 Encoding: 65595 -1 60
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 392 106 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2346,6 +2374,7 @@ StartChar: heh+haa.init
 Encoding: 65604 -1 69
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 50 237 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2397,6 +2426,7 @@ StartChar: heh+meem.init
 Encoding: 65605 -1 70
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 264 239 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2574,6 +2604,7 @@ StartChar: kaf+alef.fina
 Encoding: 65610 -1 75
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 150 4 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2612,6 +2643,7 @@ StartChar: kaf+alef.isol
 Encoding: 65611 -1 76
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 225 54 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2647,6 +2679,7 @@ StartChar: kaf+baa.init
 Encoding: 65612 -1 77
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 219 68 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2682,6 +2715,7 @@ StartChar: kaf+baa.medi
 Encoding: 65613 -1 78
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 269 56 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2721,6 +2755,7 @@ StartChar: kaf+dal.isol
 Encoding: 65614 -1 79
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 435 -126 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2768,6 +2803,7 @@ StartChar: kaf+heh.fina
 Encoding: 65615 -1 80
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 273 10 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2816,6 +2852,7 @@ StartChar: kaf+heh.isol
 Encoding: 65616 -1 81
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 307 23 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2863,6 +2900,7 @@ StartChar: kaf+kaf.fina
 Encoding: 65617 -1 82
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 646 25 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2919,6 +2957,8 @@ StartChar: kaf+lam+alef.fina
 Encoding: 65618 -1 83
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 292 153 exit 0
+AnchorPoint: "cursive" 573 43 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2972,6 +3012,8 @@ StartChar: kaf+lam+alef.isol
 Encoding: 65619 -1 84
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 375 162 exit 0
+AnchorPoint: "cursive" 628 51 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3019,6 +3061,8 @@ StartChar: kaf+lam+meem.medi
 Encoding: 65620 -1 85
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 475 34 exit 0
+AnchorPoint: "cursive" 218 146 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3069,6 +3113,7 @@ StartChar: kaf+lam.init
 Encoding: 65621 -1 86
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 230 32 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3107,6 +3152,7 @@ StartChar: kaf+lam.isol
 Encoding: 65622 -1 87
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 557 159 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3148,6 +3194,7 @@ StartChar: kaf+lam.medi
 Encoding: 65623 -1 88
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 197 41 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3186,6 +3233,8 @@ StartChar: kaf+meem+alef.fina
 Encoding: 65624 -1 89
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 131 -12 exit 0
+AnchorPoint: "cursive" 167 29 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3235,6 +3284,8 @@ StartChar: kaf+meem+alef.isol
 Encoding: 65625 -1 90
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 148 -42 exit 0
+AnchorPoint: "cursive" 206 -16 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3285,6 +3336,8 @@ StartChar: kaf+meem+lam.fina
 Encoding: 65626 -1 91
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 432 -31 exit 0
+AnchorPoint: "cursive" 491 -10 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3340,6 +3393,8 @@ StartChar: kaf+meem+lam.init
 Encoding: 65627 -1 92
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 190 47 exit 0
+AnchorPoint: "cursive" 228 104 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3387,6 +3442,7 @@ StartChar: kaf+meem.fina
 Encoding: 65628 -1 93
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 162 106 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3433,6 +3489,7 @@ StartChar: kaf+meem.init
 Encoding: 65629 -1 94
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 218 213 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3476,6 +3533,7 @@ StartChar: kaf+meem.isol.alt
 Encoding: 65630 -1 95
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 443 206 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3516,6 +3574,7 @@ StartChar: kaf+meem.isol
 Encoding: 65631 -1 96
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 155 187 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3560,6 +3619,7 @@ StartChar: kaf+meem.medi
 Encoding: 65632 -1 97
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 217 207 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3604,6 +3664,7 @@ StartChar: kaf+raa.fina
 Encoding: 65633 -1 98
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 389 59 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3627,7 +3688,7 @@ SplineSet
  318.541 632.591 688.579 781.963 868.965 819.064 c 0
  879.924 821.318 883.515 810.586 880.382 802.346 c 1
 385.942 117.372 m 0
- 436.385 69.3799 396.485 19.4287 394.552 -0 c 0
+ 430 101 396.485 19.4287 394.552 -0 c 0
  380.633 -139.85 257.428 -265.992 185.46 -270.811 c 0
  145.589 -273.479 55.0107 -218.609 36.3633 -208.463 c 0
  25.9326 -202.787 29.418 -190.534 39.0273 -191.41 c 0
@@ -3637,7 +3698,7 @@ SplineSet
  328.2 25.2129 325.299 31.5244 326.947 38.5 c 2
  348.438 129.384 l 2
  348.886 131.277 358.657 133.175 362.498 130.173 c 0
- 368.875 125.188 378.919 124.055 385.942 117.372 c 0
+ 368.875 125.188 376.855 120.749 385.942 117.372 c 0
 EndSplineSet
 EndChar
 
@@ -3645,6 +3706,7 @@ StartChar: kaf+raa.isol
 Encoding: 65634 -1 99
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 248 84 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3683,6 +3745,7 @@ StartChar: kaf+yaa.fina
 Encoding: 65635 -1 100
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 412 -6 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3727,6 +3790,7 @@ StartChar: kaf+yaa.isol
 Encoding: 65636 -1 101
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 413 125 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3944,6 +4008,7 @@ StartChar: lam+alef.fina
 Encoding: 65642 -1 107
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 384 152 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3981,6 +4046,7 @@ StartChar: lam+alef.isol
 Encoding: 65643 -1 108
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 277 68 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4026,6 +4092,8 @@ StartChar: lam+baa+meem.init
 Encoding: 65644 -1 109
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 315 281 exit 0
+AnchorPoint: "cursive" 174 132 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4069,6 +4137,7 @@ StartChar: lam+dal.isol
 Encoding: 65645 -1 110
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 370 90 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4108,6 +4177,8 @@ StartChar: lam+haa+haa.init
 Encoding: 65646 -1 111
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 183 435 exit 0
+AnchorPoint: "cursive" 70 231 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4164,6 +4235,8 @@ StartChar: lam+haa+meem.init
 Encoding: 65647 -1 112
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 148 202 exit 0
+AnchorPoint: "cursive" 154 361 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4211,6 +4284,7 @@ StartChar: lam+haa.init
 Encoding: 65648 -1 113
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 85 247 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4253,6 +4327,7 @@ StartChar: lam+heh.fina
 Encoding: 65649 -1 114
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 364 -37 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4295,6 +4370,7 @@ StartChar: lam+heh.init
 Encoding: 65650 -1 115
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 240 266 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4342,6 +4418,7 @@ StartChar: lam+heh.isol
 Encoding: 65651 -1 116
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 344 59 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4390,6 +4467,7 @@ StartChar: lam+kaf.fina
 Encoding: 65652 -1 117
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 751 11 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4445,6 +4523,7 @@ StartChar: lam+kaf.isol
 Encoding: 65653 -1 118
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 775 60 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4504,6 +4583,8 @@ StartChar: lam+lam+alef.isol
 Encoding: 65654 -1 119
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 402 188 exit 0
+AnchorPoint: "cursive" 614 60 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4553,6 +4634,8 @@ StartChar: lam+lam+haa.init
 Encoding: 65655 -1 120
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 427 328 exit 0
+AnchorPoint: "cursive" 67 243 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4606,6 +4689,7 @@ StartChar: lam+lam.init
 Encoding: 65656 -1 121
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 217 39 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4641,6 +4725,8 @@ StartChar: lam+meem+haa.init
 Encoding: 65657 -1 122
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 442 367 exit 0
+AnchorPoint: "cursive" 56 246 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4695,6 +4781,7 @@ StartChar: lam+meem.fina
 Encoding: 65658 -1 123
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 151 50 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4732,6 +4819,7 @@ StartChar: lam+meem.init
 Encoding: 65659 -1 124
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 221 94 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4767,6 +4855,7 @@ StartChar: lam+meem.isol
 Encoding: 65660 -1 125
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 161 229 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4807,6 +4896,7 @@ StartChar: lam+meem.medi
 Encoding: 65661 -1 126
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 237 83 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4840,6 +4930,7 @@ StartChar: lam+qaf.fina
 Encoding: 65662 -1 127
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 544 123 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4883,6 +4974,7 @@ StartChar: lam+raa.isol
 Encoding: 65663 -1 128
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 377 141 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4922,6 +5014,7 @@ StartChar: lam+waw.fina
 Encoding: 65664 -1 129
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 403 71 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4961,6 +5054,7 @@ StartChar: lam+yaa.fina
 Encoding: 65665 -1 130
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 406 -71 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5003,6 +5097,7 @@ StartChar: lam+yaa.isol
 Encoding: 65666 -1 131
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 412 102 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5153,6 +5248,8 @@ StartChar: lellah
 Encoding: 65671 -1 136
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 523 63 exit 0
+AnchorPoint: "cursive" 292 56 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5225,6 +5322,7 @@ StartChar: meem+alef.fina
 Encoding: 65673 -1 138
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 224 -111 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5257,6 +5355,8 @@ StartChar: meem+haa+meem.init
 Encoding: 65674 -1 139
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 188 373 exit 0
+AnchorPoint: "cursive" 212 222 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5309,6 +5409,7 @@ StartChar: meem+haa.init
 Encoding: 65675 -1 140
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 56 251 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5347,6 +5448,7 @@ StartChar: meem+meem.init
 Encoding: 65676 -1 141
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 168 133 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5385,6 +5487,7 @@ StartChar: meem+raa.isol
 Encoding: 65677 -1 142
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 461 189 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5420,6 +5523,7 @@ StartChar: meem+yaa.isol
 Encoding: 65678 -1 143
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 372 135 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5899,6 +6003,7 @@ StartChar: sad+haa.init
 Encoding: 65695 -1 160
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 55 235 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5943,6 +6048,7 @@ StartChar: sad+haa.isol
 Encoding: 65696 -1 161
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 62 399 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5995,6 +6101,7 @@ StartChar: sad+meem.init
 Encoding: 65697 -1 162
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 135 124 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6202,6 +6309,8 @@ StartChar: seen+baa+meem.init
 Encoding: 65703 -1 168
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 384 253 exit 0
+AnchorPoint: "cursive" 144 122 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6256,6 +6365,7 @@ StartChar: seen+haa.init
 Encoding: 65704 -1 169
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 63 223 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6304,6 +6414,7 @@ StartChar: seen+haa.isol
 Encoding: 65705 -1 170
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 65 481 entry 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6359,6 +6470,7 @@ StartChar: seen+meem.init
 Encoding: 65706 -1 171
 Width: 0
 VWidth: 0
+AnchorPoint: "cursive" 148 113 entry 0
 LayerCount: 2
 Fore
 SplineSet
