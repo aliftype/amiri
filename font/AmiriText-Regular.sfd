@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 637949]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1273592410
+ModificationTime: 1273602098
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -45,6 +44,8 @@ Lookup: 2 0 0 "'ccmp' Glyph Decomposition"  {"'ccmp' Glyph Decomposition-1"  } [
 Lookup: 1 0 0 "'init' Initial Forms in Arabic lookup 1"  {"'init' Initial Forms in Arabic lookup 1 subtable"  } ['init' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'medi' Medial Forms in Arabic lookup 2"  {"'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'fina' Terminal Forms in Arabic lookup 3"  {"'fina' Terminal Forms in Arabic lookup 3 subtable"  } ['fina' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "LamHaaHaaInit"  {"LamHaaHaaInit subtable"  } []
+Lookup: 1 0 0 "LamHaaHaaInit2"  {"LamHaaHaaInit2 subtable"  } []
 Lookup: 1 0 0 "AynMeemInit"  {"AynMeemInit subtable"  } []
 Lookup: 1 0 0 "KafHehIsol"  {"KafHehIsol subtable"  } []
 Lookup: 1 0 0 "LamDalIsol"  {"LamDalIsol subtable"  } []
@@ -142,10 +143,67 @@ Lookup: 1 0 0 "SadHaaInit"  {"SadHaaInit subtable"  } []
 Lookup: 1 0 0 "KafMeemAlefFina"  {"KafMeemAlefFina subtable"  } []
 Lookup: 1 0 0 "KafAlefFina"  {"KafAlefFina subtable"  } []
 Lookup: 1 0 0 "LamKafFina"  {"LamKafFina subtable"  } []
-Lookup: 6 0 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 22"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 60"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 86"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  } ['calt' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "BaaYaaFina"  {"BaaYaaFina subtable"  } []
+Lookup: 1 0 0 "BaaSeenAltInit"  {"BaaSeenAltInit subtable"  } []
+Lookup: 1 0 0 "BaaHaaIsol"  {"BaaHaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaHaaInit"  {"BaaHaaInit subtable"  } []
+Lookup: 1 0 0 "BaaHaaMeemInit"  {"BaaHaaMeemInit subtable"  } []
+Lookup: 6 0 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 22"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 60"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 86"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  } ['calt' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 259 0 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  0 0 0 1
+ String: 26 lam.init haa.medi haa.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamHaaHaaInit" 
+  SeqLookup: 1 "LamHaaHaaInit" 
+  SeqLookup: 2 "LamHaaHaaInit2" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  0 0 0 1
+ String: 17 baa.init haa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaHaaIsol" 
+  SeqLookup: 1 "BaaHaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  0 0 0 1
+ String: 17 baa.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaHaaInit" 
+  SeqLookup: 1 "BaaHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  0 0 0 1
+ String: 27 baa.init haa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaHaaMeemInit" 
+  SeqLookup: 1 "BaaHaaMeemInit" 
+  SeqLookup: 2 "BaaHaaMeemInit" 
+EndFPST
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  0 0 0 1
+ 3 0 0
+  Coverage: 8 baa.init
+  Coverage: 9 seen.medi
+  Coverage: 17 raa.fina yaa.fina
+ 3
+  SeqLookup: 0 "BaaSeenAltInit" 
+  SeqLookup: 1 "BaaSeenAltInit" 
+  SeqLookup: 2 "BaaSeenAltInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  0 0 0 1
+ String: 17 baa.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaYaaFina" 
+  SeqLookup: 1 "BaaYaaFina" 
+EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  0 0 0 1
  String: 17 lam.medi kaf.fina
  BString: 0 
@@ -950,9 +1008,9 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 24 10
+WinInfo: 65376 24 10
 AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
-BeginChars: 65838 342
+BeginChars: 65854 353
 
 StartChar: alef.fina.alt
 Encoding: 65536 -1 0
@@ -1102,7 +1160,7 @@ EndChar
 
 StartChar: ayn.init
 Encoding: 65541 -1 5
-Width: 0
+Width: 436
 VWidth: 0
 LayerCount: 2
 Fore
@@ -1227,177 +1285,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: baa+haa+meem.init
-Encoding: 65545 -1 9
-Width: 0
-VWidth: 0
-AnchorPoint: "cursive" 164 363 entry 0
-AnchorPoint: "cursive" 199 199 exit 0
-LayerCount: 2
-Fore
-SplineSet
-146.857 389.958 m 0
- 160.261 400.243 217.788 401.29 288.414 375.664 c 0
- 419.627 328.055 517.656 293.005 673.287 286.951 c 1
- 687.196 283.942 694.037 277.419 689.037 268.222 c 0
- 680.695 252.879 661.706 214.683 649.317 202.522 c 0
- 644.186 197.484 639.643 198.603 632.745 199.465 c 0
- 503.133 215.666 406.708 233.336 272.667 197.522 c 0
- 231.531 186.532 165.753 156.753 141.446 207.273 c 1
- 180.759 233.107 267.616 250.452 339.807 258.792 c 1
- 260.473 295.592 194.059 311.19 112.662 303.768 c 0
- 107.666 303.312 105.418 305.104 107.4 310.668 c 0
- 117.329 338.534 134.741 380.661 146.857 389.958 c 0
-141.446 207.273 m 0
- 164.249 223.284 247.178 224.324 272.667 197.522 c 0
- 310.012 158.256 329.576 106.248 321.461 86.2402 c 0
- 309.459 56.6484 280.891 15.1699 273.306 11.7578 c 0
- 247.152 -0.00488281 147.786 39.8525 95.6123 78.8018 c 1
- 67.2578 23.8252 24.5615 -0.204102 0 0 c 0
- -39.0928 0.325195 -28.1416 92.2393 -0.0136719 90.792 c 0
- 36.0693 88.9346 78.9619 98.4307 92.417 111.678 c 0
- 100.788 119.92 124.767 195.562 141.446 207.273 c 0
-280.967 96.6562 m 0
- 275.482 119.384 229.166 159.886 190.516 169.741 c 0
- 176.814 173.234 162.352 167.377 152.534 158.778 c 0
- 148.166 154.951 147.15 150.096 151.584 146.367 c 0
- 166.4 133.912 226.841 103.601 273.93 89.8613 c 0
- 278.959 88.3936 282.126 91.8545 280.967 96.6562 c 0
-534.059 596.048 m 1
- 534.059 596.048 l 1
- 550.708 595.563 568.211 586.258 573.901 569.312 c 0
- 594.141 509.036 566.346 411.639 561.758 392.057 c 0
- 557.54 374.055 537.396 377.142 540.1 397.117 c 0
- 545.624 437.935 548.298 492.537 494.335 496.465 c 0
- 466.758 498.473 392.462 407.6 288.414 375.664 c 0
- 228.962 357.417 207.47 346.816 112.662 303.768 c 1
- 107.666 303.312 105.418 305.104 107.4 310.668 c 0
- 117.329 338.534 134.666 380.759 146.857 389.958 c 0
- 166.083 404.465 295.207 422.725 384.936 478.264 c 0
- 463.895 527.137 487.853 597.392 534.059 596.048 c 1
-EndSplineSet
-EndChar
-
-StartChar: baa+haa.init
-Encoding: 65546 -1 10
-Width: 0
-VWidth: 0
-AnchorPoint: "cursive" 38 233 exit 0
-LayerCount: 2
-Fore
-SplineSet
-438.209 359.269 m 0
- 439.398 339.614 416.846 340.198 415.608 357.193 c 0
- 414.435 373.312 403.397 436.89 382.343 451.611 c 0
- 375.577 456.342 366.213 458.643 356.021 449.09 c 1
- 296.229 360.467 159.454 224.018 -14.5303 179.571 c 1
- -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
- -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
- 7.1416 256.926 14.8447 266.531 21.8564 269.708 c 0
- 79.1221 295.658 152 318.916 215.617 360.997 c 0
- 260.985 391.008 287.238 421.358 306.693 449.386 c 0
- 328.177 480.336 341.216 551.167 377.311 551.997 c 0
- 424.744 553.088 435.497 404.086 438.209 359.269 c 0
-21.8564 269.708 m 0
- 41.2373 276.877 104.125 271.338 156.295 257.26 c 0
- 272.922 225.788 396.054 196.104 536.68 194.927 c 0
- 547.231 194.838 560.536 183.292 553.451 170.004 c 2
- 527.52 121.376 l 2
- 524.165 115.082 516.016 107.555 508.237 108.744 c 0
- 306.91 139.507 152.04 38.8193 0 0 c 0
- -24.0547 -6.1416 -42.9131 88.0195 -0.495117 90.7627 c 0
- 79.8926 95.96 156.157 115.088 220.13 140.101 c 0
- 225.086 142.038 226.681 145.158 220.925 147.004 c 0
- 151.688 169.203 70.96 186.557 -14.5303 179.571 c 0
- -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
- -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
- 7.1416 256.926 14.6367 267.038 21.8564 269.708 c 0
-EndSplineSet
-EndChar
-
-StartChar: baa+haa.isol
-Encoding: 65547 -1 11
-Width: 0
-VWidth: 0
-LayerCount: 2
-Fore
-SplineSet
-1.70703 460.156 m 1
- -0.40918 517.898 27.9473 542.498 90.7852 579.699 c 1
- 180.806 631.306 264.292 675.64 300.084 765.34 c 0
- 323.235 825.192 340.292 874.226 370.185 874.059 c 0
- 400.079 873.892 427.454 839.18 431.29 771.262 c 0
- 433.167 738.026 433.679 694.888 432.417 667.186 c 0
- 431.6 649.256 411.963 650.119 409.898 667.875 c 0
- 406.341 698.479 393.862 778.05 359.465 777.939 c 0
- 341.768 777.884 331.925 755.136 312.562 715.397 c 0
- 276.148 640.67 208.806 587.683 135.906 547.107 c 0
- 89.9541 521.531 46.3594 489.342 1.70703 460.156 c 1
-134.344 542.637 m 0
- 285.068 534.915 400.812 537.06 543.307 547.971 c 0
- 547.854 548.319 553.326 545.678 551.641 539.41 c 2
- 551.641 539.41 543.478 500.896 536.372 482.632 c 0
- 533.184 474.437 527.535 472.87 522.396 472.244 c 0
- 470.898 465.973 380.88 448.721 303.522 417.573 c 0
- 202.635 376.95 68.6377 280.738 65.9131 139.57 c 0
- 63.5703 18.2432 121.807 -45.9766 199.807 -76.4678 c 0
- 336.124 -129.756 578.627 -109.863 679.062 -97.6289 c 0
- 694.364 -95.7764 691.443 -115.61 683.682 -118.938 c 0
- 595.251 -156.846 485.015 -203.206 381.973 -198.422 c 0
- 255.374 -192.544 75.5801 -175.35 33.9893 1.65137 c 0
- 3.73828 130.398 61.5146 343.773 242.7 458.196 c 1
- 1.70703 460.156 l 1
- 0.411133 495.522 10.5459 518.455 33.0332 539.466 c 1
- 40.4609 544.571 85.416 545.144 134.344 542.637 c 0
-EndSplineSet
-EndChar
-
-StartChar: baa+seen.init.alt
-Encoding: 65548 -1 12
-Width: 0
-VWidth: 0
-AnchorPoint: "cursive" 292 151 entry 0
-LayerCount: 2
-Fore
-SplineSet
-293.057 177.572 m 0
- 310.851 152.018 297.677 89.7295 290.952 107.925 c 0
- 289.23 112.584 286.583 112.647 284.47 107.985 c 0
- 267.934 71.5098 235.258 -1.90234 199.615 -5.89355 c 0
- 159.052 -10.4365 120.218 15.4385 92.8574 47.4248 c 1
- 62.624 15.9697 44.5596 3.68555 0 0 c 0
- -8.32129 -0.688477 -19.0537 29.7646 -21.3174 56.5107 c 0
- -23.5801 83.2568 -20.8076 91.8418 -0.0517578 90.4355 c 0
- 100.163 83.6504 120.333 123.379 138.792 169.206 c 0
- 145.964 187.01 164.839 178.725 159.202 164.349 c 0
- 154.945 153.493 152.111 146.242 150.226 136.337 c 0
- 148.422 126.863 150.11 116.93 154.577 112.388 c 0
- 167.584 99.1582 212.344 72.6719 240.639 85.9502 c 0
- 254.84 92.6152 270.035 146.277 280.192 175.753 c 0
- 281.888 180.674 289.232 183.064 293.057 177.572 c 0
-382.206 430.324 m 0
- 382.207 430.327 l 1
- 382.206 430.327 l 1
- 382.206 430.327 l 1
- 382.206 430.327 l 1
- 385.53 430.366 389.266 428.014 391.188 424.758 c 0
- 412.157 389.256 438.922 310.075 452.259 234.485 c 0
- 458.317 200.149 459.93 166.527 459.908 138.125 c 0
- 459.874 95.1816 433.716 17.7803 414.73 14.3799 c 0
- 360.455 4.65918 303.911 74.8662 290.952 107.925 c 0
- 267.987 166.504 286.603 187.932 293.057 177.572 c 0
- 330.447 117.55 399.608 69.6221 430.136 93.5381 c 0
- 431.2 94.3721 432.005 96.8018 432.043 99.3037 c 0
- 432.401 123.593 422.19 169.883 408.823 212.457 c 0
- 397.077 249.866 380.775 289.853 359.363 329.335 c 0
- 357.888 332.055 357.887 334.22 358.157 336.274 c 0
- 361.769 363.702 367.629 396.312 376.237 425.236 c 0
- 377.302 428.811 379.621 430.294 382.206 430.324 c 0
-EndSplineSet
-EndChar
-
 StartChar: baa.fina
-Encoding: 65549 -1 13
+Encoding: 65549 -1 9
 Width: 812
 VWidth: 0
 LayerCount: 2
@@ -1425,7 +1314,7 @@ Colour: ffff00
 EndChar
 
 StartChar: baa.init
-Encoding: 65550 -1 14
+Encoding: 65550 -1 10
 Width: 120
 VWidth: 0
 LayerCount: 2
@@ -1443,6 +1332,10 @@ SplineSet
  23.4268 193.942 23.0127 205.264 25.5518 211.204 c 0
  35.9824 235.609 47.416 261.87 56.333 276.213 c 0
 EndSplineSet
+Substitution2: "BaaHaaMeemInit subtable" baa.init_BaaHaaMeemInit
+Substitution2: "BaaHaaInit subtable" baa.init_BaaHaaInit
+Substitution2: "BaaHaaIsol subtable" baa.init_BaaHaaIsol
+Substitution2: "BaaSeenAltInit subtable" baa.init_BaaSeenAltInit
 Substitution2: "BaaMeemIsol subtable" baa.init_BaaMeemIsol
 Substitution2: "BaaBaaMeemInit subtable" baa.init_BaaBaaMeemInit
 Substitution2: "BaaBaaIsol subtable" baa.init_BaaBaaIsol
@@ -1461,7 +1354,7 @@ Colour: ffff00
 EndChar
 
 StartChar: baa.isol
-Encoding: 65551 -1 15
+Encoding: 65551 -1 11
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -1488,7 +1381,7 @@ Colour: ffff00
 EndChar
 
 StartChar: baa.medi.alt
-Encoding: 65552 -1 16
+Encoding: 65552 -1 12
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1514,7 +1407,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.medi
-Encoding: 65553 -1 17
+Encoding: 65553 -1 13
 Width: 208
 VWidth: 0
 LayerCount: 2
@@ -1533,6 +1426,7 @@ SplineSet
  113.341 161.676 130.41 160.343 132.29 151.055 c 0
  141.817 103.978 156.314 94.7852 208.227 81.082 c 0
 EndSplineSet
+Substitution2: "BaaYaaFina subtable" baa.medi_BaaYaaFina
 Substitution2: "BaaNoonFina subtable" baa.medi_BaaNoonFina
 Substitution2: "KafBaaMedi subtable" baa.medi_KafBaaMedi
 Substitution2: "BaaBaaMeemInit subtable" baa.medi_BaaBaaMeemInit
@@ -1550,7 +1444,7 @@ Colour: ffff00
 EndChar
 
 StartChar: colon
-Encoding: 58 58 18
+Encoding: 58 58 14
 Width: 160
 VWidth: 0
 LayerCount: 2
@@ -1570,7 +1464,7 @@ EndSplineSet
 EndChar
 
 StartChar: dal.fina
-Encoding: 65555 -1 19
+Encoding: 65555 -1 15
 Width: 412
 VWidth: 0
 LayerCount: 2
@@ -1602,7 +1496,7 @@ Colour: ffff00
 EndChar
 
 StartChar: dal.isol
-Encoding: 65556 -1 20
+Encoding: 65556 -1 16
 Width: 346
 VWidth: 0
 LayerCount: 2
@@ -1628,7 +1522,7 @@ Colour: ffff00
 EndChar
 
 StartChar: dash
-Encoding: 65557 -1 21
+Encoding: 65557 -1 17
 Width: 676
 VWidth: 0
 LayerCount: 2
@@ -1643,7 +1537,7 @@ EndSplineSet
 EndChar
 
 StartChar: dot.double
-Encoding: 65558 -1 22
+Encoding: 65558 -1 18
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1671,7 +1565,7 @@ EndSplineSet
 EndChar
 
 StartChar: dot.single
-Encoding: 65559 -1 23
+Encoding: 65559 -1 19
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1690,7 +1584,7 @@ EndSplineSet
 EndChar
 
 StartChar: dot.tripple
-Encoding: 65560 -1 24
+Encoding: 65560 -1 20
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1727,7 +1621,7 @@ EndSplineSet
 EndChar
 
 StartChar: faa.fina
-Encoding: 65561 -1 25
+Encoding: 65561 -1 21
 Width: 946
 VWidth: 0
 LayerCount: 2
@@ -1755,7 +1649,7 @@ Colour: ffff00
 EndChar
 
 StartChar: faa.init
-Encoding: 65562 -1 26
+Encoding: 65562 -1 22
 Width: 258
 VWidth: 0
 LayerCount: 2
@@ -1788,7 +1682,7 @@ Colour: ffff00
 EndChar
 
 StartChar: faa.isol
-Encoding: 65563 -1 27
+Encoding: 65563 -1 23
 Width: 884
 VWidth: 0
 LayerCount: 2
@@ -1821,7 +1715,7 @@ Colour: ffff00
 EndChar
 
 StartChar: faa.medi
-Encoding: 65564 -1 28
+Encoding: 65564 -1 24
 Width: 352
 VWidth: 0
 LayerCount: 2
@@ -1849,43 +1743,44 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.fina
-Encoding: 65565 -1 29
+Encoding: 65565 -1 25
 Width: 598
 VWidth: 0
 LayerCount: 2
 Fore
 SplineSet
-168.017 619.528 m 0
- 207.646 619.83 250.403 612.319 286.329 606.185 c 0
- 379.241 590.318 458.77 586.481 569.673 605.716 c 0
- 585.811 608.515 594.872 601.618 591.829 594.81 c 2
- 564.61 533.873 l 2
- 562.13 528.32 558.882 525.427 553.267 524.685 c 0
- 512.001 519.228 470.838 513.116 431.079 505.31 c 1
- 448.804 442.429 548.54 448.05 598.275 449.636 c 0
- 639.86 450.961 623.891 360.664 598.723 359.11 c 0
- 500.078 353.022 367.607 358.34 390.517 496.592 c 1
- 326.774 481.587 268.122 461.017 220.485 430.278 c 0
- 111.128 359.713 61.292 243.207 73.8604 140.998 c 0
- 82.1094 73.917 131.61 -2.2168 213.423 -38.0654 c 0
- 305.958 -78.6133 536.442 -58.0205 690.704 -43.8467 c 0
- 724.438 -40.7471 713.057 -65.2012 697.86 -69.6904 c 0
- 618.688 -93.0811 590.994 -126.171 560.048 -140.658 c 0
- 551.316 -144.746 548.503 -147.071 539.235 -147.94 c 0
- 395.243 -161.437 219.867 -169.475 114.329 -92.1582 c 0
- 13.9033 -18.5889 10.8555 109.782 35.0166 219.278 c 0
- 59.1826 328.795 115.444 436.763 272.985 516.748 c 1
- 188.229 537.027 112.996 531.838 59.8291 502.966 c 0
- 52.1562 498.799 41.8574 503.536 42.0791 510.653 c 0
- 44.6182 596.854 101.968 619.027 168.017 619.528 c 0
+168.017 260.418 m 0
+ 207.646 260.72 250.403 253.209 286.329 247.075 c 0
+ 379.241 231.208 458.77 227.371 569.673 246.606 c 0
+ 585.811 249.405 594.872 242.508 591.829 235.7 c 2
+ 564.61 174.763 l 2
+ 562.13 169.21 558.882 166.317 553.267 165.575 c 0
+ 512.001 160.118 470.838 154.006 431.079 146.2 c 1
+ 448.804 83.3193 548.54 88.9404 598.275 90.5264 c 0
+ 639.86 91.8506 623.891 1.55371 598.723 0 c 0
+ 500.078 -6.08789 367.607 -0.769531 390.517 137.482 c 1
+ 326.774 122.477 268.122 101.907 220.485 71.168 c 0
+ 111.128 0.603516 61.292 -115.903 73.8604 -218.112 c 0
+ 82.1094 -285.193 131.61 -361.327 213.423 -397.176 c 0
+ 305.958 -437.724 536.442 -417.131 690.704 -402.957 c 0
+ 724.438 -399.857 713.057 -424.312 697.86 -428.801 c 0
+ 618.688 -452.191 590.994 -485.281 560.048 -499.768 c 0
+ 551.316 -503.856 548.503 -506.181 539.235 -507.05 c 0
+ 395.243 -520.547 219.867 -528.585 114.329 -451.269 c 0
+ 13.9033 -377.699 10.8555 -249.328 35.0166 -139.832 c 0
+ 59.1826 -30.3154 115.444 77.6533 272.985 157.638 c 1
+ 188.229 177.917 112.996 172.729 59.8291 143.856 c 0
+ 52.1562 139.689 41.8574 144.426 42.0791 151.543 c 0
+ 44.6182 237.744 101.968 259.917 168.017 260.418 c 0
 EndSplineSet
+Substitution2: "BaaHaaIsol subtable" haa.fina_BaaHaaIsol
 Substitution2: "SeenHaaIsol subtable" haa.fina_SeenHaaIsol
 Substitution2: "SadHaaIsol subtable" haa.fina_SadHaaIsol
 Colour: ffff00
 EndChar
 
 StartChar: haa.init.alt
-Encoding: 65566 -1 30
+Encoding: 65566 -1 26
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1910,7 +1805,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.init
-Encoding: 65567 -1 31
+Encoding: 65567 -1 27
 Width: 602
 VWidth: 0
 LayerCount: 2
@@ -1936,7 +1831,7 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.isol
-Encoding: 65568 -1 32
+Encoding: 65568 -1 28
 Width: 666
 VWidth: 0
 LayerCount: 2
@@ -1968,7 +1863,7 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.medi.alt
-Encoding: 65569 -1 33
+Encoding: 65569 -1 29
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2000,7 +1895,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi
-Encoding: 65570 -1 34
+Encoding: 65570 -1 30
 Width: 586
 VWidth: 0
 LayerCount: 2
@@ -2028,6 +1923,10 @@ SplineSet
  0.848633 196.016 -14.5625 194.795 -9.68262 213.01 c 0
  11.3604 291.553 78.9668 310.468 118.57 310.468 c 0
 EndSplineSet
+Substitution2: "LamHaaHaaInit2 subtable" haa.medi2_LamHaaHaaInit
+Substitution2: "LamHaaHaaInit subtable" haa.medi1_LamHaaHaaInit
+Substitution2: "BaaHaaMeemInit subtable" haa.medi_BaaHaaMeemInit
+Substitution2: "BaaHaaInit subtable" haa.medi_BaaHaaInit
 Substitution2: "SadHaaInit subtable" haa.medi_SadHaaInit
 Substitution2: "HehHaaInit subtable" haa.medi_HehHaaInit
 Substitution2: "BaaBaaHaaInit subtable" haa.medi_BaaBaaHaaInit
@@ -2046,7 +1945,7 @@ Colour: ffff00
 EndChar
 
 StartChar: hamza.small
-Encoding: 65571 -1 35
+Encoding: 65571 -1 31
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2071,9 +1970,10 @@ EndSplineSet
 EndChar
 
 StartChar: hamza
-Encoding: 65572 -1 36
-Width: 0
+Encoding: 65572 -1 32
+Width: 266
 VWidth: 0
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -2098,7 +1998,7 @@ EndSplineSet
 EndChar
 
 StartChar: heh.fina
-Encoding: 65573 -1 37
+Encoding: 65573 -1 33
 Width: 318
 VWidth: 0
 LayerCount: 2
@@ -2134,7 +2034,7 @@ Colour: ffff00
 EndChar
 
 StartChar: heh.init
-Encoding: 65574 -1 38
+Encoding: 65574 -1 34
 Width: 420
 VWidth: 0
 LayerCount: 2
@@ -2172,7 +2072,7 @@ Colour: ffff00
 EndChar
 
 StartChar: heh.isol
-Encoding: 65575 -1 39
+Encoding: 65575 -1 35
 Width: 266
 VWidth: 0
 LayerCount: 2
@@ -2199,7 +2099,7 @@ Colour: ffff00
 EndChar
 
 StartChar: heh.medi
-Encoding: 65576 -1 40
+Encoding: 65576 -1 36
 Width: 394
 VWidth: 0
 LayerCount: 2
@@ -2240,7 +2140,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.fina
-Encoding: 65577 -1 41
+Encoding: 65577 -1 37
 Width: 760
 VWidth: 0
 LayerCount: 2
@@ -2286,7 +2186,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.init.alt
-Encoding: 65578 -1 42
+Encoding: 65578 -1 38
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2321,7 +2221,7 @@ EndSplineSet
 EndChar
 
 StartChar: kaf.init
-Encoding: 65579 -1 43
+Encoding: 65579 -1 39
 Width: 198
 VWidth: 0
 LayerCount: 2
@@ -2363,7 +2263,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.isol
-Encoding: 65580 -1 44
+Encoding: 65580 -1 40
 Width: 556
 VWidth: 0
 LayerCount: 2
@@ -2408,7 +2308,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.medi
-Encoding: 65581 -1 45
+Encoding: 65581 -1 41
 Width: 368
 VWidth: 0
 LayerCount: 2
@@ -2447,7 +2347,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam+haa+haa.init
-Encoding: 65582 -1 46
+Encoding: 65582 -1 42
 Width: 0
 VWidth: 0
 AnchorPoint: "cursive" 183 435 exit 0
@@ -2505,7 +2405,7 @@ EndSplineSet
 EndChar
 
 StartChar: lam.fina
-Encoding: 65583 -1 47
+Encoding: 65583 -1 43
 Width: 582
 VWidth: 0
 LayerCount: 2
@@ -2537,7 +2437,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.init
-Encoding: 65584 -1 48
+Encoding: 65584 -1 44
 Width: 152
 VWidth: 0
 LayerCount: 2
@@ -2556,6 +2456,7 @@ SplineSet
  70.5635 225.599 49.7168 459.274 42.4629 584.118 c 0
  40.5879 616.391 31.4805 645.205 37.4277 659.059 c 0
 EndSplineSet
+Substitution2: "LamHaaHaaInit subtable" lam.init_LamHaaHaaInit
 Substitution2: "LamRaaIsol subtable" lam.init_LamRaaIsol
 Substitution2: "Lellah subtable" lam.init_Lellah
 Substitution2: "LamMeemHaaInit subtable" lam.init_LamMeemHaaInit
@@ -2577,7 +2478,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.isol
-Encoding: 65585 -1 49
+Encoding: 65585 -1 45
 Width: 502
 VWidth: 0
 LayerCount: 2
@@ -2613,7 +2514,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.medi
-Encoding: 65586 -1 50
+Encoding: 65586 -1 46
 Width: 178
 VWidth: 0
 LayerCount: 2
@@ -2655,7 +2556,7 @@ Colour: ffff00
 EndChar
 
 StartChar: madda
-Encoding: 65587 -1 51
+Encoding: 65587 -1 47
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2675,7 +2576,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.fina.alt
-Encoding: 65588 -1 52
+Encoding: 65588 -1 48
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2705,7 +2606,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.fina
-Encoding: 65589 -1 53
+Encoding: 65589 -1 49
 Width: 460
 VWidth: 0
 LayerCount: 2
@@ -2740,7 +2641,7 @@ Colour: ffff00
 EndChar
 
 StartChar: meem.init
-Encoding: 65590 -1 54
+Encoding: 65590 -1 50
 Width: 350
 VWidth: 0
 LayerCount: 2
@@ -2771,7 +2672,7 @@ Colour: ffff00
 EndChar
 
 StartChar: meem.isol
-Encoding: 65591 -1 55
+Encoding: 65591 -1 51
 Width: 352
 VWidth: 0
 LayerCount: 2
@@ -2804,7 +2705,7 @@ Colour: ffff00
 EndChar
 
 StartChar: meem.medi
-Encoding: 65592 -1 56
+Encoding: 65592 -1 52
 Width: 464
 VWidth: 0
 LayerCount: 2
@@ -2831,6 +2732,7 @@ SplineSet
  262.64 86.957 267.684 90.2305 264.909 93.9336 c 0
  251.928 111.261 237.036 138.018 223.588 169.376 c 0
 EndSplineSet
+Substitution2: "BaaHaaMeemInit subtable" meem.medi_BaaHaaMeemInit
 Substitution2: "KafMeemAlefFina subtable" meem.medi_KafMeemAlefFina
 Substitution2: "KafMeemAlefIsol subtable" meem.medi_KafMeemAlefIsol
 Substitution2: "BaaBaaMeemInit subtable" meem.medi_BaaBaaMeemInit
@@ -2861,7 +2763,7 @@ Colour: ffff00
 EndChar
 
 StartChar: noon.fina.alt
-Encoding: 65593 -1 57
+Encoding: 65593 -1 53
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2888,7 +2790,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.fina
-Encoding: 65594 -1 58
+Encoding: 65594 -1 54
 Width: 553
 VWidth: 0
 LayerCount: 2
@@ -2918,7 +2820,7 @@ Colour: ffff00
 EndChar
 
 StartChar: noon.isol.alt
-Encoding: 65595 -1 59
+Encoding: 65595 -1 55
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2942,7 +2844,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.isol
-Encoding: 65596 -1 60
+Encoding: 65596 -1 56
 Width: 462
 VWidth: 0
 LayerCount: 2
@@ -2970,7 +2872,7 @@ Colour: ffff00
 EndChar
 
 StartChar: qaf.fina
-Encoding: 65597 -1 61
+Encoding: 65597 -1 57
 Width: 546
 VWidth: 0
 LayerCount: 2
@@ -3004,7 +2906,7 @@ Colour: ffff00
 EndChar
 
 StartChar: qaf.isol
-Encoding: 65598 -1 62
+Encoding: 65598 -1 58
 Width: 580
 VWidth: 0
 LayerCount: 2
@@ -3035,7 +2937,7 @@ Colour: ffff00
 EndChar
 
 StartChar: question-mark
-Encoding: 65599 -1 63
+Encoding: 65599 -1 59
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -3069,7 +2971,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina.alt
-Encoding: 65600 -1 64
+Encoding: 65600 -1 60
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -3098,7 +3000,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina.alt2
-Encoding: 65601 -1 65
+Encoding: 65601 -1 61
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -3121,7 +3023,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina
-Encoding: 65602 -1 66
+Encoding: 65602 -1 62
 Width: 428
 VWidth: 0
 LayerCount: 2
@@ -3144,6 +3046,7 @@ SplineSet
  360.275 45.6211 356.663 60.9082 317.825 100.33 c 0
  315.074 103.122 310.364 110.824 314.747 122.432 c 0
 EndSplineSet
+Substitution2: "BaaSeenAltInit subtable" raa.fina_PostTooth
 Substitution2: "LamRaaIsol subtable" raa.fina_LamRaaIsol
 Substitution2: "HaaRaaIsol subtable" raa.fina_HaaRaaIsol
 Substitution2: "KafRaaIsol subtable" raa.fina_KafRaaIsol
@@ -3155,7 +3058,7 @@ Colour: ffff00
 EndChar
 
 StartChar: raa.isol
-Encoding: 65603 -1 67
+Encoding: 65603 -1 63
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -3182,7 +3085,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.fina
-Encoding: 65604 -1 68
+Encoding: 65604 -1 64
 Width: 1130
 VWidth: 0
 LayerCount: 2
@@ -3223,7 +3126,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.init.alt
-Encoding: 65605 -1 69
+Encoding: 65605 -1 65
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -3249,7 +3152,7 @@ EndSplineSet
 EndChar
 
 StartChar: sad.init
-Encoding: 65606 -1 70
+Encoding: 65606 -1 66
 Width: 665
 VWidth: 0
 LayerCount: 2
@@ -3283,7 +3186,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.isol
-Encoding: 65607 -1 71
+Encoding: 65607 -1 67
 Width: 1115
 VWidth: 0
 LayerCount: 2
@@ -3323,7 +3226,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.medi
-Encoding: 65608 -1 72
+Encoding: 65608 -1 68
 Width: 724
 VWidth: 0
 LayerCount: 2
@@ -3358,7 +3261,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.fina
-Encoding: 65609 -1 73
+Encoding: 65609 -1 69
 Width: 1002
 VWidth: 0
 LayerCount: 2
@@ -3399,7 +3302,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.init.alt
-Encoding: 65610 -1 74
+Encoding: 65610 -1 70
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -3431,7 +3334,7 @@ EndSplineSet
 EndChar
 
 StartChar: seen.init
-Encoding: 65611 -1 75
+Encoding: 65611 -1 71
 Width: 524
 VWidth: 0
 LayerCount: 2
@@ -3466,7 +3369,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.isol
-Encoding: 65612 -1 76
+Encoding: 65612 -1 72
 Width: 887
 VWidth: 0
 LayerCount: 2
@@ -3507,7 +3410,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.medi.alt
-Encoding: 65613 -1 77
+Encoding: 65613 -1 73
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -3533,7 +3436,7 @@ EndSplineSet
 EndChar
 
 StartChar: seen.medi
-Encoding: 65614 -1 78
+Encoding: 65614 -1 74
 Width: 516
 VWidth: 0
 LayerCount: 2
@@ -3565,12 +3468,13 @@ SplineSet
  471.516 115.469 491.146 83.1699 516.616 79.4414 c 0
  549.888 74.5703 534.953 -16.0674 517.052 -9.88867 c 0
 EndSplineSet
+Substitution2: "BaaSeenAltInit subtable" seen.medi_BaaSeenAltInit
 Substitution2: "BaaSeenInit subtable" seen.medi_BaaSeenInit
 Colour: ffff00
 EndChar
 
 StartChar: taa.fina
-Encoding: 65615 -1 79
+Encoding: 65615 -1 75
 Width: 691
 VWidth: 0
 LayerCount: 2
@@ -3613,7 +3517,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.init
-Encoding: 65616 -1 80
+Encoding: 65616 -1 76
 Width: 534
 VWidth: 0
 LayerCount: 2
@@ -3653,7 +3557,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.isol
-Encoding: 65617 -1 81
+Encoding: 65617 -1 77
 Width: 704
 VWidth: 0
 LayerCount: 2
@@ -3693,7 +3597,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.medi
-Encoding: 65618 -1 82
+Encoding: 65618 -1 78
 Width: 553
 VWidth: 0
 LayerCount: 2
@@ -3734,7 +3638,7 @@ Colour: ffff00
 EndChar
 
 StartChar: waw.fina
-Encoding: 65619 -1 83
+Encoding: 65619 -1 79
 Width: 434
 VWidth: 0
 LayerCount: 2
@@ -3771,7 +3675,7 @@ Colour: ffff00
 EndChar
 
 StartChar: waw.isol
-Encoding: 65620 -1 84
+Encoding: 65620 -1 80
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -3798,42 +3702,8 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 3 subtable" waw.fina
 Colour: ffff00
 EndChar
 
-StartChar: yaa.fina.alt
-Encoding: 65621 -1 85
-Width: 0
-VWidth: 0
-LayerCount: 2
-Fore
-SplineSet
-667.695 90.7393 m 0
- 667.695 90.7402 667.695 90.7402 667.695 90.7402 c 0
- 667.696 90.7402 667.696 90.7402 667.696 90.7402 c 1
- 667.696 90.7402 l 1
- 667.696 90.7402 l 1
- 667.696 90.7402 l 1
- 690.807 86.4531 697.615 84.9824 690.532 56.3662 c 0
- 683.45 27.749 675.93 -0.365234 668.184 0 c 0
- 564.623 4.88477 562.841 100.132 515.499 103.654 c 0
- 481.942 106.15 391.671 54.1689 384.606 29.8105 c 0
- 373.027 -10.1113 435.445 -35.7383 488.931 -42.2324 c 0
- 535.16 -47.8457 587.737 -53.9219 614.698 -63.3252 c 0
- 663.204 -80.2441 664.005 -152.011 637.634 -188.405 c 0
- 611.304 -224.743 468.421 -311.456 291.058 -334.193 c 0
- 115.49 -356.7 35.5234 -268.699 10.0664 -203.538 c 0
- -12.2705 -146.364 4.98535 -13.2051 84.7002 109.149 c 0
- 92.8291 121.626 112.374 112.738 103.114 96.4121 c 0
- 79.2324 54.3027 34.8232 -16.4492 44.6865 -99.124 c 0
- 57.8486 -209.453 185.939 -248.386 274.094 -240.769 c 0
- 402.802 -229.647 526.078 -181.108 599.821 -143.438 c 0
- 603.601 -141.777 602.971 -140.519 599.797 -137.512 c 0
- 573.39 -109.62 338.705 -129.158 331.741 -53.542 c 0
- 323.971 30.8359 465.562 187.788 542.563 189.751 c 0
- 584.045 190.808 596.396 102.27 667.695 90.7393 c 0
-EndSplineSet
-EndChar
-
 StartChar: yaa.fina
-Encoding: 65622 -1 86
+Encoding: 65622 -1 81
 Width: 526
 VWidth: 0
 LayerCount: 2
@@ -3856,6 +3726,8 @@ SplineSet
  515.457 -120.783 351.596 -198.439 245.782 -197.491 c 0
  53.1094 -195.764 -6.5293 -104.31 2.32129 27.0869 c 0
 EndSplineSet
+Substitution2: "BaaSeenAltInit subtable" yaa.fina_PostTooth
+Substitution2: "BaaYaaFina subtable" yaa.fina_BaaYaaFina
 Substitution2: "KafYaaFina subtable" yaa.fina_KafYaaFina
 Substitution2: "LamYaaIsol subtable" yaa.fina_LamYaaIsol
 Substitution2: "AynYaaIsol subtable" yaa.fina_AynYaaIsol
@@ -3872,7 +3744,7 @@ Colour: ffff00
 EndChar
 
 StartChar: yaa.isol
-Encoding: 65623 -1 87
+Encoding: 65623 -1 82
 Width: 658
 VWidth: 0
 LayerCount: 2
@@ -3903,9 +3775,10 @@ Colour: ffff00
 EndChar
 
 StartChar: uni0621
-Encoding: 1569 1569 88
-Width: 0
+Encoding: 1569 1569 83
+Width: 266
 VWidth: 0
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3915,12 +3788,12 @@ SplineSet
  0 298.177 l 0
  0 1.11621 l 0
 EndSplineSet
-Refer: 36 -1 N 1 0 0 1 -0.29786 0 3
+Refer: 32 -1 N 1 0 0 1 -0.29786 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" hamza
 EndChar
 
 StartChar: uni0622
-Encoding: 1570 1570 89
+Encoding: 1570 1570 84
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3937,7 +3810,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0623
-Encoding: 1571 1571 90
+Encoding: 1571 1571 85
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3954,7 +3827,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0624
-Encoding: 1572 1572 91
+Encoding: 1572 1572 86
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -3966,12 +3839,12 @@ SplineSet
  0 312.524 l 0
  0 -199.001 l 0
 EndSplineSet
-Refer: 84 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 80 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni0625
-Encoding: 1573 1573 92
+Encoding: 1573 1573 87
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3988,7 +3861,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0626
-Encoding: 1574 1574 93
+Encoding: 1574 1574 88
 Width: 658
 VWidth: 0
 LayerCount: 2
@@ -4000,12 +3873,12 @@ SplineSet
  0 399.179 l 0
  0 -200.645 l 0
 EndSplineSet
-Refer: 87 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 82 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni0627
-Encoding: 1575 1575 94
+Encoding: 1575 1575 89
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -4022,7 +3895,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0628
-Encoding: 1576 1576 95
+Encoding: 1576 1576 90
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -4034,12 +3907,12 @@ SplineSet
  0 387.461 l 0
  0 0.911133 l 0
 EndSplineSet
-Refer: 15 -1 N 1 0 0 1 -0.377665 0 3
+Refer: 11 -1 N 1 0 0 1 -0.377665 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0629
-Encoding: 1577 1577 96
+Encoding: 1577 1577 91
 Width: 266
 VWidth: 0
 LayerCount: 2
@@ -4051,12 +3924,12 @@ SplineSet
  0 353.703 l 0
  0 0.535156 l 0
 EndSplineSet
-Refer: 39 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 35 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni062A
-Encoding: 1578 1578 97
+Encoding: 1578 1578 92
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -4068,12 +3941,12 @@ SplineSet
  0 387.461 l 0
  0 0.911133 l 0
 EndSplineSet
-Refer: 15 -1 N 1 0 0 1 -0.377665 0 3
+Refer: 11 -1 N 1 0 0 1 -0.377665 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni062B
-Encoding: 1579 1579 98
+Encoding: 1579 1579 93
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -4085,12 +3958,12 @@ SplineSet
  0 387.461 l 0
  0 0.911133 l 0
 EndSplineSet
-Refer: 15 -1 N 1 0 0 1 -0.377665 0 3
+Refer: 11 -1 N 1 0 0 1 -0.377665 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni062C
-Encoding: 1580 1580 99
+Encoding: 1580 1580 94
 Width: 666
 VWidth: 0
 LayerCount: 2
@@ -4102,12 +3975,12 @@ SplineSet
  0 573.779 l 0
  0 -200.07 l 0
 EndSplineSet
-Refer: 32 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 28 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni062D
-Encoding: 1581 1581 100
+Encoding: 1581 1581 95
 Width: 666
 VWidth: 0
 LayerCount: 2
@@ -4119,12 +3992,12 @@ SplineSet
  0 573.779 l 0
  0 -200.07 l 0
 EndSplineSet
-Refer: 32 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 28 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni062E
-Encoding: 1582 1582 101
+Encoding: 1582 1582 96
 Width: 666
 VWidth: 0
 LayerCount: 2
@@ -4136,12 +4009,12 @@ SplineSet
  0 573.779 l 0
  0 -200.07 l 0
 EndSplineSet
-Refer: 32 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 28 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni062F
-Encoding: 1583 1583 102
+Encoding: 1583 1583 97
 Width: 346
 VWidth: 0
 LayerCount: 2
@@ -4153,12 +4026,12 @@ SplineSet
  0 424.924 l 0
  0 1.06738 l 0
 EndSplineSet
-Refer: 20 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 16 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0630
-Encoding: 1584 1584 103
+Encoding: 1584 1584 98
 Width: 346
 VWidth: 0
 LayerCount: 2
@@ -4170,12 +4043,12 @@ SplineSet
  0 424.924 l 0
  0 1.06738 l 0
 EndSplineSet
-Refer: 20 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 16 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0631
-Encoding: 1585 1585 104
+Encoding: 1585 1585 99
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -4187,12 +4060,12 @@ SplineSet
  0 313.897 l 0
  0 -198.479 l 0
 EndSplineSet
-Refer: 67 -1 N 1 0 0 1 0.69086 0 3
+Refer: 63 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0632
-Encoding: 1586 1586 105
+Encoding: 1586 1586 100
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -4204,12 +4077,12 @@ SplineSet
  0 313.897 l 0
  0 -198.479 l 0
 EndSplineSet
-Refer: 67 -1 N 1 0 0 1 0.69086 0 3
+Refer: 63 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0633
-Encoding: 1587 1587 106
+Encoding: 1587 1587 101
 Width: 887
 VWidth: 0
 LayerCount: 2
@@ -4221,12 +4094,12 @@ SplineSet
  0 404.262 l 0
  0 -199.03 l 0
 EndSplineSet
-Refer: 76 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 72 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni0634
-Encoding: 1588 1588 107
+Encoding: 1588 1588 102
 Width: 887
 VWidth: 0
 LayerCount: 2
@@ -4238,12 +4111,12 @@ SplineSet
  0 404.262 l 0
  0 -199.03 l 0
 EndSplineSet
-Refer: 76 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 72 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni0635
-Encoding: 1589 1589 108
+Encoding: 1589 1589 103
 Width: 1115
 VWidth: 0
 LayerCount: 2
@@ -4255,12 +4128,12 @@ SplineSet
  0 300.122 l 0
  0 -321.056 l 0
 EndSplineSet
-Refer: 71 -1 N 1 0 0 1 0.760814 0 3
+Refer: 67 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
 
 StartChar: uni0636
-Encoding: 1590 1590 109
+Encoding: 1590 1590 104
 Width: 1115
 VWidth: 0
 LayerCount: 2
@@ -4272,12 +4145,12 @@ SplineSet
  0 300.122 l 0
  0 -321.056 l 0
 EndSplineSet
-Refer: 71 -1 N 1 0 0 1 0.760814 0 3
+Refer: 67 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
 
 StartChar: uni0637
-Encoding: 1591 1591 110
+Encoding: 1591 1591 105
 Width: 704
 VWidth: 0
 LayerCount: 2
@@ -4289,12 +4162,12 @@ SplineSet
  0 649.544 l 0
  0 -105.821 l 0
 EndSplineSet
-Refer: 81 -1 N 1 0 0 1 -17.8718 0 3
+Refer: 77 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
 
 StartChar: uni0638
-Encoding: 1592 1592 111
+Encoding: 1592 1592 106
 Width: 704
 VWidth: 0
 LayerCount: 2
@@ -4306,12 +4179,12 @@ SplineSet
  0 649.544 l 0
  0 -105.821 l 0
 EndSplineSet
-Refer: 81 -1 N 1 0 0 1 -17.8718 0 3
+Refer: 77 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
 
 StartChar: uni0639
-Encoding: 1593 1593 112
+Encoding: 1593 1593 107
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -4328,7 +4201,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni063A
-Encoding: 1594 1594 113
+Encoding: 1594 1594 108
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -4345,7 +4218,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni0641
-Encoding: 1601 1601 114
+Encoding: 1601 1601 109
 Width: 884
 VWidth: 0
 LayerCount: 2
@@ -4357,12 +4230,12 @@ SplineSet
  0 513.742 l 0
  0 1.51465 l 0
 EndSplineSet
-Refer: 27 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 23 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni0642
-Encoding: 1602 1602 115
+Encoding: 1602 1602 110
 Width: 580
 VWidth: 0
 LayerCount: 2
@@ -4374,12 +4247,12 @@ SplineSet
  0 358.266 l 0
  0 -198.494 l 0
 EndSplineSet
-Refer: 62 -1 N 1 0 0 1 -2.57545 0 3
+Refer: 58 -1 N 1 0 0 1 -2.57545 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
 EndChar
 
 StartChar: uni0643
-Encoding: 1603 1603 116
+Encoding: 1603 1603 111
 Width: 556
 VWidth: 0
 LayerCount: 2
@@ -4391,12 +4264,12 @@ SplineSet
  0 790.731 l 0
  0 0.375977 l 0
 EndSplineSet
-Refer: 44 -1 N 1 0 0 1 -1.32354 0 3
+Refer: 40 -1 N 1 0 0 1 -1.32354 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
 EndChar
 
 StartChar: uni0644
-Encoding: 1604 1604 117
+Encoding: 1604 1604 112
 Width: 502
 VWidth: 0
 LayerCount: 2
@@ -4408,12 +4281,12 @@ SplineSet
  0 622.169 l 0
  0 -193.646 l 0
 EndSplineSet
-Refer: 49 -1 N 1 0 0 1 0.209004 0 3
+Refer: 45 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni0645
-Encoding: 1605 1605 118
+Encoding: 1605 1605 113
 Width: 352
 VWidth: 0
 LayerCount: 2
@@ -4425,12 +4298,12 @@ SplineSet
  0 399.077 l 0
  0 -442.52 l 0
 EndSplineSet
-Refer: 55 -1 N 1 0 0 1 -0.316127 0 3
+Refer: 51 -1 N 1 0 0 1 -0.316127 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" meem.isol
 EndChar
 
 StartChar: uni0646
-Encoding: 1606 1606 119
+Encoding: 1606 1606 114
 Width: 462
 VWidth: 0
 LayerCount: 2
@@ -4442,12 +4315,12 @@ SplineSet
  0 332.317 l 0
  0 -201.421 l 0
 EndSplineSet
-Refer: 60 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 56 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni0647
-Encoding: 1607 1607 120
+Encoding: 1607 1607 115
 Width: 266
 VWidth: 0
 LayerCount: 2
@@ -4459,12 +4332,12 @@ SplineSet
  0 353.703 l 0
  0 0.535156 l 0
 EndSplineSet
-Refer: 39 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 35 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni0648
-Encoding: 1608 1608 121
+Encoding: 1608 1608 116
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -4476,12 +4349,12 @@ SplineSet
  0 312.524 l 0
  0 -199.001 l 0
 EndSplineSet
-Refer: 84 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 80 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni0649
-Encoding: 1609 1609 122
+Encoding: 1609 1609 117
 Width: 658
 VWidth: 0
 LayerCount: 2
@@ -4493,12 +4366,12 @@ SplineSet
  0 399.179 l 0
  0 -200.645 l 0
 EndSplineSet
-Refer: 87 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 82 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni064A
-Encoding: 1610 1610 123
+Encoding: 1610 1610 118
 Width: 658
 VWidth: 0
 LayerCount: 2
@@ -4510,12 +4383,12 @@ SplineSet
  0 399.179 l 0
  0 -200.645 l 0
 EndSplineSet
-Refer: 87 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 82 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: ayn.init_AynMeemInit
-Encoding: 65624 -1 124
+Encoding: 65624 -1 119
 Width: 508
 VWidth: 0
 AnchorPoint: "cursive" 20 212 exit 0
@@ -4583,7 +4456,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_AynMeemInit
-Encoding: 65625 -1 125
+Encoding: 65625 -1 120
 Width: 309
 VWidth: 0
 AnchorPoint: "cursive" 170 212 entry 0
@@ -4647,7 +4520,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafHehIsol
-Encoding: 65626 -1 126
+Encoding: 65626 -1 121
 Width: 258
 VWidth: 0
 AnchorPoint: "cursive" -14 23 exit 0
@@ -4716,7 +4589,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_KafHehIsol
-Encoding: 65627 -1 127
+Encoding: 65627 -1 122
 Width: 322
 VWidth: 0
 AnchorPoint: "cursive" 307 23 entry 0
@@ -4788,7 +4661,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamDalIsol
-Encoding: 65628 -1 128
+Encoding: 65628 -1 123
 Width: 138
 VWidth: 0
 AnchorPoint: "cursive" -25 90 exit 0
@@ -4847,7 +4720,7 @@ Colour: ff00
 EndChar
 
 StartChar: dal.fina_LamDalIsol
-Encoding: 65629 -1 129
+Encoding: 65629 -1 124
 Width: 396
 VWidth: 0
 AnchorPoint: "cursive" 370 90 entry 0
@@ -4905,7 +4778,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafLamMedi
-Encoding: 65630 -1 130
+Encoding: 65630 -1 125
 Width: 489
 VWidth: 0
 AnchorPoint: "cursive" 2 41 exit 0
@@ -4963,7 +4836,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamMedi
-Encoding: 65631 -1 131
+Encoding: 65631 -1 126
 Width: 194
 VWidth: 0
 AnchorPoint: "cursive" 197 41 entry 0
@@ -5019,7 +4892,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamMeemFina
-Encoding: 65632 -1 132
+Encoding: 65632 -1 127
 Width: 236
 VWidth: 0
 AnchorPoint: "cursive" 1 50 exit 0
@@ -5073,7 +4946,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_LamMeemFina
-Encoding: 65633 -1 133
+Encoding: 65633 -1 128
 Width: 330
 VWidth: 0
 AnchorPoint: "cursive" 151 50 entry 0
@@ -5130,7 +5003,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemLamInit
-Encoding: 65634 -1 134
+Encoding: 65634 -1 129
 Width: 219
 VWidth: 0
 AnchorPoint: "cursive" -21 104 exit 0
@@ -5197,7 +5070,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemLamInit
-Encoding: 65635 -1 135
+Encoding: 65635 -1 130
 Width: 208
 VWidth: 0
 AnchorPoint: "cursive" 0 47 exit 0
@@ -5259,7 +5132,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafMeemLamInit
-Encoding: 65636 -1 136
+Encoding: 65636 -1 131
 Width: 191
 VWidth: 0
 AnchorPoint: "cursive" 190 47 entry 0
@@ -5324,7 +5197,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenMeemInit
-Encoding: 65637 -1 137
+Encoding: 65637 -1 132
 Width: 551
 VWidth: 0
 AnchorPoint: "cursive" 56 113 exit 0
@@ -5399,7 +5272,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_SeenMeemInit
-Encoding: 65638 -1 138
+Encoding: 65638 -1 133
 Width: 322
 VWidth: 0
 AnchorPoint: "cursive" 148 113 entry 0
@@ -5459,7 +5332,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemMedi
-Encoding: 65639 -1 139
+Encoding: 65639 -1 134
 Width: 598
 VWidth: 0
 AnchorPoint: "cursive" 57 207 exit 0
@@ -5528,7 +5401,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemMedi
-Encoding: 65640 -1 140
+Encoding: 65640 -1 135
 Width: 309
 VWidth: 0
 AnchorPoint: "cursive" 217 207 entry 0
@@ -5591,7 +5464,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.init_FaaMeemInit
-Encoding: 65641 -1 141
+Encoding: 65641 -1 136
 Width: 250
 VWidth: 0
 AnchorPoint: "cursive" 112 241 exit 0
@@ -5656,7 +5529,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_FaaMeemInit
-Encoding: 65642 -1 142
+Encoding: 65642 -1 137
 Width: 346
 VWidth: 0
 AnchorPoint: "cursive" 242 241 entry 0
@@ -5720,177 +5593,177 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaMeemAlefFina
-Encoding: 65643 -1 143
+Encoding: 65643 -1 138
 Width: 265
 VWidth: 0
-AnchorPoint: "cursive" -4 108 exit 0
+AnchorPoint: "cursive" -4 28 exit 0
 LayerCount: 2
 Back
 SplineSet
-140.42 -5.04688 m 4
- 155.119 -7.97852 158.901 -16.1934 156.665 -24.5957 c 6
- 135.115 -105.567 l 6
- 131.381 -119.598 118.319 -116.544 109.51 -115.754 c 4
- 48.5078 -110.279 -52.6328 -69.9688 -92.5088 16.2881 c 4
- -125.03 86.6338 -130.32 230.038 -141.356 336.547 c 4
- -156.553 483.214 -158.133 543.96 -195.383 706.056 c 4
- -196.87 712.527 -197.861 720.827 -195.934 725.054 c 4
- -185.976 746.881 -179.249 758.153 -167.85 778.468 c 4
- -162.915 787.261 -157.902 783.253 -155.735 777.642 c 4
- -123.51 694.197 -116.244 572.967 -104.533 446.911 c 4
- -91.3057 304.525 -87.0244 100.498 -33.249 70.9639 c 4
- 13.7041 45.1777 24.2471 18.1191 140.42 -5.04688 c 4
-4.43262 118.21 m 4
- 4.94727 31.7188 79.7012 5.41309 140.42 -5.04688 c 5
- 154.969 -8.65918 158.901 -16.1934 156.665 -24.5957 c 6
- 135.115 -105.567 l 6
- 131.381 -119.598 118.132 -117.706 109.51 -115.754 c 4
- -24.1768 -85.4863 -163.859 145.259 -33.249 70.9639 c 4
- -17.7256 62.1338 -19.8428 69.0742 -19.6523 72.6982 c 4
- -18.5039 94.5537 -15.9902 115.073 -2.23047 156.492 c 4
- 4.1543 175.713 4.29297 141.595 4.43262 118.21 c 4
-132.266 167.166 m 4
- 85.6924 172.97 16.959 142.19 4.43262 118.21 c 5
- 4.75488 92.9316 10.502 72.2168 21.9629 56.6904 c 4
- 74.5605 -14.5615 -27.6465 -44.6719 -19.6523 72.6982 c 4
- -18.166 94.5332 -16.0176 115.082 -2.23047 156.492 c 4
- 10.6289 195.118 86 258.387 159.916 257.318 c 4
- 194.614 256.816 190.135 203.94 263.556 170.595 c 4
- 331.782 139.609 287.126 72.7314 263.234 80 c 4
- 171.499 107.907 162.579 163.389 132.266 167.166 c 4
+140.42 -85.0469 m 0
+ 155.119 -87.9785 158.901 -96.1934 156.665 -104.596 c 2
+ 135.115 -185.567 l 2
+ 131.381 -199.598 118.319 -196.544 109.51 -195.754 c 0
+ 48.5078 -190.279 -52.6328 -149.969 -92.5088 -63.7119 c 0
+ -125.03 6.63379 -130.32 150.038 -141.356 256.547 c 0
+ -156.553 403.214 -158.133 463.96 -195.383 626.056 c 0
+ -196.87 632.527 -197.861 640.827 -195.934 645.054 c 0
+ -185.976 666.881 -179.249 678.153 -167.85 698.468 c 0
+ -162.915 707.261 -157.902 703.253 -155.735 697.642 c 0
+ -123.51 614.197 -116.244 492.967 -104.533 366.911 c 0
+ -91.3057 224.525 -87.0244 20.498 -33.249 -9.03613 c 0
+ 13.7041 -34.8223 24.2471 -61.8809 140.42 -85.0469 c 0
+4.43262 38.21 m 0
+ 4.94727 -48.2812 79.7012 -74.5869 140.42 -85.0469 c 1
+ 154.969 -88.6592 158.901 -96.1934 156.665 -104.596 c 2
+ 135.115 -185.567 l 2
+ 131.381 -199.598 118.132 -197.706 109.51 -195.754 c 0
+ -24.1768 -165.486 -163.859 65.2588 -33.249 -9.03613 c 0
+ -17.7256 -17.8662 -19.8428 -10.9258 -19.6523 -7.30176 c 0
+ -18.5039 14.5537 -15.9902 35.0732 -2.23047 76.4922 c 0
+ 4.1543 95.7129 4.29297 61.5947 4.43262 38.21 c 0
+132.266 87.166 m 0
+ 85.6924 92.9697 16.959 62.1904 4.43262 38.21 c 1
+ 4.75488 12.9316 10.502 -7.7832 21.9629 -23.3096 c 0
+ 74.5605 -94.5615 -27.6465 -124.672 -19.6523 -7.30176 c 0
+ -18.166 14.5332 -16.0176 35.082 -2.23047 76.4922 c 0
+ 10.6289 115.118 86 178.387 159.916 177.318 c 0
+ 194.614 176.816 190.135 123.94 263.556 90.5947 c 0
+ 331.782 59.6094 287.126 -7.26855 263.234 0 c 0
+ 171.499 27.9072 162.579 83.3887 132.266 87.166 c 0
 EndSplineSet
 Fore
 SplineSet
-132.266 167.166 m 0
- 85.6924 172.97 16.959 142.19 4.43262 118.21 c 1
- 4.75488 92.9316 10.502 72.2168 21.9629 56.6904 c 0
- 74.5605 -14.5615 -27.6465 -44.6719 -19.6523 72.6982 c 0
- -18.166 94.5332 -16.0176 115.082 -2.23047 156.492 c 0
- 10.6289 195.118 86 258.387 159.916 257.318 c 0
- 194.614 256.816 190.135 203.94 263.556 170.595 c 0
- 331.782 139.609 287.126 72.7314 263.234 80 c 0
- 171.499 107.907 162.579 163.389 132.266 167.166 c 0
+132.266 87.166 m 0
+ 85.6924 92.9697 16.959 62.1904 4.43262 38.21 c 1
+ 4.75488 12.9316 10.502 -7.7832 21.9629 -23.3096 c 0
+ 74.5605 -94.5615 -27.6465 -124.672 -19.6523 -7.30176 c 0
+ -18.166 14.5332 -16.0176 35.082 -2.23047 76.4922 c 0
+ 10.6289 115.118 86 178.387 159.916 177.318 c 0
+ 194.614 176.816 190.135 123.94 263.556 90.5947 c 0
+ 331.782 59.6094 287.126 -7.26855 263.234 0 c 0
+ 171.499 27.9072 162.579 83.3887 132.266 87.166 c 0
 EndSplineSet
 Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaMeemAlefFina
-Encoding: 65644 -1 144
+Encoding: 65644 -1 139
 Width: 233
 VWidth: 0
-AnchorPoint: "cursive" 0 40 exit 0
-AnchorPoint: "cursive" 55 108 entry 0
+AnchorPoint: "cursive" 0 -40 exit 0
+AnchorPoint: "cursive" 55 28 entry 0
 LayerCount: 2
 Back
 SplineSet
-199.42 -5.04688 m 0
- 214.119 -7.97852 217.901 -16.1934 215.665 -24.5957 c 2
- 194.115 -105.567 l 2
- 190.381 -119.598 177.319 -116.544 168.51 -115.754 c 0
- 107.508 -110.279 6.36719 -69.9688 -33.5088 16.2881 c 0
- -66.0303 86.6338 -71.3203 230.038 -82.3564 336.547 c 0
- -97.5527 483.214 -99.1328 543.96 -136.383 706.056 c 0
- -137.87 712.527 -138.861 720.827 -136.934 725.054 c 0
- -126.976 746.881 -120.249 758.153 -108.85 778.468 c 0
- -103.915 787.261 -98.9023 783.253 -96.7354 777.642 c 0
- -64.5098 694.197 -57.2441 572.967 -45.5332 446.911 c 0
- -32.3057 304.525 -28.0244 100.498 25.751 70.9639 c 0
- 72.7041 45.1777 83.2471 18.1191 199.42 -5.04688 c 0
-63.4326 118.21 m 0
- 63.9473 31.7188 138.701 5.41309 199.42 -5.04688 c 1
- 213.969 -8.65918 217.901 -16.1934 215.665 -24.5957 c 2
- 194.115 -105.567 l 2
- 190.381 -119.598 177.132 -117.706 168.51 -115.754 c 0
- 34.8232 -85.4863 -104.859 145.259 25.751 70.9639 c 0
- 41.2744 62.1338 39.1572 69.0742 39.3477 72.6982 c 0
- 40.4961 94.5537 43.0098 115.073 56.7695 156.492 c 0
- 63.1543 175.713 63.293 141.595 63.4326 118.21 c 0
-191.266 167.166 m 0
- 144.692 172.97 75.959 142.19 63.4326 118.21 c 1
- 63.7549 92.9316 69.502 72.2168 80.9629 56.6904 c 0
- 133.561 -14.5615 31.3535 -44.6719 39.3477 72.6982 c 0
- 40.834 94.5332 42.9824 115.082 56.7695 156.492 c 0
- 69.6289 195.118 145 258.387 218.916 257.318 c 0
- 253.614 256.816 249.135 203.94 322.556 170.595 c 0
- 390.782 139.609 346.126 72.7314 322.234 80 c 0
- 230.499 107.907 221.579 163.389 191.266 167.166 c 0
+199.42 -85.0469 m 0
+ 214.119 -87.9785 217.901 -96.1934 215.665 -104.596 c 2
+ 194.115 -185.567 l 2
+ 190.381 -199.598 177.319 -196.544 168.51 -195.754 c 0
+ 107.508 -190.279 6.36719 -149.969 -33.5088 -63.7119 c 0
+ -66.0303 6.63379 -71.3203 150.038 -82.3564 256.547 c 0
+ -97.5527 403.214 -99.1328 463.96 -136.383 626.056 c 0
+ -137.87 632.527 -138.861 640.827 -136.934 645.054 c 0
+ -126.976 666.881 -120.249 678.153 -108.85 698.468 c 0
+ -103.915 707.261 -98.9023 703.253 -96.7354 697.642 c 0
+ -64.5098 614.197 -57.2441 492.967 -45.5332 366.911 c 0
+ -32.3057 224.525 -28.0244 20.498 25.751 -9.03613 c 0
+ 72.7041 -34.8223 83.2471 -61.8809 199.42 -85.0469 c 0
+63.4326 38.21 m 0
+ 63.9473 -48.2812 138.701 -74.5869 199.42 -85.0469 c 1
+ 213.969 -88.6592 217.901 -96.1934 215.665 -104.596 c 2
+ 194.115 -185.567 l 2
+ 190.381 -199.598 177.132 -197.706 168.51 -195.754 c 0
+ 34.8232 -165.486 -104.859 65.2588 25.751 -9.03613 c 0
+ 41.2744 -17.8662 39.1572 -10.9258 39.3477 -7.30176 c 0
+ 40.4961 14.5537 43.0098 35.0732 56.7695 76.4922 c 0
+ 63.1543 95.7129 63.293 61.5947 63.4326 38.21 c 0
+191.266 87.166 m 0
+ 144.692 92.9697 75.959 62.1904 63.4326 38.21 c 1
+ 63.7549 12.9316 69.502 -7.7832 80.9629 -23.3096 c 0
+ 133.561 -94.5615 31.3535 -124.672 39.3477 -7.30176 c 0
+ 40.834 14.5332 42.9824 35.082 56.7695 76.4922 c 0
+ 69.6289 115.118 145 178.387 218.916 177.318 c 0
+ 253.614 176.816 249.135 123.94 322.556 90.5947 c 0
+ 390.782 59.6094 346.126 -7.26855 322.234 0 c 0
+ 230.499 27.9072 221.579 83.3887 191.266 87.166 c 0
 EndSplineSet
 Fore
 SplineSet
-63.4326 118.21 m 0
- 63.9473 31.7188 138.701 5.41309 199.42 -5.04688 c 1
- 213.969 -8.65918 217.901 -16.1934 215.665 -24.5957 c 2
- 194.115 -105.567 l 2
- 190.381 -119.598 177.132 -117.706 168.51 -115.754 c 0
- 34.8232 -85.4863 -104.859 145.259 25.751 70.9639 c 0
- 41.2744 62.1338 39.1572 69.0742 39.3477 72.6982 c 0
- 40.4961 94.5537 43.0098 115.073 56.7695 156.492 c 0
- 63.1543 175.713 63.293 141.595 63.4326 118.21 c 0
+63.4326 38.21 m 0
+ 63.9473 -48.2812 138.701 -74.5869 199.42 -85.0469 c 1
+ 213.969 -88.6592 217.901 -96.1934 215.665 -104.596 c 2
+ 194.115 -185.567 l 2
+ 190.381 -199.598 177.132 -197.706 168.51 -195.754 c 0
+ 34.8232 -165.486 -104.859 65.2588 25.751 -9.03613 c 0
+ 41.2744 -17.8662 39.1572 -10.9258 39.3477 -7.30176 c 0
+ 40.4961 14.5537 43.0098 35.0732 56.7695 76.4922 c 0
+ 63.1543 95.7129 63.293 61.5947 63.4326 38.21 c 0
 EndSplineSet
 Colour: ff00
 EndChar
 
 StartChar: alef.fina_BaaMeemAlefFina
-Encoding: 65645 -1 145
+Encoding: 65645 -1 140
 Width: 368
 VWidth: 0
-AnchorPoint: "cursive" 139 40 entry 0
+AnchorPoint: "cursive" 139 -40 entry 0
 LayerCount: 2
 Back
 SplineSet
-338.42 -5.04688 m 0
- 353.119 -7.97852 356.901 -16.1934 354.665 -24.5957 c 2
- 333.115 -105.567 l 2
- 329.381 -119.598 316.319 -116.544 307.51 -115.754 c 0
- 246.508 -110.279 145.367 -69.9688 105.491 16.2881 c 0
- 72.9697 86.6338 67.6797 230.038 56.6436 336.547 c 0
- 41.4473 483.214 39.8672 543.96 2.61719 706.056 c 0
- 1.12988 712.527 0.138672 720.827 2.06641 725.054 c 0
- 12.0244 746.881 18.751 758.153 30.1504 778.468 c 0
- 35.085 787.261 40.0977 783.253 42.2646 777.642 c 0
- 74.4902 694.197 81.7559 572.967 93.4668 446.911 c 0
- 106.694 304.525 110.976 100.498 164.751 70.9639 c 0
- 211.704 45.1777 222.247 18.1191 338.42 -5.04688 c 0
-202.433 118.21 m 0
- 202.947 31.7188 277.701 5.41309 338.42 -5.04688 c 1
- 352.969 -8.65918 356.901 -16.1934 354.665 -24.5957 c 2
- 333.115 -105.567 l 2
- 329.381 -119.598 316.132 -117.706 307.51 -115.754 c 0
- 173.823 -85.4863 34.1406 145.259 164.751 70.9639 c 0
- 180.274 62.1338 178.157 69.0742 178.348 72.6982 c 0
- 179.496 94.5537 182.01 115.073 195.77 156.492 c 0
- 202.154 175.713 202.293 141.595 202.433 118.21 c 0
-330.266 167.166 m 0
- 283.692 172.97 214.959 142.19 202.433 118.21 c 1
- 202.755 92.9316 208.502 72.2168 219.963 56.6904 c 0
- 272.561 -14.5615 170.354 -44.6719 178.348 72.6982 c 0
- 179.834 94.5332 181.982 115.082 195.77 156.492 c 0
- 208.629 195.118 284 258.387 357.916 257.318 c 0
- 392.614 256.816 388.135 203.94 461.556 170.595 c 0
- 529.782 139.609 485.126 72.7314 461.234 80 c 0
- 369.499 107.907 360.579 163.389 330.266 167.166 c 0
+338.42 -85.0469 m 0
+ 353.119 -87.9785 356.901 -96.1934 354.665 -104.596 c 2
+ 333.115 -185.567 l 2
+ 329.381 -199.598 316.319 -196.544 307.51 -195.754 c 0
+ 246.508 -190.279 145.367 -149.969 105.491 -63.7119 c 0
+ 72.9697 6.63379 67.6797 150.038 56.6436 256.547 c 0
+ 41.4473 403.214 39.8672 463.96 2.61719 626.056 c 0
+ 1.12988 632.527 0.138672 640.827 2.06641 645.054 c 0
+ 12.0244 666.881 18.751 678.153 30.1504 698.468 c 0
+ 35.085 707.261 40.0977 703.253 42.2646 697.642 c 0
+ 74.4902 614.197 81.7559 492.967 93.4668 366.911 c 0
+ 106.694 224.525 110.976 20.498 164.751 -9.03613 c 0
+ 211.704 -34.8223 222.247 -61.8809 338.42 -85.0469 c 0
+202.433 38.21 m 0
+ 202.947 -48.2812 277.701 -74.5869 338.42 -85.0469 c 1
+ 352.969 -88.6592 356.901 -96.1934 354.665 -104.596 c 2
+ 333.115 -185.567 l 2
+ 329.381 -199.598 316.132 -197.706 307.51 -195.754 c 0
+ 173.823 -165.486 34.1406 65.2588 164.751 -9.03613 c 0
+ 180.274 -17.8662 178.157 -10.9258 178.348 -7.30176 c 0
+ 179.496 14.5537 182.01 35.0732 195.77 76.4922 c 0
+ 202.154 95.7129 202.293 61.5947 202.433 38.21 c 0
+330.266 87.166 m 0
+ 283.692 92.9697 214.959 62.1904 202.433 38.21 c 1
+ 202.755 12.9316 208.502 -7.7832 219.963 -23.3096 c 0
+ 272.561 -94.5615 170.354 -124.672 178.348 -7.30176 c 0
+ 179.834 14.5332 181.982 35.082 195.77 76.4922 c 0
+ 208.629 115.118 284 178.387 357.916 177.318 c 0
+ 392.614 176.816 388.135 123.94 461.556 90.5947 c 0
+ 529.782 59.6094 485.126 -7.26855 461.234 0 c 0
+ 369.499 27.9072 360.579 83.3887 330.266 87.166 c 0
 EndSplineSet
 Fore
 SplineSet
-338.42 -5.04688 m 0
- 353.119 -7.97852 356.901 -16.1934 354.665 -24.5957 c 2
- 333.115 -105.567 l 2
- 329.381 -119.598 316.319 -116.544 307.51 -115.754 c 0
- 246.508 -110.279 145.367 -69.9688 105.491 16.2881 c 0
- 72.9697 86.6338 67.6797 230.038 56.6436 336.547 c 0
- 41.4473 483.214 39.8672 543.96 2.61719 706.056 c 0
- 1.12988 712.527 0.138672 720.827 2.06641 725.054 c 0
- 12.0244 746.881 18.751 758.153 30.1504 778.468 c 0
- 35.085 787.261 40.0977 783.253 42.2646 777.642 c 0
- 74.4902 694.197 81.7559 572.967 93.4668 446.911 c 0
- 106.694 304.525 110.976 100.498 164.751 70.9639 c 0
- 211.704 45.1777 222.247 18.1191 338.42 -5.04688 c 0
+338.42 -85.0469 m 0
+ 353.119 -87.9785 356.901 -96.1934 354.665 -104.596 c 2
+ 333.115 -185.567 l 2
+ 329.381 -199.598 316.319 -196.544 307.51 -195.754 c 0
+ 246.508 -190.279 145.367 -149.969 105.491 -63.7119 c 0
+ 72.9697 6.63379 67.6797 150.038 56.6436 256.547 c 0
+ 41.4473 403.214 39.8672 463.96 2.61719 626.056 c 0
+ 1.12988 632.527 0.138672 640.827 2.06641 645.054 c 0
+ 12.0244 666.881 18.751 678.153 30.1504 698.468 c 0
+ 35.085 707.261 40.0977 703.253 42.2646 697.642 c 0
+ 74.4902 614.197 81.7559 492.967 93.4668 366.911 c 0
+ 106.694 224.525 110.976 20.498 164.751 -9.03613 c 0
+ 211.704 -34.8223 222.247 -61.8809 338.42 -85.0469 c 0
 EndSplineSet
 Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemInit
-Encoding: 65646 -1 146
+Encoding: 65646 -1 141
 Width: 198
 VWidth: 0
 AnchorPoint: "cursive" 60 213 exit 0
@@ -5957,7 +5830,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemInit
-Encoding: 65647 -1 147
+Encoding: 65647 -1 142
 Width: 294
 VWidth: 0
 AnchorPoint: "cursive" 218 213 entry 0
@@ -6019,7 +5892,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafYaaIsol
-Encoding: 65648 -1 148
+Encoding: 65648 -1 143
 Width: 177
 VWidth: 0
 AnchorPoint: "cursive" 23 125 exit 0
@@ -6091,7 +5964,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_KafYaaIsol
-Encoding: 65649 -1 149
+Encoding: 65649 -1 144
 Width: 640
 VWidth: 0
 AnchorPoint: "cursive" 413 125 entry 0
@@ -6157,7 +6030,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaRaaIsol
-Encoding: 65650 -1 150
+Encoding: 65650 -1 145
 Width: 214
 VWidth: 0
 AnchorPoint: "cursive" 52 135 exit 0
@@ -6202,7 +6075,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_BaaRaaIsol
-Encoding: 65651 -1 151
+Encoding: 65651 -1 146
 Width: 360
 VWidth: 0
 AnchorPoint: "cursive" 312 135 entry 0
@@ -6250,7 +6123,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaHehMedi
-Encoding: 65652 -1 152
+Encoding: 65652 -1 147
 Width: 314
 VWidth: 0
 AnchorPoint: "cursive" 2 11 exit 0
@@ -6301,7 +6174,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.medi_BaaHehMedi
-Encoding: 65653 -1 153
+Encoding: 65653 -1 148
 Width: 204
 VWidth: 0
 AnchorPoint: "cursive" 166 11 entry 0
@@ -6358,7 +6231,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHehIsol
-Encoding: 65654 -1 154
+Encoding: 65654 -1 149
 Width: 99
 VWidth: 0
 AnchorPoint: "cursive" -6 59 exit 0
@@ -6427,7 +6300,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_LamHehIsol
-Encoding: 65655 -1 155
+Encoding: 65655 -1 150
 Width: 350
 VWidth: 0
 AnchorPoint: "cursive" 344 59 entry 0
@@ -6502,7 +6375,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamLamAlefIsol
-Encoding: 65656 -1 156
+Encoding: 65656 -1 151
 Width: 110
 VWidth: 0
 AnchorPoint: "cursive" -3 60 exit 0
@@ -6569,7 +6442,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamLamAlefIsol
-Encoding: 65657 -1 157
+Encoding: 65657 -1 152
 Width: 250
 VWidth: 0
 AnchorPoint: "cursive" 32 188 exit 0
@@ -6639,7 +6512,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_LamLamAlefIsol
-Encoding: 65658 -1 158
+Encoding: 65658 -1 153
 Width: 406
 VWidth: 0
 AnchorPoint: "cursive" 402 188 entry 0
@@ -6704,7 +6577,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamWawFina
-Encoding: 65659 -1 159
+Encoding: 65659 -1 154
 Width: 245
 VWidth: 0
 AnchorPoint: "cursive" -10 71 exit 0
@@ -6760,7 +6633,7 @@ Colour: ff00
 EndChar
 
 StartChar: waw.fina_LamWawFina
-Encoding: 65660 -1 160
+Encoding: 65660 -1 155
 Width: 324
 VWidth: 0
 AnchorPoint: "cursive" 313 71 entry 0
@@ -6821,7 +6694,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHaaInit
-Encoding: 65661 -1 161
+Encoding: 65661 -1 156
 Width: 290
 VWidth: 0
 AnchorPoint: "cursive" 85 247 exit 0
@@ -6884,7 +6757,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamHaaInit
-Encoding: 65662 -1 162
+Encoding: 65662 -1 157
 Width: 592
 VWidth: 0
 AnchorPoint: "cursive" 85 247 entry 0
@@ -6947,7 +6820,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemMeemInit
-Encoding: 65663 -1 163
+Encoding: 65663 -1 158
 Width: 306
 VWidth: 0
 AnchorPoint: "cursive" 58 133 exit 0
@@ -7007,7 +6880,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_MeemMeemInit
-Encoding: 65664 -1 164
+Encoding: 65664 -1 159
 Width: 322
 VWidth: 0
 AnchorPoint: "cursive" 168 133 entry 0
@@ -7061,79 +6934,79 @@ Colour: ff00
 EndChar
 
 StartChar: faa.medi_FaaYaaFina
-Encoding: 65665 -1 165
+Encoding: 65665 -1 160
 Width: 229
-VWidth: 0
-AnchorPoint: "cursive" 37 79 exit 0
+VWidth: -189
+AnchorPoint: "cursive" 37 -110.57 exit 0
 LayerCount: 2
 Back
 SplineSet
-29.7803 107.788 m 4
- 54.7793 105.47 113.34 96.6387 141.701 80.7461 c 4
- 170.54 64.585 213.765 43.3711 222.015 18.1016 c 4
- 226.2 5.28809 208.484 -57.502 198.189 -69.1641 c 4
- 149.286 -124.56 -1.85352 -190.21 -127.275 -195.572 c 4
- -181.397 -197.886 -236.573 -198.001 -277.732 -177.68 c 4
- -376.002 -129.162 -380.014 -47.7822 -358.692 33.874 c 4
- -337.167 116.312 -304.192 168.408 -282.257 198.068 c 4
- -272.351 211.463 -254.865 197.51 -264.512 184.479 c 4
- -302.28 133.458 -332.229 66.9209 -325.174 19.5791 c 4
- -314.484 -52.1504 -251.86 -96.1533 -134.478 -99.4795 c 4
- -24.2031 -102.604 94.0439 -66.0762 170.649 -20.2852 c 4
- 172.679 -19.0732 172.605 -16.9912 170.729 -15.6709 c 4
- 113.89 24.3496 40.8691 36.2607 2.71094 42.6465 c 4
- -0.817383 43.2373 -0.421875 44.9209 0.445312 49.1348 c 4
- 3.82715 65.5977 14.8184 86.541 22.5664 103.583 c 4
- 24.7383 108.361 25.1855 108.214 29.7803 107.788 c 4
-107.047 427.096 m 4
- 121.02 427.647 128.77 422.152 136.926 414.833 c 4
- 170.256 384.921 185.26 340.731 192.451 280.203 c 5
- 208.375 279.348 218.087 278.777 227.263 278.492 c 4
- 247.189 277.873 257.97 273.373 255.096 239.48 c 4
- 252.223 205.588 239.126 188.057 227.263 187.57 c 4
- 216.55 187.131 202.669 185.746 188.165 186.238 c 5
- 181.053 145.314 159.165 107.304 140.768 85.7236 c 4
- 115.846 56.4902 62.3223 36.3291 2.71094 42.6465 c 4
- -0.84668 43.0234 -0.421875 44.9209 0.445312 49.1348 c 4
- 3.82715 65.5977 14.8184 86.541 22.5664 103.583 c 4
- 24.7383 108.361 25.167 107.942 29.7803 107.788 c 4
- 88.9932 105.802 125.565 120.828 151.212 136.986 c 4
- 158.738 141.728 157.167 164.637 155.512 188.471 c 5
- 86.3447 192.653 22.1309 204.934 10.1592 237.78 c 4
- -7.88477 287.294 60.6621 425.265 107.047 427.096 c 4
-53.0664 315.706 m 4
- 50.7969 298.462 116.625 285.596 134.335 284.222 c 5
- 123.698 303.679 107.276 338.852 79.6758 342.886 c 5
- 67.499 342.5 54.8887 329.562 53.0664 315.706 c 4
+29.7803 -81.7822 m 4
+ 54.7793 -84.0996 113.34 -92.9316 141.701 -108.824 c 4
+ 170.54 -124.985 213.765 -146.199 222.015 -171.469 c 4
+ 226.2 -184.282 208.484 -247.072 198.189 -258.734 c 4
+ 149.286 -314.13 -1.85352 -379.78 -127.275 -385.142 c 4
+ -181.397 -387.456 -236.573 -387.571 -277.732 -367.25 c 4
+ -376.002 -318.732 -380.014 -237.353 -358.692 -155.696 c 4
+ -337.167 -73.2578 -304.192 -21.1621 -282.257 8.49805 c 4
+ -272.351 21.8926 -254.865 7.94043 -264.512 -5.09082 c 4
+ -302.28 -56.1123 -332.229 -122.649 -325.174 -169.991 c 4
+ -314.484 -241.721 -251.86 -285.724 -134.478 -289.05 c 4
+ -24.2031 -292.174 94.0439 -255.646 170.649 -209.855 c 4
+ 172.679 -208.644 172.605 -206.562 170.729 -205.241 c 4
+ 113.89 -165.221 40.8691 -153.31 2.71094 -146.924 c 4
+ -0.817383 -146.333 -0.421875 -144.649 0.445312 -140.436 c 4
+ 3.82715 -123.973 14.8184 -103.029 22.5664 -85.9873 c 4
+ 24.7383 -81.209 25.1855 -81.3564 29.7803 -81.7822 c 4
+107.047 237.526 m 4
+ 121.02 238.077 128.77 232.582 136.926 225.263 c 4
+ 170.256 195.351 185.26 151.161 192.451 90.6328 c 5
+ 208.375 89.7783 218.087 89.207 227.263 88.9219 c 4
+ 247.189 88.3027 257.97 83.8027 255.096 49.9102 c 4
+ 252.223 16.0176 239.126 -1.5127 227.263 -2 c 4
+ 216.55 -2.43945 202.669 -3.82422 188.165 -3.33203 c 5
+ 181.053 -44.2559 159.165 -82.2656 140.768 -103.847 c 4
+ 115.846 -133.08 62.3223 -153.241 2.71094 -146.924 c 4
+ -0.84668 -146.547 -0.421875 -144.649 0.445312 -140.436 c 4
+ 3.82715 -123.973 14.8184 -103.029 22.5664 -85.9873 c 4
+ 24.7383 -81.209 25.167 -81.6279 29.7803 -81.7822 c 4
+ 88.9932 -83.7676 125.565 -68.7422 151.212 -52.584 c 4
+ 158.738 -47.8418 157.167 -24.9326 155.512 -1.09863 c 5
+ 86.3447 3.08301 22.1309 15.3643 10.1592 48.21 c 4
+ -7.88477 97.7236 60.6621 235.695 107.047 237.526 c 4
+53.0664 126.136 m 4
+ 50.7969 108.892 116.625 96.0264 134.335 94.6523 c 5
+ 123.698 114.109 107.276 149.282 79.6758 153.316 c 5
+ 67.499 152.93 54.8887 139.992 53.0664 126.136 c 4
 EndSplineSet
 Fore
 SplineSet
-107.047 427.096 m 0
- 121.02 427.647 128.77 422.152 136.926 414.833 c 0
- 170.256 384.921 185.26 340.731 192.451 280.203 c 1
- 208.375 279.348 218.087 278.777 227.263 278.492 c 0
- 247.189 277.873 257.97 273.373 255.096 239.48 c 0
- 252.223 205.588 239.126 188.057 227.263 187.57 c 0
- 216.55 187.131 202.669 185.746 188.165 186.238 c 1
- 181.053 145.314 159.165 107.304 140.768 85.7236 c 0
- 115.846 56.4902 62.3223 36.3291 2.71094 42.6465 c 0
- -0.84668 43.0234 -0.421875 44.9209 0.445312 49.1348 c 0
- 3.82715 65.5977 14.8184 86.541 22.5664 103.583 c 0
- 24.7383 108.361 25.167 107.942 29.7803 107.788 c 0
- 88.9932 105.802 125.565 120.828 151.212 136.986 c 0
- 158.738 141.728 157.167 164.637 155.512 188.471 c 1
- 86.3447 192.653 22.1309 204.934 10.1592 237.78 c 0
- -7.88477 287.294 60.6621 425.265 107.047 427.096 c 0
-53.0664 315.706 m 0
- 50.7969 298.462 116.625 285.596 134.335 284.222 c 1
- 123.698 303.679 107.276 338.852 79.6758 342.886 c 1
- 67.499 342.5 54.8887 329.562 53.0664 315.706 c 0
+107.047 237.526 m 0
+ 121.02 238.077 128.77 232.582 136.926 225.263 c 0
+ 170.256 195.351 185.26 151.161 192.451 90.6328 c 1
+ 208.375 89.7783 218.087 89.207 227.263 88.9219 c 0
+ 247.189 88.3027 257.97 83.8027 255.096 49.9102 c 0
+ 252.223 16.0176 239.126 -1.5127 227.263 -2 c 0
+ 216.55 -2.43945 202.669 -3.82422 188.165 -3.33203 c 1
+ 181.053 -44.2559 159.165 -82.2656 140.768 -103.847 c 0
+ 115.846 -133.08 62.3223 -153.241 2.71094 -146.924 c 0
+ -0.84668 -146.547 -0.421875 -144.649 0.445312 -140.436 c 0
+ 3.82715 -123.973 14.8184 -103.029 22.5664 -85.9873 c 0
+ 24.7383 -81.209 25.167 -81.6279 29.7803 -81.7822 c 0
+ 88.9932 -83.7676 125.565 -68.7422 151.212 -52.584 c 0
+ 158.738 -47.8418 157.167 -24.9326 155.512 -1.09863 c 1
+ 86.3447 3.08301 22.1309 15.3643 10.1592 48.21 c 0
+ -7.88477 97.7236 60.6621 235.695 107.047 237.526 c 0
+53.0664 126.136 m 0
+ 50.7969 108.892 116.625 96.0264 134.335 94.6523 c 1
+ 123.698 114.109 107.276 149.282 79.6758 153.316 c 1
+ 67.499 152.93 54.8887 139.992 53.0664 126.136 c 0
 EndSplineSet
 Colour: ff00
 EndChar
 
 StartChar: yaa.fina_FaaYaaFina
-Encoding: 65666 -1 166
+Encoding: 65666 -1 161
 Width: 602
 VWidth: 0
 AnchorPoint: "cursive" 407 79 entry 0
@@ -7202,7 +7075,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamLamHaaInit
-Encoding: 65667 -1 167
+Encoding: 65667 -1 162
 Width: 124
 VWidth: 0
 AnchorPoint: "cursive" 37 328 exit 0
@@ -7273,7 +7146,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamLamHaaInit
-Encoding: 65668 -1 168
+Encoding: 65668 -1 163
 Width: 355
 VWidth: 0
 AnchorPoint: "cursive" 368 328 entry 0
@@ -7348,7 +7221,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamLamHaaInit
-Encoding: 65669 -1 169
+Encoding: 65669 -1 164
 Width: 584
 VWidth: 0
 AnchorPoint: "cursive" 67 243 entry 0
@@ -7420,7 +7293,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.init_HehMeemInit
-Encoding: 65670 -1 170
+Encoding: 65670 -1 165
 Width: 445
 VWidth: 0
 AnchorPoint: "cursive" 27 239 exit 0
@@ -7504,7 +7377,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_HehMeemInit
-Encoding: 65671 -1 171
+Encoding: 65671 -1 166
 Width: 324
 VWidth: 0
 AnchorPoint: "cursive" 264 239 entry 0
@@ -7576,7 +7449,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaMeemFina
-Encoding: 65672 -1 172
+Encoding: 65672 -1 167
 Width: 341
 VWidth: 0
 AnchorPoint: "cursive" 16 59 exit 0
@@ -7624,7 +7497,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_BaaMeemFina
-Encoding: 65673 -1 173
+Encoding: 65673 -1 168
 Width: 358
 VWidth: 0
 AnchorPoint: "cursive" 155 59 entry 0
@@ -7681,7 +7554,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaYaaIsol
-Encoding: 65674 -1 174
+Encoding: 65674 -1 169
 Width: 183
 VWidth: 0
 AnchorPoint: "cursive" 13 99 exit 0
@@ -7736,7 +7609,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_BaaYaaIsol
-Encoding: 65675 -1 175
+Encoding: 65675 -1 170
 Width: 643
 VWidth: 0
 AnchorPoint: "cursive" 418 99 entry 0
@@ -7795,7 +7668,7 @@ Colour: ff00
 EndChar
 
 StartChar: sad.init_SadHaaIsol
-Encoding: 65676 -1 176
+Encoding: 65676 -1 171
 Width: 826
 VWidth: 0
 AnchorPoint: "cursive" 12 399 exit 0
@@ -7874,7 +7747,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.fina_SadHaaIsol
-Encoding: 65677 -1 177
+Encoding: 65677 -1 172
 Width: 687
 VWidth: 0
 AnchorPoint: "cursive" 62 399 entry 0
@@ -7951,7 +7824,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamHehFina
-Encoding: 65678 -1 178
+Encoding: 65678 -1 173
 Width: 184
 VWidth: 0
 AnchorPoint: "cursive" 14 -37 exit 0
@@ -8010,7 +7883,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_LamHehFina
-Encoding: 65679 -1 179
+Encoding: 65679 -1 174
 Width: 370
 VWidth: 0
 AnchorPoint: "cursive" 364 -37 entry 0
@@ -8077,7 +7950,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafLamAlefFina
-Encoding: 65680 -1 180
+Encoding: 65680 -1 175
 Width: 496
 VWidth: 0
 AnchorPoint: "cursive" -5 43 exit 0
@@ -8153,7 +8026,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamAlefFina
-Encoding: 65681 -1 181
+Encoding: 65681 -1 176
 Width: 287
 VWidth: 0
 AnchorPoint: "cursive" 2 153 exit 0
@@ -8228,7 +8101,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafLamAlefFina
-Encoding: 65682 -1 182
+Encoding: 65682 -1 177
 Width: 304
 VWidth: 0
 AnchorPoint: "cursive" 292 153 entry 0
@@ -8295,7 +8168,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafHehFina
-Encoding: 65683 -1 183
+Encoding: 65683 -1 178
 Width: 448
 VWidth: 0
 AnchorPoint: "cursive" -12 10 exit 0
@@ -8366,7 +8239,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_KafHehFina
-Encoding: 65684 -1 184
+Encoding: 65684 -1 179
 Width: 286
 VWidth: 0
 AnchorPoint: "cursive" 273 10 entry 0
@@ -8439,7 +8312,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamBaaMeemInit
-Encoding: 65685 -1 185
+Encoding: 65685 -1 180
 Width: 162
 VWidth: 0
 AnchorPoint: "cursive" -5 281 exit 0
@@ -8500,7 +8373,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_LamBaaMeemInit
-Encoding: 65686 -1 186
+Encoding: 65686 -1 181
 Width: 244
 VWidth: 0
 AnchorPoint: "cursive" 235 281 entry 0
@@ -8559,7 +8432,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamBaaMeemInit
-Encoding: 65687 -1 187
+Encoding: 65687 -1 182
 Width: 330
 VWidth: 0
 AnchorPoint: "cursive" 174 132 entry 0
@@ -8617,7 +8490,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafLamMeemMedi
-Encoding: 65688 -1 188
+Encoding: 65688 -1 183
 Width: 508
 VWidth: 0
 AnchorPoint: "cursive" -15 34 exit 0
@@ -8688,7 +8561,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamMeemMedi
-Encoding: 65689 -1 189
+Encoding: 65689 -1 184
 Width: 314
 VWidth: 0
 AnchorPoint: "cursive" 38 146 exit 0
@@ -8758,7 +8631,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafLamMeemMedi
-Encoding: 65690 -1 190
+Encoding: 65690 -1 185
 Width: 308
 VWidth: 0
 AnchorPoint: "cursive" 218 146 entry 0
@@ -8823,7 +8696,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaDalIsol
-Encoding: 65691 -1 191
+Encoding: 65691 -1 186
 Width: 147
 VWidth: 0
 AnchorPoint: "cursive" 10 58 exit 0
@@ -8876,7 +8749,7 @@ Colour: ff00
 EndChar
 
 StartChar: dal.fina_BaaDalIsol
-Encoding: 65692 -1 192
+Encoding: 65692 -1 187
 Width: 414
 VWidth: 0
 AnchorPoint: "cursive" 420 58 entry 0
@@ -8934,7 +8807,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaMeemHaaInit
-Encoding: 65693 -1 193
+Encoding: 65693 -1 188
 Width: 268
 VWidth: 0
 AnchorPoint: "cursive" 78 360 exit 0
@@ -8992,7 +8865,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaMeemHaaInit
-Encoding: 65694 -1 194
+Encoding: 65694 -1 189
 Width: 452
 VWidth: 0
 AnchorPoint: "cursive" 278 360 entry 0
@@ -9049,7 +8922,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_BaaMeemHaaInit
-Encoding: 65695 -1 195
+Encoding: 65695 -1 190
 Width: 579
 VWidth: 0
 AnchorPoint: "cursive" 78 248 entry 0
@@ -9108,7 +8981,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaYaaIsol
-Encoding: 65696 -1 196
+Encoding: 65696 -1 191
 Width: 586
 VWidth: 0
 AnchorPoint: "cursive" 2 106 exit 0
@@ -9177,7 +9050,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_HaaYaaIsol
-Encoding: 65697 -1 197
+Encoding: 65697 -1 192
 Width: 628
 VWidth: 0
 AnchorPoint: "cursive" 392 106 entry 0
@@ -9243,7 +9116,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafLamIsol
-Encoding: 65698 -1 198
+Encoding: 65698 -1 193
 Width: 288
 VWidth: 0
 AnchorPoint: "cursive" 103.753 48.64 exit 0
@@ -9303,7 +9176,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.fina_KafLamIsol
-Encoding: 65699 -1 199
+Encoding: 65699 -1 194
 Width: 557
 VWidth: 0
 AnchorPoint: "cursive" 557.753 52.6396 entry 0
@@ -9366,7 +9239,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_MeemAlefFina
-Encoding: 65700 -1 200
+Encoding: 65700 -1 195
 Width: 103
 VWidth: 0
 AnchorPoint: "cursive" 65 -111 exit 0
@@ -9413,7 +9286,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_MeemAlefFina
-Encoding: 65701 -1 201
+Encoding: 65701 -1 196
 Width: 264
 VWidth: 0
 AnchorPoint: "cursive" 224 -111 entry 0
@@ -9462,7 +9335,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemYaaIsol
-Encoding: 65702 -1 202
+Encoding: 65702 -1 197
 Width: 347
 VWidth: 0
 AnchorPoint: "cursive" 2 135 exit 0
@@ -9520,7 +9393,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_MeemYaaIsol
-Encoding: 65703 -1 203
+Encoding: 65703 -1 198
 Width: 628
 VWidth: 0
 AnchorPoint: "cursive" 372 135 entry 0
@@ -9579,7 +9452,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaYaaIsol
-Encoding: 65704 -1 204
+Encoding: 65704 -1 199
 Width: 100
 VWidth: 0
 AnchorPoint: "cursive" -6 183 exit 0
@@ -9630,7 +9503,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaYaaIsol
-Encoding: 65705 -1 205
+Encoding: 65705 -1 200
 Width: 298
 VWidth: 0
 AnchorPoint: "cursive" 294 183 entry 0
@@ -9685,7 +9558,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_BaaBaaYaaIsol
-Encoding: 65706 -1 206
+Encoding: 65706 -1 201
 Width: 588
 VWidth: 0
 AnchorPoint: "cursive" 322 96 entry 0
@@ -9745,7 +9618,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamLamInit
-Encoding: 65707 -1 207
+Encoding: 65707 -1 202
 Width: 116
 VWidth: 0
 AnchorPoint: "cursive" 7 39 exit 0
@@ -9798,7 +9671,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamLamInit
-Encoding: 65708 -1 208
+Encoding: 65708 -1 203
 Width: 212
 VWidth: 0
 AnchorPoint: "cursive" 217 39 entry 0
@@ -9850,7 +9723,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamYaaFina
-Encoding: 65709 -1 209
+Encoding: 65709 -1 204
 Width: 199
 VWidth: 0
 AnchorPoint: "cursive" 3 -71 exit 0
@@ -9914,7 +9787,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_LamYaaFina
-Encoding: 65710 -1 210
+Encoding: 65710 -1 205
 Width: 605
 VWidth: 0
 AnchorPoint: "cursive" 406 -71 entry 0
@@ -9976,7 +9849,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafBaaInit
-Encoding: 65711 -1 211
+Encoding: 65711 -1 206
 Width: 332
 VWidth: 0
 AnchorPoint: "cursive" 219 68 exit 0
@@ -10032,7 +9905,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_KafBaaInit
-Encoding: 65712 -1 212
+Encoding: 65712 -1 207
 Width: 330
 VWidth: 0
 AnchorPoint: "cursive" 219 68 entry 0
@@ -10081,7 +9954,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamMeemInit
-Encoding: 65713 -1 213
+Encoding: 65713 -1 208
 Width: 314
 VWidth: 0
 AnchorPoint: "cursive" 221 94 exit 0
@@ -10137,7 +10010,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamMeemInit
-Encoding: 65714 -1 214
+Encoding: 65714 -1 209
 Width: 320
 VWidth: 0
 AnchorPoint: "cursive" 221 94 entry 0
@@ -10186,7 +10059,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamAlefIsol
-Encoding: 65715 -1 215
+Encoding: 65715 -1 210
 Width: 291
 VWidth: 0
 AnchorPoint: "cursive" 14 68 exit 0
@@ -10250,7 +10123,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_LamAlefIsol
-Encoding: 65716 -1 216
+Encoding: 65716 -1 211
 Width: 550
 VWidth: 0
 AnchorPoint: "cursive" 277 68 entry 0
@@ -10321,7 +10194,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHaaMeemInit
-Encoding: 65717 -1 217
+Encoding: 65717 -1 212
 Width: 212
 VWidth: 0
 AnchorPoint: "cursive" 44 361 exit 0
@@ -10388,7 +10261,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamHaaMeemInit
-Encoding: 65718 -1 218
+Encoding: 65718 -1 213
 Width: 536
 VWidth: 0
 AnchorPoint: "cursive" 68 202 exit 0
@@ -10454,7 +10327,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamHaaMeemInit
-Encoding: 65719 -1 219
+Encoding: 65719 -1 214
 Width: 294
 VWidth: 0
 AnchorPoint: "cursive" 148 202 entry 0
@@ -10515,7 +10388,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaInit
-Encoding: 65720 -1 220
+Encoding: 65720 -1 215
 Width: 170
 VWidth: 0
 AnchorPoint: "cursive" -9 90 exit 0
@@ -10564,7 +10437,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaInit
-Encoding: 65721 -1 221
+Encoding: 65721 -1 216
 Width: 258
 VWidth: 0
 AnchorPoint: "cursive" 251 90 entry 0
@@ -10611,7 +10484,7 @@ Colour: ff00
 EndChar
 
 StartChar: ayn.medi_AynYaaFina
-Encoding: 65722 -1 222
+Encoding: 65722 -1 217
 Width: 430
 VWidth: 0
 AnchorPoint: "cursive" 19 119 exit 0
@@ -10676,7 +10549,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_AynYaaFina
-Encoding: 65723 -1 223
+Encoding: 65723 -1 218
 Width: 672
 VWidth: 0
 AnchorPoint: "cursive" 415 119 entry 0
@@ -10740,7 +10613,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamKafIsol
-Encoding: 65724 -1 224
+Encoding: 65724 -1 219
 Width: 132
 VWidth: 0
 AnchorPoint: "cursive" 5 60 exit 0
@@ -10819,7 +10692,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.fina_LamKafIsol
-Encoding: 65725 -1 225
+Encoding: 65725 -1 220
 Width: 771
 VWidth: 0
 AnchorPoint: "cursive" 775 60 entry 0
@@ -10917,7 +10790,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemRaaIsol
-Encoding: 65726 -1 226
+Encoding: 65726 -1 221
 Width: 348
 VWidth: 0
 AnchorPoint: "cursive" 1 189 exit 0
@@ -10969,7 +10842,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_MeemRaaIsol
-Encoding: 65727 -1 227
+Encoding: 65727 -1 222
 Width: 462
 VWidth: 0
 AnchorPoint: "cursive" 461 189 entry 0
@@ -11022,7 +10895,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.init_FaaHaaInit
-Encoding: 65728 -1 228
+Encoding: 65728 -1 223
 Width: 284
 VWidth: 0
 AnchorPoint: "cursive" 61 247 exit 0
@@ -11085,7 +10958,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_FaaHaaInit
-Encoding: 65729 -1 229
+Encoding: 65729 -1 224
 Width: 586
 VWidth: 0
 AnchorPoint: "cursive" 61 247 entry 0
@@ -11142,7 +11015,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafKafFina
-Encoding: 65730 -1 230
+Encoding: 65730 -1 225
 Width: 512
 VWidth: 0
 AnchorPoint: "cursive" -2 25 exit 0
@@ -11218,7 +11091,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.fina_KafKafFina
-Encoding: 65731 -1 231
+Encoding: 65731 -1 226
 Width: 848
 VWidth: 0
 AnchorPoint: "cursive" 846 25 entry 0
@@ -11310,7 +11183,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaHaaInit
-Encoding: 65732 -1 232
+Encoding: 65732 -1 227
 Width: 642
 VWidth: 0
 AnchorPoint: "cursive" 32 221 exit 0
@@ -11371,7 +11244,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_HaaHaaInit
-Encoding: 65733 -1 233
+Encoding: 65733 -1 228
 Width: 530
 VWidth: 0
 AnchorPoint: "cursive" 32 221 entry 0
@@ -11430,7 +11303,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemIsol
-Encoding: 65734 -1 234
+Encoding: 65734 -1 229
 Width: 392
 VWidth: 0
 AnchorPoint: "cursive" 155 187 exit 0
@@ -11497,7 +11370,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_KafMeemIsol
-Encoding: 65735 -1 235
+Encoding: 65735 -1 230
 Width: 378
 VWidth: 0
 AnchorPoint: "cursive" 155 187 entry 0
@@ -11562,7 +11435,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.init_FaaYaaIsol
-Encoding: 65736 -1 236
+Encoding: 65736 -1 231
 Width: 243
 VWidth: 0
 AnchorPoint: "cursive" 59 108 exit 0
@@ -11631,7 +11504,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_FaaYaaIsol
-Encoding: 65737 -1 237
+Encoding: 65737 -1 232
 Width: 648
 VWidth: 0
 AnchorPoint: "cursive" 429 108 entry 0
@@ -11697,7 +11570,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamQafFina
-Encoding: 65738 -1 238
+Encoding: 65738 -1 233
 Width: 272
 VWidth: 0
 AnchorPoint: "cursive" -10 123 exit 0
@@ -11758,7 +11631,7 @@ Colour: ff00
 EndChar
 
 StartChar: qaf.fina_LamQafFina
-Encoding: 65739 -1 239
+Encoding: 65739 -1 234
 Width: 554
 VWidth: 0
 AnchorPoint: "cursive" 544 123 entry 0
@@ -11826,7 +11699,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenHaaIsol
-Encoding: 65740 -1 240
+Encoding: 65740 -1 235
 Width: 695
 VWidth: 0
 AnchorPoint: "cursive" 65 481 exit 0
@@ -11911,7 +11784,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.fina_SeenHaaIsol
-Encoding: 65741 -1 241
+Encoding: 65741 -1 236
 Width: 704
 VWidth: 0
 AnchorPoint: "cursive" 65 481 entry 0
@@ -11991,7 +11864,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemLamFina
-Encoding: 65742 -1 242
+Encoding: 65742 -1 237
 Width: 522
 VWidth: 0
 AnchorPoint: "cursive" 5 -10 exit 0
@@ -12070,7 +11943,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemLamFina
-Encoding: 65743 -1 243
+Encoding: 65743 -1 238
 Width: 254
 VWidth: 0
 AnchorPoint: "cursive" 42 -31 exit 0
@@ -12140,7 +12013,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.fina_KafMeemLamFina
-Encoding: 65744 -1 244
+Encoding: 65744 -1 239
 Width: 586
 VWidth: 0
 AnchorPoint: "cursive" 582 -31 entry 0
@@ -12217,7 +12090,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemHaaInit
-Encoding: 65745 -1 245
+Encoding: 65745 -1 240
 Width: 484
 VWidth: 0
 AnchorPoint: "cursive" 56 251 exit 0
@@ -12274,7 +12147,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_MeemHaaInit
-Encoding: 65746 -1 246
+Encoding: 65746 -1 241
 Width: 566
 VWidth: 0
 AnchorPoint: "cursive" 56 251 entry 0
@@ -12331,7 +12204,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaNoonIsol
-Encoding: 65747 -1 247
+Encoding: 65747 -1 242
 Width: 140
 VWidth: 0
 AnchorPoint: "cursive" -1 180 exit 0
@@ -12378,7 +12251,7 @@ Colour: ff00
 EndChar
 
 StartChar: noon.fina_BaaNoonIsol
-Encoding: 65748 -1 248
+Encoding: 65748 -1 243
 Width: 502
 VWidth: 0
 AnchorPoint: "cursive" 499 180 entry 0
@@ -12433,7 +12306,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemFina
-Encoding: 65749 -1 249
+Encoding: 65749 -1 244
 Width: 630
 VWidth: 0
 AnchorPoint: "cursive" 162 106 exit 0
@@ -12504,7 +12377,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_KafMeemFina
-Encoding: 65750 -1 250
+Encoding: 65750 -1 245
 Width: 362
 VWidth: 0
 AnchorPoint: "cursive" 162 106 entry 0
@@ -12571,7 +12444,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafLamAlefIsol
-Encoding: 65751 -1 251
+Encoding: 65751 -1 246
 Width: 225
 VWidth: 0
 AnchorPoint: "cursive" 1 51 exit 0
@@ -12636,7 +12509,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamAlefIsol
-Encoding: 65752 -1 252
+Encoding: 65752 -1 247
 Width: 598
 VWidth: 0
 AnchorPoint: "cursive" 345 162 exit 0
@@ -12704,7 +12577,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafLamAlefIsol
-Encoding: 65753 -1 253
+Encoding: 65753 -1 248
 Width: 402
 VWidth: 0
 AnchorPoint: "cursive" 375 162 entry 0
@@ -12765,7 +12638,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaSeenInit
-Encoding: 65754 -1 254
+Encoding: 65754 -1 249
 Width: 186
 VWidth: 0
 AnchorPoint: "cursive" 2 199 exit 0
@@ -12827,7 +12700,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.medi_BaaSeenInit
-Encoding: 65755 -1 255
+Encoding: 65755 -1 250
 Width: 489
 VWidth: 0
 AnchorPoint: "cursive" 492 199 entry 0
@@ -12900,7 +12773,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaRaaFina
-Encoding: 65756 -1 256
+Encoding: 65756 -1 251
 Width: 220
 VWidth: 0
 AnchorPoint: "cursive" -24 163 exit 0
@@ -12952,7 +12825,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_BaaRaaFina
-Encoding: 65757 -1 257
+Encoding: 65757 -1 252
 Width: 400
 VWidth: 0
 AnchorPoint: "cursive" 376 163 entry 0
@@ -13008,7 +12881,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafRaaFina
-Encoding: 65758 -1 258
+Encoding: 65758 -1 253
 Width: 389
 VWidth: 0
 AnchorPoint: "cursive" 2 59 exit 0
@@ -13073,7 +12946,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_KafRaaFina
-Encoding: 65759 -1 259
+Encoding: 65759 -1 254
 Width: 288
 VWidth: 0
 AnchorPoint: "cursive" 289 59 entry 0
@@ -13131,7 +13004,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHehInit
-Encoding: 65760 -1 260
+Encoding: 65760 -1 255
 Width: 116
 VWidth: 0
 AnchorPoint: "cursive" 90 266 exit 0
@@ -13196,7 +13069,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.medi_LamHehInit
-Encoding: 65761 -1 261
+Encoding: 65761 -1 256
 Width: 422
 VWidth: 0
 AnchorPoint: "cursive" 240 266 entry 0
@@ -13272,7 +13145,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemHaaMeemInit
-Encoding: 65762 -1 262
+Encoding: 65762 -1 257
 Width: 482
 VWidth: 0
 AnchorPoint: "cursive" 38 373 exit 0
@@ -13344,7 +13217,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_MeemHaaMeemInit
-Encoding: 65763 -1 263
+Encoding: 65763 -1 258
 Width: 584
 VWidth: 0
 AnchorPoint: "cursive" 58 373 entry 0
@@ -13415,7 +13288,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_MeemHaaMeemInit
-Encoding: 65764 -1 264
+Encoding: 65764 -1 259
 Width: 325
 VWidth: 0
 AnchorPoint: "cursive" 212 222 entry 0
@@ -13486,7 +13359,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaMeemInit
-Encoding: 65765 -1 265
+Encoding: 65765 -1 260
 Width: 301
 VWidth: 0
 AnchorPoint: "cursive" 70 144 exit 0
@@ -13542,7 +13415,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaMeemInit
-Encoding: 65766 -1 266
+Encoding: 65766 -1 261
 Width: 348
 VWidth: 0
 AnchorPoint: "cursive" 170 144 entry 0
@@ -13598,7 +13471,7 @@ Colour: ff00
 EndChar
 
 StartChar: ayn.init_AynYaaIsol
-Encoding: 65767 -1 267
+Encoding: 65767 -1 262
 Width: 560
 VWidth: 0
 AnchorPoint: "cursive" 1 124 exit 0
@@ -13662,7 +13535,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_AynYaaIsol
-Encoding: 65768 -1 268
+Encoding: 65768 -1 263
 Width: 664
 VWidth: 0
 AnchorPoint: "cursive" 426 124 entry 0
@@ -13724,7 +13597,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaHehInit
-Encoding: 65769 -1 269
+Encoding: 65769 -1 264
 Width: 346
 VWidth: 0
 AnchorPoint: "cursive" 0 16 exit 0
@@ -13775,7 +13648,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.medi_BaaHehInit
-Encoding: 65770 -1 270
+Encoding: 65770 -1 265
 Width: 146
 VWidth: 0
 AnchorPoint: "cursive" 146 16 entry 0
@@ -13832,7 +13705,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafLamInit
-Encoding: 65771 -1 271
+Encoding: 65771 -1 266
 Width: 188
 VWidth: 0
 AnchorPoint: "cursive" 8 32 exit 0
@@ -13889,7 +13762,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamInit
-Encoding: 65772 -1 272
+Encoding: 65772 -1 267
 Width: 224
 VWidth: 0
 AnchorPoint: "cursive" 230 32 entry 0
@@ -13946,7 +13819,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenHaaInit
-Encoding: 65773 -1 273
+Encoding: 65773 -1 268
 Width: 663
 VWidth: 0
 AnchorPoint: "cursive" 63 223 exit 0
@@ -14024,7 +13897,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_SeenHaaInit
-Encoding: 65774 -1 274
+Encoding: 65774 -1 269
 Width: 551
 VWidth: 0
 AnchorPoint: "cursive" 63 223 entry 0
@@ -14090,7 +13963,7 @@ Colour: ff00
 EndChar
 
 StartChar: sad.init_SadMeemInit
-Encoding: 65775 -1 275
+Encoding: 65775 -1 270
 Width: 704
 VWidth: 0
 AnchorPoint: "cursive" 95 124 exit 0
@@ -14157,7 +14030,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_SadMeemInit
-Encoding: 65776 -1 276
+Encoding: 65776 -1 271
 Width: 291
 VWidth: 0
 AnchorPoint: "cursive" 135 124 entry 0
@@ -14213,7 +14086,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafRaaIsol
-Encoding: 65777 -1 277
+Encoding: 65777 -1 272
 Width: 182
 VWidth: 0
 AnchorPoint: "cursive" 8 84 exit 0
@@ -14273,7 +14146,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_KafRaaIsol
-Encoding: 65778 -1 278
+Encoding: 65778 -1 273
 Width: 239
 VWidth: 0
 AnchorPoint: "cursive" 248 84 entry 0
@@ -14327,7 +14200,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamMeemIsol
-Encoding: 65779 -1 279
+Encoding: 65779 -1 274
 Width: 166
 VWidth: 0
 AnchorPoint: "cursive" 51 229 exit 0
@@ -14385,7 +14258,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_LamMeemIsol
-Encoding: 65780 -1 280
+Encoding: 65780 -1 275
 Width: 364
 VWidth: 0
 AnchorPoint: "cursive" 161 229 entry 0
@@ -14447,7 +14320,7 @@ Colour: ff00
 EndChar
 
 StartChar: ayn.init_AynHaaInit
-Encoding: 65781 -1 281
+Encoding: 65781 -1 276
 Width: 535
 VWidth: 0
 AnchorPoint: "cursive" 50 244 exit 0
@@ -14507,7 +14380,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_AynHaaInit
-Encoding: 65782 -1 282
+Encoding: 65782 -1 277
 Width: 592
 VWidth: 0
 AnchorPoint: "cursive" 90 244 entry 0
@@ -14564,7 +14437,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamYaaIsol
-Encoding: 65783 -1 283
+Encoding: 65783 -1 278
 Width: 158
 VWidth: 0
 AnchorPoint: "cursive" 72 102 exit 0
@@ -14630,7 +14503,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_LamYaaIsol
-Encoding: 65784 -1 284
+Encoding: 65784 -1 279
 Width: 622
 VWidth: 0
 AnchorPoint: "cursive" 412 102 entry 0
@@ -14696,7 +14569,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafYaaFina
-Encoding: 65785 -1 285
+Encoding: 65785 -1 280
 Width: 510
 VWidth: 0
 AnchorPoint: "cursive" 22 -6 exit 0
@@ -14765,7 +14638,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_KafYaaFina
-Encoding: 65786 -1 286
+Encoding: 65786 -1 281
 Width: 648
 VWidth: 0
 AnchorPoint: "cursive" 412 -6 entry 0
@@ -14828,7 +14701,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamMeemHaaInit
-Encoding: 65787 -1 287
+Encoding: 65787 -1 282
 Width: 250
 VWidth: 0
 AnchorPoint: "cursive" 172 367 exit 0
@@ -14895,7 +14768,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamMeemHaaInit
-Encoding: 65788 -1 288
+Encoding: 65788 -1 283
 Width: 530
 VWidth: 0
 AnchorPoint: "cursive" 56 246 exit 0
@@ -14964,7 +14837,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamMeemHaaInit
-Encoding: 65789 -1 289
+Encoding: 65789 -1 284
 Width: 600
 VWidth: 0
 AnchorPoint: "cursive" 56 246 entry 0
@@ -15034,7 +14907,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamAlefFina
-Encoding: 65790 -1 290
+Encoding: 65790 -1 285
 Width: 550
 VWidth: 0
 AnchorPoint: "cursive" 314 152 exit 0
@@ -15092,7 +14965,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_LamAlefFina
-Encoding: 65791 -1 291
+Encoding: 65791 -1 286
 Width: 394
 VWidth: 0
 AnchorPoint: "cursive" 384 152 entry 0
@@ -15145,7 +15018,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamMeemMedi
-Encoding: 65792 -1 292
+Encoding: 65792 -1 287
 Width: 255
 VWidth: 0
 AnchorPoint: "cursive" 22 83 exit 0
@@ -15195,7 +15068,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamMeemMedi
-Encoding: 65793 -1 293
+Encoding: 65793 -1 288
 Width: 326
 VWidth: 0
 AnchorPoint: "cursive" 237 83 entry 0
@@ -15244,7 +15117,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_Lellah
-Encoding: 65794 -1 294
+Encoding: 65794 -1 289
 Width: 154
 VWidth: 0
 AnchorPoint: "cursive" 33 63 exit 0
@@ -15312,7 +15185,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_Lellah
-Encoding: 65795 -1 295
+Encoding: 65795 -1 290
 Width: 238
 VWidth: 0
 AnchorPoint: "cursive" -6 56 exit 0
@@ -15383,7 +15256,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_Lellah
-Encoding: 65796 -1 296
+Encoding: 65796 -1 291
 Width: 300
 VWidth: 0
 AnchorPoint: "cursive" 292 56 entry 0
@@ -15458,7 +15331,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaHaaInit
-Encoding: 65797 -1 297
+Encoding: 65797 -1 292
 Width: 96
 VWidth: 0
 AnchorPoint: "cursive" -17 323 exit 0
@@ -15508,7 +15381,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaHaaInit
-Encoding: 65798 -1 298
+Encoding: 65798 -1 293
 Width: 533
 VWidth: 0
 AnchorPoint: "cursive" 516 323 entry 0
@@ -15565,7 +15438,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_BaaBaaHaaInit
-Encoding: 65799 -1 299
+Encoding: 65799 -1 294
 Width: 642
 VWidth: 0
 AnchorPoint: "cursive" 65 251 entry 0
@@ -15624,7 +15497,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaMeemInit
-Encoding: 65800 -1 300
+Encoding: 65800 -1 295
 Width: 524
 VWidth: 0
 AnchorPoint: "cursive" 46 238 exit 0
@@ -15679,7 +15552,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_HaaMeemInit
-Encoding: 65801 -1 301
+Encoding: 65801 -1 296
 Width: 301
 VWidth: 0
 AnchorPoint: "cursive" 186 238 entry 0
@@ -15735,7 +15608,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenBaaMeemInit
-Encoding: 65802 -1 302
+Encoding: 65802 -1 297
 Width: 499
 VWidth: 0
 AnchorPoint: "cursive" -11 253 exit 0
@@ -15818,7 +15691,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_SeenBaaMeemInit
-Encoding: 65803 -1 303
+Encoding: 65803 -1 298
 Width: 324
 VWidth: 0
 AnchorPoint: "cursive" 74 122 exit 0
@@ -15888,7 +15761,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_SeenBaaMeemInit
-Encoding: 65804 -1 304
+Encoding: 65804 -1 299
 Width: 312
 VWidth: 0
 AnchorPoint: "cursive" 144 122 entry 0
@@ -15957,7 +15830,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaIsol
-Encoding: 65805 -1 305
+Encoding: 65805 -1 300
 Width: 195
 VWidth: 0
 AnchorPoint: "cursive" -10 141 exit 0
@@ -16011,7 +15884,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.fina_BaaBaaIsol
-Encoding: 65806 -1 306
+Encoding: 65806 -1 301
 Width: 728
 VWidth: 0
 AnchorPoint: "cursive" 716 141 entry 0
@@ -16068,7 +15941,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaMeemInit
-Encoding: 65807 -1 307
+Encoding: 65807 -1 302
 Width: 111
 VWidth: 0
 AnchorPoint: "cursive" -13 291 exit 0
@@ -16122,7 +15995,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaMeemInit
-Encoding: 65808 -1 308
+Encoding: 65808 -1 303
 Width: 281
 VWidth: 0
 AnchorPoint: "cursive" 267 291 entry 0
@@ -16180,7 +16053,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaBaaMeemInit
-Encoding: 65809 -1 309
+Encoding: 65809 -1 304
 Width: 329
 VWidth: 0
 AnchorPoint: "cursive" 132 292 entry 0
@@ -16242,7 +16115,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafAlefIsol
-Encoding: 65810 -1 310
+Encoding: 65810 -1 305
 Width: 217
 VWidth: 0
 AnchorPoint: "cursive" -2 54 exit 0
@@ -16295,7 +16168,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafAlefIsol
-Encoding: 65811 -1 311
+Encoding: 65811 -1 306
 Width: 228
 VWidth: 0
 AnchorPoint: "cursive" 225 54 entry 0
@@ -16347,7 +16220,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafBaaMedi
-Encoding: 65812 -1 312
+Encoding: 65812 -1 307
 Width: 366
 VWidth: 0
 AnchorPoint: "cursive" -1 56 exit 0
@@ -16412,7 +16285,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_KafBaaMedi
-Encoding: 65813 -1 313
+Encoding: 65813 -1 308
 Width: 178
 VWidth: 0
 AnchorPoint: "cursive" 179 56 entry 0
@@ -16464,7 +16337,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaNoonFina
-Encoding: 65814 -1 314
+Encoding: 65814 -1 309
 Width: 204
 VWidth: 0
 AnchorPoint: "cursive" -14 169 exit 0
@@ -16521,7 +16394,7 @@ Colour: ff00
 EndChar
 
 StartChar: noon.fina_BaaNoonFina
-Encoding: 65815 -1 315
+Encoding: 65815 -1 310
 Width: 502
 VWidth: 0
 AnchorPoint: "cursive" 490 169 entry 0
@@ -16581,7 +16454,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaRaaIsol
-Encoding: 65816 -1 316
+Encoding: 65816 -1 311
 Width: 592
 VWidth: 0
 AnchorPoint: "cursive" 54 82 exit 0
@@ -16646,7 +16519,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_HaaRaaIsol
-Encoding: 65817 -1 317
+Encoding: 65817 -1 312
 Width: 338
 VWidth: 0
 AnchorPoint: "cursive" 304 82 entry 0
@@ -16707,7 +16580,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.init_HehHaaInit
-Encoding: 65818 -1 318
+Encoding: 65818 -1 313
 Width: 528
 VWidth: 0
 AnchorPoint: "cursive" 50 237 exit 0
@@ -16790,7 +16663,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_HehHaaInit
-Encoding: 65819 -1 319
+Encoding: 65819 -1 314
 Width: 602
 VWidth: 0
 AnchorPoint: "cursive" 50 237 entry 0
@@ -16860,7 +16733,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamRaaIsol
-Encoding: 65820 -1 320
+Encoding: 65820 -1 315
 Width: 192
 VWidth: 0
 AnchorPoint: "cursive" 7 141 exit 0
@@ -16920,7 +16793,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_LamRaaIsol
-Encoding: 65821 -1 321
+Encoding: 65821 -1 316
 Width: 328
 VWidth: 0
 AnchorPoint: "cursive" 307 141 entry 0
@@ -16977,7 +16850,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafDalIsol
-Encoding: 65822 -1 322
+Encoding: 65822 -1 317
 Width: 196
 VWidth: 0
 AnchorPoint: "cursive" 1 -126 exit 0
@@ -17047,7 +16920,7 @@ Colour: ff00
 EndChar
 
 StartChar: dal.fina_KafDalIsol
-Encoding: 65823 -1 323
+Encoding: 65823 -1 318
 Width: 434
 VWidth: 0
 AnchorPoint: "cursive" 435 -126 entry 0
@@ -17118,7 +16991,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaMeemIsol
-Encoding: 65824 -1 324
+Encoding: 65824 -1 319
 Width: 404
 VWidth: 0
 AnchorPoint: "cursive" 26 503 exit 0
@@ -17167,7 +17040,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_BaaMeemIsol
-Encoding: 65825 -1 325
+Encoding: 65825 -1 320
 Width: 358
 VWidth: 0
 AnchorPoint: "cursive" 136 503 entry 0
@@ -17223,7 +17096,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemAlefIsol
-Encoding: 65826 -1 326
+Encoding: 65826 -1 321
 Width: 402
 VWidth: 0
 AnchorPoint: "cursive" 126 -16 exit 0
@@ -17299,7 +17172,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemAlefIsol
-Encoding: 65827 -1 327
+Encoding: 65827 -1 322
 Width: 282
 VWidth: 0
 AnchorPoint: "cursive" 48 -42 exit 0
@@ -17364,7 +17237,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafMeemAlefIsol
-Encoding: 65828 -1 328
+Encoding: 65828 -1 323
 Width: 232
 VWidth: 0
 AnchorPoint: "cursive" 148 -42 entry 0
@@ -17429,7 +17302,7 @@ Colour: ff00
 EndChar
 
 StartChar: sad.init_SadHaaInit
-Encoding: 65829 -1 329
+Encoding: 65829 -1 324
 Width: 826
 VWidth: 0
 AnchorPoint: "cursive" 55 235 exit 0
@@ -17498,7 +17371,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_SadHaaInit
-Encoding: 65830 -1 330
+Encoding: 65830 -1 325
 Width: 602
 VWidth: 0
 AnchorPoint: "cursive" 55 235 entry 0
@@ -17561,7 +17434,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemAlefFina
-Encoding: 65831 -1 331
+Encoding: 65831 -1 326
 Width: 599
 VWidth: 0
 AnchorPoint: "cursive" 97 29 exit 0
@@ -17635,7 +17508,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemAlefFina
-Encoding: 65832 -1 332
+Encoding: 65832 -1 327
 Width: 248
 VWidth: 0
 AnchorPoint: "cursive" 51 -12 exit 0
@@ -17699,7 +17572,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafMeemAlefFina
-Encoding: 65833 -1 333
+Encoding: 65833 -1 328
 Width: 152
 VWidth: 0
 AnchorPoint: "cursive" 131 -12 entry 0
@@ -17763,7 +17636,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafAlefFina
-Encoding: 65834 -1 334
+Encoding: 65834 -1 329
 Width: 538
 VWidth: 0
 AnchorPoint: "cursive" 70 4 exit 0
@@ -17823,7 +17696,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafAlefFina
-Encoding: 65835 -1 335
+Encoding: 65835 -1 330
 Width: 156
 VWidth: 0
 AnchorPoint: "cursive" 150 4 entry 0
@@ -17877,7 +17750,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamKafFina
-Encoding: 65836 -1 336
+Encoding: 65836 -1 331
 Width: 180
 VWidth: 0
 AnchorPoint: "cursive" 1 11 exit 0
@@ -17949,7 +17822,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.fina_LamKafFina
-Encoding: 65837 -1 337
+Encoding: 65837 -1 332
 Width: 750
 VWidth: 0
 AnchorPoint: "cursive" 751 11 entry 0
@@ -18042,14 +17915,15 @@ Colour: ff00
 EndChar
 
 StartChar: space
-Encoding: 32 32 338
+Encoding: 32 32 333
 Width: 300
 VWidth: 0
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni061B
-Encoding: 1563 1563 339
+Encoding: 1563 1563 334
 Width: 204
 VWidth: 0
 LayerCount: 2
@@ -18074,7 +17948,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni060C
-Encoding: 1548 1548 340
+Encoding: 1548 1548 335
 Width: 202
 VWidth: 0
 LayerCount: 2
@@ -18094,7 +17968,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni061F
-Encoding: 1567 1567 341
+Encoding: 1567 1567 336
 Width: 344
 VWidth: 0
 LayerCount: 2
@@ -18124,6 +17998,1060 @@ SplineSet
  187.07 -129.634 216.092 -100.614 216.092 -64.8174 c 0
  216.092 -29.0195 187.07 0 151.273 0 c 0
  115.478 0 86.457 -29.0195 86.457 -64.8174 c 0
+EndSplineSet
+EndChar
+
+StartChar: baa.medi_BaaYaaFina
+Encoding: 65838 -1 337
+Width: 308
+VWidth: 0
+AnchorPoint: "cursive" 0 -20 exit 0
+LayerCount: 2
+Back
+SplineSet
+-28.2588 -53.542 m 4
+ -30.9688 -24.7588 37.7842 73.2051 24.6064 29.8096 c 4
+ 12.5293 -9.96094 75.4453 -35.7383 128.931 -42.2324 c 4
+ 175.16 -47.8457 227.737 -53.9219 254.698 -63.3262 c 4
+ 303.204 -80.2441 304.005 -152.011 277.634 -188.405 c 4
+ 251.304 -224.743 108.421 -311.456 -68.9424 -334.193 c 4
+ -244.51 -356.7 -324.477 -268.699 -349.934 -203.538 c 4
+ -372.271 -146.364 -355.015 -13.2051 -275.3 109.149 c 4
+ -267.171 121.626 -247.626 112.738 -256.886 96.4121 c 4
+ -280.768 54.3027 -325.177 -16.4492 -315.313 -99.124 c 4
+ -302.151 -209.453 -174.061 -248.386 -85.9062 -240.769 c 4
+ 42.8018 -229.647 166.078 -181.108 239.821 -143.438 c 4
+ 243.601 -141.777 242.971 -140.519 239.797 -137.512 c 4
+ 213.39 -109.62 -21.1406 -129.144 -28.2588 -53.542 c 4
+307.695 90.7393 m 4
+ 307.695 90.7402 307.695 90.7402 307.695 90.7402 c 4
+ 307.696 90.7402 307.696 90.7402 307.696 90.7402 c 5
+ 307.696 90.7402 l 5
+ 307.696 90.7402 l 5
+ 307.696 90.7402 l 5
+ 330.807 86.4531 337.615 84.9824 330.532 56.3652 c 4
+ 323.45 27.749 315.93 -0.365234 308.184 0 c 4
+ 204.623 4.88477 202.841 100.132 155.499 103.654 c 4
+ 121.942 106.15 31.3047 54.2705 24.6064 29.8096 c 4
+ 7.91113 -31.1523 -26.5986 -71.3203 -28.2588 -53.542 c 4
+ -36.1348 30.8262 105.562 187.788 182.562 189.751 c 4
+ 224.045 190.808 236.396 102.27 307.695 90.7393 c 4
+EndSplineSet
+Fore
+SplineSet
+307.695 90.7393 m 0
+ 307.695 90.7402 307.695 90.7402 307.695 90.7402 c 0
+ 307.696 90.7402 307.696 90.7402 307.696 90.7402 c 1
+ 307.696 90.7402 l 1
+ 307.696 90.7402 l 1
+ 307.696 90.7402 l 1
+ 330.807 86.4531 337.615 84.9824 330.532 56.3652 c 0
+ 323.45 27.749 315.93 -0.365234 308.184 0 c 0
+ 204.623 4.88477 202.841 100.132 155.499 103.654 c 0
+ 121.942 106.15 31.3047 54.2705 24.6064 29.8096 c 0
+ 7.91113 -31.1523 -26.5986 -71.3203 -28.2588 -53.542 c 0
+ -36.1348 30.8262 105.562 187.788 182.562 189.751 c 0
+ 224.045 190.808 236.396 102.27 307.695 90.7393 c 0
+EndSplineSet
+EndChar
+
+StartChar: yaa.fina_BaaYaaFina
+Encoding: 65839 -1 338
+Width: 670
+VWidth: 0
+AnchorPoint: "cursive" 360 -20 entry 0
+LayerCount: 2
+Back
+SplineSet
+331.741 -53.542 m 0
+ 329.031 -24.7588 397.784 73.2051 384.606 29.8096 c 0
+ 372.529 -9.96094 435.445 -35.7383 488.931 -42.2324 c 0
+ 535.16 -47.8457 587.737 -53.9219 614.698 -63.3262 c 0
+ 663.204 -80.2441 664.005 -152.011 637.634 -188.405 c 0
+ 611.304 -224.743 468.421 -311.456 291.058 -334.193 c 0
+ 115.49 -356.7 35.5234 -268.699 10.0664 -203.538 c 0
+ -12.2705 -146.364 4.98535 -13.2051 84.7002 109.149 c 0
+ 92.8291 121.626 112.374 112.738 103.114 96.4121 c 0
+ 79.2324 54.3027 34.8232 -16.4492 44.6865 -99.124 c 0
+ 57.8486 -209.453 185.939 -248.386 274.094 -240.769 c 0
+ 402.802 -229.647 526.078 -181.108 599.821 -143.438 c 0
+ 603.601 -141.777 602.971 -140.519 599.797 -137.512 c 0
+ 573.39 -109.62 338.859 -129.144 331.741 -53.542 c 0
+667.695 90.7393 m 0
+ 667.695 90.7402 667.695 90.7402 667.695 90.7402 c 0
+ 667.696 90.7402 667.696 90.7402 667.696 90.7402 c 1
+ 667.696 90.7402 l 1
+ 667.696 90.7402 l 1
+ 667.696 90.7402 l 1
+ 690.807 86.4531 697.615 84.9824 690.532 56.3652 c 0
+ 683.45 27.749 675.93 -0.365234 668.184 0 c 0
+ 564.623 4.88477 562.841 100.132 515.499 103.654 c 0
+ 481.942 106.15 391.305 54.2705 384.606 29.8096 c 0
+ 367.911 -31.1523 333.401 -71.3203 331.741 -53.542 c 0
+ 323.865 30.8262 465.562 187.788 542.563 189.751 c 0
+ 584.045 190.808 596.396 102.27 667.695 90.7393 c 0
+EndSplineSet
+Fore
+SplineSet
+331.741 -53.542 m 0
+ 329.031 -24.7588 397.784 73.2051 384.606 29.8096 c 0
+ 372.529 -9.96094 435.445 -35.7383 488.931 -42.2324 c 0
+ 535.16 -47.8457 587.737 -53.9219 614.698 -63.3262 c 0
+ 663.204 -80.2441 664.005 -152.011 637.634 -188.405 c 0
+ 611.304 -224.743 468.421 -311.456 291.058 -334.193 c 0
+ 115.49 -356.7 35.5234 -268.699 10.0664 -203.538 c 0
+ -12.2705 -146.364 4.98535 -13.2051 84.7002 109.149 c 0
+ 92.8291 121.626 112.374 112.738 103.114 96.4121 c 0
+ 79.2324 54.3027 34.8232 -16.4492 44.6865 -99.124 c 0
+ 57.8486 -209.453 185.939 -248.386 274.094 -240.769 c 0
+ 402.802 -229.647 526.078 -181.108 599.821 -143.438 c 0
+ 603.601 -141.777 602.971 -140.519 599.797 -137.512 c 0
+ 573.39 -109.62 338.859 -129.144 331.741 -53.542 c 0
+EndSplineSet
+EndChar
+
+StartChar: baa.init_BaaSeenAltInit
+Encoding: 65840 -1 339
+Width: 188
+VWidth: 0
+AnchorPoint: "cursive" 4 151 exit 0
+LayerCount: 2
+Back
+SplineSet
+-288.196 0 m 4
+ -335.985 0.164062 -357.049 16.7598 -372.99 45.4619 c 5
+ -398.971 44.0732 -501.018 21.6582 -524.292 7.27637 c 4
+ -531.196 3.00977 -533.741 4.99121 -534.384 -11.4912 c 4
+ -536.029 -53.7549 -541.892 -88.5771 -556.213 -122.454 c 4
+ -596.12 -216.858 -683.023 -318.119 -755.084 -317.446 c 4
+ -815.474 -316.881 -902.203 -274.124 -921.305 -258.754 c 4
+ -930.297 -251.52 -927.098 -235.884 -912.164 -241.657 c 4
+ -859.092 -262.174 -828.65 -262.934 -771.582 -253.895 c 4
+ -724.552 -246.444 -608.279 -164.406 -566.614 -64.7949 c 4
+ -565.532 -62.208 -565.533 -60.9395 -566.247 -58.4189 c 4
+ -571.95 -38.2627 -580.222 -14.96 -596.87 7.1123 c 4
+ -598.935 9.84766 -598.956 16.1934 -598.338 19.4551 c 4
+ -593.997 42.3213 -585.351 64.9307 -578.47 80.6641 c 4
+ -575.466 87.5332 -569.951 93.9492 -559.606 97.2285 c 4
+ -494.951 117.727 -418.032 137.905 -356.854 152.265 c 4
+ -351.707 153.513 -343.035 151.332 -341.386 143.928 c 4
+ -336.794 123.336 -335.578 98.8818 -288.322 90.5947 c 4
+ -259.532 85.5469 -266.293 -0.0751953 -288.196 0 c 4
+5.05664 177.572 m 0
+ 22.8506 152.018 9.67676 89.7295 2.95215 107.925 c 0
+ 1.23047 112.584 -1.41699 112.647 -3.53027 107.985 c 0
+ -20.0664 71.5098 -52.7422 -1.90234 -88.3848 -5.89355 c 0
+ -128.948 -10.4365 -167.782 15.4385 -195.143 47.4248 c 1
+ -225.376 15.9697 -243.44 3.68555 -288 0 c 0
+ -296.321 -0.688477 -307.054 29.7646 -309.317 56.5107 c 0
+ -311.58 83.2568 -308.808 91.8418 -288.052 90.4355 c 0
+ -187.837 83.6504 -167.667 123.379 -149.208 169.206 c 0
+ -142.036 187.01 -123.161 178.725 -128.798 164.349 c 0
+ -133.055 153.493 -135.889 146.242 -137.774 136.337 c 0
+ -139.578 126.863 -137.89 116.93 -133.423 112.388 c 0
+ -120.416 99.1582 -75.6562 72.6719 -47.3613 85.9502 c 0
+ -33.1602 92.6152 -17.9648 146.277 -7.80762 175.753 c 0
+ -6.1123 180.674 1.23242 183.064 5.05664 177.572 c 0
+94.2061 430.324 m 0
+ 94.207 430.327 l 1
+ 94.2061 430.327 l 1
+ 94.2061 430.327 l 1
+ 94.2061 430.327 l 1
+ 97.5303 430.366 101.266 428.014 103.188 424.758 c 0
+ 124.157 389.256 150.922 310.075 164.259 234.485 c 0
+ 170.317 200.149 171.93 166.527 171.908 138.125 c 0
+ 171.874 95.1816 145.716 17.7803 126.73 14.3799 c 0
+ 72.4551 4.65918 15.9111 74.8662 2.95215 107.925 c 0
+ -20.0127 166.504 -1.39746 187.932 5.05664 177.572 c 0
+ 42.4473 117.55 111.608 69.6221 142.136 93.5381 c 0
+ 143.2 94.3721 144.005 96.8018 144.043 99.3037 c 0
+ 144.401 123.593 134.19 169.883 120.823 212.457 c 0
+ 109.077 249.866 92.7754 289.853 71.3633 329.335 c 0
+ 69.8877 332.055 69.8867 334.22 70.1572 336.274 c 0
+ 73.7686 363.702 79.6289 396.312 88.2373 425.236 c 0
+ 89.3018 428.811 91.6211 430.294 94.2061 430.324 c 0
+EndSplineSet
+Fore
+SplineSet
+94.2061 430.324 m 0
+ 94.207 430.327 l 1
+ 94.2061 430.327 l 1
+ 94.2061 430.327 l 1
+ 94.2061 430.327 l 1
+ 97.5303 430.366 101.266 428.014 103.188 424.758 c 0
+ 124.157 389.256 150.922 310.075 164.259 234.485 c 0
+ 170.317 200.149 171.93 166.527 171.908 138.125 c 0
+ 171.874 95.1816 145.716 17.7803 126.73 14.3799 c 0
+ 72.4551 4.65918 15.9111 74.8662 2.95215 107.925 c 0
+ -20.0127 166.504 -1.39746 187.932 5.05664 177.572 c 0
+ 42.4473 117.55 111.608 69.6221 142.136 93.5381 c 0
+ 143.2 94.3721 144.005 96.8018 144.043 99.3037 c 0
+ 144.401 123.593 134.19 169.883 120.823 212.457 c 0
+ 109.077 249.866 92.7754 289.853 71.3633 329.335 c 0
+ 69.8877 332.055 69.8867 334.22 70.1572 336.274 c 0
+ 73.7686 363.702 79.6289 396.312 88.2373 425.236 c 0
+ 89.3018 428.811 91.6211 430.294 94.2061 430.324 c 0
+EndSplineSet
+EndChar
+
+StartChar: seen.medi_BaaSeenAltInit
+Encoding: 65841 -1 340
+Width: 290
+VWidth: 0
+AnchorPoint: "cursive" 0 51 exit 0
+AnchorPoint: "cursive" 292 151 entry 0
+LayerCount: 2
+Back
+SplineSet
+-0.304688 90.7393 m 4
+ -0.304688 90.7402 -0.304688 90.7402 -0.304688 90.7402 c 4
+ -0.303711 90.7402 -0.303711 90.7402 -0.303711 90.7402 c 5
+ -0.303711 90.7402 l 5
+ -0.303711 90.7402 l 5
+ -0.303711 90.7402 l 5
+ 22.8066 86.4531 29.6152 84.9824 22.5322 56.3662 c 4
+ 15.4502 27.749 7.92969 -0.365234 0.183594 0 c 4
+ -103.377 4.88477 -105.159 100.132 -152.501 103.654 c 4
+ -186.058 106.15 -276.329 54.1689 -283.394 29.8105 c 4
+ -294.973 -10.1113 -232.555 -35.7383 -179.069 -42.2324 c 4
+ -132.84 -47.8457 -80.2627 -53.9219 -53.3018 -63.3252 c 4
+ -4.7959 -80.2441 -3.99512 -152.011 -30.3662 -188.405 c 4
+ -56.6963 -224.743 -199.579 -311.456 -376.942 -334.193 c 4
+ -552.51 -356.7 -632.477 -268.699 -657.934 -203.538 c 4
+ -680.271 -146.364 -663.015 -13.2051 -583.3 109.149 c 4
+ -575.171 121.626 -555.626 112.738 -564.886 96.4121 c 4
+ -588.768 54.3027 -633.177 -16.4492 -623.313 -99.124 c 4
+ -610.151 -209.453 -482.061 -248.386 -393.906 -240.769 c 4
+ -265.198 -229.647 -141.922 -181.108 -68.1787 -143.438 c 4
+ -64.3994 -141.777 -65.0293 -140.519 -68.2031 -137.512 c 4
+ -94.6104 -109.62 -329.295 -129.158 -336.259 -53.542 c 4
+ -344.029 30.8359 -202.438 187.788 -125.438 189.751 c 4
+ -83.9551 190.808 -71.6035 102.27 -0.304688 90.7393 c 4
+-0.196289 0 m 0
+ -47.9854 0.164062 -69.0488 16.7598 -84.9902 45.4619 c 1
+ -110.971 44.0732 -213.018 21.6582 -236.292 7.27637 c 0
+ -243.196 3.00977 -245.741 4.99121 -246.384 -11.4912 c 0
+ -248.029 -53.7549 -253.892 -88.5771 -268.213 -122.454 c 0
+ -308.12 -216.858 -395.023 -318.119 -467.084 -317.446 c 0
+ -527.474 -316.881 -614.203 -274.124 -633.305 -258.754 c 0
+ -642.297 -251.52 -639.098 -235.884 -624.164 -241.657 c 0
+ -571.092 -262.174 -540.65 -262.934 -483.582 -253.895 c 0
+ -436.552 -246.444 -320.279 -164.406 -278.614 -64.7949 c 0
+ -277.532 -62.208 -277.533 -60.9395 -278.247 -58.4189 c 0
+ -283.95 -38.2627 -292.222 -14.96 -308.87 7.1123 c 0
+ -310.935 9.84766 -310.956 16.1934 -310.338 19.4551 c 0
+ -305.997 42.3213 -297.351 64.9307 -290.47 80.6641 c 0
+ -287.466 87.5332 -281.951 93.9492 -271.606 97.2285 c 0
+ -206.951 117.727 -130.032 137.905 -68.8535 152.265 c 0
+ -63.707 153.513 -55.0352 151.332 -53.3857 143.928 c 0
+ -48.7939 123.336 -47.5781 98.8818 -0.322266 90.5947 c 0
+ 28.4678 85.5469 21.707 -0.0751953 -0.196289 0 c 0
+293.057 177.572 m 0
+ 310.851 152.018 297.677 89.7295 290.952 107.925 c 0
+ 289.23 112.584 286.583 112.647 284.47 107.985 c 0
+ 267.934 71.5098 235.258 -1.90234 199.615 -5.89355 c 0
+ 159.052 -10.4365 120.218 15.4385 92.8574 47.4248 c 1
+ 62.624 15.9697 44.5596 3.68555 0 0 c 0
+ -8.32129 -0.688477 -19.0537 29.7646 -21.3174 56.5107 c 0
+ -23.5801 83.2568 -20.8076 91.8418 -0.0517578 90.4355 c 0
+ 100.163 83.6504 120.333 123.379 138.792 169.206 c 0
+ 145.964 187.01 164.839 178.725 159.202 164.349 c 0
+ 154.945 153.493 152.111 146.242 150.226 136.337 c 0
+ 148.422 126.863 150.11 116.93 154.577 112.388 c 0
+ 167.584 99.1582 212.344 72.6719 240.639 85.9502 c 0
+ 254.84 92.6152 270.035 146.277 280.192 175.753 c 0
+ 281.888 180.674 289.232 183.064 293.057 177.572 c 0
+382.206 430.324 m 0
+ 382.207 430.327 l 1
+ 382.206 430.327 l 1
+ 382.206 430.327 l 1
+ 382.206 430.327 l 1
+ 385.53 430.366 389.266 428.014 391.188 424.758 c 0
+ 412.157 389.256 438.922 310.075 452.259 234.485 c 0
+ 458.317 200.149 459.93 166.527 459.908 138.125 c 0
+ 459.874 95.1816 433.716 17.7803 414.73 14.3799 c 0
+ 360.455 4.65918 303.911 74.8662 290.952 107.925 c 0
+ 267.987 166.504 286.603 187.932 293.057 177.572 c 0
+ 330.447 117.55 399.608 69.6221 430.136 93.5381 c 0
+ 431.2 94.3721 432.005 96.8018 432.043 99.3037 c 0
+ 432.401 123.593 422.19 169.883 408.823 212.457 c 0
+ 397.077 249.866 380.775 289.853 359.363 329.335 c 0
+ 357.888 332.055 357.887 334.22 358.157 336.274 c 0
+ 361.769 363.702 367.629 396.312 376.237 425.236 c 0
+ 377.302 428.811 379.621 430.294 382.206 430.324 c 0
+EndSplineSet
+Fore
+SplineSet
+293.057 177.572 m 0
+ 310.851 152.018 297.677 89.7295 290.952 107.925 c 0
+ 289.23 112.584 286.583 112.647 284.47 107.985 c 0
+ 267.934 71.5098 235.258 -1.90234 199.615 -5.89355 c 0
+ 159.052 -10.4365 120.218 15.4385 92.8574 47.4248 c 1
+ 62.624 15.9697 44.5596 3.68555 0 0 c 0
+ -8.32129 -0.688477 -19.0537 29.7646 -21.3174 56.5107 c 0
+ -23.5801 83.2568 -20.8076 91.8418 -0.0517578 90.4355 c 0
+ 100.163 83.6504 120.333 123.379 138.792 169.206 c 0
+ 145.964 187.01 164.839 178.725 159.202 164.349 c 0
+ 154.945 153.493 152.111 146.242 150.226 136.337 c 0
+ 148.422 126.863 150.11 116.93 154.577 112.388 c 0
+ 167.584 99.1582 212.344 72.6719 240.639 85.9502 c 0
+ 254.84 92.6152 270.035 146.277 280.192 175.753 c 0
+ 281.888 180.674 289.232 183.064 293.057 177.572 c 0
+EndSplineSet
+EndChar
+
+StartChar: raa.fina_PostTooth
+Encoding: 65842 -1 341
+Width: 591
+VWidth: 0
+AnchorPoint: "cursive" 590 51 exit 0
+LayerCount: 2
+Back
+SplineSet
+590.804 0 m 0
+ 543.015 0.164062 521.951 16.7598 506.01 45.4619 c 1
+ 480.029 44.0732 377.982 21.6582 354.708 7.27637 c 0
+ 347.804 3.00977 345.259 4.99121 344.616 -11.4912 c 0
+ 342.971 -53.7549 337.108 -88.5771 322.787 -122.454 c 0
+ 282.88 -216.858 195.977 -318.119 123.916 -317.446 c 0
+ 63.5264 -316.881 -23.2031 -274.124 -42.3047 -258.754 c 0
+ -51.2969 -251.52 -48.0977 -235.884 -33.1641 -241.657 c 0
+ 19.9082 -262.174 50.3496 -262.934 107.418 -253.895 c 0
+ 154.448 -246.444 270.721 -164.406 312.386 -64.7949 c 0
+ 313.468 -62.208 313.467 -60.9395 312.753 -58.4189 c 0
+ 307.05 -38.2627 298.778 -14.96 282.13 7.1123 c 0
+ 280.065 9.84766 280.044 16.1934 280.662 19.4551 c 0
+ 285.003 42.3213 293.649 64.9307 300.53 80.6641 c 0
+ 303.534 87.5332 309.049 93.9492 319.394 97.2285 c 0
+ 384.049 117.727 460.968 137.905 522.146 152.265 c 0
+ 527.293 153.513 535.965 151.332 537.614 143.928 c 0
+ 542.206 123.336 543.422 98.8818 590.678 90.5947 c 0
+ 619.468 85.5469 612.707 -0.0751953 590.804 0 c 0
+EndSplineSet
+Fore
+SplineSet
+590.804 0 m 0
+ 543.015 0.164062 521.951 16.7598 506.01 45.4619 c 1
+ 480.029 44.0732 377.982 21.6582 354.708 7.27637 c 0
+ 347.804 3.00977 345.259 4.99121 344.616 -11.4912 c 0
+ 342.971 -53.7549 337.108 -88.5771 322.787 -122.454 c 0
+ 282.88 -216.858 195.977 -318.119 123.916 -317.446 c 0
+ 63.5264 -316.881 -23.2031 -274.124 -42.3047 -258.754 c 0
+ -51.2969 -251.52 -48.0977 -235.884 -33.1641 -241.657 c 0
+ 19.9082 -262.174 50.3496 -262.934 107.418 -253.895 c 0
+ 154.448 -246.444 270.721 -164.406 312.386 -64.7949 c 0
+ 313.468 -62.208 313.467 -60.9395 312.753 -58.4189 c 0
+ 307.05 -38.2627 298.778 -14.96 282.13 7.1123 c 0
+ 280.065 9.84766 280.044 16.1934 280.662 19.4551 c 0
+ 285.003 42.3213 293.649 64.9307 300.53 80.6641 c 0
+ 303.534 87.5332 309.049 93.9492 319.394 97.2285 c 0
+ 384.049 117.727 460.968 137.905 522.146 152.265 c 0
+ 527.293 153.513 535.965 151.332 537.614 143.928 c 0
+ 542.206 123.336 543.422 98.8818 590.678 90.5947 c 0
+ 619.468 85.5469 612.707 -0.0751953 590.804 0 c 0
+EndSplineSet
+EndChar
+
+StartChar: yaa.fina_PostTooth
+Encoding: 65843 -1 342
+Width: 668
+VWidth: 0
+AnchorPoint: "cursive" 668 51 exit 0
+LayerCount: 2
+Back
+SplineSet
+667.695 90.7393 m 0
+ 667.695 90.7402 667.695 90.7402 667.695 90.7402 c 0
+ 667.696 90.7402 667.696 90.7402 667.696 90.7402 c 1
+ 667.696 90.7402 l 1
+ 667.696 90.7402 l 1
+ 667.696 90.7402 l 1
+ 690.807 86.4531 697.615 84.9824 690.532 56.3662 c 0
+ 683.45 27.749 675.93 -0.365234 668.184 0 c 0
+ 564.623 4.88477 562.841 100.132 515.499 103.654 c 0
+ 481.942 106.15 391.671 54.1689 384.606 29.8105 c 0
+ 373.027 -10.1113 435.445 -35.7383 488.931 -42.2324 c 0
+ 535.16 -47.8457 587.737 -53.9219 614.698 -63.3252 c 0
+ 663.204 -80.2441 664.005 -152.011 637.634 -188.405 c 0
+ 611.304 -224.743 468.421 -311.456 291.058 -334.193 c 0
+ 115.49 -356.7 35.5234 -268.699 10.0664 -203.538 c 0
+ -12.2705 -146.364 4.98535 -13.2051 84.7002 109.149 c 0
+ 92.8291 121.626 112.374 112.738 103.114 96.4121 c 0
+ 79.2324 54.3027 34.8232 -16.4492 44.6865 -99.124 c 0
+ 57.8486 -209.453 185.939 -248.386 274.094 -240.769 c 0
+ 402.802 -229.647 526.078 -181.108 599.821 -143.438 c 0
+ 603.601 -141.777 602.971 -140.519 599.797 -137.512 c 0
+ 573.39 -109.62 338.705 -129.158 331.741 -53.542 c 0
+ 323.971 30.8359 465.562 187.788 542.563 189.751 c 0
+ 584.045 190.808 596.396 102.27 667.695 90.7393 c 0
+EndSplineSet
+Fore
+SplineSet
+667.695 90.7393 m 0
+ 667.695 90.7402 667.695 90.7402 667.695 90.7402 c 0
+ 667.696 90.7402 667.696 90.7402 667.696 90.7402 c 1
+ 667.696 90.7402 l 1
+ 667.696 90.7402 l 1
+ 667.696 90.7402 l 1
+ 690.807 86.4531 697.615 84.9824 690.532 56.3662 c 0
+ 683.45 27.749 675.93 -0.365234 668.184 0 c 0
+ 564.623 4.88477 562.841 100.132 515.499 103.654 c 0
+ 481.942 106.15 391.671 54.1689 384.606 29.8105 c 0
+ 373.027 -10.1113 435.445 -35.7383 488.931 -42.2324 c 0
+ 535.16 -47.8457 587.737 -53.9219 614.698 -63.3252 c 0
+ 663.204 -80.2441 664.005 -152.011 637.634 -188.405 c 0
+ 611.304 -224.743 468.421 -311.456 291.058 -334.193 c 0
+ 115.49 -356.7 35.5234 -268.699 10.0664 -203.538 c 0
+ -12.2705 -146.364 4.98535 -13.2051 84.7002 109.149 c 0
+ 92.8291 121.626 112.374 112.738 103.114 96.4121 c 0
+ 79.2324 54.3027 34.8232 -16.4492 44.6865 -99.124 c 0
+ 57.8486 -209.453 185.939 -248.386 274.094 -240.769 c 0
+ 402.802 -229.647 526.078 -181.108 599.821 -143.438 c 0
+ 603.601 -141.777 602.971 -140.519 599.797 -137.512 c 0
+ 573.39 -109.62 338.705 -129.158 331.741 -53.542 c 0
+ 323.971 30.8359 465.562 187.788 542.563 189.751 c 0
+ 584.045 190.808 596.396 102.27 667.695 90.7393 c 0
+EndSplineSet
+EndChar
+
+StartChar: baa.init_BaaHaaIsol
+Encoding: 65844 -1 343
+Width: 464
+VWidth: 0
+AnchorPoint: "cursive" 42 514 exit 0
+LayerCount: 2
+Back
+SplineSet
+1.70703 460.156 m 1
+ -0.40918 517.898 27.9473 542.498 90.7852 579.699 c 1
+ 180.806 631.306 264.292 675.64 300.084 765.34 c 0
+ 323.235 825.192 340.292 874.226 370.185 874.059 c 0
+ 400.079 873.892 427.454 839.18 431.29 771.262 c 0
+ 433.167 738.026 433.679 694.888 432.417 667.186 c 0
+ 431.6 649.256 411.963 650.119 409.898 667.875 c 0
+ 406.341 698.479 393.862 778.05 359.465 777.939 c 0
+ 341.768 777.884 331.925 755.136 312.562 715.397 c 0
+ 276.148 640.67 208.806 587.683 135.906 547.107 c 0
+ 89.9541 521.531 46.3594 489.342 1.70703 460.156 c 1
+134.344 542.637 m 0
+ 285.068 534.915 400.812 537.06 543.307 547.971 c 0
+ 547.854 548.319 553.326 545.678 551.641 539.41 c 2
+ 551.641 539.41 543.478 500.896 536.372 482.632 c 0
+ 533.184 474.437 527.535 472.87 522.396 472.244 c 0
+ 470.898 465.973 380.88 448.721 303.522 417.573 c 0
+ 202.635 376.95 68.6377 280.738 65.9131 139.57 c 0
+ 63.5703 18.2432 121.807 -45.9766 199.807 -76.4678 c 0
+ 336.124 -129.756 578.627 -109.863 679.062 -97.6289 c 0
+ 694.364 -95.7764 691.443 -115.61 683.682 -118.938 c 0
+ 595.251 -156.846 485.015 -203.206 381.973 -198.422 c 0
+ 255.374 -192.544 75.5801 -175.35 33.9893 1.65137 c 0
+ 3.73828 130.398 61.5146 343.773 242.7 458.196 c 1
+ 1.70703 460.156 l 1
+ 0.411133 495.522 10.5459 518.455 33.0332 539.466 c 1
+ 40.4609 544.571 85.416 545.144 134.344 542.637 c 0
+EndSplineSet
+Fore
+SplineSet
+1.70703 460.156 m 1
+ -0.40918 517.898 27.9473 542.498 90.7852 579.699 c 1
+ 180.806 631.306 264.292 675.64 300.084 765.34 c 0
+ 323.235 825.192 340.292 874.226 370.185 874.059 c 0
+ 400.079 873.892 427.454 839.18 431.29 771.262 c 0
+ 433.167 738.026 433.679 694.888 432.417 667.186 c 0
+ 431.6 649.256 411.963 650.119 409.898 667.875 c 0
+ 406.341 698.479 393.862 778.05 359.465 777.939 c 0
+ 341.768 777.884 331.925 755.136 312.562 715.397 c 0
+ 276.148 640.67 208.806 587.683 135.906 547.107 c 0
+ 89.9541 521.531 46.3594 489.342 1.70703 460.156 c 1
+EndSplineSet
+EndChar
+
+StartChar: baa.init_BaaHaaInit
+Encoding: 65846 -1 344
+Width: 468
+VWidth: 0
+AnchorPoint: "cursive" 38 233 exit 0
+LayerCount: 2
+Back
+SplineSet
+438.209 359.269 m 0
+ 439.398 339.614 416.846 340.198 415.608 357.193 c 0
+ 414.435 373.312 403.397 436.89 382.343 451.611 c 0
+ 375.577 456.342 366.213 458.643 356.021 449.09 c 1
+ 296.229 360.467 159.454 224.018 -14.5303 179.571 c 1
+ -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
+ -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
+ 7.1416 256.926 14.8447 266.531 21.8564 269.708 c 0
+ 79.1221 295.658 152 318.916 215.617 360.997 c 0
+ 260.985 391.008 287.238 421.358 306.693 449.386 c 0
+ 328.177 480.336 341.216 551.167 377.311 551.997 c 0
+ 424.744 553.088 435.497 404.086 438.209 359.269 c 0
+21.8564 269.708 m 0
+ 41.2373 276.877 104.125 271.338 156.295 257.26 c 0
+ 272.922 225.788 396.054 196.104 536.68 194.927 c 0
+ 547.231 194.838 560.536 183.292 553.451 170.004 c 2
+ 527.52 121.376 l 2
+ 524.165 115.082 516.016 107.555 508.237 108.744 c 0
+ 306.91 139.507 152.04 38.8193 0 0 c 0
+ -24.0547 -6.1416 -42.9131 88.0195 -0.495117 90.7627 c 0
+ 79.8926 95.96 156.157 115.088 220.13 140.101 c 0
+ 225.086 142.038 226.681 145.158 220.925 147.004 c 0
+ 151.688 169.203 70.96 186.557 -14.5303 179.571 c 0
+ -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
+ -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
+ 7.1416 256.926 14.6367 267.038 21.8564 269.708 c 0
+EndSplineSet
+Fore
+SplineSet
+438.209 359.269 m 0
+ 439.398 339.614 416.846 340.198 415.608 357.193 c 0
+ 414.435 373.312 403.397 436.89 382.343 451.611 c 0
+ 375.577 456.342 366.213 458.643 356.021 449.09 c 1
+ 296.229 360.467 159.454 224.018 -14.5303 179.571 c 1
+ -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
+ -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
+ 7.1416 256.926 14.8447 266.531 21.8564 269.708 c 0
+ 79.1221 295.658 152 318.916 215.617 360.997 c 0
+ 260.985 391.008 287.238 421.358 306.693 449.386 c 0
+ 328.177 480.336 341.216 551.167 377.311 551.997 c 0
+ 424.744 553.088 435.497 404.086 438.209 359.269 c 0
+EndSplineSet
+EndChar
+
+StartChar: baa.init_BaaHaaMeemInit
+Encoding: 65848 -1 345
+Width: 518
+VWidth: 0
+AnchorPoint: "cursive" 74 363 exit 0
+LayerCount: 2
+Back
+SplineSet
+56.8574 389.958 m 4
+ 70.2607 400.243 127.788 401.29 198.414 375.664 c 4
+ 329.627 328.055 427.656 293.005 583.287 286.951 c 5
+ 597.196 283.942 604.037 277.419 599.037 268.222 c 4
+ 590.695 252.879 571.706 214.683 559.317 202.522 c 4
+ 554.186 197.484 549.643 198.603 542.745 199.465 c 4
+ 413.133 215.666 316.708 233.336 182.667 197.522 c 4
+ 141.531 186.532 75.7529 156.753 51.4463 207.273 c 5
+ 90.7588 233.107 177.616 250.452 249.807 258.792 c 5
+ 170.473 295.592 104.059 311.19 22.6621 303.768 c 4
+ 17.666 303.312 15.418 305.104 17.4004 310.668 c 4
+ 27.3291 338.534 44.7412 380.661 56.8574 389.958 c 4
+51.4463 207.273 m 4
+ 74.249 223.284 157.178 224.324 182.667 197.522 c 4
+ 220.012 158.256 239.576 106.248 231.461 86.2402 c 4
+ 219.459 56.6484 190.891 15.1699 183.306 11.7578 c 4
+ 157.152 -0.00488281 57.7861 39.8525 5.6123 78.8018 c 5
+ -22.7422 23.8252 -65.4385 -0.204102 -90 0 c 4
+ -129.093 0.325195 -118.142 92.2393 -90.0137 90.792 c 4
+ -53.9307 88.9346 -11.0381 98.4307 2.41699 111.678 c 4
+ 10.7881 119.92 34.7666 195.562 51.4463 207.273 c 4
+190.967 96.6562 m 4
+ 185.482 119.384 139.166 159.886 100.516 169.741 c 4
+ 86.8145 173.234 72.3516 167.377 62.5342 158.778 c 4
+ 58.166 154.951 57.1504 150.096 61.584 146.367 c 4
+ 76.4004 133.912 136.841 103.601 183.93 89.8613 c 4
+ 188.959 88.3936 192.126 91.8545 190.967 96.6562 c 4
+444.059 596.048 m 5
+ 444.059 596.048 l 5
+ 460.708 595.562 478.211 586.258 483.901 569.312 c 4
+ 504.141 509.036 476.346 411.639 471.758 392.057 c 4
+ 467.54 374.055 447.396 377.142 450.1 397.117 c 4
+ 455.624 437.935 458.298 492.537 404.335 496.465 c 4
+ 376.758 498.473 302.462 407.6 198.414 375.664 c 4
+ 138.962 357.417 117.47 346.816 22.6621 303.768 c 5
+ 17.666 303.312 15.418 305.104 17.4004 310.668 c 4
+ 27.3291 338.534 44.666 380.759 56.8574 389.958 c 4
+ 76.083 404.465 205.207 422.725 294.936 478.264 c 4
+ 373.895 527.137 397.853 597.392 444.059 596.048 c 5
+EndSplineSet
+Fore
+SplineSet
+444.059 596.048 m 1
+ 444.059 596.048 l 1
+ 460.708 595.562 478.211 586.258 483.901 569.312 c 0
+ 504.141 509.036 476.346 411.639 471.758 392.057 c 0
+ 467.54 374.055 447.396 377.142 450.1 397.117 c 0
+ 455.624 437.935 458.298 492.537 404.335 496.465 c 0
+ 376.758 498.473 302.462 407.6 198.414 375.664 c 0
+ 138.962 357.417 117.47 346.816 22.6621 303.768 c 1
+ 17.666 303.312 15.418 305.104 17.4004 310.668 c 0
+ 27.3291 338.534 44.666 380.759 56.8574 389.958 c 0
+ 76.083 404.465 205.207 422.725 294.936 478.264 c 0
+ 373.895 527.137 397.853 597.392 444.059 596.048 c 1
+EndSplineSet
+EndChar
+
+StartChar: haa.medi_BaaHaaMeemInit
+Encoding: 65849 -1 346
+Width: 640
+VWidth: 0
+AnchorPoint: "cursive" 84 363 entry 0
+AnchorPoint: "cursive" 119 199 exit 0
+LayerCount: 2
+Back
+SplineSet
+66.8574 389.958 m 4
+ 80.2607 400.243 137.788 401.29 208.414 375.664 c 4
+ 339.627 328.055 437.656 293.005 593.287 286.951 c 5
+ 607.196 283.942 614.037 277.419 609.037 268.222 c 4
+ 600.695 252.879 581.706 214.683 569.317 202.522 c 4
+ 564.186 197.484 559.643 198.603 552.745 199.465 c 4
+ 423.133 215.666 326.708 233.336 192.667 197.522 c 4
+ 151.531 186.532 85.7529 156.753 61.4463 207.273 c 5
+ 100.759 233.107 187.616 250.452 259.807 258.792 c 5
+ 180.473 295.592 114.059 311.19 32.6621 303.768 c 4
+ 27.666 303.312 25.418 305.104 27.4004 310.668 c 4
+ 37.3291 338.534 54.7412 380.661 66.8574 389.958 c 4
+61.4463 207.273 m 4
+ 84.249 223.284 167.178 224.324 192.667 197.522 c 4
+ 230.012 158.256 249.576 106.248 241.461 86.2402 c 4
+ 229.459 56.6484 200.891 15.1699 193.306 11.7578 c 4
+ 167.152 -0.00488281 67.7861 39.8525 15.6123 78.8018 c 5
+ -12.7422 23.8252 -55.4385 -0.204102 -80 0 c 4
+ -119.093 0.325195 -108.142 92.2393 -80.0137 90.792 c 4
+ -43.9307 88.9346 -1.03809 98.4307 12.417 111.678 c 4
+ 20.7881 119.92 44.7666 195.562 61.4463 207.273 c 4
+200.967 96.6562 m 4
+ 195.482 119.384 149.166 159.886 110.516 169.741 c 4
+ 96.8145 173.234 82.3516 167.377 72.5342 158.778 c 4
+ 68.166 154.951 67.1504 150.096 71.584 146.367 c 4
+ 86.4004 133.912 146.841 103.601 193.93 89.8613 c 4
+ 198.959 88.3936 202.126 91.8545 200.967 96.6562 c 4
+454.059 596.048 m 5
+ 454.059 596.048 l 5
+ 470.708 595.562 488.211 586.258 493.901 569.312 c 4
+ 514.141 509.036 486.346 411.639 481.758 392.057 c 4
+ 477.54 374.055 457.396 377.142 460.1 397.117 c 4
+ 465.624 437.935 468.298 492.537 414.335 496.465 c 4
+ 386.758 498.473 312.462 407.6 208.414 375.664 c 4
+ 148.962 357.417 127.47 346.816 32.6621 303.768 c 5
+ 27.666 303.312 25.418 305.104 27.4004 310.668 c 4
+ 37.3291 338.534 54.666 380.759 66.8574 389.958 c 4
+ 86.083 404.465 215.207 422.725 304.936 478.264 c 4
+ 383.895 527.137 407.853 597.392 454.059 596.048 c 5
+EndSplineSet
+Fore
+SplineSet
+66.8574 389.958 m 0
+ 80.2607 400.243 137.788 401.29 208.414 375.664 c 0
+ 339.627 328.055 437.656 293.005 593.287 286.951 c 1
+ 607.196 283.942 614.037 277.419 609.037 268.222 c 0
+ 600.695 252.879 581.706 214.683 569.317 202.522 c 0
+ 564.186 197.484 559.643 198.603 552.745 199.465 c 0
+ 423.133 215.666 326.708 233.336 192.667 197.522 c 0
+ 151.531 186.532 85.7529 156.753 61.4463 207.273 c 1
+ 100.759 233.107 187.616 250.452 259.807 258.792 c 1
+ 180.473 295.592 114.059 311.19 32.6621 303.768 c 0
+ 27.666 303.312 25.418 305.104 27.4004 310.668 c 0
+ 37.3291 338.534 54.7412 380.661 66.8574 389.958 c 0
+EndSplineSet
+EndChar
+
+StartChar: meem.medi_BaaHaaMeemInit
+Encoding: 65850 -1 347
+Width: 352
+VWidth: 0
+AnchorPoint: "cursive" 199 199 entry 0
+LayerCount: 2
+Back
+SplineSet
+146.857 389.958 m 0
+ 160.261 400.243 217.788 401.29 288.414 375.664 c 0
+ 419.627 328.055 517.656 293.005 673.287 286.951 c 1
+ 687.196 283.942 694.037 277.419 689.037 268.222 c 0
+ 680.695 252.879 661.706 214.683 649.317 202.522 c 0
+ 644.186 197.484 639.643 198.603 632.745 199.465 c 0
+ 503.133 215.666 406.708 233.336 272.667 197.522 c 0
+ 231.531 186.532 165.753 156.753 141.446 207.273 c 1
+ 180.759 233.107 267.616 250.452 339.807 258.792 c 1
+ 260.473 295.592 194.059 311.19 112.662 303.768 c 0
+ 107.666 303.312 105.418 305.104 107.4 310.668 c 0
+ 117.329 338.534 134.741 380.661 146.857 389.958 c 0
+141.446 207.273 m 0
+ 164.249 223.284 247.178 224.324 272.667 197.522 c 0
+ 310.012 158.256 329.576 106.248 321.461 86.2402 c 0
+ 309.459 56.6484 280.891 15.1699 273.306 11.7578 c 0
+ 247.152 -0.00488281 147.786 39.8525 95.6123 78.8018 c 1
+ 67.2578 23.8252 24.5615 -0.204102 0 0 c 0
+ -39.0928 0.325195 -28.1416 92.2393 -0.0136719 90.792 c 0
+ 36.0693 88.9346 78.9619 98.4307 92.417 111.678 c 0
+ 100.788 119.92 124.767 195.562 141.446 207.273 c 0
+280.967 96.6562 m 0
+ 275.482 119.384 229.166 159.886 190.516 169.741 c 0
+ 176.814 173.234 162.352 167.377 152.534 158.778 c 0
+ 148.166 154.951 147.15 150.096 151.584 146.367 c 0
+ 166.4 133.912 226.841 103.601 273.93 89.8613 c 0
+ 278.959 88.3936 282.126 91.8545 280.967 96.6562 c 0
+534.059 596.048 m 1
+ 534.059 596.048 l 1
+ 550.708 595.563 568.211 586.258 573.901 569.312 c 0
+ 594.141 509.036 566.346 411.639 561.758 392.057 c 0
+ 557.54 374.055 537.396 377.142 540.1 397.117 c 0
+ 545.624 437.935 548.298 492.537 494.335 496.465 c 0
+ 466.758 498.473 392.462 407.6 288.414 375.664 c 0
+ 228.962 357.417 207.47 346.816 112.662 303.768 c 1
+ 107.666 303.312 105.418 305.104 107.4 310.668 c 0
+ 117.329 338.534 134.666 380.759 146.857 389.958 c 0
+ 166.083 404.465 295.207 422.725 384.936 478.264 c 0
+ 463.895 527.137 487.853 597.392 534.059 596.048 c 1
+EndSplineSet
+Fore
+SplineSet
+141.446 207.273 m 0
+ 164.249 223.284 247.178 224.324 272.667 197.522 c 0
+ 310.012 158.256 329.576 106.248 321.461 86.2402 c 0
+ 309.459 56.6484 280.891 15.1699 273.306 11.7578 c 0
+ 247.152 -0.00488281 147.786 39.8525 95.6123 78.8018 c 1
+ 67.2578 23.8252 24.5615 -0.204102 0 0 c 0
+ -39.0928 0.325195 -28.1416 92.2393 -0.0136719 90.792 c 0
+ 36.0693 88.9346 78.9619 98.4307 92.417 111.678 c 0
+ 100.788 119.92 124.767 195.562 141.446 207.273 c 0
+280.967 96.6562 m 0
+ 275.482 119.384 229.166 159.886 190.516 169.741 c 0
+ 176.814 173.234 162.352 167.377 152.534 158.778 c 0
+ 148.166 154.951 147.15 150.096 151.584 146.367 c 0
+ 166.4 133.912 226.841 103.601 273.93 89.8613 c 0
+ 278.959 88.3936 282.126 91.8545 280.967 96.6562 c 0
+EndSplineSet
+EndChar
+
+StartChar: haa.fina_BaaHaaIsol
+Encoding: 65845 -1 348
+Width: 588
+VWidth: 0
+AnchorPoint: "cursive" 42 514 entry 0
+LayerCount: 2
+Back
+SplineSet
+1.70703 460.156 m 1
+ -0.40918 517.898 27.9473 542.498 90.7852 579.699 c 1
+ 180.806 631.306 264.292 675.64 300.084 765.34 c 0
+ 323.235 825.192 340.292 874.226 370.185 874.059 c 0
+ 400.079 873.892 427.454 839.18 431.29 771.262 c 0
+ 433.167 738.026 433.679 694.888 432.417 667.186 c 0
+ 431.6 649.256 411.963 650.119 409.898 667.875 c 0
+ 406.341 698.479 393.862 778.05 359.465 777.939 c 0
+ 341.768 777.884 331.925 755.136 312.562 715.397 c 0
+ 276.148 640.67 208.806 587.683 135.906 547.107 c 0
+ 89.9541 521.531 46.3594 489.342 1.70703 460.156 c 1
+134.344 542.637 m 4
+ 285.068 534.915 400.812 537.06 543.307 547.971 c 4
+ 547.854 548.319 553.326 545.678 551.641 539.41 c 6
+ 551.641 539.41 543.478 500.896 536.372 482.632 c 4
+ 533.184 474.437 527.535 472.87 522.396 472.244 c 4
+ 470.898 465.973 380.88 448.721 303.522 417.573 c 4
+ 202.635 376.95 68.6377 280.738 65.9131 139.57 c 4
+ 63.5703 18.2432 121.807 -45.9766 199.807 -76.4678 c 4
+ 336.124 -129.756 578.627 -109.863 679.062 -97.6289 c 4
+ 694.364 -95.7764 691.443 -115.61 683.682 -118.938 c 4
+ 595.251 -156.846 485.015 -203.206 381.973 -198.422 c 4
+ 255.374 -192.544 75.5801 -175.35 33.9893 1.65137 c 4
+ 3.73828 130.398 61.5146 343.773 242.7 458.196 c 5
+ 1.70703 460.156 l 5
+ 0.411133 495.522 10.5459 518.455 33.0332 539.466 c 5
+ 40.4609 544.571 85.416 545.144 134.344 542.637 c 4
+EndSplineSet
+Fore
+SplineSet
+134.344 542.637 m 0
+ 285.068 534.915 400.812 537.06 543.307 547.971 c 0
+ 547.854 548.319 553.326 545.678 551.641 539.41 c 2
+ 551.641 539.41 543.478 500.896 536.372 482.632 c 0
+ 533.184 474.437 527.535 472.87 522.396 472.244 c 0
+ 470.898 465.973 380.88 448.721 303.522 417.573 c 0
+ 202.635 376.95 68.6377 280.738 65.9131 139.57 c 0
+ 63.5703 18.2432 121.807 -45.9766 199.807 -76.4678 c 0
+ 336.124 -129.756 578.627 -109.863 679.062 -97.6289 c 0
+ 694.364 -95.7764 691.443 -115.61 683.682 -118.938 c 0
+ 595.251 -156.846 485.015 -203.206 381.973 -198.422 c 0
+ 255.374 -192.544 75.5801 -175.35 33.9893 1.65137 c 0
+ 3.73828 130.398 61.5146 343.773 242.7 458.196 c 1
+ 1.70703 460.156 l 1
+ 0.411133 495.522 10.5459 518.455 33.0332 539.466 c 1
+ 40.4609 544.571 85.416 545.144 134.344 542.637 c 0
+EndSplineSet
+EndChar
+
+StartChar: haa.medi_BaaHaaInit
+Encoding: 65847 -1 349
+Width: 584
+VWidth: 0
+AnchorPoint: "cursive" 38 233 entry 0
+LayerCount: 2
+Back
+SplineSet
+438.209 359.269 m 0
+ 439.398 339.614 416.846 340.198 415.608 357.193 c 0
+ 414.435 373.312 403.397 436.89 382.343 451.611 c 0
+ 375.577 456.342 366.213 458.643 356.021 449.09 c 1
+ 296.229 360.467 159.454 224.018 -14.5303 179.571 c 1
+ -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
+ -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
+ 7.1416 256.926 14.8447 266.531 21.8564 269.708 c 0
+ 79.1221 295.658 152 318.916 215.617 360.997 c 0
+ 260.985 391.008 287.238 421.358 306.693 449.386 c 0
+ 328.177 480.336 341.216 551.167 377.311 551.997 c 0
+ 424.744 553.088 435.497 404.086 438.209 359.269 c 0
+21.8564 269.708 m 0
+ 41.2373 276.877 104.125 271.338 156.295 257.26 c 0
+ 272.922 225.788 396.054 196.104 536.68 194.927 c 0
+ 547.231 194.838 560.536 183.292 553.451 170.004 c 2
+ 527.52 121.376 l 2
+ 524.165 115.082 516.016 107.555 508.237 108.744 c 0
+ 306.91 139.507 152.04 38.8193 0 0 c 0
+ -24.0547 -6.1416 -42.9131 88.0195 -0.495117 90.7627 c 0
+ 79.8926 95.96 156.157 115.088 220.13 140.101 c 0
+ 225.086 142.038 226.681 145.158 220.925 147.004 c 0
+ 151.688 169.203 70.96 186.557 -14.5303 179.571 c 0
+ -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
+ -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
+ 7.1416 256.926 14.6367 267.038 21.8564 269.708 c 0
+EndSplineSet
+Fore
+SplineSet
+21.8564 269.708 m 0
+ 41.2373 276.877 104.125 271.338 156.295 257.26 c 0
+ 272.922 225.788 396.054 196.104 536.68 194.927 c 0
+ 547.231 194.838 560.536 183.292 553.451 170.004 c 2
+ 527.52 121.376 l 2
+ 524.165 115.082 516.016 107.555 508.237 108.744 c 0
+ 306.91 139.507 152.04 38.8193 0 0 c 0
+ -24.0547 -6.1416 -42.9131 88.0195 -0.495117 90.7627 c 0
+ 79.8926 95.96 156.157 115.088 220.13 140.101 c 0
+ 225.086 142.038 226.681 145.158 220.925 147.004 c 0
+ 151.688 169.203 70.96 186.557 -14.5303 179.571 c 0
+ -23.3428 178.852 -19.9082 186.286 -18.9209 189.304 c 0
+ -10.4033 215.352 -4.77441 232.441 4.2373 250.959 c 0
+ 7.1416 256.926 14.6367 267.038 21.8564 269.708 c 0
+EndSplineSet
+EndChar
+
+StartChar: lam.init_LamHaaHaaInit
+Encoding: 65851 -1 350
+Width: 294
+VWidth: 0
+AnchorPoint: "cursive" 83 435 exit 0
+LayerCount: 2
+Back
+SplineSet
+59.4033 464.607 m 4
+ 91.0605 470.933 177.023 457.85 229.783 436.194 c 4
+ 309.648 403.415 345.42 386.455 501.424 359.103 c 4
+ 508.602 357.719 512.505 353.233 508.801 343.571 c 4
+ 501.348 324.134 487.488 304.098 475.752 286.635 c 4
+ 471.986 281.031 469.138 281.634 466.294 282.28 c 4
+ 400.729 297.191 358.072 305.848 288.166 301.938 c 4
+ 225.685 298.441 149.214 280.093 59.1787 244.661 c 4
+ -10.3887 217.284 -47.9277 198.932 -81.9512 186.51 c 4
+ -86.6973 184.777 -94.7021 187.054 -90.1924 196.846 c 4
+ -83.6572 211.033 -70.2979 235.576 -58.2783 249.238 c 5
+ 52.7148 319.524 147.272 332.978 211.329 357.162 c 5
+ 143.465 391.468 58.29 394.601 16.9951 393.65 c 4
+ 11.7441 393.529 8.01953 395.144 11.1885 404.188 c 4
+ 16.6553 419.779 29.9854 443.715 43.04 456.364 c 4
+ 47.9492 461.122 52.6533 463.258 59.4033 464.607 c 4
+-59.5459 247.465 m 4
+ -50.208 258.788 15.5049 256.758 59.1787 244.661 c 4
+ 127.337 225.782 189.215 202.416 258.866 186.471 c 4
+ 311.815 174.349 374.193 166.507 434.262 166.854 c 4
+ 445.114 166.917 446.681 161.831 441.631 151.442 c 4
+ 429.762 127.011 419.992 103.351 401.793 86.5674 c 4
+ 398.691 83.7051 392.139 83.2236 388.521 83.8467 c 4
+ 312.518 96.9395 240.115 102.365 166.322 88.9639 c 4
+ 111.602 79.0254 -54.0479 10.8252 -100 0 c 4
+ -124.251 -5.71289 -140.174 84.626 -100.373 90.9365 c 4
+ -22.9434 103.213 45.168 117.358 118.445 140.801 c 5
+ 58.7373 167.652 -35.6006 188.832 -81.4443 185.75 c 4
+ -86.5137 185.411 -94.7021 187.054 -90.1924 196.846 c 4
+ -83.6572 211.033 -69.8096 235.018 -59.5459 247.465 c 4
+215.921 764.154 m 4
+ 218.996 768.906 226.531 766.654 227.885 761.306 c 4
+ 235.594 730.845 257.912 696.64 271.265 681.984 c 4
+ 276.982 675.71 276.352 667.716 268.916 658.785 c 4
+ 260.966 649.237 244.503 630.796 244.901 626.3 c 4
+ 247.671 595.041 250.679 517.269 245.526 490.968 c 4
+ 242.011 473.025 240.249 453.062 229.783 436.194 c 4
+ 205.938 397.764 67.3535 397.458 16.9951 393.65 c 4
+ 11.7578 393.254 8.01953 395.144 11.1885 404.188 c 4
+ 16.6553 419.779 29.9854 443.715 43.04 456.364 c 4
+ 47.9492 461.122 52.668 463.18 59.4033 464.607 c 4
+ 117.354 476.891 154.567 463.064 208.67 477.146 c 5
+ 209.527 505.975 202.705 582.561 196.818 645.626 c 4
+ 196.166 652.612 189.119 677.574 186.34 691.037 c 4
+ 185.548 694.877 180.975 706.53 185.78 716.974 c 4
+ 192.412 731.386 207.714 751.472 215.921 764.154 c 4
+EndSplineSet
+Fore
+SplineSet
+215.921 764.154 m 0
+ 218.996 768.906 226.531 766.654 227.885 761.306 c 0
+ 235.594 730.845 257.912 696.64 271.265 681.984 c 0
+ 276.982 675.71 276.352 667.716 268.916 658.785 c 0
+ 260.966 649.237 244.503 630.796 244.901 626.3 c 0
+ 247.671 595.041 250.679 517.269 245.526 490.968 c 0
+ 242.011 473.025 240.249 453.062 229.783 436.194 c 0
+ 205.938 397.764 67.3535 397.458 16.9951 393.65 c 0
+ 11.7578 393.254 8.01953 395.144 11.1885 404.188 c 0
+ 16.6553 419.779 29.9854 443.715 43.04 456.364 c 0
+ 47.9492 461.122 52.668 463.18 59.4033 464.607 c 0
+ 117.354 476.891 154.567 463.064 208.67 477.146 c 1
+ 209.527 505.975 202.705 582.561 196.818 645.626 c 0
+ 196.166 652.612 189.119 677.574 186.34 691.037 c 0
+ 185.548 694.877 180.975 706.53 185.78 716.974 c 0
+ 192.412 731.386 207.714 751.472 215.921 764.154 c 0
+EndSplineSet
+EndChar
+
+StartChar: haa.medi1_LamHaaHaaInit
+Encoding: 65852 -1 351
+Width: 544
+VWidth: 0
+AnchorPoint: "cursive" -20 231 exit 0
+AnchorPoint: "cursive" 93 435 entry 0
+LayerCount: 2
+Back
+SplineSet
+69.4033 464.607 m 4
+ 101.061 470.933 187.023 457.85 239.783 436.194 c 4
+ 319.648 403.415 355.42 386.455 511.424 359.103 c 4
+ 518.602 357.719 522.505 353.233 518.801 343.571 c 4
+ 511.348 324.134 497.488 304.098 485.752 286.635 c 4
+ 481.986 281.031 479.138 281.634 476.294 282.28 c 4
+ 410.729 297.191 368.072 305.848 298.166 301.938 c 4
+ 235.685 298.441 159.214 280.093 69.1787 244.661 c 4
+ -0.388672 217.284 -37.9277 198.932 -71.9512 186.51 c 4
+ -76.6973 184.777 -84.7021 187.054 -80.1924 196.846 c 4
+ -73.6572 211.033 -60.2979 235.576 -48.2783 249.238 c 5
+ 62.7148 319.524 157.272 332.978 221.329 357.162 c 5
+ 153.465 391.468 68.29 394.601 26.9951 393.65 c 4
+ 21.7441 393.529 18.0195 395.144 21.1885 404.188 c 4
+ 26.6553 419.779 39.9854 443.715 53.04 456.364 c 4
+ 57.9492 461.122 62.6533 463.258 69.4033 464.607 c 4
+-49.5459 247.465 m 4
+ -40.208 258.788 25.5049 256.758 69.1787 244.661 c 4
+ 137.337 225.782 199.215 202.416 268.866 186.471 c 4
+ 321.815 174.349 384.193 166.507 444.262 166.854 c 4
+ 455.114 166.917 456.681 161.831 451.631 151.442 c 4
+ 439.762 127.011 429.992 103.351 411.793 86.5674 c 4
+ 408.691 83.7051 402.139 83.2236 398.521 83.8467 c 4
+ 322.518 96.9395 250.115 102.365 176.322 88.9639 c 4
+ 121.602 79.0254 -44.0479 10.8252 -90 0 c 4
+ -114.251 -5.71289 -130.174 84.626 -90.373 90.9365 c 4
+ -12.9434 103.213 55.168 117.358 128.445 140.801 c 5
+ 68.7373 167.652 -25.6006 188.832 -71.4443 185.75 c 4
+ -76.5137 185.411 -84.7021 187.054 -80.1924 196.846 c 4
+ -73.6572 211.033 -59.8096 235.018 -49.5459 247.465 c 4
+225.921 764.154 m 4
+ 228.996 768.906 236.531 766.654 237.885 761.306 c 4
+ 245.594 730.845 267.912 696.64 281.265 681.984 c 4
+ 286.982 675.71 286.352 667.716 278.916 658.785 c 4
+ 270.966 649.237 254.503 630.796 254.901 626.3 c 4
+ 257.671 595.041 260.679 517.269 255.526 490.968 c 4
+ 252.011 473.025 250.249 453.062 239.783 436.194 c 4
+ 215.938 397.764 77.3535 397.458 26.9951 393.65 c 4
+ 21.7578 393.254 18.0195 395.144 21.1885 404.188 c 4
+ 26.6553 419.779 39.9854 443.715 53.04 456.364 c 4
+ 57.9492 461.122 62.668 463.18 69.4033 464.607 c 4
+ 127.354 476.891 164.567 463.064 218.67 477.146 c 5
+ 219.527 505.975 212.705 582.561 206.818 645.626 c 4
+ 206.166 652.612 199.119 677.574 196.34 691.037 c 4
+ 195.548 694.877 190.975 706.53 195.78 716.974 c 4
+ 202.412 731.386 217.714 751.472 225.921 764.154 c 4
+EndSplineSet
+Fore
+SplineSet
+69.4033 464.607 m 0
+ 101.061 470.933 187.023 457.85 239.783 436.194 c 0
+ 319.648 403.415 355.42 386.455 511.424 359.103 c 0
+ 518.602 357.719 522.505 353.233 518.801 343.571 c 0
+ 511.348 324.134 497.488 304.098 485.752 286.635 c 0
+ 481.986 281.031 479.138 281.634 476.294 282.28 c 0
+ 410.729 297.191 368.072 305.848 298.166 301.938 c 0
+ 235.685 298.441 159.214 280.093 69.1787 244.661 c 0
+ -0.388672 217.284 -37.9277 198.932 -71.9512 186.51 c 0
+ -76.6973 184.777 -84.7021 187.054 -80.1924 196.846 c 0
+ -73.6572 211.033 -60.2979 235.576 -48.2783 249.238 c 1
+ 62.7148 319.524 157.272 332.978 221.329 357.162 c 1
+ 153.465 391.468 68.29 394.601 26.9951 393.65 c 0
+ 21.7441 393.529 18.0195 395.144 21.1885 404.188 c 0
+ 26.6553 419.779 39.9854 443.715 53.04 456.364 c 0
+ 57.9492 461.122 62.6533 463.258 69.4033 464.607 c 0
+EndSplineSet
+EndChar
+
+StartChar: haa.medi2_LamHaaHaaInit
+Encoding: 65853 -1 352
+Width: 639
+VWidth: 0
+AnchorPoint: "cursive" 70 231 entry 0
+LayerCount: 2
+Back
+SplineSet
+159.403 464.607 m 0
+ 191.061 470.933 277.023 457.85 329.783 436.194 c 0
+ 409.648 403.415 445.42 386.455 601.424 359.103 c 0
+ 608.602 357.719 612.505 353.233 608.801 343.571 c 0
+ 601.348 324.134 587.488 304.098 575.752 286.635 c 0
+ 571.986 281.031 569.138 281.634 566.294 282.28 c 0
+ 500.729 297.191 458.072 305.848 388.166 301.937 c 0
+ 325.685 298.441 249.214 280.093 159.179 244.661 c 0
+ 89.6113 217.284 52.0723 198.932 18.0488 186.51 c 0
+ 13.3027 184.777 5.29785 187.054 9.80762 196.846 c 0
+ 16.3428 211.033 29.7021 235.576 41.7217 249.238 c 1
+ 152.715 319.524 247.272 332.978 311.329 357.162 c 1
+ 243.465 391.468 158.29 394.601 116.995 393.65 c 0
+ 111.744 393.529 108.02 395.144 111.188 404.187 c 0
+ 116.655 419.779 129.985 443.715 143.04 456.364 c 0
+ 147.949 461.122 152.653 463.258 159.403 464.607 c 0
+40.4541 247.465 m 0
+ 49.792 258.788 115.505 256.758 159.179 244.661 c 0
+ 227.337 225.782 289.215 202.416 358.866 186.471 c 0
+ 411.815 174.349 474.193 166.507 534.262 166.854 c 0
+ 545.114 166.917 546.681 161.831 541.631 151.442 c 0
+ 529.762 127.011 519.992 103.351 501.793 86.5674 c 0
+ 498.691 83.7051 492.139 83.2236 488.521 83.8467 c 0
+ 412.518 96.9395 340.115 102.365 266.322 88.9639 c 0
+ 211.602 79.0254 45.9521 10.8252 0 0 c 0
+ -24.251 -5.71289 -40.1738 84.626 -0.373047 90.9365 c 0
+ 77.0566 103.213 145.168 117.358 218.445 140.801 c 1
+ 158.737 167.652 64.3994 188.832 18.5557 185.75 c 0
+ 13.4863 185.411 5.29785 187.054 9.80762 196.846 c 0
+ 16.3428 211.033 30.1904 235.018 40.4541 247.465 c 0
+315.921 764.154 m 0
+ 318.996 768.906 326.531 766.654 327.885 761.306 c 0
+ 335.594 730.845 357.912 696.64 371.265 681.984 c 0
+ 376.982 675.71 376.352 667.716 368.916 658.785 c 0
+ 360.966 649.237 344.503 630.796 344.901 626.3 c 0
+ 347.671 595.041 350.679 517.269 345.526 490.968 c 0
+ 342.011 473.025 340.249 453.062 329.783 436.194 c 0
+ 305.938 397.764 167.354 397.458 116.995 393.65 c 0
+ 111.758 393.254 108.02 395.144 111.188 404.187 c 0
+ 116.655 419.779 129.985 443.715 143.04 456.364 c 0
+ 147.949 461.122 152.668 463.18 159.403 464.607 c 0
+ 217.354 476.891 254.567 463.064 308.67 477.146 c 1
+ 309.527 505.975 302.705 582.561 296.818 645.626 c 0
+ 296.166 652.612 289.119 677.574 286.34 691.037 c 0
+ 285.548 694.877 280.975 706.53 285.78 716.974 c 0
+ 292.412 731.386 307.714 751.472 315.921 764.154 c 0
+EndSplineSet
+Fore
+SplineSet
+40.4541 247.465 m 0
+ 49.792 258.788 115.505 256.758 159.179 244.661 c 0
+ 227.337 225.782 289.215 202.416 358.866 186.471 c 0
+ 411.815 174.349 474.193 166.507 534.262 166.854 c 0
+ 545.114 166.917 546.681 161.831 541.631 151.442 c 0
+ 529.762 127.011 519.992 103.351 501.793 86.5674 c 0
+ 498.691 83.7051 492.139 83.2236 488.521 83.8467 c 0
+ 412.518 96.9395 340.115 102.365 266.322 88.9639 c 0
+ 211.602 79.0254 45.9521 10.8252 0 0 c 0
+ -24.251 -5.71289 -40.1738 84.626 -0.373047 90.9365 c 0
+ 77.0566 103.213 145.168 117.358 218.445 140.801 c 1
+ 158.737 167.652 64.3994 188.832 18.5557 185.75 c 0
+ 13.4863 185.411 5.29785 187.054 9.80762 196.846 c 0
+ 16.3428 211.033 30.1904 235.018 40.4541 247.465 c 0
 EndSplineSet
 EndChar
 EndChars
