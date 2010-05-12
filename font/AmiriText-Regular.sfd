@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1273653288
+ModificationTime: 1273653814
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -1027,7 +1027,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65472 24 10
+WinInfo: 0 24 10
 AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
 BeginChars: 65861 352
 
@@ -3551,16 +3551,8 @@ StartChar: uni0621
 Encoding: 1569 1569 75
 Width: 266
 VWidth: 0
-Flags: W
 LayerCount: 2
 Fore
-SplineSet
-0 1.11621 m 0
- 255.722 1.11621 l 0
- 255.722 298.177 l 0
- 0 298.177 l 0
- 0 1.11621 l 0
-EndSplineSet
 Refer: 29 -1 N 1 0 0 1 -0.29786 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" hamza
 EndChar
@@ -3571,13 +3563,6 @@ Width: 168
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.479492 m 0
- 88.0332 0.479492 l 0
- 88.0332 694.233 l 0
- 0 694.233 l 0
- 0 0.479492 l 0
-EndSplineSet
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
@@ -3588,13 +3573,6 @@ Width: 168
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.479492 m 0
- 88.0332 0.479492 l 0
- 88.0332 694.233 l 0
- 0 694.233 l 0
- 0 0.479492 l 0
-EndSplineSet
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
@@ -3605,13 +3583,6 @@ Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -199.001 m 0
- 421.213 -199.001 l 0
- 421.213 312.524 l 0
- 0 312.524 l 0
- 0 -199.001 l 0
-EndSplineSet
 Refer: 72 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
@@ -3622,13 +3593,6 @@ Width: 168
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.479492 m 0
- 88.0332 0.479492 l 0
- 88.0332 694.233 l 0
- 0 694.233 l 0
- 0 0.479492 l 0
-EndSplineSet
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
@@ -3639,13 +3603,6 @@ Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -200.645 m 0
- 638.41 -200.645 l 0
- 638.41 399.179 l 0
- 0 399.179 l 0
- 0 -200.645 l 0
-EndSplineSet
 Refer: 74 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
@@ -3656,13 +3613,6 @@ Width: 168
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.479492 m 0
- 88.0332 0.479492 l 0
- 88.0332 694.233 l 0
- 0 694.233 l 0
- 0 0.479492 l 0
-EndSplineSet
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
@@ -3673,13 +3623,6 @@ Width: 834
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.911133 m 0
- 799.161 0.911133 l 0
- 799.161 387.461 l 0
- 0 387.461 l 0
- 0 0.911133 l 0
-EndSplineSet
 Refer: 10 -1 N 1 0 0 1 -0.377665 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
@@ -3690,13 +3633,6 @@ Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.535156 m 0
- 242.479 0.535156 l 0
- 242.479 353.703 l 0
- 0 353.703 l 0
- 0 0.535156 l 0
-EndSplineSet
 Refer: 32 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
@@ -3707,13 +3643,6 @@ Width: 834
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.911133 m 0
- 799.161 0.911133 l 0
- 799.161 387.461 l 0
- 0 387.461 l 0
- 0 0.911133 l 0
-EndSplineSet
 Refer: 10 -1 N 1 0 0 1 -0.377665 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
@@ -3724,13 +3653,6 @@ Width: 834
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.911133 m 0
- 799.161 0.911133 l 0
- 799.161 387.461 l 0
- 0 387.461 l 0
- 0 0.911133 l 0
-EndSplineSet
 Refer: 10 -1 N 1 0 0 1 -0.377665 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
@@ -3741,13 +3663,6 @@ Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -200.07 m 0
- 693.562 -200.07 l 0
- 693.562 573.779 l 0
- 0 573.779 l 0
- 0 -200.07 l 0
-EndSplineSet
 Refer: 26 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
@@ -3758,13 +3673,6 @@ Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -200.07 m 0
- 693.562 -200.07 l 0
- 693.562 573.779 l 0
- 0 573.779 l 0
- 0 -200.07 l 0
-EndSplineSet
 Refer: 26 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
@@ -3775,13 +3683,6 @@ Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -200.07 m 0
- 693.562 -200.07 l 0
- 693.562 573.779 l 0
- 0 573.779 l 0
- 0 -200.07 l 0
-EndSplineSet
 Refer: 26 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
@@ -3792,13 +3693,6 @@ Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 1.06738 m 0
- 323.672 1.06738 l 0
- 323.672 424.924 l 0
- 0 424.924 l 0
- 0 1.06738 l 0
-EndSplineSet
 Refer: 15 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
@@ -3809,13 +3703,6 @@ Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 1.06738 m 0
- 323.672 1.06738 l 0
- 323.672 424.924 l 0
- 0 424.924 l 0
- 0 1.06738 l 0
-EndSplineSet
 Refer: 15 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
@@ -3824,16 +3711,8 @@ StartChar: uni0631
 Encoding: 1585 1585 91
 Width: 338
 VWidth: 0
-Flags: HW
 LayerCount: 2
 Fore
-SplineSet
-0 -198.479 m 0
- 419.884 -198.479 l 0
- 419.884 313.897 l 0
- 0 313.897 l 0
- 0 -198.479 l 0
-EndSplineSet
 Refer: 58 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
@@ -3842,16 +3721,8 @@ StartChar: uni0632
 Encoding: 1586 1586 92
 Width: 338
 VWidth: 0
-Flags: HW
 LayerCount: 2
 Fore
-SplineSet
-0 -198.479 m 0
- 419.884 -198.479 l 0
- 419.884 313.897 l 0
- 0 313.897 l 0
- 0 -198.479 l 0
-EndSplineSet
 Refer: 58 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
@@ -3862,13 +3733,6 @@ Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -199.03 m 0
- 864.682 -199.03 l 0
- 864.682 404.262 l 0
- 0 404.262 l 0
- 0 -199.03 l 0
-EndSplineSet
 Refer: 65 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
@@ -3879,13 +3743,6 @@ Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -199.03 m 0
- 864.682 -199.03 l 0
- 864.682 404.262 l 0
- 0 404.262 l 0
- 0 -199.03 l 0
-EndSplineSet
 Refer: 65 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
@@ -3896,13 +3753,6 @@ Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -321.056 m 0
- 1085.31 -321.056 l 0
- 1085.31 300.122 l 0
- 0 300.122 l 0
- 0 -321.056 l 0
-EndSplineSet
 Refer: 61 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
@@ -3913,13 +3763,6 @@ Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -321.056 m 0
- 1085.31 -321.056 l 0
- 1085.31 300.122 l 0
- 0 300.122 l 0
- 0 -321.056 l 0
-EndSplineSet
 Refer: 61 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
@@ -3930,13 +3773,6 @@ Width: 704
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -105.821 m 0
- 665.371 -105.821 l 0
- 665.371 649.544 l 0
- 0 649.544 l 0
- 0 -105.821 l 0
-EndSplineSet
 Refer: 69 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
@@ -3947,13 +3783,6 @@ Width: 704
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -105.821 m 0
- 665.371 -105.821 l 0
- 665.371 649.544 l 0
- 0 649.544 l 0
- 0 -105.821 l 0
-EndSplineSet
 Refer: 69 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
@@ -3964,13 +3793,6 @@ Width: 572
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -199.373 m 0
- 661.476 -199.373 l 0
- 661.476 730.456 l 0
- 0 730.456 l 0
- 0 -199.373 l 0
-EndSplineSet
 Refer: 5 -1 N 1 0 0 1 0.138636 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
@@ -3981,13 +3803,6 @@ Width: 572
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -199.373 m 0
- 661.476 -199.373 l 0
- 661.476 730.456 l 0
- 0 730.456 l 0
- 0 -199.373 l 0
-EndSplineSet
 Refer: 5 -1 N 1 0 0 1 0.138636 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
@@ -3998,13 +3813,6 @@ Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 1.51465 m 0
- 856.812 1.51465 l 0
- 856.812 513.742 l 0
- 0 513.742 l 0
- 0 1.51465 l 0
-EndSplineSet
 Refer: 22 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
@@ -4015,13 +3823,6 @@ Width: 580
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -198.494 m 0
- 559.961 -198.494 l 0
- 559.961 358.266 l 0
- 0 358.266 l 0
- 0 -198.494 l 0
-EndSplineSet
 Refer: 54 -1 N 1 0 0 1 -2.57545 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
 EndChar
@@ -4032,13 +3833,6 @@ Width: 556
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.375977 m 0
- 531.579 0.375977 l 0
- 531.579 790.731 l 0
- 0 790.731 l 0
- 0 0.375977 l 0
-EndSplineSet
 Refer: 37 -1 N 1 0 0 1 -1.32354 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
 EndChar
@@ -4049,13 +3843,6 @@ Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -193.646 m 0
- 477.015 -193.646 l 0
- 477.015 622.169 l 0
- 0 622.169 l 0
- 0 -193.646 l 0
-EndSplineSet
 Refer: 41 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
@@ -4066,13 +3853,6 @@ Width: 352
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -442.52 m 0
- 325.64 -442.52 l 0
- 325.64 399.077 l 0
- 0 399.077 l 0
- 0 -442.52 l 0
-EndSplineSet
 Refer: 47 -1 N 1 0 0 1 -0.316127 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" meem.isol
 EndChar
@@ -4083,13 +3863,6 @@ Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -201.421 m 0
- 445.504 -201.421 l 0
- 445.504 332.317 l 0
- 0 332.317 l 0
- 0 -201.421 l 0
-EndSplineSet
 Refer: 52 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
@@ -4100,13 +3873,6 @@ Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 0.535156 m 0
- 242.479 0.535156 l 0
- 242.479 353.703 l 0
- 0 353.703 l 0
- 0 0.535156 l 0
-EndSplineSet
 Refer: 32 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
@@ -4117,13 +3883,6 @@ Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -199.001 m 0
- 421.213 -199.001 l 0
- 421.213 312.524 l 0
- 0 312.524 l 0
- 0 -199.001 l 0
-EndSplineSet
 Refer: 72 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
@@ -4134,13 +3893,6 @@ Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -200.645 m 0
- 638.41 -200.645 l 0
- 638.41 399.179 l 0
- 0 399.179 l 0
- 0 -200.645 l 0
-EndSplineSet
 Refer: 74 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
@@ -4151,13 +3903,6 @@ Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-SplineSet
-0 -200.645 m 0
- 638.41 -200.645 l 0
- 638.41 399.179 l 0
- 0 399.179 l 0
- 0 -200.645 l 0
-EndSplineSet
 Refer: 74 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
