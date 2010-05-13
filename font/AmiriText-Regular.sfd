@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1273665983
+ModificationTime: 1273746142
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -44,6 +44,7 @@ Lookup: 2 0 0 "'ccmp' Glyph Decomposition"  {"'ccmp' Glyph Decomposition-1"  } [
 Lookup: 1 0 0 "'init' Initial Forms in Arabic lookup 1"  {"'init' Initial Forms in Arabic lookup 1 subtable"  } ['init' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'medi' Medial Forms in Arabic lookup 2"  {"'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'fina' Terminal Forms in Arabic lookup 3"  {"'fina' Terminal Forms in Arabic lookup 3 subtable"  } ['fina' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "KafLamHehIsol"  {"KafLamHehIsol subtable"  } []
 Lookup: 1 0 0 "BaaBaaAltInit"  {"BaaBaaAltInit subtable"  } []
 Lookup: 1 0 0 "SeenYaaFina"  {"SeenYaaFina subtable"  } []
 Lookup: 1 0 0 "LamHaaHaaInit"  {"LamHaaHaaInit subtable"  } []
@@ -151,7 +152,7 @@ Lookup: 1 0 0 "BaaRaaFina"  {"BaaRaaFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaRaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 60"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 86"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaMeemFina"  {"BaaMeemFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaMeemFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 22"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 6 8 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 104"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 104"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "Finjani"  {"Finjani subtable"  } []
 Lookup: 6 8 0 "'calt' Finjani"  {"'calt' Finjani subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaYaaFina"  {"BaaYaaFina subtable"  } []
@@ -159,6 +160,15 @@ Lookup: 6 8 0 "'calt' BaaYaaFina"  {"'calt' Contextual Alternates in Arabic look
 Lookup: 259 0 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  0 0 0 1
+ String: 26 kaf.init lam.medi heh.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafLamHehIsol" 
+  SeqLookup: 1 "KafLamHehIsol" 
+  SeqLookup: 2 "KafLamHehIsol" 
+EndFPST
 ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 104"  0 0 0 1
  3 0 0
   Coverage: 8 baa.init
@@ -1041,7 +1051,7 @@ AntiAlias: 1
 FitToEm: 1
 WinInfo: 65640 24 10
 AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
-BeginChars: 65863 353
+BeginChars: 65866 356
 
 StartChar: alef.fina.alt
 Encoding: 65536 -1 0
@@ -1943,6 +1953,7 @@ SplineSet
  183.845 182.284 187.401 185.402 189.721 187.92 c 1
  185.841 212.074 183.137 236.132 179.654 264.37 c 1
 EndSplineSet
+Substitution2: "KafLamHehIsol subtable" heh.fina_KafLamHehIsol
 Substitution2: "Lellah subtable" heh.fina_Lellah
 Substitution2: "KafHehFina subtable" heh.fina_KafHehFina
 Substitution2: "LamHehFina subtable" heh.fina_LamHehFina
@@ -2164,6 +2175,7 @@ SplineSet
  42.2451 635.513 319.473 746.258 496.395 791.492 c 0
  517.609 796.916 520.717 781.78 514.216 766.593 c 2
 EndSplineSet
+Substitution2: "KafLamHehIsol subtable" kaf.init_KafLamHehIsol
 Substitution2: "KafMeemAlefIsol subtable" kaf.init_KafMeemAlefIsol
 Substitution2: "KafDalIsol subtable" kaf.init_KafDalIsol
 Substitution2: "KafAlefIsol subtable" kaf.init_KafAlefIsol
@@ -2394,6 +2406,7 @@ SplineSet
  82.5625 639.102 102.068 250.206 110.692 196.645 c 0
  117.905 151.841 138.897 97.1416 176.703 77.2402 c 0
 EndSplineSet
+Substitution2: "KafLamHehIsol subtable" lam.medi_KafLamHehIsol
 Substitution2: "LamKafFina subtable" lam.medi_LamKafFina
 Substitution2: "Lellah subtable" lam.medi_Lellah
 Substitution2: "LamMeemMedi subtable" lam.medi_LamMeemMedi
@@ -6195,7 +6208,7 @@ EndChar
 
 StartChar: lam.init_LamHaaInit
 Encoding: 65661 -1 147
-Width: 290
+Width: 600
 VWidth: 0
 AnchorPoint: "cursive" 85 247 exit 0
 LayerCount: 2
@@ -9695,7 +9708,7 @@ EndChar
 
 StartChar: lam.init_LamHaaMeemInit
 Encoding: 65717 -1 203
-Width: 212
+Width: 502
 VWidth: 0
 AnchorPoint: "cursive" 44 361 exit 0
 LayerCount: 2
@@ -18840,6 +18853,233 @@ SplineSet
  58.7812 378.26 76.4404 415.662 76.4404 415.662 c 2
  79.7139 423.836 88.5098 419.348 90.3047 413.522 c 0
  108.633 354.043 150.864 130.034 240.867 108.966 c 0
+EndSplineSet
+EndChar
+
+StartChar: kaf.init_KafLamHehIsol
+Encoding: 65863 -1 353
+Width: 182
+VWidth: 0
+AnchorPoint: "cursive" 0 -22 exit 0
+LayerCount: 2
+Back
+SplineSet
+-128.658 341.104 m 4
+ -105.118 466.784 332.604 602.696 449.083 646.334 c 4
+ 459.51 649.751 468.779 646.908 464.894 635.144 c 6
+ 448.2 582.343 l 6
+ 445.925 573.901 443.191 567.93 435.014 564.91 c 4
+ 276.126 506.237 -39.3438 411.011 -92.9668 342.183 c 4
+ -96.5361 337.602 -95.5166 337.228 -91.0166 335.447 c 4
+ 30.7812 287.266 151.286 197.52 150.166 104.581 c 4
+ 148.678 -17.3223 60.4893 -65.8945 1.55859 -68.1855 c 4
+ -42.125 -69.8838 -39.376 31.749 -4.82617 33.3369 c 4
+ 53.9082 36.0352 99.4824 63.6641 130.754 94.3066 c 4
+ 133.293 96.8047 133.318 97.167 132.625 99.4629 c 4
+ 80.6826 188.465 -59.9082 243.816 -122.631 262.818 c 4
+ -153.657 272.218 -134.065 312.23 -128.658 341.104 c 4
+-182.376 -51.2432 m 4
+ -154.03 -35.5254 -142.646 24.667 -150.089 70.0352 c 4
+ -176.066 228.394 -192.24 341.664 -215.498 509.278 c 4
+ -217.379 522.832 -220.261 532.351 -214.961 552.508 c 5
+ -192.943 605.136 l 5
+ -180.789 626.854 -173.778 617.551 -171.193 609.969 c 5
+ -154.715 476.695 -110.277 152.396 -85.4961 86.5518 c 4
+ -70.8691 47.6885 -41.2002 31.4863 3.58789 33.9307 c 4
+ 43.1895 36.0918 36.6133 -62.6582 10.6689 -67.2109 c 4
+ -60.0293 -79.6191 -111.25 -34.6465 -131.459 0 c 5
+ -147.386 -76.3984 -168.312 -141.552 -203.051 -142.271 c 4
+ -228.249 -142.793 -226.244 -75.5703 -182.376 -51.2432 c 4
+-368.7 -2.27246 m 4
+ -376.886 -17.8223 -383.824 -23.1514 -393.652 -25.793 c 4
+ -437.396 -34.2461 -501.099 -30.0977 -512.923 -19.8594 c 4
+ -520.608 -13.2051 -535.346 3.73438 -528.926 22.5488 c 4
+ -523.586 38.1963 -506.981 80.207 -503.647 89.2803 c 4
+ -497.572 105.815 -486.528 117.443 -486.528 117.443 c 5
+ -452.995 150.887 -411.362 176.198 -368.715 196.478 c 5
+ -374.595 235.326 l 6
+ -375.253 240.986 -376.523 253.708 -373.965 263.133 c 5
+ -354.503 308.242 l 5
+ -341.446 322.064 -341.705 303.937 -338.013 295.288 c 5
+ -331.139 247.845 -312.485 146.926 -292.439 72.9326 c 4
+ -272.959 1.02344 -241.829 -71.9863 -170.675 -43.916 c 4
+ -131.161 -28.3271 -163.68 -126.969 -190.23 -139.234 c 4
+ -263.908 -173.271 -306.378 -85.7334 -346.576 63.1152 c 5
+ -351.237 40.4268 -357.937 18.2617 -368.7 -2.27246 c 4
+-473.646 69.1182 m 5
+ -446.218 47.4336 -392.335 57.248 -369.525 66.0811 c 4
+ -342.084 76.708 -356.587 123.458 -361.686 145.823 c 5
+ -413.224 131.407 -452.227 107.561 -473.646 69.1182 c 5
+EndSplineSet
+Fore
+SplineSet
+-128.658 341.104 m 0
+ -105.118 466.784 332.604 602.696 449.083 646.334 c 0
+ 459.51 649.751 468.779 646.908 464.894 635.144 c 2
+ 448.2 582.343 l 2
+ 445.925 573.901 443.191 567.93 435.014 564.91 c 0
+ 276.126 506.237 -39.3438 411.011 -92.9668 342.183 c 0
+ -96.5361 337.602 -95.5166 337.228 -91.0166 335.447 c 0
+ 30.7812 287.266 151.286 197.52 150.166 104.581 c 0
+ 148.678 -17.3223 60.4893 -65.8945 1.55859 -68.1855 c 0
+ -42.125 -69.8838 -39.376 31.749 -4.82617 33.3369 c 0
+ 53.9082 36.0352 99.4824 63.6641 130.754 94.3066 c 0
+ 133.293 96.8047 133.318 97.167 132.625 99.4629 c 0
+ 80.6826 188.465 -59.9082 243.816 -122.631 262.818 c 0
+ -153.657 272.218 -134.065 312.23 -128.658 341.104 c 0
+EndSplineSet
+EndChar
+
+StartChar: lam.medi_KafLamHehIsol
+Encoding: 65864 -1 354
+Width: 178
+VWidth: 0
+AnchorPoint: "cursive" -6 -94 exit 0
+AnchorPoint: "cursive" 180 -22 entry 0
+LayerCount: 2
+Back
+SplineSet
+51.3418 341.104 m 4
+ 74.8818 466.784 512.604 602.696 629.083 646.334 c 4
+ 639.51 649.751 648.779 646.908 644.894 635.144 c 6
+ 628.2 582.343 l 6
+ 625.925 573.901 623.191 567.93 615.014 564.91 c 4
+ 456.126 506.237 140.656 411.011 87.0332 342.183 c 4
+ 83.4639 337.602 84.4834 337.228 88.9834 335.447 c 4
+ 210.781 287.266 331.286 197.52 330.166 104.581 c 4
+ 328.678 -17.3223 240.489 -65.8945 181.559 -68.1855 c 4
+ 137.875 -69.8838 140.624 31.749 175.174 33.3369 c 4
+ 233.908 36.0352 279.482 63.6641 310.754 94.3066 c 4
+ 313.293 96.8047 313.318 97.167 312.625 99.4629 c 4
+ 260.683 188.465 120.092 243.816 57.3691 262.818 c 4
+ 26.3428 272.218 45.9346 312.23 51.3418 341.104 c 4
+-2.37598 -51.2432 m 4
+ 25.9697 -35.5254 37.3535 24.667 29.9111 70.0352 c 4
+ 3.93359 228.394 -12.2402 341.664 -35.498 509.278 c 4
+ -37.3789 522.832 -40.2607 532.351 -34.9609 552.508 c 5
+ -12.9434 605.136 l 5
+ -0.789062 626.854 6.22168 617.551 8.80664 609.969 c 5
+ 25.2852 476.695 69.7227 152.396 94.5039 86.5518 c 4
+ 109.131 47.6885 138.8 31.4863 183.588 33.9307 c 4
+ 223.189 36.0918 216.613 -62.6582 190.669 -67.2109 c 4
+ 119.971 -79.6191 68.75 -34.6465 48.541 0 c 5
+ 32.6143 -76.3984 11.6875 -141.552 -23.0508 -142.271 c 4
+ -48.249 -142.793 -46.2441 -75.5703 -2.37598 -51.2432 c 4
+-188.7 -2.27246 m 4
+ -196.886 -17.8223 -203.824 -23.1514 -213.652 -25.793 c 4
+ -257.396 -34.2461 -321.099 -30.0977 -332.923 -19.8594 c 4
+ -340.608 -13.2051 -355.346 3.73438 -348.926 22.5488 c 4
+ -343.586 38.1963 -326.981 80.207 -323.647 89.2803 c 4
+ -317.572 105.815 -306.528 117.443 -306.528 117.443 c 5
+ -272.995 150.887 -231.362 176.198 -188.715 196.478 c 5
+ -194.595 235.326 l 6
+ -195.253 240.986 -196.523 253.708 -193.965 263.133 c 5
+ -174.503 308.242 l 5
+ -161.446 322.064 -161.705 303.937 -158.013 295.288 c 5
+ -151.139 247.845 -132.485 146.926 -112.439 72.9326 c 4
+ -92.959 1.02344 -61.8291 -71.9863 9.3252 -43.916 c 4
+ 48.8389 -28.3271 16.3203 -126.969 -10.2305 -139.234 c 4
+ -83.9082 -173.271 -126.378 -85.7334 -166.576 63.1152 c 5
+ -171.237 40.4268 -177.937 18.2617 -188.7 -2.27246 c 4
+-293.646 69.1182 m 5
+ -266.218 47.4336 -212.335 57.248 -189.525 66.0811 c 4
+ -162.084 76.708 -176.587 123.458 -181.686 145.823 c 5
+ -233.224 131.407 -272.227 107.561 -293.646 69.1182 c 5
+EndSplineSet
+Fore
+SplineSet
+-2.37598 -51.2432 m 0
+ 25.9697 -35.5254 37.3535 24.667 29.9111 70.0352 c 0
+ 3.93359 228.394 -12.2402 341.664 -35.498 509.278 c 0
+ -37.3789 522.832 -40.2607 532.351 -34.9609 552.508 c 1
+ -12.9434 605.136 l 1
+ -0.789062 626.854 6.22168 617.551 8.80664 609.969 c 1
+ 25.2852 476.695 69.7227 152.396 94.5039 86.5518 c 0
+ 109.131 47.6885 138.8 31.4863 183.588 33.9307 c 0
+ 223.189 36.0918 216.613 -62.6582 190.669 -67.2109 c 0
+ 119.971 -79.6191 68.75 -34.6465 48.541 0 c 1
+ 32.6143 -76.3984 11.6875 -141.552 -23.0508 -142.271 c 0
+ -48.249 -142.793 -46.2441 -75.5703 -2.37598 -51.2432 c 0
+EndSplineSet
+EndChar
+
+StartChar: heh.fina_KafLamHehIsol
+Encoding: 65865 -1 355
+Width: 376
+VWidth: 0
+AnchorPoint: "cursive" 374 -94 entry 0
+LayerCount: 2
+Back
+SplineSet
+431.342 341.104 m 4
+ 454.882 466.784 892.604 602.696 1009.08 646.334 c 4
+ 1019.51 649.751 1028.78 646.908 1024.89 635.144 c 6
+ 1008.2 582.343 l 6
+ 1005.92 573.901 1003.19 567.93 995.014 564.91 c 4
+ 836.126 506.237 520.656 411.011 467.033 342.183 c 4
+ 463.464 337.602 464.483 337.228 468.983 335.447 c 4
+ 590.781 287.266 711.286 197.52 710.166 104.581 c 4
+ 708.678 -17.3223 620.489 -65.8945 561.559 -68.1855 c 4
+ 517.875 -69.8838 520.624 31.749 555.174 33.3369 c 4
+ 613.908 36.0352 659.482 63.6641 690.754 94.3066 c 4
+ 693.293 96.8047 693.318 97.167 692.625 99.4629 c 4
+ 640.683 188.465 500.092 243.816 437.369 262.818 c 4
+ 406.343 272.218 425.935 312.23 431.342 341.104 c 4
+377.624 -51.2432 m 4
+ 405.97 -35.5254 417.354 24.667 409.911 70.0352 c 4
+ 383.934 228.394 367.76 341.664 344.502 509.278 c 4
+ 342.621 522.832 339.739 532.351 345.039 552.508 c 5
+ 367.057 605.136 l 5
+ 379.211 626.854 386.222 617.551 388.807 609.969 c 5
+ 405.285 476.695 449.723 152.396 474.504 86.5518 c 4
+ 489.131 47.6885 518.8 31.4863 563.588 33.9307 c 4
+ 603.189 36.0918 596.613 -62.6582 570.669 -67.2109 c 4
+ 499.971 -79.6191 448.75 -34.6465 428.541 0 c 5
+ 412.614 -76.3984 391.688 -141.552 356.949 -142.271 c 4
+ 331.751 -142.793 333.756 -75.5703 377.624 -51.2432 c 4
+191.3 -2.27246 m 4
+ 183.114 -17.8223 176.176 -23.1514 166.348 -25.793 c 4
+ 122.604 -34.2461 58.9014 -30.0977 47.0771 -19.8594 c 4
+ 39.3916 -13.2051 24.6543 3.73438 31.0742 22.5488 c 4
+ 36.4141 38.1963 53.0186 80.207 56.3525 89.2803 c 4
+ 62.4277 105.815 73.4717 117.443 73.4717 117.443 c 5
+ 107.005 150.887 148.638 176.198 191.285 196.478 c 5
+ 185.405 235.326 l 6
+ 184.747 240.986 183.477 253.708 186.035 263.133 c 5
+ 205.497 308.242 l 5
+ 218.554 322.064 218.295 303.937 221.987 295.288 c 5
+ 228.861 247.845 247.515 146.926 267.561 72.9326 c 4
+ 287.041 1.02344 318.171 -71.9863 389.325 -43.916 c 4
+ 428.839 -28.3271 396.32 -126.969 369.77 -139.234 c 4
+ 296.092 -173.271 253.622 -85.7334 213.424 63.1152 c 5
+ 208.763 40.4268 202.063 18.2617 191.3 -2.27246 c 4
+86.3535 69.1182 m 5
+ 113.782 47.4336 167.665 57.248 190.475 66.0811 c 4
+ 217.916 76.708 203.413 123.458 198.314 145.823 c 5
+ 146.776 131.407 107.773 107.561 86.3535 69.1182 c 5
+EndSplineSet
+Fore
+SplineSet
+191.3 -2.27246 m 0
+ 183.114 -17.8223 176.176 -23.1514 166.348 -25.793 c 0
+ 122.604 -34.2461 58.9014 -30.0977 47.0771 -19.8594 c 0
+ 39.3916 -13.2051 24.6543 3.73438 31.0742 22.5488 c 0
+ 36.4141 38.1963 53.0186 80.207 56.3525 89.2803 c 0
+ 62.4277 105.815 73.4717 117.443 73.4717 117.443 c 1
+ 107.005 150.887 148.638 176.198 191.285 196.478 c 1
+ 185.405 235.326 l 2
+ 184.747 240.986 183.477 253.708 186.035 263.133 c 1
+ 205.497 308.242 l 1
+ 218.554 322.064 218.295 303.937 221.987 295.288 c 1
+ 228.861 247.845 247.515 146.926 267.561 72.9326 c 0
+ 287.041 1.02344 318.171 -71.9863 389.325 -43.916 c 0
+ 428.839 -28.3271 396.32 -126.969 369.77 -139.234 c 0
+ 296.092 -173.271 253.622 -85.7334 213.424 63.1152 c 1
+ 208.763 40.4268 202.063 18.2617 191.3 -2.27246 c 0
+86.3535 69.1182 m 1
+ 113.782 47.4336 167.665 57.248 190.475 66.0811 c 0
+ 217.916 76.708 203.413 123.458 198.314 145.823 c 1
+ 146.776 131.407 107.773 107.561 86.3535 69.1182 c 1
 EndSplineSet
 EndChar
 EndChars
