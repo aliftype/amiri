@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1273746142
+ModificationTime: 1273775154
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -1049,9 +1049,9 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65640 24 10
+WinInfo: 1608 24 10
 AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
-BeginChars: 65866 356
+BeginChars: 65866 473
 
 StartChar: alef.fina.alt
 Encoding: 65536 -1 0
@@ -19081,6 +19081,1175 @@ SplineSet
  217.916 76.708 203.413 123.458 198.314 145.823 c 1
  146.776 131.407 107.773 107.561 86.3535 69.1182 c 1
 EndSplineSet
+EndChar
+
+StartChar: uni0671
+Encoding: 1649 1649 356
+Width: 168
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
+EndChar
+
+StartChar: uni0673
+Encoding: 1651 1651 357
+Width: 168
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
+EndChar
+
+StartChar: uni0675
+Encoding: 1653 1653 358
+Width: 168
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
+EndChar
+
+StartChar: uni066E
+Encoding: 1646 1646 359
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni066F
+Encoding: 1647 1647 360
+Width: 580
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
+EndChar
+
+StartChar: uni0679
+Encoding: 1657 1657 361
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni067A
+Encoding: 1658 1658 362
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni067B
+Encoding: 1659 1659 363
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni067C
+Encoding: 1660 1660 364
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni067D
+Encoding: 1661 1661 365
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni067E
+Encoding: 1662 1662 366
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni067F
+Encoding: 1663 1663 367
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0680
+Encoding: 1664 1664 368
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0750
+Encoding: 1872 1872 369
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0751
+Encoding: 1873 1873 370
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0752
+Encoding: 1874 1874 371
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0753
+Encoding: 1875 1875 372
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0754
+Encoding: 1876 1876 373
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0755
+Encoding: 1877 1877 374
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0756
+Encoding: 1878 1878 375
+Width: 834
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+EndChar
+
+StartChar: uni0676
+Encoding: 1654 1654 376
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni0677
+Encoding: 1655 1655 377
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06C4
+Encoding: 1732 1732 378
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06C5
+Encoding: 1733 1733 379
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06C6
+Encoding: 1734 1734 380
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06C7
+Encoding: 1735 1735 381
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06C8
+Encoding: 1736 1736 382
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06C9
+Encoding: 1737 1737 383
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06CA
+Encoding: 1738 1738 384
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06CB
+Encoding: 1739 1739 385
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni0678
+Encoding: 1656 1656 386
+Width: 658
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+EndChar
+
+StartChar: uni06CC
+Encoding: 1740 1740 387
+Width: 658
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+EndChar
+
+StartChar: uni06CE
+Encoding: 1742 1742 388
+Width: 658
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+EndChar
+
+StartChar: uni06D0
+Encoding: 1744 1744 389
+Width: 658
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+EndChar
+
+StartChar: uni06D1
+Encoding: 1745 1745 390
+Width: 658
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+EndChar
+
+StartChar: uni06CF
+Encoding: 1743 1743 391
+Width: 438
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+EndChar
+
+StartChar: uni06B9
+Encoding: 1721 1721 392
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni06BA
+Encoding: 1722 1722 393
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni06BB
+Encoding: 1723 1723 394
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni06BC
+Encoding: 1724 1724 395
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni06BD
+Encoding: 1725 1725 396
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni06C0
+Encoding: 1728 1728 397
+Width: 266
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
+EndChar
+
+StartChar: uni06C1
+Encoding: 1729 1729 398
+Width: 266
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
+EndChar
+
+StartChar: uni06C2
+Encoding: 1730 1730 399
+Width: 266
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
+EndChar
+
+StartChar: uni06C3
+Encoding: 1731 1731 400
+Width: 266
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
+EndChar
+
+StartChar: uni0767
+Encoding: 1895 1895 401
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni0768
+Encoding: 1896 1896 402
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni0769
+Encoding: 1897 1897 403
+Width: 462
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+EndChar
+
+StartChar: uni0681
+Encoding: 1665 1665 404
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0682
+Encoding: 1666 1666 405
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0683
+Encoding: 1667 1667 406
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0684
+Encoding: 1668 1668 407
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0685
+Encoding: 1669 1669 408
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0686
+Encoding: 1670 1670 409
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0687
+Encoding: 1671 1671 410
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0757
+Encoding: 1879 1879 411
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni0758
+Encoding: 1880 1880 412
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni06A1
+Encoding: 1697 1697 413
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni06A2
+Encoding: 1698 1698 414
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni06A3
+Encoding: 1699 1699 415
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni06A4
+Encoding: 1700 1700 416
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni06A5
+Encoding: 1701 1701 417
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni06A6
+Encoding: 1702 1702 418
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni0760
+Encoding: 1888 1888 419
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni0761
+Encoding: 1889 1889 420
+Width: 884
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+EndChar
+
+StartChar: uni06A7
+Encoding: 1703 1703 421
+Width: 580
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
+EndChar
+
+StartChar: uni06A8
+Encoding: 1704 1704 422
+Width: 580
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
+EndChar
+
+StartChar: uni06B5
+Encoding: 1717 1717 423
+Width: 502
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
+EndChar
+
+StartChar: uni06B6
+Encoding: 1718 1718 424
+Width: 502
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
+EndChar
+
+StartChar: uni06B7
+Encoding: 1719 1719 425
+Width: 502
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
+EndChar
+
+StartChar: uni06B8
+Encoding: 1720 1720 426
+Width: 502
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
+EndChar
+
+StartChar: uni076A
+Encoding: 1898 1898 427
+Width: 502
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
+EndChar
+
+StartChar: uni0691
+Encoding: 1681 1681 428
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0692
+Encoding: 1682 1682 429
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0693
+Encoding: 1683 1683 430
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0694
+Encoding: 1684 1684 431
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0695
+Encoding: 1685 1685 432
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0696
+Encoding: 1686 1686 433
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0697
+Encoding: 1687 1687 434
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0698
+Encoding: 1688 1688 435
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni0699
+Encoding: 1689 1689 436
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni075B
+Encoding: 1883 1883 437
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni076B
+Encoding: 1899 1899 438
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni076C
+Encoding: 1900 1900 439
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni06AC
+Encoding: 1708 1708 440
+Width: 556
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
+EndChar
+
+StartChar: uni06AD
+Encoding: 1709 1709 441
+Width: 556
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
+EndChar
+
+StartChar: uni06AE
+Encoding: 1710 1710 442
+Width: 556
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
+EndChar
+
+StartChar: uni06A0
+Encoding: 1696 1696 443
+Width: 572
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 5 -1 N 1 0 0 1 0.138636 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
+EndChar
+
+StartChar: uni075D
+Encoding: 1885 1885 444
+Width: 572
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 5 -1 N 1 0 0 1 0.138636 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
+EndChar
+
+StartChar: uni075E
+Encoding: 1886 1886 445
+Width: 572
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 5 -1 N 1 0 0 1 0.138636 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
+EndChar
+
+StartChar: uni075F
+Encoding: 1887 1887 446
+Width: 572
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 5 -1 N 1 0 0 1 0.138636 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
+EndChar
+
+StartChar: uni069A
+Encoding: 1690 1690 447
+Width: 887
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+EndChar
+
+StartChar: uni069B
+Encoding: 1691 1691 448
+Width: 887
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+EndChar
+
+StartChar: uni069C
+Encoding: 1692 1692 449
+Width: 887
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+EndChar
+
+StartChar: uni075C
+Encoding: 1884 1884 450
+Width: 887
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+EndChar
+
+StartChar: uni076D
+Encoding: 1901 1901 451
+Width: 887
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+EndChar
+
+StartChar: uni06BF
+Encoding: 1727 1727 452
+Width: 666
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+EndChar
+
+StartChar: uni06D5
+Encoding: 1749 1749 453
+Width: 266
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
+EndChar
+
+StartChar: uni0688
+Encoding: 1672 1672 454
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni0689
+Encoding: 1673 1673 455
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni068A
+Encoding: 1674 1674 456
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni068B
+Encoding: 1675 1675 457
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni068C
+Encoding: 1676 1676 458
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni068D
+Encoding: 1677 1677 459
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni068E
+Encoding: 1678 1678 460
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni068F
+Encoding: 1679 1679 461
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni0690
+Encoding: 1680 1680 462
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni0759
+Encoding: 1881 1881 463
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni075A
+Encoding: 1882 1882 464
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: uni069D
+Encoding: 1693 1693 465
+Width: 1115
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
+EndChar
+
+StartChar: uni069E
+Encoding: 1694 1694 466
+Width: 1115
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+EndChar
+
+StartChar: uni069F
+Encoding: 1695 1695 467
+Width: 704
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 68 -1 N 1 0 0 1 -17.8718 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
+EndChar
+
+StartChar: uni06FA
+Encoding: 1786 1786 468
+Width: 887
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+EndChar
+
+StartChar: uni06FB
+Encoding: 1787 1787 469
+Width: 1115
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
+EndChar
+
+StartChar: uni06FC
+Encoding: 1788 1788 470
+Width: 572
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 5 -1 N 1 0 0 1 0.138636 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
+EndChar
+
+StartChar: uni06EF
+Encoding: 1775 1775 471
+Width: 338
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+EndChar
+
+StartChar: uni06EE
+Encoding: 1774 1774 472
+Width: 346
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 EndChars
 EndSplineFont
