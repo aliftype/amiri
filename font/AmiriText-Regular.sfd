@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1273776858
+ModificationTime: 1273920577
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -190,7 +190,7 @@ EndFPST
 ChainSub2: coverage "'calt' Finjani subtable"  0 0 0 1
  1 0 1
   Coverage: 26 ayn.init haa.init haa.medi
-  FCoverage: 77 alef.fina lam.fina lam.medi dal.fina baa.medi_BaaRaaFina baa.medi_BaaNoonFina
+  FCoverage: 229 alef.fina dal.fina heh.fina lam.fina lam.medi lam.medi_LamMeemFina lam.medi_LamWawFina lam.medi_LamHehFina lam.medi_LamYaaFina lam.medi_LamQafFina baa.medi_BaaRaaFina lam.medi_LamAlefFina lam.medi_LamMeemMedi baa.medi_BaaNoonFina
  1
   SeqLookup: 0 "Finjani" 
 EndFPST
