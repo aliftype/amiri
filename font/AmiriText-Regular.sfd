@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 637949]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1274122723
+ModificationTime: 1274124118
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -158,9 +157,19 @@ Lookup: 1 0 0 "Finjani"  {"Finjani subtable"  } []
 Lookup: 6 8 0 "'calt' Finjani"  {"'calt' Finjani subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaYaaFina"  {"BaaYaaFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaYaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "HighBaa"  {"HighBaa subtable"  } []
+Lookup: 6 0 0 "'calt' HighBaa"  {"'calt' HighBaa subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 0 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: coverage "'calt' HighBaa subtable"  0 0 0 1
+ 1 1 1
+  Coverage: 8 baa.medi
+  BCoverage: 28 seen.init seen.medi baa.medi
+  FCoverage: 54 seen.medi seen.fina baa.medi baa.fina seen.medi_PreYaa
+ 1
+  SeqLookup: 0 "HighBaa" 
+EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  0 0 0 1
  String: 26 kaf.init lam.medi heh.fina
  BString: 0 
@@ -1050,9 +1059,9 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65472 24 10
+WinInfo: 65640 24 10
 AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
-BeginChars: 65866 473
+BeginChars: 65867 473
 
 StartChar: alef.fina.alt
 Encoding: 65536 -1 0
@@ -1364,34 +1373,8 @@ Substitution2: "'init' Initial Forms in Arabic lookup 1 subtable" baa.init
 Colour: ffff00
 EndChar
 
-StartChar: baa.medi.alt
-Encoding: 65552 -1 10
-Width: 0
-VWidth: 0
-LayerCount: 2
-Fore
-SplineSet
-76.457 365.885 m 0
- 81.208 372.997 87.1104 364.711 88.9941 356.955 c 0
- 106.355 285.508 124.107 177.321 143.956 133.855 c 0
- 153.106 113.82 171.006 94.7734 189.729 90.0107 c 0
- 206.271 85.8037 215.262 79.8799 209.582 48.5469 c 0
- 203.902 17.2148 196.181 -1.4707 189.892 0.100586 c 0
- 159.247 7.75977 112.026 32.4482 87.7803 127.21 c 0
- 86.9062 130.649 85.751 131.552 84.6416 128.012 c 0
- 68.9395 87.6143 46.1914 7.0332 0.275391 -0.0722656 c 0
- -10.916 -1.80469 -20.1904 44.959 -22.5176 60.332 c 0
- -24.8438 75.7051 -16.8926 86.5986 -0.0751953 90.0029 c 0
- 27.4414 95.5732 61.2148 117.787 78.9238 151.592 c 0
- 80.3076 154.233 80.459 155.802 79.7354 158.865 c 0
- 71.6006 193.284 59.4053 255.548 50.9932 307.594 c 0
- 50.248 312.208 50.0059 316.983 52.1426 321.437 c 0
- 58.1992 334.062 67.5527 352.558 76.457 365.885 c 0
-EndSplineSet
-EndChar
-
 StartChar: baa.medi
-Encoding: 65553 -1 11
+Encoding: 65553 -1 10
 Width: 208
 VWidth: 0
 LayerCount: 2
@@ -1410,6 +1393,7 @@ SplineSet
  105.554 166.864 122.667 166.342 124.984 157.153 c 0
  136.731 110.58 151.647 102.085 204.151 90.8564 c 0
 EndSplineSet
+Substitution2: "HighBaa subtable" baa.medi_High
 Substitution2: "BaaBaaAltInit subtable" baa.medi_BaaBaaAltInit
 Substitution2: "BaaYaaFina subtable" baa.medi_BaaYaaFina
 Substitution2: "BaaNoonFina subtable" baa.medi_BaaNoonFina
@@ -1429,7 +1413,7 @@ Colour: ffff00
 EndChar
 
 StartChar: colon
-Encoding: 58 58 12
+Encoding: 58 58 11
 Width: 160
 VWidth: 0
 LayerCount: 2
@@ -1449,7 +1433,7 @@ EndSplineSet
 EndChar
 
 StartChar: dal.fina
-Encoding: 65555 -1 13
+Encoding: 65555 -1 12
 Width: 410
 VWidth: 0
 LayerCount: 2
@@ -1481,7 +1465,7 @@ Colour: ffff00
 EndChar
 
 StartChar: dal.isol
-Encoding: 65556 -1 14
+Encoding: 65556 -1 13
 Width: 346
 VWidth: 0
 LayerCount: 2
@@ -1507,7 +1491,7 @@ Colour: ffff00
 EndChar
 
 StartChar: dash
-Encoding: 65557 -1 15
+Encoding: 65557 -1 14
 Width: 676
 VWidth: 0
 LayerCount: 2
@@ -1522,7 +1506,7 @@ EndSplineSet
 EndChar
 
 StartChar: dot.double
-Encoding: 65558 -1 16
+Encoding: 65558 -1 15
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1550,7 +1534,7 @@ EndSplineSet
 EndChar
 
 StartChar: dot.single
-Encoding: 65559 -1 17
+Encoding: 65559 -1 16
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1569,7 +1553,7 @@ EndSplineSet
 EndChar
 
 StartChar: dot.tripple
-Encoding: 65560 -1 18
+Encoding: 65560 -1 17
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1606,7 +1590,7 @@ EndSplineSet
 EndChar
 
 StartChar: faa.fina
-Encoding: 65561 -1 19
+Encoding: 65561 -1 18
 Width: 944
 VWidth: 0
 LayerCount: 2
@@ -1634,7 +1618,7 @@ Colour: ffff00
 EndChar
 
 StartChar: faa.init
-Encoding: 65562 -1 20
+Encoding: 65562 -1 19
 Width: 258
 VWidth: 0
 LayerCount: 2
@@ -1667,7 +1651,7 @@ Colour: ffff00
 EndChar
 
 StartChar: faa.isol
-Encoding: 65563 -1 21
+Encoding: 65563 -1 20
 Width: 884
 VWidth: 0
 LayerCount: 2
@@ -1700,7 +1684,7 @@ Colour: ffff00
 EndChar
 
 StartChar: faa.medi
-Encoding: 65564 -1 22
+Encoding: 65564 -1 21
 Width: 349
 VWidth: 0
 LayerCount: 2
@@ -1728,7 +1712,7 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.fina
-Encoding: 65565 -1 23
+Encoding: 65565 -1 22
 Width: 598
 VWidth: 0
 LayerCount: 2
@@ -1765,7 +1749,7 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.init
-Encoding: 65567 -1 24
+Encoding: 65567 -1 23
 Width: 602
 VWidth: 0
 LayerCount: 2
@@ -1792,7 +1776,7 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.isol
-Encoding: 65568 -1 25
+Encoding: 65568 -1 24
 Width: 666
 VWidth: 0
 LayerCount: 2
@@ -1824,7 +1808,7 @@ Colour: ffff00
 EndChar
 
 StartChar: haa.medi
-Encoding: 65570 -1 26
+Encoding: 65570 -1 25
 Width: 586
 VWidth: 0
 LayerCount: 2
@@ -1875,7 +1859,7 @@ Colour: ffff00
 EndChar
 
 StartChar: hamza.small
-Encoding: 65571 -1 27
+Encoding: 65571 -1 26
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -1900,7 +1884,7 @@ EndSplineSet
 EndChar
 
 StartChar: hamza
-Encoding: 65572 -1 28
+Encoding: 65572 -1 27
 Width: 266
 VWidth: 0
 LayerCount: 2
@@ -1927,7 +1911,7 @@ EndSplineSet
 EndChar
 
 StartChar: heh.fina
-Encoding: 65573 -1 29
+Encoding: 65573 -1 28
 Width: 318
 VWidth: 0
 LayerCount: 2
@@ -1964,7 +1948,7 @@ Colour: ffff00
 EndChar
 
 StartChar: heh.init
-Encoding: 65574 -1 30
+Encoding: 65574 -1 29
 Width: 420
 VWidth: 0
 LayerCount: 2
@@ -2002,7 +1986,7 @@ Colour: ffff00
 EndChar
 
 StartChar: heh.isol
-Encoding: 65575 -1 31
+Encoding: 65575 -1 30
 Width: 266
 VWidth: 0
 LayerCount: 2
@@ -2029,7 +2013,7 @@ Colour: ffff00
 EndChar
 
 StartChar: heh.medi
-Encoding: 65576 -1 32
+Encoding: 65576 -1 31
 Width: 392
 VWidth: 0
 LayerCount: 2
@@ -2070,7 +2054,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.fina
-Encoding: 65577 -1 33
+Encoding: 65577 -1 32
 Width: 760
 VWidth: 0
 LayerCount: 2
@@ -2116,7 +2100,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.init.alt
-Encoding: 65578 -1 34
+Encoding: 65578 -1 33
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2151,7 +2135,7 @@ EndSplineSet
 EndChar
 
 StartChar: kaf.init
-Encoding: 65579 -1 35
+Encoding: 65579 -1 34
 Width: 198
 VWidth: 0
 LayerCount: 2
@@ -2194,7 +2178,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.isol
-Encoding: 65580 -1 36
+Encoding: 65580 -1 35
 Width: 556
 VWidth: 0
 LayerCount: 2
@@ -2239,7 +2223,7 @@ Colour: ffff00
 EndChar
 
 StartChar: kaf.medi
-Encoding: 65581 -1 37
+Encoding: 65581 -1 36
 Width: 371
 VWidth: 0
 LayerCount: 2
@@ -2278,7 +2262,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.fina
-Encoding: 65583 -1 38
+Encoding: 65583 -1 37
 Width: 582
 VWidth: 0
 LayerCount: 2
@@ -2310,7 +2294,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.init
-Encoding: 65584 -1 39
+Encoding: 65584 -1 38
 Width: 152
 VWidth: 0
 LayerCount: 2
@@ -2351,7 +2335,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.isol
-Encoding: 65585 -1 40
+Encoding: 65585 -1 39
 Width: 502
 VWidth: 0
 LayerCount: 2
@@ -2387,7 +2371,7 @@ Colour: ffff00
 EndChar
 
 StartChar: lam.medi
-Encoding: 65586 -1 41
+Encoding: 65586 -1 40
 Width: 178
 VWidth: 0
 LayerCount: 2
@@ -2446,7 +2430,7 @@ Colour: ffff00
 EndChar
 
 StartChar: madda
-Encoding: 65587 -1 42
+Encoding: 65587 -1 41
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2466,7 +2450,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.fina.alt
-Encoding: 65588 -1 43
+Encoding: 65588 -1 42
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2496,7 +2480,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.fina
-Encoding: 65589 -1 44
+Encoding: 65589 -1 43
 Width: 460
 VWidth: 0
 LayerCount: 2
@@ -2531,7 +2515,7 @@ Colour: ffff00
 EndChar
 
 StartChar: meem.init
-Encoding: 65590 -1 45
+Encoding: 65590 -1 44
 Width: 350
 VWidth: 0
 LayerCount: 2
@@ -2562,7 +2546,7 @@ Colour: ffff00
 EndChar
 
 StartChar: meem.isol
-Encoding: 65591 -1 46
+Encoding: 65591 -1 45
 Width: 352
 VWidth: 0
 LayerCount: 2
@@ -2595,7 +2579,7 @@ Colour: ffff00
 EndChar
 
 StartChar: meem.medi
-Encoding: 65592 -1 47
+Encoding: 65592 -1 46
 Width: 464
 VWidth: 0
 LayerCount: 2
@@ -2653,7 +2637,7 @@ Colour: ffff00
 EndChar
 
 StartChar: noon.fina.alt
-Encoding: 65593 -1 48
+Encoding: 65593 -1 47
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2680,7 +2664,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.fina
-Encoding: 65594 -1 49
+Encoding: 65594 -1 48
 Width: 553
 VWidth: 0
 LayerCount: 2
@@ -2710,7 +2694,7 @@ Colour: ffff00
 EndChar
 
 StartChar: noon.isol.alt
-Encoding: 65595 -1 50
+Encoding: 65595 -1 49
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2734,7 +2718,7 @@ EndSplineSet
 EndChar
 
 StartChar: noon.isol
-Encoding: 65596 -1 51
+Encoding: 65596 -1 50
 Width: 462
 VWidth: 0
 LayerCount: 2
@@ -2762,7 +2746,7 @@ Colour: ffff00
 EndChar
 
 StartChar: qaf.fina
-Encoding: 65597 -1 52
+Encoding: 65597 -1 51
 Width: 546
 VWidth: 0
 LayerCount: 2
@@ -2796,7 +2780,7 @@ Colour: ffff00
 EndChar
 
 StartChar: qaf.isol
-Encoding: 65598 -1 53
+Encoding: 65598 -1 52
 Width: 580
 VWidth: 0
 LayerCount: 2
@@ -2827,7 +2811,7 @@ Colour: ffff00
 EndChar
 
 StartChar: question-mark
-Encoding: 65599 -1 54
+Encoding: 65599 -1 53
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2861,7 +2845,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina.alt2
-Encoding: 65601 -1 55
+Encoding: 65601 -1 54
 Width: 0
 VWidth: 0
 LayerCount: 2
@@ -2884,7 +2868,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina
-Encoding: 65602 -1 56
+Encoding: 65602 -1 55
 Width: 318
 VWidth: -60
 LayerCount: 2
@@ -2920,7 +2904,7 @@ Colour: ffff00
 EndChar
 
 StartChar: raa.isol
-Encoding: 65603 -1 57
+Encoding: 65603 -1 56
 Width: 338
 VWidth: 0
 LayerCount: 2
@@ -2947,7 +2931,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.fina
-Encoding: 65604 -1 58
+Encoding: 65604 -1 57
 Width: 1130
 VWidth: 0
 LayerCount: 2
@@ -3021,7 +3005,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.init
-Encoding: 65606 -1 59
+Encoding: 65606 -1 58
 Width: 665
 VWidth: 0
 LayerCount: 2
@@ -3056,7 +3040,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.isol
-Encoding: 65607 -1 60
+Encoding: 65607 -1 59
 Width: 1115
 VWidth: 0
 LayerCount: 2
@@ -3096,7 +3080,7 @@ Colour: ffff00
 EndChar
 
 StartChar: sad.medi
-Encoding: 65608 -1 61
+Encoding: 65608 -1 60
 Width: 724
 VWidth: 0
 LayerCount: 2
@@ -3159,7 +3143,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.fina
-Encoding: 65609 -1 62
+Encoding: 65609 -1 61
 Width: 1002
 VWidth: 0
 LayerCount: 2
@@ -3200,7 +3184,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.init
-Encoding: 65611 -1 63
+Encoding: 65611 -1 62
 Width: 524
 VWidth: 0
 LayerCount: 2
@@ -3236,7 +3220,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.isol
-Encoding: 65612 -1 64
+Encoding: 65612 -1 63
 Width: 887
 VWidth: 0
 LayerCount: 2
@@ -3277,7 +3261,7 @@ Colour: ffff00
 EndChar
 
 StartChar: seen.medi
-Encoding: 65614 -1 65
+Encoding: 65614 -1 64
 Width: 516
 VWidth: 0
 LayerCount: 2
@@ -3315,7 +3299,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.fina
-Encoding: 65615 -1 66
+Encoding: 65615 -1 65
 Width: 691
 VWidth: 0
 LayerCount: 2
@@ -3358,7 +3342,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.init
-Encoding: 65616 -1 67
+Encoding: 65616 -1 66
 Width: 534
 VWidth: 0
 LayerCount: 2
@@ -3398,7 +3382,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.isol
-Encoding: 65617 -1 68
+Encoding: 65617 -1 67
 Width: 704
 VWidth: 0
 LayerCount: 2
@@ -3438,7 +3422,7 @@ Colour: ffff00
 EndChar
 
 StartChar: taa.medi
-Encoding: 65618 -1 69
+Encoding: 65618 -1 68
 Width: 553
 VWidth: 0
 LayerCount: 2
@@ -3512,7 +3496,7 @@ Colour: ffff00
 EndChar
 
 StartChar: waw.fina
-Encoding: 65619 -1 70
+Encoding: 65619 -1 69
 Width: 434
 VWidth: 0
 LayerCount: 2
@@ -3549,7 +3533,7 @@ Colour: ffff00
 EndChar
 
 StartChar: waw.isol
-Encoding: 65620 -1 71
+Encoding: 65620 -1 70
 Width: 438
 VWidth: 0
 LayerCount: 2
@@ -3577,7 +3561,7 @@ Colour: ffff00
 EndChar
 
 StartChar: yaa.fina
-Encoding: 65622 -1 72
+Encoding: 65622 -1 71
 Width: 526
 VWidth: -142
 LayerCount: 2
@@ -3619,7 +3603,7 @@ Colour: ffff00
 EndChar
 
 StartChar: yaa.isol
-Encoding: 65623 -1 73
+Encoding: 65623 -1 72
 Width: 658
 VWidth: 0
 LayerCount: 2
@@ -3650,17 +3634,17 @@ Colour: ffff00
 EndChar
 
 StartChar: uni0621
-Encoding: 1569 1569 74
+Encoding: 1569 1569 73
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 28 -1 N 1 0 0 1 -0.29786 0 3
+Refer: 27 -1 N 1 0 0 1 -0.29786 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" hamza
 EndChar
 
 StartChar: uni0622
-Encoding: 1570 1570 75
+Encoding: 1570 1570 74
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3670,7 +3654,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0623
-Encoding: 1571 1571 76
+Encoding: 1571 1571 75
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3680,17 +3664,17 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0624
-Encoding: 1572 1572 77
+Encoding: 1572 1572 76
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni0625
-Encoding: 1573 1573 78
+Encoding: 1573 1573 77
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3700,17 +3684,17 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0626
-Encoding: 1574 1574 79
+Encoding: 1574 1574 78
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni0627
-Encoding: 1575 1575 80
+Encoding: 1575 1575 79
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -3720,7 +3704,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0628
-Encoding: 1576 1576 81
+Encoding: 1576 1576 80
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -3730,17 +3714,17 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0629
-Encoding: 1577 1577 82
+Encoding: 1577 1577 81
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni062A
-Encoding: 1578 1578 83
+Encoding: 1578 1578 82
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -3750,7 +3734,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni062B
-Encoding: 1579 1579 84
+Encoding: 1579 1579 83
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -3760,137 +3744,137 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni062C
-Encoding: 1580 1580 85
+Encoding: 1580 1580 84
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni062D
-Encoding: 1581 1581 86
+Encoding: 1581 1581 85
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni062E
-Encoding: 1582 1582 87
+Encoding: 1582 1582 86
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni062F
-Encoding: 1583 1583 88
+Encoding: 1583 1583 87
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0630
-Encoding: 1584 1584 89
+Encoding: 1584 1584 88
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0631
-Encoding: 1585 1585 90
+Encoding: 1585 1585 89
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0632
-Encoding: 1586 1586 91
+Encoding: 1586 1586 90
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0633
-Encoding: 1587 1587 92
+Encoding: 1587 1587 91
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni0634
-Encoding: 1588 1588 93
+Encoding: 1588 1588 92
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni0635
-Encoding: 1589 1589 94
+Encoding: 1589 1589 93
 Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+Refer: 59 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
 
 StartChar: uni0636
-Encoding: 1590 1590 95
+Encoding: 1590 1590 94
 Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+Refer: 59 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
 
 StartChar: uni0637
-Encoding: 1591 1591 96
+Encoding: 1591 1591 95
 Width: 704
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 68 -1 N 1 0 0 1 -17.8718 0 3
+Refer: 67 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
 
 StartChar: uni0638
-Encoding: 1592 1592 97
+Encoding: 1592 1592 96
 Width: 704
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 68 -1 N 1 0 0 1 -17.8718 0 3
+Refer: 67 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
 
 StartChar: uni0639
-Encoding: 1593 1593 98
+Encoding: 1593 1593 97
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -3900,7 +3884,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni063A
-Encoding: 1594 1594 99
+Encoding: 1594 1594 98
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -3910,107 +3894,107 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni0641
-Encoding: 1601 1601 100
+Encoding: 1601 1601 99
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni0642
-Encoding: 1602 1602 101
+Encoding: 1602 1602 100
 Width: 580
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+Refer: 52 -1 N 1 0 0 1 -2.57545 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
 EndChar
 
 StartChar: uni0643
-Encoding: 1603 1603 102
+Encoding: 1603 1603 101
 Width: 556
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+Refer: 35 -1 N 1 0 0 1 -1.32354 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
 EndChar
 
 StartChar: uni0644
-Encoding: 1604 1604 103
+Encoding: 1604 1604 102
 Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+Refer: 39 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni0645
-Encoding: 1605 1605 104
+Encoding: 1605 1605 103
 Width: 352
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 46 -1 N 1 0 0 1 -0.316127 0 3
+Refer: 45 -1 N 1 0 0 1 -0.316127 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" meem.isol
 EndChar
 
 StartChar: uni0646
-Encoding: 1606 1606 105
+Encoding: 1606 1606 104
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni0647
-Encoding: 1607 1607 106
+Encoding: 1607 1607 105
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni0648
-Encoding: 1608 1608 107
+Encoding: 1608 1608 106
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni0649
-Encoding: 1609 1609 108
+Encoding: 1609 1609 107
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni064A
-Encoding: 1610 1610 109
+Encoding: 1610 1610 108
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: ayn.init_AynMeemInit
-Encoding: 65624 -1 110
+Encoding: 65624 -1 109
 Width: 508
 VWidth: 0
 AnchorPoint: "cursive" 20 212 exit 0
@@ -4078,7 +4062,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_AynMeemInit
-Encoding: 65625 -1 111
+Encoding: 65625 -1 110
 Width: 309
 VWidth: 0
 AnchorPoint: "cursive" 170 212 entry 0
@@ -4142,7 +4126,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafHehIsol
-Encoding: 65626 -1 112
+Encoding: 65626 -1 111
 Width: 258
 VWidth: 0
 AnchorPoint: "cursive" -14 23 exit 0
@@ -4211,7 +4195,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_KafHehIsol
-Encoding: 65627 -1 113
+Encoding: 65627 -1 112
 Width: 322
 VWidth: 0
 AnchorPoint: "cursive" 307 23 entry 0
@@ -4283,7 +4267,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamDalIsol
-Encoding: 65628 -1 114
+Encoding: 65628 -1 113
 Width: 138
 VWidth: -60
 AnchorPoint: "cursive" -25 30 exit 0
@@ -4342,7 +4326,7 @@ Colour: ff00
 EndChar
 
 StartChar: dal.fina_LamDalIsol
-Encoding: 65629 -1 115
+Encoding: 65629 -1 114
 Width: 396
 VWidth: 0
 AnchorPoint: "cursive" 370 30 entry 0
@@ -4400,7 +4384,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafLamMedi
-Encoding: 65630 -1 116
+Encoding: 65630 -1 115
 Width: 489
 VWidth: 0
 AnchorPoint: "cursive" 2 41 exit 0
@@ -4458,7 +4442,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamMedi
-Encoding: 65631 -1 117
+Encoding: 65631 -1 116
 Width: 194
 VWidth: 0
 AnchorPoint: "cursive" 197 41 entry 0
@@ -4514,7 +4498,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamMeemFina
-Encoding: 65632 -1 118
+Encoding: 65632 -1 117
 Width: 236
 VWidth: 0
 AnchorPoint: "cursive" 1 50 exit 0
@@ -4568,7 +4552,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_LamMeemFina
-Encoding: 65633 -1 119
+Encoding: 65633 -1 118
 Width: 330
 VWidth: 0
 AnchorPoint: "cursive" 151 50 entry 0
@@ -4625,7 +4609,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemLamInit
-Encoding: 65634 -1 120
+Encoding: 65634 -1 119
 Width: 219
 VWidth: 0
 AnchorPoint: "cursive" -21 104 exit 0
@@ -4692,7 +4676,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemLamInit
-Encoding: 65635 -1 121
+Encoding: 65635 -1 120
 Width: 208
 VWidth: 0
 AnchorPoint: "cursive" 0 47 exit 0
@@ -4754,7 +4738,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafMeemLamInit
-Encoding: 65636 -1 122
+Encoding: 65636 -1 121
 Width: 191
 VWidth: 0
 AnchorPoint: "cursive" 190 47 entry 0
@@ -4819,7 +4803,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenMeemInit
-Encoding: 65637 -1 123
+Encoding: 65637 -1 122
 Width: 551
 VWidth: 0
 AnchorPoint: "cursive" 56 113 exit 0
@@ -4894,7 +4878,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_SeenMeemInit
-Encoding: 65638 -1 124
+Encoding: 65638 -1 123
 Width: 322
 VWidth: 0
 AnchorPoint: "cursive" 148 113 entry 0
@@ -4954,7 +4938,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemMedi
-Encoding: 65639 -1 125
+Encoding: 65639 -1 124
 Width: 598
 VWidth: 0
 AnchorPoint: "cursive" 57 207 exit 0
@@ -5023,7 +5007,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemMedi
-Encoding: 65640 -1 126
+Encoding: 65640 -1 125
 Width: 309
 VWidth: 0
 AnchorPoint: "cursive" 217 207 entry 0
@@ -5086,7 +5070,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.init_FaaMeemInit
-Encoding: 65641 -1 127
+Encoding: 65641 -1 126
 Width: 250
 VWidth: 0
 AnchorPoint: "cursive" 112 241 exit 0
@@ -5151,7 +5135,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_FaaMeemInit
-Encoding: 65642 -1 128
+Encoding: 65642 -1 127
 Width: 346
 VWidth: 0
 AnchorPoint: "cursive" 242 241 entry 0
@@ -5215,7 +5199,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaMeemAlefFina
-Encoding: 65643 -1 129
+Encoding: 65643 -1 128
 Width: 265
 VWidth: 0
 AnchorPoint: "cursive" -4 28 exit 0
@@ -5270,7 +5254,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaMeemAlefFina
-Encoding: 65644 -1 130
+Encoding: 65644 -1 129
 Width: 233
 VWidth: 0
 AnchorPoint: "cursive" 0 -40 exit 0
@@ -5326,7 +5310,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_BaaMeemAlefFina
-Encoding: 65645 -1 131
+Encoding: 65645 -1 130
 Width: 368
 VWidth: 0
 AnchorPoint: "cursive" 139 -40 entry 0
@@ -5385,7 +5369,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemInit
-Encoding: 65646 -1 132
+Encoding: 65646 -1 131
 Width: 198
 VWidth: 0
 AnchorPoint: "cursive" 60 213 exit 0
@@ -5452,7 +5436,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemInit
-Encoding: 65647 -1 133
+Encoding: 65647 -1 132
 Width: 294
 VWidth: 0
 AnchorPoint: "cursive" 218 213 entry 0
@@ -5514,7 +5498,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafYaaIsol
-Encoding: 65648 -1 134
+Encoding: 65648 -1 133
 Width: 177
 VWidth: 0
 AnchorPoint: "cursive" 23 125 exit 0
@@ -5586,7 +5570,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_KafYaaIsol
-Encoding: 65649 -1 135
+Encoding: 65649 -1 134
 Width: 640
 VWidth: 0
 AnchorPoint: "cursive" 413 125 entry 0
@@ -5652,7 +5636,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaRaaIsol
-Encoding: 65650 -1 136
+Encoding: 65650 -1 135
 Width: 214
 VWidth: 0
 AnchorPoint: "cursive" 52 135 exit 0
@@ -5697,7 +5681,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_BaaRaaIsol
-Encoding: 65651 -1 137
+Encoding: 65651 -1 136
 Width: 360
 VWidth: 0
 AnchorPoint: "cursive" 312 135 entry 0
@@ -5745,7 +5729,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaHehMedi
-Encoding: 65652 -1 138
+Encoding: 65652 -1 137
 Width: 314
 VWidth: 0
 AnchorPoint: "cursive" 2 11 exit 0
@@ -5796,7 +5780,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.medi_BaaHehMedi
-Encoding: 65653 -1 139
+Encoding: 65653 -1 138
 Width: 204
 VWidth: 0
 AnchorPoint: "cursive" 166 11 entry 0
@@ -5853,7 +5837,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHehIsol
-Encoding: 65654 -1 140
+Encoding: 65654 -1 139
 Width: 99
 VWidth: -60
 AnchorPoint: "cursive" -6 -1 exit 0
@@ -5922,7 +5906,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_LamHehIsol
-Encoding: 65655 -1 141
+Encoding: 65655 -1 140
 Width: 350
 VWidth: -60
 AnchorPoint: "cursive" 344 -1 entry 0
@@ -5997,7 +5981,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamLamAlefIsol
-Encoding: 65656 -1 142
+Encoding: 65656 -1 141
 Width: 110
 VWidth: 0
 AnchorPoint: "cursive" -3 60 exit 0
@@ -6064,7 +6048,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamLamAlefIsol
-Encoding: 65657 -1 143
+Encoding: 65657 -1 142
 Width: 250
 VWidth: 0
 AnchorPoint: "cursive" 32 188 exit 0
@@ -6134,7 +6118,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_LamLamAlefIsol
-Encoding: 65658 -1 144
+Encoding: 65658 -1 143
 Width: 406
 VWidth: 0
 AnchorPoint: "cursive" 402 188 entry 0
@@ -6199,7 +6183,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamWawFina
-Encoding: 65659 -1 145
+Encoding: 65659 -1 144
 Width: 245
 VWidth: 0
 AnchorPoint: "cursive" -10 71 exit 0
@@ -6255,7 +6239,7 @@ Colour: ff00
 EndChar
 
 StartChar: waw.fina_LamWawFina
-Encoding: 65660 -1 146
+Encoding: 65660 -1 145
 Width: 324
 VWidth: 0
 AnchorPoint: "cursive" 313 71 entry 0
@@ -6316,7 +6300,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHaaInit
-Encoding: 65661 -1 147
+Encoding: 65661 -1 146
 Width: 600
 VWidth: 0
 AnchorPoint: "cursive" 85 247 exit 0
@@ -6379,7 +6363,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamHaaInit
-Encoding: 65662 -1 148
+Encoding: 65662 -1 147
 Width: 592
 VWidth: 0
 AnchorPoint: "cursive" 85 247 entry 0
@@ -6442,7 +6426,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemMeemInit
-Encoding: 65663 -1 149
+Encoding: 65663 -1 148
 Width: 306
 VWidth: 0
 AnchorPoint: "cursive" 58 133 exit 0
@@ -6502,7 +6486,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_MeemMeemInit
-Encoding: 65664 -1 150
+Encoding: 65664 -1 149
 Width: 322
 VWidth: 0
 AnchorPoint: "cursive" 168 133 entry 0
@@ -6556,7 +6540,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.medi_FaaYaaFina
-Encoding: 65665 -1 151
+Encoding: 65665 -1 150
 Width: 229
 VWidth: -189
 AnchorPoint: "cursive" 37 -110.57 exit 0
@@ -6628,7 +6612,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_FaaYaaFina
-Encoding: 65666 -1 152
+Encoding: 65666 -1 151
 Width: 602
 VWidth: 0
 AnchorPoint: "cursive" 407 79 entry 0
@@ -6697,7 +6681,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamLamHaaInit
-Encoding: 65667 -1 153
+Encoding: 65667 -1 152
 Width: 124
 VWidth: 0
 AnchorPoint: "cursive" 37 328 exit 0
@@ -6768,7 +6752,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamLamHaaInit
-Encoding: 65668 -1 154
+Encoding: 65668 -1 153
 Width: 355
 VWidth: 0
 AnchorPoint: "cursive" 368 328 entry 0
@@ -6843,7 +6827,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamLamHaaInit
-Encoding: 65669 -1 155
+Encoding: 65669 -1 154
 Width: 584
 VWidth: 0
 AnchorPoint: "cursive" 67 243 entry 0
@@ -6915,7 +6899,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.init_HehMeemInit
-Encoding: 65670 -1 156
+Encoding: 65670 -1 155
 Width: 445
 VWidth: 0
 AnchorPoint: "cursive" 27 239 exit 0
@@ -6999,7 +6983,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_HehMeemInit
-Encoding: 65671 -1 157
+Encoding: 65671 -1 156
 Width: 324
 VWidth: 0
 AnchorPoint: "cursive" 264 239 entry 0
@@ -7071,7 +7055,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaMeemFina
-Encoding: 65672 -1 158
+Encoding: 65672 -1 157
 Width: 341
 VWidth: 0
 AnchorPoint: "cursive" 16 59 exit 0
@@ -7119,7 +7103,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_BaaMeemFina
-Encoding: 65673 -1 159
+Encoding: 65673 -1 158
 Width: 358
 VWidth: 0
 AnchorPoint: "cursive" 155 59 entry 0
@@ -7176,7 +7160,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaYaaIsol
-Encoding: 65674 -1 160
+Encoding: 65674 -1 159
 Width: 183
 VWidth: 0
 AnchorPoint: "cursive" 13 99 exit 0
@@ -7231,7 +7215,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_BaaYaaIsol
-Encoding: 65675 -1 161
+Encoding: 65675 -1 160
 Width: 643
 VWidth: 0
 AnchorPoint: "cursive" 418 99 entry 0
@@ -7290,7 +7274,7 @@ Colour: ff00
 EndChar
 
 StartChar: sad.init_SadHaaIsol
-Encoding: 65676 -1 162
+Encoding: 65676 -1 161
 Width: 826
 VWidth: 0
 AnchorPoint: "cursive" 12 399 exit 0
@@ -7369,7 +7353,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.fina_SadHaaIsol
-Encoding: 65677 -1 163
+Encoding: 65677 -1 162
 Width: 687
 VWidth: 0
 AnchorPoint: "cursive" 62 399 entry 0
@@ -7446,7 +7430,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamHehFina
-Encoding: 65678 -1 164
+Encoding: 65678 -1 163
 Width: 184
 VWidth: 0
 AnchorPoint: "cursive" 14 -37 exit 0
@@ -7505,7 +7489,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_LamHehFina
-Encoding: 65679 -1 165
+Encoding: 65679 -1 164
 Width: 370
 VWidth: 0
 AnchorPoint: "cursive" 364 -37 entry 0
@@ -7572,7 +7556,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafLamAlefFina
-Encoding: 65680 -1 166
+Encoding: 65680 -1 165
 Width: 496
 VWidth: 0
 AnchorPoint: "cursive" -5 43 exit 0
@@ -7648,7 +7632,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamAlefFina
-Encoding: 65681 -1 167
+Encoding: 65681 -1 166
 Width: 287
 VWidth: 0
 AnchorPoint: "cursive" 2 153 exit 0
@@ -7723,7 +7707,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafLamAlefFina
-Encoding: 65682 -1 168
+Encoding: 65682 -1 167
 Width: 304
 VWidth: 0
 AnchorPoint: "cursive" 292 153 entry 0
@@ -7790,7 +7774,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafHehFina
-Encoding: 65683 -1 169
+Encoding: 65683 -1 168
 Width: 448
 VWidth: 0
 AnchorPoint: "cursive" -12 10 exit 0
@@ -7861,7 +7845,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_KafHehFina
-Encoding: 65684 -1 170
+Encoding: 65684 -1 169
 Width: 286
 VWidth: 0
 AnchorPoint: "cursive" 273 10 entry 0
@@ -7934,7 +7918,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamBaaMeemInit
-Encoding: 65685 -1 171
+Encoding: 65685 -1 170
 Width: 162
 VWidth: 0
 AnchorPoint: "cursive" -5 281 exit 0
@@ -7995,7 +7979,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_LamBaaMeemInit
-Encoding: 65686 -1 172
+Encoding: 65686 -1 171
 Width: 244
 VWidth: 0
 AnchorPoint: "cursive" 235 281 entry 0
@@ -8054,7 +8038,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamBaaMeemInit
-Encoding: 65687 -1 173
+Encoding: 65687 -1 172
 Width: 330
 VWidth: 0
 AnchorPoint: "cursive" 174 132 entry 0
@@ -8112,7 +8096,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafLamMeemMedi
-Encoding: 65688 -1 174
+Encoding: 65688 -1 173
 Width: 508
 VWidth: 0
 AnchorPoint: "cursive" -15 34 exit 0
@@ -8183,7 +8167,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamMeemMedi
-Encoding: 65689 -1 175
+Encoding: 65689 -1 174
 Width: 314
 VWidth: 0
 AnchorPoint: "cursive" 38 146 exit 0
@@ -8253,7 +8237,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafLamMeemMedi
-Encoding: 65690 -1 176
+Encoding: 65690 -1 175
 Width: 308
 VWidth: 0
 AnchorPoint: "cursive" 218 146 entry 0
@@ -8318,7 +8302,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaDalIsol
-Encoding: 65691 -1 177
+Encoding: 65691 -1 176
 Width: 147
 VWidth: 0
 AnchorPoint: "cursive" 10 58 exit 0
@@ -8371,7 +8355,7 @@ Colour: ff00
 EndChar
 
 StartChar: dal.fina_BaaDalIsol
-Encoding: 65692 -1 178
+Encoding: 65692 -1 177
 Width: 414
 VWidth: 0
 AnchorPoint: "cursive" 420 58 entry 0
@@ -8429,7 +8413,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaMeemHaaInit
-Encoding: 65693 -1 179
+Encoding: 65693 -1 178
 Width: 268
 VWidth: 0
 AnchorPoint: "cursive" 78 360 exit 0
@@ -8487,7 +8471,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaMeemHaaInit
-Encoding: 65694 -1 180
+Encoding: 65694 -1 179
 Width: 452
 VWidth: 0
 AnchorPoint: "cursive" 278 360 entry 0
@@ -8544,7 +8528,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_BaaMeemHaaInit
-Encoding: 65695 -1 181
+Encoding: 65695 -1 180
 Width: 579
 VWidth: 0
 AnchorPoint: "cursive" 78 248 entry 0
@@ -8603,7 +8587,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaYaaIsol
-Encoding: 65696 -1 182
+Encoding: 65696 -1 181
 Width: 586
 VWidth: 0
 AnchorPoint: "cursive" 2 106 exit 0
@@ -8672,7 +8656,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_HaaYaaIsol
-Encoding: 65697 -1 183
+Encoding: 65697 -1 182
 Width: 628
 VWidth: 0
 AnchorPoint: "cursive" 392 106 entry 0
@@ -8738,7 +8722,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafLamIsol
-Encoding: 65698 -1 184
+Encoding: 65698 -1 183
 Width: 288
 VWidth: 0
 AnchorPoint: "cursive" 103.753 48.64 exit 0
@@ -8798,7 +8782,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.fina_KafLamIsol
-Encoding: 65699 -1 185
+Encoding: 65699 -1 184
 Width: 557
 VWidth: 0
 AnchorPoint: "cursive" 557.753 52.6396 entry 0
@@ -8861,7 +8845,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_MeemAlefFina
-Encoding: 65700 -1 186
+Encoding: 65700 -1 185
 Width: 103
 VWidth: -40
 AnchorPoint: "cursive" 65 -151 exit 0
@@ -8908,7 +8892,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_MeemAlefFina
-Encoding: 65701 -1 187
+Encoding: 65701 -1 186
 Width: 264
 VWidth: -40
 AnchorPoint: "cursive" 224 -151 entry 0
@@ -8957,7 +8941,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemYaaIsol
-Encoding: 65702 -1 188
+Encoding: 65702 -1 187
 Width: 347
 VWidth: 0
 AnchorPoint: "cursive" 2 135 exit 0
@@ -9015,7 +8999,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_MeemYaaIsol
-Encoding: 65703 -1 189
+Encoding: 65703 -1 188
 Width: 628
 VWidth: 0
 AnchorPoint: "cursive" 372 135 entry 0
@@ -9074,7 +9058,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaYaaIsol
-Encoding: 65704 -1 190
+Encoding: 65704 -1 189
 Width: 100
 VWidth: 0
 AnchorPoint: "cursive" -6 183 exit 0
@@ -9125,7 +9109,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaYaaIsol
-Encoding: 65705 -1 191
+Encoding: 65705 -1 190
 Width: 298
 VWidth: 0
 AnchorPoint: "cursive" 294 183 entry 0
@@ -9180,7 +9164,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_BaaBaaYaaIsol
-Encoding: 65706 -1 192
+Encoding: 65706 -1 191
 Width: 588
 VWidth: 0
 AnchorPoint: "cursive" 322 96 entry 0
@@ -9240,7 +9224,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamLamInit
-Encoding: 65707 -1 193
+Encoding: 65707 -1 192
 Width: 116
 VWidth: 0
 AnchorPoint: "cursive" 7 39 exit 0
@@ -9293,7 +9277,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamLamInit
-Encoding: 65708 -1 194
+Encoding: 65708 -1 193
 Width: 212
 VWidth: 0
 AnchorPoint: "cursive" 217 39 entry 0
@@ -9345,7 +9329,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamYaaFina
-Encoding: 65709 -1 195
+Encoding: 65709 -1 194
 Width: 199
 VWidth: 0
 AnchorPoint: "cursive" 3 -71 exit 0
@@ -9409,7 +9393,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_LamYaaFina
-Encoding: 65710 -1 196
+Encoding: 65710 -1 195
 Width: 605
 VWidth: 0
 AnchorPoint: "cursive" 406 -71 entry 0
@@ -9471,7 +9455,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafBaaInit
-Encoding: 65711 -1 197
+Encoding: 65711 -1 196
 Width: 332
 VWidth: 0
 AnchorPoint: "cursive" 219 68 exit 0
@@ -9527,7 +9511,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_KafBaaInit
-Encoding: 65712 -1 198
+Encoding: 65712 -1 197
 Width: 330
 VWidth: 0
 AnchorPoint: "cursive" 219 68 entry 0
@@ -9576,7 +9560,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamMeemInit
-Encoding: 65713 -1 199
+Encoding: 65713 -1 198
 Width: 314
 VWidth: 0
 AnchorPoint: "cursive" 221 94 exit 0
@@ -9632,7 +9616,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamMeemInit
-Encoding: 65714 -1 200
+Encoding: 65714 -1 199
 Width: 320
 VWidth: 0
 AnchorPoint: "cursive" 221 94 entry 0
@@ -9681,7 +9665,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamAlefIsol
-Encoding: 65715 -1 201
+Encoding: 65715 -1 200
 Width: 291
 VWidth: 0
 AnchorPoint: "cursive" 14 68 exit 0
@@ -9745,7 +9729,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_LamAlefIsol
-Encoding: 65716 -1 202
+Encoding: 65716 -1 201
 Width: 550
 VWidth: 0
 AnchorPoint: "cursive" 277 68 entry 0
@@ -9816,7 +9800,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHaaMeemInit
-Encoding: 65717 -1 203
+Encoding: 65717 -1 202
 Width: 502
 VWidth: 0
 AnchorPoint: "cursive" 44 361 exit 0
@@ -9883,7 +9867,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamHaaMeemInit
-Encoding: 65718 -1 204
+Encoding: 65718 -1 203
 Width: 536
 VWidth: 0
 AnchorPoint: "cursive" 68 202 exit 0
@@ -9949,7 +9933,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamHaaMeemInit
-Encoding: 65719 -1 205
+Encoding: 65719 -1 204
 Width: 294
 VWidth: 0
 AnchorPoint: "cursive" 148 202 entry 0
@@ -10010,7 +9994,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaInit
-Encoding: 65720 -1 206
+Encoding: 65720 -1 205
 Width: 170
 VWidth: 0
 AnchorPoint: "cursive" -9 90 exit 0
@@ -10059,7 +10043,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaInit
-Encoding: 65721 -1 207
+Encoding: 65721 -1 206
 Width: 258
 VWidth: 0
 AnchorPoint: "cursive" 251 90 entry 0
@@ -10106,7 +10090,7 @@ Colour: ff00
 EndChar
 
 StartChar: ayn.medi_AynYaaFina
-Encoding: 65722 -1 208
+Encoding: 65722 -1 207
 Width: 430
 VWidth: 0
 AnchorPoint: "cursive" 19 119 exit 0
@@ -10171,7 +10155,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_AynYaaFina
-Encoding: 65723 -1 209
+Encoding: 65723 -1 208
 Width: 672
 VWidth: 0
 AnchorPoint: "cursive" 415 119 entry 0
@@ -10235,7 +10219,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamKafIsol
-Encoding: 65724 -1 210
+Encoding: 65724 -1 209
 Width: 132
 VWidth: 0
 AnchorPoint: "cursive" 5 60 exit 0
@@ -10314,7 +10298,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.fina_LamKafIsol
-Encoding: 65725 -1 211
+Encoding: 65725 -1 210
 Width: 771
 VWidth: 0
 AnchorPoint: "cursive" 775 60 entry 0
@@ -10412,7 +10396,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemRaaIsol
-Encoding: 65726 -1 212
+Encoding: 65726 -1 211
 Width: 348
 VWidth: 0
 AnchorPoint: "cursive" 1 189 exit 0
@@ -10464,7 +10448,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_MeemRaaIsol
-Encoding: 65727 -1 213
+Encoding: 65727 -1 212
 Width: 462
 VWidth: 0
 AnchorPoint: "cursive" 461 189 entry 0
@@ -10517,7 +10501,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.init_FaaHaaInit
-Encoding: 65728 -1 214
+Encoding: 65728 -1 213
 Width: 284
 VWidth: 0
 AnchorPoint: "cursive" 61 247 exit 0
@@ -10580,7 +10564,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_FaaHaaInit
-Encoding: 65729 -1 215
+Encoding: 65729 -1 214
 Width: 586
 VWidth: 0
 AnchorPoint: "cursive" 61 247 entry 0
@@ -10637,7 +10621,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafKafFina
-Encoding: 65730 -1 216
+Encoding: 65730 -1 215
 Width: 512
 VWidth: 0
 AnchorPoint: "cursive" -2 25 exit 0
@@ -10713,7 +10697,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.fina_KafKafFina
-Encoding: 65731 -1 217
+Encoding: 65731 -1 216
 Width: 848
 VWidth: 0
 AnchorPoint: "cursive" 846 25 entry 0
@@ -10805,7 +10789,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaHaaInit
-Encoding: 65732 -1 218
+Encoding: 65732 -1 217
 Width: 642
 VWidth: 0
 AnchorPoint: "cursive" 32 221 exit 0
@@ -10866,7 +10850,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_HaaHaaInit
-Encoding: 65733 -1 219
+Encoding: 65733 -1 218
 Width: 530
 VWidth: 0
 AnchorPoint: "cursive" 32 221 entry 0
@@ -10925,7 +10909,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemIsol
-Encoding: 65734 -1 220
+Encoding: 65734 -1 219
 Width: 392
 VWidth: 0
 AnchorPoint: "cursive" 155 187 exit 0
@@ -10992,7 +10976,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_KafMeemIsol
-Encoding: 65735 -1 221
+Encoding: 65735 -1 220
 Width: 378
 VWidth: 0
 AnchorPoint: "cursive" 155 187 entry 0
@@ -11057,7 +11041,7 @@ Colour: ff00
 EndChar
 
 StartChar: faa.init_FaaYaaIsol
-Encoding: 65736 -1 222
+Encoding: 65736 -1 221
 Width: 243
 VWidth: 0
 AnchorPoint: "cursive" 59 108 exit 0
@@ -11126,7 +11110,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_FaaYaaIsol
-Encoding: 65737 -1 223
+Encoding: 65737 -1 222
 Width: 648
 VWidth: 0
 AnchorPoint: "cursive" 429 108 entry 0
@@ -11192,7 +11176,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamQafFina
-Encoding: 65738 -1 224
+Encoding: 65738 -1 223
 Width: 272
 VWidth: 0
 AnchorPoint: "cursive" -10 107 exit 0
@@ -11253,7 +11237,7 @@ Colour: ff00
 EndChar
 
 StartChar: qaf.fina_LamQafFina
-Encoding: 65739 -1 225
+Encoding: 65739 -1 224
 Width: 554
 VWidth: 0
 AnchorPoint: "cursive" 544 107 entry 0
@@ -11321,7 +11305,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenHaaIsol
-Encoding: 65740 -1 226
+Encoding: 65740 -1 225
 Width: 695
 VWidth: 0
 AnchorPoint: "cursive" 65 481 exit 0
@@ -11406,7 +11390,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.fina_SeenHaaIsol
-Encoding: 65741 -1 227
+Encoding: 65741 -1 226
 Width: 704
 VWidth: 0
 AnchorPoint: "cursive" 65 481 entry 0
@@ -11486,7 +11470,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemLamFina
-Encoding: 65742 -1 228
+Encoding: 65742 -1 227
 Width: 522
 VWidth: 0
 AnchorPoint: "cursive" 5 -10 exit 0
@@ -11565,7 +11549,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemLamFina
-Encoding: 65743 -1 229
+Encoding: 65743 -1 228
 Width: 254
 VWidth: 0
 AnchorPoint: "cursive" 42 -31 exit 0
@@ -11635,7 +11619,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.fina_KafMeemLamFina
-Encoding: 65744 -1 230
+Encoding: 65744 -1 229
 Width: 586
 VWidth: 0
 AnchorPoint: "cursive" 582 -31 entry 0
@@ -11712,7 +11696,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemHaaInit
-Encoding: 65745 -1 231
+Encoding: 65745 -1 230
 Width: 484
 VWidth: 0
 AnchorPoint: "cursive" 56 251 exit 0
@@ -11769,7 +11753,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_MeemHaaInit
-Encoding: 65746 -1 232
+Encoding: 65746 -1 231
 Width: 566
 VWidth: 0
 AnchorPoint: "cursive" 56 251 entry 0
@@ -11826,7 +11810,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaNoonIsol
-Encoding: 65747 -1 233
+Encoding: 65747 -1 232
 Width: 140
 VWidth: 0
 AnchorPoint: "cursive" -1 180 exit 0
@@ -11873,7 +11857,7 @@ Colour: ff00
 EndChar
 
 StartChar: noon.fina_BaaNoonIsol
-Encoding: 65748 -1 234
+Encoding: 65748 -1 233
 Width: 502
 VWidth: 0
 AnchorPoint: "cursive" 499 180 entry 0
@@ -11928,7 +11912,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemFina
-Encoding: 65749 -1 235
+Encoding: 65749 -1 234
 Width: 630
 VWidth: 0
 AnchorPoint: "cursive" 162 106 exit 0
@@ -11999,7 +11983,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_KafMeemFina
-Encoding: 65750 -1 236
+Encoding: 65750 -1 235
 Width: 362
 VWidth: 0
 AnchorPoint: "cursive" 162 106 entry 0
@@ -12066,7 +12050,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafLamAlefIsol
-Encoding: 65751 -1 237
+Encoding: 65751 -1 236
 Width: 225
 VWidth: 0
 AnchorPoint: "cursive" 1 51 exit 0
@@ -12131,7 +12115,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamAlefIsol
-Encoding: 65752 -1 238
+Encoding: 65752 -1 237
 Width: 598
 VWidth: 0
 AnchorPoint: "cursive" 345 162 exit 0
@@ -12199,7 +12183,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafLamAlefIsol
-Encoding: 65753 -1 239
+Encoding: 65753 -1 238
 Width: 402
 VWidth: 0
 AnchorPoint: "cursive" 375 162 entry 0
@@ -12260,7 +12244,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaSeenInit
-Encoding: 65754 -1 240
+Encoding: 65754 -1 239
 Width: 186
 VWidth: 0
 AnchorPoint: "cursive" 2 199 exit 0
@@ -12322,7 +12306,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.medi_BaaSeenInit
-Encoding: 65755 -1 241
+Encoding: 65755 -1 240
 Width: 489
 VWidth: 0
 AnchorPoint: "cursive" 492 199 entry 0
@@ -12395,7 +12379,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaRaaFina
-Encoding: 65756 -1 242
+Encoding: 65756 -1 241
 Width: 220
 VWidth: 0
 AnchorPoint: "cursive" -24 163 exit 0
@@ -12447,7 +12431,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_BaaRaaFina
-Encoding: 65757 -1 243
+Encoding: 65757 -1 242
 Width: 400
 VWidth: 0
 AnchorPoint: "cursive" 376 163 entry 0
@@ -12503,7 +12487,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafRaaFina
-Encoding: 65758 -1 244
+Encoding: 65758 -1 243
 Width: 389
 VWidth: 0
 AnchorPoint: "cursive" 2 59 exit 0
@@ -12568,7 +12552,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_KafRaaFina
-Encoding: 65759 -1 245
+Encoding: 65759 -1 244
 Width: 288
 VWidth: 0
 AnchorPoint: "cursive" 289 59 entry 0
@@ -12626,7 +12610,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamHehInit
-Encoding: 65760 -1 246
+Encoding: 65760 -1 245
 Width: 116
 VWidth: 0
 AnchorPoint: "cursive" 90 266 exit 0
@@ -12691,7 +12675,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.medi_LamHehInit
-Encoding: 65761 -1 247
+Encoding: 65761 -1 246
 Width: 422
 VWidth: 0
 AnchorPoint: "cursive" 240 266 entry 0
@@ -12767,7 +12751,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.init_MeemHaaMeemInit
-Encoding: 65762 -1 248
+Encoding: 65762 -1 247
 Width: 482
 VWidth: 0
 AnchorPoint: "cursive" 38 373 exit 0
@@ -12839,7 +12823,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_MeemHaaMeemInit
-Encoding: 65763 -1 249
+Encoding: 65763 -1 248
 Width: 584
 VWidth: 0
 AnchorPoint: "cursive" 58 373 entry 0
@@ -12910,7 +12894,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_MeemHaaMeemInit
-Encoding: 65764 -1 250
+Encoding: 65764 -1 249
 Width: 325
 VWidth: 0
 AnchorPoint: "cursive" 212 222 entry 0
@@ -12981,7 +12965,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaMeemInit
-Encoding: 65765 -1 251
+Encoding: 65765 -1 250
 Width: 301
 VWidth: 0
 AnchorPoint: "cursive" 70 144 exit 0
@@ -13037,7 +13021,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaMeemInit
-Encoding: 65766 -1 252
+Encoding: 65766 -1 251
 Width: 348
 VWidth: 0
 AnchorPoint: "cursive" 170 144 entry 0
@@ -13089,7 +13073,7 @@ Colour: ff00
 EndChar
 
 StartChar: ayn.init_AynYaaIsol
-Encoding: 65767 -1 253
+Encoding: 65767 -1 252
 Width: 560
 VWidth: 0
 AnchorPoint: "cursive" 1 124 exit 0
@@ -13153,7 +13137,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_AynYaaIsol
-Encoding: 65768 -1 254
+Encoding: 65768 -1 253
 Width: 664
 VWidth: 0
 AnchorPoint: "cursive" 426 124 entry 0
@@ -13215,7 +13199,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaHehInit
-Encoding: 65769 -1 255
+Encoding: 65769 -1 254
 Width: 346
 VWidth: 0
 AnchorPoint: "cursive" 0 16 exit 0
@@ -13266,7 +13250,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.medi_BaaHehInit
-Encoding: 65770 -1 256
+Encoding: 65770 -1 255
 Width: 146
 VWidth: 0
 AnchorPoint: "cursive" 146 16 entry 0
@@ -13323,7 +13307,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafLamInit
-Encoding: 65771 -1 257
+Encoding: 65771 -1 256
 Width: 188
 VWidth: 0
 AnchorPoint: "cursive" 8 32 exit 0
@@ -13380,7 +13364,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_KafLamInit
-Encoding: 65772 -1 258
+Encoding: 65772 -1 257
 Width: 224
 VWidth: 0
 AnchorPoint: "cursive" 230 32 entry 0
@@ -13437,7 +13421,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenHaaInit
-Encoding: 65773 -1 259
+Encoding: 65773 -1 258
 Width: 663
 VWidth: 0
 AnchorPoint: "cursive" 63 223 exit 0
@@ -13515,7 +13499,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_SeenHaaInit
-Encoding: 65774 -1 260
+Encoding: 65774 -1 259
 Width: 551
 VWidth: 0
 AnchorPoint: "cursive" 63 223 entry 0
@@ -13581,7 +13565,7 @@ Colour: ff00
 EndChar
 
 StartChar: sad.init_SadMeemInit
-Encoding: 65775 -1 261
+Encoding: 65775 -1 260
 Width: 704
 VWidth: 0
 AnchorPoint: "cursive" 95 124 exit 0
@@ -13648,7 +13632,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_SadMeemInit
-Encoding: 65776 -1 262
+Encoding: 65776 -1 261
 Width: 291
 VWidth: 0
 AnchorPoint: "cursive" 135 124 entry 0
@@ -13704,7 +13688,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafRaaIsol
-Encoding: 65777 -1 263
+Encoding: 65777 -1 262
 Width: 182
 VWidth: 0
 AnchorPoint: "cursive" 8 84 exit 0
@@ -13764,7 +13748,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_KafRaaIsol
-Encoding: 65778 -1 264
+Encoding: 65778 -1 263
 Width: 239
 VWidth: 0
 AnchorPoint: "cursive" 248 84 entry 0
@@ -13818,7 +13802,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamMeemIsol
-Encoding: 65779 -1 265
+Encoding: 65779 -1 264
 Width: 166
 VWidth: 0
 AnchorPoint: "cursive" 51 229 exit 0
@@ -13876,7 +13860,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_LamMeemIsol
-Encoding: 65780 -1 266
+Encoding: 65780 -1 265
 Width: 364
 VWidth: 0
 AnchorPoint: "cursive" 161 229 entry 0
@@ -13938,7 +13922,7 @@ Colour: ff00
 EndChar
 
 StartChar: ayn.init_AynHaaInit
-Encoding: 65781 -1 267
+Encoding: 65781 -1 266
 Width: 535
 VWidth: 0
 AnchorPoint: "cursive" 50 244 exit 0
@@ -13998,7 +13982,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_AynHaaInit
-Encoding: 65782 -1 268
+Encoding: 65782 -1 267
 Width: 592
 VWidth: 0
 AnchorPoint: "cursive" 90 244 entry 0
@@ -14055,7 +14039,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamYaaIsol
-Encoding: 65783 -1 269
+Encoding: 65783 -1 268
 Width: 158
 VWidth: 0
 AnchorPoint: "cursive" 72 102 exit 0
@@ -14121,7 +14105,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_LamYaaIsol
-Encoding: 65784 -1 270
+Encoding: 65784 -1 269
 Width: 622
 VWidth: 0
 AnchorPoint: "cursive" 412 102 entry 0
@@ -14187,7 +14171,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafYaaFina
-Encoding: 65785 -1 271
+Encoding: 65785 -1 270
 Width: 510
 VWidth: 0
 AnchorPoint: "cursive" 22 -6 exit 0
@@ -14256,7 +14240,7 @@ Colour: ff00
 EndChar
 
 StartChar: yaa.fina_KafYaaFina
-Encoding: 65786 -1 272
+Encoding: 65786 -1 271
 Width: 648
 VWidth: 0
 AnchorPoint: "cursive" 412 -6 entry 0
@@ -14319,7 +14303,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamMeemHaaInit
-Encoding: 65787 -1 273
+Encoding: 65787 -1 272
 Width: 250
 VWidth: 0
 AnchorPoint: "cursive" 172 367 exit 0
@@ -14386,7 +14370,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamMeemHaaInit
-Encoding: 65788 -1 274
+Encoding: 65788 -1 273
 Width: 530
 VWidth: 0
 AnchorPoint: "cursive" 56 246 exit 0
@@ -14455,7 +14439,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_LamMeemHaaInit
-Encoding: 65789 -1 275
+Encoding: 65789 -1 274
 Width: 600
 VWidth: 0
 AnchorPoint: "cursive" 56 246 entry 0
@@ -14525,7 +14509,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamAlefFina
-Encoding: 65790 -1 276
+Encoding: 65790 -1 275
 Width: 550
 VWidth: 0
 AnchorPoint: "cursive" 314 152 exit 0
@@ -14583,7 +14567,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_LamAlefFina
-Encoding: 65791 -1 277
+Encoding: 65791 -1 276
 Width: 394
 VWidth: 0
 AnchorPoint: "cursive" 384 152 entry 0
@@ -14636,7 +14620,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamMeemMedi
-Encoding: 65792 -1 278
+Encoding: 65792 -1 277
 Width: 255
 VWidth: 0
 AnchorPoint: "cursive" 22 83 exit 0
@@ -14686,7 +14670,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_LamMeemMedi
-Encoding: 65793 -1 279
+Encoding: 65793 -1 278
 Width: 326
 VWidth: 0
 AnchorPoint: "cursive" 237 83 entry 0
@@ -14735,7 +14719,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_Lellah
-Encoding: 65794 -1 280
+Encoding: 65794 -1 279
 Width: 154
 VWidth: 0
 AnchorPoint: "cursive" 33 63 exit 0
@@ -14803,7 +14787,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_Lellah
-Encoding: 65795 -1 281
+Encoding: 65795 -1 280
 Width: 238
 VWidth: 0
 AnchorPoint: "cursive" -6 56 exit 0
@@ -14874,7 +14858,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.fina_Lellah
-Encoding: 65796 -1 282
+Encoding: 65796 -1 281
 Width: 300
 VWidth: 0
 AnchorPoint: "cursive" 292 56 entry 0
@@ -14949,7 +14933,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaHaaInit
-Encoding: 65797 -1 283
+Encoding: 65797 -1 282
 Width: 96
 VWidth: 0
 AnchorPoint: "cursive" -17 323 exit 0
@@ -14999,7 +14983,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaHaaInit
-Encoding: 65798 -1 284
+Encoding: 65798 -1 283
 Width: 533
 VWidth: 0
 AnchorPoint: "cursive" 516 323 entry 0
@@ -15056,7 +15040,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_BaaBaaHaaInit
-Encoding: 65799 -1 285
+Encoding: 65799 -1 284
 Width: 642
 VWidth: 0
 AnchorPoint: "cursive" 65 251 entry 0
@@ -15115,7 +15099,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaMeemInit
-Encoding: 65800 -1 286
+Encoding: 65800 -1 285
 Width: 524
 VWidth: 0
 AnchorPoint: "cursive" 46 238 exit 0
@@ -15170,7 +15154,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_HaaMeemInit
-Encoding: 65801 -1 287
+Encoding: 65801 -1 286
 Width: 301
 VWidth: 0
 AnchorPoint: "cursive" 186 238 entry 0
@@ -15226,7 +15210,7 @@ Colour: ff00
 EndChar
 
 StartChar: seen.init_SeenBaaMeemInit
-Encoding: 65802 -1 288
+Encoding: 65802 -1 287
 Width: 499
 VWidth: 0
 AnchorPoint: "cursive" -11 253 exit 0
@@ -15309,7 +15293,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_SeenBaaMeemInit
-Encoding: 65803 -1 289
+Encoding: 65803 -1 288
 Width: 324
 VWidth: 0
 AnchorPoint: "cursive" 74 122 exit 0
@@ -15379,7 +15363,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_SeenBaaMeemInit
-Encoding: 65804 -1 290
+Encoding: 65804 -1 289
 Width: 312
 VWidth: 0
 AnchorPoint: "cursive" 144 122 entry 0
@@ -15448,7 +15432,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaIsol
-Encoding: 65805 -1 291
+Encoding: 65805 -1 290
 Width: 195
 VWidth: 0
 AnchorPoint: "cursive" -10 141 exit 0
@@ -15502,7 +15486,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.fina_BaaBaaIsol
-Encoding: 65806 -1 292
+Encoding: 65806 -1 291
 Width: 728
 VWidth: 0
 AnchorPoint: "cursive" 716 141 entry 0
@@ -15559,7 +15543,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaBaaMeemInit
-Encoding: 65807 -1 293
+Encoding: 65807 -1 292
 Width: 111
 VWidth: 0
 AnchorPoint: "cursive" -13 291 exit 0
@@ -15613,7 +15597,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaBaaMeemInit
-Encoding: 65808 -1 294
+Encoding: 65808 -1 293
 Width: 281
 VWidth: 0
 AnchorPoint: "cursive" 267 291 entry 0
@@ -15671,7 +15655,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_BaaBaaMeemInit
-Encoding: 65809 -1 295
+Encoding: 65809 -1 294
 Width: 329
 VWidth: 0
 AnchorPoint: "cursive" 132 292 entry 0
@@ -15733,7 +15717,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafAlefIsol
-Encoding: 65810 -1 296
+Encoding: 65810 -1 295
 Width: 217
 VWidth: 0
 AnchorPoint: "cursive" -2 54 exit 0
@@ -15786,7 +15770,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafAlefIsol
-Encoding: 65811 -1 297
+Encoding: 65811 -1 296
 Width: 228
 VWidth: 0
 AnchorPoint: "cursive" 225 54 entry 0
@@ -15838,7 +15822,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafBaaMedi
-Encoding: 65812 -1 298
+Encoding: 65812 -1 297
 Width: 366
 VWidth: 0
 AnchorPoint: "cursive" -1 56 exit 0
@@ -15903,7 +15887,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_KafBaaMedi
-Encoding: 65813 -1 299
+Encoding: 65813 -1 298
 Width: 178
 VWidth: 0
 AnchorPoint: "cursive" 179 56 entry 0
@@ -15955,7 +15939,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.medi_BaaNoonFina
-Encoding: 65814 -1 300
+Encoding: 65814 -1 299
 Width: 204
 VWidth: 0
 AnchorPoint: "cursive" -14 169 exit 0
@@ -16012,7 +15996,7 @@ Colour: ff00
 EndChar
 
 StartChar: noon.fina_BaaNoonFina
-Encoding: 65815 -1 301
+Encoding: 65815 -1 300
 Width: 502
 VWidth: 0
 AnchorPoint: "cursive" 490 169 entry 0
@@ -16072,7 +16056,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.init_HaaRaaIsol
-Encoding: 65816 -1 302
+Encoding: 65816 -1 301
 Width: 592
 VWidth: 0
 AnchorPoint: "cursive" 54 82 exit 0
@@ -16137,7 +16121,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_HaaRaaIsol
-Encoding: 65817 -1 303
+Encoding: 65817 -1 302
 Width: 338
 VWidth: 0
 AnchorPoint: "cursive" 304 82 entry 0
@@ -16198,7 +16182,7 @@ Colour: ff00
 EndChar
 
 StartChar: heh.init_HehHaaInit
-Encoding: 65818 -1 304
+Encoding: 65818 -1 303
 Width: 528
 VWidth: 0
 AnchorPoint: "cursive" 50 237 exit 0
@@ -16281,7 +16265,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_HehHaaInit
-Encoding: 65819 -1 305
+Encoding: 65819 -1 304
 Width: 602
 VWidth: 0
 AnchorPoint: "cursive" 50 237 entry 0
@@ -16351,7 +16335,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.init_LamRaaIsol
-Encoding: 65820 -1 306
+Encoding: 65820 -1 305
 Width: 192
 VWidth: 0
 AnchorPoint: "cursive" 7 141 exit 0
@@ -16411,7 +16395,7 @@ Colour: ff00
 EndChar
 
 StartChar: raa.fina_LamRaaIsol
-Encoding: 65821 -1 307
+Encoding: 65821 -1 306
 Width: 328
 VWidth: 0
 AnchorPoint: "cursive" 307 141 entry 0
@@ -16468,7 +16452,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafDalIsol
-Encoding: 65822 -1 308
+Encoding: 65822 -1 307
 Width: 196
 VWidth: 0
 AnchorPoint: "cursive" 1 -126 exit 0
@@ -16538,7 +16522,7 @@ Colour: ff00
 EndChar
 
 StartChar: dal.fina_KafDalIsol
-Encoding: 65823 -1 309
+Encoding: 65823 -1 308
 Width: 434
 VWidth: 0
 AnchorPoint: "cursive" 435 -126 entry 0
@@ -16609,7 +16593,7 @@ Colour: ff00
 EndChar
 
 StartChar: baa.init_BaaMeemIsol
-Encoding: 65824 -1 310
+Encoding: 65824 -1 309
 Width: 404
 VWidth: 0
 AnchorPoint: "cursive" 26 183 exit 0
@@ -16658,7 +16642,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.fina_BaaMeemIsol
-Encoding: 65825 -1 311
+Encoding: 65825 -1 310
 Width: 358
 VWidth: 0
 AnchorPoint: "cursive" 136 183 entry 0
@@ -16714,7 +16698,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.init_KafMeemAlefIsol
-Encoding: 65826 -1 312
+Encoding: 65826 -1 311
 Width: 327
 VWidth: 0
 AnchorPoint: "cursive" 46 -16 exit 0
@@ -16790,7 +16774,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemAlefIsol
-Encoding: 65827 -1 313
+Encoding: 65827 -1 312
 Width: 174
 VWidth: 0
 AnchorPoint: "cursive" 48 -42 exit 0
@@ -16855,7 +16839,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafMeemAlefIsol
-Encoding: 65828 -1 314
+Encoding: 65828 -1 313
 Width: 232
 VWidth: 0
 AnchorPoint: "cursive" 148 -42 entry 0
@@ -16920,7 +16904,7 @@ Colour: ff00
 EndChar
 
 StartChar: sad.init_SadHaaInit
-Encoding: 65829 -1 315
+Encoding: 65829 -1 314
 Width: 826
 VWidth: 0
 AnchorPoint: "cursive" 55 235 exit 0
@@ -16989,7 +16973,7 @@ Colour: ff00
 EndChar
 
 StartChar: haa.medi_SadHaaInit
-Encoding: 65830 -1 316
+Encoding: 65830 -1 315
 Width: 602
 VWidth: 0
 AnchorPoint: "cursive" 55 235 entry 0
@@ -17052,7 +17036,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafMeemAlefFina
-Encoding: 65831 -1 317
+Encoding: 65831 -1 316
 Width: 599
 VWidth: 0
 AnchorPoint: "cursive" 97 29 exit 0
@@ -17126,7 +17110,7 @@ Colour: ff00
 EndChar
 
 StartChar: meem.medi_KafMeemAlefFina
-Encoding: 65832 -1 318
+Encoding: 65832 -1 317
 Width: 248
 VWidth: 0
 AnchorPoint: "cursive" 51 -12 exit 0
@@ -17190,7 +17174,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafMeemAlefFina
-Encoding: 65833 -1 319
+Encoding: 65833 -1 318
 Width: 152
 VWidth: 0
 AnchorPoint: "cursive" 131 -12 entry 0
@@ -17254,7 +17238,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.medi_KafAlefFina
-Encoding: 65834 -1 320
+Encoding: 65834 -1 319
 Width: 538
 VWidth: 0
 AnchorPoint: "cursive" 70 4 exit 0
@@ -17314,7 +17298,7 @@ Colour: ff00
 EndChar
 
 StartChar: alef.fina_KafAlefFina
-Encoding: 65835 -1 321
+Encoding: 65835 -1 320
 Width: 156
 VWidth: 0
 AnchorPoint: "cursive" 150 4 entry 0
@@ -17368,7 +17352,7 @@ Colour: ff00
 EndChar
 
 StartChar: lam.medi_LamKafFina
-Encoding: 65836 -1 322
+Encoding: 65836 -1 321
 Width: 180
 VWidth: 0
 AnchorPoint: "cursive" 1 11 exit 0
@@ -17440,7 +17424,7 @@ Colour: ff00
 EndChar
 
 StartChar: kaf.fina_LamKafFina
-Encoding: 65837 -1 323
+Encoding: 65837 -1 322
 Width: 750
 VWidth: 0
 AnchorPoint: "cursive" 751 11 entry 0
@@ -17533,7 +17517,7 @@ Colour: ff00
 EndChar
 
 StartChar: space
-Encoding: 32 32 324
+Encoding: 32 32 323
 Width: 300
 VWidth: 0
 Flags: W
@@ -17541,7 +17525,7 @@ LayerCount: 2
 EndChar
 
 StartChar: uni061B
-Encoding: 1563 1563 325
+Encoding: 1563 1563 324
 Width: 204
 VWidth: 0
 LayerCount: 2
@@ -17566,7 +17550,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni060C
-Encoding: 1548 1548 326
+Encoding: 1548 1548 325
 Width: 202
 VWidth: 0
 LayerCount: 2
@@ -17586,7 +17570,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni061F
-Encoding: 1567 1567 327
+Encoding: 1567 1567 326
 Width: 344
 VWidth: 0
 LayerCount: 2
@@ -17620,7 +17604,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.medi_BaaYaaFina
-Encoding: 65838 -1 328
+Encoding: 65838 -1 327
 Width: 308
 VWidth: 0
 AnchorPoint: "cursive" 0 -20 exit 0
@@ -17674,7 +17658,7 @@ EndSplineSet
 EndChar
 
 StartChar: yaa.fina_BaaYaaFina
-Encoding: 65839 -1 329
+Encoding: 65839 -1 328
 Width: 670
 VWidth: 0
 AnchorPoint: "cursive" 360 -20 entry 0
@@ -17729,7 +17713,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaSeenAltInit
-Encoding: 65840 -1 330
+Encoding: 65840 -1 329
 Width: 188
 VWidth: 0
 AnchorPoint: "cursive" 4 151 exit 0
@@ -17813,7 +17797,7 @@ EndSplineSet
 EndChar
 
 StartChar: seen.medi_BaaSeenAltInit
-Encoding: 65841 -1 331
+Encoding: 65841 -1 330
 Width: 290
 VWidth: 0
 AnchorPoint: "cursive" 0 51 exit 0
@@ -17919,7 +17903,7 @@ EndSplineSet
 EndChar
 
 StartChar: raa.fina_PostTooth
-Encoding: 65842 -1 332
+Encoding: 65842 -1 331
 Width: 591
 VWidth: 0
 AnchorPoint: "cursive" 590 51 exit 0
@@ -17971,7 +17955,7 @@ EndSplineSet
 EndChar
 
 StartChar: yaa.fina_PostTooth
-Encoding: 65843 -1 333
+Encoding: 65843 -1 332
 Width: 668
 VWidth: 0
 AnchorPoint: "cursive" 668 51 exit 0
@@ -18033,7 +18017,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaHaaIsol
-Encoding: 65844 -1 334
+Encoding: 65844 -1 333
 Width: 464
 VWidth: 0
 AnchorPoint: "cursive" 42 514 exit 0
@@ -18085,7 +18069,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaHaaInit
-Encoding: 65846 -1 335
+Encoding: 65846 -1 334
 Width: 468
 VWidth: 0
 AnchorPoint: "cursive" 38 233 exit 0
@@ -18137,7 +18121,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaHaaMeemInit
-Encoding: 65848 -1 336
+Encoding: 65848 -1 335
 Width: 518
 VWidth: 0
 AnchorPoint: "cursive" 74 363 exit 0
@@ -18202,7 +18186,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi_BaaHaaMeemInit
-Encoding: 65849 -1 337
+Encoding: 65849 -1 336
 Width: 640
 VWidth: 0
 AnchorPoint: "cursive" 84 363 entry 0
@@ -18268,7 +18252,7 @@ EndSplineSet
 EndChar
 
 StartChar: meem.medi_BaaHaaMeemInit
-Encoding: 65850 -1 338
+Encoding: 65850 -1 337
 Width: 352
 VWidth: 0
 AnchorPoint: "cursive" 199 199 entry 0
@@ -18336,7 +18320,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.fina_BaaHaaIsol
-Encoding: 65845 -1 339
+Encoding: 65845 -1 338
 Width: 588
 VWidth: 0
 AnchorPoint: "cursive" 42 514 entry 0
@@ -18393,7 +18377,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi_BaaHaaInit
-Encoding: 65847 -1 340
+Encoding: 65847 -1 339
 Width: 584
 VWidth: 0
 AnchorPoint: "cursive" 38 233 entry 0
@@ -18447,7 +18431,7 @@ EndSplineSet
 EndChar
 
 StartChar: lam.init_LamHaaHaaInit
-Encoding: 65851 -1 341
+Encoding: 65851 -1 340
 Width: 294
 VWidth: 0
 AnchorPoint: "cursive" 83 435 exit 0
@@ -18523,7 +18507,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi1_LamHaaHaaInit
-Encoding: 65852 -1 342
+Encoding: 65852 -1 341
 Width: 544
 VWidth: 0
 AnchorPoint: "cursive" -20 231 exit 0
@@ -18600,7 +18584,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi2_LamHaaHaaInit
-Encoding: 65853 -1 343
+Encoding: 65853 -1 342
 Width: 639
 VWidth: 0
 AnchorPoint: "cursive" 70 231 entry 0
@@ -18674,7 +18658,7 @@ EndSplineSet
 EndChar
 
 StartChar: ayn.init_Finjani
-Encoding: 65854 -1 344
+Encoding: 65854 -1 343
 Width: 348
 VWidth: 0
 LayerCount: 2
@@ -18699,7 +18683,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.init_Finjani
-Encoding: 65855 -1 345
+Encoding: 65855 -1 344
 Width: 556
 VWidth: 0
 LayerCount: 2
@@ -18742,7 +18726,7 @@ EndSplineSet
 EndChar
 
 StartChar: haa.medi_Finjani
-Encoding: 65856 -1 346
+Encoding: 65856 -1 345
 Width: 525
 VWidth: 0
 LayerCount: 2
@@ -18774,7 +18758,7 @@ EndSplineSet
 EndChar
 
 StartChar: seen.init_PreYaa
-Encoding: 65857 -1 347
+Encoding: 65857 -1 346
 Width: 296
 VWidth: 0
 LayerCount: 2
@@ -18806,7 +18790,7 @@ EndSplineSet
 EndChar
 
 StartChar: seen.medi_PreYaa
-Encoding: 65858 -1 348
+Encoding: 65858 -1 347
 Width: 371
 VWidth: 0
 LayerCount: 2
@@ -18832,7 +18816,7 @@ EndSplineSet
 EndChar
 
 StartChar: sad.init_PreYaa
-Encoding: 65859 -1 349
+Encoding: 65859 -1 348
 Width: 487
 VWidth: 0
 LayerCount: 2
@@ -18858,7 +18842,7 @@ EndSplineSet
 EndChar
 
 StartChar: sad.medi_PreYaa
-Encoding: 65860 -1 350
+Encoding: 65860 -1 349
 Width: 511
 VWidth: 0
 LayerCount: 2
@@ -18909,7 +18893,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.init_BaaBaaAltInit
-Encoding: 65861 -1 351
+Encoding: 65861 -1 350
 Width: 101
 VWidth: 0
 AnchorPoint: "cursive" 8 51 exit 0
@@ -18956,7 +18940,7 @@ EndSplineSet
 EndChar
 
 StartChar: baa.medi_BaaBaaAltInit
-Encoding: 65862 -1 352
+Encoding: 65862 -1 351
 Width: 241
 VWidth: 0
 AnchorPoint: "cursive" 248 51 entry 0
@@ -19006,7 +18990,7 @@ EndSplineSet
 EndChar
 
 StartChar: kaf.init_KafLamHehIsol
-Encoding: 65863 -1 353
+Encoding: 65863 -1 352
 Width: 182
 VWidth: 0
 AnchorPoint: "cursive" 0 -22 exit 0
@@ -19080,7 +19064,7 @@ EndSplineSet
 EndChar
 
 StartChar: lam.medi_KafLamHehIsol
-Encoding: 65864 -1 354
+Encoding: 65864 -1 353
 Width: 178
 VWidth: 0
 AnchorPoint: "cursive" -6 -94 exit 0
@@ -19153,7 +19137,7 @@ EndSplineSet
 EndChar
 
 StartChar: heh.fina_KafLamHehIsol
-Encoding: 65865 -1 355
+Encoding: 65865 -1 354
 Width: 376
 VWidth: 0
 AnchorPoint: "cursive" 374 -94 entry 0
@@ -19233,7 +19217,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0671
-Encoding: 1649 1649 356
+Encoding: 1649 1649 355
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -19243,7 +19227,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0673
-Encoding: 1651 1651 357
+Encoding: 1651 1651 356
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -19253,7 +19237,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni0675
-Encoding: 1653 1653 358
+Encoding: 1653 1653 357
 Width: 168
 VWidth: 0
 LayerCount: 2
@@ -19263,7 +19247,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
 EndChar
 
 StartChar: uni066E
-Encoding: 1646 1646 359
+Encoding: 1646 1646 358
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19273,17 +19257,17 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni066F
-Encoding: 1647 1647 360
+Encoding: 1647 1647 359
 Width: 580
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+Refer: 52 -1 N 1 0 0 1 -2.57545 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
 EndChar
 
 StartChar: uni0679
-Encoding: 1657 1657 361
+Encoding: 1657 1657 360
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19293,7 +19277,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni067A
-Encoding: 1658 1658 362
+Encoding: 1658 1658 361
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19303,7 +19287,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni067B
-Encoding: 1659 1659 363
+Encoding: 1659 1659 362
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19313,7 +19297,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni067C
-Encoding: 1660 1660 364
+Encoding: 1660 1660 363
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19323,7 +19307,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni067D
-Encoding: 1661 1661 365
+Encoding: 1661 1661 364
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19333,7 +19317,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni067E
-Encoding: 1662 1662 366
+Encoding: 1662 1662 365
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19343,7 +19327,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni067F
-Encoding: 1663 1663 367
+Encoding: 1663 1663 366
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19353,7 +19337,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0680
-Encoding: 1664 1664 368
+Encoding: 1664 1664 367
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19363,7 +19347,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0750
-Encoding: 1872 1872 369
+Encoding: 1872 1872 368
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19373,7 +19357,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0751
-Encoding: 1873 1873 370
+Encoding: 1873 1873 369
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19383,7 +19367,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0752
-Encoding: 1874 1874 371
+Encoding: 1874 1874 370
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19393,7 +19377,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0753
-Encoding: 1875 1875 372
+Encoding: 1875 1875 371
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19403,7 +19387,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0754
-Encoding: 1876 1876 373
+Encoding: 1876 1876 372
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19413,7 +19397,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0755
-Encoding: 1877 1877 374
+Encoding: 1877 1877 373
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19423,7 +19407,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0756
-Encoding: 1878 1878 375
+Encoding: 1878 1878 374
 Width: 834
 VWidth: 0
 LayerCount: 2
@@ -19433,677 +19417,677 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
 EndChar
 
 StartChar: uni0676
-Encoding: 1654 1654 376
+Encoding: 1654 1654 375
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni0677
-Encoding: 1655 1655 377
+Encoding: 1655 1655 376
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06C4
-Encoding: 1732 1732 378
+Encoding: 1732 1732 377
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06C5
-Encoding: 1733 1733 379
+Encoding: 1733 1733 378
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06C6
-Encoding: 1734 1734 380
+Encoding: 1734 1734 379
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06C7
-Encoding: 1735 1735 381
+Encoding: 1735 1735 380
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06C8
-Encoding: 1736 1736 382
+Encoding: 1736 1736 381
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06C9
-Encoding: 1737 1737 383
+Encoding: 1737 1737 382
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06CA
-Encoding: 1738 1738 384
+Encoding: 1738 1738 383
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06CB
-Encoding: 1739 1739 385
+Encoding: 1739 1739 384
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni0678
-Encoding: 1656 1656 386
+Encoding: 1656 1656 385
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni06CC
-Encoding: 1740 1740 387
+Encoding: 1740 1740 386
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni06CE
-Encoding: 1742 1742 388
+Encoding: 1742 1742 387
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni06D0
-Encoding: 1744 1744 389
+Encoding: 1744 1744 388
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni06D1
-Encoding: 1745 1745 390
+Encoding: 1745 1745 389
 Width: 658
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 73 -1 N 1 0 0 1 -0.083109 0 3
+Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
 EndChar
 
 StartChar: uni06CF
-Encoding: 1743 1743 391
+Encoding: 1743 1743 390
 Width: 438
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 71 -1 N 1 0 0 1 -0.280355 0 3
+Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
 EndChar
 
 StartChar: uni06B9
-Encoding: 1721 1721 392
+Encoding: 1721 1721 391
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni06BA
-Encoding: 1722 1722 393
+Encoding: 1722 1722 392
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni06BB
-Encoding: 1723 1723 394
+Encoding: 1723 1723 393
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni06BC
-Encoding: 1724 1724 395
+Encoding: 1724 1724 394
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni06BD
-Encoding: 1725 1725 396
+Encoding: 1725 1725 395
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni06C0
-Encoding: 1728 1728 397
+Encoding: 1728 1728 396
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni06C1
-Encoding: 1729 1729 398
+Encoding: 1729 1729 397
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni06C2
-Encoding: 1730 1730 399
+Encoding: 1730 1730 398
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni06C3
-Encoding: 1731 1731 400
+Encoding: 1731 1731 399
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni0767
-Encoding: 1895 1895 401
+Encoding: 1895 1895 400
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni0768
-Encoding: 1896 1896 402
+Encoding: 1896 1896 401
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni0769
-Encoding: 1897 1897 403
+Encoding: 1897 1897 402
 Width: 462
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 51 -1 N 1 0 0 1 0.0291809 0 3
+Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
 EndChar
 
 StartChar: uni0681
-Encoding: 1665 1665 404
+Encoding: 1665 1665 403
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0682
-Encoding: 1666 1666 405
+Encoding: 1666 1666 404
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0683
-Encoding: 1667 1667 406
+Encoding: 1667 1667 405
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0684
-Encoding: 1668 1668 407
+Encoding: 1668 1668 406
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0685
-Encoding: 1669 1669 408
+Encoding: 1669 1669 407
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0686
-Encoding: 1670 1670 409
+Encoding: 1670 1670 408
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0687
-Encoding: 1671 1671 410
+Encoding: 1671 1671 409
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0757
-Encoding: 1879 1879 411
+Encoding: 1879 1879 410
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni0758
-Encoding: 1880 1880 412
+Encoding: 1880 1880 411
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni06A1
-Encoding: 1697 1697 413
+Encoding: 1697 1697 412
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni06A2
-Encoding: 1698 1698 414
+Encoding: 1698 1698 413
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni06A3
-Encoding: 1699 1699 415
+Encoding: 1699 1699 414
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni06A4
-Encoding: 1700 1700 416
+Encoding: 1700 1700 415
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni06A5
-Encoding: 1701 1701 417
+Encoding: 1701 1701 416
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni06A6
-Encoding: 1702 1702 418
+Encoding: 1702 1702 417
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni0760
-Encoding: 1888 1888 419
+Encoding: 1888 1888 418
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni0761
-Encoding: 1889 1889 420
+Encoding: 1889 1889 419
 Width: 884
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 21 -1 N 1 0 0 1 -2.04933 0 3
+Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
 EndChar
 
 StartChar: uni06A7
-Encoding: 1703 1703 421
+Encoding: 1703 1703 420
 Width: 580
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+Refer: 52 -1 N 1 0 0 1 -2.57545 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
 EndChar
 
 StartChar: uni06A8
-Encoding: 1704 1704 422
+Encoding: 1704 1704 421
 Width: 580
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 53 -1 N 1 0 0 1 -2.57545 0 3
+Refer: 52 -1 N 1 0 0 1 -2.57545 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
 EndChar
 
 StartChar: uni06B5
-Encoding: 1717 1717 423
+Encoding: 1717 1717 422
 Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+Refer: 39 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni06B6
-Encoding: 1718 1718 424
+Encoding: 1718 1718 423
 Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+Refer: 39 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni06B7
-Encoding: 1719 1719 425
+Encoding: 1719 1719 424
 Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+Refer: 39 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni06B8
-Encoding: 1720 1720 426
+Encoding: 1720 1720 425
 Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+Refer: 39 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni076A
-Encoding: 1898 1898 427
+Encoding: 1898 1898 426
 Width: 502
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 40 -1 N 1 0 0 1 0.209004 0 3
+Refer: 39 -1 N 1 0 0 1 0.209004 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" lam.isol
 EndChar
 
 StartChar: uni0691
-Encoding: 1681 1681 428
+Encoding: 1681 1681 427
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0692
-Encoding: 1682 1682 429
+Encoding: 1682 1682 428
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0693
-Encoding: 1683 1683 430
+Encoding: 1683 1683 429
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0694
-Encoding: 1684 1684 431
+Encoding: 1684 1684 430
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0695
-Encoding: 1685 1685 432
+Encoding: 1685 1685 431
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0696
-Encoding: 1686 1686 433
+Encoding: 1686 1686 432
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0697
-Encoding: 1687 1687 434
+Encoding: 1687 1687 433
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0698
-Encoding: 1688 1688 435
+Encoding: 1688 1688 434
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni0699
-Encoding: 1689 1689 436
+Encoding: 1689 1689 435
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni075B
-Encoding: 1883 1883 437
+Encoding: 1883 1883 436
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni076B
-Encoding: 1899 1899 438
+Encoding: 1899 1899 437
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni076C
-Encoding: 1900 1900 439
+Encoding: 1900 1900 438
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni06AC
-Encoding: 1708 1708 440
+Encoding: 1708 1708 439
 Width: 556
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+Refer: 35 -1 N 1 0 0 1 -1.32354 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
 EndChar
 
 StartChar: uni06AD
-Encoding: 1709 1709 441
+Encoding: 1709 1709 440
 Width: 556
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+Refer: 35 -1 N 1 0 0 1 -1.32354 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
 EndChar
 
 StartChar: uni06AE
-Encoding: 1710 1710 442
+Encoding: 1710 1710 441
 Width: 556
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 36 -1 N 1 0 0 1 -1.32354 0 3
+Refer: 35 -1 N 1 0 0 1 -1.32354 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" kaf.isol
 EndChar
 
 StartChar: uni06A0
-Encoding: 1696 1696 443
+Encoding: 1696 1696 442
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -20113,7 +20097,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni075D
-Encoding: 1885 1885 444
+Encoding: 1885 1885 443
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -20123,7 +20107,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni075E
-Encoding: 1886 1886 445
+Encoding: 1886 1886 444
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -20133,7 +20117,7 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni075F
-Encoding: 1887 1887 446
+Encoding: 1887 1887 445
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -20143,236 +20127,236 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni069A
-Encoding: 1690 1690 447
+Encoding: 1690 1690 446
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni069B
-Encoding: 1691 1691 448
+Encoding: 1691 1691 447
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni069C
-Encoding: 1692 1692 449
+Encoding: 1692 1692 448
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni075C
-Encoding: 1884 1884 450
+Encoding: 1884 1884 449
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni076D
-Encoding: 1901 1901 451
+Encoding: 1901 1901 450
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni06BF
-Encoding: 1727 1727 452
+Encoding: 1727 1727 451
 Width: 666
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 25 -1 N 1 0 0 1 -1.23667 0 3
+Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
 EndChar
 
 StartChar: uni06D5
-Encoding: 1749 1749 453
+Encoding: 1749 1749 452
 Width: 266
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 31 -1 N 1 0 0 1 -2.11698 0 3
+Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
 EndChar
 
 StartChar: uni0688
-Encoding: 1672 1672 454
+Encoding: 1672 1672 453
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0689
-Encoding: 1673 1673 455
+Encoding: 1673 1673 454
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni068A
-Encoding: 1674 1674 456
+Encoding: 1674 1674 455
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni068B
-Encoding: 1675 1675 457
+Encoding: 1675 1675 456
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni068C
-Encoding: 1676 1676 458
+Encoding: 1676 1676 457
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni068D
-Encoding: 1677 1677 459
+Encoding: 1677 1677 458
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni068E
-Encoding: 1678 1678 460
+Encoding: 1678 1678 459
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni068F
-Encoding: 1679 1679 461
+Encoding: 1679 1679 460
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0690
-Encoding: 1680 1680 462
+Encoding: 1680 1680 461
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni0759
-Encoding: 1881 1881 463
+Encoding: 1881 1881 462
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni075A
-Encoding: 1882 1882 464
+Encoding: 1882 1882 463
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
 EndChar
 
 StartChar: uni069D
-Encoding: 1693 1693 465
+Encoding: 1693 1693 464
 Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+Refer: 59 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
 
 StartChar: uni069E
-Encoding: 1694 1694 466
+Encoding: 1694 1694 465
 Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+Refer: 59 -1 N 1 0 0 1 0.760814 0 3
 EndChar
 
 StartChar: uni069F
-Encoding: 1695 1695 467
+Encoding: 1695 1695 466
 Width: 704
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 68 -1 N 1 0 0 1 -17.8718 0 3
+Refer: 67 -1 N 1 0 0 1 -17.8718 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
 EndChar
 
 StartChar: uni06FA
-Encoding: 1786 1786 468
+Encoding: 1786 1786 467
 Width: 887
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -3.29003 0 3
+Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
 EndChar
 
 StartChar: uni06FB
-Encoding: 1787 1787 469
+Encoding: 1787 1787 468
 Width: 1115
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 60 -1 N 1 0 0 1 0.760814 0 3
+Refer: 59 -1 N 1 0 0 1 0.760814 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
 EndChar
 
 StartChar: uni06FC
-Encoding: 1788 1788 470
+Encoding: 1788 1788 469
 Width: 572
 VWidth: 0
 LayerCount: 2
@@ -20382,23 +20366,49 @@ MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
 EndChar
 
 StartChar: uni06EF
-Encoding: 1775 1775 471
+Encoding: 1775 1775 470
 Width: 338
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 57 -1 N 1 0 0 1 0.69086 0 3
+Refer: 56 -1 N 1 0 0 1 0.69086 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
 EndChar
 
 StartChar: uni06EE
-Encoding: 1774 1774 472
+Encoding: 1774 1774 471
 Width: 346
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 14 -1 N 1 0 0 1 -0.058526 0 3
+Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
 MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+EndChar
+
+StartChar: baa.medi_High
+Encoding: 65866 -1 472
+Width: 190
+VWidth: 0
+LayerCount: 2
+Fore
+SplineSet
+76.457 365.885 m 0
+ 81.208 372.997 87.1104 364.711 88.9941 356.955 c 0
+ 106.355 285.508 124.107 177.321 143.956 133.855 c 0
+ 153.106 113.82 171.006 94.7734 189.729 90.0107 c 0
+ 206.271 85.8037 215.262 79.8799 209.582 48.5469 c 0
+ 203.902 17.2148 196.181 -1.4707 189.892 0.100586 c 0
+ 159.247 7.75977 112.026 32.4482 87.7803 127.21 c 0
+ 86.9062 130.649 85.751 131.552 84.6416 128.012 c 0
+ 68.9395 87.6143 46.1914 7.0332 0.275391 -0.0722656 c 0
+ -10.916 -1.80469 -20.1904 44.959 -22.5176 60.332 c 0
+ -24.8438 75.7051 -16.8926 86.5986 -0.0751953 90.0029 c 0
+ 27.4414 95.5732 61.2148 117.787 78.9238 151.592 c 0
+ 80.3076 154.233 80.459 155.802 79.7354 158.865 c 0
+ 71.6006 193.284 59.4053 255.548 50.9932 307.594 c 0
+ 50.248 312.208 50.0059 316.983 52.1426 321.437 c 0
+ 58.1992 334.062 67.5527 352.558 76.457 365.885 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
