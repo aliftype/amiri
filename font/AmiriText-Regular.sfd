@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1274329592
+ModificationTime: 1274330440
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -355,10 +355,11 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 8
   SeqLookup: 0 "BaaNoonFina" 
   SeqLookup: 1 "BaaNoonFina" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  0 0 0 1
- String: 17 kaf.medi baa.medi
- BString: 0 
- FString: 0 
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  0 0 0 1
+ 2 0 1
+  Coverage: 8 kaf.medi
+  Coverage: 8 baa.medi
+  FCoverage: 27 alef.fina lam.medi lam.fina
  2
   SeqLookup: 0 "KafBaaMedi" 
   SeqLookup: 1 "KafBaaMedi" 
@@ -732,10 +733,11 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 4
   SeqLookup: 0 "LamMeemInit" 
   SeqLookup: 1 "LamMeemInit" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  0 0 0 1
- String: 17 kaf.init baa.medi
- BString: 0 
- FString: 0 
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  0 0 0 1
+ 2 0 1
+  Coverage: 8 kaf.init
+  Coverage: 8 baa.medi
+  FCoverage: 27 alef.fina lam.fina lam.medi
  2
   SeqLookup: 0 "KafBaaInit" 
   SeqLookup: 1 "KafBaaInit" 
@@ -1069,7 +1071,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65568 24 10
+WinInfo: 65592 24 10
 AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
 BeginChars: 65867 473
 
