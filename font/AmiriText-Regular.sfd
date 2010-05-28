@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 637949]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1274817319
+ModificationTime: 1275073995
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -42,9 +41,9 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 Lookup: 2 0 0 "'ccmp' Glyph Decomposition"  {"'ccmp' Glyph Decomposition-1"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 1 0 0 "'init' Initial Forms in Arabic lookup 1"  {"'init' Initial Forms in Arabic lookup 1 subtable"  } ['init' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "'medi' Medial Forms in Arabic lookup 2"  {"'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "'fina' Terminal Forms in Arabic lookup 3"  {"'fina' Terminal Forms in Arabic lookup 3 subtable"  } ['fina' ('arab' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'init' Initial Forms in Arabic lookup 1"  {"'init' Initial Forms in Arabic lookup 1 subtable"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'medi' Medial Forms in Arabic lookup 2"  {"'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'fina' Terminal Forms in Arabic lookup 3"  {"'fina' Terminal Forms in Arabic lookup 3 subtable"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "KafLamHehIsol"  {"KafLamHehIsol subtable"  } []
 Lookup: 1 0 0 "BaaBaaAltInit"  {"BaaBaaAltInit subtable"  } []
 Lookup: 1 0 0 "SeenYaaFina"  {"SeenYaaFina subtable"  } []
@@ -154,15 +153,19 @@ Lookup: 6 8 0 "'calt' BaaRaaFina"  {"'calt' Contextual Alternates in Arabic look
 Lookup: 1 0 0 "BaaMeemFina"  {"BaaMeemFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaMeemFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 22"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 0 0 "HehMediTooth"  {"HehMediTooth subtable"  } []
-Lookup: 6 0 0 "'calt' HehMediTooth"  {"'calt' HehMediTooth subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' HehMediTooth"  {"'calt' HehMediTooth subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "HighBaa"  {"HighBaa subtable"  } []
-Lookup: 6 0 0 "'calt' HighBaa"  {"'calt' HighBaa subtable"  "'calt' HighBaa subtable 2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' HighBaa"  {"'calt' HighBaa subtable"  "'calt' HighBaa subtable 2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "Finjani"  {"Finjani subtable"  } []
 Lookup: 6 8 0 "'calt' Finjani"  {"'calt' Finjani subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaYaaFina"  {"BaaYaaFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaYaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 259 0 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 259 8 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'calt' HighBaa subtable 2"  0 0 0 1
@@ -1072,14 +1075,18 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65544 24 10
-AnchorClass2: "cursive"  "'curs' Cursive Attachment-1" 
-BeginChars: 65867 473
+WinInfo: 65640 24 10
+AnchorClass2: "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
+BeginChars: 65877 483
 
 StartChar: alef.fina.alt
 Encoding: 65536 -1 0
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1107,6 +1114,10 @@ StartChar: alef.fina
 Encoding: 65537 -1 1
 Width: 171
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1141,6 +1152,10 @@ StartChar: alef.isol
 Encoding: 65538 -1 2
 Width: 168
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1163,6 +1178,10 @@ StartChar: ayn.fina
 Encoding: 65539 -1 3
 Width: 432
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1200,6 +1219,10 @@ StartChar: ayn.init
 Encoding: 65541 -1 4
 Width: 436
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1230,6 +1253,10 @@ StartChar: ayn.isol
 Encoding: 65542 -1 5
 Width: 572
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1268,6 +1295,10 @@ StartChar: ayn.medi
 Encoding: 65543 -1 6
 Width: 358
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1294,6 +1325,10 @@ StartChar: baa.fina
 Encoding: 65549 -1 7
 Width: 812
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1322,6 +1357,10 @@ StartChar: baa.init
 Encoding: 65550 -1 8
 Width: 120
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1363,6 +1402,10 @@ StartChar: baa.isol
 Encoding: 65551 -1 9
 Width: 834
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1390,6 +1433,10 @@ StartChar: baa.medi
 Encoding: 65553 -1 10
 Width: 208
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1450,6 +1497,10 @@ StartChar: dal.fina
 Encoding: 65555 -1 12
 Width: 410
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1482,6 +1533,10 @@ StartChar: dal.isol
 Encoding: 65556 -1 13
 Width: 346
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1508,6 +1563,10 @@ StartChar: dash
 Encoding: 65557 -1 14
 Width: 676
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1523,6 +1582,10 @@ StartChar: dot.double
 Encoding: 65558 -1 15
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1551,6 +1614,10 @@ StartChar: dot.single
 Encoding: 65559 -1 16
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1570,6 +1637,10 @@ StartChar: dot.tripple
 Encoding: 65560 -1 17
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1607,6 +1678,10 @@ StartChar: faa.fina
 Encoding: 65561 -1 18
 Width: 944
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1635,6 +1710,10 @@ StartChar: faa.init
 Encoding: 65562 -1 19
 Width: 258
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1668,6 +1747,10 @@ StartChar: faa.isol
 Encoding: 65563 -1 20
 Width: 884
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1701,6 +1784,10 @@ StartChar: faa.medi
 Encoding: 65564 -1 21
 Width: 349
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1729,6 +1816,10 @@ StartChar: haa.fina
 Encoding: 65565 -1 22
 Width: 598
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1766,6 +1857,10 @@ StartChar: haa.init
 Encoding: 65567 -1 23
 Width: 602
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1793,6 +1888,10 @@ StartChar: haa.isol
 Encoding: 65568 -1 24
 Width: 666
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1825,6 +1924,10 @@ StartChar: haa.medi
 Encoding: 65570 -1 25
 Width: 586
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1876,6 +1979,10 @@ StartChar: hamza.small
 Encoding: 65571 -1 26
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1901,6 +2008,10 @@ StartChar: hamza
 Encoding: 65572 -1 27
 Width: 266
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1928,6 +2039,10 @@ StartChar: heh.fina
 Encoding: 65573 -1 28
 Width: 318
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1965,6 +2080,10 @@ StartChar: heh.init
 Encoding: 65574 -1 29
 Width: 420
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2003,6 +2122,10 @@ StartChar: heh.isol
 Encoding: 65575 -1 30
 Width: 266
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2030,6 +2153,10 @@ StartChar: heh.medi
 Encoding: 65576 -1 31
 Width: 392
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2072,6 +2199,10 @@ StartChar: kaf.fina
 Encoding: 65577 -1 32
 Width: 760
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2118,6 +2249,10 @@ StartChar: kaf.init.alt
 Encoding: 65578 -1 33
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2153,6 +2288,10 @@ StartChar: kaf.init
 Encoding: 65579 -1 34
 Width: 198
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2196,6 +2335,10 @@ StartChar: kaf.isol
 Encoding: 65580 -1 35
 Width: 556
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2241,6 +2384,10 @@ StartChar: kaf.medi
 Encoding: 65581 -1 36
 Width: 371
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2280,6 +2427,10 @@ StartChar: lam.fina
 Encoding: 65583 -1 37
 Width: 582
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2312,6 +2463,10 @@ StartChar: lam.init
 Encoding: 65584 -1 38
 Width: 152
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2353,6 +2508,10 @@ StartChar: lam.isol
 Encoding: 65585 -1 39
 Width: 502
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2389,6 +2548,10 @@ StartChar: lam.medi
 Encoding: 65586 -1 40
 Width: 178
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -2448,6 +2611,10 @@ StartChar: madda
 Encoding: 65587 -1 41
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2468,6 +2635,10 @@ StartChar: meem.fina.alt
 Encoding: 65588 -1 42
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2498,6 +2669,10 @@ StartChar: meem.fina
 Encoding: 65589 -1 43
 Width: 460
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2533,6 +2708,10 @@ StartChar: meem.init
 Encoding: 65590 -1 44
 Width: 350
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2564,6 +2743,10 @@ StartChar: meem.isol
 Encoding: 65591 -1 45
 Width: 352
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2597,6 +2780,10 @@ StartChar: meem.medi
 Encoding: 65592 -1 46
 Width: 464
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2655,6 +2842,10 @@ StartChar: noon.fina.alt
 Encoding: 65593 -1 47
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2682,6 +2873,10 @@ StartChar: noon.fina
 Encoding: 65594 -1 48
 Width: 553
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2712,6 +2907,10 @@ StartChar: noon.isol.alt
 Encoding: 65595 -1 49
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2736,6 +2935,10 @@ StartChar: noon.isol
 Encoding: 65596 -1 50
 Width: 462
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2764,6 +2967,10 @@ StartChar: qaf.fina
 Encoding: 65597 -1 51
 Width: 546
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2798,6 +3005,10 @@ StartChar: qaf.isol
 Encoding: 65598 -1 52
 Width: 580
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2829,6 +3040,10 @@ StartChar: question-mark
 Encoding: 65599 -1 53
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2863,6 +3078,10 @@ StartChar: raa.fina.alt2
 Encoding: 65601 -1 54
 Width: 0
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2886,6 +3105,10 @@ StartChar: raa.fina
 Encoding: 65602 -1 55
 Width: 318
 VWidth: -60
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2922,6 +3145,10 @@ StartChar: raa.isol
 Encoding: 65603 -1 56
 Width: 338
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2949,6 +3176,10 @@ StartChar: sad.fina
 Encoding: 65604 -1 57
 Width: 1130
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -3023,6 +3254,10 @@ StartChar: sad.init
 Encoding: 65606 -1 58
 Width: 665
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3058,6 +3293,10 @@ StartChar: sad.isol
 Encoding: 65607 -1 59
 Width: 1115
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3098,6 +3337,10 @@ StartChar: sad.medi
 Encoding: 65608 -1 60
 Width: 724
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -3161,6 +3404,10 @@ StartChar: seen.fina
 Encoding: 65609 -1 61
 Width: 1002
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3202,6 +3449,10 @@ StartChar: seen.init
 Encoding: 65611 -1 62
 Width: 524
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3239,6 +3490,10 @@ StartChar: seen.isol
 Encoding: 65612 -1 63
 Width: 887
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3280,6 +3535,10 @@ StartChar: seen.medi
 Encoding: 65614 -1 64
 Width: 516
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3319,6 +3578,10 @@ StartChar: taa.fina
 Encoding: 65615 -1 65
 Width: 691
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3362,6 +3625,10 @@ StartChar: taa.init
 Encoding: 65616 -1 66
 Width: 534
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3402,6 +3669,10 @@ StartChar: taa.isol
 Encoding: 65617 -1 67
 Width: 704
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3442,6 +3713,10 @@ StartChar: taa.medi
 Encoding: 65618 -1 68
 Width: 553
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -3516,6 +3791,10 @@ StartChar: waw.fina
 Encoding: 65619 -1 69
 Width: 434
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3553,6 +3832,10 @@ StartChar: waw.isol
 Encoding: 65620 -1 70
 Width: 438
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3581,6 +3864,10 @@ StartChar: yaa.fina
 Encoding: 65622 -1 71
 Width: 526
 VWidth: -142
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3623,6 +3910,10 @@ StartChar: yaa.isol
 Encoding: 65623 -1 72
 Width: 658
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -3667,7 +3958,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol madda.above
 EndChar
 
 StartChar: uni0623
@@ -3677,7 +3968,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol hamza.above
 EndChar
 
 StartChar: uni0624
@@ -3687,7 +3978,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 70 -1 N 1 0 0 1 -0.280355 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" waw.isol hamza.above
 EndChar
 
 StartChar: uni0625
@@ -3697,7 +3988,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 2 -1 N 1 0 0 1 -42.9877 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" alef.isol hamza.below
 EndChar
 
 StartChar: uni0626
@@ -3707,7 +3998,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol hamza.above
 EndChar
 
 StartChar: uni0627
@@ -3727,7 +4018,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol dot.below
 EndChar
 
 StartChar: uni0629
@@ -3737,7 +4028,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 30 -1 N 1 0 0 1 -2.11698 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" heh.isol twodots.above
 EndChar
 
 StartChar: uni062A
@@ -3747,7 +4038,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol twodots.above
 EndChar
 
 StartChar: uni062B
@@ -3757,7 +4048,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 9 -1 N 1 0 0 1 -0.377665 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" baa.isol threedots.above
 EndChar
 
 StartChar: uni062C
@@ -3767,7 +4058,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol dot.below
 EndChar
 
 StartChar: uni062D
@@ -3787,7 +4078,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 24 -1 N 1 0 0 1 -1.23667 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" haa.isol dot.above
 EndChar
 
 StartChar: uni062F
@@ -3807,7 +4098,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 13 -1 N 1 0 0 1 -0.058526 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" dal.isol dot.above
 EndChar
 
 StartChar: uni0631
@@ -3827,7 +4118,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 56 -1 N 1 0 0 1 0.69086 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" raa.isol dot.above
 EndChar
 
 StartChar: uni0633
@@ -3847,7 +4138,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 63 -1 N 1 0 0 1 -3.29003 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol threedots.above
 EndChar
 
 StartChar: uni0635
@@ -3867,7 +4158,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 59 -1 N 1 0 0 1 0.760814 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" sad.isol dot.above
 EndChar
 
 StartChar: uni0637
@@ -3887,7 +4178,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 67 -1 N 1 0 0 1 -17.8718 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" taa.isol dot.above
 EndChar
 
 StartChar: uni0639
@@ -3907,7 +4198,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 5 -1 N 1 0 0 1 0.138636 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" ayn.isol dot.above
 EndChar
 
 StartChar: uni0641
@@ -3917,7 +4208,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 20 -1 N 1 0 0 1 -2.04933 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol dot.above
 EndChar
 
 StartChar: uni0642
@@ -3927,7 +4218,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 52 -1 N 1 0 0 1 -2.57545 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" qaf.isol twodots.above
 EndChar
 
 StartChar: uni0643
@@ -3967,7 +4258,7 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 50 -1 N 1 0 0 1 0.0291809 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" noon.isol dot.above
 EndChar
 
 StartChar: uni0647
@@ -4007,13 +4298,17 @@ VWidth: 0
 LayerCount: 2
 Fore
 Refer: 72 -1 N 1 0 0 1 -0.083109 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol
+MultipleSubs2: "'ccmp' Glyph Decomposition-1" yaa.isol twodots.below
 EndChar
 
 StartChar: ayn.init_AynMeemInit
 Encoding: 65624 -1 109
 Width: 508
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 20 212 exit 0
 LayerCount: 2
 Back
@@ -4082,6 +4377,10 @@ StartChar: meem.medi_AynMeemInit
 Encoding: 65625 -1 110
 Width: 309
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 170 212 entry 0
 LayerCount: 2
 Back
@@ -4146,6 +4445,10 @@ StartChar: kaf.init_KafHehIsol
 Encoding: 65626 -1 111
 Width: 258
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -14 23 exit 0
 LayerCount: 2
 Back
@@ -4215,6 +4518,10 @@ StartChar: heh.fina_KafHehIsol
 Encoding: 65627 -1 112
 Width: 322
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 307 23 entry 0
 LayerCount: 2
 Back
@@ -4287,6 +4594,10 @@ StartChar: lam.init_LamDalIsol
 Encoding: 65628 -1 113
 Width: 138
 VWidth: -60
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -25 30 exit 0
 LayerCount: 2
 Back
@@ -4346,6 +4657,10 @@ StartChar: dal.fina_LamDalIsol
 Encoding: 65629 -1 114
 Width: 396
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 370 30 entry 0
 LayerCount: 2
 Back
@@ -4404,6 +4719,10 @@ StartChar: kaf.medi_KafLamMedi
 Encoding: 65630 -1 115
 Width: 489
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 41 exit 0
 LayerCount: 2
 Back
@@ -4462,6 +4781,10 @@ StartChar: lam.medi_KafLamMedi
 Encoding: 65631 -1 116
 Width: 194
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 197 41 entry 0
 LayerCount: 2
 Back
@@ -4518,6 +4841,10 @@ StartChar: lam.medi_LamMeemFina
 Encoding: 65632 -1 117
 Width: 236
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1 50 exit 0
 LayerCount: 2
 Back
@@ -4572,6 +4899,10 @@ StartChar: meem.fina_LamMeemFina
 Encoding: 65633 -1 118
 Width: 330
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 151 50 entry 0
 LayerCount: 2
 Back
@@ -4629,6 +4960,10 @@ StartChar: kaf.init_KafMeemLamInit
 Encoding: 65634 -1 119
 Width: 219
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -21 104 exit 0
 LayerCount: 2
 Back
@@ -4696,6 +5031,10 @@ StartChar: meem.medi_KafMeemLamInit
 Encoding: 65635 -1 120
 Width: 208
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 0 47 exit 0
 AnchorPoint: "cursive" 38 104 entry 0
 LayerCount: 2
@@ -4758,6 +5097,10 @@ StartChar: lam.medi_KafMeemLamInit
 Encoding: 65636 -1 121
 Width: 191
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 190 47 entry 0
 LayerCount: 2
 Back
@@ -4823,6 +5166,10 @@ StartChar: seen.init_SeenMeemInit
 Encoding: 65637 -1 122
 Width: 551
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 56 113 exit 0
 LayerCount: 2
 Back
@@ -4898,6 +5245,10 @@ StartChar: meem.medi_SeenMeemInit
 Encoding: 65638 -1 123
 Width: 322
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 148 113 entry 0
 LayerCount: 2
 Back
@@ -4958,6 +5309,10 @@ StartChar: kaf.medi_KafMeemMedi
 Encoding: 65639 -1 124
 Width: 598
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 57 207 exit 0
 LayerCount: 2
 Back
@@ -5027,6 +5382,10 @@ StartChar: meem.medi_KafMeemMedi
 Encoding: 65640 -1 125
 Width: 309
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 217 207 entry 0
 LayerCount: 2
 Back
@@ -5090,6 +5449,10 @@ StartChar: faa.init_FaaMeemInit
 Encoding: 65641 -1 126
 Width: 250
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 112 241 exit 0
 LayerCount: 2
 Back
@@ -5155,6 +5518,10 @@ StartChar: meem.medi_FaaMeemInit
 Encoding: 65642 -1 127
 Width: 346
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 242 241 entry 0
 LayerCount: 2
 Back
@@ -5219,6 +5586,10 @@ StartChar: baa.medi_BaaMeemAlefFina
 Encoding: 65643 -1 128
 Width: 265
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -4 28 exit 0
 LayerCount: 2
 Back
@@ -5274,6 +5645,10 @@ StartChar: meem.medi_BaaMeemAlefFina
 Encoding: 65644 -1 129
 Width: 233
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 0 -40 exit 0
 AnchorPoint: "cursive" 55 28 entry 0
 LayerCount: 2
@@ -5330,6 +5705,10 @@ StartChar: alef.fina_BaaMeemAlefFina
 Encoding: 65645 -1 130
 Width: 368
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 139 -40 entry 0
 LayerCount: 2
 Back
@@ -5389,6 +5768,10 @@ StartChar: kaf.init_KafMeemInit
 Encoding: 65646 -1 131
 Width: 198
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 60 213 exit 0
 LayerCount: 2
 Back
@@ -5456,6 +5839,10 @@ StartChar: meem.medi_KafMeemInit
 Encoding: 65647 -1 132
 Width: 294
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 218 213 entry 0
 LayerCount: 2
 Back
@@ -5518,6 +5905,10 @@ StartChar: kaf.init_KafYaaIsol
 Encoding: 65648 -1 133
 Width: 177
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 23 125 exit 0
 LayerCount: 2
 Back
@@ -5590,6 +5981,10 @@ StartChar: yaa.fina_KafYaaIsol
 Encoding: 65649 -1 134
 Width: 640
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 413 125 entry 0
 LayerCount: 2
 Back
@@ -5656,6 +6051,10 @@ StartChar: baa.init_BaaRaaIsol
 Encoding: 65650 -1 135
 Width: 214
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 52 135 exit 0
 LayerCount: 2
 Back
@@ -5701,6 +6100,10 @@ StartChar: raa.fina_BaaRaaIsol
 Encoding: 65651 -1 136
 Width: 360
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 312 135 entry 0
 LayerCount: 2
 Back
@@ -5749,6 +6152,10 @@ StartChar: baa.medi_BaaHehMedi
 Encoding: 65652 -1 137
 Width: 314
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 11 exit 0
 LayerCount: 2
 Back
@@ -5800,6 +6207,10 @@ StartChar: heh.medi_BaaHehMedi
 Encoding: 65653 -1 138
 Width: 204
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 166 11 entry 0
 LayerCount: 2
 Back
@@ -5857,6 +6268,10 @@ StartChar: lam.init_LamHehIsol
 Encoding: 65654 -1 139
 Width: 99
 VWidth: -60
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -6 -1 exit 0
 LayerCount: 2
 Back
@@ -5926,6 +6341,10 @@ StartChar: heh.fina_LamHehIsol
 Encoding: 65655 -1 140
 Width: 350
 VWidth: -60
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 344 -1 entry 0
 LayerCount: 2
 Back
@@ -6001,6 +6420,10 @@ StartChar: lam.init_LamLamAlefIsol
 Encoding: 65656 -1 141
 Width: 110
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -3 60 exit 0
 LayerCount: 2
 Back
@@ -6068,6 +6491,10 @@ StartChar: lam.medi_LamLamAlefIsol
 Encoding: 65657 -1 142
 Width: 250
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 32 188 exit 0
 AnchorPoint: "cursive" 244 60 entry 0
 LayerCount: 2
@@ -6138,6 +6565,10 @@ StartChar: alef.fina_LamLamAlefIsol
 Encoding: 65658 -1 143
 Width: 406
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 402 188 entry 0
 LayerCount: 2
 Back
@@ -6203,6 +6634,10 @@ StartChar: lam.medi_LamWawFina
 Encoding: 65659 -1 144
 Width: 245
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -10 71 exit 0
 LayerCount: 2
 Back
@@ -6259,6 +6694,10 @@ StartChar: waw.fina_LamWawFina
 Encoding: 65660 -1 145
 Width: 324
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 313 71 entry 0
 LayerCount: 2
 Back
@@ -6320,6 +6759,10 @@ StartChar: lam.init_LamHaaInit
 Encoding: 65661 -1 146
 Width: 600
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 85 247 exit 0
 LayerCount: 2
 Back
@@ -6383,6 +6826,10 @@ StartChar: haa.medi_LamHaaInit
 Encoding: 65662 -1 147
 Width: 592
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 85 247 entry 0
 LayerCount: 2
 Back
@@ -6446,6 +6893,10 @@ StartChar: meem.init_MeemMeemInit
 Encoding: 65663 -1 148
 Width: 306
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 58 133 exit 0
 LayerCount: 2
 Back
@@ -6506,6 +6957,10 @@ StartChar: meem.medi_MeemMeemInit
 Encoding: 65664 -1 149
 Width: 322
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 168 133 entry 0
 LayerCount: 2
 Back
@@ -6560,6 +7015,10 @@ StartChar: faa.medi_FaaYaaFina
 Encoding: 65665 -1 150
 Width: 229
 VWidth: -189
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 37 -110.57 exit 0
 LayerCount: 2
 Back
@@ -6632,6 +7091,10 @@ StartChar: yaa.fina_FaaYaaFina
 Encoding: 65666 -1 151
 Width: 602
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 407 79 entry 0
 LayerCount: 2
 Back
@@ -6701,6 +7164,10 @@ StartChar: lam.init_LamLamHaaInit
 Encoding: 65667 -1 152
 Width: 124
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 37 328 exit 0
 LayerCount: 2
 Back
@@ -6772,6 +7239,10 @@ StartChar: lam.medi_LamLamHaaInit
 Encoding: 65668 -1 153
 Width: 355
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 368 328 entry 0
 AnchorPoint: "cursive" 8 243 exit 0
 LayerCount: 2
@@ -6847,6 +7318,10 @@ StartChar: haa.medi_LamLamHaaInit
 Encoding: 65669 -1 154
 Width: 584
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 67 243 entry 0
 LayerCount: 2
 Back
@@ -6919,6 +7394,10 @@ StartChar: heh.init_HehMeemInit
 Encoding: 65670 -1 155
 Width: 445
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 27 239 exit 0
 LayerCount: 2
 Back
@@ -7003,6 +7482,10 @@ StartChar: meem.medi_HehMeemInit
 Encoding: 65671 -1 156
 Width: 324
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 264 239 entry 0
 LayerCount: 2
 Back
@@ -7075,6 +7558,10 @@ StartChar: baa.medi_BaaMeemFina
 Encoding: 65672 -1 157
 Width: 341
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 16 59 exit 0
 LayerCount: 2
 Back
@@ -7123,6 +7610,10 @@ StartChar: meem.fina_BaaMeemFina
 Encoding: 65673 -1 158
 Width: 358
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 155 59 entry 0
 LayerCount: 2
 Back
@@ -7180,6 +7671,10 @@ StartChar: baa.init_BaaYaaIsol
 Encoding: 65674 -1 159
 Width: 183
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 13 99 exit 0
 LayerCount: 2
 Back
@@ -7235,6 +7730,10 @@ StartChar: yaa.fina_BaaYaaIsol
 Encoding: 65675 -1 160
 Width: 643
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 418 99 entry 0
 LayerCount: 2
 Back
@@ -7294,6 +7793,10 @@ StartChar: sad.init_SadHaaIsol
 Encoding: 65676 -1 161
 Width: 826
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 12 399 exit 0
 LayerCount: 2
 Back
@@ -7373,6 +7876,10 @@ StartChar: haa.fina_SadHaaIsol
 Encoding: 65677 -1 162
 Width: 687
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 62 399 entry 0
 LayerCount: 2
 Back
@@ -7450,6 +7957,10 @@ StartChar: lam.medi_LamHehFina
 Encoding: 65678 -1 163
 Width: 184
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 14 -37 exit 0
 LayerCount: 2
 Back
@@ -7509,6 +8020,10 @@ StartChar: heh.fina_LamHehFina
 Encoding: 65679 -1 164
 Width: 370
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 364 -37 entry 0
 LayerCount: 2
 Back
@@ -7576,6 +8091,10 @@ StartChar: kaf.medi_KafLamAlefFina
 Encoding: 65680 -1 165
 Width: 496
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -5 43 exit 0
 LayerCount: 2
 Back
@@ -7652,6 +8171,10 @@ StartChar: lam.medi_KafLamAlefFina
 Encoding: 65681 -1 166
 Width: 287
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 153 exit 0
 AnchorPoint: "cursive" 283 43 entry 0
 LayerCount: 2
@@ -7727,6 +8250,10 @@ StartChar: alef.fina_KafLamAlefFina
 Encoding: 65682 -1 167
 Width: 304
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 292 153 entry 0
 LayerCount: 2
 Back
@@ -7794,6 +8321,10 @@ StartChar: kaf.medi_KafHehFina
 Encoding: 65683 -1 168
 Width: 448
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -12 10 exit 0
 LayerCount: 2
 Back
@@ -7865,6 +8396,10 @@ StartChar: heh.fina_KafHehFina
 Encoding: 65684 -1 169
 Width: 286
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 273 10 entry 0
 LayerCount: 2
 Back
@@ -7938,6 +8473,10 @@ StartChar: lam.init_LamBaaMeemInit
 Encoding: 65685 -1 170
 Width: 162
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -5 281 exit 0
 LayerCount: 2
 Back
@@ -7999,6 +8538,10 @@ StartChar: baa.medi_LamBaaMeemInit
 Encoding: 65686 -1 171
 Width: 244
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 235 281 entry 0
 AnchorPoint: "cursive" 94 132 exit 0
 LayerCount: 2
@@ -8058,6 +8601,10 @@ StartChar: meem.medi_LamBaaMeemInit
 Encoding: 65687 -1 172
 Width: 330
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 174 132 entry 0
 LayerCount: 2
 Back
@@ -8116,6 +8663,10 @@ StartChar: kaf.medi_KafLamMeemMedi
 Encoding: 65688 -1 173
 Width: 508
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -15 34 exit 0
 LayerCount: 2
 Back
@@ -8187,6 +8738,10 @@ StartChar: lam.medi_KafLamMeemMedi
 Encoding: 65689 -1 174
 Width: 314
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 38 146 exit 0
 AnchorPoint: "cursive" 295 34 entry 0
 LayerCount: 2
@@ -8257,6 +8812,10 @@ StartChar: meem.medi_KafLamMeemMedi
 Encoding: 65690 -1 175
 Width: 308
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 218 146 entry 0
 LayerCount: 2
 Back
@@ -8322,6 +8881,10 @@ StartChar: baa.init_BaaDalIsol
 Encoding: 65691 -1 176
 Width: 147
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 10 58 exit 0
 LayerCount: 2
 Back
@@ -8375,6 +8938,10 @@ StartChar: dal.fina_BaaDalIsol
 Encoding: 65692 -1 177
 Width: 414
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 420 58 entry 0
 LayerCount: 2
 Back
@@ -8433,6 +9000,10 @@ StartChar: baa.init_BaaMeemHaaInit
 Encoding: 65693 -1 178
 Width: 268
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 78 360 exit 0
 LayerCount: 2
 Back
@@ -8491,6 +9062,10 @@ StartChar: meem.medi_BaaMeemHaaInit
 Encoding: 65694 -1 179
 Width: 452
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 278 360 entry 0
 AnchorPoint: "cursive" 18 248 exit 0
 LayerCount: 2
@@ -8548,6 +9123,10 @@ StartChar: haa.medi_BaaMeemHaaInit
 Encoding: 65695 -1 180
 Width: 579
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 78 248 entry 0
 LayerCount: 2
 Back
@@ -8607,6 +9186,10 @@ StartChar: haa.init_HaaYaaIsol
 Encoding: 65696 -1 181
 Width: 586
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 106 exit 0
 LayerCount: 2
 Back
@@ -8676,6 +9259,10 @@ StartChar: yaa.fina_HaaYaaIsol
 Encoding: 65697 -1 182
 Width: 628
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 392 106 entry 0
 LayerCount: 2
 Back
@@ -8742,6 +9329,10 @@ StartChar: kaf.init_KafLamIsol
 Encoding: 65698 -1 183
 Width: 288
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 103.753 48.64 exit 0
 LayerCount: 2
 Back
@@ -8802,6 +9393,10 @@ StartChar: lam.fina_KafLamIsol
 Encoding: 65699 -1 184
 Width: 557
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 557.753 52.6396 entry 0
 LayerCount: 2
 Back
@@ -8865,6 +9460,10 @@ StartChar: meem.medi_MeemAlefFina
 Encoding: 65700 -1 185
 Width: 103
 VWidth: -40
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 65 -151 exit 0
 LayerCount: 2
 Back
@@ -8912,6 +9511,10 @@ StartChar: alef.fina_MeemAlefFina
 Encoding: 65701 -1 186
 Width: 264
 VWidth: -40
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 224 -151 entry 0
 LayerCount: 2
 Back
@@ -8961,6 +9564,10 @@ StartChar: meem.init_MeemYaaIsol
 Encoding: 65702 -1 187
 Width: 347
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 135 exit 0
 LayerCount: 2
 Back
@@ -9019,6 +9626,10 @@ StartChar: yaa.fina_MeemYaaIsol
 Encoding: 65703 -1 188
 Width: 628
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 372 135 entry 0
 LayerCount: 2
 Back
@@ -9078,6 +9689,10 @@ StartChar: baa.init_BaaBaaYaaIsol
 Encoding: 65704 -1 189
 Width: 100
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -6 183 exit 0
 LayerCount: 2
 Back
@@ -9129,6 +9744,10 @@ StartChar: baa.medi_BaaBaaYaaIsol
 Encoding: 65705 -1 190
 Width: 298
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 294 183 entry 0
 AnchorPoint: "cursive" 2 96 exit 0
 LayerCount: 2
@@ -9184,6 +9803,10 @@ StartChar: yaa.fina_BaaBaaYaaIsol
 Encoding: 65706 -1 191
 Width: 588
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 322 96 entry 0
 LayerCount: 2
 Back
@@ -9244,6 +9867,10 @@ StartChar: lam.init_LamLamInit
 Encoding: 65707 -1 192
 Width: 116
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 7 39 exit 0
 LayerCount: 2
 Back
@@ -9297,6 +9924,10 @@ StartChar: lam.medi_LamLamInit
 Encoding: 65708 -1 193
 Width: 212
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 217 39 entry 0
 LayerCount: 2
 Back
@@ -9349,6 +9980,10 @@ StartChar: lam.medi_LamYaaFina
 Encoding: 65709 -1 194
 Width: 199
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 3 -71 exit 0
 LayerCount: 2
 Back
@@ -9413,6 +10048,10 @@ StartChar: yaa.fina_LamYaaFina
 Encoding: 65710 -1 195
 Width: 605
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 406 -71 entry 0
 LayerCount: 2
 Back
@@ -9475,6 +10114,10 @@ StartChar: kaf.init_KafBaaInit
 Encoding: 65711 -1 196
 Width: 332
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 219 68 exit 0
 LayerCount: 2
 Back
@@ -9531,6 +10174,10 @@ StartChar: baa.medi_KafBaaInit
 Encoding: 65712 -1 197
 Width: 330
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 219 68 entry 0
 LayerCount: 2
 Back
@@ -9580,6 +10227,10 @@ StartChar: lam.init_LamMeemInit
 Encoding: 65713 -1 198
 Width: 314
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 221 94 exit 0
 LayerCount: 2
 Back
@@ -9636,6 +10287,10 @@ StartChar: meem.medi_LamMeemInit
 Encoding: 65714 -1 199
 Width: 320
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 221 94 entry 0
 LayerCount: 2
 Back
@@ -9685,6 +10340,10 @@ StartChar: lam.init_LamAlefIsol
 Encoding: 65715 -1 200
 Width: 291
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 14 68 exit 0
 LayerCount: 2
 Back
@@ -9749,6 +10408,10 @@ StartChar: alef.fina_LamAlefIsol
 Encoding: 65716 -1 201
 Width: 550
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 277 68 entry 0
 LayerCount: 2
 Back
@@ -9820,6 +10483,10 @@ StartChar: lam.init_LamHaaMeemInit
 Encoding: 65717 -1 202
 Width: 502
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 44 361 exit 0
 LayerCount: 2
 Back
@@ -9887,6 +10554,10 @@ StartChar: haa.medi_LamHaaMeemInit
 Encoding: 65718 -1 203
 Width: 536
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 68 202 exit 0
 AnchorPoint: "cursive" 74 361 entry 0
 LayerCount: 2
@@ -9953,6 +10624,10 @@ StartChar: meem.medi_LamHaaMeemInit
 Encoding: 65719 -1 204
 Width: 294
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 148 202 entry 0
 LayerCount: 2
 Back
@@ -10014,6 +10689,10 @@ StartChar: baa.init_BaaBaaInit
 Encoding: 65720 -1 205
 Width: 170
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -9 90 exit 0
 LayerCount: 2
 Back
@@ -10063,6 +10742,10 @@ StartChar: baa.medi_BaaBaaInit
 Encoding: 65721 -1 206
 Width: 258
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 251 90 entry 0
 LayerCount: 2
 Back
@@ -10110,6 +10793,10 @@ StartChar: ayn.medi_AynYaaFina
 Encoding: 65722 -1 207
 Width: 430
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 19 119 exit 0
 LayerCount: 2
 Back
@@ -10175,6 +10862,10 @@ StartChar: yaa.fina_AynYaaFina
 Encoding: 65723 -1 208
 Width: 672
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 415 119 entry 0
 LayerCount: 2
 Back
@@ -10239,6 +10930,10 @@ StartChar: lam.init_LamKafIsol
 Encoding: 65724 -1 209
 Width: 132
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 5 60 exit 0
 LayerCount: 2
 Back
@@ -10318,6 +11013,10 @@ StartChar: kaf.fina_LamKafIsol
 Encoding: 65725 -1 210
 Width: 771
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 775 60 entry 0
 LayerCount: 2
 Back
@@ -10416,6 +11115,10 @@ StartChar: meem.init_MeemRaaIsol
 Encoding: 65726 -1 211
 Width: 348
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1 189 exit 0
 LayerCount: 2
 Back
@@ -10468,6 +11171,10 @@ StartChar: raa.fina_MeemRaaIsol
 Encoding: 65727 -1 212
 Width: 462
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 461 189 entry 0
 LayerCount: 2
 Back
@@ -10521,6 +11228,10 @@ StartChar: faa.init_FaaHaaInit
 Encoding: 65728 -1 213
 Width: 284
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 61 247 exit 0
 LayerCount: 2
 Back
@@ -10584,6 +11295,10 @@ StartChar: haa.medi_FaaHaaInit
 Encoding: 65729 -1 214
 Width: 586
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 61 247 entry 0
 LayerCount: 2
 Back
@@ -10641,6 +11356,10 @@ StartChar: kaf.medi_KafKafFina
 Encoding: 65730 -1 215
 Width: 512
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -2 25 exit 0
 LayerCount: 2
 Back
@@ -10717,6 +11436,10 @@ StartChar: kaf.fina_KafKafFina
 Encoding: 65731 -1 216
 Width: 848
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 846 25 entry 0
 LayerCount: 2
 Back
@@ -10809,6 +11532,10 @@ StartChar: haa.init_HaaHaaInit
 Encoding: 65732 -1 217
 Width: 642
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 32 221 exit 0
 LayerCount: 2
 Back
@@ -10870,6 +11597,10 @@ StartChar: haa.medi_HaaHaaInit
 Encoding: 65733 -1 218
 Width: 530
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 32 221 entry 0
 LayerCount: 2
 Back
@@ -10929,6 +11660,10 @@ StartChar: kaf.init_KafMeemIsol
 Encoding: 65734 -1 219
 Width: 392
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 155 187 exit 0
 LayerCount: 2
 Back
@@ -10996,6 +11731,10 @@ StartChar: meem.fina_KafMeemIsol
 Encoding: 65735 -1 220
 Width: 378
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 155 187 entry 0
 LayerCount: 2
 Back
@@ -11061,6 +11800,10 @@ StartChar: faa.init_FaaYaaIsol
 Encoding: 65736 -1 221
 Width: 243
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 59 108 exit 0
 LayerCount: 2
 Back
@@ -11130,6 +11873,10 @@ StartChar: yaa.fina_FaaYaaIsol
 Encoding: 65737 -1 222
 Width: 648
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 429 108 entry 0
 LayerCount: 2
 Back
@@ -11196,6 +11943,10 @@ StartChar: lam.medi_LamQafFina
 Encoding: 65738 -1 223
 Width: 272
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -10 107 exit 0
 LayerCount: 2
 Back
@@ -11257,6 +12008,10 @@ StartChar: qaf.fina_LamQafFina
 Encoding: 65739 -1 224
 Width: 554
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 544 107 entry 0
 LayerCount: 2
 Back
@@ -11325,6 +12080,10 @@ StartChar: seen.init_SeenHaaIsol
 Encoding: 65740 -1 225
 Width: 695
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 65 481 exit 0
 LayerCount: 2
 Back
@@ -11410,6 +12169,10 @@ StartChar: haa.fina_SeenHaaIsol
 Encoding: 65741 -1 226
 Width: 704
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 65 481 entry 0
 LayerCount: 2
 Back
@@ -11490,6 +12253,10 @@ StartChar: kaf.medi_KafMeemLamFina
 Encoding: 65742 -1 227
 Width: 522
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 5 -10 exit 0
 LayerCount: 2
 Back
@@ -11569,6 +12336,10 @@ StartChar: meem.medi_KafMeemLamFina
 Encoding: 65743 -1 228
 Width: 254
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 42 -31 exit 0
 AnchorPoint: "cursive" 101 -10 entry 0
 LayerCount: 2
@@ -11639,6 +12410,10 @@ StartChar: lam.fina_KafMeemLamFina
 Encoding: 65744 -1 229
 Width: 586
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 582 -31 entry 0
 LayerCount: 2
 Back
@@ -11716,6 +12491,10 @@ StartChar: meem.init_MeemHaaInit
 Encoding: 65745 -1 230
 Width: 484
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 56 251 exit 0
 LayerCount: 2
 Back
@@ -11773,6 +12552,10 @@ StartChar: haa.medi_MeemHaaInit
 Encoding: 65746 -1 231
 Width: 566
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 56 251 entry 0
 LayerCount: 2
 Back
@@ -11830,6 +12613,10 @@ StartChar: baa.init_BaaNoonIsol
 Encoding: 65747 -1 232
 Width: 140
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -1 180 exit 0
 LayerCount: 2
 Back
@@ -11877,6 +12664,10 @@ StartChar: noon.fina_BaaNoonIsol
 Encoding: 65748 -1 233
 Width: 502
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 499 180 entry 0
 LayerCount: 2
 Back
@@ -11932,6 +12723,10 @@ StartChar: kaf.medi_KafMeemFina
 Encoding: 65749 -1 234
 Width: 630
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 162 106 exit 0
 LayerCount: 2
 Back
@@ -12003,6 +12798,10 @@ StartChar: meem.fina_KafMeemFina
 Encoding: 65750 -1 235
 Width: 362
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 162 106 entry 0
 LayerCount: 2
 Back
@@ -12070,6 +12869,10 @@ StartChar: kaf.init_KafLamAlefIsol
 Encoding: 65751 -1 236
 Width: 225
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1 51 exit 0
 LayerCount: 2
 Back
@@ -12135,6 +12938,10 @@ StartChar: lam.medi_KafLamAlefIsol
 Encoding: 65752 -1 237
 Width: 598
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 345 162 exit 0
 AnchorPoint: "cursive" 598 51 entry 0
 LayerCount: 2
@@ -12203,6 +13010,10 @@ StartChar: alef.fina_KafLamAlefIsol
 Encoding: 65753 -1 238
 Width: 402
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 375 162 entry 0
 LayerCount: 2
 Back
@@ -12264,6 +13075,10 @@ StartChar: baa.init_BaaSeenInit
 Encoding: 65754 -1 239
 Width: 186
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 199 exit 0
 LayerCount: 2
 Back
@@ -12326,7 +13141,10 @@ StartChar: seen.medi_BaaSeenInit
 Encoding: 65755 -1 240
 Width: 489
 VWidth: 0
-Flags: H
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 492 199 entry 0
 LayerCount: 2
 Back
@@ -12400,6 +13218,10 @@ StartChar: baa.medi_BaaRaaFina
 Encoding: 65756 -1 241
 Width: 220
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -24 163 exit 0
 LayerCount: 2
 Back
@@ -12452,6 +13274,10 @@ StartChar: raa.fina_BaaRaaFina
 Encoding: 65757 -1 242
 Width: 400
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 376 163 entry 0
 LayerCount: 2
 Back
@@ -12508,6 +13334,10 @@ StartChar: kaf.medi_KafRaaFina
 Encoding: 65758 -1 243
 Width: 389
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 2 59 exit 0
 LayerCount: 2
 Back
@@ -12573,6 +13403,10 @@ StartChar: raa.fina_KafRaaFina
 Encoding: 65759 -1 244
 Width: 288
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 289 59 entry 0
 LayerCount: 2
 Back
@@ -12631,6 +13465,10 @@ StartChar: lam.init_LamHehInit
 Encoding: 65760 -1 245
 Width: 116
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 90 266 exit 0
 LayerCount: 2
 Back
@@ -12696,6 +13534,10 @@ StartChar: heh.medi_LamHehInit
 Encoding: 65761 -1 246
 Width: 422
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 240 266 entry 0
 LayerCount: 2
 Back
@@ -12772,6 +13614,10 @@ StartChar: meem.init_MeemHaaMeemInit
 Encoding: 65762 -1 247
 Width: 482
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 38 373 exit 0
 LayerCount: 2
 Back
@@ -12844,6 +13690,10 @@ StartChar: haa.medi_MeemHaaMeemInit
 Encoding: 65763 -1 248
 Width: 584
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 58 373 entry 0
 AnchorPoint: "cursive" 82 222 exit 0
 LayerCount: 2
@@ -12915,6 +13765,10 @@ StartChar: meem.medi_MeemHaaMeemInit
 Encoding: 65764 -1 249
 Width: 325
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 212 222 entry 0
 LayerCount: 2
 Back
@@ -12986,6 +13840,10 @@ StartChar: baa.init_BaaMeemInit
 Encoding: 65765 -1 250
 Width: 301
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 70 144 exit 0
 LayerCount: 2
 Back
@@ -13042,6 +13900,10 @@ StartChar: meem.medi_BaaMeemInit
 Encoding: 65766 -1 251
 Width: 348
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 170 144 entry 0
 LayerCount: 2
 Back
@@ -13094,6 +13956,10 @@ StartChar: ayn.init_AynYaaIsol
 Encoding: 65767 -1 252
 Width: 560
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1 124 exit 0
 LayerCount: 2
 Back
@@ -13158,6 +14024,10 @@ StartChar: yaa.fina_AynYaaIsol
 Encoding: 65768 -1 253
 Width: 664
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 426 124 entry 0
 LayerCount: 2
 Back
@@ -13220,6 +14090,10 @@ StartChar: baa.init_BaaHehInit
 Encoding: 65769 -1 254
 Width: 346
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 0 16 exit 0
 LayerCount: 2
 Back
@@ -13271,6 +14145,10 @@ StartChar: heh.medi_BaaHehInit
 Encoding: 65770 -1 255
 Width: 146
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 146 16 entry 0
 LayerCount: 2
 Back
@@ -13328,6 +14206,10 @@ StartChar: kaf.init_KafLamInit
 Encoding: 65771 -1 256
 Width: 188
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 8 32 exit 0
 LayerCount: 2
 Back
@@ -13385,6 +14267,10 @@ StartChar: lam.medi_KafLamInit
 Encoding: 65772 -1 257
 Width: 224
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 230 32 entry 0
 LayerCount: 2
 Back
@@ -13442,6 +14328,10 @@ StartChar: seen.init_SeenHaaInit
 Encoding: 65773 -1 258
 Width: 663
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 63 223 exit 0
 LayerCount: 2
 Back
@@ -13520,6 +14410,10 @@ StartChar: haa.medi_SeenHaaInit
 Encoding: 65774 -1 259
 Width: 551
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 63 223 entry 0
 LayerCount: 2
 Back
@@ -13586,6 +14480,10 @@ StartChar: sad.init_SadMeemInit
 Encoding: 65775 -1 260
 Width: 704
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 95 124 exit 0
 LayerCount: 2
 Back
@@ -13653,6 +14551,10 @@ StartChar: meem.medi_SadMeemInit
 Encoding: 65776 -1 261
 Width: 291
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 135 124 entry 0
 LayerCount: 2
 Back
@@ -13709,6 +14611,10 @@ StartChar: kaf.init_KafRaaIsol
 Encoding: 65777 -1 262
 Width: 182
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 8 84 exit 0
 LayerCount: 2
 Back
@@ -13769,6 +14675,10 @@ StartChar: raa.fina_KafRaaIsol
 Encoding: 65778 -1 263
 Width: 239
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 248 84 entry 0
 LayerCount: 2
 Back
@@ -13823,6 +14733,10 @@ StartChar: lam.init_LamMeemIsol
 Encoding: 65779 -1 264
 Width: 166
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 51 229 exit 0
 LayerCount: 2
 Back
@@ -13881,6 +14795,10 @@ StartChar: meem.fina_LamMeemIsol
 Encoding: 65780 -1 265
 Width: 364
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 161 229 entry 0
 LayerCount: 2
 Back
@@ -13943,6 +14861,10 @@ StartChar: ayn.init_AynHaaInit
 Encoding: 65781 -1 266
 Width: 535
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 50 244 exit 0
 LayerCount: 2
 Back
@@ -14003,6 +14925,10 @@ StartChar: haa.medi_AynHaaInit
 Encoding: 65782 -1 267
 Width: 592
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 90 244 entry 0
 LayerCount: 2
 Back
@@ -14060,6 +14986,10 @@ StartChar: lam.init_LamYaaIsol
 Encoding: 65783 -1 268
 Width: 158
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 72 102 exit 0
 LayerCount: 2
 Back
@@ -14126,6 +15056,10 @@ StartChar: yaa.fina_LamYaaIsol
 Encoding: 65784 -1 269
 Width: 622
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 412 102 entry 0
 LayerCount: 2
 Back
@@ -14192,6 +15126,10 @@ StartChar: kaf.medi_KafYaaFina
 Encoding: 65785 -1 270
 Width: 510
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 22 -6 exit 0
 LayerCount: 2
 Back
@@ -14261,6 +15199,10 @@ StartChar: yaa.fina_KafYaaFina
 Encoding: 65786 -1 271
 Width: 648
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 412 -6 entry 0
 LayerCount: 2
 Back
@@ -14324,6 +15266,10 @@ StartChar: lam.init_LamMeemHaaInit
 Encoding: 65787 -1 272
 Width: 250
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 172 367 exit 0
 LayerCount: 2
 Back
@@ -14391,6 +15337,10 @@ StartChar: meem.medi_LamMeemHaaInit
 Encoding: 65788 -1 273
 Width: 530
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 56 246 exit 0
 AnchorPoint: "cursive" 442 367 entry 0
 LayerCount: 2
@@ -14460,6 +15410,10 @@ StartChar: haa.medi_LamMeemHaaInit
 Encoding: 65789 -1 274
 Width: 600
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 56 246 entry 0
 LayerCount: 2
 Back
@@ -14530,6 +15484,10 @@ StartChar: lam.medi_LamAlefFina
 Encoding: 65790 -1 275
 Width: 550
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 314 152 exit 0
 LayerCount: 2
 Back
@@ -14588,6 +15546,10 @@ StartChar: alef.fina_LamAlefFina
 Encoding: 65791 -1 276
 Width: 394
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 384 152 entry 0
 LayerCount: 2
 Back
@@ -14641,6 +15603,10 @@ StartChar: lam.medi_LamMeemMedi
 Encoding: 65792 -1 277
 Width: 255
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 22 83 exit 0
 LayerCount: 2
 Back
@@ -14691,6 +15657,10 @@ StartChar: meem.medi_LamMeemMedi
 Encoding: 65793 -1 278
 Width: 326
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 237 83 entry 0
 LayerCount: 2
 Back
@@ -14740,6 +15710,10 @@ StartChar: lam.init_Lellah
 Encoding: 65794 -1 279
 Width: 154
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 33 63 exit 0
 LayerCount: 2
 Back
@@ -14808,6 +15782,10 @@ StartChar: lam.medi_Lellah
 Encoding: 65795 -1 280
 Width: 238
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -6 56 exit 0
 AnchorPoint: "cursive" 225 63 entry 0
 LayerCount: 2
@@ -14879,6 +15857,10 @@ StartChar: heh.fina_Lellah
 Encoding: 65796 -1 281
 Width: 300
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 292 56 entry 0
 LayerCount: 2
 Back
@@ -14954,6 +15936,10 @@ StartChar: baa.init_BaaBaaHaaInit
 Encoding: 65797 -1 282
 Width: 96
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -17 323 exit 0
 LayerCount: 2
 Back
@@ -15004,6 +15990,10 @@ StartChar: baa.medi_BaaBaaHaaInit
 Encoding: 65798 -1 283
 Width: 533
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 516 323 entry 0
 AnchorPoint: "cursive" 65 251 exit 0
 LayerCount: 2
@@ -15061,6 +16051,10 @@ StartChar: haa.medi_BaaBaaHaaInit
 Encoding: 65799 -1 284
 Width: 642
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 65 251 entry 0
 LayerCount: 2
 Back
@@ -15120,6 +16114,10 @@ StartChar: haa.init_HaaMeemInit
 Encoding: 65800 -1 285
 Width: 524
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 46 238 exit 0
 LayerCount: 2
 Back
@@ -15175,6 +16173,10 @@ StartChar: meem.medi_HaaMeemInit
 Encoding: 65801 -1 286
 Width: 301
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 186 238 entry 0
 LayerCount: 2
 Back
@@ -15231,6 +16233,10 @@ StartChar: seen.init_SeenBaaMeemInit
 Encoding: 65802 -1 287
 Width: 499
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -11 253 exit 0
 LayerCount: 2
 Back
@@ -15314,6 +16320,10 @@ StartChar: baa.medi_SeenBaaMeemInit
 Encoding: 65803 -1 288
 Width: 324
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 74 122 exit 0
 AnchorPoint: "cursive" 314 253 entry 0
 LayerCount: 2
@@ -15384,6 +16394,10 @@ StartChar: meem.medi_SeenBaaMeemInit
 Encoding: 65804 -1 289
 Width: 312
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 144 122 entry 0
 LayerCount: 2
 Back
@@ -15453,6 +16467,10 @@ StartChar: baa.init_BaaBaaIsol
 Encoding: 65805 -1 290
 Width: 195
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -10 141 exit 0
 LayerCount: 2
 Back
@@ -15507,6 +16525,10 @@ StartChar: baa.fina_BaaBaaIsol
 Encoding: 65806 -1 291
 Width: 728
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 716 141 entry 0
 LayerCount: 2
 Back
@@ -15564,6 +16586,10 @@ StartChar: baa.init_BaaBaaMeemInit
 Encoding: 65807 -1 292
 Width: 111
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -13 291 exit 0
 LayerCount: 2
 Back
@@ -15618,6 +16644,10 @@ StartChar: baa.medi_BaaBaaMeemInit
 Encoding: 65808 -1 293
 Width: 281
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 267 291 entry 0
 AnchorPoint: "cursive" 32 292 exit 0
 LayerCount: 2
@@ -15676,6 +16706,10 @@ StartChar: meem.medi_BaaBaaMeemInit
 Encoding: 65809 -1 294
 Width: 329
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 132 292 entry 0
 LayerCount: 2
 Back
@@ -15738,6 +16772,10 @@ StartChar: kaf.init_KafAlefIsol
 Encoding: 65810 -1 295
 Width: 217
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -2 54 exit 0
 LayerCount: 2
 Back
@@ -15791,6 +16829,10 @@ StartChar: alef.fina_KafAlefIsol
 Encoding: 65811 -1 296
 Width: 228
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 225 54 entry 0
 LayerCount: 2
 Back
@@ -15843,6 +16885,10 @@ StartChar: kaf.medi_KafBaaMedi
 Encoding: 65812 -1 297
 Width: 366
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -1 56 exit 0
 LayerCount: 2
 Back
@@ -15908,6 +16954,10 @@ StartChar: baa.medi_KafBaaMedi
 Encoding: 65813 -1 298
 Width: 178
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 179 56 entry 0
 LayerCount: 2
 Back
@@ -15960,6 +17010,10 @@ StartChar: baa.medi_BaaNoonFina
 Encoding: 65814 -1 299
 Width: 204
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -14 169 exit 0
 LayerCount: 2
 Back
@@ -16017,6 +17071,10 @@ StartChar: noon.fina_BaaNoonFina
 Encoding: 65815 -1 300
 Width: 502
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 490 169 entry 0
 LayerCount: 2
 Back
@@ -16077,6 +17135,10 @@ StartChar: haa.init_HaaRaaIsol
 Encoding: 65816 -1 301
 Width: 592
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 54 82 exit 0
 LayerCount: 2
 Back
@@ -16142,6 +17204,10 @@ StartChar: raa.fina_HaaRaaIsol
 Encoding: 65817 -1 302
 Width: 338
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 304 82 entry 0
 LayerCount: 2
 Back
@@ -16203,6 +17269,10 @@ StartChar: heh.init_HehHaaInit
 Encoding: 65818 -1 303
 Width: 528
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 50 237 exit 0
 LayerCount: 2
 Back
@@ -16286,6 +17356,10 @@ StartChar: haa.medi_HehHaaInit
 Encoding: 65819 -1 304
 Width: 602
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 50 237 entry 0
 LayerCount: 2
 Back
@@ -16356,6 +17430,10 @@ StartChar: lam.init_LamRaaIsol
 Encoding: 65820 -1 305
 Width: 192
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 7 141 exit 0
 LayerCount: 2
 Back
@@ -16416,6 +17494,10 @@ StartChar: raa.fina_LamRaaIsol
 Encoding: 65821 -1 306
 Width: 328
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 307 141 entry 0
 LayerCount: 2
 Back
@@ -16473,6 +17555,10 @@ StartChar: kaf.init_KafDalIsol
 Encoding: 65822 -1 307
 Width: 196
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1 -126 exit 0
 LayerCount: 2
 Back
@@ -16543,6 +17629,10 @@ StartChar: dal.fina_KafDalIsol
 Encoding: 65823 -1 308
 Width: 434
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 435 -126 entry 0
 LayerCount: 2
 Back
@@ -16614,6 +17704,10 @@ StartChar: baa.init_BaaMeemIsol
 Encoding: 65824 -1 309
 Width: 404
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 26 183 exit 0
 LayerCount: 2
 Back
@@ -16663,6 +17757,10 @@ StartChar: meem.fina_BaaMeemIsol
 Encoding: 65825 -1 310
 Width: 358
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 136 183 entry 0
 LayerCount: 2
 Back
@@ -16719,6 +17817,10 @@ StartChar: kaf.init_KafMeemAlefIsol
 Encoding: 65826 -1 311
 Width: 327
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 46 -16 exit 0
 LayerCount: 2
 Back
@@ -16795,6 +17897,10 @@ StartChar: meem.medi_KafMeemAlefIsol
 Encoding: 65827 -1 312
 Width: 174
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 48 -42 exit 0
 AnchorPoint: "cursive" 106 -16 entry 0
 LayerCount: 2
@@ -16860,6 +17966,10 @@ StartChar: alef.fina_KafMeemAlefIsol
 Encoding: 65828 -1 313
 Width: 232
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 148 -42 entry 0
 LayerCount: 2
 Back
@@ -16925,6 +18035,10 @@ StartChar: sad.init_SadHaaInit
 Encoding: 65829 -1 314
 Width: 826
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 55 235 exit 0
 LayerCount: 2
 Back
@@ -16994,6 +18108,10 @@ StartChar: haa.medi_SadHaaInit
 Encoding: 65830 -1 315
 Width: 602
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 55 235 entry 0
 LayerCount: 2
 Back
@@ -17057,6 +18175,10 @@ StartChar: kaf.medi_KafMeemAlefFina
 Encoding: 65831 -1 316
 Width: 599
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 97 29 exit 0
 LayerCount: 2
 Back
@@ -17131,6 +18253,10 @@ StartChar: meem.medi_KafMeemAlefFina
 Encoding: 65832 -1 317
 Width: 248
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 51 -12 exit 0
 AnchorPoint: "cursive" 87 29 entry 0
 LayerCount: 2
@@ -17195,6 +18321,10 @@ StartChar: alef.fina_KafMeemAlefFina
 Encoding: 65833 -1 318
 Width: 152
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 131 -12 entry 0
 LayerCount: 2
 Back
@@ -17259,6 +18389,10 @@ StartChar: kaf.medi_KafAlefFina
 Encoding: 65834 -1 319
 Width: 538
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 70 4 exit 0
 LayerCount: 2
 Back
@@ -17319,6 +18453,10 @@ StartChar: alef.fina_KafAlefFina
 Encoding: 65835 -1 320
 Width: 156
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 150 4 entry 0
 LayerCount: 2
 Back
@@ -17373,6 +18511,10 @@ StartChar: lam.medi_LamKafFina
 Encoding: 65836 -1 321
 Width: 180
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1 11 exit 0
 LayerCount: 2
 Back
@@ -17445,6 +18587,10 @@ StartChar: kaf.fina_LamKafFina
 Encoding: 65837 -1 322
 Width: 750
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 751 11 entry 0
 LayerCount: 2
 Back
@@ -17625,6 +18771,10 @@ StartChar: baa.medi_BaaYaaFina
 Encoding: 65838 -1 327
 Width: 308
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 0 -20 exit 0
 LayerCount: 2
 Back
@@ -17679,6 +18829,10 @@ StartChar: yaa.fina_BaaYaaFina
 Encoding: 65839 -1 328
 Width: 670
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 360 -20 entry 0
 LayerCount: 2
 Back
@@ -17734,6 +18888,10 @@ StartChar: baa.init_BaaSeenAltInit
 Encoding: 65840 -1 329
 Width: 188
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 4 151 exit 0
 LayerCount: 2
 Back
@@ -17818,6 +18976,10 @@ StartChar: seen.medi_BaaSeenAltInit
 Encoding: 65841 -1 330
 Width: 290
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 0 51 exit 0
 AnchorPoint: "cursive" 292 151 entry 0
 LayerCount: 2
@@ -17924,6 +19086,10 @@ StartChar: raa.fina_PostTooth
 Encoding: 65842 -1 331
 Width: 591
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 590 51 exit 0
 LayerCount: 2
 Back
@@ -17976,6 +19142,10 @@ StartChar: yaa.fina_PostTooth
 Encoding: 65843 -1 332
 Width: 668
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 668 51 exit 0
 LayerCount: 2
 Back
@@ -18038,6 +19208,10 @@ StartChar: baa.init_BaaHaaIsol
 Encoding: 65844 -1 333
 Width: 464
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 42 514 exit 0
 LayerCount: 2
 Back
@@ -18090,6 +19264,10 @@ StartChar: baa.init_BaaHaaInit
 Encoding: 65846 -1 334
 Width: 468
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 38 233 exit 0
 LayerCount: 2
 Back
@@ -18142,6 +19320,10 @@ StartChar: baa.init_BaaHaaMeemInit
 Encoding: 65848 -1 335
 Width: 518
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 74 363 exit 0
 LayerCount: 2
 Back
@@ -18207,6 +19389,10 @@ StartChar: haa.medi_BaaHaaMeemInit
 Encoding: 65849 -1 336
 Width: 640
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 84 363 entry 0
 AnchorPoint: "cursive" 119 199 exit 0
 LayerCount: 2
@@ -18273,6 +19459,10 @@ StartChar: meem.medi_BaaHaaMeemInit
 Encoding: 65850 -1 337
 Width: 352
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 199 199 entry 0
 LayerCount: 2
 Back
@@ -18341,6 +19531,10 @@ StartChar: haa.fina_BaaHaaIsol
 Encoding: 65845 -1 338
 Width: 588
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 42 514 entry 0
 LayerCount: 2
 Back
@@ -18398,6 +19592,10 @@ StartChar: haa.medi_BaaHaaInit
 Encoding: 65847 -1 339
 Width: 584
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 38 233 entry 0
 LayerCount: 2
 Back
@@ -18452,6 +19650,10 @@ StartChar: lam.init_LamHaaHaaInit
 Encoding: 65851 -1 340
 Width: 294
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 83 435 exit 0
 LayerCount: 2
 Back
@@ -18528,6 +19730,10 @@ StartChar: haa.medi1_LamHaaHaaInit
 Encoding: 65852 -1 341
 Width: 544
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -20 231 exit 0
 AnchorPoint: "cursive" 93 435 entry 0
 LayerCount: 2
@@ -18605,6 +19811,10 @@ StartChar: haa.medi2_LamHaaHaaInit
 Encoding: 65853 -1 342
 Width: 639
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 70 231 entry 0
 LayerCount: 2
 Back
@@ -18679,6 +19889,10 @@ StartChar: ayn.init_Finjani
 Encoding: 65854 -1 343
 Width: 348
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18704,6 +19918,10 @@ StartChar: haa.init_Finjani
 Encoding: 65855 -1 344
 Width: 556
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -18747,6 +19965,10 @@ StartChar: haa.medi_Finjani
 Encoding: 65856 -1 345
 Width: 525
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18779,6 +20001,10 @@ StartChar: seen.init_PreYaa
 Encoding: 65857 -1 346
 Width: 296
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18811,6 +20037,10 @@ StartChar: seen.medi_PreYaa
 Encoding: 65858 -1 347
 Width: 371
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18837,6 +20067,10 @@ StartChar: sad.init_PreYaa
 Encoding: 65859 -1 348
 Width: 487
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18863,6 +20097,10 @@ StartChar: sad.medi_PreYaa
 Encoding: 65860 -1 349
 Width: 511
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -18914,6 +20152,10 @@ StartChar: baa.init_BaaBaaAltInit
 Encoding: 65861 -1 350
 Width: 101
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 8 51 exit 0
 LayerCount: 2
 Back
@@ -18961,6 +20203,10 @@ StartChar: baa.medi_BaaBaaAltInit
 Encoding: 65862 -1 351
 Width: 241
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 248 51 entry 0
 LayerCount: 2
 Back
@@ -19011,6 +20257,10 @@ StartChar: kaf.init_KafLamHehIsol
 Encoding: 65863 -1 352
 Width: 182
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 0 -22 exit 0
 LayerCount: 2
 Back
@@ -19085,6 +20335,10 @@ StartChar: lam.medi_KafLamHehIsol
 Encoding: 65864 -1 353
 Width: 178
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -6 -94 exit 0
 AnchorPoint: "cursive" 180 -22 entry 0
 LayerCount: 2
@@ -19158,6 +20412,10 @@ StartChar: heh.fina_KafLamHehIsol
 Encoding: 65865 -1 354
 Width: 376
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 374 -94 entry 0
 LayerCount: 2
 Back
@@ -20407,6 +21665,10 @@ StartChar: baa.medi_High
 Encoding: 65866 -1 472
 Width: 190
 VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20427,6 +21689,116 @@ SplineSet
  50.248 312.208 50.0059 316.983 52.1426 321.437 c 0
  58.1992 334.062 67.5527 352.558 76.457 365.885 c 0
 EndSplineSet
+EndChar
+
+StartChar: dot.above
+Encoding: 65867 -1 473
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "DotAbove" 0 68 mark 0
+LayerCount: 2
+Fore
+Refer: 16 -1 N 1 0 0 1 -65.4152 0 2
+EndChar
+
+StartChar: twodots.above
+Encoding: 65869 -1 474
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "DotAbove" 0 68 mark 0
+LayerCount: 2
+Fore
+Refer: 15 -1 N 1 0 0 1 -118.944 0 2
+EndChar
+
+StartChar: threedots.above
+Encoding: 65871 -1 475
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "DotAbove" 0 68 mark 0
+LayerCount: 2
+Fore
+Refer: 17 -1 N 1 0 0 1 -114.74 0 2
+EndChar
+
+StartChar: dot.below
+Encoding: 65868 -1 476
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "DotBelow" 0 68 mark 0
+LayerCount: 2
+Fore
+Refer: 16 -1 N 1 0 0 1 -65.4152 0 2
+EndChar
+
+StartChar: twodots.below
+Encoding: 65870 -1 477
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "DotBelow" 0 68 mark 0
+LayerCount: 2
+Fore
+Refer: 15 -1 N 1 0 0 1 -118.944 0 2
+EndChar
+
+StartChar: threedots.below
+Encoding: 65872 -1 478
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "DotBelow" 0 68 mark 0
+LayerCount: 2
+Fore
+Refer: 17 -1 N 1 0 0 1 -114.74 0 2
+EndChar
+
+StartChar: hamza.above
+Encoding: 65873 -1 479
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "HamzaAbove" 0 73 mark 0
+LayerCount: 2
+Fore
+Refer: 26 -1 N 1 0 0 1 -110.132 0 2
+EndChar
+
+StartChar: hamza.below
+Encoding: 65874 -1 480
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "HamzaBelow" 0 73 mark 0
+LayerCount: 2
+Fore
+Refer: 26 -1 N 1 0 0 1 -110.132 0 2
+EndChar
+
+StartChar: madda.above
+Encoding: 65875 -1 481
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "HamzaAbove" 0 73 mark 0
+LayerCount: 2
+Fore
+Refer: 41 -1 N 1 0 0 1 -221.366 0 2
+EndChar
+
+StartChar: madda.below
+Encoding: 65876 -1 482
+Width: 0
+VWidth: 0
+GlyphClass: 4
+AnchorPoint: "HamzaBelow" 0 73 mark 0
+LayerCount: 2
+Fore
+Refer: 41 -1 N 1 0 0 1 -221.366 0 2
 EndChar
 EndChars
 EndSplineFont
