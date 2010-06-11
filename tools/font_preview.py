@@ -6,13 +6,13 @@ viewer    = "fv"
 tempnames = {}
 
 def Preview(re, font):
-	otf = tempfile.NamedTemporaryFile(suffix=".otf", delete=False).name
-	cmd = "%s %s" %(viewer, otf)
+	ttf = tempfile.NamedTemporaryFile(suffix=".ttf", delete=False).name
+	cmd = "%s %s" %(viewer, ttf)
 	if re and os.path.isfile(tempnames[font.fontname]):
 		font.generate(tempnames[font.fontname])
 	else:
-		tempnames[font.fontname] = otf
-		font.generate(otf)
+		tempnames[font.fontname] = ttf
+		font.generate(ttf)
 		subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
 
