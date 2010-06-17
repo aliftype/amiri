@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1276719840
+ModificationTime: 1276797151
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -166,6 +166,7 @@ Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'d
 Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 8 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -1078,5 +1079,5 @@ DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
 WinInfo: 96 24 10
-AnchorClass2: "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
+AnchorClass2: "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
