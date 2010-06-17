@@ -1,0 +1,48 @@
+
+StartChar: baa.init
+Encoding: 65550 -1 8
+Width: 320
+VWidth: 0
+Flags: W
+AnchorPoint: "HamzaBelow" 0 220 basechar 0
+AnchorPoint: "HamzaAbove" 0 220 basechar 0
+AnchorPoint: "DotBelow" 0 222 basechar 0
+AnchorPoint: "DotAbove" 205 1026 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+115 566 m 0,0,1
+ 122 576 122 576 132 574 c 128,-1,2
+ 142 572 142 572 148 561 c 0,3,4
+ 209 455 209 455 183 234 c 0,5,6
+ 162 57 162 57 0 0 c 1,7,8
+ -22 0 -22 0 -43 104 c 0,9,10
+ -50 139 -50 139 -42 158 c 128,-1,11
+ -34 177 -34 177 0 185 c 0,12,13
+ 78 204 78 204 112 250 c 0,14,15
+ 116 255 116 255 113 264 c 0,16,17
+ 104 316 104 316 58 383 c 0,18,19
+ 42 407 42 407 52 433 c 0,20,21
+ 95 534 95 534 115 566 c 0,0,1
+EndSplineSet
+Substitution2: "BaaBaaAltInit subtable" baa.init_BaaBaaAltInit
+Substitution2: "BaaHaaMeemInit subtable" baa.init_BaaHaaMeemInit
+Substitution2: "BaaHaaInit subtable" baa.init_BaaHaaInit
+Substitution2: "BaaHaaIsol subtable" baa.init_BaaHaaIsol
+Substitution2: "BaaSeenAltInit subtable" baa.init_BaaSeenAltInit
+Substitution2: "BaaMeemIsol subtable" baa.init_BaaMeemIsol
+Substitution2: "BaaBaaMeemInit subtable" baa.init_BaaBaaMeemInit
+Substitution2: "BaaBaaIsol subtable" baa.init_BaaBaaIsol
+Substitution2: "BaaBaaHaaInit subtable" baa.init_BaaBaaHaaInit
+Substitution2: "BaaHehInit subtable" baa.init_BaaHehInit
+Substitution2: "BaaMeemInit subtable" baa.init_BaaMeemInit
+Substitution2: "BaaSeenInit subtable" baa.init_BaaSeenInit
+Substitution2: "BaaNoonIsol subtable" baa.init_BaaNoonIsol
+Substitution2: "BaaBaaInit subtable" baa.init_BaaBaaInit
+Substitution2: "BaaBaaYaaIsol subtable" baa.init_BaaBaaYaaIsol
+Substitution2: "BaaMeemHaaInit subtable" baa.init_BaaMeemHaaInit
+Substitution2: "BaaDalIsol subtable" baa.init_BaaDalIsol
+Substitution2: "BaaYaaIsol subtable" baa.init_BaaYaaIsol
+Substitution2: "BaaRaaIsol subtable" baa.init_BaaRaaIsol
+Colour: ffff00
+EndChar

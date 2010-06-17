@@ -1,0 +1,55 @@
+
+StartChar: alef.fina
+Encoding: 65537 -1 1
+Width: 370
+VWidth: 0
+Flags: W
+AnchorPoint: "HamzaBelow" 20 0 basechar 0
+AnchorPoint: "HamzaAbove" 20 0 basechar 0
+AnchorPoint: "DotBelow" 20 0 basechar 0
+AnchorPoint: "DotAbove" 20 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+91 1462 m 1,0,1
+ 109 1482 109 1482 115 1473 c 128,-1,2
+ 121 1464 121 1464 126 1435 c 0,3,4
+ 174 1164 174 1164 198 894 c 0,5,6
+ 202 850 202 850 220.5 650.5 c 128,-1,7
+ 239 451 239 451 248 381 c 0,8,9
+ 259 294 259 294 285 255.5 c 128,-1,10
+ 311 217 311 217 373 185 c 0,11,12
+ 397 174 397 174 408.5 168 c 128,-1,13
+ 420 162 420 162 430 147.5 c 128,-1,14
+ 440 133 440 133 436 113 c 0,15,16
+ 436 111 436 111 433.5 94.5 c 128,-1,17
+ 431 78 431 78 429.5 72.5 c 128,-1,18
+ 428 67 428 67 424.5 52.5 c 128,-1,19
+ 421 38 421 38 417 31.5 c 128,-1,20
+ 413 25 413 25 407 16 c 128,-1,21
+ 401 7 401 7 392.5 3.5 c 128,-1,22
+ 384 0 384 0 373 0 c 0,23,24
+ 325 0 325 0 289 18 c 128,-1,25
+ 253 36 253 36 233.5 58.5 c 128,-1,26
+ 214 81 214 81 199.5 119.5 c 128,-1,27
+ 185 158 185 158 180.5 180.5 c 128,-1,28
+ 176 203 176 203 171 240 c 0,29,30
+ 153.6 379.2 153.6 379.2 121 803 c 0,31,32
+ 117 859 117 859 81.5 1056.5 c 128,-1,33
+ 46 1254 46 1254 29 1302 c 0,34,35
+ 19 1330 19 1330 33 1356 c 2,36,-1
+ 91 1462 l 1,0,1
+EndSplineSet
+Substitution2: "KafAlefFina subtable" alef.fina_KafAlefFina
+Substitution2: "KafMeemAlefFina subtable" alef.fina_KafMeemAlefFina
+Substitution2: "KafMeemAlefIsol subtable" alef.fina_KafMeemAlefIsol
+Substitution2: "KafAlefIsol subtable" alef.fina_KafAlefIsol
+Substitution2: "LamAlefFina subtable" alef.fina_LamAlefFina
+Substitution2: "KafLamAlefIsol subtable" alef.fina_KafLamAlefIsol
+Substitution2: "LamAlefIsol subtable" alef.fina_LamAlefIsol
+Substitution2: "MeemAlefFina subtable" alef.fina_MeemAlefFina
+Substitution2: "KafLamAlefFina subtable" alef.fina_KafLamAlefFina
+Substitution2: "LamLamAlefIsol subtable" alef.fina_LamLamAlefIsol
+Substitution2: "BaaMeemAlefFina subtable" alef.fina_BaaMeemAlefFina
+Colour: ffff00
+EndChar

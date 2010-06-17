@@ -1,0 +1,48 @@
+
+StartChar: meem.init
+Encoding: 65590 -1 44
+Width: 797
+VWidth: 0
+Flags: W
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+477 652 m 0,0,1
+ 614 652 614 652 667 311 c 0,2,3
+ 670 288 670 288 661 277 c 2,4,-1
+ 549 135 l 2,5,6
+ 533 114 533 114 510 121 c 0,7,8
+ 351 167 351 167 232 268 c 1,9,10
+ 230 264 230 264 218 235 c 128,-1,11
+ 206 206 206 206 201 194.5 c 128,-1,12
+ 196 183 196 183 181.5 154.5 c 128,-1,13
+ 167 126 167 126 156 111.5 c 128,-1,14
+ 145 97 145 97 127 74.5 c 128,-1,15
+ 109 52 109 52 91 39.5 c 128,-1,16
+ 73 27 73 27 49.5 15.5 c 128,-1,17
+ 26 4 26 4 0 0 c 0,18,19
+ -15 -2 -15 -2 -31 42 c 128,-1,20
+ -47 86 -47 86 -42 133.5 c 128,-1,21
+ -37 181 -37 181 0 186 c 0,22,23
+ 103 200 103 200 181 300 c 0,24,25
+ 210 337 210 337 248 406.5 c 128,-1,26
+ 286 476 286 476 313 525 c 128,-1,27
+ 340 574 340 574 383.5 613 c 128,-1,28
+ 427 652 427 652 477 652 c 0,0,1
+413 485 m 0,29,30
+ 366 486 366 486 330 451 c 1,31,32
+ 403 380 403 380 514 356 c 1,33,34
+ 517 439 517 439 449 476 c 0,35,36
+ 432 485 432 485 413 485 c 0,29,30
+EndSplineSet
+Substitution2: "MeemHaaMeemInit subtable" meem.init_MeemHaaMeemInit
+Substitution2: "MeemHaaInit subtable" meem.init_MeemHaaInit
+Substitution2: "MeemRaaIsol subtable" meem.init_MeemRaaIsol
+Substitution2: "MeemYaaIsol subtable" meem.init_MeemYaaIsol
+Substitution2: "MeemMeemInit subtable" meem.init_MeemMeemInit
+Colour: ffff00
+EndChar

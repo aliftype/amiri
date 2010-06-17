@@ -1,0 +1,58 @@
+
+StartChar: raa.fina
+Encoding: 65602 -1 55
+Width: 615
+VWidth: -122
+Flags: W
+AnchorPoint: "HamzaBelow" -35.3867 0 basechar 0
+AnchorPoint: "HamzaAbove" -35.3867 0 basechar 0
+AnchorPoint: "DotBelow" -35.3867 0 basechar 0
+AnchorPoint: "DotAbove" -35.3867 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+381.613 128 m 2,0,1
+ 444.613 291 l 2,2,3
+ 450.613 306 450.613 306 458.613 309 c 128,-1,4
+ 466.613 312 466.613 312 471.613 303 c 0,5,6
+ 477.613 294 477.613 294 491.113 272.5 c 128,-1,7
+ 504.613 251 504.613 251 508.613 246 c 128,-1,8
+ 512.613 241 512.613 241 522.613 226.5 c 128,-1,9
+ 532.613 212 532.613 212 537.613 209.5 c 128,-1,10
+ 542.613 207 542.613 207 552.113 199 c 128,-1,11
+ 561.613 191 561.613 191 569.613 189.5 c 128,-1,12
+ 577.613 188 577.613 188 589.113 186 c 128,-1,13
+ 600.613 184 600.613 184 614.613 184 c 0,14,15
+ 631.613 184 631.613 184 647.613 161 c 128,-1,16
+ 663.613 138 663.613 138 663.613 93 c 0,17,18
+ 663.613 47 663.613 47 649.113 24.5 c 128,-1,19
+ 634.613 2 634.613 2 614.613 0 c 0,20,21
+ 601.613 -0.5 l 0,22,23
+ 588.613 -1 588.613 -1 572.113 -1.5 c 128,-1,24
+ 555.613 -2 555.613 -2 546.613 -2 c 0,25,26
+ 538.613 -2 538.613 -2 537.613 -12 c 0,27,28
+ 531.613 -211 531.613 -211 392.613 -391 c 0,29,30
+ 265.613 -556 265.613 -556 141.613 -570 c 0,31,32
+ 35.6133 -582 35.6133 -582 -53.3867 -561.5 c 128,-1,33
+ -142.387 -541 -142.387 -541 -241.387 -486 c 0,34,35
+ -255.387 -479 -255.387 -479 -258.887 -468 c 128,-1,36
+ -262.387 -457 -262.387 -457 -254.887 -450.5 c 128,-1,37
+ -247.387 -444 -247.387 -444 -234.387 -448 c 0,38,39
+ -104.387 -480 -104.387 -480 0.113281 -460 c 128,-1,40
+ 104.613 -440 104.613 -440 217.613 -366 c 0,41,42
+ 309.613 -303 309.613 -303 382.113 -221 c 128,-1,43
+ 454.613 -139 454.613 -139 472.613 -56 c 1,44,45
+ 477.613 -8 477.613 -8 388.613 83 c 0,46,47
+ 370.613 100 370.613 100 381.613 128 c 2,0,1
+EndSplineSet
+Substitution2: "SeenYaaFina subtable" raa.fina_PostTooth
+Substitution2: "BaaSeenAltInit subtable" raa.fina_PostTooth
+Substitution2: "LamRaaIsol subtable" raa.fina_LamRaaIsol
+Substitution2: "HaaRaaIsol subtable" raa.fina_HaaRaaIsol
+Substitution2: "KafRaaIsol subtable" raa.fina_KafRaaIsol
+Substitution2: "KafRaaFina subtable" raa.fina_KafRaaFina
+Substitution2: "BaaRaaFina subtable" raa.fina_BaaRaaFina
+Substitution2: "MeemRaaIsol subtable" raa.fina_MeemRaaIsol
+Substitution2: "BaaRaaIsol subtable" raa.fina_BaaRaaIsol
+Colour: ffff00
+EndChar

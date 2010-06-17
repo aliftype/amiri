@@ -1,0 +1,28 @@
+
+StartChar: madda
+Encoding: 65587 -1 41
+Width: 0
+VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+854 278 m 0,0,1
+ 892 288 892 288 903 258 c 128,-1,2
+ 914 228 914 228 886 205 c 0,3,4
+ 820 150 820 150 674.5 117.5 c 128,-1,5
+ 529 85 529 85 406 78.5 c 128,-1,6
+ 283 72 283 72 171 75 c 1,7,8
+ 153 34 153 34 136 15 c 0,9,10
+ 118 -5 118 -5 104 6 c 0,11,12
+ 83 25 83 25 52 58 c 128,-1,13
+ 21 91 21 91 9 103 c 0,14,15
+ -8 119 -8 119 7 146 c 0,16,17
+ 33 189 33 189 73 235 c 0,18,19
+ 95 260 95 260 130 247 c 1,20,21
+ 505 188 505 188 854 278 c 0,0,1
+EndSplineSet
+EndChar

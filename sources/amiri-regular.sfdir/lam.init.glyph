@@ -1,0 +1,59 @@
+
+StartChar: lam.init
+Encoding: 65584 -1 38
+Width: 330
+VWidth: 0
+Flags: W
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+2 1352 m 1,0,1
+ 8 1367 8 1367 20 1396.5 c 128,-1,2
+ 32 1426 32 1426 38 1443 c 0,3,4
+ 45 1462 45 1462 60 1461.5 c 128,-1,5
+ 75 1461 75 1461 82 1441 c 0,6,7
+ 113 1350 113 1350 171 1292 c 0,8,9
+ 191 1272 191 1272 168 1245 c 0,10,11
+ 161 1236 161 1236 144.5 1212.5 c 128,-1,12
+ 128 1189 128 1189 123 1182 c 1,13,14
+ 132 1111 132 1111 149 968 c 128,-1,15
+ 166 825 166 825 180.5 699 c 128,-1,16
+ 195 573 195 573 196 561 c 0,17,18
+ 206 452 206 452 195.5 349.5 c 128,-1,19
+ 185 247 185 247 135.5 145.5 c 128,-1,20
+ 86 44 86 44 0 0 c 0,21,22
+ -4 -2 -4 -2 -9 8 c 0,23,24
+ -34 58 -34 58 -31 135 c 0,25,26
+ -29 180 -29 180 -9 186 c 0,27,28
+ 85 215 85 215 125 277 c 1,29,30
+ 122 362 122 362 103.5 527.5 c 128,-1,31
+ 85 693 85 693 57.5 907.5 c 128,-1,32
+ 30 1122 30 1122 21 1199 c 0,33,34
+ 18 1223 18 1223 10.5 1261.5 c 128,-1,35
+ 3 1300 3 1300 1 1314 c 128,-1,36
+ -1 1328 -1 1328 2 1352 c 1,0,1
+EndSplineSet
+Substitution2: "LamHaaHaaInit subtable" lam.init_LamHaaHaaInit
+Substitution2: "LamRaaIsol subtable" lam.init_LamRaaIsol
+Substitution2: "Lellah subtable" lam.init_Lellah
+Substitution2: "LamMeemHaaInit subtable" lam.init_LamMeemHaaInit
+Substitution2: "LamYaaIsol subtable" lam.init_LamYaaIsol
+Substitution2: "LamMeemIsol subtable" lam.init_LamMeemIsol
+Substitution2: "LamHehInit subtable" lam.init_LamHehInit
+Substitution2: "LamKafIsol subtable" lam.init_LamKafIsol
+Substitution2: "LamHaaMeemInit subtable" lam.init_LamHaaMeemInit
+Substitution2: "LamAlefIsol subtable" lam.init_LamAlefIsol
+Substitution2: "LamMeemInit subtable" lam.init_LamMeemInit
+Substitution2: "LamLamInit subtable" lam.init_LamLamInit
+Substitution2: "LamBaaMeemInit subtable" lam.init_LamBaaMeemInit
+Substitution2: "LamLamHaaInit subtable" lam.init_LamLamHaaInit
+Substitution2: "LamHaaInit subtable" lam.init_LamHaaInit
+Substitution2: "LamLamAlefIsol subtable" lam.init_LamLamAlefIsol
+Substitution2: "LamHehIsol subtable" lam.init_LamHehIsol
+Substitution2: "LamDalIsol subtable" lam.init_LamDalIsol
+Colour: ffff00
+EndChar

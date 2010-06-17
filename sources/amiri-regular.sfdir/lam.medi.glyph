@@ -1,0 +1,88 @@
+
+StartChar: lam.medi
+Encoding: 65586 -1 40
+Width: 364
+VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Back
+SplineSet
+361.888 158.188 m 4,0,1
+ 388.202 144.335 388.202 144.335 391.075 97.7822 c 0,2,3
+ 393.947 51.2305 393.947 51.2305 382.384 11.5957 c 0,4,5
+ 370.819 -28.0381 370.819 -28.0381 361.548 -26.3164 c 0,2,3
+ 237.595 -3.2832 237.595 -3.2832 171.126 224.946 c 0,4,5
+ 167.278 238.161 167.278 238.161 164.03 243.297 c 0,6,7
+ 160.782 248.433 160.782 248.433 157.224 248.228 c 0,6,7
+ 149.848 247.805 149.848 247.805 145.68 220.162 c 0,8,9
+ 135.358 151.744 135.358 151.744 83.6074 80.5498 c 0,10,11
+ 31.8564 9.35645 31.8564 9.35645 0 0 c 0,10,11
+ -12.4766 -3.66406 -12.4766 -3.66406 -20.5488 20.1689 c 0,12,13
+ -40.625 79.4512 -40.625 79.4512 -22.2393 150.379 c 0,14,15
+ -14.3262 180.907 -14.3262 180.907 -0.305664 185.174 c 0,12,13
+ 61.9619 204.124 61.9619 204.124 95.5508 253.751 c 0,14,15
+ 129.141 303.378 129.141 303.378 129.468 352.469 c 0,14,15
+ 129.789 400.268 129.789 400.268 119.136 566.134 c 0,16,17
+ 108.483 731.999 108.483 731.999 93.7793 957.779 c 0,18,19
+ 79.0752 1183.56 79.0752 1183.56 72.7979 1326.15 c 0,16,17
+ 71.502 1355.59 71.502 1355.59 82.498 1384.59 c 0,18,19
+ 93.4932 1413.58 93.4932 1413.58 114.786 1415.6 c 0,18,19
+ 132.62 1417.28 132.62 1417.28 149.027 1384.71 c 0,20,21
+ 165.435 1352.14 165.435 1352.14 167.158 1331.73 c 0,20,21
+ 167.483 1327.88 167.483 1327.88 174.818 1192.57 c 0,22,23
+ 182.153 1057.25 182.153 1057.25 191.002 899.587 c 0,24,25
+ 199.85 741.919 199.85 741.919 210.241 591.157 c 0,26,27
+ 220.632 440.396 220.632 440.396 226.697 402.729 c 0,22,23
+ 239.319 324.323 239.319 324.323 273.771 255.38 c 0,24,25
+ 308.225 186.437 308.225 186.437 361.888 158.188 c 4,0,1
+EndSplineSet
+Fore
+SplineSet
+351 181 m 0,0,1
+ 378 169 378 169 384 123 c 128,-1,2
+ 390 77 390 77 381 36.5 c 128,-1,3
+ 372 -4 372 -4 362 -3 c 0,4,5
+ 243 11 243 11 162 236 c 0,6,7
+ 154 259 154 259 147 258 c 128,-1,8
+ 140 257 140 257 137 229 c 0,9,10
+ 131 161 131 161 81.5 86.5 c 128,-1,11
+ 32 12 32 12 -0 -0 c 0,12,13
+ -13 -5 -13 -5 -23 23 c 0,14,15
+ -47 88 -47 88 -30 155 c 0,16,17
+ -24 180 -24 180 -12 185 c 0,18,19
+ 50 208 50 208 83.5 260.5 c 128,-1,20
+ 117 313 117 313 115 360 c 0,21,22
+ 95 706 95 706 66 1328 c 0,23,24
+ 65 1359 65 1359 73.5 1388 c 128,-1,25
+ 82 1417 82 1417 103 1420 c 0,26,27
+ 121 1423 121 1423 139 1391.5 c 128,-1,28
+ 157 1360 157 1360 160 1340 c 0,29,30
+ 161 1335 161 1335 168 1124.5 c 128,-1,31
+ 175 914 175 914 186 689 c 128,-1,32
+ 197 464 197 464 208 417 c 0,33,34
+ 252 225 252 225 351 181 c 0,0,1
+EndSplineSet
+Substitution2: "KafLamHehIsol subtable" lam.medi_KafLamHehIsol
+Substitution2: "LamKafFina subtable" lam.medi_LamKafFina
+Substitution2: "Lellah subtable" lam.medi_Lellah
+Substitution2: "LamMeemMedi subtable" lam.medi_LamMeemMedi
+Substitution2: "LamAlefFina subtable" lam.medi_LamAlefFina
+Substitution2: "KafLamInit subtable" lam.medi_KafLamInit
+Substitution2: "KafLamAlefIsol subtable" lam.medi_KafLamAlefIsol
+Substitution2: "LamQafFina subtable" lam.medi_LamQafFina
+Substitution2: "LamYaaFina subtable" lam.medi_LamYaaFina
+Substitution2: "LamLamInit subtable" lam.medi_LamLamInit
+Substitution2: "KafLamMeemMedi subtable" lam.medi_KafLamMeemMedi
+Substitution2: "KafLamAlefFina subtable" lam.medi_KafLamAlefFina
+Substitution2: "LamHehFina subtable" lam.medi_LamHehFina
+Substitution2: "LamLamHaaInit subtable" lam.medi_LamLamHaaInit
+Substitution2: "LamWawFina subtable" lam.medi_LamWawFina
+Substitution2: "LamLamAlefIsol subtable" lam.medi_LamLamAlefIsol
+Substitution2: "KafMeemLamInit subtable" lam.medi_KafMeemLamInit
+Substitution2: "LamMeemFina subtable" lam.medi_LamMeemFina
+Substitution2: "KafLamMedi subtable" lam.medi_KafLamMedi
+Colour: ffff00
+EndChar

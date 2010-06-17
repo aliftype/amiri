@@ -1,0 +1,66 @@
+
+StartChar: seen.init
+Encoding: 65611 -1 62
+Width: 1164
+VWidth: 0
+Flags: W
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+994 584 m 0,0,1
+ 1002 596 1002 596 1011 579 c 0,2,3
+ 1030 548 1030 548 1034 474.5 c 128,-1,4
+ 1038 401 1038 401 1019.5 314 c 128,-1,5
+ 1001 227 1001 227 960 176 c 1,6,7
+ 945 151 945 151 913 146 c 0,8,9
+ 867 139 867 139 786.5 165 c 128,-1,10
+ 706 191 706 191 658 249 c 1,11,12
+ 630 176 630 176 577 121 c 128,-1,13
+ 524 66 524 66 457 46 c 0,14,15
+ 391 27 391 27 320 63 c 128,-1,16
+ 249 99 249 99 204 153 c 1,17,18
+ 98 23 98 23 0 0 c 0,19,20
+ -24 -6 -24 -6 -38 58 c 0,21,22
+ -59 152 -59 152 -23 189 c 0,23,24
+ -13 199 -13 199 0 201 c 0,25,26
+ 103 213 103 213 176 258 c 128,-1,27
+ 249 303 249 303 307 392 c 0,28,29
+ 316 403 316 403 324 402 c 128,-1,30
+ 332 401 332 401 337.5 393.5 c 128,-1,31
+ 343 386 343 386 341 380 c 0,32,33
+ 319 324 319 324 308 304 c 1,34,35
+ 346 235 346 235 474 240 c 0,36,37
+ 497 241 497 241 518 246.5 c 128,-1,38
+ 539 252 539 252 555.5 259 c 128,-1,39
+ 572 266 572 266 588 281 c 128,-1,40
+ 604 296 604 296 615 306 c 128,-1,41
+ 626 316 626 316 638.5 337.5 c 128,-1,42
+ 651 359 651 359 657.5 370 c 128,-1,43
+ 664 381 664 381 675 407.5 c 128,-1,44
+ 686 434 686 434 689.5 443.5 c 128,-1,45
+ 693 453 693 453 703.5 482 c 128,-1,46
+ 714 511 714 511 716 517 c 0,47,48
+ 720 528 720 528 730 529.5 c 128,-1,49
+ 740 531 740 531 747 522.5 c 128,-1,50
+ 754 514 754 514 752 502 c 0,51,52
+ 750 489 750 489 742.5 462 c 128,-1,53
+ 735 435 735 435 731 415 c 1,54,55
+ 776 368 776 368 856.5 346.5 c 128,-1,56
+ 937 325 937 325 952 351 c 0,57,58
+ 959 365 959 365 952.5 405 c 128,-1,59
+ 946 445 946 445 934 472 c 0,60,61
+ 931 479 931 479 938 492 c 0,62,63
+ 957 525 957 525 994 584 c 0,0,1
+EndSplineSet
+MultipleSubs2: "HehMediTooth subtable" seen.init_PreYaa baa.medi_BaaHehMedi
+Substitution2: "SeenYaaFina subtable" seen.init_PreYaa
+Substitution2: "SeenBaaMeemInit subtable" seen.init_SeenBaaMeemInit
+Substitution2: "SeenHaaInit subtable" seen.init_SeenHaaInit
+Substitution2: "SeenHaaIsol subtable" seen.init_SeenHaaIsol
+Substitution2: "SeenMeemInit subtable" seen.init_SeenMeemInit
+Colour: ffff00
+EndChar

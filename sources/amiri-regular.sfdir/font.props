@@ -1,0 +1,1082 @@
+SplineFontDB: 3.0
+FontName: Amiri-Regular
+FullName: Amiri Regular
+FamilyName: Amiri
+Weight: Regular
+Copyright: Copyright (c) 2010, Khaled Hosny <khaledhosny@eglug.org>.\n\nThis Font Software is licensed under the Open Font License, Version 1.1.
+UComments: "2010-5-8: Created." 
+Version: 000.001
+ItalicAngle: 0
+UnderlinePosition: -204
+UnderlineWidth: 102
+Ascent: 1638
+Descent: 410
+LayerCount: 2
+Layer: 0 1 "Back"  1
+Layer: 1 1 "Fore"  0
+NeedsXUIDChange: 1
+XUID: [1021 862 584604386 637949]
+FSType: 0
+OS2Version: 4
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1273266481
+ModificationTime: 1276719840
+PfmFamily: 17
+TTFWeight: 500
+TTFWidth: 5
+LineGap: 200
+VLineGap: 0
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 200
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+OS2Vendor: 'BLQ '
+Lookup: 2 0 0 "'ccmp' Glyph Decomposition"  {"'ccmp' Glyph Decomposition-1"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'init' Initial Forms in Arabic lookup 1"  {"'init' Initial Forms in Arabic lookup 1 subtable"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'medi' Medial Forms in Arabic lookup 2"  {"'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'fina' Terminal Forms in Arabic lookup 3"  {"'fina' Terminal Forms in Arabic lookup 3 subtable"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "KafLamHehIsol"  {"KafLamHehIsol subtable"  } []
+Lookup: 1 0 0 "BaaBaaAltInit"  {"BaaBaaAltInit subtable"  } []
+Lookup: 1 0 0 "SeenYaaFina"  {"SeenYaaFina subtable"  } []
+Lookup: 1 0 0 "LamHaaHaaInit"  {"LamHaaHaaInit subtable"  } []
+Lookup: 1 0 0 "LamHaaHaaInit2"  {"LamHaaHaaInit2 subtable"  } []
+Lookup: 1 0 0 "AynMeemInit"  {"AynMeemInit subtable"  } []
+Lookup: 1 0 0 "KafHehIsol"  {"KafHehIsol subtable"  } []
+Lookup: 1 0 0 "LamDalIsol"  {"LamDalIsol subtable"  } []
+Lookup: 1 0 0 "KafLamMedi"  {"KafLamMedi subtable"  } []
+Lookup: 1 0 0 "LamMeemFina"  {"LamMeemFina subtable"  } []
+Lookup: 1 0 0 "KafMeemLamInit"  {"KafMeemLamInit subtable"  } []
+Lookup: 1 0 0 "SeenMeemInit"  {"SeenMeemInit subtable"  } []
+Lookup: 1 0 0 "KafMeemMedi"  {"KafMeemMedi subtable"  } []
+Lookup: 1 0 0 "FaaMeemInit"  {"FaaMeemInit subtable"  } []
+Lookup: 1 0 0 "BaaMeemAlefFina"  {"BaaMeemAlefFina subtable"  } []
+Lookup: 1 0 0 "KafMeemInit"  {"KafMeemInit subtable"  } []
+Lookup: 1 0 0 "KafYaaIsol"  {"KafYaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaRaaIsol"  {"BaaRaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaHehMedi"  {"BaaHehMedi subtable"  } []
+Lookup: 1 0 0 "LamHehIsol"  {"LamHehIsol subtable"  } []
+Lookup: 1 0 0 "LamLamAlefIsol"  {"LamLamAlefIsol subtable"  } []
+Lookup: 1 0 0 "LamWawFina"  {"LamWawFina subtable"  } []
+Lookup: 1 0 0 "LamHaaInit"  {"LamHaaInit subtable"  } []
+Lookup: 1 0 0 "MeemMeemInit"  {"MeemMeemInit subtable"  } []
+Lookup: 1 0 0 "FaaYaaFina"  {"FaaYaaFina subtable"  } []
+Lookup: 1 0 0 "LamLamHaaInit"  {"LamLamHaaInit subtable"  } []
+Lookup: 1 0 0 "HehMeemInit"  {"HehMeemInit subtable"  } []
+Lookup: 1 0 0 "BaaYaaIsol"  {"BaaYaaIsol subtable"  } []
+Lookup: 1 0 0 "SadHaaIsol"  {"SadHaaIsol subtable"  } []
+Lookup: 1 0 0 "LamHehFina"  {"LamHehFina subtable"  } []
+Lookup: 1 0 0 "KafLamAlefFina"  {"KafLamAlefFina subtable"  } []
+Lookup: 1 0 0 "KafHehFina"  {"KafHehFina subtable"  } []
+Lookup: 1 0 0 "LamBaaMeemInit"  {"LamBaaMeemInit subtable"  } []
+Lookup: 1 0 0 "KafLamMeemMedi"  {"KafLamMeemMedi subtable"  } []
+Lookup: 1 0 0 "BaaDalIsol"  {"BaaDalIsol subtable"  } []
+Lookup: 1 0 0 "BaaMeemHaaInit"  {"BaaMeemHaaInit subtable"  } []
+Lookup: 1 0 0 "HaaYaaIsol"  {"HaaYaaIsol subtable"  } []
+Lookup: 1 0 0 "KafLamIsol"  {"KafLamIsol subtable"  } []
+Lookup: 1 0 0 "MeemAlefFina"  {"MeemAlefFina subtable"  } []
+Lookup: 1 0 0 "MeemYaaIsol"  {"MeemYaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaBaaYaaIsol"  {"BaaBaaYaaIsol subtable"  } []
+Lookup: 1 0 0 "LamLamInit"  {"LamLamInit subtable"  } []
+Lookup: 1 0 0 "LamYaaFina"  {"LamYaaFina subtable"  } []
+Lookup: 1 0 0 "KafBaaInit"  {"KafBaaInit subtable"  } []
+Lookup: 1 0 0 "LamMeemInit"  {"LamMeemInit subtable"  } []
+Lookup: 1 0 0 "LamAlefIsol"  {"LamAlefIsol subtable"  } []
+Lookup: 1 0 0 "LamHaaMeemInit"  {"LamHaaMeemInit subtable"  } []
+Lookup: 1 0 0 "BaaBaaInit"  {"BaaBaaInit subtable"  } []
+Lookup: 1 0 0 "AynYaaFina"  {"AynYaaFina subtable"  } []
+Lookup: 1 0 0 "LamKafIsol"  {"LamKafIsol subtable"  } []
+Lookup: 1 0 0 "MeemRaaIsol"  {"MeemRaaIsol subtable"  } []
+Lookup: 1 0 0 "FaaHaaInit"  {"FaaHaaInit subtable"  } []
+Lookup: 1 0 0 "KafKafFina"  {"KafKafFina subtable"  } []
+Lookup: 1 0 0 "HaaHaaInit"  {"HaaHaaInit subtable"  } []
+Lookup: 1 0 0 "KafMeemIsol"  {"KafMeemIsol subtable"  } []
+Lookup: 1 0 0 "FaaYaaIsol"  {"FaaYaaIsol subtable"  } []
+Lookup: 1 0 0 "LamQafFina"  {"LamQafFina subtable"  } []
+Lookup: 1 0 0 "SeenHaaIsol"  {"SeenHaaIsol subtable"  } []
+Lookup: 1 0 0 "KafMeemLamFina"  {"KafMeemLamFina subtable"  } []
+Lookup: 1 0 0 "MeemHaaInit"  {"MeemHaaInit subtable"  } []
+Lookup: 1 0 0 "BaaNoonIsol"  {"BaaNoonIsol subtable"  } []
+Lookup: 1 0 0 "KafMeemFina"  {"KafMeemFina subtable"  } []
+Lookup: 1 0 0 "KafLamAlefIsol"  {"KafLamAlefIsol subtable"  } []
+Lookup: 1 0 0 "BaaSeenInit"  {"BaaSeenInit subtable"  } []
+Lookup: 1 0 0 "KafRaaFina"  {"KafRaaFina subtable"  } []
+Lookup: 1 0 0 "LamHehInit"  {"LamHehInit subtable"  } []
+Lookup: 1 0 0 "MeemHaaMeemInit"  {"MeemHaaMeemInit subtable"  } []
+Lookup: 1 0 0 "BaaMeemInit"  {"BaaMeemInit subtable"  } []
+Lookup: 1 0 0 "AynYaaIsol"  {"AynYaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaHehInit"  {"BaaHehInit subtable"  } []
+Lookup: 1 0 0 "KafLamInit"  {"KafLamInit subtable"  } []
+Lookup: 1 0 0 "SeenHaaInit"  {"SeenHaaInit subtable"  } []
+Lookup: 1 0 0 "SadMeemInit"  {"SadMeemInit subtable"  } []
+Lookup: 1 0 0 "KafRaaIsol"  {"KafRaaIsol subtable"  } []
+Lookup: 1 0 0 "LamMeemIsol"  {"LamMeemIsol subtable"  } []
+Lookup: 1 0 0 "AynHaaInit"  {"AynHaaInit subtable"  } []
+Lookup: 1 0 0 "LamYaaIsol"  {"LamYaaIsol subtable"  } []
+Lookup: 1 0 0 "KafYaaFina"  {"KafYaaFina subtable"  } []
+Lookup: 1 0 0 "LamMeemHaaInit"  {"LamMeemHaaInit subtable"  } []
+Lookup: 1 0 0 "LamAlefFina"  {"LamAlefFina subtable"  } []
+Lookup: 1 0 0 "LamMeemMedi"  {"LamMeemMedi subtable"  } []
+Lookup: 1 0 0 "Lellah"  {"Lellah subtable"  } []
+Lookup: 1 0 0 "BaaBaaHaaInit"  {"BaaBaaHaaInit subtable"  } []
+Lookup: 1 0 0 "HaaMeemInit"  {"HaaMeemInit subtable"  } []
+Lookup: 1 0 0 "SeenBaaMeemInit"  {"SeenBaaMeemInit subtable"  } []
+Lookup: 1 0 0 "BaaBaaIsol"  {"BaaBaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaBaaMeemInit"  {"BaaBaaMeemInit subtable"  } []
+Lookup: 1 0 0 "KafAlefIsol"  {"KafAlefIsol subtable"  } []
+Lookup: 1 0 0 "KafBaaMedi"  {"KafBaaMedi subtable"  } []
+Lookup: 1 0 0 "HaaRaaIsol"  {"HaaRaaIsol subtable"  } []
+Lookup: 1 0 0 "HehHaaInit"  {"HehHaaInit subtable"  } []
+Lookup: 1 0 0 "LamRaaIsol"  {"LamRaaIsol subtable"  } []
+Lookup: 1 0 0 "KafDalIsol"  {"KafDalIsol subtable"  } []
+Lookup: 1 0 0 "BaaMeemIsol"  {"BaaMeemIsol subtable"  } []
+Lookup: 1 0 0 "KafMeemAlefIsol"  {"KafMeemAlefIsol subtable"  } []
+Lookup: 1 0 0 "SadHaaInit"  {"SadHaaInit subtable"  } []
+Lookup: 1 0 0 "KafMeemAlefFina"  {"KafMeemAlefFina subtable"  } []
+Lookup: 1 0 0 "KafAlefFina"  {"KafAlefFina subtable"  } []
+Lookup: 1 0 0 "LamKafFina"  {"LamKafFina subtable"  } []
+Lookup: 1 0 0 "BaaSeenAltInit"  {"BaaSeenAltInit subtable"  } []
+Lookup: 1 0 0 "BaaHaaIsol"  {"BaaHaaIsol subtable"  } []
+Lookup: 1 0 0 "BaaHaaInit"  {"BaaHaaInit subtable"  } []
+Lookup: 1 0 0 "BaaHaaMeemInit"  {"BaaHaaMeemInit subtable"  } []
+Lookup: 1 0 0 "BaaNoonFina"  {"BaaNoonFina subtable"  } []
+Lookup: 1 0 0 "BaaRaaFina"  {"BaaRaaFina subtable"  } []
+Lookup: 6 8 0 "'calt' BaaRaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 60"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 86"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "BaaMeemFina"  {"BaaMeemFina subtable"  } []
+Lookup: 6 8 0 "'calt' BaaMeemFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 22"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "HehMediTooth"  {"HehMediTooth subtable"  } []
+Lookup: 6 8 0 "'calt' HehMediTooth"  {"'calt' HehMediTooth subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "HighBaa"  {"HighBaa subtable"  } []
+Lookup: 6 8 0 "'calt' HighBaa"  {"'calt' HighBaa subtable"  "'calt' HighBaa subtable 2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "Finjani"  {"Finjani subtable"  } []
+Lookup: 6 8 0 "'calt' Finjani"  {"'calt' Finjani subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "BaaYaaFina"  {"BaaYaaFina subtable"  } []
+Lookup: 6 8 0 "'calt' BaaYaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 259 8 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+MarkAttachClasses: 1
+DEI: 91125
+ChainSub2: coverage "'calt' HighBaa subtable 2"  0 0 0 1
+ 3 0 0
+  Coverage: 8 baa.init
+  Coverage: 8 baa.medi
+  Coverage: 37 baa.medi baa.fina seen.medi seen.fina
+ 2
+  SeqLookup: 0 "BaaBaaAltInit" 
+  SeqLookup: 1 "HighBaa" 
+EndFPST
+ChainSub2: coverage "'calt' HehMediTooth subtable"  0 0 0 1
+ 2 0 0
+  Coverage: 28 seen.init seen.medi baa.medi
+  Coverage: 8 heh.medi
+ 2
+  SeqLookup: 0 "HehMediTooth" 
+  SeqLookup: 1 "HehMediTooth" 
+EndFPST
+ChainSub2: coverage "'calt' HighBaa subtable"  0 0 0 1
+ 1 1 1
+  Coverage: 8 baa.medi
+  BCoverage: 66 baa.medi haa.init haa.medi seen.init seen.medi baa.medi_BaaBaaInit
+  FCoverage: 74 baa.fina baa.medi seen.fina seen.medi baa.medi_BaaHehMedi seen.medi_PreYaa
+ 1
+  SeqLookup: 0 "HighBaa" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  0 0 0 1
+ String: 26 kaf.init lam.medi heh.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafLamHehIsol" 
+  SeqLookup: 1 "KafLamHehIsol" 
+  SeqLookup: 2 "KafLamHehIsol" 
+EndFPST
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  0 0 0 1
+ 2 0 0
+  Coverage: 37 seen.init sad.init seen.medi sad.medi
+  Coverage: 17 yaa.fina raa.fina
+ 2
+  SeqLookup: 0 "SeenYaaFina" 
+  SeqLookup: 1 "SeenYaaFina" 
+EndFPST
+ChainSub2: coverage "'calt' Finjani subtable"  0 0 0 1
+ 1 0 1
+  Coverage: 26 ayn.init haa.init haa.medi
+  FCoverage: 229 alef.fina dal.fina heh.fina lam.fina lam.medi lam.medi_LamMeemFina lam.medi_LamWawFina lam.medi_LamHehFina lam.medi_LamYaaFina lam.medi_LamQafFina baa.medi_BaaRaaFina lam.medi_LamAlefFina lam.medi_LamMeemMedi baa.medi_BaaNoonFina
+ 1
+  SeqLookup: 0 "Finjani" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  0 0 0 1
+ String: 26 lam.init haa.medi haa.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamHaaHaaInit" 
+  SeqLookup: 1 "LamHaaHaaInit" 
+  SeqLookup: 2 "LamHaaHaaInit2" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  0 0 0 1
+ String: 17 baa.init haa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaHaaIsol" 
+  SeqLookup: 1 "BaaHaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  0 0 0 1
+ String: 17 baa.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaHaaInit" 
+  SeqLookup: 1 "BaaHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  0 0 0 1
+ String: 27 baa.init haa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaHaaMeemInit" 
+  SeqLookup: 1 "BaaHaaMeemInit" 
+  SeqLookup: 2 "BaaHaaMeemInit" 
+EndFPST
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  0 0 0 1
+ 3 0 0
+  Coverage: 8 baa.init
+  Coverage: 9 seen.medi
+  Coverage: 17 raa.fina yaa.fina
+ 3
+  SeqLookup: 0 "BaaSeenAltInit" 
+  SeqLookup: 1 "BaaSeenAltInit" 
+  SeqLookup: 2 "BaaSeenAltInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  0 0 0 1
+ String: 17 baa.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaYaaFina" 
+  SeqLookup: 1 "BaaYaaFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  0 0 0 1
+ String: 17 lam.medi kaf.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamKafFina" 
+  SeqLookup: 1 "LamKafFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  0 0 0 1
+ String: 18 kaf.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafAlefFina" 
+  SeqLookup: 1 "KafAlefFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  0 0 0 1
+ String: 28 kaf.medi meem.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafMeemAlefFina" 
+  SeqLookup: 1 "KafMeemAlefFina" 
+  SeqLookup: 2 "KafMeemAlefFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  0 0 0 1
+ String: 17 sad.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "SadHaaInit" 
+  SeqLookup: 1 "SadHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  0 0 0 1
+ String: 28 kaf.init meem.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafMeemAlefIsol" 
+  SeqLookup: 1 "KafMeemAlefIsol" 
+  SeqLookup: 2 "KafMeemAlefIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  0 0 0 1
+ String: 18 baa.init meem.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaMeemIsol" 
+  SeqLookup: 1 "BaaMeemIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  0 0 0 1
+ String: 17 kaf.init dal.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafDalIsol" 
+  SeqLookup: 1 "KafDalIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  0 0 0 1
+ String: 17 lam.init raa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamRaaIsol" 
+  SeqLookup: 1 "LamRaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  0 0 0 1
+ String: 17 heh.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "HehHaaInit" 
+  SeqLookup: 1 "HehHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  0 0 0 1
+ String: 17 haa.init raa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "HaaRaaIsol" 
+  SeqLookup: 1 "HaaRaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 86"  0 0 0 1
+ String: 18 baa.medi noon.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaNoonFina" 
+  SeqLookup: 1 "BaaNoonFina" 
+EndFPST
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 85"  0 0 0 1
+ 2 0 1
+  Coverage: 8 kaf.medi
+  Coverage: 8 baa.medi
+  FCoverage: 27 alef.fina lam.medi lam.fina
+ 2
+  SeqLookup: 0 "KafBaaMedi" 
+  SeqLookup: 1 "KafBaaMedi" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  0 0 0 1
+ String: 18 kaf.init alef.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafAlefIsol" 
+  SeqLookup: 1 "KafAlefIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  0 0 0 1
+ String: 27 baa.init baa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaBaaMeemInit" 
+  SeqLookup: 1 "BaaBaaMeemInit" 
+  SeqLookup: 2 "BaaBaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  0 0 0 1
+ String: 17 baa.init baa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaBaaIsol" 
+  SeqLookup: 1 "BaaBaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  0 0 0 1
+ String: 28 seen.init baa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "SeenBaaMeemInit" 
+  SeqLookup: 1 "SeenBaaMeemInit" 
+  SeqLookup: 2 "SeenBaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  0 0 0 1
+ String: 18 haa.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "HaaMeemInit" 
+  SeqLookup: 1 "HaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  0 0 0 1
+ String: 26 baa.init baa.medi haa.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaBaaHaaInit" 
+  SeqLookup: 1 "BaaBaaHaaInit" 
+  SeqLookup: 2 "BaaBaaHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  0 0 0 1
+ String: 26 lam.init lam.medi heh.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "Lellah" 
+  SeqLookup: 1 "Lellah" 
+  SeqLookup: 2 "Lellah" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  0 0 0 1
+ String: 18 lam.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamMeemMedi" 
+  SeqLookup: 1 "LamMeemMedi" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  0 0 0 1
+ String: 18 lam.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamAlefFina" 
+  SeqLookup: 1 "LamAlefFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  0 0 0 1
+ String: 27 lam.init meem.medi haa.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamMeemHaaInit" 
+  SeqLookup: 1 "LamMeemHaaInit" 
+  SeqLookup: 2 "LamMeemHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  0 0 0 1
+ String: 17 kaf.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafYaaFina" 
+  SeqLookup: 1 "KafYaaFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  0 0 0 1
+ String: 17 lam.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamYaaIsol" 
+  SeqLookup: 1 "LamYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  0 0 0 1
+ String: 17 ayn.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "AynHaaInit" 
+  SeqLookup: 1 "AynHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  0 0 0 1
+ String: 18 lam.init meem.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamMeemIsol" 
+  SeqLookup: 1 "LamMeemIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  0 0 0 1
+ String: 17 kaf.init raa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafRaaIsol" 
+  SeqLookup: 1 "KafRaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  0 0 0 1
+ String: 18 sad.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "SadMeemInit" 
+  SeqLookup: 1 "SadMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  0 0 0 1
+ String: 18 seen.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "SeenHaaInit" 
+  SeqLookup: 1 "SeenHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  0 0 0 1
+ String: 17 kaf.init lam.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafLamInit" 
+  SeqLookup: 1 "KafLamInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  0 0 0 1
+ String: 17 baa.init heh.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaHehInit" 
+  SeqLookup: 1 "BaaHehInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  0 0 0 1
+ String: 17 ayn.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "AynYaaIsol" 
+  SeqLookup: 1 "AynYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  0 0 0 1
+ String: 18 baa.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaMeemInit" 
+  SeqLookup: 1 "BaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  0 0 0 1
+ String: 28 meem.init haa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "MeemHaaMeemInit" 
+  SeqLookup: 1 "MeemHaaMeemInit" 
+  SeqLookup: 2 "MeemHaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  0 0 0 1
+ String: 17 lam.init heh.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamHehInit" 
+  SeqLookup: 1 "LamHehInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  0 0 0 1
+ String: 17 kaf.medi raa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafRaaFina" 
+  SeqLookup: 1 "KafRaaFina" 
+EndFPST
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 60"  0 0 0 1
+ 2 0 0
+  Coverage: 8 baa.medi
+  Coverage: 8 raa.fina
+ 2
+  SeqLookup: 0 "BaaRaaFina" 
+  SeqLookup: 1 "BaaRaaFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  0 0 0 1
+ String: 18 baa.init seen.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaSeenInit" 
+  SeqLookup: 1 "BaaSeenInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  0 0 0 1
+ String: 27 kaf.init lam.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafLamAlefIsol" 
+  SeqLookup: 1 "KafLamAlefIsol" 
+  SeqLookup: 2 "KafLamAlefIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  0 0 0 1
+ String: 18 kaf.medi meem.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafMeemFina" 
+  SeqLookup: 1 "KafMeemFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  0 0 0 1
+ String: 18 baa.init noon.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaNoonIsol" 
+  SeqLookup: 1 "BaaNoonIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  0 0 0 1
+ String: 18 meem.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "MeemHaaInit" 
+  SeqLookup: 1 "MeemHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  0 0 0 1
+ String: 27 kaf.medi meem.medi lam.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafMeemLamFina" 
+  SeqLookup: 1 "KafMeemLamFina" 
+  SeqLookup: 2 "KafMeemLamFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  0 0 0 1
+ String: 18 seen.init haa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "SeenHaaIsol" 
+  SeqLookup: 1 "SeenHaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  0 0 0 1
+ String: 17 lam.medi qaf.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamQafFina" 
+  SeqLookup: 1 "LamQafFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  0 0 0 1
+ String: 17 faa.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "FaaYaaIsol" 
+  SeqLookup: 1 "FaaYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  0 0 0 1
+ String: 18 kaf.init meem.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafMeemIsol" 
+  SeqLookup: 1 "KafMeemIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  0 0 0 1
+ String: 17 haa.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "HaaHaaInit" 
+  SeqLookup: 1 "HaaHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  0 0 0 1
+ String: 17 kaf.medi kaf.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafKafFina" 
+  SeqLookup: 1 "KafKafFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  0 0 0 1
+ String: 17 faa.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "FaaHaaInit" 
+  SeqLookup: 1 "FaaHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  0 0 0 1
+ String: 18 meem.init raa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "MeemRaaIsol" 
+  SeqLookup: 1 "MeemRaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  0 0 0 1
+ String: 17 lam.init kaf.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamKafIsol" 
+  SeqLookup: 1 "LamKafIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  0 0 0 1
+ String: 17 ayn.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "AynYaaFina" 
+  SeqLookup: 1 "AynYaaFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  0 0 0 1
+ String: 17 baa.init baa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaBaaInit" 
+  SeqLookup: 1 "BaaBaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  0 0 0 1
+ String: 27 lam.init haa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamHaaMeemInit" 
+  SeqLookup: 1 "LamHaaMeemInit" 
+  SeqLookup: 2 "LamHaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  0 0 0 1
+ String: 18 lam.init alef.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamAlefIsol" 
+  SeqLookup: 1 "LamAlefIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  0 0 0 1
+ String: 18 lam.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamMeemInit" 
+  SeqLookup: 1 "LamMeemInit" 
+EndFPST
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 39"  0 0 0 1
+ 2 0 1
+  Coverage: 8 kaf.init
+  Coverage: 8 baa.medi
+  FCoverage: 27 alef.fina lam.fina lam.medi
+ 2
+  SeqLookup: 0 "KafBaaInit" 
+  SeqLookup: 1 "KafBaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  0 0 0 1
+ String: 17 lam.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamYaaFina" 
+  SeqLookup: 1 "LamYaaFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  0 0 0 1
+ String: 17 lam.init lam.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamLamInit" 
+  SeqLookup: 1 "LamLamInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  0 0 0 1
+ String: 26 baa.init baa.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaBaaYaaIsol" 
+  SeqLookup: 1 "BaaBaaYaaIsol" 
+  SeqLookup: 2 "BaaBaaYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  0 0 0 1
+ String: 18 meem.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "MeemYaaIsol" 
+  SeqLookup: 1 "MeemYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  0 0 0 1
+ String: 19 meem.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "MeemAlefFina" 
+  SeqLookup: 1 "MeemAlefFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  0 0 0 1
+ String: 17 kaf.init lam.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafLamIsol" 
+  SeqLookup: 1 "KafLamIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  0 0 0 1
+ String: 17 haa.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "HaaYaaIsol" 
+  SeqLookup: 1 "HaaYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  0 0 0 1
+ String: 27 baa.init meem.medi haa.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaMeemHaaInit" 
+  SeqLookup: 1 "BaaMeemHaaInit" 
+  SeqLookup: 2 "BaaMeemHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  0 0 0 1
+ String: 17 baa.init dal.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaDalIsol" 
+  SeqLookup: 1 "BaaDalIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  0 0 0 1
+ String: 27 kaf.medi lam.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafLamMeemMedi" 
+  SeqLookup: 1 "KafLamMeemMedi" 
+  SeqLookup: 2 "KafLamMeemMedi" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  0 0 0 1
+ String: 27 lam.init baa.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamBaaMeemInit" 
+  SeqLookup: 1 "LamBaaMeemInit" 
+  SeqLookup: 2 "LamBaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  0 0 0 1
+ String: 17 kaf.medi heh.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafHehFina" 
+  SeqLookup: 1 "KafHehFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  0 0 0 1
+ String: 27 kaf.medi lam.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafLamAlefFina" 
+  SeqLookup: 1 "KafLamAlefFina" 
+  SeqLookup: 2 "KafLamAlefFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  0 0 0 1
+ String: 17 lam.medi heh.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamHehFina" 
+  SeqLookup: 1 "LamHehFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  0 0 0 1
+ String: 17 sad.init haa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "SadHaaIsol" 
+  SeqLookup: 1 "SadHaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  0 0 0 1
+ String: 17 baa.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaYaaIsol" 
+  SeqLookup: 1 "BaaYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 22"  0 0 0 1
+ String: 18 baa.medi meem.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaMeemFina" 
+  SeqLookup: 1 "BaaMeemFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  0 0 0 1
+ String: 18 heh.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "HehMeemInit" 
+  SeqLookup: 1 "HehMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  0 0 0 1
+ String: 26 lam.init lam.medi haa.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamLamHaaInit" 
+  SeqLookup: 1 "LamLamHaaInit" 
+  SeqLookup: 2 "LamLamHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  0 0 0 1
+ String: 17 faa.medi yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "FaaYaaFina" 
+  SeqLookup: 1 "FaaYaaFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  0 0 0 1
+ String: 19 meem.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "MeemMeemInit" 
+  SeqLookup: 1 "MeemMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  0 0 0 1
+ String: 17 lam.init haa.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamHaaInit" 
+  SeqLookup: 1 "LamHaaInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  0 0 0 1
+ String: 17 lam.medi waw.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamWawFina" 
+  SeqLookup: 1 "LamWawFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  0 0 0 1
+ String: 27 lam.init lam.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "LamLamAlefIsol" 
+  SeqLookup: 1 "LamLamAlefIsol" 
+  SeqLookup: 2 "LamLamAlefIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  0 0 0 1
+ String: 17 lam.init heh.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamHehIsol" 
+  SeqLookup: 1 "LamHehIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 13"  0 0 0 1
+ String: 17 baa.medi heh.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaHehMedi" 
+  SeqLookup: 1 "BaaHehMedi" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  0 0 0 1
+ String: 17 baa.init raa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "BaaRaaIsol" 
+  SeqLookup: 1 "BaaRaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  0 0 0 1
+ String: 17 kaf.init yaa.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafYaaIsol" 
+  SeqLookup: 1 "KafYaaIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  0 0 0 1
+ String: 18 kaf.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafMeemInit" 
+  SeqLookup: 1 "KafMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  0 0 0 1
+ String: 28 baa.medi meem.medi alef.fina
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "BaaMeemAlefFina" 
+  SeqLookup: 1 "BaaMeemAlefFina" 
+  SeqLookup: 2 "BaaMeemAlefFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  0 0 0 1
+ String: 18 faa.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "FaaMeemInit" 
+  SeqLookup: 1 "FaaMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  0 0 0 1
+ String: 18 kaf.medi meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafMeemMedi" 
+  SeqLookup: 1 "KafMeemMedi" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  0 0 0 1
+ String: 19 seen.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "SeenMeemInit" 
+  SeqLookup: 1 "SeenMeemInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  0 0 0 1
+ String: 27 kaf.init meem.medi lam.medi
+ BString: 0 
+ FString: 0 
+ 3
+  SeqLookup: 0 "KafMeemLamInit" 
+  SeqLookup: 1 "KafMeemLamInit" 
+  SeqLookup: 2 "KafMeemLamInit" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  0 0 0 1
+ String: 18 lam.medi meem.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamMeemFina" 
+  SeqLookup: 1 "LamMeemFina" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  0 0 0 1
+ String: 17 kaf.medi lam.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafLamMedi" 
+  SeqLookup: 1 "KafLamMedi" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  0 0 0 1
+ String: 17 lam.init dal.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "LamDalIsol" 
+  SeqLookup: 1 "LamDalIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  0 0 0 1
+ String: 17 kaf.init heh.fina
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "KafHehIsol" 
+  SeqLookup: 1 "KafHehIsol" 
+EndFPST
+ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  0 0 0 1
+ String: 18 ayn.init meem.medi
+ BString: 0 
+ FString: 0 
+ 2
+  SeqLookup: 0 "AynMeemInit" 
+  SeqLookup: 1 "AynMeemInit" 
+EndFPST
+LangName: 3073 "" "" "+BjkGJwYvBkoA" "" "" "" "" "" "" "+BkUGLQZFBi8A +BiwGOQZBBjEA" 
+LangName: 1033 "" "" "" "" "" "" "" "" "" "Muhammad Ja'far" "" "" "" "Copyright (c) 2010, Khaled Hosny (<khaledhosny@eglug.org>),+AAoA-with Reserved Font Name Amiri.+AAoACgAA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is copied below, and is also available with a FAQ at:+AAoA-http://scripts.sil.org/OFL+AAoACgAK------------------------------------------------------------+AAoA-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007+AAoA------------------------------------------------------------+AAoACgAA-PREAMBLE+AAoA-The goals of the Open Font License (OFL) are to stimulate worldwide+AAoA-development of collaborative font projects, to support the font creation+AAoA-efforts of academic and linguistic communities, and to provide a free and+AAoA-open framework in which fonts may be shared and improved in partnership+AAoA-with others.+AAoACgAA-The OFL allows the licensed fonts to be used, studied, modified and+AAoA-redistributed freely as long as they are not sold by themselves. The+AAoA-fonts, including any derivative works, can be bundled, embedded, +AAoA-redistributed and/or sold with any software provided that any reserved+AAoA-names are not used by derivative works. The fonts and derivatives,+AAoA-however, cannot be released under any other type of license. The+AAoA-requirement for fonts to remain under this license does not apply+AAoA-to any document created using the fonts or their derivatives.+AAoACgAA-DEFINITIONS+AAoAIgAA-Font Software+ACIA refers to the set of files released by the Copyright+AAoA-Holder(s) under this license and clearly marked as such. This may+AAoA-include source files, build scripts and documentation.+AAoACgAi-Reserved Font Name+ACIA refers to any names specified as such after the+AAoA-copyright statement(s).+AAoACgAi-Original Version+ACIA refers to the collection of Font Software components as+AAoA-distributed by the Copyright Holder(s).+AAoACgAi-Modified Version+ACIA refers to any derivative made by adding to, deleting,+AAoA-or substituting -- in part or in whole -- any of the components of the+AAoA-Original Version, by changing formats or by porting the Font Software to a+AAoA-new environment.+AAoACgAi-Author+ACIA refers to any designer, engineer, programmer, technical+AAoA-writer or other person who contributed to the Font Software.+AAoACgAA-PERMISSION & CONDITIONS+AAoA-Permission is hereby granted, free of charge, to any person obtaining+AAoA-a copy of the Font Software, to use, study, copy, merge, embed, modify,+AAoA-redistribute, and sell modified and unmodified copies of the Font+AAoA-Software, subject to the following conditions:+AAoACgAA-1) Neither the Font Software nor any of its individual components,+AAoA-in Original or Modified Versions, may be sold by itself.+AAoACgAA-2) Original or Modified Versions of the Font Software may be bundled,+AAoA-redistributed and/or sold with any software, provided that each copy+AAoA-contains the above copyright notice and this license. These can be+AAoA-included either as stand-alone text files, human-readable headers or+AAoA-in the appropriate machine-readable metadata fields within text or+AAoA-binary files as long as those fields can be easily viewed by the user.+AAoACgAA-3) No Modified Version of the Font Software may use the Reserved Font+AAoA-Name(s) unless explicit written permission is granted by the corresponding+AAoA-Copyright Holder. This restriction only applies to the primary font name as+AAoA-presented to the users.+AAoACgAA-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font+AAoA-Software shall not be used to promote, endorse or advertise any+AAoA-Modified Version, except to acknowledge the contribution(s) of the+AAoA-Copyright Holder(s) and the Author(s) or with their explicit written+AAoA-permission.+AAoACgAA-5) The Font Software, modified or unmodified, in part or in whole,+AAoA-must be distributed entirely under this license, and must not be+AAoA-distributed under any other license. The requirement for fonts to+AAoA-remain under this license does not apply to any document created+AAoA-using the Font Software.+AAoACgAA-TERMINATION+AAoA-This license becomes null and void if any of the above conditions are+AAoA-not met.+AAoACgAA-DISCLAIMER+AAoA-THE FONT SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND,+AAoA-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF+AAoA-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT+AAoA-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE+AAoA-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,+AAoA-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL+AAoA-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING+AAoA-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM+AAoA-OTHER DEALINGS IN THE FONT SOFTWARE." "http://scripts.sil.org/OFL" 
+Encoding: UnicodeBmp
+Compacted: 1
+UnicodeInterp: none
+NameList: AGL without afii
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 96 24 10
+AnchorClass2: "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
+EndSplineFont

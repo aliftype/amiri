@@ -1,0 +1,63 @@
+
+StartChar: kaf.init
+Encoding: 65579 -1 34
+Width: 461
+VWidth: 0
+Flags: W
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1053 1570 m 2,0,-1
+ 1014 1477 l 2,1,2
+ 1003 1451 1003 1451 990 1448 c 0,3,4
+ 421 1288 421 1288 47 1081 c 0,5,6
+ 33 1073 33 1073 42 1059 c 0,7,8
+ 52 1044 52 1044 74 1014 c 0,9,10
+ 125 941 125 941 150.5 902 c 128,-1,11
+ 176 863 176 863 218 793 c 128,-1,12
+ 260 723 260 723 278.5 669.5 c 128,-1,13
+ 297 616 297 616 315 545.5 c 128,-1,14
+ 333 475 333 475 331 401.5 c 128,-1,15
+ 329 328 329 328 312 250 c 0,16,17
+ 294 170 294 170 231 110 c 128,-1,18
+ 168 50 168 50 107 26 c 128,-1,19
+ 46 2 46 2 0 0 c 0,20,21
+ -23 -1 -23 -1 -43 45 c 128,-1,22
+ -63 91 -63 91 -54.5 137 c 128,-1,23
+ -46 183 -46 183 -0 184 c 0,24,25
+ 52 185 52 185 149 211.5 c 128,-1,26
+ 246 238 246 238 270 261 c 1,27,28
+ 297 336 297 336 224.5 499.5 c 128,-1,29
+ 152 663 152 663 88 742 c 0,30,31
+ 65 771 65 771 50 766 c 2,32,-1
+ 13 755 l 2,33,34
+ -7 749 -7 749 -25 774 c 2,35,-1
+ -113 904 l 2,36,37
+ -128 926 -128 926 -123 957 c 0,38,39
+ -114 1007 -114 1007 -89 1059.5 c 128,-1,40
+ -64 1112 -64 1112 -40 1143 c 0,41,42
+ 49 1255 49 1255 383 1399.5 c 128,-1,43
+ 717 1544 717 1544 1017 1621 c 0,44,45
+ 1047 1629 1047 1629 1056 1611.5 c 128,-1,46
+ 1065 1594 1065 1594 1053 1570 c 2,0,-1
+EndSplineSet
+Substitution2: "KafLamHehIsol subtable" kaf.init_KafLamHehIsol
+Substitution2: "KafMeemAlefIsol subtable" kaf.init_KafMeemAlefIsol
+Substitution2: "KafDalIsol subtable" kaf.init_KafDalIsol
+Substitution2: "KafAlefIsol subtable" kaf.init_KafAlefIsol
+Substitution2: "KafRaaIsol subtable" kaf.init_KafRaaIsol
+Substitution2: "KafLamInit subtable" kaf.init_KafLamInit
+Substitution2: "KafLamAlefIsol subtable" kaf.init_KafLamAlefIsol
+Substitution2: "KafMeemIsol subtable" kaf.init_KafMeemIsol
+Substitution2: "KafBaaInit subtable" kaf.init_KafBaaInit
+Substitution2: "KafLamIsol subtable" kaf.init_KafLamIsol
+Substitution2: "KafYaaIsol subtable" kaf.init_KafYaaIsol
+Substitution2: "KafMeemInit subtable" kaf.init_KafMeemInit
+Substitution2: "KafMeemLamInit subtable" kaf.init_KafMeemLamInit
+Substitution2: "KafHehIsol subtable" kaf.init_KafHehIsol
+Colour: ffff00
+EndChar

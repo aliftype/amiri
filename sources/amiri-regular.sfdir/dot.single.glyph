@@ -1,0 +1,23 @@
+
+StartChar: dot.single
+Encoding: 65559 -1 16
+Width: 0
+VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+101 260 m 2,0,1
+ 106 268 106 268 118 264 c 0,2,3
+ 199 236 199 236 263 179 c 0,4,5
+ 272 171 272 171 266 161 c 2,6,7
+ 168 6 l 2,8,9
+ 162 -3 162 -3 155 3 c 0,10,11
+ 133 21 133 21 4 99 c 0,12,13
+ -4 104 -4 104 1 111 c 2,14,15
+ 101 260 l 2,0,1
+EndSplineSet
+EndChar

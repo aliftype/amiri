@@ -1,0 +1,65 @@
+
+StartChar: kaf.medi
+Encoding: 65581 -1 36
+Width: 759
+VWidth: 0
+AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotAbove" 0 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+146 1203 m 0,0,1
+ 269 1296 269 1296 614 1414.5 c 128,-1,2
+ 959 1533 959 1533 1291 1565 c 0,3,4
+ 1313 1567 1313 1567 1326.5 1553.5 c 128,-1,5
+ 1340 1540 1340 1540 1331 1525 c 2,6,-1
+ 1270 1421 l 2,7,8
+ 1263 1409 1263 1409 1247 1408 c 0,9,10
+ 975 1381 975 1381 563 1254 c 128,-1,11
+ 151 1127 151 1127 84 1055 c 1,12,13
+ 149 978 149 978 233.5 837.5 c 128,-1,14
+ 318 697 318 697 382.5 583.5 c 128,-1,15
+ 447 470 447 470 549 355 c 128,-1,16
+ 651 240 651 240 762 186 c 0,17,18
+ 817 159 817 159 804 69 c 0,19,20
+ 794 2 794 2 765 -1 c 0,21,22
+ 761 -1 761 -1 758 0 c 0,23,24
+ 692 26 692 26 630.5 74 c 128,-1,25
+ 569 122 569 122 517.5 184.5 c 128,-1,26
+ 466 247 466 247 428 300.5 c 128,-1,27
+ 390 354 390 354 346 422.5 c 128,-1,28
+ 302 491 302 491 281 519 c 1,29,30
+ 278 413 278 413 248 317 c 128,-1,31
+ 218 221 218 221 174 157 c 128,-1,32
+ 130 93 130 93 85.5 51.5 c 128,-1,33
+ 41 10 41 10 4 -4 c 0,34,35
+ -24 -14 -24 -14 -35 35 c 0,36,37
+ -51 107 -51 107 -21 158 c 0,38,39
+ -8 180 -8 180 10 181 c 0,40,41
+ 46 182 46 182 108.5 209.5 c 128,-1,42
+ 171 237 171 237 191 270 c 1,43,44
+ 215 330 215 330 219 394 c 128,-1,45
+ 223 458 223 458 210.5 516 c 128,-1,46
+ 198 574 198 574 167.5 641.5 c 128,-1,47
+ 137 709 137 709 102.5 766.5 c 128,-1,48
+ 68 824 68 824 17 898 c 1,49,50
+ 5 937 5 937 9 956 c 0,51,52
+ 60 1138 60 1138 146 1203 c 0,0,1
+EndSplineSet
+Substitution2: "KafAlefFina subtable" kaf.medi_KafAlefFina
+Substitution2: "KafMeemAlefFina subtable" kaf.medi_KafMeemAlefFina
+Substitution2: "KafBaaMedi subtable" kaf.medi_KafBaaMedi
+Substitution2: "KafYaaFina subtable" kaf.medi_KafYaaFina
+Substitution2: "KafRaaFina subtable" kaf.medi_KafRaaFina
+Substitution2: "KafMeemFina subtable" kaf.medi_KafMeemFina
+Substitution2: "KafMeemLamFina subtable" kaf.medi_KafMeemLamFina
+Substitution2: "KafKafFina subtable" kaf.medi_KafKafFina
+Substitution2: "KafLamMeemMedi subtable" kaf.medi_KafLamMeemMedi
+Substitution2: "KafHehFina subtable" kaf.medi_KafHehFina
+Substitution2: "KafLamAlefFina subtable" kaf.medi_KafLamAlefFina
+Substitution2: "KafMeemMedi subtable" kaf.medi_KafMeemMedi
+Substitution2: "KafLamMedi subtable" kaf.medi_KafLamMedi
+Colour: ffff00
+EndChar
