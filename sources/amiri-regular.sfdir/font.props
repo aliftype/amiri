@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1276797151
+ModificationTime: 1276892029
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -41,10 +41,10 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'BLQ '
-Lookup: 2 0 0 "'ccmp' Glyph Decomposition"  {"'ccmp' Glyph Decomposition-1"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 1 0 0 "'init' Initial Forms in Arabic lookup 1"  {"'init' Initial Forms in Arabic lookup 1 subtable"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 1 0 0 "'medi' Medial Forms in Arabic lookup 2"  {"'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 1 0 0 "'fina' Terminal Forms in Arabic lookup 3"  {"'fina' Terminal Forms in Arabic lookup 3 subtable"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "'isol' Isolated Forms"  {"'isol' Isolated Forms-1"  } ['isol' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "'init' Initial  Forms"  {"'init' Initial  Forms-1"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "'medi' Medial   Forms"  {"'medi' Medial   Forms-1"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "'fina' Terminal Forms"  {"'fina' Terminal Forms-1"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "KafLamHehIsol"  {"KafLamHehIsol subtable"  } []
 Lookup: 1 0 0 "BaaBaaAltInit"  {"BaaBaaAltInit subtable"  } []
 Lookup: 1 0 0 "SeenYaaFina"  {"SeenYaaFina subtable"  } []

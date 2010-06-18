@@ -7,5 +7,8 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 20 -1 N 1 0 0 1 -4 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" faa.isol dot.above
+MultipleSubs2: "'isol' Isolated Forms-1" faa.isol dot.above
+MultipleSubs2: "'fina' Terminal Forms-1" faa.fina dot.above
+MultipleSubs2: "'medi' Medial   Forms-1" faa.medi dot.above
+MultipleSubs2: "'init' Initial  Forms-1" faa.init dot.above
 EndChar

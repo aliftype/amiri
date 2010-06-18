@@ -7,5 +7,8 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 63 -1 N 1 0 0 1 -7 0 3
-MultipleSubs2: "'ccmp' Glyph Decomposition-1" seen.isol threedots.above
+MultipleSubs2: "'isol' Isolated Forms-1" seen.isol threedots.above
+MultipleSubs2: "'fina' Terminal Forms-1" seen.fina threedots.above
+MultipleSubs2: "'medi' Medial   Forms-1" seen.medi threedots.above
+MultipleSubs2: "'init' Initial  Forms-1" seen.init threedots.above
 EndChar
