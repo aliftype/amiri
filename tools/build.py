@@ -6,7 +6,7 @@ import sys
 
 family = "amiri"
 styles = ("math", "regular", "bold", "italic", "bolditalic")
-flags  = ("opentype",)
+flags  = ("opentype", "dummy-dsig", "round", "short-post")
 source = "sources"
 args   = [ ]
 
