@@ -25,8 +25,8 @@ if len(args) == 0:
 
 for style in args:
     name = family+"-"+style
-    if os.path.isfile(os.path.join(source, name+".sfd")):
+    if os.path.isdir(os.path.join(source, name+".sfdir")):
         print "Generating %s..." % style
-        font = fontforge.open(os.path.join(source, name+".sfd"))
+        font = fontforge.open(os.path.join(source, name+".sfdir"))
         font . generate(name+".ttf", flags=flags)
         font . close()
