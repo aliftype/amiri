@@ -1,12 +1,13 @@
 
 StartChar: baa.medi_BaaBaaMeemInit
-Encoding: 65808 -1 293
+Encoding: 65808 -1 292
 Width: 575
 VWidth: 0
+Flags: H
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "DotAbove" -3 3 basechar 0
 AnchorPoint: "cursive" 547 596 entry 0
 AnchorPoint: "cursive" 66 598 exit 0
 LayerCount: 2

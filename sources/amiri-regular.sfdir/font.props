@@ -14,7 +14,6 @@ Descent: 410
 LayerCount: 2
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 862 584604386 637949]
 FSType: 0
 OS2Version: 4
@@ -167,7 +166,7 @@ Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'d
 Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 259 8 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'calt' HighBaa subtable 2"  0 0 0 1
@@ -395,14 +394,14 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 8
   SeqLookup: 0 "BaaBaaIsol" 
   SeqLookup: 1 "BaaBaaIsol" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  0 0 0 1
- String: 28 seen.init baa.medi meem.medi
- BString: 0 
- FString: 0 
- 3
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  0 0 0 1
+ 2 1 0
+  Coverage: 8 baa.medi
+  Coverage: 9 meem.medi
+  BCoverage: 18 seen.init sad.init
+ 2
   SeqLookup: 0 "SeenBaaMeemInit" 
   SeqLookup: 1 "SeenBaaMeemInit" 
-  SeqLookup: 2 "SeenBaaMeemInit" 
 EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  0 0 0 1
  String: 18 haa.init meem.medi
@@ -1078,6 +1077,10 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 96 24 10
+WinInfo: 216 24 10
+Grid
+-878 1427 m 25
+ 2140 1427 l 25
+EndSplineSet
 AnchorClass2: "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
