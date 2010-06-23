@@ -3,9 +3,9 @@ StartChar: baa.medi_High
 Encoding: 65866 -1 470
 Width: 389
 VWidth: 0
+AnchorPoint: "DotBelow" 200 -350 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
 AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Fore

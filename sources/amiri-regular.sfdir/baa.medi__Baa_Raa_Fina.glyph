@@ -5,8 +5,8 @@ Width: 450
 VWidth: 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "DotBelow" 110 -380 basechar 0
+AnchorPoint: "DotAbove" 106 110 basechar 0
 AnchorPoint: "cursive" -49 334 exit 0
 LayerCount: 2
 Back

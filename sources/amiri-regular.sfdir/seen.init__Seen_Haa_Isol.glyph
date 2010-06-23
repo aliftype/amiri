@@ -3,10 +3,10 @@ StartChar: seen.init_SeenHaaIsol
 Encoding: 65740 -1 225
 Width: 1423
 VWidth: 0
+AnchorPoint: "DotAbove" 1011 1973 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 133 985 exit 0
 LayerCount: 2
 Back

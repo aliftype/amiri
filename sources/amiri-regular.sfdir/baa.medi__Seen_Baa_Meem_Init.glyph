@@ -6,7 +6,7 @@ VWidth: 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "DotAbove" 80 1250 basechar 0
 AnchorPoint: "cursive" 152 250 exit 0
 AnchorPoint: "cursive" 643 518 entry 0
 LayerCount: 2

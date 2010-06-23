@@ -20,7 +20,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1276892029
+ModificationTime: 1277287362
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -189,7 +189,7 @@ EndFPST
 ChainSub2: coverage "'calt' HighBaa subtable"  0 0 0 1
  1 1 1
   Coverage: 8 baa.medi
-  BCoverage: 66 baa.medi haa.init haa.medi seen.init seen.medi baa.medi_BaaBaaInit
+  BCoverage: 75 baa.medi haa.init haa.medi seen.init seen.medi baa.medi_BaaBaaInit lam.init
   FCoverage: 74 baa.fina baa.medi seen.fina seen.medi baa.medi_BaaHehMedi seen.medi_PreYaa
  1
   SeqLookup: 0 "HighBaa" 
@@ -1077,7 +1077,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 216 24 10
+WinInfo: 96 24 10
 Grid
 -878 1427 m 25
  2140 1427 l 25

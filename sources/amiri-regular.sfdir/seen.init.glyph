@@ -4,10 +4,11 @@ Encoding: 65611 -1 62
 Width: 1164
 VWidth: 0
 Flags: W
+AnchorPoint: "cursive" -23 108 exit 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "DotAbove" 650 900 basechar 0
 LayerCount: 2
 Fore
 SplineSet
