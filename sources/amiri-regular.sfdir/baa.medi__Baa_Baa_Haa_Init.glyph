@@ -3,10 +3,10 @@ StartChar: baa.medi_BaaBaaHaaInit
 Encoding: 65798 -1 283
 Width: 1091
 VWidth: 0
+AnchorPoint: "DotAbove" 849 1227 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 1057 662 entry 0
 AnchorPoint: "cursive" 133 514 exit 0
 LayerCount: 2

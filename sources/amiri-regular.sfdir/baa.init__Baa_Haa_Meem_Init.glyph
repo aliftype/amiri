@@ -3,10 +3,10 @@ StartChar: baa.init_BaaHaaMeemInit
 Encoding: 65848 -1 333
 Width: 1060
 VWidth: 0
+AnchorPoint: "DotAbove" 906 1491 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 152 743 exit 0
 LayerCount: 2
 Back
