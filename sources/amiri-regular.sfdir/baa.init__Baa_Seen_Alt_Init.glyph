@@ -3,10 +3,10 @@ StartChar: baa.init_BaaSeenAltInit
 Encoding: 65840 -1 327
 Width: 385
 VWidth: 0
+AnchorPoint: "DotBelow" 270 -350 basechar 0
 AnchorPoint: "DotAbove" 151 1248 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
 AnchorPoint: "cursive" 8 309 exit 0
 LayerCount: 2
 Back
