@@ -3,6 +3,7 @@ StartChar: raa.fina_LamRaaIsol
 Encoding: 65821 -1 305
 Width: 671
 VWidth: -80
+AnchorPoint: "VAbove" 400 864 basechar 0
 AnchorPoint: "HamzaBelow" 0 -80 basechar 0
 AnchorPoint: "HamzaAbove" 0 -80 basechar 0
 AnchorPoint: "DotBelow" 0 -80 basechar 0

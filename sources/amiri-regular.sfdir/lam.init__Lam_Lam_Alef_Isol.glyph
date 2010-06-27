@@ -3,6 +3,7 @@ StartChar: lam.init_LamLamAlefIsol
 Encoding: 65656 -1 141
 Width: 225
 VWidth: 0
+AnchorPoint: "VAbove" 29 1452.5 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0

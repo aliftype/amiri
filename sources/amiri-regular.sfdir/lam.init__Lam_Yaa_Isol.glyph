@@ -3,6 +3,7 @@ StartChar: lam.init_LamYaaIsol
 Encoding: 65783 -1 268
 Width: 323
 VWidth: 0
+AnchorPoint: "VAbove" 134 1567.5 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0

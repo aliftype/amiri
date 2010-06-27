@@ -3,6 +3,7 @@ StartChar: lam.init_LamDalIsol
 Encoding: 65628 -1 113
 Width: 282
 VWidth: -122
+AnchorPoint: "VAbove" 0 1583 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
