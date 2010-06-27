@@ -3,10 +3,10 @@ StartChar: seen.init_SeenMeemInit
 Encoding: 65637 -1 122
 Width: 1128
 VWidth: 0
+AnchorPoint: "DotAbove" 711.5 1254 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 115 231 exit 0
 LayerCount: 2
 Back
