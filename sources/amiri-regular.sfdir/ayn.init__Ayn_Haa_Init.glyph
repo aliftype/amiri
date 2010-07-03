@@ -3,10 +3,10 @@ StartChar: ayn.init_AynHaaInit
 Encoding: 65781 -1 266
 Width: 1095
 VWidth: 0
+AnchorPoint: "DotAbove" 525 1535 basechar 0
+AnchorPoint: "HamzaAbove" 525 1535 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 102 500 exit 0
 LayerCount: 2
 Back
