@@ -3,10 +3,10 @@ StartChar: baa.init_BaaRaaIsol
 Encoding: 65650 -1 135
 Width: 438
 VWidth: 0
+AnchorPoint: "DotAbove" 350 1026 basechar 0
+AnchorPoint: "HamzaAbove" 350 1026 basechar 0
+AnchorPoint: "DotBelow" 300 -199 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 106 276 exit 0
 LayerCount: 2
 Back
