@@ -1,11 +1,12 @@
 
 StartChar: baa.init_BaaNoonIsol
 Encoding: 65747 -1 232
-Width: 286
+Width: 390
 VWidth: 0
+Flags: W
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "DotBelow" 210 -330 basechar 0
 AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -2 369 exit 0
 LayerCount: 2
