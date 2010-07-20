@@ -20,7 +20,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1279616783
+ModificationTime: 1279645716
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -586,10 +586,10 @@ ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextua
   SeqLookup: 0 "BaaRaaFina" 
   SeqLookup: 1 "BaaRaaFina" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  0 0 0 1
- String: 18 baa.init seen.medi
- BString: 0 
- FString: 0 
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  0 0 0 1
+ 2 0 0
+  Coverage: 8 baa.init
+  Coverage: 19 seen.medi seen.fina
  2
   SeqLookup: 0 "BaaSeenInit" 
   SeqLookup: 1 "BaaSeenInit" 
@@ -1088,7 +1088,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 264 24 10
+WinInfo: 288 24 10
 Grid
 -878 1427 m 25
  2140 1427 l 25
