@@ -3,11 +3,12 @@ StartChar: dal.fina_KafDalIsol
 Encoding: 65823 -1 307
 Width: 989
 VWidth: 362
+AnchorPoint: "Taa" 300 1080 basechar 0
+AnchorPoint: "DotAbove" 475 1155 basechar 0
 AnchorPoint: "Ring" 380 140 basechar 0
 AnchorPoint: "HamzaBelow" 100 362 basechar 0
 AnchorPoint: "HamzaAbove" 100 362 basechar 0
 AnchorPoint: "DotBelow" 500 -250 basechar 0
-AnchorPoint: "DotAbove" 100 362 basechar 0
 AnchorPoint: "cursive" 991 104 entry 0
 LayerCount: 2
 Back
