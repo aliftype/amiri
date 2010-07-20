@@ -3,10 +3,10 @@ StartChar: sad.medi
 Encoding: 65608 -1 60
 Width: 1482
 VWidth: 0
+AnchorPoint: "DotAbove" 712 987 basechar 0
+AnchorPoint: "HamzaAbove" 712 987 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
 Back
 SplineSet

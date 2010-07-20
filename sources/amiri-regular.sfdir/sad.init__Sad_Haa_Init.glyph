@@ -3,10 +3,10 @@ StartChar: sad.init_SadHaaInit
 Encoding: 65829 -1 313
 Width: 1691
 VWidth: 0
+AnchorPoint: "DotAbove" 985 1411 basechar 0
+AnchorPoint: "HamzaAbove" 985 1411 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 113 481 exit 0
 LayerCount: 2
 Back

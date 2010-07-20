@@ -3,10 +3,10 @@ StartChar: sad.init_SadMeemInit
 Encoding: 65775 -1 260
 Width: 1441
 VWidth: 0
+AnchorPoint: "DotAbove" 718 1434 basechar 0
+AnchorPoint: "HamzaAbove" 718 1434 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 195 254 exit 0
 LayerCount: 2
 Back
