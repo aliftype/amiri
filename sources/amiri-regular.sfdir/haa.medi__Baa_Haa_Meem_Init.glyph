@@ -3,9 +3,9 @@ StartChar: haa.medi_BaaHaaMeemInit
 Encoding: 65849 -1 334
 Width: 1310
 VWidth: 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
+AnchorPoint: "DotBelow" 679 -202.5 basechar 0
+AnchorPoint: "HamzaBelow" 679 -202.5 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
 AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 172 743 entry 0
 AnchorPoint: "cursive" 244 408 exit 0
