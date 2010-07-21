@@ -3,13 +3,14 @@ StartChar: kaf.medi
 Encoding: 65581 -1 36
 Width: 759
 VWidth: 0
-AnchorPoint: "Dash" 709.176 1462.67 basechar 0
+Flags: W
+AnchorPoint: "Dash" 709 1463 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
 AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
-Fore
+Back
 SplineSet
 146 1203 m 0,0,1
  269 1296 269 1296 614 1414.5 c 128,-1,2
@@ -48,6 +49,35 @@ SplineSet
  68 824 68 824 17 898 c 1,49,50
  5 937 5 937 9 956 c 0,51,52
  60 1138 60 1138 146 1203 c 0,0,1
+EndSplineSet
+Fore
+SplineSet
+146 1203 m 0,0,1
+ 303 1322 303 1322 614 1420 c 0,2,3
+ 1023 1548 1023 1548 1291 1602 c 0,4,5
+ 1310 1606 1310 1606 1326 1590 c 0,6,7
+ 1339 1577 1339 1577 1331 1562 c 2,8,-1
+ 1270 1451 l 2,9,10
+ 1265 1442 1265 1442 1247 1438 c 0,11,12
+ 971 1380 971 1380 588 1263 c 0,13,14
+ 152 1130 152 1130 84 1055 c 1,15,16
+ 158 966 158 966 382 584 c 0,17,18
+ 554 288 554 288 762 186 c 0,19,20
+ 817 159 817 159 804 69 c 0,21,22
+ 794 -1 794 -1 765 -1 c 0,23,24
+ 761 -1 761 -1 758 0 c 0,25,26
+ 579 56 579 56 346 422 c 0,27,28
+ 307 484 307 484 281 519 c 1,29,30
+ 278 407 278 407 248 317 c 0,31,32
+ 165 72 165 72 4 -4 c 0,33,34
+ -24 -16 -24 -16 -35 35 c 0,35,36
+ -51 107 -51 107 -21 158 c 0,37,38
+ -9 179 -9 179 10 181 c 0,39,40
+ 141 204 141 204 191 270 c 1,41,42
+ 238 388 238 388 210 516 c 0,43,44
+ 178 663 178 663 17 898 c 1,45,46
+ 4 939 4 939 9 956 c 0,47,48
+ 58 1137 58 1137 146 1203 c 0,0,1
 EndSplineSet
 Substitution2: "KafAlefFina subtable" kaf.medi_KafAlefFina
 Substitution2: "KafMeemAlefFina subtable" kaf.medi_KafMeemAlefFina
