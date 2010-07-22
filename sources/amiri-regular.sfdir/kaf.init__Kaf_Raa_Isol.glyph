@@ -1,8 +1,9 @@
 
 StartChar: kaf.init_KafRaaIsol
 Encoding: 65777 -1 262
-Width: 372
+Width: 392
 VWidth: 0
+Flags: W
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0

@@ -1,8 +1,9 @@
 
 StartChar: meem.medi_LamMeemInit
 Encoding: 65714 -1 199
-Width: 655
+Width: 731
 VWidth: 0
+Flags: W
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0

@@ -1,8 +1,9 @@
 
 StartChar: baa.init_BaaBaaYaaIsol
 Encoding: 65704 -1 189
-Width: 204
+Width: 295
 VWidth: 0
+Flags: W
 AnchorPoint: "DotBelow" 100 -300 basechar 0
 AnchorPoint: "HamzaBelow" 100 -300 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0

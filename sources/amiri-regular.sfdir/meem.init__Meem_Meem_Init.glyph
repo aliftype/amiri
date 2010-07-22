@@ -1,8 +1,9 @@
 
 StartChar: meem.init_MeemMeemInit
 Encoding: 65663 -1 148
-Width: 626
+Width: 694
 VWidth: 0
+Flags: W
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0

@@ -1,8 +1,9 @@
 
 StartChar: baa.init_BaaDalIsol
 Encoding: 65691 -1 176
-Width: 301
+Width: 369
 VWidth: 0
+Flags: W
 AnchorPoint: "DotBelow" 100 -350 basechar 0
 AnchorPoint: "DotAbove" 175 1026 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

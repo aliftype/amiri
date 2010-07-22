@@ -1,8 +1,9 @@
 
 StartChar: baa.init_BaaSeenInit
 Encoding: 65754 -1 239
-Width: 380
+Width: 453
 VWidth: 0
+Flags: W
 AnchorPoint: "DotBelow" 250 -250 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 124 1400 basechar 0

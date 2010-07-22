@@ -1,8 +1,9 @@
 
 StartChar: haa.init_HaaMeemInit
 Encoding: 65800 -1 285
-Width: 1073
+Width: 1173
 VWidth: 0
+Flags: W
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
