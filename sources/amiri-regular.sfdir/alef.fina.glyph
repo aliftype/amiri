@@ -5,9 +5,7 @@ Width: 370
 VWidth: 0
 Flags: W
 AnchorPoint: "HamzaAbove" 126 1540 basechar 0
-AnchorPoint: "HamzaBelow" 20 0 basechar 0
-AnchorPoint: "DotBelow" 20 0 basechar 0
-AnchorPoint: "DotAbove" 20 0 basechar 0
+AnchorPoint: "HamzaBelow" 350 -60 basechar 0
 LayerCount: 2
 Fore
 SplineSet
