@@ -1,18 +1,14 @@
-import tempfile
 import subprocess
 import os
 
 viewer    = "fv"
-tempnames = {}
+sep       = os.path.sep
 
 def Preview(re, font):
-	ttf = tempfile.NamedTemporaryFile(suffix=".ttf", delete=False).name
-	cmd = "%s %s" %(viewer, ttf)
-	if re and os.path.isfile(tempnames[font.fontname]):
-		font.generate(tempnames[font.fontname])
-	else:
-		tempnames[font.fontname] = ttf
-		font.generate(ttf)
+	ttf = "..%s%s.%s" %(sep, font.default_base_filename, "ttf")
+	font.generate(ttf)
+	if not re:
+	        cmd = "%s %s" %(viewer, ttf)
 		subprocess.Popen(cmd,
                         shell=True,
                         stdin=subprocess.PIPE,
