@@ -2,10 +2,11 @@ import subprocess
 import os
 
 viewer = "fv"
+flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
 def Preview(re, font):
     ttf = "..%s%s.%s" %(os.path.sep, font.default_base_filename, "ttf")
-    font.generate(ttf)
+    font.generate(ttf,flags=flags)
     if not re:
         cmd = "%s %s" %(viewer, ttf)
         subprocess.Popen(cmd,
