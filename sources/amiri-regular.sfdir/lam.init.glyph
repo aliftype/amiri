@@ -5,12 +5,8 @@ Width: 330
 VWidth: 0
 Flags: W
 AnchorPoint: "VAbove" 50 1567 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 LayerCount: 2
-Fore
+Back
 SplineSet
 2 1352 m 1,0,1
  8 1367 8 1367 20 1396.5 c 128,-1,2
@@ -37,6 +33,27 @@ SplineSet
  18 1223 18 1223 10.5 1261.5 c 128,-1,35
  3 1300 3 1300 1 1314 c 128,-1,36
  -1 1328 -1 1328 2 1352 c 1,0,1
+EndSplineSet
+Fore
+SplineSet
+2 1352 m 24,0,1
+ 33 1427 33 1427 38 1443 c 0,2,3
+ 45 1462 45 1462 60 1462 c 128,-1,4
+ 75 1462 75 1462 82 1441 c 0,5,6
+ 113 1350 113 1350 171 1292 c 0,7,8
+ 191 1272 191 1272 168 1245 c 0,9,-1
+ 123 1182 l 1,10,11
+ 136 1067 136 1067 149 968 c 0,12,13
+ 216 472 216 472 196 350 c 0,14,15
+ 152 78 152 78 0 0 c 0,16,17
+ -4 -2 -4 -2 -9 8 c 0,18,19
+ -34 58 -34 58 -31 135 c 0,20,21
+ -29 180 -29 180 -9 186 c 0,22,23
+ 85 215 85 215 125 277 c 1,24,25
+ 120 422 120 422 58 908 c 0,26,27
+ 30 1122 30 1122 21 1199 c 0,28,-1
+ 1 1314 l 2,29,30
+ -3 1339 -3 1339 2 1352 c 24,0,1
 EndSplineSet
 Substitution2: "LamHaaHaaInit subtable" lam.init_LamHaaHaaInit
 Substitution2: "LamRaaIsol subtable" lam.init_LamRaaIsol

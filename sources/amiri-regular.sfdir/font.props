@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1281873100
+ModificationTime: 1282067465
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -1099,8 +1099,10 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 288 24 10
+WinInfo: 264 24 10
 Grid
+-423 2662 m 5
+ -423 -1434 l 5
 -878 1427 m 25
  2140 1427 l 25
 EndSplineSet

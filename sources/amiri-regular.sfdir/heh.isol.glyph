@@ -5,11 +5,11 @@ Width: 756
 VWidth: 0
 Flags: W
 AnchorPoint: "DotAbove" 378 990 basechar 0
-AnchorPoint: "HamzaBelow" 125.661 0 basechar 0
-AnchorPoint: "HamzaAbove" 125.661 0 basechar 0
-AnchorPoint: "DotBelow" 125.661 0 basechar 0
+AnchorPoint: "HamzaBelow" 126 0 basechar 0
+AnchorPoint: "HamzaAbove" 378 990 basechar 0
+AnchorPoint: "DotBelow" 126 0 basechar 0
 LayerCount: 2
-Fore
+Back
 SplineSet
 323.661 667 m 0,0,1
  353.661 688 353.661 688 406.661 662 c 0,2,3
@@ -34,6 +34,27 @@ SplineSet
  235.661 218 235.661 218 274.161 196.5 c 128,-1,29
  312.661 175 312.661 175 360.661 176 c 0,30,31
  449.661 176 449.661 176 517.661 227 c 0,20,21
+EndSplineSet
+Fore
+SplineSet
+324 667 m 0,0,1
+ 358 691 358 691 407 662 c 0,2,3
+ 540 584 540 584 599 452 c 0,4,5
+ 649 344 649 344 617 199 c 24,6,7
+ 592 92 592 92 516 22 c 128,-1,8
+ 440 -48 440 -48 337 -49 c 0,9,10
+ 198 -51 198 -51 153.5 48.5 c 128,-1,11
+ 109 148 109 148 150 307 c 0,12,13
+ 194 480 194 480 309 612 c 0,14,15
+ 313 616 313 616 313 638 c 128,-1,16
+ 313 660 313 660 324 667 c 0,0,1
+518 227 m 0,17,18
+ 543 246 543 246 508 288 c 0,19,20
+ 413 405 413 405 326 403 c 0,21,22
+ 282 402 282 402 250 345 c 0,23,24
+ 220 288 220 288 229 251 c 0,25,26
+ 246 176 246 176 361 176 c 0,27,28
+ 449 176 449 176 518 227 c 0,17,18
 EndSplineSet
 Colour: ffff00
 EndChar

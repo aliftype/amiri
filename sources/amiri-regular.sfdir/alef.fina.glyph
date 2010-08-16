@@ -7,7 +7,7 @@ Flags: W
 AnchorPoint: "HamzaAbove" 126 1540 basechar 0
 AnchorPoint: "HamzaBelow" 350 -60 basechar 0
 LayerCount: 2
-Fore
+Back
 SplineSet
 154.623 1472.85 m 1,0,1
  173.473 1492.05 173.473 1492.05 179.077 1482.8 c 128,-1,2
@@ -37,6 +37,21 @@ SplineSet
  100.651 1266.99 100.651 1266.99 85.7471 1315.68 c 0,36,37
  76.8914 1344.35 76.8914 1344.35 92.084 1369.46 c 2,38,-1
  154.623 1472.85 l 1,0,1
+EndSplineSet
+Fore
+SplineSet
+157 1475 m 2,0,1
+ 179 1511 179 1511 188 1444 c 0,2,3
+ 231 1088 231 1088 237 901 c 0,4,5
+ 244 704 244 704 265 386 c 0,6,7
+ 275 228 275 228 381 185 c 0,8,9
+ 447 156 447 156 441 110 c 24,10,11
+ 425 -2 425 -2 373 0 c 0,12,13
+ 190 10 190 10 182 249 c 0,14,15
+ 161 762 161 762 128 1068 c 0,16,17
+ 124 1093 124 1093 86 1316 c 0,18,19
+ 77 1345 77 1345 92 1369 c 2,20,-1
+ 157 1475 l 2,0,1
 EndSplineSet
 Substitution2: "KafAlefFina subtable" alef.fina_KafAlefFina
 Substitution2: "KafMeemAlefFina subtable" alef.fina_KafMeemAlefFina
