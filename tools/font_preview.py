@@ -4,7 +4,13 @@ import os
 viewer = "fv"
 flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
-def Preview(re, font):
+def Preview(re, obj):
+    # XXX: stupid hack
+    if str(type(obj)) == "<type 'fontforge.font'>":
+        font = obj
+    else:
+        font = obj.font
+
     ttf = "..%s%s.%s" %(os.path.sep, font.default_base_filename, "ttf")
     font.generate(ttf,flags=flags)
     if not re:
@@ -16,7 +22,7 @@ def Preview(re, font):
             stderr=subprocess.STDOUT)
 
 
-fontforge.registerMenuItem(Preview,
-    None, None, "Font", "P", "Preview", "Preview font")
-fontforge.registerMenuItem(Preview,
-    None, True, "Font", "R", "Preview", "Re-preview font")
+fontforge.registerMenuItem(
+        Preview,None,None,("Font","Glyph"),"P","Preview","Preview font")
+fontforge.registerMenuItem(
+        Preview,None,True,("Font","Glyph"),"R","Preview","Re-view font")
