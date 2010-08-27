@@ -3,6 +3,7 @@ StartChar: lam.init_LamHaaMeemInit
 Encoding: 65717 -1 202
 Width: 1028
 VWidth: 0
+AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "VAbove" 244 1728.5 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0

@@ -3,6 +3,7 @@ StartChar: taa.medi
 Encoding: 65618 -1 68
 Width: 1132
 VWidth: 0
+AnchorPoint: "TwoDotsAbove" 589 1000 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0

@@ -3,6 +3,7 @@ StartChar: baa.medi_BaaMeemAlefFina
 Encoding: 65643 -1 128
 Width: 542
 VWidth: 0
+AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "HamzaBelow" 350 -700 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 350 -700 basechar 0
