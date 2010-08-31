@@ -4,12 +4,11 @@ Encoding: 65553 -1 10
 Width: 500
 VWidth: 0
 Flags: W
-AnchorPoint: "TwoDotsBelow" 133 -350 basechar 0
-AnchorPoint: "TwoDotsAbove" 93 740 basechar 0
-AnchorPoint: "HamzaBelow" 44 0 basechar 0
-AnchorPoint: "HamzaAbove" 204 740 basechar 0
-AnchorPoint: "DotBelow" 244 -350 basechar 0
-AnchorPoint: "DotAbove" 204 740 basechar 0
+AnchorPoint: "TwoDotsBelow" 130 -350 basechar 0
+AnchorPoint: "TwoDotsAbove" 120 740 basechar 0
+AnchorPoint: "HamzaAbove" 130 740 basechar 0
+AnchorPoint: "DotBelow" 160 -350 basechar 0
+AnchorPoint: "DotAbove" 130 870 basechar 0
 LayerCount: 2
 Back
 SplineSet
