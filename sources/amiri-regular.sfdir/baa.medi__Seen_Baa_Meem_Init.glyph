@@ -3,6 +3,7 @@ StartChar: baa.medi_SeenBaaMeemInit
 Encoding: 65803 -1 287
 Width: 663
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -31 1250 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 80 1250 basechar 0

@@ -3,6 +3,7 @@ StartChar: kaf.medi_KafLamMedi
 Encoding: 65630 -1 115
 Width: 1001
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0

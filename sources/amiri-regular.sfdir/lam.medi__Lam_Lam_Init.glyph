@@ -3,6 +3,7 @@ StartChar: lam.medi_LamLamInit
 Encoding: 65708 -1 193
 Width: 434
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "VAbove" 104 1461.5 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

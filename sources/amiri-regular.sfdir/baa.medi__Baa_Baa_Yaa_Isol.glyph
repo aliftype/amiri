@@ -3,6 +3,7 @@ StartChar: baa.medi_BaaBaaYaaIsol
 Encoding: 65705 -1 190
 Width: 610
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" 192 1134 basechar 0
 AnchorPoint: "DotAbove" 303 1134 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

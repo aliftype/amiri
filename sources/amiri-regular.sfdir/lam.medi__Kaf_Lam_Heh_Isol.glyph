@@ -3,6 +3,7 @@ StartChar: lam.medi_KafLamHehIsol
 Encoding: 65864 -1 350
 Width: 364
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "VAbove" -17 1363.5 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

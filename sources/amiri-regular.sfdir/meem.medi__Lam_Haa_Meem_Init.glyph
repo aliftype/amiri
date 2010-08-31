@@ -3,6 +3,7 @@ StartChar: meem.medi_LamHaaMeemInit
 Encoding: 65719 -1 204
 Width: 602
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0

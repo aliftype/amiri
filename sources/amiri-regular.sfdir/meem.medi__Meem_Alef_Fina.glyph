@@ -3,6 +3,7 @@ StartChar: meem.medi_MeemAlefFina
 Encoding: 65700 -1 185
 Width: 210
 VWidth: -81
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "cursive" -54 -157 exit 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

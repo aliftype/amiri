@@ -3,6 +3,7 @@ StartChar: lam.medi_KafLamAlefFina
 Encoding: 65681 -1 166
 Width: 587
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "VAbove" -49.55 1408 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

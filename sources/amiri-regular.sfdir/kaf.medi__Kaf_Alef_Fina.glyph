@@ -3,6 +3,7 @@ StartChar: kaf.medi_KafAlefFina
 Encoding: 65834 -1 318
 Width: 1101
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "Dash" 859.176 1502.67 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

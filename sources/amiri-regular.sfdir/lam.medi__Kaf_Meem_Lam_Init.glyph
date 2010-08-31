@@ -3,6 +3,7 @@ StartChar: lam.medi_KafMeemLamInit
 Encoding: 65636 -1 121
 Width: 391
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "VAbove" 120 1643.5 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0

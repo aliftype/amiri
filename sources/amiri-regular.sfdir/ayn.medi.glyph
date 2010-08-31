@@ -3,6 +3,7 @@ StartChar: ayn.medi
 Encoding: 65543 -1 6
 Width: 733
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" 149 1000 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0

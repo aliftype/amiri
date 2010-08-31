@@ -3,6 +3,7 @@ StartChar: haa.medi2_LamHaaHaaInit
 Encoding: 65853 -1 340
 Width: 1308
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0

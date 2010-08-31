@@ -3,6 +3,7 @@ StartChar: kaf.init_KafLamAlefIsol
 Encoding: 65751 -1 236
 Width: 460
 VWidth: 0
+AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "Dash" 479.176 1402.67 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
