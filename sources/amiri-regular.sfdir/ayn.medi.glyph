@@ -1,16 +1,14 @@
 
 StartChar: ayn.medi
 Encoding: 65543 -1 6
-Width: 733
+Width: 730
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
+Flags: W
 AnchorPoint: "TwoDotsAbove" 149 1000 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "HamzaAbove" 260 1000 basechar 0
 AnchorPoint: "DotAbove" 260 1000 basechar 0
 LayerCount: 2
-Fore
+Back
 SplineSet
 722.584 190.834 m 0,0,1
  794.672 189.003 794.672 189.003 791.991 111.888 c 0,2,3
@@ -39,6 +37,25 @@ SplineSet
  488.04 271.812 488.04 271.812 482.163 267.633 c 1,36,37
  595.4 195.008 595.4 195.008 722.584 190.834 c 0,0,1
 EndSplineSet
+Fore
+SplineSet
+730 185 m 0,0,1
+ 802 183 802 183 792 112 c 0,2,3
+ 776 3 776 3 730 0 c 0,4,5
+ 535 -13 535 -13 361 190 c 1,6,7
+ 92 30 92 30 0 0 c 1,8,9
+ -49 -1 -49 -1 -63 78 c 0,10,11
+ -79 168 -79 168 0 185 c 0,12,13
+ 96 204 96 204 232 279 c 1,14,15
+ 156 340 156 340 17 361 c 0,16,17
+ 3 363 3 363 6 383 c 0,18,19
+ 19 465 19 465 113.5 548 c 128,-1,20
+ 208 631 208 631 314 631 c 0,21,22
+ 423 630 423 630 528 557 c 0,23,24
+ 631 485 631 485 626 417 c 24,25,26
+ 621 355 621 355 482 268 c 1,27,28
+ 603 189 603 189 730 185 c 0,0,1
+EndSplineSet
 Substitution2: "AynYaaFina subtable" ayn.medi_AynYaaFina
-Colour: ff0000
+Colour: ffff00
 EndChar
