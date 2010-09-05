@@ -1,8 +1,9 @@
 
 StartChar: seen.medi
 Encoding: 65614 -1 64
-Width: 1056
+Width: 1055
 VWidth: 0
+Flags: W
 AnchorPoint: "TwoDotsAbove" 484 728 basechar 0
 AnchorPoint: "DotAbove" 595 728 basechar 0
 AnchorPoint: "HamzaAbove" 595 728 basechar 0
@@ -59,9 +60,9 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-1056 0 m 0,0,1
- 972 0 972 0 918 152 c 0,2,3
- 904 191 904 191 895 155 c 0,4,5
+1055 0 m 0,0,1
+ 971 0 971 0 918 152 c 0,2,3
+ 904 192 904 192 895 155 c 0,4,5
  878 90 878 90 862 60 c 0,6,7
  826 -11 826 -11 801 -23 c 0,8,9
  760 -43 760 -43 674 -13.5 c 128,-1,10
@@ -90,10 +91,10 @@ SplineSet
  867 248 867 248 903 334 c 0,52,53
  912 352 912 352 926 348 c 128,-1,54
  940 344 940 344 943 326 c 0,55,56
- 957 270 957 270 988 229.5 c 128,-1,57
- 1019 189 1019 189 1056 185 c 0,58,59
+ 957 270 957 270 987.5 229.5 c 128,-1,57
+ 1018 189 1018 189 1055 185 c 0,58,59
  1104 179 1104 179 1096 84 c 0,60,61
- 1088 0 1088 0 1056 0 c 0,0,1
+ 1089 0 1089 0 1055 0 c 0,0,1
 EndSplineSet
 MultipleSubs2: "SeenMeemMedi subtable" seen.medi_PreYaa
 MultipleSubs2: "HehMediTooth subtable" seen.medi_PreYaa baa.medi_BaaHehMedi

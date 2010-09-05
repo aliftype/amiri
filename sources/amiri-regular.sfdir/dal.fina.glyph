@@ -9,8 +9,8 @@ AnchorPoint: "TwoDotsAbove" 574 1300 basechar 0
 AnchorPoint: "Ring" 420 120 basechar 0
 AnchorPoint: "Taa" 685 1200 basechar 0
 AnchorPoint: "DotAbove" 685 1300 basechar 0
-AnchorPoint: "HamzaBelow" 126 0 basechar 0
-AnchorPoint: "HamzaAbove" 126 0 basechar 0
+AnchorPoint: "HamzaBelow" 500 -250 basechar 0
+AnchorPoint: "HamzaAbove" 685 1300 basechar 0
 AnchorPoint: "DotBelow" 500 -250 basechar 0
 LayerCount: 2
 Back
