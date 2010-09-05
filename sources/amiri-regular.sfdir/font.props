@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1283649478
+ModificationTime: 1283652269
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -41,10 +41,10 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'BLQ '
-Lookup: 2 0 0 "'isol' Isolated Forms"  {"'isol' Isolated Forms-1"  } ['isol' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 2 0 0 "'init' Initial  Forms"  {"'init' Initial  Forms-1"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 2 0 0 "'medi' Medial   Forms"  {"'medi' Medial   Forms-1"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 2 0 0 "'fina' Terminal Forms"  {"'fina' Terminal Forms-1"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 8 0 "'isol' Isolated Forms"  {"'isol' Isolated Forms-1"  } ['isol' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 8 0 "'init' Initial  Forms"  {"'init' Initial  Forms-1"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 8 0 "'medi' Medial   Forms"  {"'medi' Medial   Forms-1"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 8 0 "'fina' Terminal Forms"  {"'fina' Terminal Forms-1"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "KafLamHehIsol"  {"KafLamHehIsol subtable"  } []
 Lookup: 1 0 0 "BaaBaaAltInit"  {"BaaBaaAltInit subtable"  } []
 Lookup: 1 0 0 "SeenYaaFina"  {"SeenYaaFina subtable"  } []
