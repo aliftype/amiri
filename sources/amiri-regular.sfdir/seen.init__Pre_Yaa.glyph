@@ -4,14 +4,10 @@ Encoding: 65857 -1 344
 Width: 706
 VWidth: 0
 Flags: W
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
 AnchorPoint: "TwoDotsAbove" 110 870 basechar 0
 AnchorPoint: "DotAbove" 221 870 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
 LayerCount: 2
-Fore
+Back
 SplineSet
 520 535 m 1,0,-1
  520 535 l 1,1,-1
@@ -42,5 +38,28 @@ SplineSet
  494 305 494 305 463 344 c 0,38,39
  457 351 457 351 461 363 c 2,40,-1
  520 535 l 1,0,-1
+EndSplineSet
+Fore
+SplineSet
+520 535 m 2,0,1
+ 526 553 526 553 538 542 c 0,2,3
+ 613 468 613 468 576 285 c 0,4,5
+ 562 214 562 214 525 152 c 128,-1,6
+ 488 90 488 90 462 88 c 0,7,8
+ 321 75 321 75 208 191 c 1,9,10
+ 110 0 110 0 0 0 c 0,11,12
+ -18 0 -18 0 -26 42 c 0,13,14
+ -53 180 -53 180 0 185 c 0,15,16
+ 114 196 114 196 178.5 261 c 128,-1,17
+ 243 326 243 326 282 484 c 0,18,19
+ 287 505 287 505 307 501 c 128,-1,20
+ 327 497 327 497 322 475 c 0,21,22
+ 300 383 300 383 305 364 c 0,23,24
+ 314 334 314 334 368 304 c 0,25,26
+ 424 272 424 272 499 269 c 0,27,28
+ 504 269 504 269 502 273 c 0,29,30
+ 494 305 494 305 463 344 c 0,31,32
+ 457 351 457 351 461 363 c 2,33,-1
+ 520 535 l 2,0,1
 EndSplineSet
 EndChar
