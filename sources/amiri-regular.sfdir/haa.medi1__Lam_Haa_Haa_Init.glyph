@@ -3,12 +3,12 @@ StartChar: haa.medi1_LamHaaHaaInit
 Encoding: 65852 -1 339
 Width: 1114
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "TwoDotsBelow" 859 -280 basechar 0
+AnchorPoint: "TwoDotsAbove" 859 1210 basechar 0
+AnchorPoint: "HamzaBelow" 970 -280 basechar 0
+AnchorPoint: "HamzaAbove" 970 1210 basechar 0
+AnchorPoint: "DotBelow" 970 -280 basechar 0
+AnchorPoint: "DotAbove" 970 1210 basechar 0
 AnchorPoint: "cursive" -41 473 exit 0
 AnchorPoint: "cursive" 190 891 entry 0
 LayerCount: 2
@@ -93,28 +93,21 @@ EndSplineSet
 Fore
 SplineSet
 142 952 m 0,0,1
- 192 962 192 962 302 944 c 128,-1,2
- 412 926 412 926 491 893 c 0,3,4
- 602 848 602 848 644 832 c 128,-1,5
- 686 816 686 816 790.5 789 c 128,-1,6
- 895 762 895 762 1047 735 c 0,7,8
- 1072 730 1072 730 1063 704 c 0,9,10
- 1049 667 1049 667 995 587 c 0,11,12
- 987 575 987 575 975 578 c 0,13,14
- 858 605 858 605 783.5 614.5 c 128,-1,15
- 709 624 709 624 611 618 c 0,16,17
- 412 607 412 607 142 501 c 0,18,19
- 69 472 69 472 -22.5 433 c 128,-1,20
- -114 394 -114 394 -147 382 c 0,21,22
- -156 379 -156 379 -163 384.5 c 128,-1,23
- -170 390 -170 390 -164 403 c 0,24,25
- -132 472 -132 472 -99 510 c 1,26,27
- 2 574 2 574 104.5 616 c 128,-1,28
- 207 658 207 658 314 688.5 c 128,-1,29
- 421 719 421 719 453 731 c 1,30,31
- 294 811 294 811 55 806 c 0,32,33
- 35 806 35 806 43 828 c 0,34,35
- 66 894 66 894 109 935 c 0,36,37
+ 192 962 192 962 302 944 c 0,2,3
+ 388 930 388 930 644 832 c 0,4,5
+ 760 788 760 788 1047 735 c 28,6,7
+ 1078 729 1078 729 1063 704 c 6,8,-1
+ 995 587 l 6,9,10
+ 988 575 988 575 975 578 c 4,11,12
+ 777 624 777 624 611 618 c 0,13,14
+ 376 610 376 610 -22 433 c 0,15,16
+ -200 354 -200 354 -99 510 c 0,17,18
+ -84 532 -84 532 104 616 c 0,19,20
+ 187 652 187 652 314 688 c 0,21,22
+ 421 718 421 718 453 731 c 1,23,24
+ 294 811 294 811 55 806 c 0,25,26
+ 35 806 35 806 43 828 c 0,27,28
+ 66 894 66 894 109 935 c 0,29,30
  122 948 122 948 142 952 c 0,0,1
 EndSplineSet
 EndChar
