@@ -4,12 +4,9 @@ Encoding: 65679 -1 164
 Width: 884
 VWidth: 0
 Flags: W
-AnchorPoint: "TwoDotsBelow" 16 0 basechar 0
-AnchorPoint: "TwoDotsAbove" 143 1025 basechar 0
-AnchorPoint: "DotAbove" 254 1025 basechar 0
-AnchorPoint: "HamzaBelow" 127 0 basechar 0
-AnchorPoint: "HamzaAbove" 127 0 basechar 0
-AnchorPoint: "DotBelow" 127 0 basechar 0
+AnchorPoint: "HamzaAbove" 144 915 basechar 0
+AnchorPoint: "TwoDotsAbove" 33 915 basechar 0
+AnchorPoint: "DotAbove" 144 915 basechar 0
 AnchorPoint: "cursive" 872 -76 entry 0
 LayerCount: 2
 Back
@@ -84,10 +81,10 @@ EndSplineSet
 Fore
 SplineSet
 503 329 m 1,0,1
- 469 164 469 164 407 147 c 1,2,3
- 339 134 339 134 260 138.5 c 128,-1,4
- 181 143 181 143 162 159 c 0,5,6
- 114 201 114 201 130 246 c 2,7,8
+ 468 161 468 161 407 147 c 24,2,3
+ 348 132 348 132 260 138 c 0,4,5
+ 181 142 181 142 162 159 c 0,6,7
+ 114 201 114 201 130 246 c 2,8,-1
  184 389 l 2,9,10
  195 418 195 418 216 440 c 24,11,12
  301 527 301 527 458 602 c 1,13,-1
