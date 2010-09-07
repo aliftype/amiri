@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1283819081
+ModificationTime: 1283819819
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -1043,10 +1043,11 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 6
   SeqLookup: 0 "SeenMeemInit" 
   SeqLookup: 1 "SeenMeemInit" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  0 0 0 1
- String: 27 kaf.init meem.medi lam.medi
- BString: 0 
- FString: 0 
+ChainSub2: coverage "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  0 0 0 1
+ 3 0 0
+  Coverage: 8 kaf.init
+  Coverage: 9 meem.medi
+  Coverage: 17 lam.medi lam.fina
  3
   SeqLookup: 0 "KafMeemLamInit" 
   SeqLookup: 1 "KafMeemLamInit" 
