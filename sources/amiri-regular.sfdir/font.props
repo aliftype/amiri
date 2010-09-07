@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1283819819
+ModificationTime: 1283821384
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -164,6 +164,8 @@ Lookup: 1 0 0 "Finjani"  {"Finjani subtable"  } []
 Lookup: 6 8 0 "'calt' Finjani"  {"'calt' Finjani subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaYaaFina"  {"BaaYaaFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaYaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 97"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "ToothMeem"  {"ToothMeem subtable"  } []
+Lookup: 6 0 0 "'calt' ToothMeem"  {"'calt' ToothMeem subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -178,6 +180,14 @@ Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFL
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: coverage "'calt' ToothMeem subtable"  0 0 0 1
+ 2 0 0
+  Coverage: 59 seen.init seen.medi sad.init sad.medi seen.medi_BaaSeenInit
+  Coverage: 9 meem.fina
+ 2
+  SeqLookup: 0 "ToothMeem" 
+  SeqLookup: 1 "ToothMeem" 
+EndFPST
 ChainSub2: coverage "'calt' SeenMeemMedi subtable"  0 0 0 1
  2 0 0
   Coverage: 9 seen.medi
