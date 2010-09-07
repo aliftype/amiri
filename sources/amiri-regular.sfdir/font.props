@@ -21,25 +21,25 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1283797279
+ModificationTime: 1283819081
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
-LineGap: 200
+LineGap: 1000
 VLineGap: 0
-OS2TypoAscent: 0
-OS2TypoAOffset: 1
-OS2TypoDescent: 0
-OS2TypoDOffset: 1
-OS2TypoLinegap: 200
-OS2WinAscent: 0
+OS2TypoAscent: 2400
+OS2TypoAOffset: 0
+OS2TypoDescent: -1000
+OS2TypoDOffset: 0
+OS2TypoLinegap: 1000
+OS2WinAscent: 100
 OS2WinAOffset: 1
-OS2WinDescent: 0
+OS2WinDescent: 100
 OS2WinDOffset: 1
-HheadAscent: 0
-HheadAOffset: 1
-HheadDescent: 0
-HheadDOffset: 1
+HheadAscent: 2400
+HheadAOffset: 0
+HheadDescent: -1000
+HheadDOffset: 0
 OS2Vendor: 'BLQ '
 Lookup: 2 8 0 "'isol' Isolated Forms"  {"'isol' Isolated Forms-1"  } ['isol' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 8 0 "'init' Initial  Forms"  {"'init' Initial  Forms-1"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
