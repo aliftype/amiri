@@ -6,9 +6,9 @@ VWidth: 0
 Flags: W
 AnchorPoint: "TwoDotsBelow" 130 -350 basechar 0
 AnchorPoint: "TwoDotsAbove" 120 740 basechar 0
-AnchorPoint: "HamzaAbove" 130 740 basechar 0
+AnchorPoint: "HamzaAbove" 250 740 basechar 0
 AnchorPoint: "DotBelow" 160 -350 basechar 0
-AnchorPoint: "DotAbove" 130 870 basechar 0
+AnchorPoint: "DotAbove" 250 870 basechar 0
 LayerCount: 2
 Back
 SplineSet
