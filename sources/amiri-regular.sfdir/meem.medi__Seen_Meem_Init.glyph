@@ -3,12 +3,6 @@ StartChar: meem.medi_SeenMeemInit
 Encoding: 65638 -1 123
 Width: 659
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 303 231 entry 0
 LayerCount: 2
 Back
@@ -83,17 +77,17 @@ EndSplineSet
 Fore
 SplineSet
 188 250 m 24,0,1
- 316 304 316 304 395 282 c 0,2,3
+ 291 311 291 311 395 282 c 0,2,3
  537 243 537 243 613 170 c 0,4,5
  624 159 624 159 617 141 c 0,6,7
  587 56 587 56 531 -19 c 0,8,9
  522 -31 522 -31 508 -21 c 0,10,11
  364 77 364 77 268 81 c 0,12,13
- 189 84 189 84 112 45.5 c 128,-1,14
- 35 7 35 7 0 0 c 0,15,16
- -18 -4 -18 -4 -30 42 c 0,17,18
+ 189 84 189 84 116 42 c 128,-1,14
+ 43 0 43 0 0 0 c 0,15,16
+ -18 0 -18 0 -30 42 c 0,17,18
  -67 179 -67 179 0 185 c 0,19,20
- 41 188 41 188 188 250 c 24,0,1
+ 94 192 94 192 188 250 c 24,0,1
 EndSplineSet
 Colour: ff00
 EndChar
