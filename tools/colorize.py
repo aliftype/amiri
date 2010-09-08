@@ -11,7 +11,7 @@ def random_color(match):
     return "<span color='#%06X'>%s</span>" %(color, match.group())
 
 def colorize(string):
-    return re.sub(r"\S", random_color, string)
+    return "<span fallback='no'>%s</span>" %re.sub(r"\S", random_color, string)
 
 def main():
     try:
