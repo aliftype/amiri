@@ -1,18 +1,24 @@
+import tempfile
 import subprocess
 import os
+
+ttf = tempfile.NamedTemporaryFile(suffix=".ttf").name
 
 viewer = "fv"
 flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
 def Preview(re, obj):
-    # XXX: stupid hack
-    if str(type(obj)) == "<type 'fontforge.font'>":
+    if type(obj).__name__ == "font":
         font = obj
     else:
         font = obj.font
 
-    ttf = "..%s%s.%s" %(os.path.sep, font.default_base_filename, "ttf")
+    familyname = font.familyname
+
+    font.familyname = "%sPreview" %familyname
     font.generate(ttf,flags=flags)
+    font.familyname = familyname
+
     if not re:
         cmd = "%s %s" %(viewer, ttf)
         subprocess.Popen(cmd,
