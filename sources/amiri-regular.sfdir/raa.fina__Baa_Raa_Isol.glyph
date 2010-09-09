@@ -5,9 +5,9 @@ Width: 681
 VWidth: 0
 Flags: W
 AnchorPoint: "TwoDotsBelow" -167 0 basechar 0
-AnchorPoint: "TwoDotsAbove" 249.5 912 basechar 0
+AnchorPoint: "TwoDotsAbove" 250 912 basechar 0
 AnchorPoint: "VAbove" 362 912 basechar 0
-AnchorPoint: "DotAbove" 360.5 912 basechar 0
+AnchorPoint: "DotAbove" 360 912 basechar 0
 AnchorPoint: "HamzaBelow" -56 0 basechar 0
 AnchorPoint: "HamzaAbove" -56 0 basechar 0
 AnchorPoint: "DotBelow" -56 0 basechar 0
@@ -64,14 +64,12 @@ SplineSet
  -186 -257 -186 -257 -173 -262 c 0,13,14
  -45 -302 -45 -302 64.5 -288.5 c 128,-1,15
  174 -275 174 -275 293 -208 c 0,16,17
- 384 -154 384 -154 464.5 -74 c 128,-1,18
- 545 6 545 6 569 83 c 1,19,20
- 572 102 572 102 572 115 c 128,-1,21
- 572 128 572 128 560 140.5 c 128,-1,22
- 548 153 548 153 518 168 c 0,23,24
- 493 181 493 181 502 233 c 0,25,26
- 506 257 506 257 517 309.5 c 128,-1,27
- 528 362 528 362 533 389 c 0,28,29
+ 384 -154 384 -154 464 -74 c 0,18,19
+ 548 9 548 9 569 83 c 24,20,21
+ 572 94 572 94 572 115 c 0,22,23
+ 572 141 572 141 518 168 c 0,24,25
+ 493 181 493 181 502 233 c 2,26,27
+ 533 389 l 2,28,29
  536 404 536 404 550.5 406.5 c 128,-1,30
  565 409 565 409 571 401 c 0,0,1
 EndSplineSet
