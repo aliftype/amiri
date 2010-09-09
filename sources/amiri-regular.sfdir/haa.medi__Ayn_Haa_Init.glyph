@@ -3,12 +3,12 @@ StartChar: haa.medi_AynHaaInit
 Encoding: 65782 -1 267
 Width: 1212
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "TwoDotsBelow" 369 -260 basechar 0
+AnchorPoint: "TwoDotsAbove" 0 1000 basechar 0
+AnchorPoint: "HamzaBelow" 480 -260 basechar 0
+AnchorPoint: "HamzaAbove" 100 1000 basechar 0
+AnchorPoint: "DotBelow" 480 -260 basechar 0
+AnchorPoint: "DotAbove" 130 1000 basechar 0
 AnchorPoint: "cursive" 184 500 entry 0
 LayerCount: 2
 Back

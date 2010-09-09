@@ -3,12 +3,6 @@ StartChar: meem.medi_BaaMeemHaaInit
 Encoding: 65694 -1 179
 Width: 925
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 569 737 entry 0
 AnchorPoint: "cursive" 37 508 exit 0
 LayerCount: 2
@@ -97,20 +91,12 @@ SplineSet
  888 709 888 709 883 695 c 2,6,-1
  831 553 l 2,7,8
  826 538 826 538 808 547 c 0,9,10
- 741 580 741 580 707.5 594 c 128,-1,11
- 674 608 674 608 618.5 625.5 c 128,-1,12
- 563 643 563 643 520.5 641 c 128,-1,13
- 478 639 478 639 416.5 629 c 128,-1,14
- 355 619 355 619 286 589 c 128,-1,15
- 217 559 217 559 131 510 c 0,16,17
- 49 463 49 463 -3 501 c 0,18,19
- -35 524 -35 524 -12 543 c 0,20,21
- -10 545 -10 545 -7 546 c 0,22,23
- -2 549 -2 549 37 572.5 c 128,-1,24
- 76 596 76 596 117.5 618.5 c 128,-1,25
- 159 641 159 641 215 670 c 128,-1,26
- 271 699 271 699 334.5 725 c 128,-1,27
- 398 751 398 751 457 769 c 0,0,1
+ 620 645 620 645 520 641 c 0,11,12
+ 336 635 336 635 131 510 c 0,13,14
+ 51 462 51 462 -3 501 c 0,15,16
+ -35 524 -35 524 -12 543 c 0,17,18
+ -10 545 -10 545 -7 546 c 0,19,20
+ 269 712 269 712 457 769 c 0,0,1
 EndSplineSet
 Colour: ff00
 EndChar
