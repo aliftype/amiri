@@ -4,12 +4,12 @@ Encoding: 65797 -1 282
 Width: 295
 VWidth: 0
 Flags: W
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "TwoDotsBelow" 59 -100 basechar 0
+AnchorPoint: "TwoDotsAbove" 59 1260 basechar 0
+AnchorPoint: "HamzaBelow" 60 -100 basechar 0
+AnchorPoint: "HamzaAbove" 160 1260 basechar 0
+AnchorPoint: "DotBelow" 60 -100 basechar 0
+AnchorPoint: "DotAbove" 160 1260 basechar 0
 AnchorPoint: "cursive" -35 662 exit 0
 LayerCount: 2
 Back
@@ -80,18 +80,15 @@ EndSplineSet
 Fore
 SplineSet
 -39 566 m 0,0,1
- -69 565 -69 565 -76 611 c 128,-1,2
- -83 657 -83 657 -61 702.5 c 128,-1,3
- -39 748 -39 748 0 746 c 0,4,5
- 53 743 53 743 82 787.5 c 128,-1,6
- 111 832 111 832 119 895 c 0,7,8
- 121 914 121 914 132.5 920 c 128,-1,9
- 144 926 144 926 154 917.5 c 128,-1,10
- 164 909 164 909 165 893 c 0,11,12
- 166 858 166 858 157.5 810 c 128,-1,13
- 149 762 149 762 129.5 704.5 c 128,-1,14
- 110 647 110 647 65.5 607 c 128,-1,15
- 21 567 21 567 -39 566 c 0,0,1
+ -69 565 -69 565 -76 611 c 0,2,3
+ -83 656 -83 656 -61 702 c 0,4,5
+ -41 743 -41 743 0 746 c 0,6,7
+ 99 753 99 753 119 895 c 0,8,9
+ 121 914 121 914 132.5 920 c 128,-1,10
+ 144 926 144 926 154 917.5 c 128,-1,11
+ 164 909 164 909 165 893 c 0,12,13
+ 166 858 166 858 158 810 c 0,14,15
+ 116 569 116 569 -39 566 c 0,0,1
 EndSplineSet
 Colour: ff00
 EndChar
