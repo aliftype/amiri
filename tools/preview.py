@@ -4,7 +4,7 @@ import os
 
 ttf = tempfile.NamedTemporaryFile(suffix=".ttf").name
 
-viewer = "fv"
+viewer = "fontview"
 flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
 def Preview(re, obj):
