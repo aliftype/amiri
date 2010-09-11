@@ -3,13 +3,7 @@ StartChar: lam.medi_LamLamAlefIsol
 Encoding: 65657 -1 142
 Width: 512
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "VAbove" -119.55 1251 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" 66 385 exit 0
 AnchorPoint: "cursive" 500 123 entry 0
 LayerCount: 2

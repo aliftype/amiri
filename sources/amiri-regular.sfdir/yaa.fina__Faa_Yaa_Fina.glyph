@@ -5,11 +5,9 @@ Width: 1360
 VWidth: -384
 Flags: W
 AnchorPoint: "TwoDotsBelow" 580 -1087 basechar 0
-AnchorPoint: "TwoDotsAbove" 389 -96 basechar 0
 AnchorPoint: "HamzaAbove" 361 351 basechar 0
 AnchorPoint: "DotBelow" 691 -1087 basechar 0
-AnchorPoint: "HamzaBelow" 120 -384 basechar 0
-AnchorPoint: "DotAbove" 500 -96 basechar 0
+AnchorPoint: "HamzaBelow" 691 -1087 basechar 0
 AnchorPoint: "cursive" 962 -222 entry 0
 LayerCount: 2
 Back
