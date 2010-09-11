@@ -3,12 +3,8 @@ StartChar: alef.fina_LamAlefFina
 Encoding: 65791 -1 276
 Width: 806
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "HamzaBelow" 92 -233 basechar 0
+AnchorPoint: "HamzaAbove" 150 1500 basechar 0
 AnchorPoint: "cursive" 786 311 entry 0
 LayerCount: 2
 Back
@@ -85,5 +81,5 @@ SplineSet
  51 1224 51 1224 77 1211 c 0,20,21
  744 856 744 856 807 406 c 0,0,1
 EndSplineSet
-Colour: ff0000
+Colour: ff00
 EndChar

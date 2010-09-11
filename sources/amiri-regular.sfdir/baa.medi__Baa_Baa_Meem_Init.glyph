@@ -3,12 +3,12 @@ StartChar: baa.medi_BaaBaaMeemInit
 Encoding: 65808 -1 292
 Width: 575
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -31 1268 basechar 0
-AnchorPoint: "DotAbove" 80 1268 basechar 0
-AnchorPoint: "HamzaAbove" 80 1268 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
+AnchorPoint: "TwoDotsBelow" 139 -370 basechar 0
+AnchorPoint: "TwoDotsAbove" -1 1128 basechar 0
+AnchorPoint: "DotAbove" 110 1128 basechar 0
+AnchorPoint: "HamzaAbove" 110 1128 basechar 0
+AnchorPoint: "HamzaBelow" 250 -370 basechar 0
+AnchorPoint: "DotBelow" 250 -370 basechar 0
 AnchorPoint: "cursive" 547 596 entry 0
 AnchorPoint: "cursive" 66 598 exit 0
 LayerCount: 2
@@ -86,5 +86,5 @@ SplineSet
  424 768 424 768 437 754 c 0,24,25
  505 683 505 683 574 684 c 0,0,1
 EndSplineSet
-Colour: ff0000
+Colour: ff00
 EndChar

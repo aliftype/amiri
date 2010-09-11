@@ -8,7 +8,7 @@ AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
 AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "DotAbove" 602 1124 basechar 0
 AnchorPoint: "cursive" 944 387 entry 0
 LayerCount: 2
 Back
@@ -95,5 +95,5 @@ SplineSet
  700 310 700 310 773 366 c 0,38,39
  853 427 853 427 946 475 c 0,0,1
 EndSplineSet
-Colour: ff0000
+Colour: ff00
 EndChar

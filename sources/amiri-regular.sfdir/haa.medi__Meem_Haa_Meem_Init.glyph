@@ -3,12 +3,12 @@ StartChar: haa.medi_MeemHaaMeemInit
 Encoding: 65763 -1 248
 Width: 1196
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
+AnchorPoint: "DotAbove" 198 1295 basechar 0
+AnchorPoint: "DotBelow" 856 1 basechar 0
+AnchorPoint: "HamzaAbove" 198 1295 basechar 0
+AnchorPoint: "HamzaBelow" 856 1 basechar 0
+AnchorPoint: "TwoDotsAbove" 98 1295 basechar 0
+AnchorPoint: "TwoDotsBelow" 745 1 basechar 0
 AnchorPoint: "cursive" 119 764 entry 0
 AnchorPoint: "cursive" 168 455 exit 0
 LayerCount: 2
@@ -101,5 +101,5 @@ SplineSet
  78 798 l 2,29,30
  79 803 79 803 87 811 c 0,0,1
 EndSplineSet
-Colour: ff0000
+Colour: ff00
 EndChar

@@ -3,12 +3,12 @@ StartChar: baa.medi_BaaBaaYaaIsol
 Encoding: 65705 -1 190
 Width: 610
 VWidth: 0
-AnchorPoint: "TwoDotsBelow" -111 0 basechar 0
+AnchorPoint: "DotBelow" 360 -520 basechar 0
+AnchorPoint: "HamzaBelow" 360 -520 basechar 0
+AnchorPoint: "TwoDotsBelow" 360 -520 basechar 0
 AnchorPoint: "TwoDotsAbove" 2 1024 basechar 0
 AnchorPoint: "DotAbove" 113 1024 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
 AnchorPoint: "HamzaAbove" 113 1024 basechar 0
-AnchorPoint: "DotBelow" 0 0 basechar 0
 AnchorPoint: "cursive" 602 375 entry 0
 AnchorPoint: "cursive" 4 197 exit 0
 LayerCount: 2
@@ -103,5 +103,5 @@ SplineSet
  399 616 399 616 470 528 c 0,26,27
  539 442 539 442 612 446 c 0,0,1
 EndSplineSet
-Colour: ff0000
+Colour: ff00
 EndChar

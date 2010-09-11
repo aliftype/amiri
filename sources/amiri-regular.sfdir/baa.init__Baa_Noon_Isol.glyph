@@ -4,12 +4,11 @@ Encoding: 65747 -1 232
 Width: 360
 VWidth: 0
 Flags: W
+AnchorPoint: "DotAbove" 202 1000 basechar 0
+AnchorPoint: "HamzaAbove" 202 1000 basechar 0
+AnchorPoint: "TwoDotsAbove" 91 1000 basechar 0
 AnchorPoint: "TwoDotsBelow" 99 -330 basechar 0
-AnchorPoint: "TwoDotsAbove" -111 0 basechar 0
-AnchorPoint: "HamzaBelow" 0 0 basechar 0
-AnchorPoint: "HamzaAbove" 0 0 basechar 0
 AnchorPoint: "DotBelow" 210 -330 basechar 0
-AnchorPoint: "DotAbove" 0 0 basechar 0
 AnchorPoint: "cursive" -2 369 exit 0
 LayerCount: 2
 Back
@@ -73,5 +72,5 @@ SplineSet
  186 638 186 638 207 636.5 c 128,-1,18
  228 635 228 635 230 613 c 0,0,1
 EndSplineSet
-Colour: ff0000
+Colour: ff00
 EndChar

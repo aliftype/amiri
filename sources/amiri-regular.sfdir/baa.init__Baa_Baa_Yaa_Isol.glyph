@@ -4,12 +4,12 @@ Encoding: 65704 -1 189
 Width: 365
 VWidth: 0
 Flags: W
-AnchorPoint: "TwoDotsBelow" -11 -300 basechar 0
-AnchorPoint: "TwoDotsAbove" 51 1116 basechar 0
-AnchorPoint: "DotBelow" 100 -300 basechar 0
-AnchorPoint: "HamzaBelow" 100 -300 basechar 0
-AnchorPoint: "HamzaAbove" 162 1116 basechar 0
-AnchorPoint: "DotAbove" 162 1116 basechar 0
+AnchorPoint: "TwoDotsBelow" -1 -150 basechar 0
+AnchorPoint: "TwoDotsAbove" -19 1116 basechar 0
+AnchorPoint: "DotBelow" 110 -150 basechar 0
+AnchorPoint: "HamzaBelow" 110 -150 basechar 0
+AnchorPoint: "HamzaAbove" 92 1116 basechar 0
+AnchorPoint: "DotAbove" 92 1116 basechar 0
 AnchorPoint: "cursive" -12 375 exit 0
 LayerCount: 2
 Back
