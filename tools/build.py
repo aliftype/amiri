@@ -3,30 +3,31 @@ import fontforge
 import os
 import sys
 
-
 family = "amiri"
-styles = ("math", "regular", "bold", "italic", "bolditalic")
-flags  = ("opentype", "dummy-dsig", "round", "short-post")
 source = "sources"
-args   = [ ]
+flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
-if len(sys.argv) > 1:
-    args = list(sys.argv[1:])
+def main(style):
+    style = style.lower()
+    base = os.path.join(source, "%s-%s" %(family, style))
+    if os.path.isfile("%s.sfd" % base):
+        file = "%s.sfd" % base
+    elif os.path.isdir("%s.sfdir" % base):
+        file = "%s.sfdir" % base
+    else:
+        print "Font for style: '%s' not found" % style
+        sys.exit(1)
 
-for arg in args:
-    if arg == "all":
-        args = styles
-    elif not arg in styles:
-        print "Unkown style requested: %s" %arg
-        args.remove(arg)
+    font = fontforge.open(file)
 
-if len(args) == 0:
-    args = styles
+    print "Gnerating %s-%s.ttf" %(family, style)
+    font.generate("%s-%s.ttf" %(family, style), flags=flags)
 
-for style in args:
-    name = family+"-"+style
-    if os.path.isdir(os.path.join(source, name+".sfdir")):
-        print "Generating %s..." % style
-        font = fontforge.open(os.path.join(source, name+".sfdir"))
-        font . generate(name+".ttf", flags=flags)
-        font . close()
+    font.close()
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        main(sys.argv[1])
+    else:
+        print "No style specified"
+        sys.exit(1)
