@@ -83,8 +83,8 @@ SplineSet
  1117 200 1117 200 1160 252 c 1,53,54
  1173 261 1173 261 1161 272 c 0,44,45
 EndSplineSet
-MultipleSubs2: "ToothMeem subtable" sad.init_PreYaa
-MultipleSubs2: "HehMediTooth subtable" sad.init_PreYaa baa.medi_BaaHehMedi
+Substitution2: "ToothMeem subtable" sad.init_PreYaa
+Substitution2: "HehMediTooth subtable" sad.init_PreYaa
 Substitution2: "SeenYaaFina subtable" sad.init_PreYaa
 Substitution2: "SadHaaInit subtable" sad.init_SadHaaInit
 Substitution2: "SadMeemInit subtable" sad.init_SadMeemInit

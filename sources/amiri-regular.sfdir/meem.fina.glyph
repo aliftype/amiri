@@ -63,7 +63,7 @@ SplineSet
  475 384 475 384 493 410 c 0,37,38
  514 442 514 442 535 417 c 0,0,1
 EndSplineSet
-MultipleSubs2: "ToothMeem subtable" baa.medi_BaaMeemFina meem.fina_BaaMeemFina
+Substitution2: "ToothMeem subtable" meem.fina_PostTooth
 Substitution2: "BaaMeemIsol subtable" meem.fina_BaaMeemIsol
 Substitution2: "LamMeemIsol subtable" meem.fina_LamMeemIsol
 Substitution2: "KafMeemFina subtable" meem.fina_KafMeemFina
