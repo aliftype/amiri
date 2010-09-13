@@ -1,0 +1,97 @@
+@import url("fonts/fonts.css");
+
+html, div {
+    margin: 0px;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 10pt;
+    font-family: serif;
+    color: #404040;
+}
+
+div:lang(ar) {
+    font-family: "AmiriWeb";
+}
+
+div:lang(en) {
+    font-family: "LibertineWeb";
+}
+
+h1 {
+    color: #404040;
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #ad000d
+}
+
+tt {
+    background: #E6E6E6;
+}
+
+.wrapper {
+   position: relative;
+   /*float: left;
+   left: 112px;*/
+   margin-right: auto;
+   margin-left: auto;
+   width: 800px;
+   margin-bottom: 10px;
+   background-color: #fffef8
+}
+
+
+.column {
+   position: relative;
+   left: 5px;
+   width: 375px;
+   background-color: #fffef8;
+   text-align: justify;
+   font-size: 12pt;
+
+}
+.column:lang(en) {
+   float: left;
+   direction: ltr;
+   font-family: "LibertineWeb";
+}
+.column:lang(ar) {
+   float: right;
+   direction: rtl;
+   font-family: "AmiriWeb";
+   line-height: 1.55;
+}
+
+body {
+   border-width: 0px;
+   padding: 0px;
+   margin: 0px;
+   font-size: 90%;
+   background-color: #fffef8
+}
+
+.fullwidth {
+   position: relative;
+   /*float: right;
+   right: 5px;*/
+   width: 775px;
+   height: 53px;
+   background-color: #ffffff;
+   border-bottom: 1px solid #aaaaaa; padding: 10px; 
+}
+
+.fullwidth2 {
+   position: relative;
+   float: right;
+   right: 5px;
+   width: 775px;
+   height: 0px;
+   background-color: #ffffff;
+   border-bottom: 1px solid #aaaaaa; padding: 10px; 
+}
+

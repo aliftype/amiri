@@ -54,8 +54,9 @@ def main(style):
 
     fake_marks(font)
 
-    print "Gnerating %s-%s.ttf" %(family, style)
-    font.generate("%s-%s.ttf" %(family, style), flags=flags)
+    for format in ("ttf", "woff"):
+        print "Gnerating %s-%s.%s" %(family, style, format)
+        font.generate("%s-%s.%s" %(family, style, format), flags=flags)
 
     font.close()
 
