@@ -1,8 +1,9 @@
 
 StartChar: haa.medi_MeemHaaInit
 Encoding: 65746 -1 231
-Width: 1159
+Width: 1251
 VWidth: 0
+Flags: W
 AnchorPoint: "DotAbove" 150 1000 basechar 0
 AnchorPoint: "HamzaAbove" 150 1000 basechar 0
 AnchorPoint: "TwoDotsAbove" 50 1000 basechar 0
