@@ -6,7 +6,7 @@ html, div {
     border: 0;
     font-weight: inherit;
     font-style: inherit;
-    font-size: 10pt;
+    font-size: 12px;
     font-family: serif;
     color: #404040;
 }
@@ -21,7 +21,7 @@ div:lang(en) {
 
 h1 {
     color: #404040;
-    font-size: 18pt;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -52,7 +52,7 @@ tt {
    width: 375px;
    background-color: #fffef8;
    text-align: justify;
-   font-size: 12pt;
+   font-size: 16px;
 
 }
 .column:lang(en) {
@@ -64,7 +64,7 @@ tt {
    float: right;
    direction: rtl;
    font-family: "AmiriWeb";
-   line-height: 1.55;
+   line-height: 1.6;
 }
 
 body {
