@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'LibertineWeb';
+  src: url('LinLibertine_Re-4.1_.8_-webfont.eot');
+  src: local('☺'),
+    url('LinLibertine_Re-4.1_.8_-webfont.woff') format('woff'),
+    url('LinLibertine_Re-4.1_.8_-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibertineWeb';
+  src: url('LinLibertine_It-4.0_.3_-webfont.eot');
+  src: local('☺'),
+    url('LinLibertine_It-4.0_.3_-webfont.woff') format('woff'),
+    url('LinLibertine_It-4.0_.3_-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LibertineWeb';
+  src: url('LinLibertine_Bd-4.0_.2_-webfont.eot');
+  src: local('☺'),
+    url('LinLibertine_Bd-4.0_.2_-webfont.woff') format('woff'),
+    url('LinLibertine_Bd-4.0_.2_-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibertineWeb';
+  src: url('LinLibertine_BI-4.0_.3_-webfont.eot');
+  src: local('☺'),
+    url('LinLibertine_BI-4.0_.3_-webfont.woff') format('woff'),
+    url('LinLibertine_BI-4.0_.3_-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*
+@font-face {
+  font-family: 'LibertineWeb';
+  src: url('LinLibertineC_Re-4.0_.1_-webfont.eot');
+  src: local('☺'),
+    url('LinLibertineC_Re-4.0_.1_-webfont.woff') format('woff'),
+    url('LinLibertineC_Re-4.0_.1_-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: small-caps;
+}
+*/

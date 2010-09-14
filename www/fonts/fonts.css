@@ -1,3 +1,5 @@
+@import url("libertine/stylesheet.css");
+
 /* unicode-range is not yet supported
 @font-face {
     font-family: "AmiriWeb";
@@ -15,44 +17,4 @@
     src: local('☺'),
          url('amiri-regular.woff') format('woff'),
 	 url('amiri-regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "LibertineWeb";
-    font-style: normal;
-    font-weight: medium;
-    src: url('libertine-regular.eot');
-    src: local('☺'),
-         url('libertine-regular.woff') format('woff'),
-	 url('libertine-regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "LibertineWeb";
-    font-style: normal;
-    font-weight: bold;
-    src: url('libertine-bold.eot');
-    src: local('☺'),
-         url('libertine-bold.woff') format('woff'),
-	 url('libertine-bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "LibertineWeb";
-    font-style: italic;
-    font-weight: bold;
-    src: url('libertine-bolditalic.eot');
-    src: local('☺'),
-         url('libertine-bolditalic.woff') format('woff'),
-	 url('libertine-bolditalic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "LibertineWeb";
-    font-style: italic;
-    font-weight: medium;
-    src: url('libertine-italic.eot');
-    src: local('☺'),
-         url('libertine-italic.woff') format('woff'),
-	 url('libertine-italic.ttf') format('truetype');
 }
