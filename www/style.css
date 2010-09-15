@@ -85,13 +85,3 @@ body {
    border-bottom: 1px solid #aaaaaa; padding: 10px; 
 }
 
-.fullwidth2 {
-   position: relative;
-   float: right;
-   right: 5px;
-   width: 775px;
-   height: 0px;
-   background-color: #ffffff;
-   border-bottom: 1px solid #aaaaaa; padding: 10px; 
-}
-
