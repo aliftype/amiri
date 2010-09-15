@@ -60,7 +60,7 @@ tt {
 
 .column-ar {
    position: relative;
-   left: 5px;
+   right: 5px;
    width: 375px;
    background-color: #fffef8;
    text-align: justify;
