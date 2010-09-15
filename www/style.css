@@ -11,11 +11,11 @@ html, div {
     color: #404040;
 }
 
-div:lang(ar) {
+div.ar {
     font-family: "AmiriWeb";
 }
 
-div:lang(en) {
+div.en {
     font-family: "LibertineWeb";
 }
 
@@ -45,8 +45,7 @@ tt {
    background-color: #fffef8
 }
 
-
-.column {
+.column-en {
    position: relative;
    left: 5px;
    width: 375px;
@@ -54,13 +53,19 @@ tt {
    text-align: justify;
    font-size: 16px;
 
-}
-.column:lang(en) {
    float: left;
    direction: ltr;
    font-family: "LibertineWeb";
 }
-.column:lang(ar) {
+
+.column-ar {
+   position: relative;
+   left: 5px;
+   width: 375px;
+   background-color: #fffef8;
+   text-align: justify;
+   font-size: 16px;
+
    float: right;
    direction: rtl;
    font-family: "AmiriWeb";
