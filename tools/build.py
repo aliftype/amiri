@@ -1,10 +1,7 @@
 #!/usr/bin/python
 import fontforge
-import os
 import sys
 
-family = "amiri"
-source = "sources"
 flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
 def fake_marks(font):
@@ -14,9 +11,6 @@ def fake_marks(font):
     glyphs from the font, we we fool it by making non-empty glyphs and
     substitute them by an empty glyph with a GSUB table."""
 
-    print "Faking vowel marks"
-
-    #font.encoding = "UnicodeFull"
     font.addLookup("fake marks", "gsub_single", (),
             (("ccmp",(("arab",("dflt")),)),) )
     font.addLookupSubtable("fake marks", "fake marks-1")
@@ -39,30 +33,18 @@ def fake_marks(font):
         glyph.addPosSub("fake marks-1", "fake_mark")
         mark += 1
 
-def main(style):
-    style = style.lower()
-    base = os.path.join(source, "%s-%s" %(family, style))
-    if os.path.isfile("%s.sfd" % base):
-        file = "%s.sfd" % base
-    elif os.path.isdir("%s.sfdir" % base):
-        file = "%s.sfdir" % base
-    else:
-        print "Font for style: '%s' not found" % style
-        sys.exit(1)
-
-    font = fontforge.open(file)
-
+def main(sfd, out):
+    font = fontforge.open(sfd)
     fake_marks(font)
-
-    for format in ("ttf", "woff"):
-        print "Gnerating %s-%s.%s" %(family, style, format)
-        font.generate("%s-%s.%s" %(family, style, format), flags=flags)
-
+    font.generate(out)
     font.close()
 
+def usage():
+    print "Usage: %s input_file output_file" % sys.argv[0]
+
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        main(sys.argv[1])
+    if len(sys.argv) > 2:
+        main(sys.argv[1], sys.argv[2])
     else:
-        print "No style specified"
+        usage()
         sys.exit(1)
