@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1284553357
+ModificationTime: 1284842589
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -183,8 +183,19 @@ Lookup: 260 0 0 "'mark' Ring Below"  {"'mark' Ring Below-1"  } ['mark' ('DFLT' <
 Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 4 6 "'kern' Horizontal Kerning in Arabic-1" 
+ 194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
+ 77 dal.fina dal.isol dal.fina_BaaDalIsol dal.fina_KafDalIsol dal.fina_LamDalIsol
+ 34 raa.fina.alt2 raa.fina_MeemRaaIsol
+ 9 alef.isol
+ 307 kaf.init kaf.init_KafHehIsol kaf.init_KafMeemLamInit kaf.init_KafMeemInit kaf.init_KafYaaIsol kaf.init_KafLamIsol kaf.init_KafBaaInit kaf.init_KafMeemIsol kaf.init_KafLamAlefIsol kaf.init_KafLamInit kaf.init_KafRaaIsol kaf.init_KafAlefIsol kaf.init_KafDalIsol kaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol
+ 69 haa.isol haa.fina_SadHaaIsol haa.fina_SeenHaaIsol haa.fina_BaaHaaIsol
+ 173 baa.init baa.isol faa.init haa.init sad.init sad.isol seen.init seen.isol taa.init taa.isol ayn.init_Finjani meem.init_MeemRaaIsol baa.init_BaaBaaIsol baa.init_BaaBaaAltInit
+ 32 noon.isol noon.isol.alt qaf.isol
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -400 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} -300 {} -800 {} -300 {} -350 {} -382 {}
 ChainSub2: coverage "'calt' KafLamFina subtale"  0 0 0 1
  2 0 0
   Coverage: 8 kaf.medi
@@ -1132,9 +1143,9 @@ Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
 NameList: AGL without afii
-DisplaySize: -48
+DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 288 24 10
+WinInfo: 128 32 13
 AnchorClass2: "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "Ring"  "'mark' Ring Below-1" "Taa"  "'mark' Small Taa-1" "DashDash"  "'mkmk' Dash To Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
