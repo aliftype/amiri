@@ -1,20 +1,2 @@
 @import url("libertine/stylesheet.css");
-
-/* unicode-range is not yet supported
-@font-face {
-    font-family: "AmiriWeb";
-    font-style: normal;
-    src: local("Linux Libertine O");
-}*/
-
-
-/* http://paulirish.com/2010/font-face-gotchas/#smiley */
-@font-face {
-    font-family: "AmiriWeb";
-    font-style: normal;
-    /*unicode-range: U+0600-6FF, U+0750-77F;*/
-    src: url('amiri-regular.eot');
-    src: local('☺'),
-         url('amiri-regular.woff') format('woff'),
-	 url('amiri-regular.ttf') format('truetype');
-}
+@import url("amiri.css");
