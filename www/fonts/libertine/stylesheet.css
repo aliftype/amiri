@@ -7,7 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/*
 @font-face {
   font-family: 'LibertineWeb';
   src: url('LinLibertine_It-4.0_.3_-webfont.eot');
@@ -16,7 +16,7 @@
     url('LinLibertine_It-4.0_.3_-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
-}
+}*/
 
 @font-face {
   font-family: 'LibertineWeb';
@@ -28,6 +28,7 @@
   font-style: normal;
 }
 
+/*
 @font-face {
   font-family: 'LibertineWeb';
   src: url('LinLibertine_BI-4.0_.3_-webfont.eot');
@@ -36,7 +37,7 @@
     url('LinLibertine_BI-4.0_.3_-webfont.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
-}
+}*/
 
 /*
 @font-face {
