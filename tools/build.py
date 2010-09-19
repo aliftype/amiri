@@ -132,7 +132,8 @@ def main(sfd, out):
     else:
         fake_marks(font)
         class2pair(font, True)
-        font.generate(out)
+        font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+        font.generate(out, flags=flags)
 
     font.close()
 
