@@ -4,6 +4,12 @@ Encoding: 65789 -1 274
 Width: 1297
 VWidth: 0
 Flags: W
+AnchorPoint: "DotAbove" 250 1000 basechar 0
+AnchorPoint: "DotBelow" 630 -200 basechar 0
+AnchorPoint: "HamzaAbove" 250 1000 basechar 0
+AnchorPoint: "HamzaBelow" 630 -200 basechar 0
+AnchorPoint: "TwoDotsAbove" 139 1000 basechar 0
+AnchorPoint: "TwoDotsBelow" 519 -200 basechar 0
 AnchorPoint: "cursive" 115 504 entry 0
 LayerCount: 2
 Back
