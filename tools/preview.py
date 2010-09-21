@@ -1,3 +1,4 @@
+import fontforge
 import tempfile
 import subprocess
 import os
