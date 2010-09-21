@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285072520
+ModificationTime: 1285073278
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -197,7 +197,7 @@ KernClass2: 4 8 "'kern' Horizontal Kerning in Arabic-1"
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
  38 kaf.isol lam.init lam.init_LamAlefIsol
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -400 {} -400 {} -400 {} -450 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -800 {} -300 {} -350 {} -382 {} -300 {} 0 {}
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -400 {} -400 {} -400 {} -450 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -350 {} -200 {} -200 {} 0 {}
 ChainSub2: coverage "'calt' KafLamFina subtale"  0 0 0 1
  2 0 0
   Coverage: 8 kaf.medi
