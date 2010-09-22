@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285193456
+ModificationTime: 1285193844
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -193,7 +193,7 @@ KernClass2: 4 9 "'kern' Horizontal Kerning in Arabic-1"
  9 alef.isol
  307 kaf.init kaf.init_KafHehIsol kaf.init_KafMeemLamInit kaf.init_KafMeemInit kaf.init_KafYaaIsol kaf.init_KafLamIsol kaf.init_KafBaaInit kaf.init_KafMeemIsol kaf.init_KafLamAlefIsol kaf.init_KafLamInit kaf.init_KafRaaIsol kaf.init_KafAlefIsol kaf.init_KafDalIsol kaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol
  78 ayn.isol haa.isol haa.fina_SadHaaIsol haa.fina_SeenHaaIsol haa.fina_BaaHaaIsol
- 253 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol meem.init_MeemRaaIsol baa.init_BaaBaaIsol ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
+ 293 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol haa.init_HaaYaaIsol meem.init_MeemRaaIsol baa.init_BaaBaaIsol haa.init_HaaRaaIsol ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
  38 kaf.isol lam.init lam.init_LamAlefIsol
