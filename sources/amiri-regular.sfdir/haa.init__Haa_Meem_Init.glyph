@@ -7,9 +7,9 @@ Flags: W
 AnchorPoint: "DotAbove" 911 1173 basechar 0
 AnchorPoint: "HamzaAbove" 911 1173 basechar 0
 AnchorPoint: "TwoDotsAbove" 801 1173 basechar 0
-AnchorPoint: "DotBelow" 900 -200 basechar 0
-AnchorPoint: "HamzaBelow" 900 -200 basechar 0
-AnchorPoint: "TwoDotsBelow" 789 -200 basechar 0
+AnchorPoint: "DotBelow" 800 0 basechar 0
+AnchorPoint: "HamzaBelow" 800 0 basechar 0
+AnchorPoint: "TwoDotsBelow" 689 0 basechar 0
 AnchorPoint: "cursive" 94 487 exit 0
 LayerCount: 2
 Back
