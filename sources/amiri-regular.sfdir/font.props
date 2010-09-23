@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285261341
+ModificationTime: 1285261610
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -198,7 +198,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  26 raa.isol waw.isol dal.isol
  67 kaf.isol lam.init lam.isol lam.init_LamAlefIsol lam.init_LamRaaIsol
  71 baa.init baa.init_BaaHehInit baa.init_BaaHaaInit baa.init_BaaBaaAltInit
- 41 faa.init_FaaHaaInit meem.init_MeemHaaInit
+ 65 lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
