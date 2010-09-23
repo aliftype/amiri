@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285193844
+ModificationTime: 1285251960
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -196,7 +196,7 @@ KernClass2: 4 9 "'kern' Horizontal Kerning in Arabic-1"
  293 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol haa.init_HaaYaaIsol meem.init_MeemRaaIsol baa.init_BaaBaaIsol haa.init_HaaRaaIsol ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
- 38 kaf.isol lam.init lam.init_LamAlefIsol
+ 67 kaf.isol lam.init lam.isol lam.init_LamAlefIsol lam.init_LamRaaIsol
  31 baa.init baa.init_BaaBaaAltInit
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {}
 ChainSub2: coverage "'calt' KafLamFina subtale"  0 0 0 1
