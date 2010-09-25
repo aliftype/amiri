@@ -45,26 +45,9 @@ def generate_css(font, out, base):
     family = "%sWeb" %font.familyname
     name = font.fontname
 
-    begin = "/* begin %s */\n" %name
-    end = "/* end %s */\n" %name
-
-    inside = False
     css = ""
-    if os.path.isfile(out):
-        file = open(out, "r")
-
-        for line in file.readlines():
-            if line == begin:
-                inside = True
-            elif line == end:
-                inside = False
-            elif not inside:
-                css += line
-
-        file.close()
-
-    css += begin
-    css += """@font-face {
+    css += """
+@font-face {
     font-style: %(style)s;
     font-weight: %(weight)s;
     font-family: "%(family)s";
@@ -74,11 +57,8 @@ def generate_css(font, out, base):
          url('%(base)s.ttf') format('truetype');
 }
 """ %{"style":style, "weight":weight, "family":family, "base":base}
-    css += end
 
-    file = open(out, "w")
-    file.write(css)
-    file.close()
+    return css
 
 def class2pair(font, remove):
     """Looks for any kerning classes in the font and converts it to
@@ -118,31 +98,38 @@ def class2pair(font, remove):
                         font.removeLookupSubtable(subtable)
     return new_subtable
 
-def main(sfd, out):
-    css = False
+def main(sfds, out):
+    css = ""
     ext = os.path.splitext(out)[1].lower()
-    base = os.path.splitext(os.path.basename(sfd))[0]
     if ext == ".css":
-        css = True
+            css += "/* @font-face rule for Amiri */"
 
-    font = fontforge.open(sfd)
+    for sfd in sfds:
+        base = os.path.splitext(os.path.basename(sfd))[0]
+
+        font = fontforge.open(sfd)
+
+        if css:
+            css += generate_css(font, out, base)
+        else:
+            fake_marks(font)
+            class2pair(font, True)
+            font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+            font.generate(out, flags=flags)
+
+        font.close()
 
     if css:
-        generate_css(font, out, base)
-    else:
-        fake_marks(font)
-        class2pair(font, True)
-        font.appendSFNTName ("English (US)", "License", "OFL v1.1")
-        font.generate(out, flags=flags)
-
-    font.close()
+        file = open(out, "w")
+        file.write(css)
+        file.close()
 
 def usage():
     print "Usage: %s input_file output_file" % sys.argv[0]
 
 if __name__ == "__main__":
     if len(sys.argv) > 2:
-        main(sys.argv[1], sys.argv[2])
+        main(sys.argv[1:-1], sys.argv[-1])
     else:
         usage()
         sys.exit(1)

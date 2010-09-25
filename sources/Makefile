@@ -24,8 +24,8 @@ web: $(WOFF) $(EOTS) amiri.css
 %.eot : %.ttf
 	$(MKEOT) $< > $@
 
-amiri.css: amiri-regular.sfdir
-	$(FF) $< $@
+amiri.css: $(SFDS)
+	$(FF) $^ $@
 
 
 clean:
