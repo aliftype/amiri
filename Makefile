@@ -1,4 +1,4 @@
-.PHONY: all clean
+.PHONY: clean
 
 VERSION=0.002
 
@@ -7,12 +7,8 @@ build=./tools/build.py
 
 dist_doc=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar Makefile
 
-all: ttf web
-
-ttf:
-	$(MAKE) -C $(src) ttf
-web:
-	$(MAKE) -C $(src) web
+all:
+	$(MAKE) -C $(src)
 
 dist: all
 	mkdir -p amiri-$(VERSION)/{sources,web,tools}
