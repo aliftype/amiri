@@ -1,4 +1,4 @@
-VERSION=0.001
+VERSION=0.002
 
 SRC=./sources
 TOOLS=./tools
@@ -27,12 +27,14 @@ woff: regular-woff
 eot: regular-eot
 css: regular-css
 
+DIST_EXTRA = README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar Makefile
+
 dist: all
 	mkdir -p amiri-$(VERSION)/sources
 	mkdir -p amiri-$(VERSION)/web
 	mkdir -p amiri-$(VERSION)/tools
 	cp amiri-regular.ttf amiri-$(VERSION)
-	cp README README.ar OFL.txt OFL-FAQ.txt Makefile amiri-$(VERSION)
+	cp $(DIST_EXTRA) amiri-$(VERSION)
 	cp -r sources/amiri-regular.sfdir amiri-$(VERSION)/sources
 	cp web/amiri-regular.woff amiri-$(VERSION)/web
 	cp web/amiri-regular.eot amiri-$(VERSION)/web
