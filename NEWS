@@ -1,0 +1,25 @@
+Amiri 0.002 (2010-9-25)
+-----------------------
+
+* More kerning work:
+
+  Kerning have been further refined, extended in coverage especially
+  between contextual variants, and mysterious dot movements on Windows
+  resulting from bad interaction between kerning and dot positioning
+  have been fixed.
+
+* Refined dot positioning:
+
+  Some dot placements have been refined, though this area still in need
+  of more work.
+
+* Smaller file size:
+
+  The uncompressed TTF file is now approximately 25% smaller than previous
+  release, saving a bit more bandwidth when used as web font.
+
+Amiri 0.001 (2010-9-19)
+-----------------------
+
+First release.
+
