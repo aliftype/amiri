@@ -1,47 +1,28 @@
+.PHONY: all clean
+
 VERSION=0.002
 
-SRC=./sources
-TOOLS=./tools
-WEB=./web
+src=./sources
+build=./tools/build.py
 
-BUILD=python $(TOOLS)/build.py
-MKEOT=ttf2eot
+dist_doc=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar Makefile
 
 all: ttf web
-web: woff eot css
 
-regular-ttf: $(SRC)/amiri-regular.sfdir
-	$(BUILD) $(SRC)/amiri-regular.sfdir amiri-regular.ttf
-
-regular-woff: $(SRC)/amiri-regular.sfdir
-	$(BUILD) $(SRC)/amiri-regular.sfdir $(WEB)/amiri-regular.woff
-
-regular-eot: regular-ttf
-	$(MKEOT) amiri-regular.ttf > $(WEB)/amiri-regular.eot
-
-regular-css: $(SRC)/amiri-regular.sfdir
-	$(BUILD) $(SRC)/amiri-regular.sfdir $(WEB)/amiri.css
-
-ttf: regular-ttf
-woff: regular-woff
-eot: regular-eot
-css: regular-css
-
-DIST_EXTRA = README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar Makefile
+ttf:
+	$(MAKE) -C $(src) ttf
+web:
+	$(MAKE) -C $(src) web
 
 dist: all
-	mkdir -p amiri-$(VERSION)/sources
-	mkdir -p amiri-$(VERSION)/web
-	mkdir -p amiri-$(VERSION)/tools
-	cp amiri-regular.ttf amiri-$(VERSION)
-	cp $(DIST_EXTRA) amiri-$(VERSION)
-	cp -r sources/amiri-regular.sfdir amiri-$(VERSION)/sources
-	cp web/amiri-regular.woff amiri-$(VERSION)/web
-	cp web/amiri-regular.eot amiri-$(VERSION)/web
-	cp web/amiri.css amiri-$(VERSION)/web
-	cp tools/build.py amiri-$(VERSION)/tools
+	mkdir -p amiri-$(VERSION)/{sources,web,tools}
+	cp -r $(src)/*.sfdir amiri-$(VERSION)/sources
+	cp $(dist_doc) amiri-$(VERSION)
+	cp $(build) amiri-$(VERSION)/tools
+	cp $(src)/*.ttf amiri-$(VERSION)
+	cp $(src)/*.{woff,eot,css} amiri-$(VERSION)/web
 	tar cvfj amiri-$(VERSION).tar.bz2 amiri-$(VERSION)
 
-
 clean:
-	rm -rf *.ttf $(WEB)/*.woff $(WEB)/*.eot *.tar.bz2 amiri-$(VERSION)
+	$(MAKE) -C $(src) clean
+	rm -rf *.tar.bz2 amiri-$(VERSION)
