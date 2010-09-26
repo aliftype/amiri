@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285261610
+ModificationTime: 1285491388
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -228,7 +228,7 @@ ChainSub2: coverage "'calt' ToothMeem subtable"  0 0 0 1
 EndFPST
 ChainSub2: coverage "'calt' SeenMeemMedi subtable"  0 0 0 1
  3 0 0
-  Coverage: 31 seen.medi seen.medi_BaaSeenInit
+  Coverage: 40 seen.medi seen.medi_BaaSeenInit sad.medi
   Coverage: 22 meem.medi_MeemAlefFina
   Coverage: 22 alef.fina_MeemAlefFina
  3
