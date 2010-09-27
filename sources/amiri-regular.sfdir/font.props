@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285578607
+ModificationTime: 1285602063
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -171,6 +171,8 @@ Lookup: 1 0 0 "KafLamYaa"  {"KafLamYaa subtable"  } []
 Lookup: 6 8 0 "'calt' KafLamYaa"  {"'calt' KafLamYaa subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "KafLamFina"  {"KafLamFina subtable"  } []
 Lookup: 6 0 0 "'calt' KafLamFina"  {"'calt' KafLamFina subtale"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "LamKafInit"  {"LamKafInit-1"  } []
+Lookup: 6 8 0 "'calt' LamKafInit"  {"'calt' LamKafInit-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -202,6 +204,13 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainSub2: coverage "'calt' LamKafInit-1"  0 0 0 1
+ 1 1 0
+  Coverage: 135 kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina kaf.medi_KafAlefFina
+  BCoverage: 81 lam.init lam.medi lam.medi_KafMeemLamInit lam.medi_LamLamInit lam.medi_KafLamInit
+ 1
+  SeqLookup: 0 "LamKafInit" 
+EndFPST
 ChainSub2: coverage "'calt' KafLamFina subtale"  0 0 0 1
  2 0 0
   Coverage: 8 kaf.medi

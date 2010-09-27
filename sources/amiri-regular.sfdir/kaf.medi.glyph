@@ -63,6 +63,7 @@ SplineSet
  -49 0 -49 0 -60 117 c 0,42,43
  -66 185 -66 185 0 185 c 0,0,1
 EndSplineSet
+MultipleSubs2: "LamKafInit-1" tatwil.one_LamKaf kaf.medi
 Substitution2: "KafLamFina subtable" kaf.medi_KafLamAlefFina
 Substitution2: "KafAlefFina subtable" kaf.medi_KafAlefFina
 Substitution2: "KafMeemAlefFina subtable" kaf.medi_KafMeemAlefFina
