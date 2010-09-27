@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285618424
+ModificationTime: 1285621129
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -173,6 +173,8 @@ Lookup: 1 0 0 "KafLamFina"  {"KafLamFina subtable"  } []
 Lookup: 6 0 0 "'calt' KafLamFina"  {"'calt' KafLamFina subtale"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 0 0 "LamKafInit"  {"LamKafInit-1"  } []
 Lookup: 6 8 0 "'calt' LamKafInit"  {"'calt' LamKafInit-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "KafDotInit"  {"KafDotInit-1"  } []
+Lookup: 6 16 0 "'calt' KafDotInit"  {"'calt' KafDotInit-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -187,6 +189,8 @@ Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'ar
 Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
+MarkAttachSets: 1
+"DotsHamzaAbove" 89 dot.above twodots.above hamza.above vtwodots.above smalltaa.above threedotsinverted.above
 DEI: 91125
 KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1" 
  194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
@@ -204,6 +208,14 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainSub2: coverage "'calt' KafDotInit-1"  0 0 0 1
+ 1 1 1
+  Coverage: 49 baa.medi baa.medi_BaaNoonFina baa.medi_BaaRaaFina
+  BCoverage: 17 kaf.init kaf.medi
+  FCoverage: 66 dot.above twodots.above threedots.above vtwodots.above hamza.above
+ 1
+  SeqLookup: 0 "KafDotInit" 
+EndFPST
 ChainSub2: coverage "'calt' LamKafInit-1"  0 0 0 1
  1 1 0
   Coverage: 135 kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina kaf.medi_KafAlefFina
