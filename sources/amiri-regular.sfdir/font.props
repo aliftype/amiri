@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285602063
+ModificationTime: 1285608369
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -194,13 +194,13 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  34 raa.fina.alt2 raa.fina_MeemRaaIsol
  9 alef.isol
  307 kaf.init kaf.init_KafHehIsol kaf.init_KafMeemLamInit kaf.init_KafMeemInit kaf.init_KafYaaIsol kaf.init_KafLamIsol kaf.init_KafBaaInit kaf.init_KafMeemIsol kaf.init_KafLamAlefIsol kaf.init_KafLamInit kaf.init_KafRaaIsol kaf.init_KafAlefIsol kaf.init_KafDalIsol kaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol
- 37 ayn.isol haa.isol baa.init_BaaHaaIsol
- 476 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol yaa.isol lam.init_LamHaaInit baa.init_BaaMeemHaaInit haa.init_HaaYaaIsol meem.init_MeemYaaIsol meem.init_MeemRaaIsol haa.init_HaaHaaInit ayn.init_AynHaaInit baa.init_BaaBaaHaaInit haa.init_HaaMeemInit baa.init_BaaBaaIsol haa.init_HaaRaaIsol baa.init_BaaHaaMeemInit ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
+ 57 ayn.isol haa.isol faa.init_FaaYaaIsol baa.init_BaaHaaIsol
+ 516 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol yaa.isol lam.init_LamHaaInit baa.init_BaaMeemHaaInit haa.init_HaaYaaIsol meem.init_MeemYaaIsol meem.init_MeemRaaIsol haa.init_HaaHaaInit ayn.init_AynYaaIsol ayn.init_AynHaaInit lam.init_LamYaaIsol baa.init_BaaBaaHaaInit haa.init_HaaMeemInit baa.init_BaaBaaIsol haa.init_HaaRaaIsol baa.init_BaaHaaMeemInit ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
  67 kaf.isol lam.init lam.isol lam.init_LamAlefIsol lam.init_LamRaaIsol
- 71 baa.init baa.init_BaaHehInit baa.init_BaaHaaInit baa.init_BaaBaaAltInit
- 65 lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit
+ 94 baa.init baa.init_BaaBaaYaaIsol baa.init_BaaHehInit baa.init_BaaHaaInit baa.init_BaaBaaAltInit
+ 85 baa.init_BaaYaaIsol lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
