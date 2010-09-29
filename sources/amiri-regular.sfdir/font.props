@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285788260
+ModificationTime: 1285789136
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -208,7 +208,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
  67 kaf.isol lam.init lam.isol lam.init_LamAlefIsol lam.init_LamRaaIsol
- 159 baa.init baa.init_BaaBaaYaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_BaaBaaAltInit
+ 179 baa.init baa.init_BaaRaaIsol baa.init_BaaBaaYaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_BaaBaaAltInit
  85 baa.init_BaaYaaIsol lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
@@ -216,7 +216,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
 ChainSub2: coverage "'calt' RaaBaaDot-1"  0 0 0 1
  1 2 0
   Coverage: 23 dot.below twodots.below
-  BCoverage: 116 baa.init baa.init_BaaBaaIsol baa.init_BaaBaaAltInit baa.init_BaaBaaInit baa.init_BaaSeenAltInit baa.init_BaaSeenInit
+  BCoverage: 136 baa.init baa.init_BaaRaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaBaaIsol baa.init_BaaSeenAltInit baa.init_BaaBaaAltInit
   BCoverage: 135 raa.fina raa.fina_BaaRaaIsol raa.fina_HaaRaaIsol raa.fina_KafRaaIsol raa.fina_LamRaaIsol waw.fina waw.isol raa.isol waw.fina_LamWawFina
  1
   SeqLookup: 0 "RaaBaaDot" 
