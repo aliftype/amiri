@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1285793336
+ModificationTime: 1285797988
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -240,7 +240,7 @@ ChainSub2: coverage "'calt' RaaBaaDot-1"  0 0 0 1
  1 2 0
   Coverage: 23 dot.below twodots.below
   BCoverage: 136 baa.init baa.init_BaaRaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaBaaIsol baa.init_BaaSeenAltInit baa.init_BaaBaaAltInit
-  BCoverage: 135 raa.fina raa.fina_BaaRaaIsol raa.fina_HaaRaaIsol raa.fina_KafRaaIsol raa.fina_LamRaaIsol waw.fina waw.isol raa.isol waw.fina_LamWawFina
+  BCoverage: 194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
  1
   SeqLookup: 0 "RaaBaaDot" 
 EndFPST
