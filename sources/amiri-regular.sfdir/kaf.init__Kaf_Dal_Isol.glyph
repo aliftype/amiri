@@ -4,7 +4,7 @@ Encoding: 65822 -1 306
 Width: 1240
 VWidth: 362
 Flags: W
-AnchorPoint: "Dash" 539 1823 basechar 0
+AnchorPoint: "Dash" 500 1830 basechar 0
 AnchorPoint: "cursive" 2 104 exit 0
 LayerCount: 2
 Back
@@ -94,7 +94,7 @@ SplineSet
 1110 1924 m 2,0,1
  1081 1806 l 2,2,3
  1075 1783 1075 1783 1052 1776 c 0,4,5
- 69 1449 69 1449 -173 1280 c 1,6,7
+ 204 1496 204 1496 -173 1280 c 1,6,7
  330 768 330 768 324 360 c 0,8,9
  323 286 323 286 310 233 c 24,10,11
  282 120 282 120 194 63 c 0,12,13
