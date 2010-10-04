@@ -3,19 +3,10 @@ StartChar: dash.gaf.alt1
 Encoding: 65875 -1 515
 Width: 0
 VWidth: 0
+UnlinkRmOvrlpSave: 1
 Flags: W
 AnchorPoint: "Dash" -112 92 mark 0
 LayerCount: 2
 Fore
-SplineSet
--502 27 m 0,0,1
- -499 49 -499 49 -477 70.5 c 128,-1,2
- -455 92 -455 92 -445 96 c 0,3,4
- -69 233 -69 233 494 348 c 0,5,6
- 503 350 503 350 502 339.5 c 128,-1,7
- 501 329 501 329 490 313 c 0,8,9
- 463 274 463 274 442 269 c 0,10,11
- -117 154 -117 154 -491 19 c 0,12,13
- -503 15 -503 15 -502 27 c 0,0,1
-EndSplineSet
+Refer: 497 -1 N 0.99636 -0.0852426 0.0852426 0.99636 43 1 2
 EndChar
