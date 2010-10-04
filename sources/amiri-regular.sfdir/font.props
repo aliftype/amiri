@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1286200375
+ModificationTime: 1286201071
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -186,6 +186,8 @@ Lookup: 1 0 0 "GafDash2"  {"GafDash2-1"  } []
 Lookup: 6 196624 0 "'calt' GafDash"  {"'calt' GafDash-2"  "'calt' GafDash-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 0 0 "BaaHehYaaFina"  {"BaaHehYaaFina-1"  } []
 Lookup: 6 8 0 "'calt' BaaHehYaaFina"  {"'calt' BaaHehYaaFina-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 2 0 0 "KafDalFina"  {"KafDalFina-1"  } []
+Lookup: 6 8 0 "'calt' KafDalFina"  {"'calt' KafDalFina-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -224,6 +226,13 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainSub2: coverage "'calt' KafDalFina-1"  0 0 0 1
+ 1 1 0
+  Coverage: 8 dal.fina
+  BCoverage: 8 kaf.medi
+ 1
+  SeqLookup: 0 "KafDalFina" 
+EndFPST
 ChainSub2: coverage "'calt' BaaHehYaaFina-1"  0 0 0 1
  1 1 0
   Coverage: 8 yaa.fina
