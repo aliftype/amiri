@@ -16,17 +16,21 @@ ttf: $(TTFS)
 web: $(WOFF) $(EOTS) amiri.css
 
 %.ttf : %.sfdir
-	$(FF) $< $@
+	@echo "Generating $@"
+	@$(FF) $< $@
 
 %.woff : %.sfdir
-	$(FF) $< $@
+	@echo "Generating $@"
+	@$(FF) $< $@
 
 %.eot : %.ttf
-	$(MKEOT) $< > $@
+	@echo "Generating $@"
+	@$(MKEOT) $< > $@
 
 amiri.css: $(SFDS)
-	$(FF) $^ $@
+	@echo "Generating $@"
+	@$(FF) $^ $@
 
 
 clean:
-	rm -rf $(TTFS) $(WOFF) $(EOTS) $(CSSS)
+	@rm -rf $(TTFS) $(WOFF) $(EOTS) $(CSSS)
