@@ -57,7 +57,7 @@ SplineSet
  102 319 102 319 58 383 c 0,18,19
  40 408 40 408 52 433 c 2,0,1
 EndSplineSet
-Substitution2: "BaaBaaAltInit subtable" baa.init_BaaBaaAltInit
+Substitution2: "HighBaa subtable" baa.init_High
 Substitution2: "BaaHaaMeemInit subtable" baa.init_BaaHaaMeemInit
 Substitution2: "BaaHaaInit subtable" baa.init_BaaHaaInit
 Substitution2: "BaaHaaIsol subtable" baa.init_BaaHaaIsol

@@ -72,9 +72,8 @@ SplineSet
  352 298 352 298 355 292 c 1,21,22
  422 200 422 200 500 185 c 1,0,1
 EndSplineSet
-MultipleSubs2: "KafDotInit-1" tatwil.one_LamKaf baa.medi
+MultipleSubs2: "KafDot-1" tatwil.one_LamKaf baa.medi
 Substitution2: "HighBaa subtable" baa.medi_High
-Substitution2: "BaaBaaAltInit subtable" baa.medi_BaaBaaAltInit
 Substitution2: "BaaYaaFina subtable" baa.medi_BaaYaaFina
 Substitution2: "BaaNoonFina subtable" baa.medi_BaaNoonFina
 Substitution2: "KafBaaMedi subtable" baa.medi_KafBaaMedi
