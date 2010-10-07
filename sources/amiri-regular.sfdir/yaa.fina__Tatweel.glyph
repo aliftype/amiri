@@ -1,0 +1,23 @@
+
+StartChar: yaa.fina_Tatweel
+Encoding: 65903 -1 525
+Width: 1472
+VWidth: -290
+Flags: W
+AnchorPoint: "TwoDotsBelow" 620 -995 basechar 0
+AnchorPoint: "DotBelow" 731 -995 basechar 0
+AnchorPoint: "HamzaBelow" 731 -995 basechar 0
+AnchorPoint: "HamzaAbove" 330 500 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1474 185 m 0,0,1
+ 1536 182 1536 182 1531 142 c 0,2,3
+ 1511 0 1511 0 1474 0 c 0,4,5
+ 1362 0 1362 0 1214 0 c 0,6,7
+ 1199 0 1199 0 1185 51 c 0,8,9
+ 1145 183 1145 183 1214 185 c 0,10,11
+ 1384 190 1384 190 1474 185 c 0,0,1
+EndSplineSet
+Refer: 71 -1 N 1 0 0 1 0 0 2
+EndChar

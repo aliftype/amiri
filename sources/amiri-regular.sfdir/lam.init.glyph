@@ -52,6 +52,7 @@ SplineSet
  31 1314 l 2,25,26
  27 1338 27 1338 32 1352 c 24,0,1
 EndSplineSet
+MultipleSubs2: "LamKafInit-1" lam.init_Tatweel
 Substitution2: "LamHaaHaaInit subtable" lam.init_LamHaaHaaInit
 Substitution2: "LamRaaIsol subtable" lam.init_LamRaaIsol
 Substitution2: "Lellah subtable" lam.init_Lellah
