@@ -1,19 +1,21 @@
 .PHONY: clean
 
-VERSION=0.002
+VERSION=0.003
 
-src=./sources
+src=sources
 build=./tools/build.py
 
-dist_doc=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar Makefile
+dist_doc=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar
 
 all:
 	@$(MAKE) -C $(src)
 
 dist: all
 	@echo "Making dist tarball"
-	@mkdir -p amiri-$(VERSION)/{sources,web,tools}
-	@cp -r $(src)/*.sfdir amiri-$(VERSION)/sources
+	@mkdir -p amiri-$(VERSION)/{$(src),web,tools}
+	@cp -r $(src)/*.sfdir amiri-$(VERSION)/$(src)
+	@cp Makefile amiri-$(VERSION)
+	@cp $(src)/Makefile amiri-$(VERSION)/$(src)
 	@cp $(dist_doc) amiri-$(VERSION)
 	@cp $(build) amiri-$(VERSION)/tools
 	@cp $(src)/*.ttf amiri-$(VERSION)

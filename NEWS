@@ -1,4 +1,13 @@
-Amiri 0.002 (2010-9-25)
+Amiri 0.003 (2010-10-10)
+-----------------------
+
+* More tuning of kerning, especially handling of dot clash between
+  kerned glyphs.
+* Resolved many glyph clashes especially between ل and ك, between ك and
+  letters with above dots after it, and between marks of ب and ا.
+* Persian should be now fully supported, other languages to follow.
+
+Amiri 0.002 (2010-09-25)
 -----------------------
 
 * More kerning work:
