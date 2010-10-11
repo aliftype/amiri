@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1286797391
+ModificationTime: 1286803066
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -301,7 +301,7 @@ ChainSub2: coverage "'calt' KafBaaDotAbove subtable"  0 0 0 1
 EndFPST
 ChainSub2: coverage "'calt' LamKafInit-1"  0 0 0 1
  1 0 1
-  Coverage: 101 lam.init lam.medi lam.medi_KafMeemLamInit lam.medi_LamLamInit lam.medi_KafLamInit lam.medi_KafLamMedi
+  Coverage: 123 lam.init lam.medi lam.medi_KafLamMedi lam.medi_KafMeemLamInit lam.medi_LamLamInit meem.medi_LamMeemInit lam.medi_KafLamInit
   FCoverage: 152 kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina kaf.medi_KafAlefFina kaf.medi_Tatweel
  1
   SeqLookup: 0 "LamKafInit" 
