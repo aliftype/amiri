@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1286794870
+ModificationTime: 1286796061
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -151,6 +151,7 @@ Lookup: 1 0 0 "KafBaaAlefFina"  {"KafBaaAlefFina subtable"  } []
 Lookup: 6 8 0 "'calt' KafBaa"  {"'calt' KafBaaAlefIsol subtable"  "'calt' KafBaaAlefFina subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 0 0 "KafBaaDotAbove"  {"KafBaaDotAbove subtable"  } []
 Lookup: 6 16 0 "'calt' KafBaaDotAbove"  {"'calt' KafBaaDotAbove subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' KafClash"  {"'calt' KafClash-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "HighBaa"  {"HighBaa subtable"  } []
 Lookup: 6 8 0 "'calt' HighBaa"  {"'calt' HighBaa subtable"  "'calt' HighBaa subtable 1"  "'calt' HighBaa subtable 2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaHehMedi"  {"BaaHehMedi subtable"  } []
@@ -223,6 +224,13 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainSub2: coverage "'calt' KafClash-1"  0 0 0 1
+ 1 0 1
+  Coverage: 17 kaf.init kaf.medi
+  FCoverage: 46 faa.fina faa.medi heh.medi faa.medi_FaaYaaFina
+ 1
+  SeqLookup: 0 "KafBaaDotAbove" 
+EndFPST
 ChainSub2: coverage "'calt' AboveHaaInit-1"  0 0 0 1
  2 0 0
   Coverage: 46 baa.init heh.init meem.init sad.init seen.init
@@ -287,7 +295,7 @@ EndFPST
 ChainSub2: coverage "'calt' KafBaaDotAbove subtable"  0 0 0 1
  1 0 2
   Coverage: 17 kaf.init kaf.medi
-  FCoverage: 49 baa.medi baa.medi_BaaNoonFina baa.medi_BaaRaaFina
+  FCoverage: 70 baa.medi baa.medi_BaaMeemFina baa.medi_BaaRaaFina baa.medi_BaaNoonFina
   FCoverage: 105 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above
  1
   SeqLookup: 0 "KafBaaDotAbove" 
@@ -295,7 +303,7 @@ EndFPST
 ChainSub2: coverage "'calt' LamKafInit-1"  0 0 0 1
  1 0 1
   Coverage: 101 lam.init lam.medi lam.medi_KafMeemLamInit lam.medi_LamLamInit lam.medi_KafLamInit lam.medi_KafLamMedi
-  FCoverage: 135 kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina kaf.medi_KafAlefFina
+  FCoverage: 152 kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina kaf.medi_KafAlefFina kaf.medi_Tatweel
  1
   SeqLookup: 0 "LamKafInit" 
 EndFPST
