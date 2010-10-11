@@ -1,6 +1,6 @@
 
 StartChar: haa.medi_SadHaaInit
-Encoding: 65830 -1 314
+Encoding: 65830 -1 309
 Width: 1232
 VWidth: 0
 AnchorPoint: "TwoDotsBelow" 369 -260 basechar 0
@@ -101,5 +101,5 @@ SplineSet
  94 531 94 531 130 541 c 0,31,32
  213 563 213 563 342 513 c 0,0,1
 EndSplineSet
-Colour: ff00
+Colour: ffff
 EndChar

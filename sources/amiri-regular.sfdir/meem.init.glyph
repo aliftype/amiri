@@ -54,8 +54,8 @@ SplineSet
  517 444 517 444 455.5 473 c 128,-1,25
  394 502 394 502 330 451 c 1,21,22
 EndSplineSet
+Substitution2: "AboveHaaInit subtable" meem.init_MeemHaaInit
 Substitution2: "MeemHaaMeemInit subtable" meem.init_MeemHaaMeemInit
-Substitution2: "MeemHaaInit subtable" meem.init_MeemHaaInit
 Substitution2: "MeemRaaIsol subtable" meem.init_MeemRaaIsol
 Substitution2: "MeemYaaIsol subtable" meem.init_MeemYaaIsol
 Substitution2: "MeemMeemInit subtable" meem.init_MeemMeemInit

@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1286478065
+ModificationTime: 1286794870
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -101,7 +101,6 @@ Lookup: 1 0 0 "FaaYaaIsol"  {"FaaYaaIsol subtable"  } []
 Lookup: 1 0 0 "LamQafFina"  {"LamQafFina subtable"  } []
 Lookup: 1 0 0 "SeenHaaIsol"  {"SeenHaaIsol subtable"  } []
 Lookup: 1 0 0 "KafMeemLamFina"  {"KafMeemLamFina subtable"  } []
-Lookup: 1 0 0 "MeemHaaInit"  {"MeemHaaInit subtable"  } []
 Lookup: 1 0 0 "BaaNoonIsol"  {"BaaNoonIsol subtable"  } []
 Lookup: 1 0 0 "KafMeemFina"  {"KafMeemFina subtable"  } []
 Lookup: 1 0 0 "KafLamAlefIsol"  {"KafLamAlefIsol subtable"  } []
@@ -113,7 +112,6 @@ Lookup: 1 0 0 "BaaMeemInit"  {"BaaMeemInit subtable"  } []
 Lookup: 1 0 0 "AynYaaIsol"  {"AynYaaIsol subtable"  } []
 Lookup: 1 0 0 "BaaHehInit"  {"BaaHehInit subtable"  } []
 Lookup: 1 0 0 "KafLamInit"  {"KafLamInit subtable"  } []
-Lookup: 1 0 0 "SeenHaaInit"  {"SeenHaaInit subtable"  } []
 Lookup: 1 0 0 "SadMeemInit"  {"SadMeemInit subtable"  } []
 Lookup: 1 0 0 "KafRaaIsol"  {"KafRaaIsol subtable"  } []
 Lookup: 1 0 0 "LamMeemIsol"  {"LamMeemIsol subtable"  } []
@@ -131,19 +129,18 @@ Lookup: 1 0 0 "BaaBaaIsol"  {"BaaBaaIsol subtable"  } []
 Lookup: 1 0 0 "BaaBaaMeemInit"  {"BaaBaaMeemInit subtable"  } []
 Lookup: 1 0 0 "KafAlefIsol"  {"KafAlefIsol subtable"  } []
 Lookup: 1 0 0 "HaaRaaIsol"  {"HaaRaaIsol subtable"  } []
-Lookup: 1 0 0 "HehHaaInit"  {"HehHaaInit subtable"  } []
 Lookup: 1 0 0 "LamRaaIsol"  {"LamRaaIsol subtable"  } []
 Lookup: 1 0 0 "KafDalIsol"  {"KafDalIsol subtable"  } []
 Lookup: 1 0 0 "BaaMeemIsol"  {"BaaMeemIsol subtable"  } []
 Lookup: 1 0 0 "KafMeemAlefIsol"  {"KafMeemAlefIsol subtable"  } []
-Lookup: 1 0 0 "SadHaaInit"  {"SadHaaInit subtable"  } []
 Lookup: 1 0 0 "KafMeemAlefFina"  {"KafMeemAlefFina subtable"  } []
 Lookup: 1 0 0 "KafAlefFina"  {"KafAlefFina subtable"  } []
 Lookup: 1 0 0 "LamKafFina"  {"LamKafFina subtable"  } []
 Lookup: 1 0 0 "BaaSeenAltInit"  {"BaaSeenAltInit subtable"  } []
 Lookup: 1 0 0 "BaaHaaIsol"  {"BaaHaaIsol subtable"  } []
-Lookup: 1 0 0 "BaaHaaInit"  {"BaaHaaInit subtable"  } []
 Lookup: 1 0 0 "BaaHaaMeemInit"  {"BaaHaaMeemInit subtable"  } []
+Lookup: 1 0 0 "AboveHaaInit"  {"AboveHaaInit subtable"  } []
+Lookup: 6 8 0 "'calt' AboveHaaInit"  {"'calt' AboveHaaInit-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaNoonFina"  {"BaaNoonFina subtable"  } []
 Lookup: 1 0 0 "BaaRaaFina"  {"BaaRaaFina subtable"  } []
 Lookup: 6 8 0 "'calt' BaaRaaFina"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 60"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 86"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -158,7 +155,7 @@ Lookup: 1 0 0 "HighBaa"  {"HighBaa subtable"  } []
 Lookup: 6 8 0 "'calt' HighBaa"  {"'calt' HighBaa subtable"  "'calt' HighBaa subtable 1"  "'calt' HighBaa subtable 2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "BaaHehMedi"  {"BaaHehMedi subtable"  } []
 Lookup: 6 8 0 "'calt' BaaHehMedi"  {"'calt' BaaHehMedi"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 6 8 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' Contextual Alternates in Arabic lookup 101"  {"'calt' Contextual Alternates in Arabic lookup 101 contextual 105"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 98"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 102"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 0"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 1"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 2"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 4"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 5"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 6"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 8"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 9"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 11"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 12"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 14"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 15"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 16"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 18"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 19"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 20"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 21"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 24"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 25"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 26"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 27"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 28"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 29"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 30"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 31"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 32"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 33"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 35"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 36"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 78"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 37"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 38"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 75"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 40"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 41"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 42"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 83"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 79"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 43"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 44"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 45"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 46"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 47"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 48"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 49"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 50"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 51"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 53"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 63"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 56"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 57"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 58"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 59"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 61"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 62"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 64"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 65"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 66"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 69"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 70"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 71"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 72"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 73"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 74"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 76"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 77"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 80"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 81"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 82"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 84"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 89"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 90"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 91"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 94"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 95"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 96"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 101"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 103"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 10"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 7"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 3"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 34"  "'calt' Contextual Alternates in Arabic lookup 101 contextual 17"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "HehMediTooth"  {"HehMediTooth subtable"  } []
 Lookup: 6 8 0 "'calt' HehMediTooth"  {"'calt' HehMediTooth subtable"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "SeenMeemMedi"  {"SeenMeemMedi subtable"  } []
@@ -226,6 +223,14 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainSub2: coverage "'calt' AboveHaaInit-1"  0 0 0 1
+ 2 0 0
+  Coverage: 46 baa.init heh.init meem.init sad.init seen.init
+  Coverage: 8 haa.medi
+ 2
+  SeqLookup: 0 "AboveHaaInit" 
+  SeqLookup: 1 "AboveHaaInit" 
+EndFPST
 ChainSub2: coverage "'calt' KafDalFina-1"  0 0 0 1
  1 1 0
   Coverage: 8 dal.fina
@@ -401,14 +406,6 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 1
   SeqLookup: 0 "BaaHaaIsol" 
   SeqLookup: 1 "BaaHaaIsol" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 100"  0 0 0 1
- String: 17 baa.init haa.medi
- BString: 0 
- FString: 0 
- 2
-  SeqLookup: 0 "BaaHaaInit" 
-  SeqLookup: 1 "BaaHaaInit" 
-EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  0 0 0 1
  String: 27 baa.init haa.medi meem.medi
  BString: 0 
@@ -461,14 +458,6 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 9
   SeqLookup: 1 "KafMeemAlefFina" 
   SeqLookup: 2 "KafMeemAlefFina" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 93"  0 0 0 1
- String: 17 sad.init haa.medi
- BString: 0 
- FString: 0 
- 2
-  SeqLookup: 0 "SadHaaInit" 
-  SeqLookup: 1 "SadHaaInit" 
-EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 92"  0 0 0 1
  String: 28 kaf.init meem.medi alef.fina
  BString: 0 
@@ -501,14 +490,6 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 8
  2
   SeqLookup: 0 "LamRaaIsol" 
   SeqLookup: 1 "LamRaaIsol" 
-EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 88"  0 0 0 1
- String: 17 heh.init haa.medi
- BString: 0 
- FString: 0 
- 2
-  SeqLookup: 0 "HehHaaInit" 
-  SeqLookup: 1 "HehHaaInit" 
 EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 87"  0 0 0 1
  String: 17 haa.init raa.fina
@@ -668,14 +649,6 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 6
   SeqLookup: 0 "SadMeemInit" 
   SeqLookup: 1 "SadMeemInit" 
 EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 68"  0 0 0 1
- String: 18 seen.init haa.medi
- BString: 0 
- FString: 0 
- 2
-  SeqLookup: 0 "SeenHaaInit" 
-  SeqLookup: 1 "SeenHaaInit" 
-EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 67"  0 0 0 1
  String: 17 kaf.init lam.medi
  BString: 0 
@@ -773,14 +746,6 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 5
  2
   SeqLookup: 0 "BaaNoonIsol" 
   SeqLookup: 1 "BaaNoonIsol" 
-EndFPST
-ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 55"  0 0 0 1
- String: 18 meem.init haa.medi
- BString: 0 
- FString: 0 
- 2
-  SeqLookup: 0 "MeemHaaInit" 
-  SeqLookup: 1 "MeemHaaInit" 
 EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 54"  0 0 0 1
  String: 27 kaf.medi meem.medi lam.fina
@@ -1244,6 +1209,6 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 320 32 7
+WinInfo: 256 32 9
 AnchorClass2: "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "Ring"  "'mark' Ring Below-1" "Taa"  "'mark' Small Taa-1" "DashDash"  "'mkmk' Dash To Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont

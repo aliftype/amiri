@@ -84,11 +84,10 @@ SplineSet
  965 381 965 381 934 472 c 0,37,38
  930 482 930 482 994 584 c 0,0,1
 EndSplineSet
+Substitution2: "AboveHaaInit subtable" seen.init_SeenHaaInit
 Substitution2: "ToothMeem subtable" seen.init_PreYaa
 Substitution2: "HehMediTooth subtable" seen.init_PreYaa
 Substitution2: "SeenYaaFina subtable" seen.init_PreYaa
-Substitution2: "SeenBaaMeemInit subtable" seen.init_SeenBaaMeemInit
-Substitution2: "SeenHaaInit subtable" seen.init_SeenHaaInit
 Substitution2: "SeenHaaIsol subtable" seen.init_SeenHaaIsol
 Substitution2: "SeenMeemInit subtable" seen.init_SeenMeemInit
 Colour: ffff00
