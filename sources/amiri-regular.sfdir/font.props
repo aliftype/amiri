@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1286823482
+ModificationTime: 1286826353
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -202,6 +202,8 @@ Lookup: 260 0 0 "'mark' Ring Below"  {"'mark' Ring Below-1"  } ['mark' ('DFLT' <
 Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  } []
+Lookup: 264 131088 0 "'kern' SnakeRaaBaa"  {"'kern' SnakeRaaBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 MarkAttachSets: 4
 "DotsHamzaAbove" 105 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above
@@ -225,6 +227,14 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainPos2: coverage "'kern' SnakeRaaBaa-1"  0 0 0 1
+ 3 0 0
+  Coverage: 20 raa.fina_MeemRaaIsol
+  Coverage: 8 baa.init
+  Coverage: 75 dot.below twodots.below threedots.below threedotsinverted.below hamza.below
+ 1
+  SeqLookup: 1 "SnakeRaaBaa" 
+EndFPST
 ChainSub2: coverage "'calt' KafClash-1"  0 0 0 1
  1 0 1
   Coverage: 17 kaf.init kaf.medi
