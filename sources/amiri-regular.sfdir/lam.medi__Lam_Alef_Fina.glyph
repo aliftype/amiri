@@ -89,5 +89,8 @@ SplineSet
  773 1030 773 1030 769.5 1151 c 128,-1,34
  766 1272 766 1272 783 1298 c 2,0,-1
 EndSplineSet
+Substitution2: "LamLamAlefIsol subtable" lam.medi_LamLamAlefIsol
+Substitution2: "KafLamAlefIsol subtable" lam.medi_KafLamAlefIsol
+Substitution2: "KafLamAlefFina subtable" lam.medi_KafLamAlefFina
 Colour: ff00
 EndChar
