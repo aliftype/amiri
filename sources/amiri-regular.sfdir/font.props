@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1286828973
+ModificationTime: 1286829241
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -232,7 +232,7 @@ ChainPos2: coverage "'kern' AlefBaa-1"  0 0 0 1
  4 0 0
   Coverage: 156 alef.fina alef.isol alef.fina_Tatweel alef.fina_MeemAlefFina alef.fina_KafMeemAlefIsol alef.fina_KafMeemAlefFina alef.fina_KafAlefFina alef.fina_KafAlefIsol
   Coverage: 11 hamza.below
-  Coverage: 8 baa.init
+  Coverage: 42 baa.init baa.init_High baa.init_BaaBaaInit
   Coverage: 75 dot.below twodots.below threedots.below threedotsinverted.below hamza.below
  1
   SeqLookup: 2 "SnakeRaaBaa" 
@@ -240,7 +240,7 @@ EndFPST
 ChainPos2: coverage "'kern' SnakeRaaBaa-1"  0 0 0 1
  3 0 0
   Coverage: 20 raa.fina_MeemRaaIsol
-  Coverage: 8 baa.init
+  Coverage: 42 baa.init baa.init_High baa.init_BaaBaaInit
   Coverage: 75 dot.below twodots.below threedots.below threedotsinverted.below hamza.below
  1
   SeqLookup: 1 "SnakeRaaBaa" 
