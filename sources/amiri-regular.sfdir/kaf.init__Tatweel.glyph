@@ -1,6 +1,6 @@
 
 StartChar: kaf.init_Tatweel
-Encoding: 65901 -1 517
+Encoding: 65901 -1 512
 Width: 1446
 VWidth: 0
 Flags: W
@@ -16,5 +16,5 @@ SplineSet
  -67 192 -67 192 0 185 c 24,10,11
  153 168 153 168 260 185 c 0,0,1
 EndSplineSet
-Refer: 34 -1 N 1 0 0 1 260 0 2
+Refer: 29 -1 N 1 0 0 1 260 0 2
 EndChar

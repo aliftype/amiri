@@ -1,6 +1,6 @@
 
 StartChar: haa.init_Finjani
-Encoding: 65855 -1 336
+Encoding: 65855 -1 331
 Width: 1242
 VWidth: 0
 Flags: W
@@ -43,8 +43,6 @@ SplineSet
  514.336 274.147 514.336 274.147 514.121 281.2 c 128,-1,27
  513.907 288.253 513.907 288.253 508.41 291.093 c 0,18,19
 EndSplineSet
-Refer: 16 -1 S 1 0 0 1 -134 0 2
-Refer: 16 -1 N 1 0 0 1 -134 0 2
 Fore
 SplineSet
 638 460 m 0,0,1

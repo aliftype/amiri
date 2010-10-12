@@ -1,11 +1,21 @@
 
 StartChar: dot.above
-Encoding: 65867 -1 463
+Encoding: 65867 -1 458
 Width: 0
 VWidth: 0
 GlyphClass: 4
 AnchorPoint: "DotAbove" 0 140 mark 0
 LayerCount: 2
 Fore
-Refer: 16 -1 N 1 0 0 1 -134 0 2
+SplineSet
+-33 260 m 2,0,1
+ -28 268 -28 268 -16 264 c 0,2,3
+ 65 236 65 236 129 179 c 0,4,5
+ 138 171 138 171 132 161 c 2,6,-1
+ 34 6 l 2,7,8
+ 28 -3 28 -3 13.5 9 c 128,-1,9
+ -1 21 -1 21 -130 99 c 0,10,11
+ -138 104 -138 104 -133 111 c 2,12,-1
+ -33 260 l 2,0,1
+EndSplineSet
 EndChar
