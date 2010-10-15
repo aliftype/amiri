@@ -1,14 +1,9 @@
 
 StartChar: raa.fina_MeemRaaIsol
 Encoding: 65727 -1 207
-Width: 1072
+Width: 1070
 VWidth: 0
-Flags: W
-AnchorPoint: "TwoDotsBelow" 15 0 basechar 0
-AnchorPoint: "TwoDotsAbove" 15 0 basechar 0
-AnchorPoint: "HamzaBelow" 126 0 basechar 0
-AnchorPoint: "HamzaAbove" 126 0 basechar 0
-AnchorPoint: "DotBelow" 126 0 basechar 0
+Flags: HW
 AnchorPoint: "DotAbove" 728 1124 basechar 0
 AnchorPoint: "cursive" 1070 387 entry 0
 LayerCount: 2

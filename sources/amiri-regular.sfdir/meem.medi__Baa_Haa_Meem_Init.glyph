@@ -1,9 +1,10 @@
 
 StartChar: meem.medi_BaaHaaMeemInit
 Encoding: 65850 -1 325
-Width: 720
+Width: 258
 VWidth: 0
-AnchorPoint: "cursive" 408 408 entry 0
+Flags: W
+AnchorPoint: "cursive" 258 408 entry 0
 LayerCount: 2
 Back
 SplineSet

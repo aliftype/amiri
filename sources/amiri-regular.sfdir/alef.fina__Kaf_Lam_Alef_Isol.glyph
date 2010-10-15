@@ -1,9 +1,9 @@
 
 StartChar: alef.fina_KafLamAlefIsol
 Encoding: 65753 -1 231
-Width: 953
+Width: 897
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "HamzaBelow" 168 -203 basechar 0
 AnchorPoint: "HamzaAbove" 280 1530 basechar 0
 AnchorPoint: "cursive" 898 332 entry 0
@@ -115,7 +115,7 @@ SplineSet
 924 387 m 0,0,1
  926 336 926 336 897.5 305 c 128,-1,2
  869 274 869 274 870 327 c 24,3,4
- 872 423 872 423 840 499 c 1,5,6
+ 872 423 872 423 840 499 c 0,5,6
  738 750 738 750 464 871 c 1,7,8
  450 876 450 876 449 865 c 2,9,-1
  444 833 l 2,10,11

@@ -3,8 +3,8 @@ StartChar: seen.init
 Encoding: 65611 -1 57
 Width: 1164
 VWidth: 0
-Flags: W
-AnchorPoint: "cursive" 13 104 exit 0
+Flags: HW
+AnchorPoint: "cursive" 0 104 exit 0
 AnchorPoint: "TwoDotsAbove" 539 900 basechar 0
 AnchorPoint: "HamzaAbove" 650 900 basechar 0
 AnchorPoint: "DotAbove" 650 900 basechar 0

@@ -1,8 +1,9 @@
 
 StartChar: seen.medi_BaaSeenInit
 Encoding: 65755 -1 233
-Width: 1001
+Width: 1008
 VWidth: 0
+Flags: W
 AnchorPoint: "TwoDotsAbove" 520 840 basechar 0
 AnchorPoint: "DotAbove" 630 840 basechar 0
 AnchorPoint: "HamzaAbove" 630 840 basechar 0

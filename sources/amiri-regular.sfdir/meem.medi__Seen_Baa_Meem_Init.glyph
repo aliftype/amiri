@@ -1,8 +1,9 @@
 
 StartChar: meem.medi_SeenBaaMeemInit
 Encoding: 65804 -1 279
-Width: 638
+Width: 293
 VWidth: 0
+Flags: W
 AnchorPoint: "cursive" 295 250 entry 0
 LayerCount: 2
 Back
@@ -98,7 +99,7 @@ Fore
 SplineSet
 196 262 m 0,0,1
  265 340 265 340 404 290 c 0,2,3
- 468 268 468 268 526 232 c 0,4,5
+ 468 268 468 268 526 232 c 128,-1,5
  584 196 584 196 598 176 c 0,6,7
  634 124 634 124 551 -30 c 0,8,9
  543 -46 543 -46 526 -33 c 0,10,11

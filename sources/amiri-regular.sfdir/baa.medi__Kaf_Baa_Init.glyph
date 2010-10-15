@@ -1,8 +1,9 @@
 
 StartChar: baa.medi_KafBaaInit
 Encoding: 65712 -1 192
-Width: 675
+Width: 449
 VWidth: 0
+Flags: W
 AnchorPoint: "HamzaBelow" 300 -200 basechar 0
 AnchorPoint: "DotBelow" 200 -350 basechar 0
 AnchorPoint: "TwoDotsBelow" 82 -350 basechar 0

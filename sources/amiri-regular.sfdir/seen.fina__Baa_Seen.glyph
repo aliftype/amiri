@@ -1,9 +1,9 @@
 
 StartChar: seen.fina_BaaSeen
 Encoding: 65862 -1 492
-Width: 2182
+Width: 1969
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "TwoDotsAbove" 1483 752 basechar 0
 AnchorPoint: "cursive" 1969 309 entry 0
 AnchorPoint: "DotAbove" 1594 752 basechar 0
@@ -57,7 +57,7 @@ SplineSet
  283 142 283 142 295.5 143 c 128,-1,36
  308 144 308 144 314.5 133.5 c 128,-1,37
  321 123 321 123 315 111 c 0,38,39
- 194 -118 194 -118 212 -226 c 0,40,41
+ 194 -118 194 -118 212 -226 c 128,-1,41
  230 -334 230 -334 334 -411 c 0,42,43
  442 -491 442 -491 596 -498 c 24,44,45
  757 -505 757 -505 932 -439 c 0,46,47
