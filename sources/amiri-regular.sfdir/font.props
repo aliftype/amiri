@@ -15,13 +15,14 @@ Descent: 410
 LayerCount: 2
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 862 584604386 637949]
 FSType: 0
 OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1287165960
+ModificationTime: 1287227113
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -136,7 +137,7 @@ Lookup: 1 0 0 "KafMeemAlefFina"  {"KafMeemAlefFina subtable"  } []
 Lookup: 1 0 0 "KafAlefFina"  {"KafAlefFina subtable"  } []
 Lookup: 1 0 0 "LamKafFina"  {"LamKafFina subtable"  } []
 Lookup: 1 0 0 "BaaSeenAltInit"  {"BaaSeenAltInit subtable"  } []
-Lookup: 1 0 0 "BaaHaaIsol"  {"BaaHaaIsol subtable"  } []
+Lookup: 1 0 0 "AboveHaaIsol"  {"AboveHaaIsol subtable"  } []
 Lookup: 1 0 0 "BaaHaaMeemInit"  {"BaaHaaMeemInit subtable"  } []
 Lookup: 1 0 0 "AboveHaaInit"  {"AboveHaaInit subtable"  } []
 Lookup: 6 8 0 "'calt' AboveHaaInit"  {"'calt' AboveHaaInit-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -221,7 +222,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  34 raa.fina.alt2 raa.fina_MeemRaaIsol
  9 alef.isol
  307 kaf.init kaf.init_KafHehIsol kaf.init_KafMeemLamInit kaf.init_KafMeemInit kaf.init_KafYaaIsol kaf.init_KafLamIsol kaf.init_KafBaaInit kaf.init_KafMeemIsol kaf.init_KafLamAlefIsol kaf.init_KafLamInit kaf.init_KafRaaIsol kaf.init_KafAlefIsol kaf.init_KafDalIsol kaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol
- 57 ayn.isol haa.isol faa.init_FaaYaaIsol baa.init_BaaHaaIsol
+ 59 ayn.isol haa.isol faa.init_FaaYaaIsol baa.init_AboveHaaIsol
  496 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol yaa.isol lam.init_LamHaaInit baa.init_BaaMeemHaaInit haa.init_HaaYaaIsol meem.init_MeemYaaIsol meem.init_MeemRaaIsol haa.init_HaaHaaInit ayn.init_AynYaaIsol ayn.init_AynHaaInit lam.init_LamYaaIsol baa.init_BaaBaaHaaInit haa.init_HaaMeemInit haa.init_HaaRaaIsol baa.init_BaaHaaMeemInit ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
@@ -229,7 +230,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  190 baa.init baa.init_BaaRaaIsol baa.init_BaaBaaYaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High
  85 baa.init_BaaYaaIsol lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
- 41 sad.init_SadHaaIsol seen.init_SeenHaaIsol
+ 44 sad.init_AboveHaaIsol seen.init_AboveHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
 ChainPos2: coverage "'kern' RaaAlef-1"  0 0 0 1
  3 0 0
@@ -442,8 +443,8 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 1
  BString: 0 
  FString: 0 
  2
-  SeqLookup: 0 "BaaHaaIsol" 
-  SeqLookup: 1 "BaaHaaIsol" 
+  SeqLookup: 0 "AboveHaaIsol" 
+  SeqLookup: 1 "AboveHaaIsol" 
 EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 99"  0 0 0 1
  String: 27 baa.init haa.medi meem.medi
@@ -801,8 +802,8 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 5
  BString: 0 
  FString: 0 
  2
-  SeqLookup: 0 "SeenHaaIsol" 
-  SeqLookup: 1 "SeenHaaIsol" 
+  SeqLookup: 0 "AboveHaaIsol" 
+  SeqLookup: 1 "AboveHaaIsol" 
 EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 52"  0 0 0 1
  String: 17 lam.medi qaf.fina
@@ -1041,8 +1042,8 @@ ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 2
  BString: 0 
  FString: 0 
  2
-  SeqLookup: 0 "SadHaaIsol" 
-  SeqLookup: 1 "SadHaaIsol" 
+  SeqLookup: 0 "AboveHaaIsol" 
+  SeqLookup: 1 "AboveHaaIsol" 
 EndFPST
 ChainSub2: glyph "'calt' Contextual Alternates in Arabic lookup 101 contextual 23"  0 0 0 1
  String: 17 baa.init yaa.fina

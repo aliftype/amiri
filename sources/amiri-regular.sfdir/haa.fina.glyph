@@ -103,7 +103,5 @@ SplineSet
  170 299 170 299 170 310 c 0,53,54
  177 530 177 530 428 533 c 0,0,1
 EndSplineSet
-Substitution2: "BaaHaaIsol subtable" haa.fina_BaaHaaIsol
-Substitution2: "SeenHaaIsol subtable" haa.fina_SeenHaaIsol
-Substitution2: "SadHaaIsol subtable" haa.fina_SadHaaIsol
+Substitution2: "AboveHaaIsol subtable" haa.fina_AboveHaaIsol
 EndChar

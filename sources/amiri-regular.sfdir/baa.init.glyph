@@ -61,7 +61,7 @@ Position2: "SnakeRaaBaa-1" dx=0 dy=0 dh=200 dv=0
 Substitution2: "AboveHaaInit subtable" baa.init_BaaHaaInit
 Substitution2: "HighBaa subtable" baa.init_High
 Substitution2: "BaaHaaMeemInit subtable" baa.init_BaaHaaMeemInit
-Substitution2: "BaaHaaIsol subtable" baa.init_BaaHaaIsol
+Substitution2: "AboveHaaIsol subtable" baa.init_AboveHaaIsol
 Substitution2: "BaaSeenAltInit subtable" baa.init_BaaSeenAltInit
 Substitution2: "BaaMeemIsol subtable" baa.init_BaaMeemIsol
 Substitution2: "BaaBaaMeemInit subtable" baa.init_BaaBaaMeemInit
