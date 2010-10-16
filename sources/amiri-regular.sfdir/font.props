@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1287266201
+ModificationTime: 1287266560
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -295,14 +295,14 @@ EndFPST
 ChainSub2: coverage "'calt' GafDash-2"  0 0 0 1
  1 1 0
   Coverage: 8 dash.gaf
-  BCoverage: 205 kaf.medi kaf.medi_KafLamMedi kaf.init_KafYaaIsol kaf.medi_KafLamAlefFina kaf.medi_KafLamMeemMedi kaf.init_KafBaaInit kaf.medi_KafKafFina kaf.medi_KafMeemLamFina kaf.medi_KafBaaMedi kaf.init_KafMeemAlefIsol
+  BCoverage: 222 kaf.medi kaf.medi_KafLamMedi kaf.init_KafYaaIsol kaf.medi_KafLamAlefFina kaf.medi_KafLamMeemMedi kaf.init_KafBaaInit kaf.medi_KafKafFina kaf.medi_KafMeemLamFina kaf.medi_KafBaaMedi kaf.init_KafMeemAlefIsol kaf.medi_Tatweel
  1
   SeqLookup: 0 "GafDash2" 
 EndFPST
 ChainSub2: coverage "'calt' GafDash-1"  0 0 0 1
  1 1 0
   Coverage: 8 dash.gaf
-  BCoverage: 83 kaf.medi_KafMeemMedi kaf.init_KafMeemInit kaf.init_KafMeemIsol kaf.medi_KafMeemFina
+  BCoverage: 105 kaf.medi_KafMeemMedi kaf.init_KafMeemInit kaf.init_KafMeemIsol kaf.medi_KafMeemFina kaf.init_AboveHaaIsol
  1
   SeqLookup: 0 "GafDash1" 
 EndFPST
