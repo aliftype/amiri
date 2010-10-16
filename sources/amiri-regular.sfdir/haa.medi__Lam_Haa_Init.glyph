@@ -1,7 +1,7 @@
 
 StartChar: haa.medi_LamHaaInit
 Encoding: 65662 -1 142
-Width: 214
+Width: 154
 VWidth: 0
 Flags: W
 AnchorPoint: "DotBelow" 593 -260 basechar 0
@@ -10,7 +10,7 @@ AnchorPoint: "TwoDotsBelow" 482 -260 basechar 0
 AnchorPoint: "TwoDotsAbove" 929 900 basechar 0
 AnchorPoint: "HamzaAbove" 1040 900 basechar 0
 AnchorPoint: "DotAbove" 1040 900 basechar 0
-AnchorPoint: "cursive" 214 506 entry 0
+AnchorPoint: "cursive" 154 506 entry 0
 LayerCount: 2
 Back
 SplineSet

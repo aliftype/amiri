@@ -67,6 +67,7 @@ SplineSet
  241 525 241 525 253 544 c 1,32,33
  206 618 206 618 168 616 c 0,25,26
 EndSplineSet
+Substitution2: "AboveHaaIsol subtable" faa.init_FaaHaaInit
 Substitution2: "FaaYaaIsol subtable" faa.init_FaaYaaIsol
 Substitution2: "FaaHaaInit subtable" faa.init_FaaHaaInit
 Substitution2: "FaaMeemInit subtable" faa.init_FaaMeemInit

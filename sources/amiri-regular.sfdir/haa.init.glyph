@@ -113,6 +113,7 @@ SplineSet
  9 413 9 413 -1.5 422.5 c 128,-1,28
  -12 432 -12 432 -8 447 c 0,0,1
 EndSplineSet
+Substitution2: "AboveHaaIsol subtable" haa.init_AboveHaaIsol
 Substitution2: "Finjani subtable" haa.init_Finjani
 Substitution2: "HaaRaaIsol subtable" haa.init_HaaRaaIsol
 Substitution2: "HaaMeemInit subtable" haa.init_HaaMeemInit
