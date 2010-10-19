@@ -24,6 +24,7 @@ def fake_marks(font):
     mark = 0x064B
     while mark <= 0x0652:
         glyph = font.createChar(mark)
+        glyph.glyphclass = "mark"
         pen = glyph.glyphPen()
         pen.moveTo((100,100))
         pen.lineTo((100,200))
