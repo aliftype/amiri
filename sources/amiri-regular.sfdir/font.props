@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1287266560
+ModificationTime: 1288083605
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -406,7 +406,7 @@ EndFPST
 ChainSub2: coverage "'calt' HighBaa subtable"  0 0 0 1
  1 1 1
   Coverage: 8 baa.medi
-  BCoverage: 48 baa.medi seen.init seen.medi baa.medi_BaaBaaInit
+  BCoverage: 66 baa.medi sad.init sad.medi seen.init seen.medi baa.medi_BaaBaaInit
   FCoverage: 74 baa.fina baa.medi seen.fina seen.medi baa.medi_BaaHehMedi seen.medi_PreYaa
  1
   SeqLookup: 0 "HighBaa" 
