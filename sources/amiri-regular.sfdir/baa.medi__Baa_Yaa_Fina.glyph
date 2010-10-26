@@ -3,8 +3,8 @@ StartChar: baa.medi_BaaYaaFina
 Encoding: 65838 -1 313
 Width: 630
 VWidth: 0
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
-AnchorPoint: "TashkilAbove" 0 200 basechar 0
+AnchorPoint: "TashkilBelow" 400 -800 basechar 0
+AnchorPoint: "TashkilAbove" 200 800 basechar 0
 AnchorPoint: "TwoDotsBelow" 400 -800 basechar 0
 AnchorPoint: "TwoDotsAbove" 100 800 basechar 0
 AnchorPoint: "HamzaBelow" 400 -800 basechar 0
