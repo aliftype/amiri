@@ -4,6 +4,8 @@ Encoding: 65597 -1 46
 Width: 1245
 VWidth: 0
 Flags: W
+AnchorPoint: "TashkilBelow" 0 -200 basechar 0
+AnchorPoint: "TashkilAbove" 0 200 basechar 0
 AnchorPoint: "TwoDotsAbove" 849 740 basechar 0
 AnchorPoint: "DotAbove" 960 740 basechar 0
 AnchorPoint: "HamzaAbove" 960 740 basechar 0

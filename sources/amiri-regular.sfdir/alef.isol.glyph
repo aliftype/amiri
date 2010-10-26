@@ -3,6 +3,8 @@ StartChar: alef.isol
 Encoding: 65538 -1 2
 Width: 446
 VWidth: 0
+AnchorPoint: "TashkilBelow" 0 -200 basechar 0
+AnchorPoint: "TashkilAbove" 0 200 basechar 0
 AnchorPoint: "HamzaAbove" 166 1630 basechar 0
 AnchorPoint: "HamzaBelow" 330 -80 basechar 0
 LayerCount: 2
