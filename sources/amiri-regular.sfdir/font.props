@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1288093599
+ModificationTime: 1288094005
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -190,6 +190,7 @@ Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerni
 Lookup: 264 131088 0 "'kern' SnakeRaaBaa"  {"'kern' SnakeRaaBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 264 131088 0 "'kern' AlefBaa"  {"'kern' AlefBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 264 262160 0 "'kern' RaaAlef"  {"'kern' RaaAlef-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -203,7 +204,6 @@ Lookup: 260 0 0 "'mark' Small Taa"  {"'mark' Small Taa-1"  } ['mark' ('DFLT' <'d
 Lookup: 260 0 0 "'mark' Ring Below"  {"'mark' Ring Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  "SnakeRaaBaa-2"  } []
 Lookup: 257 0 0 "RaaAlef"  {"RaaAlef-1"  } []
 MarkAttachClasses: 1
