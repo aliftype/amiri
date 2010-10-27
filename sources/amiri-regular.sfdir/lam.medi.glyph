@@ -4,9 +4,9 @@ Encoding: 65586 -1 35
 Width: 405
 VWidth: 0
 Flags: W
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
-AnchorPoint: "TashkilAbove" 0 200 basechar 0
-AnchorPoint: "VAbove" 133 1526 basechar 0
+AnchorPoint: "TashkilBelow" 190 -200 basechar 0
+AnchorPoint: "TashkilAbove" 130 1530 basechar 0
+AnchorPoint: "VAbove" 130 1530 basechar 0
 LayerCount: 2
 Back
 SplineSet

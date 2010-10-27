@@ -4,10 +4,10 @@ Encoding: 65615 -1 60
 Width: 1540
 VWidth: 0
 Flags: W
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
-AnchorPoint: "TashkilAbove" 1183 1003 basechar 0
-AnchorPoint: "TwoDotsAbove" 1072 1003 basechar 0
-AnchorPoint: "DotAbove" 1183 1003 basechar 0
+AnchorPoint: "TashkilBelow" 800 -200 basechar 0
+AnchorPoint: "TashkilAbove" 1200 1000 basechar 0
+AnchorPoint: "TwoDotsAbove" 1070 1000 basechar 0
+AnchorPoint: "DotAbove" 1180 1000 basechar 0
 LayerCount: 2
 Back
 SplineSet

@@ -4,7 +4,7 @@ Encoding: 65595 -1 44
 Width: 3552
 VWidth: -240
 Flags: W
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
+AnchorPoint: "TashkilBelow" 1200 -500 basechar 0
 AnchorPoint: "TashkilAbove" 2200 560 basechar 0
 AnchorPoint: "TwoDotsAbove" 2089 560 basechar 0
 AnchorPoint: "HamzaAbove" 2200 560 basechar 0
@@ -53,7 +53,7 @@ SplineSet
  123 233 123 233 134.5 252 c 128,-1,15
  146 271 146 271 170 255 c 0,16,17
  466 62 466 62 932 -60 c 1,18,19
- 1556 -225 1556 -225 2242 -150 c 1,20,21
+ 1556 -225 1556 -225 2242 -150 c 0,20,21
  2815 -86 2815 -86 3084 44 c 0,22,23
  3255 126 3255 126 3333 235 c 0,24,25
  3339 243 3339 243 3338 256 c 0,26,27
