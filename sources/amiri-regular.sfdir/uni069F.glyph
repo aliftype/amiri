@@ -7,9 +7,9 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 62 -1 N 1 0 0 1 -37 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" taa.isol
-MultipleSubs2: "'fina' Terminal Forms-1" taa.fina
-MultipleSubs2: "'medi' Medial   Forms-1" taa.medi
-MultipleSubs2: "'init' Initial  Forms-1" taa.init
+MultipleSubs2: "'isol' Isolated Forms-1" taa.isol threedots.above
+MultipleSubs2: "'fina' Terminal Forms-1" taa.fina threedots.above
+MultipleSubs2: "'medi' Medial   Forms-1" taa.medi threedots.above
+MultipleSubs2: "'init' Initial  Forms-1" taa.init threedots.above
 Colour: ffff00
 EndChar

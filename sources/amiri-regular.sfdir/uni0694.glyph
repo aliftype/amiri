@@ -7,7 +7,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 51 -1 N 1 0 0 1 1 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" raa.isol
-MultipleSubs2: "'fina' Terminal Forms-1" raa.fina
+MultipleSubs2: "'isol' Isolated Forms-1" raa.isol dot.below
+MultipleSubs2: "'fina' Terminal Forms-1" raa.fina dot.below
 Colour: ffff00
 EndChar

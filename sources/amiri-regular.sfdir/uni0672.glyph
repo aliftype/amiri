@@ -1,12 +1,13 @@
 
-StartChar: uni0675
-Encoding: 1653 1653 341
+StartChar: uni0672
+Encoding: 1650 1650 532
 Width: 446
 VWidth: 0
+Flags: W
 LayerCount: 2
 Fore
 Refer: 2 -1 N 1 0 0 1 -88 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" alef.isol
 MultipleSubs2: "'fina' Terminal Forms-1" alef.fina
+MultipleSubs2: "'isol' Isolated Forms-1" alef.isol
 Colour: ff0000
 EndChar

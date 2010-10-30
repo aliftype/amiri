@@ -7,9 +7,9 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 30 -1 N 1 0 0 1 -3 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" kaf.isol dash.kaf hamza.kaf
-MultipleSubs2: "'fina' Terminal Forms-1" kaf.fina dash.kaf hamza.kaf
-MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi
-MultipleSubs2: "'init' Initial  Forms-1" kaf.init
+MultipleSubs2: "'isol' Isolated Forms-1" kaf.isol hamza.kaf dot.above
+MultipleSubs2: "'fina' Terminal Forms-1" kaf.fina hamza.kaf dot.above
+MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi dot.above
+MultipleSubs2: "'init' Initial  Forms-1" kaf.init dot.above
 Colour: ffff00
 EndChar
