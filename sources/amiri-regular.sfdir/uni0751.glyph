@@ -7,9 +7,9 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 9 -1 N 1 0 0 1 -1 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" baa.isol
-MultipleSubs2: "'fina' Terminal Forms-1" baa.fina
-MultipleSubs2: "'medi' Medial   Forms-1" baa.medi
-MultipleSubs2: "'init' Initial  Forms-1" baa.init
+MultipleSubs2: "'isol' Isolated Forms-1" baa.isol threedots.above dot.below
+MultipleSubs2: "'fina' Terminal Forms-1" baa.fina threedots.above dot.below
+MultipleSubs2: "'medi' Medial   Forms-1" baa.medi threedots.above dot.below
+MultipleSubs2: "'init' Initial  Forms-1" baa.init threedots.above dot.below
 Colour: ffff00
 EndChar
