@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1288724497
+ModificationTime: 1288732267
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -201,7 +201,7 @@ Lookup: 260 0 0 "'mark' Two Dots Below Alt"  {"'mark' Two Dots Below Alt-1"  } [
 Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' V Mark Above"  {"'mark' V Mark Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Small Taa"  {"'mark' Small Taa-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Small Taa Above"  {"'mark' Small Taa Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Ring Below"  {"'mark' Ring Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -1243,9 +1243,9 @@ LangName: 3073 "" "" "+BjkGJwYvBkoA" "" "" "" "" "" "" "+BkUGLQZFBi8A +BiwGOQZBB
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL without afii
-DisplaySize: -96
+DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1884 12 6
-AnchorClass2: "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "Ring"  "'mark' Ring Below-1" "Taa"  "'mark' Small Taa-1" "DashDash"  "'mkmk' Dash To Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
+WinInfo: 65504 32 13
+AnchorClass2: "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "Ring"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "DashDash"  "'mkmk' Dash To Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
