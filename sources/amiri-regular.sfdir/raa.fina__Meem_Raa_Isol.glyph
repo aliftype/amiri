@@ -4,10 +4,11 @@ Encoding: 65727 -1 206
 Width: 1070
 VWidth: 0
 Flags: W
+AnchorPoint: "DotBelow" 370 -700 basechar 0
 AnchorPoint: "RingBelow" 368 -266 basechar 0
 AnchorPoint: "VAbove" 728 1000 basechar 0
 AnchorPoint: "TaaAbove" 728 1000 basechar 0
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
+AnchorPoint: "TashkilBelow" 370 -550 basechar 0
 AnchorPoint: "TashkilAbove" 728 1124 basechar 0
 AnchorPoint: "DotAbove" 728 1124 basechar 0
 AnchorPoint: "cursive" 1070 387 entry 0
