@@ -4,6 +4,7 @@ import fontforge
 import sys
 import os
 
+#XXX: different flags for web and desktop fonts
 flags  = ("opentype", "dummy-dsig", "round", "short-post")
 
 def generate_css(font, out, base):
@@ -84,6 +85,7 @@ def main(sfds, out):
             css += generate_css(font, out, base)
         else:
             class2pair(font, True)
+            #XXX: should be done for web fonts only
             font.appendSFNTName ("English (US)", "License", "OFL v1.1")
             font.generate(out, flags=flags)
 
