@@ -4,9 +4,9 @@ Encoding: 65636 -1 116
 Width: 389
 VWidth: 0
 Flags: W
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
-AnchorPoint: "TashkilAbove" 0 200 basechar 0
-AnchorPoint: "VAbove" 120 1644 basechar 0
+AnchorPoint: "TashkilBelow" 150 -200 basechar 0
+AnchorPoint: "TashkilAbove" 0 1550 basechar 0
+AnchorPoint: "VAbove" 120 1650 basechar 0
 AnchorPoint: "cursive" 389 96 entry 0
 LayerCount: 2
 Back
