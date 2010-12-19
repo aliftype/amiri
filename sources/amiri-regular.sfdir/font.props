@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1292794681
+ModificationTime: 1292795223
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -214,9 +214,9 @@ Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  "SnakeRaaBaa-2"  } []
 Lookup: 257 0 0 "RaaAlef"  {"RaaAlef-1"  } []
 MarkAttachClasses: 1
 MarkAttachSets: 7
-"DotsHamzaAbove" 105 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above
-"DotsBelowArabic" 23 dot.below twodots.below
-"DotsHamzaBelowArabic" 35 dot.below twodots.below hamza.below
+"DotsHamzaAbove" 120 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above fourdots.above
+"DotsBelowArabic" 72 dot.below twodots.below dot.below.alt1 twodots.below.alt1 fourdots.below
+"DotsHamzaBelowArabic" 84 dot.below twodots.below hamza.below dot.below.alt1 twodots.below.alt1 fourdots.below
 "DashGaf" 8 dash.gaf
 "HamzaBelow" 11 hamza.below
 "TashkilAboveDots" 168 uni064B uni064C uni064E uni064F uni0651 uni0652 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above fourdots.above
