@@ -6,14 +6,14 @@ VWidth: 0
 Flags: W
 AnchorPoint: "RingBelow" 104 732 basechar 0
 AnchorPoint: "TaaAbove" -83 1030 basechar 0
-AnchorPoint: "TashkilBelow" 267 -350 basechar 0
-AnchorPoint: "TashkilAbove" -83 1230 basechar 0
+AnchorPoint: "TashkilBelow" 350 -200 basechar 0
+AnchorPoint: "TashkilAbove" 50 1530 basechar 0
 AnchorPoint: "DotBelow" 267 -350 basechar 0
 AnchorPoint: "HamzaBelow" 267 -200 basechar 0
 AnchorPoint: "TwoDotsBelow" 157 -350 basechar 0
-AnchorPoint: "TwoDotsAbove" -194 1230 basechar 0
-AnchorPoint: "DotAbove" -83 1230 basechar 0
-AnchorPoint: "HamzaAbove" -83 1230 basechar 0
+AnchorPoint: "TwoDotsAbove" -94 1230 basechar 0
+AnchorPoint: "DotAbove" 17 1230 basechar 0
+AnchorPoint: "HamzaAbove" 17 1230 basechar 0
 AnchorPoint: "cursive" 288 575 entry 0
 AnchorPoint: "cursive" 0 270 exit 0
 LayerCount: 2
