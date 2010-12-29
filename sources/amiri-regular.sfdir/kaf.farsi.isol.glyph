@@ -4,8 +4,13 @@ Encoding: 65915 -1 557
 Width: 1347
 VWidth: 0
 Flags: W
-AnchorPoint: "Dash" 1541 1984 basechar 0
+AnchorPoint: "RingBelow" 1600 1920 basechar 0
+AnchorPoint: "DotAbove" 770 1800 basechar 0
+AnchorPoint: "TwoDotsAbove" 660 1800 basechar 0
 AnchorPoint: "TashkilBelow" 600 -200 basechar 0
+AnchorPoint: "DotBelow" 600 -200 basechar 0
+AnchorPoint: "TwoDotsBelow" 490 -200 basechar 0
+AnchorPoint: "Dash" 1541 1984 basechar 0
 AnchorPoint: "TashkilAbove" 420 1150 basechar 0
 AnchorPoint: "HamzaAbove" 420 620 basechar 0
 LayerCount: 2

@@ -4,9 +4,14 @@ Encoding: 65902 -1 511
 Width: 1010
 VWidth: 0
 Flags: W
-AnchorPoint: "TashkilBelow" 0 -200 basechar 0
-AnchorPoint: "TashkilAbove" 0 200 basechar 0
 AnchorPoint: "Dash" 510 1470 basechar 0
+AnchorPoint: "TashkilAbove" 460 1500 basechar 0
+AnchorPoint: "TashkilBelow" 660 -200 basechar 0
+AnchorPoint: "TwoDotsAbove" -34 1252 basechar 0
+AnchorPoint: "DotAbove" 76 1252 basechar 0
+AnchorPoint: "TwoDotsBelow" 550 -200 basechar 0
+AnchorPoint: "DotBelow" 660 -200 basechar 0
+AnchorPoint: "RingBelow" 650 1280 basechar 0
 LayerCount: 2
 Fore
 SplineSet
