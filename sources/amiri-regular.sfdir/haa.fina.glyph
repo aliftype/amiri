@@ -4,6 +4,7 @@ Encoding: 65565 -1 19
 Width: 1310
 VWidth: 0
 Flags: W
+AnchorPoint: "TaaAbove" 700 900 basechar 0
 AnchorPoint: "TashkilBelow" 800 -200 basechar 0
 AnchorPoint: "TashkilAbove" 700 900 basechar 0
 AnchorPoint: "TwoDotsBelow" 689 -320 basechar 0
