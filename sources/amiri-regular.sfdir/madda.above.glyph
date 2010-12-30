@@ -1,12 +1,23 @@
 
 StartChar: madda.above
-Encoding: 1619 1619 464
+Encoding: 1619 1619 463
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: H
 AnchorPoint: "HamzaAbove" 0 950 mark 0
 LayerCount: 2
 Fore
-Refer: 36 -1 N 1 0 0 1 -453 900 2
-Colour: ffff00
+SplineSet
+401 1178 m 0,0,1
+ 439 1188 439 1188 450.5 1156 c 128,-1,2
+ 462 1124 462 1124 433 1105 c 0,3,4
+ 213 960 213 960 -282 975 c 1,5,6
+ -300 934 -300 934 -318.5 913.5 c 128,-1,7
+ -337 893 -337 893 -349 906 c 2,8,-1
+ -444 1003 l 1,9,10
+ -472 1029 -472 1029 -380 1135 c 0,11,12
+ -363 1154 -363 1154 -323 1147 c 0,13,14
+ 41 1088 41 1088 401 1178 c 0,0,1
+EndSplineSet
 EndChar

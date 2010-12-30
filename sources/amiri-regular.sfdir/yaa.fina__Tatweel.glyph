@@ -1,6 +1,6 @@
 
 StartChar: yaa.fina_Tatweel
-Encoding: 65903 -1 512
+Encoding: 65903 -1 511
 Width: 1472
 VWidth: -290
 Flags: W
@@ -21,5 +21,5 @@ SplineSet
  1145 183 1145 183 1214 185 c 0,9,10
  1384 190 1384 190 1474 185 c 0,0,1
 EndSplineSet
-Refer: 66 -1 N 1 0 0 1 0 0 2
+Refer: 65 -1 N 1 0 0 1 0 0 2
 EndChar
