@@ -15,6 +15,7 @@ Descent: 410
 LayerCount: 2
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 862 584604386 637949]
 FSType: 0
 OS2Version: 4
@@ -203,6 +204,7 @@ Lookup: 260 0 0 "'mark' V Mark Above"  {"'mark' V Mark Above-1"  } ['mark' ('DFL
 Lookup: 260 0 0 "'mark' Small Taa Above"  {"'mark' Small Taa Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Ring Below"  {"'mark' Ring Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Dash To Dash"  {"'mkmk' Dash To Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Tashkil Above Base"  {"'mark' Tashkil Above Base-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Tashkil Below Base"  {"'mark' Tashkil Below Base-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Above"  {"'mkmk' Tashkil to Tashkil Above-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -1248,6 +1250,6 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65536 32 12
-AnchorClass2: "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
+WinInfo: 1536 32 12
+AnchorClass2: "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "DashDash"  "'mkmk' Dash To Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
