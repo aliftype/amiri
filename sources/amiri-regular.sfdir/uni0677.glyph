@@ -7,7 +7,8 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 65 -1 N 1 0 0 1 -1 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" waw.isol
-MultipleSubs2: "'fina' Terminal Forms-1" waw.fina
+MultipleSubs2: "'isol' Isolated Forms-1" waw.isol uni064F uni0674
+MultipleSubs2: "'fina' Terminal Forms-1" waw.fina uni064F uni0674
+Comment: "Check +ACIGKAZEBncAIgAA" 
 Colour: ff0000
 EndChar
