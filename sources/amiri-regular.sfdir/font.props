@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1293664645
+ModificationTime: 1293741258
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -213,13 +213,13 @@ Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  "SnakeRaaBaa-2"  } []
 Lookup: 257 0 0 "RaaAlef"  {"RaaAlef-1"  } []
 MarkAttachClasses: 1
 MarkAttachSets: 7
-"DotsHamzaAbove" 120 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above fourdots.above
-"DotsBelowArabic" 72 dot.below twodots.below dot.below.alt1 twodots.below.alt1 fourdots.below
+"DotsHamzaAbove" 172 hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above uni065A uni065B
+"DotsBelowArabic" 83 dot.below twodots.below dot.below.alt1 twodots.below.alt1 fourdots.below ring.below
 "DotsHamzaBelowArabic" 84 dot.below twodots.below hamza.below dot.below.alt1 twodots.below.alt1 fourdots.below
 "DashGaf" 8 dash.gaf
 "HamzaBelow" 11 hamza.below
-"TashkilAboveDots" 168 uni064B uni064C uni064E uni064F uni0651 uni0652 hamza.above dot.above twodots.above threedots.above threedotsinverted.above smalltaa.above vtwodots.above fourdots.above
-"TashkilBelowDots" 155 uni064D uni0650 hamza.below dot.below dot.below.alt1 twodots.below twodots.below.alt1 threedots.below threedotsinverted.below vtwodots.below fourdots.below
+"TashkilAboveDots" 220 uni064B uni064C uni064E uni064F uni0651 uni0652 uni065A uni065B hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above
+"TashkilBelowDots" 202 uni064D uni0650 hamza.below dot.below dot.below.alt1 twodots.below twodots.below.alt1 threedots.below threedots.below.horizontal threedots.below.inverted twodots.below.vertical fourdots.below ring.below
 DEI: 91125
 KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1" 
  194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
@@ -1248,6 +1248,6 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1632 32 12
+WinInfo: 65536 32 12
 AnchorClass2: "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
