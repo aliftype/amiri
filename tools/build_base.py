@@ -8,7 +8,7 @@ def buildAccented(data, glyph):
         if len(ccmp) > 3:
             glyph.appendAccent(name=ccmp[3])
 
-        return 1
+        return True
 
 def drawBbox(data, glyph):
     if data:
@@ -29,10 +29,6 @@ def drawBbox(data, glyph):
 
         pen = None
 
-    if data == 1:
-        glyph.right_side_bearing = 0
-        glyph.left_side_bearing  = 0
-
 def buildBase(data, font):
     selection = font.selection.byGlyphs
     for g in selection:
@@ -40,4 +36,4 @@ def buildBase(data, font):
 
 fontforge.registerMenuItem(buildBase,     None, None, "Font",  None, "Bulaq", "Base", "Build base glyphs")
 fontforge.registerMenuItem(buildAccented, None, None, "Glyph", None, "Bulaq", "Base", "Build glyph from 'ccmp'")
-fontforge.registerMenuItem(drawBbox,      None,    2, "Glyph", None, "Bulaq", "Base", "Draw bounding box'")
+fontforge.registerMenuItem(drawBbox,      None, True, "Glyph", None, "Bulaq", "Base", "Draw bounding box'")
