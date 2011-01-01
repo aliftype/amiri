@@ -6,7 +6,8 @@ def buildAccented(box, glyph):
         glyph.useRefsMetrics(ccmp[2])
 
         if len(ccmp) > 3:
-            glyph.appendAccent(name=ccmp[3])
+            for accent in ccmp[3:]:
+                glyph.appendAccent(accent)
 
         if box:
             drawBbox(glyph)
