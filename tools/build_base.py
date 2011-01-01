@@ -1,6 +1,6 @@
 def buildAccented(data, glyph):
-    if len(glyph.getPosSub("'ccmp' Glyph Decomposition-1")) == 1:
-        ccmp = glyph.getPosSub("'ccmp' Glyph Decomposition-1")[0]
+    if len(glyph.getPosSub("'isol' Isolated Forms-1")) == 1:
+        ccmp = glyph.getPosSub("'isol' Isolated Forms-1")[0]
         glyph.clear()
         glyph.addReference(ccmp[2])
         glyph.useRefsMetrics(ccmp[2])
