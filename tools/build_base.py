@@ -1,4 +1,4 @@
-def buildAccented(data, glyph):
+def buildAccented(box, glyph):
     if len(glyph.getPosSub("'isol' Isolated Forms-1")) == 1:
         ccmp = glyph.getPosSub("'isol' Isolated Forms-1")[0]
         glyph.clear()
@@ -8,32 +8,33 @@ def buildAccented(data, glyph):
         if len(ccmp) > 3:
             glyph.appendAccent(name=ccmp[3])
 
-        return True
+        if box:
+            drawBbox(glyph)
 
-def drawBbox(data, glyph):
-    if data:
-        bbox = glyph.boundingBox()
-        xmin = bbox[0]
-        ymin = bbox[1]
-        xmax = bbox[2]
-        ymax = bbox[3]
+def drawBbox(glyph):
+    bbox = glyph.boundingBox()
+    xmin = bbox[0]
+    ymin = bbox[1]
+    xmax = bbox[2]
+    ymax = bbox[3]
 
-        pen  = glyph.glyphPen(replace=False)
+    pen  = glyph.glyphPen(replace=False)
 
-        pen.moveTo(xmin, ymin)
-        pen.lineTo(xmax, ymin)
-        pen.lineTo(xmax, ymax)
-        pen.lineTo(xmin, ymax)
-        pen.lineTo(xmin, ymin)
-        pen.closePath()
+    pen.moveTo(xmin, ymin)
+    pen.lineTo(xmax, ymin)
+    pen.lineTo(xmax, ymax)
+    pen.lineTo(xmin, ymax)
+    pen.lineTo(xmin, ymin)
+    pen.closePath()
 
-        pen = None
+    pen = None
 
-def buildBase(data, font):
+def buildBase(box, font):
     selection = font.selection.byGlyphs
     for g in selection:
-        drawBbox(buildAccented(data, g), g)
+        buildAccented(box, g)
 
-fontforge.registerMenuItem(buildBase,     None, None, "Font",  None, "Bulaq", "Base", "Build base glyphs")
-fontforge.registerMenuItem(buildAccented, None, None, "Glyph", None, "Bulaq", "Base", "Build glyph from 'ccmp'")
-fontforge.registerMenuItem(drawBbox,      None, True, "Glyph", None, "Bulaq", "Base", "Draw bounding box'")
+fontforge.registerMenuItem(buildBase,     None, None, "Font",  None, "Amiri", "Build base glyphs")
+fontforge.registerMenuItem(buildBase,     None, True, "Font",  None, "Amiri", "Build base glyphs (boxed)")
+fontforge.registerMenuItem(buildAccented, None, None, "Glyph", None, "Amiri", "Build base glyph")
+fontforge.registerMenuItem(buildAccented, None, True, "Glyph", None, "Amiri", "Build base glyph (boxed)")
