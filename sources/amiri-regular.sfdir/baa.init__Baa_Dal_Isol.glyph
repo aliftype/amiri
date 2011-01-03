@@ -4,6 +4,8 @@ Encoding: 65691 -1 169
 Width: 349
 VWidth: 0
 Flags: W
+AnchorPoint: "TwoDotsBelowAlt" -31 -750 basechar 0
+AnchorPoint: "DotBelowAlt" 80 -750 basechar 0
 AnchorPoint: "HighHamza" 310 1024 basechar 0
 AnchorPoint: "VAbove" 110 1024 basechar 0
 AnchorPoint: "RingBelow" 100 100 basechar 0

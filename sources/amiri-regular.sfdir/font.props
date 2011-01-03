@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1294010302
+ModificationTime: 1294068251
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -339,7 +339,7 @@ EndFPST
 ChainSub2: coverage "'calt' RaaBaaDot-1"  0 0 0 1
  1 2 0
   Coverage: 23 dot.below twodots.below
-  BCoverage: 167 baa.init baa.init_BaaRaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High
+  BCoverage: 273 baa.init baa.init_BaaRaaIsol baa.init_BaaYaaIsol baa.init_BaaDalIsol baa.init_BaaMeemHaaInit baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaMeemInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaMeemIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High
   BCoverage: 194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
  1
   SeqLookup: 0 "RaaBaaDot" 
@@ -1255,6 +1255,6 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65536 32 12
+WinInfo: 65504 32 12
 AnchorClass2: "DotHmaza"  "'mkmk' Dot above Hamza-1" "HighHamza"  "'mark' High Hamza-1" "Tail"  "'mark' Yaa Tail-1" "RingDash"  "'mkmk' Ring to Dash-1" "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "DashDash"  "'mkmk' Dash to Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
