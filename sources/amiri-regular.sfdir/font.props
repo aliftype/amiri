@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1294086494
+ModificationTime: 1294089217
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -194,7 +194,7 @@ Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'d
 Lookup: 260 0 0 "'mark' Dot Alt"  {"'mark' Dot Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Below"  {"'mark' Two Dots Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 264 0 0 "'mark' Contextual Dots Below"  {"'mark' Contextual Dots Below-1"  "'mark' Contextual Dots Below-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 264 589840 0 "'mark' Contextual Dots Below"  {"'mark' Contextual Dots Below-1"  "'mark' Contextual Dots Below-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' High Hamza"  {"'mark' High Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -217,9 +217,9 @@ Lookup: 257 0 0 "RaaAlef"  {"RaaAlef-1"  } []
 Lookup: 260 0 0 "Dot Below Alt"  {"Dot Below Alt-1"  } []
 Lookup: 260 0 0 "Two Dots Below Alt"  {"Two Dots Below Alt-1"  } []
 MarkAttachClasses: 1
-MarkAttachSets: 9
+MarkAttachSets: 10
 "DotsHamzaAbove" 172 hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above uni065A uni065B
-"DotsBelowArabic" 49 dot.below twodots.below fourdots.below ring.below
+"DotsBelowArabic" 23 dot.below twodots.below
 "DotsHamzaBelowArabic" 50 dot.below twodots.below hamza.below fourdots.below
 "DashGaf" 8 dash.gaf
 "HamzaBelow" 11 hamza.below
@@ -227,6 +227,7 @@ MarkAttachSets: 9
 "TashkilBelowDots" 168 uni064D uni0650 hamza.below dot.below twodots.below threedots.below threedots.below.horizontal threedots.below.inverted twodots.below.vertical fourdots.below ring.below
 "Dash" 17 dash.gaf dash.kaf
 "DashDots" 48 dash.kaf dot.above twodots.above threedots.above
+"DotsBelow" 129 dot.below twodots.below twodots.below.vertical threedots.below threedots.below.horizontal threedots.below.inverted fourdots.below
 DEI: 91125
 KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1" 
  194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
