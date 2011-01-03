@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1294068251
+ModificationTime: 1294068877
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -235,12 +235,12 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  9 alef.isol
  307 kaf.init kaf.init_KafHehIsol kaf.init_KafMeemLamInit kaf.init_KafMeemInit kaf.init_KafYaaIsol kaf.init_KafLamIsol kaf.init_KafBaaInit kaf.init_KafMeemIsol kaf.init_KafLamAlefIsol kaf.init_KafLamInit kaf.init_KafRaaIsol kaf.init_KafAlefIsol kaf.init_KafDalIsol kaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol
  59 ayn.isol haa.isol faa.init_FaaYaaIsol baa.init_AboveHaaIsol
- 496 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol yaa.isol lam.init_LamHaaInit baa.init_BaaMeemHaaInit haa.init_HaaYaaIsol meem.init_MeemYaaIsol meem.init_MeemRaaIsol haa.init_HaaHaaInit ayn.init_AynYaaIsol ayn.init_AynHaaInit lam.init_LamYaaIsol baa.init_BaaBaaHaaInit haa.init_HaaMeemInit haa.init_HaaRaaIsol baa.init_BaaHaaMeemInit ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
+ 472 ayn.init baa.isol faa.init faa.isol haa.init hamza heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol yaa.isol lam.init_LamHaaInit haa.init_HaaYaaIsol meem.init_MeemYaaIsol meem.init_MeemRaaIsol haa.init_HaaHaaInit ayn.init_AynYaaIsol ayn.init_AynHaaInit lam.init_LamYaaIsol baa.init_BaaBaaHaaInit haa.init_HaaMeemInit haa.init_HaaRaaIsol baa.init_BaaHaaMeemInit ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
  67 kaf.isol lam.init lam.isol lam.init_LamAlefIsol lam.init_LamRaaIsol
- 190 baa.init baa.init_BaaRaaIsol baa.init_BaaBaaYaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High
- 85 baa.init_BaaYaaIsol lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit
+ 231 baa.init baa.init_BaaRaaIsol baa.init_BaaDalIsol baa.init_BaaBaaYaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaMeemIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High
+ 130 baa.init_BaaYaaIsol baa.init_BaaMeemHaaInit lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit baa.init_BaaMeemInit
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  44 sad.init_AboveHaaIsol seen.init_AboveHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
@@ -1255,6 +1255,6 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65504 32 12
+WinInfo: 65536 32 12
 AnchorClass2: "DotHmaza"  "'mkmk' Dot above Hamza-1" "HighHamza"  "'mark' High Hamza-1" "Tail"  "'mark' Yaa Tail-1" "RingDash"  "'mkmk' Ring to Dash-1" "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "'mkmk' Tashkil Below Dot-1" "TashkilAboveDot"  "'mkmk' Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "DashDash"  "'mkmk' Dash to Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont
