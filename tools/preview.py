@@ -54,9 +54,11 @@ def Preview(re, obj):
 
     familyname = font.familyname
     changed = font.changed
+    new_sub = None
 
     font.familyname = "%sPreview" %familyname
-    new_sub = class2pair(font, False)
+    if familyname == "Amiri":
+        new_sub = class2pair(font, False)
     font.generate(ttf,flags=flags)
 
     if new_sub:
