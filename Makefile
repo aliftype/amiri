@@ -1,32 +1,62 @@
-.PHONY: clean
+.PHONY: all clean ttf web pack
 
 VERSION=0.003
 
-src=sources
-build=./tools/build.py
+SRC=sources
+BUILD=./tools/build.py
+FF=python $(BUILD)
+MKEOT=ttf2eot
 
-dist_doc=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar
+SFDS=$(SRC)/amiri-regular.sfdir
+TTFS=$(SFDS:.sfdir=.ttf)
+WOFF=$(SFDS:.sfdir=.woff)
+EOTS=$(SFDS:.sfdir=.eot)
+PACK=$(SFDS:.sfdir=.sfd)
+CSSS=$(SRC)/amiri.css
 
-all:
-	@$(MAKE) -C $(src)
+DOC=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar
 
-dist: all
-	@echo "Making dist tarball"
-	@$(MAKE) pack -C $(src)
-	@mkdir -p amiri-$(VERSION)/$(src)
-	@mkdir -p amiri-$(VERSION)/web
-	@mkdir -p amiri-$(VERSION)/tools
-	@cp -r $(src)/*.sfd amiri-$(VERSION)/$(src)
-	@cp Makefile amiri-$(VERSION)
-	@cp $(src)/Makefile amiri-$(VERSION)/$(src)
-	@cp $(dist_doc) amiri-$(VERSION)
-	@cp $(build) amiri-$(VERSION)/tools
-	@cp $(src)/*.ttf amiri-$(VERSION)
-	@cp $(src)/*.woff amiri-$(VERSION)/web
-	@cp $(src)/*.eot amiri-$(VERSION)/web
-	@cp $(src)/*.css amiri-$(VERSION)/web
-	@tar cfj amiri-$(VERSION).tar.bz2 amiri-$(VERSION)
+all: ttf web
+
+ttf: $(TTFS)
+web: $(WOFF) $(EOTS) $(CSSS)
+pack: $(PACK)
+
+%.ttf : %.sfdir
+	@echo "generating ‛$@’"
+	@$(FF) $< $@
+
+%.woff : %.sfdir
+	@echo "generating ‛$@’"
+	@$(FF) $< $@
+
+%.eot : %.ttf
+	@echo "generating ‛$@’"
+	@$(MKEOT) $< > $@
+
+%.css: $(SFDS)
+	@echo "generating ‛$@’"
+	@$(FF) $^ $@
+
+%.sfd : %.sfdir
+	@echo "packing ‛$<’ into ‛$@’"
+	@$(FF) $< $@
 
 clean:
-	@$(MAKE) -C $(src) clean
-	@rm -rf *.tar.bz2 amiri-$(VERSION)
+	@rm -rfv $(TTFS) $(WOFF) $(EOTS) $(CSSS) $(PACK)
+	@rm -rfv amiri-$(VERSION) amiri-$(VERSION).tar.bz2
+
+dist: all pack
+	@echo "Making dist tarball"
+	@mkdir -p amiri-$(VERSION)/$(SRC)
+	@mkdir -p amiri-$(VERSION)/web
+	@mkdir -p amiri-$(VERSION)/tools
+	@cp -r $(PACK) amiri-$(VERSION)/$(SRC)
+	@cp Makefile amiri-$(VERSION)
+	@cp $(DOC) amiri-$(VERSION)
+	@cp $(BUILD) amiri-$(VERSION)/tools
+	@cp $(TTFS) amiri-$(VERSION)
+	@cp $(WOFF) amiri-$(VERSION)/web
+	@cp $(EOTS) amiri-$(VERSION)/web
+	@cp $(CSSS) amiri-$(VERSION)/web
+	@tar cfj amiri-$(VERSION).tar.bz2 amiri-$(VERSION)
