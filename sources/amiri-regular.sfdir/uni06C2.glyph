@@ -7,9 +7,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 25 -1 N 1 0 0 1 -4 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" heh.isol
-MultipleSubs2: "'fina' Terminal Forms-1" heh.fina
-MultipleSubs2: "'medi' Medial   Forms-1" heh.medi
-MultipleSubs2: "'init' Initial  Forms-1" heh.init
-Colour: ff0000
+MultipleSubs2: "'isol' Isolated Forms-1" heh.isol hamza.above
+MultipleSubs2: "'fina' Terminal Forms-1" heh.fina hamza.above
+Colour: ffff00
 EndChar
