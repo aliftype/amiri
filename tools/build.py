@@ -83,6 +83,8 @@ def main(sfds, out):
 
         if css:
             css += generate_css(font, out, base)
+        elif ext == ".sfd":
+            font.save(out)
         else:
             class2pair(font, True)
             #XXX: should be done for web fonts only

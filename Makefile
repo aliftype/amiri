@@ -12,8 +12,9 @@ all:
 
 dist: all
 	@echo "Making dist tarball"
+	@$(MAKE) pack -C $(src)
 	@mkdir -p amiri-$(VERSION)/{$(src),web,tools}
-	@cp -r $(src)/*.sfdir amiri-$(VERSION)/$(src)
+	@cp -r $(src)/*.sfd amiri-$(VERSION)/$(src)
 	@cp Makefile amiri-$(VERSION)
 	@cp $(src)/Makefile amiri-$(VERSION)/$(src)
 	@cp $(dist_doc) amiri-$(VERSION)
