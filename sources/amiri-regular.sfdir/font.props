@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1294381777
+ModificationTime: 1294382384
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -224,7 +224,7 @@ MarkAttachSets: 10
 "DashGaf" 8 dash.gaf
 "HamzaBelow" 11 hamza.below
 "TashkilAboveDots" 220 uni064B uni064C uni064E uni064F uni0651 uni0652 uni065A uni065B hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above
-"TashkilBelowDots" 181 uni064D uni0650 hamza.below dot.below twodots.below threedots.below threedots.below.inverted twodots.below.vertical ring.below fourdots.below threedots.below.horizontal smallv.below
+"TashkilBelowDots" 203 uni064D uni0650 hamza.below dot.below twodots.below threedots.below threedots.below.inverted twodots.below.vertical ring.below fourdots.below threedots.below.horizontal smallv.below smallv.below.inverted
 "Dash" 17 dash.gaf dash.kaf
 "DashDots" 48 dash.kaf dot.above twodots.above threedots.above
 "DotsBelow" 129 dot.below twodots.below twodots.below.vertical threedots.below threedots.below.horizontal threedots.below.inverted fourdots.below
