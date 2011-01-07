@@ -13,14 +13,18 @@ all:
 dist: all
 	@echo "Making dist tarball"
 	@$(MAKE) pack -C $(src)
-	@mkdir -p amiri-$(VERSION)/{$(src),web,tools}
+	@mkdir -p amiri-$(VERSION)/$(src)
+	@mkdir -p amiri-$(VERSION)/web
+	@mkdir -p amiri-$(VERSION)/tools
 	@cp -r $(src)/*.sfd amiri-$(VERSION)/$(src)
 	@cp Makefile amiri-$(VERSION)
 	@cp $(src)/Makefile amiri-$(VERSION)/$(src)
 	@cp $(dist_doc) amiri-$(VERSION)
 	@cp $(build) amiri-$(VERSION)/tools
 	@cp $(src)/*.ttf amiri-$(VERSION)
-	@cp $(src)/*.{woff,eot,css} amiri-$(VERSION)/web
+	@cp $(src)/*.woff amiri-$(VERSION)/web
+	@cp $(src)/*.eot amiri-$(VERSION)/web
+	@cp $(src)/*.css amiri-$(VERSION)/web
 	@tar cfj amiri-$(VERSION).tar.bz2 amiri-$(VERSION)
 
 clean:
