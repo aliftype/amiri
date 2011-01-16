@@ -5,8 +5,8 @@ Width: 1107
 VWidth: 150
 Flags: W
 AnchorPoint: "DotBelow" 720 100 basechar 0
-AnchorPoint: "TashkilBelow" 720 100 basechar 0
-AnchorPoint: "TashkilAbove" 370 1230 basechar 0
+AnchorPoint: "TashkilBelow" 720 -670 basechar 0
+AnchorPoint: "TashkilAbove" 370 1640 basechar 0
 AnchorPoint: "TwoDotsAbove" 259 1230 basechar 0
 AnchorPoint: "DotAbove" 370 1230 basechar 0
 AnchorPoint: "HamzaAbove" 370 1230 basechar 0

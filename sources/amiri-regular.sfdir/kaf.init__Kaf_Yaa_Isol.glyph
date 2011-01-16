@@ -9,8 +9,8 @@ AnchorPoint: "DotBelow" 400 -300 basechar 0
 AnchorPoint: "RingBelow" 280 1570 basechar 0
 AnchorPoint: "TwoDotsAbove" -352 1622 basechar 0
 AnchorPoint: "DotAbove" -242 1622 basechar 0
-AnchorPoint: "TashkilBelow" 300 -300 basechar 0
-AnchorPoint: "TashkilAbove" 200 1700 basechar 0
+AnchorPoint: "TashkilBelow" 300 -670 basechar 0
+AnchorPoint: "TashkilAbove" 200 1640 basechar 0
 AnchorPoint: "Dash" 298 1820 basechar 0
 AnchorPoint: "cursive" 0 256 exit 0
 LayerCount: 2
