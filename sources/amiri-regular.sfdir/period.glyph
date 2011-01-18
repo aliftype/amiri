@@ -1,0 +1,20 @@
+
+StartChar: period
+Encoding: 46 46 587
+Width: 650
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+192 104 m 256,0,1
+ 192 160 192 160 230 199 c 128,-1,2
+ 268 238 268 238 325 238 c 0,3,4
+ 380 238 380 238 419 199 c 128,-1,5
+ 458 160 458 160 458 104 c 0,6,7
+ 458 49 458 49 419 10 c 128,-1,8
+ 380 -29 380 -29 325 -29 c 0,9,10
+ 268 -29 268 -29 230 9.5 c 128,-1,11
+ 192 48 192 48 192 104 c 256,0,1
+EndSplineSet
+Substitution2: "'locl' Localized Forms-1" period.arabic
+EndChar
