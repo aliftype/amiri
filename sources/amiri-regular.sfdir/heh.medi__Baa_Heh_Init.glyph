@@ -3,8 +3,8 @@ StartChar: heh.medi_BaaHehInit
 Encoding: 65770 -1 245
 Width: 299
 VWidth: 0
-AnchorPoint: "TashkilBelow" 0 -670 basechar 0
-AnchorPoint: "TashkilAbove" 0 1640 basechar 0
+AnchorPoint: "TashkilBelow" 180 -670 basechar 0
+AnchorPoint: "TashkilAbove" 280 1640 basechar 0
 AnchorPoint: "cursive" 299 33 entry 0
 LayerCount: 2
 Back
