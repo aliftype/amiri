@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1295617989
+ModificationTime: 1295621082
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -48,6 +48,8 @@ Lookup: 2 8 0 "'fina' Terminal Forms"  {"'fina' Terminal Forms-1"  } ['fina' ('D
 Lookup: 1 0 0 "'locl' Localized Forms"  {"'locl' Localized Forms-1" ("arabic" ) } ['locl' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "ShaddaCombined"  {"ShaddaCombined-1" ("small" ) } []
 Lookup: 6 0 0 "'calt' ShaddaCombined"  {"'calt' ShaddaCombined-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "HamzaCombined"  {"HamzaCombined-1" ("small2" ) } []
+Lookup: 6 0 0 "'calt' HamzaCombined"  {"'calt' HamzaCombined-1"  "'calt' HamzaCombined-2"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "KafLamHehIsol"  {"KafLamHehIsol subtable"  } []
 Lookup: 1 0 0 "SeenYaaFina"  {"SeenYaaFina subtable"  } []
 Lookup: 1 0 0 "LamHaaHaaInit"  {"LamHaaHaaInit subtable"  } []
@@ -250,6 +252,20 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
  44 sad.init_AboveHaaIsol seen.init_AboveHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
+ChainSub2: coverage "'calt' HamzaCombined-2"  0 0 0 1
+ 2 0 0
+  Coverage: 19 hamza.below uni065F
+  Coverage: 7 uni0650
+ 1
+  SeqLookup: 1 "HamzaCombined" 
+EndFPST
+ChainSub2: coverage "'calt' HamzaCombined-1"  0 0 0 1
+ 2 0 0
+  Coverage: 36 hamza.above hamza.above.wavy uni0674
+  Coverage: 23 uni064E uni064F uni0652
+ 1
+  SeqLookup: 1 "HamzaCombined" 
+EndFPST
 ChainSub2: coverage "'calt' ShaddaCombined-1"  0 0 0 1
  2 0 0
   Coverage: 7 uni0651
