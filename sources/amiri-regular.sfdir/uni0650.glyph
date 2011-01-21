@@ -10,18 +10,6 @@ AnchorPoint: "TashkilTashkilBelow" 535 -1130 basemark 0
 AnchorPoint: "TashkilTashkilBelow" 820 -750 mark 0
 LayerCount: 2
 Fore
-SplineSet
-796 -667 m 24,0,1
- 819 -654 819 -654 831 -670 c 0,2,3
- 838 -679 838 -679 833 -698 c 2,4,-1
- 809 -784 l 2,5,6
- 794 -835 794 -835 753 -858 c 0,7,8
- 545 -967 545 -967 244 -1127 c 0,9,10
- 198 -1150 198 -1150 201 -1099 c 2,11,-1
- 204 -1039 l 2,12,13
- 205 -1012 205 -1012 250 -982 c 0,14,15
- 341 -922 341 -922 538 -813 c 0,16,17
- 658 -746 658 -746 796 -667 c 24,0,1
-EndSplineSet
+Refer: 523 1614 N 1 0 0 1 0 -2700 2
 Substitution2: "HamzaCombined-1" uni0650.small2
 EndChar
