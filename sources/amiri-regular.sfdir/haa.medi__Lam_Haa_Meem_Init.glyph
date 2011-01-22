@@ -7,7 +7,7 @@ Flags: W
 AnchorPoint: "TaaBelow" 741 410 basechar 0
 AnchorPoint: "TaaAbove" 741 1100 basechar 0
 AnchorPoint: "TashkilBelow" 741 -670 basechar 0
-AnchorPoint: "TashkilAbove" 741 1640 basechar 0
+AnchorPoint: "TashkilAbove" 151 1640 basechar 0
 AnchorPoint: "DotAbove" 741 1100 basechar 0
 AnchorPoint: "DotBelow" 741 10 basechar 0
 AnchorPoint: "HamzaAbove" 741 1100 basechar 0
@@ -116,4 +116,6 @@ SplineSet
  16 682 16 682 -113 638 c 24,28,29
  -127 633 -127 633 -125 654 c 0,0,1
 EndSplineSet
+Comment: "XXX: Check +BkQGLQZOBkUGRgAA" 
+Colour: ff0000
 EndChar

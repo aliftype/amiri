@@ -5,7 +5,7 @@ Width: 78
 VWidth: 0
 Flags: W
 AnchorPoint: "TashkilBelow" 100 -670 basechar 0
-AnchorPoint: "TashkilAbove" 0 1640 basechar 0
+AnchorPoint: "TashkilAbove" 100 1640 basechar 0
 AnchorPoint: "cursive" 0 96 exit 0
 AnchorPoint: "cursive" 78 213 entry 0
 LayerCount: 2

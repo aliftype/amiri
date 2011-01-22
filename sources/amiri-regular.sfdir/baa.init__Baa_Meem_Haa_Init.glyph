@@ -11,7 +11,7 @@ AnchorPoint: "VAbove" 91 1726 basechar 0
 AnchorPoint: "RingBelow" 220 1200 basechar 0
 AnchorPoint: "TaaAbove" 91 1526 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
-AnchorPoint: "TashkilAbove" 91 1640 basechar 0
+AnchorPoint: "TashkilAbove" 251 1640 basechar 0
 AnchorPoint: "TwoDotsBelow" 220 -510 basechar 0
 AnchorPoint: "TwoDotsAbove" -20 1726 basechar 0
 AnchorPoint: "DotAbove" 91 1726 basechar 0
@@ -114,4 +114,6 @@ SplineSet
  -144 1144 -144 1144 10 1276 c 0,22,23
  86 1340 86 1340 150 1350 c 0,0,1
 EndSplineSet
+Comment: "XXX: Dots" 
+Colour: ff0000
 EndChar

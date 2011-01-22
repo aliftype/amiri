@@ -7,7 +7,7 @@ Flags: W
 AnchorPoint: "TwoDotsBelow" 550 800 basechar 0
 AnchorPoint: "DotBelow" 600 650 basechar 0
 AnchorPoint: "TashkilBelow" 0 -670 basechar 0
-AnchorPoint: "TashkilAbove" 85 1640 basechar 0
+AnchorPoint: "TashkilAbove" 375 1640 basechar 0
 AnchorPoint: "cursive" 0 510 exit 0
 AnchorPoint: "TwoDotsAbove" -15 1550 basechar 0
 AnchorPoint: "DotAbove" 85 1550 basechar 0
@@ -88,5 +88,6 @@ SplineSet
  151 1036 151 1036 117 1040.5 c 152,-1,30
  83 1045 83 1045 62 1017 c 1,24,25
 EndSplineSet
-Comment: "XXX: disable for three dots below" 
+Comment: "XXX: disable for three dots below+AAoA-XXX: Tashkil width dots" 
+Colour: ff0000
 EndChar
