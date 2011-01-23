@@ -4,7 +4,7 @@ Encoding: 65633 -1 112
 Width: 469
 VWidth: 0
 Flags: W
-AnchorPoint: "TashkilBelow" 600 -670 basechar 0
+AnchorPoint: "TashkilBelow" 417 -670 basechar 0
 AnchorPoint: "TashkilAbove" 200 1640 basechar 0
 AnchorPoint: "cursive" 469 102 entry 0
 LayerCount: 2
@@ -100,4 +100,6 @@ SplineSet
  335 -56 l 1,29,-1
  333 58 l 2,0,1
 EndSplineSet
+Comment: "XXX: Lower tashkil below?" 
+Colour: ff0000
 EndChar

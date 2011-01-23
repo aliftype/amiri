@@ -11,7 +11,7 @@ AnchorPoint: "TwoDotsAbove" 450 350 basechar 0
 AnchorPoint: "DotAbove" 560 350 basechar 0
 AnchorPoint: "VAbove" 460 350 basechar 0
 AnchorPoint: "Tail" 322.256 2.5 basechar 0
-AnchorPoint: "TashkilBelow" 691 -670 basechar 0
+AnchorPoint: "TashkilBelow" 391 -890 basechar 0
 AnchorPoint: "TashkilAbove" 360 1640 basechar 0
 AnchorPoint: "TwoDotsBelow" 580 -1087 basechar 0
 AnchorPoint: "HamzaAbove" 360 350 basechar 0
@@ -113,4 +113,6 @@ SplineSet
  875 -295 875 -295 932 -172 c 0,31,32
  937 -162 937 -162 947 -163 c 0,0,1
 EndSplineSet
+Comment: "XXX: Dot below" 
+Colour: ff0000
 EndChar
