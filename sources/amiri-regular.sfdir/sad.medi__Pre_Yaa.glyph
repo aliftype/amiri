@@ -3,9 +3,9 @@ StartChar: sad.medi_PreYaa
 Encoding: 65860 -1 333
 Width: 1046
 VWidth: 0
+AnchorPoint: "TashkilBelow" 370 -670 basechar 0
 AnchorPoint: "TwoDotsBelow" 400 -350 basechar 0
 AnchorPoint: "DotBelow" 500 -350 basechar 0
-AnchorPoint: "TashkilBelow" 0 -670 basechar 0
 AnchorPoint: "TashkilAbove" 275 1640 basechar 0
 AnchorPoint: "TwoDotsAbove" 164 980 basechar 0
 AnchorPoint: "DotAbove" 275 980 basechar 0
