@@ -4,12 +4,12 @@ Encoding: 65843 -1 317
 Width: 1496
 VWidth: 0
 Flags: W
+AnchorPoint: "TashkilBelow" 754 -740 basechar 0
 AnchorPoint: "AlefAbove" 355 550 basechar 0
 AnchorPoint: "RingBelow" 708 -590 basechar 0
 AnchorPoint: "HighHamza" 655 550 basechar 0
 AnchorPoint: "VAbove" 455 550 basechar 0
 AnchorPoint: "Tail" 317.4 206 basechar 0
-AnchorPoint: "TashkilBelow" 754 -670 basechar 0
 AnchorPoint: "TashkilAbove" 496 1640 basechar 0
 AnchorPoint: "TwoDotsBelow" 642 -991 basechar 0
 AnchorPoint: "TwoDotsAbove" 445 550 basechar 0
@@ -130,4 +130,6 @@ SplineSet
  1291 390 1291 390 1343.5 296 c 128,-1,51
  1396 202 1396 202 1495 185 c 0,0,1
 EndSplineSet
+Comment: "XXX: Dots below tashkil" 
+Colour: ff0000
 EndChar
