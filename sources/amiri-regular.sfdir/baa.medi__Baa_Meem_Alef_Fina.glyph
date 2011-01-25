@@ -13,9 +13,9 @@ AnchorPoint: "TashkilAbove" 450 1640 basechar 0
 AnchorPoint: "DotAbove" 268 800 basechar 0
 AnchorPoint: "HamzaAbove" 268 800 basechar 0
 AnchorPoint: "TwoDotsAbove" 157 800 basechar 0
-AnchorPoint: "TwoDotsBelow" 247 -700 basechar 0
-AnchorPoint: "HamzaBelow" 358 -700 basechar 0
-AnchorPoint: "DotBelow" 358 -700 basechar 0
+AnchorPoint: "TwoDotsBelow" 247 -600 basechar 0
+AnchorPoint: "HamzaBelow" 358 -600 basechar 0
+AnchorPoint: "DotBelow" 358 -600 basechar 0
 AnchorPoint: "cursive" 0 57 exit 0
 LayerCount: 2
 Back
@@ -85,4 +85,5 @@ SplineSet
  599 0 599 0 550 0 c 0,18,19
  453 0 453 0 322 156 c 0,0,1
 EndSplineSet
+Colour: ff0000
 EndChar
