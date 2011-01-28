@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1296167717
+ModificationTime: 1296172683
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -199,7 +199,7 @@ Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'d
 Lookup: 260 0 0 "'mark' Dot Alt"  {"'mark' Dot Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Below"  {"'mark' Two Dots Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 264 589840 0 "'mark' Contextual Dots Below"  {"'mark' Contextual Dots Below-1"  "'mark' Contextual Dots Below-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 264 524304 0 "'mark' Contextual Dots Below"  {"'mark' Contextual Dots Below-1"  "'mark' Contextual Dots Below-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' High Hamza"  {"'mark' High Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -220,13 +220,13 @@ Lookup: 262 327696 0 "Tashkil Above Dot"  {"Tashkil Above Dot-1"  } []
 Lookup: 262 393232 0 "Tashkil Below Dot"  {"Tashkil Below Dot-1"  } []
 Lookup: 262 458768 0 "'mkmk' Dash to Dash"  {"'mkmk' Dash to Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Ring to Dash"  {"'mkmk' Ring to Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 262 524304 0 "'mkmk' Dot above Hamza"  {"'mkmk' Dot above Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Dot above Hamza"  {"'mkmk' Dot above Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  "SnakeRaaBaa-2"  } []
 Lookup: 257 0 0 "RaaAlef"  {"RaaAlef-1"  } []
 Lookup: 260 0 0 "Dot Below Alt"  {"Dot Below Alt-1"  } []
 Lookup: 260 0 0 "Two Dots Below Alt"  {"Two Dots Below Alt-1"  } []
 MarkAttachClasses: 1
-MarkAttachSets: 10
+MarkAttachSets: 9
 "DotsHamzaAbove" 172 hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above uni065A uni065B
 "DotsBelowArabic" 23 dot.below twodots.below
 "DotsHamzaBelowArabic" 50 dot.below twodots.below hamza.below fourdots.below
@@ -235,7 +235,6 @@ MarkAttachSets: 10
 "TashkilAboveDots" 220 uni064B uni064C uni064E uni064F uni0651 uni0652 uni065A uni065B hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above
 "TashkilBelowDots" 218 uni064D uni0650 hamza.below dot.below twodots.below threedots.below threedots.below.inverted twodots.below.vertical ring.below fourdots.below threedots.below.horizontal smallv.below smallv.below.inverted smalltaa.below
 "Dash" 17 dash.gaf dash.kaf
-"DashDots" 48 dash.kaf dot.above twodots.above threedots.above
 "DotsBelow" 129 dot.below twodots.below twodots.below.vertical threedots.below threedots.below.horizontal threedots.below.inverted fourdots.below
 DEI: 91125
 KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1" 
@@ -1299,7 +1298,7 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1530 34 12
+WinInfo: 65552 34 12
 BeginPrivate: 0
 EndPrivate
 AnchorClass2: "MarkDotBelow"  "'mkmk' Mark to Dot Below-1" "MarkDotAbove"  "'mkmk' Mark to Dot Above-1" "AlefAbove"  "'mark' Small Alef Above-1" "TaaBelow"  "'mark' Small Taa Below-1" "DotAlt"  "'mark' Dot Alt-1" "DotHmaza"  "'mkmk' Dot above Hamza-1" "HighHamza"  "'mark' High Hamza-1" "Tail"  "'mark' Yaa Tail-1" "RingDash"  "'mkmk' Ring to Dash-1" "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "Tashkil Below Dot-1" "TashkilAboveDot"  "Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "Two Dots Below Alt-1" "DotBelowAlt"  "Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "DashDash"  "'mkmk' Dash to Dash-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
