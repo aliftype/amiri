@@ -3,10 +3,11 @@ StartChar: uni068B
 Encoding: 1675 1675 439
 Width: 923
 VWidth: 0
-Flags: W
 LayerCount: 2
 Fore
-Refer: 13 -1 N 1 0 0 1 -0 0 3
+Refer: 458 -1 N 1 0 0 1 500 -440 2
+Refer: 485 -1 N 1 0 0 1 420 1100 2
+Refer: 13 -1 N 1 0 0 1 0 0 3
 MultipleSubs2: "'isol' Isolated Forms-1" dal.isol smalltaa.above dot.below
 MultipleSubs2: "'fina' Terminal Forms-1" dal.fina smalltaa.above dot.below
 Colour: ffff00

@@ -3,10 +3,11 @@ StartChar: uni06A3
 Encoding: 1699 1699 397
 Width: 2015
 VWidth: 0
-Flags: W
 LayerCount: 2
 Fore
-Refer: 17 -1 N 1 0 0 1 -4 0 3
+Refer: 498 -1 N 1 0 0 1 1000 -440 2
+Refer: 455 -1 N 1 0 0 1 1300 1210 2
+Refer: 17 -1 N 1 0 0 1 0 0 3
 MultipleSubs2: "'isol' Isolated Forms-1" faa.isol dot.above dot.alt1
 MultipleSubs2: "'fina' Terminal Forms-1" faa.fina dot.above dot.alt1
 MultipleSubs2: "'medi' Medial   Forms-1" faa.medi dot.above dot.below

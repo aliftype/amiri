@@ -3,10 +3,10 @@ StartChar: uni0677
 Encoding: 1655 1655 359
 Width: 1121
 VWidth: 0
-Flags: W
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 -1 0 3
+Refer: 597 -1 N 1 0 0 1 710 -50 2
+Refer: 64 -1 N 1 0 0 1 0 0 3
 MultipleSubs2: "'isol' Isolated Forms-1" waw.isol hamzadamma.mark
 MultipleSubs2: "'fina' Terminal Forms-1" waw.fina hamzadamma.mark
 Comment: "Check final form clash with previous glyphs." 

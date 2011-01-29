@@ -3,10 +3,12 @@ StartChar: uni06AF
 Encoding: 1711 1711 465
 Width: 1347
 VWidth: 0
-Flags: W
 LayerCount: 2
 Fore
-Refer: 30 -1 N 1 0 0 1 -3 0 3
+Refer: 476 -1 N 1 0 0 1 420 620 2
+Refer: 483 -1 N 1 0 0 1 1693 1937 2
+Refer: 477 -1 N 1 0 0 1 1880 1656 2
+Refer: 30 -1 N 1 0 0 1 0 0 3
 MultipleSubs2: "'fina' Terminal Forms-1" kaf.fina dash.kaf dash.gaf hamza.kaf
 MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi dash.gaf
 MultipleSubs2: "'init' Initial  Forms-1" kaf.init dash.gaf
