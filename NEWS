@@ -1,3 +1,33 @@
+Amiri 0.009 (2011-02-06), Revolution
+------------------------------------
+
+* New glyphs:
+  - Initial support for vowel marks, still needs more adjustments and fine
+    tuning.
+  - Arabic and Persian digits.
+  - More punctuation marks.
+  - More coverage of extended Arabic characters.
+  - More glyph variants, especially for pairs ending with Haa.
+
+* Attempted to get around OOo bugs, it should render much better now. A proper
+  fix have been submitted to LibreOffice developers but didn't make it into
+  3.3.0 release.
+* Packed sfdir into an sfd file in the release, should make it easier for
+  others to open the source in FontForge.
+* Increased line spacing a bit to give more room for vowel marks.
+* More coverage and kerning fixes.
+* Tens of other small fixes here and there.
+
+* Bug fixes:
+  - 3085159 Kaf clashes with next letters
+  - 3085165 Hamza on Alef clashes wit next and previous letters
+  - 3085166 Raa and Zay clashes with next Yaa
+  - 3085172 Kaf clashes with next Lam-Meem combination
+  - 3085174 Lam-Alef is broken of preceded by Kaf-Meem
+  - 3085175 Succeeding Haa clash with each other
+  - 3101634 Missing kerning
+  - 3101674 Finjani Ayn
+
 Amiri 0.003 (2010-10-10)
 -----------------------
 

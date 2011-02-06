@@ -1,6 +1,6 @@
 .PHONY: all clean ttf web pack
 
-VERSION=0.003
+VERSION=0.009
 
 SRC=sources
 BUILD=./tools/build.py
