@@ -23,31 +23,30 @@ web: $(WOFF) $(EOTS) $(CSSS)
 pack: $(PACK)
 
 %.ttf : %.sfdir
-	@echo "generating ‛$@’"
+	@echo "   FF\t$@"
 	@$(FF) $< $@
 
 %.woff : %.sfdir
-	@echo "generating ‛$@’"
+	@echo "   FF\t$@"
 	@$(FF) $< $@
 
 %.eot : %.ttf
-	@echo "generating ‛$@’"
+	@echo "   FF\t$@"
 	@$(MKEOT) $< > $@
 
 %.css: $(SFDS)
-	@echo "generating ‛$@’"
+	@echo "   GEN\t$@"
 	@$(FF) $^ $@
 
 %.sfd : %.sfdir
-	@echo "packing ‛$<’ into ‛$@’"
+	@echo "   GEN\t$@"
 	@$(FF) $< $@
-
 clean:
 	@rm -rfv $(TTFS) $(WOFF) $(EOTS) $(CSSS) $(PACK)
 	@rm -rfv amiri-$(VERSION) amiri-$(VERSION).tar.bz2
 
 dist: all pack
-	@echo "Making dist tarball"
+	@echo "   Making dist tarball"
 	@mkdir -p amiri-$(VERSION)/$(SRC)
 	@mkdir -p amiri-$(VERSION)/web
 	@mkdir -p amiri-$(VERSION)/tools
