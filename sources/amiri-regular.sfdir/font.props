@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1297004959
+ModificationTime: 1297005755
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -247,7 +247,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  487 ayn.init baa.isol faa.init faa.isol haa.init heh.init heh.isol meem.init meem.isol sad.init sad.isol seen.init seen.isol taa.init taa.isol yaa.isol ayn.init_AynMeemInit lam.init_LamHaaInit haa.init_HaaYaaIsol meem.init_MeemYaaIsol meem.init_MeemRaaIsol haa.init_HaaHaaInit ayn.init_AynYaaIsol ayn.init_AynHaaInit lam.init_LamYaaIsol baa.init_BaaBaaHaaInit haa.init_HaaMeemInit haa.init_HaaRaaIsol baa.init_BaaHaaMeemInit ayn.init_Finjani haa.init_Finjani seen.init_PreYaa sad.init_PreYaa
  32 noon.isol noon.isol.alt qaf.isol
  26 raa.isol waw.isol dal.isol
- 67 kaf.isol lam.init lam.isol lam.init_LamAlefIsol lam.init_LamRaaIsol
+ 87 kaf.isol lam.init lam.isol lam.init_LamHehIsol lam.init_LamAlefIsol lam.init_LamRaaIsol
  231 baa.init baa.init_BaaRaaIsol baa.init_BaaDalIsol baa.init_BaaBaaYaaIsol baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaMeemIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High
  130 baa.init_BaaYaaIsol baa.init_BaaMeemHaaInit lam.init_LamHaaMeemInit faa.init_FaaHaaInit meem.init_MeemHaaInit baa.init_BaaMeemInit
  64 seen.init_SeenHaaInit sad.init_SadHaaInit lam.init_LamHaaHaaInit
@@ -1298,7 +1298,7 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 34 12
+WinInfo: 33 33 12
 BeginPrivate: 0
 EndPrivate
 Grid
