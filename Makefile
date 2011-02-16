@@ -11,7 +11,6 @@ SFDS=$(SRC)/amiri-regular.sfdir
 TTFS=$(SFDS:.sfdir=.ttf)
 WOFF=$(SFDS:.sfdir=.woff)
 EOTS=$(SFDS:.sfdir=.eot)
-PACK=$(SFDS:.sfdir=.sfd)
 PDFS=$(SFDS:.sfdir=-table.pdf)
 CSSS=$(SRC)/amiri.css
 
@@ -21,7 +20,6 @@ all: ttf web
 
 ttf: $(TTFS)
 web: $(WOFF) $(EOTS) $(CSSS)
-pack: $(PACK)
 table: $(PDFS)
 
 %.ttf : %.sfdir
@@ -40,16 +38,21 @@ table: $(PDFS)
 	@echo "   GEN\t$@"
 	@$(FF) $^ $@
 
-%.sfd: %.sfdir
-	@echo "   GEN\t$@"
-	@$(FF) $< $@
-
 %.pdf: $(TTFS)
 	@echo "   GEN\t$@"
 	@fntsample -f $< -o $@
 clean:
 	@rm -rfv $(TTFS) $(WOFF) $(EOTS) $(CSSS) $(PACK)
 	@rm -rfv amiri-$(VERSION) amiri-$(VERSION).tar.bz2
+
+#->8-
+PACK=$(SFDS:.sfdir=.sfd)
+
+pack: $(PACK)
+
+%.sfd: %.sfdir
+	@echo "   GEN\t$@"
+	@$(FF) $< $@
 
 dist: all pack table
 	@echo "   Making dist tarball"
@@ -58,7 +61,7 @@ dist: all pack table
 	@mkdir -p amiri-$(VERSION)/tools
 	@mkdir -p amiri-$(VERSION)/documentation
 	@cp -r $(PACK) amiri-$(VERSION)/$(SRC)
-	@cp Makefile amiri-$(VERSION)
+	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > amiri-$(VERSION)/Makefile
 	@cp $(DOC) amiri-$(VERSION)
 	@cp $(BUILD) amiri-$(VERSION)/tools
 	@cp $(TTFS) amiri-$(VERSION)
