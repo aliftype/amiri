@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1297249331
+ModificationTime: 1297979539
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -45,7 +45,7 @@ Lookup: 2 8 0 "'isol' Isolated Forms"  {"'isol' Isolated Forms-1"  } ['isol' ('D
 Lookup: 2 8 0 "'init' Initial  Forms"  {"'init' Initial  Forms-1"  } ['init' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 8 0 "'medi' Medial   Forms"  {"'medi' Medial   Forms-1"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 2 8 0 "'fina' Terminal Forms"  {"'fina' Terminal Forms-1"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms"  {"'locl' Localized Forms-1" ("arabic" ) } ['locl' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms"  {"'locl' Localized Forms-1" ("arabic" ) } ['locl' ('arab' <'dflt' > ) ]
 Lookup: 1 0 0 "ShaddaCombined"  {"ShaddaCombined-1" ("small" ) } []
 Lookup: 6 0 0 "'calt' ShaddaCombined"  {"'calt' ShaddaCombined-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "HamzaCombined"  {"HamzaCombined-1" ("small2" ) } []
