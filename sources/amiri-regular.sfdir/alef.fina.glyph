@@ -8,7 +8,7 @@ AnchorPoint: "HighHamza" 526 1540 basechar 0
 AnchorPoint: "TashkilBelow" 250 -670 basechar 0
 AnchorPoint: "TashkilAbove" 500 1400 basechar 0
 AnchorPoint: "HamzaAbove" 126 1540 basechar 0
-AnchorPoint: "HamzaBelow" 350 -60 basechar 0
+AnchorPoint: "HamzaBelow" 250 -110 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -77,7 +77,6 @@ SplineSet
  80 1349 80 1349 92 1369 c 2,20,-1
  157 1475 l 2,0,1
 EndSplineSet
-MultipleSubs2: "BaaAlefIsol-1" alef.fina_Tatweel
 Substitution2: "KafAlefFina subtable" alef.fina_KafAlefFina
 Substitution2: "KafMeemAlefFina subtable" alef.fina_KafMeemAlefFina
 Substitution2: "KafMeemAlefIsol subtable" alef.fina_KafMeemAlefIsol
