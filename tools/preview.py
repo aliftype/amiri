@@ -52,19 +52,16 @@ def Preview(re, obj):
     else:
         font = obj.font
 
-    familyname = font.familyname
     changed = font.changed
     new_sub = None
 
-    font.familyname = "%sPreview" %familyname
-    if familyname == "Amiri":
+    if font.familyname == "Amiri":
         new_sub = class2pair(font, False)
     font.generate(ttf,flags=flags)
 
     if new_sub:
         font.removeLookupSubtable(new_sub)
-    font.familyname = familyname
-    font.changed = changed
+        font.changed = changed
 
     if not re:
         cmd = "%s %s" %(viewer, ttf)
