@@ -12,7 +12,7 @@ Refer: 477 -1 N 1 0 0 1 1880 1656 2
 Refer: 30 -1 N 1 0 0 1 0 0 3
 MultipleSubs2: "'isol' Isolated Forms-1" kaf.isol dash.kaf dash.gaf hamza.kaf twodots.below.vertical
 MultipleSubs2: "'fina' Terminal Forms-1" kaf.fina dash.kaf dash.gaf hamza.kaf twodots.below.vertical
-MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi dash.gaf twodots.below.vertical
+MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi dash.gaf.alt2 twodots.below.vertical
 MultipleSubs2: "'init' Initial  Forms-1" kaf.init dash.gaf twodots.below.vertical
 Colour: ffff00
 EndChar

@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1298072973
+ModificationTime: 1299531046
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -343,7 +343,7 @@ EndFPST
 ChainSub2: coverage "'calt' GafDash-2"  0 0 0 1
  1 1 0
   Coverage: 8 dash.gaf
-  BCoverage: 222 kaf.medi kaf.medi_KafLamMedi kaf.init_KafYaaIsol kaf.medi_KafLamAlefFina kaf.medi_KafLamMeemMedi kaf.init_KafBaaInit kaf.medi_KafKafFina kaf.medi_KafMeemLamFina kaf.medi_KafBaaMedi kaf.init_KafMeemAlefIsol kaf.medi_Tatweel
+  BCoverage: 213 kaf.medi_KafLamMedi kaf.init_KafYaaIsol kaf.medi_KafLamAlefFina kaf.medi_KafLamMeemMedi kaf.init_KafBaaInit kaf.medi_KafKafFina kaf.medi_KafMeemLamFina kaf.medi_KafBaaMedi kaf.init_KafMeemAlefIsol kaf.medi_Tatweel
  1
   SeqLookup: 0 "GafDash2" 
 EndFPST
@@ -1283,7 +1283,7 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65484 34 12
+WinInfo: 65472 33 12
 BeginPrivate: 0
 EndPrivate
 Grid
