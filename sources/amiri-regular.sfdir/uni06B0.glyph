@@ -5,14 +5,13 @@ Width: 1347
 VWidth: 0
 LayerCount: 2
 Fore
-Refer: 483 -1 N 1 0 0 1 1693 1937 2
 Refer: 476 -1 N 1 0 0 1 420 620 2
 Refer: 488 -1 N 1 0 0 1 1565 1906 2
-Refer: 477 -1 N 1 0 0 1 1880 1656 2
+Refer: 629 -1 N 1 0 0 1 1880 1656 2
 Refer: 30 -1 N 1 0 0 1 0 0 3
-MultipleSubs2: "'isol' Isolated Forms-1" kaf.isol dash.kaf ring.below dash.gaf hamza.kaf
-MultipleSubs2: "'fina' Terminal Forms-1" kaf.fina dash.kaf ring.below dash.gaf hamza.kaf
-MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi ring.below dash.gaf.alt2
 MultipleSubs2: "'init' Initial  Forms-1" kaf.init ring.below dash.gaf
+MultipleSubs2: "'medi' Medial   Forms-1" kaf.medi ring.below dash.gaf.alt2
+MultipleSubs2: "'fina' Terminal Forms-1" kaf.fina dash.kaf_gaf ring.below hamza.kaf
+MultipleSubs2: "'isol' Isolated Forms-1" kaf.isol dash.kaf_gaf ring.below hamza.kaf
 Colour: ffff00
 EndChar
