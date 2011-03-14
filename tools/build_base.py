@@ -1,4 +1,4 @@
-def buildAccented(box, glyph):
+def buildBase(box, glyph):
     if len(glyph.getPosSub("'isol' Isolated Forms-1")) == 1:
         ccmp = glyph.getPosSub("'isol' Isolated Forms-1")[0]
         glyph.clear()
@@ -10,14 +10,10 @@ def buildAccented(box, glyph):
                 glyph.appendAccent(accent)
 
         if box:
-            drawBbox(glyph)
+            drawBbox(None,glyph)
 
-def drawBbox(glyph):
-    bbox = glyph.boundingBox()
-    xmin = bbox[0]
-    ymin = bbox[1]
-    xmax = bbox[2]
-    ymax = bbox[3]
+def drawBbox(dummy, glyph):
+    xmin, ymin, xmax, ymax = glyph.boundingBox()
 
     pen  = glyph.glyphPen(replace=False)
 
@@ -30,12 +26,19 @@ def drawBbox(glyph):
 
     pen = None
 
-def buildBase(box, font):
+def buildBases(box, font):
     selection = font.selection.byGlyphs
     for g in selection:
-        buildAccented(box, g)
+        buildBase(box, g)
 
-fontforge.registerMenuItem(buildBase,     None, None, "Font",  None, "Amiri", "Build base glyphs")
-fontforge.registerMenuItem(buildBase,     None, True, "Font",  None, "Amiri", "Build base glyphs (boxed)")
-fontforge.registerMenuItem(buildAccented, None, None, "Glyph", None, "Amiri", "Build base glyph")
-fontforge.registerMenuItem(buildAccented, None, True, "Glyph", None, "Amiri", "Build base glyph (boxed)")
+def drawBboxes(dummy, font):
+    selection = font.selection.byGlyphs
+    for g in selection:
+        drawBbox(dummy, g)
+
+fontforge.registerMenuItem(drawBbox,   None, None, "Glyph", None, "Amiri", "Draw bounding box")
+fontforge.registerMenuItem(buildBase,  None, None, "Glyph", None, "Amiri", "Build base glyph")
+fontforge.registerMenuItem(buildBase,  None, True, "Glyph", None, "Amiri", "Build base glyph (boxed)")
+fontforge.registerMenuItem(drawBboxes, None, None, "Font",  None, "Amiri", "Draw bounding box")
+fontforge.registerMenuItem(buildBases, None, None, "Font",  None, "Amiri", "Build base glyphs")
+fontforge.registerMenuItem(buildBases, None, True, "Font",  None, "Amiri", "Build base glyphs (boxed)")
