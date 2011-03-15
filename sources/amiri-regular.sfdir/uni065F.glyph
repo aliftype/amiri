@@ -5,7 +5,6 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: W
-AnchorPoint: "HamzaBelowAlt" 0 -500 mark 0
 AnchorPoint: "TashkilTashkilBelow" 0 -1014 basemark 0
 AnchorPoint: "HamzaBelow" 0 -500 mark 0
 LayerCount: 2
@@ -65,4 +64,5 @@ SplineSet
  -353 -869 -353 -869 -304 -889 c 0,38,0
  -195 -932 -195 -932 -173 -922 c 128,-1,1
 EndSplineSet
+Substitution2: "HamzaBelowLow-1" hamza.below.wavy.low
 EndChar
