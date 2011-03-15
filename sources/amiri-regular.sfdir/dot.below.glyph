@@ -4,10 +4,10 @@ Encoding: 65868 -1 458
 Width: 0
 VWidth: 0
 GlyphClass: 4
-AnchorPoint: "DotBelowAlt" 0 140 mark 0
 AnchorPoint: "TashkilBelowDot" 30 -140 basemark 0
 AnchorPoint: "DotBelow" 0 140 mark 0
 LayerCount: 2
 Fore
 Refer: 455 -1 N 1 0 0 1 0 0 2
+Substitution2: "DotsBelowLow-1" dot.below.low
 EndChar

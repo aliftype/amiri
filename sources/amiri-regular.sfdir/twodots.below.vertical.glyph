@@ -5,11 +5,11 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: W
-AnchorPoint: "DotBelowAlt" 0 140 mark 0
 AnchorPoint: "TashkilBelowDot" 40 -330 basemark 0
 AnchorPoint: "DotBelow" 0 140 mark 0
 LayerCount: 2
 Fore
 Refer: 455 -1 N 1 0 0 1 0 0 2
 Refer: 455 -1 N 1 0 0 1 40 -190 2
+Substitution2: "DotsBelowLow-1" twodots.below.vertical.low
 EndChar

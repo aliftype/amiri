@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1300221950
+ModificationTime: 1300225169
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -191,15 +191,18 @@ Lookup: 2 0 0 "KafDalFina"  {"KafDalFina-1"  } []
 Lookup: 6 8 0 "'calt' KafDalFina"  {"'calt' KafDalFina-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "HamzaBelowLow"  {"HamzaBelowLow-1" ("low" ) } []
 Lookup: 6 1024 0 "'calt' HamzaBelowLow"  {"'calt' HamzaBelowLow-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 1 0 0 "DotsBelowLow"  {"DotsBelowLow-1" ("low" ) } []
+Lookup: 6 768 0 "'calt' DotsBelowLow"  {"'calt' DotsBelowLow-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 264 768 0 "'kern' SnakeRaaBaa"  {"'kern' SnakeRaaBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Dot Below Alt"  {"'mark' Dot Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Alt"  {"'mark' Dot Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Two Dots Below"  {"'mark' Two Dots Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 264 768 0 "'mark' Contextual Dots Below"  {"'mark' Contextual Dots Below-1"  "'mark' Contextual Dots Below-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Two Dots Below Alt"  {"'mark' Two Dots Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Hamza Below Alt"  {"'mark' Hamza Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -220,8 +223,6 @@ Lookup: 262 0 0 "'mkmk' Mark to Dot Below"  {"'mkmk' Mark to Dot Below-1"  } ['m
 Lookup: 262 0 0 "'mkmk' Ring to Dash"  {"'mkmk' Ring to Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Dot above Hamza"  {"'mkmk' Dot above Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  } []
-Lookup: 260 0 0 "Dot Below Alt"  {"Dot Below Alt-1"  } []
-Lookup: 260 0 0 "Two Dots Below Alt"  {"Two Dots Below Alt-1"  } []
 Lookup: 262 0 0 "Tashkil Above Dot"  {"Tashkil Above Dot-1"  } []
 Lookup: 262 0 0 "Tashkil Below Dot"  {"Tashkil Below Dot-1"  } []
 MarkAttachClasses: 5
@@ -268,23 +269,13 @@ ChainSub2: coverage "'calt' ShaddaCombined-1"  0 0 0 1
   SeqLookup: 0 "ShaddaCombined" 
   SeqLookup: 1 "ShaddaCombined" 
 EndFPST
-ChainPos2: coverage "'mark' Contextual Dots Below-2"  0 0 0 1
+ChainSub2: coverage "'calt' DotsBelowLow-1"  0 0 0 1
  2 1 0
   Coverage: 290 baa.init baa.init_BaaRaaIsol baa.init_BaaYaaIsol baa.init_BaaDalIsol baa.init_BaaMeemHaaInit baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaMeemInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaMeemIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High baa.init_Tatweel
-  Coverage: 13 twodots.below
+  Coverage: 151 dot.below twodots.below threedots.below threedots.below.inverted twodots.below.vertical fourdots.below threedots.below.horizontal smallv.below.inverted
   BCoverage: 194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
- 2
-  SeqLookup: 0 "Two Dots Below Alt" 
-  SeqLookup: 1 "Two Dots Below Alt" 
-EndFPST
-ChainPos2: coverage "'mark' Contextual Dots Below-1"  0 0 0 1
- 2 1 0
-  Coverage: 290 baa.init baa.init_BaaRaaIsol baa.init_BaaYaaIsol baa.init_BaaDalIsol baa.init_BaaMeemHaaInit baa.init_BaaBaaInit baa.init_BaaSeenInit baa.init_BaaMeemInit baa.init_BaaHehInit baa.init_BaaBaaIsol baa.init_BaaMeemIsol baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High baa.init_Tatweel
-  Coverage: 9 dot.below
-  BCoverage: 194 raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina raa.fina_KafRaaIsol raa.fina_HaaRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth
- 2
-  SeqLookup: 0 "Dot Below Alt" 
-  SeqLookup: 1 "Dot Below Alt" 
+ 1
+  SeqLookup: 1 "DotsBelowLow" 
 EndFPST
 ChainSub2: coverage "'calt' AboveHaaIsol-2 subtable"  0 0 0 1
  2 0 0
@@ -1289,5 +1280,5 @@ Grid
 -300 300 m 25
  2348 300 l 25
 EndSplineSet
-AnchorClass2: "HamzaBelowAlt"  "'mark' Hamza Below Alt-1" "MarkDotBelow"  "'mkmk' Mark to Dot Below-1" "MarkDotAbove"  "'mkmk' Mark to Dot Above-1" "AlefAbove"  "'mark' Small Alef Above-1" "TaaBelow"  "'mark' Small Taa Below-1" "DotAlt"  "'mark' Dot Alt-1" "DotHmaza"  "'mkmk' Dot above Hamza-1" "HighHamza"  "'mark' High Hamza-1" "Tail"  "'mark' Yaa Tail-1" "RingDash"  "'mkmk' Ring to Dash-1" "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "Tashkil Below Dot-1" "TashkilAboveDot"  "Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "Two Dots Below Alt-1" "DotBelowAlt"  "Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
+AnchorClass2: "HamzaBelowAlt"  "'mark' Hamza Below Alt-1" "MarkDotBelow"  "'mkmk' Mark to Dot Below-1" "MarkDotAbove"  "'mkmk' Mark to Dot Above-1" "AlefAbove"  "'mark' Small Alef Above-1" "TaaBelow"  "'mark' Small Taa Below-1" "DotAlt"  "'mark' Dot Alt-1" "DotHmaza"  "'mkmk' Dot above Hamza-1" "HighHamza"  "'mark' High Hamza-1" "Tail"  "'mark' Yaa Tail-1" "RingDash"  "'mkmk' Ring to Dash-1" "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilBelowDot"  "Tashkil Below Dot-1" "TashkilAboveDot"  "Tashkil Above Dot-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "RingBelow"  "'mark' Ring Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "VAbove"  "'mark' V Mark Above-1" "Dash"  "'mark' Dash-1" "HamzaBelow"  "'mark' Hamza Below-1" "HamzaAbove"  "'mark' Hamza Above-1" "DotBelow"  "'mark' Dot Below-1" "DotAbove"  "'mark' Dot Above-1" "cursive"  "'curs' Cursive Attachment-1" 
 EndSplineFont

@@ -1,15 +1,13 @@
 
-StartChar: twodots.below
-Encoding: 65870 -1 459
+StartChar: twodots.below.low
+Encoding: 65940 -1 633
 Width: 0
 VWidth: 0
-GlyphClass: 4
 Flags: W
 AnchorPoint: "MarkDotBelow" 0 263 mark 0
+AnchorPoint: "TwoDotsBelowAlt" -111 140 mark 0
 AnchorPoint: "TashkilBelowDot" 20 -190 basemark 0
-AnchorPoint: "TwoDotsBelow" -111 140 mark 0
 LayerCount: 2
 Fore
 Refer: 456 -1 N 1 0 0 1 4 -47 2
-Substitution2: "DotsBelowLow-1" twodots.below.low
 EndChar
