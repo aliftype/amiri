@@ -1,3 +1,6 @@
+languagesystem DFLT dflt;
+languagesystem arab dflt;
+
 # GDEF Mark Attachment Classes
 @DotsHamzaAbove=[hamza.above dot.above twodots.above threedots.above 
 	threedots.above.horizontal threedots.above.inverted 
@@ -13,7 +16,7 @@
 # GSUB 
 
 
-lookup isolIsolatedForms {
+feature isol {
   lookupflag IgnoreMarks;
     sub uni0622 by alef.isol madda.above;
     sub uni0623 by alef.isol hamza.above;
@@ -196,9 +199,9 @@ lookup isolIsolatedForms {
     sub uni063F by yaa.isol threedots.above;
     sub uni06CD by yaa.isol yaa.tail;
     sub uni0620 by yaa.isol ring.below;
-} isolIsolatedForms;
+} isol;
 
-lookup initInitialForms {
+feature init {
   lookupflag IgnoreMarks;
     sub uni0626 by baa.init hamza.above;
     sub uni0628 by baa.init dot.below;
@@ -322,9 +325,9 @@ lookup initInitialForms {
     sub uni063C by kaf.init threedots.below.inverted;
     sub uni063D by baa.init twodots.below uni065B;
     sub uni0620 by baa.init ring.below;
-} initInitialForms;
+} init;
 
-lookup mediMedialForms {
+feature medi {
   lookupflag IgnoreMarks;
     sub uni0626 by baa.medi hamza.above;
     sub uni0628 by baa.medi dot.below;
@@ -448,9 +451,9 @@ lookup mediMedialForms {
     sub uni063C by kaf.medi threedots.below.inverted;
     sub uni063D by baa.medi twodots.below uni065B;
     sub uni0620 by baa.medi ring.below;
-} mediMedialForms;
+} medi;
 
-lookup finaTerminalForms {
+feature fina {
   lookupflag IgnoreMarks;
     sub uni0622 by alef.fina madda.above;
     sub uni0623 by alef.fina hamza.above;
@@ -633,12 +636,14 @@ lookup finaTerminalForms {
     sub uni063F by yaa.fina threedots.above;
     sub uni06CD by yaa.fina yaa.tail;
     sub uni0620 by yaa.fina ring.below;
-} finaTerminalForms;
+} fina;
 
-lookup loclLocalizedForms {
-  lookupflag 0;
-    sub period by period.arabic;
-} loclLocalizedForms;
+feature locl {
+  script arab;
+    language dflt;
+      sub period by period.arabic;
+} locl;
+
 
 lookup ShaddaCombined {
   lookupflag 0;
@@ -1755,117 +1760,33 @@ lookup caltDotsBelowLow {
 	threedots.below.horizontal.low smallv.below.inverted.low ];
 } caltDotsBelowLow;
 
-feature isol {
-
-  script DFLT;
-     language dflt;
-      lookup isolIsolatedForms;
-
-  script arab;
-     language dflt;
-      lookup isolIsolatedForms;
-} isol;
-
-feature init {
-
-  script DFLT;
-     language dflt;
-      lookup initInitialForms;
-
-  script arab;
-     language dflt;
-      lookup initInitialForms;
-} init;
-
-feature medi {
-
-  script DFLT;
-     language dflt;
-      lookup mediMedialForms;
-
-  script arab;
-     language dflt;
-      lookup mediMedialForms;
-} medi;
-
-feature fina {
-
-  script DFLT;
-     language dflt;
-      lookup finaTerminalForms;
-
-  script arab;
-     language dflt;
-      lookup finaTerminalForms;
-} fina;
-
-feature locl {
-
-  script arab;
-     language dflt;
-      lookup loclLocalizedForms;
-} locl;
-
 feature calt {
-
-  script DFLT;
-     language dflt;
-      lookup caltShaddaCombined;
-      lookup caltHamzaCombined;
-      lookup caltAboveHaaInit;
-      lookup caltBaaRaaFina;
-      lookup caltBaaMeemFina;
-      lookup caltKafBaa;
-      lookup caltKafBaaDotAbove;
-      lookup caltKafClash;
-      lookup caltHighBaa;
-      lookup caltBaaHehMedi;
-      lookup caltLamAlefFina;
-      lookup caltContextualAlternatesinArabi;
-      lookup caltHehMediTooth;
-      lookup caltSeenMeemMedi;
-      lookup caltFinjani;
-      lookup caltBaaYaaFina;
-      lookup caltToothMeem;
-      lookup caltKafLamYaa;
-      lookup caltKafLamFina;
-      lookup caltLamKafInit;
-      lookup caltHehMeemAlef;
-      lookup caltBaaAlefIsol;
-      lookup caltGafDash;
-      lookup caltBaaHehYaaFina;
-      lookup caltKafDalFina;
-      lookup caltHamzaBelowLow;
-      lookup caltDotsBelowLow;
-
-  script arab;
-     language dflt;
-      lookup caltShaddaCombined;
-      lookup caltHamzaCombined;
-      lookup caltAboveHaaInit;
-      lookup caltBaaRaaFina;
-      lookup caltBaaMeemFina;
-      lookup caltKafBaa;
-      lookup caltKafBaaDotAbove;
-      lookup caltKafClash;
-      lookup caltHighBaa;
-      lookup caltBaaHehMedi;
-      lookup caltLamAlefFina;
-      lookup caltContextualAlternatesinArabi;
-      lookup caltHehMediTooth;
-      lookup caltSeenMeemMedi;
-      lookup caltFinjani;
-      lookup caltBaaYaaFina;
-      lookup caltToothMeem;
-      lookup caltKafLamYaa;
-      lookup caltKafLamFina;
-      lookup caltLamKafInit;
-      lookup caltHehMeemAlef;
-      lookup caltBaaAlefIsol;
-      lookup caltGafDash;
-      lookup caltBaaHehYaaFina;
-      lookup caltKafDalFina;
-      lookup caltHamzaBelowLow;
-      lookup caltDotsBelowLow;
+  lookup caltShaddaCombined;
+  lookup caltHamzaCombined;
+  lookup caltAboveHaaInit;
+  lookup caltBaaRaaFina;
+  lookup caltBaaMeemFina;
+  lookup caltKafBaa;
+  lookup caltKafBaaDotAbove;
+  lookup caltKafClash;
+  lookup caltHighBaa;
+  lookup caltBaaHehMedi;
+  lookup caltLamAlefFina;
+  lookup caltContextualAlternatesinArabi;
+  lookup caltHehMediTooth;
+  lookup caltSeenMeemMedi;
+  lookup caltFinjani;
+  lookup caltBaaYaaFina;
+  lookup caltToothMeem;
+  lookup caltKafLamYaa;
+  lookup caltKafLamFina;
+  lookup caltLamKafInit;
+  lookup caltHehMeemAlef;
+  lookup caltBaaAlefIsol;
+  lookup caltGafDash;
+  lookup caltBaaHehYaaFina;
+  lookup caltKafDalFina;
+  lookup caltHamzaBelowLow;
+  lookup caltDotsBelowLow;
 } calt;
 
