@@ -72,24 +72,4 @@ SplineSet
  229 500 229 500 248 417 c 0,28,29
  296 209 296 209 405 185 c 0,0,1
 EndSplineSet
-MultipleSubs2: "LamKafInit-1" lam.medi_Tatweel
-Substitution2: "KafLamHehIsol subtable" lam.medi_KafLamHehIsol
-Substitution2: "LamKafFina subtable" lam.medi_LamKafFina
-Substitution2: "Lellah subtable" lam.medi_Lellah
-Substitution2: "LamMeemMedi subtable" lam.medi_LamMeemMedi
-Substitution2: "LamAlefFina subtable" lam.medi_LamAlefFina
-Substitution2: "KafLamInit subtable" lam.medi_KafLamInit
-Substitution2: "KafLamAlefIsol subtable" lam.medi_KafLamAlefIsol
-Substitution2: "LamQafFina subtable" lam.medi_LamQafFina
-Substitution2: "LamYaaFina subtable" lam.medi_LamYaaFina
-Substitution2: "LamLamInit subtable" lam.medi_LamLamInit
-Substitution2: "KafLamMeemMedi subtable" lam.medi_KafLamMeemMedi
-Substitution2: "KafLamAlefFina subtable" lam.medi_KafLamAlefFina
-Substitution2: "LamHehFina subtable" lam.medi_LamHehFina
-Substitution2: "LamLamHaaInit subtable" lam.medi_LamLamHaaInit
-Substitution2: "LamWawFina subtable" lam.medi_LamWawFina
-Substitution2: "LamLamAlefIsol subtable" lam.medi_LamLamAlefIsol
-Substitution2: "KafMeemLamInit subtable" lam.medi_KafMeemLamInit
-Substitution2: "LamMeemFina subtable" lam.medi_LamMeemFina
-Substitution2: "KafLamMedi subtable" lam.medi_KafLamMedi
 EndChar

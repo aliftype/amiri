@@ -57,24 +57,4 @@ SplineSet
  31 1314 l 2,25,26
  27 1338 27 1338 32 1352 c 24,0,1
 EndSplineSet
-Substitution2: "AboveHaaIsol subtable" lam.init_LamHaaInit
-MultipleSubs2: "LamKafInit-1" lam.init_Tatweel
-Substitution2: "LamHaaHaaInit subtable" lam.init_LamHaaHaaInit
-Substitution2: "LamRaaIsol subtable" lam.init_LamRaaIsol
-Substitution2: "Lellah subtable" lam.init_Lellah
-Substitution2: "LamMeemHaaInit subtable" lam.init_LamMeemHaaInit
-Substitution2: "LamYaaIsol subtable" lam.init_LamYaaIsol
-Substitution2: "LamMeemIsol subtable" lam.init_LamMeemIsol
-Substitution2: "LamHehInit subtable" lam.init_LamHehInit
-Substitution2: "LamKafIsol subtable" lam.init_LamKafIsol
-Substitution2: "LamHaaMeemInit subtable" lam.init_LamHaaMeemInit
-Substitution2: "LamAlefIsol subtable" lam.init_LamAlefIsol
-Substitution2: "LamMeemInit subtable" lam.init_LamMeemInit
-Substitution2: "LamLamInit subtable" lam.init_LamLamInit
-Substitution2: "LamBaaMeemInit subtable" lam.init_LamBaaMeemInit
-Substitution2: "LamLamHaaInit subtable" lam.init_LamLamHaaInit
-Substitution2: "LamHaaInit subtable" lam.init_LamHaaInit
-Substitution2: "LamLamAlefIsol subtable" lam.init_LamLamAlefIsol
-Substitution2: "LamHehIsol subtable" lam.init_LamHehIsol
-Substitution2: "LamDalIsol subtable" lam.init_LamDalIsol
 EndChar

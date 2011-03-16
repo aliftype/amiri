@@ -1,0 +1,1871 @@
+# GDEF Mark Attachment Classes
+@DotsHamzaAbove=[\hamza.above \dot.above \twodots.above \threedots.above 
+	\threedots.above.horizontal \threedots.above.inverted 
+	\smalltaa.above \twodots.above.vertical \fourdots.above \uni065A 
+	\uni065B ];
+@Dash=[\dash.gaf \dash.kaf ];
+@DotsBelow=[\dot.below \twodots.below \twodots.below.vertical \threedots.below 
+	\threedots.below.horizontal \threedots.below.inverted 
+	\fourdots.below ];
+@HamzaBelow=[\hamza.below ];
+
+
+# GSUB 
+
+
+lookup isolIsolatedForms {
+  lookupflag IgnoreMarks;
+    sub \uni0622 by \alef.isol \madda.above ;
+    sub \uni0623 by \alef.isol \hamza.above ;
+    sub \uni0624 by \waw.isol \hamza.above ;
+    sub \uni0625 by \alef.isol \hamza.below ;
+    sub \uni0626 by \yaa.isol \hamza.above ;
+    sub \uni0627 by \alef.isol ;
+    sub \uni0628 by \baa.isol \dot.below ;
+    sub \uni0629 by \heh.isol \twodots.above ;
+    sub \uni062A by \baa.isol \twodots.above ;
+    sub \uni062B by \baa.isol \threedots.above ;
+    sub \uni062C by \haa.isol \dot.below ;
+    sub \uni062D by \haa.isol ;
+    sub \uni062E by \haa.isol \dot.above ;
+    sub \uni062F by \dal.isol ;
+    sub \uni0630 by \dal.isol \dot.above ;
+    sub \uni0631 by \raa.isol ;
+    sub \uni0632 by \raa.isol \dot.above ;
+    sub \uni0633 by \seen.isol ;
+    sub \uni0634 by \seen.isol \threedots.above ;
+    sub \uni0635 by \sad.isol ;
+    sub \uni0636 by \sad.isol \dot.above ;
+    sub \uni0637 by \taa.isol ;
+    sub \uni0638 by \taa.isol \dot.above ;
+    sub \uni0639 by \ayn.isol ;
+    sub \uni063A by \ayn.isol \dot.above ;
+    sub \uni0641 by \faa.isol \dot.above ;
+    sub \uni0642 by \qaf.isol \twodots.above ;
+    sub \uni0643 by \kaf.isol \hamza.kaf ;
+    sub \uni0644 by \lam.isol ;
+    sub \uni0645 by \meem.isol ;
+    sub \uni0646 by \noon.isol \dot.above ;
+    sub \uni0647 by \heh.isol ;
+    sub \uni0648 by \waw.isol ;
+    sub \uni0649 by \yaa.isol ;
+    sub \uni064A by \yaa.isol \twodots.below ;
+    sub \uni0671 by \alef.isol \hamza.wasl ;
+    sub \uni0673 by \alef.isol \uni065F ;
+    sub \uni0675 by \alef.isol \uni0674 ;
+    sub \uni066E by \baa.isol ;
+    sub \uni066F by \qaf.isol ;
+    sub \uni0679 by \baa.isol \smalltaa.above ;
+    sub \uni067A by \baa.isol \twodots.above.vertical ;
+    sub \uni067B by \baa.isol \twodots.below.vertical ;
+    sub \uni067C by \baa.isol \twodots.above \ring.below ;
+    sub \uni067D by \baa.isol \threedots.above.inverted ;
+    sub \uni067E by \baa.isol \threedots.below.inverted ;
+    sub \uni067F by \baa.isol \fourdots.above ;
+    sub \uni0680 by \baa.isol \fourdots.below ;
+    sub \uni0750 by \baa.isol \threedots.below.horizontal ;
+    sub \uni0751 by \baa.isol \threedots.above \dot.below ;
+    sub \uni0752 by \baa.isol \threedots.below ;
+    sub \uni0753 by \baa.isol \twodots.above \threedots.below ;
+    sub \uni0754 by \baa.isol \dot.above \twodots.below ;
+    sub \uni0755 by \baa.isol \smallv.below.inverted ;
+    sub \uni0756 by \baa.isol \uni065A ;
+    sub \uni0676 by \waw.isol \uni0674 ;
+    sub \uni0677 by \waw.isol \hamzadamma.mark ;
+    sub \uni06C4 by \waw.isol \ring.below ;
+    sub \uni06C5 by \waw.isol ;
+    sub \uni06C6 by \waw.isol \uni065A ;
+    sub \uni06C7 by \waw.isol \damma.mark ;
+    sub \uni06C8 by \waw.isol \alef.dagger ;
+    sub \uni06C9 by \waw.isol \uni065B ;
+    sub \uni06CA by \waw.isol \twodots.above ;
+    sub \uni06CB by \waw.isol \threedots.above ;
+    sub \uni0678 by \yaa.isol \uni0674 ;
+    sub \uni06CC by \yaa.isol ;
+    sub \uni06CE by \yaa.isol \uni065A ;
+    sub \uni06D0 by \yaa.isol \twodots.below.vertical ;
+    sub \uni06D1 by \yaa.isol \threedots.below.inverted ;
+    sub \uni06CF by \waw.isol \dot.above ;
+    sub \uni06B9 by \noon.isol \dot.above \dot.below ;
+    sub \uni06BA by \noon.isol ;
+    sub \uni06BB by \noon.isol \smalltaa.above ;
+    sub \uni06BC by \noon.isol \dot.above \ring.below ;
+    sub \uni06BD by \noon.isol \threedots.above ;
+    sub \uni06C0 by \heh.isol \hamza.above ;
+    sub \uni06C1 by \heh.isol ;
+    sub \uni06C2 by \heh.isol \hamza.above ;
+    sub \uni06C3 by \heh.isol \twodots.above ;
+    sub \uni0767 by \noon.isol \dot.above \twodots.below ;
+    sub \uni0768 by \noon.isol \dot.above \smalltaa.above ;
+    sub \uni0769 by \noon.isol \dot.above \uni065A ;
+    sub \uni0681 by \haa.isol \hamza.above ;
+    sub \uni0682 by \haa.isol \twodots.above.vertical ;
+    sub \uni0683 by \haa.isol \twodots.below ;
+    sub \uni0684 by \haa.isol \twodots.below.vertical ;
+    sub \uni0685 by \haa.isol \threedots.above ;
+    sub \uni0686 by \haa.isol \threedots.below.inverted ;
+    sub \uni0687 by \haa.isol \fourdots.below ;
+    sub \uni0757 by \haa.isol \twodots.above ;
+    sub \uni0758 by \haa.isol \threedots.below ;
+    sub \uni06A1 by \faa.isol ;
+    sub \uni06A2 by \faa.isol \dot.below ;
+    sub \uni06A3 by \faa.isol \dot.above \dot.alt1 ;
+    sub \uni06A4 by \faa.isol \threedots.above ;
+    sub \uni06A5 by \faa.isol \threedots.below.inverted ;
+    sub \uni06A6 by \faa.isol \fourdots.above ;
+    sub \uni0760 by \faa.isol \twodots.below ;
+    sub \uni0761 by \faa.isol \threedots.below ;
+    sub \uni06A7 by \qaf.isol \dot.above ;
+    sub \uni06A8 by \qaf.isol \threedots.above ;
+    sub \uni06B5 by \lam.isol \uni065A ;
+    sub \uni06B6 by \lam.isol \dot.above ;
+    sub \uni06B7 by \lam.isol \threedots.above ;
+    sub \uni06B8 by \lam.isol \threedots.below.inverted ;
+    sub \uni076A by \lam.isol ;
+    sub \uni0691 by \raa.isol \smalltaa.above ;
+    sub \uni0692 by \raa.isol \uni065A ;
+    sub \uni0693 by \raa.isol \ring.below ;
+    sub \uni0694 by \raa.isol \dot.below ;
+    sub \uni0695 by \raa.isol \smallv.below ;
+    sub \uni0696 by \raa.isol \dot.below \dot.alt1 ;
+    sub \uni0697 by \raa.isol \twodots.above ;
+    sub \uni0698 by \raa.isol \threedots.above ;
+    sub \uni0699 by \raa.isol \fourdots.above ;
+    sub \uni075B by \raa.isol ;
+    sub \uni076B by \raa.isol \twodots.above.vertical ;
+    sub \uni076C by \raa.isol \hamza.above ;
+    sub \uni06AC by \kaf.isol \hamza.kaf \dot.above ;
+    sub \uni06AD by \kaf.isol \hamza.kaf \threedots.above ;
+    sub \uni06AE by \kaf.isol \hamza.kaf \threedots.below.inverted ;
+    sub \uni06A0 by \ayn.isol \threedots.above ;
+    sub \uni075D by \ayn.isol \twodots.above ;
+    sub \uni075E by \ayn.isol \threedots.above.inverted ;
+    sub \uni075F by \ayn.isol \twodots.above.vertical ;
+    sub \uni069A by \seen.isol \dot.above \dot.below ;
+    sub \uni069B by \seen.isol \threedots.below.inverted ;
+    sub \uni069C by \seen.isol \threedots.above \threedots.below.inverted ;
+    sub \uni075C by \seen.isol \fourdots.above ;
+    sub \uni076D by \seen.isol \twodots.above.vertical ;
+    sub \uni06BF by \haa.isol \dot.above \threedots.below.inverted ;
+    sub \uni06D5 by \heh.isol ;
+    sub \uni0688 by \dal.isol \smalltaa.above ;
+    sub \uni0689 by \dal.isol \ring.below ;
+    sub \uni068A by \dal.isol \dot.below ;
+    sub \uni068B by \dal.isol \smalltaa.above \dot.below ;
+    sub \uni068C by \dal.isol \twodots.above ;
+    sub \uni068D by \dal.isol \twodots.below ;
+    sub \uni068E by \dal.isol \threedots.above ;
+    sub \uni068F by \dal.isol \threedots.above.inverted ;
+    sub \uni0690 by \dal.isol \fourdots.above ;
+    sub \uni0759 by \dal.isol \smalltaa.above \twodots.below.vertical ;
+    sub \uni075A by \dal.isol \smallv.below.inverted ;
+    sub \uni069D by \sad.isol \twodots.below ;
+    sub \uni069E by \sad.isol \threedots.above ;
+    sub \uni069F by \taa.isol \threedots.above ;
+    sub \uni06FA by \seen.isol \threedots.above \dot.below ;
+    sub \uni06FB by \sad.isol \dot.above \dot.below ;
+    sub \uni06FC by \ayn.isol \dot.above \dot.below ;
+    sub \uni06EF by \raa.isol \uni065B ;
+    sub \uni06EE by \dal.isol \uni065B ;
+    sub \uni06AF by \kaf.isol \dash.kaf_gaf \hamza.kaf ;
+    sub \uni06A9 by \kaf.isol \dash.kaf \hamza.kaf ;
+    sub \uni06AB by \kaf.isol \hamza.kaf \ring.below ;
+    sub \uni06B0 by \kaf.isol \dash.kaf_gaf \ring.below \hamza.kaf ;
+    sub \uni06B1 by \kaf.isol \dash.kaf_gaf \hamza.kaf \twodots.above ;
+    sub \uni06B2 by \kaf.isol \dash.kaf_gaf \hamza.kaf \twodots.below ;
+    sub \uni06B3 by \kaf.isol \dash.kaf_gaf \hamza.kaf \twodots.below.vertical ;
+    sub \uni06B4 by \kaf.isol \dash.kaf_gaf \hamza.kaf \threedots.above ;
+    sub \uni06AA by \kaf.isol.alt ;
+    sub \uni0672 by \alef.isol \hamza.above.wavy ;
+    sub \uni0762 by \kaf.isol \dash.kaf \hamza.kaf \dot.above ;
+    sub \uni0763 by \kaf.isol \dash.kaf \hamza.kaf \threedots.above ;
+    sub \uni0764 by \kaf.isol \dash.kaf \hamza.kaf \threedots.below ;
+    sub \uni0765 by \meem.isol \dot.above ;
+    sub \uni0766 by \meem.isol \dot.below ;
+    sub \uni076E by \haa.isol \smalltaa.below ;
+    sub \uni076F by \haa.isol \smalltaa.below \twodots.below ;
+    sub \uni0772 by \haa.isol \smalltaa.above ;
+    sub \uni0770 by \seen.isol \twodots.above \smalltaa.above ;
+    sub \uni0771 by \raa.isol \twodots.above \smalltaa.above ;
+    sub \uni077E by \seen.isol \uni065B ;
+    sub \uni077F by \kaf.isol \hamza.kaf \twodots.above ;
+    sub \uni063B by \kaf.isol \dash.kaf \hamza.kaf \twodots.above ;
+    sub \uni063C by \kaf.isol \dash.kaf \hamza.kaf \threedots.below.inverted ;
+    sub \uni063D by \yaa.isol \uni065B ;
+    sub \uni063E by \yaa.isol \twodots.above ;
+    sub \uni063F by \yaa.isol \threedots.above ;
+    sub \uni06CD by \yaa.isol \yaa.tail ;
+    sub \uni0620 by \yaa.isol \ring.below ;
+} isolIsolatedForms;
+
+lookup initInitialForms {
+  lookupflag IgnoreMarks;
+    sub \uni0626 by \baa.init \hamza.above ;
+    sub \uni0628 by \baa.init \dot.below ;
+    sub \uni062A by \baa.init \twodots.above ;
+    sub \uni062B by \baa.init \threedots.above ;
+    sub \uni062C by \haa.init \dot.below ;
+    sub \uni062D by \haa.init ;
+    sub \uni062E by \haa.init \dot.above ;
+    sub \uni0633 by \seen.init ;
+    sub \uni0634 by \seen.init \threedots.above ;
+    sub \uni0635 by \sad.init ;
+    sub \uni0636 by \sad.init \dot.above ;
+    sub \uni0637 by \taa.init ;
+    sub \uni0638 by \taa.init \dot.above ;
+    sub \uni0639 by \ayn.init ;
+    sub \uni063A by \ayn.init \dot.above ;
+    sub \uni0641 by \faa.init \dot.above ;
+    sub \uni0642 by \faa.init \twodots.above ;
+    sub \uni0643 by \kaf.init ;
+    sub \uni0644 by \lam.init ;
+    sub \uni0645 by \meem.init ;
+    sub \uni0646 by \baa.init \dot.above ;
+    sub \uni0647 by \heh.init ;
+    sub \uni0649 by \baa.init ;
+    sub \uni064A by \baa.init \twodots.below ;
+    sub \uni066E by \baa.init ;
+    sub \uni066F by \faa.init ;
+    sub \uni0679 by \baa.init \smalltaa.above ;
+    sub \uni067A by \baa.init \twodots.above.vertical ;
+    sub \uni067B by \baa.init \twodots.below.vertical ;
+    sub \uni067C by \baa.init \twodots.above \ring.below ;
+    sub \uni067D by \baa.init \threedots.above.inverted ;
+    sub \uni067E by \baa.init \threedots.below.inverted ;
+    sub \uni067F by \baa.init \fourdots.above ;
+    sub \uni0680 by \baa.init \fourdots.below ;
+    sub \uni0750 by \baa.init \threedots.below.horizontal ;
+    sub \uni0751 by \baa.init \threedots.above \dot.below ;
+    sub \uni0752 by \baa.init \threedots.below ;
+    sub \uni0753 by \baa.init \twodots.above \threedots.below ;
+    sub \uni0754 by \baa.init \dot.above \twodots.below ;
+    sub \uni0755 by \baa.init \smallv.below.inverted ;
+    sub \uni0756 by \baa.init \uni065A ;
+    sub \uni0678 by \baa.init \uni0674 ;
+    sub \uni06CC by \baa.init \twodots.below ;
+    sub \uni06CE by \baa.init \uni065A ;
+    sub \uni06D0 by \baa.init \twodots.below.vertical ;
+    sub \uni06D1 by \baa.init \threedots.below.inverted ;
+    sub \uni06B9 by \baa.init \dot.above \dot.below ;
+    sub \uni06BA by \baa.init \dot.above ;
+    sub \uni06BB by \baa.init \smalltaa.above ;
+    sub \uni06BC by \baa.init \dot.above \ring.below ;
+    sub \uni06BD by \baa.init \threedots.above ;
+    sub \uni06C1 by \heh.init ;
+    sub \uni0767 by \baa.init \dot.above \twodots.below ;
+    sub \uni0768 by \baa.init \dot.above \smalltaa.above ;
+    sub \uni0769 by \baa.init \dot.above \uni065A ;
+    sub \uni0681 by \haa.init \hamza.above ;
+    sub \uni0682 by \haa.init \twodots.above.vertical ;
+    sub \uni0683 by \haa.init \twodots.below ;
+    sub \uni0684 by \haa.init \twodots.below.vertical ;
+    sub \uni0685 by \haa.init \threedots.above ;
+    sub \uni0686 by \haa.init \threedots.below.inverted ;
+    sub \uni0687 by \haa.init \fourdots.below ;
+    sub \uni0757 by \haa.init \twodots.above ;
+    sub \uni0758 by \haa.init \threedots.below ;
+    sub \uni06A1 by \faa.init ;
+    sub \uni06A2 by \faa.init \dot.below ;
+    sub \uni06A3 by \faa.init \dot.above \dot.below ;
+    sub \uni06A4 by \faa.init \threedots.above ;
+    sub \uni06A5 by \faa.init \threedots.below.inverted ;
+    sub \uni06A6 by \faa.init \fourdots.above ;
+    sub \uni0760 by \faa.init \twodots.below ;
+    sub \uni0761 by \faa.init \threedots.below ;
+    sub \uni06A7 by \faa.init \dot.above ;
+    sub \uni06A8 by \faa.init \threedots.above ;
+    sub \uni06B5 by \lam.init \uni065A ;
+    sub \uni06B6 by \lam.init \dot.above ;
+    sub \uni06B7 by \lam.init \threedots.above ;
+    sub \uni06B8 by \lam.init \threedots.below.inverted ;
+    sub \uni076A by \lam.init ;
+    sub \uni06AC by \kaf.init \dot.above ;
+    sub \uni06AD by \kaf.init \threedots.above ;
+    sub \uni06AE by \kaf.init \threedots.below.inverted ;
+    sub \uni06A0 by \ayn.init \threedots.above ;
+    sub \uni075D by \ayn.init \twodots.above ;
+    sub \uni075E by \ayn.init \threedots.above.inverted ;
+    sub \uni075F by \ayn.init \twodots.above.vertical ;
+    sub \uni069A by \seen.init \dot.above \dot.below ;
+    sub \uni069B by \seen.init \threedots.below.inverted ;
+    sub \uni069C by \seen.init \threedots.above \threedots.below.inverted ;
+    sub \uni075C by \seen.init \fourdots.above ;
+    sub \uni076D by \seen.init \twodots.above.vertical ;
+    sub \uni06BF by \haa.init \dot.above \threedots.below.inverted ;
+    sub \uni069D by \sad.init \twodots.below ;
+    sub \uni069E by \sad.init \threedots.above ;
+    sub \uni069F by \taa.init \threedots.above ;
+    sub \uni06FA by \seen.init \threedots.above \dot.below ;
+    sub \uni06FB by \sad.init \dot.above \dot.below ;
+    sub \uni06FC by \ayn.init \dot.above \dot.below ;
+    sub \uni06AF by \kaf.init \dash.gaf ;
+    sub \uni06A9 by \kaf.init ;
+    sub \uni06AB by \kaf.init \ring.below ;
+    sub \uni06B0 by \kaf.init \ring.below \dash.gaf ;
+    sub \uni06B1 by \kaf.init \dash.gaf \twodots.above ;
+    sub \uni06B2 by \kaf.init \dash.gaf \twodots.below ;
+    sub \uni06B3 by \kaf.init \dash.gaf \twodots.below.vertical ;
+    sub \uni06B4 by \kaf.init \dash.gaf \threedots.above ;
+    sub \uni06AA by \kaf.init.alt ;
+    sub \uni0762 by \kaf.init \dot.above ;
+    sub \uni0763 by \kaf.init \threedots.above ;
+    sub \uni0764 by \kaf.init \threedots.below ;
+    sub \uni0765 by \meem.init \dot.above ;
+    sub \uni0766 by \meem.init \dot.below ;
+    sub \uni076E by \haa.init \smalltaa.below ;
+    sub \uni076F by \haa.init \smalltaa.below \twodots.below ;
+    sub \uni0772 by \haa.init \smalltaa.above ;
+    sub \uni0770 by \seen.init \twodots.above \smalltaa.above ;
+    sub \uni077E by \seen.init \uni065B ;
+    sub \uni077F by \kaf.init \twodots.above ;
+    sub \uni063B by \kaf.init \twodots.above ;
+    sub \uni063C by \kaf.init \threedots.below.inverted ;
+    sub \uni063D by \baa.init \twodots.below \uni065B ;
+    sub \uni0620 by \baa.init \ring.below ;
+} initInitialForms;
+
+lookup mediMedialForms {
+  lookupflag IgnoreMarks;
+    sub \uni0626 by \baa.medi \hamza.above ;
+    sub \uni0628 by \baa.medi \dot.below ;
+    sub \uni062A by \baa.medi \twodots.above ;
+    sub \uni062B by \baa.medi \threedots.above ;
+    sub \uni062C by \haa.medi \dot.below ;
+    sub \uni062D by \haa.medi ;
+    sub \uni062E by \haa.medi \dot.above ;
+    sub \uni0633 by \seen.medi ;
+    sub \uni0634 by \seen.medi \threedots.above ;
+    sub \uni0635 by \sad.medi ;
+    sub \uni0636 by \sad.medi \dot.above ;
+    sub \uni0637 by \taa.medi ;
+    sub \uni0638 by \taa.medi \dot.above ;
+    sub \uni0639 by \ayn.medi ;
+    sub \uni063A by \ayn.medi \dot.above ;
+    sub \uni0641 by \faa.medi \dot.above ;
+    sub \uni0642 by \faa.medi \twodots.above ;
+    sub \uni0643 by \kaf.medi ;
+    sub \uni0644 by \lam.medi ;
+    sub \uni0645 by \meem.medi ;
+    sub \uni0646 by \baa.medi \dot.above ;
+    sub \uni0647 by \heh.medi ;
+    sub \uni0649 by \baa.medi ;
+    sub \uni064A by \baa.medi \twodots.below ;
+    sub \uni066E by \baa.medi ;
+    sub \uni066F by \faa.medi ;
+    sub \uni0679 by \baa.medi \smalltaa.above ;
+    sub \uni067A by \baa.medi \twodots.above.vertical ;
+    sub \uni067B by \baa.medi \twodots.below.vertical ;
+    sub \uni067C by \baa.medi \twodots.above \ring.below ;
+    sub \uni067D by \baa.medi \threedots.above.inverted ;
+    sub \uni067E by \baa.medi \threedots.below.inverted ;
+    sub \uni067F by \baa.medi \fourdots.above ;
+    sub \uni0680 by \baa.medi \fourdots.below ;
+    sub \uni0750 by \baa.medi \threedots.below.horizontal ;
+    sub \uni0751 by \baa.medi \threedots.above \dot.below ;
+    sub \uni0752 by \baa.medi \threedots.below ;
+    sub \uni0753 by \baa.medi \twodots.above \threedots.below ;
+    sub \uni0754 by \baa.medi \dot.above \twodots.below ;
+    sub \uni0755 by \baa.medi \smallv.below.inverted ;
+    sub \uni0756 by \baa.medi \uni065A ;
+    sub \uni0678 by \baa.medi \uni0674 ;
+    sub \uni06CC by \baa.medi \twodots.below ;
+    sub \uni06CE by \baa.medi \uni065A ;
+    sub \uni06D0 by \baa.medi \twodots.below.vertical ;
+    sub \uni06D1 by \baa.medi \threedots.below.inverted ;
+    sub \uni06B9 by \baa.medi \dot.above \dot.below ;
+    sub \uni06BA by \baa.medi \dot.above ;
+    sub \uni06BB by \baa.medi \smalltaa.above ;
+    sub \uni06BC by \baa.medi \dot.above \ring.below ;
+    sub \uni06BD by \baa.medi \threedots.above ;
+    sub \uni06C1 by \heh.medi ;
+    sub \uni0767 by \baa.medi \dot.above \twodots.below ;
+    sub \uni0768 by \baa.medi \dot.above \smalltaa.above ;
+    sub \uni0769 by \baa.medi \dot.above \uni065A ;
+    sub \uni0681 by \haa.medi \hamza.above ;
+    sub \uni0682 by \haa.medi \twodots.above.vertical ;
+    sub \uni0683 by \haa.medi \twodots.below ;
+    sub \uni0684 by \haa.medi \twodots.below.vertical ;
+    sub \uni0685 by \haa.medi \threedots.above ;
+    sub \uni0686 by \haa.medi \threedots.below.inverted ;
+    sub \uni0687 by \haa.medi \fourdots.below ;
+    sub \uni0757 by \haa.medi \twodots.above ;
+    sub \uni0758 by \haa.medi \threedots.below ;
+    sub \uni06A1 by \faa.medi ;
+    sub \uni06A2 by \faa.medi \dot.below ;
+    sub \uni06A3 by \faa.medi \dot.above \dot.below ;
+    sub \uni06A4 by \faa.medi \threedots.above ;
+    sub \uni06A5 by \faa.medi \threedots.below.inverted ;
+    sub \uni06A6 by \faa.medi \fourdots.above ;
+    sub \uni0760 by \faa.medi \twodots.below ;
+    sub \uni0761 by \faa.medi \threedots.below ;
+    sub \uni06A7 by \faa.medi \dot.above ;
+    sub \uni06A8 by \faa.medi \threedots.above ;
+    sub \uni06B5 by \lam.medi \uni065A ;
+    sub \uni06B6 by \lam.medi \dot.above ;
+    sub \uni06B7 by \lam.medi \threedots.above ;
+    sub \uni06B8 by \lam.medi \threedots.below.inverted ;
+    sub \uni076A by \lam.medi ;
+    sub \uni06AC by \kaf.medi \dot.above ;
+    sub \uni06AD by \kaf.medi \threedots.above ;
+    sub \uni06AE by \kaf.medi \threedots.below.inverted ;
+    sub \uni06A0 by \ayn.medi \threedots.above ;
+    sub \uni075D by \ayn.medi \twodots.above ;
+    sub \uni075E by \ayn.medi \threedots.above.inverted ;
+    sub \uni075F by \ayn.medi \twodots.above.vertical ;
+    sub \uni069A by \seen.medi \dot.above \dot.below ;
+    sub \uni069B by \seen.medi \threedots.below.inverted ;
+    sub \uni069C by \seen.medi \threedots.above \threedots.below.inverted ;
+    sub \uni075C by \seen.medi \fourdots.above ;
+    sub \uni076D by \seen.medi \twodots.above.vertical ;
+    sub \uni06BF by \haa.medi \dot.above \threedots.below.inverted ;
+    sub \uni069D by \sad.medi \twodots.below ;
+    sub \uni069E by \sad.medi \threedots.above ;
+    sub \uni069F by \taa.medi \threedots.above ;
+    sub \uni06FA by \seen.medi \threedots.above \dot.below ;
+    sub \uni06FB by \sad.medi \dot.above \dot.below ;
+    sub \uni06FC by \ayn.medi \dot.above \dot.below ;
+    sub \uni06AF by \kaf.medi \dash.gaf.alt2 ;
+    sub \uni06A9 by \kaf.medi ;
+    sub \uni06AB by \kaf.medi \ring.below ;
+    sub \uni06B0 by \kaf.medi \ring.below \dash.gaf.alt2 ;
+    sub \uni06B1 by \kaf.medi \dash.gaf.alt2 \twodots.above ;
+    sub \uni06B2 by \kaf.medi \dash.gaf.alt2 \twodots.below ;
+    sub \uni06B3 by \kaf.medi \dash.gaf.alt2 \twodots.below.vertical ;
+    sub \uni06B4 by \kaf.medi \dash.gaf.alt2 \threedots.above ;
+    sub \uni06AA by \kaf.medi.alt ;
+    sub \uni0762 by \kaf.medi \dot.above ;
+    sub \uni0763 by \kaf.medi \threedots.above ;
+    sub \uni0764 by \kaf.medi \threedots.below ;
+    sub \uni0765 by \meem.medi \dot.above ;
+    sub \uni0766 by \meem.medi \dot.below ;
+    sub \uni076E by \haa.medi \smalltaa.below ;
+    sub \uni076F by \haa.medi \smalltaa.below \twodots.below ;
+    sub \uni0772 by \haa.medi \smalltaa.above ;
+    sub \uni0770 by \seen.medi \twodots.above \smalltaa.above ;
+    sub \uni077E by \seen.medi \uni065B ;
+    sub \uni077F by \kaf.medi \twodots.above ;
+    sub \uni063B by \kaf.medi \twodots.above ;
+    sub \uni063C by \kaf.medi \threedots.below.inverted ;
+    sub \uni063D by \baa.medi \twodots.below \uni065B ;
+    sub \uni0620 by \baa.medi \ring.below ;
+} mediMedialForms;
+
+lookup finaTerminalForms {
+  lookupflag IgnoreMarks;
+    sub \uni0622 by \alef.fina \madda.above ;
+    sub \uni0623 by \alef.fina \hamza.above ;
+    sub \uni0624 by \waw.fina \hamza.above ;
+    sub \uni0625 by \alef.fina \hamza.below ;
+    sub \uni0626 by \yaa.fina \hamza.above ;
+    sub \uni0627 by \alef.fina ;
+    sub \uni0628 by \baa.fina \dot.below ;
+    sub \uni0629 by \heh.fina \twodots.above ;
+    sub \uni062A by \baa.fina \twodots.above ;
+    sub \uni062B by \baa.fina \threedots.above ;
+    sub \uni062C by \haa.fina \dot.below ;
+    sub \uni062D by \haa.fina ;
+    sub \uni062E by \haa.fina \dot.above ;
+    sub \uni062F by \dal.fina ;
+    sub \uni0630 by \dal.fina \dot.above ;
+    sub \uni0631 by \raa.fina ;
+    sub \uni0632 by \raa.fina \dot.above ;
+    sub \uni0633 by \seen.fina ;
+    sub \uni0634 by \seen.fina \threedots.above ;
+    sub \uni0635 by \sad.fina ;
+    sub \uni0636 by \sad.fina \dot.above ;
+    sub \uni0637 by \taa.fina ;
+    sub \uni0638 by \taa.fina \dot.above ;
+    sub \uni0639 by \ayn.fina ;
+    sub \uni063A by \ayn.fina \dot.above ;
+    sub \uni0641 by \faa.fina \dot.above ;
+    sub \uni0642 by \qaf.fina \twodots.above ;
+    sub \uni0643 by \kaf.fina \hamza.kaf ;
+    sub \uni0644 by \lam.fina ;
+    sub \uni0645 by \meem.fina ;
+    sub \uni0646 by \noon.fina \dot.above ;
+    sub \uni0647 by \heh.fina ;
+    sub \uni0648 by \waw.fina ;
+    sub \uni0649 by \yaa.fina ;
+    sub \uni064A by \yaa.fina \twodots.below ;
+    sub \uni0671 by \alef.fina \hamza.wasl ;
+    sub \uni0673 by \alef.fina \uni065F ;
+    sub \uni0675 by \alef.fina \uni0674 ;
+    sub \uni066E by \baa.fina ;
+    sub \uni066F by \qaf.fina ;
+    sub \uni0679 by \baa.fina \smalltaa.above ;
+    sub \uni067A by \baa.fina \twodots.above.vertical ;
+    sub \uni067B by \baa.fina \twodots.below.vertical ;
+    sub \uni067C by \baa.fina \twodots.above \ring.below ;
+    sub \uni067D by \baa.fina \threedots.above.inverted ;
+    sub \uni067E by \baa.fina \threedots.below.inverted ;
+    sub \uni067F by \baa.fina \fourdots.above ;
+    sub \uni0680 by \baa.fina \fourdots.below ;
+    sub \uni0750 by \baa.fina \threedots.below.horizontal ;
+    sub \uni0751 by \baa.fina \threedots.above \dot.below ;
+    sub \uni0752 by \baa.fina \threedots.below ;
+    sub \uni0753 by \baa.fina \twodots.above \threedots.below ;
+    sub \uni0754 by \baa.fina \dot.above \twodots.below ;
+    sub \uni0755 by \baa.fina \smallv.below.inverted ;
+    sub \uni0756 by \baa.fina \uni065A ;
+    sub \uni0676 by \waw.fina \uni0674 ;
+    sub \uni0677 by \waw.fina \hamzadamma.mark ;
+    sub \uni06C4 by \waw.fina \ring.below ;
+    sub \uni06C5 by \waw.fina ;
+    sub \uni06C6 by \waw.fina \uni065A ;
+    sub \uni06C7 by \waw.fina \damma.mark ;
+    sub \uni06C8 by \waw.fina \alef.dagger ;
+    sub \uni06C9 by \waw.fina \uni065B ;
+    sub \uni06CA by \waw.fina \twodots.above ;
+    sub \uni06CB by \waw.fina \threedots.above ;
+    sub \uni0678 by \yaa.fina \uni0674 ;
+    sub \uni06CC by \yaa.fina ;
+    sub \uni06CE by \yaa.fina \uni065A ;
+    sub \uni06D0 by \yaa.fina \twodots.below.vertical ;
+    sub \uni06D1 by \yaa.fina \threedots.below.inverted ;
+    sub \uni06CF by \waw.fina \dot.above ;
+    sub \uni06B9 by \noon.fina \dot.above \dot.below ;
+    sub \uni06BA by \noon.fina ;
+    sub \uni06BB by \noon.fina \smalltaa.above ;
+    sub \uni06BC by \noon.fina \dot.above \ring.below ;
+    sub \uni06BD by \noon.fina \threedots.above ;
+    sub \uni06C0 by \heh.fina \hamza.above ;
+    sub \uni06C1 by \heh.fina ;
+    sub \uni06C2 by \heh.fina \hamza.above ;
+    sub \uni06C3 by \heh.fina \twodots.above ;
+    sub \uni0767 by \noon.fina \dot.above \twodots.below ;
+    sub \uni0768 by \noon.fina \dot.above \smalltaa.above ;
+    sub \uni0769 by \noon.fina \dot.above \uni065A ;
+    sub \uni0681 by \haa.fina \hamza.above ;
+    sub \uni0682 by \haa.fina \twodots.above.vertical ;
+    sub \uni0683 by \haa.fina \twodots.below ;
+    sub \uni0684 by \haa.fina \twodots.below.vertical ;
+    sub \uni0685 by \haa.fina \threedots.above ;
+    sub \uni0686 by \haa.fina \threedots.below.inverted ;
+    sub \uni0687 by \haa.fina \fourdots.below ;
+    sub \uni0757 by \haa.fina \twodots.above ;
+    sub \uni0758 by \haa.fina \threedots.below ;
+    sub \uni06A1 by \faa.fina ;
+    sub \uni06A2 by \faa.fina \dot.below ;
+    sub \uni06A3 by \faa.fina \dot.above \dot.alt1 ;
+    sub \uni06A4 by \faa.fina \threedots.above ;
+    sub \uni06A5 by \faa.fina \threedots.below.inverted ;
+    sub \uni06A6 by \faa.fina \fourdots.above ;
+    sub \uni0760 by \faa.fina \twodots.below ;
+    sub \uni0761 by \faa.fina \threedots.below ;
+    sub \uni06A7 by \qaf.fina \dot.above ;
+    sub \uni06A8 by \qaf.fina \threedots.above ;
+    sub \uni06B5 by \lam.fina \uni065A ;
+    sub \uni06B6 by \lam.fina \dot.above ;
+    sub \uni06B7 by \lam.fina \threedots.above ;
+    sub \uni06B8 by \lam.fina \threedots.below.inverted ;
+    sub \uni076A by \lam.fina ;
+    sub \uni0691 by \raa.fina \smalltaa.above ;
+    sub \uni0692 by \raa.fina \uni065A ;
+    sub \uni0693 by \raa.fina \ring.below ;
+    sub \uni0694 by \raa.fina \dot.below ;
+    sub \uni0695 by \raa.fina \smallv.below ;
+    sub \uni0696 by \raa.fina \dot.below \dot.alt1 ;
+    sub \uni0697 by \raa.fina \twodots.above ;
+    sub \uni0698 by \raa.fina \threedots.above ;
+    sub \uni0699 by \raa.fina \fourdots.above ;
+    sub \uni075B by \raa.fina ;
+    sub \uni076B by \raa.fina \twodots.above.vertical ;
+    sub \uni076C by \raa.fina \hamza.above ;
+    sub \uni06AC by \kaf.fina \hamza.kaf \dot.above ;
+    sub \uni06AD by \kaf.fina \hamza.kaf \threedots.above ;
+    sub \uni06AE by \kaf.fina \hamza.kaf \threedots.below.inverted ;
+    sub \uni06A0 by \ayn.fina \threedots.above ;
+    sub \uni075D by \ayn.fina \twodots.above ;
+    sub \uni075E by \ayn.fina \threedots.above.inverted ;
+    sub \uni075F by \ayn.fina \twodots.above.vertical ;
+    sub \uni069A by \seen.fina \dot.above \dot.below ;
+    sub \uni069B by \seen.fina \threedots.below.inverted ;
+    sub \uni069C by \seen.fina \threedots.above \threedots.below.inverted ;
+    sub \uni075C by \seen.fina \fourdots.above ;
+    sub \uni076D by \seen.fina \twodots.above.vertical ;
+    sub \uni06BF by \haa.fina \dot.above \threedots.below.inverted ;
+    sub \uni06D5 by \heh.fina ;
+    sub \uni0688 by \dal.fina \smalltaa.above ;
+    sub \uni0689 by \dal.fina \ring.below ;
+    sub \uni068A by \dal.fina \dot.below ;
+    sub \uni068B by \dal.fina \smalltaa.above \dot.below ;
+    sub \uni068C by \dal.fina \twodots.above ;
+    sub \uni068D by \dal.fina \twodots.below ;
+    sub \uni068E by \dal.fina \threedots.above ;
+    sub \uni068F by \dal.fina \threedots.above.inverted ;
+    sub \uni0690 by \dal.fina \fourdots.above ;
+    sub \uni0759 by \dal.fina \smalltaa.above \twodots.below.vertical ;
+    sub \uni075A by \dal.fina \smallv.below.inverted ;
+    sub \uni069D by \sad.fina \twodots.below ;
+    sub \uni069E by \sad.fina \threedots.above ;
+    sub \uni069F by \taa.fina \threedots.above ;
+    sub \uni06FA by \seen.fina \threedots.above \dot.below ;
+    sub \uni06FB by \sad.fina \dot.above \dot.below ;
+    sub \uni06FC by \ayn.fina \dot.above \dot.below ;
+    sub \uni06EF by \raa.fina \uni065B ;
+    sub \uni06EE by \dal.fina \uni065B ;
+    sub \uni06AF by \kaf.fina \dash.kaf_gaf \hamza.kaf ;
+    sub \uni06A9 by \kaf.fina \dash.kaf \hamza.kaf ;
+    sub \uni06AB by \kaf.fina \hamza.kaf \ring.below ;
+    sub \uni06B0 by \kaf.fina \dash.kaf_gaf \ring.below \hamza.kaf ;
+    sub \uni06B1 by \kaf.fina \dash.kaf_gaf \hamza.kaf \twodots.above ;
+    sub \uni06B2 by \kaf.fina \dash.kaf_gaf \hamza.kaf \twodots.below ;
+    sub \uni06B3 by \kaf.fina \dash.kaf_gaf \hamza.kaf \twodots.below.vertical ;
+    sub \uni06B4 by \kaf.fina \dash.kaf_gaf \hamza.kaf \threedots.above ;
+    sub \uni06AA by \kaf.fina.alt ;
+    sub \uni0672 by \alef.fina \hamza.above.wavy ;
+    sub \uni0762 by \kaf.fina \dash.kaf \hamza.kaf \dot.above ;
+    sub \uni0763 by \kaf.fina \dash.kaf \hamza.kaf \threedots.above ;
+    sub \uni0764 by \kaf.fina \dash.kaf \hamza.kaf \threedots.below ;
+    sub \uni0765 by \meem.fina \dot.above ;
+    sub \uni0766 by \meem.fina \dot.below ;
+    sub \uni076E by \haa.fina \smalltaa.below ;
+    sub \uni076F by \haa.fina \smalltaa.below \twodots.below ;
+    sub \uni0772 by \haa.fina \smalltaa.above ;
+    sub \uni0770 by \seen.fina \twodots.above \smalltaa.above ;
+    sub \uni0771 by \raa.fina \twodots.above \smalltaa.above ;
+    sub \uni077E by \seen.fina \uni065B ;
+    sub \uni077F by \kaf.fina \hamza.kaf \twodots.above ;
+    sub \uni063B by \kaf.fina \dash.kaf \hamza.kaf \twodots.above ;
+    sub \uni063C by \kaf.fina \dash.kaf \hamza.kaf \threedots.below.inverted ;
+    sub \uni063D by \yaa.fina \uni065B ;
+    sub \uni063E by \yaa.fina \twodots.above ;
+    sub \uni063F by \yaa.fina \threedots.above ;
+    sub \uni06CD by \yaa.fina \yaa.tail ;
+    sub \uni0620 by \yaa.fina \ring.below ;
+} finaTerminalForms;
+
+lookup loclLocalizedForms {
+  lookupflag 0;
+    sub \period by \period.arabic ;
+} loclLocalizedForms;
+
+lookup ShaddaCombined {
+  lookupflag 0;
+    sub \uni064B by \uni064B.small ;
+    sub \uni064E by \uni064E.small ;
+    sub \uni064F by \uni064F.small ;
+    sub \uni0651 by \uni0651.small ;
+} ShaddaCombined;
+
+lookup caltShaddaCombined {
+  lookupflag 0;
+    sub [\uni0651 ]'lookup ShaddaCombined  [\uni064E \uni064B \uni064F ]' ;
+} caltShaddaCombined;
+
+lookup HamzaCombined {
+  lookupflag 0;
+    sub \uni064E by \uni064E.small2 ;
+    sub \uni064F by \uni064F.small2 ;
+    sub \uni0650 by \uni0650.small2 ;
+    sub \uni0652 by \uni0652.small2 ;
+} HamzaCombined;
+
+lookup caltHamzaCombined {
+  lookupflag 0;
+    sub [\hamza.above \hamza.above.wavy \uni0674 ]' [\uni064E \uni064F \uni0652 ]'lookup HamzaCombined  ;
+  subtable;
+    sub [\hamza.below \uni065F ]' [\uni0650 ]'lookup HamzaCombined  ;
+} caltHamzaCombined;
+
+lookup AboveHaaInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaHaaInit ;
+    sub \haa.medi by \haa.medi_SadHaaInit ;
+    sub \heh.init by \heh.init_HehHaaInit ;
+    sub \kaf.init by \kaf.init_AboveHaaIsol ;
+    sub \meem.init by \meem.init_MeemHaaInit ;
+    sub \sad.init by \sad.init_SadHaaInit ;
+    sub \seen.init by \seen.init_SeenHaaInit ;
+} AboveHaaInit;
+
+lookup caltAboveHaaInit {
+  lookupflag IgnoreMarks;
+    sub [\baa.init \heh.init \kaf.init \meem.init \sad.init \seen.init ]'lookup AboveHaaInit  [\haa.medi ]' ;
+} caltAboveHaaInit;
+
+lookup BaaRaaFina {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_BaaRaaFina ;
+    sub \raa.fina by \raa.fina_BaaRaaFina ;
+} BaaRaaFina;
+
+lookup BaaNoonFina {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_BaaNoonFina ;
+    sub \noon.fina by \noon.fina_BaaNoonFina ;
+} BaaNoonFina;
+
+lookup caltBaaRaaFina {
+  lookupflag IgnoreMarks;
+    sub [\baa.medi ]'lookup BaaRaaFina  [\raa.fina ]' ;
+  subtable;
+    sub  \baa.medi'lookup BaaNoonFina  \noon.fina'lookup BaaNoonFina   ;
+} caltBaaRaaFina;
+
+lookup BaaMeemFina {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_BaaMeemFina ;
+    sub \meem.fina by \meem.fina_BaaMeemFina ;
+} BaaMeemFina;
+
+lookup caltBaaMeemFina {
+  lookupflag IgnoreMarks;
+    sub  \baa.medi'lookup BaaMeemFina  \meem.fina'lookup BaaMeemFina   ;
+} caltBaaMeemFina;
+
+lookup KafBaaAlefIsol {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_KafBaaInit ;
+    sub \kaf.init by \kaf.init_KafBaaInit ;
+} KafBaaAlefIsol;
+
+lookup KafBaaAlefFina {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_KafBaaMedi ;
+    sub \kaf.medi by \kaf.medi_KafBaaMedi ;
+} KafBaaAlefFina;
+
+lookup caltKafBaa {
+  lookupflag IgnoreMarks;
+    sub [\kaf.init ]'lookup KafBaaAlefIsol  [\baa.medi ]' [\alef.fina \lam.fina \lam.medi ] ;
+  subtable;
+    sub [\kaf.medi ]'lookup KafBaaAlefFina  [\baa.medi ]' [\alef.fina \lam.medi \lam.fina ] ;
+} caltKafBaa;
+
+lookup KafBaaDotAbove {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_Tatweel ;
+    sub \kaf.medi by \kaf.medi_Tatweel ;
+} KafBaaDotAbove;
+
+lookup caltKafBaaDotAbove {
+  lookupflag MarkAttachmentType @DotsHamzaAbove;
+    sub [\kaf.init \kaf.medi ]'lookup KafBaaDotAbove  [\baa.medi \baa.medi_BaaMeemFina \baa.medi_BaaRaaFina \baa.medi_BaaNoonFina ] [\hamza.above \dot.above \twodots.above \threedots.above 
+	\threedotsinverted.above \smalltaa.above \vtwodots.above ] ;
+} caltKafBaaDotAbove;
+
+lookup caltKafClash {
+  lookupflag IgnoreMarks;
+    sub [\kaf.init \kaf.medi ]'lookup KafBaaDotAbove  [\faa.fina \faa.medi \heh.medi \faa.medi_FaaYaaFina ] ;
+} caltKafClash;
+
+lookup HighBaa {
+  lookupflag 0;
+    sub \baa.init by \baa.init_High ;
+    sub \baa.medi by \baa.medi_High ;
+} HighBaa;
+
+lookup caltHighBaa {
+  lookupflag IgnoreMarks;
+    sub [\baa.medi \sad.init \sad.medi \seen.init \seen.medi \baa.medi_BaaBaaInit ] [\baa.medi ]'lookup HighBaa  [\baa.fina \baa.medi \seen.fina \seen.medi \baa.medi_BaaHehMedi 
+	\seen.medi_PreYaa ] ;
+  subtable;
+    sub [\baa.medi ]'lookup HighBaa  [\seen.fina \seen.medi \seen.medi_PreYaa ] ;
+  subtable;
+    sub [\baa.init ]'lookup HighBaa  [\baa.medi ]' [\baa.medi \baa.fina \seen.medi \seen.fina ]' ;
+} caltHighBaa;
+
+lookup BaaHehMedi {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_BaaHehMedi ;
+    sub \heh.medi by \heh.medi_BaaHehMedi ;
+} BaaHehMedi;
+
+lookup caltBaaHehMedi {
+  lookupflag IgnoreMarks;
+    sub  \baa.medi'lookup BaaHehMedi  \heh.medi'lookup BaaHehMedi   ;
+} caltBaaHehMedi;
+
+lookup LamAlefFina {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_LamAlefFina ;
+    sub \lam.medi by \lam.medi_LamAlefFina ;
+} LamAlefFina;
+
+lookup caltLamAlefFina {
+  lookupflag IgnoreMarks;
+    sub [\lam.medi ]'lookup LamAlefFina  [\alef.fina ]' ;
+} caltLamAlefFina;
+
+lookup KafLamHehIsol {
+  lookupflag 0;
+    sub \heh.fina by \heh.fina_KafLamHehIsol ;
+    sub \kaf.init by \kaf.init_KafLamHehIsol ;
+    sub \lam.medi by \lam.medi_KafLamHehIsol ;
+} KafLamHehIsol;
+
+lookup KafMeemAlefIsol {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_KafMeemAlefIsol ;
+    sub \kaf.init by \kaf.init_KafMeemAlefIsol ;
+    sub \meem.medi by \meem.medi_KafMeemAlefIsol ;
+} KafMeemAlefIsol;
+
+lookup BaaSeenAltInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaSeenAltInit ;
+    sub \raa.fina by \raa.fina_PostTooth ;
+    sub \seen.medi by \seen.medi_BaaSeenAltInit ;
+    sub \yaa.fina by \yaa.fina_PostTooth ;
+} BaaSeenAltInit;
+
+lookup LamHaaHaaInit {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi1_LamHaaHaaInit ;
+    sub \lam.init by \lam.init_LamHaaHaaInit ;
+} LamHaaHaaInit;
+
+lookup LamHaaHaaInit2 {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi2_LamHaaHaaInit ;
+} LamHaaHaaInit2;
+
+lookup AynMeemInit {
+  lookupflag 0;
+    sub \ayn.init by \ayn.init_AynMeemInit ;
+    sub \meem.medi by \meem.medi_AynMeemInit ;
+} AynMeemInit;
+
+lookup KafHehIsol {
+  lookupflag 0;
+    sub \heh.fina by \heh.fina_KafHehIsol ;
+    sub \kaf.init by \kaf.init_KafHehIsol ;
+} KafHehIsol;
+
+lookup LamDalIsol {
+  lookupflag 0;
+    sub \dal.fina by \dal.fina_LamDalIsol ;
+    sub \lam.init by \lam.init_LamDalIsol ;
+} LamDalIsol;
+
+lookup LamMeemFina {
+  lookupflag 0;
+    sub \lam.medi by \lam.medi_LamMeemFina ;
+    sub \meem.fina by \meem.fina_LamMeemFina ;
+} LamMeemFina;
+
+lookup SeenMeemInit {
+  lookupflag 0;
+    sub \meem.medi by \meem.medi_SeenMeemInit ;
+    sub \seen.init by \seen.init_SeenMeemInit ;
+} SeenMeemInit;
+
+lookup FaaMeemInit {
+  lookupflag 0;
+    sub \faa.init by \faa.init_FaaMeemInit ;
+    sub \meem.medi by \meem.medi_FaaMeemInit ;
+} FaaMeemInit;
+
+lookup BaaMeemAlefFina {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_BaaMeemAlefFina ;
+    sub \baa.medi by \baa.medi_BaaMeemAlefFina ;
+    sub \meem.medi by \meem.medi_BaaMeemAlefFina ;
+} BaaMeemAlefFina;
+
+lookup KafYaaIsol {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafYaaIsol ;
+    sub \yaa.fina by \yaa.fina_KafYaaIsol ;
+} KafYaaIsol;
+
+lookup BaaRaaIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaRaaIsol ;
+    sub \raa.fina by \raa.fina_BaaRaaIsol ;
+} BaaRaaIsol;
+
+lookup LamHehIsol {
+  lookupflag 0;
+    sub \heh.fina by \heh.fina_LamHehIsol ;
+    sub \lam.init by \lam.init_LamHehIsol ;
+} LamHehIsol;
+
+lookup LamLamAlefIsol {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_LamLamAlefIsol ;
+    sub \lam.init by \lam.init_LamLamAlefIsol ;
+    sub \lam.medi by \lam.medi_LamLamAlefIsol ;
+    sub \lam.medi_LamAlefFina by \lam.medi_LamLamAlefIsol ;
+    sub \alef.fina_LamAlefFina by \alef.fina_LamLamAlefIsol ;
+} LamLamAlefIsol;
+
+lookup LamWawFina {
+  lookupflag 0;
+    sub \lam.medi by \lam.medi_LamWawFina ;
+    sub \waw.fina by \waw.fina_LamWawFina ;
+} LamWawFina;
+
+lookup MeemMeemInit {
+  lookupflag 0;
+    sub \meem.init by \meem.init_MeemMeemInit ;
+    sub \meem.medi by \meem.medi_MeemMeemInit ;
+} MeemMeemInit;
+
+lookup FaaYaaFina {
+  lookupflag 0;
+    sub \faa.medi by \faa.medi_FaaYaaFina ;
+    sub \yaa.fina by \yaa.fina_FaaYaaFina ;
+} FaaYaaFina;
+
+lookup LamLamHaaInit {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi_LamLamHaaInit ;
+    sub \lam.init by \lam.init_LamLamHaaInit ;
+    sub \lam.medi by \lam.medi_LamLamHaaInit ;
+} LamLamHaaInit;
+
+lookup HehMeemInit {
+  lookupflag 0;
+    sub \heh.init by \heh.init_HehMeemInit ;
+    sub \meem.medi by \meem.medi_HehMeemInit ;
+} HehMeemInit;
+
+lookup BaaYaaIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaYaaIsol ;
+    sub \yaa.fina by \yaa.fina_BaaYaaIsol ;
+} BaaYaaIsol;
+
+lookup LamHehFina {
+  lookupflag 0;
+    sub \heh.fina by \heh.fina_LamHehFina ;
+    sub \lam.medi by \lam.medi_LamHehFina ;
+} LamHehFina;
+
+lookup KafLamAlefFina {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_KafLamAlefFina ;
+    sub \kaf.medi by \kaf.medi_KafLamAlefFina ;
+    sub \lam.medi by \lam.medi_KafLamAlefFina ;
+    sub \lam.medi_LamAlefFina by \lam.medi_KafLamAlefFina ;
+    sub \alef.fina_LamAlefFina by \alef.fina_KafLamAlefFina ;
+} KafLamAlefFina;
+
+lookup KafHehFina {
+  lookupflag 0;
+    sub \heh.fina by \heh.fina_KafHehFina ;
+    sub \kaf.medi by \kaf.medi_KafHehFina ;
+} KafHehFina;
+
+lookup LamBaaMeemInit {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_LamBaaMeemInit ;
+    sub \lam.init by \lam.init_LamBaaMeemInit ;
+    sub \meem.medi by \meem.medi_LamBaaMeemInit ;
+} LamBaaMeemInit;
+
+lookup KafLamMeemMedi {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafLamMeemMedi ;
+    sub \lam.medi by \lam.medi_KafLamMeemMedi ;
+    sub \meem.medi by \meem.medi_KafLamMeemMedi ;
+} KafLamMeemMedi;
+
+lookup BaaDalIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaDalIsol ;
+    sub \dal.fina by \dal.fina_BaaDalIsol ;
+} BaaDalIsol;
+
+lookup BaaMeemHaaInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaMeemHaaInit ;
+    sub \haa.medi by \haa.medi_BaaMeemHaaInit ;
+    sub \meem.medi by \meem.medi_BaaMeemHaaInit ;
+} BaaMeemHaaInit;
+
+lookup HaaYaaIsol {
+  lookupflag 0;
+    sub \haa.init by \haa.init_HaaYaaIsol ;
+    sub \yaa.fina by \yaa.fina_HaaYaaIsol ;
+} HaaYaaIsol;
+
+lookup KafLamIsol {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafLamIsol ;
+    sub \lam.fina by \lam.fina_KafLamIsol ;
+} KafLamIsol;
+
+lookup MeemYaaIsol {
+  lookupflag 0;
+    sub \heh.init by \heh.init_PreYaa ;
+    sub \meem.init by \meem.init_MeemYaaIsol ;
+    sub \yaa.fina by \yaa.fina_MeemYaaIsol ;
+} MeemYaaIsol;
+
+lookup BaaBaaYaaIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaBaaYaaIsol ;
+    sub \baa.medi by \baa.medi_BaaBaaYaaIsol ;
+    sub \yaa.fina by \yaa.fina_BaaBaaYaaIsol ;
+} BaaBaaYaaIsol;
+
+lookup Lellah {
+  lookupflag 0;
+    sub \heh.fina by \heh.fina_Lellah ;
+    sub \lam.init by \lam.init_Lellah ;
+    sub \lam.medi by \lam.medi_Lellah ;
+} Lellah;
+
+lookup LamLamInit {
+  lookupflag 0;
+    sub \lam.init by \lam.init_LamLamInit ;
+    sub \lam.medi by \lam.medi_LamLamInit ;
+} LamLamInit;
+
+lookup LamYaaFina {
+  lookupflag 0;
+    sub \lam.medi by \lam.medi_LamYaaFina ;
+    sub \yaa.fina by \yaa.fina_LamYaaFina ;
+} LamYaaFina;
+
+lookup LamMeemHaaInit {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi_LamMeemHaaInit ;
+    sub \lam.init by \lam.init_LamMeemHaaInit ;
+    sub \meem.medi by \meem.medi_LamMeemHaaInit ;
+} LamMeemHaaInit;
+
+lookup LamMeemInit {
+  lookupflag 0;
+    sub \lam.init by \lam.init_LamMeemInit ;
+    sub \meem.medi by \meem.medi_LamMeemInit ;
+} LamMeemInit;
+
+lookup LamAlefIsol {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_LamAlefIsol ;
+    sub \lam.init by \lam.init_LamAlefIsol ;
+} LamAlefIsol;
+
+lookup LamHaaMeemInit {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi_LamHaaMeemInit ;
+    sub \lam.init by \lam.init_LamHaaMeemInit ;
+    sub \meem.medi by \meem.medi_LamHaaMeemInit ;
+} LamHaaMeemInit;
+
+lookup BaaBaaMeemInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaBaaMeemInit ;
+    sub \baa.medi by \baa.medi_BaaBaaMeemInit ;
+    sub \meem.medi by \meem.medi_BaaBaaMeemInit ;
+} BaaBaaMeemInit;
+
+lookup BaaBaaHaaInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaBaaHaaInit ;
+    sub \baa.medi by \baa.medi_BaaBaaHaaInit ;
+    sub \haa.medi by \haa.medi_BaaBaaHaaInit ;
+} BaaBaaHaaInit;
+
+lookup BaaBaaInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaBaaInit ;
+    sub \baa.medi by \baa.medi_BaaBaaInit ;
+} BaaBaaInit;
+
+lookup AynYaaFina {
+  lookupflag 0;
+    sub \ayn.medi by \ayn.medi_AynYaaFina ;
+    sub \yaa.fina by \yaa.fina_AynYaaFina ;
+} AynYaaFina;
+
+lookup LamKafIsol {
+  lookupflag 0;
+    sub \kaf.fina by \kaf.fina_LamKafIsol ;
+    sub \lam.init by \lam.init_LamKafIsol ;
+} LamKafIsol;
+
+lookup MeemRaaIsol {
+  lookupflag 0;
+    sub \meem.init by \meem.init_MeemRaaIsol ;
+    sub \raa.fina by \raa.fina_MeemRaaIsol ;
+} MeemRaaIsol;
+
+lookup FaaHaaInit {
+  lookupflag 0;
+    sub \faa.init by \faa.init_FaaHaaInit ;
+    sub \haa.medi by \haa.medi_FaaHaaInit ;
+} FaaHaaInit;
+
+lookup KafKafFina {
+  lookupflag 0;
+    sub \kaf.fina by \kaf.fina_KafKafFina ;
+    sub \kaf.medi by \kaf.medi_KafKafFina ;
+} KafKafFina;
+
+lookup HaaHaaInit {
+  lookupflag 0;
+    sub \haa.init by \haa.init_HaaHaaInit ;
+    sub \haa.medi by \haa.medi_HaaHaaInit ;
+} HaaHaaInit;
+
+lookup KafMeemIsol {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafMeemIsol ;
+    sub \meem.fina by \meem.fina_KafMeemIsol ;
+} KafMeemIsol;
+
+lookup FaaYaaIsol {
+  lookupflag 0;
+    sub \faa.init by \faa.init_FaaYaaIsol ;
+    sub \yaa.fina by \yaa.fina_FaaYaaIsol ;
+} FaaYaaIsol;
+
+lookup LamQafFina {
+  lookupflag 0;
+    sub \lam.medi by \lam.medi_LamQafFina ;
+    sub \qaf.fina by \qaf.fina_LamQafFina ;
+} LamQafFina;
+
+lookup KafMeemLamFina {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafMeemLamFina ;
+    sub \lam.fina by \lam.fina_KafMeemLamFina ;
+    sub \meem.medi by \meem.medi_KafMeemLamFina ;
+} KafMeemLamFina;
+
+lookup MeemHaaMeemInit {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi_MeemHaaMeemInit ;
+    sub \meem.init by \meem.init_MeemHaaMeemInit ;
+    sub \meem.medi by \meem.medi_MeemHaaMeemInit ;
+    sub \meem.init_MeemHaaInit by \meem.init_MeemHaaMeemInit ;
+    sub \haa.medi_SadHaaInit by \haa.medi_MeemHaaMeemInit ;
+} MeemHaaMeemInit;
+
+lookup BaaNoonIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaNoonIsol ;
+    sub \noon.fina by \noon.fina_BaaNoonIsol ;
+} BaaNoonIsol;
+
+lookup KafMeemFina {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafMeemFina ;
+    sub \meem.fina by \meem.fina_KafMeemFina ;
+} KafMeemFina;
+
+lookup KafLamAlefIsol {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_KafLamAlefIsol ;
+    sub \kaf.init by \kaf.init_KafLamAlefIsol ;
+    sub \lam.medi by \lam.medi_KafLamAlefIsol ;
+    sub \lam.medi_LamAlefFina by \lam.medi_KafLamAlefIsol ;
+    sub \alef.fina_LamAlefFina by \alef.fina_KafLamAlefIsol ;
+} KafLamAlefIsol;
+
+lookup BaaSeenInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaSeenInit ;
+    sub \seen.fina by \seen.fina_BaaSeen ;
+    sub \seen.medi by \seen.medi_BaaSeenInit ;
+} BaaSeenInit;
+
+lookup KafRaaFina {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafRaaFina ;
+    sub \raa.fina by \raa.fina_KafRaaFina ;
+} KafRaaFina;
+
+lookup LamHehInit {
+  lookupflag 0;
+    sub \heh.medi by \heh.medi_LamHehInit ;
+    sub \lam.init by \lam.init_LamHehInit ;
+} LamHehInit;
+
+lookup BaaMeemInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaMeemInit ;
+    sub \meem.medi by \meem.medi_BaaMeemInit ;
+} BaaMeemInit;
+
+lookup AynYaaIsol {
+  lookupflag 0;
+    sub \ayn.init by \ayn.init_AynYaaIsol ;
+    sub \yaa.fina by \yaa.fina_AynYaaIsol ;
+} AynYaaIsol;
+
+lookup BaaHehInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaHehInit ;
+    sub \heh.medi by \heh.medi_BaaHehInit ;
+} BaaHehInit;
+
+lookup KafLamInit {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafLamInit ;
+    sub \lam.medi by \lam.medi_KafLamInit ;
+} KafLamInit;
+
+lookup SadMeemInit {
+  lookupflag 0;
+    sub \meem.medi by \meem.medi_SadMeemInit ;
+    sub \sad.init by \sad.init_SadMeemInit ;
+} SadMeemInit;
+
+lookup KafRaaIsol {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafRaaIsol ;
+    sub \raa.fina by \raa.fina_KafRaaIsol ;
+} KafRaaIsol;
+
+lookup LamMeemIsol {
+  lookupflag 0;
+    sub \lam.init by \lam.init_LamMeemIsol ;
+    sub \meem.fina by \meem.fina_LamMeemIsol ;
+} LamMeemIsol;
+
+lookup AynHaaInit {
+  lookupflag 0;
+    sub \ayn.init by \ayn.init_AynHaaInit ;
+    sub \haa.medi by \haa.medi_AynHaaInit ;
+} AynHaaInit;
+
+lookup LamYaaIsol {
+  lookupflag 0;
+    sub \lam.init by \lam.init_LamYaaIsol ;
+    sub \yaa.fina by \yaa.fina_LamYaaIsol ;
+} LamYaaIsol;
+
+lookup KafYaaFina {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafYaaFina ;
+    sub \yaa.fina by \yaa.fina_KafYaaFina ;
+} KafYaaFina;
+
+lookup KafMeemLamInit {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafMeemLamInit ;
+    sub \lam.fina by \lam.fina_KafMeemLamFina ;
+    sub \lam.medi by \lam.medi_KafMeemLamInit ;
+    sub \meem.medi by \meem.medi_KafMeemLamInit ;
+} KafMeemLamInit;
+
+lookup LamMeemMedi {
+  lookupflag 0;
+    sub \lam.medi by \lam.medi_LamMeemMedi ;
+    sub \meem.medi by \meem.medi_LamMeemMedi ;
+} LamMeemMedi;
+
+lookup HaaMeemInit {
+  lookupflag 0;
+    sub \haa.init by \haa.init_HaaMeemInit ;
+    sub \meem.medi by \meem.medi_HaaMeemInit ;
+} HaaMeemInit;
+
+lookup SeenBaaMeemInit {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_SeenBaaMeemInit ;
+    sub \meem.medi by \meem.medi_SeenBaaMeemInit ;
+} SeenBaaMeemInit;
+
+lookup BaaBaaIsol {
+  lookupflag 0;
+    sub \baa.fina by \baa.fina_BaaBaaIsol ;
+    sub \baa.init by \baa.init_BaaBaaIsol ;
+} BaaBaaIsol;
+
+lookup KafAlefIsol {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_KafAlefIsol ;
+    sub \kaf.init by \kaf.init_KafAlefIsol ;
+} KafAlefIsol;
+
+lookup HaaRaaIsol {
+  lookupflag 0;
+    sub \haa.init by \haa.init_HaaRaaIsol ;
+    sub \raa.fina by \raa.fina_HaaRaaIsol ;
+} HaaRaaIsol;
+
+lookup LamRaaIsol {
+  lookupflag 0;
+    sub \lam.init by \lam.init_LamRaaIsol ;
+    sub \raa.fina by \raa.fina_LamRaaIsol ;
+} LamRaaIsol;
+
+lookup KafDalIsol {
+  lookupflag 0;
+    sub \dal.fina by \dal.fina_KafDalIsol ;
+    sub \kaf.init by \kaf.init_KafDalIsol ;
+} KafDalIsol;
+
+lookup BaaMeemIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaMeemIsol ;
+    sub \meem.fina by \meem.fina_BaaMeemIsol ;
+} BaaMeemIsol;
+
+lookup KafMeemAlefFina {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_KafMeemAlefFina ;
+    sub \kaf.medi by \kaf.medi_KafMeemAlefFina ;
+    sub \meem.medi by \meem.medi_KafMeemAlefFina ;
+} KafMeemAlefFina;
+
+lookup KafAlefFina {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_KafAlefFina ;
+    sub \kaf.medi by \kaf.medi_KafAlefFina ;
+} KafAlefFina;
+
+lookup LamKafFina {
+  lookupflag 0;
+    sub \kaf.fina by \kaf.fina_LamKafFina ;
+    sub \lam.medi by \lam.medi_LamKafFina ;
+} LamKafFina;
+
+lookup BaaHaaMeemInit {
+  lookupflag 0;
+    sub \baa.init by \baa.init_BaaHaaMeemInit ;
+    sub \haa.medi by \haa.medi_BaaHaaMeemInit ;
+    sub \meem.medi by \meem.medi_BaaHaaMeemInit ;
+    sub \haa.medi_SadHaaInit by \haa.medi_BaaHaaMeemInit ;
+    sub \baa.init_BaaHaaInit by \baa.init_BaaHaaMeemInit ;
+} BaaHaaMeemInit;
+
+lookup AboveHaaIsol {
+  lookupflag 0;
+    sub \ayn.init by \ayn.init_AboveHaaIsol ;
+    sub \baa.init by \baa.init_AboveHaaIsol ;
+    sub \faa.init by \faa.init_FaaHaaInit ;
+    sub \haa.fina by \haa.fina_AboveHaaIsol ;
+    sub \haa.init by \haa.init_AboveHaaIsol ;
+    sub \heh.init by \heh.init_AboveHaaIsol ;
+    sub \kaf.init by \kaf.init_AboveHaaIsol ;
+    sub \lam.init by \lam.init_LamHaaInit ;
+    sub \meem.init by \meem.init_AboveHaaIsol ;
+    sub \sad.init by \sad.init_AboveHaaIsol ;
+    sub \seen.init by \seen.init_AboveHaaIsol ;
+} AboveHaaIsol;
+
+lookup AboveHaaIsol2 {
+  lookupflag 0;
+    sub \haa.fina by \haa.fina_AboveHaaIsol2 ;
+} AboveHaaIsol2;
+
+lookup SeenYaaFina {
+  lookupflag 0;
+    sub \raa.fina by \raa.fina_PostTooth ;
+    sub \sad.init by \sad.init_PreYaa ;
+    sub \sad.medi by \sad.medi_PreYaa ;
+    sub \seen.init by \seen.init_PreYaa ;
+    sub \seen.medi by \seen.medi_PreYaa ;
+    sub \yaa.fina by \yaa.fina_PostTooth ;
+} SeenYaaFina;
+
+lookup KafMeemInit {
+  lookupflag 0;
+    sub \kaf.init by \kaf.init_KafMeemInit ;
+    sub \meem.medi by \meem.medi_KafMeemInit ;
+} KafMeemInit;
+
+lookup KafMeemMedi {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafMeemMedi ;
+    sub \meem.medi by \meem.medi_KafMeemMedi ;
+} KafMeemMedi;
+
+lookup KafLamMedi {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafLamMedi ;
+    sub \lam.medi by \lam.medi_KafLamMedi ;
+} KafLamMedi;
+
+lookup MeemAlefFina {
+  lookupflag 0;
+    sub \alef.fina by \alef.fina_MeemAlefFina ;
+    sub \meem.medi by \meem.medi_MeemAlefFina ;
+} MeemAlefFina;
+
+lookup LamHaaInit {
+  lookupflag 0;
+    sub \haa.medi by \haa.medi_LamHaaInit ;
+    sub \lam.init by \lam.init_LamHaaInit ;
+} LamHaaInit;
+
+lookup caltContextualAlternatesinArabi {
+  lookupflag IgnoreMarks;
+    sub  \kaf.init'lookup KafLamHehIsol  \lam.medi'lookup KafLamHehIsol  \heh.fina'lookup KafLamHehIsol   ;
+  subtable;
+    sub  \kaf.init'lookup KafMeemAlefIsol  \meem.medi'lookup KafMeemAlefIsol  \alef.fina'lookup KafMeemAlefIsol   ;
+  subtable;
+    sub [\baa.init ]'lookup BaaSeenAltInit  [\seen.medi ]' [\raa.fina \yaa.fina ]' ;
+  subtable;
+    sub  \lam.init'lookup LamHaaHaaInit  \haa.medi'lookup LamHaaHaaInit  \haa.medi'lookup LamHaaHaaInit   ;
+  subtable;
+    sub  \ayn.init'lookup AynMeemInit  \meem.medi'lookup AynMeemInit   ;
+  subtable;
+    sub  \kaf.init'lookup KafHehIsol  \heh.fina'lookup KafHehIsol   ;
+  subtable;
+    sub  \lam.init'lookup LamDalIsol  \dal.fina'lookup LamDalIsol   ;
+  subtable;
+    sub  \lam.medi'lookup LamMeemFina  \meem.fina'lookup LamMeemFina   ;
+  subtable;
+    sub  \seen.init'lookup SeenMeemInit  \meem.medi'lookup SeenMeemInit   ;
+  subtable;
+    sub  \faa.init'lookup FaaMeemInit  \meem.medi'lookup FaaMeemInit   ;
+  subtable;
+    sub  \baa.medi'lookup BaaMeemAlefFina  \meem.medi'lookup BaaMeemAlefFina  \alef.fina'lookup BaaMeemAlefFina   ;
+  subtable;
+    sub  \kaf.init'lookup KafYaaIsol  \yaa.fina'lookup KafYaaIsol   ;
+  subtable;
+    sub  \baa.init'lookup BaaRaaIsol  \raa.fina'lookup BaaRaaIsol   ;
+  subtable;
+    sub  \lam.init'lookup LamHehIsol  \heh.fina'lookup LamHehIsol   ;
+  subtable;
+    sub [\lam.init ]'lookup LamLamAlefIsol  [\lam.medi \lam.medi_LamAlefFina ]' [\alef.fina \alef.fina_LamAlefFina ]' ;
+  subtable;
+    sub  \lam.medi'lookup LamWawFina  \waw.fina'lookup LamWawFina   ;
+  subtable;
+    sub  \meem.init'lookup MeemMeemInit  \meem.medi'lookup MeemMeemInit   ;
+  subtable;
+    sub  \faa.medi'lookup FaaYaaFina  \yaa.fina'lookup FaaYaaFina   ;
+  subtable;
+    sub  \lam.init'lookup LamLamHaaInit  \lam.medi'lookup LamLamHaaInit  \haa.medi'lookup LamLamHaaInit   ;
+  subtable;
+    sub  \heh.init'lookup HehMeemInit  \meem.medi'lookup HehMeemInit   ;
+  subtable;
+    sub  \baa.init'lookup BaaYaaIsol  \yaa.fina'lookup BaaYaaIsol   ;
+  subtable;
+    sub  \lam.medi'lookup LamHehFina  \heh.fina'lookup LamHehFina   ;
+  subtable;
+    sub [\kaf.medi ]'lookup KafLamAlefFina  [\lam.medi \lam.medi_LamAlefFina ]' [\alef.fina \alef.fina_LamAlefFina ]' ;
+  subtable;
+    sub  \kaf.medi'lookup KafHehFina  \heh.fina'lookup KafHehFina   ;
+  subtable;
+    sub  \lam.init'lookup LamBaaMeemInit  \baa.medi'lookup LamBaaMeemInit  \meem.medi'lookup LamBaaMeemInit   ;
+  subtable;
+    sub  \kaf.medi'lookup KafLamMeemMedi  \lam.medi'lookup KafLamMeemMedi  \meem.medi'lookup KafLamMeemMedi   ;
+  subtable;
+    sub  \baa.init'lookup BaaDalIsol  \dal.fina'lookup BaaDalIsol   ;
+  subtable;
+    sub  \baa.init'lookup BaaMeemHaaInit  \meem.medi'lookup BaaMeemHaaInit  \haa.medi'lookup BaaMeemHaaInit   ;
+  subtable;
+    sub  \haa.init'lookup HaaYaaIsol  \yaa.fina'lookup HaaYaaIsol   ;
+  subtable;
+    sub  \kaf.init'lookup KafLamIsol  \lam.fina'lookup KafLamIsol   ;
+  subtable;
+    sub [\meem.init \heh.init ]'lookup MeemYaaIsol  [\yaa.fina ]' ;
+  subtable;
+    sub  \baa.init'lookup BaaBaaYaaIsol  \baa.medi'lookup BaaBaaYaaIsol  \yaa.fina'lookup BaaBaaYaaIsol   ;
+  subtable;
+    sub  \lam.init'lookup Lellah  \lam.medi'lookup Lellah  \heh.fina'lookup Lellah   ;
+  subtable;
+    sub  \lam.init'lookup LamLamInit  \lam.medi'lookup LamLamInit   ;
+  subtable;
+    sub  \lam.medi'lookup LamYaaFina  \yaa.fina'lookup LamYaaFina   ;
+  subtable;
+    sub  \lam.init'lookup LamMeemHaaInit  \meem.medi'lookup LamMeemHaaInit  \haa.medi'lookup LamMeemHaaInit   ;
+  subtable;
+    sub  \lam.init'lookup LamMeemInit  \meem.medi'lookup LamMeemInit   ;
+  subtable;
+    sub  \lam.init'lookup LamAlefIsol  \alef.fina'lookup LamAlefIsol   ;
+  subtable;
+    sub  \lam.init'lookup LamHaaMeemInit  \haa.medi'lookup LamHaaMeemInit  \meem.medi'lookup LamHaaMeemInit   ;
+  subtable;
+    sub  \baa.init'lookup BaaBaaMeemInit  \baa.medi'lookup BaaBaaMeemInit  \meem.medi'lookup BaaBaaMeemInit   ;
+  subtable;
+    sub  \baa.init'lookup BaaBaaHaaInit  \baa.medi'lookup BaaBaaHaaInit  \haa.medi'lookup BaaBaaHaaInit   ;
+  subtable;
+    sub  \baa.init'lookup BaaBaaInit  \baa.medi'lookup BaaBaaInit   ;
+  subtable;
+    sub  \ayn.medi'lookup AynYaaFina  \yaa.fina'lookup AynYaaFina   ;
+  subtable;
+    sub  \lam.init'lookup LamKafIsol  \kaf.fina'lookup LamKafIsol   ;
+  subtable;
+    sub  \meem.init'lookup MeemRaaIsol  \raa.fina'lookup MeemRaaIsol   ;
+  subtable;
+    sub  \faa.init'lookup FaaHaaInit  \haa.medi'lookup FaaHaaInit   ;
+  subtable;
+    sub  \kaf.medi'lookup KafKafFina  \kaf.fina'lookup KafKafFina   ;
+  subtable;
+    sub  \haa.init'lookup HaaHaaInit  \haa.medi'lookup HaaHaaInit   ;
+  subtable;
+    sub  \kaf.init'lookup KafMeemIsol  \meem.fina'lookup KafMeemIsol   ;
+  subtable;
+    sub  \faa.init'lookup FaaYaaIsol  \yaa.fina'lookup FaaYaaIsol   ;
+  subtable;
+    sub  \lam.medi'lookup LamQafFina  \qaf.fina'lookup LamQafFina   ;
+  subtable;
+    sub  \kaf.medi'lookup KafMeemLamFina  \meem.medi'lookup KafMeemLamFina  \lam.fina'lookup KafMeemLamFina   ;
+  subtable;
+    sub [\meem.init \meem.init_MeemHaaInit ]'lookup MeemHaaMeemInit  [\haa.medi \haa.medi_SadHaaInit ]' [\meem.medi ]' ;
+  subtable;
+    sub  \baa.init'lookup BaaNoonIsol  \noon.fina'lookup BaaNoonIsol   ;
+  subtable;
+    sub  \kaf.medi'lookup KafMeemFina  \meem.fina'lookup KafMeemFina   ;
+  subtable;
+    sub [\kaf.init ]'lookup KafLamAlefIsol  [\lam.medi \lam.medi_LamAlefFina ]' [\alef.fina \alef.fina_LamAlefFina ]' ;
+  subtable;
+    sub [\baa.init ]'lookup BaaSeenInit  [\seen.medi \seen.fina ]' ;
+  subtable;
+    sub  \kaf.medi'lookup KafRaaFina  \raa.fina'lookup KafRaaFina   ;
+  subtable;
+    sub  \lam.init'lookup LamHehInit  \heh.medi'lookup LamHehInit   ;
+  subtable;
+    sub  \baa.init'lookup BaaMeemInit  \meem.medi'lookup BaaMeemInit   ;
+  subtable;
+    sub  \ayn.init'lookup AynYaaIsol  \yaa.fina'lookup AynYaaIsol   ;
+  subtable;
+    sub  \baa.init'lookup BaaHehInit  \heh.medi'lookup BaaHehInit   ;
+  subtable;
+    sub  \kaf.init'lookup KafLamInit  \lam.medi'lookup KafLamInit   ;
+  subtable;
+    sub  \sad.init'lookup SadMeemInit  \meem.medi'lookup SadMeemInit   ;
+  subtable;
+    sub  \kaf.init'lookup KafRaaIsol  \raa.fina'lookup KafRaaIsol   ;
+  subtable;
+    sub  \lam.init'lookup LamMeemIsol  \meem.fina'lookup LamMeemIsol   ;
+  subtable;
+    sub  \ayn.init'lookup AynHaaInit  \haa.medi'lookup AynHaaInit   ;
+  subtable;
+    sub  \lam.init'lookup LamYaaIsol  \yaa.fina'lookup LamYaaIsol   ;
+  subtable;
+    sub  \kaf.medi'lookup KafYaaFina  \yaa.fina'lookup KafYaaFina   ;
+  subtable;
+    sub [\kaf.init ]'lookup KafMeemLamInit  [\meem.medi ]' [\lam.medi \lam.fina ]' ;
+  subtable;
+    sub  \lam.medi'lookup LamMeemMedi  \meem.medi'lookup LamMeemMedi   ;
+  subtable;
+    sub  \haa.init'lookup HaaMeemInit  \meem.medi'lookup HaaMeemInit   ;
+  subtable;
+    sub [\seen.init \sad.init ] [\baa.medi ]'lookup SeenBaaMeemInit  [\meem.medi ]' ;
+  subtable;
+    sub  \baa.init'lookup BaaBaaIsol  \baa.fina'lookup BaaBaaIsol   ;
+  subtable;
+    sub  \kaf.init'lookup KafAlefIsol  \alef.fina'lookup KafAlefIsol   ;
+  subtable;
+    sub  \haa.init'lookup HaaRaaIsol  \raa.fina'lookup HaaRaaIsol   ;
+  subtable;
+    sub  \lam.init'lookup LamRaaIsol  \raa.fina'lookup LamRaaIsol   ;
+  subtable;
+    sub  \kaf.init'lookup KafDalIsol  \dal.fina'lookup KafDalIsol   ;
+  subtable;
+    sub  \baa.init'lookup BaaMeemIsol  \meem.fina'lookup BaaMeemIsol   ;
+  subtable;
+    sub  \kaf.medi'lookup KafMeemAlefFina  \meem.medi'lookup KafMeemAlefFina  \alef.fina'lookup KafMeemAlefFina   ;
+  subtable;
+    sub [\kaf.medi ]'lookup KafAlefFina  [\alef.fina ]' ;
+  subtable;
+    sub  \lam.medi'lookup LamKafFina  \kaf.fina'lookup LamKafFina   ;
+  subtable;
+    sub [\baa.init \baa.init_BaaHaaInit ]'lookup BaaHaaMeemInit  [\haa.medi \haa.medi_SadHaaInit ]' [\meem.medi ]' ;
+  subtable;
+    sub [\ayn.init \baa.init \haa.init \heh.init \meem.init \sad.init \seen.init ]'lookup AboveHaaIsol  [\haa.fina ]' ;
+  subtable;
+    sub [\faa.init \lam.init \kaf.init ]'lookup AboveHaaIsol  [\haa.fina ]' ;
+  subtable;
+    sub [\seen.init \sad.init \seen.medi \sad.medi ]'lookup SeenYaaFina  [\yaa.fina \raa.fina ]' ;
+  subtable;
+    sub  \kaf.init'lookup KafMeemInit  \meem.medi'lookup KafMeemInit   ;
+  subtable;
+    sub  \kaf.medi'lookup KafMeemMedi  \meem.medi'lookup KafMeemMedi   ;
+  subtable;
+    sub  \kaf.medi'lookup KafLamMedi  \lam.medi'lookup KafLamMedi   ;
+  subtable;
+    sub  \meem.medi'lookup MeemAlefFina  \alef.fina'lookup MeemAlefFina   ;
+  subtable;
+    sub  \lam.init'lookup LamHaaInit  \haa.medi'lookup LamHaaInit   ;
+} caltContextualAlternatesinArabi;
+
+lookup HehMediTooth {
+  lookupflag 0;
+    sub \heh.medi by \heh.medi_PostTooth ;
+    sub \sad.init by \sad.init_PreYaa ;
+    sub \sad.medi by \sad.medi_PreYaa ;
+    sub \seen.init by \seen.init_PreYaa ;
+    sub \seen.medi by \seen.medi_PreYaa ;
+    sub \seen.medi_BaaSeenInit by \seen.medi_BaaSeenAltInit ;
+} HehMediTooth;
+
+lookup caltHehMediTooth {
+  lookupflag IgnoreMarks;
+    sub [\sad.init \sad.medi \seen.init \seen.medi \seen.medi_BaaSeenInit ]'lookup HehMediTooth  [\heh.medi ]' ;
+} caltHehMediTooth;
+
+lookup SeenMeemMedi {
+  lookupflag 0;
+    sub \sad.medi by \sad.medi_PreYaa ;
+    sub \seen.medi by \seen.medi_PreYaa ;
+    sub \meem.medi_MeemAlefFina by \meem.medi_AlefPostTooth ;
+    sub \alef.fina_MeemAlefFina by \alef.fina_BaaMeemAlefFina ;
+    sub \seen.medi_BaaSeenInit by \seen.medi_BaaSeenAltInit ;
+} SeenMeemMedi;
+
+lookup caltSeenMeemMedi {
+  lookupflag IgnoreMarks;
+    sub [\seen.medi \seen.medi_BaaSeenInit \sad.medi ]'lookup SeenMeemMedi  [\meem.medi_MeemAlefFina ]' [\alef.fina_MeemAlefFina ]' ;
+} caltSeenMeemMedi;
+
+lookup caltFinjani {
+  lookupflag IgnoreMarks;
+    sub [\ayn.init \haa.init \haa.medi ]' [\alef.fina \dal.fina \heh.fina \lam.fina \lam.medi \lam.medi_LamMeemFina 
+	\lam.medi_LamWawFina \lam.medi_LamHehFina \lam.medi_LamYaaFina 
+	\lam.medi_LamQafFina \baa.medi_BaaRaaFina \lam.medi_LamAlefFina 
+	\lam.medi_LamMeemMedi \baa.medi_BaaNoonFina \baa.medi_High ]  by [\ayn.init_Finjani \haa.init_Finjani 
+	\haa.medi_Finjani ];
+} caltFinjani;
+
+lookup BaaYaaFina {
+  lookupflag 0;
+    sub \baa.medi by \baa.medi_BaaYaaFina ;
+    sub \yaa.fina by \yaa.fina_BaaYaaFina ;
+} BaaYaaFina;
+
+lookup caltBaaYaaFina {
+  lookupflag IgnoreMarks;
+    sub  \baa.medi'lookup BaaYaaFina  \yaa.fina'lookup BaaYaaFina   ;
+} caltBaaYaaFina;
+
+lookup ToothMeem {
+  lookupflag 0;
+    sub \meem.fina by \meem.fina_PostTooth ;
+    sub \sad.init by \sad.init_PreYaa ;
+    sub \sad.medi by \sad.medi_PreYaa ;
+    sub \seen.init by \seen.init_PreYaa ;
+    sub \seen.medi by \seen.medi_PreYaa ;
+    sub \seen.medi_BaaSeenInit by \seen.medi_BaaSeenAltInit ;
+} ToothMeem;
+
+lookup caltToothMeem {
+  lookupflag IgnoreMarks;
+    sub [\seen.init \seen.medi \sad.init \sad.medi \seen.medi_BaaSeenInit ]'lookup ToothMeem  [\meem.fina ]' ;
+} caltToothMeem;
+
+lookup KafLamYaa {
+  lookupflag 0;
+    sub \lam.medi_KafLamMedi by \lam.medi_KafLamYaaFina ;
+    sub \lam.medi_KafLamInit by \lam.medi_KafLamYaaIsol ;
+} KafLamYaa;
+
+lookup caltKafLamYaa {
+  lookupflag IgnoreMarks;
+    sub [\lam.medi_KafLamInit \lam.medi_KafLamMedi ]'lookup KafLamYaa  [\yaa.fina ]' ;
+} caltKafLamYaa;
+
+lookup KafLamFina {
+  lookupflag 0;
+    sub \kaf.medi by \kaf.medi_KafLamAlefFina ;
+    sub \lam.fina by \lam.fina_KafLamFina ;
+} KafLamFina;
+
+lookup caltKafLamFina {
+  lookupflag IgnoreMarks;
+    sub [\kaf.medi ]'lookup KafLamFina  [\lam.fina ]' ;
+} caltKafLamFina;
+
+lookup LamKafInit {
+  lookupflag 0;
+    sub \lam.init by \lam.init_Tatweel ;
+    sub \lam.medi by \lam.medi_Tatweel ;
+    sub \lam.medi_KafLamMedi by \lam.medi_KafLamMediTatweel ;
+    sub \lam.medi_KafMeemLamInit by \lam.medi_KafMeemLamInitTatweel ;
+    sub \lam.medi_LamLamInit by \lam.medi_LamLamInitTatweel ;
+    sub \meem.medi_LamMeemInit by \meem.medi_LamMeemInitTatweel ;
+    sub \lam.medi_KafLamInit by \lam.medi_KafLamInitTatweel ;
+} LamKafInit;
+
+lookup caltLamKafInit {
+  lookupflag IgnoreMarks;
+    sub [\lam.init \lam.medi \lam.medi_KafLamMedi \lam.medi_KafMeemLamInit 
+	\lam.medi_LamLamInit \meem.medi_LamMeemInit \lam.medi_KafLamInit ]'lookup LamKafInit  [\kaf.medi \kaf.medi_KafHehFina \kaf.medi_KafMeemFina \kaf.medi_KafRaaFina 
+	\kaf.medi_KafYaaFina \kaf.medi_KafMeemAlefFina 
+	\kaf.medi_KafAlefFina \kaf.medi_Tatweel ] ;
+} caltLamKafInit;
+
+lookup HehMeemAlef {
+  lookupflag 0;
+    sub \meem.medi_MeemAlefFina by \meem.medi ;
+    sub \alef.fina_MeemAlefFina by \alef.fina ;
+} HehMeemAlef;
+
+lookup caltHehMeemAlef {
+  lookupflag IgnoreMarks;
+    sub [\heh.medi_BaaHehInit \heh.medi_BaaHehMedi \heh.medi_PostTooth ] [\meem.medi_MeemAlefFina ]'lookup HehMeemAlef  [\alef.fina_MeemAlefFina ]' ;
+} caltHehMeemAlef;
+
+lookup BaaAlefIsol {
+  lookupflag 0;
+    sub \baa.init by \baa.init_Tatweel ;
+} BaaAlefIsol;
+
+lookup caltBaaAlefIsol {
+  lookupflag IgnoreMarks;
+    sub [\baa.init ]'lookup BaaAlefIsol  [\alef.fina ]' ;
+} caltBaaAlefIsol;
+
+lookup caltGafDash {
+  lookupflag MarkAttachmentType @Dash;
+    sub [\kaf.medi_KafLamMedi \kaf.init_KafYaaIsol \kaf.medi_KafLamAlefFina 
+	\kaf.medi_KafLamMeemMedi \kaf.init_KafBaaInit \kaf.medi_KafKafFina 
+	\kaf.medi_KafMeemLamFina \kaf.medi_KafBaaMedi 
+	\kaf.init_KafMeemAlefIsol \kaf.medi_Tatweel ] [\dash.gaf ]'  by [\dash.gaf.alt2 ];
+  subtable;
+    sub [\kaf.medi_KafMeemMedi \kaf.init_KafMeemInit \kaf.init_KafMeemIsol 
+	\kaf.medi_KafMeemFina \kaf.init_AboveHaaIsol ] [\dash.gaf ]'  by [\dash.gaf.alt1 ];
+} caltGafDash;
+
+lookup BaaHehYaaFina {
+  lookupflag 0;
+    sub \yaa.fina by \yaa.fina_Tatweel ;
+} BaaHehYaaFina;
+
+lookup caltBaaHehYaaFina {
+  lookupflag IgnoreMarks;
+    sub [\heh.medi_PostTooth \heh.medi_BaaHehInit \heh.medi_BaaHehMedi ] [\yaa.fina ]'lookup BaaHehYaaFina  ;
+} caltBaaHehYaaFina;
+
+lookup KafDalFina {
+  lookupflag 0;
+    sub \dal.fina by \dal.fina_KafDalIsol ;
+} KafDalFina;
+
+lookup caltKafDalFina {
+  lookupflag IgnoreMarks;
+    sub [\kaf.medi ] [\dal.fina ]'lookup KafDalFina  ;
+} caltKafDalFina;
+
+lookup caltHamzaBelowLow {
+  lookupflag MarkAttachmentType @HamzaBelow;
+    sub [\waw.fina \waw.fina_LamWawFina \waw.isol \raa.fina \raa.fina_BaaRaaFina 
+	\raa.fina_BaaRaaIsol \raa.fina_HaaRaaIsol \raa.fina_KafRaaFina 
+	\raa.fina_KafRaaIsol \raa.fina_LamRaaIsol \raa.fina_PostTooth 
+	\raa.isol ] [\alef.isol ]' [\hamza.below \uni065F ]'  by [\hamza.below.low \hamza.below.wavy.low ];
+} caltHamzaBelowLow;
+
+lookup caltDotsBelowLow {
+  lookupflag MarkAttachmentType @DotsBelow;
+    sub [\raa.fina \raa.isol \waw.fina \waw.isol \raa.fina_BaaRaaIsol 
+	\waw.fina_LamWawFina \raa.fina_BaaRaaFina \raa.fina_KafRaaFina 
+	\raa.fina_KafRaaIsol \raa.fina_HaaRaaIsol \raa.fina_LamRaaIsol 
+	\raa.fina_PostTooth ] [\baa.init \baa.init_BaaRaaIsol \baa.init_BaaYaaIsol \baa.init_BaaDalIsol 
+	\baa.init_BaaMeemHaaInit \baa.init_BaaBaaInit 
+	\baa.init_BaaSeenInit \baa.init_BaaMeemInit \baa.init_BaaHehInit 
+	\baa.init_BaaBaaIsol \baa.init_BaaMeemIsol 
+	\baa.init_BaaSeenAltInit \baa.init_BaaHaaInit \baa.init_High 
+	\baa.init_Tatweel ]' [\dot.below \twodots.below \threedots.below \threedots.below.inverted 
+	\twodots.below.vertical \fourdots.below 
+	\threedots.below.horizontal \smallv.below.inverted ]'  by [\dot.below.low \twodots.below.low 
+	\threedots.below.low \threedots.below.inverted.low 
+	\twodots.below.vertical.low \fourdots.below.low 
+	\threedots.below.horizontal.low \smallv.below.inverted.low ];
+} caltDotsBelowLow;
+
+feature isol {
+
+  script DFLT;
+     language dflt ;
+      lookup isolIsolatedForms;
+
+  script arab;
+     language dflt ;
+      lookup isolIsolatedForms;
+} isol;
+
+feature init {
+
+  script DFLT;
+     language dflt ;
+      lookup initInitialForms;
+
+  script arab;
+     language dflt ;
+      lookup initInitialForms;
+} init;
+
+feature medi {
+
+  script DFLT;
+     language dflt ;
+      lookup mediMedialForms;
+
+  script arab;
+     language dflt ;
+      lookup mediMedialForms;
+} medi;
+
+feature fina {
+
+  script DFLT;
+     language dflt ;
+      lookup finaTerminalForms;
+
+  script arab;
+     language dflt ;
+      lookup finaTerminalForms;
+} fina;
+
+feature locl {
+
+  script arab;
+     language dflt ;
+      lookup loclLocalizedForms;
+} locl;
+
+feature calt {
+
+  script DFLT;
+     language dflt ;
+      lookup caltShaddaCombined;
+      lookup caltHamzaCombined;
+      lookup caltAboveHaaInit;
+      lookup caltBaaRaaFina;
+      lookup caltBaaMeemFina;
+      lookup caltKafBaa;
+      lookup caltKafBaaDotAbove;
+      lookup caltKafClash;
+      lookup caltHighBaa;
+      lookup caltBaaHehMedi;
+      lookup caltLamAlefFina;
+      lookup caltContextualAlternatesinArabi;
+      lookup caltHehMediTooth;
+      lookup caltSeenMeemMedi;
+      lookup caltFinjani;
+      lookup caltBaaYaaFina;
+      lookup caltToothMeem;
+      lookup caltKafLamYaa;
+      lookup caltKafLamFina;
+      lookup caltLamKafInit;
+      lookup caltHehMeemAlef;
+      lookup caltBaaAlefIsol;
+      lookup caltGafDash;
+      lookup caltBaaHehYaaFina;
+      lookup caltKafDalFina;
+      lookup caltHamzaBelowLow;
+      lookup caltDotsBelowLow;
+
+  script arab;
+     language dflt ;
+      lookup caltShaddaCombined;
+      lookup caltHamzaCombined;
+      lookup caltAboveHaaInit;
+      lookup caltBaaRaaFina;
+      lookup caltBaaMeemFina;
+      lookup caltKafBaa;
+      lookup caltKafBaaDotAbove;
+      lookup caltKafClash;
+      lookup caltHighBaa;
+      lookup caltBaaHehMedi;
+      lookup caltLamAlefFina;
+      lookup caltContextualAlternatesinArabi;
+      lookup caltHehMediTooth;
+      lookup caltSeenMeemMedi;
+      lookup caltFinjani;
+      lookup caltBaaYaaFina;
+      lookup caltToothMeem;
+      lookup caltKafLamYaa;
+      lookup caltKafLamFina;
+      lookup caltLamKafInit;
+      lookup caltHehMeemAlef;
+      lookup caltBaaAlefIsol;
+      lookup caltGafDash;
+      lookup caltBaaHehYaaFina;
+      lookup caltKafDalFina;
+      lookup caltHamzaBelowLow;
+      lookup caltDotsBelowLow;
+} calt;
+

@@ -63,25 +63,5 @@ SplineSet
  102 319 102 319 58 383 c 0,18,19
  40 408 40 408 52 433 c 2,0,1
 EndSplineSet
-MultipleSubs2: "BaaAlefIsol-1" baa.init_Tatweel
 Position2: "SnakeRaaBaa-1" dx=0 dy=0 dh=200 dv=0
-Substitution2: "AboveHaaInit subtable" baa.init_BaaHaaInit
-Substitution2: "HighBaa subtable" baa.init_High
-Substitution2: "BaaHaaMeemInit subtable" baa.init_BaaHaaMeemInit
-Substitution2: "AboveHaaIsol subtable" baa.init_AboveHaaIsol
-Substitution2: "BaaSeenAltInit subtable" baa.init_BaaSeenAltInit
-Substitution2: "BaaMeemIsol subtable" baa.init_BaaMeemIsol
-Substitution2: "BaaBaaMeemInit subtable" baa.init_BaaBaaMeemInit
-Substitution2: "BaaBaaIsol subtable" baa.init_BaaBaaIsol
-Substitution2: "BaaBaaHaaInit subtable" baa.init_BaaBaaHaaInit
-Substitution2: "BaaHehInit subtable" baa.init_BaaHehInit
-Substitution2: "BaaMeemInit subtable" baa.init_BaaMeemInit
-Substitution2: "BaaSeenInit subtable" baa.init_BaaSeenInit
-Substitution2: "BaaNoonIsol subtable" baa.init_BaaNoonIsol
-Substitution2: "BaaBaaInit subtable" baa.init_BaaBaaInit
-Substitution2: "BaaBaaYaaIsol subtable" baa.init_BaaBaaYaaIsol
-Substitution2: "BaaMeemHaaInit subtable" baa.init_BaaMeemHaaInit
-Substitution2: "BaaDalIsol subtable" baa.init_BaaDalIsol
-Substitution2: "BaaYaaIsol subtable" baa.init_BaaYaaIsol
-Substitution2: "BaaRaaIsol subtable" baa.init_BaaRaaIsol
 EndChar

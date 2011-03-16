@@ -75,21 +75,4 @@ SplineSet
  1047 1629 1047 1629 1056 1611.5 c 128,-1,36
  1065 1594 1065 1594 1053 1570 c 1,0,-1
 EndSplineSet
-Substitution2: "AboveHaaInit subtable" kaf.init_AboveHaaIsol
-Substitution2: "AboveHaaIsol subtable" kaf.init_AboveHaaIsol
-MultipleSubs2: "KafBaaDotAbove subtable" kaf.init_Tatweel
-Substitution2: "KafLamHehIsol subtable" kaf.init_KafLamHehIsol
-Substitution2: "KafMeemAlefIsol subtable" kaf.init_KafMeemAlefIsol
-Substitution2: "KafDalIsol subtable" kaf.init_KafDalIsol
-Substitution2: "KafAlefIsol subtable" kaf.init_KafAlefIsol
-Substitution2: "KafRaaIsol subtable" kaf.init_KafRaaIsol
-Substitution2: "KafLamInit subtable" kaf.init_KafLamInit
-Substitution2: "KafLamAlefIsol subtable" kaf.init_KafLamAlefIsol
-Substitution2: "KafMeemIsol subtable" kaf.init_KafMeemIsol
-Substitution2: "KafBaaAlefIsol subtable" kaf.init_KafBaaInit
-Substitution2: "KafLamIsol subtable" kaf.init_KafLamIsol
-Substitution2: "KafYaaIsol subtable" kaf.init_KafYaaIsol
-Substitution2: "KafMeemInit subtable" kaf.init_KafMeemInit
-Substitution2: "KafMeemLamInit subtable" kaf.init_KafMeemLamInit
-Substitution2: "KafHehIsol subtable" kaf.init_KafHehIsol
 EndChar
