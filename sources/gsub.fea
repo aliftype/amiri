@@ -747,7 +747,7 @@ lookup KafBaaDotAbove {
 lookup caltKafBaaDotAbove {
   lookupflag MarkAttachmentType @DotsHamzaAbove;
     sub [kaf.init kaf.medi ]'lookup KafBaaDotAbove  [baa.medi baa.medi_BaaMeemFina baa.medi_BaaRaaFina baa.medi_BaaNoonFina ] [hamza.above dot.above twodots.above threedots.above 
-	threedotsinverted.above smalltaa.above vtwodots.above ];
+	threedots.above.inverted smalltaa.above twodots.above.vertical ];
 } caltKafBaaDotAbove;
 
 lookup caltKafClash {
