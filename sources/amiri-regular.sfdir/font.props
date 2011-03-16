@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1300225169
+ModificationTime: 1300291179
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -192,7 +192,7 @@ Lookup: 6 8 0 "'calt' KafDalFina"  {"'calt' KafDalFina-1"  } ['calt' ('DFLT' <'d
 Lookup: 1 0 0 "HamzaBelowLow"  {"HamzaBelowLow-1" ("low" ) } []
 Lookup: 6 1024 0 "'calt' HamzaBelowLow"  {"'calt' HamzaBelowLow-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 0 0 "DotsBelowLow"  {"DotsBelowLow-1" ("low" ) } []
-Lookup: 6 768 0 "'calt' DotsBelowLow"  {"'calt' DotsBelowLow-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 6 768 0 "'calt' DotsBelowLow"  {"'calt' DotsBelowLow-1"  } ['calt' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 264 768 0 "'kern' SnakeRaaBaa"  {"'kern' SnakeRaaBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
