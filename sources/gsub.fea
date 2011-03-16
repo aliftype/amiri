@@ -1734,13 +1734,29 @@ lookup caltKafDalFina {
     sub [kaf.medi ] [dal.fina ]'lookup KafDalFina ;
 } caltKafDalFina;
 
+lookup HamzaBelowLow {
+  lookupflag 0;
+    sub [hamza.below uni065F] by [hamza.below.low hamza.below.wavy.low];
+} HamzaBelowLow;
+
 lookup caltHamzaBelowLow {
   lookupflag MarkAttachmentType @HamzaBelow;
     sub [waw.fina waw.fina_LamWawFina waw.isol raa.fina raa.fina_BaaRaaFina 
 	raa.fina_BaaRaaIsol raa.fina_HaaRaaIsol raa.fina_KafRaaFina 
 	raa.fina_KafRaaIsol raa.fina_LamRaaIsol raa.fina_PostTooth 
-	raa.isol ] [alef.isol ]' [hamza.below uni065F ]'  by [hamza.below.low hamza.below.wavy.low ];
+	raa.isol ] [alef.isol ]' [hamza.below uni065F ]'lookup HamzaBelowLow;
 } caltHamzaBelowLow;
+
+lookup DotsBelowLow {
+  lookupflag 0;
+    sub [dot.below twodots.below threedots.below threedots.below.inverted
+        twodots.below.vertical fourdots.below
+        threedots.below.horizontal smallv.below.inverted ]
+     by [dot.below.low twodots.below.low
+        threedots.below.low threedots.below.inverted.low
+        twodots.below.vertical.low fourdots.below.low
+        threedots.below.horizontal.low smallv.below.inverted.low ];
+} DotsBelowLow;
 
 lookup caltDotsBelowLow {
   lookupflag MarkAttachmentType @DotsBelow;
@@ -1754,10 +1770,7 @@ lookup caltDotsBelowLow {
 	baa.init_BaaSeenAltInit baa.init_BaaHaaInit baa.init_High 
 	baa.init_Tatweel ]' [dot.below twodots.below threedots.below threedots.below.inverted 
 	twodots.below.vertical fourdots.below 
-	threedots.below.horizontal smallv.below.inverted ]'  by [dot.below.low twodots.below.low 
-	threedots.below.low threedots.below.inverted.low 
-	twodots.below.vertical.low fourdots.below.low 
-	threedots.below.horizontal.low smallv.below.inverted.low ];
+	threedots.below.horizontal smallv.below.inverted ]'lookup DotsBelowLow;
 } caltDotsBelowLow;
 
 feature calt {
