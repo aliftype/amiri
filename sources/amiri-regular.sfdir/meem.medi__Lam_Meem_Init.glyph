@@ -1,12 +1,12 @@
 
 StartChar: meem.medi_LamMeemInit
 Encoding: 65714 -1 192
-Width: 333
+Width: 303
 VWidth: 0
 Flags: W
 AnchorPoint: "TashkilBelow" 0 -670 basechar 0
 AnchorPoint: "TashkilAbove" 101 1640 basechar 0
-AnchorPoint: "cursive" 333 193 entry 0
+AnchorPoint: "cursive" 303 193 entry 0
 LayerCount: 2
 Back
 SplineSet
