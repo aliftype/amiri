@@ -13,6 +13,7 @@ WOFF=$(SFDS:.sfdir=.woff)
 EOTS=$(SFDS:.sfdir=.eot)
 PDFS=$(SFDS:.sfdir=-table.pdf)
 CSSS=$(SRC)/amiri.css
+FEAT=$(SRC)/gsub.fea
 
 DOC=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar
 
@@ -22,13 +23,13 @@ ttf: $(TTFS)
 web: $(WOFF) $(EOTS) $(CSSS)
 table: $(PDFS)
 
-%.ttf : %.sfdir
+%.ttf : %.sfdir $(SRC)/gsub.fea
 	@echo "   FF\t$@"
-	@$(FF) -i $< -o $@
+	@$(FF) -i $< -o $@ -f $(SRC)/gsub.fea
 
-%.woff : %.sfdir
+%.woff : %.sfdir $(SRC)/gsub.fea
 	@echo "   FF\t$@"
-	@$(FF) --web -i $< -o $@
+	@$(FF) --web -i $< -o $@ -f $(SRC)/gsub.fea
 
 %.eot : %.ttf
 	@echo "   FF\t$@"
@@ -61,6 +62,7 @@ dist: all pack table
 	@mkdir -p amiri-$(VERSION)/tools
 	@mkdir -p amiri-$(VERSION)/documentation
 	@cp -r $(PACK) amiri-$(VERSION)/$(SRC)
+	@cp $(FEAT) amiri-$(VERSION)/$(SRC)
 	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > amiri-$(VERSION)/Makefile
 	@cp $(DOC) amiri-$(VERSION)
 	@cp $(BUILD) amiri-$(VERSION)/tools
