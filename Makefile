@@ -24,11 +24,11 @@ table: $(PDFS)
 
 %.ttf : %.sfdir
 	@echo "   FF\t$@"
-	@$(FF) $< $@
+	@$(FF) -i $< -o $@
 
 %.woff : %.sfdir
 	@echo "   FF\t$@"
-	@$(FF) $< $@
+	@$(FF) --web -i $< -o $@
 
 %.eot : %.ttf
 	@echo "   FF\t$@"
@@ -36,7 +36,7 @@ table: $(PDFS)
 
 %.css: $(SFDS)
 	@echo "   GEN\t$@"
-	@$(FF) $^ $@
+	@$(FF) --css -i $^ -o $@
 
 %.pdf: $(TTFS)
 	@echo "   GEN\t$@"
@@ -52,7 +52,7 @@ pack: $(PACK)
 
 %.sfd: %.sfdir
 	@echo "   GEN\t$@"
-	@$(FF) $< $@
+	@$(FF) --sfd -i $< -o $@
 
 dist: all pack table
 	@echo "   Making dist tarball"

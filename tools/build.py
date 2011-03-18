@@ -3,11 +3,9 @@
 import fontforge
 import sys
 import os
+import getopt
 
-#XXX: different flags for web and desktop fonts
-flags  = ("opentype", "dummy-dsig", "round", "short-post")
-
-def generate_css(font, out, base):
+def genCSS(font, base):
     if font.fullname.lower().find("slanted")>0:
         style = "slanted"
     else:
@@ -32,17 +30,14 @@ def generate_css(font, out, base):
 
     return css
 
-def class2pair(font, remove):
+def doKern(font, remove):
     """Looks for any kerning classes in the font and converts it to
     RTL kerning pairs."""
-    kern_pairs = 0
-    kern_class = 0
     new_subtable = ""
     for lookup in font.gpos_lookups:
         if font.getLookupInfo(lookup)[0] == "gpos_pair":
             for subtable in font.getLookupSubtables(lookup):
                 if font.isKerningClass(subtable):
-                    kern_class += 1
                     new_subtable = subtable + " pairs"
                     font.addLookupSubtable(lookup, new_subtable)
                     kclass   = font.getKerningClass(subtable)
@@ -65,45 +60,88 @@ def class2pair(font, remove):
                                                         glyph2,
                                                         kern,0,kern,0,0,0,0,0)
 					        font.changed = True
-                                                kern_pairs  += 1
                     if remove:
                         font.removeLookupSubtable(subtable)
     return new_subtable
 
-def main(sfds, out):
-    css = ""
-    ext = os.path.splitext(out)[1].lower()
-    if ext == ".css":
-            css += "/* @font-face rule for Amiri */"
+def usage(code):
+    message = """Usage: %s OPTIONS...
 
-    for sfd in sfds:
-        base = os.path.splitext(os.path.basename(sfd))[0]
+Options:
+  -i, --input=FILE          file name of input font
+  -o, --output=FILE         file name of output font
+  -c, --css                 output is a CSS file
+  -s, --sfd                 output is a SFD file
+  -w, --web                 output is web optimised
 
-        font = fontforge.open(sfd)
+  -h, --help                print this message and exit
+""" % os.path.basename(sys.argv[0])
 
-        if css:
-            css += generate_css(font, out, base)
-        elif ext == ".sfd":
-            font.save(out)
-        else:
-            class2pair(font, True)
-            #XXX: should be done for web fonts only
-            font.appendSFNTName ("English (US)", "License", "OFL v1.1")
-            font.generate(out, flags=flags)
+    print message
+    sys.exit(code)
 
-        font.close()
+def main():
+    try:
+        opts, args = getopt.gnu_getopt(sys.argv[1:],"hi:o:cws", ["help","input=","output=", "css", "web", "sfd"])
+    except getopt.GetoptError, err:
+        print str(err)
+        usage(-1)
+
+    infile = None
+    outfile = None
+    css = False
+    web = False
+    sfd = False
+
+    for o, a in opts:
+        if o in ("-h", "--help"):
+            usage(0)
+        elif o in ("-i", "--input"):
+            infile = a
+        elif o in ("-o", "--output"):
+            outfile = a
+        elif o in ("-c", "--css"):
+            css = True
+        elif o in ("-w", "--web"):
+            web = True
+        elif o in ("-s", "--sfd"):
+            sfd = True
+
+    if not infile:
+        print "No input file"
+        usage(-1)
+    if not outfile:
+        print "No output file"
+        usage(-1)
+
+    font = fontforge.open(infile)
+    flags  = ("opentype", "dummy-dsig", "round")
 
     if css:
-        file = open(out, "w")
-        file.write(css)
-        file.close()
+        #XXX hack
+        base = os.path.splitext(os.path.basename(infile))[0]
 
-def usage():
-    print "Usage: %s input_file output_file" % sys.argv[0]
+        text = genCSS(font, base)
+        font.close()
+
+        out = open(outfile, "w")
+        out.write(text)
+        out.close()
+
+        sys.exit(0)
+
+    if sfd:
+        font.save(outfile)
+        font.close()
+
+        sys.exit(0)
+
+    if web:
+        font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+        flags  = ("opentype", "round", "short-post")
+
+    doKern(font, True)
+    font.generate(outfile, flags=flags)
 
 if __name__ == "__main__":
-    if len(sys.argv) > 2:
-        main(sys.argv[1:-1], sys.argv[-1])
-    else:
-        usage()
-        sys.exit(1)
+    main()
