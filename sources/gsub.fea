@@ -651,7 +651,7 @@ lookup ShaddaCombined {
 
 lookup caltShaddaCombined {
   lookupflag 0;
-    sub [uni0651]' lookup ShaddaCombined [uni064E uni064B uni064F]';
+    sub [uni0651]' lookup ShaddaCombined [uni064E uni064B uni064F]' lookup ShaddaCombined;
 } caltShaddaCombined;
 
 lookup HamzaCombined {
@@ -665,7 +665,6 @@ lookup HamzaCombined {
 lookup caltHamzaCombined {
   lookupflag 0;
     sub [hamza.above hamza.above.wavy uni0674]' [uni064E uni064F uni0652]' lookup HamzaCombined;
-  subtable;
     sub [hamza.below uni065F]' [uni0650]' lookup HamzaCombined;
 } caltHamzaCombined;
 
@@ -699,8 +698,7 @@ lookup BaaNoonFina {
 
 lookup caltBaaRaaFina {
   lookupflag IgnoreMarks;
-    sub [baa.medi]' lookup BaaRaaFina [raa.fina]';
-  subtable;
+    sub baa.medi' lookup BaaRaaFina raa.fina' lookup BaaRaaFina;
     sub baa.medi' lookup BaaNoonFina noon.fina' lookup BaaNoonFina;
 } caltBaaRaaFina;
 
@@ -742,8 +740,9 @@ lookup KafBaaDotAbove {
 
 lookup caltKafBaaDotAbove {
   lookupflag MarkAttachmentType @DotsHamzaAbove;
-    sub [kaf.init kaf.medi]' lookup KafBaaDotAbove [baa.medi baa.medi_BaaMeemFina baa.medi_BaaRaaFina baa.medi_BaaNoonFina] [hamza.above dot.above twodots.above threedots.above
-	threedots.above.inverted smalltaa.above twodots.above.vertical];
+    sub [kaf.init kaf.medi]' lookup KafBaaDotAbove
+        [baa.medi baa.medi_BaaMeemFina baa.medi_BaaRaaFina baa.medi_BaaNoonFina]
+        [hamza.above dot.above twodots.above threedots.above threedots.above.inverted smalltaa.above twodots.above.vertical];
 } caltKafBaaDotAbove;
 
 lookup caltKafClash {
@@ -759,11 +758,10 @@ lookup HighBaa {
 
 lookup caltHighBaa {
   lookupflag IgnoreMarks;
-    sub [baa.medi sad.init sad.medi seen.init seen.medi baa.medi_BaaBaaInit] [baa.medi]' lookup HighBaa [baa.fina baa.medi seen.fina seen.medi baa.medi_BaaHehMedi
-	seen.medi_PreYaa];
-  subtable;
+    sub [baa.medi sad.init sad.medi seen.init seen.medi baa.medi_BaaBaaInit]
+        [baa.medi]' lookup HighBaa
+        [baa.fina baa.medi seen.fina seen.medi baa.medi_BaaHehMedi seen.medi_PreYaa];
     sub [baa.medi]' lookup HighBaa [seen.fina seen.medi seen.medi_PreYaa];
-  subtable;
     sub [baa.init]' lookup HighBaa [baa.medi]' lookup HighBaa [baa.medi baa.fina seen.medi seen.fina];
 } caltHighBaa;
 
