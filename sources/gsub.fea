@@ -1390,13 +1390,13 @@ lookup caltContextualAlternatesinArabi {
   subtable;
     sub kaf.medi' lookup KafMeemLamFina meem.medi' lookup KafMeemLamFina lam.fina' lookup KafMeemLamFina;
   subtable;
-    sub [meem.init meem.init_MeemHaaInit]' lookup MeemHaaMeemInit [haa.medi haa.medi_SadHaaInit]' [meem.medi]';
+    sub [meem.init meem.init_MeemHaaInit]' lookup MeemHaaMeemInit [haa.medi haa.medi_SadHaaInit]' lookup MeemHaaMeemInit [meem.medi]' lookup MeemHaaMeemInit;
   subtable;
     sub baa.init' lookup BaaNoonIsol noon.fina' lookup BaaNoonIsol;
   subtable;
     sub kaf.medi' lookup KafMeemFina meem.fina' lookup KafMeemFina;
   subtable;
-    sub [kaf.init]' lookup KafLamAlefIsol [lam.medi lam.medi_LamAlefFina]' [alef.fina alef.fina_LamAlefFina]';
+    sub [kaf.init]' lookup KafLamAlefIsol [lam.medi lam.medi_LamAlefFina]' lookup KafLamAlefIsol [alef.fina alef.fina_LamAlefFina]' lookup KafLamAlefIsol;
   subtable;
     sub [baa.init]' lookup BaaSeenInit [seen.medi seen.fina]' lookup BaaSeenInit;
   subtable;
@@ -1430,7 +1430,7 @@ lookup caltContextualAlternatesinArabi {
   subtable;
     sub haa.init' lookup HaaMeemInit meem.medi' lookup HaaMeemInit;
   subtable;
-    sub [seen.init sad.init] [baa.medi]' lookup SeenBaaMeemInit [meem.medi]';
+    sub [seen.init sad.init] [baa.medi]' lookup SeenBaaMeemInit [meem.medi]' lookup SeenBaaMeemInit;
   subtable;
     sub baa.init' lookup BaaBaaIsol baa.fina' lookup BaaBaaIsol;
   subtable;
