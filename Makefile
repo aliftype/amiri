@@ -23,13 +23,13 @@ ttf: $(TTFS)
 web: $(WOFF) $(EOTS) $(CSSS)
 table: $(PDFS)
 
-%.ttf : %.sfdir $(SRC)/gsub.fea
+%.ttf : %.sfdir $(FEAT)
 	@echo "   FF\t$@"
-	@$(FF) -i $< -o $@ -f $(SRC)/gsub.fea
+	@$(FF) -i $< -o $@ -f $(FEAT)
 
-%.woff : %.sfdir $(SRC)/gsub.fea
+%.woff : %.sfdir $(FEAT)
 	@echo "   FF\t$@"
-	@$(FF) --web -i $< -o $@ -f $(SRC)/gsub.fea
+	@$(FF) --web -i $< -o $@ -f $(FEAT)
 
 %.eot : %.ttf
 	@echo "   FF\t$@"

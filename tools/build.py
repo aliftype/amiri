@@ -70,7 +70,7 @@ def usage(code):
 Options:
   -i, --input=FILE          file name of input font
   -o, --output=FILE         file name of output font
-  -f, --feature-file        optional feature file
+  -f, --feature-files=LIST  optional space delimited feature file list
   -c, --css                 output is a CSS file
   -s, --sfd                 output is a SFD file
   -w, --web                 output is web optimised
@@ -85,14 +85,14 @@ def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "hi:o:f:cws",
-                ["help","input=","output=", "feature-file=", "css", "web", "sfd"])
+                ["help","input=","output=", "feature-files=", "css", "web", "sfd"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
 
     infile = None
     outfile = None
-    feafile = None
+    feafiles = None
     css = False
     web = False
     sfd = False
@@ -104,14 +104,14 @@ def main():
             infile = a
         elif o in ("-o", "--output"):
             outfile = a
+        elif o in ("-f", "--feature-files"):
+            feafiles = a
         elif o in ("-c", "--css"):
             css = True
         elif o in ("-w", "--web"):
             web = True
         elif o in ("-s", "--sfd"):
             sfd = True
-        elif o in ("-f", "--feature-file"):
-            feafile = a
 
     if not infile:
         print "No input file"
@@ -142,8 +142,9 @@ def main():
 
         sys.exit(0)
 
-    if feafile:
-        font.mergeFeature(feafile)
+    if feafiles:
+        for fea in feafiles.split():
+            font.mergeFeature(fea)
 
     if web:
         font.appendSFNTName ("English (US)", "License", "OFL v1.1")
