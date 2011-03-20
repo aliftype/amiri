@@ -13,7 +13,7 @@ WOFF=$(SFDS:.sfdir=.woff)
 EOTS=$(SFDS:.sfdir=.eot)
 PDFS=$(SFDS:.sfdir=-table.pdf)
 CSSS=$(SRC)/amiri.css
-FEAT=$(SRC)/gsub.fea
+FEAT=$(SRC)/gsub.fea $(SRC)/calt.fea
 
 DOC=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar
 
@@ -25,11 +25,11 @@ table: $(PDFS)
 
 %.ttf : %.sfdir $(FEAT)
 	@echo "   FF\t$@"
-	@$(FF) -i $< -o $@ -f $(FEAT)
+	@$(FF) -i $< -o $@ -f "$(FEAT)"
 
 %.woff : %.sfdir $(FEAT)
 	@echo "   FF\t$@"
-	@$(FF) --web -i $< -o $@ -f $(FEAT)
+	@$(FF) --web -i $< -o $@ -f "$(FEAT)"
 
 %.eot : %.ttf
 	@echo "   FF\t$@"
