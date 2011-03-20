@@ -1,17 +1,6 @@
 languagesystem DFLT dflt;
 languagesystem arab dflt;
 
-# Mark Classes
-@DotsHamzaAbove=[hamza.above dot.above twodots.above threedots.above
-	threedots.above.horizontal threedots.above.inverted
-	smalltaa.above twodots.above.vertical fourdots.above uni065A
-	uni065B];
-@Dash=[dash.gaf dash.kaf];
-@DotsBelow=[dot.below twodots.below twodots.below.vertical threedots.below
-	threedots.below.horizontal threedots.below.inverted
-	fourdots.below];
-@HamzaBelow=[hamza.below];
-
 lookup ShaddaCombined {
     sub uni064B by uni064B.small;
     sub uni064E by uni064E.small;
@@ -99,6 +88,9 @@ lookup KafBaaDotAbove {
 } KafBaaDotAbove;
 
 lookup caltKafBaaDotAbove {
+  @DotsHamzaAbove=[hamza.above dot.above twodots.above threedots.above
+                   threedots.above.horizontal threedots.above.inverted
+                   smalltaa.above twodots.above.vertical fourdots.above uni065A uni065B];
   lookupflag MarkAttachmentType @DotsHamzaAbove;
     sub [kaf.init kaf.medi]' lookup KafBaaDotAbove
         [baa.medi baa.medi_BaaMeemFina baa.medi_BaaRaaFina baa.medi_BaaNoonFina]
@@ -960,6 +952,7 @@ lookup caltBaaAlefIsol {
 } caltBaaAlefIsol;
 
 lookup caltGafDash {
+  @Dash=[dash.gaf dash.kaf];
   lookupflag MarkAttachmentType @Dash;
     sub [kaf.medi_KafLamMedi kaf.init_KafYaaIsol kaf.medi_KafLamAlefFina
 	kaf.medi_KafLamMeemMedi kaf.init_KafBaaInit kaf.medi_KafKafFina
@@ -993,6 +986,7 @@ lookup HamzaBelowLow {
 } HamzaBelowLow;
 
 lookup caltHamzaBelowLow {
+  @HamzaBelow=[hamza.below];
   lookupflag MarkAttachmentType @HamzaBelow;
     sub [waw.fina waw.fina_LamWawFina waw.isol raa.fina raa.fina_BaaRaaFina
 	raa.fina_BaaRaaIsol raa.fina_HaaRaaIsol raa.fina_KafRaaFina
@@ -1011,6 +1005,8 @@ lookup DotsBelowLow {
 } DotsBelowLow;
 
 lookup caltDotsBelowLow {
+  @DotsBelow=[dot.below twodots.below twodots.below.vertical threedots.below
+              threedots.below.horizontal threedots.below.inverted fourdots.below];
   lookupflag MarkAttachmentType @DotsBelow;
     sub [raa.fina raa.isol waw.fina waw.isol raa.fina_BaaRaaIsol
 	waw.fina_LamWawFina raa.fina_BaaRaaFina raa.fina_KafRaaFina
