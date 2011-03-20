@@ -77,9 +77,13 @@ lookup KafBaaAlefFina {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [kaf.init]' lookup KafBaaAlefIsol [baa.medi]' lookup KafBaaAlefIsol [alef.fina lam.fina lam.medi];
+    sub [kaf.init]' lookup KafBaaAlefIsol
+        [baa.medi]' lookup KafBaaAlefIsol
+        [alef.fina lam.fina lam.medi];
   subtable;
-    sub [kaf.medi]' lookup KafBaaAlefFina [baa.medi]' lookup KafBaaAlefFina [alef.fina lam.medi lam.fina];
+    sub [kaf.medi]' lookup KafBaaAlefFina
+        [baa.medi]' lookup KafBaaAlefFina
+        [alef.fina lam.medi lam.fina];
 } calt;
 
 lookup KafBaaDotAbove {
@@ -112,8 +116,11 @@ feature calt {
     sub [baa.medi sad.init sad.medi seen.init seen.medi baa.medi_BaaBaaInit]
         [baa.medi]' lookup HighBaa
         [baa.fina baa.medi seen.fina seen.medi baa.medi_BaaHehMedi seen.medi_PreYaa];
-    sub [baa.medi]' lookup HighBaa [seen.fina seen.medi seen.medi_PreYaa];
-    sub [baa.init]' lookup HighBaa [baa.medi]' lookup HighBaa [baa.medi baa.fina seen.medi seen.fina];
+    sub [baa.medi]' lookup HighBaa
+        [seen.fina seen.medi seen.medi_PreYaa];
+    sub [baa.init]' lookup HighBaa
+        [baa.medi]' lookup HighBaa
+        [baa.medi baa.fina seen.medi seen.fina];
 } calt;
 
 lookup BaaHehMedi {
@@ -942,25 +949,23 @@ feature calt {
     sub [heh.medi_BaaHehInit heh.medi_BaaHehMedi heh.medi_PostTooth] [meem.medi_MeemAlefFina]' lookup HehMeemAlef [alef.fina_MeemAlefFina]';
 } calt;
 
-lookup BaaAlefIsol {
-    sub baa.init by baa.init_Tatweel;
-} BaaAlefIsol;
-
 feature calt {
   lookupflag IgnoreMarks;
-    sub [baa.init]' lookup BaaAlefIsol [alef.fina]';
+    sub baa.init' alef.fina by baa.init_Tatweel;
 } calt;
 
 feature calt {
   @Dash=[dash.gaf dash.kaf];
   lookupflag MarkAttachmentType @Dash;
-    sub [kaf.medi_KafLamMedi kaf.init_KafYaaIsol kaf.medi_KafLamAlefFina
-         kaf.medi_KafLamMeemMedi kaf.init_KafBaaInit kaf.medi_KafKafFina
-         kaf.medi_KafMeemLamFina kaf.medi_KafBaaMedi
-         kaf.init_KafMeemAlefIsol kaf.medi_Tatweel]
+    sub [kaf.init_KafYaaIsol
+         kaf.init_KafBaaInit
+         kaf.init_KafMeemAlefIsol]
         [dash.gaf]' by [dash.gaf.alt2];
-    sub [kaf.medi_KafMeemMedi kaf.init_KafMeemInit kaf.init_KafMeemIsol
-         kaf.medi_KafMeemFina kaf.init_AboveHaaIsol]
+    sub [kaf.medi_KafMeemMedi
+         kaf.medi_KafMeemFina
+         kaf.init_KafMeemInit
+         kaf.init_KafMeemIsol
+         kaf.init_AboveHaaIsol]
         [dash.gaf]' by [dash.gaf.alt1];
 } calt;
 
