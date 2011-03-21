@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# encoding: utf-8
+
 import fontforge
 import sys
 import os
@@ -20,11 +20,10 @@ def genCSS(font, base):
 @font-face {
     font-style: %(style)s;
     font-weight: %(weight)s;
-    font-family: "%(family)s";
-    src: url('%(base)s.eot');
-    src: local('☺'),
+    font-family: %(family)s;
+    src: url('%(base)s.eot?') format('eot'),
          url('%(base)s.woff') format('woff'),
-         url('%(base)s.ttf') format('truetype');
+         url('%(base)s.ttf')  format('truetype');
 }
 """ %{"style":style, "weight":weight, "family":family, "base":base}
 
