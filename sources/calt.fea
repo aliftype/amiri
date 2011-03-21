@@ -955,7 +955,7 @@ feature calt {
 } calt;
 
 feature calt {
-  @Dash=[dash.gaf dash.kaf];
+  @Dash=[dash.gaf dash.gaf.alt2];
   lookupflag MarkAttachmentType @Dash;
     sub [kaf.init_KafYaaIsol
          kaf.init_KafBaaInit
@@ -966,7 +966,7 @@ feature calt {
          kaf.init_KafMeemInit
          kaf.init_KafMeemIsol
          kaf.init_AboveHaaIsol]
-        [dash.gaf]' by [dash.gaf.alt1];
+        [dash.gaf dash.gaf.alt2]' by [dash.gaf.alt1 dash.gaf.alt1];
 } calt;
 
 feature calt {
