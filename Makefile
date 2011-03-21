@@ -25,11 +25,11 @@ table: $(PDFS)
 
 %.ttf : %.sfdir $(FEAT)
 	@echo "   FF\t$@"
-	@$(FF) -i $< -o $@ -f "$(FEAT)"
+	@$(FF) -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
 
 %.woff : %.sfdir $(FEAT)
 	@echo "   FF\t$@"
-	@$(FF) --web -i $< -o $@ -f "$(FEAT)"
+	@$(FF) --web -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
 
 %.eot : %.ttf
 	@echo "   FF\t$@"
@@ -37,7 +37,7 @@ table: $(PDFS)
 
 %.css: $(SFDS)
 	@echo "   GEN\t$@"
-	@$(FF) --css -i $^ -o $@
+	@$(FF) --css -i $^ -o $@ -v $(VERSION)
 
 %.pdf: $(TTFS)
 	@echo "   GEN\t$@"

@@ -74,6 +74,7 @@ Options:
   -c, --css                 output is a CSS file
   -s, --sfd                 output is a SFD file
   -w, --web                 output is web optimised
+  -v, --font-version=VALUE  set font version to VALUE
 
   -h, --help                print this message and exit
 """ % os.path.basename(sys.argv[0])
@@ -84,8 +85,8 @@ Options:
 def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                "hi:o:f:cws",
-                ["help","input=","output=", "feature-files=", "css", "web", "sfd"])
+                "hi:o:f:v:cws",
+                ["help","input=","output=", "feature-files=", "font-version", "css", "web", "sfd"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -93,6 +94,7 @@ def main():
     infile = None
     outfile = None
     feafiles = None
+    version = None
     css = False
     web = False
     sfd = False
@@ -106,6 +108,8 @@ def main():
             outfile = a
         elif o in ("-f", "--feature-files"):
             feafiles = a
+        elif o in ("-v", "--font-version"):
+            version = a
         elif o in ("-c", "--css"):
             css = True
         elif o in ("-w", "--web"):
@@ -135,6 +139,9 @@ def main():
         out.close()
 
         sys.exit(0)
+
+    if version:
+        font.version = "%07.3f" %float(version)
 
     if sfd:
         font.save(outfile)
