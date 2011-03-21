@@ -1,10 +1,9 @@
-/* @font-face rule for Amiri */
+
 @font-face {
     font-style: normal;
     font-weight: 500;
-    font-family: "AmiriWeb";
-    src: url('amiri-regular.eot');
-    src: local('☺'),
+    font-family: AmiriWeb;
+    src: url('amiri-regular.eot?') format('eot'),
          url('amiri-regular.woff') format('woff'),
-         url('amiri-regular.ttf') format('truetype');
+         url('amiri-regular.ttf')  format('truetype');
 }
