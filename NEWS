@@ -1,3 +1,25 @@
+Amiri 0.010 (2011-03-21), Referendum
+------------------------------------
+
+* New glyphs:
+  - Lam with three dots below (U+06B8).
+
+* Kerning:
+  - Lam of له with preceding Raa/Waw family.
+  - Kaf of كتب as well.
+
+* Glyph fixes:
+  - Fixed exclamation mark's vertical position as compared to question mark.
+  - Removed stray Hamza from U+063B and U+063C initial and medial forms.
+  - Fixed the weight of isolated Dal, was much bolder than the rest of the font.
+  - Fixed Lam Meem connection in لما, there was a slight mismatch.
+  - Fixed the size of medial Ayn compared to the head of final one.
+
+* OpenType code:
+  - Removed DFLT script from 'locl' feature which would cause it to be on
+    unconditionally.
+  - Got rid of mark sets in favour of the more widely supported mark classes.
+
 Amiri 0.009 (2011-02-06), Revolution
 ------------------------------------
 
