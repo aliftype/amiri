@@ -626,7 +626,7 @@ feature fina {
 feature locl {
   script arab;
     language dflt;
-      sub period         by period.arabic;
+      sub period         by period.arab;
       sub guillemotleft  by guillemotleft.arab;
       sub guillemotright by guillemotright.arab;
 } locl;
