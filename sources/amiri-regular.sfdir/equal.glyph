@@ -1,11 +1,11 @@
 
 StartChar: equal
 Encoding: 61 61 622
-Width: 2048
+Width: 2050
 VWidth: 0
 Flags: W
 LayerCount: 2
 Fore
-Refer: 619 8722 N 1 0 0 1 0 -360 2
-Refer: 619 8722 N 1 0 0 1 0 150 2
+Refer: 619 8722 N 1 0 0 1 0 -255 3
+Refer: 619 8722 N 1 0 0 1 0 255 3
 EndChar
