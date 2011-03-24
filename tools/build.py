@@ -154,6 +154,9 @@ def main():
 
     if web:
         font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+        for glyph in font.glyphs():
+            if glyph.unlinkRmOvrlpSave:
+                glyph.unlinkRmOvrlpSave = 0
         flags  = ("opentype", "round", "short-post")
 
     doKern(font, True)
