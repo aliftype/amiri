@@ -153,10 +153,16 @@ def main():
             font.mergeFeature(fea)
 
     if web:
+        # If we are building a web version then try to minimise file size
+
+        # replace full OFL text with a simple string
         font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+
+        # don't unlink tranformed references
         for glyph in font.glyphs():
-            if glyph.unlinkRmOvrlpSave:
-                glyph.unlinkRmOvrlpSave = 0
+            glyph.unlinkRmOvrlpSave = 0
+
+        # no dummy DSIG table nor glyph names
         flags  = ("opentype", "round", "short-post")
 
     doKern(font, True)
