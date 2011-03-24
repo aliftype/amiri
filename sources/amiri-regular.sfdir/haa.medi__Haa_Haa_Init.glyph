@@ -1,6 +1,6 @@
 
 StartChar: haa.medi_HaaHaaInit
-Encoding: 65733 -1 511
+Encoding: 65733 -1 510
 Width: 113
 VWidth: 0
 Flags: W
@@ -17,6 +17,6 @@ AnchorPoint: "TwoDotsAbove" -29 1210 basechar 0
 AnchorPoint: "TwoDotsBelow" 51 -280 basechar 0
 LayerCount: 2
 Fore
-Refer: 301 -1 N 1 0 0 1 0 0 2
+Refer: 300 -1 N 1 0 0 1 0 0 2
 Colour: ff00ff
 EndChar
