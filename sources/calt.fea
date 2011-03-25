@@ -934,9 +934,10 @@ lookup LamKafInit {
 feature calt {
   lookupflag IgnoreMarks;
     sub [lam.init lam.medi lam.medi_KafLamMedi lam.medi_KafMeemLamInit
-        lam.medi_LamLamInit meem.medi_LamMeemInit lam.medi_KafLamInit]' lookup LamKafInit [kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina
-        kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina
-        kaf.medi_KafAlefFina kaf.medi_Tatweel];
+         lam.medi_LamLamInit meem.medi_LamMeemInit lam.medi_KafLamInit]' lookup LamKafInit
+        [kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina
+         kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina
+         kaf.medi_KafAlefFina kaf.medi_Tatweel];
 } calt;
 
 lookup HehMeemAlef {
