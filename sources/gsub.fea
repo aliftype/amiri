@@ -182,6 +182,15 @@ feature isol {
     sub uni0770 by seen.isol twodots.above smalltaa.above;
     sub uni0771 by raa.isol twodots.above smalltaa.above;
     sub uni0772 by haa.isol smalltaa.above;
+    sub uni0773 by alef.isol aTwo.above;
+    sub uni0774 by alef.isol aThree.above;
+    sub uni0775 by yaa.isol aTwo.above;
+    sub uni0776 by yaa.isol aThree.above;
+    sub uni0777 by yaa.isol aFour.below;
+    sub uni0778 by waw.isol aTwo.above;
+    sub uni0779 by waw.isol aThree.above;
+    sub uni077C by haa.isol aFour.below;
+    sub uni077D by seen.isol aFour.above;
     sub uni077E by seen.isol uni065B;
     sub uni077F by kaf.isol hamza.kaf twodots.above;
 } isol;
