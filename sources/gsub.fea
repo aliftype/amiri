@@ -61,7 +61,7 @@ feature isol {
     sub uni0676 by waw.isol uni0674;
     sub uni0677 by waw.isol hamzadamma.mark;
     sub uni06C4 by waw.isol ring.below;
-    sub uni06C5 by waw.isol;
+    sub uni06C5 by waw.isol stroke;
     sub uni06C6 by waw.isol uni065A;
     sub uni06C7 by waw.isol damma.mark;
     sub uni06C8 by waw.isol alef.dagger;
@@ -109,7 +109,7 @@ feature isol {
     sub uni06B6 by lam.isol dot.above;
     sub uni06B7 by lam.isol threedots.above;
     sub uni06B8 by lam.isol threedots.below.inverted;
-    sub uni076A by lam.isol;
+    sub uni076A by lam.isol stroke;
     sub uni0691 by raa.isol smalltaa.above;
     sub uni0692 by raa.isol uni065A;
     sub uni0693 by raa.isol ring.below;
@@ -119,7 +119,7 @@ feature isol {
     sub uni0697 by raa.isol twodots.above;
     sub uni0698 by raa.isol threedots.above;
     sub uni0699 by raa.isol fourdots.above;
-    sub uni075B by raa.isol;
+    sub uni075B by raa.isol stroke;
     sub uni076B by raa.isol twodots.above.vertical;
     sub uni076C by raa.isol hamza.above;
     sub uni06AC by kaf.isol hamza.kaf dot.above;
@@ -266,7 +266,7 @@ feature init {
     sub uni06B6 by lam.init dot.above;
     sub uni06B7 by lam.init threedots.above;
     sub uni06B8 by lam.init threedots.below.inverted;
-    sub uni076A by lam.init;
+    sub uni076A by lam.init stroke;
     sub uni06AC by kaf.init dot.above;
     sub uni06AD by kaf.init threedots.above;
     sub uni06AE by kaf.init threedots.below.inverted;
@@ -392,7 +392,7 @@ feature medi {
     sub uni06B6 by lam.medi dot.above;
     sub uni06B7 by lam.medi threedots.above;
     sub uni06B8 by lam.medi threedots.below.inverted;
-    sub uni076A by lam.medi;
+    sub uni076A by lam.medi stroke;
     sub uni06AC by kaf.medi dot.above;
     sub uni06AD by kaf.medi threedots.above;
     sub uni06AE by kaf.medi threedots.below.inverted;
@@ -498,7 +498,7 @@ feature fina {
     sub uni0676 by waw.fina uni0674;
     sub uni0677 by waw.fina hamzadamma.mark;
     sub uni06C4 by waw.fina ring.below;
-    sub uni06C5 by waw.fina;
+    sub uni06C5 by waw.fina stroke;
     sub uni06C6 by waw.fina uni065A;
     sub uni06C7 by waw.fina damma.mark;
     sub uni06C8 by waw.fina alef.dagger;
@@ -546,7 +546,7 @@ feature fina {
     sub uni06B6 by lam.fina dot.above;
     sub uni06B7 by lam.fina threedots.above;
     sub uni06B8 by lam.fina threedots.below.inverted;
-    sub uni076A by lam.fina;
+    sub uni076A by lam.fina stroke;
     sub uni0691 by raa.fina smalltaa.above;
     sub uni0692 by raa.fina uni065A;
     sub uni0693 by raa.fina ring.below;
@@ -556,7 +556,7 @@ feature fina {
     sub uni0697 by raa.fina twodots.above;
     sub uni0698 by raa.fina threedots.above;
     sub uni0699 by raa.fina fourdots.above;
-    sub uni075B by raa.fina;
+    sub uni075B by raa.fina stroke;
     sub uni076B by raa.fina twodots.above.vertical;
     sub uni076C by raa.fina hamza.above;
     sub uni06AC by kaf.fina hamza.kaf dot.above;
