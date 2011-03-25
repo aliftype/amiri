@@ -60,7 +60,7 @@ $(DOC)/%-table.pdf: %.ttf
 	@fntsample -f $< -o $@
 
 clean:
-	@rm -rf $(DTTF) $(WOFF) $(EOTS) $(CSSS) $(PACK)
+	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PACK)
 	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2
 
 #->8-
