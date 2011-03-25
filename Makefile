@@ -30,16 +30,16 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 table: $(PDFS)
 
-%.ttf: $(SRC)/%.sfdir $(FEAT)
+%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
 
-$(WEB)/%.ttf: $(SRC)/%.sfdir $(FEAT)
+$(WEB)/%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
 	@$(FF) --web -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
 
-$(WEB)/%.woff: $(SRC)/%.sfdir $(FEAT)
+$(WEB)/%.woff: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
 	@$(FF) --web -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
@@ -49,7 +49,7 @@ $(WEB)/%.eot: $(WEB)/%.ttf
 	@mkdir -p $(WEB)
 	@$(MKEOT) $< > $@
 
-$(WEB)/%.css: $(SFDS)
+$(WEB)/%.css: $(SFDS) $(BUILD)
 	@echo "   GEN\t$@"
 	@mkdir -p $(WEB)
 	@$(FF) --css -i $^ -o $@ -v $(VERSION)
@@ -68,7 +68,7 @@ PACK=$(SFDS:.sfdir=.sfd)
 
 pack: $(PACK)
 
-%.sfd: %.sfdir
+%.sfd: %.sfdir $(BUILD)
 	@echo "   GEN\t$@"
 	@$(FF) --sfd -i $< -o $@
 
