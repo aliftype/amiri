@@ -946,7 +946,9 @@ lookup HehMeemAlef {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [heh.medi_BaaHehInit heh.medi_BaaHehMedi heh.medi_PostTooth] [meem.medi_MeemAlefFina]' lookup HehMeemAlef [alef.fina_MeemAlefFina]';
+    sub [heh.medi_BaaHehInit heh.medi_BaaHehMedi heh.medi_PostTooth]
+        [meem.medi_MeemAlefFina]' lookup HehMeemAlef
+        [alef.fina_MeemAlefFina]' lookup HehMeemAlef;
 } calt;
 
 feature calt {
