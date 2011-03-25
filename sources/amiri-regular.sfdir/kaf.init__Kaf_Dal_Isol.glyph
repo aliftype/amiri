@@ -4,13 +4,13 @@ Encoding: 65822 -1 292
 Width: 1238
 VWidth: 362
 Flags: W
-AnchorPoint: "TashkilAbove" 154.236 1640 basechar 0
-AnchorPoint: "TashkilBelow" 254.236 -670 basechar 0
-AnchorPoint: "DotBelow" 79.2361 -208.212 basechar 0
-AnchorPoint: "TwoDotsBelow" -30.7639 -208.212 basechar 0
-AnchorPoint: "RingBelow" 504.236 1691.79 basechar 0
-AnchorPoint: "DotAbove" -176.106 1705.77 basechar 0
-AnchorPoint: "TwoDotsAbove" -286.106 1705.77 basechar 0
+AnchorPoint: "TashkilAbove" 154 1640 basechar 0
+AnchorPoint: "TashkilBelow" 254 -670 basechar 0
+AnchorPoint: "DotBelow" 79 -208 basechar 0
+AnchorPoint: "TwoDotsBelow" -31 -208 basechar 0
+AnchorPoint: "RingBelow" 504 1692 basechar 0
+AnchorPoint: "DotAbove" -176 1706 basechar 0
+AnchorPoint: "TwoDotsAbove" -286 1706 basechar 0
 AnchorPoint: "Dash" 498 1850 basechar 0
 AnchorPoint: "cursive" 0 104 exit 0
 LayerCount: 2
