@@ -155,8 +155,15 @@ def main():
     if web:
         # If we are building a web version then try to minimise file size
 
-        # replace full OFL text with a simple string
+        # 'name' table is a bit bulky, and of almost no use in for web fonts,
+        # so we strip all unnecessary entries.
         font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+
+        for name in font.sfnt_names:
+            if name[0] == "Arabic (Egypt)":
+                font.appendSFNTName(name[0], name[1], None)
+            elif name[1] in ("Descriptor", "Sample Text"):
+                font.appendSFNTName(name[0], name[1], None)
 
         # don't unlink tranformed references
         for glyph in font.glyphs():
