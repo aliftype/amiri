@@ -21,7 +21,8 @@ PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
 FEAT=$(SRC)/gsub.fea $(SRC)/calt.fea
 
-docfiles=README README.ar OFL.txt OFL-FAQ.txt NEWS NEWS.ar
+docfiles=$(DOC)/README.txt $(DOC)/README-Arabic.txt $(DOC)/NEWS.txt $(DOC)/NEWS-Arabic.txt
+license=OFL.txt OFL-FAQ.txt
 
 all: ttf web
 
@@ -80,8 +81,9 @@ dist: all pack table
 	@cp $(PACK) amiri-$(VERSION)/$(SRC)
 	@cp $(FEAT) amiri-$(VERSION)/$(SRC)
 	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > amiri-$(VERSION)/Makefile
-	@cp $(docfiles) amiri-$(VERSION)
+	@cp $(license) amiri-$(VERSION)
 	@cp $(DTTF) amiri-$(VERSION)
+	@cp $(docfiles) amiri-$(VERSION)/$(DOC)
 	@cp $(WTTF) amiri-$(VERSION)/$(WEB)
 	@cp $(WOFF) amiri-$(VERSION)/$(WEB)
 	@cp $(EOTS) amiri-$(VERSION)/$(WEB)
