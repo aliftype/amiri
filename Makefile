@@ -60,8 +60,7 @@ $(DOC)/%-table.pdf: %.ttf
 	@fntsample -f $< -o $@
 
 clean:
-	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PACK)
-	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2
+	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 
 #->8-
 PACK=$(SFDS:.sfdir=.sfd)
@@ -71,6 +70,10 @@ pack: $(PACK)
 %.sfd: %.sfdir $(BUILD)
 	@echo "   GEN\t$@"
 	@$(FF) --sfd -i $< -o $@
+
+distclean:
+	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2
+	@rm -rf $(PACK)
 
 dist: all pack table
 	@echo "   Making dist tarball"
