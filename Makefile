@@ -83,6 +83,7 @@ dist: all pack table
 	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > amiri-$(VERSION)/Makefile
 	@cp $(license) amiri-$(VERSION)
 	@cp $(DTTF) amiri-$(VERSION)
+	@cp README.txt amiri-$(VERSION)
 	@cp $(docfiles) amiri-$(VERSION)/$(DOC)
 	@cp $(WTTF) amiri-$(VERSION)/$(WEB)
 	@cp $(WOFF) amiri-$(VERSION)/$(WEB)
