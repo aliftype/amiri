@@ -20,8 +20,8 @@ lookup HamzaCombined {
 } HamzaCombined;
 
 feature calt {
-    sub [hamza.above hamza.above.wavy uni0674]' [uni064E uni064F uni0652]' lookup HamzaCombined;
-    sub [hamza.below uni065F]' [uni0650]' lookup HamzaCombined;
+    sub [hamza.above hamza.above.wavy uni0674 uni0621]' [uni064E uni064F uni0652]' lookup HamzaCombined;
+    sub [hamza.below uni065F uni0621]' [uni0650]' lookup HamzaCombined;
 } calt;
 
 lookup AboveHaaInit {
