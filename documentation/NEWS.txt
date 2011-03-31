@@ -1,3 +1,28 @@
+Amiri 0.011 (2011-03-31), Inflating the Tire
+--------------------------------------------
+
+* New glyphs:
+  - "#'*,-/;[\]{|}¦
+  - Single and double angle quotation marks: ‹›«», in addition to rounded
+    Arabic variant.
+  - Curly quotation marks: ‟„”“‛‚’‘
+  - Asterism symbol: ⁂
+  - Fraction slash: ⁄
+  - Arabic percent signs: ٪؊؉
+  - Arabic decimal and thousands separators: ٫٬
+  - Arabic five pointed star: ٭
+  - Typographic dashes: ‒ – — ―
+  - Proper support for Arabic characters with traverse stroke: ۅ ݛ ݪ
+  - Arabic characters with digit marks: ݳ ݴ ݵ ݶ ݷ ݸ ݹ ݼ ݽ
+
+* Misc. fixes:
+  - Update font metadata.
+  - Scale all numbers by 120% since they were drawn smaller than what they
+    should, and raise them a bit.
+  - Misc. cleanup of punctuation and math glyphs.
+  - Proper mark support for standalone Hamza.
+  - Visually centralise marks bellow isolated Heh.
+
 Amiri 0.010 (2011-03-21), Referendum
 ------------------------------------
 

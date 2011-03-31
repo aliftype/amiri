@@ -1,6 +1,6 @@
 .PHONY: all clean ttf web pack
 
-VERSION=0.010
+VERSION=0.011
 
 TOOLS=tools
 SRC=sources
