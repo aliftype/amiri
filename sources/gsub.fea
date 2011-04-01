@@ -1,5 +1,4 @@
-languagesystem DFLT dflt;
-languagesystem arab dflt;
+include(lang.fea)
 
 feature isol {
   lookupflag IgnoreMarks;
