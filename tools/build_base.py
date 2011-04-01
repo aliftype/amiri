@@ -1,6 +1,6 @@
 def buildBase(box, glyph):
-    if len(glyph.getPosSub("'isol' Isolated Forms-1")) == 1:
-        ccmp = glyph.getPosSub("'isol' Isolated Forms-1")[0]
+    if len(glyph.getPosSub("'isol' Isolated Forms in Arabic lookup 0 subtable")) == 1:
+        ccmp = glyph.getPosSub("'isol' Isolated Forms in Arabic lookup 0 subtable")[0]
         glyph.clear()
         glyph.addReference(ccmp[2])
         glyph.useRefsMetrics(ccmp[2])

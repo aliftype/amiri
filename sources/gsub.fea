@@ -317,6 +317,11 @@ feature init {
     sub uni076F by haa.init smalltaa.below twodots.below;
     sub uni0770 by seen.init twodots.above smalltaa.above;
     sub uni0772 by haa.init smalltaa.above;
+    sub uni0775 by baa.init aTwo.above;
+    sub uni0776 by baa.init aThree.above;
+    sub uni0777 by baa.init aFour.below;
+    sub uni077C by haa.init aFour.below;
+    sub uni077D by seen.init aFour.above;
     sub uni077E by seen.init uni065B;
     sub uni077F by kaf.init twodots.above;
 } init;
@@ -443,6 +448,11 @@ feature medi {
     sub uni076F by haa.medi smalltaa.below twodots.below;
     sub uni0770 by seen.medi twodots.above smalltaa.above;
     sub uni0772 by haa.medi smalltaa.above;
+    sub uni0775 by baa.medi aTwo.above;
+    sub uni0776 by baa.medi aThree.above;
+    sub uni0777 by baa.medi aFour.below;
+    sub uni077C by haa.medi aFour.below;
+    sub uni077D by seen.medi aFour.above;
     sub uni077E by seen.medi uni065B;
     sub uni077F by kaf.medi twodots.above;
 } medi;
@@ -628,6 +638,16 @@ feature fina {
     sub uni0770 by seen.fina twodots.above smalltaa.above;
     sub uni0771 by raa.fina twodots.above smalltaa.above;
     sub uni0772 by haa.fina smalltaa.above;
+    sub uni0773 by alef.fina aTwo.above;
+    sub uni0774 by alef.fina aThree.above;
+    sub uni0775 by yaa.fina aTwo.above;
+    sub uni0776 by yaa.fina aThree.above;
+    sub uni0777 by yaa.fina aFour.below;
+    sub uni0778 by waw.fina aTwo.above;
+    sub uni0779 by waw.fina aThree.above;
+    sub uni077C by haa.fina aFour.below;
+    sub uni077D by seen.fina aFour.above;
     sub uni077E by seen.fina uni065B;
     sub uni077F by kaf.fina hamza.kaf twodots.above;
 } fina;
+

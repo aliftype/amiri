@@ -4,6 +4,7 @@ Encoding: 65645 -1 123
 Width: 366
 VWidth: 0
 Flags: W
+AnchorPoint: "DigitAbove" -44 1248 basechar 0
 AnchorPoint: "HighHamza" 506 1498 basechar 0
 AnchorPoint: "TashkilBelow" 200 -670 basechar 0
 AnchorPoint: "TashkilAbove" 300 1640 basechar 0
