@@ -1,0 +1,28 @@
+languagesystem DFLT dflt;
+languagesystem arab dflt;
+
+feature tnum {
+    sub uni0660 by uni0660.tnum;
+    sub uni0661 by uni0661.tnum;
+    sub uni0662 by uni0662.tnum;
+    sub uni0663 by uni0663.tnum;
+    sub uni0664 by uni0664.tnum;
+    sub uni0665 by uni0665.tnum;
+    sub uni0666 by uni0666.tnum;
+    sub uni0667 by uni0667.tnum;
+    sub uni0668 by uni0668.tnum;
+    sub uni0669 by uni0669.tnum;
+    sub uni06F0 by uni06F0.tnum;
+    sub uni06F1 by uni06F1.tnum;
+    sub uni06F2 by uni06F2.tnum;
+    sub uni06F3 by uni06F3.tnum;
+    sub uni06F4 by uni06F4.tnum;
+    sub uni06F5 by uni06F5.tnum;
+    sub uni06F6 by uni06F6.tnum;
+    sub uni06F7 by uni06F7.tnum;
+    sub uni06F8 by uni06F8.tnum;
+    sub uni06F9 by uni06F9.tnum;
+    sub uni06F4.urd by uni06F4.urd.tnum;
+    sub uni06F6.urd by uni06F6.urd.tnum;
+    sub uni06F7.urd by uni06F7.urd.tnum;
+} tnum;

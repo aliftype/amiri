@@ -1,7 +1,7 @@
 
 StartChar: figuredash
 Encoding: 8210 8210 693
-Width: 970
+Width: 1000
 VWidth: 0
 Flags: W
 LayerCount: 2
@@ -9,8 +9,8 @@ Fore
 SplineSet
 90 480 m 1,0,-1
  90 600 l 1,1,-1
- 880 600 l 1,2,-1
- 880 480 l 1,3,-1
+ 910 600 l 1,2,-1
+ 910 480 l 1,3,-1
  90 480 l 1,0,-1
 EndSplineSet
 EndChar
