@@ -1,10 +1,14 @@
-languagesystem DFLT dflt;
-languagesystem arab dflt;
-
 feature locl {
   script arab;
     language dflt;
       sub period         by period.arab;
       sub guillemotleft  by guillemotleft.arab;
       sub guillemotright by guillemotright.arab;
+} locl;
+
+# localised Urdu digits
+feature locl {
+  script arab;
+    language URD exclude_dflt;
+      sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
 } locl;
