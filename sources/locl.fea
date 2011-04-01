@@ -1,0 +1,10 @@
+languagesystem DFLT dflt;
+languagesystem arab dflt;
+
+feature locl {
+  script arab;
+    language dflt;
+      sub period         by period.arab;
+      sub guillemotleft  by guillemotleft.arab;
+      sub guillemotright by guillemotright.arab;
+} locl;

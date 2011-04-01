@@ -19,7 +19,7 @@ WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
-FEAT=$(SRC)/gsub.fea $(SRC)/calt.fea
+FEAT=$(SRC)/gsub.fea $(SRC)/locl.fea $(SRC)/calt.fea
 
 docfiles=$(DOC)/README.txt $(DOC)/README-Arabic.txt $(DOC)/NEWS.txt $(DOC)/NEWS-Arabic.txt
 license=OFL.txt OFL-FAQ.txt
