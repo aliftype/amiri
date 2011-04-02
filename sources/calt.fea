@@ -277,7 +277,7 @@ lookup LamBaaMeemInit {
 } LamBaaMeemInit;
 
 lookup KafLamMeemMedi {
-    sub kaf.medi by kaf.medi_KafLamMeemMedi;
+    sub kaf.medi by kaf.medi_KafLamMedi;
     sub lam.medi by lam.medi_KafLamMeemMedi;
     sub meem.medi by meem.medi_LamMeemMedi;
 } KafLamMeemMedi;
@@ -392,7 +392,7 @@ lookup FaaHaaInit {
 
 lookup KafKafFina {
     sub kaf.fina by kaf.fina_KafKafFina;
-    sub kaf.medi by kaf.medi_KafKafFina;
+    sub kaf.medi by kaf.medi_KafLamMedi;
 } KafKafFina;
 
 lookup HaaHaaInit {
@@ -442,7 +442,7 @@ lookup KafMeemFina {
 lookup KafLamAlef {
     sub alef.fina by alef.fina_LamAlefFina;
     sub kaf.init by kaf.init_KafLamAlefIsol;
-    sub kaf.medi by kaf.medi_KafLamAlefFina;
+    sub kaf.medi by kaf.medi_KafLamMedi;
     sub lam.medi by lam.medi_KafLamAlef;
     sub lam.medi_LamAlefFina by lam.medi_KafLamAlef;
     sub alef.fina_LamAlefFina by alef.fina_LamAlefFina;
@@ -574,7 +574,7 @@ lookup KafMeemAlefFina {
 
 lookup KafAlefFina {
     sub alef.fina by alef.fina_KafAlefFina;
-    sub kaf.medi by kaf.medi_KafAlefFina;
+    sub kaf.medi by kaf.medi_KafLamMedi;
 } KafAlefFina;
 
 lookup LamKafFina {
@@ -900,7 +900,7 @@ feature calt {
 } calt;
 
 lookup KafLamFina {
-    sub kaf.medi by kaf.medi_KafLamAlefFina;
+    sub kaf.medi by kaf.medi_KafLamMedi;
     sub lam.fina by lam.fina_KafLamFina;
 } KafLamFina;
 
@@ -924,8 +924,7 @@ feature calt {
     sub [lam.init lam.medi lam.medi_KafLamMedi lam.medi_KafMeemLamInit
          lam.medi_LamLamInit meem.medi_LamMeemInit lam.medi_KafLamInit]' lookup LamKafInit
         [kaf.medi kaf.medi_KafHehFina kaf.medi_KafMeemFina kaf.medi_KafRaaFina
-         kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina
-         kaf.medi_KafAlefFina kaf.medi_Tatweel];
+         kaf.medi_KafYaaFina kaf.medi_KafMeemAlefFina kaf.medi_Tatweel];
 } calt;
 
 lookup HehMeemAlef {
