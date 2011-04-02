@@ -277,7 +277,7 @@ feature init {
     sub uni06BA by baa.init dot.above;
     sub uni06BB by baa.init smalltaa.above;
     sub uni06BC by baa.init dot.above ring.below;
-    sub uni06BD by baa.init threedots.above;
+    sub uni06BD by baa.init threedots.below;
     sub uni06BF by haa.init dot.above threedots.below.inverted;
     sub uni06C1 by heh.init;
     sub uni06CC by baa.init twodots.below;
@@ -408,7 +408,7 @@ feature medi {
     sub uni06BA by baa.medi dot.above;
     sub uni06BB by baa.medi smalltaa.above;
     sub uni06BC by baa.medi dot.above ring.below;
-    sub uni06BD by baa.medi threedots.above;
+    sub uni06BD by baa.medi threedots.below;
     sub uni06BF by haa.medi dot.above threedots.below.inverted;
     sub uni06C1 by heh.medi;
     sub uni06CC by baa.medi twodots.below;
