@@ -268,8 +268,8 @@ lookup LamHehFina {
 lookup KafLamAlefFina {
     sub alef.fina by alef.fina_LamAlefFina;
     sub kaf.medi by kaf.medi_KafLamAlefFina;
-    sub lam.medi by lam.medi_KafLamAlefFina;
-    sub lam.medi_LamAlefFina by lam.medi_KafLamAlefFina;
+    sub lam.medi by lam.medi_KafLamAlefIsol;
+    sub lam.medi_LamAlefFina by lam.medi_KafLamAlefIsol;
     sub alef.fina_LamAlefFina by alef.fina_LamAlefFina;
 } KafLamAlefFina;
 
