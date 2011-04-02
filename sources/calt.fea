@@ -279,7 +279,7 @@ lookup LamBaaMeemInit {
 lookup KafLamMeemMedi {
     sub kaf.medi by kaf.medi_KafLamMeemMedi;
     sub lam.medi by lam.medi_KafLamMeemMedi;
-    sub meem.medi by meem.medi_KafLamMeemMedi;
+    sub meem.medi by meem.medi_LamMeemMedi;
 } KafLamMeemMedi;
 
 lookup BaaDalIsol {
