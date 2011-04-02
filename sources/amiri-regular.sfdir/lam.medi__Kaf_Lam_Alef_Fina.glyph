@@ -1,9 +1,10 @@
 
 StartChar: lam.medi_KafLamAlefFina
-Encoding: 65681 -1 158
+Encoding: 65681 -1 157
 Width: 576
 VWidth: 0
 Flags: W
+AnchorPoint: "cursive" 0 311 exit 0
 AnchorPoint: "Stroke" 227 1226 basechar 0
 AnchorPoint: "TwoDotsBelow" 0 -150 basechar 0
 AnchorPoint: "TwoDotsAbove" -174 1508 basechar 0
@@ -11,7 +12,6 @@ AnchorPoint: "DotAbove" -54 1508 basechar 0
 AnchorPoint: "TashkilBelow" 250 -670 basechar 0
 AnchorPoint: "TashkilAbove" 150 1640 basechar 0
 AnchorPoint: "VAbove" -54 1408 basechar 0
-AnchorPoint: "cursive" 0 313 exit 0
 AnchorPoint: "cursive" 576 88 entry 0
 LayerCount: 2
 Back
