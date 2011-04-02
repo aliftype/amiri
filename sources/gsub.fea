@@ -281,7 +281,7 @@ feature init {
     sub uni06BF by haa.init dot.above threedots.below.inverted;
     sub uni06C1 by heh.init;
     sub uni06CC by baa.init twodots.below;
-    sub uni06CE by baa.init uni065A;
+    sub uni06CE by baa.init twodots.below uni065A;
     sub uni06D0 by baa.init twodots.below.vertical;
     sub uni06D1 by baa.init threedots.below.inverted;
     sub uni06FA by seen.init threedots.above dot.below;
@@ -316,8 +316,8 @@ feature init {
     sub uni076F by haa.init smalltaa.below twodots.below;
     sub uni0770 by seen.init twodots.above smalltaa.above;
     sub uni0772 by haa.init smalltaa.above;
-    sub uni0775 by baa.init aTwo.above;
-    sub uni0776 by baa.init aThree.above;
+    sub uni0775 by baa.init twodots.below aTwo.above;
+    sub uni0776 by baa.init twodots.below aThree.above;
     sub uni0777 by baa.init aFour.below;
     sub uni077C by haa.init aFour.below;
     sub uni077D by seen.init aFour.above;
@@ -412,7 +412,7 @@ feature medi {
     sub uni06BF by haa.medi dot.above threedots.below.inverted;
     sub uni06C1 by heh.medi;
     sub uni06CC by baa.medi twodots.below;
-    sub uni06CE by baa.medi uni065A;
+    sub uni06CE by baa.medi twodots.below uni065A;
     sub uni06D0 by baa.medi twodots.below.vertical;
     sub uni06D1 by baa.medi threedots.below.inverted;
     sub uni06FA by seen.medi threedots.above dot.below;
@@ -447,8 +447,8 @@ feature medi {
     sub uni076F by haa.medi smalltaa.below twodots.below;
     sub uni0770 by seen.medi twodots.above smalltaa.above;
     sub uni0772 by haa.medi smalltaa.above;
-    sub uni0775 by baa.medi aTwo.above;
-    sub uni0776 by baa.medi aThree.above;
+    sub uni0775 by baa.medi twodots.below aTwo.above;
+    sub uni0776 by baa.medi twodots.below aThree.above;
     sub uni0777 by baa.medi aFour.below;
     sub uni077C by haa.medi aFour.below;
     sub uni077D by seen.medi aFour.above;
