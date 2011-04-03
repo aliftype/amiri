@@ -780,7 +780,9 @@ lookup SeenMeemMedi {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [seen.medi seen.medi_BaaSeenInit sad.medi]' lookup SeenMeemMedi [meem.medi_MeemAlefFina]' [alef.fina_MeemAlefFina]';
+    sub [seen.medi seen.medi_BaaSeenInit sad.medi]' lookup SeenMeemMedi
+        [meem.medi_MeemAlefFina]' lookup SeenMeemMedi
+        [alef.fina_MeemAlefFina]' lookup SeenMeemMedi ;
 } calt;
 
 feature calt {
