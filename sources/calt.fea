@@ -538,11 +538,6 @@ lookup BaaBaaIsol {
     sub baa.init by baa.init_BaaBaaIsol;
 } BaaBaaIsol;
 
-lookup KafAlefIsol {
-    sub alef.fina by alef.fina_KafAlefIsol;
-    sub kaf.init by kaf.init_KafLam;
-} KafAlefIsol;
-
 lookup HaaRaaIsol {
     sub haa.init by haa.init_HaaRaaIsol;
     sub raa.fina by raa.fina_HaaRaaIsol;
@@ -569,10 +564,11 @@ lookup KafMeemAlefFina {
     sub meem.medi by meem.medi_KafMeemAlefFina;
 } KafMeemAlefFina;
 
-lookup KafAlefFina {
-    sub alef.fina by alef.fina_KafAlefFina;
+lookup KafAlef {
     sub kaf.medi by kaf.medi_KafLam;
-} KafAlefFina;
+    sub kaf.init by kaf.init_KafLam;
+    sub alef.fina by alef.fina_KafAlef;
+} KafAlef;
 
 lookup LamKafFina {
     sub kaf.fina by kaf.fina_LamKafFina;
@@ -782,8 +778,6 @@ feature calt {
   subtable;
     sub baa.init' lookup BaaBaaIsol baa.fina' lookup BaaBaaIsol;
   subtable;
-    sub kaf.init' lookup KafAlefIsol alef.fina' lookup KafAlefIsol;
-  subtable;
     sub haa.init' lookup HaaRaaIsol raa.fina' lookup HaaRaaIsol;
   subtable;
     sub lam.init' lookup LamRaaIsol raa.fina' lookup LamRaaIsol;
@@ -794,7 +788,7 @@ feature calt {
   subtable;
     sub kaf.medi' lookup KafMeemAlefFina meem.medi' lookup KafMeemAlefFina alef.fina' lookup KafMeemAlefFina;
   subtable;
-    sub kaf.medi' lookup KafAlefFina alef.fina' lookup KafAlefFina;
+    sub [kaf.init kaf.medi]' lookup KafAlef alef.fina' lookup KafAlef;
   subtable;
     sub lam.medi' lookup LamKafFina kaf.fina' lookup LamKafFina;
   subtable;
