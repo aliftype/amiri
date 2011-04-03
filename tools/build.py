@@ -15,8 +15,7 @@ def genCSS(font, base):
     family = "%sWeb" %font.familyname
     name = font.fontname
 
-    css = ""
-    css += """
+    css = """
 @font-face {
     font-style: %(style)s;
     font-weight: %(weight)s;
