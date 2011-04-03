@@ -1,6 +1,6 @@
 
 StartChar: exclam
-Encoding: 33 33 601
+Encoding: 33 33 600
 Width: 420
 VWidth: 0
 Flags: W
@@ -16,5 +16,5 @@ SplineSet
  54 1541 54 1541 210 1540 c 0,11,12
  377 1539 377 1539 342 1260 c 0,0,1
 EndSplineSet
-Refer: 602 -1 N 1 0 0 1 -115 65 2
+Refer: 601 -1 N 1 0 0 1 -115 65 2
 EndChar
