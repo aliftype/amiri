@@ -1,6 +1,6 @@
 
 StartChar: meem.medi_KafMeemAlef
-Encoding: 65832 -1 280
+Encoding: 65832 -1 278
 Width: 74
 VWidth: 0
 Flags: W
@@ -108,4 +108,5 @@ SplineSet
  -84 -36 -84 -36 -74 13 c 128,-1,0
  -64 62 -64 62 -29 75 c 128,-1,1
 EndSplineSet
+Colour: ffff00
 EndChar

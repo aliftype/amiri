@@ -1,9 +1,9 @@
 
 StartChar: lam.medi_KafMeemLamInitTatweel
-Encoding: 65897 -1 478
+Encoding: 65897 -1 476
 Width: 650
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "Stroke" 388 1184 basechar 0
 AnchorPoint: "TwoDotsBelow" 250 -150 basechar 0
 AnchorPoint: "TwoDotsAbove" 260 1744 basechar 0
@@ -14,6 +14,6 @@ AnchorPoint: "VAbove" 380 1644 basechar 0
 AnchorPoint: "cursive" 649 96 entry 0
 LayerCount: 2
 Fore
-Refer: 470 -1 N 1 0 0 1 0 0 2
-Refer: 114 -1 N 1 0 0 1 260 0 2
+Refer: 468 -1 N 1 0 0 1 0 0 2
+Refer: 112 -1 N 1 0 0 1 260 0 2
 EndChar

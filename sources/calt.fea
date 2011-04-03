@@ -479,10 +479,10 @@ lookup KafYaaFina {
 } KafYaaFina;
 
 lookup KafMeemLamInit {
-    sub kaf.init by kaf.init_KafMeemLamInit;
+    sub kaf.init by kaf.init_KafMeemAlefIsol;
     sub lam.fina by lam.fina_KafMeemLamFina;
     sub lam.medi by lam.medi_KafMeemLamInit;
-    sub meem.medi by meem.medi_KafMeemLamInit;
+    sub meem.medi by meem.medi_KafMeemAlef;
 } KafMeemLamInit;
 
 lookup LamMeemMedi {
