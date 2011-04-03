@@ -299,7 +299,8 @@ lookup HaaYaaIsol {
 } HaaYaaIsol;
 
 lookup KafLamIsol {
-    sub kaf.init by kaf.init_KafLamIsol;
+    sub kaf.init by kaf.init_KafLamInit;
+    sub kaf.medi by kaf.medi_KafLamMedi;
     sub lam.fina by lam.fina_KafLamIsol;
 } KafLamIsol;
 
@@ -699,7 +700,7 @@ feature calt {
   subtable;
     sub haa.init' lookup HaaYaaIsol yaa.fina' lookup HaaYaaIsol;
   subtable;
-    sub kaf.init' lookup KafLamIsol lam.fina' lookup KafLamIsol;
+    sub [kaf.init kaf.medi]' lookup KafLamIsol lam.fina' lookup KafLamIsol;
   subtable;
     sub [meem.init heh.init]' lookup MeemYaaIsol [yaa.fina]' lookup MeemYaaIsol;
   subtable;
@@ -891,16 +892,6 @@ lookup KafLamYaa {
 feature calt {
   lookupflag IgnoreMarks;
     sub [lam.medi_KafLam]' lookup KafLamYaa [yaa.fina]' lookup LamYaaFina;
-} calt;
-
-lookup KafLamFina {
-    sub kaf.medi by kaf.medi_KafLamMedi;
-    sub lam.fina by lam.fina_KafLamFina;
-} KafLamFina;
-
-feature calt {
-  lookupflag IgnoreMarks;
-    sub [kaf.medi]' lookup KafLamFina [lam.fina]' lookup LamYaaFina;
 } calt;
 
 lookup LamKafInit {
