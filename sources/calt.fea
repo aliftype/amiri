@@ -144,7 +144,7 @@ feature calt {
 
 lookup KafLamHehIsol {
     sub heh.fina by heh.fina_KafLamHehIsol;
-    sub kaf.init by kaf.init_KafLamHehIsol;
+    sub kaf.init by kaf.init_KafLam;
     sub lam.medi by lam.medi_KafLamHehIsol;
 } KafLamHehIsol;
 
@@ -436,7 +436,7 @@ lookup KafMeemFina {
 
 lookup KafLamAlef {
     sub alef.fina by alef.fina_LamAlefFina;
-    sub kaf.init by kaf.init_KafLamAlefIsol;
+    sub kaf.init by kaf.init_KafLam;
     sub kaf.medi by kaf.medi_KafLam;
     sub lam.medi by lam.medi_KafLamAlef;
     sub lam.medi_LamAlefFina by lam.medi_KafLamAlef;
@@ -540,7 +540,7 @@ lookup BaaBaaIsol {
 
 lookup KafAlefIsol {
     sub alef.fina by alef.fina_KafAlefIsol;
-    sub kaf.init by kaf.init_KafAlefIsol;
+    sub kaf.init by kaf.init_KafLam;
 } KafAlefIsol;
 
 lookup HaaRaaIsol {
