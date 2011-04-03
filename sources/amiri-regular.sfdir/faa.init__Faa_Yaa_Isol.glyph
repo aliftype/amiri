@@ -1,6 +1,6 @@
 
 StartChar: faa.init_FaaYaaIsol
-Encoding: 65736 -1 204
+Encoding: 65736 -1 201
 Width: 509
 VWidth: 0
 Flags: W
@@ -11,7 +11,7 @@ AnchorPoint: "TashkilAbove" -1 1640 basechar 0
 AnchorPoint: "TwoDotsAbove" -112 1430 basechar 0
 AnchorPoint: "DotAbove" -1 1430 basechar 0
 AnchorPoint: "HamzaAbove" -1 1430 basechar 0
-AnchorPoint: "cursive" 0 221 exit 0
+AnchorPoint: "cursive" 0 226 exit 0
 LayerCount: 2
 Back
 SplineSet

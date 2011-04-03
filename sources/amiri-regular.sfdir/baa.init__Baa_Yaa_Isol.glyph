@@ -19,7 +19,7 @@ AnchorPoint: "HamzaBelow" 343 -590 basechar 0
 AnchorPoint: "HamzaAbove" 123 1300 basechar 0
 AnchorPoint: "DotBelow" 343 -590 basechar 0
 AnchorPoint: "DotAbove" 123 1300 basechar 0
-AnchorPoint: "cursive" 0 203 exit 0
+AnchorPoint: "cursive" -10 213 exit 0
 LayerCount: 2
 Back
 SplineSet

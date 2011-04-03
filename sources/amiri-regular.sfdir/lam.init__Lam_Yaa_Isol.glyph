@@ -1,6 +1,6 @@
 
 StartChar: lam.init_LamYaaIsol
-Encoding: 65783 -1 244
+Encoding: 65783 -1 239
 Width: 504
 VWidth: 0
 Flags: W
@@ -11,7 +11,7 @@ AnchorPoint: "DotAbove" -13 1668 basechar 0
 AnchorPoint: "TashkilBelow" 240 -670 basechar 0
 AnchorPoint: "TashkilAbove" 0 1640 basechar 0
 AnchorPoint: "VAbove" -13 1568 basechar 0
-AnchorPoint: "cursive" 0 209 exit 0
+AnchorPoint: "cursive" 0 224 exit 0
 LayerCount: 2
 Back
 SplineSet
