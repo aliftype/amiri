@@ -386,9 +386,9 @@ lookup LamQafFina {
 } LamQafFina;
 
 lookup KafMeemLamFina {
-    sub kaf.medi by kaf.medi_KafMeemLamFina;
+    sub kaf.medi by kaf.medi_KafMeemAlefFina;
     sub lam.fina by lam.fina_KafMeemLamFina;
-    sub meem.medi by meem.medi_KafMeemLamFina;
+    sub meem.medi by meem.medi_KafMeemAlef;
 } KafMeemLamFina;
 
 lookup MeemHaaMeemInit {
@@ -478,13 +478,6 @@ lookup KafYaaFina {
     sub yaa.fina by yaa.fina_KafYaaFina;
 } KafYaaFina;
 
-lookup KafMeemLamInit {
-    sub kaf.init by kaf.init_KafMeemAlefIsol;
-    sub lam.fina by lam.fina_KafMeemLamFina;
-    sub lam.medi by lam.medi_KafMeemLamInit;
-    sub meem.medi by meem.medi_KafMeemAlef;
-} KafMeemLamInit;
-
 lookup LamMeemMedi {
     sub lam.medi by lam.medi_LamMeemMedi;
     sub meem.medi by meem.medi_LamMeemMedi;
@@ -530,6 +523,8 @@ lookup KafMeemAlef {
     sub kaf.init by kaf.init_KafMeemAlefIsol;
     sub meem.medi by meem.medi_KafMeemAlef;
     sub alef.fina by alef.fina_KafMeemAlef;
+    sub lam.fina by lam.fina_KafMeemLamFina;
+    sub lam.medi by lam.medi_KafMeemLamInit;
 } KafMeemAlef;
 
 lookup LamKafFina {
@@ -596,7 +591,7 @@ feature calt {
   lookupflag IgnoreMarks;
     sub kaf.init' lookup KafLamHehIsol lam.medi' lookup KafLamHehIsol heh.fina' lookup KafLamHehIsol;
   subtable;
-    sub [kaf.init kaf.medi]' lookup KafMeemAlef meem.medi' lookup KafMeemAlef alef.fina' lookup KafMeemAlef;
+    sub [kaf.init kaf.medi]' lookup KafMeemAlef meem.medi' lookup KafMeemAlef [lam.medi lam.fina alef.fina]' lookup KafMeemAlef;
   subtable;
     sub [baa.init]' lookup BaaSeenAltInit [seen.medi]' lookup BaaSeenAltInit [raa.fina yaa.fina]' lookup BaaSeenAltInit;
   subtable;
@@ -716,8 +711,6 @@ feature calt {
     sub ayn.init' lookup AynHaaInit haa.medi' lookup AynHaaInit;
   subtable;
     sub [kaf.medi ayn.medi]' lookup KafYaaFina yaa.fina' lookup KafYaaFina;
-  subtable;
-    sub [kaf.init]' lookup KafMeemLamInit [meem.medi]' lookup KafMeemLamInit [lam.medi lam.fina]' lookup KafMeemLamInit;
   subtable;
     sub lam.medi' lookup LamMeemMedi meem.medi' lookup LamMeemMedi;
   subtable;

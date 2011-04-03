@@ -3,7 +3,8 @@ StartChar: lam.medi_KafMeemLamInit
 Encoding: 65636 -1 112
 Width: 389
 VWidth: 0
-Flags: HW
+Flags: W
+AnchorPoint: "cursive" 389 -25 entry 0
 AnchorPoint: "Stroke" 127 1226 basechar 0
 AnchorPoint: "TwoDotsBelow" 100 -150 basechar 0
 AnchorPoint: "TwoDotsAbove" 0 1750 basechar 0
@@ -11,7 +12,6 @@ AnchorPoint: "DotAbove" 120 1750 basechar 0
 AnchorPoint: "TashkilBelow" 150 -670 basechar 0
 AnchorPoint: "TashkilAbove" 0 1640 basechar 0
 AnchorPoint: "VAbove" 120 1650 basechar 0
-AnchorPoint: "cursive" 389 96 entry 0
 LayerCount: 2
 Back
 SplineSet
@@ -91,18 +91,18 @@ EndSplineSet
 Fore
 SplineSet
 201 985 m 1,0,1
- 243.505903646 577.329742308 243.505903646 577.329742308 290.5 411.5 c 0,2,3
- 335 255 335 255 415.5 194 c 0,4,5
- 449.223651623 170.935387626 449.223651623 170.935387626 419 72 c 0,6,7
- 387.999165532 -24.6109812835 387.999165532 -24.6109812835 337 34 c 0,8,9
- 270 111 270 111 201 283 c 1,10,11
+ 234 654 234 654 290 412 c 0,2,3
+ 356 120 356 120 418 74 c 0,4,5
+ 461 44 461 44 421 -48 c 0,6,7
+ 382 -148 382 -148 339 -86 c 0,8,9
+ 245 51 245 51 201 283 c 1,10,11
  123 0 123 0 0 0 c 0,12,13
  -20 0 -20 0 -36 40 c 0,14,15
  -90 183 -90 183 0 185 c 0,16,17
  127 189 127 189 147 311 c 0,18,19
  153 348 153 348 105 830.5 c 128,-1,20
  57 1313 57 1313 54.5 1353.5 c 128,-1,21
- 52.008364701 1393.86449184 52.008364701 1393.86449184 58 1407 c 2,22,-1
+ 52 1394 52 1394 58 1407 c 2,22,-1
  110 1521 l 2,23,24
  136 1578 136 1578 142 1507 c 1,25,-1
  201 985 l 1,0,1
