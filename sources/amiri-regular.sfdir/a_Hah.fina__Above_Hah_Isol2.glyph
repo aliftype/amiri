@@ -1,0 +1,23 @@
+
+StartChar: aHah.fina_AboveHahIsol2
+Encoding: 65908 -1 476
+Width: 283
+VWidth: 0
+Flags: W
+AnchorPoint: "DigitBelow" 817 -110 basechar 0
+AnchorPoint: "TaaBelow" 700 300 basechar 0
+AnchorPoint: "TaaAbove" 1057 790 basechar 0
+AnchorPoint: "TashkilBelow" 817 100 basechar 0
+AnchorPoint: "TashkilAbove" 197 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 707 -360 basechar 0
+AnchorPoint: "TwoDotsAbove" 957 790 basechar 0
+AnchorPoint: "DotBelow" 817 -360 basechar 0
+AnchorPoint: "HamzaBelow" 817 -90 basechar 0
+AnchorPoint: "HamzaAbove" 1057 790 basechar 0
+AnchorPoint: "DotAbove" 1057 790 basechar 0
+AnchorPoint: "cursive" 283 440 entry 0
+LayerCount: 2
+Fore
+Refer: 287 -1 N 1 0 0 1 0 0 2
+Colour: ff0000
+EndChar

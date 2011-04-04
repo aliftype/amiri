@@ -1,0 +1,36 @@
+
+StartChar: aLam.medi_KafLamHehIsol
+Encoding: 65986 -1 708
+Width: 293
+VWidth: 0
+Flags: W
+AnchorPoint: "Stroke" 17 1070 basechar 0
+AnchorPoint: "TwoDotsBelow" 150 -276 basechar 0
+AnchorPoint: "TwoDotsAbove" -125 1568 basechar 0
+AnchorPoint: "DotAbove" -5 1568 basechar 0
+AnchorPoint: "TashkilBelow" 130 -670 basechar 0
+AnchorPoint: "TashkilAbove" 160 1640 basechar 0
+AnchorPoint: "VAbove" -5 1468 basechar 0
+AnchorPoint: "cursive" 0 -89 exit 0
+LayerCount: 2
+Fore
+SplineSet
+7 -1 m 128,-1,1
+ 49 22 49 22 67 98 c 128,-1,2
+ 85 174 85 174 73 247 c 0,3,4
+ 14 608 14 608 -61 1147 c 1,5,6
+ -74 1203 -74 1203 -60 1236 c 2,7,-1
+ -15 1343 l 1,8,9
+ 24 1403 24 1403 30 1353 c 0,10,11
+ 138 480 138 480 206 281 c 0,12,13
+ 227 220 227 220 293 192 c 0,14,15
+ 344 171 344 171 350 70 c 0,16,17
+ 356 -32 356 -32 294 -22 c 0,18,19
+ 254 -15 254 -15 223 0 c 0,20,21
+ 159 31 159 31 113 110 c 1,22,23
+ 51 -184 51 -184 -35 -187 c 0,24,25
+ -61 -188 -61 -188 -68 -152 c 128,-1,26
+ -75 -116 -75 -116 -55 -70 c 128,-1,0
+ -35 -24 -35 -24 7 -1 c 128,-1,1
+EndSplineSet
+EndChar

@@ -1,0 +1,39 @@
+
+StartChar: aKaf.init_KafLam
+Encoding: 65980 -1 702
+Width: 1174
+VWidth: 0
+Flags: W
+AnchorPoint: "Dash" 515 1410 basechar 0
+AnchorPoint: "TashkilAbove" 397 1640 basechar 0
+AnchorPoint: "TashkilBelow" 287 -670 basechar 0
+AnchorPoint: "TwoDotsAbove" -121 1527 basechar 0
+AnchorPoint: "DotAbove" 19 1357 basechar 0
+AnchorPoint: "DotBelow" 197 -320 basechar 0
+AnchorPoint: "TwoDotsBelow" 87 -320 basechar 0
+AnchorPoint: "RingBelow" 513 1232 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+344 302 m 0,0,1
+ 177 135 177 135 0 192 c 0,2,3
+ -28 201 -28 201 -52 123 c 0,4,5
+ -66 77 -66 77 -46 22 c 0,6,7
+ -31 -19 -31 -19 1 -22 c 0,8,9
+ 405 -56 405 -56 406 336 c 8,10,11
+ 406 451 406 451 305 573 c 0,12,13
+ 185 717 185 717 -144 808 c 1,14,15
+ -32 892 -32 892 87 963 c 0,16,17
+ 204 1033 204 1033 959 1335 c 0,18,19
+ 994 1349 994 1349 1006 1355 c 128,-1,20
+ 1018 1361 1018 1361 1028 1393 c 2,21,-1
+ 1062 1505 l 2,22,23
+ 1074 1545 1074 1545 1031 1530 c 2,24,-1
+ 798 1449 l 1,25,26
+ -52 1144 -52 1144 -215 819 c 0,27,28
+ -252 745 -252 745 -244 699 c 128,-1,29
+ -236 653 -236 653 -202 643 c 1,30,31
+ 213 539 213 539 350 320 c 0,32,33
+ 355 312 355 312 344 302 c 0,0,1
+EndSplineSet
+EndChar

@@ -1,0 +1,23 @@
+
+StartChar: aHah.medi_AinHahInit
+Encoding: 65782 -1 471
+Width: 113
+VWidth: 0
+Flags: W
+AnchorPoint: "DigitBelow" 440 -260 basechar 0
+AnchorPoint: "TaaBelow" 440 140 basechar 0
+AnchorPoint: "TaaAbove" 90 1000 basechar 0
+AnchorPoint: "TashkilBelow" 440 -670 basechar 0
+AnchorPoint: "TashkilAbove" 140 1640 basechar 0
+AnchorPoint: "cursive" 113 481 entry 0
+AnchorPoint: "TwoDotsBelow" 329 -260 basechar 0
+AnchorPoint: "TwoDotsAbove" -40 1000 basechar 0
+AnchorPoint: "HamzaBelow" 440 -260 basechar 0
+AnchorPoint: "HamzaAbove" 60 1000 basechar 0
+AnchorPoint: "DotBelow" 440 -260 basechar 0
+AnchorPoint: "DotAbove" 90 1000 basechar 0
+LayerCount: 2
+Fore
+Refer: 267 -1 N 1 0 0 1 0 0 2
+Colour: ff00ff
+EndChar

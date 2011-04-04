@@ -1,0 +1,24 @@
+
+StartChar: aHah.medi_FehHahInit
+Encoding: 65729 -1 189
+Width: 149
+VWidth: 0
+Flags: W
+AnchorPoint: "DigitBelow" 521 -260 basechar 0
+AnchorPoint: "TaaBelow" 521 140 basechar 0
+AnchorPoint: "TaaAbove" 1000 900 basechar 0
+AnchorPoint: "TashkilBelow" 261 -670 basechar 0
+AnchorPoint: "TashkilAbove" 0 1640 basechar 0
+AnchorPoint: "DotBelow" 521 -260 basechar 0
+AnchorPoint: "HamzaBelow" 521 -260 basechar 0
+AnchorPoint: "TwoDotsBelow" 410 -260 basechar 0
+AnchorPoint: "TwoDotsAbove" 800 900 basechar 0
+AnchorPoint: "HamzaAbove" 900 900 basechar 0
+AnchorPoint: "DotAbove" 1000 900 basechar 0
+AnchorPoint: "cursive" 149 470 entry 0
+LayerCount: 2
+Fore
+Refer: 267 -1 N 1 0 0 1 0 0 2
+Comment: "XXX: Disunify" 
+Colour: ff00ff
+EndChar

@@ -1,0 +1,30 @@
+
+StartChar: aAlef.fina_KafAlef
+Encoding: 65988 -1 710
+Width: 385
+VWidth: 0
+Flags: W
+AnchorPoint: "DigitAbove" -24 1319 basechar 0
+AnchorPoint: "HighHamza" 526 1569 basechar 0
+AnchorPoint: "TashkilBelow" 0 -670 basechar 0
+AnchorPoint: "TashkilAbove" 0 1640 basechar 0
+AnchorPoint: "HamzaBelow" 350 -80 basechar 0
+AnchorPoint: "HamzaAbove" 126 1569 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+385 192 m 0,0,1
+ 456 179 456 179 468 65 c 0,2,3
+ 479 -31 479 -31 386 -22 c 0,4,5
+ 294 -14 294 -14 228 56 c 0,6,7
+ 117 170 117 170 123 582 c 0,8,9
+ 126 810 126 810 106 1002 c 0,10,11
+ 78 1258 78 1258 62 1325 c 0,12,13
+ 45 1400 45 1400 55 1416 c 2,14,-1
+ 114 1510 l 2,15,16
+ 132 1539 132 1539 142 1505 c 0,17,18
+ 197 1303 197 1303 201 762 c 24,19,20
+ 204 375 204 375 245 292 c 0,21,22
+ 285 209 285 209 385 192 c 0,0,1
+EndSplineSet
+EndChar

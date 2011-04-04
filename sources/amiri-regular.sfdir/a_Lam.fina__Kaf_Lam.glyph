@@ -1,0 +1,40 @@
+
+StartChar: aLam.fina_KafLam
+Encoding: 65987 -1 709
+Width: 1233
+VWidth: 0
+Flags: W
+AnchorPoint: "Stroke" 986 1012 basechar 0
+AnchorPoint: "TwoDotsBelow" 600 -935 basechar 0
+AnchorPoint: "TwoDotsAbove" 400 1000 basechar 0
+AnchorPoint: "DotAbove" 600 1200 basechar 0
+AnchorPoint: "TashkilBelow" 600 -770 basechar 0
+AnchorPoint: "TashkilAbove" 600 1640 basechar 0
+AnchorPoint: "VAbove" 614 1198 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1071 64 m 1,0,1
+ 1135 -438 1135 -438 966 -566 c 0,2,3
+ 747 -732 747 -732 543.5 -736.5 c 128,-1,4
+ 340 -741 340 -741 224 -627 c 128,-1,5
+ 108 -513 108 -513 134.5 -314.5 c 128,-1,6
+ 161 -116 161 -116 314 87 c 0,7,8
+ 323 99 323 99 337 98.5 c 128,-1,9
+ 351 98 351 98 356.5 85.5 c 128,-1,10
+ 362 73 362 73 350 55 c 0,11,12
+ 177 -194 177 -194 246 -352 c 0,13,14
+ 326 -536 326 -536 613 -519 c 0,15,16
+ 849 -505 849 -505 1035 -321 c 1,17,-1
+ 935 1072 l 2,18,19
+ 930 1140 930 1140 939 1174 c 0,20,-1
+ 976 1296 l 0,21,22
+ 1005 1333 1005 1333 1017 1255 c 2,23,-1
+ 1071 712 l 0,24,25
+ 1113 228 1113 228 1233 192 c 0,26,27
+ 1303 159 1303 159 1287 105 c 0,28,29
+ 1250 -25 1250 -25 1234 -22 c 0,30,31
+ 1112 2 1112 2 1057 170 c 1,32,-1
+ 1071 64 l 1,0,1
+EndSplineSet
+EndChar

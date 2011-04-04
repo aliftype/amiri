@@ -1,0 +1,44 @@
+
+StartChar: aAlef.isol
+Encoding: 65538 -1 2
+Width: 446
+VWidth: 0
+AnchorPoint: "DigitAbove" -34 1280 basechar 0
+AnchorPoint: "HamzaBelowAlt" 327 -600 basechar 0
+AnchorPoint: "HighHamza" 566 1630 basechar 0
+AnchorPoint: "TashkilBelow" 250 -670 basechar 0
+AnchorPoint: "TashkilAbove" 200 1550 basechar 0
+AnchorPoint: "HamzaAbove" 166 1630 basechar 0
+AnchorPoint: "HamzaBelow" 330 -80 basechar 0
+LayerCount: 2
+Back
+SplineSet
+193 1399 m 1,0,1
+ 217 1446 217 1446 227 1403 c 0,2,3
+ 230 1391 230 1391 230 1376 c 0,4,5
+ 245 1134 245 1134 275 874 c 0,6,7
+ 308 584 308 584 312 408 c 0,8,9
+ 320 128 320 128 266 14 c 0,10,11
+ 254 -9 254 -9 241 6 c 0,12,13
+ 233 16 233 16 236 36 c 1,14,15
+ 243 204 243 204 224 416 c 0,16,17
+ 223 422 223 422 185.5 739.5 c 128,-1,18
+ 148 1057 148 1057 134 1214 c 0,19,20
+ 130 1250 130 1250 145 1283 c 2,21,-1
+ 193 1399 l 1,0,1
+EndSplineSet
+Fore
+SplineSet
+190 1388 m 2,0,1
+ 220 1460 220 1460 228 1392 c 0,2,3
+ 275 874 l 0,4,5
+ 354 184 354 184 266 14 c 0,6,7
+ 254 -9 254 -9 244.5 2.5 c 128,-1,8
+ 235 14 235 14 236 36 c 24,9,10
+ 241 278 241 278 222.5 423 c 128,-1,11
+ 204 568 204 568 178 813 c 2,12,-1
+ 134 1214 l 2,13,14
+ 130 1248 130 1248 145 1283 c 2,15,-1
+ 190 1388 l 2,0,1
+EndSplineSet
+EndChar

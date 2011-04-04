@@ -1,0 +1,25 @@
+
+StartChar: aKaf.init_Tatweel
+Encoding: 65901 -1 467
+Width: 1446
+VWidth: 0
+Flags: W
+AnchorPoint: "Dash" 741 1500 basechar 0
+AnchorPoint: "TashkilAbove" 661 1640 basechar 0
+AnchorPoint: "TashkilBelow" 420 -670 basechar 0
+AnchorPoint: "TwoDotsAbove" 151 1440 basechar 0
+AnchorPoint: "DotAbove" 261 1440 basechar 0
+AnchorPoint: "RingBelow" 810 1384 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+260 185 m 0,0,1
+ 324 196 324 196 317 142 c 0,2,3
+ 298 5 298 5 260 0 c 1,4,5
+ 114 -15 114 -15 0 0 c 0,6,7
+ -42 6 -42 6 -59 138 c 1,8,9
+ -67 192 -67 192 0 185 c 24,10,11
+ 153 168 153 168 260 185 c 0,0,1
+EndSplineSet
+Refer: 28 -1 N 1 0 0 1 260 0 2
+EndChar
