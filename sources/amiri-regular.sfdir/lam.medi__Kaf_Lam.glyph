@@ -1,9 +1,10 @@
 
 StartChar: lam.medi_KafLam
 Encoding: 65983 -1 705
-Width: 389
+Width: 400
 VWidth: 0
 Flags: W
+AnchorPoint: "cursive" 400 94 entry 0
 AnchorPoint: "Stroke" 147 1226 basechar 0
 AnchorPoint: "TwoDotsBelow" 100 -150 basechar 0
 AnchorPoint: "TwoDotsAbove" -10 1650 basechar 0
@@ -11,14 +12,13 @@ AnchorPoint: "DotAbove" 110 1650 basechar 0
 AnchorPoint: "TashkilBelow" 150 -670 basechar 0
 AnchorPoint: "TashkilAbove" 130 1640 basechar 0
 AnchorPoint: "VAbove" 110 1550 basechar 0
-AnchorPoint: "cursive" 389 84 entry 0
 LayerCount: 2
 Fore
 SplineSet
-194 318 m 1,0,1
- 235 5 235 5 386 -20 c 0,2,3
- 465 -33 465 -33 450 90 c 0,4,5
- 439 179 439 179 395 192 c 0,6,7
+202 316 m 1,0,1
+ 242 6 242 6 394 -22 c 0,2,3
+ 465 -35 465 -35 450 90 c 0,4,5
+ 439 179 439 179 393 192 c 0,6,7
  309 218 309 218 275 365 c 0,8,9
  243 503 243 503 217 858 c 0,10,-1
  168 1400 l 2,11,12
@@ -29,8 +29,8 @@ SplineSet
  73 1196 73 1196 107 760 c 0,20,21
  145 273 145 273 144 272 c 24,22,23
  93 186 93 186 0 185 c 0,24,25
- -136 184 -136 184 -48 35 c 0,26,27
+ -137 184 -137 184 -48 35 c 0,26,27
  -27 0 -27 0 0 0 c 0,28,29
- 152 0 152 0 194 318 c 1,0,1
+ 160 0 160 0 202 316 c 1,0,1
 EndSplineSet
 EndChar
