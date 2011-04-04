@@ -1,0 +1,35 @@
+
+StartChar: aYaa.fina_Tatweel
+Encoding: 65903 -1 469
+Width: 1472
+VWidth: -290
+Flags: W
+AnchorPoint: "DigitBelow" 731 -995 basechar 0
+AnchorPoint: "DigitAbove" 530 500 basechar 0
+AnchorPoint: "TashkilAbove" 600 1640 basechar 0
+AnchorPoint: "TashkilBelow" 750 -760 basechar 0
+AnchorPoint: "AlefAbove" 330 500 basechar 0
+AnchorPoint: "RingBelow" 640 -600 basechar 0
+AnchorPoint: "TwoDotsAbove" 420 500 basechar 0
+AnchorPoint: "DotAbove" 530 500 basechar 0
+AnchorPoint: "VAbove" 430 500 basechar 0
+AnchorPoint: "Tail" 289 156 basechar 0
+AnchorPoint: "TwoDotsBelow" 620 -995 basechar 0
+AnchorPoint: "DotBelow" 731 -995 basechar 0
+AnchorPoint: "HamzaBelow" 731 -995 basechar 0
+AnchorPoint: "HamzaAbove" 330 500 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1474 185 m 0,0,1
+ 1536 182 1536 182 1531 142 c 0,2,3
+ 1511 0 1511 0 1474 0 c 2,4,-1
+ 1214 0 l 2,5,6
+ 1199 0 1199 0 1185 51 c 1,7,8
+ 1145 183 1145 183 1214 185 c 0,9,10
+ 1384 190 1384 190 1474 185 c 0,0,1
+EndSplineSet
+Refer: 64 -1 N 1 0 0 1 0 0 2
+Comment: "XXX: Dots tashkil below" 
+Colour: ff0000
+EndChar

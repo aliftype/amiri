@@ -83,20 +83,20 @@ MarkAttachClasses: 5
 "HamzaBelow" 11 hamza.below
 DEI: 91125
 KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1" 
- 206 aReh.fina aReh.isol aWaw.fina aWaw.isol aReh.fina_BehRehIsol aWaw.fina_LamWawFina aReh.fina_BehRehFina aReh.fina_KafRehFina aReh.fina_KafRehIsol aReh.fina_HahRehIsol aReh.fina_LamRehIsol aReh.fina_PostTooth
- 82 aDal.fina aDal.isol aDal.fina_BehDalIsol aDal.fina_KafDalIsol aDal.fina_LamDalIsol
- 36 aReh.fina.alt2 aReh.fina_MeemRehIsol
+ 206 aRaa.fina aRaa.isol aWaw.fina aWaw.isol aRaa.fina_BaaRaaIsol aWaw.fina_LamWawFina aRaa.fina_BaaRaaFina aRaa.fina_KafRaaFina aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol aRaa.fina_LamRaaIsol aRaa.fina_PostTooth
+ 82 aDal.fina aDal.isol aDal.fina_BaaDalIsol aDal.fina_KafDalIsol aDal.fina_LamDalIsol
+ 36 aRaa.fina.alt2 aRaa.fina_MeemRaaIsol
  10 aAlef.isol
- 331 aKaf.init aKaf.init_KafHehIsol kaf.init_KafMeemLamInit aKaf.init_KafMeemInit aKaf.init_KafYehIsol kaf.init_KafLamIsol aKaf.init_KafBehInit aKaf.init_KafMeemIsol kaf.init_KafLamAlefIsol aKaf.init_KafLam aKaf.init_KafRehIsol kaf.init_KafAlefIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol aKaf.init_Tatweel
- 63 aAin.isol aHah.isol aFeh.init_FehYehIsol aBeh.init_AboveHahIsol
- 520 aAin.init aBeh.isol aFeh.init aFeh.isol aHah.init aHeh.init aHeh.isol aMeem.init aMeem.isol aSad.init aSad.isol aSeen.init aSeen.isol aTah.init aTah.isol aYeh.isol aAin.init_AinMeemInit aLam.init_LamHahInit aHah.init_HahYehIsol aMeem.init_MeemYehIsol aMeem.init_MeemRehIsol aHah.init_HahHahInit aAin.init_AinYehIsol aAin.init_AinHahInit aLam.init_LamYehIsol aBeh.init_BehBehHahInit aHah.init_HahMeemInit aHah.init_HahRehIsol aBeh.init_BehHahMeemInit aAin.init_Finjani aHah.init_Finjani aSeen.init_PreYeh aSad.init_PreYeh
+ 331 aKaf.init aKaf.init_KafHehIsol kaf.init_KafMeemLamInit aKaf.init_KafMeemInit aKaf.init_KafYaaIsol kaf.init_KafLamIsol aKaf.init_KafBaaInit aKaf.init_KafMeemIsol kaf.init_KafLamAlefIsol aKaf.init_KafLam aKaf.init_KafRaaIsol kaf.init_KafAlefIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol aKaf.init_Tatweel
+ 63 aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol
+ 520 aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init aHeh.init aHeh.isol aMeem.init aMeem.isol aSad.init aSad.isol aSeen.init aSeen.isol aTaa.init aTaa.isol aYaa.isol aAyn.init_AynMeemInit aLam.init_LamHaaInit aHaa.init_HaaYaaIsol aMeem.init_MeemYaaIsol aMeem.init_MeemRaaIsol aHaa.init_HaaHaaInit aAyn.init_AynYaaIsol aAyn.init_AynHaaInit aLam.init_LamYaaIsol aBaa.init_BaaBaaHaaInit aHaa.init_HaaMeemInit aHaa.init_HaaRaaIsol aBaa.init_BaaHaaMeemInit aAyn.init_Finjani aHaa.init_Finjani aSeen.init_PreYaa aSad.init_PreYaa
  35 aNoon.isol aNoon.isol.alt aQaf.isol
- 29 aReh.isol aWaw.isol aDal.isol
- 93 aKaf.isol aLam.init aLam.isol aLam.init_LamHehIsol aLam.init_LamAlefIsol aLam.init_LamRehIsol
- 261 aBeh.init aBeh.init_BehRehIsol aBeh.init_BehDalIsol aBeh.init_BehBehYehIsol aBeh.init_BehBehInit aBeh.init_BehSeenInit aBeh.init_BehHehInit aBeh.init_BehBehIsol aBeh.init_BehMeemIsol aBeh.init_BehSeenAltInit aBeh.init_BehHahInit aBeh.init_High aBeh.init_Tatweel
- 136 aBeh.init_BehYehIsol aBeh.init_BehMeemHahInit aLam.init_LamHahMeemInit aFeh.init_FehHahInit aMeem.init_MeemHahInit aBeh.init_BehMeemInit
- 67 aSeen.init_SeenHahInit aSad.init_SadHahInit aLam.init_LamHahHahInit
- 46 aSad.init_AboveHahIsol aSeen.init_AboveHahIsol
+ 29 aRaa.isol aWaw.isol aDal.isol
+ 93 aKaf.isol aLam.init aLam.isol aLam.init_LamHehIsol aLam.init_LamAlefIsol aLam.init_LamRaaIsol
+ 261 aBaa.init aBaa.init_BaaRaaIsol aBaa.init_BaaDalIsol aBaa.init_BaaBaaYaaIsol aBaa.init_BaaBaaInit aBaa.init_BaaSeenInit aBaa.init_BaaHehInit aBaa.init_BaaBaaIsol aBaa.init_BaaMeemIsol aBaa.init_BaaSeenAltInit aBaa.init_BaaHaaInit aBaa.init_High aBaa.init_Tatweel
+ 136 aBaa.init_BaaYaaIsol aBaa.init_BaaMeemHaaInit aLam.init_LamHaaMeemInit aFaa.init_FaaHaaInit aMeem.init_MeemHaaInit aBaa.init_BaaMeemInit
+ 67 aSeen.init_SeenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit
+ 46 aSad.init_AboveHaaIsol aSeen.init_AboveHaaIsol
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -300 {} -900 {} -300 {} -450 {} -400 {} -400 {} -450 {} -400 {} -400 {} -500 {} -400 {} 0 {} 0 {} -500 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -800 {} -200 {} -200 {} -200 {} -200 {} 0 {} -50 {} 0 {} 0 {} -400 {}
 ChainPos2: coverage "'kern' SnakeRaaBaa-1"  0 0 0 1
  3 0 0
