@@ -269,11 +269,9 @@ lookup LamBaaMeemInit {
     sub meem.medi by meem.medi_LamBaaMeemInit;
 } LamBaaMeemInit;
 
-lookup KafLamMeemMedi {
-    sub kaf.medi by kaf.medi_KafLam;
+lookup KafLamMeem {
     sub lam.medi by lam.medi_KafLamMeemMedi;
-    sub meem.medi by meem.medi_LamMeemMedi;
-} KafLamMeemMedi;
+} KafLamMeem;
 
 lookup BaaDalIsol {
     sub baa.init by baa.init_BaaDalIsol;
@@ -633,7 +631,7 @@ feature calt {
   subtable;
     sub lam.init' lookup LamBaaMeemInit baa.medi' lookup LamBaaMeemInit meem.medi' lookup LamBaaMeemInit;
   subtable;
-    sub kaf.medi' lookup KafLamMeemMedi lam.medi' lookup KafLamMeemMedi meem.medi' lookup KafLamMeemMedi;
+    sub [kaf.init kaf.medi]' lookup KafLam lam.medi' lookup KafLamMeem meem.medi' lookup LamMeemMedi;
   subtable;
     sub baa.init' lookup BaaDalIsol dal.fina' lookup BaaDalIsol;
   subtable;
