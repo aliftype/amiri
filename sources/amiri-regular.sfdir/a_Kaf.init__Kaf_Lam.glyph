@@ -5,7 +5,7 @@ Width: 1174
 VWidth: 0
 Flags: W
 AnchorPoint: "Dash" 403 1511 basechar 0
-AnchorPoint: "TashkilAbove" 277 1571 basechar 0
+AnchorPoint: "TashkilAbove" 377 1640 basechar 0
 AnchorPoint: "RingBelow" 469 1274 basechar 0
 AnchorPoint: "DotAbove" 33 1381 basechar 0
 AnchorPoint: "TwoDotsAbove" -77 1381 basechar 0
@@ -35,4 +35,5 @@ SplineSet
  689 1311 689 1311 319 1107.5 c 128,-1,32
  -51 904 -51 904 -144 808 c 1,0,1
 EndSplineSet
+Colour: ff00
 EndChar

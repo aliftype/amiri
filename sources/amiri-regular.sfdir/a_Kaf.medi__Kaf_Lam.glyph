@@ -10,7 +10,7 @@ AnchorPoint: "TwoDotsBelow" 497 -200 basechar 0
 AnchorPoint: "DotBelow" 607 -200 basechar 0
 AnchorPoint: "RingBelow" 499 1343 basechar 0
 AnchorPoint: "TashkilBelow" 457 -670 basechar 0
-AnchorPoint: "TashkilAbove" 307 1640 basechar 0
+AnchorPoint: "TashkilAbove" 407 1640 basechar 0
 AnchorPoint: "Dash" 433 1580 basechar 0
 LayerCount: 2
 Fore
@@ -39,4 +39,5 @@ SplineSet
  -60 -13 -60 -13 -50 96 c 0,40,41
  -40 201 -40 201 0 192 c 0,0,1
 EndSplineSet
+Colour: ff00
 EndChar
