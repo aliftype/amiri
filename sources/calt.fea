@@ -362,7 +362,6 @@ lookup FaaHaaInit {
 
 lookup KafKafFina {
     sub kaf.fina by kaf.fina_KafKafFina;
-    sub kaf.medi by kaf.medi_KafLam;
 } KafKafFina;
 
 lookup HaaHaaInit {
@@ -665,7 +664,7 @@ feature calt {
   subtable;
     sub faa.init' lookup FaaHaaInit haa.medi' lookup FaaHaaInit;
   subtable;
-    sub kaf.medi' lookup KafKafFina kaf.fina' lookup KafKafFina;
+    sub [kaf.init kaf.medi]' lookup KafLam kaf.fina' lookup KafKafFina;
   subtable;
     sub haa.init' lookup HaaHaaInit haa.medi' lookup HaaHaaInit;
   subtable;
