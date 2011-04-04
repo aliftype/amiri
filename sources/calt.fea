@@ -844,6 +844,7 @@ feature calt {
   lookupflag MarkAttachmentType @Dash;
     sub [aKaf.init_KafYaaIsol
          aKaf.init_KafBaaInit
+         aKaf.init_KafLam
          aKaf.init_KafMeemAlefIsol]
         [dash.gaf]' by [dash.gaf.alt2];
     sub [aKaf.medi_KafMeemMedi
