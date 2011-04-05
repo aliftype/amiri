@@ -843,7 +843,6 @@ feature calt {
          aKaf.init_KafMeemIsol
          aKaf.init_AboveHaaIsol]
         [dash.gaf dash.gaf.alt2]' by [dash.gaf.alt1 dash.gaf.alt1];
-    sub aKaf.medi_KafMeemAlef dash.gaf.alt2' by dash.gaf;
 } calt;
 
 feature calt {
