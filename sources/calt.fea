@@ -880,17 +880,21 @@ feature calt {
 @DotsBelowL = [Dot.b.l TwoDots.b.l ThreeDots.b.l iThreeDots.b.l vTwoDots.b.l
                FourDots.b.l hThreeDots.b.l smallv.below.inverted.low];
 @HamzaBelow = [hamza.below uni065F];
-@Tashkil    = [uni064B-uni064F uni0650-uni0653]; #XXX: extend, be aware of hamza
+
+include(amiri-regular-classes.fea)
 
 lookup LowHamza {
     sub @HamzaBelow by [hamza.below.low hamza.below.wavy.low];
 } LowHamza;
 
 feature calt {
-    sub                            @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
-    sub @Tashkil                   @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
-    sub @Tashkil @Tashkil          @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
-    sub @Tashkil @Tashkil @Tashkil @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub                                     @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Mark                               @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Mark @Mark                         @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Mark @Mark @Mark                   @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Mark @Mark @Mark @Mark             @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Mark @Mark @Mark @Mark @Mark       @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Mark @Mark @Mark @Mark @Mark @Mark @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
 } calt;
 
 lookup LowDots {
@@ -898,8 +902,11 @@ lookup LowDots {
 } LowDots;
 
 feature calt {
-    sub                            @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
-    sub @Tashkil                   @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
-    sub @Tashkil @Tashkil          @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
-    sub @Tashkil @Tashkil @Tashkil @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub                                     @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Mark                               @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Mark @Mark                         @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Mark @Mark @Mark                   @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Mark @Mark @Mark @Mark             @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Mark @Mark @Mark @Mark @Mark       @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Mark @Mark @Mark @Mark @Mark @Mark @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
 } calt;
