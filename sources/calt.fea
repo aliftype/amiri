@@ -880,19 +880,26 @@ feature calt {
 @DotsBelowL = [Dot.b.l TwoDots.b.l ThreeDots.b.l iThreeDots.b.l vTwoDots.b.l
                FourDots.b.l hThreeDots.b.l smallv.below.inverted.low];
 @HamzaBelow = [hamza.below uni065F];
+@Tashkil    = [uni064B-uni064F uni0650-uni0653]; #XXX: extend, be aware of hamza
 
-lookup HamzaBelowLow {
+lookup LowHamza {
     sub @HamzaBelow by [hamza.below.low hamza.below.wavy.low];
-} HamzaBelowLow;
+} LowHamza;
 
 feature calt {
-    sub @RaaWaw aAlef.isol' @HamzaBelow' lookup HamzaBelowLow;
+    sub                            @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Tashkil                   @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Tashkil @Tashkil          @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+    sub @Tashkil @Tashkil @Tashkil @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
 } calt;
 
-lookup DotsBelowLow {
+lookup LowDots {
     sub @DotsBelow by @DotsBelowL;
-} DotsBelowLow;
+} LowDots;
 
 feature calt {
-    sub @RaaWaw @BaaInit' @DotsBelow' lookup DotsBelowLow;
+    sub                            @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Tashkil                   @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Tashkil @Tashkil          @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+    sub @Tashkil @Tashkil @Tashkil @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
 } calt;
