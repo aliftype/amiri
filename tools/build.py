@@ -62,6 +62,19 @@ def doKern(font, remove):
                         font.removeLookupSubtable(subtable)
     return new_subtable
 
+def genClasses(font, klasses):
+    text = ""
+    for klass in klasses.split():
+        text += "@%s = [" %klass.title()
+
+        for glyph in font.glyphs():
+            if glyph.glyphclass == klass:
+                text += glyph.glyphname + " "
+
+        text += "];\n"
+
+    return text
+
 def usage(code):
     message = """Usage: %s OPTIONS...
 
@@ -84,7 +97,7 @@ def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "hi:o:f:v:cws",
-                ["help","input=","output=", "feature-files=", "font-version", "css", "web", "sfd"])
+                ["help","input=","output=", "feature-files=", "font-version=","classes=", "css", "web", "sfd"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -92,6 +105,7 @@ def main():
     infile = None
     outfile = None
     feafiles = None
+    classes = None
     version = None
     css = False
     web = False
@@ -106,6 +120,8 @@ def main():
             outfile = a
         elif o in ("-f", "--feature-files"):
             feafiles = a
+        elif o == "--classes":
+            classes = a
         elif o in ("-v", "--font-version"):
             version = a
         elif o in ("-c", "--css"):
@@ -130,6 +146,16 @@ def main():
         base = os.path.splitext(os.path.basename(infile))[0]
 
         text = genCSS(font, base)
+        font.close()
+
+        out = open(outfile, "w")
+        out.write(text)
+        out.close()
+
+        sys.exit(0)
+
+    if classes:
+        text = genClasses(font, classes)
         font.close()
 
         out = open(outfile, "w")
