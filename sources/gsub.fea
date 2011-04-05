@@ -264,7 +264,7 @@ feature init {
     sub uni06AD by aKaf.init ThreeDots.a;
     sub uni06AE by aKaf.init iThreeDots.b;
     sub uni06AF by aKaf.init dash.gaf;
-    sub uni06B0 by aKaf.init ring.below dash.gaf;
+    sub uni06B0 by aKaf.init dash.gaf ring.below;
     sub uni06B1 by aKaf.init dash.gaf TwoDots.a;
     sub uni06B2 by aKaf.init dash.gaf TwoDots.b;
     sub uni06B3 by aKaf.init dash.gaf vTwoDots.b;
@@ -395,7 +395,7 @@ feature medi {
     sub uni06AD by aKaf.medi ThreeDots.a;
     sub uni06AE by aKaf.medi iThreeDots.b;
     sub uni06AF by aKaf.medi dash.gaf.alt2;
-    sub uni06B0 by aKaf.medi ring.below dash.gaf.alt2;
+    sub uni06B0 by aKaf.medi dash.gaf.alt2 ring.below;
     sub uni06B1 by aKaf.medi dash.gaf.alt2 TwoDots.a;
     sub uni06B2 by aKaf.medi dash.gaf.alt2 TwoDots.b;
     sub uni06B3 by aKaf.medi dash.gaf.alt2 vTwoDots.b;
