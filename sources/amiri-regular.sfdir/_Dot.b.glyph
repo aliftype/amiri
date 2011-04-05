@@ -1,11 +1,11 @@
 
-StartChar: dot.below.low
-Encoding: 65939 -1 591
+StartChar: Dot.b
+Encoding: 65868 -1 420
 Width: 0
 VWidth: 0
-Flags: W
-AnchorPoint: "DotBelowAlt" 0 140 mark 0
+GlyphClass: 4
 AnchorPoint: "TashkilBelowDot" 30 -140 basemark 0
+AnchorPoint: "DotBelow" 0 140 mark 0
 LayerCount: 2
 Fore
 Refer: 417 -1 N 1 0 0 1 0 0 2

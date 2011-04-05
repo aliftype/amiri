@@ -1,11 +1,12 @@
 
-StartChar: threedots.below.inverted.low
-Encoding: 65943 -1 594
+StartChar: iThreeDots.b
+Encoding: 65880 -1 442
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: W
-AnchorPoint: "TwoDotsBelowAlt" -115 390 mark 0
 AnchorPoint: "TashkilBelowDot" 80 -143 basemark 0
+AnchorPoint: "TwoDotsBelow" -115 390 mark 0
 LayerCount: 2
 Fore
 Refer: 441 -1 N 1 0 0 1 0 0 2

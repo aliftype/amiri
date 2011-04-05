@@ -91,13 +91,13 @@ lookup KafBaaDotAbove {
 } KafBaaDotAbove;
 
 feature calt {
-  @DotsHamzaAbove=[hamza.above dot.above twodots.above threedots.above
-                   threedots.above.horizontal threedots.above.inverted
-                   smalltaa.above twodots.above.vertical fourdots.above uni065A uni065B];
+  @DotsHamzaAbove=[hamza.above Dot.a TwoDots.a ThreeDots.a
+                   hThreeDots.a iThreeDots.a
+                   smalltaa.above vTwoDots.a FourDots.a uni065A uni065B];
   lookupflag MarkAttachmentType @DotsHamzaAbove;
     sub [aKaf.init aKaf.medi]' lookup KafBaaDotAbove
         [aBaa.medi aBaa.medi_BaaMeemFina aBaa.medi_BaaRaaFina aBaa.medi_BaaNoonFina]
-        [hamza.above dot.above twodots.above threedots.above threedots.above.inverted smalltaa.above twodots.above.vertical];
+        [hamza.above Dot.a TwoDots.a ThreeDots.a iThreeDots.a smalltaa.above vTwoDots.a];
 } calt;
 
 feature calt {
@@ -883,17 +883,17 @@ feature calt {
 } calt;
 
 lookup DotsBelowLow {
-    sub [dot.below twodots.below threedots.below threedots.below.inverted
-         twodots.below.vertical fourdots.below threedots.below.horizontal
+    sub [Dot.b TwoDots.b ThreeDots.b ThreeDots.b
+         vTwoDots.b FourDots.b hThreeDots.b
          smallv.below.inverted]
-     by [dot.below.low twodots.below.low threedots.below.low
-         threedots.below.inverted.low twodots.below.vertical.low fourdots.below.low
-         threedots.below.horizontal.low smallv.below.inverted.low];
+     by [Dot.b.l TwoDots.b.l ThreeDots.b.l
+         iThreeDots.b.l vTwoDots.b.l FourDots.b.l
+         hThreeDots.b.l smallv.below.inverted.low];
 } DotsBelowLow;
 
 feature calt {
-  @DotsBelow=[dot.below twodots.below twodots.below.vertical threedots.below
-              threedots.below.horizontal threedots.below.inverted fourdots.below];
+  @DotsBelow=[Dot.b TwoDots.b TwoDots.b ThreeDots.b
+              hThreeDots.b ThreeDots.b FourDots.b];
   lookupflag MarkAttachmentType @DotsBelow;
     sub [aRaa.fina aRaa.isol aWaw.fina aWaw.isol aRaa.fina_BaaRaaIsol
          aWaw.fina_LamWawFina aRaa.fina_BaaRaaFina aRaa.fina_KafRaaFina
@@ -904,7 +904,7 @@ feature calt {
          aBaa.init_BaaMeemInit aBaa.init_BaaHehInit aBaa.init_BaaBaaIsol
          aBaa.init_BaaMeemIsol aBaa.init_BaaSeenAltInit aBaa.init_BaaHaaInit
          aBaa.init_High aBaa.init_Tatweel]'
-        [dot.below twodots.below threedots.below threedots.below.inverted
-         twodots.below.vertical fourdots.below threedots.below.horizontal
+        [Dot.b TwoDots.b ThreeDots.b iThreeDots.b
+         TwoDots.b FourDots.b hThreeDots.b
          smallv.below.inverted]' lookup DotsBelowLow;
 } calt;

@@ -1,11 +1,11 @@
 
-StartChar: threedots.below.low
-Encoding: 65942 -1 593
+StartChar: ThreeDots.b
+Encoding: 65872 -1 422
 Width: 0
 VWidth: 0
-Flags: W
-AnchorPoint: "TwoDotsBelowAlt" -111 140 mark 0
+GlyphClass: 4
 AnchorPoint: "TashkilBelowDot" 0 -401 basemark 0
+AnchorPoint: "TwoDotsBelow" -111 140 mark 0
 LayerCount: 2
 Fore
 Refer: 419 -1 N 1 0 0 1 2 -260 2
