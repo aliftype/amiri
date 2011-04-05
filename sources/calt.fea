@@ -789,7 +789,7 @@ feature calt {
 } calt;
 
 lookup KafLamYaa {
-    sub aLam.medi_KafLam by aLam.medi_KafLamYaaFina;
+    sub aLam.medi_KafLam by aLam.medi_KafLamYaa;
 } KafLamYaa;
 
 feature calt {
