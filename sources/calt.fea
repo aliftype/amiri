@@ -375,12 +375,6 @@ lookup LamQafFina {
     sub aQaf.fina by aQaf.fina_LamQafFina;
 } LamQafFina;
 
-lookup KafMeemLamFina {
-    sub aKaf.medi by aKaf.medi_KafMeemAlefFina;
-    sub aLam.fina by aLam.fina_KafMeemLamFina;
-    sub aMeem.medi by aMeem.medi_KafMeemAlef;
-} KafMeemLamFina;
-
 lookup MeemHaaMeemInit {
     sub aHaa.medi by aHaa.medi_MeemHaaMeemInit;
     sub aMeem.init by aMeem.init_MeemHaaMeemInit;
@@ -506,12 +500,12 @@ lookup BaaMeemIsol {
 } BaaMeemIsol;
 
 lookup KafMeemAlef {
-    sub aKaf.medi by aKaf.medi_KafMeemAlefFina;
-    sub aKaf.init by aKaf.init_KafMeemAlefIsol;
+    sub aKaf.medi by aKaf.medi_KafMeemAlef;
+    sub aKaf.init by aKaf.init_KafMeemAlef;
     sub aMeem.medi by aMeem.medi_KafMeemAlef;
     sub aAlef.fina by aAlef.fina_KafMeemAlef;
-    sub aLam.fina by aLam.fina_KafMeemLamFina;
-    sub aLam.medi by aLam.medi_KafMeemLamInit;
+    sub aLam.fina by aLam.fina_KafMeemLam;
+    sub aLam.medi by aLam.medi_KafMeemLam;
 } KafMeemAlef;
 
 lookup LamKafFina {
@@ -665,8 +659,6 @@ feature calt {
   subtable;
     sub aLam.medi' lookup LamQafFina aQaf.fina' lookup LamQafFina;
   subtable;
-    sub aKaf.medi' lookup KafMeemLamFina aMeem.medi' lookup KafMeemLamFina aLam.fina' lookup KafMeemLamFina;
-  subtable;
     sub [aMeem.init aMeem.init_MeemHaaInit]' lookup MeemHaaMeemInit [aHaa.medi aHaa.medi_SadHaaInit]' lookup MeemHaaMeemInit [aMeem.medi]' lookup MeemHaaMeemInit;
   subtable;
     sub aBaa.init' lookup BaaNoonIsol aNoon.fina' lookup BaaNoonIsol;
@@ -809,17 +801,17 @@ lookup LamKafInit {
     sub aLam.init by aLam.init_Tatweel;
     sub aLam.medi by aLam.medi_Tatweel;
     sub aLam.medi_KafLam by aLam.medi_KafLamTatweel;
-    sub aLam.medi_KafMeemLamInit by aLam.medi_KafMeemLamInitTatweel;
+    sub aLam.medi_KafMeemLam by aLam.medi_KafMeemLamTatweel;
     sub aLam.medi_LamLamInit by aLam.medi_LamLamInitTatweel;
     sub aMeem.medi_LamMeemInit by aMeem.medi_LamMeemInitTatweel;
 } LamKafInit;
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [aLam.init aLam.medi aLam.medi_KafLam aLam.medi_KafMeemLamInit
+    sub [aLam.init aLam.medi aLam.medi_KafLam aLam.medi_KafMeemLam
          aLam.medi_LamLamInit aMeem.medi_LamMeemInit]' lookup LamKafInit
         [aKaf.medi aKaf.medi_KafHehFina aKaf.medi_KafMeemFina aKaf.medi_KafRaaFina
-         aKaf.medi_KafYaaFina aKaf.medi_KafMeemAlefFina aKaf.medi_Tatweel];
+         aKaf.medi_KafYaaFina aKaf.medi_KafMeemAlef aKaf.medi_Tatweel];
 } calt;
 
 lookup HehMeemAlef {
@@ -843,7 +835,7 @@ feature calt {
     sub [aKaf.init_KafYaaIsol
          aKaf.init_KafBaaInit
          aKaf.init_KafLam
-         aKaf.init_KafMeemAlefIsol]
+         aKaf.init_KafMeemAlef]
         [dash.gaf]' by [dash.gaf.alt2];
     sub [aKaf.medi_KafMeemMedi
          aKaf.medi_KafMeemFina
@@ -851,7 +843,7 @@ feature calt {
          aKaf.init_KafMeemIsol
          aKaf.init_AboveHaaIsol]
         [dash.gaf dash.gaf.alt2]' by [dash.gaf.alt1 dash.gaf.alt1];
-    sub aKaf.medi_KafMeemAlefFina dash.gaf.alt2' by dash.gaf;
+    sub aKaf.medi_KafMeemAlef dash.gaf.alt2' by dash.gaf;
 } calt;
 
 feature calt {

@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1302019560
+ModificationTime: 1302028668
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -87,7 +87,7 @@ KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1"
  82 aDal.fina aDal.isol aDal.fina_BaaDalIsol aDal.fina_KafDalIsol aDal.fina_LamDalIsol
  36 aRaa.fina.alt2 aRaa.fina_MeemRaaIsol
  10 aAlef.isol
- 331 aKaf.init aKaf.init_KafHehIsol kaf.init_KafMeemLamInit aKaf.init_KafMeemInit aKaf.init_KafYaaIsol kaf.init_KafLamIsol aKaf.init_KafBaaInit aKaf.init_KafMeemIsol kaf.init_KafLamAlefIsol aKaf.init_KafLam aKaf.init_KafRaaIsol kaf.init_KafAlefIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlefIsol kaf.init_KafLamHehIsol aKaf.init_Tatweel
+ 327 aKaf.init aKaf.init_KafHehIsol kaf.init_KafMeemLamInit aKaf.init_KafMeemInit aKaf.init_KafYaaIsol kaf.init_KafLamIsol aKaf.init_KafBaaInit aKaf.init_KafMeemIsol kaf.init_KafLamAlefIsol aKaf.init_KafLam aKaf.init_KafRaaIsol kaf.init_KafAlefIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlef kaf.init_KafLamHehIsol aKaf.init_Tatweel
  63 aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol
  520 aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init aHeh.init aHeh.isol aMeem.init aMeem.isol aSad.init aSad.isol aSeen.init aSeen.isol aTaa.init aTaa.isol aYaa.isol aAyn.init_AynMeemInit aLam.init_LamHaaInit aHaa.init_HaaYaaIsol aMeem.init_MeemYaaIsol aMeem.init_MeemRaaIsol aHaa.init_HaaHaaInit aAyn.init_AynYaaIsol aAyn.init_AynHaaInit aLam.init_LamYaaIsol aBaa.init_BaaBaaHaaInit aHaa.init_HaaMeemInit aHaa.init_HaaRaaIsol aBaa.init_BaaHaaMeemInit aAyn.init_Finjani aHaa.init_Finjani aSeen.init_PreYaa aSad.init_PreYaa
  35 aNoon.isol aNoon.isol.alt aQaf.isol
@@ -114,7 +114,7 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65518 34 13
+WinInfo: 65552 34 13
 BeginPrivate: 0
 EndPrivate
 Grid
