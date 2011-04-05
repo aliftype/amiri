@@ -33,21 +33,21 @@ table: $(PDFS)
 
 $(SRC)/%-classes.fea: $(SFDS) $(BUILD)
 	@echo "   GEN\t$@"
-	@$(FF) --classes="mark" -i $< -o $@
+	@$(FF) --classes="mark" --input $< --output $@
 
 %.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
+	@$(FF) --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
 
 $(WEB)/%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --web -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
+	@$(FF) --web --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
 
 $(WEB)/%.woff: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --web -i $< -o $@ -f "$(FEAT)" -v $(VERSION)
+	@$(FF) --web --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
 
 $(WEB)/%.eot: $(WEB)/%.ttf
 	@echo "   FF\t$@"
@@ -57,7 +57,7 @@ $(WEB)/%.eot: $(WEB)/%.ttf
 $(WEB)/%.css: $(SFDS) $(BUILD)
 	@echo "   GEN\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --css -i $^ -o $@ -v $(VERSION)
+	@$(FF) --css --input $^ --output $@ --version $(VERSION)
 
 $(DOC)/%-table.pdf: %.ttf
 	@echo "   GEN\t$@"
@@ -74,7 +74,7 @@ pack: $(PACK)
 
 %.sfd: %.sfdir $(BUILD)
 	@echo "   GEN\t$@"
-	@$(FF) --sfd -i $< -o $@
+	@$(FF) --sfd --input $< --output $@
 
 distclean:
 	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2

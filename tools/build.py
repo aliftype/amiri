@@ -79,15 +79,16 @@ def usage(code):
     message = """Usage: %s OPTIONS...
 
 Options:
-  -i, --input=FILE          file name of input font
-  -o, --output=FILE         file name of output font
-  -f, --feature-files=LIST  optional space delimited feature file list
-  -c, --css                 output is a CSS file
-  -s, --sfd                 output is a SFD file
-  -w, --web                 output is web optimised
-  -v, --font-version=VALUE  set font version to VALUE
+  --input=FILE          file name of input font
+  --output=FILE         file name of output font
+  --version=VALUE       set font version to VALUE
+  --feature-files=LIST  optional space delimited feature file list
+  --classes=LIST        output a FEA file listing the specified glyph classes
+  --css                 output is a CSS file
+  --sfd                 output is a SFD file
+  --web                 output is web optimised
 
-  -h, --help                print this message and exit
+  -h, --help            print this message and exit
 """ % os.path.basename(sys.argv[0])
 
     print message
@@ -96,8 +97,8 @@ Options:
 def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                "hi:o:f:v:cws",
-                ["help","input=","output=", "feature-files=", "font-version=","classes=", "css", "web", "sfd"])
+                "h",
+                ["help","input=","output=", "feature-files=", "version=","classes=", "css", "web", "sfd"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -111,25 +112,17 @@ def main():
     web = False
     sfd = False
 
-    for o, a in opts:
-        if o in ("-h", "--help"):
+    for opt, arg in opts:
+        if opt in ("-h", "--help"):
             usage(0)
-        elif o in ("-i", "--input"):
-            infile = a
-        elif o in ("-o", "--output"):
-            outfile = a
-        elif o in ("-f", "--feature-files"):
-            feafiles = a
-        elif o == "--classes":
-            classes = a
-        elif o in ("-v", "--font-version"):
-            version = a
-        elif o in ("-c", "--css"):
-            css = True
-        elif o in ("-w", "--web"):
-            web = True
-        elif o in ("-s", "--sfd"):
-            sfd = True
+        elif opt == "--input": infile = arg
+        elif opt == "--output": outfile = arg
+        elif opt == "--feature-files": feafiles = arg
+        elif opt == "--classes": classes = arg
+        elif opt == "--version": version = arg
+        elif opt == "--css": css = True
+        elif opt == "--web": web = True
+        elif opt == "--sfd": sfd = True
 
     if not infile:
         print "No input file"
