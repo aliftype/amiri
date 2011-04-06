@@ -1,4 +1,5 @@
 include(lang.fea)
+include(amiri-regular-classes.fea)
 
 lookup ShaddaCombined {
     sub uni064B by uni064B.small;
@@ -85,24 +86,26 @@ feature calt {
         [aAlef.fina aLam.medi aLam.fina];
 } calt;
 
-lookup KafBaaDotAbove {
-    sub aKaf.init by aKaf.init_Tatweel;
-    sub aKaf.medi by aKaf.medi_Tatweel;
-} KafBaaDotAbove;
+@MarksAbove = [hamza.above Dot.a TwoDots.a ThreeDots.a hThreeDots.a
+               iThreeDots.a smalltaa.above vTwoDots.a FourDots.a uni065A uni065B];
+@Kaf        = [aKaf.init aKaf.medi];
+@KafTatweel = [aKaf.init_Tatweel aKaf.medi_Tatweel];
+@Baa        = [aBaa.medi aBaa.medi_BaaMeemFina aBaa.medi_BaaRaaFina
+               aBaa.medi_BaaNoonFina];
 
 feature calt {
-  @DotsHamzaAbove=[hamza.above Dot.a TwoDots.a ThreeDots.a
-                   hThreeDots.a iThreeDots.a
-                   smalltaa.above vTwoDots.a FourDots.a uni065A uni065B];
-  lookupflag MarkAttachmentType @DotsHamzaAbove;
-    sub [aKaf.init aKaf.medi]' lookup KafBaaDotAbove
-        [aBaa.medi aBaa.medi_BaaMeemFina aBaa.medi_BaaRaaFina aBaa.medi_BaaNoonFina]
-        [hamza.above Dot.a TwoDots.a ThreeDots.a iThreeDots.a smalltaa.above vTwoDots.a];
+  sub @Kaf'                                     @Baa @MarksAbove by @KafTatweel;
+  sub @Kaf' @Mark                               @Baa @MarksAbove by @KafTatweel;
+  sub @Kaf' @Mark @Mark                         @Baa @MarksAbove by @KafTatweel;
+  sub @Kaf' @Mark @Mark @Mark                   @Baa @MarksAbove by @KafTatweel;
+  sub @Kaf' @Mark @Mark @Mark @Mark             @Baa @MarksAbove by @KafTatweel;
+  sub @Kaf' @Mark @Mark @Mark @Mark @Mark       @Baa @MarksAbove by @KafTatweel;
+  sub @Kaf' @Mark @Mark @Mark @Mark @Mark @Mark @Baa @MarksAbove by @KafTatweel;
 } calt;
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [aKaf.init aKaf.medi]' lookup KafBaaDotAbove [aFaa.fina aFaa.medi aHeh.medi aFaa.medi_FaaYaaFina];
+    sub @Kaf' [aFaa.fina aFaa.medi aHeh.medi aFaa.medi_FaaYaaFina] by @KafTatweel;
 } calt;
 
 lookup HighBaa {
@@ -870,8 +873,6 @@ feature calt {
 @DotsBelowL = [Dot.b.l TwoDots.b.l ThreeDots.b.l iThreeDots.b.l vTwoDots.b.l
                FourDots.b.l hThreeDots.b.l smallv.below.inverted.low];
 @HamzaBelow = [hamza.below uni065F];
-
-include(amiri-regular-classes.fea)
 
 lookup LowHamza {
     sub @HamzaBelow by [hamza.below.low hamza.below.wavy.low];
