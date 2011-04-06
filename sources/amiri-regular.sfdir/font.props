@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1302041541
+ModificationTime: 1302055991
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -42,7 +42,7 @@ HheadDescent: -1800
 HheadDOffset: 0
 OS2Vendor: 'BLQ '
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic-1" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 264 768 0 "'kern' SnakeRaaBaa"  {"'kern' SnakeRaaBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 264 256 0 "'kern' SnakeRaaBaa"  {"'kern' SnakeRaaBaa-1"  } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
@@ -76,11 +76,8 @@ Lookup: 262 0 0 "'mkmk' Dot above Hamza"  {"'mkmk' Dot above Hamza-1"  } ['mkmk'
 Lookup: 257 0 0 "SnakeRaaBaa"  {"SnakeRaaBaa-1"  } []
 Lookup: 262 0 0 "Tashkil Above Dot"  {"Tashkil Above Dot-1"  } []
 Lookup: 262 0 0 "Tashkil Below Dot"  {"Tashkil Below Dot-1"  } []
-MarkAttachClasses: 5
-"DotsHamzaAbove" 172 hamza.above dot.above twodots.above threedots.above threedots.above.horizontal threedots.above.inverted smalltaa.above twodots.above.vertical fourdots.above uni065A uni065B
-"Dash" 17 dash.gaf dash.kaf
+MarkAttachClasses: 2
 "DotsBelow" 129 dot.below twodots.below twodots.below.vertical threedots.below threedots.below.horizontal threedots.below.inverted fourdots.below
-"HamzaBelow" 11 hamza.below
 DEI: 91125
 KernClass2: 4 12 "'kern' Horizontal Kerning in Arabic-1" 
  206 aRaa.fina aRaa.isol aWaw.fina aWaw.isol aRaa.fina_BaaRaaIsol aWaw.fina_LamWawFina aRaa.fina_BaaRaaFina aRaa.fina_KafRaaFina aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol aRaa.fina_LamRaaIsol aRaa.fina_PostTooth
