@@ -62,7 +62,8 @@ $(WEB)/%.css: $(SFDS) $(BUILD)
 $(DOC)/%-table.pdf: %.ttf
 	@echo "   GEN\t$@"
 	@mkdir -p $(DOC)
-	@fntsample -f $< -o $@
+	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
+	@pdfoutline $@.tmp $@.txt $@
 
 clean:
 	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS)
