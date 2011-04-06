@@ -1,0 +1,24 @@
+languagesystem DFLT dflt;
+languagesystem arab dflt;
+
+include(amiri-regular-classes.fea)
+
+@Dot=[TwoDots.b hThreeDots.b iThreeDots.b FourDots.b];
+@Baa=[aBaa.init_Tatweel aBaa.init_High aBaa.init_BaaBaaInit];
+@Raa=[aRaa.fina_MeemRaaIsol];
+
+lookup RaaBaa {
+    pos aBaa.init_Tatweel    <0 0 130 0>;
+    pos aBaa.init_BaaBaaInit <0 0 130 0>;
+    pos aBaa.init_High       <0 0 230 0>;
+} RaaBaa;
+
+feature kern {
+    pos                                     @Raa @Baa' lookup RaaBaa @Dot;
+    pos @Mark                               @Raa @Baa' lookup RaaBaa @Dot;
+    pos @Mark @Mark                         @Raa @Baa' lookup RaaBaa @Dot;
+    pos @Mark @Mark @Mark                   @Raa @Baa' lookup RaaBaa @Dot;
+    pos @Mark @Mark @Mark @Mark             @Raa @Baa' lookup RaaBaa @Dot;
+    pos @Mark @Mark @Mark @Mark @Mark       @Raa @Baa' lookup RaaBaa @Dot;
+    pos @Mark @Mark @Mark @Mark @Mark @Mark @Raa @Baa' lookup RaaBaa @Dot;
+} kern;
