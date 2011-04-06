@@ -22,3 +22,11 @@ feature kern {
     pos @Mark @Mark @Mark @Mark @Mark       @Raa @Baa' lookup RaaBaa @Dot;
     pos @Mark @Mark @Mark @Mark @Mark @Mark @Raa @Baa' lookup RaaBaa @Dot;
 } kern;
+
+# This is more effecient, but mark classes (UseMarkFilteringSet) is only
+# supported by HB currently.
+#
+#feature kern {
+# lookupflag UseMarkFilteringSet @Dot;
+#    pos @Raa @Baa' lookup RaaBaa @Dot;
+#} kern;

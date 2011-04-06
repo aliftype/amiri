@@ -103,6 +103,14 @@ feature calt {
   sub @Kaf' @Mark @Mark @Mark @Mark @Mark @Mark @Baa @MarksAbove by @KafTatweel;
 } calt;
 
+# This is more effecient, but mark classes (UseMarkFilteringSet) is only
+# supported by HB currently.
+#
+#feature calt {
+# lookupflag UseMarkFilteringSet @MarksAbove;
+#   sub @Kaf' @Baa @MarksAbove by @KafTatweel;
+#} calt;
+
 feature calt {
   lookupflag IgnoreMarks;
     sub @Kaf' [aFaa.fina aFaa.medi aHeh.medi aFaa.medi_FaaYaaFina] by @KafTatweel;
@@ -901,3 +909,16 @@ feature calt {
     sub @Mark @Mark @Mark @Mark @Mark       @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
     sub @Mark @Mark @Mark @Mark @Mark @Mark @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
 } calt;
+
+# This is more effecient, but mark classes (UseMarkFilteringSet) is only
+# supported by HB currently.
+#
+#feature calt {
+# lookupflag UseMarkFilteringSet @HamzaBelow;
+#  sub @RaaWaw aAlef.isol' @HamzaBelow' lookup LowHamza;
+#} calt;
+#
+#feature calt {
+# lookupflag UseMarkFilteringSet @DotsBelow;
+#  sub @RaaWaw @BaaInit' @DotsBelow' lookup LowDots;
+#} calt;
