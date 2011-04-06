@@ -28,40 +28,6 @@ def genCSS(font, base):
 
     return css
 
-def doKern(font, remove):
-    """Looks for any kerning classes in the font and converts it to
-    RTL kerning pairs."""
-    new_subtable = ""
-    for lookup in font.gpos_lookups:
-        if font.getLookupInfo(lookup)[0] == "gpos_pair":
-            for subtable in font.getLookupSubtables(lookup):
-                if font.isKerningClass(subtable):
-                    new_subtable = subtable + " pairs"
-                    font.addLookupSubtable(lookup, new_subtable)
-                    kclass   = font.getKerningClass(subtable)
-                    klasses1 = kclass[0]
-                    klasses2 = kclass[1]
-                    offsets  = kclass[2]
-
-                    for klass1 in klasses1:
-                        if klass1 != None:
-                            for name in klass1:
-                                glyph = font.createChar(-1, name)
-                                for klass2 in klasses2:
-                                    if klass2 != None:
-                                        kern = offsets[klasses1.index(klass1)
-                                                *len(klasses2)+
-                                                klasses2.index(klass2)]
-                                        if kern != 0:
-                                            for glyph2 in klass2:
-                                                glyph.addPosSub(new_subtable,
-                                                        glyph2,
-                                                        kern,0,kern,0,0,0,0,0)
-					        font.changed = True
-                    if remove:
-                        font.removeLookupSubtable(subtable)
-    return new_subtable
-
 def genClasses(font, klasses):
     text = ""
     for klass in klasses.split():
@@ -190,7 +156,6 @@ def main():
         # no dummy DSIG table nor glyph names
         flags  = ("opentype", "round", "short-post")
 
-    doKern(font, True)
     font.generate(outfile, flags=flags)
 
 if __name__ == "__main__":
