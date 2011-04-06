@@ -3,6 +3,66 @@ languagesystem arab dflt;
 
 include(amiri-regular-classes.fea)
 
+feature kern {
+  lookupflag IgnoreMarks;
+    @kc0_first_01  = [aRaa.fina aRaa.isol aWaw.fina aWaw.isol
+                      aRaa.fina_BaaRaaIsol aWaw.fina_LamWawFina aRaa.fina_BaaRaaFina
+                      aRaa.fina_KafRaaFina aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol
+                      aRaa.fina_LamRaaIsol aRaa.fina_PostTooth];
+    @kc0_first_02  = [aDal.fina aDal.isol aDal.fina_BaaDalIsol
+                      aDal.fina_KafDalIsol aDal.fina_LamDalIsol];
+    @kc0_first_03  = [aRaa.fina.alt2 aRaa.fina_MeemRaaIsol];
+    @kc0_second_01 = [aAlef.isol];
+    @kc0_second_02 = [aKaf.init aKaf.init_KafHehIsol kaf.init_KafMeemLamInit
+                      aKaf.init_KafMeemInit aKaf.init_KafYaaIsol kaf.init_KafLamIsol
+                      aKaf.init_KafBaaInit aKaf.init_KafMeemIsol aKaf.init_KafLam
+                      aKaf.init_KafRaaIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlef
+                      aKaf.init_Tatweel];
+    @kc0_second_03 = [aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol];
+    @kc0_second_04 = [aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init
+                      aHeh.init aHeh.isol aMeem.init aMeem.isol aSad.init aSad.isol aSeen.init
+                      aSeen.isol aTaa.init aTaa.isol aYaa.isol aAyn.init_AynMeemInit
+                      aLam.init_LamHaaInit aHaa.init_HaaYaaIsol aMeem.init_MeemYaaIsol
+                      aMeem.init_MeemRaaIsol aHaa.init_HaaHaaInit aAyn.init_AynYaaIsol
+                      aAyn.init_AynHaaInit aLam.init_LamYaaIsol aBaa.init_BaaBaaHaaInit
+                      aHaa.init_HaaMeemInit aHaa.init_HaaRaaIsol aBaa.init_BaaHaaMeemInit
+                      aAyn.init_Finjani aHaa.init_Finjani aSeen.init_PreYaa aSad.init_PreYaa];
+    @kc0_second_05 = [aNoon.isol aNoon.isol.alt aQaf.isol];
+    @kc0_second_06 = [aRaa.isol aWaw.isol aDal.isol];
+    @kc0_second_07 = [aKaf.isol aLam.init aLam.isol aLam.init_LamHehIsol
+                      aLam.init_LamAlefIsol aLam.init_LamRaaIsol];
+    @kc0_second_08 = [aBaa.init aBaa.init_BaaRaaIsol aBaa.init_BaaDalIsol
+                      aBaa.init_BaaBaaYaaIsol aBaa.init_BaaBaaInit aBaa.init_BaaSeenInit
+                      aBaa.init_BaaHehInit aBaa.init_BaaBaaIsol aBaa.init_BaaMeemIsol
+                      aBaa.init_BaaSeenAltInit aBaa.init_BaaHaaInit aBaa.init_High
+                      aBaa.init_Tatweel];
+    @kc0_second_09 = [aBaa.init_BaaYaaIsol aBaa.init_BaaMeemHaaInit
+                      aLam.init_LamHaaMeemInit aFaa.init_FaaHaaInit aMeem.init_MeemHaaInit
+                      aBaa.init_BaaMeemInit];
+    @kc0_second_10 = [aSeen.init_SeenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit];
+    @kc0_second_11 = [aSad.init_AboveHaaIsol aSeen.init_AboveHaaIsol];
+
+    pos @kc0_first_01 @kc0_second_01 <-300 0 -300 0>;
+    pos @kc0_first_01 @kc0_second_02 <-900 0 -900 0>;
+    pos @kc0_first_01 @kc0_second_03 <-300 0 -300 0>;
+    pos @kc0_first_01 @kc0_second_04 <-450 0 -450 0>;
+    pos @kc0_first_01 @kc0_second_05 <-400 0 -400 0>;
+    pos @kc0_first_01 @kc0_second_06 <-400 0 -400 0>;
+    pos @kc0_first_01 @kc0_second_07 <-450 0 -450 0>;
+    pos @kc0_first_01 @kc0_second_08 <-400 0 -400 0>;
+    pos @kc0_first_01 @kc0_second_09 <-400 0 -400 0>;
+    pos @kc0_first_01 @kc0_second_10 <-500 0 -500 0>;
+    pos @kc0_first_01 @kc0_second_11 <-400 0 -400 0>;
+    pos @kc0_first_02 @kc0_second_02 <-500 0 -500 0>;
+    pos @kc0_first_03 @kc0_second_02 <-800 0 -800 0>;
+    pos @kc0_first_03 @kc0_second_03 <-200 0 -200 0>;
+    pos @kc0_first_03 @kc0_second_04 <-200 0 -200 0>;
+    pos @kc0_first_03 @kc0_second_05 <-200 0 -200 0>;
+    pos @kc0_first_03 @kc0_second_06 <-200 0 -200 0>;
+    pos @kc0_first_03 @kc0_second_08 <-50  0 -50  0>;
+    pos @kc0_first_03 @kc0_second_11 <-400 0 -400 0>;
+} kern;
+
 @Dot=[TwoDots.b hThreeDots.b iThreeDots.b FourDots.b];
 @Baa=[aBaa.init_Tatweel aBaa.init_High aBaa.init_BaaBaaInit];
 @Raa=[aRaa.fina_MeemRaaIsol];
