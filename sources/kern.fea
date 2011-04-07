@@ -13,8 +13,8 @@ feature kern {
                      aDal.fina_KafDalIsol aDal.fina_LamDalIsol];
     @kc_first_03  = [aRaa.fina.alt2 aRaa.fina_MeemRaaIsol];
     @kc_second_01 = [aAlef.isol];
-    @kc_second_02 = [aKaf.init aKaf.init_KafHehIsol kaf.init_KafMeemLamInit
-                     aKaf.init_KafMeemInit aKaf.init_KafYaaIsol kaf.init_KafLamIsol
+    @kc_second_02 = [aKaf.init aKaf.init_KafHehIsol
+                     aKaf.init_KafMeemInit aKaf.init_KafYaaIsol
                      aKaf.init_KafBaaInit aKaf.init_KafMeemIsol aKaf.init_KafLam
                      aKaf.init_KafRaaIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlef
                      aKaf.init_Tatweel];
