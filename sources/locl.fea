@@ -2,9 +2,9 @@ feature locl {
   script arab;
     language dflt;
       sub at             by at.ara;
-      sub period         by period.arab;
-      sub guillemotleft  by guillemotleft.arab;
-      sub guillemotright by guillemotright.arab;
+      sub period         by period.ara;
+      sub guillemotleft  by guillemotleft.ara;
+      sub guillemotright by guillemotright.ara;
 } locl;
 
 # localised Urdu and Sindhi digits
