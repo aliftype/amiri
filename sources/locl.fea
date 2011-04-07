@@ -1,6 +1,7 @@
 feature locl {
   script arab;
     language dflt;
+      sub at             by at.ara;
       sub period         by period.arab;
       sub guillemotleft  by guillemotleft.arab;
       sub guillemotright by guillemotright.arab;
