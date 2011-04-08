@@ -1,0 +1,69 @@
+
+StartChar: aBaa.medi_BaaMemAlfFina
+Encoding: 65643 -1 115
+Width: 550
+VWidth: 0
+Flags: W
+AnchorPoint: "DigitAbove" 268 800 basechar 0
+AnchorPoint: "HighHamza" 368 800 basechar 0
+AnchorPoint: "VAbove" 268 800 basechar 0
+AnchorPoint: "RingBelow" 250 250 basechar 0
+AnchorPoint: "TaaAbove" 268 600 basechar 0
+AnchorPoint: "TashkilBelow" 450 -670 basechar 0
+AnchorPoint: "TashkilAbove" 450 1640 basechar 0
+AnchorPoint: "DotAbove" 268 800 basechar 0
+AnchorPoint: "HamzaAbove" 268 800 basechar 0
+AnchorPoint: "TwoDotsAbove" 157 800 basechar 0
+AnchorPoint: "TwoDotsBelow" 247 -600 basechar 0
+AnchorPoint: "HamzaBelow" 358 -600 basechar 0
+AnchorPoint: "DotBelow" 358 -600 basechar 0
+AnchorPoint: "cursive" 0 57 exit 0
+LayerCount: 2
+Back
+SplineSet
+17 78 m 0,0,1
+ 18 -127 18 -127 295 -174 c 1,2,3
+ 337 -184 337 -184 329 -214 c 2,4,-1
+ 285 -380 l 2,5,6
+ 277 -408 277 -408 232 -401 c 0,7,8
+ -56 -357 -56 -357 -172 -130 c 0,9,10
+ -209 -65 -209 -65 -155 -23 c 0,11,12
+ -114 9 -114 9 -60 -19 c 0,13,14
+ -33 -34 -33 -34 -32 -15 c 0,15,16
+ -27 78 -27 78 3 157 c 0,17,18
+ 11 184 11 184 15 144 c 0,19,20
+ 17 125 17 125 17 78 c 0,0,1
+-172 -130 m 0,0,1
+ -99 -251 -99 -251 -25 -200 c 1,2,3
+ 100 -109 100 -109 -61 -19 c 24,4,5
+ -162 37 -162 37 -188 523 c 0,6,7
+ -203 800 -203 800 -243 1118 c 0,8,9
+ -269 1330 -269 1330 -311 1429 c 0,10,11
+ -322 1455 -322 1455 -336 1430 c 0,12,13
+ -377 1358 -377 1358 -388 1334 c 128,-1,15
+ -399 1310 -399 1310 -393 1282 c 2,16,-1
+ -355 1110 l 2,17,18
+ -339 1040 -339 1040 -313 832 c 0,19,20
+ -298 712 -298 712 -267 358 c 0,21,22
+ -236 -26 -236 -26 -172 -130 c 0,0,1
+EndSplineSet
+Fore
+SplineSet
+322 156 m 0,0,1
+ 276 210 276 210 124 152 c 0,2,3
+ 48 124 48 124 17 78 c 1,4,5
+ 15 4 15 4 59.5 -58.5 c 128,-1,6
+ 104 -121 104 -121 76 -157.5 c 128,-1,7
+ 48 -194 48 -194 5 -161 c 128,-1,8
+ -38 -128 -38 -128 -32.5 -31 c 128,-1,9
+ -27 66 -27 66 -0.5 146 c 128,-1,10
+ 26 226 26 226 125 293 c 128,-1,11
+ 224 360 224 360 336 363 c 0,12,13
+ 372 364 372 364 413 297.5 c 128,-1,14
+ 454 231 454 231 550 186 c 0,15,16
+ 601 161 601 161 600 80.5 c 128,-1,17
+ 599 0 599 0 550 0 c 0,18,19
+ 453 0 453 0 322 156 c 0,0,1
+EndSplineSet
+Colour: ff0000
+EndChar

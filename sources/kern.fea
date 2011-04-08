@@ -11,36 +11,36 @@ feature kern {
                      aRaa.fina_LamRaaIsol aRaa.fina_PostTooth];
     @kc_first_02  = [aDal.fina aDal.isol aDal.fina_BaaDalIsol
                      aDal.fina_KafDalIsol aDal.fina_LamDalIsol];
-    @kc_first_03  = [aRaa.fina.alt2 aRaa.fina_MeemRaaIsol];
-    @kc_second_01 = [aAlef.isol];
+    @kc_first_03  = [aRaa.fina.alt2 aRaa.fina_MemRaaIsol];
+    @kc_second_01 = [aAlf.isol];
     @kc_second_02 = [aKaf.init aKaf.init_KafHehIsol
-                     aKaf.init_KafMeemInit aKaf.init_KafYaaIsol
-                     aKaf.init_KafBaaInit aKaf.init_KafMeemIsol aKaf.init_KafLam
-                     aKaf.init_KafRaaIsol aKaf.init_KafDalIsol aKaf.init_KafMeemAlef
+                     aKaf.init_KafMemInit aKaf.init_KafYaaIsol
+                     aKaf.init_KafBaaInit aKaf.init_KafMemIsol aKaf.init_KafLam
+                     aKaf.init_KafRaaIsol aKaf.init_KafDalIsol aKaf.init_KafMemAlf
                      aKaf.init_Tatweel];
     @kc_second_03 = [aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol];
     @kc_second_04 = [aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init
-                     aHeh.init aHeh.isol aMeem.init aMeem.isol aSad.init aSad.isol aSeen.init
-                     aSeen.isol aTaa.init aTaa.isol aYaa.isol aAyn.init_AynMeemInit
-                     aLam.init_LamHaaInit aHaa.init_HaaYaaIsol aMeem.init_MeemYaaIsol
-                     aMeem.init_MeemRaaIsol aHaa.init_HaaHaaInit aAyn.init_AynYaaIsol
+                     aHeh.init aHeh.isol aMem.init aMem.isol aSad.init aSad.isol aSen.init
+                     aSen.isol aTaa.init aTaa.isol aYaa.isol aAyn.init_AynMemInit
+                     aLam.init_LamHaaInit aHaa.init_HaaYaaIsol aMem.init_MemYaaIsol
+                     aMem.init_MemRaaIsol aHaa.init_HaaHaaInit aAyn.init_AynYaaIsol
                      aAyn.init_AynHaaInit aLam.init_LamYaaIsol aBaa.init_BaaBaaHaaInit
-                     aHaa.init_HaaMeemInit aHaa.init_HaaRaaIsol aBaa.init_BaaHaaMeemInit
-                     aAyn.init_Finjani aHaa.init_Finjani aSeen.init_PreYaa aSad.init_PreYaa];
-    @kc_second_05 = [aNoon.isol aNoon.isol.alt aQaf.isol];
+                     aHaa.init_HaaMemInit aHaa.init_HaaRaaIsol aBaa.init_BaaHaaMemInit
+                     aAyn.init_Finjani aHaa.init_Finjani aSen.init_PreYaa aSad.init_PreYaa];
+    @kc_second_05 = [aNon.isol aNon.isol.alt aQaf.isol];
     @kc_second_06 = [aRaa.isol aWaw.isol aDal.isol];
     @kc_second_07 = [aKaf.isol aLam.init aLam.isol aLam.init_LamHehIsol
-                     aLam.init_LamAlefIsol aLam.init_LamRaaIsol];
+                     aLam.init_LamAlfIsol aLam.init_LamRaaIsol];
     @kc_second_08 = [aBaa.init aBaa.init_BaaRaaIsol aBaa.init_BaaDalIsol
-                     aBaa.init_BaaBaaYaaIsol aBaa.init_BaaBaaInit aBaa.init_BaaSeenInit
-                     aBaa.init_BaaHehInit aBaa.init_BaaBaaIsol aBaa.init_BaaMeemIsol
-                     aBaa.init_BaaSeenAltInit aBaa.init_BaaHaaInit aBaa.init_High
+                     aBaa.init_BaaBaaYaaIsol aBaa.init_BaaBaaInit aBaa.init_BaaSenInit
+                     aBaa.init_BaaHehInit aBaa.init_BaaBaaIsol aBaa.init_BaaMemIsol
+                     aBaa.init_BaaSenAltInit aBaa.init_BaaHaaInit aBaa.init_High
                      aBaa.init_Tatweel];
-    @kc_second_09 = [aBaa.init_BaaYaaIsol aBaa.init_BaaMeemHaaInit
-                     aLam.init_LamHaaMeemInit aFaa.init_FaaHaaInit aMeem.init_MeemHaaInit
-                     aBaa.init_BaaMeemInit];
-    @kc_second_10 = [aSeen.init_SeenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit];
-    @kc_second_11 = [aSad.init_AboveHaaIsol aSeen.init_AboveHaaIsol];
+    @kc_second_09 = [aBaa.init_BaaYaaIsol aBaa.init_BaaMemHaaInit
+                     aLam.init_LamHaaMemInit aFaa.init_FaaHaaInit aMem.init_MemHaaInit
+                     aBaa.init_BaaMemInit];
+    @kc_second_10 = [aSen.init_SenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit];
+    @kc_second_11 = [aSad.init_AboveHaaIsol aSen.init_AboveHaaIsol];
 
     enum pos @kc_first_01 @kc_second_01 <-300 0 -300 0>;
     enum pos @kc_first_01 @kc_second_02 <-900 0 -900 0>;
@@ -65,7 +65,7 @@ feature kern {
 
 @Dot=[TwoDots.b hThreeDots.b iThreeDots.b FourDots.b];
 @Baa=[aBaa.init_Tatweel aBaa.init_High aBaa.init_BaaBaaInit];
-@Raa=[aRaa.fina_MeemRaaIsol];
+@Raa=[aRaa.fina_MemRaaIsol];
 
 lookup RaaBaa {
     pos aBaa.init_Tatweel    <0 0 130 0>;

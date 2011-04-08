@@ -1,0 +1,25 @@
+
+StartChar: aMem.medi_KafMemAlf
+Encoding: 65992 -1 706
+Width: 76
+VWidth: 0
+Flags: W
+AnchorPoint: "TashkilBelow" 150 -670 basechar 0
+AnchorPoint: "TashkilAbove" 220 1640 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+-24 75 m 128,-1,1
+ 6 88 6 88 28 74 c 0,2,3
+ 50 61 50 61 52 69 c 0,4,5
+ 72 132 72 132 91 82 c 0,6,7
+ 147 -63 147 -63 354 -99 c 0,8,9
+ 378 -103 378 -103 377 -137 c 2,10,-1
+ 374 -296 l 2,11,12
+ 373 -332 373 -332 354 -328 c 0,13,14
+ 87 -266 87 -266 -50 -86 c 0,15,16
+ -75 -43 -75 -43 -64 13 c 0,17,0
+ -54 62 -54 62 -24 75 c 128,-1,1
+EndSplineSet
+Colour: ff00
+EndChar
