@@ -1,5 +1,5 @@
 include(lang.fea)
-include(amiri-regular-classes.fea)
+include(classes.fea)
 
 lookup ShaddaCombined {
     sub uni064B by uni064B.small;
