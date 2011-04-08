@@ -12,7 +12,6 @@ AnchorPoint: "DotBelow" 225 -300 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 AnchorPoint: "TashkilAbove" 370 1640 basechar 0
 AnchorPoint: "Dash" 669 1750 basechar 0
-AnchorPoint: "cursive" 0 47 exit 0
 LayerCount: 2
 Back
 SplineSet
@@ -61,9 +60,9 @@ SplineSet
  225 1376 225 1376 -31 1202 c 1,7,8
  190 1005 190 1005 333 732 c 0,9,10
  502 410 502 410 456 178 c 0,11,12
- 436 78 436 78 383 18 c 0,13,14
- 265 -116 265 -116 19 -84 c 0,15,16
- -66 -73 -66 -73 -72 63 c 0,17,18
+ 432 58 432 58 383 18 c 0,13,14
+ 190 -139 190 -139 19 -84 c 0,15,16
+ -67 -55 -67 -55 -72 63 c 0,17,18
  -77 163 -77 163 -29 171 c 0,19,20
  -12 174 -12 174 30 150 c 24,21,22
  179 63 179 63 392 235 c 1,23,24
