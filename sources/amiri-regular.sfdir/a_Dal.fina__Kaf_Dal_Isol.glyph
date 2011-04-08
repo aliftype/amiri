@@ -1,6 +1,6 @@
 
 StartChar: aDal.fina_KafDalIsol
-Encoding: 65823 -1 257
+Encoding: 66000 -1 709
 Width: 984
 VWidth: 362
 Flags: W
@@ -8,13 +8,13 @@ AnchorPoint: "VAbove" 453 1000 basechar 0
 AnchorPoint: "TashkilBelow" 673 -670 basechar 0
 AnchorPoint: "TashkilAbove" 528 1640 basechar 0
 AnchorPoint: "TwoDotsBelow" 442 -330 basechar 0
-AnchorPoint: "TwoDotsAbove" 517 1075 basechar 0
+AnchorPoint: "TwoDotsAbove" 447 1075 basechar 0
 AnchorPoint: "TaaAbove" 453 1000 basechar 0
-AnchorPoint: "DotAbove" 628 1075 basechar 0
+AnchorPoint: "DotAbove" 558 1075 basechar 0
 AnchorPoint: "RingBelow" 533 60 basechar 0
 AnchorPoint: "HamzaBelow" 553 -330 basechar 0
-AnchorPoint: "HamzaAbove" 517 1075 basechar 0
-AnchorPoint: "DotBelow" 553 -330 basechar 0
+AnchorPoint: "HamzaAbove" 447 1075 basechar 0
+AnchorPoint: "DotBelow" 630 -330 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -29,7 +29,7 @@ SplineSet
  329 212 329 212 336 199 c 0,16,17
  353 163 353 163 411 159 c 128,-1,18
  469 155 469 155 561 168 c 0,19,20
- 766 197 766 197 785 311 c 1,21,22
+ 766 197 766 197 785 311 c 0,21,22
  783 352 783 352 768.5 452.5 c 128,-1,23
  754 553 754 553 740 620 c 0,24,25
  725 691 725 691 735 712 c 2,26,-1
@@ -42,4 +42,5 @@ SplineSet
  1045 -5 1045 -5 1012 -52 c 0,39,40
  990 -83 990 -83 956 -60 c 0,0,1
 EndSplineSet
+Colour: ff00
 EndChar
