@@ -10,14 +10,13 @@ feature kern {
                      aRaa.fina_KafRaaFina aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol
                      aRaa.fina_LamRaaIsol aRaa.fina_PostTooth];
     @kc_first_02  = [aDal.fina aDal.isol aDal.fina_BaaDalIsol
-                     aDal.fina_KafDalIsol aDal.fina_LamDalIsol];
+                     aDal.fina_KafDal aDal.fina_LamDalIsol];
     @kc_first_03  = [aRaa.fina.alt2 aRaa.fina_MemRaaIsol];
     @kc_second_01 = [aAlf.isol];
-    @kc_second_02 = [aKaf.init aKaf.init_KafHehIsol
+    @kc_second_02 = [aKaf.init aKaf.init_KafHeh
                      aKaf.init_KafMemInit aKaf.init_KafYaaIsol
                      aKaf.init_KafBaaInit aKaf.init_KafMemIsol aKaf.init_KafLam
-                     aKaf.init_KafRaaIsol aKaf.init_KafDalIsol aKaf.init_KafMemAlf
-                     aKaf.init_Tatweel];
+                     aKaf.init_KafRaaIsol aKaf.init_KafMemAlf aKaf.init_Tatweel];
     @kc_second_03 = [aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol];
     @kc_second_04 = [aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init
                      aHeh.init aHeh.isol aMem.init aMem.isol aSad.init aSad.isol aSen.init
