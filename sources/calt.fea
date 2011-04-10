@@ -838,11 +838,6 @@ feature calt {
         [aYaa.fina]' by aYaa.fina_Tatweel;
 } calt;
 
-feature calt {
-  lookupflag IgnoreMarks;
-    sub aKaf.medi aDal.fina' by aDal.fina_KafDal;
-} calt;
-
 @RaaWaw     = [aRaa.fina aRaa.isol aWaw.fina aWaw.isol aRaa.fina_BaaRaaIsol
                aWaw.fina_LamWawFina aRaa.fina_BaaRaaFina aRaa.fina_KafRaaFina
                aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol aRaa.fina_LamRaaIsol
