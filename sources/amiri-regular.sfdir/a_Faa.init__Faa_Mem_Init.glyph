@@ -6,8 +6,8 @@ VWidth: 0
 Flags: W
 AnchorPoint: "TwoDotsBelow" 160 -50 basechar 0
 AnchorPoint: "DotBelow" 260 -50 basechar 0
-AnchorPoint: "TashkilBelow" 260 -670 basechar 0
-AnchorPoint: "TashkilAbove" 10 1640 basechar 0
+AnchorPoint: "TashkilBelow" 300 -670 basechar 0
+AnchorPoint: "TashkilAbove" 50 1640 basechar 0
 AnchorPoint: "TwoDotsAbove" -106 1448 basechar 0
 AnchorPoint: "DotAbove" 5 1448 basechar 0
 AnchorPoint: "HamzaAbove" 5 1448 basechar 0
@@ -35,4 +35,5 @@ SplineSet
  -48 794 -48 794 26 839 c 0,33,34
  40 848 40 848 30 862 c 0,26,27
 EndSplineSet
+Colour: ff00
 EndChar

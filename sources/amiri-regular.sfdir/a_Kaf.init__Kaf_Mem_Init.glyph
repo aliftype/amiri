@@ -12,7 +12,6 @@ AnchorPoint: "DotBelow" 350 300 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 AnchorPoint: "TashkilAbove" 300 1700 basechar 0
 AnchorPoint: "Dash" 377 1670 basechar 0
-AnchorPoint: "cursive" 0 436 exit 0
 LayerCount: 2
 Fore
 SplineSet
@@ -40,4 +39,5 @@ SplineSet
  -138 1374 -138 1374 13 1429 c 0,35,36
  440 1584 440 1584 957 1658 c 0,0,1
 EndSplineSet
+Colour: ff00
 EndChar
