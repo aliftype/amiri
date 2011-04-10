@@ -1,12 +1,12 @@
 
 StartChar: aMem.medi_FaaMemInit
 Encoding: 65642 -1 110
-Width: 496
+Width: 444
 VWidth: 0
 Flags: W
-AnchorPoint: "TashkilBelow" 300 -670 basechar 0
-AnchorPoint: "TashkilAbove" 110 1640 basechar 0
-AnchorPoint: "cursive" 496 494 entry 0
+AnchorPoint: "TashkilBelow" 400 -670 basechar 0
+AnchorPoint: "TashkilAbove" 200 1640 basechar 0
+AnchorPoint: "cursive" 444 424 entry 0
 LayerCount: 2
 Back
 SplineSet
@@ -43,26 +43,6 @@ SplineSet
  482 966 482 966 439 966 c 0,48,49
 EndSplineSet
 Fore
-SplineSet
-376 528 m 0,0,1
- 536 573 536 573 616 470 c 0,2,3
- 679 388 679 388 660.5 281 c 128,-1,4
- 642 174 642 174 574 106 c 0,5,6
- 532 63 532 63 390 125 c 0,7,8
- 333 150 333 150 243 200 c 1,9,10
- 124 0 124 0 0 -0 c 0,11,12
- -28 0 -28 0 -42 44 c 0,13,14
- -88 181 -88 181 0 185 c 256,15,16
- 157 191 157 191 201 272 c 0,17,18
- 206 282 206 282 231.5 351 c 128,-1,19
- 257 420 257 420 290.5 466.5 c 128,-1,20
- 324 513 324 513 376 528 c 0,0,1
-574 285 m 0,21,22
- 567 343 567 343 477.5 393.5 c 128,-1,23
- 388 444 388 444 328 385 c 0,24,25
- 315 373 315 373 337.5 353 c 128,-1,26
- 360 333 360 333 435.5 304.5 c 128,-1,27
- 511 276 511 276 555 270 c 0,28,29
- 576 268 576 268 574 285 c 0,21,22
-EndSplineSet
+Refer: 108 -1 S 1 0 0 1 0 0 2
+Colour: ffff00
 EndChar
