@@ -534,7 +534,7 @@ lookup KafMemInit {
     sub aAyn.init by aAyn.init_AynMemInit;
     sub aFaa.init by aFaa.init_FaaMemInit;
     sub aHaa.init by aHaa.init_HaaMemInit;
-    sub aMem.medi by aMem.medi_KafMemInit;
+    sub aMem.medi by aMem.medi_KafMemMedi;
 } KafMemInit;
 
 lookup MemAlfFina {
