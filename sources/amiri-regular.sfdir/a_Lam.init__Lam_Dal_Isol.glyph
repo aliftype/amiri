@@ -1,17 +1,17 @@
 
 StartChar: aLam.init_LamDalIsol
 Encoding: 65628 -1 103
-Width: 406
+Width: 289
 VWidth: -122
 Flags: W
-AnchorPoint: "Stroke" 102 1091 basechar 0
-AnchorPoint: "TwoDotsBelow" 50 -255 basechar 0
-AnchorPoint: "TwoDotsAbove" -70 1700 basechar 0
-AnchorPoint: "DotAbove" 50 1700 basechar 0
-AnchorPoint: "TashkilBelow" 150 -670 basechar 0
-AnchorPoint: "TashkilAbove" 50 1640 basechar 0
-AnchorPoint: "VAbove" 50 1600 basechar 0
-AnchorPoint: "cursive" 0 61 exit 0
+AnchorPoint: "Stroke" -1 1100 basechar 0
+AnchorPoint: "TwoDotsBelow" 0 -255 basechar 0
+AnchorPoint: "TwoDotsAbove" -195 1700 basechar 0
+AnchorPoint: "DotAbove" -75 1700 basechar 0
+AnchorPoint: "TashkilBelow" 100 -670 basechar 0
+AnchorPoint: "TashkilAbove" -75 1640 basechar 0
+AnchorPoint: "VAbove" -75 1600 basechar 0
+AnchorPoint: "cursive" 0 -2 exit 0
 LayerCount: 2
 Back
 SplineSet
@@ -43,26 +43,5 @@ SplineSet
  -6 174 -6 174 47 136 c 0,28,29
 EndSplineSet
 Fore
-SplineSet
-40 1464 m 0,0,1
- 48 1479 48 1479 58 1477.5 c 128,-1,2
- 68 1476 68 1476 72 1462 c 0,3,4
- 94 1392 94 1392 160 1329 c 0,5,6
- 184 1306 184 1306 170 1283 c 2,7,8
- 130 1215 l 1,9,10
- 132 1206 132 1206 197 864.5 c 128,-1,11
- 262 523 262 523 266 482 c 0,12,13
- 314 76 314 76 223 -49.5 c 128,-1,14
- 132 -175 132 -175 0 -82 c 0,15,16
- -44 -52 -44 -52 -54 58 c 128,-1,17
- -64 168 -64 168 -14 166 c 0,18,19
- 10 165 10 165 53 130 c 128,-1,20
- 96 95 96 95 190 112 c 1,21,22
- 226 123 226 123 198 326.5 c 152,-1,23
- 170 530 170 530 104 847 c 128,-1,24
- 38 1164 38 1164 28 1218 c 1,25,-1
- 0 1330 l 1,26,27
- -4 1356 -4 1356 -1 1369 c 152,-1,28
- 2 1382 2 1382 40 1464 c 0,0,1
-EndSplineSet
+Refer: 124 -1 S 1 0 0 1 0 0 2
 EndChar

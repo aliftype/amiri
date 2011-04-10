@@ -186,11 +186,6 @@ lookup KafHehIsol {
     sub aDal.fina by aDal.fina_KafDalIsol;
 } KafHehIsol;
 
-lookup LamDalIsol {
-    sub aDal.fina by aDal.fina_LamDalIsol;
-    sub aLam.init by aLam.init_LamDalIsol;
-} LamDalIsol;
-
 lookup LamMemFina {
     sub aLam.medi by aLam.medi_LamMemFina;
     sub aMem.fina by aMem.fina_LamMemFina;
@@ -230,8 +225,10 @@ lookup BaaRaaIsol {
 } BaaRaaIsol;
 
 lookup LamHehIsol {
-    sub aHeh.fina by aHeh.fina_LamHehIsol;
     sub aLam.init by aLam.init_LamHehIsol;
+    sub aLam.medi by aLam.medi_LamHehFina;
+    sub aHeh.fina by aHeh.fina_LamHehIsol;
+    sub aDal.fina by aDal.fina_LamDalIsol;
 } LamHehIsol;
 
 lookup LamLamAlfIsol {
@@ -265,11 +262,6 @@ lookup HehMemInit {
     sub aHeh.init by aHeh.init_HehMemInit;
     sub aMem.medi by aMem.medi_HehMemInit;
 } HehMemInit;
-
-lookup LamHehFina {
-    sub aHeh.fina by aHeh.fina_LamHehFina;
-    sub aLam.medi by aLam.medi_LamHehFina;
-} LamHehFina;
 
 lookup LamBaaMemInit {
     sub aBaa.medi by aBaa.medi_LamBaaMemInit;
@@ -585,8 +577,6 @@ feature calt {
   subtable;
     sub [aKaf.init aKaf.medi]' lookup KafHehIsol [aHeh.fina aDal.fina]' lookup KafHehIsol;
   subtable;
-    sub aLam.init' lookup LamDalIsol aDal.fina' lookup LamDalIsol;
-  subtable;
     sub aLam.medi' lookup LamMemFina aMem.fina' lookup LamMemFina;
   subtable;
     sub aSen.init' lookup SenMemInit aMem.medi' lookup SenMemInit;
@@ -600,7 +590,7 @@ feature calt {
   subtable;
     sub aBaa.init' lookup BaaRaaIsol aRaa.fina' lookup BaaRaaIsol;
   subtable;
-    sub aLam.init' lookup LamHehIsol aHeh.fina' lookup LamHehIsol;
+    sub [aLam.init aLam.medi]' lookup LamHehIsol [aHeh.fina aDal.fina]' lookup LamHehIsol;
   subtable;
     sub [aLam.init]' lookup LamLamAlfIsol
         [aLam.medi aLam.medi_LamAlfFina]' lookup LamLamAlfIsol
@@ -615,8 +605,6 @@ feature calt {
     sub aLam.init' lookup LamLamHaaInit aLam.medi' lookup LamLamHaaInit aHaa.medi' lookup LamLamHaaInit;
   subtable;
     sub aHeh.init' lookup HehMemInit aMem.medi' lookup HehMemInit;
-  subtable;
-    sub aLam.medi' lookup LamHehFina aHeh.fina' lookup LamHehFina;
   subtable;
     sub aLam.init' lookup LamBaaMemInit aBaa.medi' lookup LamBaaMemInit aMem.medi' lookup LamBaaMemInit;
   subtable;
