@@ -179,12 +179,12 @@ lookup AynMemInit {
     sub aMem.medi by aMem.medi_AynMemInit;
 } AynMemInit;
 
-lookup KafHehIsol {
-    sub aKaf.init by aKaf.init_KafHehIsol;
-    sub aKaf.medi by aKaf.medi_KafHehFina;
-    sub aHeh.fina by aHeh.fina_KafHehIsol;
-    sub aDal.fina by aDal.fina_KafDalIsol;
-} KafHehIsol;
+lookup KafHeh {
+    sub aKaf.init by aKaf.init_KafHeh;
+    sub aKaf.medi by aKaf.medi_KafHeh;
+    sub aHeh.fina by aHeh.fina_KafHeh;
+    sub aDal.fina by aDal.fina_KafDal;
+} KafHeh;
 
 lookup LamMemFina {
     sub aLam.medi by aLam.medi_LamMemFina;
@@ -575,7 +575,7 @@ feature calt {
   subtable;
     sub aAyn.init' lookup AynMemInit aMem.medi' lookup AynMemInit;
   subtable;
-    sub [aKaf.init aKaf.medi]' lookup KafHehIsol [aHeh.fina aDal.fina]' lookup KafHehIsol;
+    sub [aKaf.init aKaf.medi]' lookup KafHeh [aHeh.fina aDal.fina]' lookup KafHeh;
   subtable;
     sub aLam.medi' lookup LamMemFina aMem.fina' lookup LamMemFina;
   subtable;
@@ -797,7 +797,7 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [aLam.init aLam.medi aLam.medi_KafLam aLam.medi_KafMemLam
          aLam.medi_LamLamInit aMem.medi_LamMemInit]' lookup LamKafInit
-        [aKaf.medi aKaf.medi_KafHehFina aKaf.medi_KafMemFina aKaf.medi_KafRaaFina
+        [aKaf.medi aKaf.medi_KafHeh aKaf.medi_KafMemFina aKaf.medi_KafRaaFina
          aKaf.medi_KafYaaFina aKaf.medi_KafMemAlf aKaf.medi_Tatweel];
 } calt;
 
@@ -840,7 +840,7 @@ feature calt {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub aKaf.medi aDal.fina' by aDal.fina_KafDalIsol;
+    sub aKaf.medi aDal.fina' by aDal.fina_KafDal;
 } calt;
 
 @RaaWaw     = [aRaa.fina aRaa.isol aWaw.fina aWaw.isol aRaa.fina_BaaRaaIsol
