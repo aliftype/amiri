@@ -3,13 +3,25 @@ StartChar: aMem.init_AboveHaaIsol
 Encoding: 65909 -1 430
 Width: 1147
 VWidth: 0
-UnlinkRmOvrlpSave: 1
 Flags: W
 AnchorPoint: "TashkilBelow" 944 -260 basechar 0
 AnchorPoint: "TashkilAbove" 740 1640 basechar 0
 AnchorPoint: "cursive" 0 411 exit 0
 LayerCount: 2
 Fore
-Refer: 165 -1 N 0.993307 0.115501 -0.115501 0.993307 112 -58 2
-Colour: ff
+SplineSet
+527 812 m 1,0,1
+ 471 852 l 2,2,3
+ 458 862 458 862 462 890 c 0,4,5
+ 478 1018 478 1018 546 1078 c 0,6,7
+ 571 1100 571 1100 599 1092 c 0,8,9
+ 734 1053 734 1053 828 961 c 0,10,11
+ 848 940 848 940 845 912 c 0,12,13
+ 828 798 828 798 780 737 c 0,14,15
+ 768 725 768 725 748 722 c 0,16,17
+ 310 644 310 644 81 438 c 0,18,19
+ 45 404 45 404 18 420 c 0,20,21
+ -33 451 -33 451 66 545 c 24,22,23
+ 247 714 247 714 527 812 c 1,0,1
+EndSplineSet
 EndChar
