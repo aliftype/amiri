@@ -3,7 +3,7 @@ StartChar: aKaf.init_KafYaaIsol
 Encoding: 66016 -1 692
 Width: 1035
 VWidth: 0
-Flags: HW
+Flags: W
 AnchorPoint: "TwoDotsBelow" 400 -300 basechar 0
 AnchorPoint: "DotBelow" 400 -300 basechar 0
 AnchorPoint: "RingBelow" 280 1570 basechar 0
@@ -12,7 +12,6 @@ AnchorPoint: "DotAbove" -242 1622 basechar 0
 AnchorPoint: "TashkilBelow" 300 -670 basechar 0
 AnchorPoint: "TashkilAbove" 100 1750 basechar 0
 AnchorPoint: "Dash" 298 1820 basechar 0
-AnchorPoint: "cursive" 0 256 exit 0
 LayerCount: 2
 Fore
 SplineSet

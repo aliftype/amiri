@@ -1,9 +1,9 @@
 
 StartChar: aLam.init_LamYaaIsol
 Encoding: 66022 -1 698
-Width: 504
+Width: 497
 VWidth: 0
-Flags: HW
+Flags: W
 AnchorPoint: "Stroke" 17 1086 basechar 0
 AnchorPoint: "TwoDotsBelow" 100 -410 basechar 0
 AnchorPoint: "TwoDotsAbove" -133 1668 basechar 0
@@ -11,7 +11,6 @@ AnchorPoint: "DotAbove" -13 1668 basechar 0
 AnchorPoint: "TashkilBelow" 240 -670 basechar 0
 AnchorPoint: "TashkilAbove" 0 1640 basechar 0
 AnchorPoint: "VAbove" -13 1568 basechar 0
-AnchorPoint: "cursive" 0 224 exit 0
 LayerCount: 2
 Fore
 SplineSet
