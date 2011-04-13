@@ -1,6 +1,6 @@
 
 StartChar: aMem.init_MemMemInit
-Encoding: 65663 -1 120
+Encoding: 66014 -1 699
 Width: 575
 VWidth: 0
 Flags: W
@@ -25,5 +25,5 @@ SplineSet
  -178 419 -178 419 -117 518 c 24,24,-1
  -86 572 l 16,0,1
 EndSplineSet
-Colour: ff
+Colour: ff00
 EndChar
