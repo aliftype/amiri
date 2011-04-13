@@ -9,7 +9,7 @@ AnchorPoint: "DotAlt" 442 12 basechar 0
 AnchorPoint: "DotBelow" 520 -670 basechar 0
 AnchorPoint: "RingBelow" 474 -284 basechar 0
 AnchorPoint: "TaaAbove" 671 744 basechar 0
-AnchorPoint: "TashkilBelow" 470 -670 basechar 0
+AnchorPoint: "TashkilBelow" 670 -670 basechar 0
 AnchorPoint: "TashkilAbove" 451 1640 basechar 0
 AnchorPoint: "TwoDotsAbove" 560 946 basechar 0
 AnchorPoint: "VAbove" 671 944 basechar 0
@@ -49,7 +49,7 @@ EndSplineSet
 Fore
 SplineSet
 877 432 m 1,0,1
- 912 390 912 390 926 307 c 0,2,3
+ 912 390 912 390 926 307 c 128,-1,3
  940 224 940 224 934 142 c 128,-1,4
  928 60 928 60 872 -72 c 0,5,6
  794 -256 794 -256 637 -352 c 0,7,8
