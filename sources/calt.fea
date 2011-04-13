@@ -187,8 +187,10 @@ lookup LamMemFina {
 } LamMemFina;
 
 lookup SenMemInit {
-    sub aMem.medi by aMem.medi_SenMemInit;
     sub aSen.init by aSen.init_SenMemInit;
+    sub aSad.init by aSad.init_SadMemInit;
+    sub aMem.init by aMem.init_MemMemInit;
+    sub aMem.medi by aMem.medi_SenMemInit;
 } SenMemInit;
 
 lookup BaaMemAlfFina {
@@ -231,11 +233,6 @@ lookup LamWawFina {
     sub aLam.medi by aLam.medi_LamWawFina;
     sub aWaw.fina by aWaw.fina_LamWawFina;
 } LamWawFina;
-
-lookup MemMemInit {
-    sub aMem.init by aMem.init_MemMemInit;
-    sub aMem.medi by aMem.medi_MemMemInit;
-} MemMemInit;
 
 lookup FaaYaaFina {
     sub aFaa.medi by aFaa.medi_FaaYaaFina;
@@ -418,11 +415,6 @@ lookup KafLam {
     sub aAlf.fina by aAlf.fina_KafAlf;
 } KafLam;
 
-lookup SadMemInit {
-    sub aMem.medi by aMem.medi_SadMemInit;
-    sub aSad.init by aSad.init_SadMemInit;
-} SadMemInit;
-
 lookup KafRaaIsol {
     sub aKaf.init by aKaf.init_KafRaaIsol;
     sub aRaa.fina by aRaa.fina_KafRaaIsol;
@@ -557,7 +549,7 @@ feature calt {
   subtable;
     sub aLam.medi' lookup LamMemFina aMem.fina' lookup LamMemFina;
   subtable;
-    sub aSen.init' lookup SenMemInit aMem.medi' lookup SenMemInit;
+    sub [aSen.init aSad.init aMem.init]' lookup SenMemInit aMem.medi' lookup SenMemInit;
   subtable;
     sub aBaa.medi' lookup BaaMemAlfFina aMem.medi' lookup BaaMemAlfFina aAlf.fina' lookup BaaMemAlfFina;
   subtable;
@@ -573,8 +565,6 @@ feature calt {
         [aAlf.fina aAlf.fina_LamAlfFina];
   subtable;
     sub aLam.medi' lookup LamWawFina aWaw.fina' lookup LamWawFina;
-  subtable;
-    sub aMem.init' lookup MemMemInit aMem.medi' lookup MemMemInit;
   subtable;
     sub aFaa.medi' lookup FaaYaaFina aYaa.fina' lookup FaaYaaFina;
   subtable;
@@ -641,8 +631,6 @@ feature calt {
     sub aBaa.init' lookup BaaHehInit aHeh.medi' lookup BaaHehInit;
   subtable;
     sub [aKaf.init aKaf.medi]' lookup KafLam [aLam.medi aLam.fina aAlf.fina aKaf.fina]' lookup KafLam;
-  subtable;
-    sub aSad.init' lookup SadMemInit aMem.medi' lookup SadMemInit;
   subtable;
     sub aKaf.init' lookup KafRaaIsol aRaa.fina' lookup KafRaaIsol;
   subtable;
