@@ -201,7 +201,7 @@ lookup SenMemInit {
 } SenMemInit;
 
 lookup BaaMemAlfFina {
-    sub aAlf.fina by aAlf.fina_BaaMemAlfFina;
+    sub aAlf.fina by aAlf.fina_MemAlfFina;
     sub aBaa.medi by aBaa.medi_BaaMemAlfFina;
     sub aMem.medi by aMem.medi_BaaMemAlfFina;
 } BaaMemAlfFina;
@@ -762,7 +762,6 @@ lookup SenMemMedi {
     sub aSad.medi by aSad.medi_PreYaa;
     sub aSen.medi by aSen.medi_PreYaa;
     sub aMem.medi_MemAlfFina by aMem.medi_AlfPostTooth;
-    sub aAlf.fina_MemAlfFina by aAlf.fina_BaaMemAlfFina;
     sub aSen.medi_BaaSenInit by aSen.medi_BaaSenAltInit;
 } SenMemMedi;
 
