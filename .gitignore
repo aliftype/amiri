@@ -1,7 +1,8 @@
 .tmp
 amiri-*.ttf
-documentation/amiri-*.pdf
+documentation/amiri-*.pdf*
 web/amiri-*.ttf
 web/amiri-*.eot
 web/amiri-*.woff
 web/amiri.css
+sources/classes.fea
