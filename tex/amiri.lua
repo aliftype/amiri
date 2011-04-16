@@ -1,5 +1,17 @@
 amiri = { }
 
+amiri.module     = {
+    name        = "amiri",
+    version     = 0.001,
+    date        = "2011/04/16",
+    description = "Support module for Amiri font",
+    author      = "Khaled Hosny",
+    copyright   = "Khaled Hosny",
+    license     = "CC0",
+}
+
+if not modules then modules = { } end modules ['amiri'] = amiri.module
+
 local code_attr = attributes.private("amiricharcode")
 local id_attr   = attributes.private("amiricharid")
 
@@ -85,8 +97,3 @@ function amiri.finalise(head)
     return head
 end
 
-tasks.appendaction("processors", "characters",  "amiri.initialise")
-tasks.appendaction("shipouts",   "finishers",   "amiri.finalise")
-
-tasks.enableaction("processors", "amiri.initialise")
-tasks.enableaction("shipouts",   "amiri.finalise")

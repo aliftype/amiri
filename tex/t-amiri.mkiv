@@ -1,0 +1,41 @@
+%D \module
+%D   [     file=t-amiri,
+%D      version=0.001,
+%D        title=Amiri font,
+%D     subtitle=Support module for Amiri font,
+%D       author=Khaled Hosny,
+%D         date=\currentdate,
+%D    copyright=Khaled Hosny,
+%D      license=CC0]
+
+\writestatus{loading}{Amiri font support module}
+
+\startmodule[amiri]
+
+\registerctxluafile{amiri}{0.001}
+
+\unprotect
+
+\startluacode
+tasks.appendaction("processors", "characters",  "amiri.initialise")
+tasks.appendaction("shipouts",   "finishers",   "amiri.finalise")
+
+tasks.enableaction("processors", "amiri.initialise")
+tasks.enableaction("shipouts",   "amiri.finalise")
+\stopluacode
+
+\protect
+
+\stopmodule
+
+\doifnotmode{demo}{\endinput}
+
+\usemodule[amiri]
+\setupbodyfont[amiri, 50pt]
+
+\starttext
+ \startTEXpage
+  \textdir TRT
+  بِسْم اللَّهِ الرَّحْمَنِ الرَّحِيم
+ \stopTEXpage
+\stoptext
