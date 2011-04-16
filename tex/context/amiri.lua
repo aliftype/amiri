@@ -8,12 +8,15 @@ local hlist     = node.id("hlist")
 local vlist     = node.id("vlist")
 
 local format    = string.format
-local ids       = fonts.hashes.identifiers
+
+-- XXX
+local ids       = fonts.hashes and fonts.hashes.identifiers or fonts.ids
+local tasks     = nodes.tasks or tasks
 
 local function is_amiri(font)
     font = ids[font]
     font = font and font.shared
-    font = font and font.rawdata
+    font = font and font.rawdata or font.otfdata -- XXX
     font = font and font.metadata
     font = font and font.familyname
     if font == "Amiri" then
@@ -82,5 +85,8 @@ function amiri.finalise(head)
     return head
 end
 
-nodes.tasks.appendaction("processors", "characters",  "amiri.initialise")
-nodes.tasks.appendaction("shipouts",   "finishers",   "amiri.finalise")
+tasks.appendaction("processors", "characters",  "amiri.initialise")
+tasks.appendaction("shipouts",   "finishers",   "amiri.finalise")
+
+tasks.enableaction("processors", "amiri.initialise")
+tasks.enableaction("shipouts",   "amiri.finalise")
