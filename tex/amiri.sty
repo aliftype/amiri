@@ -2,7 +2,6 @@
 \ProvidesPackage{amiri}[2009/12/28 Amiri font support package]
 
 \RequirePackage{fontspec}[2009/12/12]
-\RequirePackage{luacode}
 
 \setmainfont[Script=Arabic]{Amiri}
 
@@ -16,10 +15,11 @@
    }
 }
 
-\begin{luacode}
-luatexbase.require_module("amiri")
-luatexbase.add_to_callback("pre_linebreak_filter",  amiri.initialise, "Amiri initialisation (pre_line)", 1)
-luatexbase.add_to_callback("hpack_filter",          amiri.initialise, "Amiri initialisation (hpack)",    1)
-
-luatexbase.add_to_callback("post_linebreak_filter", amiri.finalise,    "Amiri finalisation")
-\end{luacode}
+\luatex_if_engine:T {
+  \directlua {
+    luatexbase.require_module("amiri")
+    luatexbase.add_to_callback("pre_linebreak_filter",  amiri.initialise, "Amiri initialisation (pre_line)", 1)
+    luatexbase.add_to_callback("hpack_filter",          amiri.initialise, "Amiri initialisation (hpack)",    1)
+    luatexbase.add_to_callback("post_linebreak_filter", amiri.finalise,    "Amiri finalisation")
+  }
+}

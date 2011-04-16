@@ -35,7 +35,7 @@ local tasks     = nodes.tasks or tasks
 local function is_amiri(font)
     font = ids[font]
     font = font and font.shared
-    font = font and font.rawdata or font.otfdata -- XXX
+    font = font and (font.rawdata or font.otfdata) -- XXX
     font = font and font.metadata
     font = font and font.familyname
     if font == "Amiri" then
