@@ -80,12 +80,12 @@ function amiri.finalise(head)
         if n.id == glyph and is_amiri(n.font) then
             local id   = node.has_attribute(n, id_attr)
             local code = node.has_attribute(n, code_attr)
-            if n.prev and n.prev.id == glyph and is_amiri(n.prev.font) and node.has_attribute(n.prev, id_attr) == id then
+            if n.prev and n.prev.id == glyph and node.has_attribute(n.prev, id_attr) == id then
             else
                 local b = new_actualtext(code)
                 node.insert_before(head, n, b)
             end
-            if n.next and n.next.id == glyph and is_amiri(n.next.font) and node.has_attribute(n.next, id_attr) == id then
+            if n.next and n.next.id == glyph and node.has_attribute(n.next, id_attr) == id then
             else
                 local e = new_actualtext()
                 node.insert_after(head, n, e)
