@@ -12,8 +12,15 @@ amiri.module     = {
 
 if not modules then modules = { } end modules ['amiri'] = amiri.module
 
-local code_attr = attributes.private("amiricharcode")
-local id_attr   = attributes.private("amiricharid")
+local code_attr, id_attr
+
+if context then
+    code_attr = attributes.private("amiricharcode")
+    id_attr   = attributes.private("amiricharid")
+else
+    code_attr = luatexbase.new_attribute("amiricharcode")
+    id_attr   = luatexbase.new_attribute("amiricharid")
+end
 
 local glyph     = node.id("glyph")
 local hlist     = node.id("hlist")
