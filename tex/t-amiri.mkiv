@@ -17,12 +17,25 @@
 \unprotect
 
 \startluacode
+local tasks = nodes.tasks or tasks
+
 tasks.appendaction("processors", "characters",  "amiri.initialise")
 tasks.appendaction("shipouts",   "finishers",   "amiri.finalise")
 
 tasks.enableaction("processors", "amiri.initialise")
 tasks.enableaction("shipouts",   "amiri.finalise")
 \stopluacode
+
+\starttypescript [serif] [amiri]
+ \definefontsynonym [Serif]           [name:amiri-regular] [features=arabic]
+ \definefontsynonym [SerifBold]       [name:amiri-regular] [features=arabic]
+ \definefontsynonym [SerifItalic]     [name:amiri-regular] [features=arabic]
+ \definefontsynonym [SerifBoldItalic] [name:amiri-regular] [features=arabic]
+\stoptypescript
+
+\starttypescript [amiri]
+  \definetypeface [amiri] [rm] [serif] [amiri] [default]
+\stoptypescript
 
 \protect
 

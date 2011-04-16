@@ -30,7 +30,6 @@ local format    = string.format
 
 -- XXX
 local ids       = fonts.hashes and fonts.hashes.identifiers or fonts.ids
-local tasks     = nodes.tasks or tasks
 
 local function is_amiri(font)
     font = ids[font]
