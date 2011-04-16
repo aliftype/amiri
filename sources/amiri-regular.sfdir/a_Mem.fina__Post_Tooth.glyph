@@ -1,13 +1,14 @@
 
 StartChar: aMem.fina_PostTooth
 Encoding: 65891 -1 397
-Width: 1182
+Width: 1158
 VWidth: 0
 Flags: W
 AnchorPoint: "TashkilBelow" 690 -670 basechar 0
 AnchorPoint: "TashkilAbove" 460 1640 basechar 0
 LayerCount: 2
 Fore
-Refer: 692 -1 S 1 0 0 1 43 -350 2
-Refer: 118 -1 N 1 0 0 1 457 0 2
+Refer: 692 -1 N 1 0 0 1 114 -250 2
+Refer: 118 -1 N 1 0 0 1 458 0 2
+Colour: ff
 EndChar
