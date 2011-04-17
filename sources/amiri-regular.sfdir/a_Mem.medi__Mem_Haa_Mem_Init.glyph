@@ -1,6 +1,6 @@
 
 StartChar: aMem.medi_MemHaaMemInit
-Encoding: 65764 -1 171
+Encoding: 65764 -1 165
 Width: 434
 VWidth: 0
 Flags: W
@@ -8,6 +8,6 @@ AnchorPoint: "TashkilBelow" 160 -670 basechar 0
 AnchorPoint: "TashkilAbove" 201 1640 basechar 0
 LayerCount: 2
 Fore
-Refer: 669 -1 N 1 0 0 1 0 0 2
+Refer: 663 -1 N 1 0 0 1 0 0 2
 Colour: ff00ff
 EndChar
