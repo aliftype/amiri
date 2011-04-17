@@ -162,7 +162,6 @@ feature calt {
 } calt;
 
 lookup KafLamHeh {
-    sub aHeh.fina by aHeh.fina_KafLamHehIsol;
     sub aLam.medi by aLam.medi_KafLamHehIsol;
 } KafLamHeh;
 
@@ -534,7 +533,7 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [aKaf.init aKaf.medi]' lookup KafLam
         [aLam.medi]' lookup KafLamHeh
-        [aHeh.fina]' lookup KafLamHeh;
+        [aHeh.fina aDal.fina]' lookup LamHehIsol;
 
     sub [aKaf.init aKaf.medi]' lookup KafMemAlf
         [aMem.medi]' lookup KafMemAlf
