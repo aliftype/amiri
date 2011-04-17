@@ -230,12 +230,6 @@ lookup LamHehIsol {
     sub aDal.fina by aDal.fina_LamDal;
 } LamHehIsol;
 
-lookup LamLamAlfIsol {
-    sub aLam.init by aLam.init_LamLamAlfIsol;
-    sub aLam.medi by aLam.medi_LamLamAlfIsol;
-    sub aLam.medi_LamAlfFina by aLam.medi_LamLamAlfIsol;
-} LamLamAlfIsol;
-
 lookup LamWawFina {
     sub aLam.medi by aLam.medi_LamWawFina;
     sub aWaw.fina by aWaw.fina_LamWawFina;
@@ -292,6 +286,8 @@ lookup Lellah {
 lookup LamLamInit {
     sub aLam.init by aLam.init_LamLamInit;
     sub aLam.medi by aLam.medi_LamLamInit;
+    sub aKaf.fina by aKaf.fina_LamKafIsol;
+    sub aLam.medi_LamAlfFina by aLam.medi_LamLamAlfIsol;
 } LamLamInit;
 
 lookup LamYaaFina {
@@ -337,11 +333,6 @@ lookup BaaBaaInit {
     sub aBaa.init by aBaa.init_BaaBaaInit;
     sub aBaa.medi by aBaa.medi_BaaBaaInit;
 } BaaBaaInit;
-
-lookup LamKafIsol {
-    sub aKaf.fina by aKaf.fina_LamKafIsol;
-    sub aLam.init by aLam.init_LamKafIsol;
-} LamKafIsol;
 
 lookup MemRaaIsol {
     sub aMem.init by aMem.init_MemRaaIsol;
@@ -573,10 +564,6 @@ feature calt {
     sub [aLam.init aLam.medi]' lookup LamHehIsol
         [aHeh.fina aDal.fina]' lookup LamHehIsol;
 
-    sub [aLam.init]' lookup LamLamAlfIsol
-        [aLam.medi aLam.medi_LamAlfFina]' lookup LamLamAlfIsol
-        [aAlf.fina aAlf.fina_LamAlfFina];
-
     sub [aLam.medi]' lookup LamWawFina
         [aWaw.fina]' lookup LamWawFina;
 
@@ -615,7 +602,7 @@ feature calt {
         [aHeh.fina]' lookup Lellah;
 
     sub [aLam.init]' lookup LamLamInit
-        [aLam.medi]' lookup LamLamInit;
+        [aLam.medi aKaf.fina aLam.medi_LamAlfFina]' lookup LamLamInit;
 
     sub [aLam.medi]' lookup LamYaaFina
         [aYaa.fina]' lookup LamYaaFina;
@@ -644,9 +631,6 @@ feature calt {
 
     sub [aBaa.init]' lookup BaaBaaInit
         [aBaa.medi]' lookup BaaBaaInit;
-
-    sub [aLam.init]' lookup LamKafIsol
-        [aKaf.fina]' lookup LamKafIsol;
 
     sub [aMem.init]' lookup MemRaaIsol
         [aRaa.fina]' lookup MemRaaIsol;
