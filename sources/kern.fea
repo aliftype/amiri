@@ -10,7 +10,7 @@ feature kern {
                      aRaa.fina_KafRaaFina aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol
                      aRaa.fina_LamRaaIsol aRaa.fina_PostTooth];
     @kc_first_02  = [aDal.fina aDal.isol aDal.fina_BaaDalIsol
-                     aDal.fina_KafDal aDal.fina_LamDalIsol];
+                     aDal.fina_KafDal aDal.fina_LamDal];
     @kc_first_03  = [aRaa.fina.alt2 aRaa.fina_MemRaaIsol];
     @kc_second_01 = [aAlf.isol];
     @kc_second_02 = [aKaf.init aKaf.init_KafHeh
@@ -28,7 +28,7 @@ feature kern {
                      aAyn.init_Finjani aHaa.init_Finjani aSen.init_PreYaa aSad.init_PreYaa];
     @kc_second_05 = [aNon.isol aNon.isol.alt aQaf.isol];
     @kc_second_06 = [aRaa.isol aWaw.isol aDal.isol];
-    @kc_second_07 = [aKaf.isol aLam.init aLam.isol aLam.init_LamHehIsol
+    @kc_second_07 = [aKaf.isol aLam.init aLam.isol aLam.init_LamHeh
                      aLam.init_LamAlfIsol aLam.init_LamRaaIsol];
     @kc_second_08 = [aBaa.init aBaa.init_BaaRaaIsol aBaa.init_BaaDalIsol
                      aBaa.init_BaaBaaYaaIsol aBaa.init_BaaBaaInit aBaa.init_BaaSenInit

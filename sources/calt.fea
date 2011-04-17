@@ -224,10 +224,10 @@ lookup BaaRaaIsol {
 } BaaRaaIsol;
 
 lookup LamHehIsol {
-    sub aLam.init by aLam.init_LamHehIsol;
-    sub aLam.medi by aLam.medi_LamHehFina;
-    sub aHeh.fina by aHeh.fina_LamHehIsol;
-    sub aDal.fina by aDal.fina_LamDalIsol;
+    sub aLam.init by aLam.init_LamHeh;
+    sub aLam.medi by aLam.medi_LamHeh;
+    sub aHeh.fina by aHeh.fina_LamHeh;
+    sub aDal.fina by aDal.fina_LamDal;
 } LamHehIsol;
 
 lookup LamLamAlfIsol {
@@ -768,7 +768,7 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [aAyn.init aHaa.init aHaa.medi]'
         [aAlf.fina aDal.fina aHeh.fina aLam.fina aLam.medi aLam.medi_LamMemFina
-         aLam.medi_LamWawFina aLam.medi_LamHehFina aLam.medi_LamYaaFina
+         aLam.medi_LamWawFina aLam.medi_LamHeh aLam.medi_LamYaaFina
          aLam.medi_LamQafFina aBaa.medi_BaaRaaFina aLam.medi_LamAlfFina
          aLam.medi_LamMemMedi aBaa.medi_BaaNonFina aBaa.medi_High]
     by  [aAyn.init_Finjani aHaa.init_Finjani aHaa.medi_Finjani];
