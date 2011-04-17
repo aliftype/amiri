@@ -138,15 +138,16 @@ feature calt {
         [aBaa.medi aBaa.fina aSen.medi aSen.fina];
 } calt;
 
-lookup BaaHehMedi {
+lookup BaaHeh {
+    sub aBaa.init by aBaa.init_BaaHehInit;
     sub aBaa.medi by aBaa.medi_BaaHehMedi;
     sub aHeh.medi by aHeh.medi_BaaHehMedi;
-} BaaHehMedi;
+} BaaHeh;
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [aBaa.medi]' lookup BaaHehMedi
-        [aHeh.medi]' lookup BaaHehMedi;
+    sub [aBaa.init aBaa.medi]' lookup BaaHeh
+        [aHeh.medi]' lookup BaaHeh;
 } calt;
 
 lookup LamAlfFina {
@@ -409,11 +410,6 @@ lookup BaaMemInit {
     sub aBaa.init by aBaa.init_BaaMemInit;
     sub aMem.medi by aMem.medi_BaaMemInit;
 } BaaMemInit;
-
-lookup BaaHehInit {
-    sub aBaa.init by aBaa.init_BaaHehInit;
-    sub aHeh.medi by aHeh.medi_BaaHehInit;
-} BaaHehInit;
 
 lookup KafLam {
     sub aKaf.init by aKaf.init_KafLam;
@@ -686,9 +682,6 @@ feature calt {
     sub [aBaa.init]' lookup BaaMemInit
         [aMem.medi]' lookup BaaMemInit;
 
-    sub [aBaa.init]' lookup BaaHehInit
-        [aHeh.medi]' lookup BaaHehInit;
-
     sub [aKaf.init aKaf.medi]' lookup KafLam
         [aLam.medi aLam.fina aAlf.fina aKaf.fina]' lookup KafLam;
 
@@ -842,7 +835,7 @@ lookup HehMemAlf {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [aHeh.medi_BaaHehInit aHeh.medi_BaaHehMedi aHeh.medi_PostTooth]
+    sub [aHeh.medi_BaaHehMedi aHeh.medi_PostTooth]
         [aMem.medi_MemAlfFina]' lookup HehMemAlf
         [aAlf.fina_MemAlfFina]' lookup HehMemAlf;
 } calt;
@@ -868,7 +861,7 @@ feature calt {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [aHeh.medi_PostTooth aHeh.medi_BaaHehInit aHeh.medi_BaaHehMedi]
+    sub [aHeh.medi_PostTooth aHeh.medi_BaaHehMedi]
         [aYaa.fina]'
     by  [aYaa.fina_Tatweel];
 } calt;
