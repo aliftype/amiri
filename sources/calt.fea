@@ -365,7 +365,6 @@ lookup LamQafFina {
 lookup MemHaaMemInit {
     sub aHaa.medi by aHaa.medi_MemHaaMemInit;
     sub aMem.init by aMem.init_MemHaaMemInit;
-    sub aMem.medi by aMem.medi_MemHaaMemInit;
     sub aMem.init_MemHaaInit by aMem.init_MemHaaMemInit;
     sub aHaa.medi_SadHaaInit by aHaa.medi_MemHaaMemInit;
 } MemHaaMemInit;
@@ -473,7 +472,6 @@ lookup LamKafFina {
 lookup BaaHaaMemInit {
     sub aBaa.init by aBaa.init_BaaHaaMemInit;
     sub aHaa.medi by aHaa.medi_BaaHaaMemInit;
-    sub aMem.medi by aMem.medi_BaaHaaMemInit;
     sub aHaa.medi_SadHaaInit by aHaa.medi_BaaHaaMemInit;
     sub aBaa.init_BaaHaaInit by aBaa.init_BaaHaaMemInit;
 } BaaHaaMemInit;
@@ -650,7 +648,7 @@ feature calt {
 
     sub [aMem.init aMem.init_MemHaaInit]' lookup MemHaaMemInit
         [aHaa.medi aHaa.medi_SadHaaInit]' lookup MemHaaMemInit
-        [aMem.medi]' lookup MemHaaMemInit;
+        [aMem.medi]' lookup KafMemInit;
 
     sub [aBaa.init]' lookup BaaNonIsol
         [aNon.fina]' lookup BaaNonIsol;
@@ -707,7 +705,7 @@ feature calt {
 
     sub [aBaa.init aBaa.init_BaaHaaInit]' lookup BaaHaaMemInit
         [aHaa.medi aHaa.medi_SadHaaInit]' lookup BaaHaaMemInit
-        [aMem.medi]' lookup BaaHaaMemInit;
+        [aMem.medi]' lookup KafMemInit;
 
     sub [aAyn.init aBaa.init aHaa.init aHeh.init aMem.init aSad.init aSen.init]' lookup AboveHaaIsol
         [aHaa.fina]' lookup AboveHaaIsol;
