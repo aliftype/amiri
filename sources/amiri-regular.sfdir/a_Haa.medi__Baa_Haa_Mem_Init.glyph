@@ -6,7 +6,7 @@ Flags: W
 AnchorPoint: "DigitBelow" 305 -167 basechar 0
 AnchorPoint: "TaaBelow" 305 233 basechar 0
 AnchorPoint: "TaaAbove" -74 1285 basechar 0
-AnchorPoint: "TashkilBelow" 305 -670 basechar 0
+AnchorPoint: "TashkilBelow" 355 -670 basechar 0
 AnchorPoint: "TashkilAbove" 316 1640 basechar 0
 AnchorPoint: "DotAbove" -74 1285 basechar 0
 AnchorPoint: "HamzaAbove" -74 1285 basechar 0
@@ -33,4 +33,5 @@ SplineSet
  -72 665 -72 665 -207 657 c 0,21,22
  -223 656 -223 656 -218 671 c 0,0,1
 EndSplineSet
+Colour: ff
 EndChar
