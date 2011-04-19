@@ -286,6 +286,7 @@ lookup Lellah {
 lookup LamLamInit {
     sub aLam.init by aLam.init_LamLamInit;
     sub aLam.medi by aLam.medi_LamLamInit;
+    sub aLam.fina by aLam.fina_LamLamIsol;
     sub aKaf.fina by aKaf.fina_LamKafIsol;
     sub aLam.medi_LamAlfFina by aLam.medi_LamLamAlfIsol;
 } LamLamInit;
@@ -602,7 +603,7 @@ feature calt {
         [aHeh.fina]' lookup Lellah;
 
     sub [aLam.init]' lookup LamLamInit
-        [aLam.medi aKaf.fina aLam.medi_LamAlfFina]' lookup LamLamInit;
+        [aLam.medi aKaf.fina aLam.fina aLam.medi_LamAlfFina]' lookup LamLamInit;
 
     sub [aLam.medi]' lookup LamYaaFina
         [aYaa.fina]' lookup LamYaaFina;
