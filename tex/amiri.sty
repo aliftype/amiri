@@ -17,7 +17,7 @@
 
 \luatex_if_engine:T {
   \directlua {
-    luatexbase.require_module("amiri")
+    require("amiri")
     luatexbase.add_to_callback("pre_linebreak_filter",  amiri.initialise, "Amiri initialisation (pre_line)", 1)
     luatexbase.add_to_callback("hpack_filter",          amiri.initialise, "Amiri initialisation (hpack)",    1)
     luatexbase.add_to_callback("post_linebreak_filter", amiri.finalise,    "Amiri finalisation")
