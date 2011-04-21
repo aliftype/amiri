@@ -25,6 +25,7 @@ end
 local glyph     = node.id("glyph")
 local hlist     = node.id("hlist")
 local vlist     = node.id("vlist")
+local glue      = node.id("glue")
 
 local format    = string.format
 
@@ -46,7 +47,7 @@ end
 
 local charid = 0
 
-function amiri.initialise(head)
+local function initialise(head)
     for n in node.traverse(head) do
         if n.id == glyph and is_amiri(n.font) then
             charid = charid + 1
@@ -57,17 +58,20 @@ function amiri.initialise(head)
     return head
 end
 
-local function tosixteen(n)
-    if not n then
+local function tosixteen(code)
+    if not code then
         return "<feff>"
     else
-        if n < 0x10000 then
-            n = format("%04x",n)
-        else
-            n = format("%04x%04x",n/1024+0xD800,n%1024+0xDC00)
+        r = {}
+        for _,n in next, code do
+            if n < 0x10000 then
+                r[#r+1] = format("%04x",n)
+            else
+                r[#r+1] = format("%04x%04x",n/1024+0xD800,n%1024+0xDC00)
+            end
         end
+        return format("<feff%s>", table.concat(r))
     end
-    return format("<feff%s>", n)
 end
 
 local function new_actualtext(code)
@@ -81,14 +85,14 @@ local function new_actualtext(code)
     return actualtext
 end
 
-function amiri.finalise(head)
+local function finalise_char(head)
     for n in node.traverse(head) do
         if n.id == glyph and is_amiri(n.font) then
             local id   = node.has_attribute(n, id_attr)
             local code = node.has_attribute(n, code_attr)
             if n.prev and n.prev.id == glyph and node.has_attribute(n.prev, id_attr) == id then
             else
-                local b = new_actualtext(code)
+                local b = new_actualtext({code})
                 node.insert_before(head, n, b)
             end
             if n.next and n.next.id == glyph and node.has_attribute(n.next, id_attr) == id then
@@ -103,3 +107,33 @@ function amiri.finalise(head)
     return head
 end
 
+local function finalise_word(head)
+    local start, id, code = nil, nil, {}
+    for n in node.traverse(head) do
+        if n.id == glyph and is_amiri(n.font) then
+            local i = node.has_attribute(n, id_attr)
+            local c = node.has_attribute(n, code_attr)
+            if i ~= id then
+                code[#code+1] = c
+            end
+            id = i
+            if not start then
+                start = n
+            end
+        elseif n.id == glue then
+            if start then
+                local b = new_actualtext(code)
+                local e = new_actualtext()
+                node.insert_before(head, start, b)
+                node.insert_after(head, n, e)
+                start, code = nil, {}
+            end
+        elseif n.id == hlist or n.id == vlist then
+            amiri.finalise(n.list)
+        end
+    end
+    return head
+end
+
+amiri.finalise   = finalise_word
+amiri.initialise = initialise
