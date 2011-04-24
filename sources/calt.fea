@@ -10,7 +10,7 @@ lookup ShaddaCombined {
 
 feature calt {
     sub [uni0651]' lookup ShaddaCombined
-        [uni064E uni064B uni064F]' lookup ShaddaCombined;
+        [uni064E uni064B uni064F uni0670]' lookup ShaddaCombined;
 } calt;
 
 lookup HamzaCombined {
