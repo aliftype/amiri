@@ -1,11 +1,10 @@
 
 StartChar: aMem.medi_LamMemInitTatweel
 Encoding: 65904 -1 397
-Width: 713
+Width: 580
 Flags: W
 AnchorPoint: "TashkilBelow" 110 -670 basechar 0
 AnchorPoint: "TashkilAbove" 110 1640 basechar 0
-AnchorPoint: "cursive" 580 193 entry 0
 LayerCount: 2
 Fore
 Refer: 382 -1 N 1 0 0 1 0 0 2

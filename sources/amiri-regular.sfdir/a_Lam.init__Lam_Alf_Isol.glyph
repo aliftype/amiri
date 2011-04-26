@@ -3,14 +3,13 @@ StartChar: aLam.init_LamAlfIsol
 Encoding: 65715 -1 134
 Width: 619
 Flags: W
-AnchorPoint: "Stroke" 407 1156 basechar 0
+AnchorPoint: "Stroke" 407 1096 basechar 0
 AnchorPoint: "TwoDotsBelow" 280 -150 basechar 0
-AnchorPoint: "TwoDotsAbove" -9 1548 basechar 0
-AnchorPoint: "DotAbove" 111 1548 basechar 0
-AnchorPoint: "TashkilBelow" 240 -670 basechar 0
+AnchorPoint: "TwoDotsAbove" -9 1488 basechar 0
+AnchorPoint: "DotAbove" 111 1488 basechar 0
+AnchorPoint: "TashkilBelow" 240 -730 basechar 0
 AnchorPoint: "TashkilAbove" 250 1640 basechar 0
-AnchorPoint: "VAbove" 111 1448 basechar 0
-AnchorPoint: "cursive" 0 139 exit 0
+AnchorPoint: "VAbove" 111 1388 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -45,20 +44,20 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-117 170 m 0,0,1
- 56 110 56 110 -29 107 c 0,2,3
- -83 106 -83 106 -82 128 c 128,-1,4
- -81 150 -81 150 -32 177 c 0,5,6
- 299 361 299 361 345 851 c 0,7,8
- 369 1104 369 1104 350 1352 c 0,9,10
- 344 1431 344 1431 357 1453 c 0,11,12
- 400 1530 400 1530 408 1543 c 128,-1,13
- 416 1556 416 1556 428.5 1553.5 c 128,-1,14
- 441 1551 441 1551 444 1539 c 0,15,16
- 475 1420 475 1420 505 1385.5 c 128,-1,17
- 535 1351 535 1351 508 1324 c 2,18,-1
- 451 1265 l 1,19,20
- 459 1035 459 1035 400 733 c 0,21,22
- 331 380 331 380 117 170 c 0,0,1
+117 110 m 0,0,1
+ 56 50 56 50 -29 47 c 0,2,3
+ -83 46 -83 46 -82 68 c 128,-1,4
+ -81 90 -81 90 -32 117 c 0,5,6
+ 299 301 299 301 345 791 c 0,7,8
+ 369 1044 369 1044 350 1292 c 0,9,10
+ 344 1371 344 1371 357 1393 c 0,11,12
+ 400 1470 400 1470 408 1483 c 128,-1,13
+ 416 1496 416 1496 428.5 1493.5 c 128,-1,14
+ 441 1491 441 1491 444 1479 c 0,15,16
+ 475 1360 475 1360 505 1325.5 c 128,-1,17
+ 535 1291 535 1291 508 1264 c 2,18,-1
+ 451 1205 l 1,19,20
+ 459 975 459 975 400 673 c 0,21,22
+ 331 320 331 320 117 110 c 0,0,1
 EndSplineSet
 EndChar
