@@ -17,6 +17,7 @@ lookup Lellah3 {
 } Lellah3;
 
 @LamLamFoo = [aLam.medi_LamMemMedi aLam.medi_LamHeh aLam.medi_LamYaaFina];
+
 lookup LamLamInit {
     sub aLam.init by aLam.init_LamLamInit;
     sub aLam.medi by aLam.medi_LamLamInit;
@@ -75,6 +76,7 @@ lookup LamHehIsol {
 feature calt {
   lookupflag IgnoreMarks;
     sub @Ignore aAlf.isol' aLam.init' lookup LamLamInit aLam.medi' lookup LamLamInit aHeh.fina;
+    sub @Ignore aLam.init' lookup LamLamInit aLam.medi' lookup LamLamInit aHeh.fina;
 } calt;
 
 feature calt {
@@ -96,6 +98,11 @@ feature calt {
 } calt;
 
 feature calt {
+    # لله
+    sub aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
+    sub aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+
     # الله
     sub [aAlf.isol]' aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aAlf.isol]' aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
