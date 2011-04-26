@@ -42,6 +42,7 @@ lookup LamLamMedi2 {
 lookup LamHehIsol {
     sub aLam.init by aLam.init_LamHeh;
     sub aLam.medi by aLam.medi_LamHeh;
+    sub aLam.medi_LamLamInit by aLam.medi_LamLamHehIsol;
     sub aHeh.fina by aHeh.fina_LamHeh;
     sub aDal.fina by aDal.fina_LamDal;
 } LamHehIsol;
@@ -693,7 +694,7 @@ feature calt {
     sub [aBaa.init]' lookup BaaRaaIsol
         [aRaa.fina]' lookup BaaRaaIsol;
 
-    sub [aLam.init aLam.medi]' lookup LamHehIsol
+    sub [aLam.init aLam.medi aLam.medi_LamLamInit]' lookup LamHehIsol
         [aHeh.fina aDal.fina]' lookup LamHehIsol;
 
     sub [aLam.medi]' lookup LamWawFina
