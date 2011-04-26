@@ -42,7 +42,7 @@ feature isol {
     sub uni0647 by aHeh.isol;
     sub uni0648 by aWaw.isol;
     sub uni0649 by aYaa.isol;
-    sub uni064A by aYaa.isol TwoDots.b;
+    sub uni064A by aYaa.isol TwoDots.b.alt;
     sub uni066E by aBaa.isol;
     sub uni066F by aQaf.isol;
     sub uni0671 by aAlf.isol hamza.wasl;
@@ -498,7 +498,7 @@ feature fina {
     sub uni0647 by aHeh.fina;
     sub uni0648 by aWaw.fina;
     sub uni0649 by aYaa.fina;
-    sub uni064A by aYaa.fina TwoDots.b;
+    sub uni064A by aYaa.fina TwoDots.b.alt;
     sub uni066E by aBaa.fina;
     sub uni066F by aQaf.fina;
     sub uni0671 by aAlf.fina hamza.wasl;
