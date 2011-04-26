@@ -24,6 +24,13 @@ lookup LamLamInit {
     sub aLam.medi_LamAlfFina by aLam.medi_LamLamAlfIsol;
 } LamLamInit;
 
+lookup LamHehIsol {
+    sub aLam.init by aLam.init_LamHeh;
+    sub aLam.medi by aLam.medi_LamHeh;
+    sub aHeh.fina by aHeh.fina_LamHeh;
+    sub aDal.fina by aDal.fina_LamDal;
+} LamHehIsol;
+
 @xHamza = [hamza.wasl madda.above];
 @xFatha = [uni064E uni0670];
 @Ignore = [aAyn.fina aAyn.isol aBaa.fina aBaa.isol aDal.fina aDal.isol
@@ -32,6 +39,7 @@ lookup LamLamInit {
            aNon.fina aNon.isol aQaf.fina aQaf.isol aRaa.fina aRaa.isol
            aSad.fina aSad.isol aSen.fina aSen.isol aTaa.fina aTaa.isol
            aYaa.fina aYaa.isol];
+@Ignore2= [hamza.above TwoDots.a];
 
 # The next two feature blocks are a kind of big hack. We want to support a
 # special form of name of Allah, but the sequence <Alef><Lam><Lam><Heh> can
@@ -53,6 +61,24 @@ lookup LamLamInit {
 feature calt {
   lookupflag IgnoreMarks;
     sub @Ignore aAlf.isol' aLam.init' lookup LamLamInit aLam.medi' lookup LamLamInit aHeh.fina;
+} calt;
+
+feature calt {
+    sub aLam.init' lookup LamLamInit aLam.medi' lookup LamLamInit                 aHeh.fina @Ignore2;
+    sub aLam.init' lookup LamLamInit aLam.medi' lookup LamLamInit uni0651         aHeh.fina @Ignore2;
+    sub aLam.init' lookup LamLamInit aLam.medi' lookup LamLamInit uni0651 @xFatha aHeh.fina @Ignore2;
+    sub [aFaa.init]' Dot.a         aLam.medi         aLam.medi' lookup LamHehIsol                 aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a         aLam.medi         aLam.medi' lookup LamHehIsol uni0651         aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a         aLam.medi         aLam.medi' lookup LamHehIsol uni0651 @xFatha aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi         aLam.medi' lookup LamHehIsol                 aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi         aLam.medi' lookup LamHehIsol uni0651         aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi         aLam.medi' lookup LamHehIsol uni0651 @xFatha aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a         aLam.medi uni0650 aLam.medi' lookup LamHehIsol                 aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a         aLam.medi uni0650 aLam.medi' lookup LamHehIsol uni0651         aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a         aLam.medi uni0650 aLam.medi' lookup LamHehIsol uni0651 @xFatha aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi uni0650 aLam.medi' lookup LamHehIsol                 aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi uni0650 aLam.medi' lookup LamHehIsol uni0651         aHeh.fina' lookup LamHehIsol @Ignore2;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi uni0650 aLam.medi' lookup LamHehIsol uni0651 @xFatha aHeh.fina' lookup LamHehIsol @Ignore2;
 } calt;
 
 feature calt {
@@ -334,13 +360,6 @@ lookup BaaRaaIsol {
     sub aBaa.init by aBaa.init_BaaRaaIsol;
     sub aRaa.fina by aRaa.fina_BaaRaaIsol;
 } BaaRaaIsol;
-
-lookup LamHehIsol {
-    sub aLam.init by aLam.init_LamHeh;
-    sub aLam.medi by aLam.medi_LamHeh;
-    sub aHeh.fina by aHeh.fina_LamHeh;
-    sub aDal.fina by aDal.fina_LamDal;
-} LamHehIsol;
 
 lookup LamWawFina {
     sub aLam.medi by aLam.medi_LamWawFina;
