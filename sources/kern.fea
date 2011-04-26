@@ -15,8 +15,8 @@ feature kern {
     @kc_second_01 = [aAlf.isol];
     @kc_second_02 = [aKaf.init aKaf.init_KafHeh
                      aKaf.init_KafMemInit aKaf.init_KafYaaIsol
-                     aKaf.init_KafBaaInit aKaf.init_KafMemIsol aKaf.init_KafLam
-                     aKaf.init_KafRaaIsol aKaf.init_KafMemAlf aKaf.init_Tatweel];
+                     aKaf.init_KafMemIsol aKaf.init_KafLam
+                     aKaf.init_KafRaaIsol aKaf.init_Tatweel];
     @kc_second_03 = [aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol];
     @kc_second_04 = [aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init
                      aHeh.init aHeh.isol aMem.init aMem.isol aSad.init aSad.isol aSen.init
@@ -40,9 +40,11 @@ feature kern {
                      aBaa.init_BaaMemInit];
     @kc_second_10 = [aSen.init_SenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit];
     @kc_second_11 = [aSad.init_AboveHaaIsol aSen.init_AboveHaaIsol];
+    @kc_second_12 = [aKaf.init_KafBaaInit aKaf.init_KafMemAlf];
 
     enum pos @kc_first_01 @kc_second_01 <-300 0 -300 0>;
     enum pos @kc_first_01 @kc_second_02 <-900 0 -900 0>;
+    enum pos @kc_first_01 @kc_second_12 <-600 0 -600 0>;
     enum pos @kc_first_01 @kc_second_03 <-300 0 -300 0>;
     enum pos @kc_first_01 @kc_second_04 <-450 0 -450 0>;
     enum pos @kc_first_01 @kc_second_05 <-400 0 -400 0>;
@@ -53,7 +55,8 @@ feature kern {
     enum pos @kc_first_01 @kc_second_10 <-500 0 -500 0>;
     enum pos @kc_first_01 @kc_second_11 <-400 0 -400 0>;
     enum pos @kc_first_02 @kc_second_02 <-500 0 -500 0>;
-    enum pos @kc_first_03 @kc_second_02 <-800 0 -800 0>;
+    enum pos @kc_first_03 [@kc_second_02 @kc_second_12] <-800 0 -800 0>;
+    enum pos @kc_first_02 @kc_second_12 <-400 0 -400 0>;
     enum pos @kc_first_03 @kc_second_03 <-200 0 -200 0>;
     enum pos @kc_first_03 @kc_second_04 <-200 0 -200 0>;
     enum pos @kc_first_03 @kc_second_05 <-200 0 -200 0>;
