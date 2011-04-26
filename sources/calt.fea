@@ -12,6 +12,10 @@ lookup Lellah2 {
     sub aLam.medi by aLam.medi_Lellah uni0651 uni0670;
 } Lellah2;
 
+lookup Lellah3 {
+    sub aLam.medi by aLam.medi_FaLellah;
+} Lellah3;
+
 lookup LamLamInit {
     sub aLam.init by aLam.init_LamLamInit;
     sub aLam.medi by aLam.medi_LamLamInit;
@@ -93,6 +97,20 @@ feature calt {
     sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+
+    # فلله
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 } calt;
 
 lookup ShaddaCombined {
