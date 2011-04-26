@@ -1,0 +1,34 @@
+
+StartChar: aLam.medi_LamLamHehIsol
+Encoding: 66045 -1 701
+Width: 354
+Flags: W
+AnchorPoint: "Stroke" 64 1046 basechar 0
+AnchorPoint: "TwoDotsBelow" 166 -276 basechar 0
+AnchorPoint: "TwoDotsAbove" -109 1568 basechar 0
+AnchorPoint: "DotAbove" 11 1568 basechar 0
+AnchorPoint: "TashkilBelow" 146 -670 basechar 0
+AnchorPoint: "TashkilAbove" 176 1640 basechar 0
+AnchorPoint: "VAbove" 11 1468 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+144 106 m 1,0,1
+ 139 -174 139 -174 15 -196 c 0,2,3
+ -57 -209 -57 -209 -54 -130 c 0,4,5
+ -52 -87 -52 -87 -42 -43 c 0,6,7
+ -24 38 -24 38 10 34 c 256,8,9
+ 61 28 61 28 74 45 c 0,10,11
+ 110 90 110 90 89 247 c 0,12,13
+ 70 387 70 387 -12 1125 c 0,14,15
+ -22 1218 -22 1218 -4 1249 c 2,16,-1
+ 47 1337 l 2,17,18
+ 71 1378 71 1378 77 1329 c 0,19,20
+ 168 476 168 476 199 363 c 0,21,22
+ 236 230 236 230 354 197 c 24,23,24
+ 456 169 456 169 410 24 c 0,25,26
+ 393 -30 393 -30 355 -37 c 0,27,28
+ 280 -51 280 -51 211 15 c 0,29,30
+ 161 63 161 63 144 106 c 1,0,1
+EndSplineSet
+EndChar

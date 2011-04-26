@@ -1,0 +1,40 @@
+
+StartChar: aLam.medi_LamLamMemMedi
+Encoding: 66052 -1 703
+Width: 542
+Flags: W
+AnchorPoint: "DotBelow" 600 -200 basechar 0
+AnchorPoint: "cursive" 85 170 exit 0
+AnchorPoint: "Stroke" 308 1156 basechar 0
+AnchorPoint: "TwoDotsBelow" 300 -240 basechar 0
+AnchorPoint: "TwoDotsAbove" -108 1428 basechar 0
+AnchorPoint: "DotAbove" 12 1428 basechar 0
+AnchorPoint: "TashkilBelow" 400 -670 basechar 0
+AnchorPoint: "TashkilAbove" 300 1640 basechar 0
+AnchorPoint: "VAbove" 12 1328 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+449 305 m 16,0,1
+ 478 189 478 189 534 133 c 0,2,3
+ 552 115 552 115 565 92 c 0,4,5
+ 608 15 608 15 598 -102 c 0,6,7
+ 596 -127 596 -127 577 -124 c 1,8,9
+ 401 -106 401 -106 322 322 c 1,10,11
+ 256 224 256 224 128 176 c 0,12,13
+ 7 130 7 130 -86 233 c 0,14,15
+ -144 296 -144 296 -131 347 c 0,16,17
+ -124 376 -124 376 -90 376 c 0,18,19
+ -88 376 -88 376 -28.5 348.5 c 128,-1,20
+ 31 321 31 321 67 325 c 0,21,22
+ 303 348 303 348 292 455 c 0,23,24
+ 290 476 290 476 259 842 c 0,25,26
+ 240 1073 240 1073 229 1175 c 0,27,28
+ 225 1213 225 1213 241 1246 c 2,29,-1
+ 284 1335 l 2,30,31
+ 295 1358 295 1358 308 1349 c 0,32,33
+ 321 1339 321 1339 323 1320 c 2,34,-1
+ 369 858 l 0,35,36
+ 395 525 395 525 449 305 c 16,0,1
+EndSplineSet
+EndChar
