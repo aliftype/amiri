@@ -1,0 +1,22 @@
+
+StartChar: grave
+Encoding: 96 96 721
+Width: 802
+VWidth: 2045
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+365 1432 m 1,0,-1
+ 508 1174 l 1,1,2
+ 536 1117 536 1117 501 1104 c 0,3,4
+ 495 1102 495 1102 483.5 1103 c 128,-1,5
+ 472 1104 472 1104 430 1143 c 2,6,-1
+ 197 1366 l 1,7,-1
+ 201 1389 l 1,8,9
+ 265 1435 265 1435 334 1436 c 0,10,11
+ 349 1436 349 1436 365 1432 c 1,0,-1
+EndSplineSet
+Comment: "From Linux Libertine, svn trunk@143" 
+Colour: aabbcc
+EndChar

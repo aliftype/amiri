@@ -1,0 +1,21 @@
+
+StartChar: underscore
+Encoding: 95 95 720
+Width: 995
+VWidth: 2045
+Flags: HW
+HStem: -315 90<13 982>
+LayerCount: 2
+Fore
+SplineSet
+975 -225 m 1,0,1
+ 991 -241 991 -241 987 -274 c 0,2,3
+ 983 -306 983 -306 975 -315 c 1,4,-1
+ 20 -315 l 1,5,6
+ 4 -299 4 -299 8 -266 c 0,7,8
+ 12 -234 12 -234 20 -225 c 1,9,-1
+ 975 -225 l 1,0,1
+EndSplineSet
+Comment: "From Linux Libertine, svn trunk@143" 
+Colour: aabbcc
+EndChar

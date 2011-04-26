@@ -3,7 +3,7 @@ FontName: Amiri-Regular
 FullName: Amiri Regular
 FamilyName: Amiri
 Weight: Regular
-Copyright: Copyright (c) 2010, 2011, Khaled Hosny <khaledhosny@eglug.org>.\n\nThis Font Software is licensed under the Open Font License, Version 1.1.
+Copyright: Copyright (c) 2010, 2011, Khaled Hosny <khaledhosny@eglug.org>.\nCopyright (c) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, Philipp H. Poll.\n\nThis Font Software is licensed under the Open Font License, Version 1.1.
 UComments: "2010-5-8: Created." 
 Version: 000.009
 DefaultBaseFilename: amiri-regular
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
-ModificationTime: 1303817107
+ModificationTime: 1303827038
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -83,7 +83,7 @@ NameList: AGL without afii
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65620 34 13
+WinInfo: 0 34 13
 BeginPrivate: 0
 EndPrivate
 Grid
