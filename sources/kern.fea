@@ -39,7 +39,9 @@ feature kern {
                aLam.init_LamHaaMemInit aFaa.init_FaaHaaInit aMem.init_MemHaaInit
                aBaa.init_BaaMemInit];
     @2nd_10 = [aSen.init_SenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit];
-    @2nd_11 = [aSad.init_AboveHaaIsol aSen.init_AboveHaaIsol];
+    @2nd_11 = [aSad.init_AboveHaaIsol aSen.init_AboveHaaIsol aHeh.init_AboveHaaIsol
+               aHaa.init_AboveHaaIsol aMem.init_AboveHaaIsol aKaf.init_AboveHaaIsol
+               aAyn.init_AboveHaaIsol];
     @2nd_12 = [aKaf.init_KafBaaInit aKaf.init_KafMemAlf];
 
     enum pos @1st_01 [@2nd_01 @2nd_03] <-300 0 -300 0>;
