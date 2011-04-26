@@ -3,19 +3,19 @@ StartChar: aYaa.fina_Tatweel
 Encoding: 65903 -1 396
 Width: 1472
 Flags: W
-AnchorPoint: "DigitBelow" 731 -995 basechar 0
+AnchorPoint: "HamzaBelow" 749 -997 basechar 0
+AnchorPoint: "TashkilBelow" 700 -770 basechar 0
+AnchorPoint: "RingBelow" 640 -600 basechar 0
+AnchorPoint: "DigitBelow" 749 -997 basechar 0
+AnchorPoint: "TwoDotsBelow" 638 -997 basechar 0
+AnchorPoint: "DotBelow" 749 -997 basechar 0
 AnchorPoint: "DigitAbove" 530 500 basechar 0
 AnchorPoint: "TashkilAbove" 600 1640 basechar 0
-AnchorPoint: "TashkilBelow" 750 -760 basechar 0
 AnchorPoint: "AlefAbove" 330 500 basechar 0
-AnchorPoint: "RingBelow" 640 -600 basechar 0
 AnchorPoint: "TwoDotsAbove" 420 500 basechar 0
 AnchorPoint: "DotAbove" 530 500 basechar 0
 AnchorPoint: "VAbove" 430 500 basechar 0
 AnchorPoint: "Tail" 289 156 basechar 0
-AnchorPoint: "TwoDotsBelow" 620 -995 basechar 0
-AnchorPoint: "DotBelow" 731 -995 basechar 0
-AnchorPoint: "HamzaBelow" 731 -995 basechar 0
 AnchorPoint: "HamzaAbove" 330 500 basechar 0
 LayerCount: 2
 Fore

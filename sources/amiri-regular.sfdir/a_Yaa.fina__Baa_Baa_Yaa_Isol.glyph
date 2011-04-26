@@ -3,7 +3,10 @@ StartChar: aYaa.fina_BaaBaaYaaIsol
 Encoding: 65706 -1 127
 Width: 789
 Flags: W
-AnchorPoint: "DigitBelow" 629 -569 basechar 0
+AnchorPoint: "HamzaBelow" 659 -710 basechar 0
+AnchorPoint: "DotBelow" 659 -710 basechar 0
+AnchorPoint: "TwoDotsBelow" 548 -710 basechar 0
+AnchorPoint: "DigitBelow" 659 -710 basechar 0
 AnchorPoint: "DigitAbove" 490 715 basechar 0
 AnchorPoint: "AlefAbove" 290 715 basechar 0
 AnchorPoint: "RingBelow" 572 -302 basechar 0
@@ -14,10 +17,7 @@ AnchorPoint: "VAbove" 390 715 basechar 0
 AnchorPoint: "Tail" 249 378 basechar 0
 AnchorPoint: "TashkilBelow" 600 -720 basechar 0
 AnchorPoint: "TashkilAbove" 400 1640 basechar 0
-AnchorPoint: "TwoDotsBelow" 518 -569 basechar 0
 AnchorPoint: "HamzaAbove" 290 715 basechar 0
-AnchorPoint: "DotBelow" 629 -569 basechar 0
-AnchorPoint: "HamzaBelow" 629 -569 basechar 0
 AnchorPoint: "cursive" 789 197 entry 0
 LayerCount: 2
 Back
