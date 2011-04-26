@@ -1,3 +1,33 @@
+Amiri 0.012 (2011-04-26), A Long Night
+--------------------------------------
+
+* New glyphs:
+  - Add localised Urdu and Sindhi digits ('locl' feature).
+  - Add tabular numbers feature ('tnum').
+  - European numbers and some punctuation marks from Linux Libertine.
+  - Add at sign with experimental Arabic variant ('locl' feature, too).
+  - Add triple dot punctuation mark (U+061E).
+  - Add middle dot (U+00B7).
+  - Reimplement الله igature properly and added فلله ligature; the code now
+    much more careful on when to activate this ligature.
+
+
+* Cleanup:
+  - Massive cleanup removing tens of too similar glyphs, making the font more
+    unified and consistent.
+  - This cleanup results in more contextual variants that were missing before,
+    yet the font is smaller not larger.
+  - Scaled Tashkil marks down by 80%, they are now smaller leading too less
+    mark collision.
+  - The Arabic digits are more polished.
+  - Misc. mark fixes.
+  - Less use of exotic OpenType features to work with even more OpenType
+    implementations.
+
+* More kerning pairs.
+
+* Bug fixes: 3234138, 3110760, 3087332, 3073139, 3211187, 3211239 and 3078741
+
 Amiri 0.011 (2011-03-31), Inflating the Tire
 --------------------------------------------
 
