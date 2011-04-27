@@ -16,6 +16,7 @@ import fontforge
 import sys
 import os
 import getopt
+import tempfile
 
 def genCSS(font, base):
     if font.fullname.lower().find("slanted")>0:
@@ -145,8 +146,17 @@ def main():
         sys.exit(0)
 
     if feafiles:
+        oldfea = tempfile.mkstemp(suffix='.fea')[1]
+        font.generateFeatureFile(oldfea)
+
+        for lookup in font.gpos_lookups:
+            font.removeLookup(lookup)
+
         for fea in feafiles.split():
             font.mergeFeature(fea)
+
+        font.mergeFeature(oldfea)
+        os.remove(oldfea)
 
     if web:
         # If we are building a web version then try to minimise file size
