@@ -16,6 +16,14 @@ lookup Lellah3 {
     sub aLam.medi by aLam.medi_FaLellah;
 } Lellah3;
 
+lookup Lellah4 {
+    sub aLam.init by aLam.init_Lellah;
+} Lellah4;
+
+lookup Lellah5 {
+    sub aLam.medi by aLam.medi_Lellah;
+} Lellah5;
+
 @LamLamFoo = [aLam.medi_LamMemMedi aLam.medi_LamHeh aLam.medi_LamYaaFina];
 
 lookup LamLamInit {
@@ -100,65 +108,65 @@ feature calt {
 
 feature calt {
     # لله
-    sub aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # الله
-    sub [aAlf.isol]' aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aAlf.isol]' aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aAlf.isol]' aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aAlf.isol]' aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # [آٱ]لله
-    sub [aAlf.isol]' @xHamza aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aAlf.isol]' @xHamza aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aAlf.isol]' @xHamza aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aAlf.isol]' @xHamza aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # [هك]الله
-    sub [aHeh.init aKaf.init]'         aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aHeh.init aKaf.init]'         aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aHeh.init aKaf.init]'         aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aHeh.init aKaf.init]'         aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
-    sub [aHeh.init aKaf.init]' uni064E aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aHeh.init aKaf.init]' uni064E aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aHeh.init aKaf.init]' uni064E aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aHeh.init aKaf.init]' uni064E aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # بالله
-    sub [aBaa.init]' Dot.b             aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aBaa.init]' Dot.b             aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aBaa.init]' Dot.b             aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aBaa.init]' Dot.b             aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
-    sub [aBaa.init]' Dot.b uni0650     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aBaa.init]' Dot.b uni0650     aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aBaa.init]' Dot.b uni0650     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aBaa.init]' Dot.b uni0650     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # تالله
-    sub [aBaa.init]' TwoDots.a         aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aBaa.init]' TwoDots.a         aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aBaa.init]' TwoDots.a         aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aBaa.init]' TwoDots.a         aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
-    sub [aBaa.init]' TwoDots.a uni064E aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aBaa.init]' TwoDots.a uni064E aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aBaa.init]' TwoDots.a uni064E aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aBaa.init]' TwoDots.a uni064E aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # فالله
-    sub [aFaa.init]' Dot.a             aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a             aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a             aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a             aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah4 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a uni064E     aAlf.fina aLam.init' lookup Lellah aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
 
     # فلله
     sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah5 uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah5 uni0651 @xFatha aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah5 uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3         aLam.medi' lookup Lellah5 uni0651 @xFatha aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah5 uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a         aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah5 uni0651 @xFatha aHeh.fina' lookup Lellah;
     sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah2                aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651         aHeh.fina' lookup Lellah;
-    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah uni0651 @xFatha aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah5 uni0651         aHeh.fina' lookup Lellah;
+    sub [aFaa.init]' Dot.a uni064E aLam.medi' lookup Lellah3 uni0650 aLam.medi' lookup Lellah5 uni0651 @xFatha aHeh.fina' lookup Lellah;
 } calt;
 
 lookup ShaddaCombined {
