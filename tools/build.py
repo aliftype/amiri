@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding=utf-8
 #
 # build.py - Amiri font build utility
 #
@@ -141,6 +142,7 @@ def main():
 
     if version:
         font.version = "%07.3f" %float(version)
+        font.appendSFNTName("Arabic (Egypt)", "Version", "إصدارة %s" %font.version.replace(".", ","))
 
     if sfd:
         font.save(outfile)
