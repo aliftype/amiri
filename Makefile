@@ -36,7 +36,7 @@ $(SRC)/classes.fea: $(SFDS) $(BUILD)
 
 %.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
+	@$(FF) --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION) --no-localised-name
 
 $(WEB)/%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"

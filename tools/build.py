@@ -66,6 +66,7 @@ Options:
   --css                 output is a CSS file
   --sfd                 output is a SFD file
   --web                 output is web optimised
+  --no-localised-name   strip out localised font name
 
   -h, --help            print this message and exit
 """ % os.path.basename(sys.argv[0])
@@ -77,7 +78,7 @@ def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "feature-files=", "version=","classes=", "css", "web", "sfd"])
+                ["help","input=","output=", "feature-files=", "version=","classes=", "css", "web", "sfd", "no-localised-name"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -90,6 +91,7 @@ def main():
     css = False
     web = False
     sfd = False
+    nolocalename = False
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
@@ -102,6 +104,7 @@ def main():
         elif opt == "--css": css = True
         elif opt == "--web": web = True
         elif opt == "--sfd": sfd = True
+        elif opt == "--no-localised-name": nolocalename = True
 
     if not infile:
         print "No input file"
@@ -182,6 +185,11 @@ def main():
 
         # no dummy DSIG table nor glyph names
         flags  = ("opentype", "round", "short-post")
+
+    if nolocalename:
+        for name in font.sfnt_names:
+            if name[0] != "English (US)" and name[1] in ("Family", "Fullname"):
+                font.appendSFNTName(name[0], name[1], None)
 
     font.generate(outfile, flags=flags)
 
