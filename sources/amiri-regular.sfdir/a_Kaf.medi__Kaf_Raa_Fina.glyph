@@ -7,7 +7,7 @@ AnchorPoint: "TashkilAbove" 290 1640 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 AnchorPoint: "DotAbove" -210 1580 basechar 0
 AnchorPoint: "TwoDotsAbove" -320 1580 basechar 0
-AnchorPoint: "RingBelow" 405 1400 basechar 0
+AnchorPoint: "RingBelow" 405 1350 basechar 0
 AnchorPoint: "DotBelow" 390 -60 basechar 0
 AnchorPoint: "TwoDotsBelow" 330 -60 basechar 0
 AnchorPoint: "Dash" 426 1580 basechar 0
@@ -46,10 +46,10 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-1006 1643 m 2,0,-1
- 965 1524 l 2,1,2
- 960 1510 960 1510 937 1503 c 0,3,4
- 148 1276 148 1276 -161 1101 c 1,5,6
+1006 1593 m 2,0,-1
+ 965 1474 l 2,1,2
+ 960 1459 960 1459 937 1453 c 0,3,4
+ 9 1226 9 1226 -161 1101 c 1,5,6
  -81 1045 -81 1045 47.5 921.5 c 128,-1,7
  176 798 176 798 411 541 c 128,-1,8
  646 284 646 284 648 282 c 0,9,10
@@ -69,8 +69,8 @@ SplineSet
  -272 1051 -272 1051 -263.5 1088 c 128,-1,34
  -255 1125 -255 1125 -196 1212 c 2,35,-1
  -177 1240 l 1,36,37
- -150 1286 -150 1286 299 1460 c 128,-1,38
- 748 1634 748 1634 983 1677 c 0,39,40
- 1020 1684 1020 1684 1006 1643 c 2,0,-1
+ -148 1309 -148 1309 299 1455 c 0,38,39
+ 612 1557 612 1557 983 1627 c 0,40,41
+ 1020 1634 1020 1634 1006 1593 c 2,0,-1
 EndSplineSet
 EndChar

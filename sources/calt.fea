@@ -984,6 +984,9 @@ feature calt {
         [dash.gaf]' by [dash.gaf.alt2];
     sub [aKaf.medi_KafMemMedi
          aKaf.medi_KafMemFina
+         aKaf.medi_KafRaaFina
+         aKaf.medi_KafYaaFina
+         aKaf.medi_KafHeh
          aKaf.init_KafMemInit
          aKaf.init_KafMemIsol
          aKaf.init_AboveHaaIsol]
