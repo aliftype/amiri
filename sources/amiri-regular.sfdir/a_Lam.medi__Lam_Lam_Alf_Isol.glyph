@@ -3,11 +3,11 @@ StartChar: aLam.medi_LamLamAlfIsol
 Encoding: 66041 -1 689
 Width: 434
 Flags: W
+AnchorPoint: "TwoDotsAbove" -23 1556 basechar 0
+AnchorPoint: "DotAbove" 92 1636 basechar 0
 AnchorPoint: "Stroke" 114 1046 basechar 0
 AnchorPoint: "cursive" -15 311 exit 0
 AnchorPoint: "TwoDotsBelow" 0 -150 basechar 0
-AnchorPoint: "TwoDotsAbove" -306 1351 basechar 0
-AnchorPoint: "DotAbove" -186 1351 basechar 0
 AnchorPoint: "TashkilBelow" -90 -670 basechar 0
 AnchorPoint: "TashkilAbove" -100 1640 basechar 0
 AnchorPoint: "VAbove" -186 1251 basechar 0

@@ -3,11 +3,11 @@ StartChar: aLam.medi_KafLamAlf
 Encoding: 65985 -1 634
 Width: 443
 Flags: W
+AnchorPoint: "DotAbove" 224 1747 basechar 0
+AnchorPoint: "TwoDotsAbove" 109 1667 basechar 0
 AnchorPoint: "cursive" 0 304 exit 0
 AnchorPoint: "Stroke" 237 1199 basechar 0
 AnchorPoint: "TwoDotsBelow" 0 -157 basechar 0
-AnchorPoint: "TwoDotsAbove" -177 1481 basechar 0
-AnchorPoint: "DotAbove" -57 1481 basechar 0
 AnchorPoint: "TashkilBelow" 140 -670 basechar 0
 AnchorPoint: "TashkilAbove" 0 1640 basechar 0
 AnchorPoint: "VAbove" -57 1381 basechar 0
