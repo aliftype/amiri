@@ -1,48 +1,48 @@
 languagesystem DFLT dflt;
 languagesystem arab dflt;
 
-include(classes.fea)
+include(klasses.fea)
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
-    @1st_01 = [aRaa.fina aRaa.isol aWaw.fina aWaw.isol
-               aRaa.fina_BaaRaaIsol aWaw.fina_LamWawFina aRaa.fina_BaaRaaFina
-               aRaa.fina_KafRaaFina aRaa.fina_KafRaaIsol aRaa.fina_HaaRaaIsol
-               aRaa.fina_LamRaaIsol aRaa.fina_PostTooth];
-    @1st_02 = [aDal.fina aDal.isol aDal.fina_BaaDalIsol
-               aDal.fina_KafDal aDal.fina_LamDal];
-    @1st_03 = [aRaa.fina.alt2 aRaa.fina_MemRaaIsol];
-    @2nd_01 = [aAlf.isol];
-    @2nd_02 = [aKaf.init aKaf.init_KafHeh
-               aKaf.init_KafMemInit aKaf.init_KafYaaIsol
-               aKaf.init_KafMemIsol aKaf.init_KafLam
-               aKaf.init_KafRaaIsol aKaf.init_Tatweel];
-    @2nd_03 = [aAyn.isol aHaa.isol aFaa.init_FaaYaaIsol aBaa.init_AboveHaaIsol];
-    @2nd_04 = [aAyn.init aBaa.isol aFaa.init aFaa.isol aHaa.init
-               aHeh.init aHeh.isol aMem.init aMem.isol aSad.init aSad.isol aSen.init
-               aSen.isol aTaa.init aTaa.isol aYaa.isol aAyn.init_AynMemInit
-               aLam.init_LamHaaInit aHaa.init_HaaYaaIsol aMem.init_MemYaaIsol
-               aMem.init_MemRaaIsol aHaa.init_HaaHaaInit aAyn.init_AynYaaIsol
-               aAyn.init_AynHaaInit aLam.init_LamYaaIsol aBaa.init_BaaBaaHaaInit
-               aHaa.init_HaaMemInit aHaa.init_HaaRaaIsol aBaa.init_BaaHaaMemInit
-               aAyn.init_Finjani aHaa.init_Finjani aSen.init_PreYaa aSad.init_PreYaa];
-    @2nd_05 = [aNon.isol aNon.isol.alt aQaf.isol];
-    @2nd_06 = [aRaa.isol aWaw.isol aDal.isol];
-    @2nd_07 = [aKaf.isol aLam.init aLam.isol aLam.init_LamHeh aLam.init_Lellah
-               aLam.init_LamAlfIsol aLam.init_LamRaaIsol aLam.init_LamLamInit];
-    @2nd_08 = [aBaa.init aBaa.init_BaaRaaIsol aBaa.init_BaaDalIsol
-               aBaa.init_BaaBaaYaaIsol aBaa.init_BaaBaaInit aBaa.init_BaaSenInit
-               aBaa.init_BaaHehInit aBaa.init_BaaBaaIsol aBaa.init_BaaMemIsol
-               aBaa.init_BaaSenAltInit aBaa.init_BaaHaaInit aBaa.init_High
-               aBaa.init_Tatweel];
-    @2nd_09 = [aBaa.init_BaaYaaIsol aBaa.init_BaaMemHaaInit
-               aLam.init_LamHaaMemInit aFaa.init_FaaHaaInit aMem.init_MemHaaInit
-               aBaa.init_BaaMemInit];
-    @2nd_10 = [aSen.init_SenHaaInit aSad.init_SadHaaInit aLam.init_LamHaaHaaInit];
-    @2nd_11 = [aSad.init_AboveHaaIsol aSen.init_AboveHaaIsol aHeh.init_AboveHaaIsol
-               aHaa.init_AboveHaaIsol aMem.init_AboveHaaIsol aKaf.init_AboveHaaIsol
-               aAyn.init_AboveHaaIsol];
-    @2nd_12 = [aKaf.init_KafBaaInit aKaf.init_KafMemAlf];
+    @1st_01 = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol
+               @aRaa.fina_BaaRaaIsol @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina
+               @aRaa.fina_KafRaaFina @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol
+               @aRaa.fina_LamRaaIsol @aRaa.fina_PostTooth];
+    @1st_02 = [@aDal.fina @aDal.isol @aDal.fina_BaaDalIsol
+               @aDal.fina_KafDal @aDal.fina_LamDal];
+    @1st_03 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
+    @2nd_01 = [@aAlf.isol];
+    @2nd_02 = [@aKaf.init @aKaf.init_KafHeh
+               @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
+               @aKaf.init_KafMemIsol @aKaf.init_KafLam
+               @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
+    @2nd_03 = [@aAyn.isol @aHaa.isol @aFaa.init_FaaYaaIsol @aBaa.init_AboveHaaIsol];
+    @2nd_04 = [@aAyn.init @aBaa.isol @aFaa.init @aFaa.isol @aHaa.init
+               @aHeh.init @aHeh.isol @aMem.init @aMem.isol @aSad.init @aSad.isol @aSen.init
+               @aSen.isol @aTaa.init @aTaa.isol @aYaa.isol @aAyn.init_AynMemInit
+               @aLam.init_LamHaaInit @aHaa.init_HaaYaaIsol @aMem.init_MemYaaIsol
+               @aMem.init_MemRaaIsol @aHaa.init_HaaHaaInit @aAyn.init_AynYaaIsol
+               @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol @aBaa.init_BaaBaaHaaInit
+               @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol @aBaa.init_BaaHaaMemInit
+               @aAyn.init_Finjani @aHaa.init_Finjani @aSen.init_PreYaa @aSad.init_PreYaa];
+    @2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
+    @2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
+    @2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh @aLam.init_Lellah
+               @aLam.init_LamAlfIsol @aLam.init_LamRaaIsol @aLam.init_LamLamInit];
+    @2nd_08 = [@aBaa.init @aBaa.init_BaaRaaIsol @aBaa.init_BaaDalIsol
+               @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaInit @aBaa.init_BaaSenInit
+               @aBaa.init_BaaHehInit @aBaa.init_BaaBaaIsol @aBaa.init_BaaMemIsol
+               @aBaa.init_BaaSenAltInit @aBaa.init_BaaHaaInit @aBaa.init_High
+               @aBaa.init_Tatweel];
+    @2nd_09 = [@aBaa.init_BaaYaaIsol @aBaa.init_BaaMemHaaInit
+               @aLam.init_LamHaaMemInit @aFaa.init_FaaHaaInit @aMem.init_MemHaaInit
+               @aBaa.init_BaaMemInit];
+    @2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
+    @2nd_11 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
+               @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
+               @aAyn.init_AboveHaaIsol];
+    @2nd_12 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
 
     enum pos @1st_01 [@2nd_01 @2nd_03] <-300 0 -300 0>;
     enum pos @1st_01  @2nd_02 <-900 0 -900 0>;
@@ -58,31 +58,40 @@ feature kern {
     enum pos @1st_03 [@2nd_03 @2nd_04 @2nd_05 @2nd_06] <-200 0 -200 0>;
 } kern;
 
-@Dot=[TwoDots.b hThreeDots.b iThreeDots.b FourDots.b];
-@Baa=[aBaa.init_Tatweel aBaa.init_High aBaa.init_BaaBaaInit];
-@Raa=[aRaa.fina_MemRaaIsol];
+
+# warning: these classes are already defined, so we redefine them here since we
+# are only interested in glyphs with more than one dot below
+@aBaa.init            = [uni0680.init uni0776.init uni0750.init uni06CE.init uni0775.init uni06BD.init
+                         uni064A.init uni0755.init uni067E.init uni067B.init uni0753.init uni0752.init
+                         uni063D.init uni0754.init uni06D1.init uni06D0.init uni06CC.init uni0767.init];
+@aBaa.init_Tatweel    = [uni0680.init_Tatweel uni0776.init_Tatweel uni0750.init_Tatweel
+                         uni06CE.init_Tatweel uni0775.init_Tatweel uni06BD.init_Tatweel
+                         uni064A.init_Tatweel uni0755.init_Tatweel uni067E.init_Tatweel
+                         uni067B.init_Tatweel uni0753.init_Tatweel uni0752.init_Tatweel
+                         uni063D.init_Tatweel uni0754.init_Tatweel uni06D1.init_Tatweel
+                         uni06D0.init_Tatweel uni06CC.init_Tatweel uni0767.init_Tatweel];
+@aBaa.init_BaaBaaInit = [uni0680.init_High uni0776.init_High uni0750.init_High uni06CE.init_High
+                         uni0775.init_High uni06BD.init_High uni064A.init_High uni0755.init_High
+                         uni067E.init_High uni067B.init_High uni0753.init_High uni0752.init_High
+                         uni063D.init_High uni0754.init_High uni06D1.init_High uni06D0.init_High
+                         uni06CC.init_High uni0767.init_High];
+@aBaa.init_High       = [uni0680.init_BaaBaaInit uni0776.init_BaaBaaInit uni0750.init_BaaBaaInit
+                         uni06CE.init_BaaBaaInit uni0775.init_BaaBaaInit uni06BD.init_BaaBaaInit
+                         uni064A.init_BaaBaaInit uni0755.init_BaaBaaInit uni067E.init_BaaBaaInit
+                         uni067B.init_BaaBaaInit uni0753.init_BaaBaaInit uni0752.init_BaaBaaInit
+                         uni063D.init_BaaBaaInit uni0754.init_BaaBaaInit uni06D1.init_BaaBaaInit
+                         uni06D0.init_BaaBaaInit uni06CC.init_BaaBaaInit uni0767.init_BaaBaaInit];
+
+@Baa = [@aBaa.init @aBaa.init_Tatweel @aBaa.init_BaaBaaInit @aBaa.init_High];
 
 lookup RaaBaa {
-    pos aBaa.init_Tatweel    <0 0 130 0>;
-    pos aBaa.init_BaaBaaInit <0 0 130 0>;
-    pos aBaa.init_High       <0 0 230 0>;
+    pos @aBaa.init            <0 0 130 0>;
+    pos @aBaa.init_Tatweel    <0 0 130 0>;
+    pos @aBaa.init_BaaBaaInit <0 0 130 0>;
+    pos @aBaa.init_High       <0 0 230 0>;
 } RaaBaa;
 
 feature kern {
-  lookupflag RightToLeft;
-    pos                                     @Raa @Baa' lookup RaaBaa @Dot;
-    pos @Mark                               @Raa @Baa' lookup RaaBaa @Dot;
-    pos @Mark @Mark                         @Raa @Baa' lookup RaaBaa @Dot;
-    pos @Mark @Mark @Mark                   @Raa @Baa' lookup RaaBaa @Dot;
-    pos @Mark @Mark @Mark @Mark             @Raa @Baa' lookup RaaBaa @Dot;
-    pos @Mark @Mark @Mark @Mark @Mark       @Raa @Baa' lookup RaaBaa @Dot;
-    pos @Mark @Mark @Mark @Mark @Mark @Mark @Raa @Baa' lookup RaaBaa @Dot;
+  lookupflag IgnoreMarks, RightToLeft;
+    pos @aRaa.fina_MemRaaIsol @Baa' lookup RaaBaa;
 } kern;
-
-# This is more effecient, but mark classes (UseMarkFilteringSet) is only
-# supported by HB currently.
-#
-#feature kern {
-# lookupflag UseMarkFilteringSet @Dot;
-#    pos @Raa @Baa' lookup RaaBaa @Dot;
-#} kern;
