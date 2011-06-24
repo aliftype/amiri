@@ -1,0 +1,14 @@
+
+StartChar: uni0628.medi_SenBaaMemInit
+Encoding: 68019 -1 2688
+Width: 446
+VWidth: 0
+Flags: H
+AnchorPoint: "cursive" 446 518 entry 0
+AnchorPoint: "TashkilAbove" 496 1640 basechar 0
+AnchorPoint: "TashkilBelow" 478 -670 basechar 0
+LayerCount: 2
+Fore
+Refer: 349 -1 N 1 0 0 1 478 -360 2
+Refer: 186 -1 N 1 0 0 1 0 0 3
+EndChar
