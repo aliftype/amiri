@@ -42,19 +42,6 @@ def genCSS(font, base):
 
     return css
 
-def genClasses(font, klasses):
-    text = ""
-    for klass in klasses.split():
-        text += "@%s = [" %klass.title()
-
-        for glyph in font.glyphs():
-            if glyph.glyphclass == klass:
-                text += glyph.glyphname + " "
-
-        text += "];\n"
-
-    return text
-
 def usage(code):
     message = """Usage: %s OPTIONS...
 
@@ -63,7 +50,6 @@ Options:
   --output=FILE         file name of output font
   --version=VALUE       set font version to VALUE
   --feature-files=LIST  optional space delimited feature file list
-  --classes=LIST        output a FEA file listing the specified glyph classes
   --css                 output is a CSS file
   --sfd                 output is a SFD file
   --web                 output is web optimised
@@ -79,7 +65,7 @@ def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "feature-files=", "version=","classes=", "css", "web", "sfd", "no-localised-name"])
+                ["help","input=","output=", "feature-files=", "version=", "css", "web", "sfd", "no-localised-name"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -87,7 +73,6 @@ def main():
     infile = None
     outfile = None
     feafiles = None
-    classes = None
     version = None
     css = False
     web = False
@@ -100,7 +85,6 @@ def main():
         elif opt == "--input": infile = arg
         elif opt == "--output": outfile = arg
         elif opt == "--feature-files": feafiles = arg
-        elif opt == "--classes": classes = arg
         elif opt == "--version": version = arg
         elif opt == "--css": css = True
         elif opt == "--web": web = True
@@ -122,16 +106,6 @@ def main():
         base = os.path.splitext(os.path.basename(infile))[0]
 
         text = genCSS(font, base)
-        font.close()
-
-        out = open(outfile, "w")
-        out.write(text)
-        out.close()
-
-        sys.exit(0)
-
-    if classes:
-        text = genClasses(font, classes)
         font.close()
 
         out = open(outfile, "w")

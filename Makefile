@@ -19,7 +19,7 @@ WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
-FEAT=$(SRC)/classes.fea $(SRC)/klasses.fea $(SRC)/gsub.fea $(SRC)/locl.fea $(SRC)/tnum.fea $(SRC)/calt.fea $(SRC)/kern.fea
+FEAT=$(SRC)/klasses.fea $(SRC)/gsub.fea $(SRC)/locl.fea $(SRC)/tnum.fea $(SRC)/calt.fea $(SRC)/kern.fea
 
 docfiles=$(DOC)/README.txt $(DOC)/README-Arabic.txt $(DOC)/NEWS.txt $(DOC)/NEWS-Arabic.txt
 license=OFL.txt OFL-FAQ.txt
@@ -29,10 +29,6 @@ all: ttf web
 ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 table: $(PDFS)
-
-$(SRC)/classes.fea: $(SFDS) $(BUILD)
-	@echo "   GEN\t$@"
-	@$(FF) --classes="mark" --input $< --output $@
 
 %.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
