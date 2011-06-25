@@ -28,7 +28,7 @@ feature kern {
                @aAyn.init_Finjani @aHaa.init_Finjani @aSen.init_PreYaa @aSad.init_PreYaa];
     @2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
     @2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
-    @2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh @aLam.init_Lellah
+    @2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh uni0644.init_Lellah
                @aLam.init_LamAlfIsol @aLam.init_LamRaaIsol @aLam.init_LamLamInit];
     @2nd_08 = [@aBaa.init @aBaa.init_BaaRaaIsol @aBaa.init_BaaDalIsol
                @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaInit @aBaa.init_BaaSenInit
