@@ -1,5 +1,5 @@
 include(lang.fea)
-include(klasses.fea)
+include(classes.fea)
 
 lookup Lellah {
     sub aLam.init by aLam.init_Lellah;

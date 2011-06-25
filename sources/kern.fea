@@ -1,7 +1,7 @@
 languagesystem DFLT dflt;
 languagesystem arab dflt;
 
-include(klasses.fea)
+include(classes.fea)
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
