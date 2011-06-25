@@ -3,7 +3,7 @@ import tempfile
 import subprocess
 import os
 
-ttf = tempfile.NamedTemporaryFile(suffix=".ttf").name
+out = ""
 
 viewer = "fontview"
 flags  = ("opentype", "dummy-dsig", "round", "short-post")
@@ -14,10 +14,15 @@ def Preview(re, obj):
     else:
         font = obj.font
 
-    font.generate(ttf,flags=flags)
+    if font.layers[1].is_quadratic:
+        out = tempfile.NamedTemporaryFile(suffix=".ttf").name
+    else:
+        out = tempfile.NamedTemporaryFile(suffix=".otf").name
+
+    font.generate(out,flags=flags)
 
     if not re:
-        cmd = "%s %s" %(viewer, ttf)
+        cmd = "%s %s" %(viewer, out)
         subprocess.Popen(cmd,
             shell=True,
             stdin=subprocess.PIPE,
