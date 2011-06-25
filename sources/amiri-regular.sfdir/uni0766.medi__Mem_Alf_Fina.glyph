@@ -1,14 +1,13 @@
 
 StartChar: uni0766.medi_MemAlfFina
-Encoding: 69617 -1 4286
+Encoding: 69287 -1 4096
 Width: 217
 VWidth: 0
-Flags: H
 AnchorPoint: "cursive" 0 -209 exit 0
 AnchorPoint: "TashkilAbove" 110 1640 basechar 0
 AnchorPoint: "TashkilBelow" 300 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 349 -1 N 1 0 0 1 217.109 303.889 2
-Refer: 677 -1 N 1 0 0 1 0 0 3
+Refer: 197 -1 N 1 0 0 1 217.109 303.889 2
+Refer: 487 -1 N 1 0 0 1 0 0 3
 EndChar

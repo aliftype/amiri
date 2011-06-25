@@ -1,13 +1,12 @@
 
 StartChar: uni0680.medi_BaaMemAlfFina
-Encoding: 69619 -1 4288
+Encoding: 69289 -1 4098
 Width: 483
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 383 1640 basechar 0
 AnchorPoint: "TashkilBelow" 383 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 413 -1 N 1 0 0 1 321 -980 2
-Refer: 678 -1 N 1 0 0 1 0 0 3
+Refer: 252 -1 N 1 0 0 1 321 -980 2
+Refer: 488 -1 N 1 0 0 1 0 0 3
 EndChar

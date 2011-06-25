@@ -1,14 +1,13 @@
 
 StartChar: uni069C.init_PreYaa
-Encoding: 68731 -1 3400
+Encoding: 68401 -1 3210
 Width: 706
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 221 1640 basechar 0
 AnchorPoint: "TashkilBelow" 0 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 371 -1 N 1 0 0 1 336 -590 2
-Refer: 348 -1 N 1 0 0 1 221 730 2
-Refer: 224 -1 N 1 0 0 1 0 0 3
+Refer: 210 -1 N 1 0 0 1 336 -590 2
+Refer: 196 -1 N 1 0 0 1 221 730 2
+Refer: 189 -1 N 1 0 0 1 0 0 3
 EndChar

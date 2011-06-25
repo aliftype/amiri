@@ -1,15 +1,14 @@
 
 StartChar: uni0767.medi_BaaRaaFina
-Encoding: 67640 -1 2309
+Encoding: 67310 -1 2119
 Width: 530
 VWidth: 0
-Flags: H
 AnchorPoint: "cursive" 0 334 exit 0
 AnchorPoint: "TashkilAbove" 230 1640 basechar 0
 AnchorPoint: "TashkilBelow" 290 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 350 -1 N 1 0 0 1 190 -420 2
-Refer: 346 -1 N 1 0 0 1 280 860 2
-Refer: 157 -1 N 1 0 0 1 0 0 3
+Refer: 198 -1 N 1 0 0 1 190 -420 2
+Refer: 194 -1 N 1 0 0 1 280 860 2
+Refer: 122 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,15 +1,14 @@
 
 StartChar: uni063D.init_BaaHaaInit
-Encoding: 68586 -1 3255
+Encoding: 68256 -1 3065
 Width: 1204
 VWidth: 0
-Flags: H
 AnchorPoint: "cursive" 0 507 exit 0
 AnchorPoint: "TashkilAbove" 710 1640 basechar 0
 AnchorPoint: "TashkilBelow" 940 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 438 1627 N 1 0 0 1 710 450 2
-Refer: 350 -1 N 1 0 0 1 951 -340 2
-Refer: 214 -1 N 1 0 0 1 0 0 3
+Refer: 255 1627 N 1 0 0 1 710 450 2
+Refer: 198 -1 N 1 0 0 1 951 -340 2
+Refer: 179 -1 N 1 0 0 1 0 0 3
 EndChar

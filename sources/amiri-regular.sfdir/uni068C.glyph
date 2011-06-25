@@ -1,10 +1,12 @@
 
 StartChar: uni068C
-Encoding: 1676 1676 331
+Encoding: 1676 1676 724
 Width: 923
+VWidth: 0
+AnchorPoint: "TashkilAbove" 420 1640 basechar 0
+AnchorPoint: "TashkilBelow" 500 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 347 -1 N 1 0 0 1 420 1060 2
+Refer: 195 -1 N 1 0 0 1 420 1060 2
 Refer: 13 -1 N 1 0 0 1 0 0 3
-Colour: ffff00
 EndChar

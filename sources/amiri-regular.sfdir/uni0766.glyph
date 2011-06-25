@@ -1,11 +1,12 @@
 
 StartChar: uni0766
-Encoding: 1894 1894 419
+Encoding: 1894 1894 964
 Width: 926
+VWidth: 0
+AnchorPoint: "TashkilAbove" 400 1640 basechar 0
+AnchorPoint: "TashkilBelow" 650 -800 basechar 0
 LayerCount: 2
 Fore
-Refer: 349 -1 N 1 0 0 1 462 786 2
+Refer: 197 -1 N 1 0 0 1 462.091 786.383 2
 Refer: 38 -1 N 1 0 0 1 0 0 3
-Comment: "mark anchor missing" 
-Colour: ff0000
 EndChar

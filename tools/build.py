@@ -151,13 +151,7 @@ def main():
                 font.appendSFNTName(name[0], name[1], None)
 
         for glyph in font.glyphs():
-            # don't unlink transformed references
-            glyph.unlinkRmOvrlpSave = 0
-            # glyphs colored yellow are merely placeholders, so clear them to
-            # save few kilobytes
-            if glyph.color == 0xffff00:
-                glyph.clear()
-                glyph.width = 0
+            glyph.unlinkRmOvrlpSave = 0 # don't unlink transformed references
 
         # no dummy DSIG table nor glyph names
         flags  = ("opentype", "round", "short-post")

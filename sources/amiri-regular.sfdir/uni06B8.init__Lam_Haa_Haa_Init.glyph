@@ -1,14 +1,13 @@
 
 StartChar: uni06B8.init_LamHaaHaaInit
-Encoding: 68677 -1 3346
+Encoding: 68347 -1 3156
 Width: 1002
 VWidth: 0
-Flags: H
 AnchorPoint: "cursive" 0 891 exit 0
 AnchorPoint: "TashkilAbove" 590 1640 basechar 0
 AnchorPoint: "TashkilBelow" 750 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 371 -1 N 1 0 0 1 281.731 1693.19 2
-Refer: 218 -1 N 1 0 0 1 0 0 3
+Refer: 210 -1 N 1 0 0 1 281.731 1693.19 2
+Refer: 183 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,13 +1,12 @@
 
 StartChar: uni075F.init_Finjani
-Encoding: 68684 -1 3353
+Encoding: 68354 -1 3163
 Width: 800
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 229 1640 basechar 0
 AnchorPoint: "TashkilBelow" 421 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 377 -1 N 1 0 0 1 229 894 2
-Refer: 221 -1 N 1 0 0 1 0 0 3
+Refer: 216 -1 N 1 0 0 1 229 894 2
+Refer: 186 -1 N 1 0 0 1 0 0 3
 EndChar

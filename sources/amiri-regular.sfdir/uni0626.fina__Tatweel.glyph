@@ -1,15 +1,14 @@
 
 StartChar: uni0626.fina_Tatweel
-Encoding: 68968 -1 3637
+Encoding: 68638 -1 3447
 Width: 1472
 VWidth: 0
-Flags: H
 AnchorPoint: "Tail" 289 156 basechar 0
 AnchorPoint: "AlefAbove" 330 500 basechar 0
 AnchorPoint: "TashkilAbove" 600 1640 basechar 0
 AnchorPoint: "TashkilBelow" 700 -770 basechar 0
 LayerCount: 2
 Fore
-Refer: 352 1620 N 1 0 0 1 330 -450 2
-Refer: 394 -1 N 1 0 0 1 0 0 3
+Refer: 200 1620 N 1 0 0 1 330 -450 2
+Refer: 233 -1 N 1 0 0 1 0 0 3
 EndChar

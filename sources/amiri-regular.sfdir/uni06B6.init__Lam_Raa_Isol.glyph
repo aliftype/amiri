@@ -1,13 +1,12 @@
 
 StartChar: uni06B6.init_LamRaaIsol
-Encoding: 68336 -1 3005
+Encoding: 68006 -1 2815
 Width: 444
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 130 1640 basechar 0
 AnchorPoint: "TashkilBelow" 160 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 346 -1 N 1 0 0 1 138 1654 2
-Refer: 200 -1 N 1 0 0 1 0 0 3
+Refer: 194 -1 N 1 0 0 1 138 1654 2
+Refer: 165 -1 N 1 0 0 1 0 0 3
 EndChar

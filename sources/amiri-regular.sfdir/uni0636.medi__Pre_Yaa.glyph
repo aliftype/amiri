@@ -1,13 +1,12 @@
 
 StartChar: uni0636.medi_PreYaa
-Encoding: 68750 -1 3419
+Encoding: 68420 -1 3229
 Width: 1046
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 275 1640 basechar 0
 AnchorPoint: "TashkilBelow" 370 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 346 -1 N 1 0 0 1 275 840 2
-Refer: 227 -1 N 1 0 0 1 0 0 3
+Refer: 194 -1 N 1 0 0 1 275 840 2
+Refer: 192 -1 N 1 0 0 1 0 0 3
 EndChar

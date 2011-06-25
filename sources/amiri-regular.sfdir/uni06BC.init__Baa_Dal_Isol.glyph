@@ -1,14 +1,13 @@
 
 StartChar: uni06BC.init_BaaDalIsol
-Encoding: 66955 -1 1624
+Encoding: 66625 -1 1434
 Width: 349
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 155 1640 basechar 0
 AnchorPoint: "TashkilBelow" 80 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 379 -1 N 1 0 0 1 100 100 2
-Refer: 346 -1 N 1 0 0 1 155 886 2
-Refer: 120 -1 N 1 0 0 1 0 0 3
+Refer: 218 -1 N 1 0 0 1 100 100 2
+Refer: 194 -1 N 1 0 0 1 155 886 2
+Refer: 85 -1 N 1 0 0 1 0 0 3
 EndChar

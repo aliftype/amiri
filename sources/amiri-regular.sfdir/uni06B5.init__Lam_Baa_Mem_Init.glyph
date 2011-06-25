@@ -1,13 +1,12 @@
 
 StartChar: uni06B5.init_LamBaaMemInit
-Encoding: 66902 -1 1571
+Encoding: 66572 -1 1381
 Width: 391
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 150 1640 basechar 0
 AnchorPoint: "TashkilBelow" 360 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 373 1626 N 1 0 0 1 150 585 2
-Refer: 117 -1 N 1 0 0 1 0 0 3
+Refer: 212 1626 N 1 0 0 1 150 585 2
+Refer: 82 -1 N 1 0 0 1 0 0 3
 EndChar

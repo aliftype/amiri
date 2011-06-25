@@ -1,14 +1,13 @@
 
 StartChar: uni06B3.medi_Tatweel
-Encoding: 68944 -1 3613
+Encoding: 68614 -1 3423
 Width: 1010
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilBelow" 480 -670 basechar 0
 AnchorPoint: "TashkilAbove" 460 1640 basechar 0
 LayerCount: 2
 Fore
-Refer: 378 -1 N 1 0 0 1 660 -340 2
-Refer: 384 -1 N 1 0 0 1 606 1398 2
-Refer: 393 -1 N 1 0 0 1 0 0 3
+Refer: 217 -1 N 1 0 0 1 660 -340 2
+Refer: 223 -1 N 1 0 0 1 606 1398 2
+Refer: 232 -1 N 1 0 0 1 0 0 3
 EndChar

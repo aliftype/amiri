@@ -1,13 +1,12 @@
 
 StartChar: uni0757.init_HaaMemInit
-Encoding: 69387 -1 4056
+Encoding: 69057 -1 3866
 Width: 1054
 VWidth: 0
-Flags: H
 AnchorPoint: "TashkilAbove" 512 1640 basechar 0
 AnchorPoint: "TashkilBelow" 681 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 347 -1 N 1 0 0 1 793 1013 2
-Refer: 657 -1 N 1 0 0 1 0 0 3
+Refer: 195 -1 N 1 0 0 1 793 1013 2
+Refer: 467 -1 N 1 0 0 1 0 0 3
 EndChar
