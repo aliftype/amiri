@@ -137,7 +137,7 @@
 @aHaa.medi_SadHaaInit = [ uni062E.medi_SadHaaInit uni062D.medi_SadHaaInit uni0681.medi_SadHaaInit uni0687.medi_SadHaaInit uni0685.medi_SadHaaInit uni062C.medi_SadHaaInit uni0682.medi_SadHaaInit uni0757.medi_SadHaaInit uni0684.medi_SadHaaInit uni076F.medi_SadHaaInit uni076E.medi_SadHaaInit uni0683.medi_SadHaaInit uni06BF.medi_SadHaaInit uni077C.medi_SadHaaInit uni0758.medi_SadHaaInit uni0772.medi_SadHaaInit uni0686.medi_SadHaaInit ];
 @aHeh.fina_KafHeh = [ uni0647.fina_KafHeh uni06C2.fina_KafHeh uni06C0.fina_KafHeh uni06C1.fina_KafHeh uni06C3.fina_KafHeh uni06D5.fina_KafHeh uni0629.fina_KafHeh ];
 @aHeh.fina_LamHeh = [ uni0647.fina_LamHeh uni06C2.fina_LamHeh uni06C0.fina_LamHeh uni06C1.fina_LamHeh uni06C3.fina_LamHeh uni06D5.fina_LamHeh uni0629.fina_LamHeh ];
-@aHeh.fina_Lellah = [ uni0647.fina_Lellah uni06C2.fina_Lellah uni06C0.fina_Lellah uni06C1.fina_Lellah uni06C3.fina_Lellah uni06D5.fina_Lellah uni0629.fina_Lellah ];
+@aHeh.fina_Lellah = [ uni0647.fina_Lellah ];
 @aHeh.init_AboveHaaIsol = [ uni0647.init_AboveHaaIsol uni06C1.init_AboveHaaIsol ];
 @aHeh.init_HehHaaInit = [ uni0647.init_HehHaaInit uni06C1.init_HehHaaInit ];
 @aHeh.init_HehMemInit = [ uni0647.init_HehMemInit uni06C1.init_HehMemInit ];
@@ -185,9 +185,9 @@
 @aLam.init_LamMemIsol = [ uni06B5.init_LamMemIsol uni06B7.init_LamMemIsol uni0644.init_LamMemIsol uni06B8.init_LamMemIsol uni06B6.init_LamMemIsol uni076A.init_LamMemIsol ];
 @aLam.init_LamRaaIsol = [ uni06B5.init_LamRaaIsol uni06B7.init_LamRaaIsol uni0644.init_LamRaaIsol uni06B8.init_LamRaaIsol uni06B6.init_LamRaaIsol uni076A.init_LamRaaIsol ];
 @aLam.init_LamYaaIsol = [ uni06B5.init_LamYaaIsol uni06B7.init_LamYaaIsol uni0644.init_LamYaaIsol uni06B8.init_LamYaaIsol uni06B6.init_LamYaaIsol uni076A.init_LamYaaIsol ];
-@aLam.init_Lellah = [ uni06B5.init_Lellah uni06B7.init_Lellah uni0644.init_Lellah uni06B8.init_Lellah uni06B6.init_Lellah uni076A.init_Lellah ];
+@aLam.init_Lellah = [ uni0644.init_Lellah ];
 @aLam.init_Tatweel = [ uni06B5.init_Tatweel uni06B7.init_Tatweel uni0644.init_Tatweel uni06B8.init_Tatweel uni06B6.init_Tatweel uni076A.init_Tatweel ];
-@aLam.medi_FaLellah = [ uni06B5.medi_FaLellah uni06B7.medi_FaLellah uni0644.medi_FaLellah uni06B8.medi_FaLellah uni06B6.medi_FaLellah uni076A.medi_FaLellah ];
+@aLam.medi_FaLellah = [ uni0644.medi_FaLellah ];
 @aLam.medi_KafLamAlf = [ uni06B5.medi_KafLamAlf uni06B7.medi_KafLamAlf uni0644.medi_KafLamAlf uni06B8.medi_KafLamAlf uni06B6.medi_KafLamAlf uni076A.medi_KafLamAlf ];
 @aLam.medi_KafLamHehIsol = [ uni06B5.medi_KafLamHehIsol uni06B7.medi_KafLamHehIsol uni0644.medi_KafLamHehIsol uni06B8.medi_KafLamHehIsol uni06B6.medi_KafLamHehIsol uni076A.medi_KafLamHehIsol ];
 @aLam.medi_KafLamMemFina = [ uni06B5.medi_KafLamMemFina uni06B7.medi_KafLamMemFina uni0644.medi_KafLamMemFina uni06B8.medi_KafLamMemFina uni06B6.medi_KafLamMemFina uni076A.medi_KafLamMemFina ];
@@ -217,7 +217,7 @@
 @aLam.medi_LamQafFina = [ uni06B5.medi_LamQafFina uni06B7.medi_LamQafFina uni0644.medi_LamQafFina uni06B8.medi_LamQafFina uni06B6.medi_LamQafFina uni076A.medi_LamQafFina ];
 @aLam.medi_LamWawFina = [ uni06B5.medi_LamWawFina uni06B7.medi_LamWawFina uni0644.medi_LamWawFina uni06B8.medi_LamWawFina uni06B6.medi_LamWawFina uni076A.medi_LamWawFina ];
 @aLam.medi_LamYaaFina = [ uni06B5.medi_LamYaaFina uni06B7.medi_LamYaaFina uni0644.medi_LamYaaFina uni06B8.medi_LamYaaFina uni06B6.medi_LamYaaFina uni076A.medi_LamYaaFina ];
-@aLam.medi_Lellah = [ uni06B5.medi_Lellah uni06B7.medi_Lellah uni0644.medi_Lellah uni06B8.medi_Lellah uni06B6.medi_Lellah uni076A.medi_Lellah ];
+@aLam.medi_Lellah = [ uni0644.medi_Lellah ];
 @aLam.medi_Tatweel = [ uni06B5.medi_Tatweel uni06B7.medi_Tatweel uni0644.medi_Tatweel uni06B8.medi_Tatweel uni06B6.medi_Tatweel uni076A.medi_Tatweel ];
 @aMem.fina_BaaMemFina = [ uni0765.fina_BaaMemFina uni0645.fina_BaaMemFina uni0766.fina_BaaMemFina ];
 @aMem.fina_KafMemFina = [ uni0765.fina_KafMemFina uni0645.fina_KafMemFina uni0766.fina_KafMemFina ];
