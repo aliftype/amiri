@@ -1,3 +1,19 @@
+# This code is kind of a big hack. We want to support a special form of name of
+# Allah, but the sequence <Alef><Lam><Lam><Heh> can occur in many unrelated
+# words, showing the special form for those wards is very confusing and can
+# even be offending to some people.  Thus we define explicit contexts,
+# including Tashkil marks that can't but be the name of Allah and ignore the
+# special form for any other occurrences, but this is far from being simple.
+#
+# The first calt substitutes any [<Alef>]<Lam><Lam><Heh> preceded by a letter
+# that is known not to be part of any of the allowed words by a regular non
+# special form.  The next block will then substitute the allowed context, given
+# it meets a certain criteria.
+#
+# The idea originated from this forum thread:
+# http://www.graphics4arab.com/showthread.php?t=3975
+#  and I just adapted it for Amiri, credit where credit is due.
+
 include(lang.fea)
 include(classes.fea)
 
@@ -23,28 +39,10 @@ lookup Lellah5 {
     sub uni0644.medi by uni0644.medi_Lellah;
 } Lellah5;
 
-@LamLamFoo = [@aLam.medi_LamMemMedi @aLam.medi_LamHeh @aLam.medi_LamYaaFina];
-
 lookup LamLamInit {
-    sub @aLam.init by @aLam.init_LamLamInit;
-    sub @aLam.medi by @aLam.medi_LamLamInit;
-    sub @aLam.fina by @aLam.fina_LamLamIsol;
-    sub @aKaf.fina by @aKaf.fina_LamKafIsol;
-    sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlfIsol;
-    sub @LamLamFoo by [@aLam.medi_LamLamMemInit @aLam.medi_LamLamHehIsol @aLam.medi_LamLamYaaIsol];
+    sub uni0644.init by uni0644.init_LamLamInit;
+    sub uni0644.medi by uni0644.medi_LamLamInit;
 } LamLamInit;
-
-lookup LamLamMedi {
-    sub @aLam.medi by @aLam.medi_LamLamMedi2;
-    sub @aLam.fina by @aLam.fina_LamLamFina;
-    sub @aKaf.fina by @aKaf.fina_LamKafFina;
-    sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlefFina;
-    sub @LamLamFoo by [@aLam.medi_LamLamMemMedi @aLam.medi_LamLamHehFina @aLam.medi_LamLamYaaFina];
-} LamLamMedi;
-
-lookup LamLamMedi2 {
-    sub @aLam.medi by @aLam.medi_LamLamMedi;
-} LamLamMedi2;
 
 @Ignore = [@aAyn.fina @aAyn.isol @aBaa.fina @aBaa.isol @aDal.fina @aDal.isol
            @aFaa.fina @aFaa.isol @aHaa.fina @aHaa.isol @aHeh.fina @aHeh.isol
@@ -53,39 +51,22 @@ lookup LamLamMedi2 {
            @aSad.fina @aSad.isol @aSen.fina @aSen.isol @aTaa.fina @aTaa.isol
            @aYaa.fina @aYaa.isol];
 
-# The next two feature blocks are a kind of big hack. We want to support a
-# special form of name of Allah, but the sequence <Alef><Lam><Lam><Heh> can
-# occur in many unrelated words, showing the special form for those wards is
-# very confusing and can even be offending to some people.  Thus we define
-# explicit contexts, including Tashkil marks that can't but be the name of
-# Allah and ignore the special form for any other occurrences, but this is far
-# from being simple.
-#
-# The first block substitute any <Alef><Lam><Lam><Heh> preceded by a letter
-# that is known not to be part of any of the allowed words by a regular non
-# special form.  The next block will then substitute the allowed context, given
-# it meets a certain croteria.
-#
-# The idea originated from this forum thread:
-# http://www.graphics4arab.com/showthread.php?t=3975
-#  and I just adapted it for Amiri, credit where credit is due.
+# shortcuts
+@Li = [uni0644.init];
+@Lm = [uni0644.medi];
+@Ai = [uni0627.isol uni0622.isol uni0671.isol];
+@Af = [uni0627.fina];
+@Hf = [uni0647.fina];
+@HKTF = [uni0647.init uni0643.init uni062A.init uni0641.init];
+@xFatha = [uni064E uni0670];
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub @Ignore             @aLam.init' lookup LamLamInit @aLam.medi' lookup LamLamInit @aHeh.fina;
-    sub @Ignore @aAlf.isol' @aLam.init' lookup LamLamInit @aLam.medi' lookup LamLamInit @aHeh.fina;
+    sub @Ignore      @Li' lookup LamLamInit @Lm' lookup LamLamInit @Hf;
+    sub @Ignore @Ai' @Li' lookup LamLamInit @Lm' lookup LamLamInit @Hf;
 } calt;
 
 feature calt {
-  # shortcuts
-  @Li=[uni0644.init];
-  @Lm=[uni0644.medi];
-  @Ai=[uni0627.isol uni0622.isol uni0671.isol];
-  @Af=[uni0627.fina];
-  @Hf=[uni0647.fina];
-  @HKTF=[uni0647.init uni0643.init uni062A.init uni0641.init];
-  @xFatha=[uni064E uni0670];
-
     # لله
     sub @Li' lookup Lellah4 @Lm' lookup Lellah2                @Hf' lookup Lellah;
     sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651         @Hf' lookup Lellah;
