@@ -47,39 +47,43 @@ lookup LamLamInit {
 # redifine to not include [اآٱ]
 @aAlf.isol = [uni0625 uni0774 uni0773 uni0623 uni0675 uni0672 uni0673];
 # redefine to not include [ا]
-@aAlf.fina = [uni0625.fina uni0774.fina uni0773.fina uni0623.fina uni0622.fina uni0675.fina uni0672.fina uni0673.fina uni0671.fina];
+@aAlf.fina = [uni0625.fina uni0774.fina uni0773.fina uni0623.fina uni0622.fina
+              uni0675.fina uni0672.fina uni0673.fina uni0671.fina];
 # redefine to not include [و]
-@aWaw.isol = [uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4 uni06C5 uni0676 uni0677 uni06C8 uni06C9 uni0779];
+@aWaw.isol = [uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4
+              uni06C5 uni0676 uni0677 uni06C8 uni06C9 uni0779];
 # redefine to not include [بت]
 @aBaa.init = [uni0777.init uni0680.init uni0776.init uni06BC.init uni0750.init
-              uni0756.init uni0768.init uni06CE.init uni0775.init uni06BD.init uni0626.init
-              uni066E.init uni0620.init uni064A.init uni06BB.init uni067F.init uni0755.init
-              uni067D.init uni067E.init uni067B.init uni067A.init uni0751.init uni0646.init
-              uni0753.init uni0752.init uni0678.init uni063D.init uni062B.init uni0679.init
-              uni06B9.init uni0769.init uni0649.init uni067C.init uni0754.init uni06D1.init
+              uni0756.init uni0768.init uni06CE.init uni0775.init uni06BD.init
+              uni0626.init uni066E.init uni0620.init uni064A.init uni06BB.init
+              uni067F.init uni0755.init uni067D.init uni067E.init uni067B.init
+              uni067A.init uni0751.init uni0646.init uni0753.init uni0752.init
+              uni0678.init uni063D.init uni062B.init uni0679.init uni06B9.init
+              uni0769.init uni0649.init uni067C.init uni0754.init uni06D1.init
               uni06D0.init uni06BA.init uni06CC.init uni0767.init];
 # redefine to not include [ف]
 @aFaa.init = [uni066F.init uni0761.init uni0760.init uni0642.init uni06A8.init
-              uni06A1.init uni06A2.init uni06A3.init uni06A4.init uni06A5.init uni06A6.init
-              uni06A7.init];
+              uni06A1.init uni06A2.init uni06A3.init uni06A4.init uni06A5.init
+              uni06A6.init uni06A7.init];
 # redefine to not include [ه]
 @aHeh.init = [uni06C1.init];
 # redefine to not include [ك] and include [ڪ]
 @aKaf.init = [uni063B.init uni063C.init uni077F.init uni0764.init uni06AA.init
-              uni06B0.init uni06B3.init uni06B2.init uni06AB.init uni06AC.init uni06AD.init
-              uni06AE.init uni06AF.init uni06A9.init uni06B4.init uni0763.init uni0762.init
-              uni06B1.init];
+              uni06B0.init uni06B3.init uni06B2.init uni06AB.init uni06AC.init
+              uni06AD.init uni06AE.init uni06AF.init uni06A9.init uni06B4.init
+              uni0763.init uni0762.init uni06B1.init];
 
-@Ignore = [@aAyn.fina @aAyn.isol @aAlf.isol @aAlf.fina @aBaa.fina @aBaa.isol
-           @aDal.fina @aDal.isol @aFaa.fina @aFaa.isol @aHaa.fina @aHaa.isol
-           @aHeh.fina @aHeh.isol @aKaf.fina @aKaf.isol @aLam.fina @aLam.isol
-           @aMem.fina @aMem.isol @aNon.fina @aNon.isol @aQaf.fina @aQaf.isol
-           @aRaa.fina @aRaa.isol @aSad.fina @aSad.isol @aSen.fina @aSen.isol
-           @aTaa.fina @aTaa.isol @aWaw.fina @aWaw.isol @aYaa.fina @aYaa.isol];
-@Ignore2= [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
-           @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
-           @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
-           @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
+@Ignore    = [@aAyn.fina @aAyn.isol @aAlf.isol @aAlf.fina @aBaa.fina @aBaa.isol
+              @aDal.fina @aDal.isol @aFaa.fina @aFaa.isol @aHaa.fina @aHaa.isol
+              @aHeh.fina @aHeh.isol @aKaf.fina @aKaf.isol @aLam.fina @aLam.isol
+              @aMem.fina @aMem.isol @aNon.fina @aNon.isol @aQaf.fina @aQaf.isol
+              @aRaa.fina @aRaa.isol @aSad.fina @aSad.isol @aSen.fina @aSen.isol
+              @aTaa.fina @aTaa.isol @aWaw.fina @aWaw.isol @aYaa.fina @aYaa.isol];
+
+@Ignore2   = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
+              @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
+              @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
+              @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
 
 # shortcuts
 @Li = [uni0644.init];
@@ -87,8 +91,7 @@ lookup LamLamInit {
 @Ai = [uni0627.isol uni0622.isol uni0671.isol];
 @Af = [uni0627.fina];
 @Hf = [uni0647.fina];
-@HKTF = [uni0647.init uni0643.init uni062A.init uni0641.init];
-@xFatha = [uni064E uni0670];
+@xF = [uni064E uni0670];
 
 feature calt {
   lookupflag IgnoreMarks;
@@ -99,21 +102,21 @@ feature calt {
 
 feature calt {
     # لله
-    sub @Li' lookup Lellah4 @Lm' lookup Lellah2                @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651         @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651 @xFatha @Hf' lookup Lellah;
+    sub @Li' lookup Lellah4 @Lm' lookup Lellah2            @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
 
     # فلله
-    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah2                 @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651         @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651 @xFatha @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah2                 @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651         @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651 @xFatha @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah2                 @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651         @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xFatha @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah2                 @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651         @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xFatha @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah2             @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah2             @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah2             @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah2             @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
 } calt;
