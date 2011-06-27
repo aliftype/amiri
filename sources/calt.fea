@@ -53,7 +53,7 @@ feature calt {
                      uni0678.init_BaaYaaIsol uni0678.fina_KafYaaIsol uni0678.init_BaaMemIsol
                      uni0678.medi_BaaMemAlfFina uni0678.init_BaaHehInit uni0678.medi_BaaHehMedi];
 
-@LetterHamzaBellow= [uni0625 uni0673 uni0625.fina uni0673.fina uni0625.fina_LamAlfIsol
+@LetterHamzaBelow = [uni0625 uni0673 uni0625.fina uni0673.fina uni0625.fina_LamAlfIsol
                      uni0673.fina_LamAlfIsol uni0625.fina_LamAlfFina uni0673.fina_LamAlfFina
                      uni0625.fina_KafAlf uni0673.fina_KafAlf uni0625.fina_KafMemAlf
                      uni0673.fina_KafMemAlf uni0625.fina_MemAlfFina uni0673.fina_MemAlfFina];
@@ -66,8 +66,8 @@ lookup MarkOnHamza {
 } MarkOnHamza;
 
 feature calt {
-    sub @LetterHamzaAbove'  [uni064E uni064F uni0652]' lookup MarkOnHamza;
-    sub @LetterHamzaBellow' [uni0650]'                 lookup MarkOnHamza;
+    sub @LetterHamzaAbove' [uni064E uni064F uni0652]' lookup MarkOnHamza;
+    sub @LetterHamzaBelow' [uni0650]'                 lookup MarkOnHamza;
 } calt;
 
 lookup AboveHaaInit {
