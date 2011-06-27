@@ -1,6 +1,6 @@
 
 StartChar: uni06B8.init_LamYaaIsol
-Encoding: 69196 -1 4005
+Encoding: 69196 -1 4003
 Width: 497
 VWidth: 0
 AnchorPoint: "TashkilAbove" 0 1640 basechar 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilBelow" 240 -670 basechar 0
 LayerCount: 2
 Fore
 Refer: 210 -1 N 1 0 0 1 215 -800 2
-Refer: 480 -1 N 1 0 0 1 0 0 3
+Refer: 478 -1 N 1 0 0 1 0 0 3
 EndChar

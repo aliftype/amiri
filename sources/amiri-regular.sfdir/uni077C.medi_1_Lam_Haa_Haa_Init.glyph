@@ -1,6 +1,6 @@
 
 StartChar: uni077C.medi_1LamHaaHaaInit
-Encoding: 69570 -1 4379
+Encoding: 69570 -1 4377
 Width: 231
 VWidth: 0
 AnchorPoint: "cursive" 231 891 entry 0
@@ -9,6 +9,6 @@ AnchorPoint: "TashkilAbove" 391 1640 basechar 0
 AnchorPoint: "TashkilBelow" 461 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 402 -1 N 1 0 0 1 1011 -980 2
+Refer: 400 -1 N 1 0 0 1 1011 -980 2
 Refer: 184 -1 N 1 0 0 1 0 0 3
 EndChar
