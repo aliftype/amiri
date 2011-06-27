@@ -3,6 +3,7 @@ StartChar: aBaa.init_BaaBaaInit
 Encoding: 65638 -1 104
 Width: 441
 Flags: W
+AnchorPoint: "DigitBelow" 278 -280 basechar 0
 AnchorPoint: "DigitAbove" 218 950 basechar 0
 AnchorPoint: "HighHamza" 458 900 basechar 0
 AnchorPoint: "VAbove" 258 900 basechar 0

@@ -3,6 +3,7 @@ StartChar: aBaa.init_BaaBaaHaaInit
 Encoding: 65682 -1 148
 Width: 330
 Flags: W
+AnchorPoint: "DigitBelow" 95 -100 basechar 0
 AnchorPoint: "DigitAbove" 195 1260 basechar 0
 AnchorPoint: "HighHamza" 395 1260 basechar 0
 AnchorPoint: "VAbove" 195 1260 basechar 0
@@ -16,6 +17,8 @@ AnchorPoint: "HamzaBelow" 95 -100 basechar 0
 AnchorPoint: "HamzaAbove" 195 1260 basechar 0
 AnchorPoint: "DotBelow" 95 -100 basechar 0
 AnchorPoint: "DotAbove" 195 1260 basechar 0
+AnchorPoint: "TwoDotsBelowAlt" 95 -750 basechar 0
+AnchorPoint: "DotBelowAlt" 94 -750 basechar 0
 LayerCount: 2
 Fore
 SplineSet

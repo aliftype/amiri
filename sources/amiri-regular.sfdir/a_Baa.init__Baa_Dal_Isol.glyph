@@ -3,6 +3,7 @@ StartChar: aBaa.init_BaaDalIsol
 Encoding: 65619 -1 85
 Width: 349
 Flags: W
+AnchorPoint: "DigitBelow" 80 -350 basechar 0
 AnchorPoint: "DigitAbove" 155 1026 basechar 0
 AnchorPoint: "TwoDotsBelowAlt" -31 -750 basechar 0
 AnchorPoint: "DotBelowAlt" 80 -750 basechar 0

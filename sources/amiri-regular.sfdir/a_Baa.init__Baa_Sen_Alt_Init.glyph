@@ -3,6 +3,7 @@ StartChar: aBaa.init_BaaSenAltInit
 Encoding: 65705 -1 174
 Width: 474
 Flags: W
+AnchorPoint: "DigitBelow" 262 -350 basechar 0
 AnchorPoint: "DigitAbove" 143 1248 basechar 0
 AnchorPoint: "HighHamza" 343 1248 basechar 0
 AnchorPoint: "VAbove" 143 1248 basechar 0
