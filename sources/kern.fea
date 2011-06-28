@@ -23,19 +23,30 @@ feature kern {
                @aSen.isol @aTaa.init @aTaa.isol @aYaa.isol @aAyn.init_AynMemInit
                @aLam.init_LamHaaInit @aHaa.init_HaaYaaIsol @aMem.init_MemYaaIsol
                @aMem.init_MemRaaIsol @aHaa.init_HaaHaaInit @aAyn.init_AynYaaIsol
-               @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol @aBaa.init_BaaBaaHaaInit @aBaa.init_BaaBaaHaaInitLD
-               @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol @aBaa.init_BaaHaaMemInit @aBaa.init_BaaHaaMemInitLD
+               @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol
+               @aBaa.init_BaaBaaHaaInit @aBaa.init_BaaBaaHaaInitLD
+               @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol
+               @aBaa.init_BaaHaaMemInit @aBaa.init_BaaHaaMemInitLD
                @aAyn.init_Finjani @aHaa.init_Finjani @aSen.init_PreYaa @aSad.init_PreYaa];
     @2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
     @2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
     @2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh uni0644.init_Lellah
                @aLam.init_LamAlfIsol @aLam.init_LamRaaIsol @aLam.init_LamLamInit];
-    @2nd_08 = [@aBaa.init @aBaa.init_LD @aBaa.init_BaaRaaIsol @aBaa.init_BaaRaaIsolLD @aBaa.init_BaaDalIsol @aBaa.init_BaaDalIsolLD
-               @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaYaaIsolLD @aBaa.init_BaaBaaInit @aBaa.init_BaaBaaInitLD @aBaa.init_BaaSenInit @aBaa.init_BaaSenInitLD
-               @aBaa.init_BaaHehInit @aBaa.init_BaaHehInitLD @aBaa.init_BaaBaaIsol @aBaa.init_BaaBaaIsolLD @aBaa.init_BaaMemIsol @aBaa.init_BaaMemIsolLD
-               @aBaa.init_BaaSenAltInit @aBaa.init_BaaSenAltInitLD @aBaa.init_BaaHaaInit @aBaa.init_BaaHaaInitLD @aBaa.init_High @aBaa.init_HighLD
+    @2nd_08 = [@aBaa.init @aBaa.init_LD
+               @aBaa.init_BaaRaaIsol @aBaa.init_BaaRaaIsolLD
+               @aBaa.init_BaaDalIsol @aBaa.init_BaaDalIsolLD
+               @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaYaaIsolLD
+               @aBaa.init_BaaBaaInit @aBaa.init_BaaBaaInitLD
+               @aBaa.init_BaaSenInit @aBaa.init_BaaSenInitLD
+               @aBaa.init_BaaHehInit @aBaa.init_BaaHehInitLD
+               @aBaa.init_BaaBaaIsol @aBaa.init_BaaBaaIsolLD
+               @aBaa.init_BaaMemIsol @aBaa.init_BaaMemIsolLD
+               @aBaa.init_BaaSenAltInit @aBaa.init_BaaSenAltInitLD
+               @aBaa.init_BaaHaaInit @aBaa.init_BaaHaaInitLD
+               @aBaa.init_High @aBaa.init_HighLD
                @aBaa.init_Tatweel @aBaa.init_TatweelLD];
-    @2nd_09 = [@aBaa.init_BaaYaaIsol @aBaa.init_BaaYaaIsolLD @aBaa.init_BaaMemHaaInit @aBaa.init_BaaMemHaaInitLD
+    @2nd_09 = [@aBaa.init_BaaYaaIsol @aBaa.init_BaaYaaIsolLD
+               @aBaa.init_BaaMemHaaInit @aBaa.init_BaaMemHaaInitLD
                @aLam.init_LamHaaMemInit @aFaa.init_FaaHaaInit @aMem.init_MemHaaInit
                @aBaa.init_BaaMemInit @aBaa.init_BaaMemInitLD];
     @2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
