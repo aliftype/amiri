@@ -18,6 +18,7 @@ import sys
 import os
 import getopt
 import tempfile
+import subprocess
 
 def genCSS(font, base):
     if font.fullname.lower().find("slanted")>0:
@@ -161,7 +162,14 @@ def main():
             if name[0] != "English (US)" and name[1] in ("Family", "Fullname"):
                 font.appendSFNTName(name[0], name[1], None)
 
-    font.generate(outfile, flags=flags)
+    # ff takes long to write the file, so generate to tmp file then rename
+    # it to keep fontview happy
+    tmpout = tempfile.mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
+    font.generate(tmpout, flags=flags)
+    #os.rename(tmpout, outfile) # file monitor will not see this, why?
+    p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
+    p.wait()
+    os.remove(tmpout)
 
 if __name__ == "__main__":
     main()
