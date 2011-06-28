@@ -200,6 +200,7 @@ lookup BaaSenAltInit {
     sub @aRaa.fina by @aRaa.fina_PostTooth;
     sub @aSen.medi by @aSen.medi_BaaSenAltInit;
     sub @aYaa.fina by @aYaa.fina_PostTooth;
+    sub @aMem.fina by @aMem.fina_PostTooth;
 } BaaSenAltInit;
 
 lookup LamHaaHaaInit {
@@ -570,7 +571,7 @@ feature calt {
 
     sub [@aBaa.init]' lookup BaaSenAltInit
         [@aSen.medi]' lookup BaaSenAltInit
-        [@aRaa.fina @aYaa.fina]' lookup BaaSenAltInit;
+        [@aRaa.fina @aYaa.fina @aMem.fina]' lookup BaaSenAltInit;
 
     sub [@aLam.init]' lookup LamHaaHaaInit
         [@aHaa.medi]' lookup LamHaaHaaInit
@@ -816,12 +817,11 @@ lookup ToothMem {
     sub @aSad.medi by @aSad.medi_PreYaa;
     sub @aSen.init by @aSen.init_PreYaa;
     sub @aSen.medi by @aSen.medi_PreYaa;
-    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
 } ToothMem;
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [@aSen.init @aSen.medi @aSad.init @aSad.medi @aSen.medi_BaaSenInit]' lookup ToothMem
+    sub [@aSen.init @aSen.medi @aSad.init @aSad.medi]' lookup ToothMem
         [@aMem.fina]' lookup ToothMem;
 } calt;
 
