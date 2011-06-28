@@ -877,31 +877,17 @@ feature calt {
     by  [@aYaa.fina_Tatweel];
 } calt;
 
-# XXX
 @RaaWaw     = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol @aRaa.fina_BaaRaaIsol
                @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina @aRaa.fina_KafRaaFina
                @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol @aRaa.fina_LamRaaIsol
                @aRaa.fina_PostTooth];
-#@BaaInit    = [aBaa.init aBaa.init_BaaRaaIsol aBaa.init_BaaYaaIsol
-#               aBaa.init_BaaDalIsol aBaa.init_BaaMemHaaInit aBaa.init_BaaBaaInit
-#               aBaa.init_BaaSenInit aBaa.init_BaaMemInit aBaa.init_BaaHehInit
-#               aBaa.init_BaaBaaIsol aBaa.init_BaaMemIsol aBaa.init_BaaSenAltInit
-#               aBaa.init_BaaHaaInit aBaa.init_High aBaa.init_Tatweel];
-#@DotsBelow  = [Dot.b TwoDots.b ThreeDots.b iThreeDots.b vTwoDots.b
-#               FourDots.b hThreeDots.b smallv.below.inverted];
-#@DotsBelowL = [Dot.b.l TwoDots.b.l ThreeDots.b.l iThreeDots.b.l vTwoDots.b.l
-#               FourDots.b.l hThreeDots.b.l smallv.below.inverted.low];
-#
-#lookup LowDots {
-#    sub @DotsBelow by @DotsBelowL;
-#} LowDots;
 
 feature calt {
   lookupflag IgnoreMarks;
     sub @RaaWaw [uni0625 uni0673]' by @aAlf.isol_LowHamza;
 } calt;
 
-#feature calt {
-#  lookupflag IgnoreMarks;
-#    sub @RaaWaw @BaaInit' lookup LowDots;
-#} calt;
+feature calt {
+  lookupflag IgnoreMarks;
+    sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
+} calt;
