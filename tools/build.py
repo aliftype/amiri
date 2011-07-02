@@ -74,6 +74,20 @@ def cleanAnchors(font):
         lookup = font.getLookupOfSubtable(subtable)
         font.removeLookup(lookup)
 
+def validateGlyphs(font):
+    flipped_ref = 0x10
+    wrong_dir = 0x8
+    missing_extrema = 0x20
+    for glyph in font.glyphs():
+        state = glyph.validate(True)
+        if state & flipped_ref:
+            glyph.unlinkRef()
+            glyph.correctDirection()
+        if state & wrong_dir:
+            glyph.correctDirection()
+        if state & missing_extrema:
+            glyph.addExtrema("all")
+
 def usage(code):
     message = """Usage: %s OPTIONS...
 
@@ -158,6 +172,9 @@ def main():
 
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
+
+    # fix some common font issues
+    validateGlyphs(font)
 
     if feafiles:
         oldfea = tempfile.mkstemp(suffix='.fea')[1]
