@@ -43,6 +43,37 @@ def genCSS(font, base):
 
     return css
 
+def cleanAnchors(font):
+    klasses = (
+            "Dash",
+            "DigitAbove",
+            "DigitBelow",
+            "DotAbove",
+            "DotAlt",
+            "DotBelow",
+            "DotBelowAlt",
+            "DotHmaza",
+            "HighHamza",
+            "MarkDotAbove",
+            "MarkDotBelow",
+            "RingBelow",
+            "RingDash",
+            "Stroke",
+            "TaaAbove",
+            "TaaBelow",
+            "Tail",
+            "TashkilAboveDot",
+            "TashkilBelowDot",
+            "TwoDotsAbove",
+            "TwoDotsBelow",
+            "TwoDotsBelowAlt"
+            )
+
+    for klass in klasses:
+        subtable = font.getSubtableOfAnchor(klass)
+        lookup = font.getLookupOfSubtable(subtable)
+        font.removeLookup(lookup)
+
 def usage(code):
     message = """Usage: %s OPTIONS...
 
@@ -124,6 +155,9 @@ def main():
         font.close()
 
         sys.exit(0)
+
+    # remove anchors that are not needed in the production font
+    cleanAnchors(font)
 
     if feafiles:
         oldfea = tempfile.mkstemp(suffix='.fea')[1]
