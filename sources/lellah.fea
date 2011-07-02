@@ -88,7 +88,7 @@ lookup LamLamInit {
 # shortcuts
 @Li = [uni0644.init];
 @Lm = [uni0644.medi];
-@Ai = [uni0627.isol uni0622.isol uni0671.isol];
+@Ai = [uni0627 uni0622 uni0671];
 @Af = [uni0627.fina];
 @Hf = [uni0647.fina];
 @xF = [uni064E uni0670];
