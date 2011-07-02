@@ -185,9 +185,6 @@ def main():
             elif name[1] in ("Descriptor", "Sample Text"):
                 font.appendSFNTName(name[0], name[1], None)
 
-        for glyph in font.glyphs():
-            glyph.unlinkRmOvrlpSave = 0 # don't unlink transformed references
-
         # no dummy DSIG table nor glyph names
         flags  = ("opentype", "round", "short-post")
 
