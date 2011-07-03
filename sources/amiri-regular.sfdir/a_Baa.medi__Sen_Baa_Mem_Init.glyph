@@ -3,6 +3,7 @@ StartChar: aBaa.medi_SenBaaMemInit
 Encoding: 65685 -1 151
 Width: 446
 Flags: W
+AnchorPoint: "DigitBelow" 478 -220 basechar 0
 AnchorPoint: "DigitAbove" -104 1250 basechar 0
 AnchorPoint: "HighHamza" -4 1250 basechar 0
 AnchorPoint: "VAbove" -104 1250 basechar 0

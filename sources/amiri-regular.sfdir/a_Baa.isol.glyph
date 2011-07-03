@@ -3,6 +3,7 @@ StartChar: aBaa.isol
 Encoding: 65545 -1 9
 Width: 1897
 Flags: W
+AnchorPoint: "DigitBelow" 1000 -400 basechar 0
 AnchorPoint: "VAbove" 945 870 basechar 0
 AnchorPoint: "RingBelow" 850 60 basechar 0
 AnchorPoint: "TaaAbove" 945 670 basechar 0

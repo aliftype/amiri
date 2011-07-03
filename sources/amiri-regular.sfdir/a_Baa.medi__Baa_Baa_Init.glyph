@@ -3,6 +3,7 @@ StartChar: aBaa.medi_BaaBaaInit
 Encoding: 65639 -1 105
 Width: 434
 Flags: W
+AnchorPoint: "DigitBelow" 100 -300 basechar 0
 AnchorPoint: "DigitAbove" 250 750 basechar 0
 AnchorPoint: "HighHamza" 350 700 basechar 0
 AnchorPoint: "VAbove" 250 700 basechar 0

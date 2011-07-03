@@ -3,6 +3,7 @@ StartChar: aBaa.medi_LamBaaMemInit
 Encoding: 65617 -1 83
 Width: 288
 Flags: W
+AnchorPoint: "DigitBelow" 267 -350 basechar 0
 AnchorPoint: "DigitAbove" 17 1230 basechar 0
 AnchorPoint: "HighHamza" 117 1230 basechar 0
 AnchorPoint: "VAbove" 17 1230 basechar 0

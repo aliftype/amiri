@@ -3,6 +3,7 @@ StartChar: aBaa.medi_KafBaaInit
 Encoding: 65630 -1 96
 Width: 449
 Flags: W
+AnchorPoint: "DigitBelow" 200 -350 basechar 0
 AnchorPoint: "DigitAbove" 180 1360 basechar 0
 AnchorPoint: "HighHamza" 280 1360 basechar 0
 AnchorPoint: "VAbove" 180 1360 basechar 0
