@@ -3,6 +3,7 @@ StartChar: aKaf.init_KafBaaInit
 Encoding: 65629 -1 95
 Width: 715
 Flags: W
+AnchorPoint: "DotAbove" 60 1770 basechar 0
 AnchorPoint: "DotBelow" 210 -110 basechar 0
 AnchorPoint: "TwoDotsBelow" 210 -110 basechar 0
 AnchorPoint: "RingBelow" 140 1218 basechar 0
