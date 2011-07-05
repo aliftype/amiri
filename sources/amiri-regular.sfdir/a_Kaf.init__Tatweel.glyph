@@ -3,6 +3,8 @@ StartChar: aKaf.init_Tatweel
 Encoding: 65756 -1 231
 Width: 1446
 Flags: W
+AnchorPoint: "DotBelow" 460 -200 basechar 0
+AnchorPoint: "TwoDotsBelow" 460 -200 basechar 0
 AnchorPoint: "Dash" 741 1500 basechar 0
 AnchorPoint: "TashkilAbove" 661 1640 basechar 0
 AnchorPoint: "TashkilBelow" 420 -670 basechar 0
