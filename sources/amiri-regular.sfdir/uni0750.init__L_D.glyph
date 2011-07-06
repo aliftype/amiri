@@ -4,9 +4,9 @@ Encoding: 69610 -1 4418
 Width: 320
 VWidth: 0
 AnchorPoint: "TashkilAbove" 120 1640 basechar 0
-AnchorPoint: "TashkilBelow" 130 -1030 basechar 0
+AnchorPoint: "TashkilBelow" 90 -1030 basechar 0
 LayerCount: 2
 Fore
-Refer: 330 -1 N 1 0 0 1 90 -940 2
+Refer: 330 -1 N 1 0 0 1 50 -940 2
 Refer: 8 -1 N 1 0 0 1 0 0 3
 EndChar
