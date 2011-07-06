@@ -1,13 +1,14 @@
 
 StartChar: uni0773.fina_LamAlfFina
 Encoding: 67554 -1 2361
-Width: 915
+Width: 1012
 VWidth: 0
-AnchorPoint: "cursive" 915 311 entry 0
-AnchorPoint: "TashkilAbove" 0 1640 basechar 0
-AnchorPoint: "TashkilBelow" 320 -670 basechar 0
+Flags: W
+AnchorPoint: "cursive" 1012 311 entry 0
+AnchorPoint: "TashkilAbove" 97 1640 basechar 0
+AnchorPoint: "TashkilBelow" 417 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 397 -1 N 1 0 0 1 79 800 2
-Refer: 142 -1 N 1 0 0 1 0 0 3
+Refer: 397 -1 N 1 0 0 1 126 800 2
+Refer: 142 -1 N 1 0 0 1 97 0 2
 EndChar
