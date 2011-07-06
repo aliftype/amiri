@@ -1,6 +1,6 @@
 
 StartChar: uni0680.init_BaaBaaInit
-Encoding: 66969 -1 1776
+Encoding: 66969 -1 1775
 Width: 441
 VWidth: 0
 AnchorPoint: "TashkilAbove" 318 1640 basechar 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilBelow" 278 -670 basechar 0
 LayerCount: 2
 Fore
 Refer: 252 -1 N 1 0 0 1 359 -660 2
-Refer: 104 -1 N 1 0 0 1 0 0 3
+Refer: 104 -1 N 1 0 0 1 0 0 2
 EndChar
