@@ -3,6 +3,8 @@ StartChar: aRaa.fina_MemRaaIsol
 Encoding: 65642 -1 108
 Width: 1070
 Flags: W
+AnchorPoint: "HamzaAbove" 729 1000 basechar 0
+AnchorPoint: "TwoDotsAbove" 728 1124 basechar 0
 AnchorPoint: "Stroke" 740 64 basechar 0
 AnchorPoint: "DotAlt" 434 118 basechar 0
 AnchorPoint: "DotBelow" 370 -700 basechar 0
