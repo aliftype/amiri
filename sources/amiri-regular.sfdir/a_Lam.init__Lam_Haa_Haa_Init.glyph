@@ -3,6 +3,7 @@ StartChar: aLam.init_LamHaaHaaInit
 Encoding: 65714 -1 183
 Width: 1002
 Flags: W
+AnchorPoint: "TwoDotsBelow" 150 -400 basechar 0
 AnchorPoint: "Stroke" 287 1226 basechar 0
 AnchorPoint: "TwoDotsAbove" 147 1775 basechar 0
 AnchorPoint: "DotAbove" 267 1775 basechar 0
