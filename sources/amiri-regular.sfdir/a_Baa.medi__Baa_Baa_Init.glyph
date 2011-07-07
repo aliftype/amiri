@@ -4,19 +4,19 @@ Encoding: 65639 -1 104
 Width: 345
 Flags: W
 AnchorPoint: "DigitBelow" 100 -300 basechar 0
-AnchorPoint: "DigitAbove" 250 700 basechar 0
-AnchorPoint: "HighHamza" 350 650 basechar 0
-AnchorPoint: "VAbove" 250 650 basechar 0
+AnchorPoint: "DigitAbove" 250 600 basechar 0
+AnchorPoint: "HighHamza" 350 600 basechar 0
+AnchorPoint: "VAbove" 250 600 basechar 0
 AnchorPoint: "RingBelow" 250 150 basechar 0
 AnchorPoint: "TaaAbove" 250 500 basechar 0
 AnchorPoint: "TashkilBelow" 100 -670 basechar 0
 AnchorPoint: "TashkilAbove" 250 1640 basechar 0
 AnchorPoint: "TwoDotsBelow" 100 -210 basechar 0
-AnchorPoint: "TwoDotsAbove" 120 700 basechar 0
+AnchorPoint: "TwoDotsAbove" 120 600 basechar 0
 AnchorPoint: "DotBelow" 100 -300 basechar 0
-AnchorPoint: "DotAbove" 250 700 basechar 0
+AnchorPoint: "DotAbove" 250 600 basechar 0
 AnchorPoint: "HamzaBelow" 200 -150 basechar 0
-AnchorPoint: "HamzaAbove" 250 650 basechar 0
+AnchorPoint: "HamzaAbove" 250 600 basechar 0
 LayerCount: 2
 Back
 SplineSet
