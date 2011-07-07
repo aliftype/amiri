@@ -38,7 +38,6 @@ feature kern {
                @aBaa.init_BaaNonIsol @aBaa.init_BaaNonIsolLD
                @aBaa.init_BaaDalIsol @aBaa.init_BaaDalIsolLD
                @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaYaaIsolLD
-               @aBaa.init_BaaBaaInit @aBaa.init_BaaBaaInitLD
                @aBaa.init_BaaSenInit @aBaa.init_BaaSenInitLD
                @aBaa.init_BaaHehInit @aBaa.init_BaaHehInitLD
                @aBaa.init_BaaBaaIsol @aBaa.init_BaaBaaIsolLD
@@ -83,24 +82,17 @@ feature kern {
                          uni067B.init_Tatweel uni0753.init_Tatweel uni0752.init_Tatweel
                          uni063D.init_Tatweel uni0754.init_Tatweel uni06D1.init_Tatweel
                          uni06D0.init_Tatweel uni06CC.init_Tatweel uni0767.init_Tatweel];
-@aBaa.init_BaaBaaInit = [uni0680.init_High uni0776.init_High uni0750.init_High uni06CE.init_High
+@aBaa.init_High       = [uni0680.init_High uni0776.init_High uni0750.init_High uni06CE.init_High
                          uni0775.init_High uni06BD.init_High uni064A.init_High uni0755.init_High
                          uni067E.init_High uni067B.init_High uni0753.init_High uni0752.init_High
                          uni063D.init_High uni0754.init_High uni06D1.init_High uni06D0.init_High
                          uni06CC.init_High uni0767.init_High];
-@aBaa.init_High       = [uni0680.init_BaaBaaInit uni0776.init_BaaBaaInit uni0750.init_BaaBaaInit
-                         uni06CE.init_BaaBaaInit uni0775.init_BaaBaaInit uni06BD.init_BaaBaaInit
-                         uni064A.init_BaaBaaInit uni0755.init_BaaBaaInit uni067E.init_BaaBaaInit
-                         uni067B.init_BaaBaaInit uni0753.init_BaaBaaInit uni0752.init_BaaBaaInit
-                         uni063D.init_BaaBaaInit uni0754.init_BaaBaaInit uni06D1.init_BaaBaaInit
-                         uni06D0.init_BaaBaaInit uni06CC.init_BaaBaaInit uni0767.init_BaaBaaInit];
 
-@Baa = [@aBaa.init @aBaa.init_Tatweel @aBaa.init_BaaBaaInit @aBaa.init_High];
+@Baa = [@aBaa.init @aBaa.init_Tatweel @aBaa.init_High];
 
 lookup RaaBaa {
     pos @aBaa.init            <0 0 130 0>;
     pos @aBaa.init_Tatweel    <0 0 130 0>;
-    pos @aBaa.init_BaaBaaInit <0 0 130 0>;
     pos @aBaa.init_High       <0 0 230 0>;
 } RaaBaa;
 

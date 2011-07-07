@@ -20,7 +20,7 @@ feature calt {
                      uni0626.fina_BaaBaaYaaIsol uni0626.fina_BaaYaaFina uni0626.fina_FaaYaaFina
                      uni0626.fina_KafYaaFina uni0626.fina_KafYaaIsol uni0626.fina_LamYaaFina
                      uni0626.fina_PostTooth uni0626.fina_Tatweel uni0626.init
-                     uni0626.init_AboveHaaIsol uni0626.init_BaaBaaHaaInit uni0626.init_BaaBaaInit
+                     uni0626.init_AboveHaaIsol uni0626.init_BaaBaaHaaInit
                      uni0626.init_BaaBaaIsol uni0626.init_BaaBaaMemInit uni0626.init_BaaBaaYaaIsol
                      uni0626.init_BaaDalIsol uni0626.init_BaaHaaInit uni0626.init_BaaHaaMemInit
                      uni0626.init_BaaHehInit uni0626.init_BaaMemHaaInit uni0626.init_BaaMemInit
@@ -41,7 +41,7 @@ feature calt {
                      uni0678.medi_BaaMemFina uni0678.medi_LamBaaMemInit uni0678.init_BaaDalIsol
                      uni0678.init_BaaMemHaaInit uni0678.init_BaaBaaYaaIsol
                      uni0678.medi_BaaBaaYaaIsol uni0678.fina_BaaBaaYaaIsol uni0678.fina_LamYaaFina
-                     uni0678.medi_KafBaaInit uni0678.init_BaaBaaInit uni0678.medi_BaaBaaInit
+                     uni0678.medi_KafBaaInit uni0678.medi_BaaBaaInit
                      uni0678.init_BaaNonIsol uni0678.init_BaaSenInit uni0678.medi_BaaRaaFina
                      uni0678.init_BaaMemInit uni0678.fina_KafYaaFina uni0678.init_BaaBaaHaaInit
                      uni0678.medi_BaaBaaHaaInit uni0678.medi_SenBaaMemInit uni0678.init_BaaBaaIsol
@@ -371,11 +371,6 @@ lookup BaaBaaHaaInit {
     sub @aHaa.medi by @aHaa.medi_BaaBaaHaaInit;
 } BaaBaaHaaInit;
 
-lookup BaaBaaInit {
-    sub @aBaa.init by @aBaa.init_BaaBaaInit;
-    sub @aBaa.medi by @aBaa.medi_BaaBaaInit;
-} BaaBaaInit;
-
 lookup MemRaaIsol {
     sub @aMem.init by @aMem.init_MemRaaIsol;
     sub @aRaa.fina by @aRaa.fina_MemRaaIsol;
@@ -481,10 +476,11 @@ lookup SenBaaMemInit {
     sub @aMem.medi by @aMem.medi_SenBaaMemInit;
 } SenBaaMemInit;
 
-lookup BaaBaaIsol {
+lookup BaaBaa {
+    sub @aBaa.medi by @aBaa.medi_BaaBaaInit;
     sub @aBaa.fina by @aBaa.fina_BaaBaaIsol;
     sub @aBaa.init by @aBaa.init_BaaBaaIsol;
-} BaaBaaIsol;
+} BaaBaa;
 
 lookup HaaRaaIsol {
     sub @aHaa.init by @aHaa.init_HaaRaaIsol;
@@ -657,9 +653,6 @@ feature calt {
         [@aBaa.medi]' lookup BaaBaaHaaInit
         [@aHaa.medi]' lookup BaaBaaHaaInit;
 
-    sub [@aBaa.init]' lookup BaaBaaInit
-        [@aBaa.medi]' lookup BaaBaaInit;
-
     sub [@aMem.init]' lookup MemRaaIsol
         [@aRaa.fina]' lookup MemRaaIsol;
 
@@ -720,8 +713,8 @@ feature calt {
         [@aBaa.medi]' lookup SenBaaMemInit
         [@aMem.medi]' lookup SenBaaMemInit;
 
-    sub [@aBaa.init]' lookup BaaBaaIsol
-        [@aBaa.fina]' lookup BaaBaaIsol;
+    sub [@aBaa.init]' lookup BaaBaa
+        [@aBaa.medi @aBaa.fina]' lookup BaaBaa;
 
     sub [@aHaa.init]' lookup HaaRaaIsol
         [@aRaa.fina]' lookup HaaRaaIsol;
