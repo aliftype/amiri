@@ -1,3 +1,21 @@
+Amiri 0.015 (2011-07-14), Phoenix
+---------------------------------
+* This release represents a major developmental milestone, as the OpenType
+  layout have been rewritten to allow maximum compatibility with various
+  OpenType implementations.
+
+* Cleanup:
+ - More unification and tidy up.
+ - Various fixes for FontForge warnings.
+ - Various dot placement fixes.
+ - Various tashkil fine tuning.
+ - Fixes to Lellah form.
+ - Fine tune initial Baa/final Alef combination.
+
+* More kerning pairs.
+
+* Font name is now shown only in English in font menus.
+
 Amiri 0.014 (2011-06-05), Break a Leg
 -------------------------------------
 * Another minor release to fix two bugs:
