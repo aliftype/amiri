@@ -3,7 +3,7 @@ StartChar: aBaa.medi_BaaRaaFina
 Encoding: 65656 -1 121
 Width: 530
 Flags: W
-AnchorPoint: "DigitBelow" 190 -380 basechar 0
+AnchorPoint: "DigitBelow" 270 -380 basechar 0
 AnchorPoint: "DigitAbove" 280 1000 basechar 0
 AnchorPoint: "HighHamza" 380 1000 basechar 0
 AnchorPoint: "VAbove" 280 1000 basechar 0
@@ -12,11 +12,11 @@ AnchorPoint: "TaaAbove" 280 800 basechar 0
 AnchorPoint: "TashkilBelow" 290 -670 basechar 0
 AnchorPoint: "TashkilAbove" 230 1640 basechar 0
 AnchorPoint: "cursive" 0 334 exit 0
-AnchorPoint: "TwoDotsBelow" 79 -280 basechar 0
+AnchorPoint: "TwoDotsBelow" 159 -280 basechar 0
 AnchorPoint: "TwoDotsAbove" 180 1000 basechar 0
-AnchorPoint: "HamzaBelow" 190 -380 basechar 0
+AnchorPoint: "HamzaBelow" 270 -380 basechar 0
 AnchorPoint: "HamzaAbove" 280 1000 basechar 0
-AnchorPoint: "DotBelow" 190 -380 basechar 0
+AnchorPoint: "DotBelow" 270 -380 basechar 0
 AnchorPoint: "DotAbove" 280 1000 basechar 0
 LayerCount: 2
 Back
