@@ -7,6 +7,8 @@ SRC=sources
 WEB=web
 DOC=documentation
 FONTS=amiri-regular
+FEA=lang classes gsub locl tnum lellah calt kern
+DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
 FF=python $(BUILD)
@@ -19,9 +21,9 @@ WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
-FEAT=$(SRC)/classes.fea $(SRC)/gsub.fea $(SRC)/locl.fea $(SRC)/tnum.fea $(SRC)/lellah.fea $(SRC)/calt.fea $(SRC)/kern.fea
+FEAT=$(FEA:%=$(SRC)/%.fea)
 
-docfiles=$(DOC)/README.txt $(DOC)/README-Arabic.txt $(DOC)/NEWS.txt $(DOC)/NEWS-Arabic.txt
+DOCFILES=$(DOCS:%=$(DOC)/%.txt)
 license=OFL.txt OFL-FAQ.txt
 
 all: ttf web
@@ -88,7 +90,7 @@ dist: all pack table
 	@cp $(license) amiri-$(VERSION)
 	@cp $(DTTF) amiri-$(VERSION)
 	@cp README.txt amiri-$(VERSION)
-	@cp $(docfiles) amiri-$(VERSION)/$(DOC)
+	@cp $(DOCFILES) amiri-$(VERSION)/$(DOC)
 	@cp $(WTTF) amiri-$(VERSION)/$(WEB)
 	@cp $(WOFF) amiri-$(VERSION)/$(WEB)
 	@cp $(EOTS) amiri-$(VERSION)/$(WEB)
