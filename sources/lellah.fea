@@ -94,17 +94,19 @@ feature calt {
 
 feature calt {
     # لله
-    sub @Li' lookup Lellah  @Lm' lookup Lellah2            @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+    sub @Li' lookup Lellah @Lm' lookup Lellah2            @Hf' lookup Lellah;
+    sub @Li' lookup Lellah @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+
     # لِله
-    sub @Li' lookup Lellah  uni0650 @Lm' lookup Lellah             @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0650 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0650 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+    sub @Li' lookup Lellah uni0650 @Lm' lookup Lellah             @Hf' lookup Lellah;
+    sub @Li' lookup Lellah uni0650 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah uni0650 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+
     # لِّله
-    sub @Li' lookup Lellah  uni0650 uni0651 @Lm' lookup Lellah             @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0650 uni0651 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0650 uni0651 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+    sub @Li' lookup Lellah uni0650 uni0651 @Lm' lookup Lellah             @Hf' lookup Lellah;
+    sub @Li' lookup Lellah uni0650 uni0651 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah uni0650 uni0651 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
 
     # فلله
     sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah2             @Hf' lookup Lellah;
