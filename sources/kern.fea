@@ -3,71 +3,110 @@ languagesystem arab dflt;
 
 include(classes.fea)
 
+@1st_01 = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol
+           @aRaa.fina_BaaRaaIsol @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina
+           @aRaa.fina_KafRaaFina @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol
+           @aRaa.fina_LamRaaIsol @aRaa.fina_PostTooth];
+@1st_02 = [@aDal.fina @aDal.isol @aDal.fina_BaaDalIsol
+           @aDal.fina_KafDal @aDal.fina_LamDal];
+@1st_03 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
+@2nd_01 = [@aAlf.isol @aAlf.isol_LowHamza];
+@2nd_02 = [@aKaf.init @aKaf.init_KafHeh
+           @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
+           @aKaf.init_KafMemIsol @aKaf.init_KafLam
+           @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
+@2nd_03 = [@aAyn.isol @aHaa.isol @aFaa.init_FaaYaaIsol @aBaa.init_AboveHaaIsol];
+@2nd_04 = [@aAyn.init @aBaa.isol @aFaa.init @aFaa.isol @aHaa.init
+           @aHeh.init @aHeh.isol @aMem.init @aMem.isol @aSad.init @aSad.isol @aSen.init
+           @aSen.isol @aTaa.init @aTaa.isol @aYaa.isol @aAyn.init_AynMemInit
+           @aLam.init_LamHaaInit @aHaa.init_HaaYaaIsol @aMem.init_MemYaaIsol
+           @aMem.init_MemRaaIsol @aHaa.init_HaaHaaInit @aAyn.init_AynYaaIsol
+           @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol
+           @aBaa.init_BaaBaaHaaInit @aBaa.init_BaaBaaHaaInitLD
+           @aBaa.init_BaaBaaMemInit @aBaa.init_BaaBaaMemInitLD
+           @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol
+           @aBaa.init_BaaHaaMemInit @aBaa.init_BaaHaaMemInitLD
+           @aAyn.init_Finjani @aHaa.init_Finjani @aSen.init_PreYaa @aSad.init_PreYaa];
+@2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
+@2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
+@2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh uni0644.init_Lellah
+           @aLam.init_LamAlfIsol @aLam.init_LamRaaIsol @aLam.init_LamLamInit];
+@2nd_08 = [@aBaa.init @aBaa.init_LD
+           @aBaa.init_BaaRaaIsol @aBaa.init_BaaRaaIsolLD
+           @aBaa.init_BaaNonIsol @aBaa.init_BaaNonIsolLD
+           @aBaa.init_BaaDalIsol @aBaa.init_BaaDalIsolLD
+           @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaYaaIsolLD
+           @aBaa.init_BaaSenInit @aBaa.init_BaaSenInitLD
+           @aBaa.init_BaaHehInit @aBaa.init_BaaHehInitLD
+           @aBaa.init_BaaBaaIsol @aBaa.init_BaaBaaIsolLD
+           @aBaa.init_BaaMemIsol @aBaa.init_BaaMemIsolLD
+           @aBaa.init_BaaSenAltInit @aBaa.init_BaaSenAltInitLD
+           @aBaa.init_BaaHaaInit @aBaa.init_BaaHaaInitLD
+           @aBaa.init_High @aBaa.init_HighLD
+           @aBaa.init_Tatweel @aBaa.init_TatweelLD];
+@2nd_09 = [@aBaa.init_BaaYaaIsol @aBaa.init_BaaYaaIsolLD
+           @aBaa.init_BaaMemHaaInit @aBaa.init_BaaMemHaaInitLD
+           @aLam.init_LamHaaMemInit @aFaa.init_FaaHaaInit @aMem.init_MemHaaInit
+           @aBaa.init_BaaMemInit @aBaa.init_BaaMemInitLD];
+@2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
+@2nd_11 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
+           @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
+           @aAyn.init_AboveHaaIsol];
+@2nd_12 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
+
+lookup pos_300 {
+    pos [@2nd_01 @2nd_03] -300;
+} pos_300;
+
+lookup pos_900 {
+    pos @2nd_02 -900;
+} pos_900;
+
+lookup pos_600 {
+    pos @2nd_12 -600;
+} pos_600;
+
+lookup pos_450 {
+    pos [@2nd_04 @2nd_07] -450;
+} pos_450;
+
+lookup pos_400 {
+    pos [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11] -400;
+    pos @2nd_12 -400;
+    pos @2nd_11 -400;
+} pos_400;
+
+lookup pos_500 {
+    pos @2nd_10 -500;
+    pos @2nd_02 -500;
+} pos_500;
+
+lookup pos_050 {
+    pos @2nd_08 -50;
+} pos_050;
+
+lookup pos_800 {
+    pos [@2nd_02 @2nd_12] -800;
+} pos_800;
+
+lookup pos_200 {
+    pos [@2nd_03 @2nd_04 @2nd_05 @2nd_06] -200;
+} pos_200;
+
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
-    @1st_01 = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol
-               @aRaa.fina_BaaRaaIsol @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina
-               @aRaa.fina_KafRaaFina @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol
-               @aRaa.fina_LamRaaIsol @aRaa.fina_PostTooth];
-    @1st_02 = [@aDal.fina @aDal.isol @aDal.fina_BaaDalIsol
-               @aDal.fina_KafDal @aDal.fina_LamDal];
-    @1st_03 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
-    @2nd_01 = [@aAlf.isol @aAlf.isol_LowHamza];
-    @2nd_02 = [@aKaf.init @aKaf.init_KafHeh
-               @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
-               @aKaf.init_KafMemIsol @aKaf.init_KafLam
-               @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
-    @2nd_03 = [@aAyn.isol @aHaa.isol @aFaa.init_FaaYaaIsol @aBaa.init_AboveHaaIsol];
-    @2nd_04 = [@aAyn.init @aBaa.isol @aFaa.init @aFaa.isol @aHaa.init
-               @aHeh.init @aHeh.isol @aMem.init @aMem.isol @aSad.init @aSad.isol @aSen.init
-               @aSen.isol @aTaa.init @aTaa.isol @aYaa.isol @aAyn.init_AynMemInit
-               @aLam.init_LamHaaInit @aHaa.init_HaaYaaIsol @aMem.init_MemYaaIsol
-               @aMem.init_MemRaaIsol @aHaa.init_HaaHaaInit @aAyn.init_AynYaaIsol
-               @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol
-               @aBaa.init_BaaBaaHaaInit @aBaa.init_BaaBaaHaaInitLD
-               @aBaa.init_BaaBaaMemInit @aBaa.init_BaaBaaMemInitLD
-               @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol
-               @aBaa.init_BaaHaaMemInit @aBaa.init_BaaHaaMemInitLD
-               @aAyn.init_Finjani @aHaa.init_Finjani @aSen.init_PreYaa @aSad.init_PreYaa];
-    @2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
-    @2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
-    @2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh uni0644.init_Lellah
-               @aLam.init_LamAlfIsol @aLam.init_LamRaaIsol @aLam.init_LamLamInit];
-    @2nd_08 = [@aBaa.init @aBaa.init_LD
-               @aBaa.init_BaaRaaIsol @aBaa.init_BaaRaaIsolLD
-               @aBaa.init_BaaNonIsol @aBaa.init_BaaNonIsolLD
-               @aBaa.init_BaaDalIsol @aBaa.init_BaaDalIsolLD
-               @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaYaaIsolLD
-               @aBaa.init_BaaSenInit @aBaa.init_BaaSenInitLD
-               @aBaa.init_BaaHehInit @aBaa.init_BaaHehInitLD
-               @aBaa.init_BaaBaaIsol @aBaa.init_BaaBaaIsolLD
-               @aBaa.init_BaaMemIsol @aBaa.init_BaaMemIsolLD
-               @aBaa.init_BaaSenAltInit @aBaa.init_BaaSenAltInitLD
-               @aBaa.init_BaaHaaInit @aBaa.init_BaaHaaInitLD
-               @aBaa.init_High @aBaa.init_HighLD
-               @aBaa.init_Tatweel @aBaa.init_TatweelLD];
-    @2nd_09 = [@aBaa.init_BaaYaaIsol @aBaa.init_BaaYaaIsolLD
-               @aBaa.init_BaaMemHaaInit @aBaa.init_BaaMemHaaInitLD
-               @aLam.init_LamHaaMemInit @aFaa.init_FaaHaaInit @aMem.init_MemHaaInit
-               @aBaa.init_BaaMemInit @aBaa.init_BaaMemInitLD];
-    @2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
-    @2nd_11 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
-               @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
-               @aAyn.init_AboveHaaIsol];
-    @2nd_12 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
-
-    enum pos @1st_01 [@2nd_01 @2nd_03] <-300 0 -300 0>;
-    enum pos @1st_01  @2nd_02 <-900 0 -900 0>;
-    enum pos @1st_01  @2nd_12 <-600 0 -600 0>;
-    enum pos @1st_01 [@2nd_04 @2nd_07] <-450 0 -450 0>;
-    enum pos @1st_01 [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11] <-400 0 -400 0>;
-    enum pos @1st_01  @2nd_10 <-500 0 -500 0>;
-    enum pos @1st_02  @2nd_02 <-500 0 -500 0>;
-    enum pos @1st_02  @2nd_12 <-400 0 -400 0>;
-    enum pos @1st_03  @2nd_08 <-50  0 -50  0>;
-    enum pos @1st_03  @2nd_11 <-400 0 -400 0>;
-    enum pos @1st_03 [@2nd_02 @2nd_12] <-800 0 -800 0>;
-    enum pos @1st_03 [@2nd_03 @2nd_04 @2nd_05 @2nd_06] <-200 0 -200 0>;
+    pos @1st_01 [@2nd_01 @2nd_03]'                         lookup pos_300;
+    pos @1st_01  @2nd_02'                                  lookup pos_900;
+    pos @1st_01  @2nd_12'                                  lookup pos_600;
+    pos @1st_01 [@2nd_04 @2nd_07]'                         lookup pos_450;
+    pos @1st_01 [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11]' lookup pos_400;
+    pos @1st_01  @2nd_10'                                  lookup pos_500;
+    pos @1st_02  @2nd_02'                                  lookup pos_500;
+    pos @1st_02  @2nd_12'                                  lookup pos_400;
+    pos @1st_03  @2nd_08'                                  lookup pos_050;
+    pos @1st_03  @2nd_11'                                  lookup pos_400;
+    pos @1st_03 [@2nd_02 @2nd_12]'                         lookup pos_800;
+    pos @1st_03 [@2nd_03 @2nd_04 @2nd_05 @2nd_06]'         lookup pos_200;
 } kern;
 
 
