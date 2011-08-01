@@ -14,10 +14,12 @@ def Preview(re, obj):
     else:
         font = obj.font
 
-    if font.layers[1].is_quadratic:
-        out = tempfile.NamedTemporaryFile(suffix=".ttf").name
-    else:
-        out = tempfile.NamedTemporaryFile(suffix=".otf").name
+    global out
+    if not out:
+        if font.layers[1].is_quadratic:
+            out = tempfile.NamedTemporaryFile(suffix=".ttf").name
+        else:
+            out = tempfile.NamedTemporaryFile(suffix=".otf").name
 
     font.generate(out,flags=flags)
 
