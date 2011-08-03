@@ -1,6 +1,4 @@
-languagesystem DFLT dflt;
-languagesystem arab dflt;
-
+include(lang.fea)
 include(classes.fea)
 
 @1st_01 = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol
