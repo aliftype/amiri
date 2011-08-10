@@ -222,6 +222,7 @@
 @aMem.init_AboveHaaIsol = [ uni0765.init_AboveHaaIsol uni0645.init_AboveHaaIsol uni0766.init_AboveHaaIsol ];
 @aMem.init_MemHaaInit = [ uni0765.init_MemHaaInit uni0645.init_MemHaaInit uni0766.init_MemHaaInit ];
 @aMem.init_MemHaaMemInit = [ uni0765.init_MemHaaMemInit uni0645.init_MemHaaMemInit uni0766.init_MemHaaMemInit ];
+@aMem.init_MemHehInit = [ uni0765.init_MemHehInit uni0645.init_MemHehInit uni0766.init_MemHehInit ];
 @aMem.init_MemMemInit = [ uni0765.init_MemMemInit uni0645.init_MemMemInit uni0766.init_MemMemInit ];
 @aMem.init_MemRaaIsol = [ uni0765.init_MemRaaIsol uni0645.init_MemRaaIsol uni0766.init_MemRaaIsol ];
 @aMem.init_MemYaaIsol = [ uni0765.init_MemYaaIsol uni0645.init_MemYaaIsol uni0766.init_MemYaaIsol ];

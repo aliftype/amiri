@@ -1,0 +1,25 @@
+
+StartChar: aMem.init_MemHehInit
+Encoding: 65794 -1 4799
+Width: 780
+Flags: W
+AnchorPoint: "TashkilAbove" 380 1640 basechar 0
+AnchorPoint: "TashkilBelow" 390 -670 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+-1 48 m 0,0,1
+ 138 279 138 279 390 327 c 1,2,-1
+ 351 384 l 2,3,4
+ 332 412 332 412 345 440 c 0,5,6
+ 405 563 405 563 441 602 c 0,7,8
+ 466 630 466 630 492 616 c 0,9,10
+ 646 534 646 534 710 469 c 0,11,12
+ 731 448 731 448 718 409 c 0,13,14
+ 700 355 700 355 615 246 c 0,15,16
+ 594 218 594 218 534 216 c 0,17,18
+ 208 207 208 207 25 15 c 0,19,20
+ 10 4 10 4 -2 16 c 0,21,22
+ -15 27 -15 27 -1 48 c 0,0,1
+EndSplineSet
+EndChar

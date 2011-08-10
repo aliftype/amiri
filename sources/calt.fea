@@ -170,13 +170,14 @@ feature calt {
 
 lookup BaaHeh {
     sub @aBaa.init by @aBaa.init_BaaHehInit;
+    sub @aMem.init by @aMem.init_MemHehInit;
     sub @aBaa.medi by @aBaa.medi_BaaHehMedi;
     sub @aHeh.medi by @aHeh.medi_BaaHehMedi;
 } BaaHeh;
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [@aBaa.init @aBaa.medi]' lookup BaaHeh
+    sub [@aBaa.init @aBaa.medi @aMem.init]' lookup BaaHeh
         [@aHeh.medi]' lookup BaaHeh;
 } calt;
 

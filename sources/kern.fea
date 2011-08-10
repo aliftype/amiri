@@ -18,8 +18,8 @@ include(classes.fea)
            @aHeh.init @aHeh.isol @aMem.init @aMem.isol @aSad.init @aSad.isol @aSen.init
            @aSen.isol @aTaa.init @aTaa.isol @aYaa.isol @aAyn.init_AynMemInit
            @aLam.init_LamHaaInit @aHaa.init_HaaYaaIsol @aMem.init_MemYaaIsol
-           @aMem.init_MemRaaIsol @aHaa.init_HaaHaaInit @aAyn.init_AynYaaIsol
-           @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol
+           @aMem.init_MemRaaIsol @aMem.init_MemHehInit @aHaa.init_HaaHaaInit
+           @aAyn.init_AynYaaIsol @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol
            @aBaa.init_BaaBaaHaaInit @aBaa.init_BaaBaaHaaInitLD
            @aBaa.init_BaaBaaMemInit @aBaa.init_BaaBaaMemInitLD
            @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol
