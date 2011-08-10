@@ -34,6 +34,7 @@
 @aMem.init = [ uni0765.init uni0645.init uni0766.init ];
 @aMem.isol = [ uni0765 uni0645 uni0766 ];
 @aMem.medi = [ uni0645.medi ];
+@aMem.medi_dots = [ uni0765.medi uni0645.medi uni0766.medi ];
 @aNon.fina = [ uni0646.fina uni0767.fina uni06BA.fina uni06BC.fina uni06BB.fina uni0768.fina uni06B9.fina uni0769.fina uni06BD.fina ];
 @aNon.isol = [ uni0646 uni0767 uni06BA uni06BC uni06BB uni0768 uni06B9 uni0769 uni06BD ];
 @aQaf.fina = [ uni06A8.fina uni06A7.fina uni0642.fina uni066F.fina ];
@@ -237,7 +238,7 @@
 @aMem.medi_LamHaaMemInit = [ uni0645.medi_LamHaaMemInit ];
 @aMem.medi_LamMemHaaInit = [ uni0645.medi_LamMemHaaInit ];
 @aMem.medi_LamMemInit =    [ uni0645.medi_LamMemInit    ];
-@aMem.medi_LamMemMedi =    [ uni0645.medi_LamMemMedi    ];
+@aMem.medi_LamMemMedi =    [ uni0765.medi_LamMemMedi uni0645.medi_LamMemMedi uni0766.medi_LamMemMedi ];
 @aMem.medi_MemAlfFina =    [ uni0645.medi_MemAlfFina    ];
 @aMem.medi_SenBaaMemInit = [ uni0645.medi_SenBaaMemInit ];
 @aMem.medi_SenMemInit =    [ uni0645.medi_SenMemInit    ];

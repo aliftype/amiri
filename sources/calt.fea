@@ -469,7 +469,7 @@ lookup KafYaaFina {
 
 lookup LamMemMedi {
     sub @aLam.medi by @aLam.medi_LamMemMedi;
-    sub @aMem.medi by @aMem.medi_LamMemMedi;
+    sub @aMem.medi_dots by @aMem.medi_LamMemMedi;
 } LamMemMedi;
 
 lookup SenBaaMemInit {
@@ -612,7 +612,7 @@ feature calt {
 
     sub [@aKaf.init @aKaf.medi]' lookup KafLam
         [@aLam.medi]' lookup KafLamMemMedi
-        [@aMem.medi]' lookup LamMemMedi;
+        [@aMem.medi_dots]' lookup LamMemMedi;
 
     sub [@aKaf.init @aKaf.medi]' lookup KafLam
         [@aLam.medi]' lookup KafLamMemFina
@@ -708,7 +708,7 @@ feature calt {
         [@aYaa.fina]' lookup KafYaaFina;
 
     sub [@aLam.medi]' lookup LamMemMedi
-        [@aMem.medi]' lookup LamMemMedi;
+        [@aMem.medi_dots]' lookup LamMemMedi;
 
     sub [@aSen.init @aSad.init]
         [@aBaa.medi]' lookup SenBaaMemInit
