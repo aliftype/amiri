@@ -629,6 +629,11 @@ feature calt {
         [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf
         [@aAlf.fina @aAlf.fina_LamAlfFina];
 
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam
+        [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf
+         uni0621.float' # see float hamza in quran.fea
+        [@aAlf.fina @aAlf.fina_LamAlfFina];
+
     sub [@aBaa.init]' lookup BaaSenInit
         [@aSen.medi @aSen.fina]' lookup BaaSenInit;
 

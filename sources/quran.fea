@@ -13,6 +13,8 @@ feature calt {
   sub uni064E uni0670' by uni0670.isol;
 } calt;
 
+# if the spacing dagger alef comes between two connected glyphs, replace it
+# with an alternate glyph the has a connecting (tatweel) stroke
 @before = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
            @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
            @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
@@ -21,12 +23,99 @@ feature calt {
            @aFaa.fina @aFaa.medi @aHaa.fina @aHaa.medi @aHeh.fina @aHeh.medi
            @aKaf.fina @aKaf.medi @aLam.fina @aLam.medi @aMem.fina @aMem.medi
            @aNon.fina @aQaf.fina @aRaa.fina @aSad.fina @aSad.medi @aSen.fina
-           @aSen.medi @aTaa.fina @aTaa.medi @aWaw.fina @aYaa.fina];
+           @aSen.medi @aTaa.fina @aTaa.medi @aWaw.fina @aYaa.fina uni0640];
 
-# if the spacing dagger alef comes between two connected glyphs, replace it
-# with an alternate glyph the has a connecting (tatweel) stroke
+lookup MedialSmallAlef {
+  sub uni0670.isol by uni0670.medi;
+} MedialSmallAlef;
+
 feature calt {
   lookupflag IgnoreMarks;
-    sub @before uni0670.isol' @after by uni0670.medi;
+    sub @before'
+        uni0670.isol' lookup MedialSmallAlef
+        @after;
 } calt;
 
+# In Unicode, standalone hamza (U+0621) is non-joining character, but in
+# Quranic orthography it is joining transparent (just like combining marks),
+# the code below overrides default shaping behaviour by replacing non-joined
+# glyphs around hamza by joined one and replacing the hamza by an alternate
+# setting on a connecting tatweel.
+@before.isol = [uni0626 uni0628 uni062A uni062B uni062C uni062D uni062E uni0633
+                uni0634 uni0635 uni0636 uni0637 uni0638 uni0639 uni063A uni0641
+                uni0642 uni0643 uni0645 uni0646 uni0647 uni0649 uni064A];
+@before.init = [uni0626.init uni0628.init uni062A.init uni062B.init uni062C.init
+                uni062D.init uni062E.init uni0633.init uni0634.init uni0635.init
+                uni0636.init uni0637.init uni0638.init uni0639.init uni063A.init
+                uni0641.init uni0642.init uni0643.init uni0645.init uni0646.init
+                uni0647.init uni0649.init uni064A.init];
+@before.medi = [uni0626.medi uni0628.medi uni062A.medi uni062B.medi uni062C.medi
+                uni062D.medi uni062E.medi uni0633.medi uni0634.medi uni0635.medi
+                uni0636.medi uni0637.medi uni0638.medi uni0639.medi uni063A.medi
+                uni0641.medi uni0642.medi uni0643.medi uni0645.medi uni0646.medi
+                uni0647.medi uni0649.medi uni064A.medi];
+@before.fina = [uni0626.fina uni0628.fina uni062A.fina uni062B.fina uni062C.fina
+                uni062D.fina uni062E.fina uni0633.fina uni0634.fina uni0635.fina
+                uni0636.fina uni0637.fina uni0638.fina uni0639.fina uni063A.fina
+                uni0641.fina uni0642.fina uni0643.fina uni0645.fina uni0646.fina
+                uni0647.fina uni0649.fina uni064A.fina];
+
+@after.isol =  [uni0622 uni0623 uni0624 uni0625 uni0627 uni0629 uni062F uni0630
+                uni0631 uni0632 uni0648];
+@after.fina =  [uni0622.fina uni0623.fina uni0624.fina uni0625.fina uni0627.fina
+                uni0629.fina uni062F.fina uni0630.fina uni0631.fina uni0632.fina
+                uni0648.fina];
+
+@before = [@before.isol @before.fina];
+@after  = [@after.isol @before.isol @before.init];
+
+lookup Before {
+  sub @before.isol by @before.init;
+  sub @before.fina by @before.medi;
+} Before;
+
+lookup After {
+  sub @before.isol by @before.fina;
+  sub @after.isol  by @after.fina;
+  sub @before.init by @before.medi;
+} After;
+
+lookup MedialHamza {
+  sub uni0621 by uni0621.medi;
+} MedialHamza;
+
+lookup FloatHamza {
+  sub uni0621 by uni0621.float;
+} FloatHamza;
+
+lookup LamAlefIsol {
+  sub uni0644 by uni0644.init_LamAlfIsol;
+  sub uni0627 by uni0627.fina_LamAlfIsol;
+} LamAlefIsol;
+
+lookup LamAlefFina {
+  sub uni0644.fina by uni0644.medi_LamAlfFina;
+  sub uni0627      by uni0627.fina_LamAlfFina;
+} LamAlefFina;
+
+feature calt {
+  lookupflag IgnoreMarks;
+    sub @before'      lookup Before
+        uni0621'      lookup MedialHamza
+        @after'       lookup After;
+
+    sub @before'      lookup Before
+        uni0670.isol' lookup MedialSmallAlef
+        uni0621'      lookup MedialHamza
+        @after'       lookup After;
+
+    # lam-alef needs special treatment since the hamza here must not have a
+    # connecting part
+    sub uni0644'      lookup LamAlefIsol
+        uni0621'      lookup FloatHamza
+        uni0627'      lookup LamAlefIsol;
+
+    sub uni0644.fina' lookup LamAlefFina
+        uni0621'      lookup FloatHamza
+        uni0627'      lookup LamAlefFina;
+} calt;
