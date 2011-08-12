@@ -1,0 +1,32 @@
+include(lang.fea)
+include(classes.fea)
+
+# In Quranic orthography, there are two forms of dagger alef; a superscript one
+# that is a combining mark and a spacing one that is regular alef letter, the
+# later is not encoded in Unicode yet. The spacing dagger alef is almost always
+# preceded by a fatha mark and we use this fact to replace the combing dagger
+# alef by a spacing one when preceded by fatha, a hack but should do the job
+# until the proper character get encoded.
+
+# substitute combing dagger alef preceded by fatha with the spacing one
+feature calt {
+  sub uni064E uni0670' by uni0670.isol;
+} calt;
+
+@before = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
+           @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
+           @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
+           @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
+@after  = [@aAlf.fina @aAyn.fina @aAyn.medi @aBaa.fina @aBaa.medi @aDal.fina
+           @aFaa.fina @aFaa.medi @aHaa.fina @aHaa.medi @aHeh.fina @aHeh.medi
+           @aKaf.fina @aKaf.medi @aLam.fina @aLam.medi @aMem.fina @aMem.medi
+           @aNon.fina @aQaf.fina @aRaa.fina @aSad.fina @aSad.medi @aSen.fina
+           @aSen.medi @aTaa.fina @aTaa.medi @aWaw.fina @aYaa.fina];
+
+# if the spacing dagger alef comes between two connected glyphs, replace it
+# with an alternate glyph the has a connecting (tatweel) stroke
+feature calt {
+  lookupflag IgnoreMarks;
+    sub @before uni0670.isol' @after by uni0670.medi;
+} calt;
+

@@ -7,7 +7,8 @@ SRC=sources
 WEB=web
 DOC=documentation
 FONTS=amiri-regular
-FEA=lang classes gsub locl tnum lellah calt kern
+# the order of feature files is important
+FEA=lang classes gsub quran locl tnum lellah calt kern
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
