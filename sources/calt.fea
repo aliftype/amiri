@@ -1,22 +1,15 @@
 include(lang.fea)
 include(classes.fea)
 
-# replace tashkil following shadda by a smaller alternates
+# replace tashkil following shadda by smaller alternates
 feature calt {
     sub [uni0651] [uni064E uni064B uni064F uni0670]' by [uni064E.small uni064B.small uni064F.small uni0670.small];
 } calt;
 
-# Replace tashkil above Hamza with special smaller version
-lookup MarkOnHamza {
-    sub uni064E by uni064E.small2;
-    sub uni064F by uni064F.small2;
-    sub uni0650 by uni0650.small2;
-    sub uni0652 by uni0652.small2;
-} MarkOnHamza;
-
+# replace tashkil following hamza by smaller alternates
 feature calt {
-    sub @LetterHamzaAbove' [uni064E uni064F uni0652]' lookup MarkOnHamza;
-    sub @LetterHamzaBelow' [uni0650]'                 lookup MarkOnHamza;
+    sub @LetterHamzaAbove [uni064E uni064F uni0652]' by [uni064E.small2 uni064F.small2 uni0652.small2];
+    sub @LetterHamzaBelow [uni0650]'                 by [uni0650.small2];
 } calt;
 
 lookup AboveHaaInit {
