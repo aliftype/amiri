@@ -1,16 +1,9 @@
 include(lang.fea)
 include(classes.fea)
 
-lookup ShaddaCombined {
-    sub uni064B by uni064B.small;
-    sub uni064E by uni064E.small;
-    sub uni064F by uni064F.small;
-    sub uni0651 by uni0651.small;
-} ShaddaCombined;
-
+# replace tashkil following shadda by a smaller alternates
 feature calt {
-    sub [uni0651]' lookup ShaddaCombined
-        [uni064E uni064B uni064F uni0670]' lookup ShaddaCombined;
+    sub [uni0651] [uni064E uni064B uni064F uni0670]' by [uni064E.small uni064B.small uni064F.small uni0670.small];
 } calt;
 
 # Replace tashkil above Hamza with special smaller version
