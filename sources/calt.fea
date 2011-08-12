@@ -7,50 +7,6 @@ feature calt {
 } calt;
 
 # Replace tashkil above Hamza with special smaller version
-@LetterHamzaAbove = [uni0623 uni0623.fina uni0623.fina_KafAlf uni0623.fina_KafMemAlf
-                     uni0623.fina_LamAlfFina uni0623.fina_LamAlfIsol uni0623.fina_MemAlfFina uni0624
-                     uni0624.fina uni0624.fina_LamWawFina uni0626 uni0626.fina
-                     uni0626.fina_BaaBaaYaaIsol uni0626.fina_BaaYaaFina uni0626.fina_FaaYaaFina
-                     uni0626.fina_KafYaaFina uni0626.fina_KafYaaIsol uni0626.fina_LamYaaFina
-                     uni0626.fina_PostTooth uni0626.fina_Tatweel uni0626.init
-                     uni0626.init_AboveHaaIsol uni0626.init_BaaBaaHaaInit
-                     uni0626.init_BaaBaaIsol uni0626.init_BaaBaaMemInit uni0626.init_BaaBaaYaaIsol
-                     uni0626.init_BaaDalIsol uni0626.init_BaaHaaInit uni0626.init_BaaHaaMemInit
-                     uni0626.init_BaaHehInit uni0626.init_BaaMemHaaInit uni0626.init_BaaMemInit
-                     uni0626.init_BaaMemIsol uni0626.init_BaaNonIsol uni0626.init_BaaRaaIsol
-                     uni0626.init_BaaSenAltInit uni0626.init_BaaSenInit uni0626.init_BaaYaaIsol
-                     uni0626.init_High uni0626.init_Tatweel uni0626.medi uni0626.medi_BaaBaaHaaInit
-                     uni0626.medi_BaaBaaInit uni0626.medi_BaaBaaMemInit uni0626.medi_BaaBaaYaaIsol
-                     uni0626.medi_BaaHehMedi uni0626.medi_BaaMemAlfFina uni0626.medi_BaaMemFina
-                     uni0626.medi_BaaNonFina uni0626.medi_BaaRaaFina uni0626.medi_BaaYaaFina
-                     uni0626.medi_High uni0626.medi_KafBaaInit uni0626.medi_KafBaaMedi
-                     uni0626.medi_LamBaaMemInit uni0626.medi_SenBaaMemInit uni0672 uni0672.fina
-                     uni0672.fina_KafAlf uni0672.fina_KafMemAlf uni0672.fina_LamAlfFina
-                     uni0672.fina_LamAlfIsol uni0672.fina_MemAlfFina uni0675 uni0675.fina
-                     uni0675.fina_KafAlf uni0675.fina_KafMemAlf uni0675.fina_LamAlfFina
-                     uni0675.fina_LamAlfIsol uni0675.fina_MemAlfFina uni0676 uni0676.fina
-                     uni0676.fina_LamWawFina uni0678 uni0678.init uni0678.medi
-                     uni0678.fina uni0678.init_BaaRaaIsol uni0678.fina_FaaYaaFina
-                     uni0678.medi_BaaMemFina uni0678.medi_LamBaaMemInit uni0678.init_BaaDalIsol
-                     uni0678.init_BaaMemHaaInit uni0678.init_BaaBaaYaaIsol
-                     uni0678.medi_BaaBaaYaaIsol uni0678.fina_BaaBaaYaaIsol uni0678.fina_LamYaaFina
-                     uni0678.medi_KafBaaInit uni0678.medi_BaaBaaInit
-                     uni0678.init_BaaNonIsol uni0678.init_BaaSenInit uni0678.medi_BaaRaaFina
-                     uni0678.init_BaaMemInit uni0678.fina_KafYaaFina uni0678.init_BaaBaaHaaInit
-                     uni0678.medi_BaaBaaHaaInit uni0678.medi_SenBaaMemInit uni0678.init_BaaBaaIsol
-                     uni0678.init_BaaBaaMemInit uni0678.medi_BaaBaaMemInit uni0678.medi_KafBaaMedi
-                     uni0678.medi_BaaNonFina uni0678.medi_BaaYaaFina uni0678.fina_BaaYaaFina
-                     uni0678.init_BaaSenAltInit uni0678.fina_PostTooth uni0678.init_AboveHaaIsol
-                     uni0678.init_BaaHaaInit uni0678.init_BaaHaaMemInit uni0678.init_High
-                     uni0678.medi_High uni0678.init_Tatweel uni0678.fina_Tatweel
-                     uni0678.init_BaaYaaIsol uni0678.fina_KafYaaIsol uni0678.init_BaaMemIsol
-                     uni0678.medi_BaaMemAlfFina uni0678.init_BaaHehInit uni0678.medi_BaaHehMedi];
-
-@LetterHamzaBelow = [uni0625 uni0673 uni0625.fina uni0673.fina uni0625.fina_LamAlfIsol
-                     uni0673.fina_LamAlfIsol uni0625.fina_LamAlfFina uni0673.fina_LamAlfFina
-                     uni0625.fina_KafAlf uni0673.fina_KafAlf uni0625.fina_KafMemAlf
-                     uni0673.fina_KafMemAlf uni0625.fina_MemAlfFina uni0673.fina_MemAlfFina];
-
 lookup MarkOnHamza {
     sub uni064E by uni064E.small2;
     sub uni064F by uni064F.small2;
