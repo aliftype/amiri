@@ -38,9 +38,9 @@ lookup LamLamInit {
 
 # redifine to not include [اآٱ]
 @aAlf.isol = [uni0625 uni0774 uni0773 uni0623 uni0675 uni0672 uni0673];
-# redefine to not include [ا]
+# redefine to not include [اٱ]
 @aAlf.fina = [uni0625.fina uni0774.fina uni0773.fina uni0623.fina uni0622.fina
-              uni0675.fina uni0672.fina uni0673.fina uni0671.fina];
+              uni0675.fina uni0672.fina uni0673.fina];
 # redefine to not include [و]
 @aWaw.isol = [uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4
               uni06C5 uni0676 uni0677 uni06C8 uni06C9 uni0779];
