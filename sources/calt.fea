@@ -93,7 +93,7 @@ uni0777.medi_BaaNonFina uni0776.medi_BaaNonFina uni06BC.medi_BaaNonFina uni0756.
 feature calt {
   lookupflag IgnoreMarks;
    sub [@aKaf.init @aKaf.medi]'
-       [@BaaKafTatweel @aFaa.fina @aFaa.medi @aHeh.medi @aFaa.medi_FaaYaaFina] # see SF#3085159
+       [@BaaKafTatweel @aFaa.fina @aFaa.medi @aHeh.medi @aFaa.medi_FaaYaaFina uni0670.medi] # see SF#3085159
     by [@aKaf.init_Tatweel @aKaf.medi_Tatweel];
 } calt;
 
