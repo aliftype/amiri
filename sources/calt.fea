@@ -8,8 +8,8 @@ feature calt {
 
 # replace tashkil following hamza by smaller alternates
 feature calt {
-    sub @LetterHamzaAbove [uni064E uni064F uni0652]' by [uni064E.small2 uni064F.small2 uni0652.small2];
-    sub @LetterHamzaBelow [uni0650]'                 by [uni0650.small2];
+    sub @AlefHamzaAbove [uni064E uni064F uni0652]' by [uni064E.small2 uni064F.small2 uni0652.small2];
+    sub @AlefHamzaBelow [uni0650]'                 by [uni0650.small2];
 } calt;
 
 lookup AboveHaaInit {
