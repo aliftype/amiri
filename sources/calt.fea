@@ -33,6 +33,12 @@ lookup BaaRaaFina {
     sub @aRaa.fina by @aRaa.fina_BaaRaaFina;
 } BaaRaaFina;
 
+feature calt {
+  lookupflag IgnoreMarks;
+    sub [@aBaa.medi]' lookup BaaRaaFina
+        [@aRaa.fina]' lookup BaaRaaFina;
+} calt;
+
 lookup BaaNonFina {
     sub @aBaa.medi by @aBaa.medi_BaaNonFina;
     sub @aNon.fina by @aNon.fina_BaaNonFina;
@@ -40,8 +46,6 @@ lookup BaaNonFina {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [@aBaa.medi]' lookup BaaRaaFina
-        [@aRaa.fina]' lookup BaaRaaFina;
     sub [@aBaa.medi]' lookup BaaNonFina
         [@aNon.fina]' lookup BaaNonFina;
 } calt;
