@@ -3,6 +3,7 @@ StartChar: uni0648
 Encoding: 1608 1608 1127
 Width: 1121
 VWidth: 0
+AnchorPoint: "AlefAbove" 800 650 basechar 0
 AnchorPoint: "TashkilAbove" 730 1640 basechar 0
 AnchorPoint: "TashkilBelow" 810 -670 basechar 0
 LayerCount: 2

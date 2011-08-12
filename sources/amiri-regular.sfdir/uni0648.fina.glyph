@@ -3,6 +3,7 @@ StartChar: uni0648.fina
 Encoding: 66338 -1 1112
 Width: 1008
 VWidth: 0
+AnchorPoint: "AlefAbove" 800 650 basechar 0
 AnchorPoint: "TashkilAbove" 600 1640 basechar 0
 AnchorPoint: "TashkilBelow" 800 -670 basechar 0
 LayerCount: 2
