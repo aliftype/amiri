@@ -36,7 +36,6 @@ div.en {
 }
 
 h1 {
-   color: #404040;
    font-size: 16pt;
    font-weight: 400;
 }
@@ -62,7 +61,6 @@ tt {
    font-size: 9pt;
    width: 775px;
    height: 53px;
-   background-color: #ffffff;
    border-bottom: 1px solid #aaaaaa;
    margin-bottom: 10px;
    padding: 10px;
