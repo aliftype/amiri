@@ -48,9 +48,13 @@ tt {
    text-align: justify;
 }
 
-.fullwidth {
-   height: 53px;
+.banner {
+   background-image: url(banner.jpg);
+   background-repeat: no-repeat;
+   background-position: 0 10px;
+   border-top: 1px solid #aaaaaa;
    border-bottom: 1px solid #aaaaaa;
-   margin-bottom: 10px;
-   padding: 10px;
+   margin: 10px 0;
+   padding-top: 267px;
+   padding-bottom: 53px;
 }
