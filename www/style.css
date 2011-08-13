@@ -19,11 +19,18 @@ body {
 }
 
 div.ar {
+   direction: rtl;
    font-family: "AmiriWeb";
+   line-height: 1.59;
+   float: right;
+   right: 5px;
 }
 
 div.en {
+   direction: ltr;
    font-family: "LibertineWeb";
+   float: left;
+   left: 5px;
 }
 
 h1 {
@@ -41,31 +48,11 @@ tt {
    background: #E6E6E6;
 }
 
-.column-en {
+.column {
    position: relative;
-   left: 5px;
    width: 375px;
-   background-color: #fffef8;
    text-align: justify;
    font-size: 12pt;
-
-   float: left;
-   direction: ltr;
-   font-family: "LibertineWeb";
-}
-
-.column-ar {
-   position: relative;
-   right: 5px;
-   width: 375px;
-   background-color: #fffef8;
-   text-align: justify;
-   font-size: 12pt;
-
-   float: right;
-   direction: rtl;
-   font-family: "AmiriWeb";
-   line-height: 1.59;
 }
 
 .fullwidth {
