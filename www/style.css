@@ -9,6 +9,7 @@ html {
 body {
    margin: 0 auto;
    width: 800px;
+   font-size: 12pt;
 }
 
 h1 {
@@ -45,11 +46,9 @@ tt {
    position: relative;
    width: 375px;
    text-align: justify;
-   font-size: 12pt;
 }
 
 .fullwidth {
-   font-size: 9pt;
    height: 53px;
    border-bottom: 1px solid #aaaaaa;
    margin-bottom: 10px;
