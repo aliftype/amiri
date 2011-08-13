@@ -27,16 +27,16 @@ tt {
 
 .ar {
    direction: rtl;
-   font-family: "AmiriWeb";
-   line-height: 1.59;
+   font-family: "AmiriWeb", "Crimson Text", serif;
+   line-height: 1.6;
    float: right;
    right: 5px;
 }
 
 .en {
    direction: ltr;
-   font-family: "Crimson Text";
-   line-height: 1.22;
+   font-family: "Crimson Text", serif;
+   line-height: 1.21;
    float: left;
    left: 5px;
 }
