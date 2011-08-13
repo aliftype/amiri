@@ -1,4 +1,5 @@
-@import url("fonts/fonts.css");
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,600);
+@import url(amiri/amiri.css);
 
 html, div {
    margin: 0px;
@@ -28,7 +29,8 @@ div.ar {
 
 div.en {
    direction: ltr;
-   font-family: "LibertineWeb";
+   font-family: "Crimson Text";
+   line-height: 1.22;
    float: left;
    left: 5px;
 }
