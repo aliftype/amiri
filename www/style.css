@@ -1,11 +1,11 @@
 @import url("fonts/fonts.css");
 
 html, div {
-    margin: 0px;
-    padding: 0;
-    border: 0;
-    color: #404040;
-    background-color: #fffef8
+   margin: 0px;
+   padding: 0;
+   border: 0;
+   color: #404040;
+   background-color: #fffef8
 }
 
 body {
@@ -19,26 +19,26 @@ body {
 }
 
 div.ar {
-    font-family: "AmiriWeb";
+   font-family: "AmiriWeb";
 }
 
 div.en {
-    font-family: "LibertineWeb";
+   font-family: "LibertineWeb";
 }
 
 h1 {
-    color: #404040;
-    font-size: 16pt;
-    font-weight: 400;
+   color: #404040;
+   font-size: 16pt;
+   font-weight: 400;
 }
 
 a {
-    text-decoration: none;
-    color: #ad000d
+   text-decoration: none;
+   color: #ad000d
 }
 
 tt {
-    background: #E6E6E6;
+   background: #E6E6E6;
 }
 
 .column-en {
