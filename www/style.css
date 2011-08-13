@@ -2,37 +2,13 @@
 @import url(amiri/amiri.css);
 
 html, div {
-   margin: 0px;
-   padding: 0;
-   border: 0;
    color: #404040;
    background-color: #fffef8
 }
 
 body {
-   border-width: 0px;
-   padding: 0px;
-   margin: 0px;
-   position: relative;
+   margin: 0 auto;
    width: 800px;
-   margin-right: auto;
-   margin-left: auto;
-}
-
-div.ar {
-   direction: rtl;
-   font-family: "AmiriWeb";
-   line-height: 1.59;
-   float: right;
-   right: 5px;
-}
-
-div.en {
-   direction: ltr;
-   font-family: "Crimson Text";
-   line-height: 1.22;
-   float: left;
-   left: 5px;
 }
 
 h1 {
@@ -49,6 +25,22 @@ tt {
    background: #E6E6E6;
 }
 
+.ar {
+   direction: rtl;
+   font-family: "AmiriWeb";
+   line-height: 1.59;
+   float: right;
+   right: 5px;
+}
+
+.en {
+   direction: ltr;
+   font-family: "Crimson Text";
+   line-height: 1.22;
+   float: left;
+   left: 5px;
+}
+
 .column {
    position: relative;
    width: 375px;
@@ -57,9 +49,7 @@ tt {
 }
 
 .fullwidth {
-   position: relative;
    font-size: 9pt;
-   width: 775px;
    height: 53px;
    border-bottom: 1px solid #aaaaaa;
    margin-bottom: 10px;
