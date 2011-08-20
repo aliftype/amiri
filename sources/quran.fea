@@ -1,6 +1,10 @@
 include(lang.fea)
 include(classes.fea)
 
+#
+# dagger alef
+#
+
 # In Quranic orthography, there are two forms of dagger alef; a superscript one
 # that is a combining mark and a spacing one that is regular alef letter, the
 # later is not encoded in Unicode yet. The spacing dagger alef is almost always
@@ -35,6 +39,10 @@ feature calt {
         uni0670.isol' lookup MedialSmallAlef
         @after;
 } calt;
+
+#
+# floating hamza
+#
 
 # In Unicode, standalone hamza (U+0621) is non-joining character, but in
 # Quranic orthography it is joining transparent (just like combining marks),
@@ -119,3 +127,59 @@ feature calt {
         uni0621'      lookup FloatHamza
         uni0627'      lookup LamAlefFina;
 } calt;
+
+#
+# end of ayah sign
+#
+
+# first we replace any sequence of digits, up to three places, following end of
+# ayah sign by smaller alternates
+
+@EndOfAyah = [uni06DD];
+
+lookup digit2small {
+  sub @Digits by @Digits.small;
+} digit2small;
+
+feature calt {
+  sub                             @EndOfAyah @Digits' lookup digit2small;
+  sub @Digits.small               @EndOfAyah @Digits' lookup digit2small;
+  sub @Digits.small @Digits.small @EndOfAyah @Digits' lookup digit2small;
+} calt;
+
+# now we contextually kern end of ayah with the digits:
+# * one digit: move digit's x by -((ew+dw)/2) and its Δx by -dw
+# * two digts: the above, then move 1st digit's x by -(dw/2) and 2nd digit's x
+#   by -(((ew+dw)/2)-(dw/2)) and its Δx by -dw
+# * three digits: the above, then move 1st & 2nd digit's x by -(dw/2) and 3rd
+#   digit's x by -(((ew+dw)/2)-dw) and its Δx by -dw
+#
+# dw = digit width, ew = end of ayah width
+
+lookup digit2half {
+  pos @Digits.small <-300 0 0 0>;
+} digit2half;
+
+feature kern {
+  pos @EndOfAyah @Digits.small' <-2020 0 -600 0>;
+} kern;
+
+feature kern {
+  pos @EndOfAyah @Digits.small' lookup digit2half @Digits.small;
+} kern;
+
+feature kern {
+  pos @Digits.small @EndOfAyah @Digits.small' <-1720 0 -600 0>;
+} kern;
+
+feature kern {
+  pos @EndOfAyah @Digits.small' lookup digit2half @Digits.small @Digits.small;
+} kern;
+
+feature kern {
+  pos @Digits.small @EndOfAyah @Digits.small' lookup digit2half @Digits.small;
+} kern;
+
+feature kern {
+  pos @Digits.small @Digits.small @EndOfAyah @Digits.small' <-1420 0 -600 0>;
+} kern;
