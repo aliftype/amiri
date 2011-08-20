@@ -161,7 +161,7 @@ lookup digit2half {
 } digit2half;
 
 feature kern {
-  pos @EndOfAyah @Digits.small' <-2020 0 -600 0>;
+  pos @EndOfAyah @Digits.small' <-1610 0 -600 0>;
 } kern;
 
 feature kern {
@@ -169,7 +169,7 @@ feature kern {
 } kern;
 
 feature kern {
-  pos @Digits.small @EndOfAyah @Digits.small' <-1720 0 -600 0>;
+  pos @Digits.small @EndOfAyah @Digits.small' <-1310 0 -600 0>;
 } kern;
 
 feature kern {
@@ -181,5 +181,5 @@ feature kern {
 } kern;
 
 feature kern {
-  pos @Digits.small @Digits.small @EndOfAyah @Digits.small' <-1420 0 -600 0>;
+  pos @Digits.small @Digits.small @EndOfAyah @Digits.small' <-1010 0 -600 0>;
 } kern;
