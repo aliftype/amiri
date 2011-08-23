@@ -29,7 +29,7 @@ tt {
 .ar {
    direction: rtl;
    font-family: "AmiriWeb", "Crimson Text", serif;
-   line-height: 1.6;
+   line-height: 1.61;
    float: right;
    right: 5px;
 }
@@ -37,7 +37,7 @@ tt {
 .en {
    direction: ltr;
    font-family: "Crimson Text", serif;
-   line-height: 1.21;
+   line-height: 1.2;
    float: left;
    left: 5px;
 }
