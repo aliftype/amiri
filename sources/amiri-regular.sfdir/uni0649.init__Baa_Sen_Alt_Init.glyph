@@ -3,6 +3,7 @@ StartChar: uni0649.init_BaaSenAltInit
 Encoding: 68136 -1 2874
 Width: 474
 VWidth: 0
+AnchorPoint: "AlefAbove" 164 1290 basechar 0
 AnchorPoint: "TashkilAbove" 143 1640 basechar 0
 AnchorPoint: "TashkilBelow" 262 -670 basechar 0
 LayerCount: 2

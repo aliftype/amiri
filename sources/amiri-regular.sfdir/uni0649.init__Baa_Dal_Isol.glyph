@@ -3,6 +3,7 @@ StartChar: uni0649.init_BaaDalIsol
 Encoding: 66655 -1 1454
 Width: 349
 VWidth: 0
+AnchorPoint: "AlefAbove" 100 980 basechar 0
 AnchorPoint: "TashkilAbove" 155 1640 basechar 0
 AnchorPoint: "TashkilBelow" 80 -670 basechar 0
 LayerCount: 2
