@@ -32,9 +32,9 @@ def genCSS(font, base):
 
     css = """
 @font-face {
+    font-family: %(family)s;
     font-style: %(style)s;
     font-weight: %(weight)s;
-    font-family: %(family)s;
     src: url('%(base)s.eot?') format('eot'),
          url('%(base)s.woff') format('woff'),
          url('%(base)s.ttf')  format('truetype');
