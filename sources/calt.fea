@@ -3,7 +3,7 @@ include(classes.fea)
 
 # replace tashkil following shadda by smaller alternates
 feature calt {
-    sub [uni0651] [uni064E uni064B uni064F]' by [uni064E.small uni064B.small uni064F.small];
+    sub [uni0651] [uni064E uni064B uni064F uni08F0]' by [uni064E.small uni064B.small uni064F.small uni08F0.small];
 } calt;
 
 # replace tashkil following hamza by smaller alternates

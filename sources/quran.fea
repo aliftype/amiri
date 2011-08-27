@@ -192,8 +192,9 @@ feature kern {
 #
 # We can use this temporary ligature hack for now.
 
-feature liga {
+# rlig as we want it to be applied before calt
+feature rlig {
   sub uni064E uni064E by uni08F0; # fathatan
   sub uni064F uni064F by uni08F1; # dammatan
   sub uni0650 uni0650 by uni08F2; # kasratan
-} liga;
+} rlig;
