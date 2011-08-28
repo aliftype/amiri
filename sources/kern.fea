@@ -9,6 +9,7 @@ include(classes.fea)
            @aDal.fina_KafDal @aDal.fina_LamDal];
 @1st_03 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
 @2nd_01 = [@aAlf.isol @aAlf.isol_LowHamza
+           uni0621 # hamza
            uni0670.isol]; # dagger alef
 @2nd_02 = [@aKaf.init @aKaf.init_KafHeh
            @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
