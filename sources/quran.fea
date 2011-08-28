@@ -77,6 +77,8 @@ feature calt {
 @before = [@before.isol @before.fina];
 @after  = [@after.isol @before.isol @before.init];
 
+@floats = [uni0621 uni06E5 uni06E6];
+
 lookup Before {
   sub @before.isol by @before.init;
   sub @before.fina by @before.medi;
@@ -89,7 +91,7 @@ lookup After {
 } After;
 
 lookup MedialHamza {
-  sub uni0621 by uni0621.medi;
+  sub @floats by [uni0621.medi uni06E5.medi uni06E6.medi];
 } MedialHamza;
 
 lookup FloatHamza {
@@ -120,12 +122,17 @@ feature calt {
 
     # everything else
     sub @before'      lookup Before
-        uni0621'      lookup MedialHamza
+        @floats'      lookup MedialHamza
+        @after'       lookup After;
+
+    sub @before'      lookup Before
+        @floats'      lookup MedialHamza
+        @floats'      lookup MedialHamza
         @after'       lookup After;
 
     sub @before'      lookup Before
         uni0670.isol' lookup MedialSmallAlef
-        uni0621'      lookup MedialHamza
+        @floats'      lookup MedialHamza
         @after'       lookup After;
 } calt;
 
