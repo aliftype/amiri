@@ -1,19 +1,3 @@
-%D \module
-%D   [     file=t-amiri,
-%D      version=0.001,
-%D        title=Amiri font,
-%D     subtitle=Support module for Amiri font,
-%D       author=Khaled Hosny,
-%D         date=\currentdate,
-%D    copyright=Khaled Hosny,
-%D      license=CC0]
-
-\writestatus{loading}{Amiri font support module}
-
-\startmodule[amiri]
-
-\unprotect
-
 \starttypescript [serif] [amiri]
  \definefontsynonym [Serif]           [name:amiri-regular] [features=arabic]
  \definefontsynonym [SerifBold]       [name:amiri-regular] [features=arabic]
@@ -25,20 +9,8 @@
   \definetypeface [amiri] [rm] [serif] [amiri] [default]
 \stoptypescript
 
-\protect
-
-\stopmodule
-
-\doifnotmode{demo}{\endinput}
-
-\pdfcompresslevel=0
-\pdfobjcompresslevel=0
-\usemodule[amiri]
-\setupbodyfont[amiri, 50pt]
-
+\setupbodyfont[amiri, 12pt]
+\setupalign[r2l]
 \starttext
- \startTEXpage
-  \textdir TRT
   بِسْم اللَّهِ الرَّحْمَنِ الرَّحِيم
- \stopTEXpage
 \stoptext
