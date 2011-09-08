@@ -14,7 +14,7 @@ include(classes.fea)
 
 # substitute combining dagger alef preceded by fatha with the spacing one
 feature calt {
-  sub uni064E uni0670' by uni0670.isol;
+  sub [uni064E] uni0670' by uni0670.isol;
 } calt;
 
 #
