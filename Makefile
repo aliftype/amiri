@@ -8,7 +8,7 @@ WEB=web
 DOC=documentation
 FONTS=amiri-regular
 # the order of feature files is important
-FEA=lang classes locl gsub quran tnum lellah calt kern
+FEA=lang classes locl gsub quran tnum rtlm lellah calt kern
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
