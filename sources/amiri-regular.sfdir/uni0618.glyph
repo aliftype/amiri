@@ -8,5 +8,15 @@ AnchorPoint: "TashkilAboveDot" 506 1640 mark 0
 AnchorPoint: "TashkilAbove" 506 1640 mark 0
 LayerCount: 2
 Fore
-Refer: 281 -1 N 1 0 0 1 520 -350 2
+SplineSet
+292 1785 m 0,0,-1
+ 643 1941 l 0,1,2
+ 672 1953 672 1953 668 1928 c 2,3,-1
+ 661 1871 l 2,4,5
+ 659 1855 659 1855 647 1849 c 0,6,-1
+ 303 1729 l 0,7,8
+ 268 1717 268 1717 271 1743 c 2,9,-1
+ 274 1765 l 2,10,11
+ 277 1779 277 1779 292 1785 c 0,0,-1
+EndSplineSet
 EndChar
