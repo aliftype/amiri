@@ -244,6 +244,9 @@
 @aMem.medi_SenMemInit =    [ uni0645.medi_SenMemInit    ];
 @aMem.medi_LamMemInitTatweel = [ uni0645.medi_LamMemInitTatweel ];
 @aMem.medi_KafMemMediTatweel = [ uni0645.medi_KafMemMediTatweel ];
+@aMem.fina_LamMemFinaExtended = [ uni0645.fina_LamMemFinaExtended ];
+@aMem.fina_KafMemFinaExtended = [ uni0645.fina_KafMemFinaExtended ];
+@aMem.fina_KafMemIsolExtended = [ uni0645.fina_KafMemIsolExtended ];
 @aNon.fina_BaaNonFina = [ uni0646.fina_BaaNonFina uni0767.fina_BaaNonFina uni06BA.fina_BaaNonFina uni06BC.fina_BaaNonFina uni06BB.fina_BaaNonFina uni0768.fina_BaaNonFina uni06B9.fina_BaaNonFina uni0769.fina_BaaNonFina uni06BD.fina_BaaNonFina ];
 @aNon.fina_BaaNonIsol = [ uni0646.fina_BaaNonIsol uni0767.fina_BaaNonIsol uni06BA.fina_BaaNonIsol uni06BC.fina_BaaNonIsol uni06BB.fina_BaaNonIsol uni0768.fina_BaaNonIsol uni06B9.fina_BaaNonIsol uni0769.fina_BaaNonIsol uni06BD.fina_BaaNonIsol ];
 @aQaf.fina_LamQafFina = [ uni06A8.fina_LamQafFina uni06A7.fina_LamQafFina uni0642.fina_LamQafFina uni066F.fina_LamQafFina ];

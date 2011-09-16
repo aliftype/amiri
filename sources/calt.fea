@@ -238,6 +238,7 @@ lookup KafLamMemMedi {
 
 lookup KafLamMemFina {
     sub @aLam.medi by @aLam.medi_KafLamMemFina;
+    sub @aLam.medi_LamMemFina by @aLam.medi_KafLamMemFina;
 } KafLamMemFina;
 
 lookup BaaDalIsol {
@@ -493,6 +494,115 @@ lookup KafMemInit {
     sub @aMem.medi by @aMem.medi_KafMemMedi;
 } KafMemInit;
 
+# the Lam.medi+Mem.fina is too narrow for tashkil, so we use a wider (extended)
+# meem when tashkil clash is anticipated.
+lookup LamMemExtended {
+  sub @aMem.fina by @aMem.fina_LamMemFinaExtended;
+} LamMemExtended;
+
+feature calt {
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.above
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.above;
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.above @Tashkil.above
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.above;
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.above @Tashkil.above
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.above @Tashkil.above;
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.above
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.above @Tashkil.above;
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.below @Tashkil.above
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.above;
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.above @Tashkil.below
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.above;
+  sub @aLam.medi' lookup LamMemFina
+      @Tashkil.below
+      @aMem.fina' lookup LamMemExtended
+      @Tashkil.below;
+} calt;
+
+# ditto
+lookup MemExtended {
+  sub @aMem.fina by @aMem.fina_KafMemIsolExtended;
+} MemExtended;
+
+feature calt {
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.above
+      @aMem.fina' lookup MemExtended
+      @Tashkil.above;
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.above @Tashkil.above
+      @aMem.fina' lookup MemExtended
+      @Tashkil.above;
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.above @Tashkil.above
+      @aMem.fina' lookup MemExtended
+      @Tashkil.above @Tashkil.above;
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.above
+      @aMem.fina' lookup MemExtended
+      @Tashkil.above @Tashkil.above;
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.below @Tashkil.above
+      @aMem.fina' lookup MemExtended
+      @Tashkil.above;
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.above @Tashkil.below
+      @aMem.fina' lookup MemExtended
+      @Tashkil.above;
+  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
+      @Tashkil.below
+      @aMem.fina' lookup MemExtended
+      @Tashkil.below;
+} calt;
+
+# ditto
+lookup KafMemExtended {
+  sub @aMem.fina by @aMem.fina_KafMemFinaExtended;
+} KafMemExtended;
+
+feature calt {
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.above;
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above @Tashkil.above
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.above;
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above @Tashkil.above
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.above @Tashkil.above;
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.above @Tashkil.above;
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.below @Tashkil.above
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.above;
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above @Tashkil.below
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.above;
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.below
+      @aMem.fina' lookup KafMemExtended
+      @Tashkil.below;
+} calt;
+
 feature calt {
   lookupflag IgnoreMarks;
     sub [@aKaf.init @aKaf.medi]' lookup KafLam
@@ -552,8 +662,8 @@ feature calt {
         [@aMem.medi_dots]' lookup LamMemMedi;
 
     sub [@aKaf.init @aKaf.medi]' lookup KafLam
-        [@aLam.medi]' lookup KafLamMemFina
-        [@aMem.fina]' lookup LamMemFina;
+        [@aLam.medi @aLam.medi_LamMemFina]' lookup KafLamMemFina
+        [@aMem.fina @aMem.fina_LamMemFinaExtended]' lookup LamMemFina;
 
     sub [@aBaa.init]' lookup BaaDalIsol
         [@aDal.fina]' lookup BaaDalIsol;
