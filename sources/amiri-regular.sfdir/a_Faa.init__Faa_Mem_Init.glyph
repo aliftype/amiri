@@ -3,9 +3,9 @@ StartChar: aFaa.init_FaaMemInit
 Encoding: 65865 -1 460
 Width: 360
 Flags: W
+AnchorPoint: "TashkilBelow" 100 -670 basechar 0
 AnchorPoint: "TwoDotsBelow" 160 -50 basechar 0
 AnchorPoint: "DotBelow" 260 -50 basechar 0
-AnchorPoint: "TashkilBelow" 300 -670 basechar 0
 AnchorPoint: "TashkilAbove" 50 1640 basechar 0
 AnchorPoint: "TwoDotsAbove" -106 1448 basechar 0
 AnchorPoint: "DotAbove" 5 1448 basechar 0
@@ -23,16 +23,15 @@ SplineSet
  110 509 110 509 170 575 c 0,14,15
  177 582 177 582 176 593 c 0,16,17
  165 719 165 719 106 727 c 1,18,19
- 47 579 47 579 -86 612 c 24,20,21
- -142 626 -142 626 -163 652 c 0,22,23
- -241 749 -241 749 -180 909 c 0,24,25
- -97 1129 -97 1129 12 1135 c 0,0,1
-30 862 m 0,26,27
- -5 916 -5 916 -43.5 916 c 128,-1,28
- -82 916 -82 916 -110 877 c 0,29,30
- -122 861 -122 861 -106 847 c 0,31,32
- -48 794 -48 794 26 839 c 0,33,34
- 40 848 40 848 30 862 c 0,26,27
+ 46 575 46 575 -86 612 c 24,20,21
+ -235 654 -235 654 -180 909 c 0,22,23
+ -117 1128 -117 1128 12 1135 c 0,0,1
+30 862 m 0,24,25
+ -5 916 -5 916 -43.5 916 c 128,-1,26
+ -82 916 -82 916 -110 877 c 0,27,28
+ -122 861 -122 861 -106 847 c 0,29,30
+ -48 794 -48 794 26 839 c 0,31,32
+ 40 848 40 848 30 862 c 0,24,25
 EndSplineSet
 Colour: ff00
 EndChar

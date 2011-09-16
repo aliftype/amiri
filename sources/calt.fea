@@ -493,16 +493,6 @@ lookup KafMemInit {
     sub @aMem.medi by @aMem.medi_KafMemMedi;
 } KafMemInit;
 
-lookup MemAlfFina {
-    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
-    sub @aMem.medi by @aMem.medi_MemAlfFina;
-} MemAlfFina;
-
-lookup LamHaaInit {
-    sub @aHaa.medi by @aHaa.medi_LamHaaInit;
-    sub @aLam.init by @aLam.init_LamHaaInit;
-} LamHaaInit;
-
 feature calt {
   lookupflag IgnoreMarks;
     sub [@aKaf.init @aKaf.medi]' lookup KafLam
@@ -687,13 +677,72 @@ feature calt {
 
     sub [@aSen.init @aSad.init @aSen.medi @aSad.medi]' lookup SenYaaFina
         [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
+} calt;
 
+
+# default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
+# both glyphs have marks above or both have marks bellow at the same time. So
+# we use an alternate wider Meem in such cases.
+# This covers فَمَا فَّمَا فَمَّا فَّمَّا فِّمَا فِمِا.
+lookup FaaMemTatweel {
+  sub @aMem.medi by @aMem.medi_KafMemMediTatweel;
+} FaaMemTatweel;
+
+feature calt {
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.above
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.above;
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.above @Tashkil.above
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.above;
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.above @Tashkil.above
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.above @Tashkil.above;
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.above
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.above @Tashkil.above;
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.below @Tashkil.above
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.above;
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.above @Tashkil.below
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.above;
+  sub @aFaa.init' lookup KafMemInit
+      @Tashkil.below
+      @aMem.medi' lookup FaaMemTatweel
+      @Tashkil.below;
+} calt;
+
+feature calt {
+  lookupflag IgnoreMarks;
     sub [@aKaf.init @aKaf.medi @aAyn.init @aFaa.init @aHaa.init @aHeh.init]' lookup KafMemInit
         [@aMem.medi]' lookup KafMemInit;
+} calt;
 
+lookup MemAlfFina {
+    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
+    sub @aMem.medi by @aMem.medi_MemAlfFina;
+} MemAlfFina;
+
+feature calt {
+  lookupflag IgnoreMarks;
     sub [@aMem.medi]' lookup MemAlfFina
         [@aAlf.fina]' lookup MemAlfFina;
+} calt;
 
+lookup LamHaaInit {
+    sub @aHaa.medi by @aHaa.medi_LamHaaInit;
+    sub @aLam.init by @aLam.init_LamHaaInit;
+} LamHaaInit;
+
+feature calt {
+  lookupflag IgnoreMarks;
     sub [@aLam.init]' lookup LamHaaInit
         [@aHaa.medi]' lookup LamHaaInit;
 } calt;

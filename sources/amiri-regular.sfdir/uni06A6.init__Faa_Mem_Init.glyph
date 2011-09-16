@@ -3,8 +3,8 @@ StartChar: uni06A6.init_FaaMemInit
 Encoding: 69048 -1 3757
 Width: 360
 VWidth: 0
+AnchorPoint: "TashkilBelow" 100 -670 basechar 0
 AnchorPoint: "TashkilAbove" -55 1908 basechar 0
-AnchorPoint: "TashkilBelow" 300 -670 basechar 0
 LayerCount: 2
 Fore
 Refer: 249 -1 N 1 0 0 1 5 1308 2
