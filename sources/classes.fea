@@ -302,3 +302,6 @@
 @AlefHamzaBelow = [ uni0625 uni0673 uni0625.fina uni0673.fina uni0625.fina_LamAlfIsol uni0673.fina_LamAlfIsol uni0625.fina_LamAlfFina uni0673.fina_LamAlfFina uni0625.fina_KafAlf uni0673.fina_KafAlf uni0625.fina_KafMemAlf uni0673.fina_KafMemAlf uni0625.fina_MemAlfFina uni0673.fina_MemAlfFina ];
 @Digits = [ uni0660 uni0661 uni0662 uni0663 uni0664 uni0665 uni0666 uni0667 uni0668 uni0669 uni06F0 uni06F1 uni06F2 uni06F3 uni06F4 uni06F5 uni06F6 uni06F7 uni06F8 uni06F9 uni06F4.urd uni06F6.urd uni06F7.urd ];
 @Digits.small = [ uni0660.small uni0661.small uni0662.small uni0663.small uni0664.small uni0665.small uni0666.small uni0667.small uni0668.small uni0669.small uni06F0.small uni06F1.small uni06F2.small uni06F3.small uni06F4.small uni06F5.small uni06F6.small uni06F7.small uni06F8.small uni06F9.small uni06F4.urd.small uni06F6.urd.small uni06F7.urd.small ];
+
+@Tashkil.above = [ uni0618 uni0619 uni061A uni064B uni064C uni064E uni064F uni0651 uni0652 uni0657 uni0658 uni0659 uni065A uni065B uni065D uni065E uni06DF uni06E0 uni06E1 uni06E2 uni06E4 uni06E8 uni06EB uni06EC uni08F0 uni08F1 uni08F0.small uni064B.small uni064E.small uni08F1.small uni064F.small uni064E.small2 uni0652.small2 uni064C.small ];
+@Tashkil.below = [ uni064D uni0650 uni065C uni06EA uni06ED uni08F2 uni0650.small2 ];
