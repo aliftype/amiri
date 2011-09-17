@@ -112,7 +112,7 @@ feature kern {
     # kern heh isol/final followed by kaf, does not happen in Arabic but can be
     # seen in Kurdish or Persian using ZWNJ between them, so we double the rule
     # w/o ZWNJ as someapplications remove it after shaping.
-    pos @1st_04  @2nd_02'                                  lookup pos_500;
+    pos         @1st_04 @2nd_02'                           lookup pos_500;
     pos uni200C @1st_04 @2nd_02'                           lookup pos_500;
 } kern;
 
