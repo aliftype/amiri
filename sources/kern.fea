@@ -56,29 +56,27 @@ include(classes.fea)
 @2nd_12 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
 
 lookup pos_300 {
-    pos [@2nd_01 @2nd_03] -300;
+    pos @2nd_12 -300;
 } pos_300;
 
-lookup pos_900 {
-    pos @2nd_02 -900;
-} pos_900;
+lookup pos_100 {
+    pos [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11] -100;
+} pos_100;
 
 lookup pos_600 {
-    pos @2nd_12 -600;
+    pos @2nd_02 -600;
 } pos_600;
 
-lookup pos_450 {
-    pos [@2nd_04 @2nd_07] -450;
-} pos_450;
+lookup pos_150 {
+    pos [@2nd_04 @2nd_07] -150;
+} pos_150;
 
 lookup pos_400 {
-    pos [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11] -400;
     pos @2nd_12 -400;
     pos @2nd_11 -400;
 } pos_400;
 
 lookup pos_500 {
-    pos @2nd_10 -500;
     pos @2nd_02 -500;
 } pos_500;
 
@@ -91,18 +89,17 @@ lookup pos_800 {
 } pos_800;
 
 lookup pos_200 {
-    pos [@2nd_03 @2nd_04 @2nd_05 @2nd_06] -200;
+    pos [@2nd_02 @2nd_03 @2nd_04 @2nd_05 @2nd_06 @2nd_10] -200;
 } pos_200;
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
-    pos @1st_01 [@2nd_01 @2nd_03]'                         lookup pos_300;
-    pos @1st_01  @2nd_02'                                  lookup pos_900;
-    pos @1st_01  @2nd_12'                                  lookup pos_600;
-    pos @1st_01 [@2nd_04 @2nd_07]'                         lookup pos_450;
-    pos @1st_01 [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11]' lookup pos_400;
-    pos @1st_01  @2nd_10'                                  lookup pos_500;
-    pos @1st_02  @2nd_02'                                  lookup pos_500;
+    pos @1st_01  @2nd_02'                                  lookup pos_600;
+    pos @1st_01  @2nd_12'                                  lookup pos_300;
+    pos @1st_01 [@2nd_04 @2nd_07]'                         lookup pos_150;
+    pos @1st_01 [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11]' lookup pos_100;
+    pos @1st_01  @2nd_10'                                  lookup pos_200;
+    pos @1st_02  @2nd_02'                                  lookup pos_200;
     pos @1st_02  @2nd_12'                                  lookup pos_400;
     pos @1st_03  @2nd_08'                                  lookup pos_050;
     pos @1st_03  @2nd_11'                                  lookup pos_400;

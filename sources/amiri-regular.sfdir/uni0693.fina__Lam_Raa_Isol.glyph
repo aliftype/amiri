@@ -1,12 +1,12 @@
 
 StartChar: uni0693.fina_LamRaaIsol
 Encoding: 68010 -1 2745
-Width: 900
+Width: 600
 VWidth: 0
-AnchorPoint: "TashkilAbove" 451 1640 basechar 0
-AnchorPoint: "TashkilBelow" 670 -670 basechar 0
+AnchorPoint: "TashkilAbove" 151 1640 basechar 0
+AnchorPoint: "TashkilBelow" 370 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 217 -1 N 1 0 0 1 474 -284 2
-Refer: 165 -1 N 1 0 0 1 0 0 3
+Refer: 217 -1 N 1 0 0 1 174 -284 2
+Refer: 165 -1 N 1 0 0 1 -300 0 2
 EndChar
