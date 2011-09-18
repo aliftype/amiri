@@ -13,22 +13,6 @@ include(classes.fea)
            @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
            @aKaf.init_KafMemIsol @aKaf.init_KafLam
            @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
-@2nd_03 = [@aAyn.isol @aHaa.isol @aFaa.init_FaaYaaIsol @aBaa.init_AboveHaaIsol];
-@2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
-@2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
-@2nd_08 = [@aBaa.init @aBaa.init_LD
-           @aBaa.init_BaaRaaIsol @aBaa.init_BaaRaaIsolLD
-           @aBaa.init_BaaNonIsol @aBaa.init_BaaNonIsolLD
-           @aBaa.init_BaaDalIsol @aBaa.init_BaaDalIsolLD
-           @aBaa.init_BaaBaaYaaIsol @aBaa.init_BaaBaaYaaIsolLD
-           @aBaa.init_BaaSenInit @aBaa.init_BaaSenInitLD
-           @aBaa.init_BaaHehInit @aBaa.init_BaaHehInitLD
-           @aBaa.init_BaaBaaIsol @aBaa.init_BaaBaaIsolLD
-           @aBaa.init_BaaMemIsol @aBaa.init_BaaMemIsolLD
-           @aBaa.init_BaaSenAltInit @aBaa.init_BaaSenAltInitLD
-           @aBaa.init_BaaHaaInit @aBaa.init_BaaHaaInitLD
-           @aBaa.init_High @aBaa.init_HighLD
-           @aBaa.init_Tatweel @aBaa.init_TatweelLD];
 @2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_11 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
            @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
@@ -52,16 +36,12 @@ lookup pos_500 {
     pos @2nd_02 -500;
 } pos_500;
 
-lookup pos_050 {
-    pos @2nd_08 -50;
-} pos_050;
-
 lookup pos_800 {
     pos [@2nd_02 @2nd_12] -800;
 } pos_800;
 
 lookup pos_200 {
-    pos [@2nd_02 @2nd_03 @2nd_05 @2nd_06 @2nd_10] -200;
+    pos [@2nd_02 @2nd_10] -200;
 } pos_200;
 
 feature kern {
@@ -71,10 +51,8 @@ feature kern {
     pos @1st_01  @2nd_10'                                  lookup pos_200;
     pos @1st_02  @2nd_02'                                  lookup pos_200;
     pos @1st_02  @2nd_12'                                  lookup pos_400;
-    pos @1st_03  @2nd_08'                                  lookup pos_050;
     pos @1st_03  @2nd_11'                                  lookup pos_400;
     pos @1st_03 [@2nd_02 @2nd_12]'                         lookup pos_800;
-    pos @1st_03 [@2nd_03 @2nd_05 @2nd_06]'                 lookup pos_200;
 
     # kern heh isol/final followed by kaf, does not happen in Arabic but can be
     # seen in Kurdish or Persian using ZWNJ between them, so we double the rule
@@ -104,9 +82,9 @@ feature kern {
 @Baa = [@aBaa.init @aBaa.init_Tatweel @aBaa.init_High];
 
 lookup RaaBaa {
-    pos @aBaa.init            <0 0 130 0>;
-    pos @aBaa.init_Tatweel    <0 0 130 0>;
-    pos @aBaa.init_High       <0 0 230 0>;
+    pos @aBaa.init            <0 0 180 0>;
+    pos @aBaa.init_Tatweel    <0 0 180 0>;
+    pos @aBaa.init_High       <0 0 280 0>;
 } RaaBaa;
 
 feature kern {
