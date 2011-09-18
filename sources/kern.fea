@@ -85,15 +85,9 @@ feature kern {
                          uni063D.init_High uni0754.init_High uni06D1.init_High uni06D0.init_High
                          uni06CC.init_High uni0767.init_High];
 
-@Baa = [@aBaa_init @aBaa_init_Tatweel @aBaa_init_High];
-
-lookup RaaBaa {
-    pos @aBaa_init            <0 0 180 0>;
-    pos @aBaa_init_Tatweel    <0 0 180 0>;
-    pos @aBaa_init_High       <0 0 280 0>;
-} RaaBaa;
-
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
-    pos @aRaa.fina_MemRaaIsol @Baa' lookup RaaBaa;
+    enum pos @aRaa.fina_MemRaaIsol @aBaa_init         <180 0 180 0>;
+    enum pos @aRaa.fina_MemRaaIsol @aBaa_init_Tatweel <180 0 180 0>;
+    enum pos @aRaa.fina_MemRaaIsol @aBaa_init_High    <280 0 280 0>;
 } kern;
