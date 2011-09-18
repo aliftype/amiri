@@ -36,16 +36,16 @@ lookup LamLamInit {
     sub uni0644.medi by uni0644.medi_LamLamInit;
 } LamLamInit;
 
-# redifine to not include [اآٱ]
-@aAlf.isol = [uni0625 uni0774 uni0773 uni0623 uni0675 uni0672 uni0673];
-# redefine to not include [اٱ]
-@aAlf.fina = [uni0625.fina uni0774.fina uni0773.fina uni0623.fina uni0622.fina
+# define to not include [اآٱ]
+@aAlf_isol = [uni0625 uni0774 uni0773 uni0623 uni0675 uni0672 uni0673];
+# define to not include [اٱ]
+@aAlf_fina = [uni0625.fina uni0774.fina uni0773.fina uni0623.fina uni0622.fina
               uni0675.fina uni0672.fina uni0673.fina];
-# redefine to not include [و]
-@aWaw.isol = [uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4
+# define to not include [و]
+@aWaw_isol = [uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4
               uni06C5 uni0676 uni0677 uni06C8 uni06C9 uni0779];
-# redefine to not include [بت]
-@aBaa.init = [uni0777.init uni0680.init uni0776.init uni06BC.init uni0750.init
+# define to not include [بت]
+@aBaa_init = [uni0777.init uni0680.init uni0776.init uni06BC.init uni0750.init
               uni0756.init uni0768.init uni06CE.init uni0775.init uni06BD.init
               uni0626.init uni066E.init uni0620.init uni064A.init uni06BB.init
               uni067F.init uni0755.init uni067D.init uni067E.init uni067B.init
@@ -53,27 +53,27 @@ lookup LamLamInit {
               uni0678.init uni063D.init uni062B.init uni0679.init uni06B9.init
               uni0769.init uni0649.init uni067C.init uni0754.init uni06D1.init
               uni06D0.init uni06BA.init uni06CC.init uni0767.init];
-# redefine to not include [ف]
-@aFaa.init = [uni066F.init uni0761.init uni0760.init uni0642.init uni06A8.init
+# define to not include [ف]
+@aFaa_init = [uni066F.init uni0761.init uni0760.init uni0642.init uni06A8.init
               uni06A1.init uni06A2.init uni06A3.init uni06A4.init uni06A5.init
               uni06A6.init uni06A7.init];
-# redefine to not include [ه]
-@aHeh.init = [uni06C1.init];
-# redefine to not include [ك] and include [ڪ]
-@aKaf.init = [uni063B.init uni063C.init uni077F.init uni0764.init uni06AA.init
+# define to not include [ه]
+@aHeh_init = [uni06C1.init];
+# define to not include [ك] and include [ڪ]
+@aKaf_init = [uni063B.init uni063C.init uni077F.init uni0764.init uni06AA.init
               uni06B0.init uni06B3.init uni06B2.init uni06AB.init uni06AC.init
               uni06AD.init uni06AE.init uni06AF.init uni06A9.init uni06B4.init
               uni0763.init uni0762.init uni06B1.init];
 
-@Ignore    = [@aAyn.fina @aAyn.isol @aAlf.isol @aAlf.fina @aBaa.fina @aBaa.isol
+@Ignore    = [@aAyn.fina @aAyn.isol @aAlf_isol @aAlf_fina @aBaa.fina @aBaa.isol
               @aDal.fina @aDal.isol @aFaa.fina @aFaa.isol @aHaa.fina @aHaa.isol
               @aHeh.fina @aHeh.isol @aKaf.fina @aKaf.isol @aLam.fina @aLam.isol
               @aMem.fina @aMem.isol @aNon.fina @aNon.isol @aQaf.fina @aQaf.isol
               @aRaa.fina @aRaa.isol @aSad.fina @aSad.isol @aSen.fina @aSen.isol
-              @aTaa.fina @aTaa.isol @aWaw.fina @aWaw.isol @aYaa.fina @aYaa.isol];
+              @aTaa.fina @aTaa.isol @aWaw.fina @aWaw_isol @aYaa.fina @aYaa.isol];
 
-@Ignore2   = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
-              @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
+@Ignore2   = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa_init @aFaa.medi
+              @aHaa.init @aHaa.medi @aHeh_init @aHeh.medi @aKaf_init @aKaf.medi
               @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
               @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
 

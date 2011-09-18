@@ -68,29 +68,29 @@ feature kern {
 } kern;
 
 
-# warning: these classes are already defined, so we redefine them here since we
-# are only interested in glyphs with more than one dot below
-@aBaa.init            = [uni0680.init uni0776.init uni0750.init uni06CE.init uni0775.init uni06BD.init
+# were are only interested in subset of already defined classes; the ones with
+# wide dots below.
+@aBaa_init            = [uni0680.init uni0776.init uni0750.init uni06CE.init uni0775.init uni06BD.init
                          uni064A.init uni0755.init uni067E.init uni067B.init uni0753.init uni0752.init
                          uni063D.init uni0754.init uni06D1.init uni06D0.init uni06CC.init uni0767.init];
-@aBaa.init_Tatweel    = [uni0680.init_Tatweel uni0776.init_Tatweel uni0750.init_Tatweel
+@aBaa_init_Tatweel    = [uni0680.init_Tatweel uni0776.init_Tatweel uni0750.init_Tatweel
                          uni06CE.init_Tatweel uni0775.init_Tatweel uni06BD.init_Tatweel
                          uni064A.init_Tatweel uni0755.init_Tatweel uni067E.init_Tatweel
                          uni067B.init_Tatweel uni0753.init_Tatweel uni0752.init_Tatweel
                          uni063D.init_Tatweel uni0754.init_Tatweel uni06D1.init_Tatweel
                          uni06D0.init_Tatweel uni06CC.init_Tatweel uni0767.init_Tatweel];
-@aBaa.init_High       = [uni0680.init_High uni0776.init_High uni0750.init_High uni06CE.init_High
+@aBaa_init_High       = [uni0680.init_High uni0776.init_High uni0750.init_High uni06CE.init_High
                          uni0775.init_High uni06BD.init_High uni064A.init_High uni0755.init_High
                          uni067E.init_High uni067B.init_High uni0753.init_High uni0752.init_High
                          uni063D.init_High uni0754.init_High uni06D1.init_High uni06D0.init_High
                          uni06CC.init_High uni0767.init_High];
 
-@Baa = [@aBaa.init @aBaa.init_Tatweel @aBaa.init_High];
+@Baa = [@aBaa_init @aBaa_init_Tatweel @aBaa_init_High];
 
 lookup RaaBaa {
-    pos @aBaa.init            <0 0 180 0>;
-    pos @aBaa.init_Tatweel    <0 0 180 0>;
-    pos @aBaa.init_High       <0 0 280 0>;
+    pos @aBaa_init            <0 0 180 0>;
+    pos @aBaa_init_Tatweel    <0 0 180 0>;
+    pos @aBaa_init_High       <0 0 280 0>;
 } RaaBaa;
 
 feature kern {
