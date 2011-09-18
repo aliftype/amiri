@@ -9,29 +9,13 @@ include(classes.fea)
            @aDal.fina_KafDal @aDal.fina_LamDal];
 @1st_03 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
 @1st_04 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
-@2nd_01 = [@aAlf.isol @aAlf.isol_LowHamza
-           uni0621 # hamza
-           uni0670.isol]; # dagger alef
 @2nd_02 = [@aKaf.init @aKaf.init_KafHeh
            @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
            @aKaf.init_KafMemIsol @aKaf.init_KafLam
            @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
 @2nd_03 = [@aAyn.isol @aHaa.isol @aFaa.init_FaaYaaIsol @aBaa.init_AboveHaaIsol];
-@2nd_04 = [@aAyn.init @aBaa.isol @aFaa.init @aFaa.isol @aHaa.init
-           @aHeh.init @aHeh.isol @aMem.init @aMem.isol @aSad.init @aSad.isol @aSen.init
-           @aSen.isol @aTaa.init @aTaa.isol @aYaa.isol @aAyn.init_AynMemInit
-           @aLam.init_LamHaaInit @aHaa.init_HaaYaaIsol @aMem.init_MemYaaIsol
-           @aMem.init_MemRaaIsol @aMem.init_MemHehInit @aHaa.init_HaaHaaInit
-           @aAyn.init_AynYaaIsol @aAyn.init_AynHaaInit @aLam.init_LamYaaIsol
-           @aBaa.init_BaaBaaHaaInit @aBaa.init_BaaBaaHaaInitLD
-           @aBaa.init_BaaBaaMemInit @aBaa.init_BaaBaaMemInitLD
-           @aHaa.init_HaaMemInit @aHaa.init_HaaRaaIsol
-           @aBaa.init_BaaHaaMemInit @aBaa.init_BaaHaaMemInitLD
-           @aAyn.init_Finjani @aHaa.init_Finjani @aSen.init_PreYaa @aSad.init_PreYaa];
 @2nd_05 = [@aNon.isol @aQaf.isol]; # XXX @aNon.isol.alt
 @2nd_06 = [@aRaa.isol @aWaw.isol @aDal.isol];
-@2nd_07 = [@aKaf.isol @aLam.init @aLam.isol @aLam.init_LamHeh uni0644.init_Lellah
-           @aLam.init_LamAlfIsol @aLam.init_LamRaaIsol @aLam.init_LamLamInit];
 @2nd_08 = [@aBaa.init @aBaa.init_LD
            @aBaa.init_BaaRaaIsol @aBaa.init_BaaRaaIsolLD
            @aBaa.init_BaaNonIsol @aBaa.init_BaaNonIsolLD
@@ -45,10 +29,6 @@ include(classes.fea)
            @aBaa.init_BaaHaaInit @aBaa.init_BaaHaaInitLD
            @aBaa.init_High @aBaa.init_HighLD
            @aBaa.init_Tatweel @aBaa.init_TatweelLD];
-@2nd_09 = [@aBaa.init_BaaYaaIsol @aBaa.init_BaaYaaIsolLD
-           @aBaa.init_BaaMemHaaInit @aBaa.init_BaaMemHaaInitLD
-           @aLam.init_LamHaaMemInit @aFaa.init_FaaHaaInit @aMem.init_MemHaaInit
-           @aBaa.init_BaaMemInit @aBaa.init_BaaMemInitLD];
 @2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_11 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
            @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
@@ -59,17 +39,9 @@ lookup pos_300 {
     pos @2nd_12 -300;
 } pos_300;
 
-lookup pos_100 {
-    pos [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11] -100;
-} pos_100;
-
 lookup pos_600 {
     pos @2nd_02 -600;
 } pos_600;
-
-lookup pos_150 {
-    pos [@2nd_04 @2nd_07] -150;
-} pos_150;
 
 lookup pos_400 {
     pos @2nd_12 -400;
@@ -89,22 +61,20 @@ lookup pos_800 {
 } pos_800;
 
 lookup pos_200 {
-    pos [@2nd_02 @2nd_03 @2nd_04 @2nd_05 @2nd_06 @2nd_10] -200;
+    pos [@2nd_02 @2nd_03 @2nd_05 @2nd_06 @2nd_10] -200;
 } pos_200;
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
     pos @1st_01  @2nd_02'                                  lookup pos_600;
     pos @1st_01  @2nd_12'                                  lookup pos_300;
-    pos @1st_01 [@2nd_04 @2nd_07]'                         lookup pos_150;
-    pos @1st_01 [@2nd_05 @2nd_06 @2nd_08 @2nd_09 @2nd_11]' lookup pos_100;
     pos @1st_01  @2nd_10'                                  lookup pos_200;
     pos @1st_02  @2nd_02'                                  lookup pos_200;
     pos @1st_02  @2nd_12'                                  lookup pos_400;
     pos @1st_03  @2nd_08'                                  lookup pos_050;
     pos @1st_03  @2nd_11'                                  lookup pos_400;
     pos @1st_03 [@2nd_02 @2nd_12]'                         lookup pos_800;
-    pos @1st_03 [@2nd_03 @2nd_04 @2nd_05 @2nd_06]'         lookup pos_200;
+    pos @1st_03 [@2nd_03 @2nd_05 @2nd_06]'                 lookup pos_200;
 
     # kern heh isol/final followed by kaf, does not happen in Arabic but can be
     # seen in Kurdish or Persian using ZWNJ between them, so we double the rule
