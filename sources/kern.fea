@@ -13,7 +13,7 @@ include(classes.fea)
            @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
            @aKaf.init_KafMemIsol @aKaf.init_KafLam
            @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
-@2nd_10 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
+@2nd_10 = [@aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_11 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
            @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
            @aAyn.init_AboveHaaIsol];
@@ -44,11 +44,15 @@ lookup pos_200 {
     pos [@2nd_02 @2nd_10] -200;
 } pos_200;
 
+lookup pos_100 {
+    pos @2nd_10 -100;
+} pos_100;
+
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
     pos @1st_01  @2nd_02'                                  lookup pos_600;
     pos @1st_01  @2nd_12'                                  lookup pos_300;
-    pos @1st_01  @2nd_10'                                  lookup pos_200;
+    pos @1st_01  @2nd_10'                                  lookup pos_100;
     pos @1st_02  @2nd_02'                                  lookup pos_200;
     pos @1st_02  @2nd_12'                                  lookup pos_400;
     pos @1st_03  @2nd_11'                                  lookup pos_400;
