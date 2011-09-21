@@ -1,4 +1,4 @@
-.PHONY: all clean ttf web pack
+.PHONY: all clean ttf web pack check
 
 VERSION=0.016
 
@@ -12,6 +12,7 @@ FEA=lang classes locl ccmp gsub quran tnum rtlm lellah calt kern
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
+RUNTEST=$(TOOLS)/runtest.py
 FF=python $(BUILD)
 MKEOT=ttf2eot
 
@@ -23,6 +24,7 @@ EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
 FEAT=$(FEA:%=$(SRC)/%.fea)
+TEST=$(wildcard test-suite/*.test)
 
 DOCFILES=$(DOCS:%=$(DOC)/%.txt)
 license=OFL.txt OFL-FAQ.txt
@@ -63,6 +65,10 @@ $(DOC)/%-table.pdf: %.ttf
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
 
+check: $(TEST)
+	@echo "running tests"
+	@$(RUNTEST) $<
+
 clean:
 	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 
@@ -79,7 +85,7 @@ distclean:
 	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2
 	@rm -rf $(PACK)
 
-dist: all pack table
+dist: all check pack table
 	@echo "   Making dist tarball"
 	@mkdir -p amiri-$(VERSION)/$(SRC)
 	@mkdir -p amiri-$(VERSION)/$(WEB)
