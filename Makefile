@@ -67,7 +67,7 @@ $(DOC)/%-table.pdf: %.ttf
 
 check: $(TEST)
 	@echo "running tests"
-	@$(RUNTEST) $<
+	@$(RUNTEST) $^
 
 clean:
 	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS)

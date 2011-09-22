@@ -40,22 +40,32 @@ def initTest(reader, font):
     return out
 
 if __name__ == '__main__':
-    testname = sys.argv[1]
+    init = False
+    args = sys.argv[1:]
 
-    testfd = open(testname, 'r')
-    fontname = testfd.readline().strip("# \n")
-    reader = csv.reader(testfd, delimiter=';', quotechar='#')
+    if len (sys.argv) > 2 and sys.argv[1] == "-i":
+        init = True
+        args = sys.argv[2:]
 
-    if len(sys.argv) > 2:
-        outname = sys.argv[2]
-        outfd = open(outname, "w")
-        outfd.write(initTest(reader, fontname))
-        outfd.close()
-        sys.exit(0)
+    for arg in args:
+        testname = arg
 
-    passed, failed = runTest(reader, fontname)
-    print "%s: %d passed, %d failed" %(os.path.basename(testname), len(passed), len(failed)),
+        testfd = open(testname, 'r')
+        fontname = testfd.readline().strip("# \n")
+        reader = csv.reader(testfd, delimiter=';', quotechar='#')
 
-    if failed:
-        print failed
-        sys.exit(1)
+        if init:
+            outname = testname+".test"
+            outfd = open(outname, "w")
+            outfd.write(initTest(reader, fontname))
+            outfd.close()
+            sys.exit(0)
+
+        passed, failed = runTest(reader, fontname)
+        message = "%s: %d passed, %d failed" %(os.path.basename(testname), len(passed), len(failed))
+
+        if failed:
+            print message, failed
+            sys.exit(1)
+        else:
+            print message
