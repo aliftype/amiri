@@ -1,3 +1,34 @@
+Amiri 0.016 (2011-09-22), Beginning of the End
+----------------------------------------------
+* This release features full Quranic support, another major developmental
+  milestone, more work still needed in refining glyph interaction specially
+  mark positioning in fully vocalised text such as Quran.
+
+* New glyphs:
+  - All Quranic annotation marks in Unicode 6.0.
+  - All other Arabic vowel marks in Unicode 6.0.
+  - Radical (U+221A) including a RTL variant, and other Arabic radicals
+    (U+0606, U+0607).
+  - Arabic ray (U+0608).
+  - Afghani sign (U+060B).
+  - Arabic sign Misra (U+060F).
+  - New contextual shape for initial meem followed by medial heh, as in مها.
+
+* Kerning:
+  - Decreased the number of kerning pairs from 411240 to 55850 while retaining
+    the same functionality.
+
+* Fixes:
+  - General cleanup of punctuation marks, fixing spacing of brackets and making
+    curly brackets more bolder to fit wit the rest of the font.
+  - Made the space glyph 600 units wide.
+  - Fixed erroneous tatweel (kashida) insertion in full justification.
+  - Wider forms of some glyphs to avoid mark clash in full vowelisation.
+  - Underline position is now lower than most glyphs with descendants.
+  - Various mark positioning fixes.
+  - Separate the ring of Kashmiri yeh from the body of base glyph, following
+    Kashmiri orthographic traditions.
+
 Amiri 0.015 (2011-07-14), Phoenix
 ---------------------------------
 * This release represents a major developmental milestone, as the OpenType
@@ -5,12 +36,12 @@ Amiri 0.015 (2011-07-14), Phoenix
   OpenType implementations.
 
 * Cleanup:
- - More unification and tidy up.
- - Various fixes for FontForge warnings.
- - Various dot placement fixes.
- - Various tashkil fine tuning.
- - Fixes to Lellah form.
- - Fine tune initial Baa/final Alef combination.
+  - More unification and tidy up.
+  - Various fixes for FontForge warnings.
+  - Various dot placement fixes.
+  - Various tashkil fine tuning.
+  - Fixes to Lellah form.
+  - Fine tune initial Baa/final Alef combination.
 
 * More kerning pairs.
 
@@ -19,8 +50,8 @@ Amiri 0.015 (2011-07-14), Phoenix
 Amiri 0.014 (2011-06-05), Break a Leg
 -------------------------------------
 * Another minor release to fix two bugs:
- - Lellah bug on Windows and MS Office.
- - Wrong placement of dots under final Yaa.
+  - Lellah bug on Windows and MS Office.
+  - Wrong placement of dots under final Yaa.
 
 Amiri 0.013 (2011-04-27), Hurry up!
 -----------------------------------
