@@ -6,6 +6,7 @@ TOOLS=tools
 SRC=sources
 WEB=web
 DOC=documentation
+TESTS=test-suite
 FONTS=amiri-regular
 # the order of feature files is important
 FEA=lang classes locl ccmp gsub quran tnum rtlm lellah calt kern
@@ -24,7 +25,7 @@ EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
 FEAT=$(FEA:%=$(SRC)/%.fea)
-TEST=$(wildcard test-suite/*.test)
+TEST=$(wildcard $(TESTS)/*.test)
 
 DOCFILES=$(DOCS:%=$(DOC)/%.txt)
 license=OFL.txt OFL-FAQ.txt
@@ -91,6 +92,7 @@ dist: all check pack table
 	@mkdir -p amiri-$(VERSION)/$(WEB)
 	@mkdir -p amiri-$(VERSION)/$(DOC)
 	@mkdir -p amiri-$(VERSION)/$(TOOLS)
+	@mkdir -p amiri-$(VERSION)/$(TESTS)
 	@cp $(PACK) amiri-$(VERSION)/$(SRC)
 	@cp $(FEAT) amiri-$(VERSION)/$(SRC)
 	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > amiri-$(VERSION)/Makefile
@@ -103,5 +105,7 @@ dist: all check pack table
 	@cp $(EOTS) amiri-$(VERSION)/$(WEB)
 	@cp $(CSSS) amiri-$(VERSION)/$(WEB)
 	@cp $(PDFS) amiri-$(VERSION)/$(DOC)
+	@cp $(TEST) amiri-$(VERSION)/$(TESTS)
 	@cp $(BUILD) amiri-$(VERSION)/$(TOOLS)
+	@cp $(RUNTEST) amiri-$(VERSION)/$(TOOLS)
 	@tar cfj amiri-$(VERSION).tar.bz2 amiri-$(VERSION)
