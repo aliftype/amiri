@@ -3,7 +3,6 @@ StartChar: TwoDots.a
 Encoding: 65726 -1 194
 Width: 0
 GlyphClass: 4
-UnlinkRmOvrlpSave: 1
 Flags: W
 AnchorPoint: "MarkDotAbove" -20 450 basemark 0
 AnchorPoint: "DotHmaza" 0 0 mark 0
@@ -11,6 +10,21 @@ AnchorPoint: "TashkilAboveDot" -20 450 basemark 0
 AnchorPoint: "TwoDotsAbove" -111 140 mark 0
 LayerCount: 2
 Fore
-Refer: 193 -1 N 1 0 0 1 102 46 2
-Refer: 193 -1 N 1 0 0 1 -111 0 2
+SplineSet
+69 306 m 2,0,1
+ 74 314 74 314 86 310 c 0,2,3
+ 167 282 167 282 231 225 c 0,4,5
+ 240 217 240 217 234 207 c 2,6,-1
+ 136 52 l 2,7,8
+ 130 43 130 43 116 55 c 0,9,10
+ 103 66 103 66 0 128 c 1,11,-1
+ -77 6 l 2,12,13
+ -83 -3 -83 -3 -97.5 9 c 128,-1,14
+ -112 21 -112 21 -241 99 c 0,15,16
+ -249 104 -249 104 -244 111 c 2,17,-1
+ -144 260 l 2,18,19
+ -139 268 -139 268 -127 264 c 0,20,21
+ -60 241 -60 241 -4 197 c 1,22,-1
+ 69 306 l 2,0,1
+EndSplineSet
 EndChar
