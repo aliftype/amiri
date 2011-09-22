@@ -1,9 +1,19 @@
 
 StartChar: bracketright
 Encoding: 93 93 387
-Width: 690
+Width: 740
 Flags: W
 LayerCount: 2
 Fore
-Refer: 386 91 N -1 0 0 1 690 0 3
+SplineSet
+50 1470 m 1,0,-1
+ 440 1470 l 1,1,-1
+ 440 -790 l 1,2,-1
+ 50 -790 l 1,3,-1
+ 50 -690 l 1,4,-1
+ 340 -690 l 1,5,-1
+ 340 1370 l 1,6,-1
+ 50 1370 l 1,7,-1
+ 50 1470 l 1,0,-1
+EndSplineSet
 EndChar
