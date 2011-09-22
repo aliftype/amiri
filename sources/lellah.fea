@@ -31,6 +31,16 @@ lookup Lellah3 {
     sub uni0644.medi by uni0644.medi_FaLellah;
 } Lellah3;
 
+# Lellah4 & Lellah5 are redundant and can be substituted by Lellah lookup, but
+# this is a hack for a Uniscribe bug
+lookup Lellah4 {
+    sub uni0644.init by uni0644.init_Lellah;
+} Lellah4;
+
+lookup Lellah5 {
+    sub uni0644.medi by uni0644.medi_Lellah;
+} Lellah5;
+
 lookup LamLamInit {
     sub uni0644.init by uni0644.init_LamLamInit;
     sub uni0644.medi by uni0644.medi_LamLamInit;
@@ -94,31 +104,31 @@ feature calt {
 
 feature calt {
     # لله
-    sub @Li' lookup Lellah @Lm' lookup Lellah2            @Hf' lookup Lellah;
-    sub @Li' lookup Lellah @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
-    sub @Li' lookup Lellah @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+    sub @Li' lookup Lellah4 @Lm' lookup Lellah2            @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
 
     # لِله
-    sub @Li' lookup Lellah uni0650 @Lm' lookup Lellah             @Hf' lookup Lellah;
-    sub @Li' lookup Lellah uni0650 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
-    sub @Li' lookup Lellah uni0650 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+    sub @Li' lookup Lellah4 uni0650 @Lm' lookup Lellah2            @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  uni0650 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  uni0650 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
 
     # لِّله
-    sub @Li' lookup Lellah uni0651 uni0650 @Lm' lookup Lellah             @Hf' lookup Lellah;
-    sub @Li' lookup Lellah uni0651 uni0650 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
-    sub @Li' lookup Lellah uni0651 uni0650 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
+    sub @Li' lookup Lellah4 uni0651 uni0650 @Lm' lookup Lellah2            @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  uni0651 uni0650 @Lm' lookup Lellah uni0651     @Hf' lookup Lellah;
+    sub @Li' lookup Lellah  uni0651 uni0650 @Lm' lookup Lellah uni0651 @xF @Hf' lookup Lellah;
 
     # فلله
     sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah2             @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah  uni0651     @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah  uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
     sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah2             @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah  uni0651     @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah  uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3         @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
     sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah2             @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah  uni0651     @Hf' lookup Lellah;
-    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah  uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init'         @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
     sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah2             @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah  uni0651     @Hf' lookup Lellah;
-    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah  uni0651 @xF @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
+    sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
 } calt;
