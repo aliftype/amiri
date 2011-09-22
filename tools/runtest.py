@@ -58,6 +58,7 @@ if __name__ == '__main__':
         if init:
             outname = testname+".test"
             outfd = open(outname, "w")
+            outfd.write("# %s\n" %fontname)
             outfd.write(initTest(reader, fontname))
             outfd.close()
             sys.exit(0)
