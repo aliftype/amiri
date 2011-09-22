@@ -18,16 +18,17 @@ def runHB(row, font):
 
 def runTest(reader, font):
     count = 0
-    failed = []
+    failed = {}
     passed = []
     for row in reader:
         count += 1
-        result = runHB(row, font)
+        text = row[4]
         reference = row[5]
+        result = runHB(row, font)
         if reference == result:
             passed.append(count)
         else:
-            failed.append(count)
+            failed[count] = (text, reference, result)
 
     return passed, failed
 
@@ -65,7 +66,12 @@ if __name__ == '__main__':
         message = "%s: %d passed, %d failed" %(os.path.basename(testname), len(passed), len(failed))
 
         if failed:
-            print message, failed
+            print message
+            for test in failed:
+                print test
+                print "string:   \t", failed[test][0]
+                print "reference:\t", failed[test][1]
+                print "result:   \t", failed[test][2]
             sys.exit(1)
         else:
             print message
