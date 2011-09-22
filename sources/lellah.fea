@@ -82,7 +82,7 @@ lookup LamLamInit {
               @aRaa.fina @aRaa.isol @aSad.fina @aSad.isol @aSen.fina @aSen.isol
               @aTaa.fina @aTaa.isol @aWaw.fina @aWaw_isol @aYaa.fina @aYaa.isol];
 
-@Ignore2   = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa_init @aFaa.medi
+@Ignore2   = [@aAyn.init @aAyn.medi @aBaa_init @aBaa.medi @aFaa_init @aFaa.medi
               @aHaa.init @aHaa.medi @aHeh_init @aHeh.medi @aKaf_init @aKaf.medi
               @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
               @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
