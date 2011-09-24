@@ -34,7 +34,7 @@ all: ttf web
 
 ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
-table: $(PDFS)
+doc: $(PDFS)
 
 %.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
@@ -87,7 +87,7 @@ distclean:
 	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2
 	@rm -rf $(PACK)
 
-dist: all check pack table
+dist: all check pack doc
 	@echo "   Making dist tarball"
 	@mkdir -p amiri-$(VERSION)/$(SRC)
 	@mkdir -p amiri-$(VERSION)/$(WEB)
