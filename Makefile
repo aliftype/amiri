@@ -65,13 +65,14 @@ $(DOC)/%-table.pdf: %.ttf
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
+	@rm -f $@.tmp $@.txt
 
 check: $(TEST)
 	@echo "running tests"
 	@$(RUNTEST) $^
 
 clean:
-	@rm -rf $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS)
+	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS)
 
 #->8-
 PACK=$(SFDS:.sfdir=.sfd)
