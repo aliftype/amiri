@@ -68,8 +68,12 @@ $(DOC)/%-table.pdf: %.ttf
 	@rm -f $@.tmp $@.txt
 
 check: $(TEST)
+ifeq ($(shell which hb-shape),)
+	@echo "hb-shape not found, skipping tests"
+else
 	@echo "running tests"
 	@$(RUNTEST) $^
+endif
 
 clean:
 	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS)
