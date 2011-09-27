@@ -1,0 +1,6 @@
+include(lang.fea)
+include(classes.fea)
+
+feature rlig {
+  sub uni0640.1 uni0627.fina by uni0627.fina_Tatweel;
+} rlig;
