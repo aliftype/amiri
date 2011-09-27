@@ -2,5 +2,14 @@ include(lang.fea)
 include(classes.fea)
 
 feature rlig {
+  sub uni0640.1 uni0640.1 uni0640.1 uni0640.1 by uni0640.4;
+  sub uni0640.1 uni0640.1 uni0640.1           by uni0640.3;
+  sub uni0640.1 uni0640.1                     by uni0640.2;
+} rlig;
+
+feature rlig {
   sub uni0640.1 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.2 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.3 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.4 uni0627.fina by uni0627.fina_Tatweel;
 } rlig;
