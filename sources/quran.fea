@@ -66,22 +66,23 @@ feature calt {
 
 @before.isol = [uni0626 uni0628 uni062A uni062B uni062C uni062D uni062E uni0633
                 uni0634 uni0635 uni0636 uni0637 uni0638 uni0639 uni063A uni0641
-                uni0642 uni0643 uni0644 uni0645 uni0646 uni0647 uni0649 uni064A];
+                uni0642 uni0643 uni0644 uni0645 uni0646 uni0647 uni0649 uni064A
+                uni06CC];
 @before.init = [uni0626.init uni0628.init uni062A.init uni062B.init uni062C.init
                 uni062D.init uni062E.init uni0633.init uni0634.init uni0635.init
                 uni0636.init uni0637.init uni0638.init uni0639.init uni063A.init
                 uni0641.init uni0642.init uni0643.init uni0644.init uni0645.init
-                uni0646.init uni0647.init uni0649.init uni064A.init];
+                uni0646.init uni0647.init uni0649.init uni064A.init uni06CC.init];
 @before.medi = [uni0626.medi uni0628.medi uni062A.medi uni062B.medi uni062C.medi
                 uni062D.medi uni062E.medi uni0633.medi uni0634.medi uni0635.medi
                 uni0636.medi uni0637.medi uni0638.medi uni0639.medi uni063A.medi
                 uni0641.medi uni0642.medi uni0643.medi uni0644.medi uni0645.medi
-                uni0646.medi uni0647.medi uni0649.medi uni064A.medi];
+                uni0646.medi uni0647.medi uni0649.medi uni064A.medi uni06CC.medi];
 @before.fina = [uni0626.fina uni0628.fina uni062A.fina uni062B.fina uni062C.fina
                 uni062D.fina uni062E.fina uni0633.fina uni0634.fina uni0635.fina
                 uni0636.fina uni0637.fina uni0638.fina uni0639.fina uni063A.fina
                 uni0641.fina uni0642.fina uni0643.fina uni0644.fina uni0645.fina
-                uni0646.fina uni0647.fina uni0649.fina uni064A.fina];
+                uni0646.fina uni0647.fina uni0649.fina uni064A.fina uni06CC.fina];
 
 @after.isol =  [uni0622 uni0623 uni0624 uni0625 uni0627 uni0629 uni062F uni0630
                 uni0631 uni0632 uni0648];
