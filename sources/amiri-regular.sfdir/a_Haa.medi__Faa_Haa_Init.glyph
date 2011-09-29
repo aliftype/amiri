@@ -1,6 +1,6 @@
 
 StartChar: aHaa.medi_FaaHaaInit
-Encoding: 65644 -1 109
+Encoding: 65644 -1 108
 Width: 149
 Flags: W
 AnchorPoint: "DigitBelow" 521 -260 basechar 0
@@ -16,7 +16,7 @@ AnchorPoint: "HamzaAbove" 900 900 basechar 0
 AnchorPoint: "DotAbove" 1000 900 basechar 0
 LayerCount: 2
 Fore
-Refer: 167 -1 N 1 0 0 1 0 0 2
+Refer: 166 -1 N 1 0 0 1 0 0 2
 Comment: "XXX: Disunify" 
 Colour: ff00ff
 EndChar

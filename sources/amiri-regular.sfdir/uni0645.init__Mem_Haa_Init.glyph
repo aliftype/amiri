@@ -1,6 +1,6 @@
 
 StartChar: uni0645.init_MemHaaInit
-Encoding: 67145 -1 1892
+Encoding: 67145 -1 1874
 Width: 1127
 VWidth: 0
 AnchorPoint: "cursive" 0 521 exit 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilAbove" 580 1640 basechar 0
 AnchorPoint: "TashkilBelow" 820 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 114 -1 N 1 0 0 1 0 0 3
+Refer: 113 -1 N 1 0 0 1 0 0 3
 EndChar

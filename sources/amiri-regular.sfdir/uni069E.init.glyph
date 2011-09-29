@@ -1,6 +1,6 @@
 
 StartChar: uni069E.init
-Encoding: 66275 -1 1026
+Encoding: 66275 -1 1025
 Width: 1430
 VWidth: 0
 AnchorPoint: "cursive" 13 104 exit 0
@@ -8,6 +8,6 @@ AnchorPoint: "TashkilAbove" 630 1640 basechar 0
 AnchorPoint: "TashkilBelow" 700 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 195 -1 N 1 0 0 1 634 754 2
+Refer: 194 -1 N 1 0 0 1 634 754 2
 Refer: 50 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,6 +1,6 @@
 
 StartChar: aHaa.medi_LamLamHaaInit
-Encoding: 65612 -1 78
+Encoding: 65612 -1 77
 Width: 137
 Flags: W
 AnchorPoint: "DigitBelow" 581 -190 basechar 0
@@ -16,6 +16,6 @@ AnchorPoint: "HamzaAbove" 100 900 basechar 0
 AnchorPoint: "DotAbove" 170 1100 basechar 0
 LayerCount: 2
 Fore
-Refer: 167 -1 N 1 0 0 1 0 0 2
+Refer: 166 -1 N 1 0 0 1 0 0 2
 Colour: ff00ff
 EndChar

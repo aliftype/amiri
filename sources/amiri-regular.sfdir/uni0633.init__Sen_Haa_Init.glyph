@@ -1,6 +1,6 @@
 
 StartChar: uni0633.init_SenHaaInit
-Encoding: 67435 -1 2175
+Encoding: 67435 -1 2157
 Width: 1319
 VWidth: 0
 AnchorPoint: "cursive" 0 457 exit 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilAbove" 852 1640 basechar 0
 AnchorPoint: "TashkilBelow" 930 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 131 -1 N 1 0 0 1 0 0 3
+Refer: 130 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,6 +1,6 @@
 
 StartChar: aHaa.medi_MemHaaMemInit
-Encoding: 65663 -1 128
+Encoding: 65663 -1 127
 Width: 400
 Flags: W
 AnchorPoint: "DigitBelow" 538 1 basechar 0
@@ -16,6 +16,6 @@ AnchorPoint: "TwoDotsAbove" -70 1295 basechar 0
 AnchorPoint: "TwoDotsBelow" 427 1 basechar 0
 LayerCount: 2
 Fore
-Refer: 180 -1 N 1 0 0 1 0 0 2
+Refer: 179 -1 N 1 0 0 1 0 0 2
 Colour: ff
 EndChar
