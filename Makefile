@@ -9,7 +9,7 @@ DOC=documentation
 TESTS=test-suite
 FONTS=amiri-regular
 # the order of feature files is important
-FEA=lang classes locl ccmp gsub kashida quran tnum rtlm lellah calt kern
+FEA=lang classes locl gsub kashida quran tnum rtlm lellah calt kern
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
