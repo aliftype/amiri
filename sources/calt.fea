@@ -17,7 +17,6 @@ lookup AboveHaaInit {
     sub @aBaa.init by @aBaa.init_BaaHaaInit;
     sub @aHaa.medi by @aHaa.medi_SadHaaInit;
     sub @aHeh.init by @aHeh.init_HehHaaInit;
-    sub @aKaf.init by @aKaf.init_AboveHaaIsol;
     sub @aMem.init by @aMem.init_MemHaaInit;
     sub @aSad.init by @aSad.init_SadHaaInit;
     sub @aSen.init by @aSen.init_SenHaaInit;
@@ -25,7 +24,7 @@ lookup AboveHaaInit {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub [@aBaa.init @aHeh.init @aKaf.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaInit
+    sub [@aBaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaInit
         [@aHaa.medi]' lookup AboveHaaInit;
 } calt;
 
@@ -325,11 +324,6 @@ lookup MemRaaIsol {
     sub @aRaa.fina by @aRaa.fina_MemRaaIsol;
 } MemRaaIsol;
 
-lookup FaaHaaInit {
-    sub @aFaa.init by @aFaa.init_FaaHaaInit;
-    sub @aHaa.medi by @aHaa.medi_FaaHaaInit;
-} FaaHaaInit;
-
 lookup HaaHaaInit {
     sub @aHaa.init by @aHaa.init_HaaHaaInit;
     sub @aHaa.medi by @aHaa.medi_HaaHaaInit;
@@ -461,7 +455,6 @@ lookup AboveHaaIsol {
     sub @aAyn.init by @aAyn.init_AboveHaaIsol;
     sub @aBaa.init by @aBaa.init_AboveHaaIsol;
     sub @aFaa.init by @aFaa.init_FaaHaaInit;
-    sub @aHaa.fina by @aHaa.fina_AboveHaaIsol;
     sub @aHaa.init by @aHaa.init_AboveHaaIsol;
     sub @aHeh.init by @aHeh.init_AboveHaaIsol;
     sub @aKaf.init by @aKaf.init_AboveHaaIsol;
@@ -469,10 +462,12 @@ lookup AboveHaaIsol {
     sub @aMem.init by @aMem.init_AboveHaaIsol;
     sub @aSad.init by @aSad.init_AboveHaaIsol;
     sub @aSen.init by @aSen.init_AboveHaaIsol;
+    sub @aHaa.fina by @aHaa.fina_AboveHaaIsol;
 } AboveHaaIsol;
 
 lookup AboveHaaIsol2 {
     sub @aHaa.fina by @aHaa.fina_AboveHaaIsol2;
+    sub @aHaa.medi by @aHaa.medi_FaaHaaInit;
 } AboveHaaIsol2;
 
 lookup SenYaaFina {
@@ -704,9 +699,6 @@ feature calt {
     sub [@aMem.init]' lookup MemRaaIsol
         [@aRaa.fina]' lookup MemRaaIsol;
 
-    sub [@aFaa.init]' lookup FaaHaaInit
-        [@aHaa.medi]' lookup FaaHaaInit;
-
     sub [@aHaa.init]' lookup HaaHaaInit
         [@aHaa.medi]' lookup HaaHaaInit;
 
@@ -783,7 +775,7 @@ feature calt {
         [@aHaa.fina]' lookup AboveHaaIsol;
 
     sub [@aFaa.init @aLam.init @aKaf.init]' lookup AboveHaaIsol
-        [@aHaa.fina]' lookup AboveHaaIsol2;
+        [@aHaa.medi @aHaa.fina]' lookup AboveHaaIsol2;
 
     sub [@aSen.init @aSad.init @aSen.medi @aSad.medi]' lookup SenYaaFina
         [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
@@ -844,17 +836,6 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [@aMem.medi]' lookup MemAlfFina
         [@aAlf.fina]' lookup MemAlfFina;
-} calt;
-
-lookup LamHaaInit {
-    sub @aHaa.medi by @aHaa.medi_LamHaaInit;
-    sub @aLam.init by @aLam.init_LamHaaInit;
-} LamHaaInit;
-
-feature calt {
-  lookupflag IgnoreMarks;
-    sub [@aLam.init]' lookup LamHaaInit
-        [@aHaa.medi]' lookup LamHaaInit;
 } calt;
 
 feature calt {
