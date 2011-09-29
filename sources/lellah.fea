@@ -132,3 +132,9 @@ feature calt {
     sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651     @Hf' lookup Lellah;
     sub uni0641.init' uni064E @Lm' lookup Lellah3 uni0650 @Lm' lookup Lellah5 uni0651 @xF @Hf' lookup Lellah;
 } calt;
+
+# InDesign does not apply the heh substituion, so we try to apply it again.
+feature calt {
+  lookupflag IgnoreMarks;
+    sub uni0644.medi_Lellah' uni0647.fina' lookup Lellah;
+} calt;
