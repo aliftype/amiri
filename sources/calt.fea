@@ -415,6 +415,8 @@ lookup LamMemMedi {
 } LamMemMedi;
 
 lookup SenBaaMemInit {
+    sub @aSen.init by @aSen.init_SenBaaMemInit;
+    sub @aSad.init by @aSad.init_SenBaaMemInit;
     sub @aBaa.medi by @aBaa.medi_SenBaaMemInit;
     sub @aMem.medi by @aMem.medi_SenBaaMemInit;
 } SenBaaMemInit;
@@ -754,7 +756,7 @@ feature calt {
     sub [@aLam.medi]' lookup LamMemMedi
         [@aMem.medi_dots]' lookup LamMemMedi;
 
-    sub [@aSen.init @aSad.init]
+    sub [@aSen.init @aSad.init]' lookup SenBaaMemInit
         [@aBaa.medi]' lookup SenBaaMemInit
         [@aMem.medi]' lookup SenBaaMemInit;
 
