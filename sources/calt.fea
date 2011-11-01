@@ -701,6 +701,9 @@ feature calt {
     sub [@aMem.init]' lookup MemRaaIsol
         [@aRaa.fina]' lookup MemRaaIsol;
 
+    sub [@aAyn.init]'
+        [@aRaa.fina]' lookup MemRaaIsol;
+
     sub [@aHaa.init]' lookup HaaHaaInit
         [@aHaa.medi]' lookup HaaHaaInit;
 
