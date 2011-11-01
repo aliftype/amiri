@@ -885,7 +885,7 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [@aAyn.init @aHaa.init @aHaa.medi]'
         [@aAlf.fina @aDal.fina @aHeh.fina @aLam.fina @aLam.medi @aLam.medi_LamMemFina
-         @aLam.medi_LamWawFina @aLam.medi_LamHeh @aLam.medi_LamYaaFina
+         @aLam.medi_LamWawFina @aLam.medi_LamHeh @aLam.medi_LamYaaFina @aKaf.fina
          @aLam.medi_LamQafFina @aBaa.medi_BaaRaaFina @aLam.medi_LamAlfFina
          @aLam.medi_LamMemMedi @aLam.medi_LamLamMedi @aBaa.medi_BaaNonFina @aBaa.medi_High]
     by  [@aAyn.init_Finjani @aHaa.init_Finjani @aHaa.medi_Finjani];
