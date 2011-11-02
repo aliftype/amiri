@@ -1,0 +1,43 @@
+
+StartChar: aSen.init_YaaBarree
+Encoding: 70071 -1 4820
+Width: 1500
+Flags: W
+AnchorPoint: "DotAbove" 391 1155 basechar 0
+AnchorPoint: "TwoDotsAbove" 280 1055 basechar 0
+AnchorPoint: "TashkilAbove" 391 1640 basechar 0
+AnchorPoint: "TashkilBelow" 469 -640 basechar 0
+AnchorPoint: "DotBelow" 441 -208 basechar 0
+AnchorPoint: "TwoDotsBelow" 341 -208 basechar 0
+AnchorPoint: "VAbove" 391 1155 basechar 0
+AnchorPoint: "DigitAbove" 391 1155 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+695 831 m 2,0,1
+ 703 841 703 841 713.5 830 c 128,-1,2
+ 724 819 724 819 728 779 c 0,3,4
+ 738 679 738 679 694 586 c 128,-1,5
+ 650 493 650 493 621.5 466.5 c 128,-1,6
+ 593 440 593 440 544 445 c 0,7,8
+ 435 456 435 456 391 538 c 0,9,10
+ 386 548 386 548 376 537 c 0,11,12
+ 249 406 249 406 129 431 c 1,13,14
+ -21 464 -21 464 -42 681 c 1,15,16
+ -45 728 -45 728 -26 753 c 1,17,18
+ -1 782 -1 782 22 769 c 1,19,20
+ 32 762 32 762 36 749 c 0,21,22
+ 45 716 45 716 59 690 c 0,23,24
+ 106 607 106 607 212 598 c 0,25,26
+ 379 584 379 584 451 777 c 0,27,28
+ 456 789 456 789 468.5 789.5 c 128,-1,29
+ 481 790 481 790 489.5 780 c 128,-1,30
+ 498 770 498 770 488 744 c 0,31,32
+ 455 660 455 660 523 629 c 0,33,34
+ 569 607 569 607 620 609 c 0,35,36
+ 630 609 630 609 631.5 634 c 128,-1,37
+ 633 659 633 659 620.5 688.5 c 128,-1,38
+ 608 718 608 718 618 731 c 2,39,-1
+ 695 831 l 2,0,1
+EndSplineSet
+EndChar

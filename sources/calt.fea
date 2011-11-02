@@ -786,6 +786,17 @@ feature calt {
         [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
 } calt;
 
+lookup ToothYaaBarree {
+  sub @aSen.init by @aSen.init_YaaBarree;
+  sub @aSad.init by @aSad.init_YaaBarree;
+  sub @aYaaBarree.fina by @aYaaBarree.fina_PostTooth;
+} ToothYaaBarree;
+
+feature calt {
+  lookupflag IgnoreMarks;
+    sub [@aSen.init @aSad.init]' lookup ToothYaaBarree
+        [@aYaaBarree.fina]'      lookup ToothYaaBarree;
+} calt;
 
 # default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
 # both glyphs have marks above or both have marks bellow at the same time. So
