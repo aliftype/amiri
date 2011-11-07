@@ -31,7 +31,15 @@ feature kern {
     enum pos @1st_3 @2nd_3 <-200 0 -200 0>;
     enum pos @1st_3 @2nd_4 <-400 0 -400 0>;
 
+    # +ve kern so that the tail of raa/waw does not touch the dot of baa
     enum pos @RaaWaw @aBaaDotBelow <170 0 170 0>;
+} kern;
+
+feature kern {
+  lookupflag IgnoreMarks, RightToLeft;
+    # this baa requires an extra +ve kern than the ones above
+    # XXX: we only need a subset of @aBaa.init_High
+    enum pos @RaaWaw @aBaa.init_High <80 0 80 0>;
 } kern;
 
 lookup pos_500 {
