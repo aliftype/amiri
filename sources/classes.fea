@@ -315,3 +315,5 @@
 
 @Tashkil.above = [ uni0618 uni0619 uni061A uni064B uni064C uni064E uni064F uni0651 uni0652 uni0657 uni0658 uni0659 uni065A uni065B uni065D uni065E uni06DF uni06E0 uni06E1 uni06E2 uni06E4 uni06E8 uni06EB uni06EC uni08F0 uni08F1 uni08F0.small uni064B.small uni064E.small uni08F1.small uni064F.small uni064E.small2 uni0652.small2 uni064C.small ];
 @Tashkil.below = [ uni064D uni0650 uni065C uni06EA uni06ED uni08F2 uni0650.small2 ];
+
+@RaaWaw = [ @aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol @aRaa.fina_BaaRaaIsol @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina @aRaa.fina_KafRaaFina @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol @aRaa.fina_LamRaaIsol @aRaa.fina_PostTooth ];

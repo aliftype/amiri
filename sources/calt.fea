@@ -990,11 +990,6 @@ feature calt {
     by  [@aYaa.fina_Tatweel];
 } calt;
 
-@RaaWaw     = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol @aRaa.fina_BaaRaaIsol
-               @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina @aRaa.fina_KafRaaFina
-               @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol @aRaa.fina_LamRaaIsol
-               @aRaa.fina_PostTooth];
-
 feature calt {
   lookupflag IgnoreMarks;
     sub @RaaWaw [uni0625 uni0673]' by @aAlf.isol_LowHamza;
