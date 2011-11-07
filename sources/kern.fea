@@ -34,6 +34,8 @@ feature kern {
 
     enum pos @1st_3 @2nd_3 <-200 0 -200 0>;
     enum pos @1st_3 @2nd_4 <-400 0 -400 0>;
+
+    enum pos @1st_1 @aBaaDotBelow <170 0 170 0>;
 } kern;
 
 lookup pos_500 {

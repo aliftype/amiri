@@ -999,8 +999,3 @@ feature calt {
   lookupflag IgnoreMarks;
     sub @RaaWaw [uni0625 uni0673]' by @aAlf.isol_LowHamza;
 } calt;
-
-feature calt {
-  lookupflag IgnoreMarks;
-    sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
-} calt;
