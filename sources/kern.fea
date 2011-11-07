@@ -1,10 +1,6 @@
 include(lang.fea)
 include(classes.fea)
 
-@1st_1 = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol
-          @aRaa.fina_BaaRaaIsol @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina
-          @aRaa.fina_KafRaaFina @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol
-          @aRaa.fina_LamRaaIsol @aRaa.fina_PostTooth];
 @1st_2 = [@aDal.fina @aDal.isol @aDal.fina_BaaDalIsol
           @aDal.fina_KafDal @aDal.fina_LamDal];
 @1st_3 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
@@ -22,20 +18,20 @@ include(classes.fea)
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
-    enum pos @1st_1 @2nd_1 <-600 0 -600 0>;
+    enum pos @RaaWaw @2nd_1 <-600 0 -600 0>;
     enum pos @1st_2 @2nd_1 <-600 0 -600 0>;
     enum pos @1st_3 @2nd_1 <-800 0 -800 0>;
 
-    enum pos @1st_1 @2nd_2 <-300 0 -300 0>;
+    enum pos @RaaWaw @2nd_2 <-300 0 -300 0>;
     enum pos @1st_2 @2nd_2 <-300 0 -300 0>;
     enum pos @1st_3 @2nd_2 <-400 0 -400 0>;
 
-    enum pos @1st_1 @2nd_3 <-100 0 -100 0>;
+    enum pos @RaaWaw @2nd_3 <-100 0 -100 0>;
 
     enum pos @1st_3 @2nd_3 <-200 0 -200 0>;
     enum pos @1st_3 @2nd_4 <-400 0 -400 0>;
 
-    enum pos @1st_1 @aBaaDotBelow <170 0 170 0>;
+    enum pos @RaaWaw @aBaaDotBelow <170 0 170 0>;
 } kern;
 
 lookup pos_500 {
