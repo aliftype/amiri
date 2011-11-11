@@ -493,38 +493,38 @@ lookup KafMemInit {
 
 # the Lam.medi+Mem.fina is too narrow for tashkil, so we use a wider (extended)
 # meem when tashkil clash is anticipated.
-lookup LamMemExtended {
+lookup LamMemFinaExtended {
   sub @aMem.fina by @aMem.fina_LamMemFinaExtended;
-} LamMemExtended;
+} LamMemFinaExtended;
 
 feature calt {
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.above
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.above;
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.above @Tashkil.above
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.above;
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.above @Tashkil.above
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.above @Tashkil.above;
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.above
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.above @Tashkil.above;
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.below @Tashkil.above
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.above;
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.above @Tashkil.below
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.above;
   sub @aLam.medi' lookup LamMemFina
       @Tashkil.below
-      @aMem.fina' lookup LamMemExtended
+      @aMem.fina' lookup LamMemFinaExtended
       @Tashkil.below;
 } calt;
 
@@ -565,38 +565,38 @@ feature calt {
 } calt;
 
 # ditto
-lookup KafMemExtended {
+lookup KafMemFinaExtended {
   sub @aMem.fina by @aMem.fina_KafMemFinaExtended;
-} KafMemExtended;
+} KafMemFinaExtended;
 
 feature calt {
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.above
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.above @Tashkil.above
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.above @Tashkil.above
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.above
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.below @Tashkil.above
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.above @Tashkil.below
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
       @Tashkil.below
-      @aMem.fina' lookup KafMemExtended
+      @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.below;
 } calt;
 
