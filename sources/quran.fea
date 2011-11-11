@@ -233,3 +233,8 @@ feature calt {
 feature mark {
   pos [uni06E5.low]' <50 0 350 0> [uni06E4];
 } mark;
+
+# ditto for final alef
+feature mark {
+  pos [uni0627.fina uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <250 0 250 0> [uni06E4];
+} mark;
