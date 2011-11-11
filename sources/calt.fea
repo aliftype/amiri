@@ -565,6 +565,42 @@ feature calt {
 } calt;
 
 # ditto
+lookup LamMemInitTatweel {
+  sub @aMem.medi by @aMem.medi_LamMemInitTatweel;
+} LamMemInitTatweel;
+
+feature calt {
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.above
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.above;
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.above @Tashkil.above
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.above;
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.above @Tashkil.above
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.above @Tashkil.above;
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.above
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.above @Tashkil.above;
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.below @Tashkil.above
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.above;
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.above @Tashkil.below
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.above;
+  sub @aLam.init' lookup LamMemInit
+      @Tashkil.below
+      @aMem.medi' lookup LamMemInitTatweel
+      @Tashkil.below;
+} calt;
+
+# ditto
 lookup KafMemFinaExtended {
   sub @aMem.fina by @aMem.fina_KafMemFinaExtended;
 } KafMemFinaExtended;
