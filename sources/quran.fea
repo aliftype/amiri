@@ -229,12 +229,12 @@ feature calt {
     sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
 } calt;
 
-# the low waw is kerned a bit to the heh, so we widen it when followed by madda
+# some glyphs need more room to accomodate madda mark, so we change the advance
+# width on fly.
 feature mark {
+  # small waw
   pos [uni06E5.low]' <50 0 350 0> [uni06E4];
-} mark;
 
-# ditto for final alef
-feature mark {
-  pos [uni0627.fina uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <250 0 250 0> [uni06E4];
+  # alef
+  pos [uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <250 0 250 0> [uni06E4];
 } mark;
