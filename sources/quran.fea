@@ -228,3 +228,8 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
 } calt;
+
+# the low waw is kerned a bit to the heh, so we widen it when followed by madda
+feature mark {
+  pos [uni06E5.low]' <50 0 350 0> [uni06E4];
+} mark;
