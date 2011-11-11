@@ -1030,3 +1030,8 @@ feature calt {
   lookupflag IgnoreMarks;
     sub @RaaWaw [uni0625 uni0673]' by @aAlf.isol_LowHamza;
 } calt;
+
+# replace final alef followed by madda by a wider one
+feature calt {
+  sub [uni0627.fina]' [uni06E4] by [uni0627.fina_Wide];
+} calt;
