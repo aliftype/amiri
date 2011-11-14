@@ -934,7 +934,10 @@ feature calt {
         [@aAlf.fina @aDal.fina @aHeh.fina @aLam.fina @aLam.medi @aLam.medi_LamMemFina
          @aLam.medi_LamWawFina @aLam.medi_LamHeh @aLam.medi_LamYaaFina @aKaf.fina
          @aLam.medi_LamQafFina @aBaa.medi_BaaRaaFina @aLam.medi_LamAlfFina
-         @aLam.medi_LamMemMedi @aLam.medi_LamLamMedi @aBaa.medi_BaaNonFina @aBaa.medi_High]
+         @aLam.medi_LamMemMedi @aLam.medi_LamLamMedi @aBaa.medi_BaaNonFina @aBaa.medi_High
+         @aKaf.medi @aKaf.medi_KafMemAlf @aKaf.medi_KafMemMedi @aKaf.medi_KafMemFina
+         @aKaf.medi_KafLam @aKaf.medi_KafHeh @aKaf.medi_KafBaaMedi @aKaf.medi_KafRaaFina
+         @aKaf.medi_KafYaaFina]
     by  [@aAyn.init_Finjani @aHaa.init_Finjani @aHaa.medi_Finjani];
 } calt;
 
