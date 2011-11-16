@@ -189,6 +189,11 @@ def main():
         font.mergeFeature(oldfea)
         os.remove(oldfea)
 
+    if nolocalename:
+        for name in font.sfnt_names:
+            if name[0] != "English (US)" and name[1] in ("Family", "Fullname"):
+                font.appendSFNTName(name[0], name[1], None)
+
     if web:
         # If we are building a web version then try to minimise file size
 
@@ -205,19 +210,29 @@ def main():
         # no dummy DSIG table nor glyph names
         flags  = ("opentype", "round", "short-post")
 
-    if nolocalename:
-        for name in font.sfnt_names:
-            if name[0] != "English (US)" and name[1] in ("Family", "Fullname"):
-                font.appendSFNTName(name[0], name[1], None)
+        font.generate(outfile, flags=flags)
+        font.close()
 
-    # ff takes long to write the file, so generate to tmp file then rename
-    # it to keep fontview happy
-    tmpout = tempfile.mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
-    font.generate(tmpout, flags=flags)
-    #os.rename(tmpout, outfile) # file monitor will not see this, why?
-    p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
-    p.wait()
-    os.remove(tmpout)
+        # pass the font through ttx, saves few tens of kilobytes
+        from fontTools.ttLib import TTFont
+        font = TTFont(outfile)
+
+        for tag in font.keys():
+            if tag != "GlyphOrder":
+                font[tag].compile(font)
+
+        font.save(outfile)
+        font.close()
+    else:
+        # ff takes long to write the file, so generate to tmp file then rename
+        # it to keep fontview happy
+        tmpout = tempfile.mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
+        font.generate(tmpout, flags=flags)
+        font.close()
+        #os.rename(tmpout, outfile) # file monitor will not see this, why?
+        p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
+        p.wait()
+        os.remove(tmpout)
 
 if __name__ == "__main__":
     main()
