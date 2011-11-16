@@ -16,6 +16,7 @@ BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
 FF=python $(BUILD)
 MKEOT=ttf2eot
+MKWOFF=sfnt2woff
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)
@@ -45,10 +46,10 @@ $(WEB)/%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
 	@mkdir -p $(WEB)
 	@$(FF) --web --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
 
-$(WEB)/%.woff: $(SRC)/%.sfdir $(FEAT) $(BUILD)
+$(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --web --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
+	@$(MKWOFF) $<
 
 $(WEB)/%.eot: $(WEB)/%.ttf
 	@echo "   FF\t$@"
