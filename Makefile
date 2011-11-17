@@ -23,7 +23,6 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
-FEAS=$(FONTS:%=$(WEB)/%.fea)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
 FEAT=$(FEA:%=$(SRC)/%.fea)
