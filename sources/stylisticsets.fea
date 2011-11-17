@@ -1,6 +1,3 @@
-include(lang.fea)
-include(classes.fea)
-
 # Replace baa glyphs with dot below following a raa or waw by an alternate ones
 # with low dots.
 feature ss01 {

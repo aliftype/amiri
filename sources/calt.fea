@@ -1,6 +1,3 @@
-include(lang.fea)
-include(classes.fea)
-
 # replace tashkil following shadda by smaller alternates
 feature calt {
     sub [uni0651] [uni064E uni064B uni064C uni064F uni08F0 uni08F1]'

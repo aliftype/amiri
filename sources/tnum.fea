@@ -1,5 +1,3 @@
-include(lang.fea)
-
 feature tnum {
     sub uni0660 by uni0660.tnum;
     sub uni0661 by uni0661.tnum;

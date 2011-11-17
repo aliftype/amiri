@@ -1,6 +1,3 @@
-include(lang.fea)
-include(classes.fea)
-
 # Kashida justification as implemented in most, if not all, applications is
 # broken by design; it inserts kashidas *after* doing OT layout which makes it
 # impossible for OT code to interact with those kashidas breaking all sorts of

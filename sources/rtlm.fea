@@ -1,5 +1,3 @@
-include(lang.fea)
-
 feature rtlm {
   sub radical by radical.rtlm;
 } rtlm;

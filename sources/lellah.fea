@@ -14,9 +14,6 @@
 # http://www.graphics4arab.com/showthread.php?t=3975
 #  and I just adapted it for Amiri, credit where credit is due.
 
-include(lang.fea)
-include(classes.fea)
-
 lookup Lellah {
     sub uni0644.init by uni0644.init_Lellah;
     sub uni0644.medi by uni0644.medi_Lellah;
@@ -41,10 +38,10 @@ lookup Lellah5 {
     sub uni0644.medi by uni0644.medi_Lellah;
 } Lellah5;
 
-lookup LamLamInit {
+lookup LamLamInitX {
     sub uni0644.init by uni0644.init_LamLamInit;
     sub uni0644.medi by uni0644.medi_LamLamInit;
-} LamLamInit;
+} LamLamInitX;
 
 # define to not include [اآٱ]
 @aAlf_isol = [uni0625 uni0774 uni0773 uni0623 uni0675 uni0672 uni0673];
@@ -97,9 +94,9 @@ lookup LamLamInit {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub @Ignore       @Li' lookup LamLamInit @Lm' lookup LamLamInit @Hf;
-    sub @Ignore  @Ai' @Li' lookup LamLamInit @Lm' lookup LamLamInit @Hf;
-    sub @Ignore2 @Af' @Li' lookup LamLamInit @Lm' lookup LamLamInit @Hf;
+    sub @Ignore       @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+    sub @Ignore  @Ai' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+    sub @Ignore2 @Af' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
 } calt;
 
 feature calt {

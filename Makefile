@@ -23,6 +23,7 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
+FEAS=$(FONTS:%=$(WEB)/%.fea)
 PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
 CSSS=$(WEB)/amiri.css
 FEAT=$(FEA:%=$(SRC)/%.fea)
@@ -37,14 +38,14 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
-%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
+%.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION) --no-localised-name
+	@$(FF) --input $< --output $@ --feature-files "$(<:%.sfdir=%.fea)" --version $(VERSION) --no-localised-name
 
-$(WEB)/%.ttf: $(SRC)/%.sfdir $(FEAT) $(BUILD)
+$(WEB)/%.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --web --input $< --output $@ --feature-files "$(FEAT)" --version $(VERSION)
+	@$(FF) --input $< --output $@ --feature-files "$(<:%.sfdir=%.fea)" --version $(VERSION) --web
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
