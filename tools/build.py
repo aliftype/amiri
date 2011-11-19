@@ -144,7 +144,11 @@ def main():
         print "No output file"
         usage(-1)
 
-    font = fontforge.open(infile)
+    font = None
+
+    if not web:
+        font = fontforge.open(infile)
+
     flags  = ("opentype", "dummy-dsig", "round")
 
     if css:
@@ -171,10 +175,12 @@ def main():
         sys.exit(0)
 
     # remove anchors that are not needed in the production font
-    cleanAnchors(font)
+    if font:
+        cleanAnchors(font)
 
     # fix some common font issues
-    validateGlyphs(font)
+    if font:
+        validateGlyphs(font)
 
     if feafiles:
         oldfea = tempfile.mkstemp(suffix='.fea')[1]
@@ -196,27 +202,44 @@ def main():
 
     if web:
         # If we are building a web version then try to minimise file size
+        from fontTools.ttLib import TTFont
+        font = TTFont(infile, recalcBBoxes=0)
+
+        # internal glyph names are useless on the web, so force a format 3 post
+        # table
+        post = font['post']
+        post.formatType = 3.0
+        post.glyphOrder = None
+        del(post.extraNames)
+        del(post.mapping)
 
         # 'name' table is a bit bulky, and of almost no use in for web fonts,
         # so we strip all unnecessary entries.
-        font.appendSFNTName ("English (US)", "License", "OFL v1.1")
+        name = font['name']
+        names = []
+        for record in name.names:
+            platID = record.platformID
+            langID = record.langID
+            nameID = record.nameID
 
-        for name in font.sfnt_names:
-            if name[0] == "Arabic (Egypt)":
-                font.appendSFNTName(name[0], name[1], None)
-            elif name[1] in ("Descriptor", "Sample Text"):
-                font.appendSFNTName(name[0], name[1], None)
+            # we keep only en_US entries in Windows and Mac platform id, every
+            # thing else is dropped
+            if (platID == 1 and langID == 0) or (platID == 3 and langID == 1033):
+                if nameID == 13:
+                    # the full OFL text is too much, replace it with a simple
+                    # string
+                    record.string = 'OFL v1.1'
+                    names.append(record)
+                # keep every thing else except Descriptor, Sample Text
+                elif nameID not in (10, 19):
+                    names.append(record)
 
-        # no dummy DSIG table nor glyph names
-        flags  = ("opentype", "round", "short-post")
+        name.names = names
 
-        font.generate(outfile, flags=flags)
-        font.close()
+        # dummy DSIG is useless here too
+        del(font['DSIG'])
 
-        # pass the font through ttx, saves few tens of kilobytes
-        from fontTools.ttLib import TTFont
-        font = TTFont(outfile)
-
+        # decompiling/compiling the table by fontTools saves few tens of KBs
         for tag in font.keys():
             if tag != "GlyphOrder":
                 font[tag].compile(font)

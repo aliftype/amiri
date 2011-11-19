@@ -41,10 +41,10 @@ doc: $(PDFS)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --feature-files "$(<:%.sfdir=%.fea)" --version $(VERSION) --no-localised-name
 
-$(WEB)/%.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
+$(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --input $< --output $@ --feature-files "$(<:%.sfdir=%.fea)" --version $(VERSION) --web
+	@$(FF) --input $< --output $@ --web
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
