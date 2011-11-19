@@ -239,10 +239,12 @@ def main():
         # dummy DSIG is useless here too
         del(font['DSIG'])
 
-        # decompiling/compiling the table by fontTools saves few tens of KBs
-        for tag in font.keys():
-            if tag != "GlyphOrder":
-                font[tag].compile(font)
+        # FFTM is FontForge specific, remove too
+        del(font['FFTM'])
+
+        # force compiling GPOS/GSUB tables by fontTools, saves few tens of KBs
+        for tag in ('GPOS', 'GSUB'):
+            font[tag].compile(font)
 
         font.save(outfile)
         font.close()
