@@ -210,9 +210,7 @@ def main():
         skew = psMat.skew(-slant * math.pi/180.0)
 
         font.selection.all()
-        font.unlinkReferences()
         font.transform(skew)
-        font.replaceWithReference()
 
         # fix metadata
         font.italicangle = slant
