@@ -96,6 +96,7 @@ Options:
   --output=FILE         file name of output font
   --version=VALUE       set font version to VALUE
   --feature-files=LIST  optional space delimited feature file list
+  --slant=VALUE         autoslant
   --css                 output is a CSS file
   --sfd                 output is a SFD file
   --web                 output is web optimised
@@ -111,7 +112,7 @@ def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "feature-files=", "version=", "css", "web", "sfd", "no-localised-name"])
+                ["help","input=","output=", "feature-files=", "version=", "slant=", "css", "web", "sfd", "no-localised-name"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -120,6 +121,7 @@ def main():
     outfile = None
     feafiles = None
     version = None
+    slant = False
     css = False
     web = False
     sfd = False
@@ -132,6 +134,7 @@ def main():
         elif opt == "--output": outfile = arg
         elif opt == "--feature-files": feafiles = arg
         elif opt == "--version": version = arg
+        elif opt == "--slant": slant = float(arg)
         elif opt == "--css": css = True
         elif opt == "--web": web = True
         elif opt == "--sfd": sfd = True
@@ -174,12 +177,11 @@ def main():
 
         sys.exit(0)
 
-    # remove anchors that are not needed in the production font
-    if font:
+    if font and not slant:
+        # remove anchors that are not needed in the production font
         cleanAnchors(font)
 
-    # fix some common font issues
-    if font:
+        # fix some common font issues
         validateGlyphs(font)
 
     if feafiles:
@@ -199,6 +201,24 @@ def main():
         for name in font.sfnt_names:
             if name[0] != "English (US)" and name[1] in ("Family", "Fullname"):
                 font.appendSFNTName(name[0], name[1], None)
+
+    if slant:
+        import psMat
+        import math
+
+        # compute amout of skew, magic formula copied from fontforge sources
+        skew = psMat.skew(-slant * math.pi/180.0)
+
+        font.selection.all()
+        font.unlinkReferences()
+        font.transform(skew)
+        font.replaceWithReference()
+
+        # fix metadata
+        font.italicangle = slant
+        font.fontname = font.fontname.replace("Regular", "Slanted")
+        font.fullname += " Slanted"
+        font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
     if web:
         # If we are building a web version then try to minimise file size

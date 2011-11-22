@@ -7,7 +7,7 @@ SRC=sources
 WEB=web
 DOC=documentation
 TESTS=test-suite
-FONTS=amiri-regular
+FONTS=amiri-regular amiri-slanted
 # the order of feature files is important
 FEA=lang classes locl gsub kashida quran tnum rtlm lellah calt stylisticsets kern
 DOCS=README README-Arabic NEWS NEWS-Arabic
@@ -37,9 +37,13 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
-%.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
+$(CURDIR)/%.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --feature-files "$(<:%.sfdir=%.fea)" --version $(VERSION) --no-localised-name
+
+$(CURDIR)/%-slanted.ttf: %-regular.ttf $(BUILD)
+	@echo "   FF\t$@"
+	$(FF) --input $< --output $@ --slant=7
 
 $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
