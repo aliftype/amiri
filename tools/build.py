@@ -95,7 +95,7 @@ Options:
   --input=FILE          file name of input font
   --output=FILE         file name of output font
   --version=VALUE       set font version to VALUE
-  --feature-files=LIST  optional space delimited feature file list
+  --feature-file=FILE   optional feature file
   --slant=VALUE         autoslant
   --css                 output is a CSS file
   --sfd                 output is a SFD file
@@ -112,14 +112,14 @@ def main():
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "feature-files=", "version=", "slant=", "css", "web", "sfd", "no-localised-name"])
+                ["help","input=","output=", "feature-file=", "version=", "slant=", "css", "web", "sfd", "no-localised-name"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
 
     infile = None
     outfile = None
-    feafiles = None
+    feafile = None
     version = None
     slant = False
     css = False
@@ -132,7 +132,7 @@ def main():
             usage(0)
         elif opt == "--input": infile = arg
         elif opt == "--output": outfile = arg
-        elif opt == "--feature-files": feafiles = arg
+        elif opt == "--feature-file": feafile = arg
         elif opt == "--version": version = arg
         elif opt == "--slant": slant = float(arg)
         elif opt == "--css": css = True
@@ -186,16 +186,14 @@ def main():
         # fix some common font issues
         validateGlyphs(font)
 
-    if feafiles:
+    if feafile:
         oldfea = tempfile.mkstemp(suffix='.fea')[1]
         font.generateFeatureFile(oldfea)
 
         for lookup in font.gpos_lookups:
             font.removeLookup(lookup)
 
-        for fea in feafiles.split():
-            font.mergeFeature(fea)
-
+        font.mergeFeature(feafile)
         font.mergeFeature(oldfea)
         os.remove(oldfea)
 
