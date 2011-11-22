@@ -250,7 +250,12 @@ def main():
                 if nameID == 13:
                     # the full OFL text is too much, replace it with a simple
                     # string
-                    record.string = 'OFL v1.1'
+                    if platID == 3:
+                        # MS strings are UTF-16 encoded
+                        text = 'OFL v1.1'.encode('utf_16_be')
+                    else:
+                        text = 'OFL v1.1'
+                    record.string = text
                     names.append(record)
                 # keep every thing else except Descriptor, Sample Text
                 elif nameID not in (10, 19):
