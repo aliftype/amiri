@@ -60,10 +60,10 @@ $(WEB)/%.eot: $(WEB)/%.ttf
 	@mkdir -p $(WEB)
 	@$(MKEOT) $< > $@
 
-$(WEB)/%.css: $(SFDS) $(BUILD)
+$(WEB)/%.css: $(WTTF) $(BUILD)
 	@echo "   GEN\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --css --input $^ --output $@ --version $(VERSION)
+	@$(FF) --css --input "$(WTTF)" --output $@ --version $(VERSION)
 
 $(DOC)/%-table.pdf: %.ttf
 	@echo "   GEN\t$@"

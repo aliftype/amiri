@@ -22,7 +22,7 @@ import subprocess
 
 def genCSS(font, base):
     if font.fullname.lower().find("slanted")>0:
-        style = "slanted"
+        style = "oblique"
     else:
         style = "normal"
 
@@ -149,17 +149,19 @@ def main():
 
     font = None
 
-    if not web:
+    if not (web or css):
         font = fontforge.open(infile)
 
     flags  = ("opentype", "dummy-dsig", "round")
 
     if css:
-        #XXX hack
-        base = os.path.splitext(os.path.basename(infile))[0]
-
-        text = genCSS(font, base)
-        font.close()
+        text = ""
+        files = infile.split()
+        for f in files:
+            base = os.path.splitext(os.path.basename(f))[0]
+            font = fontforge.open(f)
+            text += genCSS(font, base)
+            font.close()
 
         out = open(outfile, "w")
         out.write(text)
