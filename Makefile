@@ -37,6 +37,11 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
+$(WEB)/%.ttf: %.ttf $(BUILD)
+	@echo "   FF\t$@"
+	@mkdir -p $(WEB)
+	@$(FF) --input $< --output $@ --web
+
 %.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --feature-files "$(<:%.sfdir=%.fea)" --version $(VERSION) --no-localised-name
@@ -44,11 +49,6 @@ doc: $(PDFS)
 %-slanted.ttf: %-regular.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --slant=7
-
-$(WEB)/%.ttf: %.ttf $(BUILD)
-	@echo "   FF\t$@"
-	@mkdir -p $(WEB)
-	@$(FF) --input $< --output $@ --web
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
