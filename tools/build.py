@@ -18,7 +18,6 @@ import sys
 import os
 import getopt
 import tempfile
-import subprocess
 
 def genCSS(font, base):
     if font.fullname.lower().find("slanted")>0:
@@ -121,18 +120,22 @@ def makeCss(infile, outfile):
     out.write(text)
     out.close()
 
-def generateFont(font, outfile):
+def generateFont(font, outfile, hack=False):
     flags  = ("opentype", "dummy-dsig", "round")
 
-    # ff takes long to write the file, so generate to tmp file then rename
-    # it to keep fontview happy
-    tmpout = tempfile.mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
-    font.generate(tmpout, flags=flags)
+    if hack:
+        # ff takes long to write the file, so generate to tmp file then rename
+        # it to keep fontview happy
+        import subprocess
+        tmpout = tempfile.mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
+        font.generate(tmpout, flags=flags)
+        #os.rename(tmpout, outfile) # file monitor will not see this, why?
+        p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
+        p.wait()
+        os.remove(tmpout)
+    else:
+        font.generate(outfile, flags=flags)
     font.close()
-    #os.rename(tmpout, outfile) # file monitor will not see this, why?
-    p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
-    p.wait()
-    os.remove(tmpout)
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
@@ -234,7 +237,7 @@ def makeDesktop(infile, outfile, feafile, version, nolocalname):
     if feafile:
         mergeFeatures(font, feafile)
 
-    generateFont(font, outfile)
+    generateFont(font, outfile, True)
 
 def usage(code):
     message = """Usage: %s OPTIONS...
