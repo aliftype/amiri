@@ -214,8 +214,6 @@ def makeSlanted(infile, outfile, slant):
     font.fullname += " Slanted"
     font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-    generateFont(font, outfile)
-
 def makeSfd(infile, outfile, version):
     font = fontforge.open(infile)
     if version:
