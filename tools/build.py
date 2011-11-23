@@ -141,6 +141,10 @@ def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
     from fontTools.ttLib import TTFont
 
+    # suppress noisy DeprecationWarnings in fontTools
+    import warnings
+    warnings.filterwarnings("ignore",category=DeprecationWarning)
+
     font = TTFont(infile, recalcBBoxes=0)
 
     # internal glyph names are useless on the web, so force a format 3 post
