@@ -845,6 +845,19 @@ feature calt {
         [@aYaaBarree.fina]'                            lookup AscenderYaaBarree;
 } calt;
 
+lookup AynYaaBarree {
+  sub @aHaa.init by @aHaa.init_YaaBarree;
+  sub @aAyn.init by @aAyn.init_YaaBarree;
+  sub @aMem.init_dots by @aMem.init_YaaBarree;
+  sub @aYaaBarree.fina by @aYaaBarree.fina_PostAyn;
+} AynYaaBarree;
+
+feature calt {
+  lookupflag IgnoreMarks;
+    sub [@aHaa.init @aAyn.init @aMem.init_dots]' lookup AynYaaBarree
+        [@aYaaBarree.fina]'                 lookup AynYaaBarree;
+} calt;
+
 # default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
 # both glyphs have marks above or both have marks bellow at the same time. So
 # we use an alternate wider Meem in such cases.

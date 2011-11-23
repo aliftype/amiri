@@ -1,0 +1,42 @@
+
+StartChar: aHaa.init_YaaBarree
+Encoding: 70185 -1 4936
+Width: 2115
+VWidth: 0
+Flags: W
+AnchorPoint: "TwoDotsBelow" 1007 -221 basechar 0
+AnchorPoint: "TwoDotsAbove" 1007 1089 basechar 0
+AnchorPoint: "HamzaBelow" 1117 -221 basechar 0
+AnchorPoint: "HamzaAbove" 1117 1089 basechar 0
+AnchorPoint: "DotBelow" 1117 -341 basechar 0
+AnchorPoint: "DotAbove" 1117 1089 basechar 0
+AnchorPoint: "TashkilAbove" 641 1640 basechar 0
+AnchorPoint: "TashkilBelow" 911 -640 basechar 0
+AnchorPoint: "TaaAbove" 1117 1089 basechar 0
+AnchorPoint: "TaaBelow" 1117 -1 basechar 0
+AnchorPoint: "DigitBelow" 1117 -341 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+642 642 m 0,0,1
+ 648 643 648 643 634 652 c 0,2,3
+ 539 713 539 713 448 740.5 c 128,-1,4
+ 357 768 357 768 216 716 c 0,5,6
+ 203 711 203 711 199 720.5 c 128,-1,7
+ 195 730 195 730 200 744 c 0,8,9
+ 258 889 258 889 393 921 c 0,10,11
+ 489 944 489 944 651 835 c 1,12,13
+ 866 695 866 695 1228 663 c 0,14,15
+ 1269 659 1269 659 1254 635 c 2,16,-1
+ 1180 512 l 2,17,18
+ 1175 504 1175 504 1160 507 c 0,19,20
+ 855 577 855 577 554 519 c 1,21,22
+ 279 446 279 446 103 320 c 0,23,24
+ 43 276 43 276 2 231 c 1,25,26
+ -30 203 -30 203 -45 209 c 0,27,28
+ -50 211 -50 211 -55 214 c 0,29,30
+ -77 235 -77 235 -45 280 c 1,31,32
+ 149 549 149 549 581 632 c 0,33,34
+ 612 637 612 637 642 642 c 0,0,1
+EndSplineSet
+EndChar
