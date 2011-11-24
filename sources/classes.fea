@@ -58,8 +58,8 @@
 @aWaw.isol = [ uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4 uni06C5 uni0676 uni0677 uni06C8 uni06C9 uni0779 uni0648 ];
 @aYaa.fina = [ uni0777.fina uni06D1.fina uni0775.fina uni063F.fina uni0678.fina uni063D.fina uni063E.fina uni06D0.fina uni0649.fina uni0776.fina uni06CD.fina uni06CC.fina uni0626.fina uni0620.fina uni064A.fina uni06CE.fina ];
 @aYaa.isol = [ uni0777 uni06D1 uni0775 uni063F uni0678 uni063D uni063E uni06D0 uni0649 uni0776 uni06CD uni06CC uni0626 uni0620 uni064A uni06CE ];
-@aYaaBarree.fina = [ uni06D3.fina uni077B.fina uni077A.fina uni06D2.fina ];
-@aYaaBarree.isol = [ uni06D3 uni077B uni077A uni06D2 ];
+@aYaaBarree.fina = [ uni077B.fina uni077A.fina uni06D2.fina ];
+@aYaaBarree.isol = [ uni077B uni077A uni06D2 ];
 
 
 @aAlf.fina_KafAlf = [ uni0625.fina_KafAlf uni0627.fina_KafAlf uni0774.fina_KafAlf uni0773.fina_KafAlf uni0623.fina_KafAlf uni0622.fina_KafAlf uni0675.fina_KafAlf uni0672.fina_KafAlf uni0673.fina_KafAlf uni0671.fina_KafAlf ];
@@ -292,9 +292,9 @@
 @aYaa.fina_LamYaaFina = [ uni0777.fina_LamYaaFina uni06D1.fina_LamYaaFina uni0775.fina_LamYaaFina uni063F.fina_LamYaaFina uni0678.fina_LamYaaFina uni063D.fina_LamYaaFina uni063E.fina_LamYaaFina uni06D0.fina_LamYaaFina uni0649.fina_LamYaaFina uni0776.fina_LamYaaFina uni06CD.fina_LamYaaFina uni06CC.fina_LamYaaFina uni0626.fina_LamYaaFina uni0620.fina_LamYaaFina uni064A.fina_LamYaaFina uni06CE.fina_LamYaaFina ];
 @aYaa.fina_PostTooth = [ uni0777.fina_PostTooth uni06D1.fina_PostTooth uni0775.fina_PostTooth uni063F.fina_PostTooth uni0678.fina_PostTooth uni063D.fina_PostTooth uni063E.fina_PostTooth uni06D0.fina_PostTooth uni0649.fina_PostTooth uni0776.fina_PostTooth uni06CD.fina_PostTooth uni06CC.fina_PostTooth uni0626.fina_PostTooth uni0620.fina_PostTooth uni064A.fina_PostTooth uni06CE.fina_PostTooth ];
 @aYaa.fina_Tatweel = [ uni0777.fina_Tatweel uni06D1.fina_Tatweel uni0775.fina_Tatweel uni063F.fina_Tatweel uni0678.fina_Tatweel uni063D.fina_Tatweel uni063E.fina_Tatweel uni06D0.fina_Tatweel uni0649.fina_Tatweel uni0776.fina_Tatweel uni06CD.fina_Tatweel uni06CC.fina_Tatweel uni0626.fina_Tatweel uni0620.fina_Tatweel uni064A.fina_Tatweel uni06CE.fina_Tatweel ];
-@aYaaBarree.fina_PostTooth = [ uni06D3.fina_PostTooth uni077B.fina_PostTooth uni077A.fina_PostTooth uni06D2.fina_PostTooth ];
-@aYaaBarree.fina_PostAscender = [ uni06D3.fina_PostAscender uni077B.fina_PostAscender uni077A.fina_PostAscender uni06D2.fina_PostAscender ];
-@aYaaBarree.fina_PostAyn = [ uni06D3.fina_PostAyn uni077B.fina_PostAyn uni077A.fina_PostAyn uni06D2.fina_PostAyn ];
+@aYaaBarree.fina_PostTooth = [ uni077B.fina_PostTooth uni077A.fina_PostTooth uni06D2.fina_PostTooth ];
+@aYaaBarree.fina_PostAscender = [ uni077B.fina_PostAscender uni077A.fina_PostAscender uni06D2.fina_PostAscender ];
+@aYaaBarree.fina_PostAyn = [ uni077B.fina_PostAyn uni077A.fina_PostAyn uni06D2.fina_PostAyn ];
 @aAlf.isol_LowHamza = [ uni0625.LowHamza uni0673.LowHamza ];
 @aBaa.init_LD = [ uni0680.init_LD uni06BD.init_LD uni067E.init_LD uni067B.init_LD uni0628.init_LD uni0767.init_LD uni063D.init_LD uni0777.init_LD uni0776.init_LD uni0775.init_LD uni06CC.init_LD uni064A.init_LD uni06CE.init_LD uni0751.init_LD uni0750.init_LD uni0753.init_LD uni0752.init_LD uni0755.init_LD uni0754.init_LD uni06B9.init_LD uni06D1.init_LD uni06D0.init_LD ];
 @aBaa.init_BaaRaaIsolLD = [ uni0680.init_BaaRaaIsolLD uni06BD.init_BaaRaaIsolLD uni067E.init_BaaRaaIsolLD uni067B.init_BaaRaaIsolLD uni0628.init_BaaRaaIsolLD uni0767.init_BaaRaaIsolLD uni063D.init_BaaRaaIsolLD uni0777.init_BaaRaaIsolLD uni0776.init_BaaRaaIsolLD uni0775.init_BaaRaaIsolLD uni06CC.init_BaaRaaIsolLD uni064A.init_BaaRaaIsolLD uni06CE.init_BaaRaaIsolLD uni0751.init_BaaRaaIsolLD uni0750.init_BaaRaaIsolLD uni0753.init_BaaRaaIsolLD uni0752.init_BaaRaaIsolLD uni0755.init_BaaRaaIsolLD uni0754.init_BaaRaaIsolLD uni06B9.init_BaaRaaIsolLD uni06D1.init_BaaRaaIsolLD uni06D0.init_BaaRaaIsolLD uni0620.init_BaaRaaIsolLD ];

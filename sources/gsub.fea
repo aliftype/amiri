@@ -401,7 +401,9 @@ feature fina {
     sub uni06D0 by uni06D0.fina;
     sub uni06D1 by uni06D1.fina;
     sub uni06D2 by uni06D2.fina;
-    sub uni06D3 by uni06D3.fina;
+    # Unicode says U+06D3 is a ligature of U+06D2 U+0654, but more authentic
+    # Urdu fonts treat it as if it was U+0626 U+06D2, and so we do.
+    sub uni06D3 by uni0626.medi uni06D2.fina;
     sub uni06D5 by uni06D5.fina;
     sub uni06EE by uni06EE.fina;
     sub uni06EF by uni06EF.fina;
