@@ -1,8 +1,9 @@
 
 StartChar: uni0620.init_High
 Encoding: 68435 -1 3151
-Width: 302
+Width: 487
 VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 95 1640 basechar 0
 AnchorPoint: "TashkilBelow" 220 -670 basechar 0
 LayerCount: 2
