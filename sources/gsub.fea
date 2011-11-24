@@ -382,9 +382,9 @@ feature fina {
     sub uni06BC by uni06BC.fina;
     sub uni06BD by uni06BD.fina;
     sub uni06BF by uni06BF.fina;
-    sub uni06C0 by uni06C0.fina;
+    sub uni06C0 by uni06D5.fina uni0654;
     sub uni06C1 by uni06C1.fina;
-    sub uni06C2 by uni06C2.fina;
+    sub uni06C2 by uni06C1.fina uni0654;
     sub uni06C3 by uni06C3.fina;
     sub uni06C4 by uni06C4.fina;
     sub uni06C5 by uni06C5.fina;
