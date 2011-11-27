@@ -82,6 +82,7 @@ feature init {
     sub uni06BB by uni06BB.init;
     sub uni06BC by uni06BC.init;
     sub uni06BD by uni06BD.init;
+    sub uni06BE by uni06BE.init;
     sub uni06BF by uni06BF.init;
     sub uni06C1 by uni06C1.init;
     sub uni06CC by uni06CC.init;
@@ -91,6 +92,7 @@ feature init {
     sub uni06FA by uni06FA.init;
     sub uni06FB by uni06FB.init;
     sub uni06FC by uni06FC.init;
+    sub uni06FF by uni06FF.init;
     sub uni0750 by uni0750.init;
     sub uni0751 by uni0751.init;
     sub uni0752 by uni0752.init;
@@ -213,6 +215,7 @@ feature medi {
     sub uni06BB by uni06BB.medi;
     sub uni06BC by uni06BC.medi;
     sub uni06BD by uni06BD.medi;
+    sub uni06BE by uni06BE.medi;
     sub uni06BF by uni06BF.medi;
     sub uni06C1 by uni06C1.medi;
     sub uni06CC by uni06CC.medi;
@@ -222,6 +225,7 @@ feature medi {
     sub uni06FA by uni06FA.medi;
     sub uni06FB by uni06FB.medi;
     sub uni06FC by uni06FC.medi;
+    sub uni06FF by uni06FF.medi;
     sub uni0750 by uni0750.medi;
     sub uni0751 by uni0751.medi;
     sub uni0752 by uni0752.medi;
@@ -381,6 +385,7 @@ feature fina {
     sub uni06BB by uni06BB.fina;
     sub uni06BC by uni06BC.fina;
     sub uni06BD by uni06BD.fina;
+    sub uni06BE by uni06BE.fina;
     sub uni06BF by uni06BF.fina;
     sub uni06C0 by uni06D5.fina uni0654;
     sub uni06C1 by uni06C1.fina;
@@ -410,6 +415,7 @@ feature fina {
     sub uni06FA by uni06FA.fina;
     sub uni06FB by uni06FB.fina;
     sub uni06FC by uni06FC.fina;
+    sub uni06FF by uni06FF.fina;
     sub uni0750 by uni0750.fina;
     sub uni0751 by uni0751.fina;
     sub uni0752 by uni0752.fina;
