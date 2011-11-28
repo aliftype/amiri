@@ -1,30 +1,31 @@
 #
-# end of ayah sign
+# digit enclosing signs
 #
 
-# first we replace any sequence of digits, up to three places, following end of
-# ayah sign by smaller alternates
+# first we replace any sequence of digits (up to three places) following a
+# digit enclosing sign by smaller alternates
 
 @EndOfAyah = [uni06DD];
+@FootNote  = [uni0602];
 
 lookup digit2small {
   sub @Digits by @Digits.small;
 } digit2small;
 
 feature calt {
-  sub                             @EndOfAyah @Digits' lookup digit2small;
-  sub @Digits.small               @EndOfAyah @Digits' lookup digit2small;
+  sub                             [@EndOfAyah @FootNote] @Digits' lookup digit2small;
+  sub @Digits.small               [@EndOfAyah @FootNote] @Digits' lookup digit2small;
   sub @Digits.small @Digits.small @EndOfAyah @Digits' lookup digit2small;
 } calt;
 
-# now we contextually kern end of ayah with the digits:
-# * one digit: move digit's x by -((ew+dw)/2) and its Δx by -dw
-# * two digts: the above, then move 1st digit's x by -(dw/2) and 2nd digit's x
-#   by -(((ew+dw)/2)-(dw/2)) and its Δx by -dw
-# * three digits: the above, then move 1st & 2nd digit's x by -(dw/2) and 3rd
-#   digit's x by -(((ew+dw)/2)-dw) and its Δx by -dw
+# now we contextually kern the sign with the digits:
+# * one digit: move digit's x by -(sw + dw)/2 and its Δx by -dw
+# * two digits: the above, then move 1st digit's x by -dw/2 and 2nd digit's x
+#   by -sw/2 and its Δx by -dw
+# * three digits: the above, then move 1st & 2nd digit's x by -dw/2 and 3rd
+#   digit's x by -(sw/2 - dw/2) and its Δx by -dw
 #
-# dw = digit width, ew = end of ayah width
+# dw = digit width, sw = sign width
 
 lookup digit2half {
   pos @Digits.small <-300 0 0 0>;
@@ -32,14 +33,17 @@ lookup digit2half {
 
 feature kern {
   pos @EndOfAyah @Digits.small' <-1610 0 -600 0>;
+  pos @FootNote  @Digits.small' <-1090 0 -600 0>;
 } kern;
 
 feature kern {
   pos @EndOfAyah @Digits.small' lookup digit2half @Digits.small;
+  pos @FootNote  @Digits.small' lookup digit2half @Digits.small;
 } kern;
 
 feature kern {
   pos @Digits.small @EndOfAyah @Digits.small' <-1310 0 -600 0>;
+  pos @Digits.small @FootNote  @Digits.small' <-790  0 -600 0>;
 } kern;
 
 feature kern {
@@ -53,5 +57,3 @@ feature kern {
 feature kern {
   pos @Digits.small @Digits.small @EndOfAyah @Digits.small' <-1010 0 -600 0>;
 } kern;
-
-
