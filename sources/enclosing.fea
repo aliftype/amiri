@@ -7,6 +7,7 @@
 
 @EndOfAyah = [uni06DD];
 @NumSign   = [uni0600];
+@YearSign  = [uni0601];
 @FootNote  = [uni0602];
 @SafhaSign = [uni0603];
 
@@ -15,9 +16,11 @@ lookup digit2small {
 } digit2small;
 
 feature calt {
-  sub                             [@EndOfAyah @NumSign @FootNote @SafhaSign] @Digits' lookup digit2small;
-  sub @Digits.small               [@EndOfAyah @NumSign @FootNote @SafhaSign] @Digits' lookup digit2small;
-  sub @Digits.small @Digits.small [@EndOfAyah @NumSign           @SafhaSign] @Digits' lookup digit2small;
+  sub                             [@EndOfAyah @YearSign @NumSign @FootNote @SafhaSign] @Digits' lookup digit2small;
+  sub @Digits.small               [@EndOfAyah @YearSign @NumSign @FootNote @SafhaSign] @Digits' lookup digit2small;
+  sub @Digits.small @Digits.small [@EndOfAyah @YearSign @NumSign           @SafhaSign] @Digits' lookup digit2small;
+
+  sub @Digits.small @Digits.small @Digits.small @YearSign @Digits' lookup digit2small;
 } calt;
 
 # now we contextually kern the sign with the digits:
@@ -36,6 +39,7 @@ lookup digit2half {
 feature kern {
   pos @EndOfAyah @Digits.small' <-1610 0 -600 0>;
   pos @NumSign   @Digits.small' <-1522 0 -600 0>;
+  pos @YearSign  @Digits.small' <-1800 0 -600 0>;
   pos @FootNote  @Digits.small' <-1090 0 -600 0>;
   pos @SafhaSign @Digits.small' <-1722 0 -600 0>;
 } kern;
@@ -43,6 +47,7 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small' lookup digit2half @Digits.small;
   pos @NumSign   @Digits.small' lookup digit2half @Digits.small;
+  pos @YearSign  @Digits.small' lookup digit2half @Digits.small;
   pos @FootNote  @Digits.small' lookup digit2half @Digits.small;
   pos @SafhaSign @Digits.small' lookup digit2half @Digits.small;
 } kern;
@@ -50,6 +55,7 @@ feature kern {
 feature kern {
   pos @Digits.small @EndOfAyah @Digits.small' <-1310 0 -600 0>;
   pos @Digits.small @NumSign   @Digits.small' <-1222 0 -600 0>;
+  pos @Digits.small @YearSign  @Digits.small' <-1500 0 -600 0>;
   pos @Digits.small @FootNote  @Digits.small' <-790  0 -600 0>;
   pos @Digits.small @SafhaSign @Digits.small' <-1422 0 -600 0>;
 } kern;
@@ -57,17 +63,36 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small' lookup digit2half @Digits.small @Digits.small;
   pos @NumSign   @Digits.small' lookup digit2half @Digits.small @Digits.small;
+  pos @YearSign  @Digits.small' lookup digit2half @Digits.small @Digits.small;
   pos @SafhaSign @Digits.small' lookup digit2half @Digits.small @Digits.small;
 } kern;
 
 feature kern {
   pos @Digits.small @EndOfAyah @Digits.small' lookup digit2half @Digits.small;
   pos @Digits.small @NumSign   @Digits.small' lookup digit2half @Digits.small;
+  pos @Digits.small @YearSign  @Digits.small' lookup digit2half @Digits.small;
   pos @Digits.small @SafhaSign @Digits.small' lookup digit2half @Digits.small;
 } kern;
 
 feature kern {
   pos @Digits.small @Digits.small @EndOfAyah @Digits.small' <-1010 0 -600 0>;
   pos @Digits.small @Digits.small @NumSign   @Digits.small' <-922  0 -600 0>;
+  pos @Digits.small @Digits.small @YearSign  @Digits.small' <-1200 0 -600 0>;
   pos @Digits.small @Digits.small @SafhaSign @Digits.small' <-1122 0 -600 0>;
+} kern;
+
+feature kern {
+  pos @YearSign @Digits.small' lookup digit2half @Digits.small @Digits.small @Digits.small;
+} kern;
+
+feature kern {
+  pos @Digits.small @Digits.small @YearSign @Digits.small' lookup digit2half @Digits.small;
+} kern;
+
+feature kern {
+  pos @Digits.small @YearSign @Digits.small' lookup digit2half @Digits.small @Digits.small;
+} kern;
+
+feature kern {
+  pos @Digits.small @Digits.small @Digits.small @YearSign @Digits.small' <-900 0 -600 0>;
 } kern;
