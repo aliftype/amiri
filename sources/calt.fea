@@ -1048,11 +1048,16 @@ feature calt {
      by [@aBaa.init];
 } calt;
 
+lookup HehYaaFina {
+  sub @aHeh.medi_BaaHehMedi by @aHeh.medi_HehYaaFina;
+  sub @aHeh.medi_PostTooth by @aHeh.medi_PostToothHehYaa;
+  sub @aYaa.fina by @aYaa.fina_HehYaaFina;
+} HehYaaFina;
+
 feature calt {
   lookupflag IgnoreMarks;
-    sub [@aHeh.medi_PostTooth @aHeh.medi_BaaHehMedi]
-        [@aYaa.fina]'
-    by  [@aYaa.fina_Tatweel];
+    sub [@aHeh.medi_PostTooth @aHeh.medi_BaaHehMedi]' lookup HehYaaFina
+        [@aYaa.fina]'                                 lookup HehYaaFina;
 } calt;
 
 feature calt {
