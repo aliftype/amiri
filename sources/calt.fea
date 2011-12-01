@@ -160,11 +160,12 @@ lookup SenMemInit {
     sub @aMem.medi by @aMem.medi_SenMemInit;
 } SenMemInit;
 
-lookup BaaMemAlfFina {
-    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
-    sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
-    sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
-} BaaMemAlfFina;
+# like the disabled MemAlfFina above
+#lookup BaaMemAlfFina {
+#    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
+#    sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
+#    sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
+#} BaaMemAlfFina;
 
 lookup AllYaaIsol {
     sub @aKaf.init by @aKaf.init_KafYaaIsol;
@@ -645,9 +646,10 @@ feature calt {
     sub [@aSen.init @aSad.init @aMem.init]' lookup SenMemInit
         [@aMem.medi]' lookup SenMemInit;
 
-    sub [@aBaa.medi]' lookup BaaMemAlfFina
-        [@aMem.medi]' lookup BaaMemAlfFina
-        [@aAlf.fina]' lookup BaaMemAlfFina;
+# like the disabled MemAlfFina above
+#   sub [@aBaa.medi]' lookup BaaMemAlfFina
+#       [@aMem.medi]' lookup BaaMemAlfFina
+#       [@aAlf.fina]' lookup BaaMemAlfFina;
 
     sub [@aKaf.init @aBaa.init @aFaa.init @aLam.init @aAyn.init @aHaa.init @aHeh.init @aMem.init_dots]' lookup AllYaaIsol
         [@aYaa.fina]' lookup AllYaaIsol;
@@ -890,16 +892,18 @@ feature calt {
         [@aMem.medi]' lookup KafMemInit;
 } calt;
 
-lookup MemAlfFina {
-    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
-    sub @aMem.medi by @aMem.medi_MemAlfFina;
-} MemAlfFina;
-
-feature calt {
-  lookupflag IgnoreMarks;
-    sub [@aMem.medi]' lookup MemAlfFina
-        [@aAlf.fina]' lookup MemAlfFina;
-} calt;
+# I don't like this comination any more, disable for now.
+# check other occurences of "MemAlfFina" bellow if this to be enabled again.
+#lookup MemAlfFina {
+#    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
+#    sub @aMem.medi by @aMem.medi_MemAlfFina;
+#} MemAlfFina;
+#
+#feature calt {
+#  lookupflag IgnoreMarks;
+#    sub [@aMem.medi]' lookup MemAlfFina
+#        [@aAlf.fina]' lookup MemAlfFina;
+#} calt;
 
 feature calt {
   lookupflag IgnoreMarks;
@@ -925,19 +929,20 @@ feature calt {
         [@aHeh.medi]' lookup HehMediTooth;
 } calt;
 
-lookup SenMemMedi {
-    sub @aSad.medi by @aSad.medi_PreYaa;
-    sub @aSen.medi by @aSen.medi_PreYaa;
-    sub @aMem.medi_MemAlfFina by @aMem.medi_AlfPostTooth;
-    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
-} SenMemMedi;
-
-feature calt {
-  lookupflag IgnoreMarks;
-    sub [@aSen.medi @aSen.medi_BaaSenInit @aSad.medi]' lookup SenMemMedi
-        [@aMem.medi_MemAlfFina]' lookup SenMemMedi
-        [@aAlf.fina_MemAlfFina]' lookup SenMemMedi;
-} calt;
+# related to disabled MemAlfFina above
+#lookup SenMemMedi {
+#    sub @aSad.medi by @aSad.medi_PreYaa;
+#    sub @aSen.medi by @aSen.medi_PreYaa;
+#    sub @aMem.medi_MemAlfFina by @aMem.medi_AlfPostTooth;
+#    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
+#} SenMemMedi;
+#
+#feature calt {
+#  lookupflag IgnoreMarks;
+#    sub [@aSen.medi @aSen.medi_BaaSenInit @aSad.medi]' lookup SenMemMedi
+#        [@aMem.medi_MemAlfFina]' lookup SenMemMedi
+#        [@aAlf.fina_MemAlfFina]' lookup SenMemMedi;
+#} calt;
 
 feature calt {
   lookupflag IgnoreMarks;
@@ -1004,17 +1009,18 @@ feature calt {
          @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf];
 } calt;
 
-lookup HehMemAlf {
-    sub @aMem.medi_MemAlfFina by @aMem.medi;
-    sub @aAlf.fina_MemAlfFina by @aAlf.fina;
-} HehMemAlf;
-
-feature calt {
-  lookupflag IgnoreMarks;
-    sub [@aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth]
-        [@aMem.medi_MemAlfFina]' lookup HehMemAlf
-        [@aAlf.fina_MemAlfFina]' lookup HehMemAlf;
-} calt;
+# related to disabled MemAlfFina above
+#lookup HehMemAlf {
+#    sub @aMem.medi_MemAlfFina by @aMem.medi;
+#    sub @aAlf.fina_MemAlfFina by @aAlf.fina;
+#} HehMemAlf;
+#
+#feature calt {
+#  lookupflag IgnoreMarks;
+#    sub [@aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth]
+#        [@aMem.medi_MemAlfFina]' lookup HehMemAlf
+#        [@aAlf.fina_MemAlfFina]' lookup HehMemAlf;
+#} calt;
 
 # When an initial Baa is followed by Alef, the dot clashes with the Hamza below
 # Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa

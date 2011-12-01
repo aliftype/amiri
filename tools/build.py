@@ -73,6 +73,13 @@ def cleanAnchors(font):
         lookup = font.getLookupOfSubtable(subtable)
         font.removeLookup(lookup)
 
+def cleanUnused(font):
+    for glyph in font.glyphs():
+        # glyphs colored yellow are pending removal, so we remove them from the
+        # final font.
+        if glyph.color == 0xffff00:
+            font.removeGlyph(glyph)
+
 def validateGlyphs(font):
     flipped_ref = 0x10
     wrong_dir = 0x8
@@ -232,6 +239,9 @@ def makeDesktop(infile, outfile, feafile, version, nolocalname):
 
     # fix some common font issues
     validateGlyphs(font)
+
+    # remove unused glyphs
+    cleanUnused(font)
 
     if nolocalname:
         stripLocalName(font)
