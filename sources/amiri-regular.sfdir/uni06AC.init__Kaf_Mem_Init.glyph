@@ -1,6 +1,6 @@
 
 StartChar: uni06AC.init_KafMemInit
-Encoding: 69021 -1 3682
+Encoding: 69021 -1 3663
 Width: 1110
 VWidth: 0
 AnchorPoint: "TashkilAbove" 300 1700 basechar 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 2
 Fore
 Refer: 192 -1 N 1 0 0 1 -192 1430 2
-Refer: 433 -1 N 1 0 0 1 0 0 3
+Refer: 432 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -79,21 +79,6 @@ feature calt {
         [@aAlf.fina @aLam.medi @aLam.fina];
 } calt;
 
-# aBaa.medi aBaa.medi_BaaMemFina aBaa.medi_BaaRaaFina aBaa.medi_BaaNonFina
-@BaaKafTatweel = [
-uni0777.medi uni0776.medi uni06BC.medi uni0756.medi uni0768.medi uni06CE.medi uni0775.medi uni0626.medi uni06BB.medi uni067F.medi uni067D.medi uni067A.medi uni0751.medi uni0646.medi uni0753.medi uni062A.medi uni0678.medi uni063D.medi uni062B.medi uni0679.medi uni06B9.medi uni0769.medi uni067C.medi uni0754.medi uni06BA.medi uni0767.medi 
-uni0777.medi_BaaMemFina uni0776.medi_BaaMemFina uni0756.medi_BaaMemFina uni0768.medi_BaaMemFina uni06CE.medi_BaaMemFina uni0775.medi_BaaMemFina uni0626.medi_BaaMemFina uni06BB.medi_BaaMemFina uni067F.medi_BaaMemFina uni067D.medi_BaaMemFina uni0751.medi_BaaMemFina uni0753.medi_BaaMemFina uni062A.medi_BaaMemFina uni0678.medi_BaaMemFina uni062B.medi_BaaMemFina uni0679.medi_BaaMemFina uni0769.medi_BaaMemFina uni067C.medi_BaaMemFina 
-uni0777.medi_BaaRaaFina uni0776.medi_BaaRaaFina uni06BC.medi_BaaRaaFina uni0756.medi_BaaRaaFina uni0768.medi_BaaRaaFina uni06CE.medi_BaaRaaFina uni0775.medi_BaaRaaFina uni0626.medi_BaaRaaFina uni06BB.medi_BaaRaaFina uni067F.medi_BaaRaaFina uni067D.medi_BaaRaaFina uni067A.medi_BaaRaaFina uni0751.medi_BaaRaaFina uni0646.medi_BaaRaaFina uni0753.medi_BaaRaaFina uni062A.medi_BaaRaaFina uni0678.medi_BaaRaaFina uni063D.medi_BaaRaaFina uni062B.medi_BaaRaaFina uni0679.medi_BaaRaaFina uni06B9.medi_BaaRaaFina uni0769.medi_BaaRaaFina uni067C.medi_BaaRaaFina uni0754.medi_BaaRaaFina uni06BA.medi_BaaRaaFina uni0767.medi_BaaRaaFina 
-uni0777.medi_BaaNonFina uni0776.medi_BaaNonFina uni06BC.medi_BaaNonFina uni0756.medi_BaaNonFina uni0768.medi_BaaNonFina uni06CE.medi_BaaNonFina uni0775.medi_BaaNonFina uni0626.medi_BaaNonFina uni06BB.medi_BaaNonFina uni067F.medi_BaaNonFina uni067D.medi_BaaNonFina uni067A.medi_BaaNonFina uni0751.medi_BaaNonFina uni0646.medi_BaaNonFina uni0753.medi_BaaNonFina uni062A.medi_BaaNonFina uni0678.medi_BaaNonFina uni063D.medi_BaaNonFina uni062B.medi_BaaNonFina uni0679.medi_BaaNonFina uni06B9.medi_BaaNonFina uni0769.medi_BaaNonFina uni067C.medi_BaaNonFina uni0754.medi_BaaNonFina uni06BA.medi_BaaNonFina uni0767.medi_BaaNonFina 
-];
-
-feature calt {
-  lookupflag IgnoreMarks;
-   sub [@aKaf.init]'
-       [@BaaKafTatweel @aFaa.fina @aFaa.medi @aHeh.medi @aFaa.medi_FaaYaaFina uni0670.medi] # see SF#3085159
-    by [@aKaf.init_Tatweel];
-} calt;
-
 lookup HighBaa {
     sub @aBaa.init by @aBaa.init_High;
     sub @aBaa.medi by @aBaa.medi_High;

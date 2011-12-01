@@ -1,6 +1,6 @@
 
 StartChar: uni0752.init_BaaSenInitLD
-Encoding: 69766 -1 4392
+Encoding: 69766 -1 4373
 Width: 449
 VWidth: 0
 AnchorPoint: "cursive" 0 408 exit 0
@@ -8,6 +8,6 @@ AnchorPoint: "TashkilAbove" 10 1640 basechar 0
 AnchorPoint: "TashkilBelow" 307 -1191 basechar 0
 LayerCount: 2
 Fore
-Refer: 321 -1 N 1 0 0 1 307 -890 2
+Refer: 320 -1 N 1 0 0 1 307 -890 2
 Refer: 118 -1 N 1 0 0 1 0 0 3
 EndChar

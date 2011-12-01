@@ -6,7 +6,7 @@
 @2nd_1 = [@aKaf.init @aKaf.init_KafHeh
           @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
           @aKaf.init_KafMemIsol @aKaf.init_KafLam
-          @aKaf.init_KafRaaIsol @aKaf.init_Tatweel];
+          @aKaf.init_KafRaaIsol];
 @2nd_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
 @2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_4 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol

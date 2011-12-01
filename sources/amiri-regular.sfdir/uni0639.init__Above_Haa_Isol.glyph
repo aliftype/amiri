@@ -1,6 +1,6 @@
 
 StartChar: uni0639.init_AboveHaaIsol
-Encoding: 68704 -1 3373
+Encoding: 68704 -1 3354
 Width: 1117
 VWidth: 0
 AnchorPoint: "cursive" -65 420 exit 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilAbove" 748 1690 basechar 0
 AnchorPoint: "TashkilBelow" 944 -260 basechar 0
 LayerCount: 2
 Fore
-Refer: 236 -1 N 1 0 0 1 0 0 3
+Refer: 235 -1 N 1 0 0 1 0 0 3
 EndChar
