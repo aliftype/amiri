@@ -4,3 +4,51 @@ feature ss01 {
   lookupflag IgnoreMarks;
     sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
 } ss01;
+
+#
+lookup MemAlfFina {
+    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
+    sub @aMem.medi by @aMem.medi_MemAlfFina;
+
+    sub @aSad.medi by @aSad.medi_PreYaa;
+
+    sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
+    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
+} MemAlfFina;
+
+lookup MemAlfFinaPostTooth {
+    sub @aMem.medi by @aMem.medi_AlfPostTooth;
+} MemAlfFinaPostTooth;
+
+lookup BaaMemAlfFina {
+    sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
+    sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
+} BaaMemAlfFina;
+
+@NoMemAlfFina = [@aMem.medi @aMem.medi_LamBaaMemInit @aMem.medi_LamMemInit
+                 @aMem.medi_LamHaaMemInit @aMem.medi_BaaMemInit
+                 @aMem.medi_LamMemMedi @aMem.medi_SenBaaMemInit
+                 @aMem.medi_BaaBaaMemInit @aMem.medi_LamMemInitTatweel
+                 @aMem.medi_KafMemMedi @aMem.medi_SenMemInit
+                 @aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth];
+
+feature ss02 {
+  lookupflag IgnoreMarks;
+    ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
+
+    sub @aBaa.medi' lookup BaaMemAlfFina
+        @aMem.medi' lookup BaaMemAlfFina
+        @aAlf.fina' lookup MemAlfFina;
+
+    sub @aSad.medi' lookup MemAlfFina
+        @aMem.medi' lookup MemAlfFinaPostTooth
+        @aAlf.fina' lookup MemAlfFina;
+
+    sub @aBaa.init_BaaSenInit' lookup MemAlfFina
+        @aSen.medi_BaaSenInit' lookup MemAlfFina
+        @aMem.medi'            lookup MemAlfFinaPostTooth
+        @aAlf.fina'            lookup MemAlfFina;
+
+    sub @aMem.medi' lookup MemAlfFina
+        @aAlf.fina' lookup MemAlfFina;
+} ss02;
