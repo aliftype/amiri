@@ -29,7 +29,7 @@ tt {
 .ar {
    direction: rtl;
    font-family: "AmiriWeb", "Crimson Text", serif;
-   line-height: 1.61;
+   line-height: 1.52;
    float: right;
    right: 5px;
 }
@@ -57,4 +57,14 @@ tt {
    margin: 10px 0;
    padding-top: 267px;
    padding-bottom: 53px;
+}
+
+span.TEX {
+   letter-spacing: -0.125em;
+}
+
+span.TEX span.E {
+   left: -0.0417em;
+   position: relative;
+   top: 0.5ex;
 }
