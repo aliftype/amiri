@@ -20,14 +20,9 @@ import getopt
 import tempfile
 
 def genCSS(font, base):
-    if font.fullname.lower().find("slanted")>0:
-        style = "oblique"
-    else:
-        style = "normal"
-
+    style = ("slanted" in font.fullname.lower()) and "oblique" or "normal"
     weight = font.os2_weight
-    family = "%sWeb" %font.familyname
-    name = font.fontname
+    family = font.familyname + "Web"
 
     css = """
 @font-face {
