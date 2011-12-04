@@ -22,7 +22,7 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
-PDFS=$(FONTS:%=$(DOC)/%-table.pdf)
+PDFS=$(DOC)/amiri-table.pdf
 CSSS=$(WEB)/amiri.css
 FEAT=$(FEA:%=$(SRC)/%.fea)
 TEST=$(wildcard $(TESTS)/*.test)
@@ -64,7 +64,7 @@ $(WEB)/%.css: $(WTTF) $(BUILD)
 	@mkdir -p $(WEB)
 	@$(FF) --css --input "$(WTTF)" --output $@ --version $(VERSION)
 
-$(DOC)/%-table.pdf: %.ttf
+$(DOC)/amiri-table.pdf: amiri-regular.ttf
 	@echo "   GEN\t$@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
