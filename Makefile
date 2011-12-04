@@ -70,12 +70,12 @@ $(DOC)/amiri-table.pdf: amiri-regular.ttf
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
-check: $(TEST)
+check: $(TEST) $(DTTF)
 ifeq ($(shell which hb-shape),)
 	@echo "hb-shape not found, skipping tests"
 else
 	@echo "running tests"
-	@$(RUNTEST) $^
+	@$(RUNTEST) $(TEST)
 endif
 
 clean:
