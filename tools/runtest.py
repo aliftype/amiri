@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
         testfd = open(testname, 'r')
         fontname = testfd.readline().strip("# \n")
-        reader = csv.reader(testfd, delimiter=';', quotechar='#')
+        reader = csv.reader(testfd, delimiter=';')
 
         if init:
             outname = testname+".test"
