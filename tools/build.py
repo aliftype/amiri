@@ -317,7 +317,7 @@ if __name__ == "__main__":
         makeCss(infile, outfile)
 
     if sfd:
-        makeSfd(infile, oufile, version)
+        makeSfd(infile, outfile, version)
 
     if slant:
         makeSlanted(infile, outfile, slant)
