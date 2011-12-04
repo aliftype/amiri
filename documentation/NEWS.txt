@@ -1,3 +1,50 @@
+Amiri 0.100 (2011-12-04), beta gamma delta
+------------------------------------------
+* This release marks another important developmental milestone, with Arabic and
+  Arabic Supplement blocks in Unicode 6.0 being fully covered (which means
+  essentially any Arabic character in Unicode can now be presented with Amiri).
+  Also the font has now matured to great extent and is usable for most of
+  typesetting tasks.
+
+* New styles:
+  - Add a slanted style that slants to the left and no to right, to follow
+    Arabic writing direction.
+
+* New glyphs:
+  - Subtending marks (U+0600-0603).
+  - Arabic date separator (U+060D).
+  - Arabic poetic verse sign (U+060E).
+  - Honorific marks (U+0610-0614).
+  - Dochashmi Heh (U+06BE and U+06FF).
+  - Bari Yaa (U+06D2 and U+06D3).
+  - 4 sizes of Kashida.
+
+Fixes:
+  - Fix issue with Kashida breaking word shaping in InDesign.
+  - Slant Urdu digit four to look more acceptable.
+  - Fix disappearance of media Khaa dot when preceded by Kaf, as in كخا.
+  - Decrease the hight of initial Lam when followed by Haa and Meem, as in
+    لحمد, to match other Lam glyphs.
+  - Finjani Ayn and closed Haa when followed by Kaf.
+  - Lower small Waw after final Heh.
+  - Widen small Waw and final Alef when a Madda mark is applied to them.
+  - Increase side bearings of many dotted glyphs no avoid clash with their
+    neighbours.
+  - More wider forms of glyphs to avoid mark clash when fully vowelled.
+  - New contextual shape for initial Ain followed by Raa, as in غر.
+  - New contextual shape for final Alef preceded by Kashida, as in عمـان.
+  - New contextual shape for final Yaa when followed by open Heh, as in نهى.
+  - New redrawn initial and medial Kaf that do not clash with their neighbours.
+  - New redrawn final Waw that is more faithful to the original design.
+  - Disable, by default, lowering Baa dots when preceded by Raa or Waw, moved
+    to stylistic set 01.
+  - Disable, by default, contextual form of medial Meem when followed by Alef,
+    moved to stylistic set 02.
+  - Digits are now tabular, removed tnum feature.
+  - Common punctuation and European digits are now from Crimson Text.
+  - Change the default interline spacing to fit better for regular text.
+  - Many more smaller fixes here and there.
+
 Amiri 0.016 (2011-09-22), Beginning of the End
 ----------------------------------------------
 * This release features full Quranic support, another major developmental
@@ -23,7 +70,7 @@ Amiri 0.016 (2011-09-22), Beginning of the End
     curly brackets more bolder to fit wit the rest of the font.
   - Made the space glyph 600 units wide.
   - Fixed erroneous tatweel (kashida) insertion in full justification.
-  - Wider forms of some glyphs to avoid mark clash in full vowelisation.
+  - Wider forms of some glyphs to avoid mark clash when fully vowelled.
   - Underline position is now lower than most glyphs with descendants.
   - Various mark positioning fixes.
   - Separate the ring of Kashmiri yeh from the body of base glyph, following
