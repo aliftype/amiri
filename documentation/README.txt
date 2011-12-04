@@ -20,11 +20,8 @@ digital typesetting, in a publicly available form.
 Amiri Font is a free, open source project that everyone is encouraged
 to use and modify. See the license for more details.
 
-Warning: Amiri font is in its early stages, and under continuous
-development. Don’t use it for serious work.
-
 Khaled Hosny
 <khaledhosny@eglug.org>
 
-24 Sep. 2010
+4 Dec. 2011
 
