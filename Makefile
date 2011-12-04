@@ -8,7 +8,6 @@ WEB=web
 DOC=documentation
 TESTS=test-suite
 FONTS=amiri-regular amiri-slanted
-FEA=lang classes locl gsub kashida quran enclosing rtlm lellah calt stylisticsets kern
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
@@ -24,7 +23,7 @@ WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(DOC)/amiri-table.pdf
 CSSS=$(WEB)/amiri.css
-FEAT=$(FEA:%=$(SRC)/%.fea)
+FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 
 DOCFILES=$(DOCS:%=$(DOC)/%.txt)
