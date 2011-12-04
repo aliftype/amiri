@@ -83,7 +83,7 @@ clean:
 	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS)
 
 #->8-
-PACK=$(SFDS:.sfdir=.sfd)
+PACK=$(SRC)/amiri-regular.sfd
 
 pack: $(PACK)
 
