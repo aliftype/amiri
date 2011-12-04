@@ -22,6 +22,7 @@ def runTest(reader, font):
     passed = []
     for row in reader:
         count += 1
+        row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
         text = row[4]
         reference = row[5]
         result = runHB(row, font)
