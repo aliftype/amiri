@@ -2,12 +2,20 @@
 StartChar: uni0768.init_BaaNonIsol
 Encoding: 67153 -1 1855
 Width: 362
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 114 1950 basechar 0
 AnchorPoint: "TashkilBelow" 212 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 114 -1 N 1 0 0 1 0 0 3
+Refer: 192 -1 N 1 0 0 1 204 900 2
+Refer: 213 -1 N 1 0 0 1 154 1300 2
+Layer: 2
 Refer: 213 -1 N 1 0 0 1 154 1300 2
 Refer: 192 -1 N 1 0 0 1 204 900 2
 Refer: 114 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 114 -1 N 1 0 0 1 0 0 3
+Refer: 192 -1 N 1 0 0 1 204 900 2
+Refer: 213 -1 N 1 0 0 1 154 1300 2
 EndChar

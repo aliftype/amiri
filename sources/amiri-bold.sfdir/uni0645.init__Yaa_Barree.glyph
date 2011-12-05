@@ -3,9 +3,14 @@ StartChar: uni0645.init_YaaBarree
 Encoding: 70193 -1 4892
 Width: 2115
 VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 600 1640 basechar 0
 AnchorPoint: "TashkilBelow" 600 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 4887 -1 N 1 0 0 1 0 0 3
+Layer: 2
+Refer: 4887 -1 N 1 0 0 1 0 0 3
+Layer: 3
 Refer: 4887 -1 N 1 0 0 1 0 0 3
 EndChar

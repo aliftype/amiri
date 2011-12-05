@@ -2,9 +2,15 @@
 StartChar: uni0622.fina_LamAlfFina
 Encoding: 67556 -1 2250
 Width: 915
-VWidth: 0
+Flags: W
 LayerCount: 4
 Fore
+Refer: 140 -1 N 1 0 0 1 0 0 3
+Refer: 200 1619 N 1 0 0 1 279 -140 2
+Layer: 2
 Refer: 200 1619 N 1 0 0 1 279 -140 2
 Refer: 140 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 140 -1 N 1 0 0 1 0 0 3
+Refer: 200 1619 N 1 0 0 1 279 -140 2
 EndChar

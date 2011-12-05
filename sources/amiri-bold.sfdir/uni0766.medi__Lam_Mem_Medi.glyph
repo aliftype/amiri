@@ -2,12 +2,18 @@
 StartChar: uni0766.medi_LamMemMedi
 Encoding: 67569 -1 2263
 Width: 485
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 210 1640 basechar 0
 AnchorPoint: "cursive" 485 170 entry 0
 AnchorPoint: "TashkilBelow" 220 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 142 -1 N 1 0 0 1 0 0 3
+Refer: 195 -1 N 1 0 0 1 550 -595 2
+Layer: 2
 Refer: 195 -1 N 1 0 0 1 550 -595 2
 Refer: 142 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 142 -1 N 1 0 0 1 0 0 3
+Refer: 195 -1 N 1 0 0 1 550 -595 2
 EndChar

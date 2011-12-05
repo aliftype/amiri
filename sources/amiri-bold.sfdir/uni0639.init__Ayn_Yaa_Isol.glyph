@@ -2,10 +2,14 @@
 StartChar: uni0639.init_AynYaaIsol
 Encoding: 69192 -1 3828
 Width: 1221
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 526 1640 basechar 0
 AnchorPoint: "TashkilBelow" 900 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 447 -1 N 1 0 0 1 0 0 3
+Layer: 2
+Refer: 447 -1 N 1 0 0 1 0 0 3
+Layer: 3
 Refer: 447 -1 N 1 0 0 1 0 0 3
 EndChar

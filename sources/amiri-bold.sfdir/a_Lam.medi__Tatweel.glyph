@@ -12,6 +12,12 @@ AnchorPoint: "TashkilBelow" 440 -670 basechar 0
 AnchorPoint: "VAbove" 383 1526 basechar 0
 LayerCount: 4
 Fore
+Refer: 34 -1 N 1 0 0 1 250 0 2
+Refer: 219 -1 N 1 0 0 1 0 0 2
+Layer: 2
 Refer: 219 -1 N 1 0 0 1 0 0 2
 Refer: 34 -1 N 1 0 0 1 250 0 2
+Layer: 3
+Refer: 34 -1 N 1 0 0 1 250 0 2
+Refer: 219 -1 N 1 0 0 1 0 0 2
 EndChar

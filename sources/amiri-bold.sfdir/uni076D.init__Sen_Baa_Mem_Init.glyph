@@ -7,6 +7,12 @@ AnchorPoint: "TashkilAbove" 650 1640 basechar 0
 AnchorPoint: "TashkilBelow" 600 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 214 -1 N 1 0 0 1 670 1154 2
+Refer: 54 -1 N 1 0 0 1 0 414 3
+Layer: 2
 Refer: 54 -1 N 1 0 0 1 0 414 3
 Refer: 214 -1 N 1 0 0 1 670 1154 2
+Layer: 3
+Refer: 214 -1 N 1 0 0 1 670 1154 2
+Refer: 54 -1 N 1 0 0 1 0 414 3
 EndChar

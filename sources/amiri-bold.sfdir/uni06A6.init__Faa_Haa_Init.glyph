@@ -2,11 +2,17 @@
 StartChar: uni06A6.init_FaaHaaInit
 Encoding: 67087 -1 1791
 Width: 1197
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 36 1970 basechar 0
 AnchorPoint: "TashkilBelow" 680 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 107 -1 N 1 0 0 1 0 0 3
+Refer: 247 -1 N 1 0 0 1 96 1370 2
+Layer: 2
 Refer: 247 -1 N 1 0 0 1 96 1370 2
 Refer: 107 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 107 -1 N 1 0 0 1 0 0 3
+Refer: 247 -1 N 1 0 0 1 96 1370 2
 EndChar

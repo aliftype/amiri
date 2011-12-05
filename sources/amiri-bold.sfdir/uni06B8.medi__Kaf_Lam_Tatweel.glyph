@@ -2,12 +2,18 @@
 StartChar: uni06B8.medi_KafLamTatweel
 Encoding: 68587 -1 3275
 Width: 649
-VWidth: 0
+Flags: W
 AnchorPoint: "cursive" 649 84 entry 0
 AnchorPoint: "TashkilAbove" 380 1640 basechar 0
 AnchorPoint: "TashkilBelow" 440 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 228 -1 N 1 0 0 1 0 0 3
+Refer: 208 -1 N 1 0 0 1 365 -540 2
+Layer: 2
 Refer: 208 -1 N 1 0 0 1 365 -540 2
 Refer: 228 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 228 -1 N 1 0 0 1 0 0 3
+Refer: 208 -1 N 1 0 0 1 365 -540 2
 EndChar

@@ -7,7 +7,7 @@ SRC=sources
 WEB=web
 DOC=documentation
 TESTS=test-suite
-FONTS=amiri-regular amiri-slanted
+FONTS=amiri-regular amiri-bold amiri-slanted
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py

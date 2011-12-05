@@ -3,11 +3,20 @@ StartChar: uni0771.fina_HaaRaaIsol
 Encoding: 67996 -1 2686
 Width: 613
 VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 293 1744 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 161 -1 N 1 0 0 1 -300 0 2
+Refer: 193 -1 N 1 0 0 1 353 644 2
+Refer: 213 -1 N 1 0 0 1 333 1094 2
+Layer: 2
 Refer: 213 -1 N 1 0 0 1 333 1094 2
 Refer: 193 -1 N 1 0 0 1 353 644 2
 Refer: 161 -1 N 1 0 0 1 -300 0 2
+Layer: 3
+Refer: 161 -1 N 1 0 0 1 -300 0 2
+Refer: 193 -1 N 1 0 0 1 353 644 2
+Refer: 213 -1 N 1 0 0 1 333 1094 2
 EndChar

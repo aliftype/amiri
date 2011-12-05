@@ -2,11 +2,17 @@
 StartChar: uni06D1.init_BaaDalIsolLD
 Encoding: 69660 -1 4289
 Width: 349
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 155 1640 basechar 0
 AnchorPoint: "TashkilBelow" 164 -1183 basechar 0
 LayerCount: 4
 Fore
+Refer: 84 -1 N 1 0 0 1 0 0 3
+Refer: 321 -1 N 1 0 0 1 84 -1140 2
+Layer: 2
 Refer: 321 -1 N 1 0 0 1 84 -1140 2
 Refer: 84 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 84 -1 N 1 0 0 1 0 0 3
+Refer: 321 -1 N 1 0 0 1 84 -1140 2
 EndChar

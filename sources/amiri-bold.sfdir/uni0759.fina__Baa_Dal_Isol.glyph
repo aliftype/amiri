@@ -2,12 +2,20 @@
 StartChar: uni0759.fina_BaaDalIsol
 Encoding: 66670 -1 1421
 Width: 986
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 584 1850 basechar 0
 AnchorPoint: "TashkilBelow" 500 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 85 -1 N 1 0 0 1 0 0 3
+Refer: 213 -1 N 1 0 0 1 624 1200 2
+Refer: 215 -1 N 1 0 0 1 542 -410 2
+Layer: 2
 Refer: 215 -1 N 1 0 0 1 542 -410 2
 Refer: 213 -1 N 1 0 0 1 624 1200 2
 Refer: 85 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 85 -1 N 1 0 0 1 0 0 3
+Refer: 213 -1 N 1 0 0 1 624 1200 2
+Refer: 215 -1 N 1 0 0 1 542 -410 2
 EndChar

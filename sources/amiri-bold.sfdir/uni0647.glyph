@@ -2,11 +2,15 @@
 StartChar: uni0647
 Encoding: 1607 1607 816
 Width: 756
-VWidth: 0
+Flags: W
 AnchorPoint: "HamzaAbove" 368 1090 basechar 0
 AnchorPoint: "TashkilAbove" 368 1640 basechar 0
 AnchorPoint: "TashkilBelow" 410 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 24 -1 N 1 0 0 1 0 0 3
+Layer: 2
+Refer: 24 -1 N 1 0 0 1 0 0 3
+Layer: 3
 Refer: 24 -1 N 1 0 0 1 0 0 3
 EndChar

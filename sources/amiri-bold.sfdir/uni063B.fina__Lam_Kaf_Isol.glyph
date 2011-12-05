@@ -2,13 +2,23 @@
 StartChar: uni063B.fina_LamKafIsol
 Encoding: 69455 -1 4083
 Width: 1732
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilBelow" 720 -740 basechar 0
 AnchorPoint: "TashkilAbove" 720 1640 basechar 0
 LayerCount: 4
 Fore
+Refer: 468 -1 N 1 0 0 1 0 0 3
+Refer: 205 -1 N 1 0 0 1 2316 1389 2
+Refer: 204 -1 N 1 0 0 1 668 581 2
+Refer: 193 -1 N 1 0 0 1 768 1261 2
+Layer: 2
 Refer: 193 -1 N 1 0 0 1 768 1261 2
 Refer: 204 -1 N 1 0 0 1 668 581 2
 Refer: 205 -1 N 1 0 0 1 2316 1389 2
 Refer: 468 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 468 -1 N 1 0 0 1 0 0 3
+Refer: 205 -1 N 1 0 0 1 2316 1389 2
+Refer: 204 -1 N 1 0 0 1 668 581 2
+Refer: 193 -1 N 1 0 0 1 768 1261 2
 EndChar

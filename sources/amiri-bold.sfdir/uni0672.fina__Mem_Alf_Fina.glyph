@@ -2,12 +2,18 @@
 StartChar: uni0672.fina_MemAlfFina
 Encoding: 69342 -1 3970
 Width: 398
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 50 2150 basechar 0
 AnchorPoint: "cursive" 398 -209 entry 0
 AnchorPoint: "TashkilBelow" 270 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 459 -1 N 1 0 0 1 0 0 3
+Refer: 255 -1 N 1 0 0 1 100 680 2
+Layer: 2
 Refer: 255 -1 N 1 0 0 1 100 680 2
 Refer: 459 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 459 -1 N 1 0 0 1 0 0 3
+Refer: 255 -1 N 1 0 0 1 100 680 2
 EndChar

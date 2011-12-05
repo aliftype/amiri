@@ -2,11 +2,17 @@
 StartChar: uni063E.fina_HehYaaFina
 Encoding: 68632 -1 3284
 Width: 975
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 700 1640 basechar 0
 AnchorPoint: "TashkilBelow" 700 -700 basechar 0
 LayerCount: 4
 Fore
+Refer: 229 -1 N 1 0 0 1 0 0 3
+Refer: 193 -1 N 1 0 0 1 471 340 2
+Layer: 2
 Refer: 193 -1 N 1 0 0 1 471 340 2
 Refer: 229 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 229 -1 N 1 0 0 1 0 0 3
+Refer: 193 -1 N 1 0 0 1 471 340 2
 EndChar

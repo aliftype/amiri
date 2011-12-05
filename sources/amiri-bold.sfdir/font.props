@@ -6,7 +6,7 @@ Weight: Bold
 Copyright: Copyright (c) 2010, 2011, Khaled Hosny <khaledhosny@eglug.org>.\nPortions copyright (c) 2010, Sebastian Kosch <sebastian@aldusleaf.org>\n\nThis Font Software is licensed under the Open Font License, Version 1.1.
 UComments: "2010-5-8: Created." 
 Version: 000.009
-DefaultBaseFilename: amiri-regular
+DefaultBaseFilename: amiri-bold
 ItalicAngle: 0
 UnderlinePosition: -1100
 UnderlineWidth: 102
@@ -16,7 +16,7 @@ LayerCount: 4
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
 Layer: 2 1 "Embolden"  1
-Layer: 3 1 "Regular"  0
+Layer: 3 1 "Regular"  1
 FSType: 0
 OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0

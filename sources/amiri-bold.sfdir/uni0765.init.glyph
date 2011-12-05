@@ -2,11 +2,17 @@
 StartChar: uni0765.init
 Encoding: 66232 -1 924
 Width: 797
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 400 1640 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 37 -1 N 1 0 0 1 0 0 3
+Refer: 192 -1 N 1 0 0 1 478 770 2
+Layer: 2
 Refer: 192 -1 N 1 0 0 1 478 770 2
 Refer: 37 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 37 -1 N 1 0 0 1 0 0 3
+Refer: 192 -1 N 1 0 0 1 478 770 2
 EndChar

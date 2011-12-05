@@ -3,10 +3,17 @@ StartChar: uni077C.init_YaaBarree
 Encoding: 70208 -1 4907
 Width: 2115
 VWidth: 0
+Flags: W
 AnchorPoint: "TashkilBelow" 911 -670 basechar 0
 AnchorPoint: "TashkilAbove" 641 1640 basechar 0
 LayerCount: 4
 Fore
+Refer: 4885 -1 N 1 0 0 1 0 0 3
+Refer: 393 -1 N 1 0 0 1 1117 -1041 2
+Layer: 2
 Refer: 393 -1 N 1 0 0 1 1117 -1041 2
 Refer: 4885 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 4885 -1 N 1 0 0 1 0 0 3
+Refer: 393 -1 N 1 0 0 1 1117 -1041 2
 EndChar

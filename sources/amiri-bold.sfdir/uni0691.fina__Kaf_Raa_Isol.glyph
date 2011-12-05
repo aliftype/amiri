@@ -3,10 +3,17 @@ StartChar: uni0691.fina_KafRaaIsol
 Encoding: 67462 -1 2158
 Width: 555
 VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 200 1640 basechar 0
 AnchorPoint: "TashkilBelow" 450 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 132 -1 N 1 0 0 1 -300 0 2
+Refer: 213 -1 N 1 0 0 1 0 450 2
+Layer: 2
 Refer: 213 -1 N 1 0 0 1 0 450 2
 Refer: 132 -1 N 1 0 0 1 -300 0 2
+Layer: 3
+Refer: 132 -1 N 1 0 0 1 -300 0 2
+Refer: 213 -1 N 1 0 0 1 0 450 2
 EndChar

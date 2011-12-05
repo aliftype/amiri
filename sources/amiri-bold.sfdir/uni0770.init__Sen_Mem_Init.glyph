@@ -2,12 +2,20 @@
 StartChar: uni0770.init_SenMemInit
 Encoding: 69078 -1 3718
 Width: 1077
-VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 460 2064 basechar 0
 AnchorPoint: "TashkilBelow" 613 -670 basechar 0
 LayerCount: 4
 Fore
+Refer: 438 -1 N 1 0 0 1 0 0 3
+Refer: 193 -1 N 1 0 0 1 520 964 2
+Refer: 213 -1 N 1 0 0 1 500 1414 2
+Layer: 2
 Refer: 213 -1 N 1 0 0 1 500 1414 2
 Refer: 193 -1 N 1 0 0 1 520 964 2
 Refer: 438 -1 N 1 0 0 1 0 0 3
+Layer: 3
+Refer: 438 -1 N 1 0 0 1 0 0 3
+Refer: 193 -1 N 1 0 0 1 520 964 2
+Refer: 213 -1 N 1 0 0 1 500 1414 2
 EndChar
