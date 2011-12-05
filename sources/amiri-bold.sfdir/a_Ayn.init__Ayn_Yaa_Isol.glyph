@@ -1,0 +1,36 @@
+
+StartChar: aAyn.init_AynYaaIsol
+Encoding: 65878 -1 447
+Width: 1221
+Flags: W
+AnchorPoint: "DotBelow" 900 200 basechar 0
+AnchorPoint: "TashkilBelow" 900 -670 basechar 0
+AnchorPoint: "TashkilAbove" 526 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 414 1395 basechar 0
+AnchorPoint: "DotAbove" 526 1395 basechar 0
+AnchorPoint: "HamzaAbove" 526 1395 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1041 654 m 2,0,1
+ 1028 624 1028 624 1019 620 c 0,2,3
+ 873 558 873 558 561 440.5 c 128,-1,4
+ 249 323 249 323 139 272 c 0,5,6
+ -54 184 -54 184 -56 250 c 1,7,8
+ -56 314 -56 314 -1 346 c 0,9,10
+ 130 422 130 422 379 519 c 1,11,12
+ 237 661 237 661 255 739 c 24,13,14
+ 280 849 280 849 407.5 974 c 128,-1,15
+ 535 1099 535 1099 628 1113 c 0,16,17
+ 681 1121 681 1121 778.5 1073 c 128,-1,18
+ 876 1025 876 1025 925 972 c 0,19,20
+ 936 960 936 960 930 950 c 128,-1,21
+ 924 940 924 940 909 945 c 0,22,23
+ 594 1032 594 1032 386 825 c 0,24,25
+ 379 817 379 817 390 799 c 0,26,27
+ 461 686 461 686 657 650 c 0,28,29
+ 744 635 744 635 992 764 c 0,30,31
+ 1114 828 1114 828 1091 771 c 1,32,-1
+ 1041 654 l 2,0,1
+EndSplineSet
+EndChar

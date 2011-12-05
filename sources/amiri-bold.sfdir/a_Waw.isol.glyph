@@ -1,0 +1,41 @@
+
+StartChar: aWaw.isol
+Encoding: 65597 -1 62
+Width: 1121
+Flags: W
+AnchorPoint: "AlefAbove" 800 650 basechar 0
+AnchorPoint: "DigitAbove" 710 900 basechar 0
+AnchorPoint: "Stroke" 878 -42 basechar 0
+AnchorPoint: "HighHamza" 1110 900 basechar 0
+AnchorPoint: "RingBelow" 540 -20 basechar 0
+AnchorPoint: "TashkilBelow" 810 -670 basechar 0
+AnchorPoint: "TashkilAbove" 730 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 599 900 basechar 0
+AnchorPoint: "DotAbove" 710 900 basechar 0
+AnchorPoint: "VAbove" 796 842 basechar 0
+AnchorPoint: "HamzaAbove" 710 900 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+646 398 m 0,0,1
+ 717 596 717 596 814 594 c 0,2,3
+ 872 594 872 594 923 512.5 c 128,-1,4
+ 974 431 974 431 988 329 c 128,-1,5
+ 1002 227 1002 227 956.5 46 c 128,-1,6
+ 911 -135 911 -135 776.5 -288 c 128,-1,7
+ 642 -441 642 -441 560.5 -450.5 c 128,-1,8
+ 479 -460 479 -460 345 -437.5 c 128,-1,9
+ 211 -415 211 -415 149 -389 c 0,10,11
+ 127 -380 127 -380 130 -365 c 128,-1,12
+ 133 -350 133 -350 156 -353 c 0,13,14
+ 317 -373 317 -373 460 -340 c 0,15,16
+ 547 -320 547 -320 710.5 -176.5 c 128,-1,17
+ 874 -33 874 -33 905 64 c 1,18,19
+ 895 148 895 148 880 157 c 1,20,21
+ 803 38 803 38 682.5 99 c 144,-1,22
+ 562 160 562 160 646 398 c 0,0,1
+831 321 m 1,23,24
+ 772 417 772 417 704 330 c 1,25,26
+ 756 272 756 272 831 321 c 1,23,24
+EndSplineSet
+EndChar

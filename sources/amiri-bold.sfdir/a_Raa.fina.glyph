@@ -1,0 +1,42 @@
+
+StartChar: aRaa.fina
+Encoding: 65582 -1 47
+Width: 1003
+Flags: W
+AnchorPoint: "Stroke" 816 -220 basechar 0
+AnchorPoint: "DotAlt" 442 -168 basechar 0
+AnchorPoint: "DotBelow" 731 -718 basechar 0
+AnchorPoint: "RingBelow" 504 -478 basechar 0
+AnchorPoint: "TaaAbove" 656 614 basechar 0
+AnchorPoint: "TashkilBelow" 800 -670 basechar 0
+AnchorPoint: "TashkilAbove" 500 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 546 814 basechar 0
+AnchorPoint: "VAbove" 656 814 basechar 0
+AnchorPoint: "DotAbove" 658 814 basechar 0
+AnchorPoint: "HamzaAbove" 658 814 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+770 128 m 2,0,-1
+ 834 291 l 2,1,2
+ 848 325 848 325 860 303 c 24,3,4
+ 895 241 895 241 925.5 213 c 128,-1,5
+ 956 185 956 185 1004 185 c 0,6,7
+ 1052 184 1052 184 1052 93.5 c 128,-1,8
+ 1052 3 1052 3 1004 0 c 24,9,10
+ 970 -2 970 -2 936 0 c 0,11,12
+ 928 0 928 0 926 -12 c 1,13,14
+ 920 -211 920 -211 787 -383.5 c 128,-1,15
+ 654 -556 654 -556 539 -569 c 128,-1,16
+ 424 -582 424 -582 346 -564 c 128,-1,17
+ 268 -546 268 -546 148 -486 c 0,18,19
+ 134 -479 134 -479 130 -468 c 128,-1,20
+ 126 -457 126 -457 134 -450.5 c 128,-1,21
+ 142 -444 142 -444 154 -448 c 1,22,23
+ 288 -481 288 -481 388 -460 c 0,24,25
+ 596 -416 596 -416 770 -221 c 0,26,27
+ 844 -139 844 -139 862 -56 c 1,28,29
+ 864 -4 864 -4 778 83 c 0,30,31
+ 760 100 760 100 770 128 c 2,0,-1
+EndSplineSet
+EndChar

@@ -1,0 +1,38 @@
+
+StartChar: aAyn.init_Finjani
+Encoding: 65717 -1 184
+Width: 800
+Flags: W
+AnchorPoint: "TashkilBelow" 421 -670 basechar 0
+AnchorPoint: "DotBelow" 421 -225 basechar 0
+AnchorPoint: "TashkilAbove" 229 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 117 1034 basechar 0
+AnchorPoint: "DotAbove" 229 1034 basechar 0
+AnchorPoint: "HamzaAbove" 229 1034 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+691 334 m 2,0,-1
+ 634 211 l 2,1,2
+ 623 187 623 187 609 177 c 0,3,4
+ 485 89 485 89 291 36 c 0,5,6
+ 105 -15 105 -15 0 0 c 0,7,8
+ -51 8 -51 8 -43 98 c 0,9,10
+ -35 190 -35 190 0 185 c 0,11,12
+ 31 181 31 181 60 185 c 1,13,14
+ 3 259 3 259 -6 355 c 0,15,16
+ -24 537 -24 537 86 644 c 0,17,18
+ 206 761 206 761 321 784 c 0,19,20
+ 435 806 435 806 616 647 c 0,21,22
+ 640 626 640 626 624 600 c 0,23,24
+ 608 576 608 576 581 587 c 24,25,26
+ 390 662 390 662 194 591 c 0,27,28
+ 110 561 110 561 94 516 c 0,29,30
+ 78 470 78 470 148 360 c 0,31,32
+ 221 246 221 246 278 234 c 24,33,34
+ 410 207 410 207 538 291 c 2,35,-1
+ 599 331 l 2,36,37
+ 668 376 668 376 684 360 c 24,38,39
+ 697 347 697 347 691 334 c 2,0,-1
+EndSplineSet
+EndChar

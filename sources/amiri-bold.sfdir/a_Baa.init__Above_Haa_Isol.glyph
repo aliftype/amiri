@@ -1,0 +1,66 @@
+
+StartChar: aBaa.init_AboveHaaIsol
+Encoding: 65709 -1 176
+Width: 1114
+Flags: W
+AnchorPoint: "DigitBelow" 944 17 basechar 0
+AnchorPoint: "DigitAbove" 669 1427 basechar 0
+AnchorPoint: "HighHamza" 869 1427 basechar 0
+AnchorPoint: "VAbove" 669 1427 basechar 0
+AnchorPoint: "RingBelow" 750 767 basechar 0
+AnchorPoint: "TaaAbove" 669 1227 basechar 0
+AnchorPoint: "TashkilBelow" 974 -410 basechar 0
+AnchorPoint: "TashkilAbove" 849 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 714 17 basechar 0
+AnchorPoint: "TwoDotsAbove" 558 1427 basechar 0
+AnchorPoint: "DotAbove" 669 1427 basechar 0
+AnchorPoint: "HamzaBelow" 714 17 basechar 0
+AnchorPoint: "HamzaAbove" 669 1427 basechar 0
+AnchorPoint: "DotBelow" 944 17 basechar 0
+AnchorPoint: "cursive" 0 420 exit 0
+LayerCount: 2
+Back
+SplineSet
+201 479 m 0,0,1
+ 763 451 763 451 1039 490 c 0,2,3
+ 1060 493 1060 493 1056 473 c 0,4,5
+ 1039 394 1039 394 1028 365.5 c 128,-1,6
+ 1017 337 1017 337 996 335 c 0,7,8
+ 494 274 494 274 233 17 c 0,9,10
+ 68 -146 68 -146 61 -346 c 0,11,12
+ 50 -682 50 -682 335 -789 c 1,13,14
+ 580 -880 580 -880 1030 -857 c 0,15,16
+ 1187 -849 1187 -849 1317 -832 c 0,17,18
+ 1339 -829 1339 -829 1339.5 -849.5 c 128,-1,19
+ 1340 -870 1340 -870 1326 -876 c 0,20,21
+ 1086 -979 1086 -979 952 -1009.5 c 128,-1,22
+ 818 -1040 818 -1040 708 -1038 c 0,23,24
+ 297 -1027 297 -1027 134.5 -873 c 152,-1,25
+ -28 -719 -28 -719 -19 -453 c 0,26,27
+ -8 -137 -8 -137 230 145 c 1,28,29
+ 308 235 308 235 423 306 c 1,30,-1
+ -71 310 l 1,31,32
+ -104 316 -104 316 -79 355 c 0,33,34
+ -8 463 -8 463 12 484 c 1,35,36
+ 16 487 16 487 201 479 c 0,0,1
+EndSplineSet
+Fore
+SplineSet
+-32 443 m 1,0,1
+ 12 497 12 497 114 554 c 24,2,3
+ 352 689 352 689 430.5 768 c 128,-1,4
+ 509 847 509 847 546.5 946 c 128,-1,5
+ 584 1045 584 1045 614.5 1101 c 128,-1,6
+ 645 1157 645 1157 690 1157 c 0,7,8
+ 734 1157 734 1157 770 1101 c 0,9,10
+ 825 1015 825 1015 814 733 c 0,11,12
+ 813 706 813 706 792 706.5 c 128,-1,13
+ 771 707 771 707 767 735 c 0,14,15
+ 741 961 741 961 664 960 c 0,16,17
+ 641 959 641 959 624 934.5 c 128,-1,18
+ 607 910 607 910 568 832 c 0,19,20
+ 472 635 472 635 206 487 c 0,21,22
+ 205 486 205 486 124 438 c 152,-1,23
+ 43 390 43 390 -32 443 c 1,0,1
+EndSplineSet
+EndChar

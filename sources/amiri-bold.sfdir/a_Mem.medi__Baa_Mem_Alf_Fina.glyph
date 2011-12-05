@@ -1,0 +1,25 @@
+
+StartChar: aMem.medi_BaaMemAlfFina
+Encoding: 65888 -1 457
+Width: 100
+Flags: W
+AnchorPoint: "TashkilBelow" 20 -670 basechar 0
+AnchorPoint: "TashkilAbove" 70 1640 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+112 -132 m 0,0,1
+ 170 -205 170 -205 312 -247 c 0,2,3
+ 346 -257 346 -257 342 -286 c 2,4,-1
+ 318 -457 l 2,5,6
+ 309 -515 309 -515 133 -422 c 24,7,8
+ -41 -329 -41 -329 -106 -205 c 0,9,10
+ -139 -140 -139 -140 -94 -102 c 128,-1,11
+ -49 -64 -49 -64 5 -94 c 1,12,13
+ -2 -75 -2 -75 1 -15 c 0,14,15
+ 6 77 6 77 36 157 c 1,16,17
+ 44 184 44 184 48 144 c 0,18,19
+ 49 86 49 86 50 78 c 0,20,21
+ 61 -68 61 -68 112 -132 c 0,0,1
+EndSplineSet
+EndChar

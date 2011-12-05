@@ -1,0 +1,27 @@
+
+StartChar: aMem.init_MemMemInit
+Encoding: 65871 -1 440
+Width: 575
+Flags: W
+AnchorPoint: "TashkilBelow" 374 -670 basechar 0
+AnchorPoint: "TashkilAbove" 324 1640 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+234 692 m 0,0,1
+ -5 681 -5 681 -86 572 c 8,2,-1
+ -117 518 l 24,3,4
+ -178 419 -178 419 -150 536 c 0,5,6
+ -125 640 -125 640 -49 730 c 0,7,8
+ -1 786 -1 786 60 818 c 1,9,-1
+ 21 875 l 2,10,11
+ 2 903 2 903 15 931 c 0,12,13
+ 67 1044 67 1044 111 1093 c 0,14,15
+ 132 1117 132 1117 162 1107 c 0,16,17
+ 311 1057 311 1057 407 962 c 0,18,19
+ 428 941 428 941 416 898 c 0,20,21
+ 413 892 413 892 335 740 c 256,22,23
+ 312 695 312 695 234 692 c 0,0,1
+EndSplineSet
+Colour: ff00
+EndChar

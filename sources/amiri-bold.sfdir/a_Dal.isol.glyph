@@ -1,0 +1,36 @@
+
+StartChar: aDal.isol
+Encoding: 65548 -1 13
+Width: 923
+Flags: W
+AnchorPoint: "VAbove" 420 1100 basechar 0
+AnchorPoint: "TashkilBelow" 500 -670 basechar 0
+AnchorPoint: "TashkilAbove" 420 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 389 -300 basechar 0
+AnchorPoint: "TwoDotsAbove" 309 1200 basechar 0
+AnchorPoint: "RingBelow" 490 110 basechar 0
+AnchorPoint: "TaaAbove" 420 1100 basechar 0
+AnchorPoint: "HamzaBelow" 500 -300 basechar 0
+AnchorPoint: "HamzaAbove" 420 1200 basechar 0
+AnchorPoint: "DotBelow" 500 -300 basechar 0
+AnchorPoint: "DotAbove" 420 1200 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+349 659 m 0,0,1
+ 382 759 382 759 408 789 c 0,2,3
+ 425 809 425 809 454 793 c 0,4,5
+ 727 642 727 642 773 390 c 24,6,7
+ 799 248 799 248 761 140 c 0,8,9
+ 750 108 750 108 718 91 c 0,10,11
+ 523 -9 523 -9 288 -12 c 0,12,13
+ 125 -14 125 -14 174 196 c 0,14,15
+ 180 220 180 220 199 223 c 0,16,17
+ 211 224 211 224 230 208 c 0,18,19
+ 269 175 269 175 383 190 c 24,20,21
+ 631 222 631 222 708 268 c 0,22,23
+ 715 272 715 272 712 292 c 0,24,25
+ 674 497 674 497 379 612 c 0,26,27
+ 339 628 339 628 349 659 c 0,0,1
+EndSplineSet
+EndChar

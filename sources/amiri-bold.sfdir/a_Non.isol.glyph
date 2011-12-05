@@ -1,0 +1,38 @@
+
+StartChar: aNon.isol
+Encoding: 65578 -1 43
+Width: 1173
+Flags: W
+AnchorPoint: "TwoDotsBelow" 463 -437 basechar 0
+AnchorPoint: "DotBelow" 573 -437 basechar 0
+AnchorPoint: "RingBelow" 573 -37 basechar 0
+AnchorPoint: "TashkilBelow" 600 -670 basechar 0
+AnchorPoint: "TashkilAbove" 550 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 439 1130 basechar 0
+AnchorPoint: "TaaAbove" 550 1000 basechar 0
+AnchorPoint: "HamzaAbove" 550 1000 basechar 0
+AnchorPoint: "DotAbove" 550 1130 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+898 942 m 1,0,1
+ 970 808 970 808 1015 618.5 c 128,-1,2
+ 1060 429 1060 429 1032 251 c 0,3,4
+ 1017 156 1017 156 971 84 c 0,5,6
+ 851 -103 851 -103 556 -131 c 0,7,8
+ 343 -151 343 -151 232 -47.5 c 128,-1,9
+ 121 56 121 56 131 239.5 c 128,-1,10
+ 141 423 141 423 257 583 c 0,11,12
+ 273 605 273 605 287 595 c 128,-1,13
+ 301 585 301 585 284 556 c 0,14,15
+ 158 343 158 343 236 209.5 c 128,-1,16
+ 314 76 314 76 545 77 c 1,17,18
+ 814 80 814 80 977 257 c 0,19,20
+ 980 261 980 261 980 274 c 0,21,22
+ 982 370 982 370 922 530.5 c 128,-1,23
+ 862 691 862 691 813 762 c 0,24,25
+ 799 782 799 782 805 796 c 2,26,-1
+ 867 949 l 2,27,28
+ 878 977 878 977 898 942 c 1,0,1
+EndSplineSet
+EndChar

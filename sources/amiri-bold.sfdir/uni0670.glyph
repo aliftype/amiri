@@ -1,0 +1,24 @@
+
+StartChar: uni0670
+Encoding: 1648 1648 262
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "MarkAbove" 389 1640 mark 0
+AnchorPoint: "TashkilTashkilAbove2" 245 2520 basemark 0
+AnchorPoint: "HamzaAbove" 313 1984 mark 0
+AnchorPoint: "TashkilTashkilAbove" 400 1776 mark 0
+AnchorPoint: "AlefAbove" 395 1640 mark 0
+LayerCount: 2
+Fore
+SplineSet
+241 2379 m 2,0,1
+ 251 2411 251 2411 279 2377 c 0,2,3
+ 474 2162 474 2162 412 1829 c 0,4,5
+ 408 1809 408 1809 392 1807 c 0,6,7
+ 373 1804 373 1804 371 1828 c 0,8,9
+ 344 2041 344 2041 212 2203 c 0,10,11
+ 195 2223 195 2223 202 2248 c 2,12,-1
+ 241 2379 l 2,0,1
+EndSplineSet
+EndChar

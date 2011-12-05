@@ -1,0 +1,66 @@
+
+StartChar: aBaa.medi_KafBaaInit
+Encoding: 65630 -1 95
+Width: 449
+Flags: W
+AnchorPoint: "DigitBelow" 200 -350 basechar 0
+AnchorPoint: "DigitAbove" 180 1360 basechar 0
+AnchorPoint: "HighHamza" 280 1360 basechar 0
+AnchorPoint: "VAbove" 180 1360 basechar 0
+AnchorPoint: "RingBelow" 220 180 basechar 0
+AnchorPoint: "TaaAbove" 180 1160 basechar 0
+AnchorPoint: "TashkilBelow" 200 -670 basechar 0
+AnchorPoint: "TashkilAbove" 180 1640 basechar 0
+AnchorPoint: "HamzaBelow" 300 -200 basechar 0
+AnchorPoint: "DotBelow" 200 -350 basechar 0
+AnchorPoint: "TwoDotsBelow" 82 -250 basechar 0
+AnchorPoint: "HamzaAbove" 180 1360 basechar 0
+AnchorPoint: "TwoDotsAbove" 50 1360 basechar 0
+AnchorPoint: "DotAbove" 180 1360 basechar 0
+LayerCount: 2
+Back
+SplineSet
+-89 821 m 0,16,17
+ -95 817 -95 817 -96.5 807 c 128,-1,19
+ -98 797 -98 797 -92 795 c 0,18,19
+ 42 758 42 758 141.5 724 c 128,-1,21
+ 241 690 241 690 338.5 641 c 128,-1,23
+ 436 592 436 592 497 538 c 128,-1,25
+ 558 484 558 484 596.5 410 c 128,-1,27
+ 635 336 635 336 636 248 c 0,20,21
+ 638 109 638 109 586 78 c 0,22,23
+ 531 45 531 45 453 64 c 0,24,25
+ 405 76 405 76 393 138 c 0,26,27
+ 382 197 382 197 421 204 c 0,28,29
+ 433 206 433 206 448 201 c 0,26,27
+ 552 165 552 165 588 212 c 0,28,29
+ 592 218 592 218 591 221 c 0,30,31
+ 514 463 514 463 -93 606 c 0,32,33
+ -140 617 -140 617 -151 662 c 0,34,35
+ -165 719 -165 719 -146 811.5 c 128,-1,37
+ -127 904 -127 904 -110 921 c 0,36,37
+ -18 1019 -18 1019 348 1197 c 0,38,39
+ 714 1376 714 1376 1002 1476 c 0,38,39
+ 1022 1483 1022 1483 1037 1473 c 128,-1,41
+ 1052 1463 1052 1463 1042 1434 c 0,40,41
+ 1007 1339 1007 1339 998 1318 c 0,42,43
+ 990 1300 990 1300 974 1295 c 0,44,45
+ 829 1247 829 1247 452.5 1082.5 c 128,-1,47
+ 76 918 76 918 -89 821 c 0,16,17
+EndSplineSet
+Fore
+SplineSet
+237 185 m 0,0,1
+ 222 197 222 197 215 186 c 0,2,3
+ 112 20 112 20 0 0 c 0,4,5
+ -21 -4 -21 -4 -36 41.5 c 128,-1,6
+ -51 87 -51 87 -43.5 135 c 128,-1,7
+ -36 183 -36 183 0 185 c 0,8,9
+ 148 190 148 190 240 297 c 0,10,11
+ 256 315 256 315 274 299 c 0,12,13
+ 345 235 345 235 448 201 c 0,14,15
+ 492 186 492 186 507 119 c 128,-1,16
+ 522 52 522 52 474 60 c 0,17,18
+ 366 78 366 78 237 185 c 0,0,1
+EndSplineSet
+EndChar

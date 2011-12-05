@@ -1,0 +1,39 @@
+
+StartChar: aFaa.init
+Encoding: 65550 -1 15
+Width: 605
+Flags: W
+AnchorPoint: "TwoDotsBelow" 200 -300 basechar 0
+AnchorPoint: "DotBelow" 300 -300 basechar 0
+AnchorPoint: "TashkilBelow" 300 -670 basechar 0
+AnchorPoint: "TashkilAbove" 160 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 120 1150 basechar 0
+AnchorPoint: "HamzaAbove" 160 1150 basechar 0
+AnchorPoint: "DotAbove" 160 1150 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+236 838 m 0,0,1
+ 263 838 263 838 302 804 c 0,2,3
+ 485 643 485 643 475 399 c 0,4,5
+ 470 270 470 270 412 194 c 0,6,7
+ 262 0 262 0 0 0 c 1,8,9
+ -26 -1 -26 -1 -38 46.5 c 128,-1,10
+ -50 94 -50 94 -39.5 138.5 c 128,-1,11
+ -29 183 -29 183 0 185 c 0,12,13
+ 256 202 256 202 385 331 c 1,14,15
+ 380 392 380 392 366 412 c 128,-1,16
+ 352 432 352 432 343 430 c 128,-1,17
+ 334 428 334 428 331 421 c 0,18,19
+ 296 332 296 332 225 316 c 0,20,21
+ 0 268 0 268 19 490 c 0,22,23
+ 28 599 28 599 100 719 c 128,-1,24
+ 172 839 172 839 236 838 c 0,0,1
+168 616 m 0,25,26
+ 121 614 121 614 112 537 c 0,27,28
+ 111 526 111 526 115 525 c 0,29,30
+ 155 513 155 513 198 519 c 128,-1,31
+ 241 525 241 525 253 544 c 1,32,33
+ 206 618 206 618 168 616 c 0,25,26
+EndSplineSet
+EndChar

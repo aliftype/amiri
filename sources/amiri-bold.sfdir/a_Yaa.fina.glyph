@@ -1,0 +1,48 @@
+
+StartChar: aYaa.fina
+Encoding: 65598 -1 63
+Width: 1200
+Flags: W
+AnchorPoint: "HamzaBelow" 749 -997 basechar 0
+AnchorPoint: "DotBelow" 749 -997 basechar 0
+AnchorPoint: "TwoDotsBelow" 638 -997 basechar 0
+AnchorPoint: "DigitBelow" 749 -997 basechar 0
+AnchorPoint: "DigitAbove" 530 500 basechar 0
+AnchorPoint: "AlefAbove" 600 -100 basechar 0
+AnchorPoint: "RingBelow" 640 -600 basechar 0
+AnchorPoint: "HighHamza" 900 680 basechar 0
+AnchorPoint: "TwoDotsAbove" 420 500 basechar 0
+AnchorPoint: "DotAbove" 530 500 basechar 0
+AnchorPoint: "VAbove" 430 500 basechar 0
+AnchorPoint: "Tail" 289 156 basechar 0
+AnchorPoint: "TashkilBelow" 700 -770 basechar 0
+AnchorPoint: "TashkilAbove" 600 1640 basechar 0
+AnchorPoint: "HamzaAbove" 330 500 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+132 -237 m 0,0,1
+ 139 -136 139 -136 184 -12.5 c 128,-1,2
+ 229 111 229 111 275 173 c 0,3,4
+ 289 192 289 192 307.5 182 c 128,-1,5
+ 326 172 326 172 312 147 c 0,6,7
+ 151 -146 151 -146 228 -298 c 0,8,9
+ 339 -518 339 -518 643 -504 c 0,10,11
+ 996 -488 996 -488 1259 -268 c 1,12,13
+ 1282 -237 1282 -237 1222.5 -222.5 c 128,-1,14
+ 1163 -208 1163 -208 1040.5 -199.5 c 128,-1,15
+ 918 -191 918 -191 905 -183 c 0,16,17
+ 804 -128 804 -128 879 -12 c 25,18,19
+ 969 122 969 122 1200 185 c 24,20,21
+ 1262 202 1262 202 1251 118 c 0,22,23
+ 1236 0 1236 0 1200 0 c 0,24,25
+ 1003 0 1003 0 999 -54 c 1,26,27
+ 1252 -63 1252 -63 1331 -125 c 0,28,29
+ 1361 -149 1361 -149 1371.5 -185.5 c 128,-1,30
+ 1382 -222 1382 -222 1352.5 -298 c 128,-1,31
+ 1323 -374 1323 -374 1295 -403 c 0,32,33
+ 1033 -679 1033 -679 630 -697 c 0,34,35
+ 380 -708 380 -708 233 -574 c 0,36,37
+ 116 -466 116 -466 132 -237 c 0,0,1
+EndSplineSet
+EndChar

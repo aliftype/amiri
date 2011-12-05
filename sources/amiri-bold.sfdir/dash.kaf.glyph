@@ -1,0 +1,22 @@
+
+StartChar: dash.kaf
+Encoding: 65734 -1 205
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "RingDash" -315 250 basemark 0
+AnchorPoint: "Dash" -873 -42 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-793 135 m 1,0,1
+ -530 286 -530 286 186 478 c 0,2,3
+ 225 488 225 488 232.5 475.5 c 128,-1,4
+ 240 463 240 463 234 449 c 2,5,-1
+ 189 347 l 2,6,7
+ 183 334 183 334 161 328 c 0,8,9
+ -357 185 -357 185 -836 -21 c 24,10,11
+ -896 -47 -896 -47 -882 0 c 0,12,13
+ -875 23 -875 23 -793 135 c 1,0,1
+EndSplineSet
+EndChar

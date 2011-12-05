@@ -1,0 +1,38 @@
+
+StartChar: aBaa.init_BaaHehInit
+Encoding: 65891 -1 460
+Width: 787
+Flags: W
+AnchorPoint: "DigitBelow" 513 -400 basechar 0
+AnchorPoint: "DigitAbove" 463 900 basechar 0
+AnchorPoint: "HighHamza" 663 900 basechar 0
+AnchorPoint: "VAbove" 463 900 basechar 0
+AnchorPoint: "RingBelow" 360 260 basechar 0
+AnchorPoint: "TaaAbove" 463 700 basechar 0
+AnchorPoint: "TashkilBelow" 513 -670 basechar 0
+AnchorPoint: "TashkilAbove" 543 1640 basechar 0
+AnchorPoint: "DotBelowAlt" 513 -750 basechar 0
+AnchorPoint: "TwoDotsBelowAlt" 403 -750 basechar 0
+AnchorPoint: "TwoDotsBelow" 403 -240 basechar 0
+AnchorPoint: "TwoDotsAbove" 353 900 basechar 0
+AnchorPoint: "DotAbove" 463 900 basechar 0
+AnchorPoint: "HamzaBelow" 513 -400 basechar 0
+AnchorPoint: "HamzaAbove" 463 900 basechar 0
+AnchorPoint: "DotBelow" 513 -400 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+542 128 m 0,0,1
+ 497 223 497 223 389 213 c 24,2,3
+ 273 202 273 202 168 147 c 0,4,5
+ 74 98 74 98 -1 -49 c 0,6,7
+ -21 -86 -21 -86 -39 -72 c 128,-1,8
+ -57 -58 -57 -58 -43 -30 c 0,9,10
+ -10 38 -10 38 1 53 c 0,11,12
+ 118 239 118 239 263 318 c 0,13,14
+ 450 419 450 419 588 364 c 0,15,16
+ 658 336 658 336 660 276 c 0,17,18
+ 663 196 663 196 598 133 c 0,19,20
+ 559 95 559 95 542 128 c 0,0,1
+EndSplineSet
+EndChar

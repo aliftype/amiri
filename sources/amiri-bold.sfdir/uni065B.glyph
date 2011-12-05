@@ -1,0 +1,31 @@
+
+StartChar: uni065B
+Encoding: 1627 1627 251
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "MarkAbove" 0 840 mark 0
+AnchorPoint: "TashkilTashkilAbove" 0 1500 basemark 0
+AnchorPoint: "TashkilAboveDot" 0 950 mark 0
+AnchorPoint: "VAbove" 0 950 mark 0
+LayerCount: 2
+Fore
+SplineSet
+158 937 m 2,0,1
+ 153 927 153 927 144 927 c 0,2,3
+ 134 925 134 925 121 938 c 0,4,5
+ 22 1035 22 1035 -36 1182 c 1,6,7
+ -99 1044 -99 1044 -119 966 c 0,8,9
+ -128 931 -128 931 -154 936 c 0,10,11
+ -174 940 -174 940 -176 958 c 0,12,13
+ -176 967 -176 967 -172 982 c 8,14,15
+ -124 1152 -124 1152 -23 1308 c 0,16,17
+ -16 1319 -16 1319 -8 1320 c 0,18,19
+ -3 1321 -3 1321 1 1318 c 2,20,-1
+ 21 1306 l 0,21,22
+ 69 1189 69 1189 186 1035 c 0,23,24
+ 194 1027 194 1027 195 1017 c 0,25,26
+ 196 1009 196 1009 190 997 c 2,27,-1
+ 158 937 l 2,0,1
+EndSplineSet
+EndChar

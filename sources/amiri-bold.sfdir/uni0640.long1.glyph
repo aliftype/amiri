@@ -1,0 +1,19 @@
+
+StartChar: uni0640.long1
+Encoding: 66972 -1 4671
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+600 185 m 0,0,1
+ 671 191 671 191 652 120 c 0,2,-1
+ 626 31 l 0,3,4
+ 618 1 618 1 600 0 c 0,5,-1
+ 0 -0 l 0,6,7
+ -18 2 -18 2 -26 31 c 0,8,-1
+ -52 120 l 0,9,10
+ -70 192 -70 192 0 185 c 0,11,-1
+ 600 185 l 0,0,1
+EndSplineSet
+EndChar

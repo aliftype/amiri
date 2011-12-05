@@ -1,0 +1,42 @@
+
+StartChar: aBaa.init_BaaMemHaaInit
+Encoding: 65621 -1 86
+Width: 636
+Flags: W
+AnchorPoint: "DigitBelow" 331 -410 basechar 0
+AnchorPoint: "DigitAbove" 91 1726 basechar 0
+AnchorPoint: "DotBelowAlt" 331 -750 basechar 0
+AnchorPoint: "TwoDotsBelowAlt" 220 -750 basechar 0
+AnchorPoint: "HighHamza" 291 1726 basechar 0
+AnchorPoint: "VAbove" 91 1726 basechar 0
+AnchorPoint: "RingBelow" 220 1200 basechar 0
+AnchorPoint: "TaaAbove" 91 1526 basechar 0
+AnchorPoint: "TashkilBelow" 400 -670 basechar 0
+AnchorPoint: "TashkilAbove" 251 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 220 -260 basechar 0
+AnchorPoint: "TwoDotsAbove" -20 1726 basechar 0
+AnchorPoint: "DotAbove" 91 1726 basechar 0
+AnchorPoint: "HamzaAbove" 91 1726 basechar 0
+AnchorPoint: "HamzaBelow" 331 -410 basechar 0
+AnchorPoint: "DotBelow" 331 -410 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+150 1350 m 0,0,1
+ 256 1366 256 1366 336 1277 c 0,2,3
+ 348 1263 348 1263 296 1115 c 0,4,5
+ 283 1078 283 1078 259 1098 c 0,6,7
+ 176 1171 176 1171 101.5 1166 c 128,-1,8
+ 27 1161 27 1161 -54 1081 c 0,9,10
+ -66 1069 -66 1069 -60 1048 c 0,11,12
+ -2 846 -2 846 132 803 c 0,13,14
+ 167 792 167 792 126 761 c 1,15,16
+ 59 708 59 708 -16.5 709 c 128,-1,17
+ -92 710 -92 710 -113 769 c 0,18,19
+ -144 856 -144 856 -144 946 c 0,20,21
+ -144 1144 -144 1144 10 1276 c 0,22,23
+ 86 1340 86 1340 150 1350 c 0,0,1
+EndSplineSet
+Comment: "XXX: Dots above" 
+Colour: ff0000
+EndChar

@@ -1,0 +1,24 @@
+
+StartChar: aMem.medi_BaaMemHaaInit
+Encoding: 65622 -1 87
+Width: 532
+Flags: W
+AnchorPoint: "TashkilBelow" 550 -670 basechar 0
+AnchorPoint: "TashkilAbove" 330 1640 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+-44 546 m 0,0,1
+ 232 712 232 712 410 766 c 128,-1,2
+ 588 820 588 820 664 803 c 0,3,4
+ 785 776 785 776 839 721 c 0,5,6
+ 851 709 851 709 846 695 c 2,7,-1
+ 794 553 l 2,8,9
+ 789 538 789 538 771 547 c 0,10,11
+ 583 645 583 645 483 641 c 0,12,13
+ 299 635 299 635 94 510 c 0,14,15
+ 14 462 14 462 -40 501 c 0,16,17
+ -72 524 -72 524 -49 543 c 0,18,19
+ -47 545 -47 545 -44 546 c 0,0,1
+EndSplineSet
+EndChar

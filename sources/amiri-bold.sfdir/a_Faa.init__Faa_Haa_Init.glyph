@@ -1,0 +1,37 @@
+
+StartChar: aFaa.init_FaaHaaInit
+Encoding: 65643 -1 107
+Width: 1197
+Flags: W
+AnchorPoint: "TwoDotsBelow" 550 760 basechar 0
+AnchorPoint: "DotBelow" 600 610 basechar 0
+AnchorPoint: "TashkilBelow" 680 -670 basechar 0
+AnchorPoint: "TashkilAbove" 535 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" -15 1510 basechar 0
+AnchorPoint: "DotAbove" 85 1510 basechar 0
+AnchorPoint: "HamzaAbove" 135 1510 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+358 726 m 1,0,1
+ 350 774 350 774 322.5 807.5 c 128,-1,2
+ 295 841 295 841 275 812 c 0,3,4
+ 180 674 180 674 84 687 c 0,5,6
+ -72 708 -72 708 8 997 c 0,7,8
+ 60 1185 60 1185 172 1216 c 0,9,10
+ 221 1230 221 1230 289 1150 c 24,11,12
+ 405 1012 405 1012 414 767 c 0,13,14
+ 417 681 417 681 373 597 c 1,15,16
+ 257 386 257 386 -10 394 c 0,17,18
+ -139 398 -139 398 -64 491 c 0,19,20
+ -36 526 -36 526 -26 531 c 0,21,22
+ -4 542 -4 542 27 548 c 0,23,24
+ 336 606 336 606 358 726 c 1,0,1
+62 977 m 1,25,26
+ 74 905 74 905 124 903 c 1,27,28
+ 175 902 175 902 192 953 c 1,29,30
+ 151 996 151 996 117 1000.5 c 152,-1,31
+ 83 1005 83 1005 62 977 c 1,25,26
+EndSplineSet
+Comment: "XXX: disable for three dots below" 
+EndChar

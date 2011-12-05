@@ -1,0 +1,44 @@
+
+StartChar: aDal.fina
+Encoding: 65547 -1 12
+Width: 965
+Flags: W
+AnchorPoint: "VAbove" 685 1200 basechar 0
+AnchorPoint: "TashkilBelow" 500 -670 basechar 0
+AnchorPoint: "TashkilAbove" 475 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 389 -250 basechar 0
+AnchorPoint: "TwoDotsAbove" 574 1300 basechar 0
+AnchorPoint: "RingBelow" 420 120 basechar 0
+AnchorPoint: "TaaAbove" 685 1200 basechar 0
+AnchorPoint: "DotAbove" 685 1300 basechar 0
+AnchorPoint: "HamzaBelow" 500 -250 basechar 0
+AnchorPoint: "HamzaAbove" 685 1300 basechar 0
+AnchorPoint: "DotBelow" 500 -250 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+965 185 m 0,0,1
+ 996 177 996 177 1006 130.5 c 128,-1,2
+ 1016 84 1016 84 1003.5 41.5 c 128,-1,3
+ 991 -1 991 -1 965 0 c 0,4,5
+ 830 8 830 8 782 224 c 0,6,7
+ 767 292 767 292 766 293 c 0,8,9
+ 760 309 760 309 754 291 c 0,10,11
+ 690 118 690 118 590 77 c 0,12,13
+ 463 26 463 26 245 40 c 0,14,15
+ 75 51 75 51 158 310 c 0,16,17
+ 167 338 167 338 188 342 c 128,-1,18
+ 209 346 209 346 217 315 c 0,19,20
+ 234 256 234 256 273 247 c 0,21,22
+ 469 205 469 205 630 269 c 0,23,24
+ 710 301 710 301 735 382 c 0,25,26
+ 739 396 739 396 707.5 603 c 128,-1,27
+ 676 810 676 810 671 855.5 c 128,-1,28
+ 666 901 666 901 677 925 c 0,29,30
+ 711 996 711 996 724 1029 c 0,31,32
+ 730 1044 730 1044 745.5 1042 c 128,-1,33
+ 761 1040 761 1040 763 1022 c 0,34,35
+ 813 592 813 592 872 337 c 0,36,37
+ 903 201 903 201 965 185 c 0,0,1
+EndSplineSet
+EndChar

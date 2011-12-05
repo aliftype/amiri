@@ -1,0 +1,42 @@
+
+StartChar: aSad.init_YaaBarree
+Encoding: 70072 -1 4773
+Width: 1500
+Flags: W
+AnchorPoint: "HamzaAbove" 348 1285 basechar 0
+AnchorPoint: "DotAbove" 348 1285 basechar 0
+AnchorPoint: "TwoDotsAbove" 237 1285 basechar 0
+AnchorPoint: "TashkilAbove" 348 1640 basechar 0
+AnchorPoint: "TashkilBelow" 496 -670 basechar 0
+AnchorPoint: "DotBelow" 676 -208 basechar 0
+AnchorPoint: "TwoDotsBelow" 576 -208 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+162 416 m 1,0,-1
+ 89 341 l 2,1,2
+ 77 328 77 328 62.5 338 c 128,-1,3
+ 48 348 48 348 66 376 c 0,4,5
+ 101 429 101 429 113 444 c 1,6,7
+ 33 491 33 491 -12 577 c 0,8,9
+ -31 613 -31 613 -37 648 c 0,10,11
+ -49 718 -49 718 -28 751 c 0,12,13
+ -11 776 -11 776 11 772 c 0,14,15
+ 21 770 21 770 27 763 c 0,16,17
+ 36 735 36 735 49 713 c 0,18,19
+ 106 612 106 612 235 570 c 1,20,21
+ 315 674 315 674 429 784 c 0,22,23
+ 644 983 644 983 802 984 c 0,24,25
+ 862 984 862 984 941 910 c 0,26,27
+ 1018 838 1018 838 1002 770 c 1,28,29
+ 977 680 977 680 911 608 c 0,30,31
+ 757 440 757 440 580 406 c 0,32,33
+ 351 362 351 362 162 416 c 1,0,-1
+299 554 m 1,34,35
+ 632 526 632 526 846 694 c 0,36,37
+ 853 700 853 700 865 717 c 1,38,39
+ 767 822 767 822 675 817 c 1,40,41
+ 592 814 592 814 420 666 c 0,42,43
+ 341 598 341 598 299 554 c 1,34,35
+EndSplineSet
+EndChar

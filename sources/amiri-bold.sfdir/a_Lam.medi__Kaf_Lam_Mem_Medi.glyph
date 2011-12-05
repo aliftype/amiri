@@ -1,0 +1,42 @@
+
+StartChar: aLam.medi_KafLamMemMedi
+Encoding: 65840 -1 408
+Width: 559
+Flags: W
+AnchorPoint: "Dash" 426 1580 basechar 0
+AnchorPoint: "RingBelow" 492 1343 basechar 0
+AnchorPoint: "DotBelow" 600 -200 basechar 0
+AnchorPoint: "cursive" 85 170 exit 0
+AnchorPoint: "Stroke" 317 1156 basechar 0
+AnchorPoint: "TwoDotsBelow" 300 -240 basechar 0
+AnchorPoint: "TwoDotsAbove" -108 1428 basechar 0
+AnchorPoint: "DotAbove" 12 1428 basechar 0
+AnchorPoint: "TashkilBelow" 400 -670 basechar 0
+AnchorPoint: "TashkilAbove" 300 1640 basechar 0
+AnchorPoint: "VAbove" 12 1328 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+559 192 m 0,0,1
+ 603 179 603 179 614 90 c 0,2,3
+ 629 -33 629 -33 560 -22 c 0,4,5
+ 390 4 390 4 359 398 c 1,6,7
+ 292 238 292 238 128 176 c 0,8,9
+ 7 130 7 130 -86 233 c 0,10,11
+ -144 296 -144 296 -131 347 c 0,12,13
+ -124 376 -124 376 -90 376 c 0,14,15
+ -88 376 -88 376 -28.5 348.5 c 128,-1,16
+ 31 321 31 321 67 325 c 0,17,18
+ 258 343 258 343 292 455 c 0,19,20
+ 300 484 300 484 268 842 c 0,21,22
+ 237 1200 237 1200 238 1255 c 0,23,24
+ 239 1303 239 1303 250 1326 c 2,25,-1
+ 293 1415 l 2,26,27
+ 304 1438 304 1438 317 1429 c 0,28,29
+ 330 1419 330 1419 332 1400 c 2,30,-1
+ 381 858 l 0,31,32
+ 405 525 405 525 441 365 c 0,33,34
+ 475 217 475 217 559 192 c 0,0,1
+EndSplineSet
+Colour: ff00
+EndChar

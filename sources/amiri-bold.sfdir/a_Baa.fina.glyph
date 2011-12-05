@@ -1,0 +1,58 @@
+
+StartChar: aBaa.fina
+Encoding: 65543 -1 7
+Width: 1810
+Flags: W
+AnchorPoint: "DigitBelow" 900 -450 basechar 0
+AnchorPoint: "VAbove" 945 870 basechar 0
+AnchorPoint: "RingBelow" 876 -90 basechar 0
+AnchorPoint: "TaaAbove" 945 670 basechar 0
+AnchorPoint: "TashkilBelow" 1040 -670 basechar 0
+AnchorPoint: "TashkilAbove" 945 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 789 -360 basechar 0
+AnchorPoint: "TwoDotsAbove" 834 870 basechar 0
+AnchorPoint: "DotAbove" 945 870 basechar 0
+AnchorPoint: "HamzaBelow" 900 -450 basechar 0
+AnchorPoint: "HamzaAbove" 945 870 basechar 0
+AnchorPoint: "DotBelow" 900 -450 basechar 0
+LayerCount: 2
+Back
+SplineSet
+2310 185 m 0,0,1
+ 2344 177 2344 177 2348 162 c 0,2,3
+ 2352 145 2352 145 2348 113 c 0,4,5
+ 2333 0 2333 0 2310 0 c 0,6,7
+ 2200 -1 2200 -1 2088 124 c 1,8,9
+ 1994 10 1994 10 1810 0 c 0,10,11
+ 1791 -1 1791 -1 1784 31 c 2,12,-1
+ 1766 116 l 2,13,14
+ 1761 138 1761 138 1774 159 c 0,15,16
+ 1788 183 1788 183 1810 185 c 0,17,18
+ 2038 202 2038 202 2114 319 c 0,19,20
+ 2125 336 2125 336 2138 336 c 0,21,22
+ 2159 336 2159 336 2160 322 c 0,23,24
+ 2162 298 2162 298 2165 292 c 0,25,26
+ 2229 204 2229 204 2310 185 c 0,0,1
+EndSplineSet
+Fore
+SplineSet
+245 520 m 0,0,1
+ 261 540 261 540 277 524.5 c 128,-1,2
+ 293 509 293 509 277 487 c 0,3,4
+ 204 385 204 385 220 316 c 0,5,6
+ 288 30 288 30 840 46 c 0,7,8
+ 1212 57 1212 57 1526 186 c 0,9,10
+ 1590 212 1590 212 1610 308 c 0,11,12
+ 1616 337 1616 337 1647 334 c 0,13,14
+ 1669 332 1669 332 1670 290 c 0,15,16
+ 1672 193 1672 193 1810 185 c 256,17,18
+ 1863 182 1863 182 1856 119 c 0,19,20
+ 1843 0 1843 0 1810 0 c 0,21,22
+ 1719 0 1719 0 1644 94 c 0,23,24
+ 1640 99 1640 99 1618 84 c 0,25,26
+ 1251 -161 1251 -161 749.5 -162 c 128,-1,27
+ 248 -163 248 -163 151 83 c 0,28,29
+ 104 203 104 203 151 332 c 128,-1,30
+ 198 461 198 461 245 520 c 0,0,1
+EndSplineSet
+EndChar

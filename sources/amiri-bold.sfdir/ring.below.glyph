@@ -1,0 +1,28 @@
+
+StartChar: ring.below
+Encoding: 65743 -1 216
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "TashkilBelowDot" 0 -400 basemark 0
+AnchorPoint: "RingDash" 0 0 mark 0
+AnchorPoint: "RingBelow" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+143 -166 m 0,0,1
+ 144 -218 144 -218 136 -250 c 0,2,3
+ 108 -353 108 -353 -20 -348 c 0,4,5
+ -142 -344 -142 -344 -129 -205 c 0,6,7
+ -115 -66 -115 -66 -49 -16 c 128,-1,8
+ 17 34 17 34 89 -29 c 0,9,10
+ 141 -73 141 -73 143 -166 c 0,0,1
+102 -217 m 1,11,12
+ 74 -95 74 -95 0 -92 c 0,13,14
+ -46 -90 -46 -90 -68.5 -122 c 128,-1,15
+ -91 -154 -91 -154 -84 -199.5 c 128,-1,16
+ -77 -245 -77 -245 -10.5 -251 c 128,-1,17
+ 56 -257 56 -257 94 -229 c 0,18,19
+ 102 -223 102 -223 102 -217 c 1,11,12
+EndSplineSet
+EndChar

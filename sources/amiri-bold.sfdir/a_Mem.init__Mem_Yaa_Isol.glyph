@@ -1,0 +1,25 @@
+
+StartChar: aMem.init_MemYaaIsol
+Encoding: 65876 -1 445
+Width: 791
+Flags: W
+AnchorPoint: "TashkilBelow" 600 -670 basechar 0
+AnchorPoint: "TashkilAbove" 350 1640 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+299 547 m 1,0,1
+ 245 588 l 2,2,3
+ 220 607 220 607 235 643 c 0,4,5
+ 283 766 283 766 330 825 c 0,6,7
+ 348 848 348 848 380 842 c 0,8,9
+ 476 826 476 826 560 761 c 0,10,11
+ 667 679 667 679 661 616 c 24,12,13
+ 650 504 650 504 598 464 c 0,14,15
+ 579 449 579 449 490 437 c 0,16,17
+ 257 406 257 406 120 304 c 0,18,19
+ -32 190 -32 190 -49 274 c 1,20,21
+ -21 332 -21 332 -3 349 c 0,22,23
+ 128 474 128 474 299 547 c 1,0,1
+EndSplineSet
+EndChar

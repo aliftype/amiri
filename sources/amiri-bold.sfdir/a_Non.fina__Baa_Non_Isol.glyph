@@ -1,0 +1,39 @@
+
+StartChar: aNon.fina_BaaNonIsol
+Encoding: 65651 -1 115
+Width: 1152
+Flags: W
+AnchorPoint: "TaaAbove" 660 800 basechar 0
+AnchorPoint: "TwoDotsBelow" 435 -630 basechar 0
+AnchorPoint: "DotBelow" 545 -630 basechar 0
+AnchorPoint: "RingBelow" 545 -330 basechar 0
+AnchorPoint: "TashkilBelow" 670 -670 basechar 0
+AnchorPoint: "TashkilAbove" 660 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 549 907 basechar 0
+AnchorPoint: "DotAbove" 660 907 basechar 0
+AnchorPoint: "HamzaAbove" 660 907 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1179 237 m 24,0,1
+ 1165 4 1165 4 1070 -152 c 0,2,3
+ 1000 -264 1000 -264 858 -344 c 0,4,5
+ 714 -426 714 -426 528 -424 c 0,6,7
+ 133 -420 133 -420 133 -68 c 0,8,9
+ 133 9 133 9 186 156 c 0,10,11
+ 230 281 230 281 277 367 c 0,12,13
+ 284 378 284 378 296 378 c 128,-1,14
+ 308 378 308 378 314 368 c 128,-1,15
+ 320 358 320 358 313 344 c 0,16,17
+ 220 148 220 148 219 75 c 24,18,19
+ 216 -193 216 -193 552 -200 c 0,20,21
+ 925 -208 925 -208 1076 19 c 0,22,23
+ 1084 31 1084 31 1086 46 c 0,24,25
+ 1110 216 1110 216 1017 409 c 0,26,27
+ 1006 432 1006 432 1016 454 c 2,28,-1
+ 1078 586 l 2,29,30
+ 1088 607 1088 607 1100 593 c 0,31,32
+ 1191 472 1191 472 1179 237 c 24,0,1
+EndSplineSet
+Colour: ff0000
+EndChar

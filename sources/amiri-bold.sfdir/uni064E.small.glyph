@@ -1,0 +1,22 @@
+
+StartChar: uni064E.small
+Encoding: 65782 -1 279
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "TashkilTashkilAbove2" 0 2400 basemark 0
+AnchorPoint: "TashkilTashkilAbove" 0 1950 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-153 2095 m 0,0,-1
+ 216 2259 l 0,1,2
+ 252 2274 252 2274 248 2243 c 2,3,-1
+ 239 2172 l 2,4,5
+ 236 2152 236 2152 221 2145 c 0,6,-1
+ -139 2019 l 0,7,8
+ -184 2004 -184 2004 -179 2042 c 2,9,-1
+ -175 2070 l 2,10,11
+ -173 2087 -173 2087 -153 2095 c 0,0,-1
+EndSplineSet
+EndChar

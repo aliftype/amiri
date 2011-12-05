@@ -1,0 +1,38 @@
+
+StartChar: aRaa.fina_BaaRaaIsol
+Encoding: 65603 -1 69
+Width: 913
+Flags: W
+AnchorPoint: "HamzaAbove" 642 902 basechar 0
+AnchorPoint: "Stroke" 820 -56 basechar 0
+AnchorPoint: "DotAlt" 424 -5 basechar 0
+AnchorPoint: "DotBelow" 624 -654 basechar 0
+AnchorPoint: "RingBelow" 494 -294 basechar 0
+AnchorPoint: "TaaAbove" 642 702 basechar 0
+AnchorPoint: "TashkilBelow" 700 -670 basechar 0
+AnchorPoint: "TashkilAbove" 640 1640 basechar 0
+AnchorPoint: "TwoDotsAbove" 530 902 basechar 0
+AnchorPoint: "VAbove" 642 902 basechar 0
+AnchorPoint: "DotAbove" 640 902 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+901 401 m 24,0,1
+ 953 336 953 336 965.5 281.5 c 128,-1,2
+ 978 227 978 227 968 117 c 0,3,4
+ 950 -75 950 -75 803.5 -238 c 128,-1,5
+ 657 -401 657 -401 533 -406 c 0,6,7
+ 324 -414 324 -414 146 -299 c 0,8,9
+ 132 -291 132 -291 130 -280 c 128,-1,10
+ 128 -269 128 -269 136 -263 c 128,-1,11
+ 144 -257 144 -257 157 -262 c 0,12,13
+ 296 -306 296 -306 394 -288 c 0,14,15
+ 750 -224 750 -224 899 83 c 0,16,17
+ 902 91 902 91 902 116 c 0,18,19
+ 902 132 902 132 848 168 c 0,20,21
+ 823 188 823 188 832 233 c 2,22,-1
+ 863 389 l 2,23,24
+ 873 437 873 437 901 401 c 24,0,1
+EndSplineSet
+Colour: ff
+EndChar

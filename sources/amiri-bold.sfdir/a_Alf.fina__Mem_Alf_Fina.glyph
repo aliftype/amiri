@@ -1,0 +1,29 @@
+
+StartChar: aAlf.fina_MemAlfFina
+Encoding: 65890 -1 459
+Width: 398
+Flags: W
+AnchorPoint: "DigitAbove" -50 1250 basechar 0
+AnchorPoint: "HighHamza" 500 1500 basechar 0
+AnchorPoint: "TashkilBelow" 270 -670 basechar 0
+AnchorPoint: "TashkilAbove" 100 1640 basechar 0
+AnchorPoint: "HamzaBelow" 270 -385 basechar 0
+AnchorPoint: "HamzaAbove" 100 1500 basechar 0
+AnchorPoint: "cursive" 398 -209 entry 0
+LayerCount: 2
+Fore
+SplineSet
+271 -169 m 0,0,1
+ 252 -140 252 -140 239.5 -69 c 128,-1,2
+ 227 2 227 2 200 395 c 0,3,4
+ 152 1072 152 1072 85 1305 c 0,5,6
+ 78 1328 78 1328 85 1341 c 2,7,-1
+ 141 1441 l 2,8,9
+ 155 1465 155 1465 164 1438 c 0,10,11
+ 210 1308 210 1308 248 906 c 128,-1,12
+ 286 504 286 504 298 311 c 0,13,14
+ 319 -15 319 -15 408 -99 c 128,-1,15
+ 497 -183 497 -183 448 -235 c 0,16,17
+ 366 -322 366 -322 271 -169 c 0,0,1
+EndSplineSet
+EndChar

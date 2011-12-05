@@ -1,0 +1,24 @@
+
+StartChar: Dot.a
+Encoding: 65725 -1 192
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "MarkDotAbove" -50 400 basemark 0
+AnchorPoint: "DotHmaza" 0 0 mark 0
+AnchorPoint: "TashkilAboveDot" -50 400 basemark 0
+AnchorPoint: "DotAbove" 0 140 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-33 260 m 2,0,1
+ -28 268 -28 268 -16 264 c 0,2,3
+ 65 236 65 236 129 179 c 0,4,5
+ 138 171 138 171 132 161 c 2,6,-1
+ 34 6 l 2,7,8
+ 28 -3 28 -3 13.5 9 c 128,-1,9
+ -1 21 -1 21 -130 99 c 0,10,11
+ -138 104 -138 104 -133 111 c 2,12,-1
+ -33 260 l 2,0,1
+EndSplineSet
+EndChar

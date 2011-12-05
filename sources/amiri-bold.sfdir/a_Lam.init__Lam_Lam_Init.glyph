@@ -1,0 +1,35 @@
+
+StartChar: aLam.init_LamLamInit
+Encoding: 65896 -1 465
+Width: 280
+Flags: W
+AnchorPoint: "Stroke" 57 986 basechar 0
+AnchorPoint: "TwoDotsBelow" 0 -150 basechar 0
+AnchorPoint: "TwoDotsAbove" -90 1561 basechar 0
+AnchorPoint: "DotAbove" 30 1561 basechar 0
+AnchorPoint: "TashkilBelow" 160 -670 basechar 0
+AnchorPoint: "TashkilAbove" 180 1640 basechar 0
+AnchorPoint: "VAbove" 30 1461 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+-20 1249 m 24,0,1
+ 19 1337 l 0,2,3
+ 26 1357 26 1357 40.5 1355.5 c 128,-1,4
+ 55 1354 55 1354 62 1334 c 0,5,6
+ 97 1237 97 1237 143 1187 c 0,7,8
+ 172 1156 172 1156 106 1090 c 0,9,10
+ 92 1074 92 1074 93 1056 c 24,11,12
+ 107 878 107 878 117 782 c 2,13,-1
+ 135 591 l 2,14,15
+ 161 327 161 327 143 206 c 0,16,17
+ 110 -20 110 -20 -5 -37 c 0,18,19
+ -39 -42 -39 -42 -54 60.5 c 128,-1,20
+ -69 163 -69 163 -34 193 c 0,21,22
+ -24 201 -24 201 -11 198 c 0,23,24
+ 36 185 36 185 64 208 c 1,25,26
+ 74 313 74 313 34 692 c 128,-1,27
+ -6 1071 -6 1071 -15 1167 c 0,28,-1
+ -20 1249 l 24,0,1
+EndSplineSet
+EndChar

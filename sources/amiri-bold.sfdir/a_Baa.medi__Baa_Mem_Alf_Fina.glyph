@@ -1,0 +1,35 @@
+
+StartChar: aBaa.medi_BaaMemAlfFina
+Encoding: 65887 -1 456
+Width: 483
+Flags: W
+AnchorPoint: "DigitBelow" 291 -600 basechar 0
+AnchorPoint: "DigitAbove" 201 800 basechar 0
+AnchorPoint: "HighHamza" 301 800 basechar 0
+AnchorPoint: "VAbove" 201 800 basechar 0
+AnchorPoint: "RingBelow" 183 250 basechar 0
+AnchorPoint: "TaaAbove" 201 600 basechar 0
+AnchorPoint: "TashkilBelow" 383 -670 basechar 0
+AnchorPoint: "TashkilAbove" 383 1640 basechar 0
+AnchorPoint: "DotAbove" 201 800 basechar 0
+AnchorPoint: "HamzaAbove" 201 800 basechar 0
+AnchorPoint: "TwoDotsAbove" 90 800 basechar 0
+AnchorPoint: "TwoDotsBelow" 180 -600 basechar 0
+AnchorPoint: "HamzaBelow" 291 -600 basechar 0
+AnchorPoint: "DotBelow" 291 -600 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+-72 66 m 0,0,1
+ -95 83 -95 83 -63 162 c 0,2,3
+ 21 363 21 363 269 363 c 0,4,5
+ 309 364 309 364 346 298 c 0,6,7
+ 405 191 405 191 483 186 c 0,8,9
+ 534 182 534 182 533 80 c 0,10,11
+ 532 0 532 0 483 0 c 0,12,13
+ 353 0 353 0 255 156 c 0,14,15
+ 219 211 219 211 57 152 c 0,16,17
+ -16 125 -16 125 -50 78 c 0,18,19
+ -61 58 -61 58 -72 66 c 0,0,1
+EndSplineSet
+EndChar

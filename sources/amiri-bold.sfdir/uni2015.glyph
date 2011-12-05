@@ -1,0 +1,15 @@
+
+StartChar: uni2015
+Encoding: 8213 8213 380
+Width: 2048
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 480 m 1,0,-1
+ 0 600 l 1,1,-1
+ 2048 600 l 1,2,-1
+ 2048 480 l 1,3,-1
+ 0 480 l 1,0,-1
+EndSplineSet
+EndChar

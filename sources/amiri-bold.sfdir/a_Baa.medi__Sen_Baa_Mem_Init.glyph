@@ -1,0 +1,70 @@
+
+StartChar: aBaa.medi_SenBaaMemInit
+Encoding: 65685 -1 149
+Width: 446
+Flags: W
+AnchorPoint: "DigitBelow" 478 -220 basechar 0
+AnchorPoint: "DigitAbove" -104 1250 basechar 0
+AnchorPoint: "HighHamza" -4 1250 basechar 0
+AnchorPoint: "VAbove" -104 1250 basechar 0
+AnchorPoint: "RingBelow" 88 710 basechar 0
+AnchorPoint: "TaaAbove" -104 1050 basechar 0
+AnchorPoint: "TashkilBelow" 478 -670 basechar 0
+AnchorPoint: "TashkilAbove" 496 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 367 -220 basechar 0
+AnchorPoint: "TwoDotsAbove" -215 1250 basechar 0
+AnchorPoint: "HamzaBelow" 478 -220 basechar 0
+AnchorPoint: "HamzaAbove" -104 1250 basechar 0
+AnchorPoint: "DotBelow" 478 -220 basechar 0
+AnchorPoint: "DotAbove" -104 1250 basechar 0
+LayerCount: 2
+Back
+SplineSet
+1472 998 m 0,0,1
+ 1480 1010 1480 1010 1489 993 c 0,2,3
+ 1508 962 1508 962 1512 888 c 0,4,5
+ 1516 805 1516 805 1498 728 c 0,6,7
+ 1456 562 1456 562 1391 560 c 0,8,9
+ 1241 554 1241 554 1136 663 c 1,10,11
+ 1064 494 1064 494 935 460 c 0,12,13
+ 812 428 812 428 682 567 c 1,14,15
+ 576 437 576 437 478 414 c 0,16,17
+ 458 408 458 408 442 501 c 128,-1,18
+ 426 594 426 594 478 599 c 0,19,20
+ 676 619 676 619 785 806 c 0,21,22
+ 791 817 791 817 802 816 c 0,23,24
+ 810 815 810 815 815.5 807.5 c 128,-1,25
+ 821 800 821 800 819 794 c 0,26,27
+ 797 738 797 738 786 718 c 1,28,29
+ 820 656 820 656 952 654 c 0,30,31
+ 1110 652 1110 652 1194 931 c 0,32,33
+ 1198 942 1198 942 1208 943.5 c 128,-1,34
+ 1218 945 1218 945 1225 936.5 c 128,-1,35
+ 1232 928 1232 928 1230 916 c 2,36,-1
+ 1209 829 l 1,37,38
+ 1252 784 1252 784 1334 760 c 0,39,40
+ 1417 736 1417 736 1430 765 c 0,41,42
+ 1443 795 1443 795 1412 886 c 0,43,44
+ 1409 893 1409 893 1416 906 c 0,45,46
+ 1435 939 1435 939 1472 998 c 0,0,1
+EndSplineSet
+Fore
+SplineSet
+-83 499 m 8,0,1
+ -83 422 -83 422 -117 407 c 0,2,3
+ -160 389 -160 389 -157 470 c 0,4,5
+ -153 578 -153 578 -116 643 c 0,6,7
+ -1 850 -1 850 137 838 c 0,8,9
+ 179 834 179 834 199 797 c 0,10,11
+ 314 584 314 584 481 603 c 0,12,13
+ 526 608 526 608 529 555 c 0,14,15
+ 533 483 533 483 489 436 c 0,16,17
+ 467 413 467 413 443 414 c 0,18,19
+ 331 419 331 419 249 484 c 0,20,21
+ 195 526 195 526 112 630 c 24,22,23
+ 77 674 77 674 -7 609 c 0,24,25
+ -82 552 -82 552 -83 499 c 8,0,1
+EndSplineSet
+Comment: "XXX: Disunify the Seen" 
+Colour: ff
+EndChar

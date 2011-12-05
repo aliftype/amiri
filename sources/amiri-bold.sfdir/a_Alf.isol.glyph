@@ -1,0 +1,26 @@
+
+StartChar: aAlf.isol
+Encoding: 65538 -1 2
+Width: 446
+AnchorPoint: "DigitAbove" -34 1280 basechar 0
+AnchorPoint: "HighHamza" 566 1630 basechar 0
+AnchorPoint: "TashkilBelow" 250 -670 basechar 0
+AnchorPoint: "TashkilAbove" 200 1550 basechar 0
+AnchorPoint: "HamzaAbove" 166 1630 basechar 0
+AnchorPoint: "HamzaBelow" 330 -80 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+190 1388 m 2,0,1
+ 220 1460 220 1460 228 1392 c 0,2,3
+ 275 874 l 0,4,5
+ 354 184 354 184 266 14 c 0,6,7
+ 254 -9 254 -9 244.5 2.5 c 128,-1,8
+ 235 14 235 14 236 36 c 24,9,10
+ 241 278 241 278 222.5 423 c 128,-1,11
+ 204 568 204 568 178 813 c 2,12,-1
+ 134 1214 l 2,13,14
+ 130 1248 130 1248 145 1283 c 2,15,-1
+ 190 1388 l 2,0,1
+EndSplineSet
+EndChar

@@ -1,0 +1,28 @@
+
+StartChar: vTwoDots.a
+Encoding: 65741 -1 214
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "TashkilAboveDot" -40 590 basemark 0
+AnchorPoint: "DotAbove" 0 140 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-73 450 m 2,0,1
+ -68 458 -68 458 -56 454 c 0,2,3
+ 25 426 25 426 89 369 c 0,4,5
+ 98 361 98 361 92 351 c 2,6,-1
+ 26 247 l 1,7,8
+ 82 221 82 221 129 179 c 0,9,10
+ 138 171 138 171 132 161 c 2,11,-1
+ 34 6 l 2,12,13
+ 28 -3 28 -3 13.5 9 c 128,-1,14
+ -1 21 -1 21 -130 99 c 0,15,16
+ -138 104 -138 104 -133 111 c 2,17,-1
+ -59 221 l 1,18,19
+ -95 244 -95 244 -170 289 c 0,20,21
+ -178 294 -178 294 -173 301 c 2,22,-1
+ -73 450 l 2,0,1
+EndSplineSet
+EndChar
