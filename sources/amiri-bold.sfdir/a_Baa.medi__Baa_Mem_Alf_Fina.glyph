@@ -17,7 +17,7 @@ AnchorPoint: "TwoDotsAbove" 90 800 basechar 0
 AnchorPoint: "TwoDotsBelow" 180 -600 basechar 0
 AnchorPoint: "HamzaBelow" 291 -600 basechar 0
 AnchorPoint: "DotBelow" 291 -600 basechar 0
-LayerCount: 2
+LayerCount: 4
 Fore
 SplineSet
 -72 66 m 0,0,1

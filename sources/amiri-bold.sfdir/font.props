@@ -12,9 +12,11 @@ UnderlinePosition: -1100
 UnderlineWidth: 102
 Ascent: 1638
 Descent: 410
-LayerCount: 2
+LayerCount: 4
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
+Layer: 2 1 "Embolden"  1
+Layer: 3 1 "Regular"  0
 FSType: 0
 OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0

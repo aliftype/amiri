@@ -11,7 +11,7 @@ AnchorPoint: "TashkilBelow" 270 -670 basechar 0
 AnchorPoint: "TashkilAbove" 100 1640 basechar 0
 AnchorPoint: "VAbove" -75 1298 basechar 0
 AnchorPoint: "cursive" 0 170 exit 0
-LayerCount: 2
+LayerCount: 4
 Back
 SplineSet
 -44 272 m 0,0,1

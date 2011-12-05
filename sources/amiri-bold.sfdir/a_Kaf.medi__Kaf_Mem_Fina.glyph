@@ -12,7 +12,7 @@ AnchorPoint: "TashkilBelow" 600 -670 basechar 0
 AnchorPoint: "TashkilAbove" 400 1640 basechar 0
 AnchorPoint: "Dash" 638 1700 basechar 0
 AnchorPoint: "cursive" 0 217 exit 0
-LayerCount: 2
+LayerCount: 4
 Fore
 SplineSet
 1256 1669 m 2,0,-1
