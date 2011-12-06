@@ -76,8 +76,8 @@ def cleanUnused(font):
             font.removeGlyph(glyph)
 
 def validateGlyphs(font):
-    flipped_ref = 0x10
     wrong_dir = 0x8
+    flipped_ref = 0x10
     missing_extrema = 0x20
     for glyph in font.glyphs():
         state = glyph.validate(True)
