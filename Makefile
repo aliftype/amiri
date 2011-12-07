@@ -66,7 +66,7 @@ $(WEB)/%.css: $(WTTF) $(BUILD)
 $(DOC)/amiri-table.pdf: amiri-regular.ttf
 	@echo "   GEN\t$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
+	@fntsample --exclude-range 0x25A0-0x25FF --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
