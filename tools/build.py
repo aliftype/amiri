@@ -14,6 +14,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 import fontforge
+import psMat
 import sys
 import os
 import getopt
@@ -75,12 +76,32 @@ def cleanUnused(font):
         if glyph.color == 0xffff00:
             font.removeGlyph(glyph)
 
+def fixNestedReference(font, ref, new_transform=None):
+    name = ref[0]
+    transform = ref[1]
+    glyph = font[name]
+    new_ref = []
+    if glyph.references and glyph.foreground.isEmpty():
+        for nested_ref in glyph.references:
+            for i in fixNestedReference(font, nested_ref, transform):
+                new_ref.append(i)
+    else:
+        if new_transform:
+            matrix = psMat.compose(transform, new_transform)
+            new_ref.append((name, matrix))
+        else:
+            new_ref.append(ref)
+
+    return new_ref
+
 def validateGlyphs(font):
     wrong_dir = 0x8
     flipped_ref = 0x10
     missing_extrema = 0x20
     for glyph in font.glyphs():
         state = glyph.validate(True)
+        refs = []
+
         if state & flipped_ref:
             glyph.unlinkRef()
             glyph.correctDirection()
@@ -88,6 +109,12 @@ def validateGlyphs(font):
             glyph.correctDirection()
         if state & missing_extrema:
             glyph.addExtrema("all")
+
+        for ref in glyph.references:
+            for i in fixNestedReference(font, ref):
+                refs.append(i)
+        if refs:
+            glyph.references = refs
 
 def setVersion(font, version):
     font.version = "%07.3f" %float(version)
@@ -199,7 +226,6 @@ def makeWeb(infile, outfile):
     font.close()
 
 def makeSlanted(infile, outfile, slant):
-    import psMat
     import math
 
     font = fontforge.open(infile)
