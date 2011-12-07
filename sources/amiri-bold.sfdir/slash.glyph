@@ -3,7 +3,7 @@ StartChar: slash
 Encoding: 47 47 360
 Width: 706
 Flags: W
-LayerCount: 4
+LayerCount: 3
 Fore
 SplineSet
 146.562877722 -435.247506002 m 1,0,-1
@@ -13,14 +13,6 @@ SplineSet
  146.562877722 -435.247506002 l 1,0,-1
 EndSplineSet
 Layer: 2
-SplineSet
-132.192382812 -437.999023438 m 1,0,-1
- 3.6689453125 -400.521484375 l 1,1,-1
- 543.809570312 1491.00292969 l 1,2,-1
- 672.327148438 1453.51855469 l 1,3,-1
- 132.192382812 -437.999023438 l 1,0,-1
-EndSplineSet
-Layer: 3
 SplineSet
 126 -398 m 1,0,-1
  30 -370 l 1,1,-1
