@@ -112,6 +112,7 @@ dist: all check pack doc
 	@cp $(WOFF) amiri-$(VERSION)/$(WEB)
 	@cp $(EOTS) amiri-$(VERSION)/$(WEB)
 	@cp $(CSSS) amiri-$(VERSION)/$(WEB)
+	@cp $(WEB)/README amiri-$(VERSION)/$(WEB)
 	@cp $(PDFS) amiri-$(VERSION)/$(DOC)
 	@cp $(TEST) amiri-$(VERSION)/$(TESTS)
 	@cp $(BUILD) amiri-$(VERSION)/$(TOOLS)
