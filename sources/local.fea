@@ -1,10 +1,13 @@
 feature locl {
+   sub period         by period.ara;
+   sub guillemotleft  by guillemotleft.ara;
+   sub guillemotright by guillemotright.ara;
+} locl;
+
+feature locl {
   script arab;
     language dflt;
       sub at             by at.ara;
-      sub period         by period.ara;
-      sub guillemotleft  by guillemotleft.ara;
-      sub guillemotright by guillemotright.ara;
 } locl;
 
 # localised Urdu and Sindhi digits
