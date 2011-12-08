@@ -3,6 +3,8 @@ StartChar: uni0640.4
 Encoding: 70066 -1 4752
 Width: 2500
 Flags: W
+AnchorPoint: "MarkAbove" 1250 1640 basechar 0
+AnchorPoint: "MarkBelow" 1250 -670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
