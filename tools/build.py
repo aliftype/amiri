@@ -117,8 +117,11 @@ def validateGlyphs(font):
             glyph.references = refs
 
 def setVersion(font, version):
-    font.version = "%07.3f" %float(version)
-    font.appendSFNTName("Arabic (Egypt)", "Version", "إصدارة %s" %font.version.replace(".", ","))
+    font.version = "%07.3f" % float(version)
+    for name in font.sfnt_names:
+        if name[0] == "Arabic (Egypt)" and name[1] == "Version":
+            font.appendSFNTName(name[0], name[1],
+                                name[2].replace("VERSION", font.version.replace(".", "\xD9\xAB")))
 
 def mergeFeatures(font, feafile):
     oldfea = tempfile.mkstemp(suffix='.fea')[1]
