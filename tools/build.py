@@ -131,11 +131,6 @@ def mergeFeatures(font, feafile):
     font.mergeFeature(oldfea)
     os.remove(oldfea)
 
-def stripLocalName(font):
-    for name in font.sfnt_names:
-        if name[0] != "English (US)" and name[1] in ("Family", "Fullname"):
-            font.appendSFNTName(name[0], name[1], None)
-
 def makeCss(infile, outfile):
     text = ""
 
@@ -249,7 +244,7 @@ def makeSfd(infile, outfile, version):
     font.save(outfile)
     font.close()
 
-def makeDesktop(infile, outfile, feafile, version, nolocalname):
+def makeDesktop(infile, outfile, feafile, version):
     font = fontforge.open(infile)
 
     if version:
@@ -263,9 +258,6 @@ def makeDesktop(infile, outfile, feafile, version, nolocalname):
 
     # remove unused glyphs
     cleanUnused(font)
-
-    if nolocalname:
-        stripLocalName(font)
 
     if feafile:
         mergeFeatures(font, feafile)
@@ -285,7 +277,6 @@ Options:
   --sfd                 output is a SFD file
   --web                 output is web version
   --desktop             output is desktop version
-  --no-localised-name   strip out localised font name
 
   -h, --help            print this message and exit
 """ % os.path.basename(sys.argv[0])
@@ -297,7 +288,7 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "feature-file=", "version=", "slant=", "css", "web", "desktop", "sfd", "no-localised-name"])
+                ["help","input=","output=", "feature-file=", "version=", "slant=", "css", "web", "desktop", "sfd"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -311,7 +302,6 @@ if __name__ == "__main__":
     web = False
     desktop = False
     sfd = False
-    nolocalname = False
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
@@ -325,7 +315,6 @@ if __name__ == "__main__":
         elif opt == "--web": web = True
         elif opt == "--desktop": desktop = True
         elif opt == "--sfd": sfd = True
-        elif opt == "--no-localised-name": nolocalname = True
 
     if not infile:
         print "No input file"
@@ -347,4 +336,4 @@ if __name__ == "__main__":
         makeWeb(infile, outfile)
 
     if desktop:
-        makeDesktop(infile, outfile, feafile, version, nolocalname)
+        makeDesktop(infile, outfile, feafile, version)
