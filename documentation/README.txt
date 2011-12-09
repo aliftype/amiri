@@ -4,7 +4,8 @@ Amiri is a classical Arabic typeface, Naskh style, for typesetting books and
 other running text.
 
 Amiri is a revival of the beautiful typeface pioneered in early 20th century by
-Bulaq Press in Cairo, also known as Amiria Press, after which the it is named.
+Bulaq Press in Cairo, also known as Amiria Press, after which the font is
+named.
 
 The uniqueness of this typeface comes from its superb balance between the
 beauty of Naskh calligraphy on one hand, the constraints and requirements of
