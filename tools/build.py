@@ -48,6 +48,8 @@ def cleanAnchors(font):
             "DotBelow",
             "DotBelowAlt",
             "DotHmaza",
+            "HamzaAbove",
+            "HamzaBelow",
             "HighHamza",
             "MarkDotAbove",
             "MarkDotBelow",
@@ -61,7 +63,8 @@ def cleanAnchors(font):
             "TashkilBelowDot",
             "TwoDotsAbove",
             "TwoDotsBelow",
-            "TwoDotsBelowAlt"
+            "TwoDotsBelowAlt",
+            "VAbove",
             )
 
     for klass in klasses:
