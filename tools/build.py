@@ -21,6 +21,9 @@ import getopt
 import tempfile
 
 def genCSS(font, base):
+    """Generates a CSS snippet for webfont usage based on:
+    http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax"""
+
     style = ("slanted" in font.fullname.lower()) and "oblique" or "normal"
     weight = font.os2_weight
     family = font.familyname + "Web"
@@ -39,6 +42,9 @@ def genCSS(font, base):
     return css
 
 def cleanAnchors(font):
+    """Removes anchor classes (and associated lookups) that are used only
+    internally for building composite glyph."""
+
     klasses = (
             "Dash",
             "DigitAbove",
@@ -79,14 +85,20 @@ def cleanUnused(font):
         if glyph.color == 0xffff00:
             font.removeGlyph(glyph)
 
-def fixNestedReference(font, ref, new_transform=None):
+def flattenNestedReferences(font, ref, new_transform=None):
+    """Flattens nested references by replacing them with the ultimate reference
+    and applying any transformation matrices involved, so that the final font
+    has only simple composite glyphs. This to work around what seems to be an
+    Apple bug that results in ignoring transformation matrix of nested
+    references."""
+
     name = ref[0]
     transform = ref[1]
     glyph = font[name]
     new_ref = []
     if glyph.references and glyph.foreground.isEmpty():
         for nested_ref in glyph.references:
-            for i in fixNestedReference(font, nested_ref, transform):
+            for i in flattenNestedReferences(font, nested_ref, transform):
                 new_ref.append(i)
     else:
         if new_transform:
@@ -98,6 +110,12 @@ def fixNestedReference(font, ref, new_transform=None):
     return new_ref
 
 def validateGlyphs(font):
+    """Fixes some common FontForge validation warnings, currently handles:
+        * wrong direction
+        * flipped references
+        * missing points at extrema
+    In addition to flattening nested references."""
+
     wrong_dir = 0x8
     flipped_ref = 0x10
     missing_extrema = 0x20
@@ -114,7 +132,7 @@ def validateGlyphs(font):
             glyph.addExtrema("all")
 
         for ref in glyph.references:
-            for i in fixNestedReference(font, ref):
+            for i in flattenNestedReferences(font, ref):
                 refs.append(i)
         if refs:
             glyph.references = refs
@@ -127,6 +145,11 @@ def setVersion(font, version):
                                 name[2].replace("VERSION", font.version.replace(".", "\xD9\xAB")))
 
 def mergeFeatures(font, feafile):
+    """Merges feature file into the font while making sure mark positioning
+    lookups (already in the font) come after kerning lookups (from the feature
+    file), which is required by Uniscribe to get correct mark positioning for
+    kerned glyphs."""
+
     oldfea = tempfile.mkstemp(suffix='.fea')[1]
     font.generateFeatureFile(oldfea)
 
@@ -137,17 +160,19 @@ def mergeFeatures(font, feafile):
     font.mergeFeature(oldfea)
     os.remove(oldfea)
 
-def makeCss(infile, outfile):
-    text = ""
+def makeCss(infiles, outfile):
+    """Builds a CSS file for the entire font family."""
 
-    for f in infile.split():
+    css = ""
+
+    for f in infiles.split():
         base = os.path.splitext(os.path.basename(f))[0]
         font = fontforge.open(f)
-        text += genCSS(font, base)
+        css += genCSS(font, base)
         font.close()
 
     out = open(outfile, "w")
-    out.write(text)
+    out.write(css)
     out.close()
 
 def generateFont(font, outfile, hack=False):
