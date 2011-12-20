@@ -268,13 +268,6 @@ def makeSlanted(infile, outfile, slant):
     font.fullname += " Slanted"
     font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-def makeSfd(infile, outfile, version):
-    font = fontforge.open(infile)
-    if version:
-        setVersion(font, version)
-    font.save(outfile)
-    font.close()
-
 def makeDesktop(infile, outfile, version):
     font = fontforge.open(infile)
 
@@ -305,7 +298,6 @@ Options:
   --version=VALUE       set font version to VALUE
   --slant=VALUE         autoslant
   --css                 output is a CSS file
-  --sfd                 output is a SFD file
   --web                 output is web version
   --desktop             output is desktop version
 
@@ -319,7 +311,7 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "version=", "slant=", "css", "web", "desktop", "sfd"])
+                ["help","input=","output=", "version=", "slant=", "css", "web", "desktop"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -331,7 +323,6 @@ if __name__ == "__main__":
     css = False
     web = False
     desktop = False
-    sfd = False
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
@@ -343,7 +334,6 @@ if __name__ == "__main__":
         elif opt == "--css": css = True
         elif opt == "--web": web = True
         elif opt == "--desktop": desktop = True
-        elif opt == "--sfd": sfd = True
 
     if not infile:
         print "No input file"
@@ -354,9 +344,6 @@ if __name__ == "__main__":
 
     if css:
         makeCss(infile, outfile)
-
-    if sfd:
-        makeSfd(infile, outfile, version)
 
     if slant:
         makeSlanted(infile, outfile, slant)

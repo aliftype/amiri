@@ -92,9 +92,9 @@ PACK=$(SRC)/$(NAME)-regular.sfd $(SRC)/$(NAME)-bold.sfd
 
 pack: $(PACK)
 
-%.sfd: %.sfdir $(BUILD)
+%.sfd: %.sfdir
 	@echo "   GEN\t$@"
-	@$(FF) --sfd --input $< --output $@
+	@fontforge -lang=ff -c 'Open("$<"); Save("$@");'
 
 distclean:
 	@rm -rf $(DIST) $(DIST).tar.bz2
