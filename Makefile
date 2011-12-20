@@ -7,7 +7,7 @@ SRC=sources
 WEB=web
 DOC=documentation
 TESTS=test-suite
-FONTS=amiri-regular amiri-bold amiri-slanted
+FONTS=amiri-regular amiri-bold amiri-slanted amiri-boldslanted
 DOCS=README README-Arabic NEWS NEWS-Arabic
 
 BUILD=$(TOOLS)/build.py
@@ -44,7 +44,11 @@ $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION)
 
-%-slanted.ttf: $(SRC)/%-regular.sfdir $(SRC)/%-regular.fea $(FEAT) $(BUILD)
+amiri-slanted.ttf: $(SRC)/amiri-regular.sfdir $(SRC)/amiri-regular.fea $(FEAT) $(BUILD)
+	@echo "   FF\t$@"
+	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION) --slant=7
+
+amiri-boldslanted.ttf: $(SRC)/amiri-bold.sfdir $(SRC)/amiri-bold.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION) --slant=7
 
