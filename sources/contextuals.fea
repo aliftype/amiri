@@ -742,7 +742,10 @@ feature calt {
         [@aAlf.fina @aAlf.fina_LamAlfFina];
 
     sub [@aBaa.init]' lookup BaaSenInit
-        [@aSen.medi @aSen.fina]' lookup BaaSenInit;
+        [@aSen.medi]' lookup BaaSenInit;
+
+    sub [@aBaa.init]' lookup BaaSenAltInit
+        [@aSen.fina]' lookup BaaSenInit;
 
     sub [@aKaf.medi]' lookup KafRaaFina
         [@aRaa.fina]' lookup KafRaaFina;
