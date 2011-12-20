@@ -1,5 +1,6 @@
 .PHONY: all clean ttf web pack check
 
+NAME=amiri
 VERSION=0.101
 
 TOOLS=tools
@@ -7,8 +8,9 @@ SRC=sources
 WEB=web
 DOC=documentation
 TESTS=test-suite
-FONTS=amiri-regular amiri-bold amiri-slanted amiri-boldslanted
+FONTS=$(NAME)-regular $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
 DOCS=README README-Arabic NEWS NEWS-Arabic
+DIST=$(NAME)-$(VERSION)
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
@@ -21,8 +23,8 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
-PDFS=$(DOC)/amiri-table.pdf
-CSSS=$(WEB)/amiri.css
+PDFS=$(DOC)/$(NAME)-table.pdf
+CSSS=$(WEB)/$(NAME).css
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 
@@ -44,11 +46,11 @@ $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION)
 
-amiri-slanted.ttf: $(SRC)/amiri-regular.sfdir $(SRC)/amiri-regular.fea $(FEAT) $(BUILD)
+$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION) --slant=7
 
-amiri-boldslanted.ttf: $(SRC)/amiri-bold.sfdir $(SRC)/amiri-bold.fea $(FEAT) $(BUILD)
+$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-bold.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION) --slant=7
 
@@ -67,7 +69,7 @@ $(WEB)/%.css: $(WTTF) $(BUILD)
 	@mkdir -p $(WEB)
 	@$(FF) --css --input "$(WTTF)" --output $@ --version $(VERSION)
 
-$(DOC)/amiri-table.pdf: amiri-regular.ttf
+$(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN\t$@"
 	@mkdir -p $(DOC)
 	@fntsample --exclude-range 0x25A0-0x25FF --font-file $< --output-file $@.tmp --print-outline > $@.txt
@@ -86,7 +88,7 @@ clean:
 	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS)
 
 #->8-
-PACK=$(SRC)/amiri-regular.sfd $(SRC)/amiri-bold.sfd
+PACK=$(SRC)/$(NAME)-regular.sfd $(SRC)/$(NAME)-bold.sfd
 
 pack: $(PACK)
 
@@ -95,30 +97,30 @@ pack: $(PACK)
 	@$(FF) --sfd --input $< --output $@
 
 distclean:
-	@rm -rf amiri-$(VERSION) amiri-$(VERSION).tar.bz2
+	@rm -rf $(DIST) $(DIST).tar.bz2
 	@rm -rf $(PACK)
 
 dist: all check pack doc
 	@echo "   Making dist tarball"
-	@mkdir -p amiri-$(VERSION)/$(SRC)
-	@mkdir -p amiri-$(VERSION)/$(WEB)
-	@mkdir -p amiri-$(VERSION)/$(DOC)
-	@mkdir -p amiri-$(VERSION)/$(TOOLS)
-	@mkdir -p amiri-$(VERSION)/$(TESTS)
-	@cp $(PACK) amiri-$(VERSION)/$(SRC)
-	@cp $(FEAT) amiri-$(VERSION)/$(SRC)
-	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > amiri-$(VERSION)/Makefile
-	@cp $(license) amiri-$(VERSION)
-	@cp $(DTTF) amiri-$(VERSION)
-	@cp README.txt amiri-$(VERSION)
-	@cp $(DOCFILES) amiri-$(VERSION)/$(DOC)
-	@cp $(WTTF) amiri-$(VERSION)/$(WEB)
-	@cp $(WOFF) amiri-$(VERSION)/$(WEB)
-	@cp $(EOTS) amiri-$(VERSION)/$(WEB)
-	@cp $(CSSS) amiri-$(VERSION)/$(WEB)
-	@cp $(WEB)/README amiri-$(VERSION)/$(WEB)
-	@cp $(PDFS) amiri-$(VERSION)/$(DOC)
-	@cp $(TEST) amiri-$(VERSION)/$(TESTS)
-	@cp $(BUILD) amiri-$(VERSION)/$(TOOLS)
-	@cp $(RUNTEST) amiri-$(VERSION)/$(TOOLS)
-	@tar cfj amiri-$(VERSION).tar.bz2 amiri-$(VERSION)
+	@mkdir -p $(DIST)/$(SRC)
+	@mkdir -p $(DIST)/$(WEB)
+	@mkdir -p $(DIST)/$(DOC)
+	@mkdir -p $(DIST)/$(TOOLS)
+	@mkdir -p $(DIST)/$(TESTS)
+	@cp $(PACK) $(DIST)/$(SRC)
+	@cp $(FEAT) $(DIST)/$(SRC)
+	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > $(DIST)/Makefile
+	@cp $(license) $(DIST)
+	@cp $(DTTF) $(DIST)
+	@cp README.txt $(DIST)
+	@cp $(DOCFILES) $(DIST)/$(DOC)
+	@cp $(WTTF) $(DIST)/$(WEB)
+	@cp $(WOFF) $(DIST)/$(WEB)
+	@cp $(EOTS) $(DIST)/$(WEB)
+	@cp $(CSSS) $(DIST)/$(WEB)
+	@cp $(WEB)/README $(DIST)/$(WEB)
+	@cp $(PDFS) $(DIST)/$(DOC)
+	@cp $(TEST) $(DIST)/$(TESTS)
+	@cp $(BUILD) $(DIST)/$(TOOLS)
+	@cp $(RUNTEST) $(DIST)/$(TOOLS)
+	@tar cfj $(DIST).tar.bz2 $(DIST)
