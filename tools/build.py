@@ -275,7 +275,7 @@ def makeSfd(infile, outfile, version):
     font.save(outfile)
     font.close()
 
-def makeDesktop(infile, outfile, feafile, version):
+def makeDesktop(infile, outfile, version):
     font = fontforge.open(infile)
 
     if version:
@@ -290,7 +290,8 @@ def makeDesktop(infile, outfile, feafile, version):
     # remove unused glyphs
     cleanUnused(font)
 
-    if feafile:
+    if font.sfd_path:
+        feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
         mergeFeatures(font, feafile)
 
     generateFont(font, outfile, True)
@@ -302,7 +303,6 @@ Options:
   --input=FILE          file name of input font
   --output=FILE         file name of output font
   --version=VALUE       set font version to VALUE
-  --feature-file=FILE   optional feature file
   --slant=VALUE         autoslant
   --css                 output is a CSS file
   --sfd                 output is a SFD file
@@ -319,14 +319,13 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "feature-file=", "version=", "slant=", "css", "web", "desktop", "sfd"])
+                ["help","input=","output=", "version=", "slant=", "css", "web", "desktop", "sfd"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
 
     infile = None
     outfile = None
-    feafile = None
     version = None
     slant = False
     css = False
@@ -339,7 +338,6 @@ if __name__ == "__main__":
             usage(0)
         elif opt == "--input": infile = arg
         elif opt == "--output": outfile = arg
-        elif opt == "--feature-file": feafile = arg
         elif opt == "--version": version = arg
         elif opt == "--slant": slant = float(arg)
         elif opt == "--css": css = True
@@ -367,4 +365,4 @@ if __name__ == "__main__":
         makeWeb(infile, outfile)
 
     if desktop:
-        makeDesktop(infile, outfile, feafile, version)
+        makeDesktop(infile, outfile, version)

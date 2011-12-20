@@ -44,15 +44,15 @@ $(WEB)/%.ttf: %.ttf $(BUILD)
 
 %.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION)
+	@$(FF) --input $< --output $@ --desktop --version $(VERSION)
 
 $(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION) --slant=7
+	@$(FF) --input $< --output $@ --desktop --version $(VERSION) --slant=7
 
 $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-bold.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --desktop --feature-file $(<:%.sfdir=%.fea) --version $(VERSION) --slant=7
+	@$(FF) --input $< --output $@ --desktop --version $(VERSION) --slant=7
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
