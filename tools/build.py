@@ -264,9 +264,14 @@ def makeSlanted(infile, outfile, slant):
 
     # fix metadata
     font.italicangle = slant
-    font.fontname = font.fontname.replace("Regular", "Slanted")
     font.fullname += " Slanted"
-    font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
+    if font.weight == "Bold":
+        font.fontname = font.fontname.replace("Bold", "BoldSlanted")
+        font.appendSFNTName("Arabic (Egypt)", "SubFamily", "عريض مائل")
+        font.appendSFNTName("English (US)",   "SubFamily", "Bold Slanted")
+    else:
+        font.fontname = font.fontname.replace("Regular", "Slanted")
+        font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
 def makeDesktop(infile, outfile, version):
     font = fontforge.open(infile)
