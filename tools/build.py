@@ -349,6 +349,8 @@ if __name__ == "__main__":
     elif web:
         makeWeb(infile, outfile)
     else:
+        if not version:
+            usage("No version specified", -1)
         if slant:
             makeSlanted(infile, outfile, slant)
         makeDesktop(infile, outfile, version)
