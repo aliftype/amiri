@@ -46,11 +46,11 @@ $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --version $(VERSION)
 
-$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
+$(NAME)-slanted.ttf: $(NAME)-regular.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
 
-$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-bold.fea $(FEAT) $(BUILD)
+$(NAME)-boldslanted.ttf: $(NAME)-bold.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
 

@@ -273,6 +273,8 @@ def makeSlanted(infile, outfile, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
+    generateFont(font, outfile)
+
 def makeDesktop(infile, outfile, version):
     font = fontforge.open(infile)
 
@@ -348,9 +350,9 @@ if __name__ == "__main__":
         makeCss(infile, outfile)
     elif web:
         makeWeb(infile, outfile)
+    elif slant:
+        makeSlanted(infile, outfile, slant)
     else:
         if not version:
             usage("No version specified", -1)
-        if slant:
-            makeSlanted(infile, outfile, slant)
         makeDesktop(infile, outfile, version)
