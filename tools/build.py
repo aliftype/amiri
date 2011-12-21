@@ -18,7 +18,7 @@ import psMat
 import sys
 import os
 import getopt
-import tempfile
+from tempfile import mkstemp
 from fontTools.ttLib import TTFont
 
 def genCSS(font, base):
@@ -151,7 +151,7 @@ def mergeFeatures(font, feafile):
     file), which is required by Uniscribe to get correct mark positioning for
     kerned glyphs."""
 
-    oldfea = tempfile.mkstemp(suffix='.fea')[1]
+    oldfea = mkstemp(suffix='.fea')[1]
     font.generateFeatureFile(oldfea)
 
     for lookup in font.gpos_lookups:
@@ -183,7 +183,7 @@ def generateFont(font, outfile, hack=False):
         # ff takes long to write the file, so generate to tmp file then rename
         # it to keep fontview happy
         import subprocess
-        tmpout = tempfile.mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
+        tmpout = mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
         font.generate(tmpout, flags=flags)
         #os.rename(tmpout, outfile) # file monitor will not see this, why?
         p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
@@ -202,7 +202,7 @@ def makeWeb(infile, outfile):
     flags = ("opentype", "short-post")
 
     font = fontforge.open(infile)
-    tmpfont = tempfile.mkstemp(suffix=os.path.basename(outfile))[1]
+    tmpfont = mkstemp(suffix=os.path.basename(outfile))[1]
     font.generate(tmpfont, flags=flags)
     font.close()
 
