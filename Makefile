@@ -40,7 +40,7 @@ doc: $(PDFS)
 $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(FF) --input $< --output $@ --web
+	@$(FF) --input $< --output $@ --web 1>/dev/null 2>&1
 
 %.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
@@ -48,11 +48,11 @@ $(WEB)/%.ttf: %.ttf $(BUILD)
 
 $(NAME)-slanted.ttf: $(NAME)-regular.ttf $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
+	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7 1>/dev/null 2>&1
 
 $(NAME)-boldslanted.ttf: $(NAME)-bold.ttf $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
+	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7 1>/dev/null 2>&1
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
