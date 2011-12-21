@@ -294,7 +294,10 @@ def makeDesktop(infile, outfile, version):
 
     generateFont(font, outfile, True)
 
-def usage(code):
+def usage(extramessage, code):
+    if extramessage:
+        print extramessage
+
     message = """Usage: %s OPTIONS...
 
 Options:
@@ -317,8 +320,7 @@ if __name__ == "__main__":
                 "h",
                 ["help","input=","output=", "version=", "slant=", "css", "web"])
     except getopt.GetoptError, err:
-        print str(err)
-        usage(-1)
+        usage(str(err), -1)
 
     infile = None
     outfile = None
@@ -329,7 +331,7 @@ if __name__ == "__main__":
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
-            usage(0)
+            usage("", 0)
         elif opt == "--input": infile = arg
         elif opt == "--output": outfile = arg
         elif opt == "--version": version = arg
@@ -338,11 +340,9 @@ if __name__ == "__main__":
         elif opt == "--web": web = True
 
     if not infile:
-        print "No input file"
-        usage(-1)
+        usage("No input file", -1)
     if not outfile:
-        print "No output file"
-        usage(-1)
+        usage("No output file", -1)
 
     if css:
         makeCss(infile, outfile)
