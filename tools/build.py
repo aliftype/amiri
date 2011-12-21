@@ -19,6 +19,7 @@ import sys
 import os
 import getopt
 import tempfile
+from fontTools.ttLib import TTFont
 
 def genCSS(font, base):
     """Generates a CSS snippet for webfont usage based on:
@@ -194,23 +195,21 @@ def generateFont(font, outfile, hack=False):
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
-    from fontTools.ttLib import TTFont
 
-    # suppress noisy DeprecationWarnings in fontTools
-    import warnings
-    warnings.filterwarnings("ignore",category=DeprecationWarning)
+    # "short-post" generates a post table without glyph names to save some KBs
+    # since glyph names are only needed for PDF's as readers use them to
+    # "guess" charcters when copying text, which is of little use in web fonts.
+    flags = ("opentype", "short-post")
 
-    font = TTFont(infile, recalcBBoxes=0)
+    font = fontforge.open(infile)
+    tmpfont = tempfile.mkstemp(suffix=os.path.basename(outfile))[1]
+    font.generate(tmpfont, flags=flags)
+    font.close()
 
-    # internal glyph names are useless on the web, so force a format 3 post
-    # table
-    post = font['post']
-    post.formatType = 3.0
-    post.glyphOrder = None
-    del(post.extraNames)
-    del(post.mapping)
+    # now open in fontTools
+    font = TTFont(tmpfont, recalcBBoxes=0)
 
-    # 'name' table is a bit bulky, and of almost no use in for web fonts,
+    # our 'name' table is a bit bulky, and of almost no use in for web fonts,
     # so we strip all unnecessary entries.
     name = font['name']
     names = []
@@ -238,10 +237,7 @@ def makeWeb(infile, outfile):
 
     name.names = names
 
-    # dummy DSIG is useless here too
-    del(font['DSIG'])
-
-    # FFTM is FontForge specific, remove too
+    # FFTM is FontForge specific, remove it
     del(font['FFTM'])
 
     # force compiling GPOS/GSUB tables by fontTools, saves few tens of KBs
@@ -250,6 +246,8 @@ def makeWeb(infile, outfile):
 
     font.save(outfile)
     font.close()
+
+    os.remove(tmpfont)
 
 def makeSlanted(infile, outfile, slant):
     import math
