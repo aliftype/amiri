@@ -304,7 +304,6 @@ Options:
   --slant=VALUE         autoslant
   --css                 output is a CSS file
   --web                 output is web version
-  --desktop             output is desktop version
 
   -h, --help            print this message and exit
 """ % os.path.basename(sys.argv[0])
@@ -316,7 +315,7 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "version=", "slant=", "css", "web", "desktop"])
+                ["help","input=","output=", "version=", "slant=", "css", "web"])
     except getopt.GetoptError, err:
         print str(err)
         usage(-1)
@@ -327,7 +326,6 @@ if __name__ == "__main__":
     slant = False
     css = False
     web = False
-    desktop = False
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
@@ -338,7 +336,6 @@ if __name__ == "__main__":
         elif opt == "--slant": slant = float(arg)
         elif opt == "--css": css = True
         elif opt == "--web": web = True
-        elif opt == "--desktop": desktop = True
 
     if not infile:
         print "No input file"
@@ -349,12 +346,9 @@ if __name__ == "__main__":
 
     if css:
         makeCss(infile, outfile)
-
-    if slant:
-        makeSlanted(infile, outfile, slant)
-
-    if web:
+    elif web:
         makeWeb(infile, outfile)
-
-    if desktop:
+    else:
+        if slant:
+            makeSlanted(infile, outfile, slant)
         makeDesktop(infile, outfile, version)
