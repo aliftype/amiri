@@ -48,10 +48,11 @@ def runHB(text, font):
 def buildCompatChars(font, hbfont):
     zwj = u'\u200D'
     ranges = (
-            (0xfb50, 0xfd3d),
+            (0xfb50, 0xfbb1),
+            (0xfbd3, 0xfd3d),
             (0xfd50, 0xfdf9),
             (0xfdfc, 0xfdfc),
-            (0xfe70, 0xfeff),
+            (0xfe70, 0xfefc),
             )
     text = u''
     codes = []
