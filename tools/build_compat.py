@@ -47,7 +47,8 @@ def runHB(text, font):
 def buildCompatChars(font, hbfont):
     zwj = u'\u200D'
     ranges = (
-            (0xfb50, 0xfdff),
+            (0xfb50, 0xfd3d),
+            (0xfd50, 0xfdf9),
             (0xfe70, 0xfeff),
             )
     text = u''
