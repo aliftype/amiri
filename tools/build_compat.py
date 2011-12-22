@@ -92,6 +92,7 @@ def buildCompatChars(font, hbfont):
 
                 matrix = psMat.translate(x + x_offset, y_offset)
 
+                # ignore blank glyphs, e.g. space or ZWJ
                 if font[name].foreground or font[name].references:
                     glyph.addReference(name, matrix)
 
