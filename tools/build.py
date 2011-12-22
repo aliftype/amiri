@@ -190,10 +190,28 @@ def makeWeb(infile, outfile):
 
     # "short-post" generates a post table without glyph names to save some KBs
     # since glyph names are only needed for PDF's as readers use them to
-    # "guess" charcters when copying text, which is of little use in web fonts.
+    # "guess" characters when copying text, which is of little use in web fonts.
     flags = ("opentype", "short-post")
 
     font = fontforge.open(infile)
+
+    # removed compatibility glyphs that of little use on the web
+    compat_ranges = (
+            (0xfb50, 0xfbb1),
+            (0xfbd3, 0xfd3d),
+            (0xfd50, 0xfdf9),
+            (0xfdfc, 0xfdfc),
+            (0xfe70, 0xfefc),
+            )
+
+    for glyph in font.glyphs():
+        for i in compat_ranges:
+            start = i[0]
+            end = i[1]
+            if start <= glyph.unicode <= end:
+                font.removeGlyph(glyph)
+                break
+
     tmpfont = mkstemp(suffix=os.path.basename(outfile))[1]
     font.generate(tmpfont, flags=flags)
     font.close()
