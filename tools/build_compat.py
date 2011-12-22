@@ -11,6 +11,7 @@ def runHB(text, font):
             '--direction=rtl',
             '--script=arab',
             '--language=ar',
+            '--features=+ss01', # for U+FDFC
             '--font-file=%s' %font,
             '--text=%s'      %text]
 
@@ -49,6 +50,7 @@ def buildCompatChars(font, hbfont):
     ranges = (
             (0xfb50, 0xfd3d),
             (0xfd50, 0xfdf9),
+            (0xfdfc, 0xfdfc),
             (0xfe70, 0xfeff),
             )
     text = u''
