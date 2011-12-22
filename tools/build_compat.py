@@ -81,6 +81,7 @@ def buildCompatChars(font, hbfont):
         if components:
             glyph = font.createChar(c)
             glyph.clear()
+            glyph.color = 0xff0000 # red color
             x = 0
             for component in components:
                 name = component[0]
