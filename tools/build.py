@@ -78,13 +78,6 @@ def cleanAnchors(font):
         lookup = font.getLookupOfSubtable(subtable)
         font.removeLookup(lookup)
 
-def cleanUnused(font):
-    for glyph in font.glyphs():
-        # glyphs colored yellow are pending removal, so we remove them from the
-        # final font.
-        if glyph.color == 0xffff00:
-            font.removeGlyph(glyph)
-
 def flattenNestedReferences(font, ref, new_transform=None):
     """Flattens nested references by replacing them with the ultimate reference
     and applying any transformation matrices involved, so that the final font
@@ -283,9 +276,6 @@ def makeDesktop(infile, outfile, version):
 
     # fix some common font issues
     validateGlyphs(font)
-
-    # remove unused glyphs
-    cleanUnused(font)
 
     if font.sfd_path:
         feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
