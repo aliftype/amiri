@@ -185,6 +185,77 @@ def generateFont(font, outfile, hack=False):
         font.generate(outfile, flags=flags)
     font.close()
 
+def drawOverUnderline(glyph, pos, thickness, width):
+    pen = glyph.glyphPen()
+
+    pen.moveTo((-50, pos))
+    pen.lineTo((-50, pos + thickness))
+    pen.lineTo((width + 50, pos + thickness))
+    pen.lineTo((width + 50, pos))
+    pen.closePath()
+
+def makeOverUnderline(font):
+    thickness = font.uwidth # underline width (thickness)
+    o_pos = font.os2_typoascent
+    u_pos = font.upos - thickness # underline pos
+    minwidth = 100.0
+
+    widths = {}
+
+    for glyph in font.glyphs():
+        if glyph.glyphclass == 'baseglyph':
+            width = round(glyph.width/100) * 100
+            width = width > minwidth and width or minwidth
+            if not width in widths:
+                widths[width] = []
+            widths[width].append(glyph.glyphname)
+
+    o_encoded = font.createChar(0x0305, 'uni0305')
+    u_encoded = font.createChar(0x0332, 'uni0332')
+    o_encoded.width = u_encoded.width = 0
+    o_encoded.glyphclass = u_encoded.glyphclass = 'mark'
+    drawOverUnderline(o_encoded, o_pos, thickness, 500)
+    drawOverUnderline(u_encoded, u_pos, thickness, 500)
+
+    o_base = font.createChar(-1, 'uni0305.0')
+    u_base = font.createChar(-1, 'uni0332.0')
+    o_base.width = u_base.width = 0
+    o_base.glyphclass = u_base.glyphclass = 'baseglyph'
+    drawOverUnderline(o_base, o_pos, thickness, 500)
+    drawOverUnderline(u_base, u_pos, thickness, 500)
+
+    font.addLookup('mark hack', 'gsub_single', (), (("mark",(("arab",("dflt")),)),), font.gsub_lookups[-1])
+    font.addLookupSubtable('mark hack', 'mark hack 1')
+
+    o_encoded.addPosSub('mark hack 1', o_base.glyphname)
+    u_encoded.addPosSub('mark hack 1', u_base.glyphname)
+
+    context_lookup_name = 'OverUnderLine'
+    font.addLookup(context_lookup_name, 'gsub_contextchain', ('ignore_marks'), (("mark",(("arab",("dflt")),)),), font.gsub_lookups[-1])
+
+    for width in sorted(widths.keys()):
+        o_name = 'uni0305.%d' % width
+        u_name = 'uni0332.%d' % width
+        o_glyph = font.createChar(-1, o_name)
+        u_glyph = font.createChar(-1, u_name)
+
+        o_glyph.glyphclass = u_glyph.glyphclass = 'mark'
+
+        drawOverUnderline(o_glyph, o_pos, thickness, width)
+        drawOverUnderline(u_glyph, u_pos, thickness, width)
+
+        single_lookup_name = str(width)
+
+        font.addLookup(single_lookup_name, 'gsub_single', (), (), font.gsub_lookups[-1])
+        font.addLookupSubtable(single_lookup_name, single_lookup_name + '1')
+
+        o_base.addPosSub(single_lookup_name + '1', o_name)
+        u_base.addPosSub(single_lookup_name + '1', u_name)
+
+        rule = '| [%s] [%s %s] @<%s> | ' %(" ".join(widths[width]), o_base.glyphname, u_base.glyphname, single_lookup_name)
+
+        font.addContextualSubtable(context_lookup_name, context_lookup_name + str(width), 'coverage', rule)
+
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
 
@@ -298,6 +369,8 @@ def makeDesktop(infile, outfile, version):
     if font.sfd_path:
         feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
         mergeFeatures(font, feafile)
+
+    #makeOverUnderline(font)
 
     generateFont(font, outfile, True)
 
