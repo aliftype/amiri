@@ -195,6 +195,9 @@ def drawOverUnderline(glyph, pos, thickness, width):
     pen.closePath()
 
 def makeOverUnderline(font):
+    # test string:
+    # صِ̅فْ̅ ̅خَ̅ل̅قَ̅ ̅بًّ̅ صِ̲فْ̲ ̲خَ̲ل̲قَ̲ ̲بِ̲
+
     thickness = font.uwidth # underline width (thickness)
     o_pos = font.os2_typoascent
     u_pos = font.upos - thickness # underline pos
