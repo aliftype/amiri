@@ -3,8 +3,8 @@ StartChar: aYaa.fina_LamYaaFina
 Encoding: 65628 -1 93
 Width: 961
 Flags: W
-AnchorPoint: "HamzaBelow" 749 -1049 basechar 0
-AnchorPoint: "DigitBelow" 749 -1049 basechar 0
+AnchorPoint: "HamzaBelow" 669 -1049 basechar 0
+AnchorPoint: "DigitBelow" 669 -1049 basechar 0
 AnchorPoint: "DigitAbove" 582 535 basechar 0
 AnchorPoint: "AlefAbove" 600 0 basechar 0
 AnchorPoint: "RingBelow" 630 -640 basechar 0
@@ -15,9 +15,9 @@ AnchorPoint: "VAbove" 482 535 basechar 0
 AnchorPoint: "Tail" 340 190 basechar 0
 AnchorPoint: "TashkilBelow" 649 -760 basechar 0
 AnchorPoint: "TashkilAbove" 390 1640 basechar 0
-AnchorPoint: "TwoDotsBelow" 638 -1049 basechar 0
+AnchorPoint: "TwoDotsBelow" 558 -1049 basechar 0
 AnchorPoint: "HamzaAbove" 382 535 basechar 0
-AnchorPoint: "DotBelow" 749 -1049 basechar 0
+AnchorPoint: "DotBelow" 669 -1049 basechar 0
 LayerCount: 3
 Back
 SplineSet
