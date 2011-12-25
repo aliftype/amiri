@@ -94,7 +94,7 @@ feature calt {
   lookupflag IgnoreMarks;
     sub [@aBaa.medi @aSad.init @aSad.medi @aSen.init @aSen.medi @aBaa.medi_BaaBaaInit]
         [@aBaa.medi]' lookup HighBaa
-        [@aBaa.fina @aBaa.medi @aSen.fina @aSen.medi @aBaa.medi_BaaHehMedi @aSen.medi_PreYaa];
+        [@aBaa.fina @aBaa.medi @aSen.fina @aBaa.medi_BaaHehMedi @aSen.medi @aSen.medi_PreYaa];
     sub [@aBaa.medi]' lookup HighBaa
         [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
     sub [@aBaa.init]' lookup HighBaa
