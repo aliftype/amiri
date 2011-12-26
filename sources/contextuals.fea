@@ -92,6 +92,12 @@ lookup HighBaa {
 
 feature calt {
   lookupflag IgnoreMarks;
+    # hack to prevent double high baa in سببس and likes
+    sub [@aSen.init @aSen.medi]'
+        [@aBaa.medi]'
+        [@aBaa.medi]' lookup HighBaa
+        [@aSen.medi @aSen.fina]';
+
     sub [@aBaa.medi @aSad.init @aSad.medi @aSen.init @aSen.medi @aBaa.medi_BaaBaaInit]
         [@aBaa.medi]' lookup HighBaa
         [@aBaa.fina @aBaa.medi @aSen.fina @aBaa.medi_BaaHehMedi @aSen.medi @aSen.medi_PreYaa];
