@@ -124,3 +124,4 @@ dist: all check pack doc
 	@cp $(BUILD) $(DIST)/$(TOOLS)
 	@cp $(RUNTEST) $(DIST)/$(TOOLS)
 	@tar cfj $(DIST).tar.bz2 $(DIST)
+	@tar cfj $(DIST)-ctan.tar.bz2 $(DIST) --exclude "$(WEB)*"
