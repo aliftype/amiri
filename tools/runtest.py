@@ -16,11 +16,11 @@ def runHB(row, font):
     process = subprocess.Popen(args, stdout=subprocess.PIPE)
     return process.communicate()[0].strip()
 
-def runTest(reader, font):
+def runTest(test, font):
     count = 0
     failed = {}
     passed = []
-    for row in reader:
+    for row in test:
         count += 1
         row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
         text = row[4]
@@ -33,9 +33,9 @@ def runTest(reader, font):
 
     return passed, failed
 
-def initTest(reader, font):
+def initTest(test, font):
     out = ""
-    for row in reader:
+    for row in test:
         result = runHB(row, font)
         out += "%s;%s\n" %(";".join(row), result)
 
@@ -52,28 +52,31 @@ if __name__ == '__main__':
     for arg in args:
         testname = arg
 
-        testfd = open(testname, 'r')
-        fontname = testfd.readline().strip("# \n")
-        reader = csv.reader(testfd, delimiter=';')
+        reader = csv.reader(open(testname), delimiter=';')
+
+        test = []
+        for row in reader:
+            test.append(row)
 
         if init:
             outname = testname+".test"
             outfd = open(outname, "w")
             outfd.write("# %s\n" %fontname)
-            outfd.write(initTest(reader, fontname))
+            outfd.write(initTest(test, fontname))
             outfd.close()
             sys.exit(0)
 
-        passed, failed = runTest(reader, fontname)
-        message = "%s: %d passed, %d failed" %(os.path.basename(testname), len(passed), len(failed))
+        for style in ('regular', 'bold', 'slanted', 'boldslanted'):
+            fontname = 'amiri-%s.ttf' % style
+            passed, failed = runTest(test, fontname)
+            message = "%s: font '%s', %d passed, %d failed" %(os.path.basename(testname),
+                    fontname, len(passed), len(failed))
 
-        if failed:
             print message
-            for test in failed:
-                print test
-                print "string:   \t", failed[test][0]
-                print "reference:\t", failed[test][1]
-                print "result:   \t", failed[test][2]
-            sys.exit(1)
-        else:
-            print message
+            if failed:
+                for test in failed:
+                    print test
+                    print "string:   \t", failed[test][0]
+                    print "reference:\t", failed[test][1]
+                    print "result:   \t", failed[test][2]
+                sys.exit(1)
