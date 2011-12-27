@@ -1,6 +1,6 @@
 Amiri Font
 
-Amiri is a classical Arabic typeface, Naskh style, for typesetting books and
+Amiri is a classical Arabic typeface in Naskh style for typesetting books and
 other running text.
 
 Amiri is a revival of the beautiful typeface pioneered in early 20th century by

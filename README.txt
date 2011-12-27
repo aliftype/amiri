@@ -1,10 +1,8 @@
 designer: Khaled Hosny
 url: http://amirifont.org
 license: OFL
-description: Amiri font is an open font revival of the Arabic Naskh typeface
-designed and first used by Bulaq Press in Cairo (Maṭbaʿtu Būlāq, also known as
-Āl-Maṭbaʿtu Āl-Āmīriīaʰ) in the early 2th century.  Amiri's uniqueness comes
-from its superb balance between the beauty of Naskh calligraphy and the
-requirements of elegant typography.  Amiri is most suitable for running text
-and book printing.
+description: Amiri is a classical Arabic typeface in Naskh style for
+typesetting books and other running text. Its design is a revival of the
+beautiful typeface pioneered in early 20th century by Bulaq Press in Cairo,
+also known as Amiria Press, after which the font is named.
 
