@@ -375,6 +375,12 @@ def makeDesktop(infile, outfile, version):
 
     #makeOverUnderline(font)
 
+    # sample text to be used by font viewers
+    sample = 'صِفْ خَلْقَ خَوْدٍ كَمِثْلِ ٱلشَّمْسِ إِذْ بَزَغَتْ يَحْظَىٰ ٱلضَّجِيعُ بِهَا نَجْلَاءَ مِعْطَارِ.'
+
+    for lang in ('Arabic (Egypt)', 'English (US)'):
+        font.appendSFNTName(lang, 'Sample Text', sample)
+
     generateFont(font, outfile, True)
 
 def usage(extramessage, code):
