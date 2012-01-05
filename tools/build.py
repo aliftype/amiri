@@ -3,7 +3,7 @@
 #
 # build.py - Amiri font build utility
 #
-# Written in 2010-2011 by Khaled Hosny <khaledhosny@eglug.org>
+# Written in 2010-2012 by Khaled Hosny <khaledhosny@eglug.org>
 #
 # To the extent possible under law, the author have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
