@@ -59,6 +59,7 @@ if __name__ == '__main__':
             test.append(row)
 
         if init:
+            fontname = 'amiri-regular.ttf'
             outname = testname+".test"
             outfd = open(outname, "w")
             outfd.write("# %s\n" %fontname)
