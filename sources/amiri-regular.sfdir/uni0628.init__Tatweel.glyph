@@ -1,13 +1,13 @@
 
 StartChar: uni0628.init_Tatweel
 Encoding: 68539 -1 3227
-Width: 673
+Width: 585
 VWidth: 0
 Flags: W
 AnchorPoint: "TashkilAbove" 300 1400 basechar 0
-AnchorPoint: "TashkilBelow" 215 -670 basechar 0
+AnchorPoint: "TashkilBelow" 305 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 195 -1 N 1 0 0 1 415 -490 2
-Refer: 223 -1 N 1 0 0 1 0 0 2
+Refer: 195 -1 N 1 0 0 1 265 -490 2
+Refer: 223 -1 N 1 0 0 1 0 0 3
 EndChar
