@@ -62,7 +62,6 @@ if __name__ == '__main__':
             fontname = 'amiri-regular.ttf'
             outname = testname+".test"
             outfd = open(outname, "w")
-            outfd.write("# %s\n" %fontname)
             outfd.write(initTest(test, fontname))
             outfd.close()
             sys.exit(0)
