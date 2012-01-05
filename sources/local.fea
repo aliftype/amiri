@@ -25,3 +25,19 @@ feature locl {
     language SND exclude_dflt;
       lookup loclSindhiDigits;
 } locl;
+
+
+# some implementations (e.g ICU) does not support 'locl' feature for Arabic
+# script, so we work around this by using 'ccmp' registered for the needed
+# languages, which should essentially give the same result.
+
+feature ccmp {
+  lookup loclPunct;
+
+  script arab;
+    language URD exclude_dflt;
+      lookup loclUrduDigits;
+
+    language SND exclude_dflt;
+      lookup loclSindhiDigits;
+} ccmp;
