@@ -1,20 +1,27 @@
-feature locl {
+lookup loclPunct {
    sub period         by period.ara;
    sub guillemotleft  by guillemotleft.ara;
    sub guillemotright by guillemotright.ara;
-} locl;
+} loclPunct;
+
+lookup loclUrduDigits {
+   sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
+} loclUrduDigits;
+
+lookup loclSindhiDigits {
+   sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
+} loclSindhiDigits;
 
 feature locl {
-  script arab;
-    language dflt;
-      sub at             by at.ara;
-} locl;
+  lookup loclPunct;
 
-# localised Urdu and Sindhi digits
-feature locl {
   script arab;
+    language ARA;
+      sub at by at.ara;
+
     language URD exclude_dflt;
-      sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
+      lookup loclUrduDigits;
+
     language SND exclude_dflt;
-      sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
+      lookup loclSindhiDigits;
 } locl;
