@@ -15,28 +15,28 @@
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
-    enum pos @RaaWaw @2nd_1 <-600 0 -600 0>;
-    enum pos @1st_2 @2nd_1 <-600 0 -600 0>;
-    enum pos @1st_3 @2nd_1 <-800 0 -800 0>;
+    pos @RaaWaw' <-600 0 -600 0> @2nd_1;
+    pos @1st_2' <-600 0 -600 0> @2nd_1;
+    pos @1st_3' <-800 0 -800 0> @2nd_1;
 
-    enum pos @RaaWaw @2nd_2 <-300 0 -300 0>;
-    enum pos @1st_2 @2nd_2 <-300 0 -300 0>;
-    enum pos @1st_3 @2nd_2 <-400 0 -400 0>;
+    pos @RaaWaw' <-300 0 -300 0> @2nd_2;
+    pos @1st_2' <-300 0 -300 0> @2nd_2;
+    pos @1st_3' <-400 0 -400 0> @2nd_2;
 
-    enum pos @RaaWaw @2nd_3 <-100 0 -100 0>;
+    pos @RaaWaw' <-100 0 -100 0> @2nd_3;
 
-    enum pos @1st_3 @2nd_3 <-200 0 -200 0>;
-    enum pos @1st_3 @2nd_4 <-400 0 -400 0>;
+    pos @1st_3' <-200 0 -200 0> @2nd_3;
+    pos @1st_3' <-400 0 -400 0> @2nd_4;
 
     # +ve kern so that the tail of raa/waw does not touch the dot of baa
-    enum pos @RaaWaw @aBaaDotBelow <170 0 170 0>;
+    pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
 } kern;
 
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
     # this baa requires an extra +ve kern than the ones above
     # XXX: we only need a subset of @aBaa.init_High
-    enum pos @RaaWaw @aBaa.init_High <80 0 80 0>;
+    pos @RaaWaw' <80 0 80 0> @aBaa.init_High;
 } kern;
 
 lookup pos_500 {
