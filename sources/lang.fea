@@ -1,4 +1,5 @@
-#languagesystem DFLT dflt;
+languagesystem DFLT dflt;
+languagesystem latn dflt;
 languagesystem arab dflt;
 languagesystem arab ARA;
 languagesystem arab URD;
