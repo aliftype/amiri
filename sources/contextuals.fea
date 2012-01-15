@@ -1,7 +1,14 @@
 # replace tashkil following shadda by smaller alternates
+
+@ShaddaTashkil = [uni064E uni064B uni064C uni064F uni08F0 uni08F1];
+@ShaddaTashkil.small = [uni064E.small uni064B.small uni064C.small uni064F.small uni08F0.small uni08F1.small];
+
+lookup SamallTashkil {
+  sub @ShaddaTashkil by @ShaddaTashkil.small;
+} SamallTashkil;
+
 feature calt {
-    sub [uni0651] [uni064E uni064B uni064C uni064F uni08F0 uni08F1]'
-     by [uni064E.small uni064B.small uni064C.small uni064F.small uni08F0.small uni08F1.small];
+    sub [uni0651] @ShaddaTashkil' lookup SamallTashkil;
 } calt;
 
 # replace tashkil following hamza by smaller alternates
