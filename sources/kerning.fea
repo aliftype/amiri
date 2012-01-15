@@ -39,15 +39,11 @@ feature kern {
     pos @RaaWaw' <80 0 80 0> @aBaa.init_High;
 } kern;
 
-lookup pos_500 {
-  pos @2nd_1 -500;
-} pos_500;
-
 feature kern {
   lookupflag IgnoreMarks, RightToLeft;
     # kern heh isol/final followed by kaf, does not happen in Arabic but can be
     # seen in Kurdish or Persian using ZWNJ between them, so we double the rule
     # w/o ZWNJ as someapplications remove it after shaping.
-    pos         @1st_4 @2nd_1' lookup pos_500;
-    pos uni200C @1st_4 @2nd_1' lookup pos_500;
+    pos         @1st_4 @2nd_1' -500;
+    pos uni200C @1st_4 @2nd_1' -500;
 } kern;
