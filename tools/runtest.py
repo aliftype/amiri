@@ -36,8 +36,10 @@ def runTest(test, font):
 def initTest(test, font):
     out = ""
     for row in test:
+        text = row[4]
+        row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
         result = runHB(row, font)
-        out += "%s;%s\n" %(";".join(row), result)
+        out += "%s;%s;%s\n" %(";".join(row[:4]), text, result)
 
     return out
 
