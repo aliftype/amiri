@@ -178,5 +178,6 @@ feature mark {
 
   # alef
   pos [uni0627.fina_Wide uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <250 0 250 0> [uni06E4];
+  pos [uni0627.fina_Wide uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <350 0 350 0> [uni0653];
   pos [uni0627]' <150 0 300 0> [uni06E4];
 } mark;
