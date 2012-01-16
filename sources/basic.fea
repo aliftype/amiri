@@ -267,7 +267,8 @@ feature medi {
 feature fina {
   lookupflag IgnoreMarks;
     sub uni0620 by uni0620.fina;
-    sub uni0622 by uni0622.fina;
+    sub uni0622 by uni0627.fina uni0653; # decompose
+#   sub uni0622 by uni0622.fina;
     sub uni0623 by uni0623.fina;
     sub uni0624 by uni0624.fina;
     sub uni0625 by uni0625.fina;
