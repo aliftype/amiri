@@ -1049,5 +1049,5 @@ feature calt {
 
 # replace final alef followed by madda by a wider one
 feature calt {
-  sub [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
+  sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
 } calt;
