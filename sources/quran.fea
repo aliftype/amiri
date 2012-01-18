@@ -126,7 +126,7 @@ feature calt {
   lookupflag IgnoreMarks;
     # hamza between lam and alef needs special treatment as it should not have
     # a connecting stroke to avoid breaking lam-alef. Other floats don't
-    # normally occur between lam and alef so we don't bothe handling them
+    # normally occur between lam and alef so we don't bother handling them
     sub uni0644'      lookup LamAlefIsol
         uni0621'      lookup FloatHamza
         uni0627'      lookup LamAlefIsol;
@@ -170,7 +170,7 @@ feature calt {
     sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
 } calt;
 
-# some glyphs need more room to accomodate madda mark, so we change the advance
+# some glyphs need more room to accommodate madda mark, so we change the advance
 # width on fly.
 feature mark {
   # small waw
