@@ -147,6 +147,12 @@ feature calt {
         @after'       lookup After;
 } calt;
 
+# kern floating hamza between final lam-alef to avoid glyph overlap
+feature kern {
+  lookupflag IgnoreMarks;
+    pos uni0621.float' <-300 0 0 0> @aAlf.fina_LamAlfFina;
+} kern;
+
 #
 # sequential tanween
 #
