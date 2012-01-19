@@ -15,8 +15,7 @@ DIST=$(NAME)-$(VERSION)
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
 FF=python $(BUILD)
-MKEOT=ttf2eot
-MKWOFF=sfnt2woff
+SFNTTOOL=sfnttool
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)
@@ -57,12 +56,12 @@ $(NAME)-boldslanted.ttf: $(NAME)-bold.ttf $(BUILD)
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(MKWOFF) $<
+	@$(SFNTTOOL) -w $< $@
 
 $(WEB)/%.eot: $(WEB)/%.ttf
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
-	@$(MKEOT) $< > $@
+	@$(SFNTTOOL) -e -x $< $@
 
 $(WEB)/%.css: $(WTTF) $(BUILD)
 	@echo "   GEN\t$@"
