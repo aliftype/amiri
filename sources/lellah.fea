@@ -18,6 +18,7 @@ lookup Lellah {
     sub uni0644.init by uni0644.init_Lellah;
     sub uni0644.medi by uni0644.medi_Lellah;
     sub uni0647.fina by uni0647.fina_Lellah;
+    sub uni06C1.fina by uni0647.fina_Lellah;
 } Lellah;
 
 lookup Lellah2 {
@@ -89,7 +90,7 @@ lookup LamLamInitX {
 @Lm = [uni0644.medi];
 @Ai = [uni0627 uni0622 uni0671];
 @Af = [uni0627.fina];
-@Hf = [uni0647.fina];
+@Hf = [uni0647.fina uni06C1.fina];
 @xF = [uni064E uni0670];
 
 feature calt {
@@ -133,5 +134,5 @@ feature calt {
 # InDesign does not apply the heh substituion, so we try to apply it again.
 feature calt {
   lookupflag IgnoreMarks;
-    sub uni0644.medi_Lellah' uni0647.fina' lookup Lellah;
+    sub uni0644.medi_Lellah' @Hf' lookup Lellah;
 } calt;
