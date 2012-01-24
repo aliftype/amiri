@@ -153,6 +153,12 @@ feature kern {
     pos uni0621.float' <-300 0 0 0> @aAlf.fina_LamAlfFina;
 } kern;
 
+# turn kashida followed by small alef to medial small alef, a common hack to
+# get medial floating small alef.
+feature calt {
+  sub uni0640.1 uni0670 by uni0670.medi;
+} calt;
+
 #
 # sequential tanween
 #
