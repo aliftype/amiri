@@ -517,33 +517,33 @@ lookup LamMemFinaExtended {
 
 feature calt {
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.below @Tashkil.above
+      @Tashkil.below' @Tashkil.above'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above @Tashkil.below
+      @Tashkil.above' @Tashkil.below'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.medi' lookup LamMemFina
-      @Tashkil.below
+      @Tashkil.below'
       @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.below;
+      @Tashkil.below';
 } calt;
 
 # ditto
@@ -553,33 +553,33 @@ lookup MemExtended {
 
 feature calt {
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.fina' lookup MemExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.fina' lookup MemExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.fina' lookup MemExtended
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.fina' lookup MemExtended
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.below @Tashkil.above
+      @Tashkil.below' @Tashkil.above'
       @aMem.fina' lookup MemExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above @Tashkil.below
+      @Tashkil.above' @Tashkil.below'
       @aMem.fina' lookup MemExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.below
+      @Tashkil.below'
       @aMem.fina' lookup MemExtended
-      @Tashkil.below;
+      @Tashkil.below';
 } calt;
 
 # ditto
@@ -589,33 +589,33 @@ lookup LamMemInitTatweel {
 
 feature calt {
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.below @Tashkil.above
+      @Tashkil.below' @Tashkil.above'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.above @Tashkil.below
+      @Tashkil.above' @Tashkil.below'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aLam.init' lookup LamMemInit
-      @Tashkil.below
+      @Tashkil.below'
       @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.below;
+      @Tashkil.below';
 } calt;
 
 # ditto
@@ -625,33 +625,33 @@ lookup KafMemFinaExtended {
 
 feature calt {
   sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above
+      @Tashkil.above'
+      @aMem.fina' lookup KafMemFinaExtended
+      @Tashkil.above';
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above' @Tashkil.above'
+      @aMem.fina' lookup KafMemFinaExtended
+      @Tashkil.above';
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above' @Tashkil.above'
+      @aMem.fina' lookup KafMemFinaExtended
+      @Tashkil.above' @Tashkil.above';
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.above'
+      @aMem.fina' lookup KafMemFinaExtended
+      @Tashkil.above' @Tashkil.above';
+  sub @aKaf.medi' lookup KafMemFina
+      @Tashkil.below' @Tashkil.above'
       @aMem.fina' lookup KafMemFinaExtended
       @Tashkil.above;
   sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.below'
       @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above @Tashkil.above
+      @Tashkil.below'
       @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above @Tashkil.above;
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above @Tashkil.above;
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.below @Tashkil.above
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above;
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above @Tashkil.below
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above;
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.below
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.below;
+      @Tashkil.below';
 } calt;
 
 feature calt {
@@ -890,33 +890,33 @@ lookup FaaMemTatweel {
 
 feature calt {
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above @Tashkil.above
+      @Tashkil.above' @Tashkil.above'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above
+      @Tashkil.above'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above @Tashkil.above;
+      @Tashkil.above' @Tashkil.above';
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.below @Tashkil.above
+      @Tashkil.below' @Tashkil.above'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above @Tashkil.below
+      @Tashkil.above' @Tashkil.below'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above;
+      @Tashkil.above';
   sub @aFaa.init' lookup KafMemInit
-      @Tashkil.below
+      @Tashkil.below'
       @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.below;
+      @Tashkil.below';
 } calt;
 
 feature calt {
