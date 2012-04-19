@@ -259,6 +259,49 @@ def makeOverUnderline(font):
 
         font.addContextualSubtable(context_lookup_name, context_lookup_name + str(width), 'coverage', rule)
 
+def mergeLatin(font):
+    styles = {"Regular": "Roman",
+              "Slanted": "Italic",
+              "Bold": "Bold",
+              "Bold Slanted": "BoldItalic"}
+
+    latin_file = "Crimson-%s.sfd" %styles[font.fontname.split("-")[1]]
+
+    tmpfont = mkstemp(suffix=os.path.basename(latin_file))[1]
+    latin_font = fontforge.open("sources/crimson/%s" %latin_file)
+    latin_font.em = 2048
+
+    for glyph in latin_font.glyphs():
+        if glyph.glyphname != "space" and glyph.glyphname in font:
+            latin_font.selection.select(glyph.glyphname)
+            latin_font.copy()
+            font.selection.select(glyph.glyphname)
+            font.paste()
+
+    tmpfea = mkstemp(suffix='.fea')[1]
+    latin_font.generateFeatureFile(tmpfea)
+
+    for lookup in latin_font.gpos_lookups:
+        latin_font.removeLookup(lookup)
+
+    for lookup in latin_font.gsub_lookups:
+        latin_font.removeLookup(lookup)
+
+    latin_font.save(tmpfont)
+    latin_font.close()
+
+    font.mergeFonts(tmpfont)
+    font.mergeFeature(tmpfea)
+
+    os.remove(tmpfont)
+    os.remove(tmpfea)
+
+    for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
+        font[rtl].clear()
+        font[rtl].addReference(ltr, psMat.scale(-1, 1))
+        font[rtl].left_side_bearing = font[ltr].right_side_bearing
+        font[rtl].right_side_bearing = font[ltr].left_side_bearing
+
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
 
@@ -380,6 +423,8 @@ def makeDesktop(infile, outfile, version):
 
     for lang in ('Arabic (Egypt)', 'English (US)'):
         font.appendSFNTName(lang, 'Sample Text', sample)
+
+    mergeLatin(font)
 
     generateFont(font, outfile, True)
 
