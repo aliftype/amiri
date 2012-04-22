@@ -1,11 +1,11 @@
 
 StartChar: uni0649.fina_FaaYaaFina
 Encoding: 66486 -1 1241
-Width: 962
-Flags: W
-AnchorPoint: "TashkilAbove" 360 1640 basechar 0
-AnchorPoint: "TashkilBelow" 391 -890 basechar 0
-AnchorPoint: "AlefAbove" 600 -200 basechar 0
+Width: 975
+VWidth: 0
+AnchorPoint: "TashkilAbove" 700 1640 basechar 0
+AnchorPoint: "TashkilBelow" 700 -800 basechar 0
+AnchorPoint: "AlefAbove" 570 0 basechar 0
 LayerCount: 3
 Fore
 Refer: 74 -1 N 1 0 0 1 0 0 3
