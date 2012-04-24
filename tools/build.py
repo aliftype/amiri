@@ -18,6 +18,8 @@ import psMat
 import sys
 import os
 import getopt
+import math
+import unicodedata as ucd
 from tempfile import mkstemp
 from fontTools.ttLib import TTFont
 
@@ -263,7 +265,7 @@ def mergeLatin(font):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
               "Bold": "Bold",
-              "Bold Slanted": "BoldItalic"}
+              "BoldSlanted": "BoldItalic"}
 
     latin_file = "Crimson-%s.sfd" %styles[font.fontname.split("-")[1]]
 
@@ -376,15 +378,34 @@ def makeWeb(infile, outfile):
 
     os.remove(tmpfont)
 
-def makeSlanted(infile, outfile, slant):
-    import math
+def makeSlanted(infile, outfile, version, slant):
 
-    font = fontforge.open(infile)
+    makeDesktop(infile, outfile, version, False)
+
+    font = fontforge.open(outfile)
 
     # compute amout of skew, magic formula copied from fontforge sources
     skew = psMat.skew(-slant * math.pi/180.0)
 
     font.selection.all()
+
+    for glyph in font.glyphs():
+        u = glyph.unicode
+        if u == -1:
+            if '.' in glyph.glyphname:
+                n = glyph.glyphname.split('.')[0]
+                u = fontforge.unicodeFromName(n)
+            if '_' in glyph.glyphname:
+                for n in glyph.glyphname.split('_'):
+                    uu = fontforge.unicodeFromName(n)
+                    if uu != -1:
+                        u = uu
+
+        if u != -1:
+            c = ucd.bidirectional(unichr(u))
+            if c in ("L", "EN", "AN", "ES", "ET", "CS", "NSM", "BN", "ON"):
+                font.selection.select(("less", None), glyph)
+
     font.transform(skew)
 
     # fix metadata
@@ -398,9 +419,11 @@ def makeSlanted(infile, outfile, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
+    mergeLatin(font)
+
     generateFont(font, outfile)
 
-def makeDesktop(infile, outfile, version):
+def makeDesktop(infile, outfile, version, latin=True):
     font = fontforge.open(infile)
 
     if version:
@@ -424,7 +447,8 @@ def makeDesktop(infile, outfile, version):
     for lang in ('Arabic (Egypt)', 'English (US)'):
         font.appendSFNTName(lang, 'Sample Text', sample)
 
-    mergeLatin(font)
+    if latin:
+        mergeLatin(font)
 
     generateFont(font, outfile, True)
 
@@ -482,9 +506,11 @@ if __name__ == "__main__":
         makeCss(infile, outfile)
     elif web:
         makeWeb(infile, outfile)
-    elif slant:
-        makeSlanted(infile, outfile, slant)
     else:
         if not version:
             usage("No version specified", -1)
-        makeDesktop(infile, outfile, version)
+
+        if slant:
+            makeSlanted(infile, outfile, version, slant)
+        else:
+            makeDesktop(infile, outfile, version)

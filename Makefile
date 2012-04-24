@@ -45,13 +45,13 @@ $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@$(FF) --input $< --output $@ --version $(VERSION)
 
-$(NAME)-slanted.ttf: $(NAME)-regular.ttf $(BUILD)
+$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7 1>/dev/null 2>&1
+	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
 
-$(NAME)-boldslanted.ttf: $(NAME)-bold.ttf $(BUILD)
+$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7 1>/dev/null 2>&1
+	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
