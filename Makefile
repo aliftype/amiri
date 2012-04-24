@@ -36,22 +36,26 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
+$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
+	@echo "   FF\t$@"
+	@$(FF) --input $< --output $@ --version $(VERSION)
+
+$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
+	@echo "   FF\t$@"
+	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
+
+$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-bold.fea $(FEAT) $(BUILD)
+	@echo "   FF\t$@"
+	@$(FF) --input $< --output $@ --version $(VERSION)
+
+$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-bold.fea $(FEAT) $(BUILD)
+	@echo "   FF\t$@"
+	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
+
 $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
 	@mkdir -p $(WEB)
 	@$(FF) --input $< --output $@ --web 1>/dev/null 2>&1
-
-%.ttf: $(SRC)/%.sfdir $(SRC)/%.fea $(FEAT) $(BUILD)
-	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION)
-
-$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(BUILD)
-	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
-
-$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(BUILD)
-	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --version $(VERSION) --slant=7
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF\t$@"
