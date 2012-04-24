@@ -380,9 +380,7 @@ def makeWeb(infile, outfile):
 
 def makeSlanted(infile, outfile, version, slant):
 
-    makeDesktop(infile, outfile, version, False)
-
-    font = fontforge.open(outfile)
+    font = makeDesktop(infile, outfile, version, False, False)
 
     # compute amout of skew, magic formula copied from fontforge sources
     skew = psMat.skew(-slant * math.pi/180.0)
@@ -423,7 +421,7 @@ def makeSlanted(infile, outfile, version, slant):
 
     generateFont(font, outfile)
 
-def makeDesktop(infile, outfile, version, latin=True):
+def makeDesktop(infile, outfile, version, latin=True, generate=True):
     font = fontforge.open(infile)
 
     if version:
@@ -450,7 +448,10 @@ def makeDesktop(infile, outfile, version, latin=True):
     if latin:
         mergeLatin(font)
 
-    generateFont(font, outfile, True)
+    if generate:
+        generateFont(font, outfile, True)
+    else:
+        return font
 
 def usage(extramessage, code):
     if extramessage:
