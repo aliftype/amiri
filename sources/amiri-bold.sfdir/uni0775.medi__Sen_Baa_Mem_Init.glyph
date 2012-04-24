@@ -1,13 +1,13 @@
 
 StartChar: uni0775.medi_SenBaaMemInit
-Encoding: 67677 -1 2371
+Encoding: 67677 -1 2370
 Width: 446
 Flags: W
 AnchorPoint: "TashkilAbove" -104 1750 basechar 0
 AnchorPoint: "TashkilBelow" 478 -670 basechar 0
 LayerCount: 3
 Fore
-Refer: 390 -1 N 1 0 0 1 -104 900 2
+Refer: 389 -1 N 1 0 0 1 -104 900 2
 Refer: 196 -1 N 1 0 0 1 478 -360 2
 Refer: 149 -1 N 1 0 0 1 0 0 3
 EndChar
