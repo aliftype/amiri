@@ -3,17 +3,17 @@ StartChar: aHaa.init_HaaYaaIsol
 Encoding: 65875 -1 443
 Width: 1263
 Flags: W
-AnchorPoint: "DigitBelow" 996 -220 basechar 0
-AnchorPoint: "TaaBelow" 996 180 basechar 0
-AnchorPoint: "TaaAbove" 996 970 basechar 0
-AnchorPoint: "TashkilBelow" 790 -670 basechar 0
-AnchorPoint: "TashkilAbove" 520 1640 basechar 0
-AnchorPoint: "DotAbove" 996 970 basechar 0
-AnchorPoint: "DotBelow" 996 -220 basechar 0
-AnchorPoint: "HamzaAbove" 996 970 basechar 0
-AnchorPoint: "HamzaBelow" 996 -100 basechar 0
-AnchorPoint: "TwoDotsAbove" 886 970 basechar 0
-AnchorPoint: "TwoDotsBelow" 886 -100 basechar 0
+AnchorPoint: "DotAbove" 779 1170 basechar 0
+AnchorPoint: "DotBelow" 759 0 basechar 0
+AnchorPoint: "HamzaAbove" 779 1170 basechar 0
+AnchorPoint: "HamzaBelow" 759 0 basechar 0
+AnchorPoint: "TwoDotsAbove" 669 1170 basechar 0
+AnchorPoint: "TwoDotsBelow" 659 0 basechar 0
+AnchorPoint: "TashkilAbove" 539 1640 basechar 0
+AnchorPoint: "TashkilBelow" 659 -670 basechar 0
+AnchorPoint: "TaaAbove" 779 1170 basechar 0
+AnchorPoint: "TaaBelow" 754 400 basechar 0
+AnchorPoint: "DigitBelow" 759 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
