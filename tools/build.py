@@ -267,28 +267,28 @@ def mergeLatin(font):
               "Bold": "Bold",
               "BoldSlanted": "BoldItalic"}
 
-    latin_file = "Crimson-%s.sfd" %styles[font.fontname.split("-")[1]]
+    latinfile = "Crimson-%s.sfd" %styles[font.fontname.split("-")[1]]
 
-    tmpfont = mkstemp(suffix=os.path.basename(latin_file))[1]
-    latin_font = fontforge.open("sources/crimson/%s" %latin_file)
-    latin_font.em = 2048
+    tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
+    latinfont = fontforge.open("sources/crimson/%s" %latinfile)
+    latinfont.em = 2048
 
-    validateGlyphs(latin_font) # to flatten nested refs mainly
+    validateGlyphs(latinfont) # to flatten nested refs mainly
 
     # collect latin glyphs we want to keep
-    latin_glyphs = []
+    latinglyphs = []
 
     # we want all glyphs in latin0-9 encodings
     for i in range(0, 9):
-        latin_font.encoding = 'latin%d' %i
-        for glyph in latin_font.glyphs("encoding"):
+        latinfont.encoding = 'latin%d' %i
+        for glyph in latinfont.glyphs("encoding"):
             if glyph.encoding <= 255:
-                if glyph.glyphname not in latin_glyphs:
-                    latin_glyphs.append(glyph.glyphname)
+                if glyph.glyphname not in latinglyphs:
+                    latinglyphs.append(glyph.glyphname)
             elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
                 # keep also Unicode Latin Extended-A block
-                if glyph.glyphname not in latin_glyphs:
-                    latin_glyphs.append(glyph.glyphname)
+                if glyph.glyphname not in latinglyphs:
+                    latinglyphs.append(glyph.glyphname)
 
     # keep ligatures too
     ligatures = ("f_f", "f_i", "f_f_i", "f_l", "f_f_l", "f_b", "f_f_b", "f_k",
@@ -316,28 +316,28 @@ def mergeLatin(font):
 
     for l in (ligatures, romanisation, typographic):
         for name in l:
-            if name not in latin_glyphs:
-                latin_glyphs.append(name)
+            if name not in latinglyphs:
+                latinglyphs.append(name)
 
     # keep any glyph referenced by previous glyphs
-    for name in latin_glyphs:
-        if name in latin_font:
-            glyph = latin_font[name]
+    for name in latinglyphs:
+        if name in latinfont:
+            glyph = latinfont[name]
             for ref in glyph.references:
-                latin_glyphs.append(ref[0])
+                latinglyphs.append(ref[0])
         else:
             print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
 
     # remove everything else
-    for glyph in latin_font.glyphs():
-        if glyph.glyphname not in latin_glyphs:
-            latin_font.removeGlyph(glyph)
+    for glyph in latinfont.glyphs():
+        if glyph.glyphname not in latinglyphs:
+            latinfont.removeGlyph(glyph)
 
     # remove names of removed glyphs from kern classes
-    for lookup in latin_font.gpos_lookups:
-        for subtable in latin_font.getLookupSubtables(lookup):
-            if latin_font.isKerningClass(subtable):
-                old_first, old_second, old_offsets = latin_font.getKerningClass(subtable)
+    for lookup in latinfont.gpos_lookups:
+        for subtable in latinfont.getLookupSubtables(lookup):
+            if latinfont.isKerningClass(subtable):
+                old_first, old_second, old_offsets = latinfont.getKerningClass(subtable)
                 new_first = []
                 new_second = []
                 new_offsets = []
@@ -357,7 +357,7 @@ def mergeLatin(font):
                     new_klass = []
                     if klass:
                         for name in klass:
-                            if name in latin_font:
+                            if name in latinfont:
                                 new_klass.append(name)
                     if new_klass:
                         new_first.append(new_klass)
@@ -368,7 +368,7 @@ def mergeLatin(font):
                     new_klass = []
                     if klass:
                         for name in klass:
-                            if name in latin_font:
+                            if name in latinfont:
                                 new_klass.append(name)
                     if new_klass:
                         new_second.append(new_klass)
@@ -390,26 +390,26 @@ def mergeLatin(font):
                 for i in offsets:
                     new_offsets.extend(i)
 
-                latin_font.alterKerningClass(subtable, new_first, new_second, new_offsets)
+                latinfont.alterKerningClass(subtable, new_first, new_second, new_offsets)
 
-    for glyph in latin_font.glyphs():
+    for glyph in latinfont.glyphs():
         if glyph.glyphname != "space" and glyph.glyphname in font:
-            latin_font.selection.select(glyph.glyphname)
-            latin_font.copy()
+            latinfont.selection.select(glyph.glyphname)
+            latinfont.copy()
             font.selection.select(glyph.glyphname)
             font.paste()
 
     tmpfea = mkstemp(suffix='.fea')[1]
-    latin_font.generateFeatureFile(tmpfea)
+    latinfont.generateFeatureFile(tmpfea)
 
-    for lookup in latin_font.gpos_lookups:
-        latin_font.removeLookup(lookup)
+    for lookup in latinfont.gpos_lookups:
+        latinfont.removeLookup(lookup)
 
-    for lookup in latin_font.gsub_lookups:
-        latin_font.removeLookup(lookup)
+    for lookup in latinfont.gsub_lookups:
+        latinfont.removeLookup(lookup)
 
-    latin_font.save(tmpfont)
-    latin_font.close()
+    latinfont.save(tmpfont)
+    latinfont.close()
 
     font.mergeFonts(tmpfont)
     font.mergeFeature(tmpfea)
