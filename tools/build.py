@@ -273,6 +273,125 @@ def mergeLatin(font):
     latin_font = fontforge.open("sources/crimson/%s" %latin_file)
     latin_font.em = 2048
 
+    validateGlyphs(latin_font) # to flatten nested refs mainly
+
+    # collect latin glyphs we want to keep
+    latin_glyphs = []
+
+    # we want all glyphs in latin0-9 encodings
+    for i in range(0, 9):
+        latin_font.encoding = 'latin%d' %i
+        for glyph in latin_font.glyphs("encoding"):
+            if glyph.encoding <= 255:
+                if glyph.glyphname not in latin_glyphs:
+                    latin_glyphs.append(glyph.glyphname)
+            elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
+                # keep also Unicode Latin Extended-A block
+                if glyph.glyphname not in latin_glyphs:
+                    latin_glyphs.append(glyph.glyphname)
+
+    # keep ligatures too
+    ligatures = ("f_f", "f_i", "f_f_i", "f_l", "f_f_l", "f_b", "f_f_b", "f_k",
+            "f_f_k", "f_h", "f_f_h", "f_j", "f_f_j", "T_h")
+
+    # and Arabic romanisation characters
+    romanisation = ("afii57929", "uni02BE", "uni02BE", "amacron", "uni02BE",
+            "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
+            "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
+            "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
+            "uni1E0D", "uni1E6D", "uni1E93", "dcroat", "uni02BB", "uni02BF",
+            "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
+            "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
+            "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
+            "ygrave", "agrave", "uni02BE", "aacute")
+
+    # and some typographic characters
+    typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
+            "afii00208", "quoteleft", "quoteright", "quotesinglbase",
+            "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
+            "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
+            "ellipsis", "uni202F", "perthousand", "minute", "second",
+            "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
+            "fraction")
+
+    for l in (ligatures, romanisation, typographic):
+        for name in l:
+            if name not in latin_glyphs:
+                latin_glyphs.append(name)
+
+    # keep any glyph referenced by previous glyphs
+    for name in latin_glyphs:
+        if name in latin_font:
+            glyph = latin_font[name]
+            for ref in glyph.references:
+                latin_glyphs.append(ref[0])
+        else:
+            print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
+
+    # remove everything else
+    for glyph in latin_font.glyphs():
+        if glyph.glyphname not in latin_glyphs:
+            latin_font.removeGlyph(glyph)
+
+    # remove names of removed glyphs from kern classes
+    for lookup in latin_font.gpos_lookups:
+        for subtable in latin_font.getLookupSubtables(lookup):
+            if latin_font.isKerningClass(subtable):
+                old_first, old_second, old_offsets = latin_font.getKerningClass(subtable)
+                new_first = []
+                new_second = []
+                new_offsets = []
+
+                cnt1 = len(old_first)
+                cnt2 = len(old_second)
+
+                # group offsets into tuples per class
+                offsets = []
+                i = 0
+                while i < cnt1 * cnt2:
+                    offsets.append(list(old_offsets[i:i+cnt2]))
+                    i += cnt2
+
+                # drop missing glyphs
+                for klass in old_first:
+                    new_klass = []
+                    if klass:
+                        for name in klass:
+                            if name in latin_font:
+                                new_klass.append(name)
+                    if new_klass:
+                        new_first.append(new_klass)
+                    else:
+                        new_first.append(None)
+
+                for klass in old_second:
+                    new_klass = []
+                    if klass:
+                        for name in klass:
+                            if name in latin_font:
+                                new_klass.append(name)
+                    if new_klass:
+                        new_second.append(new_klass)
+                    else:
+                        new_second.append(None)
+
+                # drop empty classes
+                while None in new_first:
+                    i = new_first.index(None)
+                    new_first.pop(i)
+                    offsets.pop(i)
+
+                while None in new_second:
+                    i = new_second.index(None)
+                    new_second.pop(i)
+                    for j in offsets:
+                        j.pop(i)
+
+                for i in offsets:
+                    new_offsets.extend(i)
+
+                latin_font.alterKerningClass(subtable, new_first, new_second, new_offsets)
+
     for glyph in latin_font.glyphs():
         if glyph.glyphname != "space" and glyph.glyphname in font:
             latin_font.selection.select(glyph.glyphname)
