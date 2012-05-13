@@ -338,7 +338,7 @@ def mergeLatin(font):
     for lookup in latinfont.gpos_lookups:
         kern_lookups[lookup] = {}
         kern_lookups[lookup]["subtables"] = []
-        kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], kern_lookups[lookup]["langsys"] = latinfont.getLookupInfo(lookup)
+        kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], dummy = latinfont.getLookupInfo(lookup)
         for subtable in latinfont.getLookupSubtables(lookup):
             if latinfont.isKerningClass(subtable):
                 old_first, old_second, old_offsets = latinfont.getKerningClass(subtable)
@@ -407,9 +407,6 @@ def mergeLatin(font):
     for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
 
-    tmpfea = mkstemp(suffix='.fea')[1]
-    latinfont.generateFeatureFile(tmpfea)
-
     for lookup in latinfont.gsub_lookups:
         latinfont.removeLookup(lookup)
 
@@ -417,10 +414,9 @@ def mergeLatin(font):
     latinfont.close()
 
     font.mergeFonts(tmpfont)
-    font.mergeFeature(tmpfea)
+    font.mergeFeature("sources/latin_gsub.fea")
 
     os.remove(tmpfont)
-    os.remove(tmpfea)
 
     for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
         font[rtl].clear()
@@ -432,7 +428,13 @@ def mergeLatin(font):
         font.addLookup(lookup,
                 kern_lookups[lookup]["type"],
                 kern_lookups[lookup]["flags"],
-                kern_lookups[lookup]["langsys"])
+                (('kern',
+                        (
+                            ('DFLT', ('dflt',)),
+                            ('latn', ('dflt',)),
+                        )
+                    ),)
+                )
 
         for subtable in kern_lookups[lookup]["subtables"]:
             font.addKerningClass(lookup, subtable[0], subtable[1][0], subtable[1][1], subtable[1][2])
