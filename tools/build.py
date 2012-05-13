@@ -333,8 +333,12 @@ def mergeLatin(font):
         if glyph.glyphname not in latinglyphs:
             latinfont.removeGlyph(glyph)
 
+    kern_lookups = {}
     # remove names of removed glyphs from kern classes
     for lookup in latinfont.gpos_lookups:
+        kern_lookups[lookup] = {}
+        kern_lookups[lookup]["subtables"] = []
+        kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], kern_lookups[lookup]["langsys"] = latinfont.getLookupInfo(lookup)
         for subtable in latinfont.getLookupSubtables(lookup):
             if latinfont.isKerningClass(subtable):
                 old_first, old_second, old_offsets = latinfont.getKerningClass(subtable)
@@ -390,7 +394,8 @@ def mergeLatin(font):
                 for i in offsets:
                     new_offsets.extend(i)
 
-                latinfont.alterKerningClass(subtable, new_first, new_second, new_offsets)
+                if new_first and new_second and new_offsets:
+                    kern_lookups[lookup]["subtables"].append((subtable, (new_first, new_second, new_offsets)))
 
     for glyph in latinfont.glyphs():
         if glyph.glyphname != "space" and glyph.glyphname in font:
@@ -399,11 +404,11 @@ def mergeLatin(font):
             font.selection.select(glyph.glyphname)
             font.paste()
 
-    tmpfea = mkstemp(suffix='.fea')[1]
-    latinfont.generateFeatureFile(tmpfea)
-
     for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
+
+    tmpfea = mkstemp(suffix='.fea')[1]
+    latinfont.generateFeatureFile(tmpfea)
 
     for lookup in latinfont.gsub_lookups:
         latinfont.removeLookup(lookup)
@@ -422,6 +427,15 @@ def mergeLatin(font):
         font[rtl].addReference(ltr, psMat.scale(-1, 1))
         font[rtl].left_side_bearing = font[ltr].right_side_bearing
         font[rtl].right_side_bearing = font[ltr].left_side_bearing
+
+    for lookup in kern_lookups:
+        font.addLookup(lookup,
+                kern_lookups[lookup]["type"],
+                kern_lookups[lookup]["flags"],
+                kern_lookups[lookup]["langsys"])
+
+        for subtable in kern_lookups[lookup]["subtables"]:
+            font.addKerningClass(lookup, subtable[0], subtable[1][0], subtable[1][1], subtable[1][2])
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
