@@ -173,6 +173,10 @@ def makeCss(infiles, outfile):
 def generateFont(font, outfile, hack=False):
     flags  = ("opentype", "dummy-dsig", "round")
 
+    font.selection.all()
+    font.correctReferences()
+    font.selection.none()
+
     if hack:
         # ff takes long to write the file, so generate to tmp file then rename
         # it to keep fontview happy
