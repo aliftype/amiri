@@ -42,8 +42,8 @@ feature kern {
 feature kern {
   lookupflag IgnoreMarks;
     # kern heh isol/final followed by kaf, does not happen in Arabic but can be
-    # seen in Kurdish or Persian using ZWNJ between them, so we double the rule
-    # w/o ZWNJ as someapplications remove it after shaping.
-    pos         @1st_4 @2nd_1' -500;
+    # seen in Kurdish or Persian using ZWNJ between them.
     pos uni200C @1st_4 @2nd_1' -500;
+    pos space   @1st_4 @2nd_1' -500; # Uniscribe replace ZWNJ with space
+    pos         @1st_4 @2nd_1' -500; # some applications might just remove it
 } kern;
