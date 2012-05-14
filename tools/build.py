@@ -274,7 +274,7 @@ def mergeLatin(font):
     latinfile = "Crimson-%s.sfd" %styles[font.fontname.split("-")[1]]
 
     tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
-    latinfont = fontforge.open("sources/crimson/%s" %latinfile)
+    latinfont = fontforge.open("sources/crimson/sources/%s" %latinfile)
     latinfont.em = 2048
 
     validateGlyphs(latinfont) # to flatten nested refs mainly
