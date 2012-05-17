@@ -1,5 +1,12 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
+languagesystem latn TRK;
+
+feature locl {
+  script latn;
+    language TRK exclude_dflt;
+      sub i by i.TRK;
+} locl;
 
 feature liga {
   lookupflag 0;

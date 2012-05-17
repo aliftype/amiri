@@ -316,7 +316,7 @@ def mergeLatin(font):
             "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
             "ellipsis", "uni202F", "perthousand", "minute", "second",
             "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
-            "fraction")
+            "fraction", "i.TRK")
 
     for l in (ligatures, romanisation, typographic):
         for name in l:
@@ -435,7 +435,7 @@ def mergeLatin(font):
                 (('kern',
                         (
                             ('DFLT', ('dflt',)),
-                            ('latn', ('dflt',)),
+                            ('latn', ('dflt', 'TRK ')),
                         )
                     ),)
                 )
