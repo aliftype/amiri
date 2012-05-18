@@ -177,6 +177,9 @@ def generateFont(font, outfile, hack=False):
     font.correctReferences()
     font.selection.none()
 
+    # fix some common font issues
+    validateGlyphs(font)
+
     if hack:
         # ff takes long to write the file, so generate to tmp file then rename
         # it to keep fontview happy
@@ -514,9 +517,6 @@ def makeDesktop(infile, outfile, version, latin=True, generate=True):
 
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
-
-    # fix some common font issues
-    validateGlyphs(font)
 
     if font.sfd_path:
         feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
