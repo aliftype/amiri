@@ -337,69 +337,15 @@ def mergeLatin(font):
         if glyph.glyphname not in latinglyphs:
             latinfont.removeGlyph(glyph)
 
+    # copy kerning classes
     kern_lookups = {}
-    # remove names of removed glyphs from kern classes
     for lookup in latinfont.gpos_lookups:
         kern_lookups[lookup] = {}
         kern_lookups[lookup]["subtables"] = []
         kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], dummy = latinfont.getLookupInfo(lookup)
         for subtable in latinfont.getLookupSubtables(lookup):
             if latinfont.isKerningClass(subtable):
-                old_first, old_second, old_offsets = latinfont.getKerningClass(subtable)
-                new_first = []
-                new_second = []
-                new_offsets = []
-
-                cnt1 = len(old_first)
-                cnt2 = len(old_second)
-
-                # group offsets into tuples per class
-                offsets = []
-                i = 0
-                while i < cnt1 * cnt2:
-                    offsets.append(list(old_offsets[i:i+cnt2]))
-                    i += cnt2
-
-                # drop missing glyphs
-                for klass in old_first:
-                    new_klass = []
-                    if klass:
-                        for name in klass:
-                            if name in latinfont:
-                                new_klass.append(name)
-                    if new_klass:
-                        new_first.append(new_klass)
-                    else:
-                        new_first.append(None)
-
-                for klass in old_second:
-                    new_klass = []
-                    if klass:
-                        for name in klass:
-                            if name in latinfont:
-                                new_klass.append(name)
-                    if new_klass:
-                        new_second.append(new_klass)
-                    else:
-                        new_second.append(None)
-
-                # drop empty classes
-                while None in new_first:
-                    i = new_first.index(None)
-                    new_first.pop(i)
-                    offsets.pop(i)
-
-                while None in new_second:
-                    i = new_second.index(None)
-                    new_second.pop(i)
-                    for j in offsets:
-                        j.pop(i)
-
-                for i in offsets:
-                    new_offsets.extend(i)
-
-                if new_first and new_second and new_offsets:
-                    kern_lookups[lookup]["subtables"].append((subtable, (new_first, new_second, new_offsets)))
+                kern_lookups[lookup]["subtables"].append((subtable, latinfont.getKerningClass(subtable)))
 
     for glyph in latinfont.glyphs():
         if glyph.glyphname != "space" and glyph.glyphname in font:
