@@ -75,7 +75,7 @@ Lookup: 262 0 0 "Tashkil Below Dot"  {"Tashkil Below Dot-1"  } []
 Lookup: 260 0 0 "'mark' Seen Above"  {"'mark' Seen Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' > ) ]
 Lookup: 260 0 0 "'mark' Seen Below"  {"'mark' Seen Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' > ) ]
 Lookup: 260 0 0 "'mark' Noon Above"  {"'mark' Noon Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' > ) ]
-Lookup: 260 0 0 "'mark' Generic Mark Anchor"  {"'mark' Generic Mark Anchor-1"  "'mark' Generic Mark Anchor-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' > 'latn' <'dflt' 'TRK '> ) ]
+Lookup: 260 0 0 "'mark' Generic Mark Anchor"  {"'mark' Generic Mark Anchor-1"  "'mark' Generic Mark Anchor-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' > 'latn' <'dflt' 'TRK ' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 TtTable: prep
