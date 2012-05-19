@@ -108,12 +108,10 @@ def validateGlyphs(font):
     """Fixes some common FontForge validation warnings, currently handles:
         * wrong direction
         * flipped references
-        * missing points at extrema
     In addition to flattening nested references."""
 
     wrong_dir = 0x8
     flipped_ref = 0x10
-    missing_extrema = 0x20
     for glyph in font.glyphs():
         state = glyph.validate(True)
         refs = []
@@ -123,8 +121,6 @@ def validateGlyphs(font):
             glyph.correctDirection()
         if state & wrong_dir:
             glyph.correctDirection()
-        if state & missing_extrema:
-            glyph.addExtrema("all")
 
         for ref in glyph.references:
             for i in flattenNestedReferences(font, ref):
