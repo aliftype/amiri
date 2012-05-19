@@ -17,34 +17,34 @@
 
 feature kern {
   lookupflag IgnoreMarks;
-    pos [@RaaWaw @Dal_1]' <-600 0 -600 0> @Kaf_1;
-    pos [@RaaWaw @Dal_1]' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
+  pos [@RaaWaw @Dal_1]' <-600 0 -600 0> @Kaf_1;
+  pos [@RaaWaw @Dal_1]' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
 
-    pos @RaaWaw' <-100 0 -100 0> @2nd_3;
+  pos @RaaWaw' <-100 0 -100 0> @2nd_3;
 
-    pos @Dal_2' <-200 0 -200 0> @Kaf_3;
+  pos @Dal_2' <-200 0 -200 0> @Kaf_3;
 
-    pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3];
-    pos @1st_3' <-800 0 -800 0> @Kaf_1;
-    pos @1st_3' <-200 0 -200 0> @2nd_3;
-    pos @1st_3' <-400 0 -400 0> @2nd_4;
+  pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3];
+  pos @1st_3' <-800 0 -800 0> @Kaf_1;
+  pos @1st_3' <-200 0 -200 0> @2nd_3;
+  pos @1st_3' <-400 0 -400 0> @2nd_4;
 
-    # +ve kern so that the tail of raa/waw does not touch the dot of baa
-    pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
+  # +ve kern so that the tail of raa/waw does not touch the dot of baa
+  pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
 } kern;
 
 feature kern {
   lookupflag IgnoreMarks;
-    # this baa requires an extra +ve kern than the ones above
-    # XXX: we only need a subset of @aBaa.init_High
-    pos @RaaWaw' <80 0 80 0> @aBaa.init_High;
+  # this baa requires an extra +ve kern than the ones above
+  # XXX: we only need a subset of @aBaa.init_High
+  pos @RaaWaw' <80 0 80 0> @aBaa.init_High;
 } kern;
 
 feature kern {
   lookupflag IgnoreMarks;
-    # kern heh isol/final followed by kaf, does not happen in Arabic but can be
-    # seen in Kurdish or Persian using ZWNJ between them.
-    pos uni200C @1st_4 @Kaf_1' -500;
-    pos space   @1st_4 @Kaf_1' -500; # Uniscribe replace ZWNJ with space
-    pos         @1st_4 @Kaf_1' -500; # some applications might just remove it
+  # kern heh isol/final followed by kaf, does not happen in Arabic but can be
+  # seen in Kurdish or Persian using ZWNJ between them.
+  pos uni200C @1st_4 @Kaf_1' -500;
+  pos space   @1st_4 @Kaf_1' -500; # Uniscribe replace ZWNJ with space
+  pos         @1st_4 @Kaf_1' -500; # some applications might just remove it
 } kern;

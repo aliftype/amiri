@@ -2,27 +2,27 @@
 # with low dots.
 feature ss01 {
   lookupflag IgnoreMarks;
-    sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
+  sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
 } ss01;
 
 #
 lookup MemAlfFina {
-    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
-    sub @aMem.medi by @aMem.medi_MemAlfFina;
+  sub @aAlf.fina by @aAlf.fina_MemAlfFina;
+  sub @aMem.medi by @aMem.medi_MemAlfFina;
 
-    sub @aSad.medi by @aSad.medi_PreYaa;
+  sub @aSad.medi by @aSad.medi_PreYaa;
 
-    sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
-    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
+  sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
+  sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
 } MemAlfFina;
 
 lookup MemAlfFinaPostTooth {
-    sub @aMem.medi by @aMem.medi_AlfPostTooth;
+  sub @aMem.medi by @aMem.medi_AlfPostTooth;
 } MemAlfFinaPostTooth;
 
 lookup BaaMemAlfFina {
-    sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
-    sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
+  sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
+  sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
 } BaaMemAlfFina;
 
 @NoMemAlfFina = [@aMem.medi @aMem.medi_LamBaaMemInit @aMem.medi_LamMemInit
@@ -34,21 +34,21 @@ lookup BaaMemAlfFina {
 
 feature ss02 {
   lookupflag IgnoreMarks;
-    ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
+  ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
 
-    sub @aBaa.medi' lookup BaaMemAlfFina
-        @aMem.medi' lookup BaaMemAlfFina
-        @aAlf.fina' lookup MemAlfFina;
+  sub @aBaa.medi' lookup BaaMemAlfFina
+      @aMem.medi' lookup BaaMemAlfFina
+      @aAlf.fina' lookup MemAlfFina;
 
-    sub @aSad.medi' lookup MemAlfFina
-        @aMem.medi' lookup MemAlfFinaPostTooth
-        @aAlf.fina' lookup MemAlfFina;
+  sub @aSad.medi' lookup MemAlfFina
+      @aMem.medi' lookup MemAlfFinaPostTooth
+      @aAlf.fina' lookup MemAlfFina;
 
-    sub @aBaa.init_BaaSenInit' lookup MemAlfFina
-        @aSen.medi_BaaSenInit' lookup MemAlfFina
-        @aMem.medi'            lookup MemAlfFinaPostTooth
-        @aAlf.fina'            lookup MemAlfFina;
+  sub @aBaa.init_BaaSenInit' lookup MemAlfFina
+      @aSen.medi_BaaSenInit' lookup MemAlfFina
+      @aMem.medi'            lookup MemAlfFinaPostTooth
+      @aAlf.fina'            lookup MemAlfFina;
 
-    sub @aMem.medi' lookup MemAlfFina
-        @aAlf.fina' lookup MemAlfFina;
+  sub @aMem.medi' lookup MemAlfFina
+      @aAlf.fina' lookup MemAlfFina;
 } ss02;

@@ -4,24 +4,23 @@ languagesystem latn TRK;
 
 feature locl {
   script latn;
-    language TRK exclude_dflt;
-      sub i by i.TRK;
+  language TRK exclude_dflt;
+  sub i by i.TRK;
 } locl;
 
 feature liga {
-  lookupflag 0;
-    sub f f  by f_f;
-    sub f i  by f_i;
-    sub f f i  by f_f_i;
-    sub f l  by f_l;
-    sub f f l  by f_f_l;
-    sub f b  by f_b;
-    sub f f b  by f_f_b;
-    sub f k  by f_k;
-    sub f f k  by f_f_k;
-    sub f h  by f_h;
-    sub f f h  by f_f_h;
-    sub f j  by f_j;
-    sub f f j  by f_f_j;
-    sub T h  by T_h;
+  sub f f  by f_f;
+  sub f i  by f_i;
+  sub f f i  by f_f_i;
+  sub f l  by f_l;
+  sub f f l  by f_f_l;
+  sub f b  by f_b;
+  sub f f b  by f_f_b;
+  sub f k  by f_k;
+  sub f f k  by f_f_k;
+  sub f h  by f_h;
+  sub f f h  by f_f_h;
+  sub f j  by f_j;
+  sub f f j  by f_f_j;
+  sub T h  by T_h;
 } liga;

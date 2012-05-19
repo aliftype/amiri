@@ -1,30 +1,30 @@
 lookup loclPunct {
-   sub period         by period.ara;
-   sub guillemotleft  by guillemotleft.ara;
-   sub guillemotright by guillemotright.ara;
+  sub period         by period.ara;
+  sub guillemotleft  by guillemotleft.ara;
+  sub guillemotright by guillemotright.ara;
 } loclPunct;
 
 lookup loclUrduDigits {
-   sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
+  sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
 } loclUrduDigits;
 
 lookup loclSindhiDigits {
-   sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
+  sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
 } loclSindhiDigits;
 
 feature locl {
   script arab;
-    language ARA;
-      lookup loclPunct;
-      sub at by at.ara;
+  language ARA;
+  lookup loclPunct;
+  sub at by at.ara;
 
-    language URD exclude_dflt;
-      lookup loclUrduDigits;
-      lookup loclPunct;
+  language URD exclude_dflt;
+  lookup loclUrduDigits;
+  lookup loclPunct;
 
-    language SND exclude_dflt;
-      lookup loclSindhiDigits;
-      lookup loclPunct;
+  language SND exclude_dflt;
+  lookup loclSindhiDigits;
+  lookup loclPunct;
 } locl;
 
 
@@ -36,15 +36,15 @@ feature locl {
 
 feature ccmp {
   script arab;
-    language ARA;
-      lookup loclPunct;
-      sub at by at.ara;
+  language ARA;
+  lookup loclPunct;
+  sub at by at.ara;
 
-    language URD exclude_dflt;
-      lookup loclUrduDigits;
-      lookup loclPunct;
+  language URD exclude_dflt;
+  lookup loclUrduDigits;
+  lookup loclPunct;
 
-    language SND exclude_dflt;
-      lookup loclSindhiDigits;
-      lookup loclPunct;
+  language SND exclude_dflt;
+  lookup loclSindhiDigits;
+  lookup loclPunct;
 } ccmp;

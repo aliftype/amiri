@@ -56,9 +56,9 @@ lookup MedialSmallAlef {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub @before'
-        uni0670.isol' lookup MedialSmallAlef
-        @after;
+  sub @before'
+      uni0670.isol' lookup MedialSmallAlef
+      @after;
 } calt;
 
 @before.isol = [uni0626 uni0628 uni062A uni062B uni062C uni062D uni062E uni0633
@@ -124,33 +124,33 @@ lookup LamAlefFina {
 
 feature calt {
   lookupflag IgnoreMarks;
-    # hamza between lam and alef needs special treatment as it should not have
-    # a connecting stroke to avoid breaking lam-alef. Other floats don't
-    # normally occur between lam and alef so we don't bother handling them
-    sub uni0644'      lookup LamAlefIsol
-        uni0621'      lookup FloatHamza
-        uni0627'      lookup LamAlefIsol;
+  # hamza between lam and alef needs special treatment as it should not have
+  # a connecting stroke to avoid breaking lam-alef. Other floats don't
+  # normally occur between lam and alef so we don't bother handling them
+  sub uni0644'      lookup LamAlefIsol
+      uni0621'      lookup FloatHamza
+      uni0627'      lookup LamAlefIsol;
 
-    sub uni0644.fina' lookup LamAlefFina
-        uni0621'      lookup FloatHamza
-        uni0627'      lookup LamAlefFina;
+  sub uni0644.fina' lookup LamAlefFina
+      uni0621'      lookup FloatHamza
+      uni0627'      lookup LamAlefFina;
 
-    # everything else
-    sub @before'      lookup Before
-        @floats.isol' lookup MedialFloats
-        @after'       lookup After;
+  # everything else
+  sub @before'      lookup Before
+      @floats.isol' lookup MedialFloats
+      @after'       lookup After;
 
-    # handle two successive floats
-    sub @before'      lookup Before
-        @floats.isol' lookup MedialFloats
-        @floats.isol' lookup MedialFloats
-        @after'       lookup After;
+  # handle two successive floats
+  sub @before'      lookup Before
+      @floats.isol' lookup MedialFloats
+      @floats.isol' lookup MedialFloats
+      @after'       lookup After;
 } calt;
 
 # kern floating hamza between final lam-alef to avoid glyph overlap
 feature kern {
   lookupflag IgnoreMarks;
-    pos uni0621.float' <-300 0 0 0> @aAlf.fina_LamAlfFina;
+  pos uni0621.float' <-300 0 0 0> @aAlf.fina_LamAlfFina;
 } kern;
 
 # turn kashida followed by small alef to medial small alef, a common hack to
@@ -179,7 +179,7 @@ feature rlig {
 # alternate glyph for that
 feature calt {
   lookupflag IgnoreMarks;
-    sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
+  sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
 } calt;
 
 # some glyphs need more room to accommodate madda mark, so we change the advance

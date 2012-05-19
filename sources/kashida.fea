@@ -10,21 +10,21 @@
 
 feature rlig {
   lookupflag IgnoreMarks;
-    sub uni0640 uni0640 uni0640 uni0640 by uni0640.4;
-    sub uni0640 uni0640 uni0640         by uni0640.3;
-    sub uni0640 uni0640                 by uni0640.2;
+  sub uni0640 uni0640 uni0640 uni0640 by uni0640.4;
+  sub uni0640 uni0640 uni0640         by uni0640.3;
+  sub uni0640 uni0640                 by uni0640.2;
 } rlig;
 
 # should be merged with the bove lookup, FF ignores it for some reason.
 feature rlig {
   lookupflag IgnoreMarks;
-    sub uni0640                         by uni0640.1;
+  sub uni0640                         by uni0640.1;
 } rlig;
 
 feature rlig {
   lookupflag IgnoreMarks;
-    sub uni0640.1 uni0627.fina by uni0627.fina_Tatweel;
-    sub uni0640.2 uni0627.fina by uni0627.fina_Tatweel;
-    sub uni0640.3 uni0627.fina by uni0627.fina_Tatweel;
-    sub uni0640.4 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.1 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.2 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.3 uni0627.fina by uni0627.fina_Tatweel;
+  sub uni0640.4 uni0627.fina by uni0627.fina_Tatweel;
 } rlig;

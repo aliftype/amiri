@@ -15,33 +15,33 @@
 #  and I just adapted it for Amiri, credit where credit is due.
 
 lookup Lellah {
-    sub uni0644.init by uni0644.init_Lellah;
-    sub uni0644.medi by uni0644.medi_Lellah;
-    sub uni0647.fina by uni0647.fina_Lellah;
-    sub uni06C1.fina by uni0647.fina_Lellah;
+  sub uni0644.init by uni0644.init_Lellah;
+  sub uni0644.medi by uni0644.medi_Lellah;
+  sub uni0647.fina by uni0647.fina_Lellah;
+  sub uni06C1.fina by uni0647.fina_Lellah;
 } Lellah;
 
 lookup Lellah2 {
-    sub uni0644.medi by uni0644.medi_Lellah uni0651 uni0670;
+  sub uni0644.medi by uni0644.medi_Lellah uni0651 uni0670;
 } Lellah2;
 
 lookup Lellah3 {
-    sub uni0644.medi by uni0644.medi_FaLellah;
+  sub uni0644.medi by uni0644.medi_FaLellah;
 } Lellah3;
 
 # Lellah4 & Lellah5 are redundant and can be substituted by Lellah lookup, but
 # this is a hack for a Uniscribe bug
 lookup Lellah4 {
-    sub uni0644.init by uni0644.init_Lellah;
+  sub uni0644.init by uni0644.init_Lellah;
 } Lellah4;
 
 lookup Lellah5 {
-    sub uni0644.medi by uni0644.medi_Lellah;
+  sub uni0644.medi by uni0644.medi_Lellah;
 } Lellah5;
 
 lookup LamLamInitX {
-    sub uni0644.init by uni0644.init_LamLamInit;
-    sub uni0644.medi by uni0644.medi_LamLamInit;
+  sub uni0644.init by uni0644.init_LamLamInit;
+  sub uni0644.medi by uni0644.medi_LamLamInit;
 } LamLamInitX;
 
 # define to not include [اآٱ]
@@ -95,44 +95,44 @@ lookup LamLamInitX {
 
 feature calt {
   lookupflag IgnoreMarks;
-    sub @Ignore       @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
-    sub @Ignore  @Ai' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
-    sub @Ignore2 @Af' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+  sub @Ignore       @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+  sub @Ignore  @Ai' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+  sub @Ignore2 @Af' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
 } calt;
 
 feature calt {
-    # لله
-    sub @Li' lookup Lellah4 @Lm' lookup Lellah2              @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651'      @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651' @xF' @Hf' lookup Lellah;
+  # لله
+  sub @Li' lookup Lellah4 @Lm' lookup Lellah2              @Hf' lookup Lellah;
+  sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651'      @Hf' lookup Lellah;
+  sub @Li' lookup Lellah  @Lm' lookup Lellah uni0651' @xF' @Hf' lookup Lellah;
 
-    # لِله
-    sub @Li' lookup Lellah4 uni0650' @Lm' lookup Lellah2              @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0650' @Lm' lookup Lellah uni0651'      @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0650' @Lm' lookup Lellah uni0651' @xF' @Hf' lookup Lellah;
+  # لِله
+  sub @Li' lookup Lellah4 uni0650' @Lm' lookup Lellah2              @Hf' lookup Lellah;
+  sub @Li' lookup Lellah  uni0650' @Lm' lookup Lellah uni0651'      @Hf' lookup Lellah;
+  sub @Li' lookup Lellah  uni0650' @Lm' lookup Lellah uni0651' @xF' @Hf' lookup Lellah;
 
-    # لِّله
-    sub @Li' lookup Lellah4 uni0651'uni0650' @Lm' lookup Lellah2              @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0651'uni0650' @Lm' lookup Lellah uni0651'      @Hf' lookup Lellah;
-    sub @Li' lookup Lellah  uni0651'uni0650' @Lm' lookup Lellah uni0651' @xF' @Hf' lookup Lellah;
+  # لِّله
+  sub @Li' lookup Lellah4 uni0651'uni0650' @Lm' lookup Lellah2              @Hf' lookup Lellah;
+  sub @Li' lookup Lellah  uni0651'uni0650' @Lm' lookup Lellah uni0651'      @Hf' lookup Lellah;
+  sub @Li' lookup Lellah  uni0651'uni0650' @Lm' lookup Lellah uni0651' @xF' @Hf' lookup Lellah;
 
-    # فلله
-    sub uni0641.init'          @Lm' lookup Lellah3          @Lm' lookup Lellah2               @Hf' lookup Lellah;
-    sub uni0641.init'          @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
-    sub uni0641.init'          @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
-    sub uni0641.init' uni064E' @Lm' lookup Lellah3          @Lm' lookup Lellah2               @Hf' lookup Lellah;
-    sub uni0641.init' uni064E' @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
-    sub uni0641.init' uni064E' @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
-    sub uni0641.init'          @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah2               @Hf' lookup Lellah;
-    sub uni0641.init'          @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
-    sub uni0641.init'          @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
-    sub uni0641.init' uni064E' @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah2               @Hf' lookup Lellah;
-    sub uni0641.init' uni064E' @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
-    sub uni0641.init' uni064E' @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
+  # فلله
+  sub uni0641.init'          @Lm' lookup Lellah3          @Lm' lookup Lellah2               @Hf' lookup Lellah;
+  sub uni0641.init'          @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
+  sub uni0641.init'          @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
+  sub uni0641.init' uni064E' @Lm' lookup Lellah3          @Lm' lookup Lellah2               @Hf' lookup Lellah;
+  sub uni0641.init' uni064E' @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
+  sub uni0641.init' uni064E' @Lm' lookup Lellah3          @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
+  sub uni0641.init'          @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah2               @Hf' lookup Lellah;
+  sub uni0641.init'          @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
+  sub uni0641.init'          @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
+  sub uni0641.init' uni064E' @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah2               @Hf' lookup Lellah;
+  sub uni0641.init' uni064E' @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651'      @Hf' lookup Lellah;
+  sub uni0641.init' uni064E' @Lm' lookup Lellah3 uni0650' @Lm' lookup Lellah5 uni0651' @xF' @Hf' lookup Lellah;
 } calt;
 
 # InDesign does not apply the heh substituion, so we try to apply it again.
 feature calt {
   lookupflag IgnoreMarks;
-    sub uni0644.medi_Lellah' @Hf' lookup Lellah;
+  sub uni0644.medi_Lellah' @Hf' lookup Lellah;
 } calt;
