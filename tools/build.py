@@ -167,7 +167,7 @@ def makeCss(infiles, outfile):
     out.close()
 
 def generateFont(font, outfile, hack=False):
-    flags  = ("opentype", "dummy-dsig", "round")
+    flags  = ("opentype", "dummy-dsig", "round", "omit-instructions")
 
     font.selection.all()
     font.correctReferences()
@@ -394,7 +394,7 @@ def makeWeb(infile, outfile):
     # "short-post" generates a post table without glyph names to save some KBs
     # since glyph names are only needed for PDF's as readers use them to
     # "guess" characters when copying text, which is of little use in web fonts.
-    flags = ("opentype", "short-post")
+    flags = ("opentype", "short-post", "omit-instructions")
 
     font = fontforge.open(infile)
 
