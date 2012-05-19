@@ -868,6 +868,7 @@ feature calt {
 lookup AynYaaBarree {
   sub @aHaa.init by @aHaa.init_YaaBarree;
   sub @aHeh.init by @aHeh.init_YaaBarree;
+  sub uni06BE.init by uni06BE.init_YaaBarree;
   sub @aAyn.init by @aAyn.init_YaaBarree;
   sub @aTaa.init by @aTaa.init_YaaBarree;
   sub @aMem.init_dots by @aMem.init_YaaBarree;
@@ -876,8 +877,8 @@ lookup AynYaaBarree {
 
 feature calt {
   lookupflag IgnoreMarks;
-  sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init_dots]' lookup AynYaaBarree
-      [@aYaaBarree.fina]'                                            lookup AynYaaBarree;
+  sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init_dots uni06BE.init]' lookup AynYaaBarree
+       @aYaaBarree.fina'                                                          lookup AynYaaBarree;
 } calt;
 
 # default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
