@@ -997,12 +997,55 @@ feature calt {
 } calt;
 
 lookup LamKafInit {
-    sub @aLam.init by @aLam.init_Tatweel;
-    sub @aLam.medi by @aLam.medi_Tatweel;
-    sub @aLam.medi_KafLam by @aLam.medi_KafLamTatweel;
-    sub @aLam.medi_KafMemLam by @aLam.medi_KafMemLamTatweel;
-    sub @aLam.medi_LamLamInit by @aLam.medi_LamLamInitTatweel;
-    sub @aMem.medi_LamMemInit by @aMem.medi_LamMemInitTatweel;
+# XXX: sync with classes.fea
+# sub @aLam.init by @aLam.init_Tatweel;
+# sub @aLam.medi by @aLam.medi_Tatweel;
+# sub @aLam.medi_KafLam by @aLam.medi_KafLamTatweel;
+# sub @aLam.medi_KafMemLam by @aLam.medi_KafMemLamTatweel;
+# sub @aLam.medi_LamLamInit by @aLam.medi_LamLamInitTatweel;
+# sub @aMem.medi_LamMemInit by @aMem.medi_LamMemInitTatweel;
+
+  sub uni06B5.init by uni06B5.init uni0640.1;
+  sub uni06B7.init by uni06B7.init uni0640.1;
+  sub uni0644.init by uni0644.init uni0640.1;
+  sub uni06B8.init by uni06B8.init uni0640.1;
+  sub uni06B6.init by uni06B6.init uni0640.1;
+  sub uni076A.init by uni076A.init uni0640.1;
+
+  sub uni06B5.medi by uni06B5.medi uni0640.1;
+  sub uni06B7.medi by uni06B7.medi uni0640.1;
+  sub uni0644.medi by uni0644.medi uni0640.1;
+  sub uni06B8.medi by uni06B8.medi uni0640.1;
+  sub uni06B6.medi by uni06B6.medi uni0640.1;
+  sub uni076A.medi by uni076A.medi uni0640.1;
+
+  sub uni06B5.medi_KafLam by uni06B5.medi_KafLam uni0640.1;
+  sub uni06B7.medi_KafLam by uni06B7.medi_KafLam uni0640.1;
+  sub uni0644.medi_KafLam by uni0644.medi_KafLam uni0640.1;
+  sub uni06B8.medi_KafLam by uni06B8.medi_KafLam uni0640.1;
+  sub uni06B6.medi_KafLam by uni06B6.medi_KafLam uni0640.1;
+  sub uni076A.medi_KafLam by uni076A.medi_KafLam uni0640.1;
+
+  sub uni06B5.medi_KafMemLam by uni06B5.medi_KafMemLam uni0640.1;
+  sub uni06B7.medi_KafMemLam by uni06B7.medi_KafMemLam uni0640.1;
+  sub uni0644.medi_KafMemLam by uni0644.medi_KafMemLam uni0640.1;
+  sub uni06B8.medi_KafMemLam by uni06B8.medi_KafMemLam uni0640.1;
+  sub uni06B6.medi_KafMemLam by uni06B6.medi_KafMemLam uni0640.1;
+  sub uni076A.medi_KafMemLam by uni076A.medi_KafMemLam uni0640.1;
+
+  sub uni06B5.medi_LamLamInit by uni06B5.medi_LamLamInit uni0640.1;
+  sub uni06B7.medi_LamLamInit by uni06B7.medi_LamLamInit uni0640.1;
+  sub uni0644.medi_LamLamInit by uni0644.medi_LamLamInit uni0640.1;
+  sub uni06B8.medi_LamLamInit by uni06B8.medi_LamLamInit uni0640.1;
+  sub uni06B6.medi_LamLamInit by uni06B6.medi_LamLamInit uni0640.1;
+  sub uni076A.medi_LamLamInit by uni076A.medi_LamLamInit uni0640.1;
+
+  sub uni06B5.medi_LamMemInit by uni06B5.medi_LamMemInit uni0640.1;
+  sub uni06B7.medi_LamMemInit by uni06B7.medi_LamMemInit uni0640.1;
+  sub uni0644.medi_LamMemInit by uni0644.medi_LamMemInit uni0640.1;
+  sub uni06B8.medi_LamMemInit by uni06B8.medi_LamMemInit uni0640.1;
+  sub uni06B6.medi_LamMemInit by uni06B6.medi_LamMemInit uni0640.1;
+  sub uni076A.medi_LamMemInit by uni076A.medi_LamMemInit uni0640.1;
 } LamKafInit;
 
 feature calt {
@@ -1047,7 +1090,7 @@ feature calt {
 } calt;
 
 
-# insert tatweel between ح and ك in فحكم
+# insert tatweel between ح and ك in فحك[ملير]
 lookup FaaHaaKaf {
 # XXX: sync with classes.fea
 # sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.1;
