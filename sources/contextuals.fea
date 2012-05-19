@@ -1046,6 +1046,37 @@ feature calt {
     sub @RaaWaw [uni0625 uni0673]' by @aAlf.isol_LowHamza;
 } calt;
 
+
+# insert tatweel between ح and ك in فحكم
+lookup FaaHaaKaf {
+# XXX: sync with classes.fea
+# sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.1;
+  sub uni062E.medi_FaaHaaInit by uni062E.medi_FaaHaaInit uni0640.1;
+  sub uni062D.medi_FaaHaaInit by uni062D.medi_FaaHaaInit uni0640.1;
+  sub uni0681.medi_FaaHaaInit by uni0681.medi_FaaHaaInit uni0640.1;
+  sub uni0687.medi_FaaHaaInit by uni0687.medi_FaaHaaInit uni0640.1;
+  sub uni0685.medi_FaaHaaInit by uni0685.medi_FaaHaaInit uni0640.1;
+  sub uni062C.medi_FaaHaaInit by uni062C.medi_FaaHaaInit uni0640.1;
+  sub uni0682.medi_FaaHaaInit by uni0682.medi_FaaHaaInit uni0640.1;
+  sub uni0757.medi_FaaHaaInit by uni0757.medi_FaaHaaInit uni0640.1;
+  sub uni0684.medi_FaaHaaInit by uni0684.medi_FaaHaaInit uni0640.1;
+  sub uni076F.medi_FaaHaaInit by uni076F.medi_FaaHaaInit uni0640.1;
+  sub uni076E.medi_FaaHaaInit by uni076E.medi_FaaHaaInit uni0640.1;
+  sub uni0683.medi_FaaHaaInit by uni0683.medi_FaaHaaInit uni0640.1;
+  sub uni06BF.medi_FaaHaaInit by uni06BF.medi_FaaHaaInit uni0640.1;
+  sub uni077C.medi_FaaHaaInit by uni077C.medi_FaaHaaInit uni0640.1;
+  sub uni0758.medi_FaaHaaInit by uni0758.medi_FaaHaaInit uni0640.1;
+  sub uni0772.medi_FaaHaaInit by uni0772.medi_FaaHaaInit uni0640.1;
+  sub uni0686.medi_FaaHaaInit by uni0686.medi_FaaHaaInit uni0640.1;
+} FaaHaaKaf;
+
+feature calt {
+  lookupflag IgnoreMarks;
+  sub @aFaa.init_FaaHaaInit
+      @aHaa.medi_FaaHaaInit' lookup FaaHaaKaf
+     [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina];
+} calt;
+
 # replace final alef followed by madda by a wider one
 feature calt {
   sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
