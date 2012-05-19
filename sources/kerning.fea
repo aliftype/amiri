@@ -1,13 +1,15 @@
-@1st_2 = [@aDal.fina @aDal.isol @aDal.fina_BaaDalIsol
+@Dal_1 = [@aDal.fina @aDal.fina_BaaDalIsol
           @aDal.fina_KafDal @aDal.fina_LamDal];
+@Dal_2 = [@aDal.isol];
 @1st_3 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
-@2nd_1 = [@aKaf.init @aKaf.init_KafHeh
+@Kaf_1 = [@aKaf.init_KafHeh
           @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
-          @aKaf.init_KafMemIsol @aKaf.init_KafLam
+          @aKaf.init_KafMemIsol
           @aKaf.init_KafRaaIsol];
-@2nd_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
+@Kaf_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
+@Kaf_3 = [@aKaf.init @aKaf.init_KafLam];
 @2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_4 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
           @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
@@ -15,16 +17,15 @@
 
 feature kern {
   lookupflag IgnoreMarks;
-    pos @RaaWaw' <-600 0 -600 0> @2nd_1;
-    pos @1st_2' <-600 0 -600 0> @2nd_1;
-    pos @1st_3' <-800 0 -800 0> @2nd_1;
-
-    pos @RaaWaw' <-300 0 -300 0> @2nd_2;
-    pos @1st_2' <-300 0 -300 0> @2nd_2;
-    pos @1st_3' <-400 0 -400 0> @2nd_2;
+    pos [@RaaWaw @Dal_1]' <-600 0 -600 0> @Kaf_1;
+    pos [@RaaWaw @Dal_1]' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
 
     pos @RaaWaw' <-100 0 -100 0> @2nd_3;
 
+    pos @Dal_2' <-200 0 -200 0> @Kaf_3;
+
+    pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3];
+    pos @1st_3' <-800 0 -800 0> @Kaf_1;
     pos @1st_3' <-200 0 -200 0> @2nd_3;
     pos @1st_3' <-400 0 -400 0> @2nd_4;
 
@@ -43,7 +44,7 @@ feature kern {
   lookupflag IgnoreMarks;
     # kern heh isol/final followed by kaf, does not happen in Arabic but can be
     # seen in Kurdish or Persian using ZWNJ between them.
-    pos uni200C @1st_4 @2nd_1' -500;
-    pos space   @1st_4 @2nd_1' -500; # Uniscribe replace ZWNJ with space
-    pos         @1st_4 @2nd_1' -500; # some applications might just remove it
+    pos uni200C @1st_4 @Kaf_1' -500;
+    pos space   @1st_4 @Kaf_1' -500; # Uniscribe replace ZWNJ with space
+    pos         @1st_4 @Kaf_1' -500; # some applications might just remove it
 } kern;
