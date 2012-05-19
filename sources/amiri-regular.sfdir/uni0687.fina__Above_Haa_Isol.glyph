@@ -1,6 +1,6 @@
 
 StartChar: uni0687.fina_AboveHaaIsol
-Encoding: 68330 -1 3009
+Encoding: 68330 -1 3004
 Width: 213
 VWidth: 0
 AnchorPoint: "cursive" 213 420 entry 0
@@ -8,6 +8,6 @@ AnchorPoint: "TashkilAbove" 327 1640 basechar 0
 AnchorPoint: "TashkilBelow" 778 -1139 basechar 0
 LayerCount: 2
 Fore
-Refer: 247 -1 N 1 0 0 1 778 -620 2
+Refer: 242 -1 N 1 0 0 1 778 -620 2
 Refer: 180 -1 N 1 0 0 1 0 0 3
 EndChar
