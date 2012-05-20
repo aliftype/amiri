@@ -1,6 +1,6 @@
 
 StartChar: aBaa.init_BaaSenAltInit
-Encoding: 65705 -1 172
+Encoding: 65705 -1 171
 Width: 449
 Flags: W
 AnchorPoint: "DotAbove" 120 1262 basechar 0
@@ -97,5 +97,5 @@ SplineSet
  -4 372 -4 372 2 364 c 0,36,37
 EndSplineSet
 Fore
-Refer: 118 -1 N 1 0 0 1 0 -138 3
+Refer: 117 -1 N 1 0 0 1 0 -138 3
 EndChar

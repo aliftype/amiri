@@ -1,6 +1,6 @@
 
 StartChar: uni060B
-Encoding: 1547 1547 4662
+Encoding: 1547 1547 4625
 Width: 1026
 Flags: W
 LayerCount: 3
@@ -27,8 +27,8 @@ SplineSet
  100 230 100 230 155 225 c 0,33,34
  634 173 634 173 852 370 c 1,8,9
 EndSplineSet
-Refer: 192 -1 N 1 0 0 1 621 1010 2
-Refer: 256 1648 N 1 0 0 1 240 -2510 2
+Refer: 191 -1 N 1 0 0 1 621 1010 2
+Refer: 255 1648 N 1 0 0 1 240 -2510 2
 Layer: 2
 SplineSet
 697 838 m 0,0,1

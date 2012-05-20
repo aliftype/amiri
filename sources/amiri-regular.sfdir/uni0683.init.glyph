@@ -1,6 +1,6 @@
 
 StartChar: uni0683.init
-Encoding: 66123 -1 743
+Encoding: 66123 -1 705
 Width: 1343
 VWidth: 0
 Flags: W
@@ -8,6 +8,6 @@ AnchorPoint: "TashkilAbove" 610 1640 basechar 0
 AnchorPoint: "TashkilBelow" 610 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 196 -1 N 1 0 0 1 610 -342 2
-Refer: 19 -1 N 1 0 0 1 0 0 3
+Refer: 195 -1 N 1 0 0 1 610 -342 2
+Refer: 18 -1 N 1 0 0 1 0 0 3
 EndChar

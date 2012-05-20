@@ -1,6 +1,6 @@
 
 StartChar: uni0649.init_BaaMemHaaInit
-Encoding: 66710 -1 1434
+Encoding: 66710 -1 1397
 Width: 636
 Flags: W
 AnchorPoint: "AlefAbove" 102 1640 basechar 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilAbove" 251 1640 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 3
 Fore
-Refer: 86 -1 N 1 0 0 1 0 0 3
+Refer: 85 -1 N 1 0 0 1 0 0 3
 EndChar

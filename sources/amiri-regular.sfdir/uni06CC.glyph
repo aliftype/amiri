@@ -1,6 +1,6 @@
 
 StartChar: uni06CC
-Encoding: 1740 1740 1098
+Encoding: 1740 1740 1060
 Width: 1566
 VWidth: 0
 AnchorPoint: "TashkilAbove" 800 1640 basechar 0
@@ -8,5 +8,5 @@ AnchorPoint: "TashkilBelow" 700 -670 basechar 0
 AnchorPoint: "AlefAbove" 600 350 basechar 0
 LayerCount: 2
 Fore
-Refer: 64 -1 N 1 0 0 1 0 0 3
+Refer: 63 -1 N 1 0 0 1 0 0 3
 EndChar
