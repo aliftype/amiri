@@ -264,6 +264,27 @@ def makeOverUnderline(font):
 
         font.addContextualSubtable(context_lookup_name, context_lookup_name + str(width), 'coverage', rule)
 
+def centerGlyph(glyph):
+    width = glyph.width
+    glyph.right_side_bearing = glyph.left_side_bearing = (glyph.right_side_bearing + glyph.left_side_bearing)/2
+    glyph.width = width
+
+def buildSmallDigits(font):
+    for name in ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"):
+        small = font.createChar(-1, name + ".small")
+        small.clear()
+        small.addReference(name, psMat.scale(0.6))
+        small.transform(psMat.translate(0, -40))
+        small.width = 600
+        centerGlyph(small)
+
+        medium = font.createChar(-1, name + ".medium")
+        medium.clear()
+        medium.addReference(name, psMat.scale(0.8))
+        medium.transform(psMat.translate(0, 50))
+        medium.width = 900
+        centerGlyph(medium)
+
 def mergeLatin(font):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
@@ -387,6 +408,8 @@ def mergeLatin(font):
 
         for subtable in kern_lookups[lookup]["subtables"]:
             font.addKerningClass(lookup, subtable[0], subtable[1][0], subtable[1][1], subtable[1][2])
+
+    buildSmallDigits(font)
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
