@@ -266,7 +266,13 @@ def centerGlyph(glyph):
     glyph.right_side_bearing = glyph.left_side_bearing = (glyph.right_side_bearing + glyph.left_side_bearing)/2
     glyph.width = width
 
-def buildSmallDigits(font):
+def buildLatinExtras(font):
+    for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
+        font[rtl].clear()
+        font[rtl].addReference(ltr, psMat.scale(-1, 1))
+        font[rtl].left_side_bearing = font[ltr].right_side_bearing
+        font[rtl].right_side_bearing = font[ltr].left_side_bearing
+
     for name in ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"):
         small = font.createChar(-1, name + ".small")
         small.clear()
@@ -378,12 +384,6 @@ def mergeLatin(font):
 
     os.remove(tmpfont)
 
-    for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
-        font[rtl].clear()
-        font[rtl].addReference(ltr, psMat.scale(-1, 1))
-        font[rtl].left_side_bearing = font[ltr].right_side_bearing
-        font[rtl].right_side_bearing = font[ltr].left_side_bearing
-
     for lookup in kern_lookups:
         font.addLookup(lookup,
                 kern_lookups[lookup]["type"],
@@ -399,7 +399,7 @@ def mergeLatin(font):
         for subtable in kern_lookups[lookup]["subtables"]:
             font.addKerningClass(lookup, subtable[0], subtable[1][0], subtable[1][1], subtable[1][2])
 
-    buildSmallDigits(font)
+    buildLatinExtras(font)
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
