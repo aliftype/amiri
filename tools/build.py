@@ -94,7 +94,11 @@ def flattenNestedReferences(font, ref, new_transform=None):
     if glyph.references and glyph.foreground.isEmpty():
         for nested_ref in glyph.references:
             for i in flattenNestedReferences(font, nested_ref, transform):
-                new_ref.append(i)
+                if new_transform:
+                    matrix = psMat.compose(i[1], new_transform)
+                    new_ref.append((i[0], matrix))
+                else:
+                    new_ref.append(i)
     else:
         if new_transform:
             matrix = psMat.compose(transform, new_transform)
