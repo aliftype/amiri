@@ -1,0 +1,12 @@
+
+StartChar: uni08A0.init_BaaMemHaaInit
+Encoding: 70088 -1 5631
+Width: 636
+VWidth: 0
+AnchorPoint: "TashkilAbove" 251 1640 basechar 0
+AnchorPoint: "TashkilBelow" 291 -880 basechar 0
+LayerCount: 2
+Fore
+Refer: 251 -1 N 1 0 0 1 291 280 2
+Refer: 85 -1 N 1 0 0 1 0 0 3
+EndChar

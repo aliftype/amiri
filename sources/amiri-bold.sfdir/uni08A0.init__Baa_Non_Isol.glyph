@@ -1,0 +1,12 @@
+
+StartChar: uni08A0.init_BaaNonIsol
+Encoding: 70093 -1 5636
+Width: 362
+VWidth: 0
+AnchorPoint: "TashkilAbove" 1 1640 basechar 0
+AnchorPoint: "TashkilBelow" 172 -800 basechar 0
+LayerCount: 3
+Fore
+Refer: 251 -1 N 1 0 0 1 172 360 2
+Refer: 113 -1 N 1 0 0 1 0 0 3
+EndChar
