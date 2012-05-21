@@ -2,6 +2,12 @@ lookup loclPunct {
   sub period         by period.ara;
   sub guillemotleft  by guillemotleft.ara;
   sub guillemotright by guillemotright.ara;
+  sub braceleft      by braceleft.ara;
+  sub braceright     by braceright.ara;
+  sub bracketleft    by bracketleft.ara;
+  sub bracketright   by bracketright.ara;
+  sub parenleft by   parenleft.ara;
+  sub parenright     by parenright.ara;
 } loclPunct;
 
 lookup loclUrduDigits {
