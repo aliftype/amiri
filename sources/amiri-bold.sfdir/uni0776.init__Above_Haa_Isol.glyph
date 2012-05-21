@@ -1,6 +1,6 @@
 
 StartChar: uni0776.init_AboveHaaIsol
-Encoding: 68189 -1 2815
+Encoding: 68189 -1 2811
 Width: 1114
 Flags: W
 AnchorPoint: "cursive" 0 420 exit 0
@@ -8,7 +8,7 @@ AnchorPoint: "TashkilAbove" 729 1927 basechar 0
 AnchorPoint: "TashkilBelow" 974 -410 basechar 0
 LayerCount: 3
 Fore
-Refer: 346 -1 N 1 0 0 1 669 1077 2
+Refer: 344 -1 N 1 0 0 1 669 1077 2
 Refer: 195 -1 N 1 0 0 1 825 -123 2
 Refer: 175 -1 N 1 0 0 1 0 0 3
 EndChar
