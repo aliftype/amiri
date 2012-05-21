@@ -19,7 +19,7 @@ def runHB(text, font):
     out = process.communicate()[0]
     lines = []
     for line in out.split('\n'):
-        glyphs = line.strip().strip('<>').split('|')
+        glyphs = line.strip().strip('[]').split('|')
         new_glyphs = []
 
         for glyph in glyphs:
