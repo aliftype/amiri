@@ -19,7 +19,6 @@ import sys
 import os
 import getopt
 import math
-import unicodedata as ucd
 from tempfile import mkstemp
 from fontTools.ttLib import TTFont
 
@@ -365,13 +364,6 @@ def mergeLatin(font):
             if latinfont.isKerningClass(subtable):
                 kern_lookups[lookup]["subtables"].append((subtable, latinfont.getKerningClass(subtable)))
 
-    for glyph in latinfont.glyphs():
-        if glyph.glyphname != "space" and glyph.glyphname in font:
-            latinfont.selection.select(glyph.glyphname)
-            latinfont.copy()
-            font.selection.select(glyph.glyphname)
-            font.paste()
-
     for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
 
@@ -491,24 +483,6 @@ def makeSlanted(infile, outfile, version, slant):
     skew = psMat.skew(-slant * math.pi/180.0)
 
     font.selection.all()
-
-    for glyph in font.glyphs():
-        u = glyph.unicode
-        if u == -1:
-            if '.' in glyph.glyphname:
-                n = glyph.glyphname.split('.')[0]
-                u = fontforge.unicodeFromName(n)
-            if '_' in glyph.glyphname:
-                for n in glyph.glyphname.split('_'):
-                    uu = fontforge.unicodeFromName(n)
-                    if uu != -1:
-                        u = uu
-
-        if u != -1:
-            c = ucd.bidirectional(unichr(u))
-            if c in ("L", "EN", "AN", "ES", "ET", "CS", "NSM", "BN", "ON"):
-                font.selection.select(("less", None), glyph)
-
     font.transform(skew)
 
     # fix metadata
