@@ -266,35 +266,49 @@ def centerGlyph(glyph):
     glyph.right_side_bearing = glyph.left_side_bearing = (glyph.right_side_bearing + glyph.left_side_bearing)/2
     glyph.width = width
 
-def buildLatinExtras(font):
+def buildLatinExtras(font, italic):
     for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
         font[rtl].clear()
         font[rtl].addReference(ltr, psMat.scale(-1, 1))
         font[rtl].left_side_bearing = font[ltr].right_side_bearing
         font[rtl].right_side_bearing = font[ltr].left_side_bearing
 
+    # slanted arabic question mark
+    if italic:
+        question = font.createChar(-1, "uni061F.rtl")
+        question.addReference("uni061F", italic)
+        question.useRefsMetrics("uni061F")
+
     for name in ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"):
+        if italic:
+            # they are only used in Arabic contexts, so always reference the
+            # italic rtl variant
+            refname = name +".rtl"
+        else:
+            refname = name
         small = font.createChar(-1, name + ".small")
         small.clear()
-        small.addReference(name, psMat.scale(0.6))
+        small.addReference(refname, psMat.scale(0.6))
         small.transform(psMat.translate(0, -40))
         small.width = 600
         centerGlyph(small)
 
         medium = font.createChar(-1, name + ".medium")
         medium.clear()
-        medium.addReference(name, psMat.scale(0.8))
+        medium.addReference(refname, psMat.scale(0.8))
         medium.transform(psMat.translate(0, 50))
         medium.width = 900
         centerGlyph(medium)
 
-def mergeLatin(font):
+def mergeLatin(font, italic=False):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
               "Bold": "Bold",
               "BoldSlanted": "BoldItalic"}
 
-    latinfile = "Crimson-%s.sfd" %styles[font.fontname.split("-")[1]]
+    style = styles[font.fontname.split("-")[1]]
+
+    latinfile = "Crimson-%s.sfd" %style
 
     tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
     latinfont = fontforge.open("sources/crimson/sources/%s" %latinfile)
@@ -360,6 +374,48 @@ def mergeLatin(font):
         if glyph.glyphname not in latinglyphs:
             latinfont.removeGlyph(glyph)
 
+    # common characters that can be used in Arabic and Latin need to be handled
+    # carefully in the slanted font so that right leaning italic is used with
+    # Latin, and left leaning slanted is used with Arabic, using ltra and rtla
+    # features respectively, for less OpenType savvy apps we make the default
+    # upright so it works reasonably with bot scripts
+    if italic:
+        if "Bold" in style:
+            upright = fontforge.open("sources/crimson/sources/Crimson-Bold.sfd")
+        else:
+            upright = fontforge.open("sources/crimson/sources/Crimson-Roman.sfd")
+        upright.em = 2048
+
+        shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
+                  "quotesingle", "parenleft", "parenright", "asterisk", "plus",
+                  "slash", "zero", "one", "two", "three", "four", "five",
+                  "six", "seven", "eight", "nine", "colon", "semicolon",
+                  "less", "equal", "greater", "question", "at", "bracketleft",
+                  "backslash", "bracketright", "asciicircum", "braceleft",
+                  "bar", "braceright", "brokenbar", "section", "copyright",
+                  "guillemotleft", "logicalnot", "registered", "plusminus",
+                  "uni00B2", "uni00B3", "paragraph", "uni00B9", "ordmasculine",
+                  "guillemotright", "onequarter", "onehalf", "threequarters",
+                  "questiondown", "quoteleft", "quoteright", "quotesinglbase",
+                  "quotereversed", "quotedblleft", "quotedblright",
+                  "quotedblbase", "uni201F", "dagger", "daggerdbl",
+                  "perthousand", "minute", "second", "guilsinglleft",
+                  "guilsinglright", "fraction", "uni2213")
+
+        for name in shared:
+            glyph = latinfont[name]
+            glyph.glyphname += '.ltr'
+            glyph.unicode = -1
+            upright.selection.select(name)
+            upright.copy()
+            latinfont.createChar(upright[name].encoding, name)
+            latinfont.selection.select(name)
+            latinfont.paste()
+
+            rtl = latinfont.createChar(-1, name + ".rtl")
+            rtl.addReference(name, italic)
+            rtl.useRefsMetrics(name)
+
     # copy kerning classes
     kern_lookups = {}
     for lookup in latinfont.gpos_lookups:
@@ -382,7 +438,7 @@ def mergeLatin(font):
     font.mergeFonts(tmpfont)
     os.remove(tmpfont)
 
-    buildLatinExtras(font)
+    buildLatinExtras(font, italic)
 
     # we want to merge features after merging the latin font because many
     # referenced glyphs are in the latin font
@@ -391,6 +447,10 @@ def mergeLatin(font):
         mergeFeatures(font, feafile)
 
     font.mergeFeature("sources/latin_gsub.fea")
+
+    if italic:
+        font.mergeFeature("sources/italic_ltra.fea")
+        font.mergeFeature("sources/italic_rtla.fea")
 
     for lookup in kern_lookups:
         font.addLookup(lookup,
@@ -502,7 +562,7 @@ def makeSlanted(infile, outfile, version, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-    mergeLatin(font)
+    mergeLatin(font, skew)
 
     generateFont(font, outfile)
 
