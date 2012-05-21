@@ -80,7 +80,7 @@ def cleanAnchors(font):
         lookup = font.getLookupOfSubtable(subtable)
         font.removeLookup(lookup)
 
-def flattenNestedReferences(font, ref, new_transform=None):
+def flattenNestedReferences(font, ref, new_transform=(1, 0, 0, 1, 0, 0)):
     """Flattens nested references by replacing them with the ultimate reference
     and applying any transformation matrices involved, so that the final font
     has only simple composite glyphs. This to work around what seems to be an
@@ -94,17 +94,11 @@ def flattenNestedReferences(font, ref, new_transform=None):
     if glyph.references and glyph.foreground.isEmpty():
         for nested_ref in glyph.references:
             for i in flattenNestedReferences(font, nested_ref, transform):
-                if new_transform:
-                    matrix = psMat.compose(i[1], new_transform)
-                    new_ref.append((i[0], matrix))
-                else:
-                    new_ref.append(i)
+                matrix = psMat.compose(i[1], new_transform)
+                new_ref.append((i[0], matrix))
     else:
-        if new_transform:
-            matrix = psMat.compose(transform, new_transform)
-            new_ref.append((name, matrix))
-        else:
-            new_ref.append(ref)
+        matrix = psMat.compose(transform, new_transform)
+        new_ref.append((name, matrix))
 
     return new_ref
 
