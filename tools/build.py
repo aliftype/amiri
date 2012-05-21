@@ -380,9 +380,17 @@ def mergeLatin(font):
     latinfont.close()
 
     font.mergeFonts(tmpfont)
-    font.mergeFeature("sources/latin_gsub.fea")
-
     os.remove(tmpfont)
+
+    buildLatinExtras(font)
+
+    # we want to merge features after merging the latin font because many
+    # referenced glyphs are in the latin font
+    if font.sfd_path:
+        feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
+        mergeFeatures(font, feafile)
+
+    font.mergeFeature("sources/latin_gsub.fea")
 
     for lookup in kern_lookups:
         font.addLookup(lookup,
@@ -398,8 +406,6 @@ def mergeLatin(font):
 
         for subtable in kern_lookups[lookup]["subtables"]:
             font.addKerningClass(lookup, subtable[0], subtable[1][0], subtable[1][1], subtable[1][2])
-
-    buildLatinExtras(font)
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
@@ -508,10 +514,6 @@ def makeDesktop(infile, outfile, version, latin=True, generate=True):
 
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
-
-    if font.sfd_path:
-        feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
-        mergeFeatures(font, feafile)
 
     #makeOverUnderline(font)
 
