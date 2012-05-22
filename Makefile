@@ -75,7 +75,7 @@ $(WEB)/%.css: $(WTTF) $(BUILD)
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN\t$@"
 	@mkdir -p $(DOC)
-	@fntsample --exclude-range 0x25A0-0x25FF --font-file $< --output-file $@.tmp --print-outline > $@.txt
+	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
