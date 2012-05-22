@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic);
 @import url(amiri/amiri.css);
 
 html {
@@ -28,7 +27,7 @@ tt {
 
 .ar {
    direction: rtl;
-   font-family: "AmiriWeb", "Crimson Text", serif;
+   font-family: "AmiriWeb", serif;
    line-height: 1.5;
    float: right;
    right: 5px;
@@ -36,8 +35,8 @@ tt {
 
 .en {
    direction: ltr;
-   font-family: "Crimson Text", serif;
-   line-height: 1.2;
+   font-family: "AmiriWeb", serif;
+   line-height: 1.21;
    float: left;
    left: 5px;
 }
