@@ -1,7 +1,7 @@
 @Dal_1 = [@aDal.fina @aDal.fina_BaaDalIsol
           @aDal.fina_KafDal @aDal.fina_LamDal];
 @Dal_2 = [@aDal.isol];
-@1st_3 = [@aRaa.fina_MemRaaIsol]; # XXX @aRaa.fina.alt2
+@1st_3 = [@aRaa.fina_MemRaaIsol];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
 @Kaf_1 = [@aKaf.init_KafHeh
