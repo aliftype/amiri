@@ -3,6 +3,7 @@ lookup loclPunct {
   sub guillemotleft  by guillemotleft.ara;
   sub guillemotright by guillemotright.ara;
   sub braceleft      by braceleft.ara;
+  sub bar            by bar.ara;
   sub braceright     by braceright.ara;
   sub bracketleft    by bracketleft.ara;
   sub bracketright   by bracketright.ara;
