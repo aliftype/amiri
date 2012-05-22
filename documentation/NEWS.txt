@@ -1,3 +1,43 @@
+Amiri 0.102 (2012-05-22)
+------------------------
+* New glyphs:
+  - The largest feature of this release is adding Latin script support based on
+    Crimson font, covering latin-0 to 9 code pages as well as all characters
+    used in common Arabic romanisation schemes (no including IPA) and other
+    common punctuation characters.
+  - Beh with small v below (U+08A0).
+  - Basmala symbol (U+FDFD).
+
+* Fixes:
+  - New contextual shape for final open heh-yaa combination.
+  - New contextual shape for final faa-yaa combination.
+  - New contextual shape for knotted heh-yaa baree.
+  - New, improved and more open hmaza wasl.
+  - Larger and more readable shadda, regular and Qur'anic sukun.
+  - Larger and more readable Sallallahou Alayhe Wasallam symbol (U+FDFA).
+  - Improved dot placement of initial baa-like glyphs.
+  - Improved dot placement of kaf-baa-alef combination.
+  - Improved placement of dagger alef on regular glyphs.
+  - Wider final alef with madda to avoid clash between madda and next glyphs.
+  - Improved kaf-meem-alef, kaf-alef combinations at smaller sizes on screen.
+  - Improve kaf-lam-final meem.
+  - Avoid initial/medial kaf clash with next glyph's dots.
+  - Improved medial and final sad connecting part.
+
+* Kerning:
+  - More efficient kerning feature using contextual positioning
+  - Reduce dal/raa-kaf kerning to avoid dot clash
+  - More positive kerning for raa-intial yaa.
+  - Make kerning across ZWNJ work with Uniscribe.
+
+* Bug fixes: #1347860, #3471042, #3475146, #3509875
+
+* Misc.:
+  - Duplicate 'locl' in 'ccmp' to work around engines not supporting the former.
+  - Smaller, MTX compressed EOT files.
+
+* Many other subtle improvements here and there.
+
 Amiri 0.101 (2011-12-27)
 ------------------------
 * New styles:
