@@ -40,13 +40,6 @@ feature kern {
 
 feature kern {
   lookupflag IgnoreMarks;
-  # this baa requires an extra +ve kern than the ones above
-  # XXX: we only need a subset of @aBaa.init_High
-  pos @RaaWaw' <80 0 80 0> @aBaa.init_High;
-} kern;
-
-feature kern {
-  lookupflag IgnoreMarks;
   # kern heh isol/final followed by kaf, does not happen in Arabic but can be
   # seen in Kurdish or Persian using ZWNJ between them.
   pos uni200C @1st_4 @Kaf_1' -500;
