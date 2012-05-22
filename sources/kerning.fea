@@ -35,6 +35,11 @@ feature kern {
 
 feature kern {
   lookupflag IgnoreMarks;
+  pos @RaaWaw' <80 0 80 0> @aYaa.init;
+} kern;
+
+feature kern {
+  lookupflag IgnoreMarks;
   # this baa requires an extra +ve kern than the ones above
   # XXX: we only need a subset of @aBaa.init_High
   pos @RaaWaw' <80 0 80 0> @aBaa.init_High;

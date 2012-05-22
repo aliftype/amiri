@@ -56,6 +56,8 @@
 @aTaa.medi = [ uni0638.medi uni0637.medi uni069F.medi ];
 @aWaw.fina = [ uni06CB.fina uni0624.fina uni06CA.fina uni06CF.fina uni0778.fina uni06C6.fina uni06C7.fina uni06C4.fina uni06C5.fina uni0676.fina uni0677.fina uni06C8.fina uni06C9.fina uni0779.fina uni0648.fina ];
 @aWaw.isol = [ uni06CB uni0624 uni06CA uni06CF uni0778 uni06C6 uni06C7 uni06C4 uni06C5 uni0676 uni0677 uni06C8 uni06C9 uni0779 uni0648 ];
+# only initial yaa with dots below
+@aYaa.init = [ uni0777.init uni06D1.init uni0775.init uni063D.init uni06D0.init uni0776.init uni06CC.init uni064A.init uni06CE.init ];
 @aYaa.fina = [ uni0777.fina uni06D1.fina uni0775.fina uni063F.fina uni0678.fina uni063D.fina uni063E.fina uni06D0.fina uni0649.fina uni0776.fina uni06CD.fina uni06CC.fina uni0626.fina uni0620.fina uni064A.fina uni06CE.fina ];
 @aYaa.isol = [ uni0777 uni06D1 uni0775 uni063F uni0678 uni063D uni063E uni06D0 uni0649 uni0776 uni06CD uni06CC uni0626 uni0620 uni064A uni06CE ];
 @aYaaBarree.fina = [ uni077B.fina uni077A.fina uni06D2.fina ];
