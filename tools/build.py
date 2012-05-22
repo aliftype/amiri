@@ -344,7 +344,14 @@ def mergeLatin(font, italic=False):
             "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
             "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
             "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
-            "ygrave", "agrave", "uni02BE", "aacute")
+            "ygrave", "agrave", "uni02BE", "aacute", "Amacron", "Amacron",
+            "Eacute", "uni1E6E", "Ccedilla", "uni1E6E", "Gcaron",
+            "Ycircumflex", "uni1E28", "uni1E24", "uni1E2A", "uni1E0E",
+            "Dcroat", "Scaron", "Scedilla", "uni1E62", "uni1E10", "uni1E0C",
+            "uni1E6C", "uni1E92", "Dcroat", "Rcaron", "Gdotaccent", "Gbreve",
+            "Umacron", "Imacron", "Amacron", "Amacron", "Amacron",
+            "Acircumflex", "Amacron", "Tbar", "Aacute", "Amacron", "Ygrave",
+            "Agrave", "Aacute")
 
     # and some typographic characters
     typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
