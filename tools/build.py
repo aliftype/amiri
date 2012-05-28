@@ -314,6 +314,11 @@ def mergeLatin(font, italic=False):
     latinfont = fontforge.open("sources/crimson/sources/%s" %latinfile)
     latinfont.em = 2048
 
+    # convert to quadratic splines then simplify
+    latinfont.is_quadratic = True
+    for glyph in latinfont.glyphs():
+        glyph.simplify()
+
     validateGlyphs(latinfont) # to flatten nested refs mainly
 
     # collect latin glyphs we want to keep
