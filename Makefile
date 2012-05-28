@@ -26,6 +26,7 @@ PDFS=$(DOC)/$(NAME)-table.pdf
 CSSS=$(WEB)/$(NAME).css
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
+TEST+=$(wildcard $(TESTS)/*.ptest)
 
 DOCFILES=$(DOCS:%=$(DOC)/%.txt)
 license=OFL.txt OFL-FAQ.txt

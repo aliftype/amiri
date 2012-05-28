@@ -5,8 +5,8 @@ import os
 import csv
 import subprocess
 
-def runHB(row, font):
-    args = ["hb-shape", "--no-clusters", "--no-positions",
+def runHB(row, font, positions=False):
+    args = ["hb-shape", "--no-clusters", positions and "--debug" or "--no-positions",
             "--font-file=%s" %font,
             "--direction=%s" %row[0],
             "--script=%s"    %row[1],
@@ -16,7 +16,7 @@ def runHB(row, font):
     process = subprocess.Popen(args, stdout=subprocess.PIPE)
     return process.communicate()[0].strip()
 
-def runTest(test, font):
+def runTest(test, font, positions):
     count = 0
     failed = {}
     passed = []
@@ -25,7 +25,7 @@ def runTest(test, font):
         row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
         text = row[4]
         reference = row[5]
-        result = runHB(row, font)
+        result = runHB(row, font, positions)
         if reference == result:
             passed.append(count)
         else:
@@ -45,6 +45,7 @@ def initTest(test, font):
 
 if __name__ == '__main__':
     init = False
+    positions = False
     args = sys.argv[1:]
 
     if len (sys.argv) > 2 and sys.argv[1] == "-i":
@@ -53,6 +54,10 @@ if __name__ == '__main__':
 
     for arg in args:
         testname = arg
+
+        ext = os.path.splitext(testname)[1]
+        if ext == '.ptest':
+            positions = True
 
         reader = csv.reader(open(testname), delimiter=';')
 
@@ -70,7 +75,7 @@ if __name__ == '__main__':
 
         for style in ('regular', 'bold', 'slanted', 'boldslanted'):
             fontname = 'amiri-%s.ttf' % style
-            passed, failed = runTest(test, fontname)
+            passed, failed = runTest(test, fontname, positions)
             message = "%s: font '%s', %d passed, %d failed" %(os.path.basename(testname),
                     fontname, len(passed), len(failed))
 
