@@ -50,11 +50,11 @@ feature kern {
 } kern;
 
 feature kern {
-  pos @EndOfAyah @Digits.small' -300 @Digits.small;
-  pos @NumSign   @Digits.small' -300 @Digits.small;
-  pos @YearSign  @Digits.medium' -450 @Digits.medium;
-  pos @FootNote  @Digits.small' -300 @Digits.small;
-  pos @SafhaSign @Digits.small' -300 @Digits.small;
+  pos @EndOfAyah @Digits.small' <-300 0 0 0> @Digits.small;
+  pos @NumSign   @Digits.small' <-300 0 0 0> @Digits.small;
+  pos @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium;
+  pos @FootNote  @Digits.small' <-300 0 0 0> @Digits.small;
+  pos @SafhaSign @Digits.small' <-300 0 0 0> @Digits.small;
 } kern;
 
 feature kern {
@@ -66,17 +66,17 @@ feature kern {
 } kern;
 
 feature kern {
-  pos @EndOfAyah @Digits.small' -300 @Digits.small @Digits.small;
-  pos @NumSign   @Digits.small' -300 @Digits.small @Digits.small;
-  pos @YearSign  @Digits.medium' -450 @Digits.medium @Digits.medium;
-  pos @SafhaSign @Digits.small' -300 @Digits.small @Digits.small;
+  pos @EndOfAyah @Digits.small' <-300 0 0 0> @Digits.small @Digits.small;
+  pos @NumSign   @Digits.small' <-300 0 0 0> @Digits.small @Digits.small;
+  pos @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
+  pos @SafhaSign @Digits.small' <-300 0 0 0> @Digits.small @Digits.small;
 } kern;
 
 feature kern {
-  pos @Digits.small @EndOfAyah @Digits.small' -300 @Digits.small;
-  pos @Digits.small @NumSign   @Digits.small' -300 @Digits.small;
-  pos @Digits.medium @YearSign  @Digits.medium' -450 @Digits.medium;
-  pos @Digits.small @SafhaSign @Digits.small' -300 @Digits.small;
+  pos @Digits.small @EndOfAyah @Digits.small' <-300 0 0 0> @Digits.small;
+  pos @Digits.small @NumSign   @Digits.small' <-300 0 0 0> @Digits.small;
+  pos @Digits.medium @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium;
+  pos @Digits.small @SafhaSign @Digits.small' <-300 0 0 0> @Digits.small;
 } kern;
 
 feature kern {
@@ -87,15 +87,15 @@ feature kern {
 } kern;
 
 feature kern {
-  pos @YearSign @Digits.medium' -450 @Digits.medium @Digits.medium @Digits.medium;
+  pos @YearSign @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @Digits.medium;
 } kern;
 
 feature kern {
-  pos @Digits.medium @Digits.medium @YearSign @Digits.medium' -450 @Digits.medium;
+  pos @Digits.medium @Digits.medium @YearSign @Digits.medium' <-450 0 0 0> @Digits.medium;
 } kern;
 
 feature kern {
-  pos @Digits.medium @YearSign @Digits.medium' -450 @Digits.medium @Digits.medium;
+  pos @Digits.medium @YearSign @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
 } kern;
 
 feature kern {
