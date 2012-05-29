@@ -7,7 +7,7 @@ lookup loclPunct {
   sub braceright     by braceright.ara;
   sub bracketleft    by bracketleft.ara;
   sub bracketright   by bracketright.ara;
-  sub parenleft by   parenleft.ara;
+  sub parenleft      by parenleft.ara;
   sub parenright     by parenright.ara;
 } loclPunct;
 

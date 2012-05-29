@@ -424,9 +424,10 @@ def mergeLatin(font, italic=False):
             latinfont.selection.select(name)
             latinfont.paste()
 
-            rtl = latinfont.createChar(-1, name + ".rtl")
-            rtl.addReference(name, italic)
-            rtl.useRefsMetrics(name)
+            if not name + ".ara" in font:
+                rtl = latinfont.createChar(-1, name + ".rtl")
+                rtl.addReference(name, italic)
+                rtl.useRefsMetrics(name)
 
     # copy kerning classes
     kern_lookups = {}

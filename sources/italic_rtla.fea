@@ -7,8 +7,6 @@ feature locl {
   sub dollar by dollar.rtl;
   sub percent by percent.rtl;
   sub quotesingle by quotesingle.rtl;
-  sub parenleft by parenleft.rtl;
-  sub parenright by parenright.rtl;
   sub asterisk by asterisk.rtl;
   sub plus by plus.rtl;
   sub slash by slash.rtl;
@@ -29,17 +27,11 @@ feature locl {
   sub greater by greater.rtl;
   sub question by question.rtl;
   sub at by at.rtl;
-  sub bracketleft by bracketleft.rtl;
   sub backslash by backslash.rtl;
-  sub bracketright by bracketright.rtl;
   sub asciicircum by asciicircum.rtl;
-  sub braceleft by braceleft.rtl;
-  sub bar by bar.rtl;
-  sub braceright by braceright.rtl;
   sub brokenbar by brokenbar.rtl;
   sub section by section.rtl;
   sub copyright by copyright.rtl;
-  sub guillemotleft by guillemotleft.rtl;
   sub logicalnot by logicalnot.rtl;
   sub registered by registered.rtl;
   sub plusminus by plusminus.rtl;
@@ -48,7 +40,6 @@ feature locl {
   sub paragraph by paragraph.rtl;
   sub uni00B9 by uni00B9.rtl;
   sub ordmasculine by ordmasculine.rtl;
-  sub guillemotright by guillemotright.rtl;
   sub onequarter by onequarter.rtl;
   sub onehalf by onehalf.rtl;
   sub threequarters by threequarters.rtl;
