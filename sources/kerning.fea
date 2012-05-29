@@ -42,7 +42,7 @@ feature kern {
   lookupflag IgnoreMarks;
   # kern heh isol/final followed by kaf, does not happen in Arabic but can be
   # seen in Kurdish or Persian using ZWNJ between them.
-  pos uni200C @1st_4 @Kaf_1' -500;
-  pos space   @1st_4 @Kaf_1' -500; # Uniscribe replace ZWNJ with space
-  pos         @1st_4 @Kaf_1' -500; # some applications might just remove it
+  pos uni200C @1st_4 [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
+  pos space   @1st_4 [@Kaf_1 @Kaf_2 @Kaf_3]' -500; # Uniscribe replace ZWNJ with space
+  pos         @1st_4 [@Kaf_1 @Kaf_2 @Kaf_3]' -500; # some applications might just remove it
 } kern;
