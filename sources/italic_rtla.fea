@@ -1,6 +1,9 @@
-include(lang.fea)
+languagesystem arab dflt;
+languagesystem arab ARA;
+languagesystem arab URD;
+languagesystem arab SND;
 
-feature rtla {
+feature locl {
   sub exclam by exclam.rtl;
   sub quotedbl by quotedbl.rtl;
   sub numbersign by numbersign.rtl;
@@ -71,4 +74,4 @@ feature rtla {
   sub fraction by fraction.rtl;
   sub uni2213 by uni2213.rtl;
   sub uni061F by uni061F.rtl;
-} rtla;
+} locl;

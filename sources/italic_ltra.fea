@@ -1,8 +1,7 @@
-languagesystem DFLT dflt;
 languagesystem latn dflt;
 languagesystem latn TRK;
 
-feature ltra {
+feature locl {
   sub exclam by exclam.ltr;
   sub quotedbl by quotedbl.ltr;
   sub numbersign by numbersign.ltr;
@@ -72,4 +71,4 @@ feature ltra {
   sub guilsinglright by guilsinglright.ltr;
   sub fraction by fraction.ltr;
   sub uni2213 by uni2213.ltr;
-} ltra;
+} locl;
