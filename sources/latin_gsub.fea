@@ -1,6 +1,5 @@
 languagesystem DFLT dflt;
-languagesystem latn dflt;
-languagesystem latn TRK;
+include(lang_latin.fea)
 
 feature locl {
   script latn;

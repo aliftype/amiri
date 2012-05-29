@@ -1,5 +1,4 @@
-languagesystem latn dflt;
-languagesystem latn TRK;
+include(lang_latin.fea)
 
 feature locl {
   sub exclam by exclam.ltr;

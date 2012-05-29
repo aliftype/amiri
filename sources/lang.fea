@@ -1,7 +1,3 @@
 languagesystem DFLT dflt;
-languagesystem latn dflt;
-languagesystem latn TRK;
-languagesystem arab dflt;
-languagesystem arab ARA;
-languagesystem arab URD;
-languagesystem arab SND;
+include(lang_arabic.fea)
+include(lang_latin.fea)

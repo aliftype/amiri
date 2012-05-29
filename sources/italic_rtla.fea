@@ -1,7 +1,4 @@
-languagesystem arab dflt;
-languagesystem arab ARA;
-languagesystem arab URD;
-languagesystem arab SND;
+include(lang_arabic.fea)
 
 feature locl {
   sub exclam by exclam.rtl;
