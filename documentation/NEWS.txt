@@ -1,3 +1,13 @@
+Amiri 0.103 (2012-05-31)
+------------------------
+* This is a bug fix release:
+ - Fix wrong kerning of digits inside end of ayah and other Arabic enclosing
+   marks.
+ - Add visible glyphs for BiDi control characters.
+ - Kern more kaf forms accross ZWNJ.
+ - Fix handling of right-slanting and left-slanting common characters in the
+   italic fonts to be more logical.
+
 Amiri 0.102 (2012-05-22)
 ------------------------
 * New glyphs:
