@@ -13,6 +13,9 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
+# minimum required FontForge version
+min_ff_version = "20120601"
+
 import fontforge
 import psMat
 import sys
@@ -625,6 +628,10 @@ Options:
     sys.exit(code)
 
 if __name__ == "__main__":
+    if fontforge.version() < min_ff_version:
+        print "You need FontForge %s or newer to build Amiri fonts" %min_ff_version
+        sys.exit(-1)
+
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
