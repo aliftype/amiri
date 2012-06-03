@@ -303,7 +303,7 @@ def buildLatinExtras(font, italic):
         medium.width = 900
         centerGlyph(medium)
 
-def mergeLatin(font, italic=False):
+def mergeLatin(font, feafile, italic=False):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
               "Bold": "Bold",
@@ -458,9 +458,7 @@ def mergeLatin(font, italic=False):
 
     # we want to merge features after merging the latin font because many
     # referenced glyphs are in the latin font
-    if font.sfd_path:
-        feafile = os.path.splitext(font.sfd_path)[0] + '.fea'
-        mergeFeatures(font, feafile)
+    mergeFeatures(font, feafile)
 
     font.mergeFeature("sources/latin_gsub.fea")
 
@@ -557,9 +555,9 @@ def makeWeb(infile, outfile):
 
     os.remove(tmpfont)
 
-def makeSlanted(infile, outfile, version, slant):
+def makeSlanted(infile, outfile, feafile, version, slant):
 
-    font = makeDesktop(infile, outfile, version, False, False)
+    font = makeDesktop(infile, outfile, feafile, version, False, False)
 
     # compute amout of skew, magic formula copied from fontforge sources
     skew = psMat.skew(-slant * math.pi/180.0)
@@ -578,11 +576,11 @@ def makeSlanted(infile, outfile, version, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-    mergeLatin(font, skew)
+    mergeLatin(font, feafile, skew)
 
     generateFont(font, outfile)
 
-def makeDesktop(infile, outfile, version, latin=True, generate=True):
+def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     font = fontforge.open(infile)
 
     if version:
@@ -600,7 +598,7 @@ def makeDesktop(infile, outfile, version, latin=True, generate=True):
         font.appendSFNTName(lang, 'Sample Text', sample)
 
     if latin:
-        mergeLatin(font)
+        mergeLatin(font, feafile)
 
     if generate:
         generateFont(font, outfile, True)
@@ -616,6 +614,7 @@ def usage(extramessage, code):
 Options:
   --input=FILE          file name of input font
   --output=FILE         file name of output font
+  --features=FILE       file name of features file
   --version=VALUE       set font version to VALUE
   --slant=VALUE         autoslant
   --css                 output is a CSS file
@@ -635,12 +634,13 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help","input=","output=", "version=", "slant=", "css", "web"])
+                ["help", "input=", "output=", "features=", "version=", "slant=", "css", "web"])
     except getopt.GetoptError, err:
         usage(str(err), -1)
 
     infile = None
     outfile = None
+    feafile = None
     version = None
     slant = False
     css = False
@@ -651,15 +651,16 @@ if __name__ == "__main__":
             usage("", 0)
         elif opt == "--input": infile = arg
         elif opt == "--output": outfile = arg
+        elif opt == "--features": feafile = arg
         elif opt == "--version": version = arg
         elif opt == "--slant": slant = float(arg)
         elif opt == "--css": css = True
         elif opt == "--web": web = True
 
     if not infile:
-        usage("No input file", -1)
+        usage("No input file specified", -1)
     if not outfile:
-        usage("No output file", -1)
+        usage("No output file specified", -1)
 
     if css:
         makeCss(infile, outfile)
@@ -668,8 +669,10 @@ if __name__ == "__main__":
     else:
         if not version:
             usage("No version specified", -1)
+        if not feafile:
+            usage("No features file specified", -1)
 
         if slant:
-            makeSlanted(infile, outfile, version, slant)
+            makeSlanted(infile, outfile, feafile, version, slant)
         else:
-            makeDesktop(infile, outfile, version)
+            makeDesktop(infile, outfile, feafile, version)
