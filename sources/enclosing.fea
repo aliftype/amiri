@@ -101,3 +101,98 @@ feature kern {
 feature kern {
   pos @YearSign @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-925 0 -900 0>;
 } kern;
+
+##############
+# HarfBuzz flips LTR Arabic runs before applying OpenType, but this is not what
+# other engines does, so the above code does not work as it expects the digits
+# and the sign in LTR order, so we do it for RTL order below until this is
+# changed in HarfBuzz.
+feature calt {
+  sub @Digits' lookup digit2small                             [@EndOfAyah @NumSign @SafhaSign @FootNote];
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2small @Digits.small               [@EndOfAyah @NumSign @SafhaSign @FootNote];
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2small @Digits.small @Digits.small [@EndOfAyah @NumSign @SafhaSign          ];
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2medium                                              @YearSign;
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2medium @Digits.medium                               @YearSign;
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2medium @Digits.medium @Digits.medium                @YearSign;
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2medium @Digits.medium @Digits.medium @Digits.medium @YearSign;
+} calt;
+
+feature kern {
+  pos @Digits.small'  <-1610 0 -600 0> @EndOfAyah;
+  pos @Digits.small'  <-1522 0 -600 0> @NumSign  ;
+  pos @Digits.medium' <-2275 0 -900 0> @YearSign ;
+  pos @Digits.small'  <-1090 0 -600 0> @FootNote ;
+  pos @Digits.small'  <-1722 0 -600 0> @SafhaSign;
+} kern;
+
+feature kern {
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @EndOfAyah;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @NumSign  ;
+  pos @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign ;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @FootNote ;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @SafhaSign;
+} kern;
+
+feature kern {
+  pos @Digits.small'  <-1310 0 -600 0> @Digits.small  @EndOfAyah;
+  pos @Digits.small'  <-1222 0 -600 0> @Digits.small  @NumSign  ;
+  pos @Digits.medium' <-1825 0 -900 0> @Digits.medium @YearSign ;
+  pos @Digits.small'  <-790  0 -600 0> @Digits.small  @FootNote ;
+  pos @Digits.small'  <-1422 0 -600 0> @Digits.small  @SafhaSign;
+} kern;
+
+feature kern {
+  pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @EndOfAyah;
+  pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @NumSign  ;
+  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign ;
+  pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @SafhaSign;
+} kern;
+
+feature kern {
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @EndOfAyah;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @NumSign  ;
+  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @YearSign ;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @SafhaSign;
+} kern;
+
+feature kern {
+  pos @Digits.small'  <-1010 0 -600 0> @Digits.small  @Digits.small  @EndOfAyah;
+  pos @Digits.small'  <-922  0 -600 0> @Digits.small  @Digits.small  @NumSign  ;
+  pos @Digits.medium' <-1375 0 -900 0> @Digits.medium @Digits.medium @YearSign ;
+  pos @Digits.small'  <-1122 0 -600 0> @Digits.small  @Digits.small  @SafhaSign;
+} kern;
+
+feature kern {
+  pos @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign;
+} kern;
+
+feature kern {
+  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @YearSign;
+} kern;
+
+feature kern {
+  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @YearSign;
+} kern;
+
+feature kern {
+  pos @Digits.medium' <-925 0 -900 0> @Digits.medium @Digits.medium @Digits.medium @YearSign;
+} kern;
+##############
