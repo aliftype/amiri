@@ -11,14 +11,25 @@
 @FootNote  = [uni0602];
 @SafhaSign = [uni0603];
 
+@NumSignW  = [uni0600.alt];
+
 lookup digit2small {
   sub @Digits by @Digits.small;
 } digit2small;
+
+lookup NumSignW {
+  sub @NumSign by @NumSignW;
+} NumSignW;
 
 feature calt {
   sub [@EndOfAyah @NumSign @SafhaSign @FootNote]                             @Digits' lookup digit2small;
   sub [@EndOfAyah @NumSign @SafhaSign @FootNote] @Digits.small               @Digits' lookup digit2small;
   sub [@EndOfAyah @NumSign @SafhaSign          ] @Digits.small @Digits.small @Digits' lookup digit2small;
+  sub @NumSign                                   @Digits.small @Digits.small @Digits.small @Digits' lookup digit2small;
+} calt;
+
+feature calt {
+  sub @NumSign' lookup NumSignW @Digits.small @Digits.small @Digits.small @Digits.small;
 } calt;
 
 lookup digit2medium {
@@ -44,6 +55,7 @@ feature calt {
 feature kern {
   pos @EndOfAyah @Digits.small' <-1610 0 -600 0>;
   pos @NumSign   @Digits.small' <-1522 0 -600 0>;
+  pos @NumSignW  @Digits.small' <-1822 0 -600 0>;
   pos @YearSign  @Digits.medium' <-2275 0 -900 0>;
   pos @FootNote  @Digits.small' <-1090 0 -600 0>;
   pos @SafhaSign @Digits.small' <-1722 0 -600 0>;
@@ -52,6 +64,7 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small' <-300 0 0 0> @Digits.small;
   pos @NumSign   @Digits.small' <-300 0 0 0> @Digits.small;
+  pos @NumSignW  @Digits.small' <-300 0 0 0> @Digits.small;
   pos @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium;
   pos @FootNote  @Digits.small' <-300 0 0 0> @Digits.small;
   pos @SafhaSign @Digits.small' <-300 0 0 0> @Digits.small;
@@ -60,6 +73,7 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small  @Digits.small'  <-1310 0 -600 0>;
   pos @NumSign   @Digits.small  @Digits.small'  <-1222 0 -600 0>;
+  pos @NumSignW  @Digits.small  @Digits.small'  <-1522 0 -600 0>;
   pos @YearSign  @Digits.medium @Digits.medium' <-1825 0 -900 0>;
   pos @FootNote  @Digits.small  @Digits.small'  <-790  0 -600 0>;
   pos @SafhaSign @Digits.small  @Digits.small'  <-1422 0 -600 0>;
@@ -68,6 +82,7 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small;
   pos @NumSign   @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small;
+  pos @NumSignW  @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small;
   pos @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
   pos @SafhaSign @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small;
 } kern;
@@ -75,6 +90,7 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small;
   pos @NumSign   @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small;
+  pos @NumSignW  @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small;
   pos @YearSign  @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
   pos @SafhaSign @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small;
 } kern;
@@ -82,24 +98,29 @@ feature kern {
 feature kern {
   pos @EndOfAyah @Digits.small  @Digits.small  @Digits.small'  <-1010 0 -600 0>;
   pos @NumSign   @Digits.small  @Digits.small  @Digits.small'  <-922  0 -600 0>;
+  pos @NumSignW  @Digits.small  @Digits.small  @Digits.small'  <-1222 0 -600 0>;
   pos @YearSign  @Digits.medium @Digits.medium @Digits.medium' <-1375 0 -900 0>;
   pos @SafhaSign @Digits.small  @Digits.small  @Digits.small'  <-1122 0 -600 0>;
 } kern;
 
 feature kern {
   pos @YearSign @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @Digits.medium;
+  pos @NumSignW @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small  @Digits.small ;
 } kern;
 
 feature kern {
   pos @YearSign @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
+  pos @NumSignW @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small ;
 } kern;
 
 feature kern {
   pos @YearSign @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
+  pos @NumSignW @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small ;
 } kern;
 
 feature kern {
   pos @YearSign @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-925 0 -900 0>;
+  pos @NumSignW @Digits.small  @Digits.small  @Digits.small  @Digits.small'  <-922 0 -600 0>;
 } kern;
 
 ##############
@@ -117,6 +138,14 @@ feature calt {
 
 feature calt {
   sub @Digits' lookup digit2small @Digits.small @Digits.small [@EndOfAyah @NumSign @SafhaSign          ];
+} calt;
+
+feature calt {
+  sub @Digits' lookup digit2small @Digits.small @Digits.small @Digits.small @NumSign;
+} calt;
+
+feature calt {
+  sub @Digits.small @Digits.small @Digits.small @Digits.small @NumSign' lookup NumSignW;
 } calt;
 
 feature calt {
@@ -138,6 +167,7 @@ feature calt {
 feature kern {
   pos @Digits.small'  <-1610 0 -600 0> @EndOfAyah;
   pos @Digits.small'  <-1522 0 -600 0> @NumSign  ;
+  pos @Digits.small'  <-1822 0 -600 0> @NumSignW ;
   pos @Digits.medium' <-2275 0 -900 0> @YearSign ;
   pos @Digits.small'  <-1090 0 -600 0> @FootNote ;
   pos @Digits.small'  <-1722 0 -600 0> @SafhaSign;
@@ -146,6 +176,7 @@ feature kern {
 feature kern {
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @EndOfAyah;
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @NumSign  ;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @NumSignW ;
   pos @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign ;
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @FootNote ;
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @SafhaSign;
@@ -154,6 +185,7 @@ feature kern {
 feature kern {
   pos @Digits.small'  <-1310 0 -600 0> @Digits.small  @EndOfAyah;
   pos @Digits.small'  <-1222 0 -600 0> @Digits.small  @NumSign  ;
+  pos @Digits.small'  <-1522 0 -600 0> @Digits.small  @NumSignW ;
   pos @Digits.medium' <-1825 0 -900 0> @Digits.medium @YearSign ;
   pos @Digits.small'  <-790  0 -600 0> @Digits.small  @FootNote ;
   pos @Digits.small'  <-1422 0 -600 0> @Digits.small  @SafhaSign;
@@ -162,6 +194,7 @@ feature kern {
 feature kern {
   pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @EndOfAyah;
   pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @NumSign  ;
+  pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @NumSignW ;
   pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign ;
   pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @SafhaSign;
 } kern;
@@ -169,6 +202,7 @@ feature kern {
 feature kern {
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @EndOfAyah;
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @NumSign  ;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @NumSignW ;
   pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @YearSign ;
   pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @SafhaSign;
 } kern;
@@ -176,23 +210,28 @@ feature kern {
 feature kern {
   pos @Digits.small'  <-1010 0 -600 0> @Digits.small  @Digits.small  @EndOfAyah;
   pos @Digits.small'  <-922  0 -600 0> @Digits.small  @Digits.small  @NumSign  ;
+  pos @Digits.small'  <-1222 0 -600 0> @Digits.small  @Digits.small  @NumSignW ;
   pos @Digits.medium' <-1375 0 -900 0> @Digits.medium @Digits.medium @YearSign ;
   pos @Digits.small'  <-1122 0 -600 0> @Digits.small  @Digits.small  @SafhaSign;
 } kern;
 
 feature kern {
   pos @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign;
+  pos @Digits.small  @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @NumSignW;
 } kern;
 
 feature kern {
   pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @YearSign;
+  pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small  @NumSignW;
 } kern;
 
 feature kern {
   pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @YearSign;
+  pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @NumSignW;
 } kern;
 
 feature kern {
   pos @Digits.medium' <-925 0 -900 0> @Digits.medium @Digits.medium @Digits.medium @YearSign;
+  pos @Digits.small'  <-922 0 -600 0> @Digits.small  @Digits.small  @Digits.small  @NumSignW;
 } kern;
 ##############
