@@ -13,7 +13,7 @@ def RebuildGlyph(glyph):
     anchors = []
     for ref in glyph.references:
         klass = font[ref[0]].glyphclass
-        if klass != "mark" and (klass == "base" or klass == "automatic"):
+        if klass != "mark" and (klass == "baseglyph" or klass == "automatic"):
             if not base:
                 base = ref[0]
             else:
