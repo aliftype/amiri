@@ -22,8 +22,9 @@ a {
    color: #ad000d
 }
 
-tt {
+tt, code {
    background: #E6E6E6;
+   font-family: Inconsolata;
 }
 
 .ar {
