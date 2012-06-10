@@ -8,6 +8,7 @@ html {
 body {
    margin: 0 auto;
    width: 800px;
+   font-family: AmiriWeb, serif;
    font-size: 12pt;
 }
 
@@ -27,7 +28,6 @@ tt {
 
 .ar {
    direction: rtl;
-   font-family: "AmiriWeb", serif;
    line-height: 1.5;
    float: right;
    right: 5px;
@@ -38,7 +38,6 @@ tt {
    -moz-hyphens: auto;
    -webkit-hyphens: auto;
    direction: ltr;
-   font-family: "AmiriWeb", serif;
    line-height: 1.21;
    float: left;
    left: 5px;
