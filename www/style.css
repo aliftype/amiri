@@ -20,12 +20,12 @@ h1 {
 
 a {
    text-decoration: none;
-   color: #ad000d
+   color: #ad000d;
 }
 
 tt, code {
    background: #E6E6E6;
-   font-family: Inconsolata;
+   font-family: Inconsolata, monospace;
 }
 
 .ar {
