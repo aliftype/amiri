@@ -10,6 +10,7 @@ body {
    width: 800px;
    font-family: AmiriWeb, serif;
    font-size: 12pt;
+   text-align: justify;
 }
 
 h1 {
@@ -47,7 +48,6 @@ tt, code {
 .column {
    position: relative;
    width: 375px;
-   text-align: justify;
 }
 
 .banner {
