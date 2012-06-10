@@ -1,0 +1,39 @@
+html {
+   direction: rtl;
+   line-height: 1.8;
+   width: 600px;
+   margin: 0 auto;
+   text-align: justify;
+   font-family: Amiri, serif;
+   color: #404040;
+   background-color: #fffef8
+}
+
+table {
+   width: 80%;
+   margin: auto;
+   border-collapse: collapse;
+}
+
+a {
+   text-decoration: none;
+   color: #ad000d;
+}
+
+tt, code {
+   background: #E6E6E6;
+   font-family: Inconsolata, "DejaVu Sans mono", monospace;
+}
+
+table, td, th {
+/* border:1px solid black;*/
+   padding:0px 15px 10px; 
+}
+
+th {
+   border-bottom: 2px solid #ad000d;
+}
+
+td {
+   padding: 9px 8px 0px;
+}

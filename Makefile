@@ -23,6 +23,7 @@ WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(DOC)/$(NAME)-table.pdf
+HTML=$(DOC)/documentation-arabic.html
 CSSS=$(WEB)/$(NAME).css
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
@@ -35,7 +36,7 @@ all: ttf web
 
 ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
-doc: $(PDFS)
+doc: $(PDFS) $(HTML)
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
@@ -79,6 +80,10 @@ $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
+
+$(DOC)/documentation-arabic.html: $(DOC)/documentation-sources/documentation-arabic.md
+	@echo "   GEN\t$@"
+	@pandoc $< -f markdown -t html -s -c documentation-arabic.css --toc | sed -e 's/>#lang=\(..\)/ lang="\1">/g' > $@
 
 check: $(TEST) $(DTTF)
 ifeq ($(shell which hb-shape),)
