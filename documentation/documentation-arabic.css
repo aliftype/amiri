@@ -45,3 +45,15 @@ h1, h2, h3 {
 h3 {
    font-style: italic;
 }
+
+#ss01 {
+  -moz-font-feature-settings: "ss01=1";
+  -ms-font-feature-settings: "ss01" 1;
+   font-feature-settings: "ss01" 1;
+}
+
+#ss02 {
+  -moz-font-feature-settings: "ss02=1";
+  -ms-font-feature-settings: "ss02" 1;
+   font-feature-settings: "ss02" 1;
+}
