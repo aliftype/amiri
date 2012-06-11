@@ -37,3 +37,11 @@ th {
 td {
    padding: 9px 8px 0px;
 }
+
+h1, h2, h3 {
+   font-weight: normal;
+}
+
+h3 {
+   font-style: italic;
+}
