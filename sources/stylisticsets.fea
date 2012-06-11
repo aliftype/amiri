@@ -11,6 +11,7 @@ lookup MemAlfFina {
   sub @aMem.medi by @aMem.medi_MemAlfFina;
 
   sub @aSad.medi by @aSad.medi_PreYaa;
+  sub @aSen.medi by @aSen.medi_PreYaa;
 
   sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
   sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
@@ -40,7 +41,7 @@ feature ss02 {
       @aMem.medi' lookup BaaMemAlfFina
       @aAlf.fina' lookup MemAlfFina;
 
-  sub @aSad.medi' lookup MemAlfFina
+  sub [@aSad.medi @aSen.medi]' lookup MemAlfFina
       @aMem.medi' lookup MemAlfFinaPostTooth
       @aAlf.fina' lookup MemAlfFina;
 
