@@ -114,6 +114,12 @@ feature calt {
       [@aAlf.fina @aLam.medi @aLam.fina];
 } calt;
 
+lookup BaaBaa {
+  sub @aBaa.medi by @aBaa.medi_BaaBaaInit;
+  sub @aBaa.fina by @aBaa.fina_BaaBaaIsol;
+  sub @aBaa.init by @aBaa.init_BaaBaaIsol;
+} BaaBaa;
+
 lookup HighBaa {
   sub @aBaa.init by @aBaa.init_High;
   sub @aBaa.medi by @aBaa.medi_High;
@@ -127,11 +133,19 @@ feature calt {
       [@aBaa.medi]' lookup HighBaa
       [@aSen.medi @aSen.fina]';
 
+  # جرينتش
+  sub [@aBaa.init]' lookup BaaBaa
+      [@aBaa.medi]' lookup BaaBaa
+      [@aBaa.medi]' lookup HighBaa
+      [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
+
   sub [@aBaa.medi @aSad.init @aSad.medi @aSen.init @aSen.medi @aBaa.medi_BaaBaaInit]
       [@aBaa.medi]' lookup HighBaa
       [@aBaa.fina @aBaa.medi @aSen.fina @aBaa.medi_BaaHehMedi @aSen.medi @aSen.medi_PreYaa];
+
   sub [@aBaa.medi]' lookup HighBaa
       [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
+
   sub [@aBaa.init]' lookup HighBaa
       [@aBaa.medi]' lookup HighBaa
       [@aBaa.medi @aBaa.fina @aSen.medi @aSen.fina];
@@ -438,12 +452,6 @@ lookup SenBaaMemInit {
   sub @aBaa.medi by @aBaa.medi_SenBaaMemInit;
   sub @aMem.medi by @aMem.medi_SenBaaMemInit;
 } SenBaaMemInit;
-
-lookup BaaBaa {
-  sub @aBaa.medi by @aBaa.medi_BaaBaaInit;
-  sub @aBaa.fina by @aBaa.fina_BaaBaaIsol;
-  sub @aBaa.init by @aBaa.init_BaaBaaIsol;
-} BaaBaa;
 
 lookup HaaRaaIsol {
   sub @aHaa.init by @aHaa.init_HaaRaaIsol;
