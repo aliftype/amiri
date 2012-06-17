@@ -83,7 +83,7 @@ $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 
 $(DOC)/documentation-arabic.html: $(DOC)/documentation-sources/documentation-arabic.md
 	@echo "   GEN\t$@"
-	@pandoc $< -f markdown -t html -s -c documentation-arabic.css --toc | sed -e 's/>#lang=\(..\)/ lang="\1">/g' > $@
+	@pandoc $< -o $@ -f markdown -t html -s -c documentation-arabic.css --toc
 
 check: $(TEST) $(DTTF)
 ifeq ($(shell which hb-shape),)
