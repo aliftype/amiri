@@ -1,6 +1,7 @@
 include(lang.fea)
 include(classes.fea)
 include(local.fea)
+include(proportional.fea)
 include(basic.fea)
 include(kashida.fea)
 include(quran.fea)

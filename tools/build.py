@@ -338,6 +338,9 @@ def mergeLatin(font, feafile, italic=False):
                 # keep also Unicode Latin Extended-A block
                 if glyph.glyphname not in latinglyphs:
                     latinglyphs.append(glyph.glyphname)
+            elif glyph.unicode == -1 and '.prop' in glyph.glyphname:
+                # proportional digits
+                latinglyphs.append(glyph.glyphname)
 
     # keep ligatures too
     ligatures = ("f_f", "f_i", "f_f_i", "f_l", "f_f_l", "f_b", "f_f_b", "f_k",

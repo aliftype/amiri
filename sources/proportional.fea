@@ -1,0 +1,3 @@
+feature pnum {
+  sub @Digits by @Digits.prop;
+} pnum;
