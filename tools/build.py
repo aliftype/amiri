@@ -406,19 +406,20 @@ def mergeLatin(font, feafile, italic=False):
 
         shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
                   "quotesingle", "parenleft", "parenright", "asterisk", "plus",
-                  "slash", "zero", "one", "two", "three", "four", "five",
-                  "six", "seven", "eight", "nine", "colon", "semicolon",
-                  "less", "equal", "greater", "question", "at", "bracketleft",
-                  "backslash", "bracketright", "asciicircum", "braceleft",
-                  "bar", "braceright", "brokenbar", "section", "copyright",
-                  "guillemotleft", "logicalnot", "registered", "plusminus",
-                  "uni00B2", "uni00B3", "paragraph", "uni00B9", "ordmasculine",
-                  "guillemotright", "onequarter", "onehalf", "threequarters",
-                  "questiondown", "quoteleft", "quoteright", "quotesinglbase",
-                  "quotereversed", "quotedblleft", "quotedblright",
-                  "quotedblbase", "uni201F", "dagger", "daggerdbl",
-                  "perthousand", "minute", "second", "guilsinglleft",
-                  "guilsinglright", "fraction", "uni2213")
+                  "slash", "colon", "semicolon", "less", "equal", "greater",
+                  "question", "at", "bracketleft", "backslash", "bracketright",
+                  "asciicircum", "braceleft", "bar", "braceright", "brokenbar",
+                  "section", "copyright", "guillemotleft", "logicalnot",
+                  "registered", "plusminus", "uni00B2", "uni00B3", "paragraph",
+                  "uni00B9", "ordmasculine", "guillemotright", "onequarter",
+                  "onehalf", "threequarters", "questiondown", "quoteleft",
+                  "quoteright", "quotesinglbase", "quotereversed",
+                  "quotedblleft", "quotedblright", "quotedblbase", "uni201F",
+                  "dagger", "daggerdbl", "perthousand", "minute", "second",
+                  "guilsinglleft", "guilsinglright", "fraction", "uni2213")
+
+        digits = ("zero", "one", "two", "three", "four", "five", "six",
+                  "seven", "eight", "nine")
 
         for name in shared:
             glyph = latinfont[name]
@@ -434,6 +435,34 @@ def mergeLatin(font, feafile, italic=False):
                 rtl = latinfont.createChar(-1, name + ".rtl")
                 rtl.addReference(name, italic)
                 rtl.useRefsMetrics(name)
+
+        for name in digits:
+            glyph = latinfont[name]
+            glyph.glyphname += '.ltr'
+            glyph.unicode = -1
+            upright.selection.select(name)
+            upright.copy()
+            latinfont.createChar(upright[name].encoding, name)
+            latinfont.selection.select(name)
+            latinfont.paste()
+
+            rtl = latinfont.createChar(-1, name + ".rtl")
+            rtl.addReference(name, italic)
+            rtl.useRefsMetrics(name)
+
+        for name in digits:
+            pname = name + ".prop"
+            upright.selection.select(pname)
+            upright.copy()
+            latinfont.createChar(-1, pname)
+            latinfont.selection.select(pname)
+            latinfont.paste()
+
+        for name in digits:
+            pname = name + ".prop"
+            rtl = latinfont.createChar(-1, name + ".rtl" + ".prop")
+            rtl.addReference(pname, italic)
+            rtl.useRefsMetrics(pname)
 
     # copy kerning classes
     kern_lookups = {}
@@ -461,13 +490,14 @@ def mergeLatin(font, feafile, italic=False):
 
     # we want to merge features after merging the latin font because many
     # referenced glyphs are in the latin font
-    mergeFeatures(font, feafile)
-
-    font.mergeFeature("sources/latin_gsub.fea")
 
     if italic:
         font.mergeFeature("sources/italic_ltra.fea")
         font.mergeFeature("sources/italic_rtla.fea")
+
+    mergeFeatures(font, feafile)
+
+    font.mergeFeature("sources/latin_gsub.fea")
 
     for lookup in kern_lookups:
         font.addLookup(lookup,
