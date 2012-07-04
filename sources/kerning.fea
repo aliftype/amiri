@@ -46,3 +46,36 @@ feature kern {
   pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3]' -500; # Uniscribe replace ZWNJ with space
   pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3]' -500; # some applications might just remove it
 } kern;
+
+# proportional digits
+feature kern {
+  pos uni0661.prop uni0662.prop -100;
+  pos uni0661.prop uni0663.prop -100;
+  pos uni0661.prop uni0666.prop -200;
+  pos uni0661.prop uni0669.prop -100;
+
+  pos uni0662.prop uni0667.prop  100;
+  pos uni0662.prop uni0668.prop  -50;
+
+  pos uni0663.prop uni0667.prop  100;
+
+  pos uni0664.prop uni0661.prop  -50;
+  pos uni0664.prop uni0668.prop   50;
+
+  pos uni0666.prop uni0661.prop  -50;
+
+  pos uni0667.prop uni0661.prop  -50;
+  pos uni0667.prop uni0668.prop  -50;
+
+  pos uni0668.prop uni0661.prop -100;
+  pos uni0668.prop uni0662.prop -100;
+  pos uni0668.prop uni0663.prop -100;
+  pos uni0668.prop uni0666.prop -100;
+  pos uni0668.prop uni0667.prop -100;
+
+  pos uni0669.prop uni0668.prop   50;
+  pos uni0669.prop uni0660.prop   50;
+
+  pos uni0660.prop uni0667.prop   50;
+  pos uni0660.prop uni0668.prop   50;
+} kern;

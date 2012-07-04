@@ -14,7 +14,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 # minimum required FontForge version
-min_ff_version = "20120601"
+min_ff_version = "20120702"
 
 import fontforge
 import psMat
