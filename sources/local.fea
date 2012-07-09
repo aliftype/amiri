@@ -9,6 +9,7 @@ lookup loclPunct {
   sub bracketright   by bracketright.ara;
   sub parenleft      by parenleft.ara;
   sub parenright     by parenright.ara;
+  sub slash          by slash.ara;
 } loclPunct;
 
 lookup loclUrduDigits {
