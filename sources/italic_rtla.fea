@@ -26,7 +26,6 @@ feature locl {
   sub equal by equal.rtl;
   sub greater by greater.rtl;
   sub question by question.rtl;
-  sub at by at.rtl;
   sub backslash by backslash.rtl;
   sub asciicircum by asciicircum.rtl;
   sub brokenbar by brokenbar.rtl;
