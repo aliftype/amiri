@@ -343,8 +343,13 @@ def mergeLatin(font, feafile, italic=False):
                 latinglyphs.append(glyph.glyphname)
 
     # keep ligatures too
-    ligatures = ("f_f", "f_i", "f_f_i", "f_l", "f_f_l", "f_b", "f_f_b", "f_k",
-            "f_f_k", "f_h", "f_f_h", "f_j", "f_f_j", "T_h")
+    ligatures = ("f_b", "f_f_b",
+                 "f_h", "f_f_h",
+                 "f_i", "f_f_i",
+                 "f_j", "f_f_j",
+                 "f_k", "f_f_k",
+                 "f_l", "f_f_l",
+                 "f_f")
 
     # and Arabic romanisation characters
     romanisation = ("afii57929", "uni02BE", "uni02BE", "amacron", "uni02BE",

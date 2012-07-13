@@ -21,5 +21,4 @@ feature liga {
   sub f f h  by f_f_h;
   sub f j  by f_j;
   sub f f j  by f_f_j;
-  sub T h  by T_h;
 } liga;
