@@ -4,6 +4,9 @@
 @1st_3 = [@aRaa.fina_MemRaaIsol];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
+# final alef with no hamza above
+@Alf_1 = [uni0627.fina_LamAlfFina uni0625.fina_LamAlfFina];
+
 @Kaf_1 = [@aKaf.init_KafHeh
           @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
           @aKaf.init_KafMemIsol
@@ -31,6 +34,13 @@ feature kern {
 
   # +ve kern so that the tail of raa/waw does not touch the dot of baa
   pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
+} kern;
+
+# we don't want to ignore marks here
+feature kern {
+  pos @Alf_1' <-500 0 -500 0> @Kaf_1;
+  pos @Alf_1' <-200 0 -200 0> @Kaf_2;
+  pos @Alf_1' <-250 0 -250 0> @Kaf_3;
 } kern;
 
 feature kern {
