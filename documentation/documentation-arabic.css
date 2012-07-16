@@ -1,3 +1,6 @@
+/* only needed glyphs are requested */
+@import url(http://fonts.googleapis.com/css?family=Inconsolata&text=0123456789ABCDEFU%2bspnum);
+
 html {
    direction: rtl;
    line-height: 1.8;
@@ -26,6 +29,7 @@ a {
 tt, code {
    background: #E6E6E6;
    font-family: Inconsolata, "DejaVu Sans mono", monospace;
+   font-size: 90%;
 }
 
 table, td, th {
