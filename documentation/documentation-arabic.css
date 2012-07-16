@@ -6,7 +6,10 @@ html {
    text-align: justify;
    font-family: Amiri, serif;
    color: #404040;
-   background-color: #fffef8
+   background-color: #fffef8;
+  -moz-font-feature-settings: "pnum=1";
+  -ms-font-feature-settings: "pnum" 1;
+   font-feature-settings: "pnum" 1;
 }
 
 table {
@@ -28,6 +31,12 @@ tt, code {
 table, td, th {
 /* border:1px solid black;*/
    padding:0px 15px 10px; 
+}
+
+#tabular, table {
+  -moz-font-feature-settings: "pnum=0";
+  -ms-font-feature-settings: "pnum" 0;
+   font-feature-settings: "pnum" 0;
 }
 
 th {
