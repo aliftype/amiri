@@ -1,3 +1,26 @@
+Amiri 0.104 (2012-07-19)
+------------------------
+* New glyphs:
+  - New localised slash glyph, to align better with Arabic digits.
+  - New, less bulky Arabic @ sign.
+  - Proportional digits (‘pnum’ feature).
+
+* Fixes:
+  - Give some room to the low small waw.
+  - Fix seen tooth with ‘ss02’.
+  - Fix raa with inverted v above.
+  - Improve medial kaf of kaf-mem-alef
+  - Make subtending marks work with Firefox (and other HarfBuzz based
+    applications).
+  - Arabic number sign (U+0600) now accepts a 4th digits, and is made a bit
+    wider, to avoid collision with wide digits.
+  - Fix combining Qur’anic madda with inverted damma.
+  - Drop the Th ligature.
+  - Other miscellaneous fixes.
+
+* Kerning:
+  - Kern final lam-alef with kaf.
+
 Amiri 0.103 (2012-05-31)
 ------------------------
 * This is a bug fix release:
