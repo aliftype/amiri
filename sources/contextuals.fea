@@ -1128,3 +1128,18 @@ feature calt {
 feature calt {
   sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
 } calt;
+
+# Wider alef wasl and alef with hamza above after faa
+feature calt {
+  lookupflag IgnoreMarks;
+  sub @aFaa.init
+     [uni0671.fina uni0623.fina]'
+  by [uni0671.fina_Wide uni0623.fina_Wide];
+} calt;
+
+# If there are no marks, revert the above substitution
+feature calt {
+  sub @aFaa.init
+     [uni0671.fina_Wide uni0623.fina_Wide]'
+  by [uni0671.fina uni0623.fina];
+} calt;
