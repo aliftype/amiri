@@ -1,9 +1,9 @@
-#
-# digit enclosing signs
-#
+//
+// digit enclosing signs
+//
 
-# first we replace any sequence of digits (up to three places) following a
-# digit enclosing sign by smaller alternates
+// first we replace any sequence of digits (up to three places) following a
+// digit enclosing sign by smaller alternates
 
 @EndOfAyah = [uni06DD];
 @NumSign   = [uni0600];
@@ -43,14 +43,14 @@ feature calt {
   sub @YearSign @Digits.medium @Digits.medium @Digits.medium @Digits' lookup digit2medium;
 } calt;
 
-# now we contextually kern the sign with the digits:
-# * one digit: move digit's x by -(sw + dw)/2 and its Δx by -dw
-# * two digits: the above, then move 1st digit's x by -dw/2 and 2nd digit's x
-#   by -sw/2 and its Δx by -dw
-# * three digits: the above, then move 1st & 2nd digit's x by -dw/2 and 3rd
-#   digit's x by -(sw/2 - dw/2) and its Δx by -dw
-#
-# dw = digit width, sw = sign width
+// now we contextually kern the sign with the digits:
+// * one digit: move digit's x by -(sw + dw)/2 and its Δx by -dw
+// * two digits: the above, then move 1st digit's x by -dw/2 and 2nd digit's x
+//   by -sw/2 and its Δx by -dw
+// * three digits: the above, then move 1st & 2nd digit's x by -dw/2 and 3rd
+//   digit's x by -(sw/2 - dw/2) and its Δx by -dw
+//
+// dw = digit width, sw = sign width
 
 feature kern {
   pos @EndOfAyah @Digits.small'  <-1610 0 -600 0>;
@@ -123,11 +123,11 @@ feature kern {
   pos @NumSignW @Digits.small  @Digits.small  @Digits.small  @Digits.small'  <-1022 0 -600 0>;
 } kern;
 
-##############
-# HarfBuzz flips LTR Arabic runs before applying OpenType, but this is not what
-# other engines does, so the above code does not work as it expects the digits
-# and the sign in LTR order, so we do it for RTL order below until this is
-# changed in HarfBuzz.
+/*************/
+// HarfBuzz flips LTR Arabic runs before applying OpenType, but this is not what
+// other engines does, so the above code does not work as it expects the digits
+// and the sign in LTR order, so we do it for RTL order below until this is
+// changed in HarfBuzz.
 feature calt {
   sub @Digits' lookup digit2small                             [@EndOfAyah @NumSign @SafhaSign @FootNote];
 } calt;
@@ -234,4 +234,4 @@ feature kern {
   pos @Digits.medium' <-925  0 -900 0> @Digits.medium @Digits.medium @Digits.medium @YearSign;
   pos @Digits.small'  <-1022 0 -600 0> @Digits.small  @Digits.small  @Digits.small  @NumSignW;
 } kern;
-##############
+/************/

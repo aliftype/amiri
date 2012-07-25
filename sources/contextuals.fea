@@ -1,4 +1,4 @@
-# replace tashkil following shadda by smaller alternates
+// replace tashkil following shadda by smaller alternates
 
 @ShaddaTashkil = [uni064E uni064B uni064C uni064F uni08F0 uni08F1];
 @ShaddaTashkil.small = [uni064E.small uni064B.small uni064C.small uni064F.small uni08F0.small uni08F1.small];
@@ -11,10 +11,10 @@ feature calt {
   sub [uni0651] @ShaddaTashkil' lookup SamallTashkil;
 } calt;
 
-# a rather ugly hack for the brain dead Unicode canonical reordering of
-# <shadda><mark> to <mark><shadda>. recent versions of HarfBuzz handle this
-# internally, and Uniscribe seems to do so, so this is an interim solution
-# until all applications we care about are updated.
+// a rather ugly hack for the brain dead Unicode canonical reordering of
+// <shadda><mark> to <mark><shadda>. recent versions of HarfBuzz handle this
+// internally, and Uniscribe seems to do so, so this is an interim solution
+// until all applications we care about are updated.
 
 lookup TashkilShaddaHack {
   sub uni064E by uni0651 uni064E.small;
@@ -33,14 +33,14 @@ feature calt {
   sub @ShaddaTashkil' lookup TashkilShaddaHack dummy;
 } calt;
 
-# replace tashkil following hamza by smaller alternates
+// replace tashkil following hamza by smaller alternates
 feature calt {
   sub @AlefHamzaAbove [uni064E uni064F uni0652]' by [uni064E.small2 uni064F.small uni0652.small2];
   sub @AlefHamzaBelow [uni0650]'                 by [uni0650.small2];
 } calt;
 
-# replace hamza mark when following a final heh by a glyph that only have a
-# HamzaAbove mark so it will be positioned correctly
+// replace hamza mark when following a final heh by a glyph that only have a
+// HamzaAbove mark so it will be positioned correctly
 feature calt {
   sub [uni0647 uni06D5 uni06C1 uni0647.fina uni06D5.fina uni06C1.fina] [uni0654]' by hamza.above;
 } calt;
@@ -127,13 +127,13 @@ lookup HighBaa {
 
 feature calt {
   lookupflag IgnoreMarks;
-  # hack to prevent double high baa in سببس and likes
+  // hack to prevent double high baa in سببس and likes
   sub [@aSen.init @aSen.medi]'
       [@aBaa.medi]'
       [@aBaa.medi]' lookup HighBaa
       [@aSen.medi @aSen.fina]';
 
-  # جرينتش
+  // جرينتش
   sub [@aBaa.init]' lookup BaaBaa
       [@aBaa.medi]' lookup BaaBaa
       [@aBaa.medi]' lookup HighBaa
@@ -517,8 +517,8 @@ lookup KafMemInit {
   sub @aMem.medi by @aMem.medi_KafMemMedi;
 } KafMemInit;
 
-# the Lam.medi+Mem.fina is too narrow for tashkil, so we use a wider (extended)
-# meem when tashkil clash is anticipated.
+// the Lam.medi+Mem.fina is too narrow for tashkil, so we use a wider (extended)
+// meem when tashkil clash is anticipated.
 lookup LamMemFinaExtended {
   sub @aMem.fina by @aMem.fina_LamMemFinaExtended;
 } LamMemFinaExtended;
@@ -554,7 +554,7 @@ feature calt {
       @Tashkil.below';
 } calt;
 
-# ditto
+// ditto
 lookup MemExtended {
   sub @aMem.fina by @aMem.fina_KafMemIsolExtended;
 } MemExtended;
@@ -590,7 +590,7 @@ feature calt {
       @Tashkil.below';
 } calt;
 
-# ditto
+// ditto
 lookup LamMemInitTatweel {
   sub @aMem.medi by @aMem.medi_LamMemInitTatweel;
 } LamMemInitTatweel;
@@ -626,7 +626,7 @@ feature calt {
       @Tashkil.below';
 } calt;
 
-# ditto
+// ditto
 lookup KafMemFinaExtended {
   sub @aMem.fina by @aMem.fina_KafMemFinaExtended;
 } KafMemFinaExtended;
@@ -787,7 +787,8 @@ feature calt {
 
   sub [@aKaf.init @aKaf.medi]' lookup KafLam
       [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf
-       uni0621.float' # see float hamza in quran.fea
+       // see float hamza in quran.fea
+       uni0621.float'
       [@aAlf.fina @aAlf.fina_LamAlfFina];
 
   sub [@aBaa.init]' lookup BaaSenInit
@@ -889,10 +890,10 @@ feature calt {
        @aYaaBarree.fina'                                                          lookup AynYaaBarree;
 } calt;
 
-# default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
-# both glyphs have marks above or both have marks bellow at the same time. So
-# we use an alternate wider Meem in such cases.
-# This covers فَمَا فَّمَا فَمَّا فَّمَّا فِّمَا فِمِا.
+// default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
+// both glyphs have marks above or both have marks bellow at the same time. So
+// we use an alternate wider Meem in such cases.
+// This covers فَمَا فَّمَا فَمَّا فَّمَّا فِّمَا فِمِا.
 lookup FaaMemTatweel {
   sub @aMem.medi by @aMem.medi_KafMemMediTatweel;
 } FaaMemTatweel;
@@ -1006,9 +1007,9 @@ feature calt {
 } calt;
 
 lookup LamKafInit {
-# XXX: sync with classes.fea
+// XXX: sync with classes.fea
 
-  # @aLam.init
+  // @aLam.init
   sub uni06B5.init by uni06B5.init uni0640.1;
   sub uni06B7.init by uni06B7.init uni0640.1;
   sub uni0644.init by uni0644.init uni0640.1;
@@ -1016,7 +1017,7 @@ lookup LamKafInit {
   sub uni06B6.init by uni06B6.init uni0640.1;
   sub uni076A.init by uni076A.init uni0640.1;
 
-  # @aLam.medi by
+  // @aLam.medi by
   sub uni06B5.medi by uni06B5.medi uni0640.1;
   sub uni06B7.medi by uni06B7.medi uni0640.1;
   sub uni0644.medi by uni0644.medi uni0640.1;
@@ -1024,7 +1025,7 @@ lookup LamKafInit {
   sub uni06B6.medi by uni06B6.medi uni0640.1;
   sub uni076A.medi by uni076A.medi uni0640.1;
 
-  # @aLam.medi_KafLam
+  // @aLam.medi_KafLam
   sub uni06B5.medi_KafLam by uni06B5.medi_KafLam uni0640.1;
   sub uni06B7.medi_KafLam by uni06B7.medi_KafLam uni0640.1;
   sub uni0644.medi_KafLam by uni0644.medi_KafLam uni0640.1;
@@ -1032,7 +1033,7 @@ lookup LamKafInit {
   sub uni06B6.medi_KafLam by uni06B6.medi_KafLam uni0640.1;
   sub uni076A.medi_KafLam by uni076A.medi_KafLam uni0640.1;
 
-  # @aLam.medi_KafMemLam
+  // @aLam.medi_KafMemLam
   sub uni06B5.medi_KafMemLam by uni06B5.medi_KafMemLam uni0640.1;
   sub uni06B7.medi_KafMemLam by uni06B7.medi_KafMemLam uni0640.1;
   sub uni0644.medi_KafMemLam by uni0644.medi_KafMemLam uni0640.1;
@@ -1040,7 +1041,7 @@ lookup LamKafInit {
   sub uni06B6.medi_KafMemLam by uni06B6.medi_KafMemLam uni0640.1;
   sub uni076A.medi_KafMemLam by uni076A.medi_KafMemLam uni0640.1;
 
-  # @aLam.medi_LamLamInit
+  // @aLam.medi_LamLamInit
   sub uni06B5.medi_LamLamInit by uni06B5.medi_LamLamInit uni0640.1;
   sub uni06B7.medi_LamLamInit by uni06B7.medi_LamLamInit uni0640.1;
   sub uni0644.medi_LamLamInit by uni0644.medi_LamLamInit uni0640.1;
@@ -1048,7 +1049,7 @@ lookup LamKafInit {
   sub uni06B6.medi_LamLamInit by uni06B6.medi_LamLamInit uni0640.1;
   sub uni076A.medi_LamLamInit by uni076A.medi_LamLamInit uni0640.1;
 
-  # @aMem.medi_LamMemInit
+  // @aMem.medi_LamMemInit
   sub uni0645.medi_LamMemInit by uni0645.medi_LamMemInit uni0640.1;
 } LamKafInit;
 
@@ -1060,16 +1061,16 @@ feature calt {
        @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf];
 } calt;
 
-# When an initial Baa is followed by Alef, the dot clashes with the Hamza below
-# Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa
-# with a wider variant.
+// When an initial Baa is followed by Alef, the dot clashes with the Hamza below
+// Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa
+// with a wider variant.
 feature calt {
   lookupflag IgnoreMarks;
   sub [@aBaa.init]' [@aAlf.fina] by [@aBaa.init_Tatweel];
 } calt;
 
-# If the Alef has no Hamza below, or there is no marks above the Baa, revert to
-# the original, non-wide form (notice there is no IgnoreMarks flag).
+// If the Alef has no Hamza below, or there is no marks above the Baa, revert to
+// the original, non-wide form (notice there is no IgnoreMarks flag).
 feature calt {
   sub [@aBaa.init_Tatweel]'
       [uni0622.fina uni0623.fina uni0627.fina uni0671.fina uni0672.fina
@@ -1094,10 +1095,10 @@ feature calt {
 } calt;
 
 
-# insert tatweel between ح and ك in فحك[ملير]
+// insert tatweel between ح and ك in فحك[ملير]
 lookup FaaHaaKaf {
-# XXX: sync with classes.fea
-# sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.1;
+// XXX: sync with classes.fea
+// sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.1;
   sub uni062E.medi_FaaHaaInit by uni062E.medi_FaaHaaInit uni0640.1;
   sub uni062D.medi_FaaHaaInit by uni062D.medi_FaaHaaInit uni0640.1;
   sub uni0681.medi_FaaHaaInit by uni0681.medi_FaaHaaInit uni0640.1;
@@ -1124,12 +1125,12 @@ feature calt {
      [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina];
 } calt;
 
-# replace final alef followed by madda by a wider one
+// replace final alef followed by madda by a wider one
 feature calt {
   sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
 } calt;
 
-# Wider alef wasl and alef with hamza above after faa
+// Wider alef wasl and alef with hamza above after faa
 feature calt {
   lookupflag IgnoreMarks;
   sub @aFaa.init
@@ -1137,7 +1138,7 @@ feature calt {
   by [uni0671.fina_Wide uni0623.fina_Wide];
 } calt;
 
-# If there are no marks, revert the above substitution
+// If there are no marks, revert the above substitution
 feature calt {
   sub @aFaa.init
      [uni0671.fina_Wide uni0623.fina_Wide]'

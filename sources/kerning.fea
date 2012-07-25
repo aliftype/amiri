@@ -4,7 +4,7 @@
 @1st_3 = [@aRaa.fina_MemRaaIsol];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
-# final alef with no hamza above
+// final alef with no hamza above
 @Alf_1 = [uni0627.fina_LamAlfFina uni0625.fina_LamAlfFina];
 
 @Kaf_1 = [@aKaf.init_KafHeh
@@ -32,11 +32,11 @@ feature kern {
   pos @1st_3' <-200 0 -200 0> @2nd_3;
   pos @1st_3' <-400 0 -400 0> @2nd_4;
 
-  # +ve kern so that the tail of raa/waw does not touch the dot of baa
+  // +ve kern so that the tail of raa/waw does not touch the dot of baa
   pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
 } kern;
 
-# we don't want to ignore marks here
+// we don't want to ignore marks here
 feature kern {
   pos @Alf_1' <-500 0 -500 0> @Kaf_1;
   pos @Alf_1' <-200 0 -200 0> @Kaf_2;
@@ -50,14 +50,16 @@ feature kern {
 
 feature kern {
   lookupflag IgnoreMarks;
-  # kern heh isol/final followed by kaf, does not happen in Arabic but can be
-  # seen in Kurdish or Persian using ZWNJ between them.
+  // kern heh isol/final followed by kaf, does not happen in Arabic but can be
+  // seen in Kurdish or Persian using ZWNJ between them.
   pos @1st_4 uni200C [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
-  pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3]' -500; # Uniscribe replace ZWNJ with space
-  pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3]' -500; # some applications might just remove it
+  // Uniscribe replace ZWNJ with space
+  pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
+  // some applications might just remove it
+  pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
 } kern;
 
-# proportional digits
+// proportional digits
 feature kern {
   pos uni0661.prop uni0662.prop -100;
   pos uni0661.prop uni0663.prop -100;

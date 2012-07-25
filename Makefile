@@ -40,19 +40,23 @@ doc: $(PDFS) $(HTML)
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
+	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-regular.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea --version $(VERSION)
 
 $(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-slanted.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea --version $(VERSION) --slant=7
+	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-slanted.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
 
 $(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea --version $(VERSION)
+	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-regular.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
 
 $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-slanted.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea --version $(VERSION) --slant=7
+	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-slanted.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
 
 $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"

@@ -1,5 +1,5 @@
 languagesystem DFLT dflt;
-include(lang_latin.fea)
+#include "lang_latin.fea"
 
 feature locl {
   script latn;

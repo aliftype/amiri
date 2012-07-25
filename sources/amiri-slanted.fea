@@ -1,14 +1,14 @@
-include(lang.fea)
-include(classes.fea)
-include(italic_classes.fea)
-include(local.fea)
-include(italic_proportional.fea)
-include(basic.fea)
-include(kashida.fea)
-include(quran.fea)
-include(enclosing.fea)
-include(rtlm.fea)
-include(lellah.fea)
-include(contextuals.fea)
-include(stylisticsets.fea)
-include(kerning.fea)
+#include "lang.fea"
+#include "classes.fea"
+#include "italic_classes.fea"
+#include "local.fea"
+#include "italic_proportional.fea"
+#include "basic.fea"
+#include "kashida.fea"
+#include "quran.fea"
+#include "enclosing.fea"
+#include "rtlm.fea"
+#include "lellah.fea"
+#include "contextuals.fea"
+#include "stylisticsets.fea"
+#include "kerning.fea"

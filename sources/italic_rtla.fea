@@ -1,4 +1,4 @@
-include(lang_arabic.fea)
+#include "lang_arabic.fea"
 
 feature locl {
   sub exclam by exclam.rtl;

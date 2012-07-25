@@ -1,12 +1,12 @@
-# Kashida justification as implemented in most, if not all, applications is
-# broken by design; it inserts kashidas *after* doing OT layout which makes it
-# impossible for OT code to interact with those kashidas breaking all sorts of
-# things.
-# To trick LibreOffice/MS Office to not do kashida justification we set the
-# default kashida to a zero width, blank glyph which makes them to think there
-# is no suitable kashida glyph, resorting back to regular justification
-# To get manually inserted kashida working we use an rlig feature to map to the
-# actual kashida glyph(s).
+// Kashida justification as implemented in most, if not all, applications is
+// broken by design; it inserts kashidas *after* doing OT layout which makes it
+// impossible for OT code to interact with those kashidas breaking all sorts of
+// things.
+// To trick LibreOffice/MS Office to not do kashida justification we set the
+// default kashida to a zero width, blank glyph which makes them to think there
+// is no suitable kashida glyph, resorting back to regular justification
+// To get manually inserted kashida working we use an rlig feature to map to the
+// actual kashida glyph(s).
 
 feature rlig {
   lookupflag IgnoreMarks;
@@ -15,7 +15,7 @@ feature rlig {
   sub uni0640 uni0640                 by uni0640.2;
 } rlig;
 
-# should be merged with the bove lookup, FF ignores it for some reason.
+// should be merged with the bove lookup, FF ignores it for some reason.
 feature rlig {
   lookupflag IgnoreMarks;
   sub uni0640                         by uni0640.1;

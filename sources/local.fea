@@ -36,11 +36,11 @@ feature locl {
 } locl;
 
 
-# some implementations (e.g ICU) does not support ‘locl’ feature for Arabic
-# script, so we work around this by using ‘ccmp’ registered for the needed
-# languages, which should essentially give the same result.
-#
-# XXX: always sync with ‘locl’ feature above
+// some implementations (e.g ICU) does not support ‘locl’ feature for Arabic
+// script, so we work around this by using ‘ccmp’ registered for the needed
+// languages, which should essentially give the same result.
+//
+// XXX: always sync with ‘locl’ feature above
 
 feature ccmp {
   script arab;
