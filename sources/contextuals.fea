@@ -1049,8 +1049,7 @@ lookup LamKafInit {
   sub uni06B6.medi_LamLamInit by uni06B6.medi_LamLamInit uni0640.1;
   sub uni076A.medi_LamLamInit by uni076A.medi_LamLamInit uni0640.1;
 
-  // @aMem.medi_LamMemInit
-  sub uni0645.medi_LamMemInit by uni0645.medi_LamMemInit uni0640.1;
+  sub @aMem.medi_LamMemInit   by @aMem.medi_LamMemInitTatweel;
 } LamKafInit;
 
 feature calt {
