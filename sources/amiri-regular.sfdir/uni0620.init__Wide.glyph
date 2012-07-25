@@ -1,0 +1,13 @@
+
+StartChar: uni0620.init_Wide
+Encoding: 68411 -1 3151
+Width: 585
+VWidth: 0
+Flags: W
+AnchorPoint: "TashkilAbove" 300 1400 basechar 0
+AnchorPoint: "TashkilBelow" 285 -670 basechar 0
+LayerCount: 2
+Fore
+Refer: 215 -1 N 1 0 0 1 285 -150 2
+Refer: 222 -1 N 1 0 0 1 0 0 3
+EndChar

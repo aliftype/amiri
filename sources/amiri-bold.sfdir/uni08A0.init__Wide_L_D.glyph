@@ -1,0 +1,12 @@
+
+StartChar: uni08A0.init_WideLD
+Encoding: 70134 -1 5677
+Width: 585
+VWidth: 0
+AnchorPoint: "TashkilAbove" 235 1640 basechar 0
+AnchorPoint: "TashkilBelow" 291 -1220 basechar 0
+LayerCount: 3
+Fore
+Refer: 5682 -1 N 1 0 0 1 291 -60 2
+Refer: 222 -1 N 1 0 0 1 0 0 3
+EndChar
