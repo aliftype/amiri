@@ -16,6 +16,7 @@ BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
 FF=python $(BUILD)
 SFNTTOOL=sfnttool
+PP=gpp +c "/*" "*/" +c "//" "\n" +c "\\\n" "" -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)
@@ -40,22 +41,22 @@ doc: $(PDFS) $(HTML)
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-regular.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea --version $(VERSION)
+	@$(PP) $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-regular.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
 
 $(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-slanted.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-slanted.fea.pp
+	@$(PP) -DITALIC $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-slanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
 
 $(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-regular.fea.pp
+	@$(PP) $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-regular.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
 
 $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-slanted.fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@cpp $(SRC)/$(NAME)-regular.fea $(SRC)/$(NAME)-slanted.fea.pp
+	@$(PP) -DITALIC $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-slanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
 
 $(WEB)/%.ttf: %.ttf $(BUILD)
