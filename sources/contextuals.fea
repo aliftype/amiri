@@ -1061,23 +1061,6 @@ feature calt {
        @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf];
 } calt;
 
-// When an initial Baa is followed by Alef, the dot clashes with the Hamza below
-// Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa
-// with a wider variant.
-feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.init]' [@aAlf.fina] by [@aBaa.init_Tatweel];
-} calt;
-
-// If the Alef has no Hamza below, or there is no marks above the Baa, revert to
-// the original, non-wide form (notice there is no IgnoreMarks flag).
-feature calt {
-  sub [@aBaa.init_Tatweel]'
-      [uni0622.fina uni0623.fina uni0627.fina uni0671.fina uni0672.fina
-       uni0675.fina uni0773.fina uni0774.fina]
-   by [@aBaa.init];
-} calt;
-
 lookup HehYaaFina {
   sub @aHeh.medi_BaaHehMedi by @aHeh.medi_HehYaaFina;
   sub @aHeh.medi_PostTooth by @aHeh.medi_PostToothHehYaa;
@@ -1143,4 +1126,21 @@ feature calt {
   sub @aFaa.init
      [uni0671.fina_Wide uni0623.fina_Wide]'
   by [uni0671.fina uni0623.fina];
+} calt;
+
+// When an initial Baa is followed by Alef, the dot clashes with the Hamza below
+// Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa
+// with a wider variant.
+feature calt {
+  lookupflag IgnoreMarks;
+  sub [@aBaa.init]' [@aAlf.fina] by [@aBaa.init_Tatweel];
+} calt;
+
+// If the Alef has no Hamza below, or there is no marks above the Baa, revert to
+// the original, non-wide form (notice there is no IgnoreMarks flag).
+feature calt {
+  sub [@aBaa.init_Tatweel]'
+      [uni0622.fina uni0623.fina uni0627.fina uni0671.fina uni0672.fina
+       uni0675.fina uni0773.fina uni0774.fina]
+   by [@aBaa.init];
 } calt;
