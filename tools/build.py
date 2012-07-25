@@ -495,14 +495,7 @@ def mergeLatin(font, feafile, italic=False):
 
     # we want to merge features after merging the latin font because many
     # referenced glyphs are in the latin font
-
-    if italic:
-        font.mergeFeature("sources/italic_ltra.fea")
-        font.mergeFeature("sources/italic_rtla.fea")
-
     mergeFeatures(font, feafile)
-
-    font.mergeFeature("sources/latin_gsub.fea")
 
     for lookup in kern_lookups:
         font.addLookup(lookup,

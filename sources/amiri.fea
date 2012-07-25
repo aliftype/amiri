@@ -1,6 +1,10 @@
 #include "lang.fea"
 #include "classes.fea"
 #include "local.fea"
+#ifdef ITALIC
+#include "italic_ltra.fea"
+#include "italic_rtla.fea"
+#endif
 #include "proportional.fea"
 #include "basic.fea"
 #include "kashida.fea"
@@ -11,3 +15,4 @@
 #include "contextuals.fea"
 #include "stylisticsets.fea"
 #include "kerning.fea"
+#include "latin_gsub.fea"

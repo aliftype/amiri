@@ -39,25 +39,25 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS) $(HTML)
 
-$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
+$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(PP) $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-regular.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
+	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME).fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea.pp --version $(VERSION)
 
-$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME)-slanted.fea $(FEAT) $(BUILD)
+$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(PP) -DITALIC $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-slanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
+	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME).fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea.pp --version $(VERSION) --slant=7
 
-$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-regular.fea $(FEAT) $(BUILD)
+$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(PP) $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-regular.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
+	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME).fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea.pp --version $(VERSION)
 
-$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME)-slanted.fea $(FEAT) $(BUILD)
+$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
-	@$(PP) -DITALIC $(SRC)/$(NAME)-regular.fea -o $(SRC)/$(NAME)-slanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
+	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME).fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea.pp --version $(VERSION) --slant=7
 
 $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"

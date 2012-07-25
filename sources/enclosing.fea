@@ -13,8 +13,18 @@
 
 @NumSignW  = [uni0600.alt];
 
+#ifdef ITALIC
+@Digits.all = [@Digits @Digits.rtl @Digits.ltr];
+#else
+@Digits.all = [@Digits];
+#endif
+
 lookup digit2small {
   sub @Digits by @Digits.small;
+#ifdef ITALIC
+  sub @Digits.rtl by @Digits.small2;
+  sub @Digits.ltr by @Digits.small2;
+#endif
 } digit2small;
 
 lookup NumSignW {
@@ -22,10 +32,10 @@ lookup NumSignW {
 } NumSignW;
 
 feature calt {
-  sub [@EndOfAyah @NumSign @SafhaSign @FootNote]                                           @Digits' lookup digit2small;
-  sub [@EndOfAyah @NumSign @SafhaSign @FootNote] @Digits.small                             @Digits' lookup digit2small;
-  sub [@EndOfAyah @NumSign @SafhaSign          ] @Digits.small @Digits.small               @Digits' lookup digit2small;
-  sub @NumSign                                   @Digits.small @Digits.small @Digits.small @Digits' lookup digit2small;
+  sub [@EndOfAyah @NumSign @SafhaSign @FootNote]                                           @Digits.all' lookup digit2small;
+  sub [@EndOfAyah @NumSign @SafhaSign @FootNote] @Digits.small                             @Digits.all' lookup digit2small;
+  sub [@EndOfAyah @NumSign @SafhaSign          ] @Digits.small @Digits.small               @Digits.all' lookup digit2small;
+  sub @NumSign                                   @Digits.small @Digits.small @Digits.small @Digits.all' lookup digit2small;
 } calt;
 
 feature calt {
@@ -34,13 +44,17 @@ feature calt {
 
 lookup digit2medium {
   sub @Digits by @Digits.medium;
+#ifdef ITALIC
+  sub @Digits.rtl by @Digits.medium2;
+  sub @Digits.ltr by @Digits.medium2;
+#endif
 } digit2medium;
 
 feature calt {
-  sub @YearSign                                              @Digits' lookup digit2medium;
-  sub @YearSign @Digits.medium                               @Digits' lookup digit2medium;
-  sub @YearSign @Digits.medium @Digits.medium                @Digits' lookup digit2medium;
-  sub @YearSign @Digits.medium @Digits.medium @Digits.medium @Digits' lookup digit2medium;
+  sub @YearSign                                              @Digits.all' lookup digit2medium;
+  sub @YearSign @Digits.medium                               @Digits.all' lookup digit2medium;
+  sub @YearSign @Digits.medium @Digits.medium                @Digits.all' lookup digit2medium;
+  sub @YearSign @Digits.medium @Digits.medium @Digits.medium @Digits.all' lookup digit2medium;
 } calt;
 
 // now we contextually kern the sign with the digits:
@@ -129,19 +143,19 @@ feature kern {
 // and the sign in LTR order, so we do it for RTL order below until this is
 // changed in HarfBuzz.
 feature calt {
-  sub @Digits' lookup digit2small                             [@EndOfAyah @NumSign @SafhaSign @FootNote];
+  sub @Digits.all' lookup digit2small                             [@EndOfAyah @NumSign @SafhaSign @FootNote];
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2small @Digits.small               [@EndOfAyah @NumSign @SafhaSign @FootNote];
+  sub @Digits.all' lookup digit2small @Digits.small               [@EndOfAyah @NumSign @SafhaSign @FootNote];
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2small @Digits.small @Digits.small [@EndOfAyah @NumSign @SafhaSign          ];
+  sub @Digits.all' lookup digit2small @Digits.small @Digits.small [@EndOfAyah @NumSign @SafhaSign          ];
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2small @Digits.small @Digits.small @Digits.small @NumSign;
+  sub @Digits.all' lookup digit2small @Digits.small @Digits.small @Digits.small @NumSign;
 } calt;
 
 feature calt {
@@ -149,19 +163,19 @@ feature calt {
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2medium                                              @YearSign;
+  sub @Digits.all' lookup digit2medium                                              @YearSign;
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2medium @Digits.medium                               @YearSign;
+  sub @Digits.all' lookup digit2medium @Digits.medium                               @YearSign;
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2medium @Digits.medium @Digits.medium                @YearSign;
+  sub @Digits.all' lookup digit2medium @Digits.medium @Digits.medium                @YearSign;
 } calt;
 
 feature calt {
-  sub @Digits' lookup digit2medium @Digits.medium @Digits.medium @Digits.medium @YearSign;
+  sub @Digits.all' lookup digit2medium @Digits.medium @Digits.medium @Digits.medium @YearSign;
 } calt;
 
 feature kern {
