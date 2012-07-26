@@ -273,8 +273,8 @@ lookup KafLamMemFina {
 } KafLamMemFina;
 
 lookup BaaDalIsol {
-  sub @aBaa.init by @aBaa.init_BaaDalIsol;
-  sub @aDal.fina by @aDal.fina_BaaDalIsol;
+  sub @aBaa.init by @aBaa.init_BaaDal;
+  sub @aDal.fina by @aDal.fina_BaaDal;
 } BaaDalIsol;
 
 lookup BaaMemHaaInit {
