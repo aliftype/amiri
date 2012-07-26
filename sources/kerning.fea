@@ -1,6 +1,5 @@
-@Dal_1 = [@aDal.fina @aDal.fina_BaaDalIsol
-          @aDal.fina_KafDal @aDal.fina_LamDal];
-@Dal_2 = [@aDal.isol];
+@Dal_1 = [@aDal.fina @aDal.fina_BaaDal @aDal.fina_KafDal @aDal.fina_LamDal
+          @aDal.isol];
 @1st_3 = [@aRaa.fina_MemRaaIsol];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
@@ -20,12 +19,13 @@
 
 feature kern {
   lookupflag IgnoreMarks;
-  pos [@RaaWaw @Dal_1]' <-600 0 -600 0> @Kaf_1;
-  pos [@RaaWaw @Dal_1]' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
+  pos @RaaWaw' <-600 0 -600 0>  @Kaf_1;
+  pos @RaaWaw' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
 
   pos @RaaWaw' <-100 0 -100 0> @2nd_3;
 
-  pos @Dal_2' <-200 0 -200 0> @Kaf_3;
+  pos @Dal_1'  <-600 0 -600 0>  @Kaf_1;
+  pos @Dal_1'  <-400 0 -400 0> [@Kaf_2 @Kaf_3];
 
   pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3];
   pos @1st_3' <-800 0 -800 0> @Kaf_1;
