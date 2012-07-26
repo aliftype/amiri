@@ -7,11 +7,12 @@
 @Alf_1 = [uni0627.fina_LamAlfFina uni0625.fina_LamAlfFina];
 
 @Kaf_1 = [@aKaf.init_KafHeh
-          @aKaf.init_KafMemInit @aKaf.init_KafYaaIsol
+          @aKaf.init_KafMemInit
           @aKaf.init_KafMemIsol
           @aKaf.init_KafRaaIsol];
 @Kaf_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
 @Kaf_3 = [@aKaf.init @aKaf.init_KafLam];
+@Kaf_4 = [@aKaf.init_KafYaaIsol];
 @2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_4 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
           @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
@@ -20,14 +21,14 @@
 feature kern {
   lookupflag IgnoreMarks;
   pos @RaaWaw' <-600 0 -600 0>  @Kaf_1;
-  pos @RaaWaw' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
+  pos @RaaWaw' <-300 0 -300 0> [@Kaf_2 @Kaf_3 @Kaf_4];
 
   pos @RaaWaw' <-100 0 -100 0> @2nd_3;
 
   pos @Dal_1'  <-600 0 -600 0>  @Kaf_1;
-  pos @Dal_1'  <-400 0 -400 0> [@Kaf_2 @Kaf_3];
+  pos @Dal_1'  <-400 0 -400 0> [@Kaf_2 @Kaf_3 @Kaf_4];
 
-  pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3];
+  pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3 @Kaf_4];
   pos @1st_3' <-800 0 -800 0> @Kaf_1;
   pos @1st_3' <-200 0 -200 0> @2nd_3;
   pos @1st_3' <-400 0 -400 0> @2nd_4;
@@ -41,6 +42,7 @@ feature kern {
   pos @Alf_1' <-500 0 -500 0> @Kaf_1;
   pos @Alf_1' <-200 0 -200 0> @Kaf_2;
   pos @Alf_1' <-250 0 -250 0> @Kaf_3;
+  pos @Alf_1' <-300 0 -300 0> @Kaf_4;
 } kern;
 
 feature kern {
@@ -52,11 +54,11 @@ feature kern {
   lookupflag IgnoreMarks;
   // kern heh isol/final followed by kaf, does not happen in Arabic but can be
   // seen in Kurdish or Persian using ZWNJ between them.
-  pos @1st_4 uni200C [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
+  pos @1st_4 uni200C [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4]' -500;
   // Uniscribe replace ZWNJ with space
-  pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
+  pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4]' -500;
   // some applications might just remove it
-  pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3]' -500;
+  pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4]' -500;
 } kern;
 
 // proportional digits
