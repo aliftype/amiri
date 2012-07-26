@@ -283,11 +283,11 @@ lookup BaaMemHaaInit {
   sub @aMem.medi by @aMem.medi_BaaMemHaaInit;
 } BaaMemHaaInit;
 
-lookup BaaBaaYaaIsol {
-  sub @aBaa.init by @aBaa.init_BaaBaaYaaIsol;
-  sub @aBaa.medi by @aBaa.medi_BaaBaaYaaIsol;
-  sub @aYaa.fina by @aYaa.fina_BaaBaaYaaIsol;
-} BaaBaaYaaIsol;
+lookup BaaBaaYaa {
+  sub @aBaa.init by @aBaa.init_BaaBaaYaa;
+  sub @aBaa.medi by @aBaa.medi_BaaBaaYaa;
+  sub @aYaa.fina by @aYaa.fina_BaaBaaYaa;
+} BaaBaaYaa;
 
 @LamLamFoo = [@aLam.medi_LamMemMedi @aLam.medi_LamHeh @aLam.medi_LamYaaFina];
 
@@ -727,9 +727,9 @@ feature calt {
       [@aMem.medi]' lookup BaaMemHaaInit
       [@aHaa.medi]' lookup BaaMemHaaInit;
 
-  sub [@aBaa.init]' lookup BaaBaaYaaIsol
-      [@aBaa.medi]' lookup BaaBaaYaaIsol
-      [@aYaa.fina]' lookup BaaBaaYaaIsol;
+  sub [@aBaa.init]' lookup BaaBaaYaa
+      [@aBaa.medi]' lookup BaaBaaYaa
+      [@aYaa.fina]' lookup BaaBaaYaa;
 
   sub [@aLam.medi]' lookup LamYaaFina
       [@aYaa.fina]' lookup LamYaaFina;
