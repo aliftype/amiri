@@ -14,9 +14,9 @@
 @Kaf_3 = [@aKaf.init @aKaf.init_KafLam];
 @Kaf_4 = [@aKaf.init_KafYaaIsol];
 @2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
-@2nd_4 = [@aSad.init_AboveHaaIsol @aSen.init_AboveHaaIsol @aHeh.init_AboveHaaIsol
-          @aHaa.init_AboveHaaIsol @aMem.init_AboveHaaIsol @aKaf.init_AboveHaaIsol
-          @aAyn.init_AboveHaaIsol];
+@2nd_4 = [@aSad.init_AboveHaa @aSen.init_AboveHaa @aHeh.init_AboveHaa
+          @aHaa.init_AboveHaa @aMem.init_AboveHaa @aKaf.init_AboveHaa
+          @aAyn.init_AboveHaa];
 
 feature kern {
   lookupflag IgnoreMarks;

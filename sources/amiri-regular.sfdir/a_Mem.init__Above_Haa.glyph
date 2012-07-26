@@ -1,0 +1,26 @@
+
+StartChar: aMem.init_AboveHaa
+Encoding: 65756 -1 230
+Width: 1147
+Flags: W
+AnchorPoint: "TashkilBelow" 944 -260 basechar 0
+AnchorPoint: "TashkilAbove" 740 1640 basechar 0
+AnchorPoint: "cursive" 0 411 exit 0
+LayerCount: 2
+Fore
+SplineSet
+672 707 m 24,0,1
+ 290 626 290 626 81 438 c 0,2,3
+ 45 404 45 404 18 420 c 0,4,5
+ -33 451 -33 451 66 545 c 24,6,7
+ 242 712 242 712 527 812 c 1,8,-1
+ 488 869 l 2,9,10
+ 469 897 469 897 482 925 c 0,11,12
+ 536 1042 536 1042 578 1087 c 0,13,14
+ 603 1115 603 1115 629 1101 c 0,15,16
+ 783 1019 783 1019 847 954 c 0,17,18
+ 868 933 868 933 855 894 c 0,19,20
+ 836 840 836 840 753 737 c 0,21,22
+ 740 721 740 721 672 707 c 24,0,1
+EndSplineSet
+EndChar

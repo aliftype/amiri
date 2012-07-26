@@ -480,16 +480,16 @@ lookup BaaHaaMemInit {
 } BaaHaaMemInit;
 
 lookup AboveHaaIsol {
-  sub @aAyn.init by @aAyn.init_AboveHaaIsol;
-  sub @aBaa.init by @aBaa.init_AboveHaaIsol;
+  sub @aAyn.init by @aAyn.init_AboveHaa;
+  sub @aBaa.init by @aBaa.init_AboveHaa;
   sub @aFaa.init by @aFaa.init_FaaHaaInit;
-  sub @aHaa.init by @aHaa.init_AboveHaaIsol;
-  sub @aHeh.init by @aHeh.init_AboveHaaIsol;
-  sub @aKaf.init by @aKaf.init_AboveHaaIsol;
+  sub @aHaa.init by @aHaa.init_AboveHaa;
+  sub @aHeh.init by @aHeh.init_AboveHaa;
+  sub @aKaf.init by @aKaf.init_AboveHaa;
   sub @aLam.init by @aLam.init_LamHaaInit;
-  sub @aMem.init by @aMem.init_AboveHaaIsol;
-  sub @aSad.init by @aSad.init_AboveHaaIsol;
-  sub @aSen.init by @aSen.init_AboveHaaIsol;
+  sub @aMem.init by @aMem.init_AboveHaa;
+  sub @aSad.init by @aSad.init_AboveHaa;
+  sub @aSen.init by @aSen.init_AboveHaa;
   sub @aHaa.fina by @aHaa.fina_AboveHaaIsol;
 } AboveHaaIsol;
 
