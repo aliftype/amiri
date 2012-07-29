@@ -1,6 +1,7 @@
 top_marks = ("Dot.a", "TwoDots.a", "ThreeDots.a", "iThreeDots.a",
              "vTwoDots.a", "FourDots.a", "hThreeDots.a", "aTwo.above",
-             "aThree.above", "smalltaa.above", "uni0654", "uni0674", "hamza.above")
+             "aThree.above", "smalltaa.above", "uni0654", "uni0674",
+             "hamza.above", "smallv.above", "smallv.above.inverted")
 bot_marks = ("Dot.b", "TwoDots.b", "ThreeDots.b", "iThreeDots.b", "vTwoDots.b",
              "FourDots.b", "hThreeDots.b", "ring.below", "aFour.below",
              "smallv.below", "smallv.below.inverted", "smallv.below.low",

@@ -1,11 +1,10 @@
 StartChar: uni06B5.init_LamLamInit
 Encoding: 69211 -1 3951
-Width: 280
-Flags: W
-AnchorPoint: "TashkilAbove" 30 1911 basechar 0
-AnchorPoint: "TashkilBelow" 160 -670 basechar 0
+Width: 345
+AnchorPoint: "TashkilBelow" 225 -670 basechar 0
+AnchorPoint: "TashkilAbove" 95 1911 basechar 0
 LayerCount: 3
 Fore
-Refer: 209 1626 N 1 0 0 1 30 511 2
+Refer: 5620 -1 N 1 0 0 1 95 511 2
 Refer: 415 -1 N 1 0 0 1 0 0 3
 EndChar
