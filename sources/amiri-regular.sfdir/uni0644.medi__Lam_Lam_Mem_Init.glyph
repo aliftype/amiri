@@ -1,7 +1,8 @@
 StartChar: uni0644.medi_LamLamMemInit
 Encoding: 69297 -1 4037
-Width: 598
+Width: 584
 VWidth: 0
+Flags: W
 AnchorPoint: "TashkilAbove" 300 1640 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 AnchorPoint: "cursive" 85 170 exit 0
