@@ -164,6 +164,16 @@ feature calt {
       [@aHeh.medi]' lookup BaaHeh;
 } calt;
 
+lookup BaaBaaHeh {
+  sub @aBaa.init by @aBaa.init_BaaBaaHeh;
+} BaaBaaHeh;
+
+feature calt {
+  lookupflag IgnoreMarks;
+  sub @aBaa.init' lookup BaaBaaHeh
+      @aBaa.medi_BaaHehMedi;
+} calt;
+
 lookup LamAlfFina {
   sub @aAlf.fina by @aAlf.fina_LamAlfFina;
   sub @aLam.medi by @aLam.medi_LamAlfFina;

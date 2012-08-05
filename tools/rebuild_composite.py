@@ -5,7 +5,9 @@ top_marks = ("Dot.a", "TwoDots.a", "ThreeDots.a", "iThreeDots.a",
 bot_marks = ("Dot.b", "TwoDots.b", "ThreeDots.b", "iThreeDots.b", "vTwoDots.b",
              "FourDots.b", "hThreeDots.b", "ring.below", "aFour.below",
              "smallv.below", "smallv.below.inverted", "smallv.below.low",
-             "smallv.below.inverted.low")
+             "smallv.below.inverted.low",
+             "Dot.b.l", "TwoDots.b.l", "ThreeDots.b.l", "iThreeDots.b.l", "vTwoDots.b.l",
+             "FourDots.b.l", "hThreeDots.b.l")
 
 def RebuildGlyph(glyph):
     font = glyph.font
