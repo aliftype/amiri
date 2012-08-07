@@ -7,8 +7,8 @@ AnchorPoint: "TwoDotsBelow" 0 -150 basechar 0
 AnchorPoint: "TwoDotsAbove" 60 1600 basechar 0
 AnchorPoint: "DotAbove" 175 1680 basechar 0
 AnchorPoint: "TashkilBelow" 0 -670 basechar 0
-AnchorPoint: "TashkilAbove" 0 1640 basechar 0
-AnchorPoint: "VAbove" -103 1298 basechar 0
+AnchorPoint: "TashkilAbove" 120 1640 basechar 0
+AnchorPoint: "VAbove" 175 1600 basechar 0
 LayerCount: 2
 Back
 SplineSet

@@ -2,13 +2,13 @@ StartChar: aLam.medi_LamLamAlefFina
 Encoding: 65872 -1 423
 Width: 432
 Flags: W
-AnchorPoint: "DotAbove" 132 1636 basechar 0
-AnchorPoint: "TwoDotsAbove" 17 1556 basechar 0
+AnchorPoint: "VAbove" 112 1550 basechar 0
+AnchorPoint: "TashkilAbove" 70 1640 basechar 0
+AnchorPoint: "DotAbove" 112 1636 basechar 0
+AnchorPoint: "TwoDotsAbove" -3 1556 basechar 0
 AnchorPoint: "Stroke" 154 1046 basechar 0
 AnchorPoint: "TwoDotsBelow" 40 -150 basechar 0
 AnchorPoint: "TashkilBelow" -50 -670 basechar 0
-AnchorPoint: "TashkilAbove" -60 1640 basechar 0
-AnchorPoint: "VAbove" -146 1251 basechar 0
 LayerCount: 3
 Fore
 SplineSet
