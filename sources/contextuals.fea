@@ -968,6 +968,26 @@ feature calt {
       [@aHeh.medi]' lookup HehMediTooth;
 } calt;
 
+// replace final alef followed by madda by a wider one
+feature calt {
+  sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
+} calt;
+
+// Wider alef wasl and alef with hamza above after faa
+feature calt {
+  lookupflag IgnoreMarks;
+  sub @aFaa.init
+     [uni0671.fina uni0623.fina]'
+  by [uni0671.fina_Wide uni0623.fina_Wide];
+} calt;
+
+// If there are no marks, revert the above substitution
+feature calt {
+  sub @aFaa.init
+     [uni0671.fina_Wide uni0623.fina_Wide]'
+  by [uni0671.fina uni0623.fina];
+} calt;
+
 feature calt {
   lookupflag IgnoreMarks;
   sub [@aAyn.init @aHaa.init @aHaa.medi]'
@@ -1115,26 +1135,6 @@ feature calt {
   sub @aFaa.init_FaaHaaInit
       @aHaa.medi_FaaHaaInit' lookup FaaHaaKaf
      [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina];
-} calt;
-
-// replace final alef followed by madda by a wider one
-feature calt {
-  sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
-} calt;
-
-// Wider alef wasl and alef with hamza above after faa
-feature calt {
-  lookupflag IgnoreMarks;
-  sub @aFaa.init
-     [uni0671.fina uni0623.fina]'
-  by [uni0671.fina_Wide uni0623.fina_Wide];
-} calt;
-
-// If there are no marks, revert the above substitution
-feature calt {
-  sub @aFaa.init
-     [uni0671.fina_Wide uni0623.fina_Wide]'
-  by [uni0671.fina uni0623.fina];
 } calt;
 
 // When an initial Baa is followed by Alef, the dot clashes with the Hamza below
