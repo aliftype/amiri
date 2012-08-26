@@ -1,0 +1,5 @@
+feature ccmp {
+  // Unicode discourages the use of U+0673 directly.
+  sub uni0627 uni065F by uni0673;
+} ccmp;
+

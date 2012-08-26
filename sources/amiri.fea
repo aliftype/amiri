@@ -1,5 +1,6 @@
 #include "lang.fea"
 #include "classes.fea"
+#include "composition.fea"
 #include "local.fea"
 #ifdef ITALIC
 #include "italic_ltra.fea"
