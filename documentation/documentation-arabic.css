@@ -71,6 +71,12 @@ h3 {
    font-feature-settings: "ss02" 1;
 }
 
+#ss03 {
+  -moz-font-feature-settings: "ss03=1";
+  -ms-font-feature-settings: "ss03" 1;
+   font-feature-settings: "ss03" 1;
+}
+
 .footnotes {
    font-size: 85%;
 }

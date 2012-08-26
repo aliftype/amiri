@@ -24,7 +24,6 @@ feature locl {
   script arab;
   language ARA;
   lookup loclPunct;
-  sub at by at.ara;
 
   language URD exclude_dflt;
   lookup loclUrduDigits;
@@ -46,7 +45,6 @@ feature ccmp {
   script arab;
   language ARA;
   lookup loclPunct;
-  sub at by at.ara;
 
   language URD exclude_dflt;
   lookup loclUrduDigits;

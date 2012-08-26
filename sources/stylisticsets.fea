@@ -53,3 +53,17 @@ feature ss02 {
   sub @aMem.medi' lookup MemAlfFina
       @aAlf.fina' lookup MemAlfFina;
 } ss02;
+
+lookup localsym {
+  sub at by at.ara;
+} localsym;
+
+feature ss03 {
+  script arab;
+  language ARA;
+  lookup localsym;
+
+  script arab;
+  language dflt;
+  lookup localsym;
+} ss03;
