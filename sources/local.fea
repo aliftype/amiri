@@ -1,3 +1,4 @@
+#ifndef QURAN
 lookup loclPunct {
   sub period         by period.ara;
   sub guillemotleft  by guillemotleft.ara;
@@ -11,6 +12,7 @@ lookup loclPunct {
   sub parenright     by parenright.ara;
   sub slash          by slash.ara;
 } loclPunct;
+#endif
 
 lookup loclUrduDigits {
   sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];

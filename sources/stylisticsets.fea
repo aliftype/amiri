@@ -54,6 +54,7 @@ feature ss02 {
       @aAlf.fina' lookup MemAlfFina;
 } ss02;
 
+#ifndef QURAN
 lookup localsym {
   sub at by at.ara;
 } localsym;
@@ -67,3 +68,4 @@ feature ss03 {
   language dflt;
   lookup localsym;
 } ss03;
+#endif

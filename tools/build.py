@@ -625,6 +625,15 @@ def makeQuran(infile, outfile, feafile, version):
 
     mergeLatin(font, feafile, glyphs=digits, kerning=False)
 
+    punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
+             "braceright", "bracketleft", "bracketright", "parenleft",
+             "parenright", "slash")
+
+    for name in punct:
+        glyph = font[name+".ara"]
+        glyph.glyphname = name
+        glyph.unicode = fontforge.unicodeFromName(name)
+
     mergeFeatures(font, feafile)
 
     # set font ascent to the highest glyph in the font so that waqf marks don't
