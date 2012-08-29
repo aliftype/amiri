@@ -159,6 +159,20 @@ feature calt {
   sub uni0640.1 uni0670 by uni0670.medi;
 } calt;
 
+#ifdef QURAN
+// if a hamza on yeh is followed by kasra, the hamza goes bellow
+lookup hamzayaakasra {
+  sub uni0626.init by uni0649.init uni0655;
+  sub uni0626.medi by uni0649.medi uni0655;
+} hamzayaakasra;
+
+feature calt {
+# lookupflag IgnoreMarks;
+  sub [uni0626.init uni0626.medi]' lookup hamzayaakasra
+      [uni0650];
+} calt;
+#endif // QURAN
+
 //
 // sequential tanween
 //
