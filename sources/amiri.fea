@@ -2,11 +2,16 @@
 #include "classes.fea"
 #include "composition.fea"
 #include "local.fea"
+
 #ifdef ITALIC
 #include "italic_ltra.fea"
 #include "italic_rtla.fea"
 #endif
+
+#ifndef QURAN
 #include "proportional.fea"
+#endif
+
 #include "basic.fea"
 #include "kashida.fea"
 #include "quran.fea"
@@ -16,6 +21,7 @@
 #include "contextuals.fea"
 #include "stylisticsets.fea"
 #include "kerning.fea"
+
 #ifndef QURAN
 #include "latin_gsub.fea"
 #endif
