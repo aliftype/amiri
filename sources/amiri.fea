@@ -16,4 +16,6 @@
 #include "contextuals.fea"
 #include "stylisticsets.fea"
 #include "kerning.fea"
+#ifndef QURAN
 #include "latin_gsub.fea"
+#endif
