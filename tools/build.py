@@ -615,6 +615,19 @@ def makeQuran(infile, outfile, feafile, version):
     font.familyname += " Quran"
     font.fullname += " Quran"
 
+    # set font ascent to the highest glyph in the font so that waqf marks don't
+    # get truncated
+    # we could have set os2_typoascent_add and hhea_ascent_add, but ff makes
+    # the offset relative to em-size in the former and font bounds in the
+    # later, but we want both to be relative to font bounds
+    ymax = 0
+    for glyph in font.glyphs():
+        bb = glyph.boundingBox()
+        if bb[-1] > ymax:
+            ymax = bb[-1]
+
+    font.os2_typoascent = font.hhea_ascent = ymax
+
     generateFont(font, outfile)
 
 def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
