@@ -271,10 +271,11 @@ def centerGlyph(glyph):
 
 def buildLatinExtras(font, italic):
     for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
-        font[rtl].clear()
-        font[rtl].addReference(ltr, psMat.scale(-1, 1))
-        font[rtl].left_side_bearing = font[ltr].right_side_bearing
-        font[rtl].right_side_bearing = font[ltr].left_side_bearing
+        if ltr in font:
+            font[rtl].clear()
+            font[rtl].addReference(ltr, psMat.scale(-1, 1))
+            font[rtl].left_side_bearing = font[ltr].right_side_bearing
+            font[rtl].right_side_bearing = font[ltr].left_side_bearing
 
     # slanted arabic question mark
     if italic:
@@ -303,7 +304,7 @@ def buildLatinExtras(font, italic):
         medium.width = 900
         centerGlyph(medium)
 
-def mergeLatin(font, feafile, italic=False):
+def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
               "Bold": "Bold",
@@ -324,64 +325,67 @@ def mergeLatin(font, feafile, italic=False):
 
     validateGlyphs(latinfont) # to flatten nested refs mainly
 
-    # collect latin glyphs we want to keep
-    latinglyphs = []
+    if glyphs:
+        latinglyphs = list(glyphs)
+    else:
+        # collect latin glyphs we want to keep
+        latinglyphs = []
 
-    # we want all glyphs in latin0-9 encodings
-    for i in range(0, 9):
-        latinfont.encoding = 'latin%d' %i
-        for glyph in latinfont.glyphs("encoding"):
-            if glyph.encoding <= 255:
-                if glyph.glyphname not in latinglyphs:
+        # we want all glyphs in latin0-9 encodings
+        for i in range(0, 9):
+            latinfont.encoding = 'latin%d' %i
+            for glyph in latinfont.glyphs("encoding"):
+                if glyph.encoding <= 255:
+                    if glyph.glyphname not in latinglyphs:
+                        latinglyphs.append(glyph.glyphname)
+                elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
+                    # keep also Unicode Latin Extended-A block
+                    if glyph.glyphname not in latinglyphs:
+                        latinglyphs.append(glyph.glyphname)
+                elif glyph.unicode == -1 and '.prop' in glyph.glyphname:
+                    # proportional digits
                     latinglyphs.append(glyph.glyphname)
-            elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
-                # keep also Unicode Latin Extended-A block
-                if glyph.glyphname not in latinglyphs:
-                    latinglyphs.append(glyph.glyphname)
-            elif glyph.unicode == -1 and '.prop' in glyph.glyphname:
-                # proportional digits
-                latinglyphs.append(glyph.glyphname)
 
-    # keep ligatures too
-    ligatures = ("f_b", "f_f_b",
-                 "f_h", "f_f_h",
-                 "f_i", "f_f_i",
-                 "f_j", "f_f_j",
-                 "f_k", "f_f_k",
-                 "f_l", "f_f_l",
-                 "f_f")
+        # keep ligatures too
+        ligatures = ("f_b", "f_f_b",
+                     "f_h", "f_f_h",
+                     "f_i", "f_f_i",
+                     "f_j", "f_f_j",
+                     "f_k", "f_f_k",
+                     "f_l", "f_f_l",
+                     "f_f")
 
-    # and Arabic romanisation characters
-    romanisation = ("afii57929", "uni02BE", "uni02BE", "amacron", "uni02BE",
-            "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
-            "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
-            "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
-            "uni1E0D", "uni1E6D", "uni1E93", "dcroat", "uni02BB", "uni02BF",
-            "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
-            "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
-            "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
-            "ygrave", "agrave", "uni02BE", "aacute", "Amacron", "Amacron",
-            "Eacute", "uni1E6E", "Ccedilla", "uni1E6E", "Gcaron",
-            "Ycircumflex", "uni1E28", "uni1E24", "uni1E2A", "uni1E0E",
-            "Dcroat", "Scaron", "Scedilla", "uni1E62", "uni1E10", "uni1E0C",
-            "uni1E6C", "uni1E92", "Dcroat", "Rcaron", "Gdotaccent", "Gbreve",
-            "Umacron", "Imacron", "Amacron", "Amacron", "Amacron",
-            "Acircumflex", "Amacron", "Tbar", "Aacute", "Amacron", "Ygrave",
-            "Agrave", "Aacute")
+        # and Arabic romanisation characters
+        romanisation = ("afii57929", "uni02BE", "uni02BE", "amacron", "uni02BE",
+                "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
+                "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
+                "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
+                "uni1E0D", "uni1E6D", "uni1E93", "dcroat", "uni02BB", "uni02BF",
+                "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
+                "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
+                "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
+                "ygrave", "agrave", "uni02BE", "aacute", "Amacron", "Amacron",
+                "Eacute", "uni1E6E", "Ccedilla", "uni1E6E", "Gcaron",
+                "Ycircumflex", "uni1E28", "uni1E24", "uni1E2A", "uni1E0E",
+                "Dcroat", "Scaron", "Scedilla", "uni1E62", "uni1E10", "uni1E0C",
+                "uni1E6C", "uni1E92", "Dcroat", "Rcaron", "Gdotaccent", "Gbreve",
+                "Umacron", "Imacron", "Amacron", "Amacron", "Amacron",
+                "Acircumflex", "Amacron", "Tbar", "Aacute", "Amacron", "Ygrave",
+                "Agrave", "Aacute")
 
-    # and some typographic characters
-    typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
-            "afii00208", "quoteleft", "quoteright", "quotesinglbase",
-            "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
-            "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
-            "ellipsis", "uni202F", "perthousand", "minute", "second",
-            "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
-            "fraction", "i.TRK", "minus", "uni2213", "radical", "uni2042")
+        # and some typographic characters
+        typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
+                "afii00208", "quoteleft", "quoteright", "quotesinglbase",
+                "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
+                "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
+                "ellipsis", "uni202F", "perthousand", "minute", "second",
+                "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
+                "fraction", "i.TRK", "minus", "uni2213", "radical", "uni2042")
 
-    for l in (ligatures, romanisation, typographic):
-        for name in l:
-            if name not in latinglyphs:
-                latinglyphs.append(name)
+        for l in (ligatures, romanisation, typographic):
+            for name in l:
+                if name not in latinglyphs:
+                    latinglyphs.append(name)
 
     # keep any glyph referenced by previous glyphs
     for name in latinglyphs:
@@ -471,13 +475,14 @@ def mergeLatin(font, feafile, italic=False):
 
     # copy kerning classes
     kern_lookups = {}
-    for lookup in latinfont.gpos_lookups:
-        kern_lookups[lookup] = {}
-        kern_lookups[lookup]["subtables"] = []
-        kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], dummy = latinfont.getLookupInfo(lookup)
-        for subtable in latinfont.getLookupSubtables(lookup):
-            if latinfont.isKerningClass(subtable):
-                kern_lookups[lookup]["subtables"].append((subtable, latinfont.getKerningClass(subtable)))
+    if kerning:
+        for lookup in latinfont.gpos_lookups:
+            kern_lookups[lookup] = {}
+            kern_lookups[lookup]["subtables"] = []
+            kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], dummy = latinfont.getLookupInfo(lookup)
+            for subtable in latinfont.getLookupSubtables(lookup):
+                if latinfont.isKerningClass(subtable):
+                    kern_lookups[lookup]["subtables"].append((subtable, latinfont.getKerningClass(subtable)))
 
     for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
@@ -615,6 +620,13 @@ def makeQuran(infile, outfile, feafile, version):
     font.familyname += " Quran"
     font.fullname += " Quran"
 
+    digits = ("zero", "one", "two", "three", "four", "five", "six",
+              "seven", "eight", "nine")
+
+    mergeLatin(font, feafile, glyphs=digits, kerning=False)
+
+    mergeFeatures(font, feafile)
+
     # set font ascent to the highest glyph in the font so that waqf marks don't
     # get truncated
     # we could have set os2_typoascent_add and hhea_ascent_add, but ff makes
@@ -650,9 +662,9 @@ def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     if latin:
         mergeLatin(font, feafile)
 
-    # we want to merge features after merging the latin font because many
-    # referenced glyphs are in the latin font
-    mergeFeatures(font, feafile)
+        # we want to merge features after merging the latin font because many
+        # referenced glyphs are in the latin font
+        mergeFeatures(font, feafile)
 
     if generate:
         generateFont(font, outfile, True)
