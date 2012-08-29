@@ -610,6 +610,10 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     mergeLatin(font, feafile, skew)
 
+    # we want to merge features after merging the latin font because many
+    # referenced glyphs are in the latin font
+    mergeFeatures(font, feafile)
+
     generateFont(font, outfile)
 
 def makeQuran(infile, outfile, feafile, version):
