@@ -8,7 +8,7 @@ SRC=sources
 WEB=web
 DOC=documentation
 TESTS=test-suite
-FONTS=$(NAME)-regular $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
+FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
 DOCS=README README-Arabic NEWS NEWS-Arabic
 DIST=$(NAME)-$(VERSION)
 
@@ -38,6 +38,11 @@ all: ttf web
 ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS) $(HTML)
+
+$(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+	@echo "   FF\t$@"
+	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME).fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea.pp --version $(VERSION) --quran
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"

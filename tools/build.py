@@ -493,10 +493,6 @@ def mergeLatin(font, feafile, italic=False):
 
     buildLatinExtras(font, italic)
 
-    # we want to merge features after merging the latin font because many
-    # referenced glyphs are in the latin font
-    mergeFeatures(font, feafile)
-
     for lookup in kern_lookups:
         font.addLookup(lookup,
                 kern_lookups[lookup]["type"],
@@ -611,6 +607,16 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     generateFont(font, outfile)
 
+def makeQuran(infile, outfile, feafile, version):
+    font = makeDesktop(infile, outfile, feafile, version, False, False)
+
+    # fix metadata
+    font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
+    font.familyname += " Quran"
+    font.fullname += " Quran"
+
+    generateFont(font, outfile)
+
 def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     font = fontforge.open(infile)
 
@@ -630,6 +636,10 @@ def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
 
     if latin:
         mergeLatin(font, feafile)
+
+    # we want to merge features after merging the latin font because many
+    # referenced glyphs are in the latin font
+    mergeFeatures(font, feafile)
 
     if generate:
         generateFont(font, outfile, True)
@@ -665,7 +675,7 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help", "input=", "output=", "features=", "version=", "slant=", "css", "web"])
+                ["help", "input=", "output=", "features=", "version=", "slant=", "css", "web", "quran"])
     except getopt.GetoptError, err:
         usage(str(err), -1)
 
@@ -676,6 +686,7 @@ if __name__ == "__main__":
     slant = False
     css = False
     web = False
+    quran = False
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
@@ -687,6 +698,7 @@ if __name__ == "__main__":
         elif opt == "--slant": slant = float(arg)
         elif opt == "--css": css = True
         elif opt == "--web": web = True
+        elif opt == "--quran": quran = True
 
     if not infile:
         usage("No input file specified", -1)
@@ -705,5 +717,7 @@ if __name__ == "__main__":
 
         if slant:
             makeSlanted(infile, outfile, feafile, version, slant)
+        elif quran:
+            makeQuran(infile, outfile, feafile, version)
         else:
             makeDesktop(infile, outfile, feafile, version)
