@@ -525,7 +525,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
                                 new_klass.append(name)
                     new_klasses.append(new_klass)
 
-            font.addKerningClass(lookup, subtable[0], first, second, offsets)
+            # if either of the classes is empty, don’t bother with the subtable
+            if any(first) and any(second):
+                font.addKerningClass(lookup, subtable[0], first, second, offsets)
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
