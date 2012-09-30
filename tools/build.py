@@ -190,7 +190,11 @@ def generateFont(font, outfile, hack=False):
         font.generate(outfile, flags=flags)
     font.close()
 
-def drawOverUnderline(glyph, pos, thickness, width):
+def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
+    glyph = font.createChar(uni, name)
+    glyph.width = 0
+    glyph.glyphclass = glyphclass
+
     pen = glyph.glyphPen()
 
     pen.moveTo((-50, pos))
@@ -199,7 +203,9 @@ def drawOverUnderline(glyph, pos, thickness, width):
     pen.lineTo((width + 50, pos))
     pen.closePath()
 
-def makeOverUnderline(font):
+    return glyph
+
+def makeOverUnderline(font, over=True, under=True):
     # test string:
     # صِ̅فْ̅ ̅خَ̅ل̅قَ̅ ̅بًّ̅ صِ̲فْ̲ ̲خَ̲ل̲قَ̲ ̲بِ̲
 
@@ -208,8 +214,20 @@ def makeOverUnderline(font):
     u_pos = font.upos - thickness # underline pos
     minwidth = 100.0
 
-    widths = {}
+    # figure out script/language spec used in other features in the font, we
+    # will use them when creating our lookups
+    script_lang = None
+    for lookup in font.gsub_lookups:
+        feature_info = font.getLookupInfo(lookup)[2]
+        if feature_info and feature_info[0][0] == 'init':
+            script_lang = tuple(feature_info[0][1])
+            break
 
+    assert(script_lang)
+
+    # collect glyphs grouped by their widths rounded by 100 units, we will use
+    # them to decide the widths of over/underline glyphs we will draw
+    widths = {}
     for glyph in font.glyphs():
         if glyph.glyphclass == 'baseglyph':
             width = round(glyph.width/100) * 100
@@ -218,49 +236,47 @@ def makeOverUnderline(font):
                 widths[width] = []
             widths[width].append(glyph.glyphname)
 
-    o_encoded = font.createChar(0x0305, 'uni0305')
-    u_encoded = font.createChar(0x0332, 'uni0332')
-    o_encoded.width = u_encoded.width = 0
-    o_encoded.glyphclass = u_encoded.glyphclass = 'mark'
-    drawOverUnderline(o_encoded, o_pos, thickness, 500)
-    drawOverUnderline(u_encoded, u_pos, thickness, 500)
-
-    o_base = font.createChar(-1, 'uni0305.0')
-    u_base = font.createChar(-1, 'uni0332.0')
-    o_base.width = u_base.width = 0
-    o_base.glyphclass = u_base.glyphclass = 'baseglyph'
-    drawOverUnderline(o_base, o_pos, thickness, 500)
-    drawOverUnderline(u_base, u_pos, thickness, 500)
-
-    font.addLookup('mark hack', 'gsub_single', (), (("mark",(("arab",("dflt")),)),), font.gsub_lookups[-1])
+    # first replace over/underline marks by a glyph with a 'baseglyph' class,
+    # so that we can use can use it in contextual substitution while setting
+    # 'ignore_marks' flag
+    font.addLookup('mark hack', 'gsub_single', (), (('mark', script_lang),), font.gsub_lookups[-1])
     font.addLookupSubtable('mark hack', 'mark hack 1')
 
-    o_encoded.addPosSub('mark hack 1', o_base.glyphname)
-    u_encoded.addPosSub('mark hack 1', u_base.glyphname)
+    if over:
+        o_encoded = drawOverUnderline(font, 'uni0305', 0x0305, 'mark', o_pos, thickness, 500)
+        o_base = drawOverUnderline(font, 'uni0305.0', -1, 'baseglyph', o_pos, thickness, 500)
+        o_encoded.addPosSub('mark hack 1', o_base.glyphname)
+
+    if under:
+        u_encoded = drawOverUnderline(font, 'uni0332', 0x0332, 'mark', u_pos, thickness, 500)
+        u_base = drawOverUnderline(font, 'uni0332.0', -1, 'baseglyph', u_pos, thickness, 500)
 
     context_lookup_name = 'OverUnderLine'
-    font.addLookup(context_lookup_name, 'gsub_contextchain', ('ignore_marks'), (("mark",(("arab",("dflt")),)),), font.gsub_lookups[-1])
+    font.addLookup(context_lookup_name, 'gsub_contextchain', ('ignore_marks'), (('mark', script_lang),), font.gsub_lookups[-1])
 
     for width in sorted(widths.keys()):
-        o_name = 'uni0305.%d' % width
-        u_name = 'uni0332.%d' % width
-        o_glyph = font.createChar(-1, o_name)
-        u_glyph = font.createChar(-1, u_name)
-
-        o_glyph.glyphclass = u_glyph.glyphclass = 'mark'
-
-        drawOverUnderline(o_glyph, o_pos, thickness, width)
-        drawOverUnderline(u_glyph, u_pos, thickness, width)
+        # for each width group we create an over/underline glyph with the same
+        # width, and add a contextual substitution lookup to use it when an
+        # over/underline follows any glyph in this group
 
         single_lookup_name = str(width)
 
         font.addLookup(single_lookup_name, 'gsub_single', (), (), font.gsub_lookups[-1])
         font.addLookupSubtable(single_lookup_name, single_lookup_name + '1')
 
-        o_base.addPosSub(single_lookup_name + '1', o_name)
-        u_base.addPosSub(single_lookup_name + '1', u_name)
+        if over:
+            o_name = 'uni0305.%d' % width
+            o_glyph = drawOverUnderline(font, o_name, -1, 'mark', o_pos, thickness, width)
+            o_base.addPosSub(single_lookup_name + '1', o_name)
 
-        rule = '| [%s] [%s %s] @<%s> | ' %(" ".join(widths[width]), o_base.glyphname, u_base.glyphname, single_lookup_name)
+        if under:
+            u_name = 'uni0332.%d' % width
+            u_glyph = drawOverUnderline(font, u_name, -1, 'mark', u_pos, thickness, width)
+            u_base.addPosSub(single_lookup_name + '1', u_name)
+
+        context = "%s %s" %(over and o_base.glyphname or "", under and u_base.glyphname or "")
+
+        rule = '| [%s] [%s] @<%s> | ' %(" ".join(widths[width]), context, single_lookup_name)
 
         font.addContextualSubtable(context_lookup_name, context_lookup_name + str(width), 'coverage', rule)
 
@@ -669,6 +685,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
+    makeOverUnderline(font, under=False)
     generateFont(font, outfile)
 
 def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
