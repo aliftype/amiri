@@ -511,7 +511,21 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
                 )
 
         for subtable in kern_lookups[lookup]["subtables"]:
-            font.addKerningClass(lookup, subtable[0], subtable[1][0], subtable[1][1], subtable[1][2])
+            first = []
+            second = []
+            offsets = subtable[1][2]
+
+            # drop non-existing glyphs
+            for new_klasses, klasses in ((first, subtable[1][0]), (second, subtable[1][1])):
+                for klass in klasses:
+                    new_klass = []
+                    if klass:
+                        for name in klass:
+                            if name in font:
+                                new_klass.append(name)
+                    new_klasses.append(new_klass)
+
+            font.addKerningClass(lookup, subtable[0], first, second, offsets)
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
