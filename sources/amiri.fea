@@ -17,7 +17,13 @@
 #include "quran.fea"
 #include "enclosing.fea"
 #include "rtlm.fea"
+
+#ifndef QURAN
 #include "lellah.fea"
+#else
+#include "quran_lellah.fea"
+#endif
+
 #include "contextuals.fea"
 #include "stylisticsets.fea"
 #include "kerning.fea"

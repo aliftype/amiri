@@ -1,0 +1,28 @@
+// This a stripped down version of 'lellah.fea' file for use in Amiri Quran,
+// because here we can safely assume the [<Faa>]<Lam><Lam><Heh> sequence always
+// mean the name of Allah.
+
+lookup Lellah {
+  sub uni0644.init by uni0644.init_Lellah;
+  sub uni0644.medi by uni0644.medi_Lellah;
+  sub uni0647.fina by uni0647.fina_Lellah;
+  sub uni06C1.fina by uni0647.fina_Lellah;
+} Lellah;
+
+lookup Lellah2 {
+  sub uni0644.medi by uni0644.medi_FaLellah;
+} Lellah2;
+
+feature calt {
+  lookupflag IgnoreMarks;
+  // لله
+  sub [uni0644.init]' lookup Lellah
+      [uni0644.medi]' lookup Lellah
+      [uni0647.fina uni06C1.fina]' lookup Lellah;
+
+  // فلله
+  sub [uni0641.init]'
+      [uni0644.medi]' lookup Lellah2
+      [uni0644.medi]' lookup Lellah
+      [uni0647.fina uni06C1.fina]' lookup Lellah;
+} calt;
