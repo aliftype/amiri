@@ -205,14 +205,18 @@ def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
 
     return glyph
 
-def makeOverUnderline(font, over=True, under=True):
+def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
     # test string:
     # صِ̅فْ̅ ̅خَ̅ل̅قَ̅ ̅بًّ̅ صِ̲فْ̲ ̲خَ̲ل̲قَ̲ ̲بِ̲
 
     thickness = font.uwidth # underline width (thickness)
-    o_pos = font.os2_typoascent
-    u_pos = font.upos - thickness # underline pos
     minwidth = 100.0
+
+    if not o_pos:
+        o_pos = font.os2_typoascent
+
+    if not u_pos:
+        u_pos = font.upos - thickness # underline pos
 
     # figure out script/language spec used in other features in the font, we
     # will use them when creating our lookups
@@ -685,7 +689,9 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
-    makeOverUnderline(font, under=False)
+    overline_pos = font[0x06D7].boundingBox()[1]
+    makeOverUnderline(font, under=False, o_pos=overline_pos)
+
     generateFont(font, outfile)
 
 def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
