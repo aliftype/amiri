@@ -240,23 +240,18 @@ def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
                 widths[width] = []
             widths[width].append(glyph.glyphname)
 
-    # first replace over/underline marks by a glyph with a 'baseglyph' class,
-    # so that we can use can use it in contextual substitution while setting
-    # 'ignore_marks' flag
-    font.addLookup('mark hack', 'gsub_single', (), (('mark', script_lang),), font.gsub_lookups[-1])
-    font.addLookupSubtable('mark hack', 'mark hack 1')
-
     if over:
-        o_encoded = drawOverUnderline(font, 'uni0305', 0x0305, 'mark', o_pos, thickness, 500)
-        o_base = drawOverUnderline(font, 'uni0305.0', -1, 'baseglyph', o_pos, thickness, 500)
-        o_encoded.addPosSub('mark hack 1', o_base.glyphname)
+        o_base = drawOverUnderline(font, 'uni0305', 0x0305, 'mark', o_pos, thickness, 500)
 
     if under:
-        u_encoded = drawOverUnderline(font, 'uni0332', 0x0332, 'mark', u_pos, thickness, 500)
-        u_base = drawOverUnderline(font, 'uni0332.0', -1, 'baseglyph', u_pos, thickness, 500)
+        u_base = drawOverUnderline(font, 'uni0332', 0x0332, 'mark', u_pos, thickness, 500)
+
+    markset = "%s %s" %(over and o_base.glyphname or "", under and u_base.glyphname or "")
+
+    font.addMarkSet("OverUnderSet", markset)
 
     context_lookup_name = 'OverUnderLine'
-    font.addLookup(context_lookup_name, 'gsub_contextchain', ('ignore_marks'), (('mark', script_lang),), font.gsub_lookups[-1])
+    font.addLookup(context_lookup_name, 'gsub_contextchain', ('OverUnderSet'), (('mark', script_lang),), font.gsub_lookups[-1])
 
     for width in sorted(widths.keys()):
         # for each width group we create an over/underline glyph with the same
@@ -689,6 +684,8 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
+    # create overline glyph to be used for sajda line, it is positioned
+    # vertically at the level of the base of waqf marks
     overline_pos = font[0x06D7].boundingBox()[1]
     makeOverUnderline(font, under=False, o_pos=overline_pos)
 
