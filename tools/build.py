@@ -319,6 +319,21 @@ def buildLatinExtras(font, italic):
         medium.width = 900
         centerGlyph(medium)
 
+def subsetFont(font, glyphnames):
+    # keep any glyph referenced by previous glyphs
+    for name in glyphnames:
+        if name in font:
+            glyph = font[name]
+            for ref in glyph.references:
+                glyphnames.append(ref[0])
+        else:
+            print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
+
+    # remove everything else
+    for glyph in font.glyphs():
+        if glyph.glyphname not in glyphnames:
+            font.removeGlyph(glyph)
+
 def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
@@ -402,19 +417,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
                 if name not in latinglyphs:
                     latinglyphs.append(name)
 
-    # keep any glyph referenced by previous glyphs
-    for name in latinglyphs:
-        if name in latinfont:
-            glyph = latinfont[name]
-            for ref in glyph.references:
-                latinglyphs.append(ref[0])
-        else:
-            print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
-
-    # remove everything else
-    for glyph in latinfont.glyphs():
-        if glyph.glyphname not in latinglyphs:
-            latinfont.removeGlyph(glyph)
+    subsetFont(latinfont, latinglyphs)
 
     # common characters that can be used in Arabic and Latin need to be handled
     # carefully in the slanted font so that right leaning italic is used with
