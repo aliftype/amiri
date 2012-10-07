@@ -319,8 +319,15 @@ def buildLatinExtras(font, italic):
         medium.width = 900
         centerGlyph(medium)
 
-def subsetFont(font, glyphnames):
-    # keep any glyph referenced by previous glyphs
+def subsetFont(font, glyphnames, similar=False):
+    # keep any glyph with the same base name
+    if similar:
+        for name in glyphnames:
+            for glyph in font.glyphs():
+                if "." in glyph.glyphname and glyph.glyphname.split(".")[0] == name:
+                    glyphnames.append(glyph.glyphname)
+
+    # keep any glyph referenced requested glyphs
     for name in glyphnames:
         if name in font:
             glyph = font[name]
@@ -673,6 +680,36 @@ def makeQuran(infile, outfile, feafile, version):
         glyph.unicode = fontforge.unicodeFromName(name)
 
     mergeFeatures(font, feafile)
+
+    quran_glyphs = []
+    quran_glyphs += digits
+    quran_glyphs += punct
+    quran_glyphs += ("space",
+            "uni060C", "uni0615", "uni0617", "uni0618", "uni0619", "uni061A",
+            "uni061B", "uni061E", "uni061F", "uni0621", "uni0622", "uni0623",
+            "uni0624", "uni0625", "uni0626", "uni0627", "uni0628", "uni0629",
+            "uni062A", "uni062B", "uni062C", "uni062D", "uni062E", "uni062F",
+            "uni0630", "uni0631", "uni0632", "uni0633", "uni0634", "uni0635",
+            "uni0636", "uni0637", "uni0638", "uni0639", "uni063A", "uni0640",
+            "uni0641", "uni0642", "uni0643", "uni0644", "uni0645", "uni0646",
+            "uni0647", "uni0648", "uni0649", "uni064A", "uni064B", "uni064C",
+            "uni064D", "uni064E", "uni064F", "uni0650", "uni0651", "uni0652",
+            "uni0653", "uni0654", "uni0655", "uni0656", "uni0657", "uni0658",
+            "uni0660", "uni0661", "uni0662", "uni0663", "uni0664", "uni0665",
+            "uni0666", "uni0667", "uni0668", "uni0669", "uni0670", "uni0671",
+            "uni06CC", "uni06D6", "uni06D7", "uni06D8", "uni06D9", "uni06DA",
+            "uni06DB", "uni06DC", "uni06DD", "uni06DE", "uni06DF", "uni06E0",
+            "uni06E1", "uni06E2", "uni06E3", "uni06E4", "uni06E5", "uni06E6",
+            "uni06E7", "uni06E8", "uni06E9", "uni06EA", "uni06EB", "uni06EC",
+            "uni06ED", "uni06F0", "uni06F1", "uni06F2", "uni06F3", "uni06F4",
+            "uni06F5", "uni06F6", "uni06F7", "uni06F8", "uni06F9", "uni08F0",
+            "uni08F1", "uni08F2", "uni2000", "uni2001", "uni2002", "uni2003",
+            "uni2004", "uni2005", "uni2006", "uni2007", "uni2008", "uni2009",
+            "uni200A", "uni200B", "uni200C", "uni200D", "uni200E", "uni200F",
+            "uni2028", "uni2029", "uni202A", "uni202B", "uni202C", "uni202D",
+            "uni202E", "uni202F", "uni25CC", "uniFDFA", "uniFDFD")
+
+    subsetFont(font, quran_glyphs, True)
 
     # set font ascent to the highest glyph in the font so that waqf marks don't
     # get truncated
