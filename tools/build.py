@@ -233,7 +233,7 @@ def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
     for glyph in font.glyphs():
-        if glyph.glyphclass == 'baseglyph':
+        if glyph.glyphclass == 'baseglyph' and glyph.unicode != 0xFDFD:
             width = round(glyph.width/100) * 100
             width = width > minwidth and width or minwidth
             if not width in widths:
