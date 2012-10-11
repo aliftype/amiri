@@ -1,4 +1,3 @@
-#ifndef QURAN
 // This code is kind of a big hack. We want to support a special form of name of
 // Allah, but the sequence <Alef><Lam><Lam><Heh> can occur in many unrelated
 // words, showing the special form for those wards is very confusing and can
@@ -40,6 +39,15 @@ lookup Lellah5 {
   sub uni0644.medi by uni0644.medi_Lellah;
 } Lellah5;
 
+// shortcuts
+@Li = [uni0644.init];
+@Lm = [uni0644.medi];
+@Ai = [uni0627 uni0622 uni0671];
+@Af = [uni0627.fina];
+@Hf = [uni0647.fina uni06C1.fina];
+@xF = [uni064E uni0670];
+
+#ifndef QURAN
 lookup LamLamInitX {
   sub uni0644.init by uni0644.init_LamLamInit;
   sub uni0644.medi by uni0644.medi_LamLamInit;
@@ -85,14 +93,6 @@ lookup LamLamInitX {
               @aHaa.init @aHaa.medi @aHeh_init @aHeh.medi @aKaf_init @aKaf.medi
               @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
               @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
-
-// shortcuts
-@Li = [uni0644.init];
-@Lm = [uni0644.medi];
-@Ai = [uni0627 uni0622 uni0671];
-@Af = [uni0627.fina];
-@Hf = [uni0647.fina uni06C1.fina];
-@xF = [uni064E uni0670];
 
 feature calt {
   lookupflag IgnoreMarks;
@@ -142,28 +142,17 @@ feature calt {
 // because here we can safely assume the [<Faa>]<Lam><Lam><Heh> sequence always
 // mean the name of Allah.
 
-lookup Lellah {
-  sub uni0644.init by uni0644.init_Lellah;
-  sub uni0644.medi by uni0644.medi_Lellah;
-  sub uni0647.fina by uni0647.fina_Lellah;
-  sub uni06C1.fina by uni0647.fina_Lellah;
-} Lellah;
-
-lookup Lellah2 {
-  sub uni0644.medi by uni0644.medi_FaLellah;
-} Lellah2;
-
 feature calt {
   lookupflag IgnoreMarks;
   // لله
-  sub [uni0644.init]' lookup Lellah
-      [uni0644.medi]' lookup Lellah
-      [uni0647.fina uni06C1.fina]' lookup Lellah;
+  sub @Li' lookup Lellah4
+      @Lm' lookup Lellah5
+      @Hf' lookup Lellah;
 
   // فلله
   sub [uni0641.init]'
-      [uni0644.medi]' lookup Lellah2
-      [uni0644.medi]' lookup Lellah
-      [uni0647.fina uni06C1.fina]' lookup Lellah;
+      @Lm' lookup Lellah3
+      @Lm' lookup Lellah5
+      @Hf' lookup Lellah;
 } calt;
 #endif
