@@ -23,17 +23,23 @@ lookup loclSindhiDigits {
 } loclSindhiDigits;
 
 feature locl {
+#ifndef QURAN
   script arab;
   language ARA;
   lookup loclPunct;
+#endif
 
   language URD exclude_dflt;
   lookup loclUrduDigits;
+#ifndef QURAN
   lookup loclPunct;
+#endif
 
   language SND exclude_dflt;
   lookup loclSindhiDigits;
+#ifndef QURAN
   lookup loclPunct;
+#endif
 } locl;
 
 
@@ -44,15 +50,21 @@ feature locl {
 // XXX: always sync with ‘locl’ feature above
 
 feature ccmp {
+#ifndef QURAN
   script arab;
   language ARA;
   lookup loclPunct;
+#endif
 
   language URD exclude_dflt;
   lookup loclUrduDigits;
+#ifndef QURAN
   lookup loclPunct;
+#endif
 
   language SND exclude_dflt;
   lookup loclSindhiDigits;
+#ifndef QURAN
   lookup loclPunct;
+#endif
 } ccmp;
