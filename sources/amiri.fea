@@ -22,5 +22,5 @@
 #include "kerning.fea"
 
 #ifndef QURAN
-#include "latin_gsub.fea"
+#include "latin.fea"
 #endif
