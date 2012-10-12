@@ -4,8 +4,7 @@
 #include "local.fea"
 
 #ifdef ITALIC
-#include "italic_ltra.fea"
-#include "italic_rtla.fea"
+#include "italic.fea"
 #endif
 
 #ifndef QURAN

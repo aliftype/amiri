@@ -75,3 +75,79 @@ feature locl {
   language TRK include_dflt;
   lookup loclLtr;
 } locl;
+
+lookup loclRtl {
+  sub exclam by exclam.rtl;
+  sub quotedbl by quotedbl.rtl;
+  sub numbersign by numbersign.rtl;
+  sub dollar by dollar.rtl;
+  sub percent by percent.rtl;
+  sub quotesingle by quotesingle.rtl;
+  sub asterisk by asterisk.rtl;
+  sub plus by plus.rtl;
+  sub slash by slash.rtl;
+  sub zero by zero.rtl;
+  sub one by one.rtl;
+  sub two by two.rtl;
+  sub three by three.rtl;
+  sub four by four.rtl;
+  sub five by five.rtl;
+  sub six by six.rtl;
+  sub seven by seven.rtl;
+  sub eight by eight.rtl;
+  sub nine by nine.rtl;
+  sub colon by colon.rtl;
+  sub semicolon by semicolon.rtl;
+  sub less by less.rtl;
+  sub equal by equal.rtl;
+  sub greater by greater.rtl;
+  sub question by question.rtl;
+  sub backslash by backslash.rtl;
+  sub asciicircum by asciicircum.rtl;
+  sub brokenbar by brokenbar.rtl;
+  sub section by section.rtl;
+  sub copyright by copyright.rtl;
+  sub logicalnot by logicalnot.rtl;
+  sub registered by registered.rtl;
+  sub plusminus by plusminus.rtl;
+  sub uni00B2 by uni00B2.rtl;
+  sub uni00B3 by uni00B3.rtl;
+  sub paragraph by paragraph.rtl;
+  sub uni00B9 by uni00B9.rtl;
+  sub ordmasculine by ordmasculine.rtl;
+  sub onequarter by onequarter.rtl;
+  sub onehalf by onehalf.rtl;
+  sub threequarters by threequarters.rtl;
+  sub questiondown by questiondown.rtl;
+  sub quoteleft by quoteleft.rtl;
+  sub quoteright by quoteright.rtl;
+  sub quotesinglbase by quotesinglbase.rtl;
+  sub quotereversed by quotereversed.rtl;
+  sub quotedblleft by quotedblleft.rtl;
+  sub quotedblright by quotedblright.rtl;
+  sub quotedblbase by quotedblbase.rtl;
+  sub uni201F by uni201F.rtl;
+  sub dagger by dagger.rtl;
+  sub daggerdbl by daggerdbl.rtl;
+  sub perthousand by perthousand.rtl;
+  sub minute by minute.rtl;
+  sub second by second.rtl;
+  sub guilsinglleft by guilsinglleft.rtl;
+  sub guilsinglright by guilsinglright.rtl;
+  sub fraction by fraction.rtl;
+  sub uni2213 by uni2213.rtl;
+  sub uni061F by uni061F.rtl;
+} loclRtl;
+
+feature locl {
+  script arab;
+
+  language ARA include_dflt;
+  lookup loclRtl;
+
+  language URD include_dflt;
+  lookup loclRtl;
+
+  language SND include_dflt;
+  lookup loclRtl;
+} locl;
