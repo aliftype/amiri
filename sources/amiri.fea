@@ -1,4 +1,11 @@
-#include "lang.fea"
+languagesystem DFLT dflt;
+languagesystem arab dflt;
+languagesystem arab ARA;
+languagesystem arab URD;
+languagesystem arab SND;
+languagesystem latn dflt;
+languagesystem latn TRK;
+
 #include "classes.fea"
 #include "composition.fea"
 #include "local.fea"
