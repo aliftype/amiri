@@ -1,6 +1,3 @@
-languagesystem DFLT dflt;
-#include "lang_latin.fea"
-
 feature locl {
   script latn;
   language TRK exclude_dflt;

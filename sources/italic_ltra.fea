@@ -1,6 +1,4 @@
-#include "lang_latin.fea"
-
-feature locl {
+lookup loclLtr {
   sub exclam by exclam.ltr;
   sub quotedbl by quotedbl.ltr;
   sub numbersign by numbersign.ltr;
@@ -70,4 +68,10 @@ feature locl {
   sub guilsinglright by guilsinglright.ltr;
   sub fraction by fraction.ltr;
   sub uni2213 by uni2213.ltr;
+} loclLtr;
+
+feature locl {
+  script latn;
+  language TRK include_dflt;
+  lookup loclLtr;
 } locl;

@@ -1,6 +1,4 @@
-#include "lang_arabic.fea"
-
-feature locl {
+lookup loclRtl {
   sub exclam by exclam.rtl;
   sub quotedbl by quotedbl.rtl;
   sub numbersign by numbersign.rtl;
@@ -61,4 +59,17 @@ feature locl {
   sub fraction by fraction.rtl;
   sub uni2213 by uni2213.rtl;
   sub uni061F by uni061F.rtl;
+} loclRtl;
+
+feature locl {
+  script arab;
+
+  language ARA include_dflt;
+  lookup loclRtl;
+
+  language URD include_dflt;
+  lookup loclRtl;
+
+  language SND include_dflt;
+  lookup loclRtl;
 } locl;
