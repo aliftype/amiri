@@ -562,12 +562,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
         font.addLookup(lookup,
                 kern_lookups[lookup]["type"],
                 kern_lookups[lookup]["flags"],
-                (('kern',
-                        (
-                            ('DFLT', ('dflt',)),
-                            ('latn', ('dflt', 'TRK ')),
-                        )
-                    ),)
+                (('kern', script_lang),)
                 )
 
         for subtable in kern_lookups[lookup]["subtables"]:
