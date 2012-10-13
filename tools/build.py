@@ -376,7 +376,7 @@ def buildComposition(font, glyphnames):
 
     return fea
 
-def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
+def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
               "Bold": "Bold",
@@ -459,7 +459,8 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
                 if name not in latinglyphs:
                     latinglyphs.append(name)
 
-    compfea = buildComposition(latinfont, latinglyphs)
+    if not quran:
+        compfea = buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
 
     # common characters that can be used in Arabic and Latin need to be handled
@@ -536,7 +537,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
 
     # copy kerning classes
     kern_lookups = {}
-    if kerning:
+    if not quran:
         for lookup in latinfont.gpos_lookups:
             kern_lookups[lookup] = {}
             kern_lookups[lookup]["subtables"] = []
@@ -557,8 +558,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
     font.mergeFonts(tmpfont)
     os.remove(tmpfont)
 
-    font.mergeFeature(compfea)
-    os.remove(compfea)
+    if not quran:
+        font.mergeFeature(compfea)
+        os.remove(compfea)
 
     buildLatinExtras(font, italic)
 
@@ -683,7 +685,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-    mergeLatin(font, feafile, skew)
+    mergeLatin(font, feafile, italic=skew)
 
     # we want to merge features after merging the latin font because many
     # referenced glyphs are in the latin font
@@ -702,7 +704,7 @@ def makeQuran(infile, outfile, feafile, version):
     digits = ("zero", "one", "two", "three", "four", "five", "six",
               "seven", "eight", "nine")
 
-    mergeLatin(font, feafile, glyphs=digits, kerning=False)
+    mergeLatin(font, feafile, glyphs=digits, quran=True)
 
     punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
              "braceright", "bracketleft", "bracketright", "parenleft",
