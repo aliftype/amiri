@@ -313,6 +313,8 @@ def buildLatinExtras(font, italic):
 
 def subsetFont(font, glyphnames, similar=False):
     # keep any glyph with the same base name
+    reported = []
+
     if similar:
         for name in glyphnames:
             for glyph in font.glyphs():
@@ -326,7 +328,9 @@ def subsetFont(font, glyphnames, similar=False):
             for ref in glyph.references:
                 glyphnames.append(ref[0])
         else:
-            print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
+            if name not in reported:
+                print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
+                reported.append(name)
 
     # remove everything else
     for glyph in font.glyphs():
