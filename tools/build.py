@@ -16,12 +16,15 @@
 # minimum required FontForge version
 min_ff_version = "20120702"
 
+script_lang = (('latn', ('dflt', 'TRK ')), ('arab', ('dflt', 'ARA ', 'URD ', 'SND ')), ('DFLT', ('dflt',)))
+
 import fontforge
 import psMat
 import sys
 import os
 import getopt
 import math
+import unicodedata
 from tempfile import mkstemp
 from fontTools.ttLib import TTFont
 
@@ -218,17 +221,6 @@ def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
     if not u_pos:
         u_pos = font.upos - thickness # underline pos
 
-    # figure out script/language spec used in other features in the font, we
-    # will use them when creating our lookups
-    script_lang = None
-    for lookup in font.gsub_lookups:
-        feature_info = font.getLookupInfo(lookup)[2]
-        if feature_info and feature_info[0][0] == 'init':
-            script_lang = tuple(feature_info[0][1])
-            break
-
-    assert(script_lang)
-
     # collect glyphs grouped by their widths rounded by 100 units, we will use
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
@@ -341,6 +333,45 @@ def subsetFont(font, glyphnames, similar=False):
         if glyph.glyphname not in glyphnames:
             font.removeGlyph(glyph)
 
+def buildComposition(font, glyphnames):
+    newnames = []
+
+    font.addLookup("Latin composition", 'gsub_ligature', (), (('ccmp', script_lang),))
+    font.addLookupSubtable("Latin composition", "Latin composition subtable")
+
+    for name in glyphnames:
+        u = fontforge.unicodeFromName(name)
+        if 0 < u < 0xfb00:
+            decomp = unicodedata.decomposition(unichr(u))
+            if decomp:
+                base = decomp.split()[0]
+                mark = decomp.split()[1]
+                if not '<' in base:
+                    ubase = int(base, 16)
+                    umark = int(mark, 16)
+                    base = fontforge.nameFromUnicode(ubase)
+                    mark = fontforge.nameFromUnicode(umark)
+
+                    if base not in font:
+                        base = "uni%04X" %ubase
+                    if mark not in font:
+                        mark = "uni%04X" %umark
+
+                    if base in font and mark in font:
+                        font[name].addPosSub("Latin composition subtable", (base, mark))
+
+                    if base not in glyphnames:
+                        newnames.append(base)
+                    if mark not in glyphnames:
+                        newnames.append(mark)
+
+    glyphnames += newnames
+
+    fea = mkstemp(suffix='.fea')[1]
+    font.generateFeatureFile(fea, "Latin composition")
+
+    return fea
+
 def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
@@ -424,6 +455,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
                 if name not in latinglyphs:
                     latinglyphs.append(name)
 
+    compfea = buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
 
     # common characters that can be used in Arabic and Latin need to be handled
@@ -520,6 +552,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, kerning=True):
 
     font.mergeFonts(tmpfont)
     os.remove(tmpfont)
+
+    font.mergeFeature(compfea)
+    os.remove(compfea)
 
     buildLatinExtras(font, italic)
 
