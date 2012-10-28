@@ -818,10 +818,9 @@ Options:
     sys.exit(code)
 
 if __name__ == "__main__":
-# disable the check for now
-#   if fontforge.version() < min_ff_version:
-#       print "You need FontForge %s or newer to build Amiri fonts" %min_ff_version
-#       sys.exit(-1)
+    if fontforge.version() < min_ff_version:
+        print "You need FontForge %s or newer to build Amiri fonts" %min_ff_version
+        sys.exit(-1)
 
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
