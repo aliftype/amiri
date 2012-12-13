@@ -334,10 +334,12 @@ lookup LamMemHaaInit {
   sub @aMem.medi by @aMem.medi_LamMemHaaInit;
 } LamMemHaaInit;
 
+#ifndef QURAN
 lookup LamMemInit {
   sub @aLam.init by @aLam.init_LamMemInit;
   sub @aMem.medi by @aMem.medi_LamMemInit;
 } LamMemInit;
+#endif
 
 lookup LamAlfIsol {
   sub @aAlf.fina by @aAlf.fina_LamAlfIsol;
@@ -601,7 +603,8 @@ feature calt {
       @Tashkil.below';
 } calt;
 
-// ditto
+// we don't have LamMemInit in Quran font
+#ifndef QURAN
 lookup LamMemInitTatweel {
   sub @aMem.medi by @aMem.medi_LamMemInitTatweel;
 } LamMemInitTatweel;
@@ -636,6 +639,7 @@ feature calt {
       @aMem.medi' lookup LamMemInitTatweel
       @Tashkil.below';
 } calt;
+#endif
 
 // ditto
 lookup KafMemFinaExtended {
@@ -749,8 +753,10 @@ feature calt {
       [@aMem.medi]' lookup LamMemHaaInit
       [@aHaa.medi]' lookup LamMemHaaInit;
 
+#ifndef QURAN
   sub [@aLam.init]' lookup LamMemInit
       [@aMem.medi]' lookup LamMemInit;
+#endif
 
   sub [@aLam.init]' lookup LamAlfIsol
       [@aAlf.fina]' lookup LamAlfIsol;
