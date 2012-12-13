@@ -13,6 +13,8 @@
 @Kaf_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
 @Kaf_3 = [@aKaf.init @aKaf.init_KafLam];
 @Kaf_4 = [@aKaf.init_KafYaaIsol];
+@Raa_1 = [@RaaWaw @aDal.fina @aDal.isol @aDal.fina_BaaDal @aDal.fina_KafDal
+          @aDal.fina_LamDal];
 @2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
 @2nd_4 = [@aSad.init_AboveHaa @aSen.init_AboveHaa @aHeh.init_AboveHaa
           @aHaa.init_AboveHaa @aMem.init_AboveHaa @aKaf.init_AboveHaa
@@ -43,6 +45,10 @@ feature kern {
   pos @Alf_1' <-200 0 -200 0> @Kaf_2;
   pos @Alf_1' <-250 0 -250 0> @Kaf_3;
   pos @Alf_1' <-300 0 -300 0> @Kaf_4;
+
+  // raa/waw/dal followed by isolated dagger alef followed by madda needs some
+  // space to avoid fatha/madda clash
+  pos @Raa_1' < 300 0  300 0> uni064E uni0670.isol [uni0653 uni06E4];
 } kern;
 
 feature kern {
