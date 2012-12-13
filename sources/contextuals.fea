@@ -603,7 +603,7 @@ feature calt {
       @Tashkil.below';
 } calt;
 
-// we don't have LamMemInit in Quran font
+//ditto, but we don't have LamMemInit in Quran font
 #ifndef QURAN
 lookup LamMemInitTatweel {
   sub @aMem.medi by @aMem.medi_LamMemInitTatweel;
@@ -1096,6 +1096,15 @@ feature calt {
       [@aKaf.medi @aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina
        @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf];
 } calt;
+
+#ifdef QURAN
+// alef lam meem raa (with madda)
+// we don't get plain aLam.init aMem.fina except in Quran font
+feature calt {
+  sub @aLam.init' lookup LamKafInit [uni0653 uni06E4]
+      @aMem.medi [uni0653 uni06E4];
+} calt;
+#endif
 
 lookup HehYaaFina {
   sub @aHeh.medi_BaaHehMedi by @aHeh.medi_HehYaaFina;
