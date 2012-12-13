@@ -48,7 +48,9 @@ feature kern {
 
   // raa/waw/dal followed by isolated dagger alef followed by madda needs some
   // space to avoid fatha/madda clash
-  pos @Raa_1' < 300 0  300 0> uni064E uni0670.isol [uni0653 uni06E4];
+  pos @Raa_1' < 200 0  200 0> uni064E uni0670.isol [uni0653 uni06E4];
+
+  pos [uni0621]' < 200 0  200 0> uni064E uni0670.isol;
 } kern;
 
 feature kern {
