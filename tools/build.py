@@ -724,6 +724,14 @@ def makeQuran(infile, outfile, feafile, version):
     dotbelow.addReference(dotabove.glyphname, psMat.translate(0, delta))
     dotbelow.addAnchorPoint("TashkilTashkilBelow", "basemark", 220, dotbelow.boundingBox()[1] - 100)
 
+    # scale some vowel marks and dots down a bit
+    font["uni0651"].transform(psMat.scale(0.8))
+    for mark in ("uni064B", "uni064C", "uni064E", "uni064F", "uni06E1"):
+        font[mark].transform(psMat.scale(0.9))
+
+    for dot in ("TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
+        font[dot].transform(psMat.scale(0.9))
+
     quran_glyphs = []
 
     # create dummy glyphs used for some coding hacks
