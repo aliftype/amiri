@@ -365,11 +365,13 @@ lookup LamAlfIsol {
   sub @aLam.init by @aLam.init_LamAlfIsol;
 } LamAlfIsol;
 
+#ifndef QURAN
 lookup LamHaaMemInit {
   sub @aHaa.medi by @aHaa.medi_LamHaaMemInit;
   sub @aLam.init by @aLam.init_LamHaaMemInit;
   sub @aMem.medi by @aMem.medi_LamHaaMemInit;
 } LamHaaMemInit;
+#endif
 
 lookup BaaBaaMemInit {
   sub @aBaa.init by @aBaa.init_BaaBaaMemInit;
@@ -780,9 +782,11 @@ feature calt {
   sub [@aLam.init]' lookup LamAlfIsol
       [@aAlf.fina]' lookup LamAlfIsol;
 
+#ifndef QURAN
   sub [@aLam.init]' lookup LamHaaMemInit
       [@aHaa.medi]' lookup LamHaaMemInit
       [@aMem.medi]' lookup LamHaaMemInit;
+#endif
 
   sub [@aBaa.init]' lookup BaaBaaMemInit
       [@aBaa.medi]' lookup BaaBaaMemInit
