@@ -162,6 +162,7 @@ def makeCss(infiles, outfile):
     for f in infiles.split():
         base = os.path.splitext(os.path.basename(f))[0]
         font = fontforge.open(f)
+        font.encoding = "UnicodeBmp" # avoid a crash if compact was set
         css += genCSS(font, base)
         font.close()
 
@@ -599,6 +600,7 @@ def makeWeb(infile, outfile):
     flags = ("opentype", "short-post", "omit-instructions")
 
     font = fontforge.open(infile)
+    font.encoding = "UnicodeBmp" # avoid a crash if compact was set
 
     # removed compatibility glyphs that of little use on the web
     compat_ranges = (
@@ -769,6 +771,7 @@ def makeQuran(infile, outfile, feafile, version):
 
 def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     font = fontforge.open(infile)
+    font.encoding = "UnicodeBmp" # avoid a crash if compact was set
 
     if version:
         setVersion(font, version)
