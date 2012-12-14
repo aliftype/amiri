@@ -11,6 +11,7 @@ feature calt {
   sub [uni0651 uni06EC] @ShaddaTashkil' lookup SamallTashkil;
 } calt;
 
+#ifdef QURAN
 // a rather ugly hack for the brain dead Unicode canonical reordering of some
 // Arabic combining marks
 
@@ -30,6 +31,7 @@ feature calt {
 feature calt {
   sub @ShaddaTashkil' lookup TashkilShaddaHack dummy;
 } calt;
+#endif
 
 // replace tashkil following hamza by smaller alternates
 feature calt {
