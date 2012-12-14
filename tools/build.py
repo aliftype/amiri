@@ -734,18 +734,19 @@ def makeQuran(infile, outfile, feafile, version):
             "uni064D", "uni064E", "uni064F", "uni0650", "uni0651", "uni0652",
             "uni0653", "uni0654", "uni0655", "uni0656", "uni0657", "uni0658",
             "uni0660", "uni0661", "uni0662", "uni0663", "uni0664", "uni0665",
-            "uni0666", "uni0667", "uni0668", "uni0669", "uni0670", "uni0671",
-            "uni06CC", "uni06D6", "uni06D7", "uni06D8", "uni06D9", "uni06DA",
-            "uni06DB", "uni06DC", "uni06DD", "uni06DE", "uni06DF", "uni06E0",
-            "uni06E1", "uni06E2", "uni06E3", "uni06E4", "uni06E5", "uni06E6",
-            "uni06E7", "uni06E8", "uni06E9", "uni06EA", "uni06EB", "uni06EC",
-            "uni06ED", "uni06F0", "uni06F1", "uni06F2", "uni06F3", "uni06F4",
-            "uni06F5", "uni06F6", "uni06F7", "uni06F8", "uni06F9", "uni08F0",
-            "uni08F1", "uni08F2", "uni2000", "uni2001", "uni2002", "uni2003",
-            "uni2004", "uni2005", "uni2006", "uni2007", "uni2008", "uni2009",
-            "uni200A", "uni200B", "uni200C", "uni200D", "uni200E", "uni200F",
-            "uni2028", "uni2029", "uni202A", "uni202B", "uni202C", "uni202D",
-            "uni202E", "uni202F", "uni25CC", "uniFDFA", "uniFDFD")
+            "uni0666", "uni0667", "uni0668", "uni0669", "uni066E", "uni066F",
+            "uni06A1", "uni06BA", "uni0670", "uni0671", "uni06CC", "uni06D6",
+            "uni06D7", "uni06D8", "uni06D9", "uni06DA", "uni06DB", "uni06DC",
+            "uni06DD", "uni06DE", "uni06DF", "uni06E0", "uni06E1", "uni06E2",
+            "uni06E3", "uni06E4", "uni06E5", "uni06E6", "uni06E7", "uni06E8",
+            "uni06E9", "uni06EA", "uni06EB", "uni06EC", "uni06ED", "uni06F0",
+            "uni06F1", "uni06F2", "uni06F3", "uni06F4", "uni06F5", "uni06F6",
+            "uni06F7", "uni06F8", "uni06F9", "uni08F0", "uni08F1", "uni08F2",
+            "uni2000", "uni2001", "uni2002", "uni2003", "uni2004", "uni2005",
+            "uni2006", "uni2007", "uni2008", "uni2009", "uni200A", "uni200B",
+            "uni200C", "uni200D", "uni200E", "uni200F", "uni2028", "uni2029",
+            "uni202A", "uni202B", "uni202C", "uni202D", "uni202E", "uni202F",
+            "uni25CC", "uniFDFA", "uniFDFD")
 
     subsetFont(font, quran_glyphs, True)
 
