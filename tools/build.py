@@ -747,6 +747,7 @@ def makeQuran(infile, outfile, feafile, version):
             "uni200C", "uni200D", "uni200E", "uni200F", "uni2028", "uni2029",
             "uni202A", "uni202B", "uni202C", "uni202D", "uni202E", "uni202F",
             "uni25CC", "uniFDFA", "uniFDFD")
+    quran_glyphs += ("uni030A", "uni0325") # ring above and below
 
     subsetFont(font, quran_glyphs, True)
 
