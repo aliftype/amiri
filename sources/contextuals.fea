@@ -1192,3 +1192,19 @@ feature calt {
        uni0675.fina uni0773.fina uni0774.fina]
    by [@aBaa.init];
 } calt;
+
+// Replace teh init following teh/them medi by a teh init with two vertical
+// dots
+// XXX: use a different glyph for PDF text extraction
+feature calt {
+  lookupflag IgnoreMarks;
+  script arab;
+  language ARA;
+  sub uni062A.init_BaaBaaIsol'
+      [uni062A.medi_BaaBaaInit uni062B.medi_BaaBaaInit]
+   by uni067A.init_BaaBaaIsol;
+
+  sub uni062A.init_High'
+      [uni062A.medi_High uni062B.medi_High]
+   by uni067A.init_High;
+} calt;
