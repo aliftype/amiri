@@ -25,11 +25,11 @@ lookup TashkilShaddaHack {
 } TashkilShaddaHack;
 
 feature calt {
-  sub @ShaddaTashkil [uni06EC]' by dummy;
+  sub @ShaddaTashkil [uni06EC]' by dummy1;
 } calt;
 
 feature calt {
-  sub @ShaddaTashkil' lookup TashkilShaddaHack dummy;
+  sub @ShaddaTashkil' lookup TashkilShaddaHack dummy1;
 } calt;
 #endif
 

@@ -542,7 +542,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
         for lookup in latinfont.gpos_lookups:
             kern_lookups[lookup] = {}
             kern_lookups[lookup]["subtables"] = []
-            kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"], dummy = latinfont.getLookupInfo(lookup)
+            kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"] = latinfont.getLookupInfo(lookup)[:2]
             for subtable in latinfont.getLookupSubtables(lookup):
                 if latinfont.isKerningClass(subtable):
                     kern_lookups[lookup]["subtables"].append((subtable, latinfont.getKerningClass(subtable)))
@@ -717,9 +717,16 @@ def makeQuran(infile, outfile, feafile, version):
         glyph.glyphname = name
         glyph.unicode = fontforge.unicodeFromName(name)
 
+    quran_glyphs = []
+
+    # create dummy glyphs used for some coding hacks
+    for i in range(1, 11):
+        dummy = font.createChar(-1, "dummy%s" %i)
+        dummy.width = 0
+        quran_glyphs.append(dummy.glyphname)
+
     mergeFeatures(font, feafile)
 
-    quran_glyphs = []
     quran_glyphs += digits
     quran_glyphs += punct
     quran_glyphs += ("space",
@@ -748,7 +755,6 @@ def makeQuran(infile, outfile, feafile, version):
             "uni202A", "uni202B", "uni202C", "uni202D", "uni202E", "uni202F",
             "uni25CC", "uniFDFA", "uniFDFD")
     quran_glyphs += ("uni030A", "uni0325") # ring above and below
-    quran_glyphs += ("dummy",)
 
     subsetFont(font, quran_glyphs, True)
 
