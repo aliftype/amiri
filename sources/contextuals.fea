@@ -8,25 +8,23 @@ lookup SamallTashkil {
 } SamallTashkil;
 
 feature calt {
-  sub [uni0651] @ShaddaTashkil' lookup SamallTashkil;
+  sub [uni0651 uni06EC] @ShaddaTashkil' lookup SamallTashkil;
 } calt;
 
-// a rather ugly hack for the brain dead Unicode canonical reordering of
-// <shadda><mark> to <mark><shadda>. recent versions of HarfBuzz handle this
-// internally, and Uniscribe seems to do so, so this is an interim solution
-// until all applications we care about are updated.
+// a rather ugly hack for the brain dead Unicode canonical reordering of some
+// Arabic combining marks
 
 lookup TashkilShaddaHack {
-  sub uni064E by uni0651 uni064E.small;
-  sub uni064B by uni0651 uni064B.small;
-  sub uni064C by uni0651 uni064C.small;
-  sub uni064F by uni0651 uni064F.small;
-  sub uni08F0 by uni0651 uni08F0.small;
-  sub uni08F1 by uni0651 uni08F1.small;
+  sub uni064E by uni06EC uni064E.small;
+  sub uni064B by uni06EC uni064B.small;
+  sub uni064C by uni06EC uni064C.small;
+  sub uni064F by uni06EC uni064F.small;
+  sub uni08F0 by uni06EC uni08F0.small;
+  sub uni08F1 by uni06EC uni08F1.small;
 } TashkilShaddaHack;
 
 feature calt {
-  sub @ShaddaTashkil [uni0651]' by dummy;
+  sub @ShaddaTashkil [uni06EC]' by dummy;
 } calt;
 
 feature calt {
