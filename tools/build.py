@@ -721,6 +721,7 @@ def makeQuran(infile, outfile, feafile, version):
     dotabove = font["uni06EC"]
     dotbelow = font["uni065C"]
     delta = dotbelow.boundingBox()[-1] - dotabove.boundingBox()[-1]
+    dotbelow.references = []
     dotbelow.addReference(dotabove.glyphname, psMat.translate(0, delta))
     dotbelow.addAnchorPoint("TashkilTashkilBelow", "basemark", 220, dotbelow.boundingBox()[1] - 100)
 
