@@ -1120,6 +1120,65 @@ feature calt {
        @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf];
 } calt;
 
+lookup LamAynTatweel {
+// XXX: sync with classes.fea
+
+  // @aLam.init
+  sub uni06B5.init by uni06B5.init uni0640.2;
+  sub uni06B7.init by uni06B7.init uni0640.2;
+  sub uni0644.init by uni0644.init uni0640.2;
+  sub uni06B8.init by uni06B8.init uni0640.2;
+  sub uni06B6.init by uni06B6.init uni0640.2;
+  sub uni076A.init by uni076A.init uni0640.2;
+
+  // @aLam.medi by
+  sub uni06B5.medi by uni06B5.medi uni0640.2;
+  sub uni06B7.medi by uni06B7.medi uni0640.2;
+  sub uni0644.medi by uni0644.medi uni0640.2;
+  sub uni06B8.medi by uni06B8.medi uni0640.2;
+  sub uni06B6.medi by uni06B6.medi uni0640.2;
+  sub uni076A.medi by uni076A.medi uni0640.2;
+
+  // @aLam.medi_KafLam
+  sub uni06B5.medi_KafLam by uni06B5.medi_KafLam uni0640.2;
+  sub uni06B7.medi_KafLam by uni06B7.medi_KafLam uni0640.2;
+  sub uni0644.medi_KafLam by uni0644.medi_KafLam uni0640.2;
+  sub uni06B8.medi_KafLam by uni06B8.medi_KafLam uni0640.2;
+  sub uni06B6.medi_KafLam by uni06B6.medi_KafLam uni0640.2;
+  sub uni076A.medi_KafLam by uni076A.medi_KafLam uni0640.2;
+
+  // @aLam.medi_KafMemLam
+  sub uni06B5.medi_KafMemLam by uni06B5.medi_KafMemLam uni0640.2;
+  sub uni06B7.medi_KafMemLam by uni06B7.medi_KafMemLam uni0640.2;
+  sub uni0644.medi_KafMemLam by uni0644.medi_KafMemLam uni0640.2;
+  sub uni06B8.medi_KafMemLam by uni06B8.medi_KafMemLam uni0640.2;
+  sub uni06B6.medi_KafMemLam by uni06B6.medi_KafMemLam uni0640.2;
+  sub uni076A.medi_KafMemLam by uni076A.medi_KafMemLam uni0640.2;
+
+  // @aLam.medi_LamLamInit
+  sub uni06B5.medi_LamLamInit by uni06B5.medi_LamLamInit uni0640.2;
+  sub uni06B7.medi_LamLamInit by uni06B7.medi_LamLamInit uni0640.2;
+  sub uni0644.medi_LamLamInit by uni0644.medi_LamLamInit uni0640.2;
+  sub uni06B8.medi_LamLamInit by uni06B8.medi_LamLamInit uni0640.2;
+  sub uni06B6.medi_LamLamInit by uni06B6.medi_LamLamInit uni0640.2;
+  sub uni076A.medi_LamLamInit by uni076A.medi_LamLamInit uni0640.2;
+
+  sub @aMem.medi_LamMemInit   by @aMem.medi_LamMemInitTatweel;
+} LamAynTatweel;
+
+// lam [shadda] kasra ayn.fina
+feature calt {
+  sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
+       @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamAynTatweel
+      [uni064D uni0650 uni065C]
+       @aAyn.fina;
+  sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
+       @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamAynTatweel
+      [uni0651]
+      [uni064D uni0650 uni065C]
+       @aAyn.fina;
+} calt;
+
 #ifdef QURAN
 // alef lam meem raa (with madda)
 // we don't get plain aLam.init aMem.fina except in Quran font
