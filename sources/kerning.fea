@@ -7,12 +7,11 @@
 @Alf_1 = [uni0627.fina_LamAlfFina uni0625.fina_LamAlfFina];
 
 @Kaf_1 = [@aKaf.init_KafHeh
-          @aKaf.init_KafMemInit
-          @aKaf.init_KafMemIsol
-          @aKaf.init_KafRaaIsol];
+          @aKaf.init_KafMemIsol];
 @Kaf_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
 @Kaf_3 = [@aKaf.init @aKaf.init_KafLam];
 @Kaf_4 = [@aKaf.init_KafYaaIsol];
+@Kaf_5 = [@aKaf.init_KafMemInit @aKaf.init_KafRaaIsol];
 @Raa_1 = [@RaaWaw @aDal.fina @aDal.isol @aDal.fina_BaaDal @aDal.fina_KafDal
           @aDal.fina_LamDal];
 @2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
@@ -21,17 +20,25 @@
           @aAyn.init_AboveHaa];
 
 feature kern {
-  lookupflag IgnoreMarks;
+  // we don't want to kern those if there is tashkil as it touches the kaf
   pos @RaaWaw' <-600 0 -600 0>  @Kaf_1;
-  pos @RaaWaw' <-300 0 -300 0> [@Kaf_2 @Kaf_3 @Kaf_4];
+  pos @RaaWaw' <-300 0 -300 0>  @Kaf_4;
+  pos @Dal_1'  <-600 0 -600 0>  @Kaf_1;
+  pos @Dal_1'  <-400 0 -400 0>  @Kaf_4;
+} kern;
+
+feature kern {
+  lookupflag IgnoreMarks;
+  pos @RaaWaw' <-600 0 -600 0>  @Kaf_5;
+  pos @RaaWaw' <-300 0 -300 0> [@Kaf_2 @Kaf_3];
 
   pos @RaaWaw' <-100 0 -100 0> @2nd_3;
 
-  pos @Dal_1'  <-600 0 -600 0>  @Kaf_1;
-  pos @Dal_1'  <-400 0 -400 0> [@Kaf_2 @Kaf_3 @Kaf_4];
+  pos @Dal_1'  <-600 0 -600 0>  @Kaf_5;
+  pos @Dal_1'  <-400 0 -400 0> [@Kaf_2 @Kaf_3];
 
   pos @1st_3' <-400 0 -400 0> [@Kaf_2 @Kaf_3 @Kaf_4];
-  pos @1st_3' <-800 0 -800 0> @Kaf_1;
+  pos @1st_3' <-800 0 -800 0> [@Kaf_1 @Kaf_5];
   pos @1st_3' <-200 0 -200 0> @2nd_3;
   pos @1st_3' <-400 0 -400 0> @2nd_4;
 
@@ -41,7 +48,7 @@ feature kern {
 
 // we don't want to ignore marks here
 feature kern {
-  pos @Alf_1' <-500 0 -500 0> @Kaf_1;
+  pos @Alf_1' <-500 0 -500 0> [@Kaf_1 @Kaf_5];
   pos @Alf_1' <-200 0 -200 0> @Kaf_2;
   pos @Alf_1' <-250 0 -250 0> @Kaf_3;
   pos @Alf_1' <-300 0 -300 0> @Kaf_4;
@@ -62,11 +69,11 @@ feature kern {
   lookupflag IgnoreMarks;
   // kern heh isol/final followed by kaf, does not happen in Arabic but can be
   // seen in Kurdish or Persian using ZWNJ between them.
-  pos @1st_4 uni200C [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4]' -500;
+  pos @1st_4 uni200C [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
   // Uniscribe replace ZWNJ with space
-  pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4]' -500;
+  pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
   // some applications might just remove it
-  pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4]' -500;
+  pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
 } kern;
 
 // proportional digits
