@@ -2,6 +2,7 @@ StartChar: uni0649.init_BaaSenInit
 Encoding: 67143 -1 1883
 Width: 449
 Flags: W
+AnchorPoint: "HamzaBelow" 296 -250 basechar 0
 AnchorPoint: "AlefAbove" 164 1290 basechar 0
 AnchorPoint: "TashkilAbove" 10 1640 basechar 0
 AnchorPoint: "TashkilBelow" 296 -670 basechar 0

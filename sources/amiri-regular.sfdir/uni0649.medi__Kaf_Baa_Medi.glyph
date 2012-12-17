@@ -2,6 +2,7 @@ StartChar: uni0649.medi_KafBaaMedi
 Encoding: 67791 -1 2531
 Width: 367
 VWidth: 0
+AnchorPoint: "HamzaBelow" 310 -200 basechar 0
 AnchorPoint: "TashkilAbove" 50 1640 basechar 0
 AnchorPoint: "TashkilBelow" 210 -670 basechar 0
 LayerCount: 2
