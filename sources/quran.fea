@@ -167,11 +167,12 @@ lookup hamzakasra {
   sub uni0626.fina by uni0649.fina uni0655;
   sub uni0626      by uni0649      uni0655;
   sub uni0624.fina by uni0648.fina uni0655; // waw
+  sub uni0624      by uni0648      uni0655;
 } hamzakasra;
 
 feature calt {
 # lookupflag IgnoreMarks;
-  sub [uni0626 uni0626.init uni0626.medi uni0626.fina uni0624.fina]' lookup hamzakasra
+  sub [uni0626 uni0626.init uni0626.medi uni0626.fina uni0624 uni0624.fina]' lookup hamzakasra
       [uni0650 uni064D uni08F2];
 } calt;
 #endif // QURAN
