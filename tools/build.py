@@ -149,9 +149,23 @@ def mergeFeatures(font, feafile):
     for lookup in font.gpos_lookups:
         font.removeLookup(lookup)
 
-    font.mergeFeature(feafile)
-    font.mergeFeature(oldfea)
+    # open feature file and insert the generated GPOS features in place of the
+    # placeholder text
+    fea = open(feafile)
+    old = open(oldfea)
+    fea_text = fea.read()
+    fea_text = fea_text.replace("{%anchors%}", old.read())
+    fea.close()
+    old.close()
     os.remove(oldfea)
+
+    # write new feature text back
+    fea = open(feafile, "w")
+    fea.write(fea_text)
+    fea.close()
+
+    # now merge it into the font
+    font.mergeFeature(feafile)
 
 def makeCss(infiles, outfile):
     """Builds a CSS file for the entire font family."""

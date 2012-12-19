@@ -108,3 +108,6 @@ feature kern {
   pos uni0660.prop uni0667.prop   50;
   pos uni0660.prop uni0668.prop   50;
 } kern;
+
+// generated features for anchor points will be inserted here by build script
+{%anchors%}
