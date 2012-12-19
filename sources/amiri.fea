@@ -28,6 +28,10 @@ languagesystem latn TRK;
 #include "stylisticsets.fea"
 #include "kerning.fea"
 
+#ifdef QURAN
+#include "post_mark.fea"
+#endif
+
 #ifndef QURAN
 #include "latin.fea"
 #endif
