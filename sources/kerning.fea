@@ -1,5 +1,6 @@
 @Dal_1 = [@aDal.fina @aDal.fina_BaaDal @aDal.fina_KafDal @aDal.fina_LamDal
           @aDal.isol];
+@1st_2 = [@RaaWaw @AlefHamzaBelow];
 @1st_3 = [@aRaa.fina_MemRaaIsol];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
@@ -48,7 +49,7 @@ feature kern {
   pos @Teh_m' < 150 0  150 0> exclam;
 
   // +ve kern so that the tail of raa/waw does not touch the dot of baa
-  pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
+  pos @1st_2' < 170 0  170 0> @aBaaDotBelow;
 } kern;
 
 // we don't want to ignore marks here
