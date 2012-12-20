@@ -18,6 +18,8 @@
 @2nd_4 = [@aSad.init_AboveHaa @aSen.init_AboveHaa @aHeh.init_AboveHaa
           @aHaa.init_AboveHaa @aMem.init_AboveHaa @aKaf.init_AboveHaa
           @aAyn.init_AboveHaa];
+@Teh_m = [uni0629.fina_LamHeh uni0629.fina_KafHeh // teh marbuta
+          uni06C3.fina_LamHeh uni06C3.fina_KafHeh];
 
 feature kern {
   // we don't want to kern those if there is tashkil as it touches the kaf
@@ -41,6 +43,9 @@ feature kern {
   pos @1st_3' <-800 0 -800 0> [@Kaf_1 @Kaf_5];
   pos @1st_3' <-200 0 -200 0> @2nd_3;
   pos @1st_3' <-400 0 -400 0> @2nd_4;
+
+  // the dots of teh marbuta are very close to exclamation mark
+  pos @Teh_m' < 150 0  150 0> exclam;
 
   // +ve kern so that the tail of raa/waw does not touch the dot of baa
   pos @RaaWaw' <170 0 170 0> @aBaaDotBelow;
