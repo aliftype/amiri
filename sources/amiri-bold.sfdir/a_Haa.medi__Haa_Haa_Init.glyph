@@ -2,17 +2,17 @@ StartChar: aHaa.medi_HaaHaaInit
 Encoding: 65749 -1 223
 Width: 113
 Flags: W
-AnchorPoint: "DigitBelow" 162 -280 basechar 0
+AnchorPoint: "DigitBelow" 362 -280 basechar 0
 AnchorPoint: "TaaBelow" 162 120 basechar 0
 AnchorPoint: "TaaAbove" 82 1210 basechar 0
 AnchorPoint: "TashkilBelow" 302 -670 basechar 0
 AnchorPoint: "TashkilAbove" 302 1640 basechar 0
 AnchorPoint: "DotAbove" 82 1210 basechar 0
-AnchorPoint: "DotBelow" 162 -280 basechar 0
+AnchorPoint: "DotBelow" 362 -280 basechar 0
 AnchorPoint: "HamzaAbove" 82 1210 basechar 0
-AnchorPoint: "HamzaBelow" 162 -280 basechar 0
+AnchorPoint: "HamzaBelow" 362 -280 basechar 0
 AnchorPoint: "TwoDotsAbove" -29 1210 basechar 0
-AnchorPoint: "TwoDotsBelow" 51 -280 basechar 0
+AnchorPoint: "TwoDotsBelow" 251 -280 basechar 0
 LayerCount: 3
 Fore
 Refer: 165 -1 N 1 0 0 1 0 0 2
