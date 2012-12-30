@@ -113,7 +113,7 @@ pack: $(PACK)
 
 %.sfd: %.sfdir
 	@echo "   GEN\t$@"
-	@fontforge -lang=ff -c 'Open("$<"); Save("$@");'
+	@python -c 'import fontforge; f=fontforge.open("$<"); f.save("$@")'
 
 distclean:
 	@rm -rf $(DIST) $(DIST).tar.bz2
