@@ -401,7 +401,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
                      "f_f")
 
         # and Arabic romanisation characters
-        romanisation = ("afii57929", "uni02BE", "uni02BE", "amacron", "uni02BE",
+        romanisation = ("uni02BC", "uni02BE", "uni02BE", "amacron", "uni02BE",
                 "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
                 "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
                 "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
@@ -420,7 +420,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
 
         # and some typographic characters
         typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
-                "afii00208", "quoteleft", "quoteright", "quotesinglbase",
+                "uni2015", "quoteleft", "quoteright", "quotesinglbase",
                 "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
                 "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
                 "ellipsis", "uni202F", "perthousand", "minute", "second",

@@ -67,18 +67,18 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  55 C Ccedilla Cacute Ccircumflex Cdotaccent Ccaron uni1E08
  196 E AE Egrave Eacute Ecircumflex Edieresis Emacron Ebreve Edotaccent Eogonek Ecaron OE uni01E2 AEacute uni1E14 uni1E16 uni1E18 uni1E1A uni1EB8 uni1EBA uni1EBC uni1EBE uni1EC0 uni1EC2 uni1EC4 uni1EC6
  9 F uni1E1E
- 52 G Gcircumflex Gbreve Gdotaccent Gcommaaccent uni1E20
+ 47 G Gcircumflex Gbreve Gdotaccent uni0122 uni1E20
  177 H I Igrave Iacute Icircumflex Idieresis Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent uni01CF uni1E22 uni1E24 uni1E26 uni1E28 uni1E2A uni1E2C uni1E2E uni1EC8 uni1ECA
  16 J IJ Jcircumflex
- 38 K Kcommaaccent uni1E30 uni1E32 uni1E34
- 72 L Lacute Lcommaaccent Lcaron Ldot Lslash uni1E36 uni1E38 uni1E3A uni1E3C
+ 33 K uni0136 uni1E30 uni1E32 uni1E34
+ 67 L Lacute uni013B Lcaron Ldot Lslash uni1E36 uni1E38 uni1E3A uni1E3C
  25 M uni1E3E uni1E40 uni1E42
- 71 N Ntilde Nacute Ncommaaccent Ncaron Eng uni1E44 uni1E46 uni1E48 uni1E4A
+ 66 N Ntilde Nacute uni0145 Ncaron Eng uni1E44 uni1E46 uni1E48 uni1E4A
  250 D O Q Eth Ograve Oacute Ocircumflex Otilde Odieresis Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni01D1 Oslashacute uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E4C uni1E4E uni1E50 uni1E52 uni1ECC uni1ECE uni1ED0 uni1ED2 uni1ED4 uni1ED6 uni1ED8
  17 P uni1E54 uni1E56
- 60 R Racute Rcommaaccent Rcaron uni1E58 uni1E5A uni1E5C uni1E5E
- 89 S Sacute Scircumflex Scedilla Scaron Scommaaccent uni1E60 uni1E62 uni1E64 uni1E66 uni1E68
- 66 T Tcommaaccent Tcaron Tbar uni021A uni1E6A uni1E6C uni1E6E uni1E70
+ 55 R Racute uni0156 Rcaron uni1E58 uni1E5A uni1E5C uni1E5E
+ 84 S Sacute Scircumflex Scedilla Scaron uni0218 uni1E60 uni1E62 uni1E64 uni1E66 uni1E68
+ 61 T uni0162 Tcaron Tbar uni021A uni1E6A uni1E6C uni1E6E uni1E70
  183 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni1E72 uni1E74 uni1E76 uni1E78 uni1E7A uni1EE4 uni1EE6
  17 V uni1E7C uni1E7E
  53 W Wcircumflex Wgrave Wacute Wdieresis uni1E86 uni1E88
@@ -94,18 +94,18 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  55 d dcaron dcroat uni1E0B uni1E0D uni1E0F uni1E11 uni1E13
  196 e ae egrave eacute ecircumflex edieresis emacron ebreve edotaccent eogonek ecaron oe uni01E3 aeacute uni1E15 uni1E17 uni1E19 uni1E1B uni1EB9 uni1EBB uni1EBD uni1EBF uni1EC1 uni1EC3 uni1EC5 uni1EC7
  13 f uni1E1F f_f
- 52 g gcircumflex gbreve gdotaccent gcommaaccent uni1E21
+ 47 g gcircumflex gbreve gdotaccent uni0123 uni1E21
  126 i igrave iacute icircumflex idieresis itilde imacron ibreve iogonek dotlessi uni01D0 uni1E2D uni1E2F uni1EC9 uni1ECB f_i f_f_i
  34 j ij jcircumflex uni0237 f_j f_f_j
- 61 k kcommaaccent kgreenlandic uni1E31 uni1E33 uni1E35 f_k f_f_k
- 77 l lacute lcommaaccent lcaron lslash uni1E37 uni1E39 uni1E3B uni1E3D f_l f_f_l
- 174 h m n ntilde hcircumflex hbar nacute ncommaaccent ncaron uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E3F uni1E41 uni1E43 uni1E45 uni1E47 uni1E49 uni1E4B uni1E96 f_h f_f_h T_h
+ 56 k uni0137 kgreenlandic uni1E31 uni1E33 uni1E35 f_k f_f_k
+ 72 l lacute uni013C lcaron lslash uni1E37 uni1E39 uni1E3B uni1E3D f_l f_f_l
+ 169 h m n ntilde hcircumflex hbar nacute uni0146 ncaron uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E3F uni1E41 uni1E43 uni1E45 uni1E47 uni1E49 uni1E4B uni1E96 f_h f_f_h T_h
  188 o ograve oacute ocircumflex otilde odieresis oslash omacron obreve ohungarumlaut uni01D2 oslashacute uni1E4D uni1E4F uni1E51 uni1E53 uni1ECD uni1ECF uni1ED1 uni1ED3 uni1ED5 uni1ED7 uni1ED9
  23 p thorn uni1E55 uni1E57
  1 q
- 60 r racute rcommaaccent rcaron uni1E59 uni1E5B uni1E5D uni1E5F
- 89 s sacute scircumflex scedilla scaron scommaaccent uni1E61 uni1E63 uni1E65 uni1E67 uni1E69
- 74 t tcommaaccent tcaron tbar uni021B uni1E6B uni1E6D uni1E6F uni1E71 uni1E97
+ 55 r racute uni0157 rcaron uni1E59 uni1E5B uni1E5D uni1E5F
+ 84 s sacute scircumflex scedilla scaron uni0219 uni1E61 uni1E63 uni1E65 uni1E67 uni1E69
+ 69 t uni0163 tcaron tbar uni021B uni1E6B uni1E6D uni1E6F uni1E71 uni1E97
  183 u ugrave uacute ucircumflex udieresis utilde umacron ubreve uring uhungarumlaut uogonek uni01D4 uni01D6 uni01D8 uni01DA uni01DC uni1E73 uni1E75 uni1E77 uni1E79 uni1E7B uni1EE5 uni1EE7
  17 v uni1E7D uni1E7F
  61 w wcircumflex wgrave wacute wdieresis uni1E87 uni1E89 uni1E98
@@ -120,7 +120,7 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  45 uhorn uni1EE9 uni1EEB uni1EED uni1EEF uni1EF1
  20 quotedbl quotesingle
  8 asterisk
- 30 hyphen endash emdash afii00208
+ 28 hyphen endash emdash uni2015
  40 comma period quotesinglbase quotedblbase
  5 slash
  15 colon semicolon
@@ -142,7 +142,7 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  9 nine.prop
  11 bracketleft
  9 braceleft
- 7 uni2206
+ 5 Delta
  12 parenleft.sc
  8 slash.sc
  14 bracketleft.sc
@@ -154,16 +154,16 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  65 c.sc ccedilla.sc cacute.sc ccircumflex.sc cdotaccent.sc ccaron.sc
  120 e.sc ae.sc egrave.sc eacute.sc ecircumflex.sc edieresis.sc emacron.sc ebreve.sc edotaccent.sc eogonek.sc ecaron.sc oe.sc
  4 f.sc
- 59 g.sc gcircumflex.sc gbreve.sc gdotaccent.sc gcommaaccent.sc
+ 54 g.sc gcircumflex.sc gbreve.sc gdotaccent.sc uni0123.sc
  148 h.sc i.sc igrave.sc iacute.sc icircumflex.sc idieresis.sc hcircumflex.sc hbar.sc itilde.sc imacron.sc ibreve.sc iogonek.sc Idotaccent.sc dotlessi.sc
  25 j.sc ij.sc jcircumflex.sc
- 36 k.sc kcommaaccent.sc kgreenlandic.sc
- 50 l.sc lacute.sc lcommaaccent.sc lcaron.sc lslash.sc
+ 31 k.sc uni0137.sc kgreenlandic.sc
+ 45 l.sc lacute.sc uni013C.sc lcaron.sc lslash.sc
  4 m.sc
- 57 n.sc ntilde.sc nacute.sc ncommaaccent.sc ncaron.sc eng.sc
+ 52 n.sc ntilde.sc nacute.sc uni0146.sc ncaron.sc eng.sc
  147 d.sc o.sc q.sc eth.sc ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc dcaron.sc dcroat.sc omacron.sc obreve.sc ohungarumlaut.sc
  4 p.sc
- 40 r.sc racute.sc rcommaaccent.sc rcaron.sc
+ 35 r.sc racute.sc uni0157.sc rcaron.sc
  65 s.sc germandbls.sc sacute.sc scircumflex.sc scedilla.sc scaron.sc
  33 t.sc uni0163.sc tcaron.sc tbar.sc
  120 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc utilde.sc umacron.sc ubreve.sc uring.sc uhungarumlaut.sc uogonek.sc
@@ -175,7 +175,7 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  8 thorn.sc
  7 ldot.sc
  20 quotedbl quotesingle
- 70 T Tcommaaccent Tcaron Tbar uni021A uni1E6A uni1E6C uni1E6E uni1E70 T_h
+ 65 T uni0162 Tcaron Tbar uni021A uni1E6A uni1E6C uni1E6E uni1E70 T_h
  17 V uni1E7C uni1E7E
  53 W Wcircumflex Wgrave Wacute Wdieresis uni1E86 uni1E88
  77 Y Yacute Ycircumflex Ydieresis uni0232 uni1E8E Ygrave uni1EF4 uni1EF6 uni1EF8
@@ -183,16 +183,16 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  19 j.sc jcircumflex.sc
  229 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek Uhorn uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni1E72 uni1E74 uni1E76 uni1E78 uni1E7A uni1EE4 uni1EE6 uni1EE8 uni1EEA uni1EEC uni1EEE uni1EF0
  196 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek uni01CD Aringacute uni1E00 uni1EA0 uni1EA2 uni1EA4 uni1EA6 uni1EA8 uni1EAA uni1EAC uni1EAE uni1EB0 uni1EB2 uni1EB4 uni1EB6
- 648 B D E F H I K L P R Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Thorn Dcaron Dcroat Emacron Ebreve Edotaccent Eogonek Ecaron Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ Kcommaaccent Lacute Lcommaaccent Lcaron Ldot Lslash Racute Rcommaaccent Rcaron uni01CF uni1E02 uni1E04 uni1E06 uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E14 uni1E16 uni1E18 uni1E1A uni1E1E uni1E22 uni1E24 uni1E26 uni1E28 uni1E2A uni1E2C uni1E2E uni1E30 uni1E32 uni1E34 uni1E36 uni1E38 uni1E3A uni1E3C uni1E54 uni1E56 uni1E58 uni1E5A uni1E5C uni1E5E uni1EB8 uni1EBA uni1EBC uni1EBE uni1EC0 uni1EC2 uni1EC4 uni1EC6 uni1EC8 uni1ECA
+ 633 B D E F H I K L P R Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Thorn Dcaron Dcroat Emacron Ebreve Edotaccent Eogonek Ecaron Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ uni0136 Lacute uni013B Lcaron Ldot Lslash Racute uni0156 Rcaron uni01CF uni1E02 uni1E04 uni1E06 uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E14 uni1E16 uni1E18 uni1E1A uni1E1E uni1E22 uni1E24 uni1E26 uni1E28 uni1E2A uni1E2C uni1E2E uni1E30 uni1E32 uni1E34 uni1E36 uni1E38 uni1E3A uni1E3C uni1E54 uni1E56 uni1E58 uni1E5A uni1E5C uni1E5E uni1EB8 uni1EBA uni1EBC uni1EBE uni1EC0 uni1EC2 uni1EC4 uni1EC6 uni1EC8 uni1ECA
  25 M uni1E3E uni1E40 uni1E42
- 71 N Ntilde Nacute Ncommaaccent Ncaron Eng uni1E44 uni1E46 uni1E48 uni1E4A
+ 66 N Ntilde Nacute uni0145 Ncaron Eng uni1E44 uni1E46 uni1E48 uni1E4A
  17 X uni1E8A uni1E8C
  18 AE uni01E2 AEacute
  109 a.sc agrave.sc aacute.sc acircumflex.sc atilde.sc adieresis.sc aring.sc ae.sc amacron.sc abreve.sc aogonek.sc
  9 ampersand
  10 parenright
  8 asterisk
- 30 hyphen endash emdash afii00208
+ 28 hyphen endash emdash uni2015
  25 zero zero.slash zero.prop
  8 two.prop
  9 four.prop
@@ -200,21 +200,21 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  10 seven.prop
  10 eight.prop
  9 nine.prop
- 348 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Omacron Obreve Ohungarumlaut OE Ohorn uni01D1 Oslashacute uni1E08 uni1E20 uni1E4C uni1E4E uni1E50 uni1E52 uni1ECC uni1ECE uni1ED0 uni1ED2 uni1ED4 uni1ED6 uni1ED8 uni1EDA uni1EDC uni1EDE uni1EE0 uni1EE2
- 89 S Sacute Scircumflex Scedilla Scaron Scommaaccent uni1E60 uni1E62 uni1E64 uni1E66 uni1E68
+ 343 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE Ohorn uni01D1 Oslashacute uni1E08 uni1E20 uni1E4C uni1E4E uni1E50 uni1E52 uni1ECC uni1ECE uni1ED0 uni1ED2 uni1ED4 uni1ED6 uni1ED8 uni1EDA uni1EDC uni1EDE uni1EE0 uni1EE2
+ 84 S Sacute Scircumflex Scedilla Scaron uni0218 uni1E60 uni1E62 uni1E64 uni1E66 uni1E68
  9 backslash
  12 bracketright
  215 a agrave aacute acircumflex atilde adieresis aring ae amacron abreve aogonek uni01CE uni01E3 aringacute aeacute uni1E01 uni1EA1 uni1EA3 uni1EA5 uni1EA7 uni1EA9 uni1EAB uni1EAD uni1EAF uni1EB1 uni1EB3 uni1EB5 uni1EB7
  31 b thorn uni1E03 uni1E05 uni1E07
  55 c ccedilla cacute ccircumflex cdotaccent ccaron uni1E09
  55 d dcaron dcroat uni1E0B uni1E0D uni1E0F uni1E11 uni1E13
- 52 g gcircumflex gbreve gdotaccent gcommaaccent uni1E21
+ 47 g gcircumflex gbreve gdotaccent uni0123 uni1E21
  21 j jcircumflex uni0237
  412 e o egrave eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis oslash emacron ebreve edotaccent eogonek ecaron omacron obreve ohungarumlaut oe ohorn uni01D2 oslashacute uni1E15 uni1E17 uni1E19 uni1E1B uni1E4D uni1E4F uni1E51 uni1E53 uni1EB9 uni1EBB uni1EBD uni1EBF uni1EC1 uni1EC3 uni1EC5 uni1EC7 uni1ECD uni1ECF uni1ED1 uni1ED3 uni1ED5 uni1ED7 uni1ED9 uni1EDB uni1EDD uni1EDF uni1EE1 uni1EE3
  17 p uni1E55 uni1E57
  1 q
- 89 s sacute scircumflex scedilla scaron scommaaccent uni1E61 uni1E63 uni1E65 uni1E67 uni1E69
- 74 t tcommaaccent tcaron tbar uni021B uni1E6B uni1E6D uni1E6F uni1E71 uni1E97
+ 84 s sacute scircumflex scedilla scaron uni0219 uni1E61 uni1E63 uni1E65 uni1E67 uni1E69
+ 69 t uni0163 tcaron tbar uni021B uni1E6B uni1E6D uni1E6F uni1E71 uni1E97
  229 u ugrave uacute ucircumflex udieresis utilde umacron ubreve uring uhungarumlaut uogonek uhorn uni01D4 uni01D6 uni01D8 uni01DA uni01DC uni1E73 uni1E75 uni1E77 uni1E79 uni1E7B uni1EE5 uni1EE7 uni1EE9 uni1EEB uni1EED uni1EEF uni1EF1
  17 v uni1E7D uni1E7F
  61 w wcircumflex wgrave wacute wdieresis uni1E87 uni1E89 uni1E98
@@ -225,7 +225,7 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  24 quoteright quotedblright
  27 guillemotleft guilsinglleft
  29 guillemotright guilsinglright
- 247 c.sc g.sc o.sc q.sc ccedilla.sc ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc cacute.sc ccircumflex.sc cdotaccent.sc ccaron.sc gcircumflex.sc gbreve.sc gdotaccent.sc gcommaaccent.sc omacron.sc obreve.sc ohungarumlaut.sc oe.sc
+ 242 c.sc g.sc o.sc q.sc ccedilla.sc ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc cacute.sc ccircumflex.sc cdotaccent.sc ccaron.sc gcircumflex.sc gbreve.sc gdotaccent.sc uni0123.sc omacron.sc obreve.sc ohungarumlaut.sc oe.sc
  65 s.sc germandbls.sc sacute.sc scircumflex.sc scedilla.sc scaron.sc
  33 t.sc uni0163.sc tcaron.sc tbar.sc
  120 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc utilde.sc umacron.sc ubreve.sc uring.sc uhungarumlaut.sc uogonek.sc
@@ -233,15 +233,15 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  19 w.sc wcircumflex.sc
  42 y.sc yacute.sc ycircumflex.sc ydieresis.sc
  84 f germandbls uni1E1F f_f f_i f_f_i f_j f_f_j f_l f_f_l f_b f_f_b f_k f_f_k f_h f_f_h
- 105 h k hcircumflex hbar kcommaaccent uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E31 uni1E33 uni1E35 uni1E96
+ 100 h k hcircumflex hbar uni0137 uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E31 uni1E33 uni1E35 uni1E96
  119 i igrave iacute icircumflex idieresis itilde imacron ibreve iogonek dotlessi ij uni01D0 uni1E2D uni1E2F uni1EC9 uni1ECB
- 72 l lacute lcommaaccent lcaron ldot lslash uni1E37 uni1E39 uni1E3B uni1E3D
- 171 m n r ntilde kgreenlandic nacute ncommaaccent ncaron eng racute rcommaaccent rcaron uni1E3F uni1E41 uni1E43 uni1E45 uni1E47 uni1E49 uni1E4B uni1E59 uni1E5B uni1E5D uni1E5F
+ 67 l lacute uni013C lcaron ldot lslash uni1E37 uni1E39 uni1E3B uni1E3D
+ 161 m n r ntilde kgreenlandic nacute uni0146 ncaron eng racute uni0157 rcaron uni1E3F uni1E41 uni1E43 uni1E45 uni1E47 uni1E49 uni1E4B uni1E59 uni1E5B uni1E5D uni1E5F
  17 x uni1E8B uni1E8D
  50 z zacute zdotaccent zcaron uni1E91 uni1E93 uni1E95
- 456 b.sc d.sc e.sc f.sc h.sc i.sc k.sc l.sc p.sc r.sc egrave.sc eacute.sc ecircumflex.sc edieresis.sc igrave.sc iacute.sc icircumflex.sc idieresis.sc eth.sc thorn.sc dcaron.sc dcroat.sc emacron.sc ebreve.sc edotaccent.sc eogonek.sc ecaron.sc hcircumflex.sc hbar.sc itilde.sc imacron.sc ibreve.sc iogonek.sc Idotaccent.sc dotlessi.sc ij.sc kcommaaccent.sc kgreenlandic.sc lacute.sc lcommaaccent.sc lcaron.sc ldot.sc lslash.sc racute.sc rcommaaccent.sc rcaron.sc
+ 441 b.sc d.sc e.sc f.sc h.sc i.sc k.sc l.sc p.sc r.sc egrave.sc eacute.sc ecircumflex.sc edieresis.sc igrave.sc iacute.sc icircumflex.sc idieresis.sc eth.sc thorn.sc dcaron.sc dcroat.sc emacron.sc ebreve.sc edotaccent.sc eogonek.sc ecaron.sc hcircumflex.sc hbar.sc itilde.sc imacron.sc ibreve.sc iogonek.sc Idotaccent.sc dotlessi.sc ij.sc uni0137.sc kgreenlandic.sc lacute.sc uni013C.sc lcaron.sc ldot.sc lslash.sc racute.sc uni0157.sc rcaron.sc
  4 m.sc
- 57 n.sc ntilde.sc nacute.sc ncommaaccent.sc ncaron.sc eng.sc
+ 52 n.sc ntilde.sc nacute.sc uni0146.sc ncaron.sc eng.sc
  4 x.sc
  38 z.sc zacute.sc zdotaccent.sc zcaron.sc
  49 comma period quotesinglbase quotedblbase ellipsis
@@ -255,9 +255,9 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  6 exclam
  3 bar
  8 question
- 10 three.onum
+ 7 uniF733
  2 at
- 7 uni2206
+ 5 Delta
  12 backslash.sc
  15 bracketright.sc
  13 parenright.sc
@@ -267,7 +267,7 @@ LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "Copyright (c) 2011, Sebas
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
 UnicodeInterp: none
-NameList: Adobe Glyph List
+NameList: AGL For New Fonts
 BeginPrivate: 0
 EndPrivate
 GridOrder2: 1
@@ -6003,7 +6003,7 @@ Fore
 Refer: 191 769 N 1 0 0 1 740 48 2
 EndChar
 
-StartChar: uni00B5
+StartChar: mu
 Encoding: 181 181 115
 Width: 1022
 Flags: W
@@ -8353,7 +8353,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii00208
+StartChar: uni2015
 Encoding: 8213 8213 202
 Width: 2276
 Flags: W
@@ -9374,7 +9374,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2206
+StartChar: Delta
 Encoding: 8710 8710 228
 Width: 1330
 Flags: W
@@ -10232,7 +10232,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: three.onum
+StartChar: uniF733
 Encoding: 63283 63283 245
 Width: 1024
 VWidth: 1024
@@ -11298,7 +11298,7 @@ Refer: 71 103 N 1 0 0 1 0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" gdotaccent.sc
 EndChar
 
-StartChar: Gcommaaccent
+StartChar: uni0122
 Encoding: 290 290 304
 Width: 1444
 Flags: W
@@ -11308,7 +11308,7 @@ Refer: 273 806 N 1 0 0 1 1322 0 2
 Refer: 39 71 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: gcommaaccent
+StartChar: uni0123
 Encoding: 291 291 305
 Width: 956
 Flags: W
@@ -11316,7 +11316,7 @@ LayerCount: 2
 Fore
 Refer: 272 786 N 1 0 0 1 954 44 2
 Refer: 71 103 N 1 0 0 1 0 0 3
-Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" gcommaaccent.sc
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" uni0123.sc
 EndChar
 
 StartChar: Hcircumflex
@@ -11435,7 +11435,7 @@ Refer: 378 567 N 1 0 0 1 6 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" jcircumflex.sc
 EndChar
 
-StartChar: Kcommaaccent
+StartChar: uni0136
 Encoding: 310 310 317
 Width: 1438
 Flags: W
@@ -11445,7 +11445,7 @@ Refer: 273 806 N 1 0 0 1 1283 0 2
 Refer: 43 75 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: kcommaaccent
+StartChar: uni0137
 Encoding: 311 311 318
 Width: 1180
 Flags: W
@@ -11453,7 +11453,7 @@ LayerCount: 2
 Fore
 Refer: 273 806 N 1 0 0 1 1135 0 2
 Refer: 75 107 N 1 0 0 1 -0 0 3
-Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" kcommaaccent.sc
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" uni0137.sc
 EndChar
 
 StartChar: Lacute
@@ -11477,7 +11477,7 @@ Refer: 76 108 N 1 0 0 1 -0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" lacute.sc
 EndChar
 
-StartChar: Lcommaaccent
+StartChar: uni013B
 Encoding: 315 315 321
 Width: 1158
 Flags: W
@@ -11487,7 +11487,7 @@ Refer: 273 806 N 1 0 0 1 1157 0 2
 Refer: 44 76 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: lcommaaccent
+StartChar: uni013C
 Encoding: 316 316 322
 Width: 612
 Flags: W
@@ -11495,7 +11495,7 @@ LayerCount: 2
 Fore
 Refer: 273 806 N 1 0 0 1 829 0 2
 Refer: 76 108 N 1 0 0 1 -0 0 3
-Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" lcommaaccent.sc
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" uni013C.sc
 EndChar
 
 StartChar: Lcaron
@@ -11564,7 +11564,7 @@ Refer: 78 110 N 1 0 0 1 -0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" nacute.sc
 EndChar
 
-StartChar: Ncommaaccent
+StartChar: uni0145
 Encoding: 325 325 329
 Width: 1520
 Flags: W
@@ -11574,7 +11574,7 @@ Refer: 273 806 N 1 0 0 1 1335 0 2
 Refer: 46 78 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: ncommaaccent
+StartChar: uni0146
 Encoding: 326 326 330
 Width: 1192
 Flags: W
@@ -11582,7 +11582,7 @@ LayerCount: 2
 Fore
 Refer: 273 806 N 1 0 0 1 1147 0 2
 Refer: 78 110 N 1 0 0 1 -0 0 3
-Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" ncommaaccent.sc
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" uni0146.sc
 EndChar
 
 StartChar: Ncaron
@@ -11691,7 +11691,7 @@ Refer: 82 114 N 1 0 0 1 -0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" racute.sc
 EndChar
 
-StartChar: Rcommaaccent
+StartChar: uni0156
 Encoding: 342 342 341
 Width: 1386
 Flags: W
@@ -11701,7 +11701,7 @@ Refer: 273 806 N 1 0 0 1 1301 0 2
 Refer: 50 82 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: rcommaaccent
+StartChar: uni0157
 Encoding: 343 343 342
 Width: 898
 Flags: W
@@ -11709,7 +11709,7 @@ LayerCount: 2
 Fore
 Refer: 273 806 N 1 0 0 1 849 0 2
 Refer: 82 114 N 1 0 0 1 -0 0 3
-Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" rcommaaccent.sc
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" uni0157.sc
 EndChar
 
 StartChar: Rcaron
@@ -11817,7 +11817,7 @@ Refer: 83 115 N 1 0 0 1 0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" scaron.sc
 EndChar
 
-StartChar: Tcommaaccent
+StartChar: uni0162
 Encoding: 354 354 353
 Width: 1268
 Flags: W
@@ -11827,7 +11827,7 @@ Refer: 256 -1 N 1 0 0 1 132 12 2
 Refer: 52 84 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: tcommaaccent
+StartChar: uni0163
 Encoding: 355 355 354
 Width: 684
 Flags: W
@@ -13844,7 +13844,7 @@ Refer: 191 769 N 1 0 0 1 1170 56 2
 Refer: 182 248 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: Scommaaccent
+StartChar: uni0218
 Encoding: 536 536 437
 Width: 1042
 Flags: W
@@ -13854,7 +13854,7 @@ Refer: 273 806 N 1 0 0 1 1084 0 2
 Refer: 51 83 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: scommaaccent
+StartChar: uni0219
 Encoding: 537 537 438
 Width: 808
 Flags: W
@@ -16792,7 +16792,7 @@ Refer: 258 -1 N 1 0 0 1 1098 -442 2
 Refer: 479 -1 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: gcommaaccent.sc
+StartChar: uni0123.sc
 Encoding: 65648 -1 558
 Width: 1198
 VWidth: 0
@@ -16985,7 +16985,7 @@ Refer: 243 770 N 1 0 0 1 892 52 2
 Refer: 482 -1 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: kcommaaccent.sc
+StartChar: uni0137.sc
 Encoding: 65659 -1 569
 Width: 1164
 Flags: W
@@ -17014,7 +17014,7 @@ Refer: 191 769 N 1 0 0 1 986 50 2
 Refer: 484 -1 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: lcommaaccent.sc
+StartChar: uni013C.sc
 Encoding: 65662 -1 572
 Width: 932
 Flags: W
@@ -17074,7 +17074,7 @@ Refer: 191 769 N 1 0 0 1 1170 50 2
 Refer: 486 -1 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: ncommaaccent.sc
+StartChar: uni0146.sc
 Encoding: 65667 -1 577
 Width: 1160
 VWidth: 0
@@ -17225,7 +17225,7 @@ Refer: 191 769 N 1 0 0 1 1120 50 2
 Refer: 490 -1 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: rcommaaccent.sc
+StartChar: uni0157.sc
 Encoding: 65675 -1 585
 Width: 1160
 VWidth: 0
@@ -17933,7 +17933,7 @@ Fore
 Refer: 272 786 N 1 0 0 1 678 -52 2
 EndChar
 
-StartChar: afii57929
+StartChar: uni02BC
 Encoding: 700 700 623
 Width: 362
 Flags: W
