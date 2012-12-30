@@ -39,27 +39,27 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS) $(HTML)
 
-$(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-quran.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-quran.fea.pp --version $(VERSION) --quran
 
-$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-regular.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
 
-$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-slanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
 
-$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-Bold.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-bold.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-bold.fea.pp --version $(VERSION)
 
-$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-BoldItalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=7
