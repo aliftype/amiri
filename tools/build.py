@@ -290,41 +290,6 @@ def centerGlyph(glyph):
     glyph.right_side_bearing = glyph.left_side_bearing = (glyph.right_side_bearing + glyph.left_side_bearing)/2
     glyph.width = width
 
-def buildLatinExtras(font, italic):
-    for ltr, rtl in (("question", "uni061F"), ("radical", "radical.rtlm")):
-        if ltr in font:
-            font[rtl].clear()
-            font[rtl].addReference(ltr, psMat.scale(-1, 1))
-            font[rtl].left_side_bearing = font[ltr].right_side_bearing
-            font[rtl].right_side_bearing = font[ltr].left_side_bearing
-
-    # slanted arabic question mark
-    if italic:
-        question = font.createChar(-1, "uni061F.rtl")
-        question.addReference("uni061F", italic)
-        question.useRefsMetrics("uni061F")
-
-    for name in ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"):
-        if italic:
-            # they are only used in Arabic contexts, so always reference the
-            # italic rtl variant
-            refname = name +".rtl"
-        else:
-            refname = name
-        small = font.createChar(-1, name + ".small")
-        small.clear()
-        small.addReference(refname, psMat.scale(0.6))
-        small.transform(psMat.translate(0, -40))
-        small.width = 600
-        centerGlyph(small)
-
-        medium = font.createChar(-1, name + ".medium")
-        medium.clear()
-        medium.addReference(refname, psMat.scale(0.8))
-        medium.transform(psMat.translate(0, 50))
-        medium.width = 900
-        centerGlyph(medium)
-
 def subsetFont(font, glyphnames, similar=False):
     # keep any glyph with the same base name
     reported = []
@@ -471,6 +436,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
         compfea = buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
 
+    digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
+              "eight", "nine")
+
     # common characters that can be used in Arabic and Latin need to be handled
     # carefully in the slanted font so that right leaning italic is used with
     # Latin, and left leaning slanted is used with Arabic, using ltra and rtla
@@ -483,36 +451,25 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
             upright = fontforge.open("sources/crimson/Crimson-Roman.sfd")
 
         shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
-                  "quotesingle", "parenleft", "parenright", "asterisk", "plus",
-                  "slash", "colon", "semicolon", "less", "equal", "greater",
-                  "question", "at", "bracketleft", "backslash", "bracketright",
-                  "asciicircum", "braceleft", "bar", "braceright", "brokenbar",
-                  "section", "copyright", "guillemotleft", "logicalnot",
-                  "registered", "plusminus", "uni00B2", "uni00B3", "paragraph",
-                  "uni00B9", "ordmasculine", "guillemotright", "onequarter",
-                  "onehalf", "threequarters", "questiondown", "quoteleft",
-                  "quoteright", "quotesinglbase", "quotereversed",
-                  "quotedblleft", "quotedblright", "quotedblbase", "uni201F",
-                  "dagger", "daggerdbl", "perthousand", "minute", "second",
-                  "guilsinglleft", "guilsinglright", "fraction", "uni2213")
-
-        digits = ("zero", "one", "two", "three", "four", "five", "six",
-                  "seven", "eight", "nine")
+                  "quotesingle", "asterisk", "plus", "colon", "semicolon",
+                  "less", "equal", "greater", "question", "at", "asciicircum",
+                  "exclamdown", "section", "copyright", "logicalnot", "registered",
+                  "plusminus", "uni00B2", "uni00B3", "paragraph", "uni00B9",
+                  "ordmasculine", "onequarter", "onehalf", "threequarters",
+                  "questiondown", "quoteleft", "quoteright", "quotesinglbase",
+                  "quotereversed", "quotedblleft", "quotedblright",
+                  "quotedblbase", "uni201F", "dagger", "daggerdbl",
+                  "perthousand", "minute", "second", "guilsinglleft",
+                  "guilsinglright", "fraction", "uni2213")
 
         for name in shared:
             glyph = latinfont[name]
-            glyph.glyphname += '.ltr'
-            glyph.unicode = -1
+            glyph.clear()
             upright.selection.select(name)
             upright.copy()
             latinfont.createChar(upright[name].encoding, name)
             latinfont.selection.select(name)
             latinfont.paste()
-
-            if not name + ".ara" in font:
-                rtl = latinfont.createChar(-1, name + ".rtl")
-                rtl.addReference(name, italic)
-                rtl.useRefsMetrics(name)
 
         for name in digits:
             glyph = latinfont[name]
@@ -569,7 +526,27 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
         font.mergeFeature(compfea)
         os.remove(compfea)
 
-    buildLatinExtras(font, italic)
+    # add Latin small and medium digits
+    for name in digits:
+        if italic:
+            # they are only used in Arabic contexts, so always reference the
+            # italic rtl variant
+            refname = name +".rtl"
+        else:
+            refname = name
+        small = font.createChar(-1, name + ".small")
+        small.clear()
+        small.addReference(refname, psMat.scale(0.6))
+        small.transform(psMat.translate(0, -40))
+        small.width = 600
+        centerGlyph(small)
+
+        medium = font.createChar(-1, name + ".medium")
+        medium.clear()
+        medium.addReference(refname, psMat.scale(0.8))
+        medium.transform(psMat.translate(0, 50))
+        medium.width = 900
+        centerGlyph(medium)
 
     for lookup in kern_lookups:
         font.addLookup(lookup,
@@ -680,6 +657,13 @@ def makeSlanted(infile, outfile, feafile, version, slant):
     skew = psMat.skew(-slant * math.pi/180.0)
 
     font.selection.all()
+    punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
+             "braceright", "bracketleft", "bracketright", "parenleft",
+             "parenright", "slash", "backslash", "brokenbar", "uni061F")
+
+    for name in punct:
+        font.selection.select(("less", None), name)
+
     font.transform(skew)
 
     # fix metadata
@@ -716,12 +700,13 @@ def makeQuran(infile, outfile, feafile, version):
 
     punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
              "braceright", "bracketleft", "bracketright", "parenleft",
-             "parenright", "slash")
+             "parenright", "slash", "backslash")
 
     for name in punct:
-        glyph = font[name+".ara"]
-        glyph.glyphname = name
-        glyph.unicode = fontforge.unicodeFromName(name)
+        if name+".ara" in font:
+            glyph = font[name+".ara"]
+            glyph.glyphname = name
+            glyph.unicode = fontforge.unicodeFromName(name)
 
     # abuse U+065C as a below form of U+06EC, for Qaloon
     dotabove = font["uni06EC"]
