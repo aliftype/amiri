@@ -401,7 +401,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     latinfile = "Crimson-%s.sfd" %style
 
     tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
-    latinfont = fontforge.open("sources/crimson/sources/%s" %latinfile)
+    latinfont = fontforge.open("sources/crimson/%s" %latinfile)
     latinfont.em = 2048
 
     # convert to quadratic splines then simplify
@@ -484,9 +484,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     # upright so it works reasonably with bot scripts
     if italic:
         if "Bold" in style:
-            upright = fontforge.open("sources/crimson/sources/Crimson-Bold.sfd")
+            upright = fontforge.open("sources/crimson/Crimson-Bold.sfd")
         else:
-            upright = fontforge.open("sources/crimson/sources/Crimson-Roman.sfd")
+            upright = fontforge.open("sources/crimson/Crimson-Roman.sfd")
         upright.em = 2048
 
         shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",

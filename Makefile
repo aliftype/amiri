@@ -129,7 +129,8 @@ dist: all check pack doc
 	@cp $(PACK) $(DIST)/$(SRC)
 	@cp $(FEAT) $(DIST)/$(SRC)
 	@mkdir -p $(DIST)/$(SRC)/crimson
-	@cp -r $(SRC)/crimson/sources $(DIST)/$(SRC)/crimson
+	@cp -r $(SRC)/crimson/Crimson-*.sfd $(DIST)/$(SRC)/crimson
+	@cp -r $(SRC)/crimson/README $(DIST)/$(SRC)/crimson
 	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > $(DIST)/Makefile
 	@cp $(license) $(DIST)
 	@cp $(DTTF) $(DIST)
