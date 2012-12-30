@@ -880,7 +880,7 @@ Grid
  4096 1652 l 1
 EndSplineSet
 TeXData: 1 0 0 204800 102400 68266 442368 1048576 68266 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65772 1421
+BeginChars: 65772 1423
 
 StartChar: space
 Encoding: 32 32 0
@@ -38253,6 +38253,24 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 411 8208 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni0331
+Encoding: 817 817 1421
+Width: 0
+Flags: W
+LayerCount: 2
+Fore
+Refer: 336 772 N 1 0 0 1 0 -1260 2
+EndChar
+
+StartChar: uni032E
+Encoding: 814 814 1422
+Width: 0
+Flags: W
+LayerCount: 2
+Fore
+Refer: 338 774 N 1 0 0 1 0 -1360 2
 EndChar
 EndChars
 EndSplineFont
