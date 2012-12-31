@@ -6,6 +6,8 @@
 
 // final alef with no hamza above
 @Alf_1 = [uni0627.fina_LamAlfFina uni0625.fina_LamAlfFina];
+@Alf_2 = [@aAlf.fina @aAlf.fina_KafAlf @aAlf.fina_KafMemAlf
+          @aAlf.fina_LamAlfFina @aAlf.fina_LamAlfIsol @aAlf.fina_MemAlfFina];
 
 @Kaf_1 = [@aKaf.init_KafHeh
           @aKaf.init_KafMemIsol];
@@ -81,6 +83,19 @@ feature kern {
   // some applications might just remove it
   pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
 } kern;
+
+#ifdef ITALIC
+feature kern {
+  lookupflag IgnoreMarks;
+  pos @Alf_2 <300 0 300 0> [parenleft bracketleft braceleft];
+
+  pos [parenright bracketright braceright] <-100 0 -100 0> [@Kaf_1 @Kaf_2 @Kaf_4 @Kaf_5];
+  pos [parenright bracketright braceright] <-200 0 -200 0> [@Kaf_3];
+
+  pos [braceright] <-200 0 -200 0> [@Kaf_1 @Kaf_2 @Kaf_4 @Kaf_5];
+  pos [braceright] <-300 0 -300 0> [@Kaf_3];
+} kern;
+#endif
 
 // proportional digits
 feature kern {

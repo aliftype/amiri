@@ -1,0 +1,7 @@
+feature kern {
+  pos [f f_f] [parenright bracketright] 300;
+  pos [f_l f_f_l f_j f_f_j j] [parenright bracketright] 100;
+  pos [F] [parenright bracketright] 100;
+  pos parenleft   [f f_f f_i f_j f_l f_b f_k f_f_i f_f_j f_f_l f_f_b f_f_k j y] 200;
+  pos bracketleft [f f_f f_i f_j f_l f_b f_k f_f_i f_f_j f_f_l f_f_b f_f_k j y] 120;
+} kern;
