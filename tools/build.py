@@ -330,30 +330,29 @@ def buildComposition(font, glyphnames):
                 base = decomp.split()[0]
                 mark = decomp.split()[1]
                 if not '<' in base:
-                    ubase = int(base, 16)
-                    umark = int(mark, 16)
-                    base = fontforge.nameFromUnicode(ubase)
-                    mark = fontforge.nameFromUnicode(umark)
+                    nmark = None
+                    nbase = None
 
-                    if base not in font:
-                        base = "uni%04X" %ubase
-                    if mark not in font:
-                        mark = "uni%04X" %umark
+                    for g in font.glyphs():
+                        if g.unicode == int(base, 16):
+                            nbase = g.glyphname
+                        if g.unicode == int(mark, 16):
+                            nmark = g.glyphname
 
-                    if base in font and mark in font:
-                        font[name].addPosSub("Latin composition subtable", (base, mark))
+                    if not nbase:
+                        nbase = "uni%04X" % int(base, 16)
+                    if not nmark:
+                        nmark = "uni%04X" % int(mark, 16)
+
+                    if nbase in font and nmark in font:
+                        font[name].addPosSub("Latin composition subtable", (nbase, nmark))
 
                     if base not in glyphnames:
-                        newnames.append(base)
+                        newnames.append(nbase)
                     if mark not in glyphnames:
-                        newnames.append(mark)
+                        newnames.append(nmark)
 
-    glyphnames += newnames
-
-    fea = mkstemp(suffix='.fea')[1]
-    font.generateFeatureFile(fea, "Latin composition")
-
-    return fea
+    return newnames
 
 def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     styles = {"Regular": "Roman",
@@ -437,7 +436,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
         for name in ("uni030A", "uni0325"):
             font[name].clear()
 
-        compfea = buildComposition(latinfont, latinglyphs)
+        latinglyphs += buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
 
     digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
@@ -527,8 +526,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     os.remove(tmpfont)
 
     if not quran:
-        font.mergeFeature(compfea)
-        os.remove(compfea)
+        buildComposition(font, latinglyphs)
 
     # add Latin small and medium digits
     for name in digits:
