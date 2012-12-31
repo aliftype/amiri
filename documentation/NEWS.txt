@@ -1,3 +1,22 @@
+Amiri 0.105 (2012-12-31)
+------------------------
+* New Quran font:
+  This release feature a new separate Amiri Quran font for typesetting Quran.
+  It is basically a subset of Amiri Regular font with some default settings and
+  features tailored for Quran typesetting requirements that are not suitable
+  for general text. For example:
+  - Covers only the subset of characters required for Quran.
+  - Bigger line height to accommodate waqf marks.
+  - Hamza on yeh or waw when followed by kasra is placed bellow its base.
+  - Supports overline mark (U+0305) that can be used to draw sajda lines in
+    situations where proper overline formating is not available.
+  - The Allah ligature is always active, no checking for surrounding letters or
+    vowel marks, also no automatic insertion of shadda above it.
+  - Some ligatures that are problematic for fully vowelled text are disabled.
+
+* Lots of metrics, mark positioning, kerning and glyph shape tuning. Check GIT
+  log for complete list.
+
 Amiri 0.104 (2012-07-19)
 ------------------------
 * New glyphs:
