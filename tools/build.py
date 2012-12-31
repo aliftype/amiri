@@ -149,6 +149,9 @@ def mergeFeatures(font, feafile):
     for lookup in font.gpos_lookups:
         font.removeLookup(lookup)
 
+    for lookup in font.gsub_lookups:
+        font.removeLookup(lookup)
+
     # open feature file and insert the generated GPOS features in place of the
     # placeholder text
     fea = open(feafile)
