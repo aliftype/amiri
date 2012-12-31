@@ -433,6 +433,10 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
                     latinglyphs.append(name)
 
     if not quran:
+        # we want our ring above and below in Quran font only
+        for name in ("uni030A", "uni0325"):
+            font[name].clear()
+
         compfea = buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
 
