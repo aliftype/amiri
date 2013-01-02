@@ -10,7 +10,7 @@ html {
    font-family: Amiri, serif;
    color: #404040;
    background-color: #fffef8;
-  -moz-font-feature-settings: "pnum=1";
+  -moz-font-feature-settings: "pnum" 1;
   -ms-font-feature-settings: "pnum" 1;
    font-feature-settings: "pnum" 1;
 }
@@ -60,19 +60,19 @@ h3 {
 }
 
 #ss01 {
-  -moz-font-feature-settings: "ss01=1";
+  -moz-font-feature-settings: "ss01" 1;
   -ms-font-feature-settings: "ss01" 1;
    font-feature-settings: "ss01" 1;
 }
 
 #ss02 {
-  -moz-font-feature-settings: "ss02=1";
+  -moz-font-feature-settings: "ss02" 1;
   -ms-font-feature-settings: "ss02" 1;
    font-feature-settings: "ss02" 1;
 }
 
 #ss03 {
-  -moz-font-feature-settings: "ss03=1";
+  -moz-font-feature-settings: "ss03" 1;
   -ms-font-feature-settings: "ss03" 1;
    font-feature-settings: "ss03" 1;
 }
