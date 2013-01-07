@@ -257,7 +257,7 @@ def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
 
     markset = "%s %s" %(over and o_base.glyphname or "", under and u_base.glyphname or "")
 
-    font.addMarkSet("OverUnderSet", markset)
+    font.addMarkClass("OverUnderSet", markset)
 
     context_lookup_name = 'OverUnderLine'
     font.addLookup(context_lookup_name, 'gsub_contextchain', ('OverUnderSet'), (('mark', script_lang),), font.gsub_lookups[-1])
