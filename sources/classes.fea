@@ -25,6 +25,8 @@
 @aKaf.fina = [ uni063B.fina uni063C.fina uni077F.fina uni0764.fina uni0643.fina uni06B0.fina uni06B3.fina uni06B2.fina uni06AB.fina uni06AC.fina uni06AD.fina uni06AE.fina uni06AF.fina uni06A9.fina uni06B4.fina uni0763.fina uni0762.fina uni06B1.fina ];
 @aKaf.init = [ uni063B.init uni063C.init uni077F.init uni0764.init uni0643.init uni06B0.init uni06B3.init uni06B2.init uni06AB.init uni06AC.init uni06AD.init uni06AE.init uni06AF.init uni06A9.init uni06B4.init uni0763.init uni0762.init uni06B1.init ];
 @aKaf.isol = [ uni063B uni063C uni077F uni0764 uni0643 uni06B0 uni06B3 uni06B2 uni06AB uni06AC uni06AD uni06AE uni06AF uni06A9 uni06B4 uni0763 uni0762 uni06B1 ];
+@aGaf.isol = [ uni06A9 uni06AF uni06B0 uni06B1 uni06B2 uni06B3 uni06B4 uni0762 uni0763 uni0764 uni063B uni063C ];
+@aGaf.fina = [ uni06A9.fina uni06AF.fina uni06B0.fina uni06B1.fina uni06B2.fina uni06B3.fina uni06B4.fina uni0762.fina uni0763.fina uni0764.fina uni063B.fina uni063C.fina ];
 @aKaf.medi = [ uni063B.medi uni063C.medi uni077F.medi uni0764.medi uni0643.medi uni06B0.medi uni06B3.medi uni06B2.medi uni06AB.medi uni06AC.medi uni06AD.medi uni06AE.medi uni06AF.medi uni06A9.medi uni06B4.medi uni0763.medi uni0762.medi uni06B1.medi ];
 @aLam.fina = [ uni06B5.fina uni06B7.fina uni0644.fina uni06B8.fina uni06B6.fina uni076A.fina ];
 @aLam.init = [ uni06B5.init uni06B7.init uni0644.init uni06B8.init uni06B6.init uni076A.init ];
