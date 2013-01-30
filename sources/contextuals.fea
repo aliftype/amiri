@@ -1117,7 +1117,7 @@ feature calt {
   sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
        @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamKafInit
       [@aKaf.medi @aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina
-       @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf];
+       @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf @aGaf.fina];
 } calt;
 
 lookup LamAynTatweel {
