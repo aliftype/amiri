@@ -74,4 +74,21 @@ feature ss04 {
   sub @aGaf.isol by @aGaf.alt;
   sub @aGaf.fina by @aGaf.alt.fina;
 } ss04;
+
+lookup dummy {
+  sub uni0640.1 by uni0640;
+} dummy;
+
+feature ss04 {
+  sub @aLam.init' lookup LamLamInit
+      [uni0640.1]' lookup dummy
+      @aGaf.alt.fina 'lookup LamLamInit;
+
+  sub @aLam.medi' lookup LamLamMedi2
+      [uni0640.1]' lookup dummy
+      @aGaf.alt.fina' lookup LamLamMedi;
+
+  sub [@aKaf.init @aKaf.medi]' lookup KafLam
+      @aGaf.alt.fina' lookup KafLam;
+} ss04;
 #endif

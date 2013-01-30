@@ -326,6 +326,7 @@ lookup LamLamInit {
   sub @aLam.medi by @aLam.medi_LamLamInit;
   sub @aLam.fina by @aLam.fina_LamLamIsol;
   sub @aKaf.fina by @aKaf.fina_LamKafIsol;
+  sub @aGaf.alt.fina by @aGaf.fina_LamKafIsol;
   sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlfIsol;
   sub @LamLamFoo by [@aLam.medi_LamLamMemInit @aLam.medi_LamLamHehIsol @aLam.medi_LamLamYaaIsol];
 } LamLamInit;
@@ -334,6 +335,7 @@ lookup LamLamMedi {
   sub @aLam.medi by @aLam.medi_LamLamMedi2;
   sub @aLam.fina by @aLam.fina_LamLamFina;
   sub @aKaf.fina by @aKaf.fina_LamKafFina;
+  sub @aGaf.alt.fina by @aGaf.fina_LamKafFina;
   sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlefFina;
   sub @LamLamFoo by [@aLam.medi_LamLamMemMedi @aLam.medi_LamLamHehFina @aLam.medi_LamLamYaaFina];
 } LamLamMedi;
@@ -454,6 +456,7 @@ lookup KafLam {
   sub @aKaf.init by @aKaf.init_KafLam;
   sub @aKaf.medi by @aKaf.medi_KafLam;
   sub @aKaf.fina by @aKaf.fina_KafKafFina;
+  sub @aGaf.alt.fina by @aGaf.fina_KafKafFina;
   sub @aLam.medi by @aLam.medi_KafLam;
   sub @aLam.fina by @aLam.fina_KafLam;
   sub @aAlf.fina by @aAlf.fina_KafAlf;
