@@ -487,51 +487,6 @@ KernClass2: 14+ 24 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  25 zero zero.slash zero.prop
  55 d dcaron dcroat uni1E0B uni1E0D uni1E0F uni1E11 uni1E13
  0 {} -74 {} -60 {} -56 {} -44 {} -68 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -34 {} -28 {} -44 {} -42 {} -20 {} -30 {} -42 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 18 {} 0 {} 0 {} 12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -28 {} -22 {} -32 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -26 {} -34 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 60 {} 56 {} 72 {} 0 {} -82 {} 0 {} 0 {} 0 {} -114 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -26 {} -22 {} -28 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -26 {} 0 {} -52 {} 0 {} 0 {} 0 {} -68 {} -22 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -92 {} -82 {} -66 {} -96 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 136 {} -36 {} 32 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -26 {} 0 {} -66 {} 0 {} 0 {} 0 {} 0 {} -28 {} 0 {} 0 {} 0 {} -22 {} -102 {} -76 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -92 {} -74 {} -60 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 168 {} -28 {} 0 {} -22 {} 0 {} -26 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -48 {} 0 {} -28 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -46 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -118 {} -28 {} 0 {} 0 {} 0 {} 0 {} -16 {}
-MacFeat: 0 0 0
-MacName: 0 0 24 "All Typographic Features"
-MacName: 0 1 24 "Fonctions typographiques"
-MacName: 0 2 32 "Alle typografischen Mglichkeiten"
-MacName: 0 3 21 "Funzioni Tipografiche"
-MacName: 0 4 28 "Alle typografische kenmerken"
-MacSetting: 0
-MacName: 0 0 17 "All Type Features"
-MacName: 0 1 31 "Toutes fonctions typographiques"
-MacName: 0 2 23 "Alle Auszeichnungsarten"
-MacName: 0 3 17 "Tutte le Funzioni"
-MacName: 0 4 18 "Alle typekenmerken"
-MacFeat: 3 1 0
-MacName: 0 0 11 "Letter Case"
-MacName: 0 1 5 "Casse"
-MacName: 0 4 20 "Hoofd/kleine letters"
-MacSetting: 0
-MacName: 0 0 18 "Upper & Lower Case"
-MacName: 0 1 23 "Majuscules & Minuscules"
-MacName: 0 2 9 "Gro/Klein"
-MacName: 0 3 21 "Maiuscolo & minuscolo"
-MacName: 0 4 24 "Hoofd- en kleine letters"
-MacSetting: 3
-MacName: 0 0 10 "Small Caps"
-MacName: 0 1 18 "Petites Majuscules"
-MacName: 0 2 10 "Kapitlchen"
-MacName: 0 3 12 "Maiuscoletto"
-MacName: 0 4 19 "Kleine hoofdletters"
-MacFeat: 21 1 1
-MacName: 0 0 11 "Number Case"
-MacName: 0 1 18 "Style des Chiffres"
-MacName: 0 4 12 "Nummerhoogte"
-MacSetting: 0
-MacName: 0 0 18 "Lower Case Numbers"
-MacName: 0 1 31 "Chiffres Anciens (bas de casse)"
-MacName: 0 2 15 "Medival-Ziffern"
-MacName: 0 3 19 "Sopra la Linea Base"
-MacName: 0 4 14 "Kleine nummers"
-MacSetting: 1
-MacName: 0 0 18 "Upper Case Numbers"
-MacName: 0 1 35 "Chiffres Conventionnels (alignants)"
-MacName: 0 2 15 "Normale Ziffern"
-MacName: 0 3 12 "Tradizionale"
-MacName: 0 4 13 "Grote nummers"
-EndMacFeatures
 LangName: 1033 "" "" "" "FontForge : Crimson : 28-7-2010" "" "" "" "" "" "" "" "" "" "" "http://scripts.sil.org/OFL" 
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
