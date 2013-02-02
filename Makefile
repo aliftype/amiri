@@ -52,7 +52,7 @@ $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.s
 $(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-slanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=7
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=10
 
 $(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-Bold.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
@@ -62,7 +62,7 @@ $(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-Bold.sfd $(SR
 $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-BoldItalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=7
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
 
 $(WEB)/%.ttf: %.ttf $(BUILD)
 	@echo "   FF\t$@"
