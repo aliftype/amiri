@@ -8549,33 +8549,33 @@ EndChar
 
 StartChar: quoteleft
 Encoding: 8216 8216 203
-Width: 336
+Width: 383
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-284 1110 m 0,0,1
- 326 1288 326 1288 516 1399 c 0,2,3
- 540 1412 540 1412 546 1412 c 0,4,5
- 557 1412 557 1412 566 1402 c 128,-1,6
- 575 1392 575 1392 578 1376 c 1,7,8
- 455 1306 455 1306 438 1228 c 0,9,10
- 427 1158 427 1158 454 1120 c 0,11,12
- 488 1075 488 1075 482 1048 c 0,13,14
- 472 1010 472 1010 433 980 c 0,15,16
- 392 948 392 948 348 948 c 0,17,18
- 306 948 306 948 284 970 c 1,19,20
- 261 1017 261 1017 284 1110 c 0,0,1
+281 1096 m 0,0,1
+ 331 1310 331 1310 559 1443 c 0,2,3
+ 588 1459 588 1459 595 1458 c 0,4,5
+ 608 1458 608 1458 619 1446 c 128,-1,6
+ 630 1434 630 1434 633 1415 c 1,7,8
+ 485 1331 485 1331 465 1238 c 0,9,10
+ 452 1154 452 1154 485 1108 c 0,11,12
+ 526 1054 526 1054 518 1022 c 0,13,14
+ 506 976 506 976 459 940 c 0,15,16
+ 410 902 410 902 357 902 c 0,17,18
+ 307 902 307 902 281 928 c 1,19,20
+ 253 984 253 984 281 1096 c 0,0,1
 EndSplineSet
 EndChar
 
 StartChar: quoteright
 Encoding: 8217 8217 204
-Width: 350
+Width: 384
 Flags: W
 LayerCount: 2
 Fore
-Refer: 203 8216 N -1 -0 0 -1 832 2360 2
+Refer: 203 8216 N -1 -0 0 -1 842 2360 2
 EndChar
 
 StartChar: quotesinglbase
@@ -8589,30 +8589,30 @@ EndChar
 
 StartChar: quotedblleft
 Encoding: 8220 8220 206
-Width: 610
+Width: 698
 Flags: W
 LayerCount: 2
 Fore
-Refer: 203 8216 N 1 0 0 1 275 0 2
+Refer: 203 8216 N 1 0 0 1 315 0 2
 Refer: 203 8216 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: quotedblright
 Encoding: 8221 8221 207
-Width: 626
+Width: 699
 Flags: W
 LayerCount: 2
 Fore
-Refer: 206 8220 N -1 0 -0 -1 1107 2360 2
+Refer: 206 8220 N -1 -0 0 -1 1157 2360.06 2
 EndChar
 
 StartChar: quotedblbase
 Encoding: 8222 8222 208
-Width: 638
+Width: 699
 Flags: W
 LayerCount: 2
 Fore
-Refer: 207 8221 N 1 0 0 1 -251 -1162 2
+Refer: 207 8221 N 1 0 0 1 -251 -1162 3
 EndChar
 
 StartChar: dagger
@@ -14093,21 +14093,20 @@ EndChar
 
 StartChar: uni201F
 Encoding: 8223 8223 447
-Width: 626
+Width: 698
 Flags: W
 LayerCount: 2
 Fore
-Refer: 448 8219 N 1 0 0 1 276 0 2
-Refer: 448 8219 N 1 0 0 1 0 0 2
+Refer: 206 8220 N 1 0 -0.5 -1 553 2360 3
 EndChar
 
 StartChar: quotereversed
 Encoding: 8219 8219 448
-Width: 350
+Width: 383
 Flags: W
 LayerCount: 2
 Fore
-Refer: 203 8216 N 1 0 -0.466308 -1 529.243 2360 2
+Refer: 203 8216 N 1 0 -0.5 -1 553 2360 3
 EndChar
 
 StartChar: f_f

@@ -7995,32 +7995,32 @@ EndChar
 
 StartChar: quoteleft
 Encoding: 8216 8216 199
-Width: 366
+Width: 428
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-203 1110 m 0,0,1
- 240 1287 240 1287 437 1399 c 0,2,3
- 461 1412 461 1412 467 1412 c 0,4,5
- 488 1412 488 1412 495 1376 c 1,6,7
- 451 1350 451 1350 417 1320 c 0,8,9
- 341 1251 341 1251 329 1194 c 0,10,11
- 324 1168 324 1168 354 1123 c 128,-1,12
- 384 1078 384 1078 379 1050 c 0,13,14
- 372 1016 372 1016 330 990 c 0,15,16
- 265 951 265 951 205 970 c 1,17,18
- 186 1020 186 1020 203 1110 c 0,0,1
+203 1094 m 0,0,1
+ 247 1306 247 1306 484 1441 c 0,2,3
+ 513 1457 513 1457 520 1456 c 0,4,5
+ 545 1456 545 1456 553 1413 c 1,6,7
+ 500 1382 500 1382 460 1346 c 0,8,9
+ 369 1263 369 1263 354 1195 c 0,10,11
+ 348 1164 348 1164 384 1109.5 c 128,-1,12
+ 420 1055 420 1055 414 1022 c 0,13,14
+ 406 981 406 981 355 950 c 0,15,16
+ 277 903 277 903 205 926 c 1,17,18
+ 183 986 183 986 203 1094 c 0,0,1
 EndSplineSet
 EndChar
 
 StartChar: quoteright
 Encoding: 8217 8217 200
-Width: 386
+Width: 404
 Flags: W
 LayerCount: 2
 Fore
-Refer: 199 8216 N -1 -0 0 -1 661.471 2380 2
+Refer: 199 8216 N -1 -0 0 -1 679 2380 2
 EndChar
 
 StartChar: quotesinglbase
@@ -8034,27 +8034,26 @@ EndChar
 
 StartChar: quotedblleft
 Encoding: 8220 8220 202
-Width: 632
+Width: 745
 Flags: W
 LayerCount: 2
 Fore
-Refer: 199 8216 N 1 0 0 1 267 0 2
+Refer: 199 8216 N 1 0 0 1 317 0 2
 Refer: 199 8216 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: quotedblright
 Encoding: 8221 8221 203
-Width: 654
+Width: 745
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 8217 N 1 0 0 1 268 0 2
-Refer: 200 8217 N 1 0 0 1 0 0 2
+Refer: 202 8220 N -1 0 -0 -1 996 2375 3
 EndChar
 
 StartChar: quotedblbase
 Encoding: 8222 8222 204
-Width: 658
+Width: 709
 Flags: W
 LayerCount: 2
 Fore
@@ -21178,17 +21177,16 @@ Width: 386
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 8217 N -1 0 0.5 1 77 0 2
+Refer: 200 8217 N -1 0 0.5 1 -53 0 2
 EndChar
 
 StartChar: uni201F
 Encoding: 8223 8223 845
-Width: 654
+Width: 745
 Flags: W
 LayerCount: 2
 Fore
-Refer: 844 8219 N 1 0 0 1 268 0 2
-Refer: 844 8219 N 1 0 0 1 0 0 2
+Refer: 203 8221 N -1 0 0.5 1 308 0 3
 EndChar
 
 StartChar: zero.prop
