@@ -5,7 +5,7 @@ VERSION=0.106
 
 TOOLS=tools
 SRC=sources
-WEB=web
+WEB=webfonts
 DOC=documentation
 TESTS=test-suite
 FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
