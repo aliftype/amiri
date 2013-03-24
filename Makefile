@@ -23,7 +23,7 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
-PDFS=$(DOC)/$(NAME)-table.pdf
+PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/documentation-arabic.pdf
 HTML=$(DOC)/documentation-arabic.html
 CSSS=$(WEB)/$(NAME).css
 FEAT=$(wildcard $(SRC)/*.fea)
@@ -95,6 +95,13 @@ $(DOC)/documentation-arabic.html: $(DOC)/documentation-sources/documentation-ara
 	@echo "   GEN\t$@"
 	@pandoc $< -o $@ -f markdown -t html -s -c documentation-arabic.css --toc
 
+$(DOC)/documentation-arabic.pdf: $(DOC)/documentation-sources/documentation-arabic.tex
+	@echo "   GEN\t$@"
+	@xelatex --output-dir=${DOC} $< 1>/dev/null
+	@xelatex --output-dir=${DOC} $< 1>/dev/null
+	@xelatex --output-dir=${DOC} $< 1>/dev/null
+	@xelatex --output-dir=${DOC} $< 1>/dev/null
+
 check: $(TEST) $(DTTF)
 ifeq ($(shell which hb-shape),)
 	@echo "hb-shape not found, skipping tests"
@@ -105,6 +112,7 @@ endif
 
 clean:
 	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
+	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 #->8-
 PACK=$(SRC)/$(NAME)-regular.sfd $(SRC)/$(NAME)-bold.sfd
