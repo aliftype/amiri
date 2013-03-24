@@ -97,10 +97,7 @@ $(DOC)/documentation-arabic.html: $(DOC)/documentation-sources/documentation-ara
 
 $(DOC)/documentation-arabic.pdf: $(DOC)/documentation-sources/documentation-arabic.tex
 	@echo "   GEN\t$@"
-	@xelatex --output-dir=${DOC} $< 1>/dev/null
-	@xelatex --output-dir=${DOC} $< 1>/dev/null
-	@xelatex --output-dir=${DOC} $< 1>/dev/null
-	@xelatex --output-dir=${DOC} $< 1>/dev/null
+	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
 check: $(TEST) $(DTTF)
 ifeq ($(shell which hb-shape),)
