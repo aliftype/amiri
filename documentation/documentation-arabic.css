@@ -11,6 +11,7 @@ html {
    color: #404040;
    background-color: #fffef8;
   -moz-font-feature-settings: "pnum" 1;
+  -webkit-font-feature-settings: "pnum" 1;
   -ms-font-feature-settings: "pnum" 1;
    font-feature-settings: "pnum" 1;
 }
@@ -38,7 +39,8 @@ table, td, th {
 }
 
 #tabular, table {
-  -moz-font-feature-settings: "pnum=0";
+  -moz-font-feature-settings: "pnum" 0;
+  -webkit-font-feature-settings: "pnum" 0;
   -ms-font-feature-settings: "pnum" 0;
    font-feature-settings: "pnum" 0;
 }
@@ -61,24 +63,28 @@ h3 {
 
 #ss01 {
   -moz-font-feature-settings: "ss01" 1;
+  -webkit-font-feature-settings: "ss01" 1;
   -ms-font-feature-settings: "ss01" 1;
    font-feature-settings: "ss01" 1;
 }
 
 #ss02 {
   -moz-font-feature-settings: "ss02" 1;
+  -webkit-font-feature-settings: "ss02" 1;
   -ms-font-feature-settings: "ss02" 1;
    font-feature-settings: "ss02" 1;
 }
 
 #ss03 {
   -moz-font-feature-settings: "ss03" 1;
+  -webkit-font-feature-settings: "ss03" 1;
   -ms-font-feature-settings: "ss03" 1;
    font-feature-settings: "ss03" 1;
 }
 
 #ss04 {
   -moz-font-feature-settings: "ss04" 1;
+  -webkit-font-feature-settings: "ss04" 1;
   -ms-font-feature-settings: "ss04" 1;
    font-feature-settings: "ss04" 1;
 }
