@@ -24,8 +24,6 @@ WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/documentation-arabic.pdf
-HTML=$(DOC)/documentation-arabic.html
-CSSS=$(WEB)/$(NAME).css
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
@@ -37,7 +35,7 @@ all: ttf web
 
 ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
-doc: $(PDFS) $(HTML)
+doc: $(PDFS)
 
 $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF\t$@"
@@ -90,10 +88,6 @@ $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
-
-$(DOC)/documentation-arabic.html: $(DOC)/documentation-sources/documentation-arabic.md
-	@echo "   GEN\t$@"
-	@pandoc $< -o $@ -f markdown -t html -s -c documentation-arabic.css --toc
 
 $(DOC)/documentation-arabic.pdf: $(DOC)/documentation-sources/documentation-arabic.tex
 	@echo "   GEN\t$@"
