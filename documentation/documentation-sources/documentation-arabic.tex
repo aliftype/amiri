@@ -82,13 +82,16 @@
 هذا النقاش للاطلاع على تفاصيل أكثر حول أصل الفكرة و صاحبها:
 \url{http://www.graphics4arab.com/showthread.php?t=3975}}
 
+% an ugly hack for the missing U+0671 in DejaVu Sans Mono
+\def\ٱ{ا\textrm{\XeTeXglyph\XeTeXglyphindex "hamza.wasl"}\kern-.9ex}
+
 \begin{itemize}
 \item
   يأخذ التتابع \texttt{لله} شكل لفظ الجلالة في الحالات التالية:
   \begin{itemize}
   \item
     مسبوقا بألف غير مهموزة أو ألف ممدودة أو ألف وصل: \texttt{الله}،
-    \texttt{آلله}، \texttt{ٱلله}.
+    \texttt{آلله}، \texttt{\ٱ{}لله}.
     \begin{itemize}
     \item
       الألف غير مسبوقة بأي حرف، أو:
