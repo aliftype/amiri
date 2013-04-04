@@ -6,6 +6,7 @@
 \usepackage[hang]{footmisc}
 \usepackage{fontspec}
 \usepackage{polyglossia}
+\usepackage{titlesec}
 
 \setmainlanguage {arabic}
 \setotherlanguage{english}
@@ -23,6 +24,16 @@
 \setlength{\parskip}{1em plus .2em minus .1em}
 %setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
+
+\newfontfamily\titlefont[Color=AD000D,Script=Arabic]{Amiri}
+
+\titleformat*{\section}{\Large\titlefont}
+\titleformat*{\subsection}{\large\titlefont}
+\titleformat*{\subsubsection}{\itshape\titlefont}
+
+\titlespacing{\section}{0pt}{*4}{*1}
+\titlespacing{\subsection}{0pt}{*3}{0pt}
+\titlespacing{\subsubsection}{0pt}{*2}{0pt}
 
 \title{الخط الأميري}
 \author{خالد حسني}
