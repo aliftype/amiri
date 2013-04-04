@@ -33,12 +33,12 @@ def runTest(test, font, positions):
 
     return passed, failed
 
-def initTest(test, font):
+def initTest(test, font, positions):
     out = ""
     for row in test:
         text = row[4]
         row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
-        result = runHB(row, font)
+        result = runHB(row, font, positions)
         out += "%s;%s;%s\n" %(";".join(row[:4]), text, result)
 
     return out
@@ -69,7 +69,7 @@ if __name__ == '__main__':
             fontname = 'amiri-regular.ttf'
             outname = testname+".test"
             outfd = open(outname, "w")
-            outfd.write(initTest(test, fontname))
+            outfd.write(initTest(test, fontname, positions))
             outfd.close()
             sys.exit(0)
 
