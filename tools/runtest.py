@@ -73,7 +73,12 @@ if __name__ == '__main__':
             outfd.close()
             sys.exit(0)
 
-        for style in ('regular', 'bold', 'slanted', 'boldslanted'):
+        if positions:
+            styles = ('regular', )
+        else:
+            styles = ('regular', 'bold', 'slanted', 'boldslanted')
+
+        for style in styles:
             fontname = 'amiri-%s.ttf' % style
             passed, failed = runTest(test, fontname, positions)
             message = "%s: font '%s', %d passed, %d failed" %(os.path.basename(testname),
