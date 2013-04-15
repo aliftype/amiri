@@ -186,7 +186,7 @@ def makeCss(infiles, outfile):
     out.write(css)
     out.close()
 
-def generateFont(font, outfile, hack=False):
+def generateFont(font, outfile):
     flags  = ("opentype", "dummy-dsig", "round", "omit-instructions")
 
     font.selection.all()
@@ -196,18 +196,7 @@ def generateFont(font, outfile, hack=False):
     # fix some common font issues
     validateGlyphs(font)
 
-    if hack:
-        # ff takes long to write the file, so generate to tmp file then rename
-        # it to keep fontview happy
-        import subprocess
-        tmpout = mkstemp(dir=".", suffix=os.path.basename(outfile))[1]
-        font.generate(tmpout, flags=flags)
-        #os.rename(tmpout, outfile) # file monitor will not see this, why?
-        p = subprocess.Popen("cat %s > %s" %(tmpout, outfile), shell=True)
-        p.wait()
-        os.remove(tmpout)
-    else:
-        font.generate(outfile, flags=flags)
+    font.generate(outfile, flags=flags)
     font.close()
 
 def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
@@ -816,7 +805,7 @@ def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
         mergeFeatures(font, feafile)
 
     if generate:
-        generateFont(font, outfile, True)
+        generateFont(font, outfile)
     else:
         return font
 
