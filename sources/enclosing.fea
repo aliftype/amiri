@@ -1,9 +1,6 @@
 //
-// digit enclosing signs
+// subtending signs
 //
-
-// first we replace any sequence of digits (up to three places) following a
-// digit enclosing sign by smaller alternates
 
 @EndOfAyah = [uni06DD];
 @NumSign   = [uni0600];
@@ -30,249 +27,98 @@ lookup digit2small {
 #endif
 } digit2small;
 
-lookup NumSign3 {
-  sub @NumSign by @NumSign3;
-} NumSign3;
-
-lookup NumSign4 {
-  sub @NumSign by @NumSign4;
-} NumSign4;
-
-lookup SafhaSign3 {
-  sub @SafhaSign by @SafhaSign3;
-} SafhaSign3;
-
-feature calt {
-  sub [@EndOfAyah @FootNote]                                           @Digits.all' lookup digit2small;
-  sub [@EndOfAyah @FootNote] @Digits.small                             @Digits.all' lookup digit2small;
-  sub [@EndOfAyah          ] @Digits.small @Digits.small               @Digits.all' lookup digit2small;
-} calt;
-
-lookup digit2medium {
+lookup digit2medi {
   sub @Digits by @Digits.medium;
 #ifdef ITALIC
   sub @Digits.rtl by @Digits.medium2;
   sub @Digits.ltr by @Digits.medium2;
 #endif
-} digit2medium;
+} digit2medi;
 
+lookup Sign3 {
+  sub @NumSign by @NumSign3;
+  sub @SafhaSign by @SafhaSign3;
+} Sign3;
+
+lookup Sign4 {
+  sub @NumSign by @NumSign4;
+} Sign4;
+
+// first we replace any sequence of digits (up to two, three or four places)
+// following a subtending sign by smaller alternates
 feature calt {
-  sub [@NumSign @YearSign @SafhaSign]                                              @Digits.all' lookup digit2medium;
-  sub [@NumSign @YearSign @SafhaSign] @Digits.medium                               @Digits.all' lookup digit2medium;
-  sub [@NumSign @YearSign @SafhaSign] @Digits.medium @Digits.medium                @Digits.all' lookup digit2medium;
-  sub [@NumSign @YearSign           ] @Digits.medium @Digits.medium @Digits.medium @Digits.all' lookup digit2medium;
+  // Uniscribe or HarfBuzz ‘latn’
+  sub [@EndOfAyah          ] @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
+  sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
+  sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small;
+
+  sub [@NumSign @YearSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi;
+
+  // HarfBuzz ‘arab’
+  sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah];
+  sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
+  sub @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
+
+  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign]' lookup Sign4;
+  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign]' lookup Sign3;
+  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign];
+  sub @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign];
 } calt;
 
+// Should have been merged with the Uniscribe lookup above as we do for
+// HarfBuzz, but then Uniscribe would crash
 feature calt {
-  sub @NumSign' lookup NumSign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium;
-  sub @NumSign' lookup NumSign3 @Digits.medium @Digits.medium @Digits.medium;
-  sub @SafhaSign' lookup SafhaSign3 @Digits.medium @Digits.medium @Digits.medium;
+  sub @NumSign'   lookup Sign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium;
+  sub @NumSign'   lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
+  sub @SafhaSign' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
 } calt;
 
-// now we contextually kern the sign with the digits:
-// * one digit: move digit's x by -(sw + dw)/2 and its Δx by -dw
-// * two digits: the above, then move 1st digit's x by -dw/2 and 2nd digit's x
-//   by -sw/2 and its Δx by -dw
-// * three digits: the above, then move 1st & 2nd digit's x by -dw/2 and 3rd
-//   digit's x by -(sw/2 - dw/2) and its Δx by -dw
-//
-// dw = digit width, sw = sign width
-
+// then we contextually kern the sign with the digits so that they get enclosed by it
 feature kern {
+  // Uniscribe or HarfBuzz ‘latn’
+  pos @EndOfAyah @Digits.small'  <-2210 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-1010 0 -600 0>;
+  pos @EndOfAyah @Digits.small'  <-1910 0 -600 0> @Digits.small'  <-1310 0 -600 0>;
   pos @EndOfAyah @Digits.small'  <-1610 0 -600 0>;
-  pos @NumSign   @Digits.medium' <-1700 0 -900 0>;
-  pos @NumSign3  @Digits.medium' <-2200 0 -900 0>;
-  pos @NumSign4  @Digits.medium' <-2650 0 -900 0>;
-  pos @YearSign  @Digits.medium' <-2275 0 -900 0>;
-  pos @FootNote  @Digits.small'  <-1090 0 -600 0>;
-  pos @SafhaSign @Digits.medium' <-1775 0 -900 0>;
-  pos @SafhaSign3 @Digits.medium' <-2400 0 -900 0>;
-} kern;
 
-feature kern {
-  pos @EndOfAyah @Digits.small'  <-300 0 0 0> @Digits.small;
-  pos @NumSign   @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @NumSign3  @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @NumSign4  @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @FootNote  @Digits.small'  <-300 0 0 0> @Digits.small;
-  pos @SafhaSign @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @SafhaSign3 @Digits.medium' <-450 0 0 0> @Digits.medium;
-} kern;
+  pos @FootNote @Digits.small'  <-1390 0 -600 0> @Digits.small'  <-790  0 -600 0>;
+  pos @FootNote @Digits.small'  <-1090 0 -600 0>;
 
-feature kern {
-  pos @EndOfAyah @Digits.small  @Digits.small'  <-1310 0 -600 0>;
-  pos @NumSign   @Digits.medium @Digits.medium' <-1250 0 -900 0>;
-  pos @NumSign3  @Digits.medium @Digits.medium' <-1800 0 -900 0>;
-  pos @NumSign4  @Digits.medium @Digits.medium' <-2250 0 -900 0>;
-  pos @YearSign  @Digits.medium @Digits.medium' <-1825 0 -900 0>;
-  pos @FootNote  @Digits.small  @Digits.small'  <-790  0 -600 0>;
-  pos @SafhaSign @Digits.medium @Digits.medium' <-1325 0 -900 0>;
-  pos @SafhaSign3 @Digits.medium @Digits.medium' <-1950 0 -900 0>;
-} kern;
+  pos @NumSign4 @Digits.medium' <-3850 0 -900 0> @Digits.medium' <-2950 0 -900 0> @Digits.medium' <-2050 0 -900 0> @Digits.medium' <-1150 0 -900 0>;
+  pos @NumSign3 @Digits.medium' <-2950 0 -900 0> @Digits.medium' <-2050 0 -900 0> @Digits.medium' <-1150 0 -900 0>;
+  pos @NumSign  @Digits.medium' <-2150 0 -900 0> @Digits.medium' <-1250 0 -900 0>;
+  pos @NumSign  @Digits.medium' <-1700 0 -900 0>;
 
-feature kern {
-  pos @EndOfAyah @Digits.small'  <-300 0 0 0> @Digits.small  @Digits.small;
-  pos @NumSign   @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-  pos @NumSign3  @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-  pos @NumSign4  @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-  pos @YearSign  @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-  pos @SafhaSign @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-  pos @SafhaSign3 @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-} kern;
+  pos @YearSign @Digits.medium' <-3625 0 -900 0> @Digits.medium' <-2725 0 -900 0> @Digits.medium' <-1825 0 -900 0> @Digits.medium' <-925  0 -900 0>;
+  pos @YearSign @Digits.medium' <-3175 0 -900 0> @Digits.medium' <-2275 0 -900 0> @Digits.medium' <-1375 0 -900 0>;
+  pos @YearSign @Digits.medium' <-2725 0 -900 0> @Digits.medium' <-1825 0 -900 0>;
+  pos @YearSign @Digits.medium' <-2275 0 -900 0>;
 
-feature kern {
-  pos @EndOfAyah @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small;
-  pos @NumSign   @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @NumSign3  @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @NumSign4  @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @YearSign  @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @SafhaSign @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @SafhaSign3 @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-} kern;
+  pos @SafhaSign3 @Digits.medium' <-3275 0 -900 0> @Digits.medium' <-2375 0 -900 0> @Digits.medium' <-1475 0 -900 0>;
+  pos @SafhaSign  @Digits.medium' <-2225 0 -900 0> @Digits.medium' <-1325 0 -900 0>;
+  pos @SafhaSign  @Digits.medium' <-1775 0 -900 0>;
 
-feature kern {
-  pos @EndOfAyah @Digits.small  @Digits.small  @Digits.small'  <-1010 0 -600 0>;
-  pos @NumSign   @Digits.medium @Digits.medium @Digits.medium' <-800  0 -900 0>;
-  pos @NumSign3  @Digits.medium @Digits.medium @Digits.medium' <-1350 0 -900 0>;
-  pos @NumSign4  @Digits.medium @Digits.medium @Digits.medium' <-1800 0 -900 0>;
-  pos @YearSign  @Digits.medium @Digits.medium @Digits.medium' <-1375 0 -900 0>;
-  pos @SafhaSign3 @Digits.medium @Digits.medium @Digits.medium' <-1500 0 -900 0>;
-} kern;
-
-feature kern {
-  pos @YearSign @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @Digits.medium;
-  pos @NumSign4 @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @Digits.medium;
-} kern;
-
-feature kern {
-  pos @YearSign @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-  pos @NumSign4 @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium;
-} kern;
-
-feature kern {
-  pos @YearSign @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-  pos @NumSign4 @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium;
-} kern;
-
-feature kern {
-  pos @YearSign @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-925  0 -900 0>;
-  pos @NumSign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-1350 0 -900 0>;
-} kern;
-
-/*************/
-// HarfBuzz flips LTR Arabic runs before applying OpenType, but this is not what
-// other engines does, so the above code does not work as it expects the digits
-// and the sign in LTR order, so we do it for RTL order below until this is
-// changed in HarfBuzz.
-feature calt {
-  sub @Digits.all' lookup digit2small                             [@EndOfAyah @FootNote];
-} calt;
-
-feature calt {
-  sub @Digits.all' lookup digit2small @Digits.small               [@EndOfAyah @FootNote];
-} calt;
-
-feature calt {
-  sub @Digits.all' lookup digit2small @Digits.small @Digits.small [@EndOfAyah          ];
-} calt;
-
-feature calt {
-  sub @Digits.all' lookup digit2medium                                              [@NumSign @YearSign @SafhaSign];
-} calt;
-
-feature calt {
-  sub @Digits.all' lookup digit2medium @Digits.medium                               [@NumSign @YearSign @SafhaSign];
-} calt;
-
-feature calt {
-  sub @Digits.all' lookup digit2medium @Digits.medium @Digits.medium                [@NumSign @YearSign @SafhaSign];
-} calt;
-
-feature calt {
-  sub @Digits.all' lookup digit2medium @Digits.medium @Digits.medium @Digits.medium [@NumSign @YearSign           ];
-} calt;
-
-feature calt {
-  sub @Digits.medium @Digits.medium @Digits.medium @Digits.medium @NumSign' lookup NumSign4;
-  sub @Digits.medium @Digits.medium @Digits.medium                @NumSign' lookup NumSign3;
-  sub @Digits.medium @Digits.medium @Digits.medium              @SafhaSign' lookup SafhaSign3;
-} calt;
-
-feature kern {
+  // HarfBuzz ‘arab’
+  pos @Digits.small'  <-1010 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-2210 0 -600 0> @EndOfAyah;
+  pos @Digits.small'  <-1310 0 -600 0> @Digits.small'  <-1910 0 -600 0> @EndOfAyah;
   pos @Digits.small'  <-1610 0 -600 0> @EndOfAyah;
-  pos @Digits.medium' <-1700 0 -900 0> @NumSign  ;
-  pos @Digits.medium' <-2200 0 -900 0> @NumSign3 ;
-  pos @Digits.medium' <-2650 0 -900 0> @NumSign4 ;
-  pos @Digits.medium' <-2275 0 -900 0> @YearSign ;
-  pos @Digits.small'  <-1090 0 -600 0> @FootNote ;
+
+  pos @Digits.small'  <-790  0 -600 0> @Digits.small'  <-1390 0 -600 0> @FootNote;
+  pos @Digits.small'  <-1090 0 -600 0> @FootNote;
+
+  pos @Digits.medium' <-1150 0 -900 0> @Digits.medium' <-2050 0 -900 0> @Digits.medium' <-2950 0 -900 0> @Digits.medium' <-3850 0 -900 0> @NumSign4;
+  pos @Digits.medium' <-1150 0 -900 0> @Digits.medium' <-2050 0 -900 0> @Digits.medium' <-2950 0 -900 0> @NumSign3;
+  pos @Digits.medium' <-1250 0 -900 0> @Digits.medium' <-2150 0 -900 0> @NumSign;
+  pos @Digits.medium' <-1700 0 -900 0> @NumSign;
+
+  pos @Digits.medium' <-925  0 -900 0> @Digits.medium' <-1825 0 -900 0> @Digits.medium' <-2725 0 -900 0> @Digits.medium' <-3625 0 -900 0> @YearSign;
+  pos @Digits.medium' <-1375 0 -900 0> @Digits.medium' <-2275 0 -900 0> @Digits.medium' <-3175 0 -900 0> @YearSign;
+  pos @Digits.medium' <-1825 0 -900 0> @Digits.medium' <-2725 0 -900 0> @YearSign;
+  pos @Digits.medium' <-2275 0 -900 0> @YearSign;
+
+  pos @Digits.medium' <-1475 0 -900 0> @Digits.medium' <-2375 0 -900 0> @Digits.medium' <-3275 0 -900 0> @SafhaSign3;
+  pos @Digits.medium' <-1325 0 -900 0> @Digits.medium' <-2225 0 -900 0> @SafhaSign;
   pos @Digits.medium' <-1775 0 -900 0> @SafhaSign;
-  pos @Digits.medium' <-2400 0 -900 0> @SafhaSign3;
 } kern;
-
-feature kern {
-  pos @Digits.small  @Digits.small'  <-300 0 0 0> @EndOfAyah;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @NumSign  ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @NumSign3 ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @NumSign4 ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign ;
-  pos @Digits.small  @Digits.small'  <-300 0 0 0> @FootNote ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @SafhaSign;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @SafhaSign3;
-} kern;
-
-feature kern {
-  pos @Digits.small'  <-1310 0 -600 0> @Digits.small  @EndOfAyah;
-  pos @Digits.medium' <-1250 0 -900 0> @Digits.medium @NumSign  ;
-  pos @Digits.medium' <-1800 0 -900 0> @Digits.medium @NumSign3 ;
-  pos @Digits.medium' <-2250 0 -900 0> @Digits.medium @NumSign4 ;
-  pos @Digits.medium' <-1825 0 -900 0> @Digits.medium @YearSign ;
-  pos @Digits.small'  <-790  0 -600 0> @Digits.small  @FootNote ;
-  pos @Digits.medium' <-1325 0 -900 0> @Digits.medium @SafhaSign;
-  pos @Digits.medium' <-1950 0 -900 0> @Digits.medium @SafhaSign3;
-} kern;
-
-feature kern {
-  pos @Digits.small  @Digits.small  @Digits.small'  <-300 0 0 0> @EndOfAyah;
-  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @NumSign3 ;
-  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @NumSign4 ;
-  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign ;
-  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @SafhaSign3;
-} kern;
-
-feature kern {
-  pos @Digits.small  @Digits.small'  <-300 0 0 0> @Digits.small  @EndOfAyah;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @NumSign3 ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @NumSign4 ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @YearSign ;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @SafhaSign3;
-} kern;
-
-feature kern {
-  pos @Digits.small'  <-1010 0 -600 0> @Digits.small  @Digits.small  @EndOfAyah;
-  pos @Digits.medium' <-1350 0 -900 0> @Digits.medium @Digits.medium @NumSign3 ;
-  pos @Digits.medium' <-1800 0 -900 0> @Digits.medium @Digits.medium @NumSign4 ;
-  pos @Digits.medium' <-1375 0 -900 0> @Digits.medium @Digits.medium @YearSign ;
-  pos @Digits.medium' <-1500 0 -900 0> @Digits.medium @Digits.medium @SafhaSign3;
-} kern;
-
-feature kern {
-  pos @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @YearSign;
-  pos @Digits.medium @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @NumSign4;
-} kern;
-
-feature kern {
-  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @YearSign;
-  pos @Digits.medium @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @NumSign4;
-} kern;
-
-feature kern {
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @YearSign;
-  pos @Digits.medium @Digits.medium' <-450 0 0 0> @Digits.medium @Digits.medium @NumSign4;
-} kern;
-
-feature kern {
-  pos @Digits.medium' <-925  0 -900 0> @Digits.medium @Digits.medium @Digits.medium @YearSign;
-  pos @Digits.medium' <-1350 0 -900 0> @Digits.medium @Digits.medium @Digits.medium @NumSign4;
-} kern;
-/************/
