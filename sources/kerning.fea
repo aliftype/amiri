@@ -32,6 +32,18 @@ feature kern {
   pos @Dal_1'  <-400 0 -400 0>  @Kaf_4;
 } kern;
 
+lookup YaaBarree3Kern {
+  pos @aAyn.init <0 0 440 0>;
+  pos @aBaa.init_BaaBaaHeh <0 0 837 0>;
+  pos @aFaa.init <0 0 710 0>;
+  pos @aHeh.init <0 0 400 0>;
+  pos @aLam.init <0 0 955 0>;
+  pos @aMem.init <0 0 520 0>;
+  pos @aSen.init <0 0 150 0>;
+  pos @aTaa.init <0 0 150 0>;
+  pos uni06BE.init <0 0 400 0>;
+} YaaBarree3Kern;
+
 feature kern {
   lookupflag IgnoreMarks;
   pos @RaaWaw' <-600 0 -600 0>  @Kaf_5;
@@ -52,6 +64,11 @@ feature kern {
 
   // +ve kern so that the tail of raa/waw does not touch the dot of baa
   pos @1st_2' < 170 0  170 0> @aBaaDotBelow;
+
+  // increase advance width for first glyph in 3-letter Baree Yaa ligatures
+  pos [@aAyn.init @aBaa.init_BaaBaaHeh @aFaa.init @aHeh.init @aLam.init
+       @aMem.init @aSen.init @aTaa.init uni06BE.init]' lookup YaaBarree3Kern
+       @aBaa.medi_YaaBarree;
 } kern;
 
 // we don't want to ignore marks here

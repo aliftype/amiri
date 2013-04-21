@@ -903,6 +903,23 @@ feature calt {
       [@aYaaBarree.fina]'      lookup ToothYaaBarree;
 } calt;
 
+lookup ToothYaaBarreeFina {
+  sub @aBaa.medi by @aBaa.medi_YaaBarree;
+  sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaHeh;
+  sub @aBaa.medi_BaaBaaInit by @aBaa.medi_YaaBarree;
+  sub @aYaaBarree.fina by @aYaaBarree.fina_PostToothFina;
+} ToothYaaBarreeFina;
+
+feature calt {
+  lookupflag IgnoreMarks;
+  sub [@aBaa.medi]'       lookup ToothYaaBarreeFina
+      [@aYaaBarree.fina]' lookup ToothYaaBarreeFina;
+
+  sub [@aBaa.init_BaaBaaIsol]' lookup ToothYaaBarreeFina
+      [@aBaa.medi_BaaBaaInit]' lookup ToothYaaBarreeFina
+      [@aYaaBarree.fina]'      lookup ToothYaaBarreeFina;
+} calt;
+
 lookup AscenderYaaBarree {
   sub @aBaa.init by @aBaa.init_YaaBarree;
   sub @aFaa.init by @aFaa.init_YaaBarree;
