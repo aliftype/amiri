@@ -1,9 +1,8 @@
 StartChar: uni0766.init_MemRaaIsol
 Encoding: 66947 -1 1695
 Width: 710
-Flags: W
-AnchorPoint: "TashkilAbove" 380 1640 basechar 0
 AnchorPoint: "TashkilBelow" 230 -670 basechar 0
+AnchorPoint: "TashkilAbove" 380 900 basechar 0
 LayerCount: 3
 Fore
 Refer: 194 -1 N 1 0 0 1 420 -272 2
