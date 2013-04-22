@@ -1,0 +1,27 @@
+StartChar: aYaaBarree.fina_PostToothFina
+Encoding: 70250 -1 5808
+Width: 640
+Flags: W
+AnchorPoint: "TashkilBelow" 500 -670 basechar 0
+AnchorPoint: "DigitAbove" 500 670 basechar 0
+AnchorPoint: "TashkilAbove" 500 1640 basechar 0
+AnchorPoint: "HamzaAbove" 600 670 basechar 0
+LayerCount: 3
+Back
+SplineSet
+995 -20 m 0,0,1
+ 848 17 848 17 825 249 c 0,2,3
+ 820 301 820 301 843 336 c 0,4,5
+ 860 361 860 361 888 367 c 0,6,7
+ 911 371 911 371 920 340 c 0,8,9
+ 928 310 928 310 941 286 c 0,10,11
+ 982 214 982 214 1091 207 c 0,12,13
+ 1112 206 1112 206 1125 194 c 0,14,15
+ 1145 176 1145 176 1144 140 c 0,16,17
+ 1143 96 1143 96 1108 13 c 0,18,19
+ 1093 -24 1093 -24 1061 -25 c 0,20,21
+ 1023 -27 1023 -27 995 -20 c 0,0,1
+EndSplineSet
+Fore
+Refer: 4656 -1 N 1 0 0 1 0 -430 2
+EndChar
