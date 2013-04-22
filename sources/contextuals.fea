@@ -891,68 +891,68 @@ feature calt {
       [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
 } calt;
 
-lookup ToothYaaBarree {
-  sub @aSen.init by @aSen.init_YaaBarree;
-  sub @aSad.init by @aSad.init_YaaBarree;
-  sub @aYaaBarree.fina by @aYaaBarree.fina_PostTooth;
-} ToothYaaBarree;
+lookup ToothYaaBari {
+  sub @aSen.init by @aSen.init_YaaBari;
+  sub @aSad.init by @aSad.init_YaaBari;
+  sub @aYaaBari.fina by @aYaaBari.fina_PostTooth;
+} ToothYaaBari;
 
 feature calt {
   lookupflag IgnoreMarks;
-  sub [@aSen.init @aSad.init]' lookup ToothYaaBarree
-      [@aYaaBarree.fina]'      lookup ToothYaaBarree;
+  sub [@aSen.init @aSad.init]' lookup ToothYaaBari
+      [@aYaaBari.fina]'      lookup ToothYaaBari;
 } calt;
 
-lookup ToothYaaBarreeFina {
-  sub @aBaa.medi            by @aBaa.medi_YaaBarree;
-  sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaYaaBarree;
-  sub @aBaa.medi_BaaBaaInit by @aBaa.medi_YaaBarree;
-  sub @aHaa.init_DotBelow   by @aHaa.init_BaaYaaBarree;
-  sub @aYaaBarree.fina      by @aYaaBarree.fina_PostToothFina;
-} ToothYaaBarreeFina;
+lookup ToothYaaBariFina {
+  sub @aBaa.medi            by @aBaa.medi_YaaBari;
+  sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaYaaBari;
+  sub @aBaa.medi_BaaBaaInit by @aBaa.medi_YaaBari;
+  sub @aHaa.init_DotBelow   by @aHaa.init_BaaYaaBari;
+  sub @aYaaBari.fina      by @aYaaBari.fina_PostToothFina;
+} ToothYaaBariFina;
 
 feature calt {
   lookupflag IgnoreMarks;
-  sub [@aHaa.init_DotBelow]' lookup ToothYaaBarreeFina
-      [@aBaa.medi]'          lookup ToothYaaBarreeFina
-      [@aYaaBarree.fina]'    lookup ToothYaaBarreeFina;
+  sub [@aHaa.init_DotBelow]' lookup ToothYaaBariFina
+      [@aBaa.medi]'          lookup ToothYaaBariFina
+      [@aYaaBari.fina]'    lookup ToothYaaBariFina;
 
-  sub [@aBaa.medi]'       lookup ToothYaaBarreeFina
-      [@aYaaBarree.fina]' lookup ToothYaaBarreeFina;
+  sub [@aBaa.medi]'       lookup ToothYaaBariFina
+      [@aYaaBari.fina]' lookup ToothYaaBariFina;
 
-  sub [@aBaa.init_BaaBaaIsol]' lookup ToothYaaBarreeFina
-      [@aBaa.medi_BaaBaaInit]' lookup ToothYaaBarreeFina
-      [@aYaaBarree.fina]'      lookup ToothYaaBarreeFina;
+  sub [@aBaa.init_BaaBaaIsol]' lookup ToothYaaBariFina
+      [@aBaa.medi_BaaBaaInit]' lookup ToothYaaBariFina
+      [@aYaaBari.fina]'      lookup ToothYaaBariFina;
 } calt;
 
-lookup AscenderYaaBarree {
-  sub @aBaa.init by @aBaa.init_YaaBarree;
-  sub @aFaa.init by @aFaa.init_YaaBarree;
-  sub @aLam.init by @aLam.init_YaaBarree;
-  sub @aKaf.init by @aKaf.init_YaaBarree;
-  sub @aYaaBarree.fina by @aYaaBarree.fina_PostAscender;
-} AscenderYaaBarree;
+lookup AscenderYaaBari {
+  sub @aBaa.init by @aBaa.init_YaaBari;
+  sub @aFaa.init by @aFaa.init_YaaBari;
+  sub @aLam.init by @aLam.init_YaaBari;
+  sub @aKaf.init by @aKaf.init_YaaBari;
+  sub @aYaaBari.fina by @aYaaBari.fina_PostAscender;
+} AscenderYaaBari;
 
 feature calt {
   lookupflag IgnoreMarks;
-  sub [@aBaa.init @aFaa.init @aLam.init @aKaf.init]' lookup AscenderYaaBarree
-      [@aYaaBarree.fina]'                            lookup AscenderYaaBarree;
+  sub [@aBaa.init @aFaa.init @aLam.init @aKaf.init]' lookup AscenderYaaBari
+      [@aYaaBari.fina]'                            lookup AscenderYaaBari;
 } calt;
 
-lookup AynYaaBarree {
-  sub @aHaa.init by @aHaa.init_YaaBarree;
-  sub @aHeh.init by @aHeh.init_YaaBarree;
-  sub uni06BE.init by uni06BE.init_YaaBarree;
-  sub @aAyn.init by @aAyn.init_YaaBarree;
-  sub @aTaa.init by @aTaa.init_YaaBarree;
-  sub @aMem.init_dots by @aMem.init_YaaBarree;
-  sub @aYaaBarree.fina by @aYaaBarree.fina_PostAyn;
-} AynYaaBarree;
+lookup AynYaaBari {
+  sub @aHaa.init by @aHaa.init_YaaBari;
+  sub @aHeh.init by @aHeh.init_YaaBari;
+  sub uni06BE.init by uni06BE.init_YaaBari;
+  sub @aAyn.init by @aAyn.init_YaaBari;
+  sub @aTaa.init by @aTaa.init_YaaBari;
+  sub @aMem.init_dots by @aMem.init_YaaBari;
+  sub @aYaaBari.fina by @aYaaBari.fina_PostAyn;
+} AynYaaBari;
 
 feature calt {
   lookupflag IgnoreMarks;
-  sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init_dots uni06BE.init]' lookup AynYaaBarree
-       @aYaaBarree.fina'                                                          lookup AynYaaBarree;
+  sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init_dots uni06BE.init]' lookup AynYaaBari
+       @aYaaBari.fina'                                                          lookup AynYaaBari;
 } calt;
 
 // default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
