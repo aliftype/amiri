@@ -2,8 +2,8 @@ StartChar: uni0768.medi_YaaBarree
 Encoding: 70261 -1 5816
 Width: 420
 VWidth: 0
+AnchorPoint: "TashkilAbove" 150 1884 basechar 0
 AnchorPoint: "TashkilBelow" 213 -1010 basechar 0
-AnchorPoint: "TashkilAbove" 213 1640 basechar 0
 LayerCount: 2
 Fore
 Refer: 212 -1 N 1 0 0 1 30 1130 2

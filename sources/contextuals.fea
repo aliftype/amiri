@@ -904,14 +904,19 @@ feature calt {
 } calt;
 
 lookup ToothYaaBarreeFina {
-  sub @aBaa.medi by @aBaa.medi_YaaBarree;
-  sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaHeh;
+  sub @aBaa.medi            by @aBaa.medi_YaaBarree;
+  sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaYaaBarree;
   sub @aBaa.medi_BaaBaaInit by @aBaa.medi_YaaBarree;
-  sub @aYaaBarree.fina by @aYaaBarree.fina_PostToothFina;
+  sub @aHaa.init_DotBelow   by @aHaa.init_BaaYaaBarree;
+  sub @aYaaBarree.fina      by @aYaaBarree.fina_PostToothFina;
 } ToothYaaBarreeFina;
 
 feature calt {
   lookupflag IgnoreMarks;
+  sub [@aHaa.init_DotBelow]' lookup ToothYaaBarreeFina
+      [@aBaa.medi]'          lookup ToothYaaBarreeFina
+      [@aYaaBarree.fina]'    lookup ToothYaaBarreeFina;
+
   sub [@aBaa.medi]'       lookup ToothYaaBarreeFina
       [@aYaaBarree.fina]' lookup ToothYaaBarreeFina;
 

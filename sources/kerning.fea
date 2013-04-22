@@ -34,7 +34,6 @@ feature kern {
 
 lookup YaaBarree3Kern {
   pos @aAyn.init <0 0 440 0>;
-  pos @aBaa.init_BaaBaaHeh <0 0 837 0>;
   pos @aFaa.init <0 0 710 0>;
   pos @aHeh.init <0 0 400 0>;
   pos @aLam.init <0 0 955 0>;
@@ -66,7 +65,7 @@ feature kern {
   pos @1st_2' < 170 0  170 0> @aBaaDotBelow;
 
   // increase advance width for first glyph in 3-letter Baree Yaa ligatures
-  pos [@aAyn.init @aBaa.init_BaaBaaHeh @aFaa.init @aHeh.init @aLam.init
+  pos [@aAyn.init @aFaa.init @aHeh.init @aLam.init
        @aMem.init @aSen.init @aTaa.init uni06BE.init]' lookup YaaBarree3Kern
        @aBaa.medi_YaaBarree;
 } kern;
