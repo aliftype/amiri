@@ -68,6 +68,9 @@ feature kern {
   pos [@aAyn.init @aFaa.init @aHeh.init @aLam.init
        @aMem.init @aSen.init @aTaa.init uni06BE.init]' lookup YaaBari3Kern
        @aBaa.medi_YaaBari;
+
+  pos [@aAlf.isol @Alf_2]' <200 0 200 0> @aBaa.init_BaaNonIsol;
+  pos [@aAlf.isol @Alf_2]' <300 0 300 0> @aBaa.init_BaaRaaIsol;
 } kern;
 
 // we don't want to ignore marks here
