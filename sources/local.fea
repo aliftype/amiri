@@ -4,13 +4,15 @@ lookup loclPunct {
 } loclPunct;
 #endif
 
-lookup loclUrduDigits {
+lookup loclUrdu {
   sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
-} loclUrduDigits;
+  sub uni0657 by uni0657.urd;
+} loclUrdu;
 
-lookup loclSindhiDigits {
+lookup loclSindhi {
   sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
-} loclSindhiDigits;
+  sub uni0657 by uni0657.urd;
+} loclSindhi;
 
 feature locl {
 #ifndef QURAN
@@ -20,13 +22,13 @@ feature locl {
 #endif
 
   language URD exclude_dflt;
-  lookup loclUrduDigits;
+  lookup loclUrdu;
 #ifndef QURAN
   lookup loclPunct;
 #endif
 
   language SND exclude_dflt;
-  lookup loclSindhiDigits;
+  lookup loclSindhi;
 #ifndef QURAN
   lookup loclPunct;
 #endif
@@ -47,13 +49,13 @@ feature ccmp {
 #endif
 
   language URD exclude_dflt;
-  lookup loclUrduDigits;
+  lookup loclUrdu;
 #ifndef QURAN
   lookup loclPunct;
 #endif
 
   language SND exclude_dflt;
-  lookup loclSindhiDigits;
+  lookup loclSindhi;
 #ifndef QURAN
   lookup loclPunct;
 #endif
