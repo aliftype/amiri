@@ -66,6 +66,16 @@ feature calt {
   sub [uni0647 uni06D5 uni06C1 uni0647.fina uni06D5.fina uni06C1.fina] [uni0654]' by hamza.above;
 } calt;
 
+lookup BaaInitWide {
+  sub @aBaa.init by @aBaa.init_Wide;
+} BaaInitWide;
+
+feature calt {
+  sub @aBaa.init' lookup BaaInitWide @Tashkil.above' [@aGaf.medi @aGaf.fina]';
+  sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
+  sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
+} calt;
+
 lookup AboveHaaInit {
   sub @aBaa.init by @aBaa.init_BaaHaaInit;
   sub @aHaa.medi by @aHaa.medi_SadHaaInit;
@@ -1315,7 +1325,7 @@ feature calt {
 // with a wider variant.
 feature calt {
   lookupflag IgnoreMarks;
-  sub [@aBaa.init]' [@aAlf.fina] by [@aBaa.init_Wide];
+  sub @aBaa.init' lookup BaaInitWide @aAlf.fina;
 } calt;
 
 // If the Alef has no Hamza below, or there is no marks above the Baa, revert to
