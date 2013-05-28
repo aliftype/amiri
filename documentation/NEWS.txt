@@ -1,3 +1,33 @@
+Amiri 0.106 (2013-05-28)
+------------------------
+* New glyphs:
+ - New, more conventional shape for gaf, the old shape can be activated with
+   “ss04” feature.
+ - Redrawn Persian digits
+ - New inverted damma, the old one moved to Urdu-specific “locl“ feature.
+ - More contextual forms for letter followed by final bari yeh.
+
+* Fixes:
+ - Add +ve kerning after alef in أثر and أثن.
+ - Cleanup some bold glyphs.
+ - Fix ring position of few U+0620 glyphs.
+ - Lower the marks above wide isolated glyphs.
+ - Rewrite subtending marks lookups to become much faster.
+ - Shorten final Alef with tatweel a bit.
+ - Bigger quotes.
+ - Increase slant angle of slanted font.
+ - Use medium sized digits with safha and number signs instead of small ones.
+ - Many smaller changes.
+
+* Latin:
+ - Remove the tooth from italic longs.
+
+* License
+ - Drop the OFL reserved font name clause; no need to rename the font when
+   modifying it anymore.
+
+* A draft user manual (Arabic only for now) is included.
+
 Amiri 0.105 (2012-12-31)
 ------------------------
 * New Quran font:
