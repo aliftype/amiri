@@ -23,6 +23,7 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
+CSSS=$(WEB)/$(NAME).css
 PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/documentation-arabic.pdf
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
