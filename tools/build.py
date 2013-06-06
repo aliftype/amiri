@@ -13,20 +13,13 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-# minimum required FontForge version
-min_ff_version = "20120702"
-
 script_lang = (('latn', ('dflt', 'TRK ')), ('arab', ('dflt', 'ARA ', 'URD ', 'SND ')), ('DFLT', ('dflt',)))
 
-import fontforge
-import psMat
+from sortsmill import ffcompat as fontforge
+from sortsmill import psMat
 import sys
 import os
-import getopt
-import math
-import unicodedata
 from tempfile import mkstemp
-from fontTools.ttLib import TTFont
 
 def genCSS(font, base):
     """Generates a CSS snippet for webfont usage based on:
@@ -314,6 +307,7 @@ def buildComposition(font, glyphnames):
     font.addLookup("Latin composition", 'gsub_ligature', (), (('ccmp', script_lang),))
     font.addLookupSubtable("Latin composition", "Latin composition subtable")
 
+    import unicodedata
     for name in glyphnames:
         u = fontforge.unicodeFromName(name)
         if 0 < u < 0xfb00:
@@ -601,6 +595,7 @@ def makeWeb(infile, outfile):
     font.close()
 
     # now open in fontTools
+    from fontTools.ttLib import TTFont
     font = TTFont(tmpfont, recalcBBoxes=0)
 
     # our 'name' table is a bit bulky, and of almost no use in for web fonts,
@@ -648,6 +643,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
     font = makeDesktop(infile, outfile, feafile, version, False, False)
 
     # compute amout of skew, magic formula copied from fontforge sources
+    import math
     skew = psMat.skew(-slant * math.pi/180.0)
 
     font.selection.all()
@@ -831,10 +827,11 @@ Options:
     sys.exit(code)
 
 if __name__ == "__main__":
-    if fontforge.version() < min_ff_version:
-        print "You need FontForge %s or newer to build Amiri fonts" %min_ff_version
-        sys.exit(-1)
+    #if fontforge.version() < min_ff_version:
+    #    print "You need FontForge %s or newer to build Amiri fonts" %min_ff_version
+    #    sys.exit(-1)
 
+    import getopt
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
