@@ -1,7 +1,8 @@
 StartChar: uni077C
 Encoding: 1916 1916 720
 Width: 1355
-AnchorPoint: "TashkilAbove" 700 1000 basechar 0
+Flags: W
+AnchorPoint: "TashkilAbove" 700 1640 basechar 0
 AnchorPoint: "TashkilBelow" 800 -1154 basechar 0
 LayerCount: 3
 Fore
