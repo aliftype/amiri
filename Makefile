@@ -39,59 +39,59 @@ web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
 $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-quran.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-quran.fea.pp --version $(VERSION) --quran
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-regular.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
 
 $(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-slanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=10
 
 $(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-Bold.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-bold.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-bold.fea.pp --version $(VERSION)
 
 $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-BoldItalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
 
 $(WEB)/%.ttf: %.ttf $(BUILD)
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@mkdir -p $(WEB)
 	@$(FF) --input $< --output $@ --web 1>/dev/null 2>&1
 
 $(WEB)/%.woff: $(WEB)/%.ttf
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@mkdir -p $(WEB)
 	@$(SFNTTOOL) -w $< $@
 
 $(WEB)/%.eot: $(WEB)/%.ttf
-	@echo "   FF\t$@"
+	@echo "   FF	$@"
 	@mkdir -p $(WEB)
 	@$(SFNTTOOL) -e -x $< $@
 
 $(WEB)/%.css: $(WTTF) $(BUILD)
-	@echo "   GEN\t$@"
+	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
 	@$(FF) --css --input "$(WTTF)" --output $@ --version $(VERSION)
 
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
-	@echo "   GEN\t$@"
+	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
 $(DOC)/documentation-arabic.pdf: $(DOC)/documentation-sources/documentation-arabic.tex
-	@echo "   GEN\t$@"
+	@echo "   GEN	$@"
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
 check: $(TEST) $(DTTF)
@@ -112,7 +112,7 @@ PACK=$(SRC)/$(NAME)-regular.sfd $(SRC)/$(NAME)-bold.sfd
 pack: $(PACK)
 
 %.sfd: %.sfdir
-	@echo "   GEN\t$@"
+	@echo "   GEN	$@"
 	@python -c 'import fontforge; f=fontforge.open("$<"); f.save("$@")'
 
 distclean:
