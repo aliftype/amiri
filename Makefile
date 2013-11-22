@@ -1,7 +1,7 @@
 .PHONY: all clean ttf web pack check
 
 NAME=amiri
-VERSION=0.106
+VERSION=0.107
 
 TOOLS=tools
 SRC=sources
@@ -116,7 +116,7 @@ pack: $(PACK)
 	@python -c 'import fontforge; f=fontforge.open("$<"); f.save("$@")'
 
 distclean:
-	@rm -rf $(DIST) $(DIST).tar.bz2
+	@rm -rf $(DIST) $(DIST).zip
 	@rm -rf $(PACK)
 
 dist: all check pack doc
@@ -145,5 +145,5 @@ dist: all check pack doc
 	@cp $(TEST) $(DIST)/$(TESTS)
 	@cp $(BUILD) $(DIST)/$(TOOLS)
 	@cp $(RUNTEST) $(DIST)/$(TOOLS)
-	@tar cfj $(DIST).tar.bz2 $(DIST)
+	@zip -r $(DIST).zip $(DIST)
 	@tar cfj $(DIST)-ctan.tar.bz2 $(DIST) --exclude "$(WEB)*"
