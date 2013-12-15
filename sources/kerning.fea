@@ -140,8 +140,14 @@ feature kern {
            uni06D0.init_BaaSenAltInit uni06CC.init_BaaSenAltInit uni0767.init_BaaSenAltInit];
 
 feature kern {
-  lookupflag IgnoreMarks, RightToLeft;
+  lookupflag IgnoreMarks;
     pos @Raa_2' <180 0 180 0> @aYaa_1;
+} kern;
+
+feature kern {
+  lookupflag IgnoreMarks;
+    pos period.ara' <-300 0 -300 0> [quotedblleft quoteleft];
+    pos period' -150 [quotedblright quoteright];
 } kern;
 
 #ifdef ITALIC
