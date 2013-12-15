@@ -712,6 +712,13 @@ feature calt {
       @Tashkil.below';
 } calt;
 
+// No IgnoreMarks here, to narrow to carry vowels
+feature calt {
+  sub [@aBaa.init]' lookup BaaMemHaaInit
+      [@aMem.medi]' lookup BaaMemHaaInit
+      [@aHaa.medi]' lookup BaaMemHaaInit;
+} calt;
+
 feature calt {
   lookupflag IgnoreMarks;
   sub [@aKaf.init @aKaf.medi]' lookup KafLam
@@ -772,10 +779,6 @@ feature calt {
 
   sub [@aBaa.init]' lookup BaaDalIsol
       [@aDal.fina]' lookup BaaDalIsol;
-
-  sub [@aBaa.init]' lookup BaaMemHaaInit
-      [@aMem.medi]' lookup BaaMemHaaInit
-      [@aHaa.medi]' lookup BaaMemHaaInit;
 
   sub [@aBaa.init]' lookup BaaBaaYaa
       [@aBaa.medi]' lookup BaaBaaYaa
