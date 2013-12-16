@@ -146,8 +146,12 @@ feature kern {
 
 feature kern {
   lookupflag IgnoreMarks;
+#ifndef QURAN
     pos period.ara' <-300 0 -300 0> [quotedblleft quoteleft];
     pos period' -150 [quotedblright quoteright];
+#else
+    pos period'     <-300 0 -300 0> [quotedblleft quoteleft];
+#endif
 } kern;
 
 #ifdef ITALIC
