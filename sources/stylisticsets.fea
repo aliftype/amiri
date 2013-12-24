@@ -69,7 +69,7 @@ feature ss03 {
   lookup localsym;
 } ss03;
 
-# alternate Gaf form
+// alternate Gaf form
 feature ss04 {
   sub @aGaf.isol by @aGaf.alt;
   sub @aGaf.fina by @aGaf.alt.fina;
