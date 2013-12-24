@@ -191,8 +191,22 @@ def generateFont(font, outfile):
     # fix some common font issues
     validateGlyphs(font)
 
-    font.generate(outfile, flags=flags)
+    tmpfile = mkstemp(suffix=os.path.basename(outfile))[1]
+    font.generate(tmpfile, flags=flags)
     font.close()
+
+    # now open in fontTools
+    from fontTools.ttLib import TTFont
+    ftfont = TTFont(tmpfile)
+
+    # force compiling tables by fontTools, saves few tens of KBs
+    for tag in ftfont.keys():
+        if hasattr(ftfont[tag], "compile"):
+            ftfont[tag].compile(ftfont)
+
+    ftfont.save(outfile)
+    ftfont.close()
+    os.remove(tmpfile)
 
 def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
     glyph = font.createChar(uni, name)
@@ -628,12 +642,10 @@ def makeWeb(infile, outfile):
 
     name.names = names
 
-    # FFTM is FontForge specific, remove it
-    del(font['FFTM'])
-
-    # force compiling GPOS/GSUB tables by fontTools, saves few tens of KBs
-    for tag in ('GPOS', 'GSUB'):
-        font[tag].compile(font)
+    # force compiling tables by fontTools, saves few tens of KBs
+    for tag in font.keys():
+        if hasattr(font[tag], "compile"):
+            font[tag].compile(font)
 
     font.save(outfile)
     font.close()
