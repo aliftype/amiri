@@ -606,17 +606,17 @@ def makeWeb(infile, outfile):
                 font.removeGlyph(glyph)
                 break
 
-    tmpfont = mkstemp(suffix=os.path.basename(outfile))[1]
-    font.generate(tmpfont, flags=flags)
+    tmpfile = mkstemp(suffix=os.path.basename(outfile))[1]
+    font.generate(tmpfile, flags=flags)
     font.close()
 
     # now open in fontTools
     from fontTools.ttLib import TTFont
-    font = TTFont(tmpfont, recalcBBoxes=0)
+    ftfont = TTFont(tmpfile)
 
     # our 'name' table is a bit bulky, and of almost no use in for web fonts,
     # so we strip all unnecessary entries.
-    name = font['name']
+    name = ftfont['name']
     names = []
     for record in name.names:
         platID = record.platformID
@@ -643,14 +643,14 @@ def makeWeb(infile, outfile):
     name.names = names
 
     # force compiling tables by fontTools, saves few tens of KBs
-    for tag in font.keys():
-        if hasattr(font[tag], "compile"):
-            font[tag].compile(font)
+    for tag in ftfont.keys():
+        if hasattr(ftfont[tag], "compile"):
+            ftfont[tag].compile(ftfont)
 
-    font.save(outfile)
-    font.close()
+    ftfont.save(outfile)
+    ftfont.close()
 
-    os.remove(tmpfont)
+    os.remove(tmpfile)
 
 def makeSlanted(infile, outfile, feafile, version, slant):
 
