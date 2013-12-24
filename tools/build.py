@@ -123,6 +123,8 @@ def validateGlyphs(font):
         if refs:
             glyph.references = refs
 
+        glyph.round()
+
 def setVersion(font, version):
     font.version = "%07.3f" % float(version)
     for name in font.sfnt_names:
