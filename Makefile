@@ -14,7 +14,9 @@ DIST=$(NAME)-$(VERSION)
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
-FF=python $(BUILD)
+CHECKBLANKS=$(TOOLS)/checkblankglyphs.py
+PY=python
+FF=$(PY) $(BUILD)
 SFNTTOOL=sfnttool
 PP=gpp +c "/*" "*/" +c "//" "\n" +c "\\\n" "" -I$(SRC)
 
@@ -95,11 +97,12 @@ $(DOC)/documentation-arabic.pdf: $(DOC)/documentation-sources/documentation-arab
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
 check: $(TEST) $(DTTF)
+	@$(PY) $(CHECKBLANKS) $(DTTF) 1>/dev/null 2>&1
 ifeq ($(shell which hb-shape),)
 	@echo "hb-shape not found, skipping tests"
 else
 	@echo "running tests"
-	@$(RUNTEST) $(TEST)
+	@$(PY) $(RUNTEST) $(TEST)
 endif
 
 clean:
