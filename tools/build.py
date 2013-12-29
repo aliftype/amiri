@@ -660,6 +660,11 @@ def makeSlanted(infile, outfile, feafile, version, slant):
     import math
     skew = psMat.skew(-slant * math.pi/180.0)
 
+    # Remove Arabic math alphanumerics, they are upright-only.
+    font.selection.select(["ranges"], "u1EE00", "u1EEFF")
+    for glyph in font.selection.byGlyphs:
+        font.removeGlyph(glyph)
+
     font.selection.all()
     punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
              "braceright", "bracketleft", "bracketright", "parenleft",
@@ -791,7 +796,7 @@ def makeQuran(infile, outfile, feafile, version):
 
 def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     font = fontforge.open(infile)
-    font.encoding = "UnicodeBmp" # avoid a crash if compact was set
+    font.encoding = "UnicodeFull" # avoid a crash if compact was set
 
     if version:
         setVersion(font, version)
