@@ -97,11 +97,11 @@ $(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
 check: $(TEST) $(DTTF)
+	@echo "running tests"
 	@$(PY) $(CHECKBLANKS) $(DTTF) 1>/dev/null 2>&1
 ifeq ($(shell which hb-shape),)
 	@echo "hb-shape not found, skipping tests"
 else
-	@echo "running tests"
 	@$(PY) $(RUNTEST) $(TEST)
 endif
 
