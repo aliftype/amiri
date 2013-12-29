@@ -204,4 +204,5 @@ feature kern {
 // compensate for the kasra.
 feature ss05 {
   pos uni0651' <0 210 0 0> [uni0650.small];
+  pos uni0651' <0 350 0 0> [uni064D.small];
 } ss05;
