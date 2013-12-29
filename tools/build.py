@@ -671,7 +671,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
              "parenright", "slash", "backslash", "brokenbar", "uni061F")
 
     for name in punct:
-        font.selection.select(("less", None), name)
+        font.selection.select(["less"], name)
 
     font.transform(skew)
 
