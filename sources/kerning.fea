@@ -200,8 +200,8 @@ feature kern {
 // generated features for anchor points will be inserted here by build script
 {%anchors%}
 
-// With ss05 on, kasra is below shadda, so move the shadda up a bit for glyphs
-// where the anchor is too close.
+// With ss05 on, kasra is below shadda, so move the shadda up a bit to
+// compensate for the kasra.
 feature ss05 {
-  pos @aKaf.init_KafMemIsol uni0651' <0 300 0 0> [uni0650.small2];
+  pos uni0651' <0 300 0 0> [uni0650.small2];
 } ss05;
