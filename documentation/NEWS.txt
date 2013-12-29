@@ -1,3 +1,25 @@
+Amiri 0.107 (2013-12-30)
+------------------------
+* New glyphs:
+ - Arabic math letters from Arabic Mathematical Alphabetic Symbols block
+   (U+1EE00–U+1EEFF).
+ - Optional support for placing the kasra below the shadda, with “ss05”
+   feature.
+ - Missing proportional LTR digits in the slanted font.
+
+* Fixes:
+ - Reverted the lowering of marks above wide isolated glyphs, it made the marks
+   look weird relative to other ones.
+ - Fixed the position of marks above qaf of قح.
+ - Dropped the special combination in تمخ‍ when it is follow vowelled as
+   it was too crowded.
+ - Fixed the position of sukun over shadda.
+ - Fixed the side bearings of ثر, ثن and sisters so that the dots do not clash
+   with preceding glyphs.
+ - Positive kerning between مرين and likes.
+ - Slight kerning between the period and closing quotes.
+ - Made sure the italic European digits are really tabular.
+
 Amiri 0.106 (2013-05-28)
 ------------------------
 * New glyphs:
