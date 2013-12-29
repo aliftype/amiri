@@ -203,5 +203,5 @@ feature kern {
 // With ss05 on, kasra is below shadda, so move the shadda up a bit to
 // compensate for the kasra.
 feature ss05 {
-  pos uni0651' <0 300 0 0> [uni0650.small2];
+  pos uni0651' <0 210 0 0> [uni0650.small];
 } ss05;

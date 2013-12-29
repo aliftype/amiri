@@ -94,5 +94,5 @@ feature ss04 {
 #endif
 
 feature ss05 {
-  sub uni0651 uni0650' by uni0650.small2;
+  sub uni0651 uni0650' by uni0650.small;
 } ss05;
