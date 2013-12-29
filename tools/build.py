@@ -492,14 +492,15 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
 
         for name in digits:
             pname = name + ".prop"
+            glyph = latinfont[pname]
+            glyph.glyphname = name + '.ltr.prop'
+            glyph.unicode = -1
             upright.selection.select(pname)
             upright.copy()
             latinfont.createChar(-1, pname)
             latinfont.selection.select(pname)
             latinfont.paste()
 
-        for name in digits:
-            pname = name + ".prop"
             rtl = latinfont.createChar(-1, name + ".rtl" + ".prop")
             rtl.addReference(pname, italic)
             rtl.useRefsMetrics(pname)
