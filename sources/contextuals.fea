@@ -1340,13 +1340,14 @@ feature calt {
    by [@aBaa.init];
 } calt;
 
-// Replace teh init following teh/them medi by a teh init with two vertical
-// dots
 // XXX: use a different glyph for PDF text extraction
 feature calt {
   lookupflag IgnoreMarks;
   script arab;
   language ARA;
+
+  // Replace teh init following teh/theh medi by a teh init with two vertical
+  // dots.
   sub uni062A.init_BaaBaaIsol'
       [uni062A.medi_BaaBaaInit uni062B.medi_BaaBaaInit]
    by uni067A.init_BaaBaaIsol;
@@ -1354,4 +1355,9 @@ feature calt {
   sub uni062A.init_High'
       [uni062A.medi_High uni062B.medi_High]
    by uni067A.init_High;
+
+  // Ditto for يبين and co.
+  sub [uni0628.medi_BaaBaaInit uni064A.medi_BaaBaaInit]
+      [uni064A.medi_BaaNonFina uni064A.medi_BaaRaaFina]'
+   by [uni06D0.medi_BaaNonFina uni06D0.medi_BaaRaaFina];
 } calt;
