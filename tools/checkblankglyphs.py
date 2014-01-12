@@ -13,15 +13,11 @@ def checkBlanks(font):
 
 if __name__ == "__main__":
     results = []
-    for filename in sys.argv[1:]:
-        font = fontforge.open(filename)
-        blanks = checkBlanks(font)
+    filename = sys.argv[1]
+    font = fontforge.open(filename)
+    blanks = checkBlanks(font)
 
-        if blanks:
-            results.append([filename, blanks])
-
-    if results:
-        for result in results:
-            print >> sys.stderr, "%s has the following suspicious blank glyphs:" % result[0]
-            print >> sys.stderr, result[1]
+    if blanks:
+        print >> sys.stderr, "%s has the following suspicious blank glyphs:" % filename
+        print >> sys.stderr, blanks
         sys.exit(1)
