@@ -695,6 +695,24 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     generateFont(font, outfile)
 
+def scaleGlyph(glyph, amount):
+    """Scales the glyph, but keeps it centered around its original bounding
+    box.
+
+    Logic copied (and simplified for our simple case) from code of FontForge
+    transform dialog, since that logic is not exported to Python interface."""
+    bbox = glyph.boundingBox()
+    x = (bbox[0] + bbox[2]) / 2
+    y = (bbox[1] + bbox[3]) / 2
+    move = psMat.translate(-x, -y)
+    scale = psMat.scale(amount)
+
+    matrix = list(scale)
+    matrix[4] = move[4] * scale[0] + x;
+    matrix[5] = move[5] * scale[3] + y;
+
+    glyph.transform(matrix)
+
 def makeQuran(infile, outfile, feafile, version):
     font = makeDesktop(infile, outfile, feafile, version, False, False)
 
@@ -727,12 +745,12 @@ def makeQuran(infile, outfile, feafile, version):
     dotbelow.addAnchorPoint("TashkilTashkilBelow", "basemark", 220, dotbelow.boundingBox()[1] - 100)
 
     # scale some vowel marks and dots down a bit
-    font["uni0651"].transform(psMat.scale(0.8))
+    scaleGlyph(font["uni0651"], 0.8)
     for mark in ("uni064B", "uni064C", "uni064E", "uni064F", "uni06E1"):
-        font[mark].transform(psMat.scale(0.9))
+        scaleGlyph(font[mark], 0.9)
 
     for dot in ("TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
-        font[dot].transform(psMat.scale(0.9))
+        scaleGlyph(font[dot], 0.9)
 
     quran_glyphs = []
 
