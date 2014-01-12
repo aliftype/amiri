@@ -99,6 +99,7 @@ $(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex
 check: $(TEST) $(DTTF)
 	@echo "running tests"
 	@$(PY) $(CHECKBLANKS) $(DTTF) 1>/dev/null 2>&1
+	@$(foreach font,$(DTTF),echo -e "OTS\t$(font)" && ot-sanitise $(font) > /dev/null &&) true
 ifeq ($(shell which hb-shape),)
 	@echo "hb-shape not found, skipping tests"
 else
