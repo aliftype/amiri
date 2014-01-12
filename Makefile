@@ -100,11 +100,7 @@ check: $(TEST) $(DTTF)
 	@echo "running tests"
 	@$(foreach font,$(DTTF),echo -e "BLANKS\t$(font)" && $(PY) $(CHECKBLANKS) $(font) 1>/dev/null 2>&1 &&) true
 	@$(foreach font,$(DTTF),echo -e "OTS\t$(font)" && ot-sanitise $(font) > /dev/null &&) true
-ifeq ($(shell which hb-shape),)
-	@echo "hb-shape not found, skipping tests"
-else
 	@$(PY) $(RUNTEST) $(TEST)
-endif
 
 clean:
 	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
