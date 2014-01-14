@@ -125,6 +125,9 @@ def validateGlyphs(font):
 
         glyph.round()
 
+        # Hack, OTS rejects ligature carets!
+        glyph.lcarets = ()
+
 def setVersion(font, version):
     font.version = "%07.3f" % float(version)
     for name in font.sfnt_names:
