@@ -9,6 +9,8 @@ lookup SamallTashkil {
 
 feature calt {
   sub [uni0651 uni06EC] @ShaddaTashkil' lookup SamallTashkil;
+  sub @ShaddaTashkil.small @ShaddaTashkil' lookup SamallTashkil;
+  sub @ShaddaTashkil' lookup SamallTashkil @ShaddaTashkil' lookup SamallTashkil;
 } calt;
 
 #ifdef QURAN
