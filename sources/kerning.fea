@@ -87,6 +87,7 @@ feature kern {
 feature kern {
   lookupflag IgnoreMarks;
   pos @RaaWaw' <80 0 80 0> @aYaa.init;
+  pos @RaaWaw' <120 0 120 0> uni061B; // Arabic semicolon
 } kern;
 
 feature kern {
