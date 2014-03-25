@@ -177,22 +177,6 @@ feature calt {
 } calt;
 #endif // QURAN
 
-//
-// sequential tanween
-//
-// The following marks are proposed for inclusion in Unicode 6.1:
-// http://std.dkuug.dk/jtc1/sc2/wg2/docs/n3791.pdf
-//
-// We can use this temporary ligature hack for now.
-
-// rlig as we want it to be applied before calt
-feature rlig {
-  sub uni064E uni064E by uni08F0; // fathatan
-  sub uni064F uni064F by uni08F1; // dammatan
-  sub uni0650 uni0650 by uni08F2; // kasratan
-} rlig;
-
-
 // small waw after isolated/final heh is lower than usual, so we use an
 // alternate glyph for that
 feature calt {
