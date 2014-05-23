@@ -15,7 +15,7 @@ languagesystem latn TRK;
 #endif
 
 #ifndef QURAN
-#include "proportional.fea"
+#include "digits.fea"
 #endif
 
 #include "basic.fea"
