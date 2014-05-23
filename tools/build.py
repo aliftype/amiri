@@ -359,6 +359,22 @@ def buildComposition(font, glyphnames):
 
     return newnames
 
+def makeNumerators(font):
+    digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
+              "eight", "nine",
+              "uni0660", "uni0661", "uni0662", "uni0663", "uni0664",
+              "uni0665", "uni0666", "uni0667", "uni0668", "uni0669",
+              "uni06F0", "uni06F1", "uni06F2", "uni06F3", "uni06F4",
+              "uni06F5", "uni06F6", "uni06F7", "uni06F8", "uni06F9",
+              "uni06F4.urd", "uni06F6.urd", "uni06F7.urd")
+    for name in digits:
+        numr = font.createChar(-1, name + ".numr")
+        small = font[name + ".small"]
+        if not numr.isWorthOutputting():
+            numr.clear()
+            numr.addReference(small.glyphname, psMat.translate(0, 550))
+            numr.width = small.width
+
 def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     styles = {"Regular": "Roman",
               "Slanted": "Italic",
@@ -543,18 +559,20 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
         else:
             refname = name
         small = font.createChar(-1, name + ".small")
-        small.clear()
-        small.addReference(refname, psMat.scale(0.6))
-        small.transform(psMat.translate(0, -40))
-        small.width = 600
-        centerGlyph(small)
+        if not small.isWorthOutputting():
+            small.clear()
+            small.addReference(refname, psMat.scale(0.6))
+            small.transform(psMat.translate(0, -40))
+            small.width = 600
+            centerGlyph(small)
 
         medium = font.createChar(-1, name + ".medium")
-        medium.clear()
-        medium.addReference(refname, psMat.scale(0.8))
-        medium.transform(psMat.translate(0, 50))
-        medium.width = 900
-        centerGlyph(medium)
+        if not medium.isWorthOutputting():
+            medium.clear()
+            medium.addReference(refname, psMat.scale(0.8))
+            medium.transform(psMat.translate(0, 50))
+            medium.width = 900
+            centerGlyph(medium)
 
     for lookup in kern_lookups:
         font.addLookup(lookup,
@@ -691,6 +709,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
     mergeLatin(font, feafile, italic=skew)
+    makeNumerators(font)
 
     # we want to merge features after merging the latin font because many
     # referenced glyphs are in the latin font
@@ -837,10 +856,12 @@ def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
 
     if latin:
         mergeLatin(font, feafile)
+        makeNumerators(font)
 
         # we want to merge features after merging the latin font because many
         # referenced glyphs are in the latin font
         mergeFeatures(font, feafile)
+
 
     if generate:
         generateFont(font, outfile)
