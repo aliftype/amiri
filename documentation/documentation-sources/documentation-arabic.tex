@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 
 \usepackage{url}
 \usepackage{enumitem}
@@ -9,19 +9,32 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 
+\usepackage[
+  bookmarks=true,
+  colorlinks=true,
+  linkcolor=linkcolor,
+  urlcolor=linkcolor,
+  citecolor=linkcolor,
+  pdftitle={الخط الأميري},
+  pdfsubject={توثيق خط المتون النسخي، الخط الأميري},
+  pdfauthor={خالد حسني},
+  pdfkeywords={خط, عربي, مطبعة, أميرية, أميري, يونيكود, أوبن تيب}
+  ]{hyperref}
+
 \definecolor{textcolor}  {rgb}{.25,.25,.25}
 \definecolor{pagecolor}  {rgb}{1.0,.99,.97}
 \definecolor{titlecolor} {rgb}{.67,.00,.05}
+\definecolor{linkcolor}  {rgb}{.80,.00,.05}
 \definecolor{codecolor}  {rgb}{.90,.90,.90}
 
 \setmainlanguage {arabic}
 \setotherlanguage{english}
 \rightfootnoterule
 
-\setmainfont               [Color=textcolor,Ligatures=TeX]                     {Amiri}
-\setmonofont               [Color=textcolor,Scale=MatchLowercase]              {DejaVu Sans Mono}
-\newfontfamily\arabicfont  [Color=textcolor,Script=Arabic,Numbers=Proportional]{Amiri}
-\newfontfamily\arabicfonttt[Color=textcolor,Script=Arabic,Scale=MatchLowercase]{DejaVu Sans Mono}
+\setmainfont               [Ligatures=TeX]                     {Amiri}
+\setmonofont               [Scale=MatchLowercase]              {DejaVu Sans Mono}
+\newfontfamily\arabicfont  [Script=Arabic,Numbers=Proportional]{Amiri}
+\newfontfamily\arabicfonttt[Script=Arabic,Scale=MatchLowercase]{DejaVu Sans Mono}
 
 \newcommand\addff[1]{\addfontfeature{RawFeature={#1}}} % add feature
 \newcommand\addfl[1]{\addff{language=#1}}              % add language
@@ -31,11 +44,11 @@
 %setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
 
-\newfontfamily\titlefont[Color=titlecolor,Script=Arabic]{Amiri}
+\newfontfamily\titlefont[Script=Arabic]{Amiri}
 
-\titleformat*{\section}{\Large\titlefont}
-\titleformat*{\subsection}{\large\titlefont}
-\titleformat*{\subsubsection}{\itshape\titlefont}
+\titleformat*{\section}{\Large\titlefont\color{titlecolor}}
+\titleformat*{\subsection}{\large\titlefont\color{titlecolor}}
+\titleformat*{\subsubsection}{\itshape\titlefont\color{titlecolor}}
 
 \titlespacing{\section}{0pt}{*4}{*1}
 \titlespacing{\subsection}{0pt}{*3}{0pt}
@@ -43,16 +56,17 @@
 
 \renewcommand\U[1]{\colorbox{codecolor}{\texttt{U+#1}}}
 
-\pagecolor{pagecolor}
-
 \title{الخط الأميري}
 \author{خالد حسني}
 
 \begin{document}
 
+\pagecolor{pagecolor}
+\color{textcolor}
+
 \maketitle
-%tableofcontents
-%newpage
+\tableofcontents
+\newpage
 
 \setstretch{1.6}
 
