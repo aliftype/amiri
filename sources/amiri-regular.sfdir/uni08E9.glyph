@@ -1,0 +1,33 @@
+StartChar: uni08E9
+Encoding: 2281 2281 6073
+Width: 0
+Flags: W
+AnchorPoint: "TashkilBelowDot" 499 -670 mark 0
+AnchorPoint: "TashkilBelow" 499 -670 mark 0
+AnchorPoint: "MarkBelow" 450 -670 mark 0
+AnchorPoint: "TashkilTashkilBelow" 287 -889 basemark 0
+LayerCount: 2
+Back
+SplineSet
+689 -944 m 6,0,1
+ 755 -899 755 -899 735 -961 c 6,2,-1
+ 714 -1025 l 6,3,4
+ 704 -1057 704 -1057 680 -1071 c 6,5,-1
+ 322 -1291 l 6,6,7
+ 279 -1317 279 -1317 286 -1272 c 6,8,-1
+ 292 -1233 l 6,9,10
+ 297 -1205 297 -1205 326 -1185 c 6,11,-1
+ 689 -944 l 6,0,1
+681 -740 m 6,12,13
+ 739 -703 739 -703 725 -757 c 6,14,-1
+ 711 -809 l 6,15,16
+ 702 -843 702 -843 668 -862 c 6,17,-1
+ 305 -1073 l 6,18,19
+ 236 -1113 236 -1113 262 -1053 c 6,20,-1
+ 280 -1014 l 6,21,22
+ 292 -985 292 -985 312 -973 c 6,23,-1
+ 681 -740 l 6,12,13
+EndSplineSet
+Fore
+Refer: 6071 2279 N 1 0 0 1 12 -3049 2
+EndChar
