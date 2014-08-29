@@ -383,9 +383,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
 
     style = styles[font.fontname.split("-")[1]]
 
-    latinfile = "amirilatin-%s.sfd" %style
+    latinfile = "amirilatin-%s.sfdir" %style
 
-    tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
+    tmpfont = mkstemp(suffix=os.path.basename(latinfile).replace("sfdir", "sfd"))[1]
     latinfont = fontforge.open("sources/latin/%s" %latinfile)
 
     validateGlyphs(latinfont) # to flatten nested refs mainly
@@ -470,9 +470,9 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     # upright so it works reasonably with bot scripts
     if italic:
         if "bold" in style:
-            upright = fontforge.open("sources/latin/amirilatin-bold.sfd")
+            upright = fontforge.open("sources/latin/amirilatin-bold.sfdir")
         else:
-            upright = fontforge.open("sources/latin/amirilatin-regular.sfd")
+            upright = fontforge.open("sources/latin/amirilatin-regular.sfdir")
 
         shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
                   "quotesingle", "asterisk", "plus", "colon", "semicolon",

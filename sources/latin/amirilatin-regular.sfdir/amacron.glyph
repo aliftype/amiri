@@ -1,0 +1,10 @@
+StartChar: amacron
+Encoding: 257 257 190
+Width: 862
+Flags: W
+LayerCount: 2
+Fore
+Refer: 336 772 N 1 0 0 1 946 54 2
+Refer: 64 97 N 1 0 0 1 0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" amacron.sc
+EndChar

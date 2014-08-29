@@ -1,0 +1,18 @@
+StartChar: oslash.sc
+Encoding: 65649 -1 504
+Width: 1066
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+218 0 m 17,0,1
+ 204 7 204 7 189.5 19.5 c 0,2,3
+ 175 32 175 32 180 40 c 1,4,-1
+ 868 898 l 1,5,6
+ 876 894 876 894 885 888 c 0,7,8
+ 894 882 894 882 902 873.5 c 0,9,10
+ 910 865 910 865 906 860 c 2,11,-1
+ 218 0 l 17,0,1
+EndSplineSet
+Refer: 458 -1 N 1 0 0 1 0 0 2
+EndChar

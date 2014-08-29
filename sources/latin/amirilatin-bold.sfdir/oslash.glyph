@@ -1,0 +1,16 @@
+StartChar: oslash
+Encoding: 248 248 182
+Width: 1064
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+746 910 m 17,0,1
+ 814 885 814 885 810 872 c 1,2,-1
+ 304 -32 l 1,3,4
+ 236 -6 236 -6 240 8 c 1,5,-1
+ 746 910 l 17,0,1
+EndSplineSet
+Refer: 79 111 N 1 0 0 1 0 0 2
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" oslash.sc
+EndChar

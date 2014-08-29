@@ -1,0 +1,18 @@
+StartChar: dcroat
+Encoding: 273 273 206
+Width: 1030
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+438 1120 m 1,0,-1
+ 968 1120 l 2,1,2
+ 980 1120 980 1120 980 1104 c 0,3,4
+ 980 1074 980 1074 968 1050 c 1,5,-1
+ 436 1050 l 2,6,7
+ 426 1050 426 1050 426 1074 c 0,8,9
+ 426 1099 426 1099 438 1120 c 1,0,-1
+EndSplineSet
+Refer: 67 100 N 1 0 0 1 0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" dcroat.sc
+EndChar

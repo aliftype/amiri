@@ -1,0 +1,21 @@
+StartChar: semicolon
+Encoding: 59 59 26
+Width: 504
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+198 734 m 0,0,1
+ 198 790 198 790 241 833 c 0,2,3
+ 284 876 284 876 336 876 c 0,4,5
+ 376 876 376 876 401 849.5 c 0,6,7
+ 426 823 426 823 426 782 c 0,8,9
+ 426 726 426 726 383.5 681 c 0,10,11
+ 341 636 341 636 290 636 c 0,12,13
+ 250 636 250 636 224 664 c 0,14,15
+ 198 692 198 692 198 734 c 0,0,1
+EndSplineSet
+Refer: 11 44 N 1 0 0 1 22 0 2
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" semicolon.sc
+EndChar

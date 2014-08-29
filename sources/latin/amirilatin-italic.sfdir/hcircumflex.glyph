@@ -1,0 +1,10 @@
+StartChar: hcircumflex
+Encoding: 293 293 332
+Width: 940
+Flags: W
+LayerCount: 2
+Fore
+Refer: 71 104 N 1 0 0 1 0 0 3
+Refer: 286 -1 N 1 0 0 1 -180 0 2
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" hcircumflex.sc
+EndChar

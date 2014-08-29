@@ -1,0 +1,20 @@
+StartChar: backslash
+Encoding: 92 92 59
+Width: 802
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+62 1500 m 1,0,1
+ 70 1514 70 1514 102 1514 c 0,2,3
+ 118 1514 118 1514 136 1504 c 128,-1,4
+ 154 1494 154 1494 158 1482 c 0,5,6
+ 738 -22 738 -22 738 -34 c 1,7,8
+ 736 -41 736 -41 722.5 -48.5 c 128,-1,9
+ 709 -56 709 -56 692 -56 c 0,10,11
+ 681 -56 681 -56 667.5 -47 c 128,-1,12
+ 654 -38 654 -38 650 -28 c 0,13,14
+ 144 1288 144 1288 62 1500 c 1,0,1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" backslash.sc
+EndChar

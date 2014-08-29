@@ -1,0 +1,20 @@
+StartChar: bar
+Encoding: 124 124 91
+Width: 414
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+338 1514 m 1,0,1
+ 370 1546 370 1546 426 1546 c 0,2,3
+ 437 1546 437 1546 447 1542 c 128,-1,4
+ 457 1538 457 1538 456 1532 c 2,5,-1
+ 120 -212 l 1,6,7
+ 109 -225 109 -225 82 -235.5 c 128,-1,8
+ 55 -246 55 -246 28 -246 c 0,9,10
+ 18 -246 18 -246 8.5 -241.5 c 128,-1,11
+ -1 -237 -1 -237 0 -230 c 2,12,-1
+ 338 1514 l 1,0,1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" bar.sc
+EndChar

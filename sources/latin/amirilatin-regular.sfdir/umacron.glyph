@@ -1,0 +1,10 @@
+StartChar: umacron
+Encoding: 363 363 295
+Width: 1030
+Flags: W
+LayerCount: 2
+Fore
+Refer: 336 772 N 1 0 0 1 1019 54 2
+Refer: 84 117 N 1 0 0 1 -0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" umacron.sc
+EndChar

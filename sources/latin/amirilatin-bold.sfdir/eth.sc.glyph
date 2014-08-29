@@ -1,0 +1,19 @@
+StartChar: eth.sc
+Encoding: 65614 -1 524
+Width: 1266
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+642 406 m 1,0,-1
+ 58 406 l 2,1,2
+ 54 406 54 406 52 420.5 c 0,3,4
+ 50 435 50 435 52 453.5 c 0,5,6
+ 54 472 54 472 60 480 c 1,7,-1
+ 642 480 l 2,8,9
+ 648 480 648 480 648 450 c 0,10,11
+ 648 420 648 420 642 406 c 1,0,-1
+EndSplineSet
+Refer: 476 -1 N 1 0 0 1 6 0 2
+EndChar

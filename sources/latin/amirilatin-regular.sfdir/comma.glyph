@@ -1,0 +1,26 @@
+StartChar: comma
+Encoding: 44 44 12
+Width: 402
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+212 246 m 0,0,1
+ 240 246 240 246 264 232 c 1,2,3
+ 300 170 300 170 300 92 c 0,4,5
+ 300 8 300 8 221 -113.5 c 128,-1,6
+ 142 -235 142 -235 64 -278 c 1,7,8
+ 54 -278 54 -278 44 -262 c 128,-1,9
+ 34 -246 34 -246 34 -236 c 1,10,11
+ 57 -219 57 -219 72 -205.5 c 128,-1,12
+ 87 -192 87 -192 111 -163.5 c 128,-1,13
+ 135 -135 135 -135 147.5 -97 c 128,-1,14
+ 160 -59 160 -59 160 -14 c 0,15,16
+ 160 18 160 18 127 63 c 128,-1,17
+ 94 108 94 108 94 148 c 0,18,19
+ 94 183 94 183 127.5 214.5 c 128,-1,20
+ 161 246 161 246 212 246 c 0,0,1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" comma.sc
+Substitution2: "'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable" comma.sc
+EndChar

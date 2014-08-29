@@ -1,0 +1,10 @@
+StartChar: idieresis
+Encoding: 239 239 172
+Width: 524
+Flags: W
+LayerCount: 2
+Fore
+Refer: 233 305 N 1 0 0 1 6 0 3
+Refer: 298 -1 N 1 0 0 1 -140 60 2
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" idieresis.sc
+EndChar

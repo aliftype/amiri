@@ -1,0 +1,18 @@
+StartChar: tbar
+Encoding: 359 359 291
+Width: 622
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+56 616 m 1,0,-1
+ 576 616 l 2,1,2
+ 588 616 588 616 588 596 c 0,3,4
+ 588 563 588 563 576 536 c 1,5,-1
+ 54 536 l 2,6,7
+ 44 536 44 536 44 562 c 0,8,9
+ 44 598 44 598 56 616 c 1,0,-1
+EndSplineSet
+Refer: 83 116 N 1 0 0 1 0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" tbar.sc
+EndChar

@@ -1,0 +1,18 @@
+StartChar: hbar
+Encoding: 295 295 386
+Width: 1166
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+72 1128 m 1,0,-1
+ 728 1128 l 2,1,2
+ 736 1128 736 1128 736 1112 c 0,3,4
+ 736 1078 736 1078 728 1054 c 1,5,-1
+ 70 1054 l 2,6,7
+ 62 1054 62 1054 62 1072 c 0,8,9
+ 62 1114 62 1114 72 1128 c 1,0,-1
+EndSplineSet
+Refer: 72 104 N 1 0 0 1 -0 0 2
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" hbar.sc
+EndChar

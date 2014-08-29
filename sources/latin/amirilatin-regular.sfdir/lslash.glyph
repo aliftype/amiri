@@ -1,0 +1,18 @@
+StartChar: lslash
+Encoding: 322 322 255
+Width: 510
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+70 520 m 1,0,1
+ 58 532 58 532 46.5 551.5 c 0,2,3
+ 35 571 35 571 40 576 c 1,4,-1
+ 434 846 l 1,5,6
+ 446 834 446 834 458.5 815.5 c 0,7,8
+ 471 797 471 797 466 792 c 1,9,-1
+ 70 520 l 1,0,1
+EndSplineSet
+Refer: 75 108 N 1 0 0 1 0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" lslash.sc
+EndChar

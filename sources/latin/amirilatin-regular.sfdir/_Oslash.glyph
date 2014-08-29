@@ -1,0 +1,17 @@
+StartChar: Oslash
+Encoding: 216 216 149
+Width: 1496
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+1130 1334 m 17,0,1
+ 1146 1330 1146 1330 1169.5 1314 c 0,2,3
+ 1193 1298 1193 1298 1188 1290 c 2,4,-1
+ 352 -26 l 1,5,6
+ 335 -20 335 -20 312 -4 c 0,7,8
+ 289 12 289 12 294 20 c 2,9,-1
+ 1130 1334 l 17,0,1
+EndSplineSet
+Refer: 46 79 N 1 0 0 1 0 0 3
+EndChar

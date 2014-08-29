@@ -1,0 +1,20 @@
+StartChar: period
+Encoding: 46 46 13
+Width: 416
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+16 66 m 0,0,1
+ 16 120 16 120 58 162 c 128,-1,2
+ 100 204 100 204 150 204 c 0,3,4
+ 189 204 189 204 212.5 178.5 c 128,-1,5
+ 236 153 236 153 236 114 c 0,6,7
+ 236 59 236 59 195 15.5 c 128,-1,8
+ 154 -28 154 -28 104 -28 c 0,9,10
+ 65 -28 65 -28 40.5 -1.5 c 128,-1,11
+ 16 25 16 25 16 66 c 0,0,1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" period.sc
+EndChar

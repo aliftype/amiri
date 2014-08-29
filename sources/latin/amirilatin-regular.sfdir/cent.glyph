@@ -1,0 +1,15 @@
+StartChar: cent
+Encoding: 162 162 96
+Width: 892
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+544 944 m 17,0,1
+ 600 944 600 944 600 932 c 1,2,-1
+ 434 -90 l 1,3,4
+ 378 -90 378 -90 378 -76 c 1,5,-1
+ 544 944 l 17,0,1
+EndSplineSet
+Refer: 66 99 N 1 0 0 1 12 0 2
+EndChar

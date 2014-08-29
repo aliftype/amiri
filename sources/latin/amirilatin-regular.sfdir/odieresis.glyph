@@ -1,0 +1,10 @@
+StartChar: odieresis
+Encoding: 246 246 179
+Width: 1018
+Flags: W
+LayerCount: 2
+Fore
+Refer: 340 776 N 1 0 0 1 1010 4 2
+Refer: 78 111 N 1 0 0 1 0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" odieresis.sc
+EndChar

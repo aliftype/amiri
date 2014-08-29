@@ -1,0 +1,20 @@
+StartChar: oslash
+Encoding: 248 248 181
+Width: 1018
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+258 -16 m 17,0,1
+ 248 -11 248 -11 241 -7.5 c 0,2,3
+ 234 -4 234 -4 223 3 c 0,4,5
+ 212 10 212 10 207 16 c 0,6,7
+ 202 22 202 22 204 26 c 2,8,-1
+ 744 874 l 1,9,10
+ 763 866 763 866 782.5 854 c 0,11,12
+ 802 842 802 842 798 834 c 2,13,-1
+ 258 -16 l 17,0,1
+EndSplineSet
+Refer: 78 111 N 1 0 0 1 2 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" oslash.sc
+EndChar

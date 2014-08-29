@@ -1,0 +1,22 @@
+StartChar: divide
+Encoding: 247 247 180
+Width: 1198
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+132 438 m 18,0,1
+ 120 438 120 438 120 458 c 0,2,3
+ 120 471 120 471 130 505.5 c 0,4,5
+ 140 540 140 540 154 550 c 1,6,-1
+ 1062 550 l 2,7,8
+ 1069 550 1069 550 1074.5 543.5 c 0,9,10
+ 1080 537 1080 537 1080 526 c 0,11,12
+ 1080 503 1080 503 1070 476.5 c 0,13,14
+ 1060 450 1060 450 1048 438 c 1,15,-1
+ 132 438 l 18,0,1
+EndSplineSet
+Refer: 339 775 N 1 0 0 1 1114 -986 2
+Refer: 339 775 N 1 0 0 1 1114 -220 2
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" divide.sc
+EndChar

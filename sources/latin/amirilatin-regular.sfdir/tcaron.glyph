@@ -1,0 +1,11 @@
+StartChar: tcaron
+Encoding: 357 357 289
+Width: 622
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+Refer: 346 789 N 1 0 0 1 1120 20 2
+Refer: 83 116 N 1 0 0 1 0 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" tcaron.sc
+EndChar

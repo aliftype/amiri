@@ -1,0 +1,10 @@
+StartChar: ibreve
+Encoding: 301 301 313
+Width: 630
+Flags: W
+LayerCount: 2
+Fore
+Refer: 255 774 N 1 0 0 1 849 26 2
+Refer: 242 305 N 1 0 0 1 6 0 3
+Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" ibreve.sc
+EndChar
