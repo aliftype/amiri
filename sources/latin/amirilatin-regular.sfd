@@ -1,9 +1,9 @@
 SplineFontDB: 3.0
-FontName: Crimson-Roman
-FullName: Crimson Roman
-FamilyName: Crimson
-Weight: Roman
-Copyright: Copyright (c) 2010, Sebastian Kosch (sebastian@aldusleaf.org),\nwith Reserved Font Name "Crimson".\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is available with a FAQ at: http://scripts.sil.org/OFL
+FontName: AmiriLatin-Regular
+FullName: Amiri Latin
+FamilyName: Amiri Latin
+Weight: Regular
+Copyright: Copyright (c) 2010, Sebastian Kosch (sebastian@aldusleaf.org).\nCopyright (c) 2012-2014 Khaled Hosny (khaledhosny@eglug.org).\n\nThis Font Software is licensed under the Open Font License, Version 1.1.
 Version: 0.8
 ItalicAngle: 0
 UnderlinePosition: -224
@@ -13,7 +13,7 @@ Descent: 410
 LayerCount: 2
 Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
-XUID: [1021 559 149143806 1270264]
+XUID: [1021 559 149143806 1838002]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
@@ -487,7 +487,7 @@ KernClass2: 14+ 24 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  25 zero zero.slash zero.prop
  55 d dcaron dcroat uni1E0B uni1E0D uni1E0F uni1E11 uni1E13
  0 {} -74 {} -60 {} -56 {} -44 {} -68 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -34 {} -28 {} -44 {} -42 {} -20 {} -30 {} -42 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 18 {} 0 {} 0 {} 12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -28 {} -22 {} -32 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -26 {} -34 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 60 {} 56 {} 72 {} 0 {} -82 {} 0 {} 0 {} 0 {} -114 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -26 {} -22 {} -28 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -26 {} 0 {} -52 {} 0 {} 0 {} 0 {} -68 {} -22 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -92 {} -82 {} -66 {} -96 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 136 {} -36 {} 32 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -26 {} 0 {} -66 {} 0 {} 0 {} 0 {} 0 {} -28 {} 0 {} 0 {} 0 {} -22 {} -102 {} -76 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -92 {} -74 {} -60 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 168 {} -28 {} 0 {} -22 {} 0 {} -26 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -48 {} 0 {} -28 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -46 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -118 {} -28 {} 0 {} 0 {} 0 {} 0 {} -16 {}
-LangName: 1033 "" "" "" "FontForge : Crimson : 28-7-2010" "" "" "" "" "" "" "" "" "" "" "http://scripts.sil.org/OFL" 
+LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "http://scripts.sil.org/OFL" 
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
 UnicodeInterp: none

@@ -40,27 +40,27 @@ ttf: $(DTTF)
 web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
-$(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-quran.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-quran.fea.pp --version $(VERSION) --quran
 
-$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Roman.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-regular.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
 
-$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/crimson/Crimson-Italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-slanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=10
 
-$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-Bold.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-bold.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-bold.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-bold.fea.pp --version $(VERSION)
 
-$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/crimson/Crimson-BoldItalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-bolditalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
@@ -129,9 +129,9 @@ dist: all check pack doc
 	@mkdir -p $(DIST)/$(TESTS)
 	@cp $(PACK) $(DIST)/$(SRC)
 	@cp $(FEAT) $(DIST)/$(SRC)
-	@mkdir -p $(DIST)/$(SRC)/crimson
-	@cp -r $(SRC)/crimson/Crimson-*.sfd $(DIST)/$(SRC)/crimson
-	@cp -r $(SRC)/crimson/README $(DIST)/$(SRC)/crimson
+	@mkdir -p $(DIST)/$(SRC)/latin
+	@cp -r $(SRC)/latin/amirilatin-*.sfd $(DIST)/$(SRC)/latin
+	@cp -r $(SRC)/latin/README $(DIST)/$(SRC)/latin
 	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > $(DIST)/Makefile
 	@cp $(license) $(DIST)
 	@cp $(DTTF) $(DIST)

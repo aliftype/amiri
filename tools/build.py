@@ -376,17 +376,17 @@ def makeNumerators(font):
             numr.width = small.width
 
 def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
-    styles = {"Regular": "Roman",
-              "Slanted": "Italic",
-              "Bold": "Bold",
-              "BoldSlanted": "BoldItalic"}
+    styles = {"Regular": "regular",
+              "Slanted": "italic",
+              "Bold": "bold",
+              "BoldSlanted": "bolditalic"}
 
     style = styles[font.fontname.split("-")[1]]
 
-    latinfile = "Crimson-%s.sfd" %style
+    latinfile = "amirilatin-%s.sfd" %style
 
     tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
-    latinfont = fontforge.open("sources/crimson/%s" %latinfile)
+    latinfont = fontforge.open("sources/latin/%s" %latinfile)
 
     validateGlyphs(latinfont) # to flatten nested refs mainly
 
@@ -469,10 +469,10 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     # features respectively, for less OpenType savvy apps we make the default
     # upright so it works reasonably with bot scripts
     if italic:
-        if "Bold" in style:
-            upright = fontforge.open("sources/crimson/Crimson-Bold.sfd")
+        if "bold" in style:
+            upright = fontforge.open("sources/latin/amirilatin-bold.sfd")
         else:
-            upright = fontforge.open("sources/crimson/Crimson-Roman.sfd")
+            upright = fontforge.open("sources/latin/amirilatin-regular.sfd")
 
         shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
                   "quotesingle", "asterisk", "plus", "colon", "semicolon",
