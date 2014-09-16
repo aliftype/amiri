@@ -32,8 +32,8 @@ def process(infile, outfile):
     CPAL = ttLib.getTableModule("CPAL")
 
     colors = {}
-    colors["diacritics"] = CPAL.Color(0xff, 0x00, 0x00, 0xff) # red
-    colors["quranic-signs"] = CPAL.Color(0x80, 0x00, 0x80, 0xff) # purple
+    colors["diacritics"]    = CPAL.Color(red=0xff, green=0x00, blue=0x00, alpha=0xff) # red
+    colors["quranic-signs"] = CPAL.Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
 
     palette = colors.values()
     font["CPAL"].version = 0
@@ -47,7 +47,7 @@ def process(infile, outfile):
         glyphs = _LAYERS[color]
         color = colors[color]
         for glyph in glyphs:
-            layer = COLR.LayerRecord(glyph, palette.index(color))
+            layer = COLR.LayerRecord(name=glyph, colorID=palette.index(color))
             font["COLR"][glyph] = [layer]
 
     font.save(outfile)
