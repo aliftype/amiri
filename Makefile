@@ -111,18 +111,8 @@ clean:
 	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
-#->8-
-PACK=$(SRC)/$(NAME)-regular.sfd $(SRC)/$(NAME)-bold.sfd
-
-pack: $(PACK)
-
-%.sfd: %.sfdir
-	@echo "   GEN	$@"
-	@python -c 'import fontforge; f=fontforge.open("$<"); f.save("$@")'
-
 distclean:
 	@rm -rf $(DIST) $(DIST).zip
-	@rm -rf $(PACK)
 
 dist: all check pack doc
 	@echo "   Making dist tarball"
@@ -132,12 +122,11 @@ dist: all check pack doc
 	@mkdir -p $(DIST)/$(DOC)/$(DOC)-$(SRC)
 	@mkdir -p $(DIST)/$(TOOLS)
 	@mkdir -p $(DIST)/$(TESTS)
-	@cp $(PACK) $(DIST)/$(SRC)
+	@cp -r $(SRC)/*.sfdir $(DIST)/$(SRC)
 	@cp $(FEAT) $(DIST)/$(SRC)
 	@mkdir -p $(DIST)/$(SRC)/latin
 	@cp -r $(SRC)/latin/amirilatin-*.sfdir $(DIST)/$(SRC)/latin
 	@cp -r $(SRC)/latin/README $(DIST)/$(SRC)/latin
-	@sed -e "/#->8-/,$$ d" -e "s/sfdir/sfd/" Makefile > $(DIST)/Makefile
 	@cp $(license) $(DIST)
 	@cp $(DTTF) $(DIST)
 	@cp README.txt $(DIST)
