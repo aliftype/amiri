@@ -8,13 +8,14 @@ SRC=sources
 WEB=webfonts
 DOC=documentation
 TESTS=test-suite
-FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
+FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-quran-colored $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
 DOCS=README README-Arabic NEWS NEWS-Arabic
 DIST=$(NAME)-$(VERSION)
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
 CHECKBLANKS=$(TOOLS)/checkblankglyphs.py
+COLORIZE=$(TOOLS)/colorize.py
 PY=python
 FF=$(PY) $(BUILD)
 SFNTTOOL=sfnttool
@@ -44,6 +45,10 @@ $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.
 	@echo "   FF	$@"
 	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-quran.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-quran.fea.pp --version $(VERSION) --quran
+
+$(NAME)-quran-colored.ttf: $(NAME)-quran.ttf $(COLORIZE)
+	@echo "   FF	$@"
+	@$(PY) $(COLORIZE) $< $@
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
