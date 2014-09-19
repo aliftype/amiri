@@ -21,29 +21,6 @@ import sys
 import os
 from tempfile import mkstemp
 
-def genCSS(font, base):
-    """Generates a CSS snippet for webfont usage based on:
-    http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax"""
-
-    style = "normal"
-    if font["post"].italicAngle != 0:
-        style = "oblique"
-    weight = font["OS/2"].usWeightClass
-    family = font["name"].getName(nameID=1, platformID=1, platEncID=0).string + "Web"
-
-    css = """
-@font-face {
-    font-family: %(family)s;
-    font-style: %(style)s;
-    font-weight: %(weight)s;
-    src: url('%(base)s.eot?') format('eot'),
-         url('%(base)s.woff') format('woff'),
-         url('%(base)s.ttf')  format('truetype');
-}
-""" %{"style":style, "weight":weight, "family":family, "base":base}
-
-    return css
-
 def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
     internally for building composite glyph."""
@@ -169,22 +146,6 @@ def mergeFeatures(font, feafile):
 
     # now merge it into the font
     font.mergeFeature(feafile)
-
-def makeCss(infiles, outfile):
-    """Builds a CSS file for the entire font family."""
-    from fontTools.ttLib import TTFont
-
-    css = ""
-
-    for f in infiles.split():
-        base = os.path.splitext(os.path.basename(f))[0]
-        font = TTFont(f)
-        css += genCSS(font, base)
-        font.close()
-
-    out = open(outfile, "w")
-    out.write(css)
-    out.close()
 
 def generateFont(font, outfile):
     flags  = ("opentype", "dummy-dsig", "round", "omit-instructions")
@@ -882,7 +843,6 @@ Options:
   --features=FILE       file name of features file
   --version=VALUE       set font version to VALUE
   --slant=VALUE         autoslant
-  --css                 output is a CSS file
   --web                 output is web version
 
   -h, --help            print this message and exit
@@ -900,7 +860,7 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
-                ["help", "input=", "output=", "features=", "version=", "slant=", "css", "web", "quran"])
+                ["help", "input=", "output=", "features=", "version=", "slant=", "web", "quran"])
     except getopt.GetoptError, err:
         usage(str(err), -1)
 
@@ -909,7 +869,6 @@ if __name__ == "__main__":
     feafile = None
     version = None
     slant = False
-    css = False
     web = False
     quran = False
 
@@ -921,7 +880,6 @@ if __name__ == "__main__":
         elif opt == "--features": feafile = arg
         elif opt == "--version": version = arg
         elif opt == "--slant": slant = float(arg)
-        elif opt == "--css": css = True
         elif opt == "--web": web = True
         elif opt == "--quran": quran = True
 
@@ -930,9 +888,7 @@ if __name__ == "__main__":
     if not outfile:
         usage("No output file specified", -1)
 
-    if css:
-        makeCss(infile, outfile)
-    elif web:
+    if web:
         makeWeb(infile, outfile)
     else:
         if not version:

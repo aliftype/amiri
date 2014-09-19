@@ -16,6 +16,7 @@ BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
 CHECKBLANKS=$(TOOLS)/checkblankglyphs.py
 COLORIZE=$(TOOLS)/colorize.py
+MAKECSS=$(TOOLS)/makecss.py
 PY=python
 FF=$(PY) $(BUILD)
 SFNTTOOL=sfnttool
@@ -88,7 +89,7 @@ $(WEB)/%.eot: $(WEB)/%.ttf
 $(WEB)/%.css: $(WTTF) $(BUILD)
 	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
-	@$(FF) --css --input "$(WTTF)" --output $@ --version $(VERSION)
+	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WTTF)"
 
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN	$@"
