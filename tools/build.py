@@ -25,9 +25,11 @@ def genCSS(font, base):
     """Generates a CSS snippet for webfont usage based on:
     http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax"""
 
-    style = ("slanted" in font.fullname.lower()) and "oblique" or "normal"
-    weight = font.os2_weight
-    family = font.familyname + "Web"
+    style = "normal"
+    if font["post"].italicAngle != 0:
+        style = "oblique"
+    weight = font["OS/2"].usWeightClass
+    family = font["name"].getName(nameID=1, platformID=1, platEncID=0).string + "Web"
 
     css = """
 @font-face {
@@ -170,13 +172,13 @@ def mergeFeatures(font, feafile):
 
 def makeCss(infiles, outfile):
     """Builds a CSS file for the entire font family."""
+    from fontTools.ttLib import TTFont
 
     css = ""
 
     for f in infiles.split():
         base = os.path.splitext(os.path.basename(f))[0]
-        font = fontforge.open(f)
-        font.encoding = "UnicodeBmp" # avoid a crash if compact was set
+        font = TTFont(f)
         css += genCSS(font, base)
         font.close()
 
