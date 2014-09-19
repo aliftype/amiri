@@ -1,5 +1,4 @@
 import argparse
-import sys
 
 from fontTools import ttLib
 from fontTools.ttLib.tables.C_O_L_R_ import LayerRecord
