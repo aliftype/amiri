@@ -53,6 +53,31 @@ def colorize(font):
     font["COLR"] = COLR
     font["CPAL"] = CPAL
 
+def rename(font):
+    name = font["name"]
+    for record in name.names:
+        nameID = record.nameID
+        platID = record.platformID
+        langID = record.langID
+        encoID = record.platEncID
+
+        encoding = "latin1"
+        if record.isUnicode():
+            encoding = 'utf_16_be'
+
+        if nameID in (1, 4, 6):
+            string = record.string.decode(encoding)
+            if nameID == 6:
+                if "-" in string:
+                    family, subfamily = string.split("-")
+                    string = "%sColored-%s" % (family, subfamily)
+                else:
+                    string += "Colored"
+            else:
+                string += " Colored"
+
+            record.string = string.encode(encoding)
+
 def main():
     parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
     parser.add_argument("infile", metavar="INFILE", type=str, help="input font to process")
@@ -63,6 +88,7 @@ def main():
     font = ttLib.TTFont(args.infile)
 
     colorize(font)
+    rename(font)
 
     font.save(args.outfile)
 
