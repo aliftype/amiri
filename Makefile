@@ -86,7 +86,7 @@ $(WEB)/%.eot: $(WEB)/%.ttf
 	@mkdir -p $(WEB)
 	@$(SFNTTOOL) -e -x $< $@
 
-$(WEB)/%.css: $(WTTF) $(BUILD)
+$(WEB)/%.css: $(WTTF) $(MAKECSS)
 	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
 	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WTTF)"
