@@ -571,6 +571,8 @@ def makeWeb(infile, outfile):
     # "guess" characters when copying text, which is of little use in web fonts.
     flags = ("opentype", "short-post", "omit-instructions")
 
+    fontforge.setPrefs("PreserveTables", "COLR,CPAL")
+
     font = fontforge.open(infile)
     font.encoding = "UnicodeBmp" # avoid a crash if compact was set
 
