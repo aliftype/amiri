@@ -17,6 +17,7 @@ RUNTEST=$(TOOLS)/runtest.py
 CHECKBLANKS=$(TOOLS)/checkblankglyphs.py
 COLORIZE=$(TOOLS)/colorize.py
 MAKECSS=$(TOOLS)/makecss.py
+MAKEWEB=$(TOOLS)/makeweb.py
 PY=python
 FF=$(PY) $(BUILD)
 SFNTTOOL=sfnttool
@@ -71,10 +72,10 @@ $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-boldi
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
 
-$(WEB)/%.ttf: %.ttf $(BUILD)
+$(WEB)/%.ttf: %.ttf $(MAKEWEB)
 	@echo "   FF	$@"
 	@mkdir -p $(WEB)
-	@$(FF) --input $< --output $@ --web 1>/dev/null 2>&1
+	@$(PY) $(MAKEWEB) $< $@ 1>/dev/null 2>&1
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF	$@"
