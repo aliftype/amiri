@@ -4,7 +4,7 @@ from fontTools import ttLib
 from fontTools.ttLib.tables.C_O_L_R_ import LayerRecord
 from fontTools.ttLib.tables.C_P_A_L_ import Color
 
-DIACRITICS = Color(red=0xff, green=0x00, blue=0x00, alpha=0xff) # red
+DIACRITICS = Color(red=0x00, green=0x80, blue=0x00, alpha=0xff) # green
 SIGNS      = Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
 
 DIACRITICS_GLYPHS = (
