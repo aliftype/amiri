@@ -27,7 +27,7 @@ SIGNS_GLYPHS = (
     "uni06E5.medi", "uni06E6.medi"
 )
 
-LAYERS = {DIACRITICS: DIACRITICS_GLYPHS,
+GROUPS = {DIACRITICS: DIACRITICS_GLYPHS,
           SIGNS:      SIGNS_GLYPHS}
 
 def colorize(font):
@@ -37,14 +37,14 @@ def colorize(font):
     CPAL.version = 0
     COLR.version = 0
 
-    palette = LAYERS.keys()
+    palette = GROUPS.keys()
     CPAL.palettes = [palette]
     CPAL.numPaletteEntries = len(palette)
 
     COLR.ColorLayers = {}
 
-    for color in LAYERS:
-        glyphs = LAYERS[color]
+    for color in GROUPS:
+        glyphs = GROUPS[color]
         for glyph in glyphs:
             layer = LayerRecord(name=glyph, colorID=palette.index(color))
             COLR[glyph] = [layer]
