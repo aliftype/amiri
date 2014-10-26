@@ -15,7 +15,7 @@ DIST=$(NAME)-$(VERSION)
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
 CHECKBLANKS=$(TOOLS)/checkblankglyphs.py
-COLORIZE=$(TOOLS)/colorize.py
+MAKECLR=$(TOOLS)/makeclr.py
 MAKECSS=$(TOOLS)/makecss.py
 MAKEWEB=$(TOOLS)/makeweb.py
 PY=python
@@ -48,9 +48,9 @@ $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.
 	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-quran.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-quran.fea.pp --version $(VERSION) --quran
 
-$(NAME)-quran-colored.ttf: $(NAME)-quran.ttf $(COLORIZE)
+$(NAME)-quran-colored.ttf: $(NAME)-quran.ttf $(MAKECLR)
 	@echo "   FF	$@"
-	@$(PY) $(COLORIZE) $< $@
+	@$(PY) $(MAKECLR) $< $@
 
 $(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
