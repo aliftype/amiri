@@ -21,12 +21,14 @@ MAKEWEB=$(TOOLS)/makeweb.py
 PY=python
 FF=$(PY) $(BUILD)
 SFNTTOOL=sfnttool
+WOFF2_COMPRESS=woff2_compress
 PP=gpp +c "/*" "*/" +c "//" "\n" +c "\\\n" "" -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
+WOF2=$(FONTS:%=$(WEB)/%.woff2)
 EOTS=$(FONTS:%=$(WEB)/%.eot)
 CSSS=$(WEB)/$(NAME).css
 PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/documentation-arabic.pdf
@@ -40,7 +42,7 @@ license=OFL.txt OFL-FAQ.txt
 all: ttf web
 
 ttf: $(DTTF)
-web: $(WTTF) $(WOFF) $(EOTS) $(CSSS)
+web: $(WTTF) $(WOFF) $(WOF2) $(EOTS) $(CSSS)
 doc: $(PDFS)
 
 $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
@@ -82,6 +84,11 @@ $(WEB)/%.woff: $(WEB)/%.ttf
 	@mkdir -p $(WEB)
 	@$(SFNTTOOL) -w $< $@
 
+$(WEB)/%.woff2: $(WEB)/%.ttf
+	@echo "   FF	$@"
+	@mkdir -p $(WEB)
+	@$(WOFF2_COMPRESS) $< 1>/dev/null
+
 $(WEB)/%.eot: $(WEB)/%.ttf
 	@echo "   FF	$@"
 	@mkdir -p $(WEB)
@@ -110,7 +117,7 @@ check: $(TEST) $(DTTF)
 	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
-	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(EOTS) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
+	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(WOF2) $(EOTS) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean:
@@ -135,6 +142,7 @@ dist: all check pack doc
 	@cp $(DOCFILES) $(DIST)/$(DOC)
 	@cp $(WTTF) $(DIST)/$(WEB)
 	@cp $(WOFF) $(DIST)/$(WEB)
+	@cp $(WOF2) $(DIST)/$(WEB)
 	@cp $(EOTS) $(DIST)/$(WEB)
 	@cp $(CSSS) $(DIST)/$(WEB)
 	@cp $(WEB)/README $(DIST)/$(WEB)

@@ -19,6 +19,7 @@ def genCSS(font, base):
     font-style: %(style)s;
     font-weight: %(weight)s;
     src: url('%(base)s.eot?') format('eot'),
+         url('%(base)s.woff2') format('woff2'),
          url('%(base)s.woff') format('woff'),
          url('%(base)s.ttf')  format('truetype');
 }
