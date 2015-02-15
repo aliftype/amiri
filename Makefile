@@ -111,7 +111,7 @@ $(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex
 
 check: $(TEST) $(DTTF)
 	@echo "running tests"
-	@$(foreach font,$(DTTF),echo -e "OTS\t$(font)" && ot-sanitise $(font) &&) true
+	@$(foreach font,$(DTTF),echo "OTS\t$(font)" && ot-sanitise $(font) &&) true
 	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
