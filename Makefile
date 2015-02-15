@@ -14,7 +14,6 @@ DIST=$(NAME)-$(VERSION)
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
-CHECKBLANKS=$(TOOLS)/checkblankglyphs.py
 MAKECLR=$(TOOLS)/makeclr.py
 MAKECSS=$(TOOLS)/makecss.py
 MAKEWEB=$(TOOLS)/makeweb.py
@@ -112,7 +111,6 @@ $(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex
 
 check: $(TEST) $(DTTF)
 	@echo "running tests"
-	@$(foreach font,$(DTTF),echo -e "BLANKS\t$(font)" && $(PY) $(CHECKBLANKS) $(font) 1>/dev/null 2>&1 &&) true
 	@$(foreach font,$(DTTF),echo -e "OTS\t$(font)" && ot-sanitise $(font) &&) true
 	@$(PY) $(RUNTEST) $(TEST)
 
