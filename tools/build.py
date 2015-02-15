@@ -120,8 +120,7 @@ def mergeFeatures(font, feafile):
     file), which is required by Uniscribe to get correct mark positioning for
     kerned glyphs."""
 
-    oldfea = mkstemp(suffix='.fea')[1]
-    font.generateFeatureFile(oldfea)
+    oldfea = font.generateFeatureString()
 
     for lookup in font.gpos_lookups:
         font.removeLookup(lookup)
@@ -132,20 +131,12 @@ def mergeFeatures(font, feafile):
     # open feature file and insert the generated GPOS features in place of the
     # placeholder text
     fea = open(feafile)
-    old = open(oldfea)
     fea_text = fea.read()
-    fea_text = fea_text.replace("{%anchors%}", old.read())
-    fea.close()
-    old.close()
-    os.remove(oldfea)
-
-    # write new feature text back
-    fea = open(feafile, "w")
-    fea.write(fea_text)
+    fea_text = fea_text.replace("{%anchors%}", oldfea)
     fea.close()
 
     # now merge it into the font
-    font.mergeFeature(feafile)
+    font.mergeFeatureString(fea_text)
 
 def generateFont(font, outfile):
     flags  = ("opentype", "dummy-dsig", "round", "omit-instructions")
