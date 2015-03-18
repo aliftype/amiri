@@ -12,7 +12,7 @@ def runHB(row, font, positions=False):
             "--script=%s"    %row[1],
             "--language=%s"  %row[2],
             "--features=%s"  %row[3],
-            "--text=%s"      %row[4]]
+            isinstance(row[4], unicode) and row[4].encode('utf-8') or row[4]]
     process = subprocess.Popen(args, stdout=subprocess.PIPE)
     return process.communicate()[0].strip()
 
