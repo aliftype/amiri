@@ -31,9 +31,26 @@
 \setotherlanguage{english}
 \rightfootnoterule
 
-\setmainfont               [Ligatures=TeX]                     {Amiri}
+\setmainfont
+[    Ligatures = TeX,
+          Path = ./,
+     Extension = .ttf,
+   UprightFont = *-regular,
+      BoldFont = *-bold,
+    ItalicFont = *-slanted,
+BoldItalicFont = *-boldslanted,
+]{amiri}
+\newfontfamily\arabicfont
+[       Script = Arabic,
+       Numbers = Proportional,
+          Path = ./,
+     Extension = .ttf,
+   UprightFont = *-regular,
+      BoldFont = *-bold,
+    ItalicFont = *-slanted,
+BoldItalicFont = *-boldslanted,
+]{amiri}
 \setmonofont               [Scale=MatchLowercase]              {DejaVu Sans Mono}
-\newfontfamily\arabicfont  [Script=Arabic,Numbers=Proportional]{Amiri}
 \newfontfamily\arabicfonttt[Script=Arabic,Scale=MatchLowercase]{DejaVu Sans Mono}
 
 \newcommand\addff[1]{\addfontfeature{RawFeature={#1}}} % add feature

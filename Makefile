@@ -105,7 +105,7 @@ $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
-$(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex
+$(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex $(DTTF)
 	@echo "   GEN	$@"
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
