@@ -3,18 +3,97 @@
 import sys
 import os
 import csv
-import subprocess
 
-def runHB(row, font, positions=False):
-    args = ["hb-shape", "--no-clusters", positions and "--debug" or "--no-positions",
-            "--font-file=%s" %font,
-            "--direction=%s" %row[0],
-            "--script=%s"    %row[1],
-            "--language=%s"  %row[2],
-            "--features=%s"  %row[3],
-            isinstance(row[4], unicode) and row[4].encode('utf-8') or row[4]]
-    process = subprocess.Popen(args, stdout=subprocess.PIPE)
-    return process.communicate()[0].strip()
+from gi.repository import HarfBuzz
+from gi.repository import GLib
+
+from fontTools.ttLib import TTFont
+
+HbFonts = {}
+def getHbFont(fontname):
+    if fontname not in HbFonts:
+        font = open(fontname, "rb")
+        data = font.read()
+        font.close()
+        blob = HarfBuzz.glib_blob_create(GLib.Bytes.new(data))
+        face = HarfBuzz.face_create(blob, 0)
+        font = HarfBuzz.font_create(face)
+        upem = HarfBuzz.face_get_upem(face)
+        HarfBuzz.font_set_scale(font, upem, upem)
+        HarfBuzz.ot_font_set_funcs(font)
+
+        HbFonts[fontname] = font
+
+    return HbFonts[fontname]
+
+TtFonts = {}
+def getTtFont(fontname):
+    if fontname not in TtFonts:
+        font = TTFont(fontname)
+        TtFonts[fontname] = font
+
+    return TtFonts[fontname]
+
+HbLangs = {}
+def getHbLang(name):
+    if name not in HbLangs:
+        lang = HarfBuzz.language_from_string(name)
+        HbLangs[name] = lang
+
+    return HbLangs[name]
+
+HbFeats = {}
+def getHbFeat(name):
+    if name not in HbFeats:
+        feat = HarfBuzz.feature_from_string(name)[1]
+        HbFeats[name] = feat
+
+    return HbFeats[name]
+
+def toUnicode(s, encoding='utf-8'):
+    if not isinstance(s, unicode):
+        return s.decode(encoding)
+    else:
+        return s
+
+def runHB(row, fontname, positions=False):
+    direction, script, language, features, text = row[:5]
+    font = getHbFont(fontname)
+    buf = HarfBuzz.buffer_create()
+    text = toUnicode(text)
+    HarfBuzz.buffer_add_utf8(buf, text.encode('utf-8'), 0, -1)
+    HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_from_string(direction))
+    if script:
+        HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(script))
+    else:
+        HarfBuzz.buffer_guess_segment_properties(buf)
+    if language:
+        HarfBuzz.buffer_set_language(buf, getHbLang(language))
+
+    if features:
+        features = [getHbFeat(fea) for fea in features.split(',')]
+    else:
+        features = []
+    HarfBuzz.shape(font, buf, features)
+
+    info = HarfBuzz.buffer_get_glyph_infos(buf)
+    ttfont = getTtFont(fontname)
+    if positions:
+        pos = HarfBuzz.buffer_get_glyph_positions(buf)
+        glyphs = []
+        for i, p in zip(info, pos):
+            glyph = ttfont.getGlyphName(i.codepoint)
+            if p.x_offset or p.y_offset:
+                glyph += "@%d,%d" % (p.x_offset, p.y_offset)
+            glyph += "+%d" % p.x_advance
+            if p.y_advance:
+                glyph += ",%d" % p.y_advance
+            glyphs.append(glyph)
+        out = "|".join(glyphs)
+    else:
+        out = "|".join([ttfont.getGlyphName(i.codepoint) for i in info])
+
+    return "[%s]" % out
 
 def runTest(test, font, positions):
     count = 0
