@@ -131,20 +131,9 @@ if __name__ == '__main__':
         init = True
         args = sys.argv[2:]
 
-    for arg in args:
-        testname = arg
-
-        ext = os.path.splitext(testname)[1]
-        if ext == '.ptest':
-            positions = True
-
-        reader = csv.reader(open(testname), delimiter=';')
-
-        test = []
-        for row in reader:
-            test.append(row)
-
-        if init:
+    if init is True:
+        for testname in args:
+            positions = os.path.splitext(testname)[1] == '.ptest'
             fontname = 'amiri-regular.ttf'
             outname = testname+".test"
             outfd = open(outname, "w")
@@ -152,19 +141,28 @@ if __name__ == '__main__':
             outfd.close()
             sys.exit(0)
 
-        if positions:
-            styles = ('regular', )
-        else:
-            styles = ('regular', 'bold', 'slanted', 'boldslanted')
+    styles = ('regular', 'bold', 'slanted', 'boldslanted')
+    for style in styles:
+        fontname = 'amiri-%s.ttf' % style
+        print "   TEST\t%s" % fontname
+        for testname in args:
+            positions = os.path.splitext(testname)[1] == '.ptest'
 
-        for style in styles:
-            fontname = 'amiri-%s.ttf' % style
+            if positions and style != "regular":
+                continue
+
+            reader = csv.reader(open(testname), delimiter=';')
+
+            test = []
+            for row in reader:
+                test.append(row)
+
             passed, failed = runTest(test, fontname, positions)
-            message = "%s: font '%s', %d passed, %d failed" %(os.path.basename(testname),
-                    fontname, len(passed), len(failed))
-
-            print message
             if failed:
+                message = "%s: font '%s', %d passed, %d failed" %(os.path.basename(testname),
+                        fontname, len(passed), len(failed))
+
+                print message
                 for test in failed:
                     print test
                     print "string:   \t", failed[test][0]
