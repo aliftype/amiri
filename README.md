@@ -18,7 +18,13 @@ Amiri project aims at the revival of the aesthetics and traditions of Arabic
 typesetting, and adapting it to the era of digital typesetting, in a publicly
 available form.
 
-Amiri is a free, open source project that everyone is encouraged to use and
-modify. See the license for more details.
+Amiri is a free and open source project that everyone is encouraged to use and
+modify. Amiri is avialable under the terms of [Open Font License] [2], see the
+included license file for more details.
+
+Latest version of the Amiri font can be optained from its web site:
+
+> http://amirifont.org
 
 [1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
+[2]: http://scripts.sil.org/OFL "The Open Font License"
