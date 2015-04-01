@@ -103,7 +103,7 @@ $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@pdfoutline $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
-$(DOC)/documentation-arabic.pdf: $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex $(DTTF)
+$(DOC)/documentation-arabic.pdf: $(DOC)/documentation-arabic.tex $(DTTF)
 	@echo "   GEN	$@"
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
@@ -124,7 +124,6 @@ dist: all check pack doc
 	@mkdir -p $(DIST)/$(SRC)
 	@mkdir -p $(DIST)/$(WEB)
 	@mkdir -p $(DIST)/$(DOC)
-	@mkdir -p $(DIST)/$(DOC)/$(DOC)-$(SRC)
 	@mkdir -p $(DIST)/$(TOOLS)
 	@mkdir -p $(DIST)/$(TESTS)
 	@cp -r $(SRC)/*.sfdir $(DIST)/$(SRC)
@@ -146,7 +145,7 @@ dist: all check pack doc
 	@cp $(CSSS) $(DIST)/$(WEB)
 	@cp $(WEB)/README $(DIST)/$(WEB)
 	@cp $(PDFS) $(DIST)/$(DOC)
-	@cp $(DOC)/$(DOC)-$(SRC)/documentation-arabic.tex $(DIST)/$(DOC)/$(DOC)-$(SRC)
+	@cp $(DOC)/documentation-arabic.tex $(DIST)/$(DOC)
 	@cp $(TEST) $(DIST)/$(TESTS)
 	@cp $(BUILD) $(DIST)/$(TOOLS)
 	@cp $(RUNTEST) $(DIST)/$(TOOLS)
