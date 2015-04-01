@@ -24,5 +24,5 @@
 
 > http://amirifont.org
 
-[1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "مطبعة بولاق"
+[1]: http://www.bibalex.org/bulaqpress/ar/bulaq.htm "مطبعة بولاق"
 [2]: http://scripts.sil.org/OFL "رخصة الخطوط المفتوحة"
