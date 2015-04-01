@@ -53,7 +53,9 @@ Amiri 0.106 (2013-05-28)
 Amiri 0.105 (2012-12-31)
 ------------------------
 * New Quran font:
+
   This release features a new separate Amiri Quran font for typesetting Quran.
+
   It is basically a subset of Amiri Regular font with some default settings and
   features tailored for Quran typesetting requirements that are not suitable
   for general text. For example:
