@@ -9,7 +9,6 @@ WEB=webfonts
 DOC=documentation
 TESTS=test-suite
 FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-quran-colored $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
-DOCS=README README-Arabic NEWS NEWS-Arabic
 DIST=$(NAME)-$(VERSION)
 
 BUILD=$(TOOLS)/build.py
@@ -35,7 +34,6 @@ FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
 
-DOCFILES=$(DOCS:%=$(DOC)/%.txt)
 license=OFL.txt OFL-FAQ.txt
 
 all: ttf web
@@ -138,6 +136,10 @@ dist: all check pack doc
 	@cp $(DTTF) $(DIST)
 	@cp README.txt $(DIST)
 	@cp $(DOCFILES) $(DIST)/$(DOC)
+	@cp README.md $(DIST)/README
+	@cp README-Arabic.md $(DIST)/README-Arabic
+	@cp NEWS.md $(DIST)/NEWS
+	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
 	@cp $(WTTF) $(DIST)/$(WEB)
 	@cp $(WOFF) $(DIST)/$(WEB)
 	@cp $(WOF2) $(DIST)/$(WEB)
