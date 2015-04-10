@@ -68,8 +68,7 @@ def getHbFeat(name):
 
     return HbFeats[name]
 
-def runHB(row, fontname, positions=False):
-    direction, script, language, features, text = row[:5]
+def runHB(direction, script, language, features, text, fontname, positions):
     font = getHbFont(fontname)
     buf = HarfBuzz.buffer_create()
     text = toUnicode(text)
@@ -113,14 +112,13 @@ def runTest(test, font, positions):
     passed = []
     for row in test:
         count += 1
-        row[4] = ('\\' in row[4]) and row[4].encode().decode('unicode-escape') or row[4]
-        text = row[4]
-        reference = row[5]
-        result = runHB(row, font, positions)
+        direction, script, language, features, text, reference = row
+        text = text.encode().decode('unicode-escape') if '\\' in text else text
+        result = runHB(direction, script, language, features, text, font, positions)
         if reference == result:
             passed.append(count)
         else:
-            failed[count] = (text, reference, result)
+            failed[count] = (direction, script, language, features, text, reference, result)
 
     return passed, failed
 
@@ -177,7 +175,11 @@ if __name__ == '__main__':
                 print(message)
                 for test in failed:
                     print(test)
-                    print("string:   \t", failed[test][0])
-                    print("reference:\t", failed[test][1])
-                    print("result:   \t", failed[test][2])
+                    print("direction:\t", failed[test][0])
+                    print("script:   \t", failed[test][1])
+                    print("language: \t", failed[test][2])
+                    print("features: \t", failed[test][3])
+                    print("string:   \t", failed[test][4])
+                    print("reference:\t", failed[test][5])
+                    print("result:   \t", failed[test][6])
                 sys.exit(1)
