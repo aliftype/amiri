@@ -43,34 +43,6 @@ def makeWeb(infile, outfile):
     from fontTools.ttLib import TTFont
     ftfont = TTFont(tmpfile)
 
-    # our 'name' table is a bit bulky, and of almost no use in for web fonts,
-    # so we strip all unnecessary entries.
-    name = ftfont['name']
-    names = []
-    for record in name.names:
-        platID = record.platformID
-        langID = record.langID
-        nameID = record.nameID
-
-        # we keep only en_US entries in Windows and Mac platform id, every
-        # thing else is dropped
-        if (platID == 1 and langID == 0) or (platID == 3 and langID == 1033):
-            if nameID == 13:
-                # the full OFL text is too much, replace it with a simple
-                # string
-                if platID == 3:
-                    # MS strings are UTF-16 encoded
-                    text = 'OFL v1.1'.encode('utf_16_be')
-                else:
-                    text = 'OFL v1.1'
-                record.string = text
-                names.append(record)
-            # keep every thing else except Descriptor, Sample Text
-            elif nameID not in (10, 19):
-                names.append(record)
-
-    name.names = names
-
     # force compiling tables by fontTools, saves few tens of KBs
     for tag in ftfont.keys():
         if hasattr(ftfont[tag], "compile"):
