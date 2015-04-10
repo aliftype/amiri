@@ -107,12 +107,19 @@ def validateGlyphs(font):
         # Hack, OTS rejects ligature carets!
         glyph.lcarets = ()
 
-def setVersion(font, version):
-    font.version = "%07.3f" % float(version)
+def updateInfo(font, version):
+    from datetime import datetime
+
+    version = "%07.3f" % float(version)
+    font.version = font.version % version
+    font.copyright = font.copyright % datetime.now().year
     for name in font.sfnt_names:
-        if name[0] == "Arabic (Egypt)" and name[1] == "Version":
-            font.appendSFNTName(name[0], name[1],
-                                name[2].replace("VERSION", font.version.replace(".", "\xD9\xAB")))
+        if name[0] == "Arabic (Egypt)":
+            if name[1] == "Version":
+                version = version.replace(".", "\xD9\xAB")
+                font.appendSFNTName(name[0], name[1], name[2] % version)
+            elif name[1] == "Copyright":
+                font.appendSFNTName(name[0], name[1], name[2] % datetime.now().year)
 
 def mergeFeatures(font, feafile):
     """Merges feature file into the font while making sure mark positioning
@@ -720,8 +727,7 @@ def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     font = fontforge.open(infile)
     font.encoding = "UnicodeFull" # avoid a crash if compact was set
 
-    if version:
-        setVersion(font, version)
+    updateInfo(font, version)
 
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
