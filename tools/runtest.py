@@ -74,10 +74,7 @@ def runHB(direction, script, language, features, text, fontname, positions):
     text = toUnicode(text)
     HarfBuzz.buffer_add_utf8(buf, text.encode('utf-8'), 0, -1)
     HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_from_string(toBytes(direction)))
-    if script:
-        HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(toBytes(script)))
-    else:
-        HarfBuzz.buffer_guess_segment_properties(buf)
+    HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(toBytes(script)))
     if language:
         HarfBuzz.buffer_set_language(buf, getHbLang(language))
 
