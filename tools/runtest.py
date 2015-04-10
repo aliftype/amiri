@@ -60,14 +60,6 @@ def getHbLang(name):
 
     return HbLangs[name]
 
-HbFeats = {}
-def getHbFeat(name):
-    if name not in HbFeats:
-        feat = HarfBuzz.feature_from_string(toBytes(name))[1]
-        HbFeats[name] = feat
-
-    return HbFeats[name]
-
 def runHB(direction, script, language, features, text, fontname, positions):
     font = getHbFont(fontname)
     buf = HarfBuzz.buffer_create()
@@ -79,7 +71,7 @@ def runHB(direction, script, language, features, text, fontname, positions):
         HarfBuzz.buffer_set_language(buf, getHbLang(language))
 
     if features:
-        features = [getHbFeat(fea) for fea in features.split(',')]
+        features = [HarfBuzz.feature_from_string(toBytes(fea))[1] for fea in features.split(',')]
     else:
         features = []
     HarfBuzz.shape(font, buf, features)
