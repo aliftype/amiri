@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+
 import sys
 import os
 import csv
@@ -8,6 +10,22 @@ from gi.repository import HarfBuzz
 from gi.repository import GLib
 
 from fontTools.ttLib import TTFont
+
+try:
+    unicode
+except NameError:
+    unicode = str
+
+try:
+    bytes
+except NameError:
+    bytes = str
+
+def toUnicode(s, encoding='utf-8'):
+    return s if isinstance(s, unicode) else s.decode(encoding)
+
+def toBytes(s):
+    return s if isinstance(s, bytes) else s.encode()
 
 HbFonts = {}
 def getHbFont(fontname):
@@ -37,7 +55,7 @@ def getTtFont(fontname):
 HbLangs = {}
 def getHbLang(name):
     if name not in HbLangs:
-        lang = HarfBuzz.language_from_string(name)
+        lang = HarfBuzz.language_from_string(toBytes(name))
         HbLangs[name] = lang
 
     return HbLangs[name]
@@ -45,16 +63,10 @@ def getHbLang(name):
 HbFeats = {}
 def getHbFeat(name):
     if name not in HbFeats:
-        feat = HarfBuzz.feature_from_string(name)[1]
+        feat = HarfBuzz.feature_from_string(toBytes(name))[1]
         HbFeats[name] = feat
 
     return HbFeats[name]
-
-def toUnicode(s, encoding='utf-8'):
-    if not isinstance(s, unicode):
-        return s.decode(encoding)
-    else:
-        return s
 
 def runHB(row, fontname, positions=False):
     direction, script, language, features, text = row[:5]
@@ -62,9 +74,9 @@ def runHB(row, fontname, positions=False):
     buf = HarfBuzz.buffer_create()
     text = toUnicode(text)
     HarfBuzz.buffer_add_utf8(buf, text.encode('utf-8'), 0, -1)
-    HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_from_string(direction))
+    HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_from_string(toBytes(direction)))
     if script:
-        HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(script))
+        HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(toBytes(script)))
     else:
         HarfBuzz.buffer_guess_segment_properties(buf)
     if language:
@@ -101,7 +113,7 @@ def runTest(test, font, positions):
     passed = []
     for row in test:
         count += 1
-        row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
+        row[4] = ('\\' in row[4]) and row[4].encode().decode('unicode-escape') or row[4]
         text = row[4]
         reference = row[5]
         result = runHB(row, font, positions)
@@ -144,7 +156,7 @@ if __name__ == '__main__':
     styles = ('regular', 'bold', 'slanted', 'boldslanted')
     for style in styles:
         fontname = 'amiri-%s.ttf' % style
-        print "   TEST\t%s" % fontname
+        print("   TEST\t%s" % fontname)
         for testname in args:
             positions = os.path.splitext(testname)[1] == '.ptest'
 
@@ -162,10 +174,10 @@ if __name__ == '__main__':
                 message = "%s: font '%s', %d passed, %d failed" %(os.path.basename(testname),
                         fontname, len(passed), len(failed))
 
-                print message
+                print(message)
                 for test in failed:
-                    print test
-                    print "string:   \t", failed[test][0]
-                    print "reference:\t", failed[test][1]
-                    print "result:   \t", failed[test][2]
+                    print(test)
+                    print("string:   \t", failed[test][0])
+                    print("reference:\t", failed[test][1])
+                    print("result:   \t", failed[test][2])
                 sys.exit(1)

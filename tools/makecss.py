@@ -11,11 +11,11 @@ def genCSS(font, base):
     if font["post"].italicAngle != 0:
         style = "oblique"
     weight = font["OS/2"].usWeightClass
-    family = font["name"].getName(nameID=1, platformID=1, platEncID=0).string + "Web"
+    family = font["name"].getName(nameID=1, platformID=1, platEncID=0)
 
     css = """
 @font-face {
-    font-family: %(family)s;
+    font-family: %(family)sWeb;
     font-style: %(style)s;
     font-weight: %(weight)s;
     src: url('%(base)s.eot?') format('eot'),
