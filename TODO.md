@@ -24,6 +24,7 @@ Needed contextual forms:
 * Revive old narrow Alef and use it after Kaf-Baa or seen/sad: كبا سا صا.
 * Centered dots in يا يأ بأ پا etc.
 * Final Yaa: بعجي.
+* نكو vs نكر.
 
 Alternates:
 * Shorter parenthesis, as a stylistic set, or cap feature?
