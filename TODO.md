@@ -30,9 +30,11 @@ Alternates:
 * Shorter parenthesis, as a stylistic set, or cap feature?
 * Kasra below Shadda.
 * Localised ampersand.
+* Alt period.
 
 Misc:
 * Sub and super scripts.
+* Smooth the top of ß.
 
 The manual:
 * Link from the main website.
