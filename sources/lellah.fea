@@ -11,8 +11,8 @@
 // it meets a certain criteria.
 //
 // The idea originated from this forum thread:
-// http://www.graphics4arab.com/showthread.php?t=3975
-//  and I just adapted it for Amiri, credit where credit is due.
+// https://web.archive.org/web/20120724090018/http://graphics4arab.com/showthread.php?t=3975
+//  and I just adapted it for Amiri.
 
 lookup Lellah {
   sub uni0644.init by uni0644.init_Lellah;
