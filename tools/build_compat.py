@@ -17,7 +17,7 @@ except NameError:
 def toUnicode(s, encoding='utf-8'):
     return s if isinstance(s, unicode) else s.decode(encoding)
 
-def runHB(text, font):
+def shape(text, font):
     text = toUnicode(text)
     buf = HarfBuzz.buffer_create()
 
@@ -42,27 +42,6 @@ def buildCompatChars(sfd, ttf):
             (0xfdfc, 0xfdfc),
             (0xfe70, 0xfefc),
             )
-    text = u''
-    codes = []
-    for r in ranges:
-        for c in range(r[0], r[1]+1):
-            dec = ucd.decomposition(unichr(c)).split()
-            if dec:
-                codes.append(c)
-                keyword = dec[0]
-                new_text = u''
-
-                for i in dec[1:]:
-                    new_text += unichr(int(str(i),16))
-
-                if keyword == '<initial>':
-                    new_text = new_text + zwj
-                elif keyword == '<final>':
-                    new_text = zwj + new_text
-                elif keyword == '<medial>':
-                    new_text = zwj + new_text + zwj
-
-                text += new_text + '\n'
 
     with open(ttf, "rb") as f:
         data = f.read()
@@ -75,32 +54,45 @@ def buildCompatChars(sfd, ttf):
 
     ttfont = TTFont(ttf)
 
-    lines = [runHB(line, hbfont) for line in text.split('\n')]
-    i = 0
-    for c in codes:
-        components = lines[i]
-        i += 1
-        if components:
-            glyph = sfd.createChar(c)
-            glyph.clear()
-            glyph.color = 0xff0000 # red color
-            x = 0
-            for component in components:
-                gid = component[0]
-                name = ttfont.getGlyphName(gid)
-                x_advance = component[1]
-                x_offset = component[2]
-                y_offset = component[3]
+    for r in ranges:
+        for c in range(r[0], r[1]+1):
+            dec = ucd.decomposition(unichr(c)).split()
+            if dec:
+                keyword = dec[0]
+                text = u''
 
-                matrix = psMat.translate(x + x_offset, y_offset)
+                for i in dec[1:]:
+                    text += unichr(int(str(i),16))
 
-                # ignore blank glyphs, e.g. space or ZWJ
-                if sfd[name].foreground or sfd[name].references:
-                    glyph.addReference(name, matrix)
+                if keyword == '<initial>':
+                    text = text + zwj
+                elif keyword == '<final>':
+                    text = zwj + text
+                elif keyword == '<medial>':
+                    text = zwj + text + zwj
 
-                x += x_advance
+                components = shape(text, hbfont)
+                if components:
+                    glyph = sfd.createChar(c)
+                    glyph.clear()
+                    glyph.color = 0xff0000 # red color
+                    x = 0
+                    for component in components:
+                        gid = component[0]
+                        name = ttfont.getGlyphName(gid)
+                        x_advance = component[1]
+                        x_offset = component[2]
+                        y_offset = component[3]
 
-            glyph.width = x
+                        matrix = psMat.translate(x + x_offset, y_offset)
+
+                        # ignore blank glyphs, e.g. space or ZWJ
+                        if sfd[name].foreground or sfd[name].references:
+                            glyph.addReference(name, matrix)
+
+                        x += x_advance
+
+                    glyph.width = x
 
 
 if __name__ == '__main__':
