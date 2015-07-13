@@ -1,51 +1,39 @@
 #!/usr/bin/env python
 import sys
-import subprocess
 import fontforge
 import psMat
 import unicodedata as ucd
 
+from gi.repository import HarfBuzz
+from gi.repository import GLib
+
+from fontTools.ttLib import TTFont
+
+try:
+    unicode
+except NameError:
+    unicode = str
+
+def toUnicode(s, encoding='utf-8'):
+    return s if isinstance(s, unicode) else s.decode(encoding)
+
 def runHB(text, font):
-    args = ['hb-shape',
-            '--no-clusters',
-            '--direction=rtl',
-            '--script=arab',
-            '--language=ar',
-            '--features=+ss01', # for U+FDFC
-            '--font-file=%s' %font,
-            '--text=%s'      %text]
+    text = toUnicode(text)
+    buf = HarfBuzz.buffer_create()
 
-    process = subprocess.Popen(args, stdout=subprocess.PIPE)
-    out = process.communicate()[0]
-    lines = []
-    for line in out.split('\n'):
-        glyphs = line.strip().strip('[]').split('|')
-        new_glyphs = []
+    HarfBuzz.buffer_add_utf8(buf, text.encode('utf-8'), 0, -1)
+    HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_t.RTL)
+    HarfBuzz.buffer_set_script(buf, HarfBuzz.script_t.ARABIC)
+    HarfBuzz.buffer_set_language(buf, HarfBuzz.language_from_string("ar"))
 
-        for glyph in glyphs:
-            x_advance = 0
-            y_advance = 0
-            x_offset = 0
-            y_offset = 0
+    HarfBuzz.shape(font, buf, [HarfBuzz.feature_from_string("+ss01")[1]])
 
-            if '@' in glyph:
-                name, pos = glyph.split('@')
-                if '+' in pos:
-                    pos, adv = pos.split('+')
-                    x_advance, y_advance = (',' in adv) and adv.split(',') or (adv, 0)
-                x_offset, y_offset = (',' in pos) and pos.split(',') or (pos, 0)
-            elif '+' in glyph:
-                name, pos = glyph.split('+')
-                x_advance, y_advance = (',' in pos) and pos.split(',') or (pos, 0)
-            else:
-                name = glyph
+    glyphs = HarfBuzz.buffer_get_glyph_infos(buf)
+    positions = HarfBuzz.buffer_get_glyph_positions(buf)
 
-            new_glyphs.append([name, int(x_advance or 0), int(y_advance or 0), int(x_offset or 0), int(y_offset or 0)])
-        lines.append(new_glyphs)
+    return [(g.codepoint, p.x_advance, p.x_offset, p.y_offset) for g, p in zip(glyphs, positions)]
 
-    return lines
-
-def buildCompatChars(font, hbfont):
+def buildCompatChars(sfd, ttf):
     zwj = u'\u200D'
     ranges = (
             (0xfb50, 0xfbb1),
@@ -76,27 +64,38 @@ def buildCompatChars(font, hbfont):
 
                 text += new_text + '\n'
 
-    lines = runHB(text, hbfont)
+    with open(ttf, "rb") as f:
+        data = f.read()
+        blob = HarfBuzz.glib_blob_create(GLib.Bytes.new(data))
+        face = HarfBuzz.face_create(blob, 0)
+        hbfont = HarfBuzz.font_create(face)
+        upem = HarfBuzz.face_get_upem(face)
+        HarfBuzz.font_set_scale(hbfont, upem, upem)
+        HarfBuzz.ot_font_set_funcs(hbfont)
+
+    ttfont = TTFont(ttf)
+
+    lines = [runHB(line, hbfont) for line in text.split('\n')]
     i = 0
     for c in codes:
         components = lines[i]
         i += 1
         if components:
-            glyph = font.createChar(c)
+            glyph = sfd.createChar(c)
             glyph.clear()
             glyph.color = 0xff0000 # red color
             x = 0
             for component in components:
-                name = component[0]
+                gid = component[0]
+                name = ttfont.getGlyphName(gid)
                 x_advance = component[1]
-                y_advance = component[2]
-                x_offset = component[3]
-                y_offset = component[4]
+                x_offset = component[2]
+                y_offset = component[3]
 
                 matrix = psMat.translate(x + x_offset, y_offset)
 
                 # ignore blank glyphs, e.g. space or ZWJ
-                if font[name].foreground or font[name].references:
+                if sfd[name].foreground or sfd[name].references:
                     glyph.addReference(name, matrix)
 
                 x += x_advance
@@ -105,7 +104,8 @@ def buildCompatChars(font, hbfont):
 
 
 if __name__ == '__main__':
-    sfdfont = fontforge.open(sys.argv[1])
-    hbfont = sys.argv[2]
-    buildCompatChars(sfdfont, hbfont)
-    sfdfont.save()
+    sfd = fontforge.open(sys.argv[1])
+    ttf = sys.argv[2]
+
+    buildCompatChars(sfd, ttf)
+    sfd.save()
