@@ -1,6 +1,6 @@
-//
-// subtending signs
-//
+#
+# subtending signs
+#
 
 @EndOfAyah = [uni06DD];
 @NumSign   = [uni0600];
@@ -44,10 +44,10 @@ lookup Sign4 {
   sub @NumSign by @NumSign4;
 } Sign4;
 
-// first we replace any sequence of digits (up to two, three or four places)
-// following a subtending sign by smaller alternates
+# first we replace any sequence of digits (up to two, three or four places)
+# following a subtending sign by smaller alternates
 feature calt {
-  // Uniscribe or HarfBuzz ‘latn’
+  # Uniscribe or HarfBuzz ‘latn’
   sub [@EndOfAyah          ] @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
   sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
   sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small;
@@ -57,7 +57,7 @@ feature calt {
   sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
   sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi;
 
-  // HarfBuzz ‘arab’
+  # HarfBuzz ‘arab’
   sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah];
   sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
   sub @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
@@ -68,17 +68,17 @@ feature calt {
   sub @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign];
 } calt;
 
-// Should have been merged with the Uniscribe lookup above as we do for
-// HarfBuzz, but then Uniscribe would crash
+# Should have been merged with the Uniscribe lookup above as we do for
+# HarfBuzz, but then Uniscribe would crash
 feature calt {
   sub @NumSign'   lookup Sign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium;
   sub @NumSign'   lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
   sub @SafhaSign' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
 } calt;
 
-// then we contextually kern the sign with the digits so that they get enclosed by it
+# then we contextually kern the sign with the digits so that they get enclosed by it
 feature kern {
-  // Uniscribe or HarfBuzz ‘latn’
+  # Uniscribe or HarfBuzz ‘latn’
   pos @EndOfAyah @Digits.small'  <-2210 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-1010 0 -600 0>;
   pos @EndOfAyah @Digits.small'  <-1910 0 -600 0> @Digits.small'  <-1310 0 -600 0>;
   pos @EndOfAyah @Digits.small'  <-1610 0 -600 0>;
@@ -100,7 +100,7 @@ feature kern {
   pos @SafhaSign  @Digits.medium' <-2225 0 -900 0> @Digits.medium' <-1325 0 -900 0>;
   pos @SafhaSign  @Digits.medium' <-1775 0 -900 0>;
 
-  // HarfBuzz ‘arab’
+  # HarfBuzz ‘arab’
   pos @Digits.small'  <-1010 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-2210 0 -600 0> @EndOfAyah;
   pos @Digits.small'  <-1310 0 -600 0> @Digits.small'  <-1910 0 -600 0> @EndOfAyah;
   pos @Digits.small'  <-1610 0 -600 0> @EndOfAyah;

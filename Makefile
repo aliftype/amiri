@@ -20,7 +20,7 @@ PY=python2.7
 FF=$(PY) $(BUILD)
 SFNTTOOL=sfnttool
 WOFF2_COMPRESS=woff2_compress
-PP=gpp +c "/*" "*/" +c "//" "\n" +c "\\\n" "" -I$(SRC)
+PP=gpp -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)

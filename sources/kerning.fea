@@ -3,7 +3,7 @@
 @1st_2 = [@RaaWaw @AlefHamzaBelow];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
-// final alef with no hamza above
+# final alef with no hamza above
 @Alf_1 = [uni0627.fina_LamAlfFina uni0625.fina_LamAlfFina];
 @Alf_2 = [@aAlf.fina @aAlf.fina_KafAlf @aAlf.fina_KafMemAlf
           @aAlf.fina_LamAlfFina @aAlf.fina_LamAlfIsol @aAlf.fina_MemAlfFina];
@@ -21,11 +21,11 @@
 @2nd_4 = [@aSad.init_AboveHaa @aSen.init_AboveHaa @aHeh.init_AboveHaa
           @aHaa.init_AboveHaa @aMem.init_AboveHaa @aKaf.init_AboveHaa
           @aAyn.init_AboveHaa];
-@Teh_m = [uni0629.fina_LamHeh uni0629.fina_KafHeh // teh marbuta
+@Teh_m = [uni0629.fina_LamHeh uni0629.fina_KafHeh # teh marbuta
           uni06C3.fina_LamHeh uni06C3.fina_KafHeh];
 
 feature kern {
-  // we don't want to kern those if there is tashkil as it touches the kaf
+  # we don't want to kern those if there is tashkil as it touches the kaf
   pos @RaaWaw' <-600 0 -600 0>  @Kaf_1;
   pos @RaaWaw' <-300 0 -300 0>  @Kaf_4;
   pos @Dal_1'  <-600 0 -600 0>  @Kaf_1;
@@ -58,27 +58,27 @@ feature kern {
   pos @Raa_2' <-200 0 -200 0> @2nd_3;
   pos @Raa_2' <-400 0 -400 0> @2nd_4;
 
-  // the dots of teh marbuta are very close to exclamation mark
+  # the dots of teh marbuta are very close to exclamation mark
   pos @Teh_m' < 150 0  150 0> exclam;
 
-  // +ve kern so that the tail of raa/waw does not touch the dot of baa
+  # +ve kern so that the tail of raa/waw does not touch the dot of baa
   pos @1st_2' < 170 0  170 0> @aBaaDotBelow;
 
-  // increase advance width for first glyph in 3-letter Baree Yaa ligatures
+  # increase advance width for first glyph in 3-letter Baree Yaa ligatures
   pos [@aAyn.init @aFaa.init @aHeh.init @aLam.init
        @aMem.init @aSen.init @aTaa.init uni06BE.init]' lookup YaaBari3Kern
        @aBaa.medi_YaaBari;
 } kern;
 
-// we don't want to ignore marks here
+# we don't want to ignore marks here
 feature kern {
   pos @Alf_1' <-500 0 -500 0> [@Kaf_1 @Kaf_5];
   pos @Alf_1' <-200 0 -200 0> @Kaf_2;
   pos @Alf_1' <-250 0 -250 0> @Kaf_3;
   pos @Alf_1' <-300 0 -300 0> @Kaf_4;
 
-  // raa/waw/dal followed by isolated dagger alef followed by madda needs some
-  // space to avoid fatha/madda clash
+  # raa/waw/dal followed by isolated dagger alef followed by madda needs some
+  # space to avoid fatha/madda clash
   pos @Raa_1' < 200 0  200 0> uni064E uni0670.isol [uni0653 uni06E4];
 
   pos [uni0621]' < 200 0  200 0> uni064E uni0670.isol;
@@ -87,22 +87,22 @@ feature kern {
 feature kern {
   lookupflag IgnoreMarks;
   pos @RaaWaw' <80 0 80 0> @aYaa.init;
-  pos @RaaWaw' <120 0 120 0> uni061B; // Arabic semicolon
+  pos @RaaWaw' <120 0 120 0> uni061B; # Arabic semicolon
 } kern;
 
 feature kern {
   lookupflag IgnoreMarks;
-  // kern heh isol/final followed by kaf, does not happen in Arabic but can be
-  // seen in Kurdish or Persian using ZWNJ between them.
+  # kern heh isol/final followed by kaf, does not happen in Arabic but can be
+  # seen in Kurdish or Persian using ZWNJ between them.
   pos @1st_4 uni200C [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
-  // Uniscribe replace ZWNJ with space
+  # Uniscribe replace ZWNJ with space
   pos @1st_4 space   [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
-  // some applications might just remove it
+  # some applications might just remove it
   pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
 } kern;
 
-// were are only interested in subset of already defined classes; the ones with
-// wide dots below.
+# were are only interested in subset of already defined classes; the ones with
+# wide dots below.
 @aYaa_1 = [uni0680.init uni0776.init uni0750.init uni06CE.init uni0775.init uni06BD.init
            uni064A.init uni0755.init uni067E.init uni067B.init uni0753.init uni0752.init
            uni063D.init uni0754.init uni06D1.init uni06D0.init uni06CC.init uni0767.init
@@ -165,7 +165,7 @@ feature kern {
 } kern;
 #endif
 
-// proportional digits
+# proportional digits
 feature kern {
   pos uni0661.prop uni0662.prop -100;
   pos uni0661.prop uni0663.prop -100;
@@ -198,11 +198,11 @@ feature kern {
   pos uni0660.prop uni0668.prop   50;
 } kern;
 
-// generated features for anchor points will be inserted here by build script
+# generated features for anchor points will be inserted here by build script
 {%anchors%}
 
-// With ss05 on, kasra is below shadda, so move the shadda up a bit to
-// compensate for the kasra.
+# With ss05 on, kasra is below shadda, so move the shadda up a bit to
+# compensate for the kasra.
 feature ss05 {
   pos uni0651' <0 210 0 0> [uni0650.small];
   pos uni0651' <0 350 0 0> [uni064D.small];

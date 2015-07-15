@@ -1,45 +1,45 @@
-//
-// dagger alef
-//
+#
+# dagger alef
+#
 
-// In Quranic orthography, there are two forms of dagger alef; a superscript one
-// that is a combining mark and a spacing one that is regular alef letter, the
-// later is not encoded in Unicode yet. The spacing dagger alef is almost always
-// preceded by a fatha mark and we use this fact to replace the combing dagger
-// alef by a spacing one when preceded by fatha, a hack but should do the job
-// until the proper character get encoded.
+# In Quranic orthography, there are two forms of dagger alef; a superscript one
+# that is a combining mark and a spacing one that is regular alef letter, the
+# later is not encoded in Unicode yet. The spacing dagger alef is almost always
+# preceded by a fatha mark and we use this fact to replace the combing dagger
+# alef by a spacing one when preceded by fatha, a hack but should do the job
+# until the proper character get encoded.
 
-// substitute combining dagger alef preceded by fatha with the spacing one
+# substitute combining dagger alef preceded by fatha with the spacing one
 feature calt {
   sub [uni064E] uni0670' by uni0670.isol;
 } calt;
 
-//
-// floats
-//
+#
+# floats
+#
 
-// Some Arabic characters are shaping transparent, just like combining marks,
-// but are not combining marks, I call them float because they "float" between
-// adjacent characters. When a float comes between two characters that would
-// normally join, it will be placed between them over a connecting stroke, else
-// it will just set on the baseline.
-//
-// This concept is not recognized by Unicode, so we have to hack our way in the
-// font to override shaping decisions by OpenType engine.
-//
-// This includes:
-// * the dagger alef above
-// * standalone hamza (U+0621)
-// * small waw and yaa (U+06E5, U+06E6)
-//
-// Since the layout engine will consider those characters non-joiners, it will
-// break shaping between them, so we simply override this by replacing glyphs
-// around the float with forms that they would normally take if it was not
-// there, and replace the float wit its medial glyph that has a connecting
-// stroke.
+# Some Arabic characters are shaping transparent, just like combining marks,
+# but are not combining marks, I call them float because they "float" between
+# adjacent characters. When a float comes between two characters that would
+# normally join, it will be placed between them over a connecting stroke, else
+# it will just set on the baseline.
+#
+# This concept is not recognized by Unicode, so we have to hack our way in the
+# font to override shaping decisions by OpenType engine.
+#
+# This includes:
+# * the dagger alef above
+# * standalone hamza (U+0621)
+# * small waw and yaa (U+06E5, U+06E6)
+#
+# Since the layout engine will consider those characters non-joiners, it will
+# break shaping between them, so we simply override this by replacing glyphs
+# around the float with forms that they would normally take if it was not
+# there, and replace the float wit its medial glyph that has a connecting
+# stroke.
 
-// do dagger alef first since in Unicode it is a combining mark so it does not
-// break shaping, we just need to substitute it with the medial alternate
+# do dagger alef first since in Unicode it is a combining mark so it does not
+# break shaping, we just need to substitute it with the medial alternate
 @before = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
            @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
            @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
@@ -124,9 +124,9 @@ lookup LamAlefFina {
 
 feature calt {
   lookupflag IgnoreMarks;
-  // hamza between lam and alef needs special treatment as it should not have
-  // a connecting stroke to avoid breaking lam-alef. Other floats don't
-  // normally occur between lam and alef so we don't bother handling them
+  # hamza between lam and alef needs special treatment as it should not have
+  # a connecting stroke to avoid breaking lam-alef. Other floats don't
+  # normally occur between lam and alef so we don't bother handling them
   sub uni0644'      lookup LamAlefIsol
       uni0621'      lookup FloatHamza
       uni0627'      lookup LamAlefIsol;
@@ -135,38 +135,38 @@ feature calt {
       uni0621'      lookup FloatHamza
       uni0627'      lookup LamAlefFina;
 
-  // everything else
+  # everything else
   sub @before'      lookup Before
       @floats.isol' lookup MedialFloats
       @after'       lookup After;
 
-  // handle two successive floats
+  # handle two successive floats
   sub @before'      lookup Before
       @floats.isol' lookup MedialFloats
       @floats.isol' lookup MedialFloats
       @after'       lookup After;
 } calt;
 
-// kern floating hamza between final lam-alef to avoid glyph overlap
+# kern floating hamza between final lam-alef to avoid glyph overlap
 feature kern {
   lookupflag IgnoreMarks;
   pos uni0621.float' <-300 0 0 0> @aAlf.fina_LamAlfFina;
 } kern;
 
-// turn kashida followed by small alef to medial small alef, a common hack to
-// get medial floating small alef.
+# turn kashida followed by small alef to medial small alef, a common hack to
+# get medial floating small alef.
 feature calt {
   sub uni0640.1 uni0670 by uni0670.medi;
 } calt;
 
 #ifdef QURAN
-// if a hamza on yaa or waw is followed by kasra, the hamza goes bellow
+# if a hamza on yaa or waw is followed by kasra, the hamza goes bellow
 lookup hamzakasra {
-  sub uni0626.init by uni0649.init uni0655; // yaa
+  sub uni0626.init by uni0649.init uni0655; # yaa
   sub uni0626.medi by uni0649.medi uni0655;
   sub uni0626.fina by uni0649.fina uni0655;
   sub uni0626      by uni0649      uni0655;
-  sub uni0624.fina by uni0648.fina uni0655; // waw
+  sub uni0624.fina by uni0648.fina uni0655; # waw
   sub uni0624      by uni0648      uni0655;
 } hamzakasra;
 
@@ -175,22 +175,22 @@ feature calt {
   sub [uni0626 uni0626.init uni0626.medi uni0626.fina uni0624 uni0624.fina]' lookup hamzakasra
       [uni0650 uni064D uni08F2];
 } calt;
-#endif // QURAN
+#endif
 
-// small waw after isolated/final heh is lower than usual, so we use an
-// alternate glyph for that
+# small waw after isolated/final heh is lower than usual, so we use an
+# alternate glyph for that
 feature calt {
   lookupflag IgnoreMarks;
   sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
 } calt;
 
-// some glyphs need more room to accommodate madda mark, so we change the advance
-// width on fly.
+# some glyphs need more room to accommodate madda mark, so we change the advance
+# width on fly.
 feature mark {
-  // small waw
+  # small waw
   pos [uni06E5.low]' <50 0 250 0> [uni06E4];
 
-  // alef
+  # alef
   pos [uni0627.fina uni0627.fina_Wide uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <250 0 250 0> [uni06E4];
   pos [uni0627.fina uni0627.fina_Wide uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina]' <350 0 350 0> [uni0653];
   pos [uni0627]' <150 0 300 0> [uni06E4];

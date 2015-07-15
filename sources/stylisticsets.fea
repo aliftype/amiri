@@ -1,11 +1,11 @@
-// Replace baa glyphs with dot below following a raa or waw by an alternate ones
-// with low dots.
+# Replace baa glyphs with dot below following a raa or waw by an alternate ones
+# with low dots.
 feature ss01 {
   lookupflag IgnoreMarks;
   sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
 } ss01;
 
-//
+#
 lookup MemAlfFina {
   sub @aAlf.fina by @aAlf.fina_MemAlfFina;
   sub @aMem.medi by @aMem.medi_MemAlfFina;
@@ -69,7 +69,7 @@ feature ss03 {
   lookup localsym;
 } ss03;
 
-// alternate Gaf form
+# alternate Gaf form
 feature ss04 {
   sub @aGaf.isol by @aGaf.alt;
   sub @aGaf.fina by @aGaf.alt.fina;
