@@ -1,6 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-rewritecond %{http_host} ^amirifont.org [nc]
-rewriterule ^(.*)$ http://www.amirifont.org/$1 [r=301,nc]
-rewritecond %{http_host} ^amiri.sourceforge.net [nc]
-rewriterule ^(.*)$ http://www.amirifont.org/$1 [r=301,nc]
