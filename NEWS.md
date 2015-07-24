@@ -274,7 +274,7 @@ Amiri 0.014 (2011-06-05), Break a Leg
 
 Amiri 0.013 (2011-04-27), Hurry up!
 -----------------------------------
-* A minor release to fix mark positionin on kerned glyphs in Windows.
+* A minor release to fix mark positioning on kerned glyphs in Windows.
 
 Amiri 0.012 (2011-04-26), A Long Night
 --------------------------------------
