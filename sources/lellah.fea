@@ -48,6 +48,7 @@ lookup Lellah5 {
 @xF = [uni064E uni0670];
 
 #ifndef QURAN
+
 lookup LamLamInitX {
   sub uni0644.init by uni0644.init_LamLamInit;
   sub uni0644.medi by uni0644.medi_LamLamInit;
@@ -136,7 +137,9 @@ feature calt {
 feature calt {
   sub uni0644.medi_Lellah' lookup Lellah2 uni0647.fina_Lellah';
 } calt;
+
 #else
+
 # This a stripped down version of the above for use in Amiri Quran,
 # because here we can safely assume the [<Faa>]<Lam><Lam><Heh> sequence always
 # mean the name of Allah.
@@ -154,4 +157,5 @@ feature calt {
       @Lm' lookup Lellah5
       @Hf' lookup Lellah;
 } calt;
+
 #endif
