@@ -19,9 +19,12 @@ lookup HehFinaLellah {
   sub uni06C1.fina by uni0647.fina_Lellah;
 } HehFinaLellah;
 
+
+#ifndef QURAN
 lookup LamMediLellahTashkil {
   sub uni0644.medi_Lellah by uni0644.medi_Lellah uni0651 uni0670;
 } LamMediLellahTashkil;
+#endif
 
 lookup LamMediFaLellah {
   sub uni0644.medi by uni0644.medi_FaLellah;
