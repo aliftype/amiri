@@ -22,7 +22,11 @@ languagesystem latn TRK;
 #include "kashida.fea"
 #include "quran.fea"
 #include "enclosing.fea"
+
+#ifndef QURAN
 #include "rtlm.fea"
+#endif
+
 #include "lellah.fea"
 #include "contextuals.fea"
 #include "stylisticsets.fea"
