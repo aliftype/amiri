@@ -34,8 +34,6 @@ FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
 
-license=OFL.txt OFL-FAQ.txt
-
 all: ttf web
 
 ttf: $(DTTF)
@@ -123,7 +121,7 @@ dist: all check pack doc
 	@echo "   Making dist tarball"
 	@mkdir -p $(DIST)/$(WEB)
 	@mkdir -p $(DIST)/$(DOC)
-	@cp $(license) $(DIST)
+	@cp OFL.txt $(DIST)
 	@cp $(DTTF) $(DIST)
 	@cp README.md $(DIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
