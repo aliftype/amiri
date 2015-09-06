@@ -859,6 +859,7 @@ feature calt {
   sub [@aKaf.medi]' lookup KafRaaFina
       [@aRaa.fina]' lookup KafRaaFina;
 
+  ignore sub [@aLam.init]' [uni06C1.medi]';
   sub [@aLam.init]' lookup LamHehInit
       [@aHeh.medi]' lookup LamHehInit;
 
