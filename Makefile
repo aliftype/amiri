@@ -121,16 +121,8 @@ distclean:
 
 dist: all check pack doc
 	@echo "   Making dist tarball"
-	@mkdir -p $(DIST)/$(SRC)
 	@mkdir -p $(DIST)/$(WEB)
 	@mkdir -p $(DIST)/$(DOC)
-	@mkdir -p $(DIST)/$(TOOLS)
-	@mkdir -p $(DIST)/$(TESTS)
-	@cp -r $(SRC)/*.sfdir $(DIST)/$(SRC)
-	@cp $(FEAT) $(DIST)/$(SRC)
-	@mkdir -p $(DIST)/$(SRC)/latin
-	@cp -r $(SRC)/latin/amirilatin-*.sfdir $(DIST)/$(SRC)/latin
-	@cp -r $(SRC)/latin/README $(DIST)/$(SRC)/latin
 	@cp $(license) $(DIST)
 	@cp $(DTTF) $(DIST)
 	@cp README.md $(DIST)/README
@@ -144,9 +136,5 @@ dist: all check pack doc
 	@cp $(CSSS) $(DIST)/$(WEB)
 	@cp $(WEB)/README $(DIST)/$(WEB)
 	@cp $(PDFS) $(DIST)/$(DOC)
-	@cp $(DOC)/documentation-arabic.tex $(DIST)/$(DOC)
-	@cp $(TEST) $(DIST)/$(TESTS)
-	@cp $(BUILD) $(DIST)/$(TOOLS)
-	@cp $(RUNTEST) $(DIST)/$(TOOLS)
 	@zip -r $(DIST).zip $(DIST)
 	@tar cfj $(DIST)-ctan.tar.bz2 $(DIST) --exclude "$(WEB)*"
