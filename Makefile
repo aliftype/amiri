@@ -133,7 +133,6 @@ dist: all check pack doc
 	@cp -r $(SRC)/latin/README $(DIST)/$(SRC)/latin
 	@cp $(license) $(DIST)
 	@cp $(DTTF) $(DIST)
-	@cp $(DOCFILES) $(DIST)/$(DOC)
 	@cp README.md $(DIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
