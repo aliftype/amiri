@@ -120,8 +120,8 @@ distclean:
 
 dist: all check pack doc
 	@echo "   Making dist tarball"
+	@mkdir -p $(DIST)
 	@mkdir -p $(WDIST)
-	@mkdir -p $(DIST)/$(DOC)
 	@cp OFL.txt $(DIST)
 	@cp OFL.txt $(WDIST)
 	@cp $(DTTF) $(DIST)
@@ -135,7 +135,6 @@ dist: all check pack doc
 	@cp $(EOTS) $(WDIST)
 	@cp $(CSSS) $(WDIST)
 	@cp $(WEB)/README $(WDIST)
-	@cp $(PDFS) $(DIST)/$(DOC)
+	@cp $(PDFS) $(DIST)
 	@zip -r $(DIST).zip $(DIST)
 	@zip -r $(WDIST).zip $(WDIST)
-	@tar cfj $(DIST)-ctan.tar.bz2 $(DIST)
