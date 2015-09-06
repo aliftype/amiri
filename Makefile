@@ -10,6 +10,7 @@ DOC=documentation
 TESTS=test-suite
 FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-quran-colored $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
 DIST=$(NAME)-$(VERSION)
+WDIST=$(NAME)-$(VERSION)-webfonts
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
@@ -115,24 +116,26 @@ clean:
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean:
-	@rm -rf $(DIST) $(DIST).zip
+	@rm -rf $(DIST) $(DIST).zip $(WDIST) $(WDIST).zip
 
 dist: all check pack doc
 	@echo "   Making dist tarball"
-	@mkdir -p $(DIST)/$(WEB)
+	@mkdir -p $(WDIST)
 	@mkdir -p $(DIST)/$(DOC)
 	@cp OFL.txt $(DIST)
+	@cp OFL.txt $(WDIST)
 	@cp $(DTTF) $(DIST)
 	@cp README.md $(DIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
 	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
-	@cp $(WTTF) $(DIST)/$(WEB)
-	@cp $(WOFF) $(DIST)/$(WEB)
-	@cp $(WOF2) $(DIST)/$(WEB)
-	@cp $(EOTS) $(DIST)/$(WEB)
-	@cp $(CSSS) $(DIST)/$(WEB)
-	@cp $(WEB)/README $(DIST)/$(WEB)
+	@cp $(WTTF) $(WDIST)
+	@cp $(WOFF) $(WDIST)
+	@cp $(WOF2) $(WDIST)
+	@cp $(EOTS) $(WDIST)
+	@cp $(CSSS) $(WDIST)
+	@cp $(WEB)/README $(WDIST)
 	@cp $(PDFS) $(DIST)/$(DOC)
 	@zip -r $(DIST).zip $(DIST)
-	@tar cfj $(DIST)-ctan.tar.bz2 $(DIST) --exclude "$(WEB)*"
+	@zip -r $(WDIST).zip $(WDIST)
+	@tar cfj $(DIST)-ctan.tar.bz2 $(DIST)
