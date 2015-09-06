@@ -2,10 +2,25 @@ StartChar: uni06C1.fina_KafHeh
 Encoding: 1117301 -1 3473
 Width: 689
 VWidth: 0
-AnchorPoint: "HamzaAbove" 170 870 basechar 0
+Flags: W
 AnchorPoint: "TashkilAbove" 330 1640 basechar 0
+AnchorPoint: "HamzaAbove" 370 500 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 375 -1 N 1 0 0 1 0 0 3
+SplineSet
+727 145 m 0,0,1
+ 829 93 829 93 813 11 c 0,2,3
+ 789 -109 789 -109 722 -89 c 0,4,5
+ 609 -52 609 -52 527 70 c 0,6,7
+ 509 98 509 98 506 103 c 0,8,9
+ 490 121 490 121 464.5 96.5 c 128,-1,10
+ 439 72 439 72 350 -39 c 0,11,12
+ 234 -183 234 -183 212 -206 c 0,13,14
+ 199 -220 199 -220 187 -213 c 128,-1,15
+ 175 -206 175 -206 187 -185 c 0,16,17
+ 250 -78 250 -78 463 237 c 0,18,19
+ 524 327 524 327 572 263.5 c 128,-1,20
+ 620 200 620 200 727 145 c 0,0,1
+EndSplineSet
 EndChar

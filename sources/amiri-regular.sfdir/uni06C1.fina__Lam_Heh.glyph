@@ -2,10 +2,27 @@ StartChar: uni06C1.fina_LamHeh
 Encoding: 1117332 -1 3504
 Width: 828
 VWidth: 0
-AnchorPoint: "HamzaAbove" 167 824 basechar 0
-AnchorPoint: "TashkilAbove" 200 1640 basechar 0
+Flags: W
+AnchorPoint: "TashkilAbove" 300 1640 basechar 0
+AnchorPoint: "HamzaAbove" 350 500 basechar 0
 AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 2
 Fore
-Refer: 379 -1 N 1 0 0 1 0 0 3
+SplineSet
+837 34 m 24,0,1
+ 903 22 903 22 896 -38 c 0,2,3
+ 883 -146 883 -146 883 -151 c 24,4,5
+ 865 -197 865 -197 835 -197 c 0,6,7
+ 725 -198 725 -198 635 -155 c 0,8,9
+ 512 -96 512 -96 460 0 c 1,10,11
+ 445 18 445 18 419 -3 c 0,12,13
+ 389 -27 389 -27 321 -109 c 0,14,15
+ 203 -251 203 -251 183 -273 c 0,16,17
+ 170 -287 170 -287 158 -280 c 128,-1,18
+ 146 -273 146 -273 158 -252 c 0,19,20
+ 248 -98 248 -98 434 170 c 0,21,22
+ 496 259 496 259 543 196 c 0,23,24
+ 594 128 594 128 698 78 c 0,25,26
+ 759 48 759 48 837 34 c 24,0,1
+EndSplineSet
 EndChar
