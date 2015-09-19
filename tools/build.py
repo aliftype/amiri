@@ -146,7 +146,7 @@ def mergeFeatures(font, feafile):
     font.mergeFeatureString(fea_text)
 
 def generateFont(font, outfile):
-    flags  = ("opentype", "dummy-dsig", "round", "omit-instructions")
+    flags  = ("opentype", "dummy-dsig", "round", "omit-instructions", "no-mac-names")
 
     font.selection.all()
     font.correctReferences()
