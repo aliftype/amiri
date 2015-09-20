@@ -127,6 +127,8 @@ feature init {
   sub uni0775 by uni0775.init;
   sub uni0776 by uni0776.init;
   sub uni0777 by uni0777.init;
+  sub uni077A by uni0775.init;
+  sub uni077B by uni0776.init;
   sub uni077C by uni077C.init;
   sub uni077D by uni077D.init;
   sub uni077E by uni077E.init;
@@ -263,6 +265,8 @@ feature medi {
   sub uni0775 by uni0775.medi;
   sub uni0776 by uni0776.medi;
   sub uni0777 by uni0777.medi;
+  sub uni077A by uni0775.medi;
+  sub uni077B by uni0776.medi;
   sub uni077C by uni077C.medi;
   sub uni077D by uni077D.medi;
   sub uni077E by uni077E.medi;
