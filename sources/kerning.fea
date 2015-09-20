@@ -101,45 +101,9 @@ feature kern {
   pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -500;
 } kern;
 
-# were are only interested in subset of already defined classes; the ones with
-# wide dots below.
-@aYaa_1 = [uni0680.init uni0776.init uni0750.init uni06CE.init uni0775.init uni06BD.init
-           uni064A.init uni0755.init uni067E.init uni067B.init uni0753.init uni0752.init
-           uni063D.init uni063E.init uni063F.init uni0754.init uni06D1.init uni06D0.init uni06CC.init uni0767.init
-           uni0680.init_BaaRaaIsol uni0776.init_BaaRaaIsol uni0750.init_BaaRaaIsol
-           uni06CE.init_BaaRaaIsol uni0775.init_BaaRaaIsol uni06BD.init_BaaRaaIsol
-           uni064A.init_BaaRaaIsol uni0755.init_BaaRaaIsol uni067E.init_BaaRaaIsol
-           uni067B.init_BaaRaaIsol uni0753.init_BaaRaaIsol uni0752.init_BaaRaaIsol
-           uni063D.init_BaaRaaIsol uni063E.init_BaaRaaIsol uni063F.init_BaaRaaIsol uni0754.init_BaaRaaIsol uni06D1.init_BaaRaaIsol
-           uni06D0.init_BaaRaaIsol uni06CC.init_BaaRaaIsol uni0767.init_BaaRaaIsol
-           uni0680.init_BaaNonIsol uni0776.init_BaaNonIsol uni0750.init_BaaNonIsol
-           uni06CE.init_BaaNonIsol uni0775.init_BaaNonIsol uni06BD.init_BaaNonIsol
-           uni064A.init_BaaNonIsol uni0755.init_BaaNonIsol uni067E.init_BaaNonIsol
-           uni067B.init_BaaNonIsol uni0753.init_BaaNonIsol uni0752.init_BaaNonIsol
-           uni063D.init_BaaNonIsol uni063E.init_BaaNonIsol uni063F.init_BaaNonIsol uni0754.init_BaaNonIsol uni06D1.init_BaaNonIsol
-           uni06D0.init_BaaNonIsol uni06CC.init_BaaNonIsol uni0767.init_BaaNonIsol
-           uni0680.init_BaaYaaIsol uni0776.init_BaaYaaIsol uni0750.init_BaaYaaIsol
-           uni06CE.init_BaaYaaIsol uni0775.init_BaaYaaIsol uni06BD.init_BaaYaaIsol
-           uni064A.init_BaaYaaIsol uni0755.init_BaaYaaIsol uni067E.init_BaaYaaIsol
-           uni067B.init_BaaYaaIsol uni0753.init_BaaYaaIsol uni0752.init_BaaYaaIsol
-           uni063D.init_BaaYaaIsol uni063E.init_BaaYaaIsol uni063F.init_BaaYaaIsol uni0754.init_BaaYaaIsol uni06D1.init_BaaYaaIsol
-           uni06D0.init_BaaYaaIsol uni06CC.init_BaaYaaIsol uni0767.init_BaaYaaIsol
-           uni0680.init_BaaMemIsol uni0776.init_BaaMemIsol uni0750.init_BaaMemIsol
-           uni06CE.init_BaaMemIsol uni0775.init_BaaMemIsol uni06BD.init_BaaMemIsol
-           uni064A.init_BaaMemIsol uni0755.init_BaaMemIsol uni067E.init_BaaMemIsol
-           uni067B.init_BaaMemIsol uni0753.init_BaaMemIsol uni0752.init_BaaMemIsol
-           uni063D.init_BaaMemIsol uni063E.init_BaaMemIsol uni063F.init_BaaMemIsol uni0754.init_BaaMemIsol uni06D1.init_BaaMemIsol
-           uni06D0.init_BaaMemIsol uni06CC.init_BaaMemIsol uni0767.init_BaaMemIsol
-           uni0680.init_BaaSenAltInit uni0776.init_BaaSenAltInit uni0750.init_BaaSenAltInit
-           uni06CE.init_BaaSenAltInit uni0775.init_BaaSenAltInit uni06BD.init_BaaSenAltInit
-           uni064A.init_BaaSenAltInit uni0755.init_BaaSenAltInit uni067E.init_BaaSenAltInit
-           uni067B.init_BaaSenAltInit uni0753.init_BaaSenAltInit uni0752.init_BaaSenAltInit
-           uni063D.init_BaaSenAltInit uni063E.init_BaaSenAltInit uni063F.init_BaaSenAltInit uni0754.init_BaaSenAltInit uni06D1.init_BaaSenAltInit
-           uni06D0.init_BaaSenAltInit uni06CC.init_BaaSenAltInit uni0767.init_BaaSenAltInit];
-
 feature kern {
   lookupflag IgnoreMarks;
-    pos @Raa_2' <180 0 180 0> @aYaa_1;
+    pos @Raa_2' <180 0 180 0> @aBaaDotBelow;
 } kern;
 
 #ifndef QURAN
