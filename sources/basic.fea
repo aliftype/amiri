@@ -19,6 +19,8 @@ feature init {
   sub uni063B by uni063B.init;
   sub uni063C by uni063C.init;
   sub uni063D by uni063D.init;
+  sub uni063E by uni063E.init;
+  sub uni063F by uni063F.init;
   sub uni0641 by uni0641.init;
   sub uni0642 by uni0642.init;
   sub uni0643 by uni0643.init;
@@ -153,6 +155,8 @@ feature medi {
   sub uni063B by uni063B.medi;
   sub uni063C by uni063C.medi;
   sub uni063D by uni063D.medi;
+  sub uni063E by uni063E.medi;
+  sub uni063F by uni063F.medi;
   sub uni0641 by uni0641.medi;
   sub uni0642 by uni0642.medi;
   sub uni0643 by uni0643.medi;

@@ -1,0 +1,13 @@
+StartChar: uni063E.init_BaaMemIsolLD
+Encoding: 70469 -1 6053
+Width: 801
+VWidth: 0
+Flags: W
+AnchorPoint: "TashkilAbove" 446 1640 basechar 0
+AnchorPoint: "TashkilBelow" 623 -980 basechar 0
+LayerCount: 3
+Fore
+Refer: 403 -1 N 1 0 0 1 0 0 2
+Refer: 299 -1 N 1 0 0 1 603 -890 2
+Refer: 192 -1 N 1 0 0 1 446 991 2
+EndChar
