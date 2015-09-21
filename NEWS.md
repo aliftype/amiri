@@ -1,3 +1,32 @@
+Amiri 0.108 (2015-09-21)
+------------------------
+* New glyphs:
+    - New design of ه in ‍هي combination.
+    - Alternate numbers for use in fractions, accessible with the OpenType
+      features `numr` and `dnom`.
+    - The new Arabic Extended-A vowel marks, in the range U+08E4–08FE.
+    - Redesign the U+06C1 forms to make it distinctive from U+06BE.
+    - Add “جل جلاله” symbol, U+FDFB.
+
+* Fixes:
+    - No longer replace two successive *fatha*, *damma* or *kasra* with a
+      sequential *tanween* form, the characters U+08F0, U+08F1 and U+08F2
+      should be used instead.
+    - Many kerning improvements.
+    - Workaround a bug in Core Text (Mac OS X text layout engine) that break
+      the لله ligature.
+    - All forms of U+06BA are now dotless, per Unicode standard.
+    - Initial and medial forms of U+063E, U+063F, U+077A and U+077B were
+      missing.
+    - The dots in initial and medial forms of U+06BD should be inverted.
+
+* New fonts:
+    - A coloured version of the Amiri Quran font that gives the vowels and
+      Quranic annotation marks distinctive colours. This font uses the new
+      `COLR`/`CPAL` font tables which are currently supported only by Firefox
+      (all platforms) and MS Internet Explorer/Edge (Windows 8.1 and above).
+    - The webfonts now include WOFF 2.0 files as well.
+
 Amiri 0.107 (2013-12-30)
 ------------------------
 * New glyphs:
