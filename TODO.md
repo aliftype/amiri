@@ -15,6 +15,7 @@ Glyph clash:
 * كحكي
 * تثبت
 * التَشكيلي
+* بمثناة
 
 Needed contextual forms:
 * Raised Baa: التجسسية.
