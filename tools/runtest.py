@@ -6,6 +6,8 @@ import sys
 import os
 import csv
 
+import gi
+gi.require_version('HarfBuzz', '0.0')
 from gi.repository import HarfBuzz
 from gi.repository import GLib
 
