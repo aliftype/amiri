@@ -27,8 +27,7 @@ def makeWeb(infile, outfile):
 
 
     options = subset.Options()
-    no_subset = options.no_subset_tables + ['COLR', 'CPAL']
-    options.set(layout_features='*', name_IDs='*', drop_tables=['DSIG'], no_subset_tables=no_subset)
+    options.set(layout_features='*', name_IDs='*', drop_tables=['DSIG'])
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(font)
