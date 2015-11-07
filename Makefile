@@ -73,7 +73,7 @@ $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-boldi
 $(WEB)/%.ttf: %.ttf $(MAKEWEB)
 	@echo "   FF	$@"
 	@mkdir -p $(WEB)
-	@$(PY) $(MAKEWEB) $< $@ 1>/dev/null 2>&1
+	@$(PY) $(MAKEWEB) $< $@
 
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF	$@"

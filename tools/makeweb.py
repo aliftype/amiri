@@ -2,24 +2,15 @@ import argparse
 import os
 
 from fontTools.ttLib import TTFont
-from sortsmill import ffcompat as fontforge
-from tempfile import mkstemp
+from fontTools import subset
 
 def makeWeb(infile, outfile):
     """If we are building a web version then try to minimise file size"""
 
-    # "short-post" generates a post table without glyph names to save some KBs
-    # since glyph names are only needed for PDF's as readers use them to
-    # "guess" characters when copying text, which is of little use in web fonts.
-    flags = ("opentype", "short-post", "omit-instructions")
-
-    fontforge.setPrefs("PreserveTables", "COLR,CPAL")
-
-    font = fontforge.open(infile)
-    font.encoding = "UnicodeBmp" # avoid a crash if compact was set
+    font = TTFont(infile)
 
     # removed compatibility glyphs that of little use on the web
-    compat_ranges = (
+    ranges = (
             (0xfb50, 0xfbb1),
             (0xfbd3, 0xfd3d),
             (0xfd50, 0xfdf9),
@@ -27,31 +18,23 @@ def makeWeb(infile, outfile):
             (0xfe70, 0xfefc),
             )
 
-    for glyph in font.glyphs():
-        for i in compat_ranges:
-            start = i[0]
-            end = i[1]
-            if start <= glyph.unicode <= end:
-                font.removeGlyph(glyph)
-                break
+    cmap = font['cmap'].buildReversed()
+    compat = set()
+    for r in ranges:
+        compat |= set(range(r[0], r[1] + 1))
+    unicodes = set([min(cmap[c]) for c in cmap])
+    unicodes -= compat
 
-    tmpfile = mkstemp(suffix=os.path.basename(outfile))[1]
-    font.generate(tmpfile, flags=flags)
+
+    options = subset.Options()
+    no_subset = options.no_subset_tables + ['COLR', 'CPAL']
+    options.set(layout_features='*', name_IDs='*', drop_tables=['DSIG'], no_subset_tables=no_subset)
+    subsetter = subset.Subsetter(options=options)
+    subsetter.populate(unicodes=unicodes)
+    subsetter.subset(font)
+
+    font.save(outfile)
     font.close()
-
-    # now open in fontTools
-    from fontTools.ttLib import TTFont
-    ftfont = TTFont(tmpfile)
-
-    # force compiling tables by fontTools, saves few tens of KBs
-    for tag in ftfont.keys():
-        if hasattr(ftfont[tag], "compile"):
-            ftfont[tag].compile(ftfont)
-
-    ftfont.save(outfile)
-    ftfont.close()
-
-    os.remove(tmpfile)
 
 
 def main():
