@@ -19,7 +19,6 @@ from sortsmill import ffcompat as fontforge
 from sortsmill import psMat
 import sys
 import os
-from tempfile import mkstemp
 
 def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
@@ -155,22 +154,7 @@ def generateFont(font, outfile):
     # fix some common font issues
     validateGlyphs(font)
 
-    tmpfile = mkstemp(suffix=os.path.basename(outfile))[1]
-    font.generate(tmpfile, flags=flags)
-    font.close()
-
-    # now open in fontTools
-    from fontTools.ttLib import TTFont
-    ftfont = TTFont(tmpfile)
-
-    # force compiling tables by fontTools, saves few tens of KBs
-    for tag in ftfont.keys():
-        if hasattr(ftfont[tag], "compile"):
-            ftfont[tag].compile(ftfont)
-
-    ftfont.save(outfile)
-    ftfont.close()
-    os.remove(tmpfile)
+    font.generate(outfile, flags=flags)
 
 def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
     glyph = font.createChar(uni, name)
@@ -346,6 +330,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
 
     latinfile = "amirilatin-%s.sfdir" %style
 
+    from tempfile import mkstemp
     tmpfont = mkstemp(suffix=os.path.basename(latinfile).replace("sfdir", "sfd"))[1]
     latinfont = fontforge.open("sources/latin/%s" %latinfile)
 
