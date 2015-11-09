@@ -19,12 +19,9 @@ def makeWeb(infile, outfile):
             )
 
     cmap = font['cmap'].buildReversed()
-    compat = set()
-    for r in ranges:
-        compat |= set(range(r[0], r[1] + 1))
     unicodes = set([min(cmap[c]) for c in cmap])
-    unicodes -= compat
-
+    for r in ranges:
+        unicodes -= set(range(r[0], r[1] + 1))
 
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', drop_tables=['DSIG'])
