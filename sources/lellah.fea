@@ -20,12 +20,6 @@ lookup HehFinaLellah {
 } HehFinaLellah;
 
 
-#ifndef QURAN
-lookup LamMediLellahTashkil {
-  sub uni0644.medi_Lellah by uni0644.medi_Lellah uni0651 uni0670;
-} LamMediLellahTashkil;
-#endif
-
 lookup LamMediFaLellah {
   sub uni0644.medi by uni0644.medi_FaLellah;
 } LamMediFaLellah;
@@ -133,10 +127,23 @@ feature calt {
 } calt;
 
 # Now put shadda+dagger alef above the medial lam if there are no marks on it.
+lookup LamMediLellahTashkil {
+  sub uni0644.medi_Lellah by uni0644.medi_Lellah dummy1 uni0651 uni0670;
+} LamMediLellahTashkil;
+
 feature calt {
   sub uni0644.medi_Lellah' lookup LamMediLellahTashkil uni0647.fina_Lellah';
 } calt;
 
+# This stylistic set removes them, it makes use of dummy1 glyph we inserted
+# above to differentiate automatically inserted diacritics.
+feature ss06 {
+  featureNames {
+    name "No automatic vowel insertion above name of God";
+  };
+
+  sub uni0644.medi_Lellah' dummy1' uni0651' uni0670' by uni0644.medi_Lellah;
+} ss06;
 #else
 
 # This a stripped down version of the above for use in Amiri Quran,
