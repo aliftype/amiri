@@ -1,6 +1,10 @@
 # Replace baa glyphs with dot below following a raa or waw by an alternate ones
 # with low dots.
 feature ss01 {
+  featureNames {
+    name "Low Baa dot following a Raa or Waw";
+  };
+
   lookupflag IgnoreMarks;
   sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
 } ss01;
@@ -34,6 +38,10 @@ lookup BaaMemAlfFina {
                  @aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth];
 
 feature ss02 {
+  featureNames {
+    name "Alternate medial Meem and final Alef combination";
+  };
+
   lookupflag IgnoreMarks;
   ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
 
@@ -60,6 +68,10 @@ lookup localsym {
 } localsym;
 
 feature ss03 {
+  featureNames {
+    name "Localised @ symbol";
+  };
+
   script arab;
   language ARA;
   lookup localsym;
@@ -71,6 +83,10 @@ feature ss03 {
 
 # alternate Gaf form
 feature ss04 {
+  featureNames {
+    name "Alternate, more naskh-like, Gaf form";
+  };
+
   sub @aGaf.isol by @aGaf.alt;
   sub @aGaf.fina by @aGaf.alt.fina;
 } ss04;
@@ -99,6 +115,10 @@ lookup SSShaddaKasra {
 } SSShaddaKasra;
 
 feature ss05 {
+  featureNames {
+    name "Kasra is placed below Shadda instead of base glyph";
+  };
+
   sub uni0651 [uni064D uni0650]' lookup SSShaddaKasra;
 } ss05;
 
