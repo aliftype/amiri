@@ -19,8 +19,6 @@ MAKECSS=$(TOOLS)/makecss.py
 MAKEWEB=$(TOOLS)/makeweb.py
 PY=python2.7
 FF=$(PY) $(BUILD)
-SFNTTOOL=sfnttool
-WOFF2_COMPRESS=woff2_compress
 PP=gpp -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
@@ -77,12 +75,12 @@ $(WEB)/%.ttf: %.ttf $(MAKEWEB)
 $(WEB)/%.woff: $(WEB)/%.ttf
 	@echo "   FF	$@"
 	@mkdir -p $(WEB)
-	@$(SFNTTOOL) -w $< $@
+	@$(PY) $(MAKEWEB) $< $@
 
 $(WEB)/%.woff2: $(WEB)/%.ttf
 	@echo "   FF	$@"
 	@mkdir -p $(WEB)
-	@$(WOFF2_COMPRESS) $< 1>/dev/null
+	@$(PY) $(MAKEWEB) $< $@
 
 $(WEB)/%.css: $(WTTF) $(MAKECSS)
 	@echo "   GEN	$@"

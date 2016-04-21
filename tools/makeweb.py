@@ -29,6 +29,10 @@ def makeWeb(infile, outfile):
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(font)
 
+    base, ext = os.path.splitext(outfile)
+    if ext in (".woff", ".woff2"):
+        print(ext[1:])
+        font.flavor = ext[1:]
     font.save(outfile)
     font.close()
 
