@@ -37,7 +37,7 @@ def colorize(font):
     CPAL.version = 0
     COLR.version = 0
 
-    palette = GROUPS.keys()
+    palette = list(GROUPS.keys())
     CPAL.palettes = [palette]
     CPAL.numPaletteEntries = len(palette)
 
