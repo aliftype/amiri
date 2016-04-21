@@ -67,20 +67,10 @@ $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-boldi
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
 
-$(WEB)/%.ttf: %.ttf $(MAKEWEB)
-	@echo "   FF	$@"
+$(WEB)/%.ttf $(WEB)/%.woff $(WEB)/%.woff2: %.ttf $(MAKEWEB)
+	@echo "   WEB	$*"
 	@mkdir -p $(WEB)
-	@$(PY) $(MAKEWEB) $< $@
-
-$(WEB)/%.woff: $(WEB)/%.ttf
-	@echo "   FF	$@"
-	@mkdir -p $(WEB)
-	@$(PY) $(MAKEWEB) $< $@
-
-$(WEB)/%.woff2: $(WEB)/%.ttf
-	@echo "   FF	$@"
-	@mkdir -p $(WEB)
-	@$(PY) $(MAKEWEB) $< $@
+	@$(PY) $(MAKEWEB) $< $(WEB)
 
 $(WEB)/%.css: $(WTTF) $(MAKECSS)
 	@echo "   GEN	$@"

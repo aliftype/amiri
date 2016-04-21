@@ -4,10 +4,10 @@ import os
 from fontTools.ttLib import TTFont
 from fontTools import subset
 
-def makeWeb(infile, outfile):
+def makeWeb(args):
     """If we are building a web version then try to minimise file size"""
 
-    font = TTFont(infile)
+    font = TTFont(args.file)
 
     # removed compatibility glyphs that of little use on the web
     ranges = (
@@ -29,22 +29,22 @@ def makeWeb(infile, outfile):
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(font)
 
-    base, ext = os.path.splitext(outfile)
-    if ext in (".woff", ".woff2"):
-        print(ext[1:])
-        font.flavor = ext[1:]
-    font.save(outfile)
+    base, ext = os.path.splitext(args.file)
+    for flavor in ("ttf", "woff", "woff2"):
+        if flavor is not "ttf":
+            font.flavor = flavor
+        font.save(args.dir + "/" + base + "." + flavor)
     font.close()
 
 
 def main():
     parser = argparse.ArgumentParser(description="Create web optimised version of Amiri fonts.")
-    parser.add_argument("infile", metavar="INFILE", help="input font to process")
-    parser.add_argument("outfile", metavar="OUTFILE", help="output font to write")
+    parser.add_argument("file", help="input font to process")
+    parser.add_argument("dir", help="output directory to write fonts to")
 
     args = parser.parse_args()
 
-    makeWeb(args.infile, args.outfile)
+    makeWeb(args)
 
 if __name__ == "__main__":
     main()
