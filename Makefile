@@ -28,7 +28,6 @@ DTTF=$(FONTS:%=%.ttf)
 WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 WOF2=$(FONTS:%=$(WEB)/%.woff2)
-EOTS=$(FONTS:%=$(WEB)/%.eot)
 CSSS=$(WEB)/$(NAME).css
 PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/documentation-arabic.pdf
 FEAT=$(wildcard $(SRC)/*.fea)
@@ -38,7 +37,7 @@ TEST+=$(wildcard $(TESTS)/*.ptest)
 all: ttf web
 
 ttf: $(DTTF)
-web: $(WTTF) $(WOFF) $(WOF2) $(EOTS) $(CSSS)
+web: $(WTTF) $(WOFF) $(WOF2) $(CSSS)
 doc: $(PDFS)
 
 $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
@@ -85,11 +84,6 @@ $(WEB)/%.woff2: $(WEB)/%.ttf
 	@mkdir -p $(WEB)
 	@$(WOFF2_COMPRESS) $< 1>/dev/null
 
-$(WEB)/%.eot: $(WEB)/%.ttf
-	@echo "   FF	$@"
-	@mkdir -p $(WEB)
-	@$(SFNTTOOL) -e -x $< $@
-
 $(WEB)/%.css: $(WTTF) $(MAKECSS)
 	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
@@ -112,7 +106,7 @@ check: $(TEST) $(DTTF)
 	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
-	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(WOF2) $(EOTS) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
+	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(WOF2) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean:
@@ -132,7 +126,6 @@ dist: all check pack doc
 	@cp $(WTTF) $(WDIST)
 	@cp $(WOFF) $(WDIST)
 	@cp $(WOF2) $(WDIST)
-	@cp $(EOTS) $(WDIST)
 	@cp $(CSSS) $(WDIST)
 	@cp $(WEB)/README $(WDIST)
 	@cp $(PDFS) $(DIST)
