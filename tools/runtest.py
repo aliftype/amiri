@@ -62,7 +62,7 @@ def runHB(direction, script, language, features, text, fontname, positions):
     HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_from_string(toBytes(direction)))
     HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(toBytes(script)))
     if language:
-        HarfBuzz.buffer_set_language(buf, HarfBuzz.language_from_string(language))
+        HarfBuzz.buffer_set_language(buf, HarfBuzz.language_from_string(toBytes(language)))
 
     if features:
         features = [HarfBuzz.feature_from_string(toBytes(fea))[1] for fea in features.split(',')]
