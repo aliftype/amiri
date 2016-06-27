@@ -193,6 +193,9 @@ lookup BaaHeh {
 
 feature calt {
   lookupflag IgnoreMarks;
+#ifdef QURAN
+  ignore sub [uni0649.init uni0649.medi]' @aHeh.medi';
+#endif
   sub [@aBaa.init @aBaa.medi @aMem.init_dots]' lookup BaaHeh
       [@aHeh.medi]' lookup BaaHeh;
 } calt;
