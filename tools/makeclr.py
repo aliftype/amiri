@@ -1,11 +1,9 @@
 import argparse
 
-from fontTools import ttLib
-from fontTools.ttLib.tables.C_O_L_R_ import LayerRecord
-from fontTools.ttLib.tables.C_P_A_L_ import Color
+from fontTools.ttLib import TTFont, getTableModule, newTable
 
-DIACRITICS = Color(red=0x00, green=0x80, blue=0x00, alpha=0xff) # green
-SIGNS      = Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
+DIACRITICS = getTableModule("CPAL").Color(red=0x00, green=0x80, blue=0x00, alpha=0xff) # green
+SIGNS      = getTableModule("CPAL").Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
 
 DIACRITICS_GLYPHS = (
     "uni0618", "uni0619", "uni061A", "uni064B", "uni064C",
@@ -31,8 +29,8 @@ GROUPS = {DIACRITICS: DIACRITICS_GLYPHS,
           SIGNS:      SIGNS_GLYPHS}
 
 def colorize(font):
-    COLR = ttLib.newTable("COLR")
-    CPAL = ttLib.newTable("CPAL")
+    COLR = newTable("COLR")
+    CPAL = newTable("CPAL")
 
     CPAL.version = 0
     COLR.version = 0
@@ -46,7 +44,7 @@ def colorize(font):
     for color in GROUPS:
         names = GROUPS[color]
         for name in names:
-            layer = LayerRecord(name=name, colorID=palette.index(color))
+            layer = getTableModule("COLR").LayerRecord(name=name, colorID=palette.index(color))
             COLR[name] = [layer]
 
     font["COLR"] = COLR
@@ -84,7 +82,7 @@ def main():
 
     args = parser.parse_args()
 
-    font = ttLib.TTFont(args.infile)
+    font = TTFont(args.infile)
 
     colorize(font)
     rename(font)
