@@ -4,6 +4,7 @@ from fontTools.ttLib import TTFont, getTableModule, newTable
 
 DIACRITICS = getTableModule("CPAL").Color(red=0x00, green=0x80, blue=0x00, alpha=0xff) # green
 SIGNS      = getTableModule("CPAL").Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
+BLACK      = getTableModule("CPAL").Color(red=0x00, green=0x00, blue=0x00, alpha=0xff)
 
 DIACRITICS_GLYPHS = (
     "uni0618", "uni0619", "uni061A", "uni064B", "uni064C",
@@ -25,12 +26,20 @@ SIGNS_GLYPHS = (
     "uni06E5.medi", "uni06E6.medi"
 )
 
-GROUPS = {DIACRITICS: DIACRITICS_GLYPHS,
-          SIGNS:      SIGNS_GLYPHS}
+GROUPS = {
+    DIACRITICS: DIACRITICS_GLYPHS,
+    SIGNS:      SIGNS_GLYPHS,
+    BLACK:      [],
+}
+
+def newLayer(name, colorID):
+    return getTableModule("COLR").LayerRecord(name=name, colorID=colorID)
 
 def colorize(font):
     COLR = newTable("COLR")
     CPAL = newTable("CPAL")
+    glyf = font["glyf"]
+    hmtx = font["hmtx"]
 
     CPAL.version = 0
     COLR.version = 0
@@ -44,8 +53,32 @@ def colorize(font):
     for color in GROUPS:
         names = GROUPS[color]
         for name in names:
-            layer = getTableModule("COLR").LayerRecord(name=name, colorID=palette.index(color))
-            COLR[name] = [layer]
+            layers = []
+            if name.endswith(".medi"):
+                glyph = glyf[name]
+                assert(glyph.isComposite())
+                for component in glyph.components:
+                    componentName, trans = component.getComponentInfo()
+                    if trans == (1, 0, 0, 1, 0, 0):
+                       #layers.append(newLayer(componentName, 0xFFFF)) # broken if FF47
+                        layers.append(newLayer(componentName, palette.index(BLACK)))
+                    else:
+                        newName = "%s.%s" % (name, componentName)
+                        font.glyphOrder.append(newName)
+
+                        newGlyph = getTableModule("glyf").Glyph()
+                        newGlyph.numberOfContours = -1
+                        newGlyph.components = [component]
+                        glyf.glyphs[newName] = newGlyph
+
+                        width = hmtx[name][0]
+                        lsb = hmtx[componentName][1] + trans[4]
+                        hmtx.metrics[newName] = [width, lsb]
+
+                        layers.append(newLayer(newName, palette.index(color)))
+            else:
+                layers.append(newLayer(name, palette.index(color)))
+            COLR[name] = layers
 
     font["COLR"] = COLR
     font["CPAL"] = CPAL
