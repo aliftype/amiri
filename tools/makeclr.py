@@ -44,10 +44,10 @@ def colorize(font):
     COLR.ColorLayers = {}
 
     for color in GROUPS:
-        glyphs = GROUPS[color]
-        for glyph in glyphs:
-            layer = LayerRecord(name=glyph, colorID=palette.index(color))
-            COLR[glyph] = [layer]
+        names = GROUPS[color]
+        for name in names:
+            layer = LayerRecord(name=name, colorID=palette.index(color))
+            COLR[name] = [layer]
 
     font["COLR"] = COLR
     font["CPAL"] = CPAL
