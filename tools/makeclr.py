@@ -23,7 +23,7 @@ SIGNS_GLYPHS = (
     "uni06E2", "uni06E3", "uni06E4", "uni06E5", "uni06E6",
     "uni06E7", "uni06E8", "uni06E9", "uni06EA", "uni06EB",
     "uni06EC", "uni06ED", "uni0670.isol", "uni0670.medi",
-    "uni06E5.medi", "uni06E6.medi"
+    "uni06E5.medi", "uni06E6.medi", "uni06E5.low"
 )
 
 GROUPS = {
