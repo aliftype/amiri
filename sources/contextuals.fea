@@ -1367,3 +1367,18 @@ feature calt {
       [uni064A.medi_BaaNonFina uni064A.medi_BaaRaaFina]'
    by [uni06D0.medi_BaaNonFina uni06D0.medi_BaaRaaFina];
 } calt;
+
+# Insert kashida between final ع and the kasra below the preceding letter
+# see https://github.com/khaledhosny/quran-data/issues/4
+lookup KasraAynFina {
+  sub uni064D by uni064D uni0640.2;
+  sub uni0650 by uni0650 uni0640.2;
+  sub uni08F2 by uni08F2 uni0640.2;
+  # XXX: should have been uni0640.3 but it is too big
+  sub uni06ED by uni06ED uni0640.2 uni0640.05;
+} KasraAynFina;
+
+feature calt {
+  sub @Tashkil.below' lookup KasraAynFina
+      @aAyn.fina;
+} calt;
