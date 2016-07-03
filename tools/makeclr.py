@@ -60,6 +60,8 @@ def colorize(font):
                 for component in glyph.components:
                     componentName, trans = component.getComponentInfo()
                     if trans == (1, 0, 0, 1, 0, 0):
+                        # broken in current versions of Firefox,
+                        # see https://bugzilla.mozilla.org/show_bug.cgi?id=1283932
                        #layers.append(newLayer(componentName, 0xFFFF)) # broken if FF47
                         layers.append(newLayer(componentName, palette.index(BLACK)))
                     else:
