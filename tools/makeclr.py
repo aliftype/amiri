@@ -23,6 +23,7 @@ MARKS_GLYPHS = (
     "uni0651",
     "uni0652",
     "uni0654",
+    "uni0655",
     "uni0657",
     "uni0658",
     "uni065C",
