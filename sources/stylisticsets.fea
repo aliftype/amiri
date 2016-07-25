@@ -63,22 +63,13 @@ feature ss02 {
 } ss02;
 
 #ifndef QURAN
-lookup localsym {
-  sub at by at.ara;
-} localsym;
-
 feature ss03 {
   featureNames {
-    name "Localised @ symbol";
+    name "Localised @ and & symbols";
   };
 
-  script arab;
-  language ARA;
-  lookup localsym;
-
-  script arab;
-  language dflt;
-  lookup localsym;
+  sub at by at.ara;
+  sub ampersand by ampersand.ara;
 } ss03;
 
 # alternate Gaf form
