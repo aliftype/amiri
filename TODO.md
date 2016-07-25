@@ -29,7 +29,6 @@ Needed contextual forms:
 
 Alternates:
 * Shorter parenthesis, as a stylistic set, or cap feature?
-* Kasra below Shadda.
 * Alt period.
 
 Misc:
