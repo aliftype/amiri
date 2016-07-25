@@ -2,11 +2,11 @@ import argparse
 
 from fontTools.ttLib import TTFont, getTableModule, newTable
 
-DIACRITICS = getTableModule("CPAL").Color(red=0x00, green=0x80, blue=0x00, alpha=0xff) # green
-SIGNS      = getTableModule("CPAL").Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
-BLACK      = getTableModule("CPAL").Color(red=0x00, green=0x00, blue=0x00, alpha=0xff)
+MARKS = getTableModule("CPAL").Color(red=0x00, green=0x80, blue=0x00, alpha=0xff) # green
+SIGNS = getTableModule("CPAL").Color(red=0x80, green=0x00, blue=0x80, alpha=0xff) # purple
+BLACK = getTableModule("CPAL").Color(red=0x00, green=0x00, blue=0x00, alpha=0xff)
 
-DIACRITICS_GLYPHS = (
+MARKS_GLYPHS = (
     "uni0618", "uni0619", "uni061A", "uni064B", "uni064C",
     "uni064D", "uni064E", "uni064F", "uni0650", "uni0651",
     "uni0652", "uni0657", "uni0658", "uni06E1", "uni08F0",
@@ -27,9 +27,9 @@ SIGNS_GLYPHS = (
 )
 
 GROUPS = {
-    DIACRITICS: DIACRITICS_GLYPHS,
-    SIGNS:      SIGNS_GLYPHS,
-    BLACK:      [],
+    MARKS: MARKS_GLYPHS,
+    SIGNS: SIGNS_GLYPHS,
+    BLACK: [],
 }
 
 def newLayer(name, colorID):
