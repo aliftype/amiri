@@ -5,15 +5,21 @@ from fontTools.ttLib import TTFont, getTableModule, newTable
 Color = getTableModule("CPAL").Color
 
 RED = Color(red=0xff, green=0x00, blue=0x00, alpha=0xff)
-BLUE = Color(red=0x1f, green=0x75, blue=0xfe, alpha=0xff)
+YELLOW = Color(red=0xcc, green=0x99, blue=0x00, alpha=0xff)
 GREEN = Color(red=0x00, green=0xa5, blue=0x50, alpha=0xff)
+BLUE = Color(red=0x1f, green=0x75, blue=0xfe, alpha=0xff)
 BLACK = Color(red=0x00, green=0x00, blue=0x00, alpha=0xff)
+
+HAMZA_GLYPHS = (
+    "uni0621",
+    "uni0654",
+    "uni0655",
+)
 
 MARKS_GLYPHS = (
     "uni0618",
     "uni0619",
     "uni061A",
-    "uni0621",
     "uni064B",
     "uni064C",
     "uni064D",
@@ -22,8 +28,6 @@ MARKS_GLYPHS = (
     "uni0650",
     "uni0651",
     "uni0652",
-    "uni0654",
-    "uni0655",
     "uni0657",
     "uni0658",
     "uni065C",
@@ -52,7 +56,7 @@ MARKS_GLYPHS = (
     "ThreeDots",
 )
 
-PUSES_GLYPHS = (
+PAUSES_GLYPHS = (
     "uni0615",
     "uni0617",
     "uni06D6",
@@ -82,8 +86,9 @@ SIGNS_GLYPHS = (
 
 GROUPS = {
     MARKS_GLYPHS: RED,
-    PUSES_GLYPHS: BLUE,
     SIGNS_GLYPHS: GREEN,
+    HAMZA_GLYPHS: YELLOW,
+    PAUSES_GLYPHS: BLUE,
 }
 
 def newLayer(name, colorID):
