@@ -172,11 +172,10 @@ def colorize(font):
     font["CPAL"] = CPAL
 
 def rename(font):
-    name = font["name"]
-    for record in name.names:
-        if record.nameID in (1, 4, 6):
-            string = record.toUnicode()
-            if record.nameID == 6:
+    for name in font["name"].names:
+        if name.nameID in (1, 4, 6):
+            string = name.toUnicode()
+            if name.nameID == 6:
                 if "-" in string:
                     family, subfamily = string.split("-")
                     string = "%sColored-%s" % (family, subfamily)
@@ -185,7 +184,7 @@ def rename(font):
             else:
                 string += " Colored"
 
-            record.string = string.encode(record.getEncoding())
+            name.string = string.encode(name.getEncoding())
 
 def main():
     parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
