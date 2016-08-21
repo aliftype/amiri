@@ -600,6 +600,7 @@ def scaleGlyph(glyph, amount):
 
     Logic copied (and simplified for our simple case) from code of FontForge
     transform dialog, since that logic is not exported to Python interface."""
+    width = glyph.width
     bbox = glyph.boundingBox()
     x = (bbox[0] + bbox[2]) / 2
     y = (bbox[1] + bbox[3]) / 2
@@ -611,6 +612,8 @@ def scaleGlyph(glyph, amount):
     matrix[5] = move[5] * scale[3] + y;
 
     glyph.transform(matrix)
+    if width == 0:
+        glyph.width = width
 
 def makeQuran(infile, outfile, feafile, version):
     font = makeDesktop(infile, outfile, feafile, version, False, False)
