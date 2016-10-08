@@ -62,11 +62,11 @@ feature calt {
   sub [uni0655]       [uni0650]'                 by [uni0650.small2];
 } calt;
 
-# replace hamza mark when following a final heh by a glyph that only have a
+# replace hamza mark when following a heh by a glyph that has only a
 # HamzaAbove mark so it will be positioned correctly
-feature calt {
-  sub [uni0647 uni06D5 uni06C1 uni0647.fina uni06D5.fina uni06C1.fina] [uni0654]' by hamza.above;
-} calt;
+feature ccmp {
+  sub [uni0647 uni06D5 uni06C1] [uni0654]' by hamza.above;
+} ccmp;
 
 lookup BaaInitWide {
   sub @aBaa.init by @aBaa.init_Wide;
