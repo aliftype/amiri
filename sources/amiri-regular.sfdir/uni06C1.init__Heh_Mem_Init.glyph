@@ -2,6 +2,7 @@ StartChar: uni06C1.init_HehMemInit
 Encoding: 1117424 -1 3596
 Width: 925
 VWidth: 0
+AnchorPoint: "HamzaAbove" 386 1424 basechar 0
 AnchorPoint: "TashkilAbove" 300 1640 basechar 0
 AnchorPoint: "TashkilBelow" 500 -670 basechar 0
 LayerCount: 2

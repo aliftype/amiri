@@ -87,6 +87,7 @@ feature init {
   sub uni06BE by uni06BE.init;
   sub uni06BF by uni06BF.init;
   sub uni06C1 by uni06C1.init;
+  sub uni06C2 by uni06C1.init hamza.above;
   sub uni06CC by uni06CC.init;
   sub uni06CE by uni06CE.init;
   sub uni06D0 by uni06D0.init;
@@ -225,6 +226,7 @@ feature medi {
   sub uni06BE by uni06BE.medi;
   sub uni06BF by uni06BF.medi;
   sub uni06C1 by uni06C1.medi;
+  sub uni06C2 by uni06C1.medi hamza.above;
   sub uni06CC by uni06CC.medi;
   sub uni06CE by uni06CE.medi;
   sub uni06D0 by uni06D0.medi;

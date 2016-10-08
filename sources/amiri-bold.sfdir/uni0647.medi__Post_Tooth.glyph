@@ -2,8 +2,9 @@ StartChar: uni0647.medi_PostTooth
 Encoding: 69195 -1 3943
 Width: 944
 Flags: W
-AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 AnchorPoint: "TashkilAbove" 382 1640 basechar 0
+AnchorPoint: "HamzaAbove" 388 880 basechar 0
+AnchorPoint: "TashkilBelow" 400 -670 basechar 0
 LayerCount: 3
 Fore
 Refer: 413 -1 N 1 0 0 1 0 0 3

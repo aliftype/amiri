@@ -2,6 +2,7 @@ StartChar: aHeh.medi_LamHehInit
 Encoding: 65659 -1 124
 Width: 492
 Flags: W
+AnchorPoint: "HamzaAbove" 79 720 basechar 0
 AnchorPoint: "TashkilBelow" 200 -670 basechar 0
 AnchorPoint: "TashkilAbove" 240 1640 basechar 0
 LayerCount: 3
