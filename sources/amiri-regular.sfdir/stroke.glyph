@@ -3,14 +3,18 @@ Encoding: 1114366 -1 342
 Width: 0
 GlyphClass: 4
 Flags: W
-AnchorPoint: "Stroke" 0 44 mark 0
+AnchorPoint: "Stroke" 0 24 mark 0
 LayerCount: 2
 Fore
 SplineSet
--200 125 m 1,0,-1
- 250 125 l 1,1,-1
- 200 0 l 1,2,-1
- -250 0 l 1,3,-1
- -200 125 l 1,0,-1
+169 0 m 2,0,-1
+ -227 0 l 2,1,2
+ -250 0 -250 0 -238 20 c 2,3,-1
+ -211 66 l 2,4,5
+ -200 85 -200 85 -169 85 c 2,6,-1
+ 227 85 l 2,7,8
+ 250 85 250 85 238 65 c 2,9,-1
+ 211 19 l 2,10,11
+ 200 0 200 0 169 0 c 2,0,-1
 EndSplineSet
 EndChar
