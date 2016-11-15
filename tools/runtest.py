@@ -75,14 +75,13 @@ def runHB(direction, script, language, features, text, fontname, positions):
     if positions:
         pos = HarfBuzz.buffer_get_glyph_positions(buf)
         glyphs = []
+        x = 0
         for i, p in zip(info, pos):
             glyph = ttfont.getGlyphName(i.codepoint)
-            if p.x_offset or p.y_offset:
-                glyph += "@%d,%d" % (p.x_offset, p.y_offset)
+            glyph += "@(%d,%d)" % (x + p.x_offset, p.y_offset)
             glyph += "+%d" % p.x_advance
-            if p.y_advance:
-                glyph += ",%d" % p.y_advance
             glyphs.append(glyph)
+            x += p.x_advance
         out = "|".join(glyphs)
     else:
         out = "|".join([ttfont.getGlyphName(i.codepoint) for i in info])
