@@ -108,10 +108,10 @@ def runTest(test, font, positions):
 def initTest(test, font, positions):
     out = ""
     for row in test:
-        text = row[4]
-        row[4] = ('\\' in row[4]) and row[4].decode('unicode-escape') or row[4]
-        result = runHB(row, font, positions)
-        out += "%s;%s;%s\n" %(";".join(row[:4]), text, result)
+        direction, script, language, features, enctext, reference = row
+        text = enctext.encode().decode('unicode-escape') if '\\' in enctext else enctext
+        result = runHB(direction, script, language, features, text, font, positions)
+        out += "%s;%s;%s\n" %(";".join(row[:4]), enctext, result)
 
     return out
 
@@ -126,6 +126,11 @@ if __name__ == '__main__':
 
     if init is True:
         for testname in args:
+            reader = csv.reader(open(testname), delimiter=';')
+            test = []
+            for row in reader:
+                test.append(row)
+
             positions = os.path.splitext(testname)[1] == '.ptest'
             fontname = 'amiri-regular.ttf'
             outname = testname+".test"
