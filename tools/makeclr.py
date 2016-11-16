@@ -8,7 +8,6 @@ RED = Color(red=0xcc, green=0x33, blue=0x33, alpha=0xff)
 YELLOW = Color(red=0xee, green=0x99, blue=0x33, alpha=0xff)
 GREEN = Color(red=0x00, green=0xa5, blue=0x50, alpha=0xff)
 BLUE = Color(red=0x33, green=0x66, blue=0x99, alpha=0xff)
-BLACK = Color(red=0x00, green=0x00, blue=0x00, alpha=0xff)
 
 HAMAZAT_GLYPHS = (
     "uni0621",
@@ -112,7 +111,6 @@ def colorize(font):
     COLR.version = 0
 
     palette = list(GROUPS.values())
-    palette.append(BLACK)
     CPAL.palettes = [palette]
     CPAL.numPaletteEntries = len(palette)
 
@@ -129,14 +127,12 @@ def colorize(font):
                 for component in glyph.components:
                     componentName, trans = component.getComponentInfo()
                     componentColor = getGlyphColor(componentName)
+                    if componentColor is None:
+                        componentColor = 0xFFFF
+                    else:
+                        componentColor = palette.index(componentColor)
                     if trans == (1, 0, 0, 1, 0, 0):
-                        if componentColor is None:
-                            # broken in current versions of Firefox,
-                            # see https://bugzilla.mozilla.org/show_bug.cgi?id=1283932
-                           #layers.append(newLayer(componentName, 0xFFFF)) # broken if FF47
-                            layers.append(newLayer(componentName, palette.index(BLACK)))
-                        else:
-                            layers.append(newLayer(componentName, palette.index(componentColor)))
+                        layers.append(newLayer(componentName, componentColor))
                     else:
                         newName = "%s.%s" % (componentName, hash(trans))
                         if newName not in font.glyphOrder:
@@ -151,14 +147,7 @@ def colorize(font):
                             width = hmtx[name][0]
                             lsb = hmtx[componentName][1] + trans[4]
                             hmtx.metrics[newName] = [width, lsb]
-
-                        if componentColor is None:
-                            # broken in current versions of Firefox,
-                            # see https://bugzilla.mozilla.org/show_bug.cgi?id=1283932
-                           #layers.append(newLayer(componentName, 0xFFFF)) # broken if FF47
-                            layers.append(newLayer(newName, palette.index(BLACK)))
-                        else:
-                            layers.append(newLayer(newName, palette.index(componentColor)))
+                        layers.append(newLayer(newName, componentColor))
 
         if not layers:
             color = getGlyphColor(name)
