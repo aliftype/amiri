@@ -2,6 +2,9 @@ StartChar: uni08FA
 Encoding: 2298 2298 5940
 Width: 0
 Flags: W
+AnchorPoint: "TashkilBelowDot" 280 -429 mark 0
+AnchorPoint: "TashkilBelow" 280 -429 mark 0
+AnchorPoint: "MarkBelow" 280 -429 mark 0
 LayerCount: 3
 Fore
 Refer: 5938 2296 N 1 0 0 1 0 -2630 2
