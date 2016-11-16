@@ -52,6 +52,7 @@ MARKS_GLYPHS = (
     "hamza.wasl",
     "Dot",
     "TwoDots",
+    "vTwoDots",
     "ThreeDots",
 )
 
