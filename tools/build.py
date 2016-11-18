@@ -649,11 +649,9 @@ def makeQuran(infile, outfile, feafile, version):
     # scale some vowel marks and dots down a bit
     scaleGlyph(font["uni0651"], 0.8)
     for mark in ("uni064B", "uni064C", "uni064E", "uni064F", "uni06E1",
-                 "uni08F0", "uni08F1", "uni08F2"):
+                 "uni08F0", "uni08F1", "uni08F2",
+                 "TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
         scaleGlyph(font[mark], 0.9)
-
-    for dot in ("TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
-        scaleGlyph(font[dot], 0.9)
 
     quran_glyphs = []
     for glyph in font.glyphs():
