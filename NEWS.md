@@ -1,3 +1,23 @@
+Amiri 0.109 (2016-11-20)
+------------------------
+* New glyphs:
+    - A new stylistic set (`ss06`) to avoid automatically adding ◌ّٰ above لله.
+    - A localised &.
+    - U+1EEF0 ARABIC MATHEMATICAL OPERATOR MEEM WITH HAH WITH TATWEEL (𞻰).
+    - U+1EEF1 ARABIC MATHEMATICAL OPERATOR HAH WITH DAL (𞻱).
+    - Adding missing forms of U+06C2.
+
+* Fixes:
+    - Fix clipping of some vowel marks in Microsoft Office.
+    - Add descriptive stylistic sets names to the font.
+    - Many improvements to Amiri Quran Colored, including revamped color
+      palette by Munzir Taha.
+    - Improve and redo most of the Arabic math alphanumeric symbols.
+    - https://github.com/khaledhosny/quran-data/issues/1
+    - https://github.com/khaledhosny/quran-data/issues/4
+    - https://github.com/khaledhosny/amiri-font/issues/90
+    - https://github.com/khaledhosny/amiri-font/issues/106
+
 Amiri 0.108 (2015-09-21)
 ------------------------
 * New glyphs:
