@@ -15,8 +15,8 @@ Amiri 0.109 (2016-11-20)
     - Improve and redo most of the Arabic math alphanumeric symbols.
     - https://github.com/khaledhosny/quran-data/issues/1
     - https://github.com/khaledhosny/quran-data/issues/4
-    - https://github.com/khaledhosny/amiri-font/issues/90
-    - https://github.com/khaledhosny/amiri-font/issues/106
+    - https://github.com/alif-type/amiri-font/issues/90
+    - https://github.com/alif-type/amiri-font/issues/106
 
 Amiri 0.108 (2015-09-21)
 ------------------------

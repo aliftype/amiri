@@ -15,8 +15,8 @@
     - تحسينات و إعادة تصميم للكثير من رموز الرياضيات العربية.
     - https://github.com/khaledhosny/quran-data/issues/1
     - https://github.com/khaledhosny/quran-data/issues/4
-    - https://github.com/khaledhosny/amiri-font/issues/90
-    - https://github.com/khaledhosny/amiri-font/issues/106
+    - https://github.com/alif-type/amiri-font/issues/90
+    - https://github.com/alif-type/amiri-font/issues/106
 
 أميري 0٫108 (2015-09-21)
 ------------------------
