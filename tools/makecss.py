@@ -11,7 +11,7 @@ def genCSS(font, base):
     if font["post"].italicAngle != 0:
         style = "oblique"
     weight = font["OS/2"].usWeightClass
-    family = font["name"].getName(nameID=1, platformID=1, platEncID=0)
+    family = font["name"].getName(nameID=1, platformID=3, platEncID=1)
 
     css = """
 @font-face {
