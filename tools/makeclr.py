@@ -128,28 +128,32 @@ def colorize(font):
                 for component in glyph.components:
                     componentName, trans = component.getComponentInfo()
                     componentColor = getGlyphColor(componentName)
+
                     if componentColor is None:
+                        # Special palette index that means the glyph has no
+                        # specified color and takes the text color.
                         componentColor = 0xFFFF
                     else:
                         componentColor = palette.index(componentColor)
-                    if False and trans == (1, 0, 0, 1, 0, 0):
-                        layers.append(newLayer(componentName, componentColor))
-                    else:
-                        width = hmtx[name][0]
-                        lsb = hmtx[componentName][1] + trans[4]
-                        identifier = hash((trans, width, lsb))
-                        newName = "%s.%s" % (componentName, identifier)
-                        if newName not in font.glyphOrder:
-                            font.glyphOrder.append(newName)
 
-                            newGlyph = getTableModule("glyf").Glyph()
-                            newGlyph.numberOfContours = -1
-                            newGlyph.components = [component]
-                            glyf.glyphs[newName] = newGlyph
-                            assert(len(glyf.glyphs) == len(font.glyphOrder)), (name, newName)
+                    # Unique identifier for each layer, so we can reuse
+                    # identical layers and avoid needless duplication.
+                    width = hmtx[name][0]
+                    lsb = hmtx[componentName][1] + trans[4]
+                    identifier = hash((trans, width, lsb))
+                    newName = "%s.%s" % (componentName, identifier)
 
-                            hmtx.metrics[newName] = [width, lsb]
-                        layers.append(newLayer(newName, componentColor))
+                    if newName not in font.glyphOrder:
+                        font.glyphOrder.append(newName)
+
+                        newGlyph = getTableModule("glyf").Glyph()
+                        newGlyph.numberOfContours = -1
+                        newGlyph.components = [component]
+                        glyf.glyphs[newName] = newGlyph
+                        assert(len(glyf.glyphs) == len(font.glyphOrder)), (name, newName)
+
+                        hmtx.metrics[newName] = [width, lsb]
+                    layers.append(newLayer(newName, componentColor))
 
         if not layers:
             color = getGlyphColor(name)
