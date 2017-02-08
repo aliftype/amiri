@@ -132,10 +132,13 @@ def colorize(font):
                         componentColor = 0xFFFF
                     else:
                         componentColor = palette.index(componentColor)
-                    if trans == (1, 0, 0, 1, 0, 0):
+                    if False and trans == (1, 0, 0, 1, 0, 0):
                         layers.append(newLayer(componentName, componentColor))
                     else:
-                        newName = "%s.%s" % (componentName, hash(trans))
+                        width = hmtx[name][0]
+                        lsb = hmtx[componentName][1] + trans[4]
+                        identifier = hash((trans, width, lsb))
+                        newName = "%s.%s" % (componentName, identifier)
                         if newName not in font.glyphOrder:
                             font.glyphOrder.append(newName)
 
@@ -145,8 +148,6 @@ def colorize(font):
                             glyf.glyphs[newName] = newGlyph
                             assert(len(glyf.glyphs) == len(font.glyphOrder)), (name, newName)
 
-                            width = hmtx[name][0]
-                            lsb = hmtx[componentName][1] + trans[4]
                             hmtx.metrics[newName] = [width, lsb]
                         layers.append(newLayer(newName, componentColor))
 
