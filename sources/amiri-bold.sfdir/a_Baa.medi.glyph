@@ -2,19 +2,20 @@ StartChar: aBaa.medi
 Encoding: 65546 -1 10
 Width: 500
 Flags: W
-AnchorPoint: "DigitBelow" 260 -350 basechar 0
-AnchorPoint: "DigitAbove" 250 870 basechar 0
-AnchorPoint: "HighHamza" 350 740 basechar 0
-AnchorPoint: "VAbove" 250 740 basechar 0
+AnchorPoint: "TwoDotsAbove" 120 740 basechar 0
+AnchorPoint: "TwoDotsBelow" 160 -250 basechar 0
+AnchorPoint: "TashkilBelow" 240 -670 basechar 0
 AnchorPoint: "RingBelow" 250 120 basechar 0
 AnchorPoint: "TaaAbove" 250 670 basechar 0
-AnchorPoint: "TashkilBelow" 240 -670 basechar 0
-AnchorPoint: "TashkilAbove" 250 1640 basechar 0
-AnchorPoint: "TwoDotsBelow" 160 -250 basechar 0
-AnchorPoint: "TwoDotsAbove" 120 740 basechar 0
+AnchorPoint: "VAbove" 250 740 basechar 0
 AnchorPoint: "HamzaAbove" 250 740 basechar 0
-AnchorPoint: "DotBelow" 260 -350 basechar 0
+AnchorPoint: "DigitAbove" 250 870 basechar 0
 AnchorPoint: "DotAbove" 250 870 basechar 0
+AnchorPoint: "TashkilAbove" 250 1640 basechar 0
+AnchorPoint: "HamzaBelow" 260 -350 basechar 0
+AnchorPoint: "DigitBelow" 260 -350 basechar 0
+AnchorPoint: "DotBelow" 260 -350 basechar 0
+AnchorPoint: "HighHamza" 350 740 basechar 0
 LayerCount: 3
 Fore
 SplineSet
