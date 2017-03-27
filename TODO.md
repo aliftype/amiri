@@ -7,6 +7,7 @@ Mark placement issues:
 * قَطِعُ
 * لِحِ
 * الخَطّ
+* الحُلَل
 
 Glyph clash:
 * پیر
