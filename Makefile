@@ -1,7 +1,7 @@
 .PHONY: all clean ttf web pack check
 
 NAME=amiri
-VERSION=0.109
+VERSION=0.110
 
 TOOLS=tools
 SRC=sources
