@@ -498,6 +498,11 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     font.mergeFonts(tmpfont)
     os.remove(tmpfont)
 
+    # This is often used for visible space, so they better be the same width.
+    if "periodcentered" in font:
+        font["periodcentered"].width = font["space"].width
+        centerGlyph(font["periodcentered"])
+
     if not quran:
         buildComposition(font, latinglyphs)
 
