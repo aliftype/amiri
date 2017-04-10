@@ -570,9 +570,10 @@ def makeSlanted(infile, outfile, feafile, version, slant):
         font.removeGlyph(glyph)
 
     font.selection.all()
-    punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
-             "braceright", "bracketleft", "bracketright", "parenleft",
-             "parenright", "slash", "backslash", "brokenbar", "uni061F")
+    punct = ("exclam", "period", "guillemotleft", "guillemotright",
+             "braceleft", "bar", "braceright", "bracketleft", "bracketright",
+             "parenleft", "parenright", "slash", "backslash", "brokenbar",
+             "uni061F", "dot.1", "dot.2")
 
     for name in punct:
         font.selection.select(["less"], name)
