@@ -103,9 +103,6 @@ def validateGlyphs(font):
 
         glyph.round()
 
-        # Hack, OTS rejects ligature carets!
-        glyph.lcarets = ()
-
 def updateInfo(font, version):
     from datetime import datetime
 
