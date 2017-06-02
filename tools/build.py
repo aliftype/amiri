@@ -127,6 +127,7 @@ def mergeFeatures(font, feafile):
     for i in [1, 2]:
         dummy = font.createChar(-1, "dummy%s" %i)
         dummy.width = 0
+        dummy.glyphclass = "mark"
 
     oldfea = font.generateFeatureString()
 
