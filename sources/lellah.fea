@@ -40,7 +40,27 @@ lookup LamMediLellah {
 @Hf = [uni0647.fina uni06C1.fina];
 @xF = [uni064E uni0670];
 
-#ifndef QURAN
+#ifdef QURAN
+
+# This a stripped down version of the above for use in Amiri Quran,
+# because here we can safely assume the [<Faa>]<Lam><Lam><Heh> sequence always
+# mean the name of Allah.
+
+feature calt {
+  lookupflag IgnoreMarks;
+  # لله
+  sub @Li' lookup LamInitLellah
+      @Lm' lookup LamMediLellah
+      @Hf' lookup HehFinaLellah;
+
+  # فلله
+  sub [uni0641.init]'
+      @Lm' lookup LamMediFaLellah
+      @Lm' lookup LamMediLellah
+      @Hf' lookup HehFinaLellah;
+} calt;
+
+#else
 
 lookup LamLamInitX {
   sub uni0644.init by uni0644.init_LamLamInit;
@@ -139,24 +159,4 @@ feature ss06 {
 
   sub uni0644.medi_Lellah2' by uni0644.medi_Lellah;
 } ss06;
-#else
-
-# This a stripped down version of the above for use in Amiri Quran,
-# because here we can safely assume the [<Faa>]<Lam><Lam><Heh> sequence always
-# mean the name of Allah.
-
-feature calt {
-  lookupflag IgnoreMarks;
-  # لله
-  sub @Li' lookup LamInitLellah
-      @Lm' lookup LamMediLellah
-      @Hf' lookup HehFinaLellah;
-
-  # فلله
-  sub [uni0641.init]'
-      @Lm' lookup LamMediFaLellah
-      @Lm' lookup LamMediLellah
-      @Hf' lookup HehFinaLellah;
-} calt;
-
 #endif
