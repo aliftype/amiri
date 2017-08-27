@@ -14,45 +14,9 @@ feature calt {
 } calt;
 
 #ifdef QURAN
-# a rather ugly hack for the brain dead Unicode canonical reordering of some
-# Arabic combining marks
-
-lookup TashkilShaddaHack {
-  sub uni064E by uni06EC uni064E.small;
-  sub uni064B by uni06EC uni064B.small;
-  sub uni064C by uni06EC uni064C.small;
-  sub uni064F by uni06EC uni064F.small;
-  sub uni08F0 by uni06EC uni08F0.small;
-  sub uni08F1 by uni06EC uni08F1.small;
-  sub uni0657 by uni06EC uni0657.small;
-} TashkilShaddaHack;
-
-feature calt {
-  sub @ShaddaTashkil [uni06EC]' by dummy1;
-} calt;
-
-feature calt {
-  sub @ShaddaTashkil' lookup TashkilShaddaHack dummy1;
-} calt;
-
-# non-hack
 feature calt {
   sub [uni065C] [uni0650]' by [uni0650.small2];
 } calt;
-
-# hack
-feature calt {
-  sub [uni0650] [uni065C]' by dummy2;
-} calt;
-
-lookup uni065cHack {
-  sub uni0650 by uni065C uni0650.small2;
-} uni065cHack;
-
-feature calt {
-  sub [uni0650]' lookup uni065cHack dummy2;
-} calt;
-
 #endif
 
 # replace tashkil following hamza by smaller alternates
