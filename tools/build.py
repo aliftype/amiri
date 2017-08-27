@@ -123,11 +123,10 @@ def mergeFeatures(font, feafile):
     file), which is required by Uniscribe to get correct mark positioning for
     kerned glyphs."""
 
-    # create dummy glyphs used for some coding hacks
-    for i in [1, 2]:
-        dummy = font.createChar(-1, "dummy%s" %i)
-        dummy.width = 0
-        dummy.glyphclass = "mark"
+    # create dummy glyph used for some coding hacks
+    dummy = font.createChar(-1, "dummy1")
+    dummy.width = 0
+    dummy.glyphclass = "mark"
 
     oldfea = font.generateFeatureString()
 
