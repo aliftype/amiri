@@ -5,7 +5,7 @@ Amiri is a classical Arabic typeface in Naskh style for typesetting books and
 other running text.
 
 Amiri is a revival of the beautiful typeface pioneered in early 20th century by
-[Bulaq Press] [1] in Cairo, also known as Amiria Press, after which the font is
+[Bulaq Press][1] in Cairo, also known as Amiria Press, after which the font is
 named.
 
 The uniqueness of this typeface comes from its superb balance between the
@@ -19,7 +19,7 @@ typesetting, and adapting it to the era of digital typesetting, in a publicly
 available form.
 
 Amiri is a free and open source project that everyone is encouraged to use and
-modify. Amiri is avialable under the terms of [Open Font License] [2], see the
+modify. Amiri is avialable under the terms of [Open Font License][2], see the
 included license file for more details.
 
 Latest version of the Amiri font can be optained from its web site:
