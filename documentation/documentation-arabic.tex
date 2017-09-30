@@ -61,7 +61,7 @@ BoldItalicFont = *-boldslanted,
 %setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
 
-\newfontfamily\titlefont[Script=Arabic]{Amiri}
+\newfontfamily\titlefont[Script=Arabic]{Reem Kufi}
 
 \titleformat*{\section}{\Large\titlefont\color{titlecolor}}
 \titleformat*{\subsection}{\large\titlefont\color{titlecolor}}
@@ -73,7 +73,7 @@ BoldItalicFont = *-boldslanted,
 
 \renewcommand\U[1]{\colorbox{codecolor}{\texttt{U+#1}}}
 
-\title{الخط الأميري}
+\title{\titlefont {\addfontfeatures{CharacterVariant=1}ا}لخط الأمير{\addfontfeatures{CharacterVariant=1}ي}}
 \author{خالد حسني}
 
 \begin{document}
@@ -269,7 +269,7 @@ BoldItalicFont = *-boldslanted,
 بعض المشاكل و العلامات المتشابهة و التي نوضح هنا ما نراه أفضل الطرق
 لترميز النص القرآني في يونيكود، و التي يدعمها الخط الأميري.
 
-\subsubsection{الهمزة المفردة (ء)}
+\subsubsection{الهمزة المفردة (\textup{\arabicfont ء})}
 على خلاف قواعد الإملاء الحديثة، إذا أتت الهمزة المفردة في وسط الكلمة بين
 حرفين يتصل أحدهما بالآخر، فإنها لا ترسم على نبرة كما في ”شيءا“، أو تقلب
 ألف مد مثل ”لءادم“، بل ترسم في الفراغ بين الحرفين دون التأثير على
@@ -306,7 +306,7 @@ BoldItalicFont = *-boldslanted,
 	و \U{06E6} على التوالي، و ستعرض بالشكل الصحيح.
 \end{description}
 
-\subsubsection{علامة المد اللازم (\textup{◌ۤ})}
+\subsubsection{علامة المد اللازم (\textup{\arabicfont ◌ۤ})}
 تحتوي يونيكود علامتي مدة، الأولى تستخدم مع الألف غير المهموزة لتكوين ألف
 المد (آ)، و رمزها \U{0653}، و هذه لا تأتي في رسم المصحف، و الأخرى
 للدلالة على المد اللازم كما في ”الۤمۤ“، و رمزها \U{06E4}، و هي
