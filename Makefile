@@ -80,9 +80,7 @@ $(WEB)/%.css: $(WTTF) $(MAKECSS)
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
-	@pdfoutline $@.tmp $@.txt $@
-	@rm -f $@.tmp $@.txt
+	@fntsample --font-file $< --output-file $@ --write-outline
 
 $(DOC)/documentation-arabic.pdf: $(DOC)/documentation-arabic.tex $(DTTF)
 	@echo "   GEN	$@"
