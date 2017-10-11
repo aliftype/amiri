@@ -13,7 +13,7 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-script_lang = (('latn', ('dflt', 'TRK ')), ('arab', ('dflt', 'ARA ', 'URD ', 'SND ')), ('DFLT', ('dflt',)))
+script_lang = (('latn', ('dflt', 'TRK ')), ('arab', ('dflt', 'ARA ', 'URD ', 'SND ', 'KSH ')), ('DFLT', ('dflt',)))
 
 from sortsmill import ffcompat as fontforge
 from sortsmill import psMat

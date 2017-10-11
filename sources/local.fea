@@ -25,6 +25,10 @@ feature locl {
   sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
   sub uni0657 by uni0657.urd;
 
+  language KSH exclude_dflt;
+  sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
+  sub uni0657 by uni0657.urd;
+
   language SND exclude_dflt;
   sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
   sub uni0657 by uni0657.urd;
