@@ -2,6 +2,8 @@ StartChar: uni0640.2
 Encoding: 1118421 -1 4635
 Width: 700
 Flags: W
+AnchorPoint: "AlefAbove" 359 500 basechar 0
+AnchorPoint: "NoonAbove" 359 500 basechar 0
 AnchorPoint: "MarkAbove" 359 1640 basechar 0
 AnchorPoint: "MarkBelow" 350 -670 basechar 0
 LayerCount: 2
