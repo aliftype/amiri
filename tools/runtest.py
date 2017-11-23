@@ -1,102 +1,68 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
-
 import sys
 import os
 import csv
 
-import gi
-gi.require_version('HarfBuzz', '0.0')
-from gi.repository import HarfBuzz
-from gi.repository import GLib
-
-from fontTools.ttLib import TTFont
-
-try:
-    unicode
-except NameError:
-    unicode = str
-
-try:
-    bytes
-except NameError:
-    bytes = str
-
-def toUnicode(s, encoding='utf-8'):
-    return s if isinstance(s, unicode) else s.decode(encoding)
-
-def toBytes(s):
-    return s if isinstance(s, bytes) else s.encode()
+import harfbuzz as hb
 
 HbFonts = {}
 def getHbFont(fontname):
     if fontname not in HbFonts:
-        font = open(fontname, "rb")
-        data = font.read()
-        font.close()
-        blob = HarfBuzz.glib_blob_create(GLib.Bytes.new(data))
-        face = HarfBuzz.face_create(blob, 0)
-        font = HarfBuzz.font_create(face)
-        upem = HarfBuzz.face_get_upem(face)
-        HarfBuzz.font_set_scale(font, upem, upem)
-        HarfBuzz.ot_font_set_funcs(font)
+        with open(fontname, "rb") as fp:
+            data = fp.read()
+        blob = hb.Blob.create_for_array(data, hb.HARFBUZZ.MEMORY_MODE_READONLY)
+        face = hb.Face.create(blob, 0, False)
+        font = hb.Font.create(face)
+        font.scale = (face.upem, face.upem)
+        font.ot_set_funcs()
 
         HbFonts[fontname] = font
 
     return HbFonts[fontname]
 
-TtFonts = {}
-def getTtFont(fontname):
-    if fontname not in TtFonts:
-        font = TTFont(fontname)
-        TtFonts[fontname] = font
-
-    return TtFonts[fontname]
-
-def runHB(direction, script, language, features, text, fontname, positions):
-    font = getHbFont(fontname)
-    buf = HarfBuzz.buffer_create()
-    text = toUnicode(text)
-    HarfBuzz.buffer_add_utf8(buf, text.encode('utf-8'), 0, -1)
-    HarfBuzz.buffer_set_direction(buf, HarfBuzz.direction_from_string(toBytes(direction)))
-    HarfBuzz.buffer_set_script(buf, HarfBuzz.script_from_string(toBytes(script)))
+def runHB(font, buf, direction, script, language, features, text, positions):
+    buf.clear_contents()
+    buf.add_str(text)
+    buf.direction = hb.direction_from_string(direction)
+    buf.script = hb.script_from_string(script)
     if language:
-        HarfBuzz.buffer_set_language(buf, HarfBuzz.language_from_string(toBytes(language)))
+        buf.language = hb.Language.from_string(language)
 
     if features:
-        features = [HarfBuzz.feature_from_string(toBytes(fea))[1] for fea in features.split(',')]
+        features = [hb.Feature.from_string(fea) for fea in features.split(',')]
     else:
         features = []
-    HarfBuzz.shape(font, buf, features)
+    hb.shape(font, buf, features)
 
-    info = HarfBuzz.buffer_get_glyph_infos(buf)
-    ttfont = getTtFont(fontname)
+    info = buf.glyph_infos
     if positions:
-        pos = HarfBuzz.buffer_get_glyph_positions(buf)
+        pos = buf.glyph_positions
         glyphs = []
         x = 0
         for i, p in zip(info, pos):
-            glyph = ttfont.getGlyphName(i.codepoint)
+            glyph = font.get_glyph_name(i.codepoint)
             glyph += "@(%d,%d)" % (x + p.x_offset, p.y_offset)
             glyph += "+%d" % p.x_advance
             glyphs.append(glyph)
             x += p.x_advance
         out = "|".join(glyphs)
     else:
-        out = "|".join([ttfont.getGlyphName(i.codepoint) for i in info])
+        out = "|".join([font.get_glyph_name(i.codepoint) for i in info])
 
     return "[%s]" % out
 
-def runTest(test, font, positions):
+def runTest(test, fontname, positions):
     count = 0
     failed = {}
     passed = []
+    font = getHbFont(fontname)
+    buf = hb.Buffer.create()
     for row in test:
         count += 1
         direction, script, language, features, text, reference = row
         text = text.encode().decode('unicode-escape') if '\\' in text else text
-        result = runHB(direction, script, language, features, text, font, positions)
+        result = runHB(font, buf, direction, script, language, features, text, positions)
         if reference == result:
             passed.append(count)
         else:
