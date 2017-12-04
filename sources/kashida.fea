@@ -62,10 +62,8 @@ feature rlig {
   sub uni0640 by uni0640.0;
 } rlig;
 
+# We have a ligature for 3 kashidas followed by alef.
 feature rlig {
   lookupflag IgnoreMarks;
-  sub uni0640.1 uni0627.fina by uni0627.fina_Tatweel;
-  sub uni0640.2 uni0627.fina by uni0627.fina_Tatweel;
   sub uni0640.3 uni0627.fina by uni0627.fina_Tatweel;
-  sub uni0640.4 uni0627.fina by uni0627.fina_Tatweel;
 } rlig;
