@@ -13,12 +13,41 @@ feature rlig {
   sub uni0640 uni0640 uni0640 uni0640 by uni0640.4;
   sub uni0640 uni0640 uni0640         by uni0640.3;
   sub uni0640 uni0640                 by uni0640.2;
+  sub uni0640                         by uni0640.1;
 } rlig;
 
-# should be merged with the bove lookup, FF ignores it for some reason.
+
+# If we got more kashidas than we have curved variants, break it back into
+# individual glyphs and replace them by a straight variant to avoid ugly bumps.
+
+lookup break_kashida {
+  sub uni0640.4 by uni0640 uni0640 uni0640 uni0640;
+  sub uni0640.3 by uni0640 uni0640 uni0640;
+  sub uni0640.2 by uni0640 uni0640;
+  sub uni0640.1 by uni0640;
+} break_kashida;
+
+@kashida = [uni0640 uni0640.1 uni0640.2 uni0640.3 uni0640.4];
+
 feature rlig {
   lookupflag IgnoreMarks;
-  sub uni0640                         by uni0640.1;
+  sub @kashida uni0640.4' lookup break_kashida;
+  sub @kashida uni0640.3' lookup break_kashida;
+  sub @kashida uni0640.2' lookup break_kashida;
+  sub @kashida uni0640.1' lookup break_kashida;
+} rlig;
+
+feature rlig {
+  lookupflag IgnoreMarks;
+  sub uni0640.4' lookup break_kashida @kashida;
+  sub uni0640.3' lookup break_kashida @kashida;
+  sub uni0640.2' lookup break_kashida @kashida;
+  sub uni0640.1' lookup break_kashida @kashida;
+} rlig;
+
+feature rlig {
+  lookupflag IgnoreMarks;
+  sub uni0640 by uni0640.0;
 } rlig;
 
 feature rlig {
