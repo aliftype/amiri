@@ -1,0 +1,24 @@
+StartChar: uni0640.5
+Encoding: 1119073 -1 6225
+Width: 1900
+Flags: W
+AnchorPoint: "MarkBelow" 950 -670 basechar 0
+AnchorPoint: "MarkAbove" 950 1640 basechar 0
+AnchorPoint: "AlefAbove" 950 500 basechar 0
+AnchorPoint: "NoonAbove" 950 500 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+1900 0 m 1,0,1
+ 1581 -26 1581 -26 950 -26 c 128,-1,2
+ 319 -26 319 -26 0 0 c 1,3,4
+ -18 0 -18 0 -26 31 c 0,5,-1
+ -52 120 l 0,6,7
+ -70 190 -70 190 0 185 c 1,8,9
+ 319 159 319 159 950 159 c 128,-1,10
+ 1581 159 1581 159 1900 185 c 1,11,12
+ 1969 189 1969 189 1952 120 c 0,13,-1
+ 1926 31 l 0,14,15
+ 1918 1 1918 1 1900 0 c 1,0,1
+EndSplineSet
+EndChar
