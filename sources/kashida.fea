@@ -67,3 +67,19 @@ feature rlig {
   lookupflag IgnoreMarks;
   sub uni0640.3 uni0627.fina by uni0627.fina_Tatweel;
 } rlig;
+
+feature ss07 {
+  featureNames {
+    name "Disable curvilinear Kashida";
+  };
+
+  lookupflag IgnoreMarks;
+  sub uni0640.7 by uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0;
+  sub uni0640.6 by uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0;
+  sub uni0640.5 by uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0;
+  sub uni0640.4 by uni0640.0 uni0640.0 uni0640.0 uni0640.0;
+  sub uni0640.3 by uni0640.0 uni0640.0 uni0640.0;
+  sub uni0640.2 by uni0640.0 uni0640.0;
+  sub uni0640.1 by uni0640.0;
+  sub uni0627.fina_Tatweel by uni0640.0 uni0640.0 uni0640.0 uni0627.fina;
+} ss07;
