@@ -112,7 +112,13 @@ lookup LamLamInitX {
 feature calt {
   lookupflag IgnoreMarks;
   sub @Ignore       @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+
+  # Allow فوالله
+  ignore sub [uni0641.init] [uni0648.fina] @Ai' @Li' @Lm' @Hf;
   sub @Ignore  @Ai' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+
+  # Allow فتالله/فبالله
+  ignore sub [uni0641.init] [uni0628.medi uni062A.medi] @Af' @Li' @Lm' @Hf;
   sub @Ignore2 @Af' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
 } calt;
 
