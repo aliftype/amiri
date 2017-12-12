@@ -81,9 +81,10 @@ lookup LamLamInitX {
               uni0626.init uni066E.init uni0620.init uni064A.init uni06BB.init
               uni067F.init uni0755.init uni067D.init uni067E.init uni067B.init
               uni067A.init uni0751.init uni0646.init uni0753.init uni0752.init
-              uni0678.init uni063D.init uni063E.init uni063F.init uni062B.init uni0679.init uni06B9.init
-              uni0769.init uni0649.init uni067C.init uni0754.init uni06D1.init
-              uni06D0.init uni06BA.init uni06CC.init uni0767.init];
+              uni0678.init uni063D.init uni063E.init uni063F.init uni062B.init
+              uni0679.init uni06B9.init uni0769.init uni0649.init uni067C.init
+              uni0754.init uni06D1.init uni06D0.init uni06BA.init uni06CC.init
+              uni0767.init];
 # define to not include [ف]
 @aFaa_init = [uni066F.init uni0761.init uni0760.init uni0642.init uni06A8.init
               uni06A1.init uni06A2.init uni06A3.init uni06A4.init uni06A5.init
