@@ -7,6 +7,7 @@
 @YearSign  = [uni0601];
 @FootNote  = [uni0602];
 @SafhaSign = [uni0603];
+@Samvat    = [uni0604];
 
 @NumSign3  = [uni0600.3];
 @NumSign4  = [uni0600.4];
@@ -52,20 +53,20 @@ feature calt {
   sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
   sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small;
 
-  sub [@NumSign @YearSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign] @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @Samvat] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits.all' lookup digit2medi;
 
   # HarfBuzz ‘arab’
   sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah];
   sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
   sub @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
 
-  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign]' lookup Sign4;
-  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign]' lookup Sign3;
-  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign];
-  sub @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign];
+  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @Samvat]' lookup Sign4;
+  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat]' lookup Sign3;
+  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
+  sub @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
 } calt;
 
 # Should have been merged with the Uniscribe lookup above as we do for
@@ -108,6 +109,11 @@ feature kern {
   pos @SafhaSign  @Digits.medium' <-2225 0 -900 0> @Digits.medium' <-1325 0 -900 0>;
   pos @SafhaSign  @Digits.medium' <-1775 0 -900 0>;
 
+  pos @Samvat @Digits.medium' <-4536 0 -900 0> @Digits.medium' <-3636 0 -900 0> @Digits.medium' <-2736 0 -900 0> @Digits.medium' <-1836 0 -900 0>;
+  pos @Samvat @Digits.medium' <-4086 0 -900 0> @Digits.medium' <-3186 0 -900 0> @Digits.medium' <-2286 0 -900 0>;
+  pos @Samvat @Digits.medium' <-3636 0 -900 0> @Digits.medium' <-2736 0 -900 0>;
+  pos @Samvat @Digits.medium' <-3186 0 -900 0>;
+
   # HarfBuzz ‘arab’
   pos @Digits.small'  <-1010 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-2210 0 -600 0> @EndOfAyah;
   pos @Digits.small'  <-1310 0 -600 0> @Digits.small'  <-1910 0 -600 0> @EndOfAyah;
@@ -129,4 +135,9 @@ feature kern {
   pos @Digits.medium' <-1475 0 -900 0> @Digits.medium' <-2375 0 -900 0> @Digits.medium' <-3275 0 -900 0> @SafhaSign3;
   pos @Digits.medium' <-1325 0 -900 0> @Digits.medium' <-2225 0 -900 0> @SafhaSign;
   pos @Digits.medium' <-1775 0 -900 0> @SafhaSign;
+
+  pos @Digits.medium' <-1836 0 -900 0> @Digits.medium' <-2736 0 -900 0> @Digits.medium' <-3636 0 -900 0> @Digits.medium' <-4536 0 -900 0> @Samvat;
+  pos @Digits.medium' <-2286 0 -900 0> @Digits.medium' <-3186 0 -900 0> @Digits.medium' <-4086 0 -900 0> @Samvat;
+  pos @Digits.medium' <-2736 0 -900 0> @Digits.medium' <-3636 0 -900 0> @Samvat;
+  pos @Digits.medium' <-3186 0 -900 0> @Samvat;
 } kern;
