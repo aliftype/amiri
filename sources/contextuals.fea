@@ -780,9 +780,11 @@ feature calt {
       [@aBaa.medi]' lookup BaaBaaMemInit
       [@aMem.medi]' lookup BaaBaaMemInit;
 
+#ifndef QURAN
   sub [@aBaa.init]' lookup BaaBaaHaaInit
       [@aBaa.medi]' lookup BaaBaaHaaInit
       [@aHaa.medi]' lookup BaaBaaHaaInit;
+#endif
 
   sub [@aMem.init]' lookup MemRaaIsol
       [@aRaa.fina]' lookup MemRaaIsol;
