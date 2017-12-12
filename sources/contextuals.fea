@@ -734,9 +734,11 @@ feature calt {
       [@aLam.medi]' lookup LamLamHaaInit
       [@aHaa.medi]' lookup LamLamHaaInit;
 
+#ifndef QURAN
   sub [@aLam.init]' lookup LamBaaMemInit
       [@aBaa.medi]' lookup LamBaaMemInit
       [@aMem.medi]' lookup LamBaaMemInit;
+#endif
 
   sub [@aKaf.init @aKaf.medi]' lookup KafLam
       [@aLam.medi]' lookup KafLamMemMedi
