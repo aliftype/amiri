@@ -29,8 +29,10 @@
 \setotherlanguage{english}
 \rightfootnoterule
 
-\setmainfont
+\newfontfamily\englishfont
 [    Ligatures = TeX,
+        Script = Latin,
+       Numbers = Proportional,
           Path = ./,
      Extension = .ttf,
    UprightFont = *-regular,
@@ -48,7 +50,7 @@ BoldItalicFont = *-boldslanted,
     ItalicFont = *-slanted,
 BoldItalicFont = *-boldslanted,
 ]{amiri}
-\setmonofont{ALM Fixed}
+\newfontfamily\englishfonttt[Script=Latin]{ALM Fixed}
 \newfontfamily\arabicfonttt[Script=Arabic]{ALM Fixed}
 
 \setlength{\parindent}{0pt}
@@ -219,6 +221,7 @@ BoldItalicFont = *-boldslanted,
 
 \begin{description}
 \item[\T{pnum}]
+	\textenglish{Proportional Numbers}\\
 	% XXX example
 	الأرقام متغيرة العرض. لكل الأرقام في الخط الأميري نفس العرض بحيث
 	تظهر بشكل مناسب في الجداول و غيرها من الاستخدامات التي لا يلائمها أن
@@ -227,6 +230,7 @@ BoldItalicFont = *-boldslanted,
 	العرض الموحد.
 
 \item[\T{ss01}]
+	\textenglish{Stylistic Set 1}\\
 	إذا أتت الباء (أو ما شابهها من الحروف المنقوطة من أسفل مثل پ) بعد
 	راء أو واو أو ما شابههما من الحروف، تتحرك النقطة إلى ما أسفل الراء
 	أو الواو لتفادي التلامس. فمثلا عند تفعيل هذه الخاصية:
@@ -234,29 +238,35 @@ BoldItalicFont = *-boldslanted,
 	قليلا بين الراء و الباء: ”وبه“، ”ربها“، ”فربت“.
 
 \item[\T{ss02}]
+	\textenglish{Stylistic Set 2}\\
 	عند تفعيل هذه الخاصية يأخذ تتابع الميم المتوسطة و الألف شكلا خاصا:
 	{\F{+ss02}”فيما“، ”لضمان“، ”لقمان“، ”السماء“}، بينما المبدئي عدم
 	استعمال أي شكل خاص: ”فيما“، ”لضمان“، ”لقمان“، ”السماء“.
 
 \item[\T{ss03}]
+	\textenglish{Stylistic Set 3}\\
 	علامتي @ و \& معربتين: {\F{+ss03}@ \&}.
 
 \item[\T{ss04}]
+	\textenglish{Stylistic Set 4}\\
 	عند تفعيل هذه الخاصية ستُسخدم تنويعة من حرف گاف أقرب لأسلوب خط النسخ
 	من التنويعة المبدئية الشائعة في الخطوط الأخرى و المستوحاة من شكل
 	الحرف في الخط الفارسي، فتحصل على {\F{+ss04}”گ“ و ”‍گ“} بدلا
 	من ”گ“ و ”‍گ“.
 
 \item[\T{ss05}]
+	\textenglish{Stylistic Set 5}\\
 	عند تفعيل هذه الخاصية توضع كسرة الحرف المشدد تحت الشدة و ليس الحرف، أي
 	{\F{+ss05}”بِّ“} بدلا من ”بِّ“.
 
 \item[\T{ss06}]
+	\textenglish{Stylistic Set 6}\\
 	تفعيل هذه الخاصية يمنع إضافة الشدة و الألف الخنجرية تلقائيًا فوق لفظ
 	الجلالة، فمثلا عند كتابة \T{الله} و \T{فلله} تصبح
 	{\F{+ss06}”الله“} و {\F{+ss06}”فلله“} بدلا من ”الله“ و ”فلله“.
 
 \item[\T{ss07}]
+	\textenglish{Stylistic Set 7}\\
 	تفعيل هذه الخاصية يلغي ميزة الكشيدة المقوسة، فمثلا \T{محمـــــــد}
 	تصبح {\F{+ss07}”محمـــــــد“} بدلا من ”محمـــــــد“.
 \end{description}
