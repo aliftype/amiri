@@ -29,6 +29,8 @@
 \setotherlanguage{english}
 \rightfootnoterule
 
+\defaultfontfeatures{Scale=1.2}
+
 \newfontfamily\englishfont
 [    Ligatures = TeX,
         Script = Latin,
@@ -58,7 +60,7 @@ BoldItalicFont = *-boldslanted,
 %setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
 
-\newfontfamily\titlefont[Script=Arabic,ItalicFont={*}]{Reem Kufi}
+\newfontfamily\titlefont[Script=Arabic,ItalicFont={*},Scale=1.4]{Reem Kufi}
 
 \titleformat*{\section}{\Large\titlefont\color{titlecolor}}
 \titleformat*{\subsection}{\large\titlefont\color{titlecolor}}
@@ -73,7 +75,7 @@ BoldItalicFont = *-boldslanted,
 \renewcommand\U[1]{\colorbox{codecolor}{\texttt{U+#1}}} % code points
 \newcommand  \T[1]{\colorbox{codecolor}{\texttt{#1}}}   % typewritten text
 
-\title{\titlefont {\addfontfeatures{CharacterVariant=1}ا}لخط الأمير{\addfontfeatures{CharacterVariant=1}ي}}
+\title{\titlefont {\F{+cv01}ا}لخط الأمير{\F{+cv01}ي}}
 \author{خالد حسني}
 
 \begin{document}
