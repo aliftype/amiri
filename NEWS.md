@@ -1,3 +1,32 @@
+Amiri 0.110 (2017-12-20)
+------------------------
+* New Glyphs
+    - U+0604 ARABIC SIGN SAMVAT.
+    - Alternate glyph for U+1EE13 ARABIC MATHEMATICAL REH.
+    - Localized Kashmiri digits.
+    - Alternate Kaf when followed by medial Heh
+
+* Fixes:
+    - Fix rendering of Amiri Quran Colored on Windows.
+    - Improve Hamza below positioning in Amiri Quran.
+    - Make U+0608 ARABIC RAY look like نق not just ق.
+    - Make U+00B7 MIDDLE DOT the same width as space.
+    - Keep exclamation mark upright in slanted fonts.
+    - Make the الله combination work in better in some faulty applications.
+    - Allow فالله/بالله/تالله/والله to take the special form.
+    - Improve U+0674 ARABIC LETTER HIGH HAMZA by making it bigger and not
+      zero-width, since it is a variant of Hamza and not a combining mark.
+    - Improve the design of U+0600 ARABIC NUMBER SIGN to derive from the Urdu
+      word نمرة.
+    - Improve small Noon placement over Kashida.
+    - Allow marks over small Yeh and Noon.
+    - Greatly improve the handling of curvilinear Kashida.
+    - Disable “لبمـ” and “ببحـ” combinations in Quran font.
+
+* New features:
+    - Add `ss07` to disable curvilinear Kashida.
+    - Small improvements to the documentation.
+
 Amiri 0.109 (2016-11-20)
 ------------------------
 * New glyphs:
@@ -21,7 +50,7 @@ Amiri 0.109 (2016-11-20)
 Amiri 0.108 (2015-09-21)
 ------------------------
 * New glyphs:
-    - New design of ه in ‍هي combination.
+    - New design of ه in ـهي combination.
     - Alternate numbers for use in fractions, accessible with the OpenType
       features `numr` and `dnom`.
     - The new Arabic Extended-A vowel marks, in the range U+08E4–08FE.
@@ -60,7 +89,7 @@ Amiri 0.107 (2013-12-30)
     - Reverted the lowering of marks above wide isolated glyphs, it made the marks
       look weird relative to other ones.
     - Fixed the position of marks above qaf of قح.
-    - Dropped the special combination in تمخ‍ when it is follow vowelled as
+    - Dropped the special combination in تمخـ when it is follow vowelled as
       it was too crowded.
     - Fixed the position of sukun over shadda.
     - Fixed the side bearings of ثر, ثن and sisters so that the dots do not clash
