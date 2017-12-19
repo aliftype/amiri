@@ -879,6 +879,11 @@ feature calt {
       [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
 } calt;
 
+feature calt {
+  lookupflag IgnoreMarks;
+  sub [@aKaf.init @aKaf.medi]' @aHeh.medi by [@aKaf.init_PreHeh @aKaf.medi_PreHeh];
+} calt;
+
 lookup ToothYaaBari {
   sub @aSen.init by @aSen.init_YaaBari;
   sub @aSad.init by @aSad.init_YaaBari;
