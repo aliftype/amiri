@@ -8,7 +8,7 @@ SRC=sources
 WEB=webfonts
 DOC=documentation
 TESTS=test-suite
-FONTS=$(NAME)-regular $(NAME)-quran $(NAME)-quran-colored $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted
+FONTS=$(NAME)-regular $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted $(NAME)-quran $(NAME)-quran-colored
 DIST=$(NAME)-$(VERSION)
 WDIST=$(NAME)-$(VERSION)-webfonts
 
