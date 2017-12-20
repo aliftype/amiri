@@ -30,9 +30,8 @@ def makeWeb(args):
     subsetter.subset(font)
 
     base, ext = os.path.splitext(args.file)
-    for flavor in ("ttf", "woff", "woff2"):
-        if flavor is not "ttf":
-            font.flavor = flavor
+    for flavor in ("woff", "woff2"):
+        font.flavor = flavor
         font.save(args.dir + "/" + base + "." + flavor)
     font.close()
 

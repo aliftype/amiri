@@ -18,10 +18,8 @@ def genCSS(font, base):
     font-family: %(family)sWeb;
     font-style: %(style)s;
     font-weight: %(weight)s;
-    src: url('%(base)s.eot?') format('eot'),
-         url('%(base)s.woff2') format('woff2'),
-         url('%(base)s.woff') format('woff'),
-         url('%(base)s.ttf')  format('truetype');
+    src: url('%(base)s.woff2') format('woff2'),
+         url('%(base)s.woff') format('woff');
 }
 """ %{"style":style, "weight":weight, "family":family, "base":base}
 

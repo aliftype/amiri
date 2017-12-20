@@ -23,7 +23,6 @@ PP=gpp -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)
-WTTF=$(FONTS:%=$(WEB)/%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 WOF2=$(FONTS:%=$(WEB)/%.woff2)
 CSSS=$(WEB)/$(NAME).css
@@ -35,7 +34,7 @@ TEST+=$(wildcard $(TESTS)/*.ptest)
 all: ttf web
 
 ttf: $(DTTF)
-web: $(WTTF) $(WOFF) $(WOF2) $(CSSS)
+web: $(WOFF) $(WOF2) $(CSSS)
 doc: $(PDFS)
 
 $(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
@@ -67,15 +66,15 @@ $(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-boldi
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
 
-$(WEB)/%.ttf $(WEB)/%.woff $(WEB)/%.woff2: %.ttf $(MAKEWEB)
+$(WEB)/%.woff $(WEB)/%.woff2: %.ttf $(MAKEWEB)
 	@echo "   WEB	$*"
 	@mkdir -p $(WEB)
 	@$(PY) $(MAKEWEB) $< $(WEB)
 
-$(WEB)/%.css: $(WTTF) $(MAKECSS)
+$(WEB)/%.css: $(WOFF) $(MAKECSS)
 	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
-	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WTTF)"
+	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WOFF)"
 
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN	$@"
@@ -92,7 +91,7 @@ check: $(TEST) $(DTTF)
 	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
-	rm -rfv $(DTTF) $(WTTF) $(WOFF) $(WOF2) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
+	rm -rfv $(DTTF) $(WOFF) $(WOF2) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean:
@@ -109,7 +108,6 @@ dist: all check pack doc
 	@cp README-Arabic.md $(DIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
 	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
-	@cp $(WTTF) $(WDIST)
 	@cp $(WOFF) $(WDIST)
 	@cp $(WOF2) $(WDIST)
 	@cp $(CSSS) $(WDIST)
