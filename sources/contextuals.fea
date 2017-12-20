@@ -1045,7 +1045,7 @@ feature calt {
        @aLam.medi_LamMemMedi @aLam.medi_LamLamMedi @aBaa.medi_BaaNonFina @aBaa.medi_High
        @aKaf.medi @aKaf.medi_KafMemAlf @aKaf.medi_KafMemMedi @aKaf.medi_KafMemFina
        @aKaf.medi_KafLam @aKaf.medi_KafHeh @aKaf.medi_KafBaaMedi @aKaf.medi_KafRaaFina
-       @aKaf.medi_KafYaaFina]
+       @aKaf.medi_KafYaaFina @aKaf.medi_PreHeh]
   by  [@aAyn.init_Finjani @aHaa.init_Finjani @aHaa.medi_Finjani];
 } calt;
 
@@ -1135,7 +1135,7 @@ feature calt {
   sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
        @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamKafInit
       [@aKaf.medi @aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina
-       @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf @aGaf.fina];
+       @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf @aKaf.medi_PreHeh @aGaf.fina];
 } calt;
 
 lookup LamAynTatweel {
@@ -1250,7 +1250,7 @@ feature calt {
   lookupflag IgnoreMarks;
   sub @aFaa.init_FaaHaaInit
       @aHaa.medi_FaaHaaInit' lookup FaaHaaKaf
-     [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina];
+     [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina @aKaf.medi_PreHeh];
 } calt;
 
 # insert tatweel between ح and ت in [بمسصف]حت[رن]
