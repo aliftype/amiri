@@ -11,7 +11,7 @@
 @Kaf_1 = [@aKaf.init_KafHeh
           @aKaf.init_KafMemIsol];
 @Kaf_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
-@Kaf_3 = [@aKaf.init @aKaf.init_KafLam @aGaf.isol];
+@Kaf_3 = [@aKaf.init @aKaf.init_KafLam @aKaf.init_PreHeh @aGaf.isol];
 @Kaf_4 = [@aKaf.init_KafYaaIsol];
 @Kaf_5 = [@aKaf.init_KafMemInit @aKaf.init_KafRaaIsol];
 @Raa_1 = [@RaaWaw @aDal.fina @aDal.isol @aDal.fina_BaaDal @aDal.fina_KafDal
