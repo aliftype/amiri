@@ -29,17 +29,15 @@ def genCSS(font, base):
 def makeCss(infiles, outfile):
     """Builds a CSS file for the entire font family."""
 
-    css = ""
+    css = "/* Example CSS snippet for using Amiri as web font */\n"
 
     for f in infiles.split():
         base = os.path.splitext(os.path.basename(f))[0]
         font = TTFont(f)
         css += genCSS(font, base)
-        font.close()
 
-    out = open(outfile, "w")
-    out.write(css)
-    out.close()
+    with open(outfile, "w") as out:
+        out.write(css)
 
 def main():
     parser = argparse.ArgumentParser(description="Create a CSS snippet from Amiri fonts.")
