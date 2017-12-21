@@ -153,10 +153,10 @@ def generateFont(font, outfile):
 
     font.generate(outfile, flags=flags)
 
-def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
+def drawOverline(font, name, uni, pos, thickness, width):
     glyph = font.createChar(uni, name)
     glyph.width = 0
-    glyph.glyphclass = glyphclass
+    glyph.glyphclass = "mark"
 
     pen = glyph.glyphPen()
 
@@ -168,42 +168,30 @@ def drawOverUnderline(font, name, uni, glyphclass, pos, thickness, width):
 
     return glyph
 
-def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
+def makeOverline(font, pos):
     # test string:
     # صِ̅فْ̅ ̅خَ̅ل̅قَ̅ ̅بًّ̅ صِ̲فْ̲ ̲خَ̲ل̲قَ̲ ̲بِ̲
 
     thickness = font.uwidth # underline width (thickness)
-    minwidth = 100.0
-
-    if not o_pos:
-        o_pos = font.os2_typoascent
-
-    if not u_pos:
-        u_pos = font.upos - thickness # underline pos
+    minwidth = 100
 
     # collect glyphs grouped by their widths rounded by 100 units, we will use
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
     for glyph in font.glyphs():
         if glyph.glyphclass == 'baseglyph' and glyph.unicode != 0xFDFD:
-            width = round(glyph.width/100) * 100
+            width = round(glyph.width / minwidth) * minwidth
             width = width > minwidth and width or minwidth
             if not width in widths:
                 widths[width] = []
             widths[width].append(glyph.glyphname)
 
-    if over:
-        o_base = drawOverUnderline(font, 'uni0305', 0x0305, 'mark', o_pos, thickness, 500)
+    base = drawOverline(font, 'uni0305', 0x0305, pos, thickness, 500)
 
-    if under:
-        u_base = drawOverUnderline(font, 'uni0332', 0x0332, 'mark', u_pos, thickness, 500)
+    font.addMarkSet("OverSet", base.glyphname)
 
-    markset = "%s %s" %(over and o_base.glyphname or "", under and u_base.glyphname or "")
-
-    font.addMarkSet("OverUnderSet", markset)
-
-    context_lookup_name = 'OverUnderLine'
-    font.addLookup(context_lookup_name, 'gsub_contextchain', ('OverUnderSet'), (('mark', script_lang),), font.gsub_lookups[-1])
+    context_lookup_name = 'OverLine'
+    font.addLookup(context_lookup_name, 'gsub_contextchain', ('OverSet'), (('mark', script_lang),), font.gsub_lookups[-1])
 
     for width in sorted(widths.keys()):
         # for each width group we create an over/underline glyph with the same
@@ -215,19 +203,13 @@ def makeOverUnderline(font, over=True, under=True, o_pos=None, u_pos=None):
         font.addLookup(single_lookup_name, 'gsub_single', (), (), font.gsub_lookups[-1])
         font.addLookupSubtable(single_lookup_name, single_lookup_name + '1')
 
-        if over:
-            o_name = 'uni0305.%d' % width
-            o_glyph = drawOverUnderline(font, o_name, -1, 'mark', o_pos, thickness, width)
-            o_base.addPosSub(single_lookup_name + '1', o_name)
+        name = 'uni0305.%d' % width
+        glyph = drawOverline(font, name, -1, pos, thickness, width)
+        base.addPosSub(single_lookup_name + '1', name)
 
-        if under:
-            u_name = 'uni0332.%d' % width
-            u_glyph = drawOverUnderline(font, u_name, -1, 'mark', u_pos, thickness, width)
-            u_base.addPosSub(single_lookup_name + '1', u_name)
+        context = "%s" % base.glyphname
 
-        context = "%s %s" %(over and o_base.glyphname or "", under and u_base.glyphname or "")
-
-        rule = '| [%s] [%s] @<%s> | ' %(" ".join(widths[width]), context, single_lookup_name)
+        rule = '| [%s] [%s] @<%s> | ' % (" ".join(widths[width]), context, single_lookup_name)
 
         font.addContextualSubtable(context_lookup_name, context_lookup_name + str(width), 'coverage', rule)
 
@@ -701,8 +683,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    overline_pos = font[0x06D7].boundingBox()[1]
-    makeOverUnderline(font, under=False, o_pos=overline_pos)
+    makeOverline(font, font[0x06D7].boundingBox()[1])
 
     generateFont(font, outfile)
 
@@ -714,8 +695,6 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
 
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
-
-    #makeOverUnderline(font)
 
     # sample text to be used by font viewers
     sample = 'صِفْ خَلْقَ خَوْدٍ كَمِثْلِ ٱلشَّمْسِ إِذْ بَزَغَتْ يَحْظَىٰ ٱلضَّجِيعُ بِهَا نَجْلَاءَ مِعْطَارِ.'
