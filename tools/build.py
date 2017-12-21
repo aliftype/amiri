@@ -186,32 +186,27 @@ def makeOverline(font, pos):
                 widths[width] = []
             widths[width].append(glyph.glyphname)
 
-    base = drawOverline(font, 'uni0305', 0x0305, pos, thickness, 500)
+    base = 'uni0305'
+    drawOverline(font, base, 0x0305, pos, thickness, 500)
 
-    font.addMarkSet("OverSet", base.glyphname)
-
-    context_lookup_name = 'OverLine'
-    font.addLookup(context_lookup_name, 'gsub_contextchain', ('OverSet'), (('mark', script_lang),), font.gsub_lookups[-1])
+    fea = []
+    fea.append("include (sources/amiri.fea)")
+    fea.append("@OverSet = [%s];" % base)
+    fea.append("feature mark {")
+    fea.append("  lookupflag UseMarkFilteringSet @OverSet;")
 
     for width in sorted(widths.keys()):
         # for each width group we create an over/underline glyph with the same
         # width, and add a contextual substitution lookup to use it when an
         # over/underline follows any glyph in this group
-
-        single_lookup_name = str(width)
-
-        font.addLookup(single_lookup_name, 'gsub_single', (), (), font.gsub_lookups[-1])
-        font.addLookupSubtable(single_lookup_name, single_lookup_name + '1')
-
         name = 'uni0305.%d' % width
-        glyph = drawOverline(font, name, -1, pos, thickness, width)
-        base.addPosSub(single_lookup_name + '1', name)
+        drawOverline(font, name, -1, pos, thickness, width)
+        fea.append("  sub [%s] %s' by %s;" % (" ".join(widths[width]), base, name))
 
-        context = "%s" % base.glyphname
+    fea.append("} mark;")
 
-        rule = '| [%s] [%s] @<%s> | ' % (" ".join(widths[width]), context, single_lookup_name)
-
-        font.addContextualSubtable(context_lookup_name, context_lookup_name + str(width), 'coverage', rule)
+    fea = "\n".join(fea)
+    font.mergeFeatureString(fea)
 
 def centerGlyph(glyph):
     width = glyph.width
