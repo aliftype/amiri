@@ -550,7 +550,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
 
 def makeSlanted(infile, outfile, feafile, version, slant):
 
-    font = makeDesktop(infile, outfile, feafile, version, False, False)
+    font = makeDesktop(infile, outfile, feafile, version, False)
 
     # compute amout of skew, magic formula copied from fontforge sources
     import math
@@ -614,7 +614,7 @@ def scaleGlyph(glyph, amount):
         glyph.width = width
 
 def makeQuran(infile, outfile, feafile, version):
-    font = makeDesktop(infile, outfile, feafile, version, False, False)
+    font = makeDesktop(infile, outfile, feafile, version, False)
 
     # fix metadata
     font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
@@ -706,7 +706,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     generateFont(font, outfile)
 
-def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
+def makeDesktop(infile, outfile, feafile, version, generate=True):
     font = fontforge.open(infile)
     font.encoding = "UnicodeFull" # avoid a crash if compact was set
 
@@ -723,16 +723,13 @@ def makeDesktop(infile, outfile, feafile, version, latin=True, generate=True):
     for lang in ('Arabic (Egypt)', 'English (US)'):
         font.appendSFNTName(lang, 'Sample Text', sample)
 
-    if latin:
+    if generate:
         mergeLatin(font, feafile)
         makeNumerators(font)
 
         # we want to merge features after merging the latin font because many
         # referenced glyphs are in the latin font
         mergeFeatures(font, feafile)
-
-
-    if generate:
         generateFont(font, outfile)
     else:
         return font
