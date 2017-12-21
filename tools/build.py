@@ -398,7 +398,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     if not quran:
         # we want our ring above and below in Quran font only
         for name in ("uni030A", "uni0325"):
-            font[name].clear()
+            font.removeGlyph(name)
 
         latinglyphs += buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
