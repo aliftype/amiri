@@ -242,8 +242,9 @@ def subsetFont(font, glyphnames, similar=False):
 def buildComposition(font, glyphnames):
     newnames = []
 
-    font.addLookup("Latin composition", 'gsub_ligature', (), (('ccmp', script_lang),))
-    font.addLookupSubtable("Latin composition", "Latin composition subtable")
+    fea = []
+    fea.append("include (sources/amiri.fea)")
+    fea.append("feature ccmp {")
 
     import unicodedata
     for name in glyphnames:
@@ -269,12 +270,17 @@ def buildComposition(font, glyphnames):
                         nmark = "uni%04X" % int(mark, 16)
 
                     if nbase in font and nmark in font:
-                        font[name].addPosSub("Latin composition subtable", (nbase, nmark))
+                        fea.append("  sub %s %s by %s;" % (nbase, nmark, name))
 
                     if base not in glyphnames:
                         newnames.append(nbase)
                     if mark not in glyphnames:
                         newnames.append(nmark)
+
+    fea.append("} ccmp;")
+
+    fea = "\n".join(fea)
+    font.mergeFeatureString(fea)
 
     return newnames
 
