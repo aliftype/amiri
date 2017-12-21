@@ -123,11 +123,6 @@ def mergeFeatures(font, feafile):
     file), which is required by Uniscribe to get correct mark positioning for
     kerned glyphs."""
 
-    # create dummy glyph used for some coding hacks
-    dummy = font.createChar(-1, "dummy1")
-    dummy.width = 0
-    dummy.glyphclass = "mark"
-
     oldfea = font.generateFeatureString()
 
     for lookup in font.gpos_lookups:
@@ -656,13 +651,9 @@ def makeQuran(infile, outfile, feafile, version):
                  "TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
         scaleGlyph(font[mark], 0.9)
 
-    quran_glyphs = []
-    for glyph in font.glyphs():
-        if glyph.name.startswith("dummy"):
-            quran_glyphs.append(glyph.name)
-
     mergeFeatures(font, feafile)
 
+    quran_glyphs = []
     quran_glyphs += digits
     quran_glyphs += punct
     quran_glyphs += ("space",
