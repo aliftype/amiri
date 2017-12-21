@@ -1321,9 +1321,9 @@ feature calt {
 
 # XXX: use a different glyph for PDF text extraction
 feature calt {
-  lookupflag IgnoreMarks;
   script arab;
   language ARA;
+  lookupflag IgnoreMarks;
 
   # Replace teh init following teh/theh medi by a teh init with two vertical
   # dots.
