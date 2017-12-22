@@ -26,7 +26,7 @@ DTTF=$(FONTS:%=%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 WOF2=$(FONTS:%=$(WEB)/%.woff2)
 CSSS=$(WEB)/$(NAME).css
-PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/documentation-arabic.pdf
+PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/$(NAME)-quran-table.pdf $(DOC)/documentation-arabic.pdf
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
@@ -75,6 +75,11 @@ $(WEB)/%.css: $(WOFF) $(MAKECSS)
 	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
 	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WOFF)"
+
+$(DOC)/$(NAME)-quran-table.pdf: $(NAME)-quran.ttf
+	@echo "   GEN	$@"
+	@mkdir -p $(DOC)
+	@fntsample --font-file $< --output-file $@ --write-outline
 
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN	$@"
