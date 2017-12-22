@@ -241,6 +241,21 @@ def subsetFont(font, glyphnames, similar=False):
         if glyph.glyphname not in glyphnames:
             font.removeGlyph(glyph)
 
+def subsetFontFT(path, unicodes):
+    from fontTools.ttLib import TTFont
+    from fontTools import subset
+
+    font = TTFont(path)
+
+    options = subset.Options()
+    options.set(layout_features='*', name_IDs='*', name_languages='*',
+        notdef_outline=True, glyph_names=True)
+    subsetter = subset.Subsetter(options=options)
+    subsetter.populate(unicodes=unicodes)
+    subsetter.subset(font)
+
+    font.save(path)
+
 def buildComposition(font, glyphnames):
     newnames = []
 
@@ -672,12 +687,8 @@ def makeQuran(infile, outfile, feafile, version):
             "uni202E", "uni202F", "uni25CC", "uniFD3E", "uniFD3F", "uniFDFA",
             "uniFDFD")
     quran_glyphs += ("uni030A", "uni0325") # ring above and below
-    # Overline glyphs
-    for glyph in font.glyphs():
-        if glyph.glyphname.startswith("uni0305"):
-            quran_glyphs.append(glyph.glyphname)
-
-    subsetFont(font, quran_glyphs, True)
+    quran_glyphs += ["uni0305"] # overline
+    unicodes = [font[n].unicode for n in quran_glyphs]
 
     # set font ascent to the highest glyph in the font so that waqf marks don't
     # get truncated
@@ -685,15 +696,16 @@ def makeQuran(infile, outfile, feafile, version):
     # the offset relative to em-size in the former and font bounds in the
     # later, but we want both to be relative to font bounds
     ymax = 0
-    for glyph in font.glyphs():
+    for name in quran_glyphs:
+        glyph = font[name]
         bb = glyph.boundingBox()
         if bb[-1] > ymax:
             ymax = bb[-1]
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
-
     generateFont(font, outfile)
+    subsetFontFT(outfile, unicodes)
 
 def makeDesktop(infile, outfile, feafile, version, generate=True):
     font = fontforge.open(infile)
