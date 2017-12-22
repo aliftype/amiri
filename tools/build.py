@@ -179,7 +179,9 @@ def makeOverline(font, pos):
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
     for glyph in font.glyphs():
-        if glyph.width > 0 and glyph.unicode != 0xFDFD:
+        u = glyph.unicode
+        if ((u < 0) or (0x0600 <= u <= 0x06FF) or u == ord(" ")) \
+        and glyph.width > 0:
             width = round(glyph.width / minwidth) * minwidth
             width = width > minwidth and width or minwidth
             if not width in widths:
