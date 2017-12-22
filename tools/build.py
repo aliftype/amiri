@@ -269,51 +269,6 @@ def subsetFontFT(path, unicodes):
 
     font.save(path)
 
-def buildComposition(font, glyphnames):
-    newnames = []
-
-    fea = []
-    fea.append("include (sources/amiri.fea)")
-    fea.append("feature ccmp {")
-
-    import unicodedata
-    for name in glyphnames:
-        u = fontforge.unicodeFromName(name)
-        if 0 < u < 0xfb00:
-            decomp = unicodedata.decomposition(unichr(u))
-            if decomp:
-                base = decomp.split()[0]
-                mark = decomp.split()[1]
-                if not '<' in base:
-                    nmark = None
-                    nbase = None
-
-                    for g in font.glyphs():
-                        if g.unicode == int(base, 16):
-                            nbase = g.glyphname
-                        if g.unicode == int(mark, 16):
-                            nmark = g.glyphname
-
-                    if not nbase:
-                        nbase = "uni%04X" % int(base, 16)
-                    if not nmark:
-                        nmark = "uni%04X" % int(mark, 16)
-
-                    if nbase in font and nmark in font:
-                        fea.append("  sub %s %s by %s;" % (nbase, nmark, name))
-
-                    if base not in glyphnames:
-                        newnames.append(nbase)
-                    if mark not in glyphnames:
-                        newnames.append(nmark)
-
-    fea.append("} ccmp;")
-
-    fea = "\n".join(fea)
-    font.mergeFeatureString(fea)
-
-    return newnames
-
 def makeNumerators(font):
     digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
               "eight", "nine",
@@ -413,7 +368,6 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
         for name in ("uni030A", "uni0325"):
             font.removeGlyph(name)
 
-        latinglyphs += buildComposition(latinfont, latinglyphs)
     subsetFont(latinfont, latinglyphs)
 
     digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
@@ -507,9 +461,6 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     if "periodcentered" in font:
         font["periodcentered"].width = font["space"].width
         centerGlyph(font["periodcentered"])
-
-    if not quran:
-        buildComposition(font, latinglyphs)
 
     # add Latin small and medium digits
     for name in digits:
