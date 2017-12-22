@@ -168,7 +168,7 @@ def drawOverline(font, name, uni, pos, thickness, width):
 
     return glyph
 
-def makeOverline(font, pos):
+def makeQuranSajdaLine(font, pos):
     # test string:
     # صِ̅فْ̅ ̅خَ̅ل̅قَ̅ ̅بًّ̅ صِ̲فْ̲ ̲خَ̲ل̲قَ̲ ̲بِ̲
 
@@ -638,7 +638,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    makeOverline(font, font[0x06D7].boundingBox()[1])
+    makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
 
     mergeFeatures(font, feafile)
 
