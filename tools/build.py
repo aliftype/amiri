@@ -13,6 +13,8 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
+from __future__ import print_function
+
 script_lang = (('latn', ('dflt', 'TRK ')), ('arab', ('dflt', 'ARA ', 'URD ', 'SND ', 'KSH ')), ('DFLT', ('dflt',)))
 
 from sortsmill import ffcompat as fontforge
@@ -171,7 +173,7 @@ def generateFont(font, feafile, outfile, feastring=""):
         from tempfile import NamedTemporaryFile
         with NamedTemporaryFile(delete=False) as tmp:
             tmp.write(fea.encode("utf-8"))
-            print "Failed! Inspect temporary file: %r" % tmp.name
+            print("Failed! Inspect temporary file: %r" % tmp.name)
             os.remove(outfile)
         raise
 
@@ -255,7 +257,7 @@ def subsetFont(font, glyphnames, similar=False):
                 glyphnames.append(ref[0])
         else:
             if name not in reported:
-                print 'Font ‘%s’ is missing glyph: %s' %(font.fontname, name)
+                print('Font ‘%s’ is missing glyph: %s' %(font.fontname, name))
                 reported.append(name)
 
     # remove everything else
@@ -697,7 +699,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
 
 def usage(extramessage, code):
     if extramessage:
-        print extramessage
+        print(extramessage)
 
     message = """Usage: %s OPTIONS...
 
@@ -711,20 +713,16 @@ Options:
   -h, --help            print this message and exit
 """ % os.path.basename(sys.argv[0])
 
-    print message
+    print(message)
     sys.exit(code)
 
 if __name__ == "__main__":
-    #if fontforge.version() < min_ff_version:
-    #    print "You need FontForge %s or newer to build Amiri fonts" %min_ff_version
-    #    sys.exit(-1)
-
     import getopt
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
                 "h",
                 ["help", "input=", "output=", "features=", "version=", "slant=", "quran"])
-    except getopt.GetoptError, err:
+    except getopt.GetoptError as err:
         usage(str(err), -1)
 
     infile = None
