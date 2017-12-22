@@ -15,8 +15,6 @@
 
 from __future__ import print_function
 
-script_lang = (('latn', ('dflt', 'TRK ')), ('arab', ('dflt', 'ARA ', 'URD ', 'SND ', 'KSH ')), ('DFLT', ('dflt',)))
-
 from sortsmill import ffcompat as fontforge
 from sortsmill import psMat
 import sys
@@ -496,6 +494,11 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
             medium.transform(psMat.translate(0, 50))
             medium.width = 900
             centerGlyph(medium)
+
+    script_lang = (
+        ('latn', ('dflt', 'TRK ')),
+        ('DFLT', ('dflt',))
+    )
 
     for lookup in kern_lookups:
         font.addLookup(lookup,
