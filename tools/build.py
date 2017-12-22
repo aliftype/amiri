@@ -109,13 +109,6 @@ def updateInfo(font, version):
     version = "%07.3f" % float(version)
     font.version = font.version % version
     font.copyright = font.copyright % datetime.now().year
-    for name in font.sfnt_names:
-        if name[0] == "Arabic (Egypt)":
-            if name[1] == "Version":
-                version = version.replace(".", "\xD9\xAB")
-                font.appendSFNTName(name[0], name[1], name[2] % version)
-            elif name[1] == "Copyright":
-                font.appendSFNTName(name[0], name[1], name[2] % datetime.now().year)
 
 def generateFeatures(font, feafile):
     """Generates feature text by merging feature file with mark positioning
