@@ -123,7 +123,9 @@ def generateFeatures(font, feafile):
     lookups (from the feature file), which is required by Uniscribe to get
     correct mark positioning for kerned glyphs."""
 
-    oldfea = font.generateFeatureString()
+    oldfea = ""
+    for lookup in font.gpos_lookups:
+        oldfea += font.generateFeatureString(lookup)
 
     for lookup in font.gpos_lookups + font.gsub_lookups:
         font.removeLookup(lookup)
@@ -133,6 +135,20 @@ def generateFeatures(font, feafile):
     with open(feafile) as fea:
         fea_text = fea.read()
     fea_text = fea_text.replace("{%anchors%}", oldfea)
+
+    bases = [g.glyphname for g in font.glyphs() if g.glyphclass != "mark"]
+    marks = [g.glyphname for g in font.glyphs() if g.glyphclass == "mark"]
+    carets = {g.glyphname: g.lcarets for g in font.glyphs() if any(g.lcarets)}
+    gdef = []
+    gdef.append("@GDEFBase = [%s];" % " ".join(bases))
+    gdef.append("@GDEFMark = [%s];" % " ".join(marks))
+    gdef.append("table GDEF {")
+    gdef.append("  GlyphClassDef @GDEFBase, , @GDEFMark, ;")
+    for k, v in carets.items():
+        gdef.append("  LigatureCaretByPos %s %s;" % (k, " ".join(map(str, v))))
+    gdef.append("} GDEF;")
+
+    fea_text += "\n".join(gdef)
 
     return fea_text
 
