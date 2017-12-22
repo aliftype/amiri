@@ -117,31 +117,31 @@ def updateInfo(font, version):
             elif name[1] == "Copyright":
                 font.appendSFNTName(name[0], name[1], name[2] % datetime.now().year)
 
-def mergeFeatures(font, feafile):
-    """Merges feature file into the font while making sure mark positioning
-    lookups (already in the font) come after kerning lookups (from the feature
-    file), which is required by Uniscribe to get correct mark positioning for
-    kerned glyphs."""
+def generateFeatures(font, feafile):
+    """Generates feature text by merging feature file with mark positioning
+    lookups (already in the font) and making sure they come after kerning
+    lookups (from the feature file), which is required by Uniscribe to get
+    correct mark positioning for kerned glyphs."""
 
     oldfea = font.generateFeatureString()
 
-    for lookup in font.gpos_lookups:
-        font.removeLookup(lookup)
-
-    for lookup in font.gsub_lookups:
+    for lookup in font.gpos_lookups + font.gsub_lookups:
         font.removeLookup(lookup)
 
     # open feature file and insert the generated GPOS features in place of the
     # placeholder text
-    fea = open(feafile)
-    fea_text = fea.read()
+    with open(feafile) as fea:
+        fea_text = fea.read()
     fea_text = fea_text.replace("{%anchors%}", oldfea)
-    fea.close()
 
-    # now merge it into the font
-    font.mergeFeatureString(fea_text)
+    return fea_text
 
-def generateFont(font, outfile):
+def generateFont(font, feafile, outfile):
+    from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
+    from fontTools.ttLib import TTFont
+
+    fea = generateFeatures(font, feafile).decode("utf-8")
+
     flags  = ("opentype", "dummy-dsig", "round", "omit-instructions", "no-mac-names")
 
     font.selection.all()
@@ -152,6 +152,19 @@ def generateFont(font, outfile):
     validateGlyphs(font)
 
     font.generate(outfile, flags=flags)
+
+    try:
+        ttfont = TTFont(outfile)
+        addOpenTypeFeaturesFromString(ttfont, fea)
+        ttfont.save(outfile)
+    except:
+        from tempfile import NamedTemporaryFile
+        with NamedTemporaryFile(delete=False) as tmp:
+            tmp.write(fea.encode("utf-8"))
+            print "Failed! Inspect temporary file: %r" % tmp.name
+            os.remove(outfile)
+        raise
+
 
 def drawOverline(font, name, uni, pos, thickness, width):
     glyph = font.createChar(uni, name)
@@ -585,12 +598,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     mergeLatin(font, feafile, italic=skew)
     makeNumerators(font)
-
-    # we want to merge features after merging the latin font because many
-    # referenced glyphs are in the latin font
-    mergeFeatures(font, feafile)
-
-    generateFont(font, outfile)
+    generateFont(font, feafile, outfile)
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
@@ -655,8 +663,6 @@ def makeQuran(infile, outfile, feafile, version):
     # vertically at the level of the base of waqf marks
     makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
 
-    mergeFeatures(font, feafile)
-
     quran_glyphs = []
     quran_glyphs += digits
     quran_glyphs += punct
@@ -704,7 +710,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
-    generateFont(font, outfile)
+    generateFont(font, feafile, outfile)
     subsetFontFT(outfile, unicodes)
 
 def makeDesktop(infile, outfile, feafile, version, generate=True):
@@ -725,11 +731,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
     if generate:
         mergeLatin(font, feafile)
         makeNumerators(font)
-
-        # we want to merge features after merging the latin font because many
-        # referenced glyphs are in the latin font
-        mergeFeatures(font, feafile)
-        generateFont(font, outfile)
+        generateFont(font, feafile, outfile)
     else:
         return font
 
