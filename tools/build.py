@@ -136,11 +136,12 @@ def generateFeatures(font, feafile):
 
     return fea_text
 
-def generateFont(font, feafile, outfile):
+def generateFont(font, feafile, outfile, feastring=""):
     from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
     from fontTools.ttLib import TTFont
 
     fea = generateFeatures(font, feafile).decode("utf-8")
+    fea += feastring
 
     flags  = ("opentype", "dummy-dsig", "round", "omit-instructions", "no-mac-names")
 
@@ -205,7 +206,6 @@ def makeQuranSajdaLine(font, pos):
     drawOverline(font, base, 0x0305, pos, thickness, 500)
 
     fea = []
-    fea.append("include (sources/amiri.fea)")
     fea.append("@OverSet = [%s];" % base)
     fea.append("feature mark {")
     fea.append("  lookupflag UseMarkFilteringSet @OverSet;")
@@ -221,7 +221,7 @@ def makeQuranSajdaLine(font, pos):
     fea.append("} mark;")
 
     fea = "\n".join(fea)
-    font.mergeFeatureString(fea)
+    return fea
 
 def centerGlyph(glyph):
     width = glyph.width
@@ -661,7 +661,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
+    fea = makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
 
     quran_glyphs = []
     quran_glyphs += digits
@@ -710,7 +710,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
-    generateFont(font, feafile, outfile)
+    generateFont(font, feafile, outfile, fea)
     subsetFontFT(outfile, unicodes)
 
 def makeDesktop(infile, outfile, feafile, version, generate=True):
