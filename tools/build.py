@@ -179,7 +179,7 @@ def makeOverline(font, pos):
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
     for glyph in font.glyphs():
-        if glyph.glyphclass == 'baseglyph' and glyph.unicode != 0xFDFD:
+        if glyph.width > 0 and glyph.unicode != 0xFDFD:
             width = round(glyph.width / minwidth) * minwidth
             width = width > minwidth and width or minwidth
             if not width in widths:
@@ -634,6 +634,10 @@ def makeQuran(infile, outfile, feafile, version):
                  "TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
         scaleGlyph(font[mark], 0.9)
 
+    # create overline glyph to be used for sajda line, it is positioned
+    # vertically at the level of the base of waqf marks
+    makeOverline(font, font[0x06D7].boundingBox()[1])
+
     mergeFeatures(font, feafile)
 
     quran_glyphs = []
@@ -666,6 +670,10 @@ def makeQuran(infile, outfile, feafile, version):
             "uni202E", "uni202F", "uni25CC", "uniFD3E", "uniFD3F", "uniFDFA",
             "uniFDFD")
     quran_glyphs += ("uni030A", "uni0325") # ring above and below
+    # Overline glyphs
+    for glyph in font.glyphs():
+        if glyph.glyphname.startswith("uni0305"):
+            quran_glyphs.append(glyph.glyphname)
 
     subsetFont(font, quran_glyphs, True)
 
@@ -682,9 +690,6 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
-    # create overline glyph to be used for sajda line, it is positioned
-    # vertically at the level of the base of waqf marks
-    makeOverline(font, font[0x06D7].boundingBox()[1])
 
     generateFont(font, outfile)
 
