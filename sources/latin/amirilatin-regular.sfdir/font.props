@@ -15,7 +15,6 @@ Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
 XUID: [1021 559 149143806 1838002]
 FSType: 0
-OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1270926789
@@ -51,13 +50,13 @@ OS2FamilyClass: 258
 OS2Vendor: 'PfEd'
 Lookup: 1 0 0 "'ccmp' Turkish i"  {"'ccmp' Turkish i-1"  } ['ccmp' ('latn' <'TRK ' > ) ]
 Lookup: 1 0 0 "'c2sc' Capitals to Small Capitals in Latin lookup 0"  {"'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable"  } ['c2sc' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'smcp' Lowercase to Small Capitals lookup 2"  {"'smcp' Lowercase to Small Capitals lookup 2-1" ("sc" ) } ['smcp' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0-1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'pnum' Proportional Numbers lookup 12"  {"'pnum' Proportional Numbers lookup 12-1" ("prop" ) } ['pnum' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'zero' Slashed Zero lookup 11"  {"'zero' Slashed Zero lookup 11-1"  } ['zero' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'onum' Oldstyle Figures lookup 3"  {"'onum' Oldstyle Figures lookup 3-1" ("onum" ) } ['onum' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'ordn' Ordinals lookup 0"  {"'ordn' Ordinals lookup 0-1" ("ordn" ) } ['ordn' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 4" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 6" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 7" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 10" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 12" [78,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'smcp' Lowercase to Small Capitals lookup 2"  {"'smcp' Lowercase to Small Capitals lookup 2-1" ("sc" ) } ['smcp' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0-1"  } ['liga' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'pnum' Proportional Numbers lookup 12"  {"'pnum' Proportional Numbers lookup 12-1" ("prop" ) } ['pnum' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero lookup 11"  {"'zero' Slashed Zero lookup 11-1"  } ['zero' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'onum' Oldstyle Figures lookup 3"  {"'onum' Oldstyle Figures lookup 3-1" ("onum" ) } ['onum' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ordn' Ordinals lookup 0"  {"'ordn' Ordinals lookup 0-1" ("ordn" ) } ['ordn' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 4" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 6" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 7" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 10" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 12" [78,0,0] } ['kern' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 7+ 9 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 12" 

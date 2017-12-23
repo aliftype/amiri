@@ -16,7 +16,6 @@ Layer: 0 1 "Back"  1
 Layer: 1 1 "Fore"  0
 XUID: [1021 85 519305545 10852408]
 FSType: 0
-OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273443993
@@ -51,10 +50,10 @@ OS2StrikeYPos: 530
 OS2Vendor: 'PfEd'
 Lookup: 1 0 0 "'ccmp' Turkish i"  {"'ccmp' Turkish i-1"  } ['ccmp' ('latn' <'TRK ' > ) ]
 Lookup: 1 0 0 "'onum' Oldstyle Figures in Latin lookup 5"  {"'onum' Oldstyle Figures in Latin lookup 5-1" ("onum" ) } ['onum' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'pnum' Proportional Numbers lookup 12"  {"'pnum' Proportional Numbers lookup 12-1" ("prop" ) } ['pnum' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'pnum' Proportional Numbers lookup 12"  {"'pnum' Proportional Numbers lookup 12-1" ("prop" ) } ['pnum' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Lowercase to Small Capitals in Latin lookup 3"  {"'smcp' Lowercase to Small Capitals in Latin lookup 3-1" ("sc" ) } ['smcp' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0-1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0"  {"Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 2" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 3" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 4" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 7" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 10" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 11" [153,0,0] } ['kern' ('latn' <'TRK ' 'dflt' > ) ]
+Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0"  {"'liga' Standard Ligatures lookup 0-1"  } ['liga' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 2" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 3" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 4" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 7" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 10" [153,0,0] "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 11" [153,0,0] } ['kern' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 26+ 35 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 11" 
