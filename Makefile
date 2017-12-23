@@ -17,8 +17,9 @@ RUNTEST=$(TOOLS)/runtest.py
 MAKECLR=$(TOOLS)/makeclr.py
 MAKECSS=$(TOOLS)/makecss.py
 MAKEWEB=$(TOOLS)/makeweb.py
-PY=python3
-FF=python2.7 $(BUILD)
+PY ?= python3
+PY2 ?= python2
+FF=$(PY2) $(BUILD)
 PP=gpp -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
