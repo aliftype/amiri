@@ -20,6 +20,8 @@ from sortsmill import psMat
 import sys
 import os
 
+from tempfile import NamedTemporaryFile
+
 def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
     internally for building composite glyph."""
@@ -110,6 +112,12 @@ def updateInfo(font, version):
     font.version = font.version % version
     font.copyright = font.copyright % datetime.now().year
 
+def generateFeatureString(font, lookup):
+    with NamedTemporaryFile() as tmp:
+        font.generateFeatureFile(tmp.name, lookup)
+        fea = tmp.read()
+        return fea.decode("utf-8")
+
 def generateFeatures(font, feafile):
     """Generates feature text by merging feature file with mark positioning
     lookups (already in the font) and making sure they come after kerning
@@ -118,7 +126,7 @@ def generateFeatures(font, feafile):
 
     oldfea = ""
     for lookup in font.gpos_lookups:
-        oldfea += font.generateFeatureString(lookup)
+        oldfea += generateFeatureString(font, lookup)
 
     for lookup in font.gpos_lookups + font.gsub_lookups:
         font.removeLookup(lookup)
@@ -168,7 +176,6 @@ def generateFont(font, feafile, feastring, outfile):
         addOpenTypeFeaturesFromString(ttfont, fea)
         ttfont.save(outfile)
     except:
-        from tempfile import NamedTemporaryFile
         with NamedTemporaryFile(delete=False) as tmp:
             tmp.write(fea.encode("utf-8"))
             print("Failed! Inspect temporary file: %r" % tmp.name)
@@ -460,7 +467,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
     fea = ""
     if not quran:
         for lookup in latinfont.gpos_lookups:
-            fea += latinfont.generateFeatureString(lookup)
+            fea += generateFeatureString(latinfont, lookup)
 
     for lookup in latinfont.gpos_lookups + latinfont.gsub_lookups:
         latinfont.removeLookup(lookup)
