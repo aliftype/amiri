@@ -125,8 +125,8 @@ def generateFeatures(font, feafile):
 
     # open feature file and insert the generated GPOS features in place of the
     # placeholder text
-    with open(feafile) as fea:
-        fea_text = fea.read()
+    with open(feafile, 'rb') as fea:
+        fea_text = fea.read().decode("utf-8")
     fea_text = fea_text.replace("{%anchors%}", oldfea)
 
     bases = [g.glyphname for g in font.glyphs() if g.glyphclass != "mark"]
@@ -149,7 +149,7 @@ def generateFont(font, feafile, feastring, outfile):
     from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
     from fontTools.ttLib import TTFont
 
-    fea = generateFeatures(font, feafile).decode("utf-8")
+    fea = generateFeatures(font, feafile)
     fea += feastring
 
     flags  = ("opentype", "dummy-dsig", "round", "omit-instructions", "no-mac-names")
