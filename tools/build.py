@@ -313,7 +313,7 @@ def makeNumerators(font):
             numr.addReference(small.glyphname, psMat.translate(0, 550))
             numr.width = small.width
 
-def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
+def mergeLatin(font, italic=False, glyphs=None, quran=False):
     styles = {"Regular": "regular",
               "Slanted": "italic",
               "Bold": "bold",
@@ -543,7 +543,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-    fea = mergeLatin(font, feafile, italic=skew)
+    fea = mergeLatin(font, italic=skew)
     makeNumerators(font)
     generateFont(font, feafile, fea, outfile)
 
@@ -579,7 +579,7 @@ def makeQuran(infile, outfile, feafile, version):
     digits = ("zero", "one", "two", "three", "four", "five", "six",
               "seven", "eight", "nine")
 
-    fea = mergeLatin(font, feafile, glyphs=digits, quran=True)
+    fea = mergeLatin(font, glyphs=digits, quran=True)
 
     punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
              "braceright", "bracketleft", "bracketright", "parenleft",
@@ -676,7 +676,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
         font.appendSFNTName(lang, 'Sample Text', sample)
 
     if generate:
-        fea = mergeLatin(font, feafile)
+        fea = mergeLatin(font)
         makeNumerators(font)
         generateFont(font, feafile, fea, outfile)
     else:
