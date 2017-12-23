@@ -17,7 +17,6 @@ from __future__ import print_function
 
 import fontforge
 import psMat
-import sys
 import os
 
 from tempfile import NamedTemporaryFile
@@ -108,7 +107,7 @@ def validateGlyphs(font):
 def updateInfo(font, version):
     from datetime import datetime
 
-    version = "%07.3f" % float(version)
+    version = "%07.3f" % version
     font.version = font.version % version
     font.copyright = font.copyright % datetime.now().year
 
@@ -683,64 +682,21 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
     else:
         return font
 
-def usage(extramessage, code):
-    if extramessage:
-        print(extramessage)
-
-    message = """Usage: %s OPTIONS...
-
-Options:
-  --input=FILE          file name of input font
-  --output=FILE         file name of output font
-  --features=FILE       file name of features file
-  --version=VALUE       set font version to VALUE
-  --slant=VALUE         autoslant
-
-  -h, --help            print this message and exit
-""" % os.path.basename(sys.argv[0])
-
-    print(message)
-    sys.exit(code)
-
 if __name__ == "__main__":
-    import getopt
-    try:
-        opts, args = getopt.gnu_getopt(sys.argv[1:],
-                "h",
-                ["help", "input=", "output=", "features=", "version=", "slant=", "quran"])
-    except getopt.GetoptError as err:
-        usage(str(err), -1)
+    import argparse
+    parser = argparse.ArgumentParser(description="Build Amiri fonts.")
+    parser.add_argument("--input", metavar="FILE", required=True, help="input font to process")
+    parser.add_argument("--output", metavar="FILE", required=True, help="ouput font to write")
+    parser.add_argument("--features", metavar="FILE", required=True, help="feature file to include")
+    parser.add_argument("--version", type=float, required=True, help="font version")
+    parser.add_argument("--slant", type=float, required=False, help="font slant")
+    parser.add_argument("--quran", action='store_true', required=False, help="build Quran variant")
 
-    infile = None
-    outfile = None
-    feafile = None
-    version = None
-    slant = False
-    quran = False
+    args = parser.parse_args()
 
-    for opt, arg in opts:
-        if opt in ("-h", "--help"):
-            usage("", 0)
-        elif opt == "--input": infile = arg
-        elif opt == "--output": outfile = arg
-        elif opt == "--features": feafile = arg
-        elif opt == "--version": version = arg
-        elif opt == "--slant": slant = float(arg)
-        elif opt == "--quran": quran = True
-
-    if not infile:
-        usage("No input file specified", -1)
-    if not outfile:
-        usage("No output file specified", -1)
-
-    if not version:
-        usage("No version specified", -1)
-    if not feafile:
-        usage("No features file specified", -1)
-
-    if slant:
-        makeSlanted(infile, outfile, feafile, version, slant)
-    elif quran:
-        makeQuran(infile, outfile, feafile, version)
+    if args.slant:
+        makeSlanted(args.input, args.output, args.features, args.version, args.slant)
+    elif args.quran:
+        makeQuran(args.input, args.output, args.features, args.version)
     else:
-        makeDesktop(infile, outfile, feafile, version)
+        makeDesktop(args.input, args.output, args.features, args.version)
