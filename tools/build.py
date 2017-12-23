@@ -15,8 +15,8 @@
 
 from __future__ import print_function
 
-from sortsmill import ffcompat as fontforge
-from sortsmill import psMat
+import fontforge
+import psMat
 import sys
 import os
 
