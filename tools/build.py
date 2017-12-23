@@ -258,6 +258,19 @@ def subsetFont(font, glyphnames, similar=False):
                 print('Font ‘%s’ is missing glyph: %s' %(font.fontname, name))
                 reported.append(name)
 
+    # Prune kerning classes
+    for lookup in font.gpos_lookups:
+        for subtable in font.getLookupSubtables(lookup):
+            if font.isKerningClass(subtable):
+                first, second, offsets = font.getKerningClass(subtable)
+                first  = [[n for n in c if n in glyphnames] for c in first]
+                second = [[n for n in c if n in glyphnames] for c in second if c]
+                second.insert(0, None)
+                if all([first, second]):
+                    font.alterKerningClass(subtable, first, second, offsets)
+                else:
+                    font.removeLookupSubtable(subtable)
+
     # remove everything else
     for glyph in font.glyphs():
         if glyph.glyphname not in glyphnames:
@@ -444,20 +457,12 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
             rtl.useRefsMetrics(pname)
 
     # copy kerning classes
-    kern_lookups = {}
+    fea = ""
     if not quran:
         for lookup in latinfont.gpos_lookups:
-            kern_lookups[lookup] = {}
-            kern_lookups[lookup]["subtables"] = []
-            kern_lookups[lookup]["type"], kern_lookups[lookup]["flags"] = latinfont.getLookupInfo(lookup)[:2]
-            for subtable in latinfont.getLookupSubtables(lookup):
-                if latinfont.isKerningClass(subtable):
-                    kern_lookups[lookup]["subtables"].append((subtable, latinfont.getKerningClass(subtable)))
+            fea += latinfont.generateFeatureString(lookup)
 
-    for lookup in latinfont.gpos_lookups:
-        latinfont.removeLookup(lookup)
-
-    for lookup in latinfont.gsub_lookups:
+    for lookup in latinfont.gpos_lookups + latinfont.gsub_lookups:
         latinfont.removeLookup(lookup)
 
     latinfont.save(tmpfont)
@@ -495,36 +500,7 @@ def mergeLatin(font, feafile, italic=False, glyphs=None, quran=False):
             medium.width = 900
             centerGlyph(medium)
 
-    script_lang = (
-        ('latn', ('dflt', 'TRK ')),
-        ('DFLT', ('dflt',))
-    )
-
-    for lookup in kern_lookups:
-        font.addLookup(lookup,
-                kern_lookups[lookup]["type"],
-                kern_lookups[lookup]["flags"],
-                (('kern', script_lang),)
-                )
-
-        for subtable in kern_lookups[lookup]["subtables"]:
-            first = []
-            second = []
-            offsets = subtable[1][2]
-
-            # drop non-existing glyphs
-            for new_klasses, klasses in ((first, subtable[1][0]), (second, subtable[1][1])):
-                for klass in klasses:
-                    new_klass = []
-                    if klass:
-                        for name in klass:
-                            if name in font:
-                                new_klass.append(name)
-                    new_klasses.append(new_klass)
-
-            # if either of the classes is empty, don’t bother with the subtable
-            if any(first) and any(second):
-                font.addKerningClass(lookup, subtable[0], first, second, offsets)
+    return fea
 
 def makeSlanted(infile, outfile, feafile, version, slant):
 
@@ -561,9 +537,9 @@ def makeSlanted(infile, outfile, feafile, version, slant):
         font.fontname = font.fontname.replace("Regular", "Slanted")
         font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
-    mergeLatin(font, feafile, italic=skew)
+    fea = mergeLatin(font, feafile, italic=skew)
     makeNumerators(font)
-    generateFont(font, feafile, outfile)
+    generateFont(font, feafile, outfile, fea)
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
@@ -597,7 +573,7 @@ def makeQuran(infile, outfile, feafile, version):
     digits = ("zero", "one", "two", "three", "four", "five", "six",
               "seven", "eight", "nine")
 
-    mergeLatin(font, feafile, glyphs=digits, quran=True)
+    fea = mergeLatin(font, feafile, glyphs=digits, quran=True)
 
     punct = ("period", "guillemotleft", "guillemotright", "braceleft", "bar",
              "braceright", "bracketleft", "bracketright", "parenleft",
@@ -626,7 +602,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    fea = makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
+    fea += makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
 
     quran_glyphs = []
     quran_glyphs += digits
@@ -694,9 +670,9 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
         font.appendSFNTName(lang, 'Sample Text', sample)
 
     if generate:
-        mergeLatin(font, feafile)
+        fea = mergeLatin(font, feafile)
         makeNumerators(font)
-        generateFont(font, feafile, outfile)
+        generateFont(font, feafile, outfile, fea)
     else:
         return font
 
