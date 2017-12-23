@@ -145,7 +145,7 @@ def generateFeatures(font, feafile):
 
     return fea_text
 
-def generateFont(font, feafile, outfile, feastring=""):
+def generateFont(font, feafile, feastring, outfile):
     from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
     from fontTools.ttLib import TTFont
 
@@ -539,7 +539,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     fea = mergeLatin(font, feafile, italic=skew)
     makeNumerators(font)
-    generateFont(font, feafile, outfile, fea)
+    generateFont(font, feafile, fea, outfile)
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
@@ -651,7 +651,7 @@ def makeQuran(infile, outfile, feafile, version):
 
     font.os2_typoascent = font.hhea_ascent = ymax
 
-    generateFont(font, feafile, outfile, fea)
+    generateFont(font, feafile, fea, outfile)
     subsetFontFT(outfile, unicodes)
 
 def makeDesktop(infile, outfile, feafile, version, generate=True):
@@ -672,7 +672,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
     if generate:
         fea = mergeLatin(font, feafile)
         makeNumerators(font)
-        generateFont(font, feafile, outfile, fea)
+        generateFont(font, feafile, fea, outfile)
     else:
         return font
 
