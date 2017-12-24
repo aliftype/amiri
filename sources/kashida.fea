@@ -33,17 +33,16 @@ lookup break_kashida {
   sub uni0640.1 by uni0640;
 } break_kashida;
 
-@curved_kashida = [uni0640.1 uni0640.2 uni0640.3 uni0640.4 uni0640.5 uni0640.6 uni0640.7];
-@kashida = [uni0640 @curved_kashida];
+@kashida = [uni0640 @aCurvedKashida];
 
 feature rlig {
   lookupflag IgnoreMarks;
-  sub @kashida @curved_kashida' lookup break_kashida;
+  sub @kashida @aCurvedKashida' lookup break_kashida;
 } rlig;
 
 feature rlig {
   lookupflag IgnoreMarks;
-  sub @curved_kashida' lookup break_kashida @kashida;
+  sub @aCurvedKashida' lookup break_kashida @kashida;
 } rlig;
 
 feature rlig {

@@ -87,8 +87,8 @@ feature calt {
                 uni0629.fina uni062F.fina uni0630.fina uni0631.fina uni0632.fina
                 uni0648.fina];
 
-@before = [@before.isol @before.fina];
-@after  = [@after.isol @before.isol @before.init];
+@before = [@aKashida @before.isol @before.fina];
+@after  = [@aKashida uni0627.fina_Tatweel @after.isol @before.isol @before.init];
 
 @floats.isol = [uni0621 uni06E5 uni06E6 uni0670.isol];
 @floats.medi = [uni0621.medi uni06E5.medi uni06E6.medi uni0670.medi];
@@ -156,7 +156,7 @@ feature kern {
 # turn kashida followed by small alef to medial small alef, a common hack to
 # get medial floating small alef.
 feature calt {
-  sub uni0640.1 uni0670 by uni0670.medi;
+  sub @aKashida uni0670 by uni0670.medi;
 } calt;
 
 #ifdef QURAN

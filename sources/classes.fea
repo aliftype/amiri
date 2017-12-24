@@ -352,3 +352,5 @@
 @Tashkil.below = [ uni064D uni0650 uni065C uni06EA uni06ED uni08F2 uni0650.small2 ];
 
 @RaaWaw = [ @aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol @aRaa.fina_BaaRaaIsol @aWaw.fina_LamWawFina @aRaa.fina_BaaRaaFina @aRaa.fina_KafRaaFina @aRaa.fina_KafRaaIsol @aRaa.fina_HaaRaaIsol @aRaa.fina_LamRaaIsol @aRaa.fina_PostTooth ];
+@aCurvedKashida = [uni0640.1 uni0640.2 uni0640.3 uni0640.4 uni0640.5 uni0640.6 uni0640.7];
+@aKashida = [uni0640 uni0640.0 @aCurvedKashida];
