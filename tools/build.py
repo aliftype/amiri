@@ -574,6 +574,9 @@ def makeQuran(infile, outfile, feafile, version):
     font.familyname += " Quran"
     font.fullname += " Quran"
 
+    sample = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
+    font.appendSFNTName('English (US)', 'Sample Text', sample)
+
     digits = ("zero", "one", "two", "three", "four", "five", "six",
               "seven", "eight", "nine")
 
