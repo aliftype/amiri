@@ -537,11 +537,9 @@ def makeSlanted(infile, outfile, feafile, version, slant):
     font.fullname += " Slanted"
     if font.weight == "Bold":
         font.fontname = font.fontname.replace("Bold", "BoldSlanted")
-        font.appendSFNTName("Arabic (Egypt)", "SubFamily", "عريض مائل")
         font.appendSFNTName("English (US)",   "SubFamily", "Bold Slanted")
     else:
         font.fontname = font.fontname.replace("Regular", "Slanted")
-        font.appendSFNTName("Arabic (Egypt)", "SubFamily", "مائل")
 
     fea = mergeLatin(font, italic=skew)
     makeNumerators(font)
@@ -672,8 +670,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
     # sample text to be used by font viewers
     sample = 'صِفْ خَلْقَ خَوْدٍ كَمِثْلِ ٱلشَّمْسِ إِذْ بَزَغَتْ يَحْظَىٰ ٱلضَّجِيعُ بِهَا نَجْلَاءَ مِعْطَارِ.'
 
-    for lang in ('Arabic (Egypt)', 'English (US)'):
-        font.appendSFNTName(lang, 'Sample Text', sample)
+    font.appendSFNTName('English (US)', 'Sample Text', sample)
 
     if generate:
         fea = mergeLatin(font)
