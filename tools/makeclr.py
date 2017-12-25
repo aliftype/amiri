@@ -13,6 +13,7 @@ HAMAZAT_GLYPHS = (
     "uni0621",
     "uni0654",
     "uni0655",
+    "hamza.above",
 )
 
 MARKS_GLYPHS = (
