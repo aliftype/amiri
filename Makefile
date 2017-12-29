@@ -80,12 +80,12 @@ $(WEB)/%.css: $(WOFF) $(MAKECSS)
 $(DOC)/$(NAME)-quran-table.pdf: $(NAME)-quran.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@ --write-outline
+	@fntsample --font-file $< --output-file $@ --write-outline --use-pango
 
 $(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@ --write-outline
+	@fntsample --font-file $< --output-file $@ --write-outline --use-pango
 
 $(DOC)/documentation-arabic.pdf: $(DOC)/documentation-arabic.tex $(DTTF)
 	@echo "   GEN	$@"
