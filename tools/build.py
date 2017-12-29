@@ -159,7 +159,9 @@ def generateFont(font, feafile, feastring, outfile):
     fea = generateFeatures(font, feafile)
     fea += feastring
 
-    flags  = ("opentype", "dummy-dsig", "round", "omit-instructions", "no-mac-names")
+    flags = ["opentype", "dummy-dsig", "round", "omit-instructions"]
+    if fontforge.version() > '20170805':
+        flags.append("no-mac-names")
 
     font.selection.all()
     font.correctReferences()
