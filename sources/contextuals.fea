@@ -1347,8 +1347,7 @@ lookup KasraAynFina {
   sub uni064D by uni064D uni0640.2;
   sub uni0650 by uni0650 uni0640.2;
   sub uni08F2 by uni08F2 uni0640.2;
-  # XXX: should have been uni0640.3 but it is too big
-  sub uni06ED by uni06ED uni0640.2 uni0640.05;
+  sub uni06ED by uni06ED uni0640.3;
 } KasraAynFina;
 
 feature calt {
