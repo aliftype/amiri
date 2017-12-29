@@ -30,6 +30,7 @@
 @aGaf.medi = [ uni06A9.medi uni06AF.medi uni06B0.medi uni06B1.medi uni06B2.medi uni06B3.medi uni06B4.medi uni0762.medi uni0763.medi uni0764.medi uni063B.medi uni063C.medi ];
 @aKaf.medi = [ uni063B.medi uni063C.medi uni077F.medi uni0764.medi uni0643.medi uni06B0.medi uni06B3.medi uni06B2.medi uni06AB.medi uni06AC.medi uni06AD.medi uni06AE.medi uni06AF.medi uni06A9.medi uni06B4.medi uni0763.medi uni0762.medi uni06B1.medi ];
 @aLam.fina = [ uni06B5.fina uni06B7.fina uni0644.fina uni06B8.fina uni06B6.fina uni076A.fina ];
+# XXX: sync with contextuals.fea
 @aLam.init = [ uni06B5.init uni06B7.init uni0644.init uni06B8.init uni06B6.init uni076A.init ];
 @aLam.isol = [ uni06B5 uni06B7 uni0644 uni06B8 uni06B6 uni076A ];
 @aLam.medi = [ uni06B5.medi uni06B7.medi uni0644.medi uni06B8.medi uni06B6.medi uni076A.medi ];

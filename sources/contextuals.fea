@@ -1256,7 +1256,7 @@ feature calt {
 # insert tatweel between ح and ت in [بمسصف]حت[رن]
 lookup AboveHaaTatweel {
 # XXX: sync with classes.fea
-#sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.05;
+# sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.05;
   sub uni062E.medi_FaaHaaInit by uni062E.medi_FaaHaaInit uni0640.05;
   sub uni062D.medi_FaaHaaInit by uni062D.medi_FaaHaaInit uni0640.05;
   sub uni0681.medi_FaaHaaInit by uni0681.medi_FaaHaaInit uni0640.05;
@@ -1275,7 +1275,7 @@ lookup AboveHaaTatweel {
   sub uni0772.medi_FaaHaaInit by uni0772.medi_FaaHaaInit uni0640.05;
   sub uni0686.medi_FaaHaaInit by uni0686.medi_FaaHaaInit uni0640.05;
 
-#sub @aHaa.medi_SadHaaInit   by @aHaa.medi_SadHaaInit   uni0640.05;
+# sub @aHaa.medi_SadHaaInit   by @aHaa.medi_SadHaaInit   uni0640.05;
   sub uni062E.medi_SadHaaInit by uni062E.medi_SadHaaInit uni0640.05;
   sub uni062D.medi_SadHaaInit by uni062D.medi_SadHaaInit uni0640.05;
   sub uni0681.medi_SadHaaInit by uni0681.medi_SadHaaInit uni0640.05;
