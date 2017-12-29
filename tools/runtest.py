@@ -97,21 +97,21 @@ if __name__ == '__main__':
                 test.append(row)
 
             positions = os.path.splitext(testname)[1] == '.ptest'
-            fontname = 'amiri-regular.ttf'
+            fontname = 'Amiri-Regular.ttf'
             outname = testname+".test"
             outfd = open(outname, "w")
             outfd.write(initTest(test, fontname, positions))
             outfd.close()
             sys.exit(0)
 
-    styles = ('regular', 'bold', 'slanted', 'boldslanted')
+    styles = ('Regular', 'Bold', 'Slanted', 'BoldSlanted')
     for style in styles:
-        fontname = 'amiri-%s.ttf' % style
+        fontname = 'Amiri-%s.ttf' % style
         print("   TEST\t%s" % fontname)
         for testname in args:
             positions = os.path.splitext(testname)[1] == '.ptest'
 
-            if positions and style != "regular":
+            if positions and style != "Regular":
                 continue
 
             reader = csv.reader(open(testname), delimiter=';')

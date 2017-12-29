@@ -1,6 +1,7 @@
 .PHONY: all clean ttf web pack check
 
-NAME=amiri
+NAME=Amiri
+LATIN=AmiriLatin
 VERSION=0.111
 
 TOOLS=tools
@@ -8,9 +9,9 @@ SRC=sources
 WEB=webfonts
 DOC=documentation
 TESTS=test-suite
-FONTS=$(NAME)-regular $(NAME)-bold $(NAME)-slanted $(NAME)-boldslanted $(NAME)-quran $(NAME)-quran-colored
+FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
-WDIST=$(NAME)-$(VERSION)-webfonts
+WDIST=$(NAME)-$(VERSION)-WebFonts
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
@@ -27,7 +28,7 @@ DTTF=$(FONTS:%=%.ttf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 WOF2=$(FONTS:%=$(WEB)/%.woff2)
 CSSS=$(WEB)/$(NAME).css
-PDFS=$(DOC)/$(NAME)-table.pdf $(DOC)/$(NAME)-quran-table.pdf $(DOC)/documentation-arabic.pdf
+PDFS=$(DOC)/FontTable-$(NAME).pdf $(DOC)/FontTable-$(NAME)Quran.pdf $(DOC)/Documentation-Arabic.pdf
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
@@ -38,34 +39,34 @@ ttf: $(DTTF)
 web: $(WOFF) $(WOF2) $(CSSS)
 doc: $(PDFS)
 
-$(NAME)-quran.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)Quran.ttf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-quran.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-quran.fea.pp --version $(VERSION) --quran
+	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)Quran.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)Quran.fea.pp --version $(VERSION) --quran
 
-$(NAME)-quran-colored.ttf: $(NAME)-quran.ttf $(MAKECLR)
+$(NAME)QuranColored.ttf: $(NAME)Quran.ttf $(MAKECLR)
 	@echo "   FF	$@"
 	@$(PY) $(MAKECLR) $< $@
 
-$(NAME)-regular.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Regular.ttf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-regular.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-regular.fea.pp --version $(VERSION)
+	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Regular.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Regular.fea.pp --version $(VERSION)
 
-$(NAME)-slanted.ttf: $(SRC)/$(NAME)-regular.sfdir $(SRC)/latin/amirilatin-italic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Slanted.ttf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Italic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-slanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-slanted.fea.pp --version $(VERSION) --slant=10
+	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Slanted.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Slanted.fea.pp --version $(VERSION) --slant=10
 
-$(NAME)-bold.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Bold.ttf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-Bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-bold.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-bold.fea.pp --version $(VERSION)
+	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Bold.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Bold.fea.pp --version $(VERSION)
 
-$(NAME)-boldslanted.ttf: $(SRC)/$(NAME)-bold.sfdir $(SRC)/latin/amirilatin-bolditalic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-BoldSlanted.ttf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldItalic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-boldslanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-boldslanted.fea.pp --version $(VERSION) --slant=10
+	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-BoldSlanted.fea.pp
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-BoldSlanted.fea.pp --version $(VERSION) --slant=10
 
 $(WEB)/%.woff $(WEB)/%.woff2: %.ttf $(MAKEWEB)
 	@echo "   WEB	$*"
@@ -77,17 +78,17 @@ $(WEB)/%.css: $(WOFF) $(MAKECSS)
 	@mkdir -p $(WEB)
 	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WOFF)"
 
-$(DOC)/$(NAME)-quran-table.pdf: $(NAME)-quran.ttf
+$(DOC)/FontTable-$(NAME)Quran.pdf: $(NAME)Quran.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@ --write-outline --use-pango
 
-$(DOC)/$(NAME)-table.pdf: $(NAME)-regular.ttf
+$(DOC)/FontTable-$(NAME).pdf: $(NAME)-Regular.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@ --write-outline --use-pango
 
-$(DOC)/documentation-arabic.pdf: $(DOC)/documentation-arabic.tex $(DTTF)
+$(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(DTTF)
 	@echo "   GEN	$@"
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 

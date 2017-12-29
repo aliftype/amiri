@@ -316,14 +316,14 @@ def makeNumerators(font):
             numr.width = small.width
 
 def mergeLatin(font, italic=False, glyphs=None, quran=False):
-    styles = {"Regular": "regular",
-              "Slanted": "italic",
-              "Bold": "bold",
-              "BoldSlanted": "bolditalic"}
+    styles = {"Regular": "Regular",
+              "Slanted": "Italic",
+              "Bold": "Bold",
+              "BoldSlanted": "BoldItalic"}
 
     style = styles[font.fontname.split("-")[1]]
 
-    latinfile = "amirilatin-%s.sfdir" %style
+    latinfile = "AmiriLatin-%s.sfdir" %style
 
     from tempfile import mkstemp
     tmpfont = mkstemp(suffix=os.path.basename(latinfile).replace("sfdir", "sfd"))[1]
@@ -410,9 +410,9 @@ def mergeLatin(font, italic=False, glyphs=None, quran=False):
     # upright so it works reasonably with bot scripts
     if italic:
         if "bold" in style:
-            upright = fontforge.open("sources/latin/amirilatin-bold.sfdir")
+            upright = fontforge.open("sources/latin/AmiriLatin-Bold.sfdir")
         else:
-            upright = fontforge.open("sources/latin/amirilatin-regular.sfdir")
+            upright = fontforge.open("sources/latin/AmiriLatin-Regular.sfdir")
 
         shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
                   "quotesingle", "asterisk", "plus", "colon", "semicolon",
