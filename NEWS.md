@@ -1,3 +1,37 @@
+Amiri 0.111 (2017-12-30)
+------------------------
+
+* Drop TTF files from the web fonts archive, WOFF and WOFF2 should be all one
+  needs now.
+* Cosmetic changes to the CSS snippet.
+* Fix kerning of the new Kaf glyphs introduced in the previous release.
+* Add a font table document for the Quran font since it has different character
+  coverage.
+* Removed the `ccmp` feature composing decomposed Latin base/accent
+  combinations supported by the font. HarfBuzz does this in a bit smarter way,
+  users of other engines can apply Unicode normalization to the input text if
+  this is needed.
+* Fix wrong glyph class for U+0674 ARABIC LETTER HIGH HAMZA, causing it to be
+  incorrectly treated as a zero width mark:
+  https://github.com/alif-type/amiri/issues/138.
+* Drop localized Arabic names from the font (like style names), their support
+  in application is spotty, also it is a bit Ugly to have the font presented
+  with mixed language name, e.g. “Amiri عادي”, in some applications under
+  Arabic locales.
+* Allow Kashida around floating Hamza:
+  https://github.com/alif-type/amiri/issues/137
+* Colorize Hamza above mark in colored Quran font:
+  https://github.com/alif-type/amiri/issues/136
+* Change the shape of Damma used in U+06C7 & U+0677:
+  https://github.com/alif-type/amiri/issues/123
+* Other smaller fixes.
+* OpenType layout tables are now compiled with FontTool’s feaLib instead of my
+  FontForge fork. This is an attempt to make building the fonts from source
+  simpler for others and more predictable.
+* The font can now be built with Python 3, by calling `make PY2=python3`.
+* The font can be also built with upstream FontForge now, though the result
+  might be slightly different from the pre-built fonts.
+
 Amiri 0.110 (2017-12-20)
 ------------------------
 * New Glyphs
