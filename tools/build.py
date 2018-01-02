@@ -594,14 +594,6 @@ def makeQuran(infile, outfile, feafile, version):
             glyph.glyphname = name
             glyph.unicode = fontforge.unicodeFromName(name)
 
-    # abuse U+065C as a below form of U+06EC, for Qaloon
-    dotabove = font["uni06EC"]
-    dotbelow = font["uni065C"]
-    delta = dotbelow.boundingBox()[-1] - dotabove.boundingBox()[-1]
-    dotbelow.references = []
-    dotbelow.addReference(dotabove.glyphname, psMat.translate(0, delta))
-    dotbelow.addAnchorPoint("TashkilTashkilBelow", "basemark", 220, dotbelow.boundingBox()[1] - 100)
-
     # scale some vowel marks and dots down a bit
     scaleGlyph(font["uni0651"], 0.8)
     for mark in ("uni064B", "uni064C", "uni064E", "uni064F", "uni06E1",
