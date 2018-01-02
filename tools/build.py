@@ -608,38 +608,30 @@ def makeQuran(infile, outfile, feafile, version):
     # vertically at the level of the base of waqf marks
     fea += makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
 
-    quran_glyphs = []
-    quran_glyphs += digits
-    quran_glyphs += punct
-    quran_glyphs += ("space",
-            "uni060C", "uni0615", "uni0617", "uni0618", "uni0619", "uni061A",
-            "uni061B", "uni061E", "uni061F", "uni0621", "uni0622", "uni0623",
-            "uni0624", "uni0625", "uni0626", "uni0627", "uni0628", "uni0629",
-            "uni062A", "uni062B", "uni062C", "uni062D", "uni062E", "uni062F",
-            "uni0630", "uni0631", "uni0632", "uni0633", "uni0634", "uni0635",
-            "uni0636", "uni0637", "uni0638", "uni0639", "uni063A", "uni0640",
-            "uni0641", "uni0642", "uni0643", "uni0644", "uni0645", "uni0646",
-            "uni0647", "uni0648", "uni0649", "uni064A", "uni064B", "uni064C",
-            "uni064D", "uni064E", "uni064F", "uni0650", "uni0651", "uni0652",
-            "uni0653", "uni0654", "uni0655", "uni0656", "uni0657", "uni0658",
-            "uni065C", "uni0660", "uni0661", "uni0662", "uni0663", "uni0664",
-            "uni0665", "uni0666", "uni0667", "uni0668", "uni0669", "uni066E",
-            "uni066F", "uni06A1", "uni06BA", "uni0670", "uni0671", "uni067A",
-            "uni06CC", "uni06D6", "uni06D7", "uni06D8", "uni06D9", "uni06DA",
-            "uni06DB", "uni06DC", "uni06DD", "uni06DE", "uni06DF", "uni06E0",
-            "uni06E1", "uni06E2", "uni06E3", "uni06E4", "uni06E5", "uni06E6",
-            "uni06E7", "uni06E8", "uni06E9", "uni06EA", "uni06EB", "uni06EC",
-            "uni06ED", "uni06F0", "uni06F1", "uni06F2", "uni06F3", "uni06F4",
-            "uni06F5", "uni06F6", "uni06F7", "uni06F8", "uni06F9", "uni08F0",
-            "uni08F1", "uni08F2", "uni2000", "uni2001", "uni2002", "uni2003",
-            "uni2004", "uni2005", "uni2006", "uni2007", "uni2008", "uni2009",
-            "uni200A", "uni200B", "uni200C", "uni200D", "uni200E", "uni200F",
-            "uni2028", "uni2029", "uni202A", "uni202B", "uni202C", "uni202D",
-            "uni202E", "uni202F", "uni25CC", "uniFD3E", "uniFD3F", "uniFDFA",
-            "uniFDFD")
-    quran_glyphs += ("uni030A", "uni0325") # ring above and below
-    quran_glyphs += ["uni0305"] # overline
-    unicodes = [font[n].unicode for n in quran_glyphs]
+    unicodes = [font[n].unicode for n in digits + punct]
+    unicodes += (ord(" "),
+                 0x0305, 0x030A, 0x0325, 0x060C, 0x0615, 0x0617, 0x0618,
+                 0x0619, 0x061A, 0x061B, 0x061E, 0x061F, 0x0621, 0x0622,
+                 0x0623, 0x0624, 0x0625, 0x0626, 0x0627, 0x0628, 0x0629,
+                 0x062A, 0x062B, 0x062C, 0x062D, 0x062E, 0x062F, 0x0630,
+                 0x0631, 0x0632, 0x0633, 0x0634, 0x0635, 0x0636, 0x0637,
+                 0x0638, 0x0639, 0x063A, 0x0640, 0x0641, 0x0642, 0x0643,
+                 0x0644, 0x0645, 0x0646, 0x0647, 0x0648, 0x0649, 0x064A,
+                 0x064B, 0x064C, 0x064D, 0x064E, 0x064F, 0x0650, 0x0651,
+                 0x0652, 0x0653, 0x0654, 0x0655, 0x0656, 0x0657, 0x0658,
+                 0x065C, 0x0660, 0x0661, 0x0662, 0x0663, 0x0664, 0x0665,
+                 0x0666, 0x0667, 0x0668, 0x0669, 0x066E, 0x066F, 0x0670,
+                 0x0671, 0x067A, 0x06A1, 0x06BA, 0x06CC, 0x06D6, 0x06D7,
+                 0x06D8, 0x06D9, 0x06DA, 0x06DB, 0x06DC, 0x06DD, 0x06DE,
+                 0x06DF, 0x06E0, 0x06E1, 0x06E2, 0x06E3, 0x06E4, 0x06E5,
+                 0x06E6, 0x06E7, 0x06E8, 0x06E9, 0x06EA, 0x06EB, 0x06EC,
+                 0x06ED, 0x06F0, 0x06F1, 0x06F2, 0x06F3, 0x06F4, 0x06F5,
+                 0x06F6, 0x06F7, 0x06F8, 0x06F9, 0x08F0, 0x08F1, 0x08F2,
+                 0x2000, 0x2001, 0x2002, 0x2003, 0x2004, 0x2005, 0x2006,
+                 0x2007, 0x2008, 0x2009, 0x200A, 0x200B, 0x200C, 0x200D,
+                 0x200E, 0x200F, 0x2028, 0x2029, 0x202A, 0x202B, 0x202C,
+                 0x202D, 0x202E, 0x202F, 0x25CC, 0xFD3E, 0xFD3F, 0xFDFA,
+                 0xFDFD)
 
     generateFont(font, feafile, fea, outfile)
     subsetFontFT(outfile, unicodes, quran=True)
