@@ -284,7 +284,7 @@ def subsetFont(font, glyphnames, similar=False):
         if glyph.glyphname not in glyphnames:
             font.removeGlyph(glyph)
 
-def subsetFontFT(path, unicodes):
+def subsetFontFT(path, unicodes, quran=False):
     from fontTools.ttLib import TTFont
     from fontTools import subset
 
@@ -296,6 +296,9 @@ def subsetFontFT(path, unicodes):
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(font)
+
+    if quran:
+        font["OS/2"].sTypoAscender = font["hhea"].ascent = font["head"].yMax
 
     font.save(path)
 
@@ -638,22 +641,8 @@ def makeQuran(infile, outfile, feafile, version):
     quran_glyphs += ["uni0305"] # overline
     unicodes = [font[n].unicode for n in quran_glyphs]
 
-    # set font ascent to the highest glyph in the font so that waqf marks don't
-    # get truncated
-    # we could have set os2_typoascent_add and hhea_ascent_add, but ff makes
-    # the offset relative to em-size in the former and font bounds in the
-    # later, but we want both to be relative to font bounds
-    ymax = 0
-    for name in quran_glyphs:
-        glyph = font[name]
-        bb = glyph.boundingBox()
-        if bb[-1] > ymax:
-            ymax = bb[-1]
-
-    font.os2_typoascent = font.hhea_ascent = ymax
-
     generateFont(font, feafile, fea, outfile)
-    subsetFontFT(outfile, unicodes)
+    subsetFontFT(outfile, unicodes, quran=True)
 
 def makeDesktop(infile, outfile, feafile, version, generate=True):
     font = fontforge.open(infile)
