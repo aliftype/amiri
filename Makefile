@@ -12,6 +12,7 @@ TESTS=test-suite
 FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
 WDIST=$(NAME)-$(VERSION)-WebFonts
+CDIST=$(NAME)-$(VERSION)-CTAN
 
 BUILD=$(TOOLS)/build.py
 RUNTEST=$(TOOLS)/runtest.py
@@ -102,23 +103,34 @@ clean:
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean:
-	@rm -rf $(DIST) $(DIST).zip $(WDIST) $(WDIST).zip
+	@rm -rf {$(DIST),$(CDIST),$(WDIST)}{,.zip}
 
 dist: all check pack doc
-	@echo "   Making dist tarball"
-	@mkdir -p $(DIST)
-	@mkdir -p $(WDIST)
+	@rm -rf $(DIST) $(CDIST) $(WDIST)
+	@mkdir -p $(DIST) $(CDIST) $(WDIST)
 	@cp OFL.txt $(DIST)
+	@cp OFL.txt $(CDIST)
 	@cp OFL.txt $(WDIST)
 	@cp $(DTTF) $(DIST)
+	@cp $(DTTF) $(CDIST)
 	@cp README.md $(DIST)/README
+	@cp README.md $(CDIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
+	@cp README-Arabic.md $(CDIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
+	@cp NEWS.md $(CDIST)/NEWS
 	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
+	@cp NEWS-Arabic.md $(CDIST)/NEWS-Arabic
+	@cp $(NAME).fontspec $(CDIST)
 	@cp $(WOFF) $(WDIST)
 	@cp $(WOF2) $(WDIST)
 	@cp $(CSSS) $(WDIST)
 	@cp $(WEB)/README $(WDIST)
 	@cp $(PDFS) $(DIST)
-	@zip -r $(DIST).zip $(DIST)
-	@zip -r $(WDIST).zip $(WDIST)
+	@cp $(PDFS) $(CDIST)
+	@echo "   ZIP  $(DIST)"
+	@zip -rq $(DIST).zip $(DIST)
+	@echo "   ZIP  $(CDIST)"
+	@zip -rq $(CDIST).zip $(CDIST)
+	@echo "   ZIP  $(WDIST)"
+	@zip -rq $(WDIST).zip $(WDIST)
