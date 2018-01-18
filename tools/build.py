@@ -110,6 +110,8 @@ def updateInfo(font, version):
     version = "%07.3f" % version
     font.version = font.version % version
     font.copyright = font.copyright % datetime.now().year
+    font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (
+        version, font.os2_vendor, font.fontname))
 
 def generateFeatureString(font, lookup):
     with NamedTemporaryFile() as tmp:
@@ -152,7 +154,7 @@ def generateFeatures(font, feafile):
 
     return fea_text
 
-def generateFont(font, feafile, feastring, outfile):
+def generateFont(font, version, feafile, feastring, outfile):
     from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
     from fontTools.ttLib import TTFont
 
@@ -169,6 +171,8 @@ def generateFont(font, feafile, feastring, outfile):
 
     # fix some common font issues
     validateGlyphs(font)
+
+    updateInfo(font, version)
 
     font.generate(outfile, flags=flags)
 
@@ -550,7 +554,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     fea = mergeLatin(font, italic=skew)
     makeNumerators(font)
-    generateFont(font, feafile, fea, outfile)
+    generateFont(font, version, feafile, fea, outfile)
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
@@ -631,14 +635,12 @@ def makeQuran(infile, outfile, feafile, version):
                  0xFD3F, 0xFDFA, 0xFDFD]
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
 
-    generateFont(font, feafile, fea, outfile)
+    generateFont(font, version, feafile, fea, outfile)
     subsetFontFT(outfile, unicodes, quran=True)
 
 def makeDesktop(infile, outfile, feafile, version, generate=True):
     font = fontforge.open(infile)
     font.encoding = "UnicodeFull" # avoid a crash if compact was set
-
-    updateInfo(font, version)
 
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
@@ -651,7 +653,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
     if generate:
         fea = mergeLatin(font)
         makeNumerators(font)
-        generateFont(font, feafile, fea, outfile)
+        generateFont(font, version, feafile, fea, outfile)
     else:
         return font
 

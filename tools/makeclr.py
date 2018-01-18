@@ -169,16 +169,12 @@ def colorize(font):
 
 def rename(font):
     for name in font["name"].names:
-        if name.nameID in (1, 4, 6):
+        if name.nameID in (1, 3, 4, 6):
             string = name.toUnicode()
-            if name.nameID == 6:
-                if "-" in string:
-                    family, subfamily = string.split("-")
-                    string = "%sColored-%s" % (family, subfamily)
-                else:
-                    string += "Colored"
+            if name.nameID in (3, 6):
+                string = string.replace("Quran", "QuranColored")
             else:
-                string += " Colored"
+                string = string.replace("Quran", "Quran Colored")
 
             name.string = string.encode(name.getEncoding())
 
