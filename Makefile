@@ -99,11 +99,11 @@ check: $(TEST) $(DTTF)
 	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
-	rm -rfv $(DTTF) $(WOFF) $(WOF2) $(CSSS) $(PDFS) $(SRC)/$(NAME).fea.pp
+	rm -rfv $(DTTF) $(WOFF) $(WOF2) $(CSSS) $(PDFS) $(SRC)/$(NAME)*.fea.pp
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
-distclean:
-	@rm -rf {$(DIST),$(CDIST),$(WDIST)}{,.zip}
+distclean: clean
+	rm -rf {$(DIST),$(CDIST),$(WDIST)}{,.zip}
 
 dist: all check pack doc
 	@rm -rf $(DIST) $(CDIST) $(WDIST)
