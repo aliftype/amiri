@@ -175,6 +175,8 @@ def generateFont(font, feafile, feastring, outfile):
     try:
         ttfont = TTFont(outfile)
         addOpenTypeFeaturesFromString(ttfont, fea)
+        if "FFTM" in ttfont:
+            del ttfont["FFTM"]
         ttfont.save(outfile)
     except:
         with NamedTemporaryFile(delete=False) as tmp:
