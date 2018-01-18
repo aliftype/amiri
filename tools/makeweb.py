@@ -7,7 +7,7 @@ from fontTools import subset
 def makeWeb(args):
     """If we are building a web version then try to minimise file size"""
 
-    font = TTFont(args.file)
+    font = TTFont(args.file, recalcTimestamp=False)
 
     # removed compatibility glyphs that of little use on the web
     ranges = (

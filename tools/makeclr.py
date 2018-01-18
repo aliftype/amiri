@@ -185,7 +185,7 @@ def main():
 
     args = parser.parse_args()
 
-    font = TTFont(args.infile)
+    font = TTFont(args.infile, recalcTimestamp=False)
 
     colorize(font)
     rename(font)
