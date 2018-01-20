@@ -19,6 +19,8 @@ import fontforge
 import psMat
 import os
 
+from fontTools.ttLib import TTFont
+from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
 from tempfile import NamedTemporaryFile
 
 def cleanAnchors(font):
@@ -155,8 +157,7 @@ def generateFeatures(font, feafile):
     return fea_text
 
 def generateFont(options, font, feastring):
-    from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
-    from fontTools.ttLib import TTFont
+    os.environ["SOURCE_DATE_EPOCH"] = "%d" % os.stat(args.input).st_mtime
 
     fea = generateFeatures(font, args.features)
     fea += feastring
@@ -295,10 +296,9 @@ def subsetFont(font, glyphnames, similar=False):
             font.removeGlyph(glyph)
 
 def subsetFontFT(path, unicodes, quran=False):
-    from fontTools.ttLib import TTFont
     from fontTools import subset
 
-    font = TTFont(path)
+    font = TTFont(path, recalcTimestamp=False)
 
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', name_languages='*',

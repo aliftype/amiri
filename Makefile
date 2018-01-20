@@ -1,5 +1,4 @@
 .PHONY: all clean ttf web pack check
-.ONESHELL:
 
 NAME=Amiri
 LATIN=AmiriLatin
@@ -43,7 +42,6 @@ doc: $(PDFS)
 
 $(NAME)Quran.ttf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@export SOURCE_DATE_EPOCH=`stat -c "%Y" $<`
 	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)Quran.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)Quran.fea.pp --version $(VERSION) --quran
 
@@ -53,25 +51,21 @@ $(NAME)QuranColored.ttf: $(NAME)Quran.ttf $(MAKECLR)
 
 $(NAME)-Regular.ttf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@export SOURCE_DATE_EPOCH=`stat -c "%Y" $<`
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Regular.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Regular.fea.pp --version $(VERSION)
 
 $(NAME)-Slanted.ttf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Italic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@export SOURCE_DATE_EPOCH=`stat -c "%Y" $<`
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Slanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Slanted.fea.pp --version $(VERSION) --slant=10
 
 $(NAME)-Bold.ttf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-Bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@export SOURCE_DATE_EPOCH=`stat -c "%Y" $<`
 	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Bold.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Bold.fea.pp --version $(VERSION)
 
 $(NAME)-BoldSlanted.ttf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldItalic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@export SOURCE_DATE_EPOCH=`stat -c "%Y" $<`
 	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-BoldSlanted.fea.pp
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-BoldSlanted.fea.pp --version $(VERSION) --slant=10
 
