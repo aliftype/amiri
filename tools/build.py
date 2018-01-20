@@ -154,11 +154,11 @@ def generateFeatures(font, feafile):
 
     return fea_text
 
-def generateFont(font, version, feafile, feastring, outfile):
+def generateFont(options, font, feastring):
     from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
     from fontTools.ttLib import TTFont
 
-    fea = generateFeatures(font, feafile)
+    fea = generateFeatures(font, args.features)
     fea += feastring
 
     flags = ["opentype", "dummy-dsig", "round", "omit-instructions"]
@@ -170,12 +170,12 @@ def generateFont(font, version, feafile, feastring, outfile):
     # fix some common font issues
     validateGlyphs(font)
 
-    updateInfo(font, version)
+    updateInfo(font, args.version)
 
-    font.generate(outfile, flags=flags)
+    font.generate(args.output, flags=flags)
 
     try:
-        ttfont = TTFont(outfile)
+        ttfont = TTFont(args.output)
         addOpenTypeFeaturesFromString(ttfont, fea)
 
         # Filter-out useless Macintosh names
@@ -185,12 +185,12 @@ def generateFont(font, version, feafile, feastring, outfile):
         # Drop useless table with timestamp
         if "FFTM" in ttfont:
             del ttfont["FFTM"]
-        ttfont.save(outfile)
+        ttfont.save(args.output)
     except:
         with NamedTemporaryFile(delete=False) as tmp:
             tmp.write(fea.encode("utf-8"))
             print("Failed! Inspect temporary file: %r" % tmp.name)
-            os.remove(outfile)
+            os.remove(args.output)
         raise
 
 
@@ -523,13 +523,12 @@ def mergeLatin(font, italic=False, glyphs=None, quran=False):
 
     return fea
 
-def makeSlanted(infile, outfile, feafile, version, slant):
-
-    font = makeDesktop(infile, outfile, feafile, version, False)
+def makeSlanted(options):
+    font = makeDesktop(options, False)
 
     # compute amout of skew, magic formula copied from fontforge sources
     import math
-    skew = psMat.skew(-slant * math.pi/180.0)
+    skew = psMat.skew(-options.slant * math.pi/180.0)
 
     # Remove Arabic math alphanumerics, they are upright-only.
     font.selection.select(["ranges"], "u1EE00", "u1EEFF")
@@ -548,7 +547,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
     font.transform(skew)
 
     # fix metadata
-    font.italicangle = slant
+    font.italicangle = options.slant
     font.fullname += " Slanted"
     if font.weight == "Bold":
         font.fontname = font.fontname.replace("Bold", "BoldSlanted")
@@ -558,7 +557,7 @@ def makeSlanted(infile, outfile, feafile, version, slant):
 
     fea = mergeLatin(font, italic=skew)
     makeNumerators(font)
-    generateFont(font, version, feafile, fea, outfile)
+    generateFont(options, font, fea)
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
@@ -581,8 +580,8 @@ def scaleGlyph(glyph, amount):
     if width == 0:
         glyph.width = width
 
-def makeQuran(infile, outfile, feafile, version):
-    font = makeDesktop(infile, outfile, feafile, version, False)
+def makeQuran(options):
+    font = makeDesktop(options, False)
 
     # fix metadata
     font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
@@ -639,11 +638,11 @@ def makeQuran(infile, outfile, feafile, version):
                  0xFD3F, 0xFDFA, 0xFDFD]
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
 
-    generateFont(font, version, feafile, fea, outfile)
-    subsetFontFT(outfile, unicodes, quran=True)
+    generateFont(options, font, fea)
+    subsetFontFT(options.output, unicodes, quran=True)
 
-def makeDesktop(infile, outfile, feafile, version, generate=True):
-    font = fontforge.open(infile)
+def makeDesktop(options, generate=True):
+    font = fontforge.open(options.input)
     font.encoding = "UnicodeFull" # avoid a crash if compact was set
 
     # remove anchors that are not needed in the production font
@@ -657,7 +656,7 @@ def makeDesktop(infile, outfile, feafile, version, generate=True):
     if generate:
         fea = mergeLatin(font)
         makeNumerators(font)
-        generateFont(font, version, feafile, fea, outfile)
+        generateFont(options, font, fea)
     else:
         return font
 
@@ -674,8 +673,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.slant:
-        makeSlanted(args.input, args.output, args.features, args.version, args.slant)
+        makeSlanted(args)
     elif args.quran:
-        makeQuran(args.input, args.output, args.features, args.version)
+        makeQuran(args)
     else:
-        makeDesktop(args.input, args.output, args.features, args.version)
+        makeDesktop(args)
