@@ -162,8 +162,6 @@ def generateFont(font, version, feafile, feastring, outfile):
     fea += feastring
 
     flags = ["opentype", "dummy-dsig", "round", "omit-instructions"]
-    if fontforge.version() > '20170805':
-        flags.append("no-mac-names")
 
     font.selection.all()
     font.correctReferences()
@@ -179,6 +177,12 @@ def generateFont(font, version, feafile, feastring, outfile):
     try:
         ttfont = TTFont(outfile)
         addOpenTypeFeaturesFromString(ttfont, fea)
+
+        # Filter-out useless Macintosh names
+        name = ttfont["name"]
+        name.names = [n for n in name.names if n.platformID != 1]
+
+        # Drop useless table with timestamp
         if "FFTM" in ttfont:
             del ttfont["FFTM"]
         ttfont.save(outfile)
