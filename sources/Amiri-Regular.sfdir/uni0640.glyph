@@ -1,14 +1,14 @@
 StartChar: uni0640
 Encoding: 1600 1600 208
 Width: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 185 m 25,0,-1
- 0 0 l 25,1,-1
- 0 0 l 25,2,-1
- 0 185 l 25,3,-1
- 0 185 l 25,0,-1
+0 185 m 25
+ 0 0 l 25
+ 0 0 l 25
+ 0 185 l 25
+ 0 185 l 25
 EndSplineSet
 EndChar

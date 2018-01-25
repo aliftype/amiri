@@ -1,6 +1,7 @@
 StartChar: uni0777.init
 Encoding: 65924 -1 500
 Width: 390
+Flags: H
 AnchorPoint: "TashkilAbove" 120 1640 basechar 0
 AnchorPoint: "TashkilBelow" 170 -960 basechar 0
 LayerCount: 3

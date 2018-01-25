@@ -11,8 +11,8 @@ UnderlineWidth: 94
 Ascent: 1638
 Descent: 410
 LayerCount: 2
-Layer: 0 1 "Back"  1
-Layer: 1 1 "Fore"  0
+Layer: 0 0 "Back"  1
+Layer: 1 0 "Fore"  0
 FSType: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
@@ -493,19 +493,18 @@ NameList: AGL For New Fonts
 WidthSeparation: 78
 BeginPrivate: 0
 EndPrivate
-GridOrder2: 1
 Grid
--2048 1456.14355469 m 1,0,-1
+-2048 1456.14355469 m 1
  4096 1456.14355469 l 1
--2048 995.400390625 m 1,2,-1
+-2048 995.400390625 m 1
  4096 995.400390625 l 1
--510 -403 m 25,4,-1
+-510 -403 m 25
  -510 1817 l 1
--2048 1284 m 1,6,-1
+-2048 1284 m 1
  4096 1284 l 1
-506 -454 m 25,8,-1
+506 -454 m 25
  1008 -454 l 1
--2048 1652 m 1,10,-1
+-2048 1652 m 1
  4096 1652 l 1
 EndSplineSet
 EndSplineFont
