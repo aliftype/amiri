@@ -164,7 +164,7 @@ def generateFont(options, font, feastring):
 
     flags = []
     if args.output.endswith(".ttf"):
-        flags += ["opentype", "dummy-dsig", "round", "omit-instructions"]
+        flags += ["opentype", "dummy-dsig", "omit-instructions"]
 
     font.selection.all()
     font.correctReferences()
