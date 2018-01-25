@@ -106,8 +106,13 @@ def getGlyphColor(glyphName):
 def colorize(font):
     COLR = newTable("COLR")
     CPAL = newTable("CPAL")
-    glyf = font["glyf"]
     hmtx = font["hmtx"]
+
+    glyf = font.get("glyf", None)
+    CFF  = font.get("CFF ", None)
+
+    if glyf is None:
+        assert False, "CFF is not supported"
 
     CPAL.version = 0
     COLR.version = 0

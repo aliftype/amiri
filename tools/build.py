@@ -162,7 +162,9 @@ def generateFont(options, font, feastring):
     fea = generateFeatures(font, args.features)
     fea += feastring
 
-    flags = ["opentype", "dummy-dsig", "round", "omit-instructions"]
+    flags = []
+    if args.output.endswith(".ttf"):
+        flags += ["opentype", "dummy-dsig", "round", "omit-instructions"]
 
     font.selection.all()
     font.correctReferences()
