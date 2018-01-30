@@ -185,9 +185,17 @@ def generateFont(options, font, feastring):
         name = ttfont["name"]
         name.names = [n for n in name.names if n.platformID != 1]
 
+        # https://github.com/fontforge/fontforge/pull/3235
+        head = ttfont["head"]
+        # fontDirectionHint is deprecated and must be set to 2
+        head.fontDirectionHint = 2
+        # unset bits 6..10
+        head.flags &= ~0x7e0
+
         # Drop useless table with timestamp
         if "FFTM" in ttfont:
             del ttfont["FFTM"]
+
         ttfont.save(args.output)
     except:
         with NamedTemporaryFile(delete=False) as tmp:
