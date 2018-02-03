@@ -1,11 +1,11 @@
 StartChar: uni062B.medi_KafBaaMedi
 Encoding: 67779 -1 2527
-Width: 367
-Flags: H
-AnchorPoint: "TashkilAbove" 42 1777 basechar 0
-AnchorPoint: "TashkilBelow" 210 -670 basechar 0
+Width: 179
+Flags: HW
+AnchorPoint: "TashkilAbove" 21 868 basechar 0
+AnchorPoint: "TashkilBelow" 103 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 193 -1 N 1 0 0 1 161 1220 2
+Refer: 193 -1 N 1 0 0 1 79 596 2
 Refer: 156 -1 N 1 0 0 1 0 0 3
 EndChar

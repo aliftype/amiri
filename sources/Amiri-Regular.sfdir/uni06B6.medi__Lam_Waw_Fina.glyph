@@ -1,11 +1,11 @@
 StartChar: uni06B6.medi_LamWawFina
 Encoding: 1114957 -1 1129
-Width: 520
-Flags: H
-AnchorPoint: "TashkilAbove" 170 1835 basechar 0
-AnchorPoint: "TashkilBelow" 200 -670 basechar 0
+Width: 253
+Flags: HW
+AnchorPoint: "TashkilAbove" 83 896 basechar 0
+AnchorPoint: "TashkilBelow" 98 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 191 -1 N 1 0 0 1 220 1535 2
+Refer: 191 -1 N 1 0 0 1 107 750 2
 Refer: 69 -1 N 1 0 0 1 0 0 3
 EndChar

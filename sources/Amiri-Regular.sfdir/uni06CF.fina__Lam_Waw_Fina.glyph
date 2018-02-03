@@ -1,11 +1,11 @@
 StartChar: uni06CF.fina_LamWawFina
 Encoding: 1114962 -1 1134
-Width: 656
-Flags: H
-AnchorPoint: "TashkilAbove" 305 1640 basechar 0
-AnchorPoint: "TashkilBelow" 440 -670 basechar 0
+Width: 320
+Flags: HW
+AnchorPoint: "TashkilAbove" 149 801 basechar 0
+AnchorPoint: "TashkilBelow" 215 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 191 -1 N 1 0 0 1 405 680 2
-Refer: 70 -1 N 1 0 0 1 -300 0 2
+Refer: 191 -1 N 1 0 0 1 198 332 2
+Refer: 70 -1 N 1 0 0 1 -146 0 2
 EndChar

@@ -1,11 +1,11 @@
 StartChar: aMem.medi_AlfPostTooth
 Encoding: 65850 -1 408
-Width: 583
+Width: 284
 Flags: HW
-AnchorPoint: "TashkilBelow" 355 -670 basechar 0
-AnchorPoint: "TashkilAbove" 225 1640 basechar 0
+AnchorPoint: "TashkilBelow" 173 -327 basechar 0
+AnchorPoint: "TashkilAbove" 110 801 basechar 0
 LayerCount: 3
 Fore
-Refer: 406 -1 N 1 0 0 1 101 0 2
+Refer: 406 -1 N 1 0 0 1 49 0 2
 Refer: 407 -1 N 1 0 0 1 0 0 2
 EndChar

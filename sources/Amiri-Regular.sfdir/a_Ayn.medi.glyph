@@ -1,30 +1,30 @@
 StartChar: aAyn.medi
 Encoding: 1114118 -1 6
-Width: 750
+Width: 366
 Flags: HW
-AnchorPoint: "DotBelow" 320 -200 basechar 0
-AnchorPoint: "TashkilBelow" 300 -670 basechar 0
-AnchorPoint: "TashkilAbove" 350 1640 basechar 0
-AnchorPoint: "TwoDotsAbove" 149 1000 basechar 0
-AnchorPoint: "HamzaAbove" 260 1000 basechar 0
-AnchorPoint: "DotAbove" 260 1000 basechar 0
+AnchorPoint: "DotBelow" 156 -98 basechar 0
+AnchorPoint: "TashkilBelow" 146 -327 basechar 0
+AnchorPoint: "TashkilAbove" 171 801 basechar 0
+AnchorPoint: "TwoDotsAbove" 73 488 basechar 0
+AnchorPoint: "HamzaAbove" 127 488 basechar 0
+AnchorPoint: "DotAbove" 127 488 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-750 185 m 0
- 798 185 818.67 160.67 812 112 c 0
- 801.33 39.33 780.67 2 750 0 c 0
- 624.67 -8.67 498.33 61.33 371 210 c 1
- 201.67 68.67 78 -1.33 0 0 c 0
- -32.67 0.67 -53.67 26.67 -63 78 c 0
- -75 147.33 -54 183 0 185 c 0
- 84.67 188.33 165.33 216.33 242 269 c 1
- 198 312.33 136 339.67 56 351 c 0
- 46.67 352.33 43.33 359.67 46 373 c 0
- 52.67 415.67 88 464.33 152 519 c 0
- 269.33 613.67 401 616.67 547 528 c 0
- 616.33 486 649.33 445 646 405 c 152
- 642.67 365 594.67 316 502 258 c 1
- 550.67 209.33 633.33 185 750 185 c 0
+366 90 m 0
+ 389 90 399 79 396 55 c 0
+ 391 20 381 1 366 0 c 0
+ 305 -4 243 30 181 103 c 1
+ 98 34 38 -1 0 0 c 0
+ -16 0 -26 13 -31 38 c 0
+ -37 72 -26 89 0 90 c 0
+ 41 92 81 105 118 131 c 1
+ 97 152 66 165 27 171 c 0
+ 22 172 21 175 22 182 c 0
+ 25 203 43 226 74 253 c 0
+ 131 299 196 301 267 258 c 0
+ 301 237 317 218 315 198 c 152
+ 313 178 290 154 245 126 c 1
+ 269 102 309 90 366 90 c 0
 EndSplineSet
 EndChar

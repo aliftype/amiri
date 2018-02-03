@@ -1,11 +1,11 @@
 StartChar: uni06BB.init_YaaBari
 Encoding: 1118506 -1 4720
-Width: 1620
-Flags: H
-AnchorPoint: "TashkilBelow" 201 -670 basechar 0
-AnchorPoint: "TashkilAbove" -337 1974 basechar 0
+Width: 791
+Flags: HW
+AnchorPoint: "TashkilBelow" 98 -327 basechar 0
+AnchorPoint: "TashkilAbove" -165 964 basechar 0
 LayerCount: 2
 Fore
-Refer: 212 -1 N 1 0 0 1 -297 1324 2
+Refer: 212 -1 N 1 0 0 1 -145 646 2
 Refer: 4683 -1 N 1 0 0 1 0 0 3
 EndChar

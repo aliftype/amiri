@@ -1,15 +1,15 @@
 StartChar: oslash
 Encoding: 248 248 182
-Width: 1064
+Width: 519
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-746 910 m 17
- 791.333333333 893.333333333 812.666666667 880.666666667 810 872 c 1
- 304 -32 l 1
- 258.666666667 -14.6666666667 237.333333333 -1.33333333333 240 8 c 1
- 746 910 l 17
+364 444 m 17
+ 386 436 397 430 396 426 c 1
+ 148 -16 l 1
+ 126 -8 116 -1 117 4 c 1
+ 364 444 l 17
 EndSplineSet
 Refer: 79 111 N 1 0 0 1 0 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" oslash.sc

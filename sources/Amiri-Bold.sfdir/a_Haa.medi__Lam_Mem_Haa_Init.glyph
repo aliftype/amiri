@@ -1,18 +1,18 @@
 StartChar: aHaa.medi_LamMemHaaInit
 Encoding: 65672 -1 137
-Width: 118
+Width: 57
 Flags: HW
-AnchorPoint: "DigitBelow" 633 -200 basechar 0
-AnchorPoint: "TaaBelow" 633 200 basechar 0
-AnchorPoint: "TaaAbove" 253 1000 basechar 0
-AnchorPoint: "TashkilBelow" 203 -670 basechar 0
-AnchorPoint: "TashkilAbove" 113 1640 basechar 0
-AnchorPoint: "DotAbove" 253 1000 basechar 0
-AnchorPoint: "DotBelow" 633 -200 basechar 0
-AnchorPoint: "HamzaAbove" 253 1000 basechar 0
-AnchorPoint: "HamzaBelow" 633 -200 basechar 0
-AnchorPoint: "TwoDotsAbove" 142 1000 basechar 0
-AnchorPoint: "TwoDotsBelow" 522 -200 basechar 0
+AnchorPoint: "DigitBelow" 309 -98 basechar 0
+AnchorPoint: "TaaBelow" 309 98 basechar 0
+AnchorPoint: "TaaAbove" 124 488 basechar 0
+AnchorPoint: "TashkilBelow" 99 -327 basechar 0
+AnchorPoint: "TashkilAbove" 55 801 basechar 0
+AnchorPoint: "DotAbove" 124 488 basechar 0
+AnchorPoint: "DotBelow" 309 -98 basechar 0
+AnchorPoint: "HamzaAbove" 124 488 basechar 0
+AnchorPoint: "HamzaBelow" 309 -98 basechar 0
+AnchorPoint: "TwoDotsAbove" 69 488 basechar 0
+AnchorPoint: "TwoDotsBelow" 255 -98 basechar 0
 LayerCount: 3
 Fore
 Refer: 165 -1 N 1 0 0 1 0 0 2

@@ -1,9 +1,9 @@
 StartChar: uni0644.medi_LamLamAlefFina
 Encoding: 69253 -1 4001
-Width: 432
-Flags: H
-AnchorPoint: "TashkilBelow" -70 -670 basechar 0
-AnchorPoint: "TashkilAbove" 70 1640 basechar 0
+Width: 210
+Flags: HW
+AnchorPoint: "TashkilBelow" -34 -327 basechar 0
+AnchorPoint: "TashkilAbove" 34 801 basechar 0
 LayerCount: 3
 Fore
 Refer: 423 -1 N 1 0 0 1 0 0 3

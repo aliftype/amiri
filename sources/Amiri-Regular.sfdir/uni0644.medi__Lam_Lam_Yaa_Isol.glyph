@@ -1,10 +1,10 @@
 StartChar: uni0644.medi_LamLamYaaIsol
 Encoding: 1117877 -1 4049
-Width: 439
-Flags: H
-AnchorPoint: "cursive" 0 -145 exit 0
-AnchorPoint: "TashkilAbove" 50 1640 basechar 0
-AnchorPoint: "TashkilBelow" 220 -670 basechar 0
+Width: 214
+Flags: HW
+AnchorPoint: "cursive" 0 -71 exit 0
+AnchorPoint: "TashkilAbove" 24 801 basechar 0
+AnchorPoint: "TashkilBelow" 107 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 429 -1 N 1 0 0 1 0 0 3

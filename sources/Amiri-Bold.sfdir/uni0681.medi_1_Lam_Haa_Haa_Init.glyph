@@ -1,11 +1,11 @@
 StartChar: uni0681.medi_1LamHaaHaaInit
 Encoding: 69325 -1 4073
-Width: 231
+Width: 112
 Flags: HW
-AnchorPoint: "TashkilAbove" 391 1640 basechar 0
-AnchorPoint: "TashkilBelow" 461 -670 basechar 0
+AnchorPoint: "TashkilAbove" 191 801 basechar 0
+AnchorPoint: "TashkilBelow" 225 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 4836 -1 N 1 0 0 1 1011 260 2
+Refer: 4836 -1 N 1 0 0 1 494 127 2
 Refer: 181 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,11 +1,11 @@
 StartChar: uni06B8.medi_KafMemLam
 Encoding: 1117245 -1 3417
-Width: 389
-Flags: H
-AnchorPoint: "TashkilAbove" 0 1640 basechar 0
-AnchorPoint: "TashkilBelow" 150 -670 basechar 0
+Width: 189
+Flags: HW
+AnchorPoint: "TashkilAbove" 0 801 basechar 0
+AnchorPoint: "TashkilBelow" 73 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 207 -1 N 1 0 0 1 215 -540 2
+Refer: 207 -1 N 1 0 0 1 105 -264 2
 Refer: 369 -1 N 1 0 0 1 0 0 3
 EndChar

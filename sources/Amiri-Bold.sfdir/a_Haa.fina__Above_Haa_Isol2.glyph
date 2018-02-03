@@ -1,18 +1,18 @@
 StartChar: aHaa.fina_AboveHaaIsol2
 Encoding: 65755 -1 229
-Width: 283
+Width: 138
 Flags: HW
-AnchorPoint: "DigitBelow" 817 -110 basechar 0
-AnchorPoint: "TaaBelow" 700 300 basechar 0
-AnchorPoint: "TaaAbove" 1057 790 basechar 0
-AnchorPoint: "TashkilBelow" 817 100 basechar 0
-AnchorPoint: "TashkilAbove" 197 1640 basechar 0
-AnchorPoint: "TwoDotsBelow" 707 -360 basechar 0
-AnchorPoint: "TwoDotsAbove" 957 790 basechar 0
-AnchorPoint: "DotBelow" 817 -360 basechar 0
-AnchorPoint: "HamzaBelow" 817 -90 basechar 0
-AnchorPoint: "HamzaAbove" 1057 790 basechar 0
-AnchorPoint: "DotAbove" 1057 790 basechar 0
+AnchorPoint: "DigitBelow" 399 -54 basechar 0
+AnchorPoint: "TaaBelow" 342 146 basechar 0
+AnchorPoint: "TaaAbove" 516 386 basechar 0
+AnchorPoint: "TashkilBelow" 399 49 basechar 0
+AnchorPoint: "TashkilAbove" 96 801 basechar 0
+AnchorPoint: "TwoDotsBelow" 345 -176 basechar 0
+AnchorPoint: "TwoDotsAbove" 467 386 basechar 0
+AnchorPoint: "DotBelow" 399 -176 basechar 0
+AnchorPoint: "HamzaBelow" 399 -44 basechar 0
+AnchorPoint: "HamzaAbove" 516 386 basechar 0
+AnchorPoint: "DotAbove" 516 386 basechar 0
 LayerCount: 3
 Fore
 Refer: 179 -1 N 1 0 0 1 0 0 2

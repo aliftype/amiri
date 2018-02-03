@@ -1,11 +1,11 @@
 StartChar: lcaron
 Encoding: 318 318 251
-Width: 546
+Width: 266
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 346 789 N 1 0 0 1 1044 40 2
-Refer: 75 108 N 1 0 0 1 -0 0 2
+Refer: 346 789 N 1 0 0 1 510 20 2
+Refer: 75 108 N 1 0 0 1 0 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" lcaron.sc
 EndChar

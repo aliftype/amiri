@@ -1,11 +1,11 @@
 StartChar: uni0758.medi_Finjani
 Encoding: 1116838 -1 3010
-Width: 1095
-Flags: H
-AnchorPoint: "TashkilAbove" 340 1640 basechar 0
-AnchorPoint: "TashkilBelow" 570 -670 basechar 0
+Width: 534
+Flags: HW
+AnchorPoint: "TashkilAbove" 166 801 basechar 0
+AnchorPoint: "TashkilBelow" 278 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 196 -1 N 1 0 0 1 571 -395 2
+Refer: 196 -1 N 1 0 0 1 279 -193 2
 Refer: 185 -1 N 1 0 0 1 0 0 3
 EndChar

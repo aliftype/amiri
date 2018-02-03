@@ -1,12 +1,12 @@
 StartChar: uni06B3.init_KafLam
 Encoding: 1117111 -1 3283
-Width: 1204
-Flags: H
-AnchorPoint: "TashkilBelow" 287 -670 basechar 0
-AnchorPoint: "TashkilAbove" 407 1640 basechar 0
+Width: 587
+Flags: HW
+AnchorPoint: "TashkilBelow" 140 -327 basechar 0
+AnchorPoint: "TashkilAbove" 199 801 basechar 0
 LayerCount: 2
 Fore
-Refer: 220 -1 N 1 0 0 1 529 1439 2
-Refer: 214 -1 N 1 0 0 1 227 -460 2
+Refer: 220 -1 N 1 0 0 1 258 703 2
+Refer: 214 -1 N 1 0 0 1 111 -225 2
 Refer: 356 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,11 +1,11 @@
 StartChar: uni0755.init_BaaHehInit
 Encoding: 1117703 -1 3875
-Width: 787
-Flags: H
-AnchorPoint: "TashkilAbove" 543 1640 basechar 0
-AnchorPoint: "TashkilBelow" 473 -810 basechar 0
+Width: 384
+Flags: HW
+AnchorPoint: "TashkilAbove" 265 801 basechar 0
+AnchorPoint: "TashkilBelow" 231 -396 basechar 0
 LayerCount: 2
 Fore
-Refer: 252 -1 N 1 0 0 1 473 290 2
+Refer: 252 -1 N 1 0 0 1 231 142 2
 Refer: 410 -1 N 1 0 0 1 0 0 3
 EndChar

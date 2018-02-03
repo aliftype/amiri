@@ -1,12 +1,12 @@
 StartChar: uni0751.medi_BaaBaaHaaInit
 Encoding: 67511 -1 2259
-Width: 924
+Width: 451
 Flags: HW
-AnchorPoint: "TashkilAbove" 526 1640 basechar 0
-AnchorPoint: "TashkilBelow" 599 -670 basechar 0
+AnchorPoint: "TashkilAbove" 257 801 basechar 0
+AnchorPoint: "TashkilBelow" 292 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 194 -1 N 1 0 0 1 699 -550 2
-Refer: 193 -1 N 1 0 0 1 526 1087 2
+Refer: 194 -1 N 1 0 0 1 341 -269 2
+Refer: 193 -1 N 1 0 0 1 257 531 2
 Refer: 146 -1 N 1 0 0 1 0 0 3
 EndChar

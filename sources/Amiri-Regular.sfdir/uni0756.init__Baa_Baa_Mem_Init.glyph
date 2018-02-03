@@ -1,11 +1,11 @@
 StartChar: uni0756.init_BaaBaaMemInit
 Encoding: 1116230 -1 2402
-Width: 333
-Flags: H
-AnchorPoint: "TashkilAbove" 187 1730 basechar 0
-AnchorPoint: "TashkilBelow" 177 -670 basechar 0
+Width: 162
+Flags: HW
+AnchorPoint: "TashkilAbove" 91 845 basechar 0
+AnchorPoint: "TashkilBelow" 86 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 209 1626 N 1 0 0 1 187 330 2
+Refer: 209 1626 N 1 0 0 1 91 161 2
 Refer: 152 -1 N 1 0 0 1 0 0 3
 EndChar

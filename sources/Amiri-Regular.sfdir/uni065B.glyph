@@ -3,29 +3,29 @@ Encoding: 1627 1627 244
 Width: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "TashkilAbove" 0 950 mark 0
-AnchorPoint: "MarkAbove" 0 840 mark 0
-AnchorPoint: "TashkilTashkilAbove" 0 1500 basemark 0
-AnchorPoint: "TashkilAboveDot" 0 950 mark 0
-AnchorPoint: "VAbove" 0 950 mark 0
+AnchorPoint: "TashkilAbove" 0 464 mark 0
+AnchorPoint: "MarkAbove" 0 410 mark 0
+AnchorPoint: "TashkilTashkilAbove" 0 732 basemark 0
+AnchorPoint: "TashkilAboveDot" 0 464 mark 0
+AnchorPoint: "VAbove" 0 464 mark 0
 LayerCount: 2
 Fore
 SplineSet
-158 937 m 2
- 154.67 930.33 150 927 144 927 c 0
- 137.33 925.67 129.67 929.33 121 938 c 0
- 55 1002.67 2.67 1084 -36 1182 c 1
- -78 1090 -105.67 1018 -119 966 c 0
- -125 942.67 -136.67 932.67 -154 936 c 0
- -167.33 938.67 -174.67 946 -176 958 c 0
- -176 964 -174.67 972 -172 982 c 8
- -140 1095.33 -90.33 1204 -23 1308 c 0
- -18.33 1315.33 -13.33 1319.33 -8 1320 c 0
- -4.67 1320.67 -1.67 1320 1 1318 c 2
- 21 1306 l 0
- 53 1228 108 1137.67 186 1035 c 0
- 191.33 1029.67 194.33 1023.67 195 1017 c 0
- 195.67 1011.67 194 1005 190 997 c 2
- 158 937 l 2
+77 458 m 2
+ 75 455 73 453 70 453 c 0
+ 67 452 63 454 59 458 c 0
+ 27 490 1 529 -18 577 c 1
+ -39 532 -51 497 -58 472 c 0
+ -61 461 -67 455 -75 457 c 0
+ -82 458 -85 462 -86 468 c 0
+ -86 471 -85 474 -84 479 c 8
+ -68 534 -44 588 -11 639 c 0
+ -9 643 -7 645 -4 645 c 0
+ -2 645 -1 645 0 644 c 2
+ 10 638 l 0
+ 26 600 53 555 91 505 c 0
+ 94 502 95 500 95 497 c 0
+ 95 494 95 491 93 487 c 2
+ 77 458 l 2
 EndSplineSet
 EndChar

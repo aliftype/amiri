@@ -1,33 +1,33 @@
 StartChar: aLam.medi_LamLamHehIsol
 Encoding: 1114445 -1 428
-Width: 354
+Width: 172
 Flags: HW
-AnchorPoint: "Stroke" 54 1046 basechar 0
-AnchorPoint: "TwoDotsBelow" 166 -276 basechar 0
-AnchorPoint: "TwoDotsAbove" -109 1568 basechar 0
-AnchorPoint: "DotAbove" 11 1568 basechar 0
-AnchorPoint: "TashkilBelow" 146 -670 basechar 0
-AnchorPoint: "TashkilAbove" 176 1640 basechar 0
-AnchorPoint: "VAbove" 11 1468 basechar 0
+AnchorPoint: "Stroke" 26 511 basechar 0
+AnchorPoint: "TwoDotsBelow" 81 -135 basechar 0
+AnchorPoint: "TwoDotsAbove" -53 766 basechar 0
+AnchorPoint: "DotAbove" 5 766 basechar 0
+AnchorPoint: "TashkilBelow" 71 -327 basechar 0
+AnchorPoint: "TashkilAbove" 86 801 basechar 0
+AnchorPoint: "VAbove" 5 717 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-144 106 m 1
- 140.67 -80.67 97.67 -181.33 15 -196 c 0
- -33 -204.67 -56 -182.67 -54 -130 c 0
- -52.67 -101.33 -48.67 -72.33 -42 -43 c 0
- -30 11 -12.67 36.67 10 34 c 256
- 44 30 65.33 33.67 74 45 c 0
- 98 75 103 142.33 89 247 c 0
- 76.33 340.33 42.67 633 -12 1125 c 0
- -18.67 1187 -16 1228.33 -4 1249 c 2
- 47 1337 l 2
- 63 1364.33 73 1361.67 77 1329 c 0
- 137.67 760.33 178.33 438.33 199 363 c 0
- 223.67 274.33 275.33 219 354 197 c 24
- 422 178.33 440.67 120.67 410 24 c 0
- 398.67 -12 380.33 -32.33 355 -37 c 0
- 305 -46.33 257 -29 211 15 c 0
- 177.67 47 155.33 77.33 144 106 c 1
+70 52 m 1
+ 68 -39 47 -89 7 -96 c 0
+ -16 -100 -27 -89 -26 -63 c 0
+ -25 -49 -24 -35 -21 -21 c 0
+ -15 5 -6 18 5 17 c 256
+ 22 15 32 16 36 22 c 0
+ 48 37 50 70 43 121 c 0
+ 37 167 21 309 -6 549 c 0
+ -9 579 -8 600 -2 610 c 2
+ 23 653 l 2
+ 31 666 36 665 38 649 c 0
+ 68 371 87 214 97 177 c 0
+ 109 134 135 107 173 96 c 24
+ 206 87 215 59 200 12 c 0
+ 194 -6 185 -16 173 -18 c 0
+ 149 -23 125 -14 103 7 c 0
+ 87 23 76 38 70 52 c 1
 EndSplineSet
 EndChar

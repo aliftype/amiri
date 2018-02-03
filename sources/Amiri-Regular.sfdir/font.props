@@ -6,10 +6,10 @@ Weight: Regular
 Copyright: Copyright (c) 2010-%s, Khaled Hosny <khaledhosny@eglug.org>.\nPortions copyright (c) 2010, Sebastian Kosch <sebastian@aldusleaf.org>.
 Version: %s
 ItalicAngle: 0
-UnderlinePosition: -1100
-UnderlineWidth: 102
-Ascent: 1638
-Descent: 410
+UnderlinePosition: -537
+UnderlineWidth: 50
+Ascent: 800
+Descent: 200
 InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
@@ -25,21 +25,21 @@ TTFWidth: 5
 LineGap: 0
 VLineGap: 0
 Panose: 0 0 5 0 0 0 0 0 0 0
-OS2TypoAscent: 2300
+OS2TypoAscent: 1123
 OS2TypoAOffset: 0
-OS2TypoDescent: -1300
+OS2TypoDescent: -635
 OS2TypoDOffset: 0
 OS2TypoLinegap: 0
-OS2WinAscent: 1500
+OS2WinAscent: 732
 OS2WinAOffset: 1
-OS2WinDescent: 1500
+OS2WinDescent: 732
 OS2WinDOffset: 1
-HheadAscent: 2300
+HheadAscent: 1123
 HheadAOffset: 0
-HheadDescent: -1300
+HheadDescent: -635
 HheadDOffset: 0
-OS2CapHeight: 1324
-OS2XHeight: 860
+OS2CapHeight: 646
+OS2XHeight: 433
 OS2Vendor: 'ALIF'
 Lookup: 259 9 0 "'curs' Cursive Attachment" { "'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
 Lookup: 260 0 0 "'mark' Generic Mark Anchor" { "'mark' Generic Mark Anchor-1"  "'mark' Generic Mark Anchor-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > 'latn' <'dflt' 'TRK ' > ) ]
@@ -96,23 +96,23 @@ NameList: AGL without afii
 BeginPrivate: 0
 EndPrivate
 Grid
--2048 1730 m 1
- 4096 1730 l 1025
+-1000 844.7265625 m 1
+ 2000 844.7265625 l 1025
   Named: "Tashkil"
--2048 2600 m 25
- 4096 2600 l 1049
+-1000 1269.53125 m 25
+ 2000 1269.53125 l 1049
   Named: "Ascent"
--2048 -1800 m 25
- 4096 -1800 l 1049
+-1000 -878.90625 m 25
+ 2000 -878.90625 l 1049
   Named: "Descent"
--2048 340 m 25
- 4096 340 l 1049
+-1000 166.015625 m 25
+ 2000 166.015625 l 1049
   Named: "Digits Axis"
--2048 1110 m 25
- 4096 1110 l 1049
+-1000 541.9921875 m 25
+ 2000 541.9921875 l 1049
   Named: "Digits top"
--2048 -190 m 25
- 4096 -190 l 1049
+-1000 -92.7734375 m 25
+ 2000 -92.7734375 l 1049
   Named: "Digits base"
 EndSplineSet
 AnchorClass2: "TashkilBelowHamza" "'mkmk' Tashkil below Hamza-1" "MarkAbove" "'mark' Generic Mark Anchor-1" "MarkBelow" "'mark' Generic Mark Anchor-2" "TashkilAbove" "'mark' Tashkil Above Base-1" "TashkilBelow" "'mark' Tashkil Below Base-1" "TashkilTashkilAbove" "'mkmk' Tashkil to Tashkil Above-1" "TashkilTashkilBelow" "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove2" "'mkmk' Tashkil to Tashkil Above 2-1" "TashkilAboveDot" "Tashkil Above Dot-1" "TashkilBelowDot" "Tashkil Below Dot-1" "HamzaAbove" "'mark' Hamza Above-1" "HamzaBelow" "'mark' Hamza Below-1" "HighHamza" "'mark' High Hamza-1" "DotAbove" "'mark' Dot Above-1" "DotBelow" "'mark' Dot Below-1" "DotBelowAlt" "'mark' Dot Below Alt-1" "TwoDotsAbove" "'mark' Two Dots Above-1" "TwoDotsBelow" "'mark' Two Dots Below-1" "TwoDotsBelowAlt" "'mark' Two Dots Below Alt-1" "DigitAbove" "'mark' Digit Above-1" "DigitBelow" "'mark' Digit Below-1" "MarkDotAbove" "'mkmk' Mark to Dot Above-1" "MarkDotBelow" "'mkmk' Mark to Dot Below-1" "TaaAbove" "'mark' Small Taa Above-1" "TaaBelow" "'mark' Small Taa Below-1" "AlefAbove" "'mark' Small Alef Above-1" "SeenAbove" "'mark' Seen Above-1" "SeenBelow" "'mark' Seen Below-1" "NoonAbove" "'mark' Noon Above-1" "VAbove" "'mark' V Mark Above-1" "RingDash" "'mkmk' Ring to Dash-1" "RingBelow" "'mark' Ring Below-1" "DotAlt" "'mark' Dot Alt-1" "DotHmaza" "'mkmk' Dot above Hamza-1" "Tail" "'mark' Yaa Tail-1" "Dash" "'mark' Dash-1" "Stroke" "'mark' Stroke-1" "cursive" "'curs' Cursive Attachment-1"

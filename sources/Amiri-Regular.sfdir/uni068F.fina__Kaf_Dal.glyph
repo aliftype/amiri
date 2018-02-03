@@ -1,11 +1,11 @@
 StartChar: uni068F.fina_KafDal
 Encoding: 1117316 -1 3488
-Width: 827
-Flags: H
-AnchorPoint: "TashkilAbove" 371 1640 basechar 0
-AnchorPoint: "TashkilBelow" 516 -670 basechar 0
+Width: 403
+Flags: HW
+AnchorPoint: "TashkilAbove" 181 801 basechar 0
+AnchorPoint: "TashkilBelow" 252 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 206 -1 N 1 0 0 1 401 935 2
+Refer: 206 -1 N 1 0 0 1 196 457 2
 Refer: 376 -1 N 1 0 0 1 0 0 3
 EndChar

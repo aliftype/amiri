@@ -1,9 +1,9 @@
 StartChar: uni062F.fina_LamDal
 Encoding: 1117342 -1 3514
-Width: 1000
-Flags: H
-AnchorPoint: "TashkilAbove" 350 1640 basechar 0
-AnchorPoint: "TashkilBelow" 442 -670 basechar 0
+Width: 488
+Flags: HW
+AnchorPoint: "TashkilAbove" 171 801 basechar 0
+AnchorPoint: "TashkilBelow" 216 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 380 -1 N 1 0 0 1 0 0 3

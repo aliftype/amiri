@@ -1,17 +1,17 @@
 StartChar: dcroat
 Encoding: 273 273 206
-Width: 1030
+Width: 502
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-438 1120 m 1
- 968 1120 l 2
- 976 1120 980 1114.67 980 1104 c 0
- 980 1084 976 1066 968 1050 c 1
- 436 1050 l 2
- 429.33 1050 426 1058 426 1074 c 0
- 426 1090.67 430 1106 438 1120 c 1
+214 547 m 1
+ 473 547 l 2
+ 477 547 479 544 479 539 c 0
+ 479 529 477 521 473 513 c 1
+ 213 513 l 2
+ 210 513 208 516 208 524 c 0
+ 208 532 210 540 214 547 c 1
 EndSplineSet
 Refer: 67 100 N 1 0 0 1 0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" dcroat.sc

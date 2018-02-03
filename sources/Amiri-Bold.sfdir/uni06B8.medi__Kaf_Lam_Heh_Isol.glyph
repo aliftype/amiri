@@ -1,11 +1,11 @@
 StartChar: uni06B8.medi_KafLamHehIsol
 Encoding: 68598 -1 3346
-Width: 309
+Width: 150
 Flags: HW
-AnchorPoint: "TashkilAbove" 176 1640 basechar 0
-AnchorPoint: "TashkilBelow" 361 -709 basechar 0
+AnchorPoint: "TashkilAbove" 86 801 basechar 0
+AnchorPoint: "TashkilBelow" 176 -346 basechar 0
 LayerCount: 3
 Fore
-Refer: 207 -1 N 1 0 0 1 281 -666 2
+Refer: 207 -1 N 1 0 0 1 137 -325 2
 Refer: 361 -1 N 1 0 0 1 0 0 3
 EndChar

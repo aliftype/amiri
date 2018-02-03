@@ -2,9 +2,9 @@ StartChar: Dot.b
 Encoding: 1114302 -1 194
 Width: 0
 GlyphClass: 4
-Flags: H
-AnchorPoint: "TashkilBelowDot" 30 -140 basemark 0
-AnchorPoint: "DotBelow" 0 140 mark 0
+Flags: HW
+AnchorPoint: "TashkilBelowDot" 15 -68 basemark 0
+AnchorPoint: "DotBelow" 0 68 mark 0
 LayerCount: 2
 Fore
 Refer: 191 -1 N 1 0 0 1 0 0 2

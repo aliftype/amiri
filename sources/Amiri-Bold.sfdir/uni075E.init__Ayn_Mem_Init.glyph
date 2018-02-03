@@ -1,11 +1,11 @@
 StartChar: uni075E.init_AynMemInit
 Encoding: 68812 -1 3560
-Width: 1005
+Width: 490
 Flags: HW
-AnchorPoint: "TashkilAbove" 290 1881 basechar 0
-AnchorPoint: "TashkilBelow" 636 -670 basechar 0
+AnchorPoint: "TashkilAbove" 142 918 basechar 0
+AnchorPoint: "TashkilBelow" 311 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 206 -1 N 1 0 0 1 340 1331 2
+Refer: 206 -1 N 1 0 0 1 166 650 2
 Refer: 383 -1 N 1 0 0 1 0 0 3
 EndChar

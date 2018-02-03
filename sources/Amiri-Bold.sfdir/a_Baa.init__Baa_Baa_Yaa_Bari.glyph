@@ -1,21 +1,21 @@
 StartChar: aBaa.init_BaaBaaYaaBari
 Encoding: 70297 -1 5855
-Width: 1315
+Width: 642
 Flags: HW
-AnchorPoint: "TwoDotsAbove" 150 700 basechar 0
-AnchorPoint: "TwoDotsBelow" 197 -780 basechar 0
-AnchorPoint: "DigitAbove" 240 800 basechar 0
-AnchorPoint: "TaaAbove" 279 740 basechar 0
-AnchorPoint: "TashkilAbove" 479 1640 basechar 0
-AnchorPoint: "DotAbove" 280 700 basechar 0
-AnchorPoint: "HamzaAbove" 280 700 basechar 0
-AnchorPoint: "VAbove" 280 700 basechar 0
-AnchorPoint: "RingBelow" 187 110 basechar 0
-AnchorPoint: "TashkilBelow" 477 -1010 basechar 0
-AnchorPoint: "DigitBelow" 197 -881 basechar 0
-AnchorPoint: "HamzaBelow" 197 -780 basechar 0
-AnchorPoint: "DotBelow" 197 -780 basechar 0
-AnchorPoint: "HighHamza" 424 985 basechar 0
+AnchorPoint: "TwoDotsAbove" 73 342 basechar 0
+AnchorPoint: "TwoDotsBelow" 96 -381 basechar 0
+AnchorPoint: "DigitAbove" 117 391 basechar 0
+AnchorPoint: "TaaAbove" 136 361 basechar 0
+AnchorPoint: "TashkilAbove" 234 801 basechar 0
+AnchorPoint: "DotAbove" 137 342 basechar 0
+AnchorPoint: "HamzaAbove" 137 342 basechar 0
+AnchorPoint: "VAbove" 137 342 basechar 0
+AnchorPoint: "RingBelow" 91 54 basechar 0
+AnchorPoint: "TashkilBelow" 233 -493 basechar 0
+AnchorPoint: "DigitBelow" 96 -430 basechar 0
+AnchorPoint: "HamzaBelow" 96 -381 basechar 0
+AnchorPoint: "DotBelow" 96 -381 basechar 0
+AnchorPoint: "HighHamza" 207 481 basechar 0
 LayerCount: 3
 Fore
 Refer: 5710 -1 N 1 0 0 1 0 0 2

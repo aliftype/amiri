@@ -1,11 +1,11 @@
 StartChar: uni0686.init_HaaRaaIsol
 Encoding: 67857 -1 2605
-Width: 1187
+Width: 579
 Flags: HW
-AnchorPoint: "TashkilAbove" 469 1640 basechar 0
-AnchorPoint: "TashkilBelow" 589 -670 basechar 0
+AnchorPoint: "TashkilAbove" 229 801 basechar 0
+AnchorPoint: "TashkilBelow" 288 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 207 -1 N 1 0 0 1 604 -590 2
+Refer: 207 -1 N 1 0 0 1 295 -288 2
 Refer: 159 -1 N 1 0 0 1 0 0 3
 EndChar

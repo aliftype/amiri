@@ -1,9 +1,9 @@
 StartChar: uni0633.medi_BaaSenInit
 Encoding: 1115721 -1 1893
-Width: 1008
-Flags: H
-AnchorPoint: "TashkilAbove" 460 1640 basechar 0
-AnchorPoint: "TashkilBelow" 670 -670 basechar 0
+Width: 492
+Flags: HW
+AnchorPoint: "TashkilAbove" 225 801 basechar 0
+AnchorPoint: "TashkilBelow" 327 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 118 -1 N 1 0 0 1 0 0 3

@@ -1,12 +1,12 @@
 StartChar: uni06CE.init_WideLD
 Encoding: 1118280 -1 4453
-Width: 585
-Flags: H
-AnchorPoint: "TashkilAbove" 235 1640 basechar 0
-AnchorPoint: "TashkilBelow" 352 -980 basechar 0
+Width: 285
+Flags: HW
+AnchorPoint: "TashkilAbove" 115 801 basechar 0
+AnchorPoint: "TashkilBelow" 172 -479 basechar 0
 LayerCount: 2
 Fore
-Refer: 209 1626 N 1 0 0 1 235 -125 2
-Refer: 299 -1 N 1 0 0 1 332 -890 2
+Refer: 209 1626 N 1 0 0 1 115 -61 2
+Refer: 299 -1 N 1 0 0 1 162 -435 2
 Refer: 222 -1 N 1 0 0 1 0 0 3
 EndChar

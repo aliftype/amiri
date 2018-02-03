@@ -1,12 +1,12 @@
 StartChar: uni06B2.init_PreHeh
 Encoding: 1119085 -1 6238
-Width: 1186
+Width: 579
 Flags: HW
-AnchorPoint: "TashkilAbove" 400 1640 basechar 0
-AnchorPoint: "TashkilBelow" 400 -670 basechar 0
+AnchorPoint: "TashkilAbove" 195 801 basechar 0
+AnchorPoint: "TashkilBelow" 195 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 6229 -1 N 1 0 0 1 0 0 2
-Refer: 210 -1 N 1 0 0 1 633 1453 2
-Refer: 195 -1 N 1 0 0 1 311 -340 2
+Refer: 210 -1 N 1 0 0 1 309 709 2
+Refer: 195 -1 N 1 0 0 1 152 -166 2
 EndChar

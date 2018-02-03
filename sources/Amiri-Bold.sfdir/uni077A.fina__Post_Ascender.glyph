@@ -1,11 +1,11 @@
 StartChar: uni077A.fina_PostAscender
 Encoding: 69958 -1 4748
-Width: 755
+Width: 368
 Flags: HW
-AnchorPoint: "TashkilAbove" 250 1640 basechar 0
-AnchorPoint: "TashkilBelow" 350 -670 basechar 0
+AnchorPoint: "TashkilAbove" 122 801 basechar 0
+AnchorPoint: "TashkilBelow" 171 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 343 -1 N 1 0 0 1 136 423 2
+Refer: 343 -1 N 1 0 0 1 66 207 2
 Refer: 4681 -1 N 1 0 0 1 0 0 3
 EndChar

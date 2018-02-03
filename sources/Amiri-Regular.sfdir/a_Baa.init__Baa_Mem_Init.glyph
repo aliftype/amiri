@@ -1,37 +1,37 @@
 StartChar: aBaa.init_BaaMemInit
 Encoding: 1114238 -1 127
-Width: 543
+Width: 265
 Flags: HW
-AnchorPoint: "DigitBelow" 292 -350 basechar 0
-AnchorPoint: "DigitAbove" 132 1210 basechar 0
-AnchorPoint: "TwoDotsBelowAlt" 182 -750 basechar 0
-AnchorPoint: "DotBelowAlt" 292 -750 basechar 0
-AnchorPoint: "HighHamza" 332 1210 basechar 0
-AnchorPoint: "VAbove" 132 1210 basechar 0
-AnchorPoint: "RingBelow" 185 850 basechar 0
-AnchorPoint: "TaaAbove" 132 1080 basechar 0
-AnchorPoint: "TashkilBelow" 292 -670 basechar 0
-AnchorPoint: "TashkilAbove" 212 1640 basechar 0
-AnchorPoint: "TwoDotsBelow" 182 -300 basechar 0
-AnchorPoint: "TwoDotsAbove" 21 1210 basechar 0
-AnchorPoint: "HamzaBelow" 292 -200 basechar 0
-AnchorPoint: "HamzaAbove" 132 1210 basechar 0
-AnchorPoint: "DotBelow" 292 -350 basechar 0
-AnchorPoint: "DotAbove" 132 1210 basechar 0
+AnchorPoint: "DigitBelow" 143 -171 basechar 0
+AnchorPoint: "DigitAbove" 64 591 basechar 0
+AnchorPoint: "TwoDotsBelowAlt" 89 -366 basechar 0
+AnchorPoint: "DotBelowAlt" 143 -366 basechar 0
+AnchorPoint: "HighHamza" 162 591 basechar 0
+AnchorPoint: "VAbove" 64 591 basechar 0
+AnchorPoint: "RingBelow" 90 415 basechar 0
+AnchorPoint: "TaaAbove" 64 527 basechar 0
+AnchorPoint: "TashkilBelow" 143 -327 basechar 0
+AnchorPoint: "TashkilAbove" 104 801 basechar 0
+AnchorPoint: "TwoDotsBelow" 89 -146 basechar 0
+AnchorPoint: "TwoDotsAbove" 10 591 basechar 0
+AnchorPoint: "HamzaBelow" 143 -98 basechar 0
+AnchorPoint: "HamzaAbove" 64 591 basechar 0
+AnchorPoint: "DotBelow" 143 -171 basechar 0
+AnchorPoint: "DotAbove" 64 591 basechar 0
 LayerCount: 2
 Fore
 SplineSet
--78 493 m 8
- -68 453.67 -79.33 427.33 -112 414 c 0
- -143.33 400.67 -159.67 414.67 -161 456 c 0
- -163.67 516.67 -155.67 573.67 -137 627 c 0
- -63.67 836.33 44.33 951.67 187 973 c 0
- 256.33 983.67 318 961.33 372 906 c 0
- 389.33 888 396 871.67 392 857 c 0
- 375.33 796.33 356.33 749.67 335 717 c 0
- 327 705 317.33 704 306 714 c 0
- 224.67 786 148 802 76 762 c 0
- -14 712 -65.33 661.33 -78 610 c 0
- -88 570 -88 531 -78 493 c 8
+-38 241 m 8
+ -33 222 -39 209 -55 202 c 0
+ -70 195 -78 203 -79 223 c 0
+ -80 253 -76 280 -67 306 c 0
+ -31 408 21 465 91 475 c 0
+ 125 480 156 469 182 442 c 0
+ 190 433 193 425 191 418 c 0
+ 183 388 174 366 164 350 c 0
+ 160 344 155 344 149 349 c 0
+ 109 384 72 392 37 372 c 0
+ -7 348 -32 323 -38 298 c 0
+ -43 278 -43 260 -38 241 c 8
 EndSplineSet
 EndChar

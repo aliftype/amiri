@@ -1,28 +1,28 @@
 StartChar: aAlf.fina_MemAlfFina
 Encoding: 1114427 -1 409
-Width: 398
+Width: 194
 Flags: HW
-AnchorPoint: "DigitAbove" -50 1250 basechar 0
-AnchorPoint: "HighHamza" 500 1500 basechar 0
-AnchorPoint: "TashkilBelow" 270 -670 basechar 0
-AnchorPoint: "TashkilAbove" 100 1640 basechar 0
-AnchorPoint: "HamzaBelow" 270 -385 basechar 0
-AnchorPoint: "HamzaAbove" 100 1500 basechar 0
-AnchorPoint: "cursive" 398 -209 entry 0
+AnchorPoint: "DigitAbove" -24 610 basechar 0
+AnchorPoint: "HighHamza" 244 732 basechar 0
+AnchorPoint: "TashkilBelow" 132 -327 basechar 0
+AnchorPoint: "TashkilAbove" 49 801 basechar 0
+AnchorPoint: "HamzaBelow" 132 -188 basechar 0
+AnchorPoint: "HamzaAbove" 49 732 basechar 0
+AnchorPoint: "cursive" 194 -102 entry 0
 LayerCount: 2
 Fore
 SplineSet
-271 -169 m 0
- 258.33 -149.67 247.83 -116.33 239.5 -69 c 128
- 231.17 -21.67 218 133 200 395 c 0
- 168 846.33 129.67 1149.67 85 1305 c 0
- 80.33 1320.33 80.33 1332.33 85 1341 c 2
- 141 1441 l 2
- 150.33 1457 158 1456 164 1438 c 0
- 194.67 1351.33 222.67 1174 248 906 c 128
- 273.33 638 290 439.67 298 311 c 0
- 312 93.67 348.67 -43 408 -99 c 128
- 467.33 -155 480.67 -200.33 448 -235 c 0
- 393.33 -293 334.33 -271 271 -169 c 0
+132 -83 m 0
+ 126 -74 121 -57 117 -34 c 128
+ 113 -11 107 65 98 193 c 0
+ 82 413 64 561 42 637 c 0
+ 40 644 40 651 42 655 c 2
+ 69 704 l 2
+ 74 712 77 711 80 702 c 0
+ 95 660 109 573 121 442 c 128
+ 133 311 142 215 146 152 c 0
+ 153 46 170 -21 199 -48 c 128
+ 228 -75 235 -98 219 -115 c 0
+ 192 -143 163 -133 132 -83 c 0
 EndSplineSet
 EndChar

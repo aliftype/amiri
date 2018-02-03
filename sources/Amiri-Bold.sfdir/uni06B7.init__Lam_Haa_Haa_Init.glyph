@@ -1,11 +1,11 @@
 StartChar: uni06B7.init_LamHaaHaaInit
 Encoding: 68219 -1 2967
-Width: 1002
+Width: 489
 Flags: HW
-AnchorPoint: "TashkilAbove" 139 2192 basechar 0
-AnchorPoint: "TashkilBelow" 750 -670 basechar 0
+AnchorPoint: "TashkilAbove" 68 1070 basechar 0
+AnchorPoint: "TashkilBelow" 366 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 193 -1 N 1 0 0 1 258 1635 2
+Refer: 193 -1 N 1 0 0 1 126 798 2
 Refer: 180 -1 N 1 0 0 1 0 0 3
 EndChar

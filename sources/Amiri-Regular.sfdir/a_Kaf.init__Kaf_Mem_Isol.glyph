@@ -1,38 +1,38 @@
 StartChar: aKaf.init_KafMemIsol
 Encoding: 1114419 -1 401
-Width: 1189
+Width: 580
 Flags: HW
-AnchorPoint: "RingBelow" 480 1585 basechar 0
-AnchorPoint: "TwoDotsBelow" 560 665 basechar 0
-AnchorPoint: "DotBelow" 560 665 basechar 0
-AnchorPoint: "TwoDotsAbove" -358 1724 basechar 0
-AnchorPoint: "DotAbove" -248 1724 basechar 0
-AnchorPoint: "TashkilBelow" 650 -670 basechar 0
-AnchorPoint: "TashkilAbove" 350 1750 basechar 0
-AnchorPoint: "Dash" 433 1800 basechar 0
+AnchorPoint: "RingBelow" 234 774 basechar 0
+AnchorPoint: "TwoDotsBelow" 273 325 basechar 0
+AnchorPoint: "DotBelow" 273 325 basechar 0
+AnchorPoint: "TwoDotsAbove" -175 842 basechar 0
+AnchorPoint: "DotAbove" -121 842 basechar 0
+AnchorPoint: "TashkilBelow" 317 -327 basechar 0
+AnchorPoint: "TashkilAbove" 171 854 basechar 0
+AnchorPoint: "Dash" 211 879 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1058 1752 m 2
- 1019 1622 l 2
- 1014.33 1606 1003.33 1596.67 986 1594 c 0
- 488 1511.33 165 1445.33 17 1396 c 0
- -60.33 1370.67 -113 1344.67 -141 1318 c 1
- 147 1023.33 273.33 773.33 238 568 c 0
- 228 513.33 199 456.67 151 398 c 0
- 125.67 366.67 78 343.33 8 328 c 0
- -84 307.33 -126.67 324 -120 378 c 24
- -117.33 396.67 -107.67 409.33 -91 416 c 0
- 57 472 147.67 519 181 557 c 1
- 179.67 684.33 94 829.33 -76 992 c 0
- -83.33 999.33 -93.33 1000.67 -106 996 c 2
- -169 974 l 2
- -179 970.67 -189 976 -199 990 c 2
- -315 1157 l 2
- -323.67 1169 -324.67 1186.33 -318 1209 c 0
- -290.67 1301.67 -250.67 1374.33 -198 1427 c 0
- -172.67 1451.67 -131 1479.33 -73 1510 c 0
- 100.33 1604.67 467.33 1698 1028 1790 c 0
- 1057.33 1795.33 1067.33 1782.67 1058 1752 c 2
+517 855 m 2
+ 498 792 l 2
+ 496 784 489 779 481 778 c 0
+ 238 738 80 706 8 682 c 0
+ -30 670 -55 657 -69 644 c 1
+ 72 500 133 377 116 277 c 0
+ 111 250 97 223 74 194 c 0
+ 62 179 38 167 4 160 c 0
+ -41 150 -62 159 -59 185 c 24
+ -58 194 -52 200 -44 203 c 0
+ 28 230 72 253 88 272 c 1
+ 87 334 46 405 -37 484 c 0
+ -41 488 -46 488 -52 486 c 2
+ -83 476 l 2
+ -88 474 -92 476 -97 483 c 2
+ -154 565 l 2
+ -158 571 -158 579 -155 590 c 0
+ -142 635 -123 671 -97 697 c 0
+ -85 709 -64 722 -36 737 c 0
+ 49 783 228 829 502 874 c 0
+ 516 877 522 870 517 855 c 2
 EndSplineSet
 EndChar

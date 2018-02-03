@@ -1,11 +1,11 @@
 StartChar: uni0752.init_BaaBaaYaaBari
 Encoding: 70323 -1 5881
-Width: 1315
+Width: 642
 Flags: HW
-AnchorPoint: "TashkilBelow" 308 -1321 basechar 0
-AnchorPoint: "TashkilAbove" 479 1640 basechar 0
+AnchorPoint: "TashkilBelow" 150 -645 basechar 0
+AnchorPoint: "TashkilAbove" 234 801 basechar 0
 LayerCount: 3
 Fore
-Refer: 196 -1 N 1 0 0 1 308 -920 2
+Refer: 196 -1 N 1 0 0 1 150 -449 2
 Refer: 5855 -1 N 1 0 0 1 0 0 3
 EndChar

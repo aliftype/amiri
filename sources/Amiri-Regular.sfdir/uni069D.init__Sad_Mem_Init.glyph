@@ -1,11 +1,11 @@
 StartChar: uni069D.init_SadMemInit
 Encoding: 1117437 -1 3609
-Width: 1332
-Flags: H
-AnchorPoint: "TashkilAbove" 665 1640 basechar 0
-AnchorPoint: "TashkilBelow" 812 -670 basechar 0
+Width: 650
+Flags: HW
+AnchorPoint: "TashkilAbove" 325 801 basechar 0
+AnchorPoint: "TashkilBelow" 396 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 195 -1 N 1 0 0 1 803 -40 2
+Refer: 195 -1 N 1 0 0 1 392 -20 2
 Refer: 389 -1 N 1 0 0 1 0 0 3
 EndChar

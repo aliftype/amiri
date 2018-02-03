@@ -1,11 +1,11 @@
 StartChar: uni0765.init_MemYaaIsol
 Encoding: 68944 -1 3692
-Width: 791
+Width: 386
 Flags: HW
-AnchorPoint: "TashkilAbove" 350 1640 basechar 0
-AnchorPoint: "TashkilBelow" 600 -670 basechar 0
+AnchorPoint: "TashkilAbove" 171 801 basechar 0
+AnchorPoint: "TashkilBelow" 293 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 191 -1 N 1 0 0 1 368 1108 2
+Refer: 191 -1 N 1 0 0 1 180 541 2
 Refer: 395 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,12 +1,12 @@
 StartChar: uni0751.init_BaaMemIsolLD
 Encoding: 69749 -1 4498
-Width: 801
+Width: 391
 Flags: HW
-AnchorPoint: "TashkilAbove" 446 1640 basechar 0
-AnchorPoint: "TashkilBelow" 633 -930 basechar 0
+AnchorPoint: "TashkilAbove" 218 801 basechar 0
+AnchorPoint: "TashkilBelow" 309 -454 basechar 0
 LayerCount: 3
 Fore
-Refer: 298 -1 N 1 0 0 1 603 -890 2
-Refer: 193 -1 N 1 0 0 1 446 991 2
+Refer: 298 -1 N 1 0 0 1 294 -435 2
+Refer: 193 -1 N 1 0 0 1 218 484 2
 Refer: 403 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,11 +1,11 @@
 StartChar: uni0686.medi_BaaMemHaaInit
 Encoding: 66670 -1 1418
-Width: 172
+Width: 83
 Flags: HW
-AnchorPoint: "TashkilAbove" 182 1640 basechar 0
-AnchorPoint: "TashkilBelow" 312 -670 basechar 0
+AnchorPoint: "TashkilAbove" 89 801 basechar 0
+AnchorPoint: "TashkilBelow" 152 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 207 -1 N 1 0 0 1 316 -620 2
+Refer: 207 -1 N 1 0 0 1 154 -303 2
 Refer: 87 -1 N 1 0 0 1 0 0 3
 EndChar

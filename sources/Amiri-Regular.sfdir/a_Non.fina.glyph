@@ -1,40 +1,40 @@
 StartChar: aNon.fina
 Encoding: 1114152 -1 40
-Width: 1260
+Width: 615
 Flags: HW
-AnchorPoint: "TwoDotsBelow" 437 -995 basechar 0
-AnchorPoint: "DotBelow" 547 -995 basechar 0
-AnchorPoint: "RingBelow" 547 -595 basechar 0
-AnchorPoint: "TashkilBelow" 650 -800 basechar 0
-AnchorPoint: "TashkilAbove" 680 1640 basechar 0
-AnchorPoint: "TwoDotsAbove" 569 640 basechar 0
-AnchorPoint: "TaaAbove" 680 400 basechar 0
-AnchorPoint: "DotAbove" 680 640 basechar 0
-AnchorPoint: "HamzaAbove" 680 500 basechar 0
+AnchorPoint: "TwoDotsBelow" 213 -486 basechar 0
+AnchorPoint: "DotBelow" 267 -486 basechar 0
+AnchorPoint: "RingBelow" 267 -291 basechar 0
+AnchorPoint: "TashkilBelow" 317 -391 basechar 0
+AnchorPoint: "TashkilAbove" 332 801 basechar 0
+AnchorPoint: "TwoDotsAbove" 278 312 basechar 0
+AnchorPoint: "TaaAbove" 332 195 basechar 0
+AnchorPoint: "DotAbove" 332 312 basechar 0
+AnchorPoint: "HamzaAbove" 332 244 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1079 303 m 2
- 1087.67 323 1098.83 325.67 1112.5 311 c 128
- 1126.17 296.33 1147 267.33 1175 224 c 24
- 1191.67 198 1220 185 1260 185 c 0
- 1288.67 185 1304.67 170.5 1308 141.5 c 128
- 1311.33 112.5 1307 81.83 1295 49.5 c 128
- 1283 17.17 1271.33 0.67 1260 0 c 0
- 1197 0 l 1
- 1189 -158 1140 -305.33 1050 -442 c 24
- 946.67 -598.67 773.33 -681 530 -689 c 0
- 406.67 -693 307.67 -658.83 233 -586.5 c 128
- 158.33 -514.17 124.33 -425.83 131 -321.5 c 128
- 137.67 -217.17 189.33 -76.33 286 101 c 0
- 290 108.33 296 112.33 304 113 c 128
- 312 113.67 318.33 110.5 323 103.5 c 128
- 327.67 96.5 327.33 88 322 78 c 0
- 256 -49.33 224.67 -139 228 -191 c 24
- 238.67 -373 347.67 -465 555 -467 c 1
- 781.67 -468.33 953.33 -406 1070 -280 c 1
- 1092 -116 1078.67 21 1030 131 c 0
- 1021.33 150.33 1018 162 1020 166 c 2
- 1079 303 l 2
+527 148 m 2
+ 531 158 536 159 543 152 c 128
+ 550 145 560 130 574 109 c 24
+ 582 96 595 90 615 90 c 0
+ 629 90 637 83 639 69 c 128
+ 641 55 638 40 632 24 c 128
+ 626 8 621 0 615 0 c 0
+ 584 0 l 1
+ 580 -77 557 -149 513 -216 c 24
+ 463 -292 378 -332 259 -336 c 0
+ 199 -338 150 -321 114 -286 c 128
+ 78 -251 61 -208 64 -157 c 128
+ 67 -106 93 -38 140 49 c 0
+ 142 53 144 55 148 55 c 128
+ 152 55 156 54 158 51 c 128
+ 160 48 160 43 157 38 c 0
+ 125 -24 109 -68 111 -93 c 24
+ 116 -182 170 -227 271 -228 c 1
+ 382 -229 465 -199 522 -137 c 1
+ 533 -57 527 10 503 64 c 0
+ 499 73 497 79 498 81 c 2
+ 527 148 l 2
 EndSplineSet
 EndChar

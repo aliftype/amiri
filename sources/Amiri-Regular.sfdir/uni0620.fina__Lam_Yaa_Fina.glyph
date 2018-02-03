@@ -1,12 +1,12 @@
 StartChar: uni0620.fina_LamYaaFina
 Encoding: 1115364 -1 1536
-Width: 961
-Flags: H
-AnchorPoint: "TashkilAbove" 390 1640 basechar 0
-AnchorPoint: "TashkilBelow" 669 -1249 basechar 0
-AnchorPoint: "AlefAbove" 600 0 basechar 0
+Width: 469
+Flags: HW
+AnchorPoint: "TashkilAbove" 190 801 basechar 0
+AnchorPoint: "TashkilBelow" 327 -610 basechar 0
+AnchorPoint: "AlefAbove" 293 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 215 -1 N 1 0 0 1 669 -849 2
+Refer: 215 -1 N 1 0 0 1 327 -415 2
 Refer: 92 -1 N 1 0 0 1 0 0 2
 EndChar

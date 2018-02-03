@@ -1,31 +1,31 @@
 StartChar: aLam.medi_KafLamYaa
 Encoding: 1114380 -1 362
-Width: 390
+Width: 190
 Flags: HW
-AnchorPoint: "TwoDotsBelow" 250 -690 basechar 0
-AnchorPoint: "TwoDotsAbove" 6 1746 basechar 0
-AnchorPoint: "DotAbove" 126 1746 basechar 0
-AnchorPoint: "TashkilBelow" 220 -670 basechar 0
-AnchorPoint: "TashkilAbove" 50 1640 basechar 0
-AnchorPoint: "VAbove" 126 1646 basechar 0
-AnchorPoint: "cursive" 0 -145 exit 0
+AnchorPoint: "TwoDotsBelow" 122 -337 basechar 0
+AnchorPoint: "TwoDotsAbove" 3 853 basechar 0
+AnchorPoint: "DotAbove" 62 853 basechar 0
+AnchorPoint: "TashkilBelow" 107 -327 basechar 0
+AnchorPoint: "TashkilAbove" 24 801 basechar 0
+AnchorPoint: "VAbove" 62 804 basechar 0
+AnchorPoint: "cursive" 0 -71 exit 0
 LayerCount: 2
 Fore
 SplineSet
-390 192 m 0
- 426 182.67 448.67 159.33 458 122 c 128
- 467.33 84.67 464.5 50.67 449.5 20 c 128
- 434.5 -10.67 414 -24.33 388 -21 c 0
- 276.67 -7 206 87.33 176 262 c 1
- 149.33 4.67 71.33 -156.67 -58 -222 c 1
- -46 -134 l 1
- 40.67 -84.67 102 50.67 138 272 c 0
- 142.67 336 134.17 535.83 112.5 871.5 c 128
- 90.83 1207.17 79.67 1383.17 79 1399.5 c 128
- 78.33 1415.83 82.33 1431.33 91 1446 c 2
- 134 1520 l 2
- 151.33 1549.33 161 1549.33 163 1520 c 2
- 209 891 l 2
- 241.67 447.67 302 214.67 390 192 c 0
+190 94 m 0
+ 208 89 219 78 224 60 c 128
+ 229 42 226 25 219 10 c 128
+ 212 -5 202 -12 189 -10 c 0
+ 135 -3 101 43 86 128 c 1
+ 73 2 35 -76 -28 -108 c 1
+ -22 -65 l 1
+ 20 -41 49 25 67 133 c 0
+ 69 164 66 262 55 426 c 128
+ 44 590 39 675 39 683 c 128
+ 39 691 40 699 44 706 c 2
+ 65 742 l 2
+ 73 756 79 756 80 742 c 2
+ 102 435 l 2
+ 118 219 147 105 190 94 c 0
 EndSplineSet
 EndChar

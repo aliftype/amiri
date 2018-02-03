@@ -1,37 +1,37 @@
 StartChar: aLam.fina_LamLamIsol
 Encoding: 1114437 -1 419
-Width: 1270
+Width: 620
 Flags: HW
-AnchorPoint: "Stroke" 966 912 basechar 0
-AnchorPoint: "TwoDotsBelow" 600 -935 basechar 0
-AnchorPoint: "TwoDotsAbove" 400 1000 basechar 0
-AnchorPoint: "DotAbove" 600 1200 basechar 0
-AnchorPoint: "TashkilBelow" 600 -770 basechar 0
-AnchorPoint: "TashkilAbove" 600 1640 basechar 0
-AnchorPoint: "VAbove" 614 1198 basechar 0
+AnchorPoint: "Stroke" 472 445 basechar 0
+AnchorPoint: "TwoDotsBelow" 293 -457 basechar 0
+AnchorPoint: "TwoDotsAbove" 195 488 basechar 0
+AnchorPoint: "DotAbove" 293 586 basechar 0
+AnchorPoint: "TashkilBelow" 293 -376 basechar 0
+AnchorPoint: "TashkilAbove" 293 801 basechar 0
+AnchorPoint: "VAbove" 300 585 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1269 -36 m 0
- 1215.67 -50 1157.67 -23 1095 45 c 1
- 1105.67 -273 1058.33 -480.33 953 -577 c 0
- 840.33 -680.33 697.67 -732 525 -732 c 0
- 391.67 -732 286.67 -691.33 210 -610 c 0
- 136 -531.33 110 -426.33 132 -295 c 128
- 154 -163.67 218.67 -32 326 100 c 0
- 332 108 339.67 111.33 349 110 c 0
- 358.33 109.33 364.67 105 368 97 c 0
- 372 88.33 369.67 78 361 66 c 24
- 241 -100 201.33 -234 242 -336 c 0
- 291.33 -460.67 411.33 -521 602 -517 c 0
- 754 -513.67 893.67 -453 1021 -335 c 1
- 913 1064 l 0
- 909 1106 911.67 1139.67 921 1165 c 10
- 959 1269 l 2
- 981 1329.67 995.33 1321 1002 1243 c 0
- 1052 707 l 2
- 1081.33 392.33 1150.33 222.67 1259 198 c 256
- 1319.67 184 1344 142.67 1332 74 c 0
- 1320.67 8.67 1299.67 -28 1269 -36 c 0
+620 -18 m 0
+ 594 -25 566 -11 535 22 c 1
+ 540 -133 516 -235 465 -282 c 0
+ 410 -332 340 -357 256 -357 c 0
+ 191 -357 140 -338 103 -298 c 0
+ 67 -260 53 -208 64 -144 c 128
+ 75 -80 107 -15 159 49 c 0
+ 162 53 165 55 170 54 c 0
+ 175 54 178 51 180 47 c 0
+ 182 43 180 38 176 32 c 24
+ 117 -49 98 -114 118 -164 c 0
+ 142 -225 201 -254 294 -252 c 0
+ 368 -250 437 -222 499 -164 c 1
+ 446 520 l 0
+ 444 541 445 557 450 569 c 10
+ 468 620 l 2
+ 479 650 486 645 489 607 c 0
+ 514 345 l 2
+ 528 191 562 109 615 97 c 256
+ 645 90 656 70 650 36 c 0
+ 644 4 635 -14 620 -18 c 0
 EndSplineSet
 EndChar

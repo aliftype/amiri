@@ -1,10 +1,10 @@
 StartChar: agrave
 Encoding: 224 224 157
-Width: 898
+Width: 438
 Flags: HW
 LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
-Refer: 229 768 N 1 0 0 1 1048 24 2
+Refer: 229 768 N 1 0 0 1 512 12 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" agrave.sc
 EndChar

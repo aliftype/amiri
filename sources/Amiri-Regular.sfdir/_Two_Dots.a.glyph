@@ -3,27 +3,27 @@ Encoding: 1114300 -1 192
 Width: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "MarkDotAbove" -20 450 basemark 0
+AnchorPoint: "MarkDotAbove" -10 220 basemark 0
 AnchorPoint: "DotHmaza" 0 0 mark 0
-AnchorPoint: "TashkilAboveDot" -20 450 basemark 0
-AnchorPoint: "TwoDotsAbove" -111 140 mark 0
+AnchorPoint: "TashkilAboveDot" -10 220 basemark 0
+AnchorPoint: "TwoDotsAbove" -54 68 mark 0
 LayerCount: 2
 Fore
 SplineSet
-69 306 m 2
- 72.33 311.33 78 312.67 86 310 c 0
- 140 291.33 188.33 263 231 225 c 0
- 237 219.67 238 213.67 234 207 c 2
- 136 52 l 2
- 132 46 125.33 47 116 55 c 0
- 107.33 62.33 68.67 86.67 0 128 c 1
- -77 6 l 2
- -81 0 -87.83 1 -97.5 9 c 128
- -107.17 17 -155 47 -241 99 c 0
- -246.33 102.33 -247.33 106.33 -244 111 c 2
- -144 260 l 2
- -140.67 265.33 -135 266.67 -127 264 c 0
- -82.33 248.67 -41.33 226.33 -4 197 c 1
- 69 306 l 2
+34 149 m 2
+ 36 152 38 152 42 151 c 0
+ 68 142 92 129 113 110 c 0
+ 116 107 116 104 114 101 c 2
+ 66 25 l 2
+ 64 22 62 23 57 27 c 0
+ 53 31 34 42 0 62 c 1
+ -38 3 l 2
+ -40 0 -43 0 -48 4 c 128
+ -53 8 -76 23 -118 48 c 0
+ -121 50 -121 52 -119 54 c 2
+ -70 127 l 2
+ -68 130 -66 130 -62 129 c 0
+ -40 122 -20 110 -2 96 c 1
+ 34 149 l 2
 EndSplineSet
 EndChar

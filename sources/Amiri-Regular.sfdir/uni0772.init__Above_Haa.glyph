@@ -1,12 +1,12 @@
 StartChar: uni0772.init_AboveHaa
 Encoding: 1117060 -1 3232
-Width: 1498
-Flags: H
-AnchorPoint: "cursive" 0 420 exit 0
-AnchorPoint: "TashkilAbove" 1227 1989 basechar 0
-AnchorPoint: "TashkilBelow" 944 -260 basechar 0
+Width: 731
+Flags: HW
+AnchorPoint: "cursive" 0 205 exit 0
+AnchorPoint: "TashkilAbove" 599 971 basechar 0
+AnchorPoint: "TashkilBelow" 461 -127 basechar 0
 LayerCount: 2
 Fore
-Refer: 212 -1 N 1 0 0 1 1267 1339 2
+Refer: 212 -1 N 1 0 0 1 619 654 2
 Refer: 227 -1 N 1 0 0 1 0 0 3
 EndChar

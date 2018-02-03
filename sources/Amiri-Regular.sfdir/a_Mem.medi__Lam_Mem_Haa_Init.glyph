@@ -1,20 +1,20 @@
 StartChar: aMem.medi_LamMemHaaInit
 Encoding: 1114247 -1 136
-Width: 610
+Width: 297
 Flags: HW
-AnchorPoint: "TashkilBelow" 520 -670 basechar 0
-AnchorPoint: "TashkilAbove" 410 1640 basechar 0
+AnchorPoint: "TashkilBelow" 254 -327 basechar 0
+AnchorPoint: "TashkilAbove" 200 801 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-754 825 m 0
- 806.67 814.33 860.67 788.67 916 748 c 0
- 924 742 927.33 733 926 721 c 0
- 919.33 653 907 593.33 889 542 c 0
- 885.67 532.67 881 530.33 875 535 c 0
- 764.33 617 661.67 660.67 567 666 c 0
- 453.67 672 279.67 604 45 462 c 1
- -21.67 451.33 -38 475.67 -4 535 c 1
- 362.67 757 615.33 853.67 754 825 c 0
+368 403 m 0
+ 394 398 420 385 447 365 c 0
+ 451 362 453 358 452 352 c 0
+ 449 319 443 290 434 265 c 0
+ 432 260 430 259 427 261 c 0
+ 373 301 323 322 277 325 c 0
+ 222 328 137 295 22 226 c 1
+ -11 221 -19 232 -2 261 c 1
+ 177 369 300 417 368 403 c 0
 EndSplineSet
 EndChar

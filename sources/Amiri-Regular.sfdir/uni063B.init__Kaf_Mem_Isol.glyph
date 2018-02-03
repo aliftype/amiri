@@ -1,11 +1,11 @@
 StartChar: uni063B.init_KafMemIsol
 Encoding: 1117567 -1 3739
-Width: 1189
-Flags: H
-AnchorPoint: "TashkilAbove" -267 1934 basechar 0
-AnchorPoint: "TashkilBelow" 650 -670 basechar 0
+Width: 580
+Flags: HW
+AnchorPoint: "TashkilAbove" -130 944 basechar 0
+AnchorPoint: "TashkilBelow" 317 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 192 -1 N 1 0 0 1 -247 1584 2
+Refer: 192 -1 N 1 0 0 1 -121 773 2
 Refer: 401 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,11 +1,11 @@
 StartChar: uni064A.init_Wide
 Encoding: 1116980 -1 3152
-Width: 680
+Width: 332
 Flags: HW
-AnchorPoint: "TashkilAbove" 300 1640 basechar 0
-AnchorPoint: "TashkilBelow" 335 -670 basechar 0
+AnchorPoint: "TashkilAbove" 146 801 basechar 0
+AnchorPoint: "TashkilBelow" 164 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 195 -1 N 1 0 0 1 316 -490 2
+Refer: 195 -1 N 1 0 0 1 154 -239 2
 Refer: 222 -1 N 1 0 0 1 0 0 2
 EndChar

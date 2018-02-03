@@ -1,35 +1,35 @@
 StartChar: aFaa.init_FaaMemInit
 Encoding: 1114402 -1 384
-Width: 360
+Width: 175
 Flags: HW
-AnchorPoint: "TashkilBelow" 100 -670 basechar 0
-AnchorPoint: "TwoDotsBelow" 160 -50 basechar 0
-AnchorPoint: "DotBelow" 260 -50 basechar 0
-AnchorPoint: "TashkilAbove" 50 1640 basechar 0
-AnchorPoint: "TwoDotsAbove" -106 1448 basechar 0
-AnchorPoint: "DotAbove" 5 1448 basechar 0
-AnchorPoint: "HamzaAbove" 5 1448 basechar 0
+AnchorPoint: "TashkilBelow" 49 -327 basechar 0
+AnchorPoint: "TwoDotsBelow" 78 -24 basechar 0
+AnchorPoint: "DotBelow" 127 -24 basechar 0
+AnchorPoint: "TashkilAbove" 24 801 basechar 0
+AnchorPoint: "TwoDotsAbove" -52 707 basechar 0
+AnchorPoint: "DotAbove" 2 707 basechar 0
+AnchorPoint: "HamzaAbove" 2 707 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-12 1135 m 0
- 68 1138.33 118.67 1093.67 164 1001 c 0
- 232.67 861.67 254.67 719 230 573 c 0
- 220.67 517.67 187.33 466.67 130 420 c 0
- 104 398.67 50 394 -32 406 c 0
- -124 416.67 -159.33 434.67 -138 460 c 256
- -122.67 478.67 -78 491.67 -4 499 c 0
- 72 505.67 130 531 170 575 c 0
- 174.67 579.67 176.67 585.67 176 593 c 0
- 168.67 677 145.33 721.67 106 727 c 1
- 66 625.67 2 587.33 -86 612 c 24
- -185.33 640 -216.67 739 -180 909 c 0
- -138 1055 -74 1130.33 12 1135 c 0
-30 862 m 0
- 6.67 898 -17.83 916 -43.5 916 c 128
- -69.17 916 -91.33 903 -110 877 c 0
- -118 866.33 -116.67 856.33 -106 847 c 0
- -67.33 811.67 -23.33 809 26 839 c 0
- 35.33 845 36.67 852.67 30 862 c 0
+6 554 m 0
+ 33 556 58 534 80 489 c 0
+ 114 421 124 351 112 280 c 0
+ 107 253 91 228 63 205 c 0
+ 50 195 24 192 -16 198 c 0
+ -61 203 -77 213 -67 225 c 256
+ -60 234 -38 240 -2 244 c 0
+ 35 247 63 260 83 281 c 0
+ 85 283 86 286 86 290 c 0
+ 82 331 71 352 52 355 c 1
+ 32 306 1 287 -42 299 c 24
+ -91 313 -106 361 -88 444 c 0
+ -67 515 -36 552 6 554 c 0
+15 421 m 0
+ 4 439 -8 447 -21 447 c 128
+ -34 447 -45 441 -54 428 c 0
+ -58 423 -57 419 -52 414 c 0
+ -33 397 -11 395 13 410 c 0
+ 18 413 18 416 15 421 c 0
 EndSplineSet
 EndChar

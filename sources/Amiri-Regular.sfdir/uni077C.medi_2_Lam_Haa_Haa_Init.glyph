@@ -1,11 +1,11 @@
 StartChar: uni077C.medi_2LamHaaHaaInit
 Encoding: 1117929 -1 4101
-Width: 143
-Flags: H
-AnchorPoint: "TashkilAbove" 160 1640 basechar 0
-AnchorPoint: "TashkilBelow" 160 -890 basechar 0
+Width: 69
+Flags: HW
+AnchorPoint: "TashkilAbove" 78 801 basechar 0
+AnchorPoint: "TashkilBelow" 78 -435 basechar 0
 LayerCount: 2
 Fore
-Refer: 346 -1 N 1 0 0 1 160 -980 2
+Refer: 346 -1 N 1 0 0 1 78 -479 2
 Refer: 182 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,12 +1,12 @@
 StartChar: uni06CE.init_BaaYaaIsolLD
 Encoding: 69726 -1 4475
-Width: 529
+Width: 258
 Flags: HW
-AnchorPoint: "TashkilAbove" 123 1750 basechar 0
-AnchorPoint: "TashkilBelow" 363 -980 basechar 0
+AnchorPoint: "TashkilAbove" 60 854 basechar 0
+AnchorPoint: "TashkilBelow" 177 -479 basechar 0
 LayerCount: 3
 Fore
-Refer: 209 1626 N 1 0 0 1 123 350 2
-Refer: 299 -1 N 1 0 0 1 343 -890 2
+Refer: 209 1626 N 1 0 0 1 60 171 2
+Refer: 299 -1 N 1 0 0 1 167 -435 2
 Refer: 393 -1 N 1 0 0 1 0 0 3
 EndChar

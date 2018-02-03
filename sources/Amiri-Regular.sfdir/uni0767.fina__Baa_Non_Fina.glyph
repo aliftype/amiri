@@ -1,12 +1,12 @@
 StartChar: uni0767.fina_BaaNonFina
 Encoding: 1116409 -1 2581
-Width: 1112
-Flags: H
-AnchorPoint: "TashkilAbove" 526 1640 basechar 0
-AnchorPoint: "TashkilBelow" 582 -948 basechar 0
+Width: 542
+Flags: HW
+AnchorPoint: "TashkilAbove" 257 801 basechar 0
+AnchorPoint: "TashkilBelow" 284 -463 basechar 0
 LayerCount: 2
 Fore
-Refer: 195 -1 N 1 0 0 1 562 -858 2
-Refer: 191 -1 N 1 0 0 1 636 714 2
+Refer: 195 -1 N 1 0 0 1 274 -419 2
+Refer: 191 -1 N 1 0 0 1 311 349 2
 Refer: 158 -1 N 1 0 0 1 0 0 3
 EndChar

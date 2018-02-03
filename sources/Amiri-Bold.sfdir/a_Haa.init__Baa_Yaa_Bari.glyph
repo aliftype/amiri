@@ -1,18 +1,18 @@
 StartChar: aHaa.init_BaaYaaBari
 Encoding: 70340 -1 5908
-Width: 1343
+Width: 655
 Flags: HW
-AnchorPoint: "TwoDotsBelow" 509 -780 basechar 0
-AnchorPoint: "TwoDotsAbove" 520 950 basechar 0
-AnchorPoint: "TashkilBelow" 620 -1010 basechar 0
-AnchorPoint: "DotBelow" 620 -780 basechar 0
-AnchorPoint: "HamzaBelow" 620 -780 basechar 0
-AnchorPoint: "TaaBelow" 620 -780 basechar 0
-AnchorPoint: "DigitBelow" 620 -780 basechar 0
-AnchorPoint: "DotAbove" 620 950 basechar 0
-AnchorPoint: "HamzaAbove" 620 950 basechar 0
-AnchorPoint: "TaaAbove" 620 950 basechar 0
-AnchorPoint: "TashkilAbove" 620 1640 basechar 0
+AnchorPoint: "TwoDotsBelow" 249 -381 basechar 0
+AnchorPoint: "TwoDotsAbove" 254 464 basechar 0
+AnchorPoint: "TashkilBelow" 303 -493 basechar 0
+AnchorPoint: "DotBelow" 303 -381 basechar 0
+AnchorPoint: "HamzaBelow" 303 -381 basechar 0
+AnchorPoint: "TaaBelow" 303 -381 basechar 0
+AnchorPoint: "DigitBelow" 303 -381 basechar 0
+AnchorPoint: "DotAbove" 303 464 basechar 0
+AnchorPoint: "HamzaAbove" 303 464 basechar 0
+AnchorPoint: "TaaAbove" 303 464 basechar 0
+AnchorPoint: "TashkilAbove" 303 801 basechar 0
 LayerCount: 3
 Fore
 Refer: 18 -1 N 1 0 0 1 0 0 2

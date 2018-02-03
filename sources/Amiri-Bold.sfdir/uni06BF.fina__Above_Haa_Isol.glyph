@@ -1,13 +1,13 @@
 StartChar: uni06BF.fina_AboveHaaIsol
 Encoding: 68213 -1 2961
-Width: 213
+Width: 104
 Flags: HW
-AnchorPoint: "cursive" 213 420 entry 0
-AnchorPoint: "TashkilAbove" 327 1640 basechar 0
-AnchorPoint: "TashkilBelow" 832 -1139 basechar 0
+AnchorPoint: "cursive" 104 205 entry 0
+AnchorPoint: "TashkilAbove" 160 801 basechar 0
+AnchorPoint: "TashkilBelow" 406 -556 basechar 0
 LayerCount: 3
 Fore
-Refer: 207 -1 N 1 0 0 1 752 -660 2
-Refer: 191 -1 N 1 0 0 1 327 970 2
+Refer: 207 -1 N 1 0 0 1 367 -322 2
+Refer: 191 -1 N 1 0 0 1 160 474 2
 Refer: 179 -1 N 1 0 0 1 0 0 3
 EndChar

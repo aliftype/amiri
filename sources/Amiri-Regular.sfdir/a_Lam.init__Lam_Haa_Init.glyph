@@ -1,34 +1,34 @@
 StartChar: aLam.init_LamHaaInit
 Encoding: 1114182 -1 71
-Width: 1146
+Width: 559
 Flags: HW
-AnchorPoint: "Stroke" 323 1080 basechar 0
-AnchorPoint: "TwoDotsBelow" 310 0 basechar 0
-AnchorPoint: "TwoDotsAbove" 190 1670 basechar 0
-AnchorPoint: "DotAbove" 310 1670 basechar 0
-AnchorPoint: "TashkilBelow" 841 -670 basechar 0
-AnchorPoint: "TashkilAbove" 510 1640 basechar 0
-AnchorPoint: "VAbove" 310 1570 basechar 0
+AnchorPoint: "Stroke" 158 527 basechar 0
+AnchorPoint: "TwoDotsBelow" 151 0 basechar 0
+AnchorPoint: "TwoDotsAbove" 93 815 basechar 0
+AnchorPoint: "DotAbove" 151 815 basechar 0
+AnchorPoint: "TashkilBelow" 411 -327 basechar 0
+AnchorPoint: "TashkilAbove" 249 801 basechar 0
+AnchorPoint: "VAbove" 151 767 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-328 659 m 0
- 318.67 809.67 297.33 996.67 264 1220 c 1
- 240 1304 l 1
- 238.67 1321.33 241.33 1335 248 1345 c 152
- 254.67 1355 271.67 1383.33 299 1430 c 0
- 303.67 1438 309.5 1441.83 316.5 1441.5 c 128
- 323.5 1441.17 328.33 1435.67 331 1425 c 0
- 344.33 1372.33 374.67 1321.33 422 1272 c 0
- 434 1259.33 434.33 1245.33 423 1230 c 2
- 380 1172 l 2
- 373.33 1163.33 371.33 1148.67 374 1128 c 24
- 413.33 838 416 650 382 564 c 0
- 343.33 465.33 212.67 408.67 -10 394 c 0
- -103.33 388 -121.33 420.33 -64 491 c 0
- -50.67 507.67 -38 523.17 -26 537.5 c 128
- -14 551.83 3.67 559.33 27 560 c 0
- 131 562.67 211.67 570.67 269 584 c 0
- 311 593.33 330.67 618.33 328 659 c 0
+160 322 m 0
+ 155 396 145 487 129 596 c 1
+ 117 637 l 1
+ 116 645 118 652 121 657 c 152
+ 124 662 133 675 146 698 c 0
+ 148 702 152 704 155 704 c 128
+ 158 704 161 701 162 696 c 0
+ 169 670 183 645 206 621 c 0
+ 212 615 213 608 207 601 c 2
+ 186 572 l 2
+ 183 568 182 561 183 551 c 24
+ 202 409 204 317 187 275 c 0
+ 168 227 104 199 -5 192 c 0
+ -51 189 -59 205 -31 240 c 0
+ -24 248 -19 255 -13 262 c 128
+ -7 269 2 273 13 273 c 0
+ 64 274 103 278 131 285 c 0
+ 152 290 161 302 160 322 c 0
 EndSplineSet
 EndChar

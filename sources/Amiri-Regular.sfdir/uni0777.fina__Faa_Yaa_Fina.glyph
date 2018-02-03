@@ -1,12 +1,12 @@
 StartChar: uni0777.fina_FaaYaaFina
 Encoding: 1114993 -1 1165
-Width: 975
-Flags: H
-AnchorPoint: "TashkilAbove" 700 1640 basechar 0
-AnchorPoint: "TashkilBelow" 728 -1699 basechar 0
-AnchorPoint: "AlefAbove" 570 0 basechar 0
+Width: 476
+Flags: HW
+AnchorPoint: "TashkilAbove" 342 801 basechar 0
+AnchorPoint: "TashkilBelow" 355 -830 basechar 0
+AnchorPoint: "AlefAbove" 278 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 346 -1 N 1 0 0 1 728 -1789 2
+Refer: 346 -1 N 1 0 0 1 355 -874 2
 Refer: 73 -1 N 1 0 0 1 0 0 3
 EndChar

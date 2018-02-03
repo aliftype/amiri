@@ -1,11 +1,11 @@
 StartChar: ldot
 Encoding: 320 320 326
-Width: 1044
+Width: 509
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 258 -1 N 1 0 0 1 1336 -1074 2
-Refer: 76 108 N 1 0 0 1 -0 0 2
+Refer: 258 -1 N 1 0 0 1 652 -524 2
+Refer: 76 108 N 1 0 0 1 0 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" ldot.sc
 EndChar

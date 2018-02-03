@@ -1,10 +1,10 @@
 StartChar: uni0647.init_HehYaaIsol
 Encoding: 1117549 -1 3721
-Width: 1132
-Flags: H
-AnchorPoint: "HamzaAbove" 555 1386 basechar 0
-AnchorPoint: "TashkilBelow" 643 -670 basechar 0
-AnchorPoint: "TashkilAbove" 553 1640 basechar 0
+Width: 552
+Flags: HW
+AnchorPoint: "HamzaAbove" 271 677 basechar 0
+AnchorPoint: "TashkilBelow" 314 -327 basechar 0
+AnchorPoint: "TashkilAbove" 270 801 basechar 0
 LayerCount: 2
 Fore
 Refer: 399 -1 N 1 0 0 1 0 0 3

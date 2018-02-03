@@ -1,11 +1,11 @@
 StartChar: uni0626.init_BaaDal
 Encoding: 1115143 -1 1315
-Width: 349
-Flags: H
-AnchorPoint: "TashkilAbove" 60 1544 basechar 0
-AnchorPoint: "TashkilBelow" 80 -670 basechar 0
+Width: 170
+Flags: HW
+AnchorPoint: "TashkilAbove" 29 754 basechar 0
+AnchorPoint: "TashkilBelow" 39 -327 basechar 0
 LayerCount: 2
 Fore
-Refer: 4836 -1 N 1 0 0 1 110 74 2
+Refer: 4836 -1 N 1 0 0 1 54 36 2
 Refer: 83 -1 N 1 0 0 1 0 0 3
 EndChar

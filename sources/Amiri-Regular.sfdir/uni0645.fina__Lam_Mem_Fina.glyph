@@ -1,9 +1,9 @@
 StartChar: uni0645.fina_LamMemFina
 Encoding: 1114895 -1 1067
-Width: 469
-Flags: H
-AnchorPoint: "TashkilAbove" 200 1640 basechar 0
-AnchorPoint: "TashkilBelow" 417 -670 basechar 0
+Width: 229
+Flags: HW
+AnchorPoint: "TashkilAbove" 98 801 basechar 0
+AnchorPoint: "TashkilBelow" 204 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 66 -1 N 1 0 0 1 0 0 3

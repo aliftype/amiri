@@ -1,11 +1,11 @@
 StartChar: uni06A0
 Encoding: 1696 1696 472
-Width: 1107
-Flags: H
-AnchorPoint: "TashkilAbove" 500 1640 basechar 0
-AnchorPoint: "TashkilBelow" 720 200 basechar 0
+Width: 540
+Flags: HW
+AnchorPoint: "TashkilAbove" 244 801 basechar 0
+AnchorPoint: "TashkilBelow" 352 98 basechar 0
 LayerCount: 2
 Fore
-Refer: 193 -1 N 1 0 0 1 370 1090 2
+Refer: 193 -1 N 1 0 0 1 181 532 2
 Refer: 5 -1 N 1 0 0 1 0 0 3
 EndChar

@@ -1,10 +1,10 @@
 StartChar: uni0647.medi_LamHehInit
 Encoding: 1115827 -1 1999
-Width: 492
-Flags: H
-AnchorPoint: "HamzaAbove" 79 720 basechar 0
-AnchorPoint: "TashkilAbove" 240 1640 basechar 0
-AnchorPoint: "TashkilBelow" 200 -670 basechar 0
+Width: 240
+Flags: HW
+AnchorPoint: "HamzaAbove" 39 352 basechar 0
+AnchorPoint: "TashkilAbove" 117 801 basechar 0
+AnchorPoint: "TashkilBelow" 98 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 124 -1 N 1 0 0 1 0 0 3

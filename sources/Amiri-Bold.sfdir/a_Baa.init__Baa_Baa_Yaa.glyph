@@ -1,43 +1,43 @@
 StartChar: aBaa.init_BaaBaaYaa
 Encoding: 65623 -1 88
-Width: 417
+Width: 203
 Flags: HW
-AnchorPoint: "TwoDotsBelowAlt" 12 -750 basechar 0
-AnchorPoint: "DotBelowAlt" 147 -750 basechar 0
-AnchorPoint: "DigitBelow" 147 -284 basechar 0
-AnchorPoint: "DigitAbove" 129 1265 basechar 0
-AnchorPoint: "HighHamza" 374 1265 basechar 0
-AnchorPoint: "VAbove" 129 1265 basechar 0
-AnchorPoint: "RingBelow" 123 390 basechar 0
-AnchorPoint: "TaaAbove" 129 1020 basechar 0
-AnchorPoint: "TashkilBelow" 147 -760 basechar 0
-AnchorPoint: "TashkilAbove" 129 1640 basechar 0
-AnchorPoint: "TwoDotsBelow" 12 -284 basechar 0
-AnchorPoint: "TwoDotsAbove" -12 1265 basechar 0
-AnchorPoint: "DotBelow" 147 -284 basechar 0
-AnchorPoint: "HamzaBelow" 147 -284 basechar 0
-AnchorPoint: "HamzaAbove" 129 1265 basechar 0
-AnchorPoint: "DotAbove" 129 1265 basechar 0
+AnchorPoint: "TwoDotsBelowAlt" 6 -366 basechar 0
+AnchorPoint: "DotBelowAlt" 72 -366 basechar 0
+AnchorPoint: "DigitBelow" 72 -139 basechar 0
+AnchorPoint: "DigitAbove" 63 618 basechar 0
+AnchorPoint: "HighHamza" 183 618 basechar 0
+AnchorPoint: "VAbove" 63 618 basechar 0
+AnchorPoint: "RingBelow" 60 190 basechar 0
+AnchorPoint: "TaaAbove" 63 498 basechar 0
+AnchorPoint: "TashkilBelow" 72 -371 basechar 0
+AnchorPoint: "TashkilAbove" 63 801 basechar 0
+AnchorPoint: "TwoDotsBelow" 6 -139 basechar 0
+AnchorPoint: "TwoDotsAbove" -6 618 basechar 0
+AnchorPoint: "DotBelow" 72 -139 basechar 0
+AnchorPoint: "HamzaBelow" 72 -139 basechar 0
+AnchorPoint: "HamzaAbove" 63 618 basechar 0
+AnchorPoint: "DotAbove" 63 618 basechar 0
 LayerCount: 3
 Fore
 SplineSet
-149 632 m 0
- 157 666.67 174.33 681.67 201 677 c 128
- 227.67 672.33 238 649 232 607 c 0
- 196 370.33 117.33 250.67 -4 248 c 0
- -62 246.67 -89.17 286.17 -85.5 366.5 c 128
- -81.83 446.83 -50.33 489.33 9 494 c 1
- 81.67 498.67 128.33 544.67 149 632 c 0
+73 309 m 0
+ 77 326 85 333 98 331 c 128
+ 111 329 116 317 113 296 c 0
+ 95 180 57 122 -2 121 c 0
+ -30 120 -44 140 -42 179 c 128
+ -40 218 -25 239 4 241 c 1
+ 39 243 63 266 73 309 c 0
 EndSplineSet
 Layer: 2
 SplineSet
-164 624 m 0
- 167.333333333 638 173.666666667 647 183 651 c 128
- 192.333333333 655 201 653.333333333 209 646 c 128
- 217 638.666666667 219.666666667 627.333333333 217 612 c 0
- 175.666666667 398.666666667 101.333333333 287.333333333 -6 278 c 1
- -42 275.333333333 -58.5 305 -55.5 367 c 152
- -52.5 429 -30.3333333333 461.333333333 11 464 c 0
- 80.3333333333 468.666666667 131.333333333 522 164 624 c 0
+80.078125 304.6875 m 0
+ 81.7060546875 311.5234375 84.7978515625 315.91796875 89.35546875 317.87109375 c 128
+ 93.9130859375 319.82421875 98.14453125 319.010742188 102.05078125 315.4296875 c 128
+ 105.95703125 311.848632812 107.258789062 306.315429688 105.95703125 298.828125 c 0
+ 85.7744140625 194.661132812 49.4794921875 140.299804688 -2.9296875 135.7421875 c 1
+ -20.5078125 134.440429688 -28.564453125 148.92578125 -27.099609375 179.19921875 c 152
+ -25.634765625 209.47265625 -14.8115234375 225.260742188 5.37109375 226.5625 c 0
+ 39.2255859375 228.840820312 64.1279296875 254.8828125 80.078125 304.6875 c 0
 EndSplineSet
 EndChar

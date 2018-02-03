@@ -1,9 +1,9 @@
 StartChar: uni0639.init_AynMemInit
 Encoding: 1117392 -1 3564
-Width: 1005
-Flags: H
-AnchorPoint: "TashkilAbove" 336 1640 basechar 0
-AnchorPoint: "TashkilBelow" 636 -670 basechar 0
+Width: 490
+Flags: HW
+AnchorPoint: "TashkilAbove" 164 801 basechar 0
+AnchorPoint: "TashkilBelow" 311 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 383 -1 N 1 0 0 1 0 0 3

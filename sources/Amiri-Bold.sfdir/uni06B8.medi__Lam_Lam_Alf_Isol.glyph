@@ -1,11 +1,11 @@
 StartChar: uni06B8.medi_LamLamAlfIsol
 Encoding: 69218 -1 3966
-Width: 454
-Flags: H
-AnchorPoint: "TashkilAbove" 70 1640 basechar 0
-AnchorPoint: "TashkilBelow" -70 -670 basechar 0
+Width: 221
+Flags: HW
+AnchorPoint: "TashkilAbove" 34 801 basechar 0
+AnchorPoint: "TashkilBelow" -34 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 207 -1 N 1 0 0 1 135 -540 2
+Refer: 207 -1 N 1 0 0 1 66 -264 2
 Refer: 417 -1 N 1 0 0 1 0 0 3
 EndChar

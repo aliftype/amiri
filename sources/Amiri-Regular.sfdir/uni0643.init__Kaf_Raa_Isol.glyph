@@ -1,9 +1,9 @@
 StartChar: uni0643.init_KafRaaIsol
 Encoding: 1115904 -1 2076
-Width: 1174
-Flags: H
-AnchorPoint: "TashkilAbove" 300 1640 basechar 0
-AnchorPoint: "TashkilBelow" 410 -670 basechar 0
+Width: 573
+Flags: HW
+AnchorPoint: "TashkilAbove" 146 801 basechar 0
+AnchorPoint: "TashkilBelow" 200 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 130 -1 N 1 0 0 1 0 0 3

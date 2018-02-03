@@ -1,12 +1,12 @@
 StartChar: uni0620.fina_KafYaaFina
 Encoding: 67396 -1 2144
-Width: 966
+Width: 471
 Flags: HW
-AnchorPoint: "TashkilAbove" 380 1640 basechar 0
-AnchorPoint: "TashkilBelow" 739 -1143 basechar 0
-AnchorPoint: "AlefAbove" 297 515 basechar 0
+AnchorPoint: "TashkilAbove" 186 801 basechar 0
+AnchorPoint: "TashkilBelow" 361 -558 basechar 0
+AnchorPoint: "AlefAbove" 145 251 basechar 0
 LayerCount: 3
 Fore
-Refer: 215 -1 N 1 0 0 1 739 -743 2
+Refer: 215 -1 N 1 0 0 1 361 -363 2
 Refer: 134 -1 N 1 0 0 1 0 0 2
 EndChar

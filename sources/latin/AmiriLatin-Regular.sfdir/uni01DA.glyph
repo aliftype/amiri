@@ -1,10 +1,10 @@
 StartChar: uni01DA
 Encoding: 474 474 493
-Width: 1030
+Width: 502
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 344 780 N 1 0 0 1 1023 316 2
-Refer: 185 252 N 1 0 0 1 -2 0 3
+Refer: 344 780 N 1 0 0 1 500 154 2
+Refer: 185 252 N 1 0 0 1 -1 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni01DA.sc
 EndChar

@@ -1,12 +1,12 @@
 StartChar: uni06C1.medi_PostToothHehYaa
 Encoding: 1118608 -1 4833
-Width: 1546
+Width: 754
 Flags: HW
-AnchorPoint: "HamzaAbove" 989 880 basechar 0
-AnchorPoint: "TashkilAbove" 884 1640 basechar 0
-AnchorPoint: "TashkilBelow" 902 -670 basechar 0
+AnchorPoint: "HamzaAbove" 483 430 basechar 0
+AnchorPoint: "TashkilAbove" 432 801 basechar 0
+AnchorPoint: "TashkilBelow" 440 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 4829 -1 N 1 0 0 1 0 0 2
-Refer: 411 -1 N 1 0 0 1 903 0 2
+Refer: 411 -1 N 1 0 0 1 441 0 2
 EndChar

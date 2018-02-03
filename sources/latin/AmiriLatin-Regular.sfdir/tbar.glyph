@@ -1,17 +1,17 @@
 StartChar: tbar
 Encoding: 359 359 291
-Width: 622
+Width: 303
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-56 616 m 1
- 576 616 l 2
- 584 616 588 609.33 588 596 c 0
- 588 574 584 554 576 536 c 1
- 54 536 l 2
- 47.33 536 44 544.67 44 562 c 0
- 44 586 48 604 56 616 c 1
+27 301 m 1
+ 281 301 l 2
+ 285 301 287 298 287 291 c 0
+ 287 280 285 271 281 262 c 1
+ 26 262 l 2
+ 23 262 21 266 21 274 c 0
+ 21 286 23 295 27 301 c 1
 EndSplineSet
 Refer: 83 116 N 1 0 0 1 0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" tbar.sc

@@ -1,11 +1,11 @@
 StartChar: uni0649.init_BaaYaaIsol
 Encoding: 1117495 -1 3667
-Width: 529
-Flags: H
-AnchorPoint: "HamzaBelow" 343 -590 basechar 0
-AnchorPoint: "AlefAbove" 150 1110 basechar 0
-AnchorPoint: "TashkilAbove" 33 1640 basechar 0
-AnchorPoint: "TashkilBelow" 343 -800 basechar 0
+Width: 258
+Flags: HW
+AnchorPoint: "HamzaBelow" 167 -288 basechar 0
+AnchorPoint: "AlefAbove" 73 542 basechar 0
+AnchorPoint: "TashkilAbove" 16 801 basechar 0
+AnchorPoint: "TashkilBelow" 167 -391 basechar 0
 LayerCount: 2
 Fore
 Refer: 393 -1 N 1 0 0 1 0 0 3

@@ -1,11 +1,11 @@
 StartChar: uni08A0.init_BaaBaaYaaLD
 Encoding: 1118689 -1 5665
-Width: 417
-Flags: H
-AnchorPoint: "TashkilAbove" 129 1640 basechar 0
-AnchorPoint: "TashkilBelow" 107 -1220 basechar 0
+Width: 203
+Flags: HW
+AnchorPoint: "TashkilAbove" 63 801 basechar 0
+AnchorPoint: "TashkilBelow" 52 -596 basechar 0
 LayerCount: 2
 Fore
-Refer: 5681 -1 N 1 0 0 1 107 -60 2
+Refer: 5681 -1 N 1 0 0 1 52 -29 2
 Refer: 88 -1 N 1 0 0 1 0 0 3
 EndChar

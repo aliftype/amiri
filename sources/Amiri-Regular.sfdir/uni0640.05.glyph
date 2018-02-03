@@ -1,24 +1,24 @@
 StartChar: uni0640.05
 Encoding: 1118825 -1 5807
-Width: 190
+Width: 92
 Flags: HW
-AnchorPoint: "NoonAbove" 95 500 basechar 0
-AnchorPoint: "AlefAbove" 95 500 basechar 0
-AnchorPoint: "MarkBelow" 95 -670 basechar 0
-AnchorPoint: "MarkAbove" 95 1640 basechar 0
+AnchorPoint: "NoonAbove" 46 244 basechar 0
+AnchorPoint: "AlefAbove" 46 244 basechar 0
+AnchorPoint: "MarkBelow" 46 -327 basechar 0
+AnchorPoint: "MarkAbove" 46 801 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 0 0 m 0
- -12 1.33 -20.67 11.67 -26 31 c 2
- -52 120 l 2
- -66.67 170 -49.33 191.67 0 185 c 0
- 13.33 183 45 181.67 95 181 c 256
- 135.67 181 167.33 182.33 190 185 c 0
- 238.67 189.67 256 168 242 120 c 2
- 216 31 l 2
- 211.33 13 202.67 2.67 190 0 c 0
- 162 -4 130.33 -6 95 -6 c 256
- 61 -6 29.33 -4 0 0 c 0
+ -6 1 -10 6 -13 15 c 2
+ -25 59 l 2
+ -32 83 -24 93 0 90 c 0
+ 7 89 22 88 46 88 c 256
+ 66 88 82 89 93 90 c 0
+ 117 92 125 82 118 59 c 2
+ 105 15 l 2
+ 103 6 99 1 93 0 c 0
+ 79 -2 63 -3 46 -3 c 256
+ 29 -3 14 -2 0 0 c 0
 EndSplineSet
 EndChar

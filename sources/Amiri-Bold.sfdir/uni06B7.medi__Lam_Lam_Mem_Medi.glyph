@@ -1,12 +1,12 @@
 StartChar: uni06B7.medi_LamLamMemMedi
 Encoding: 69306 -1 4054
-Width: 542
+Width: 264
 Flags: HW
-AnchorPoint: "TashkilAbove" -116 1845 basechar 0
-AnchorPoint: "TashkilBelow" 400 -670 basechar 0
-AnchorPoint: "cursive" 85 170 exit 0
+AnchorPoint: "TashkilAbove" -57 901 basechar 0
+AnchorPoint: "TashkilBelow" 195 -327 basechar 0
+AnchorPoint: "cursive" 42 83 exit 0
 LayerCount: 3
 Fore
-Refer: 193 -1 N 1 0 0 1 3 1288 2
+Refer: 193 -1 N 1 0 0 1 1 629 2
 Refer: 430 -1 N 1 0 0 1 0 0 3
 EndChar

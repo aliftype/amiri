@@ -1,10 +1,10 @@
 StartChar: scedilla
 Encoding: 351 351 283
-Width: 738
+Width: 360
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 349 807 N 1 0 0 1 884 -4 2
-Refer: 82 115 N 1 0 0 1 2 0 3
+Refer: 349 807 N 1 0 0 1 432 -2 2
+Refer: 82 115 N 1 0 0 1 1 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" scedilla.sc
 EndChar

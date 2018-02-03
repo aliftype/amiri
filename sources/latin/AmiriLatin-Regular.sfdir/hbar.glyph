@@ -1,17 +1,17 @@
 StartChar: hbar
 Encoding: 295 295 228
-Width: 1032
+Width: 503
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-58 1120 m 1
- 588 1120 l 2
- 596 1120 600 1114.67 600 1104 c 0
- 600 1084 596 1066 588 1050 c 1
- 56 1050 l 2
- 49.33 1050 46 1058 46 1074 c 0
- 46 1090.67 50 1106 58 1120 c 1
+28 547 m 1
+ 287 547 l 2
+ 291 547 293 544 293 539 c 0
+ 293 529 291 521 287 513 c 1
+ 27 513 l 2
+ 24 513 22 516 22 524 c 0
+ 22 532 24 540 28 547 c 1
 EndSplineSet
 Refer: 71 104 N 1 0 0 1 0 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" hbar.sc

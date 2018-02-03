@@ -3,22 +3,22 @@ Encoding: 1648 1648 255
 Width: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "TashkilAbove" 395 1640 mark 0
-AnchorPoint: "MarkAbove" 389 1640 mark 0
-AnchorPoint: "TashkilTashkilAbove2" 245 2520 basemark 0
-AnchorPoint: "HamzaAbove" 313 1984 mark 0
-AnchorPoint: "TashkilTashkilAbove" 400 1776 mark 0
-AnchorPoint: "AlefAbove" 395 1640 mark 0
+AnchorPoint: "TashkilAbove" 193 801 mark 0
+AnchorPoint: "MarkAbove" 190 801 mark 0
+AnchorPoint: "TashkilTashkilAbove2" 120 1230 basemark 0
+AnchorPoint: "HamzaAbove" 153 969 mark 0
+AnchorPoint: "TashkilTashkilAbove" 195 867 mark 0
+AnchorPoint: "AlefAbove" 193 801 mark 0
 LayerCount: 2
 Fore
 SplineSet
-241 2379 m 2
- 247.67 2400.33 260.33 2399.67 279 2377 c 0
- 409 2233.67 453.33 2051 412 1829 c 0
- 409.33 1815.67 402.67 1808.33 392 1807 c 0
- 379.33 1805 372.33 1812 371 1828 c 0
- 353 1970 300 2095 212 2203 c 0
- 200.67 2216.33 197.33 2231.33 202 2248 c 2
- 241 2379 l 2
+118 1162 m 2
+ 121 1172 127 1172 136 1161 c 0
+ 199 1091 221 1001 201 893 c 0
+ 200 886 196 883 191 882 c 0
+ 185 881 182 885 181 893 c 0
+ 172 962 147 1023 104 1076 c 0
+ 98 1083 97 1090 99 1098 c 2
+ 118 1162 l 2
 EndSplineSet
 EndChar

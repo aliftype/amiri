@@ -3,22 +3,22 @@ Encoding: 2300 2300 6089
 Width: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "MarkAbove" 219 1640 mark 0
-AnchorPoint: "TashkilAboveDot" 220 1640 mark 0
-AnchorPoint: "TashkilAbove" 220 1640 mark 0
+AnchorPoint: "MarkAbove" 107 801 mark 0
+AnchorPoint: "TashkilAboveDot" 107 801 mark 0
+AnchorPoint: "TashkilAbove" 107 801 mark 0
 LayerCount: 2
 Fore
 SplineSet
--187 2002 m 2
- -185.67 2004 -184.33 2005 -183 2005 c 0
- -161 2005 -135.33 1990.33 -106 1961 c 0
- -102.85 1957.85 -102.18 1954.85 -104 1952 c 2
- -153 1875 l 2
- -155.08 1871.73 -158.41 1872.07 -163 1876 c 0
- -167.67 1880 -181.33 1888.67 -204 1902 c 0
- -226.67 1915.33 -238 1922.67 -238 1924 c 0
- -238 1925 -237.67 1926 -237 1927 c 2
- -187 2002 l 2
+-91 978 m 2
+ -90 979 -90 979 -89 979 c 0
+ -78 979 -66 972 -52 958 c 0
+ -50 956 -50 954 -51 953 c 2
+ -75 916 l 2
+ -76 914 -78 914 -80 916 c 0
+ -82 918 -89 922 -100 929 c 0
+ -111 936 -116 938 -116 939 c 0
+ -116 941 l 2
+ -91 978 l 2
 EndSplineSet
 Refer: 6088 2299 N 1 0 0 1 0 0 2
 EndChar

@@ -1,11 +1,11 @@
 StartChar: uni0764.init_KafYaaIsol
 Encoding: 68871 -1 3619
-Width: 1035
+Width: 505
 Flags: HW
-AnchorPoint: "TashkilAbove" 100 1750 basechar 0
-AnchorPoint: "TashkilBelow" 511 -741 basechar 0
+AnchorPoint: "TashkilAbove" 49 854 basechar 0
+AnchorPoint: "TashkilBelow" 250 -362 basechar 0
 LayerCount: 3
 Fore
-Refer: 196 -1 N 1 0 0 1 511 -440 2
+Refer: 196 -1 N 1 0 0 1 250 -215 2
 Refer: 392 -1 N 1 0 0 1 0 0 3
 EndChar

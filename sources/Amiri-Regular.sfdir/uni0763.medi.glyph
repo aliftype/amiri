@@ -1,11 +1,11 @@
 StartChar: uni0763.medi
 Encoding: 1114742 -1 826
-Width: 1206
-Flags: H
-AnchorPoint: "TashkilBelow" 609 -670 basechar 0
-AnchorPoint: "TashkilAbove" 559 1640 basechar 0
+Width: 588
+Flags: HW
+AnchorPoint: "TashkilBelow" 297 -327 basechar 0
+AnchorPoint: "TashkilAbove" 273 801 basechar 0
 LayerCount: 2
 Fore
-Refer: 193 -1 N 1 0 0 1 216 1310 2
+Refer: 193 -1 N 1 0 0 1 105 640 2
 Refer: 29 -1 N 1 0 0 1 0 0 3
 EndChar

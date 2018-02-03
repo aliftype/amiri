@@ -1,11 +1,11 @@
 StartChar: uni06B6.init_LamYaaIsol
 Encoding: 68971 -1 3719
-Width: 497
+Width: 242
 Flags: HW
-AnchorPoint: "TashkilAbove" -63 1828 basechar 0
-AnchorPoint: "TashkilBelow" 240 -670 basechar 0
+AnchorPoint: "TashkilAbove" -31 893 basechar 0
+AnchorPoint: "TashkilBelow" 117 -327 basechar 0
 LayerCount: 3
 Fore
-Refer: 191 -1 N 1 0 0 1 -13 1528 2
+Refer: 191 -1 N 1 0 0 1 -6 746 2
 Refer: 398 -1 N 1 0 0 1 0 0 3
 EndChar

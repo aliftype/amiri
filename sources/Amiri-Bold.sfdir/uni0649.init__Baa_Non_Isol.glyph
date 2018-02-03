@@ -1,11 +1,11 @@
 StartChar: uni0649.init_BaaNonIsol
 Encoding: 67066 -1 1814
-Width: 350
+Width: 170
 Flags: HW
-AnchorPoint: "TashkilAbove" 1 1640 basechar 0
-AnchorPoint: "AlefAbove" 100 980 basechar 0
-AnchorPoint: "TashkilBelow" 212 -670 basechar 0
-AnchorPoint: "HamzaBelow" 212 -330 basechar 0
+AnchorPoint: "TashkilAbove" 0 801 basechar 0
+AnchorPoint: "AlefAbove" 49 479 basechar 0
+AnchorPoint: "TashkilBelow" 104 -327 basechar 0
+AnchorPoint: "HamzaBelow" 104 -161 basechar 0
 LayerCount: 3
 Fore
 Refer: 113 -1 N 1 0 0 1 0 0 2

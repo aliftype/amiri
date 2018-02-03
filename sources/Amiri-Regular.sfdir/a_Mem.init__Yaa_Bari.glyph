@@ -1,28 +1,28 @@
 StartChar: aMem.init_YaaBari
 Encoding: 1118558 -1 4772
-Width: 2115
+Width: 1032
 Flags: HW
-AnchorPoint: "DotBelow" 620 330 basechar 0
-AnchorPoint: "DotAbove" 450 1110 basechar 0
-AnchorPoint: "TashkilBelow" 600 -670 basechar 0
-AnchorPoint: "TashkilAbove" 600 1640 basechar 0
+AnchorPoint: "DotBelow" 303 161 basechar 0
+AnchorPoint: "DotAbove" 220 542 basechar 0
+AnchorPoint: "TashkilBelow" 293 -327 basechar 0
+AnchorPoint: "TashkilAbove" 293 801 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-212 518 m 0
- 266 549.33 329.67 579.33 403 608 c 1
- 365 658 l 0
- 353 676.67 351 695.33 359 714 c 0
- 399 796 429.33 848 450 870 c 128
- 470.67 892 489.33 898.67 506 890 c 0
- 567.33 855.33 636.33 810 713 754 c 0
- 738.33 734 712.67 671.67 636 567 c 0
- 619.33 545 589.33 528 546 516 c 0
- 440.67 488 335.83 445.33 231.5 388 c 128
- 127.17 330.67 54 281 12 239 c 0
- -2.67 224.33 -14.83 214.5 -24.5 209.5 c 128
- -34.17 204.5 -45 206.33 -57 215 c 128
- -69 223.67 -67.67 241 -53 267 c 0
- 17.67 373 106 456.67 212 518 c 0
+104 253 m 0
+ 130 268 161 283 197 297 c 1
+ 178 321 l 0
+ 172 330 171 340 175 349 c 0
+ 195 389 210 414 220 425 c 128
+ 230 436 239 439 247 435 c 0
+ 277 418 311 395 348 368 c 0
+ 360 358 348 328 311 277 c 0
+ 303 266 288 258 267 252 c 0
+ 216 238 164 217 113 189 c 128
+ 62 161 27 138 6 117 c 0
+ -1 110 -7 104 -12 102 c 128
+ -17 100 -22 101 -28 105 c 128
+ -34 109 -33 117 -26 130 c 0
+ 9 182 52 223 104 253 c 0
 EndSplineSet
 EndChar

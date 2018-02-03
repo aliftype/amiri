@@ -1,10 +1,10 @@
 StartChar: icircumflex
 Encoding: 238 238 171
-Width: 524
+Width: 255
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 231 770 N 1 0 0 1 840 8 2
-Refer: 233 305 N 1 0 0 1 6 0 2
+Refer: 231 770 N 1 0 0 1 410 4 2
+Refer: 233 305 N 1 0 0 1 3 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" icircumflex.sc
 EndChar
