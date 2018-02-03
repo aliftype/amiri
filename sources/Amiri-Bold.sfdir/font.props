@@ -10,11 +10,13 @@ UnderlinePosition: -1100
 UnderlineWidth: 102
 Ascent: 1638
 Descent: 410
+InvalidEm: 0
 LayerCount: 3
-Layer: 0 0 "Back"  1
-Layer: 1 0 "Fore"  0
-Layer: 2 0 "Regular"  1
+Layer: 0 0 "Back" 1
+Layer: 1 0 "Fore" 0
+Layer: 2 0 "Regular" 1
 FSType: 0
+OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1273266481
@@ -23,8 +25,6 @@ TTFWeight: 700
 TTFWidth: 5
 LineGap: 0
 VLineGap: 0
-OS2CapHeight: 1324
-OS2XHeight: 886
 Panose: 0 0 5 0 0 0 0 0 0 0
 OS2TypoAscent: 2300
 OS2TypoAOffset: 0
@@ -39,44 +39,46 @@ HheadAscent: 2300
 HheadAOffset: 0
 HheadDescent: -1300
 HheadDOffset: 0
+OS2CapHeight: 1324
+OS2XHeight: 886
 OS2Vendor: 'ALIF'
-Lookup: 259 9 0 "'curs' Cursive Attachment"  {"'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Generic Mark Anchor"  {"'mark' Generic Mark Anchor-1"  "'mark' Generic Mark Anchor-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > 'latn' <'dflt' 'TRK ' > ) ]
-Lookup: 260 0 0 "'mark' Dot Above"  {"'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Dot Below"  {"'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Dot Below Alt"  {"'mark' Dot Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Dot Alt"  {"'mark' Dot Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Two Dots Above"  {"'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Two Dots Below"  {"'mark' Two Dots Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Two Dots Below Alt"  {"'mark' Two Dots Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Hamza Above"  {"'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' High Hamza"  {"'mark' High Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' V Mark Above"  {"'mark' V Mark Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Small Taa Above"  {"'mark' Small Taa Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Small Taa Below"  {"'mark' Small Taa Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Ring Below"  {"'mark' Ring Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Dash"  {"'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Tashkil Above Base"  {"'mark' Tashkil Above Base-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Tashkil Below Base"  {"'mark' Tashkil Below Base-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Hamza Below"  {"'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Yaa Tail"  {"'mark' Yaa Tail-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Small Alef Above"  {"'mark' Small Alef Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Stroke"  {"'mark' Stroke-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Digit Above"  {"'mark' Digit Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Digit Below"  {"'mark' Digit Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Above"  {"'mkmk' Tashkil to Tashkil Above-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Above 2"  {"'mkmk' Tashkil to Tashkil Above 2-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Below"  {"'mkmk' Tashkil to Tashkil Below-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Mark to Dot Above"  {"'mkmk' Mark to Dot Above-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Mark to Dot Below"  {"'mkmk' Mark to Dot Below-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Ring to Dash"  {"'mkmk' Ring to Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Dot above Hamza"  {"'mkmk' Dot above Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 262 0 0 "'mkmk' Tashkil below Hamza"  {"'mkmk' Tashkil below Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'ARA ' 'SND ' 'KSH ' 'URD ' 'dflt' > ) ]
-Lookup: 262 0 0 "Tashkil Above Dot"  {"Tashkil Above Dot-1"  } []
-Lookup: 262 0 0 "Tashkil Below Dot"  {"Tashkil Below Dot-1"  } []
-Lookup: 260 0 0 "'mark' Seen Above"  {"'mark' Seen Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Seen Below"  {"'mark' Seen Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
-Lookup: 260 0 0 "'mark' Noon Above"  {"'mark' Noon Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 259 9 0 "'curs' Cursive Attachment" { "'curs' Cursive Attachment-1"  } ['curs' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Generic Mark Anchor" { "'mark' Generic Mark Anchor-1"  "'mark' Generic Mark Anchor-2"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > 'latn' <'dflt' 'TRK ' > ) ]
+Lookup: 260 0 0 "'mark' Dot Above" { "'mark' Dot Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Dot Below" { "'mark' Dot Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Dot Below Alt" { "'mark' Dot Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Dot Alt" { "'mark' Dot Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Two Dots Above" { "'mark' Two Dots Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Two Dots Below" { "'mark' Two Dots Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Two Dots Below Alt" { "'mark' Two Dots Below Alt-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Above" { "'mark' Hamza Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' High Hamza" { "'mark' High Hamza-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' V Mark Above" { "'mark' V Mark Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Small Taa Above" { "'mark' Small Taa Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Small Taa Below" { "'mark' Small Taa Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Ring Below" { "'mark' Ring Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Dash" { "'mark' Dash-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Tashkil Above Base" { "'mark' Tashkil Above Base-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Tashkil Below Base" { "'mark' Tashkil Below Base-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Hamza Below" { "'mark' Hamza Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Yaa Tail" { "'mark' Yaa Tail-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Small Alef Above" { "'mark' Small Alef Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Stroke" { "'mark' Stroke-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Digit Above" { "'mark' Digit Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Digit Below" { "'mark' Digit Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Above" { "'mkmk' Tashkil to Tashkil Above-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Above 2" { "'mkmk' Tashkil to Tashkil Above 2-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Tashkil to Tashkil Below" { "'mkmk' Tashkil to Tashkil Below-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Dot Above" { "'mkmk' Mark to Dot Above-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Dot Below" { "'mkmk' Mark to Dot Below-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Ring to Dash" { "'mkmk' Ring to Dash-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Dot above Hamza" { "'mkmk' Dot above Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 262 0 0 "'mkmk' Tashkil below Hamza" { "'mkmk' Tashkil below Hamza-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'ARA ' 'SND ' 'KSH ' 'URD ' 'dflt' > ) ]
+Lookup: 262 0 0 "Tashkil Above Dot" { "Tashkil Above Dot-1"  } []
+Lookup: 262 0 0 "Tashkil Below Dot" { "Tashkil Below Dot-1"  } []
+Lookup: 260 0 0 "'mark' Seen Above" { "'mark' Seen Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Seen Below" { "'mark' Seen Below-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
+Lookup: 260 0 0 "'mark' Noon Above" { "'mark' Noon Above-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' 'ARA ' 'URD ' 'SND ' 'KSH ' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 TtTable: prep
@@ -87,7 +89,7 @@ PUSHB_1
  4
 SCANTYPE
 EndTTInstrs
-LangName: 1033 "" "" "" "" "" "" "" "" "" "Khaled Hosny" "Amiri is a classical Arabic typeface in Naskh style for typesetting books and other running text. Its design is a revival of the beautiful typeface pioneered in early 20th century by Bulaq Press in Cairo, also known as Amiria Press, after which the font is named." "http://www.amirifont.org" "http://www.khaledhosny.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an +ACIA-AS IS+ACIA BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." "http://scripts.sil.org/OFL" 
+LangName: 1033 "" "" "" "" "" "" "" "" "" "Khaled Hosny" "Amiri is a classical Arabic typeface in Naskh style for typesetting books and other running text. Its design is a revival of the beautiful typeface pioneered in early 20th century by Bulaq Press in Cairo, also known as Amiria Press, after which the font is named." "http://www.amirifont.org" "http://www.khaledhosny.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an +ACIA-AS IS+ACIA BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." "http://scripts.sil.org/OFL"
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
 UnicodeInterp: none
@@ -96,23 +98,23 @@ BeginPrivate: 0
 EndPrivate
 Grid
 -2048 1730 m 1
- 4096 1730 l 1
-  Named: "Tashkil" 
+ 4096 1730 l 1025
+  Named: "Tashkil"
 -2048 2600 m 25
- 4096 2600 l 25
-  Named: "Ascent" 
+ 4096 2600 l 1049
+  Named: "Ascent"
 -2048 -1800 m 25
- 4096 -1800 l 25
-  Named: "Descent" 
+ 4096 -1800 l 1049
+  Named: "Descent"
 -2048 340 m 25
- 4096 340 l 25
-  Named: "Digits Axis" 
+ 4096 340 l 1049
+  Named: "Digits Axis"
 -2048 1110 m 25
- 4096 1110 l 25
-  Named: "Digits top" 
+ 4096 1110 l 1049
+  Named: "Digits top"
 -2048 -190 m 25
- 4096 -190 l 25
-  Named: "Digits base" 
+ 4096 -190 l 1049
+  Named: "Digits base"
 EndSplineSet
-AnchorClass2: "TashkilBelowHamza"  "'mkmk' Tashkil below Hamza-1" "MarkAbove"  "'mark' Generic Mark Anchor-1" "MarkBelow"  "'mark' Generic Mark Anchor-2" "TashkilAbove"  "'mark' Tashkil Above Base-1" "TashkilBelow"  "'mark' Tashkil Below Base-1" "TashkilTashkilAbove"  "'mkmk' Tashkil to Tashkil Above-1" "TashkilTashkilBelow"  "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove2"  "'mkmk' Tashkil to Tashkil Above 2-1" "TashkilAboveDot"  "Tashkil Above Dot-1" "TashkilBelowDot"  "Tashkil Below Dot-1" "HamzaAbove"  "'mark' Hamza Above-1" "HamzaBelow"  "'mark' Hamza Below-1" "HighHamza"  "'mark' High Hamza-1" "DotAbove"  "'mark' Dot Above-1" "DotBelow"  "'mark' Dot Below-1" "DotBelowAlt"  "'mark' Dot Below Alt-1" "TwoDotsAbove"  "'mark' Two Dots Above-1" "TwoDotsBelow"  "'mark' Two Dots Below-1" "TwoDotsBelowAlt"  "'mark' Two Dots Below Alt-1" "DigitAbove"  "'mark' Digit Above-1" "DigitBelow"  "'mark' Digit Below-1" "MarkDotAbove"  "'mkmk' Mark to Dot Above-1" "MarkDotBelow"  "'mkmk' Mark to Dot Below-1" "TaaAbove"  "'mark' Small Taa Above-1" "TaaBelow"  "'mark' Small Taa Below-1" "AlefAbove"  "'mark' Small Alef Above-1" "SeenAbove"  "'mark' Seen Above-1" "SeenBelow"  "'mark' Seen Below-1" "NoonAbove"  "'mark' Noon Above-1" "VAbove"  "'mark' V Mark Above-1" "RingDash"  "'mkmk' Ring to Dash-1" "RingBelow"  "'mark' Ring Below-1" "DotAlt"  "'mark' Dot Alt-1" "DotHmaza"  "'mkmk' Dot above Hamza-1" "Tail"  "'mark' Yaa Tail-1" "Dash"  "'mark' Dash-1" "Stroke"  "'mark' Stroke-1" "cursive"  "'curs' Cursive Attachment-1" 
+AnchorClass2: "TashkilBelowHamza" "'mkmk' Tashkil below Hamza-1" "MarkAbove" "'mark' Generic Mark Anchor-1" "MarkBelow" "'mark' Generic Mark Anchor-2" "TashkilAbove" "'mark' Tashkil Above Base-1" "TashkilBelow" "'mark' Tashkil Below Base-1" "TashkilTashkilAbove" "'mkmk' Tashkil to Tashkil Above-1" "TashkilTashkilBelow" "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove2" "'mkmk' Tashkil to Tashkil Above 2-1" "TashkilAboveDot" "Tashkil Above Dot-1" "TashkilBelowDot" "Tashkil Below Dot-1" "HamzaAbove" "'mark' Hamza Above-1" "HamzaBelow" "'mark' Hamza Below-1" "HighHamza" "'mark' High Hamza-1" "DotAbove" "'mark' Dot Above-1" "DotBelow" "'mark' Dot Below-1" "DotBelowAlt" "'mark' Dot Below Alt-1" "TwoDotsAbove" "'mark' Two Dots Above-1" "TwoDotsBelow" "'mark' Two Dots Below-1" "TwoDotsBelowAlt" "'mark' Two Dots Below Alt-1" "DigitAbove" "'mark' Digit Above-1" "DigitBelow" "'mark' Digit Below-1" "MarkDotAbove" "'mkmk' Mark to Dot Above-1" "MarkDotBelow" "'mkmk' Mark to Dot Below-1" "TaaAbove" "'mark' Small Taa Above-1" "TaaBelow" "'mark' Small Taa Below-1" "AlefAbove" "'mark' Small Alef Above-1" "SeenAbove" "'mark' Seen Above-1" "SeenBelow" "'mark' Seen Below-1" "NoonAbove" "'mark' Noon Above-1" "VAbove" "'mark' V Mark Above-1" "RingDash" "'mkmk' Ring to Dash-1" "RingBelow" "'mark' Ring Below-1" "DotAlt" "'mark' Dot Alt-1" "DotHmaza" "'mkmk' Dot above Hamza-1" "Tail" "'mark' Yaa Tail-1" "Dash" "'mark' Dash-1" "Stroke" "'mark' Stroke-1" "cursive" "'curs' Cursive Attachment-1"
 EndSplineFont
