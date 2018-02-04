@@ -1,18 +1,16 @@
 StartChar: period.sc
 Encoding: 65580 -1 435
 Width: 209
-Flags: HW
+Flags: W
+HStem: -9 99<33 96>
+VStem: 19 94<7 75>
 LayerCount: 2
 Fore
 SplineSet
 19 28 m 0
- 19 45 24 60 36 72 c 128
- 48 84 61 90 76 90 c 0
- 87 90 95 86 102 79 c 128
- 109 72 112 64 112 53 c 0
- 112 36 107 22 94 10 c 128
- 81 -2 68 -9 53 -9 c 0
- 43 -9 34 -6 28 1 c 128
- 22 8 19 17 19 28 c 0
+ 19 63 48 90 76 90 c 0
+ 97 90 112 74 112 53 c 0
+ 112 19 81 -9 53 -9 c 0
+ 32 -9 19 7 19 28 c 0
 EndSplineSet
 EndChar

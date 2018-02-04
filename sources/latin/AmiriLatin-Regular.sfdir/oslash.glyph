@@ -1,19 +1,17 @@
 StartChar: oslash
 Encoding: 248 248 181
 Width: 497
-Flags: HW
+Flags: W
+HStem: -8 21G<122 138> -7 32<210 314> 396 32<186 290> 407 20G<351 367>
+VStem: 41 84<118 306> 374 84<114 302>
 LayerCount: 2
 Fore
 SplineSet
-126 -8 m 17
- 121 -6 121 -6 118 -4 c 0
- 116 -3 113 -1 109 1 c 0
- 105 3 103 6 101 8 c 0
- 99 10 99 12 100 13 c 2
- 363 427 l 1
- 369 424 376 421 382 417 c 0
- 388 413 391 410 390 407 c 2
- 126 -8 l 17
+126 -8 m 17x9c
+ 118 -4 97 7 100 13 c 9
+ 363 427 l 17
+ 370 424 393 413 390 407 c 9
+ 126 -8 l 17x9c
 EndSplineSet
 Refer: 78 111 N 1 0 0 1 1 0 3
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" oslash.sc

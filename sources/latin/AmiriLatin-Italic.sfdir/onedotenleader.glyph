@@ -1,18 +1,16 @@
 StartChar: onedotenleader
 Encoding: 8228 8228 205
 Width: 202
-Flags: HW
+Flags: W
+HStem: -14 113<27 94>
+VStem: 9 105<6 81>
 LayerCount: 2
 Fore
 SplineSet
 9 31 m 0
- 9 49 15 65 28 79 c 128
- 41 93 55 100 71 100 c 0
- 84 100 94 95 102 87 c 128
- 110 79 114 69 114 56 c 0
- 114 38 107 22 94 8 c 128
- 81 -6 66 -14 50 -14 c 0
- 38 -14 27 -9 20 -1 c 128
- 13 7 9 18 9 31 c 0
+ 9 67 39 100 71 100 c 0
+ 96 100 114 81 114 56 c 0
+ 114 20 82 -14 50 -14 c 0
+ 25 -14 9 6 9 31 c 0
 EndSplineSet
 EndChar

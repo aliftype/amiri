@@ -1,17 +1,16 @@
 StartChar: Lslash
 Encoding: 321 321 404
 Width: 516
-Flags: HW
+Flags: W
+HStem: 0 29<-2 67 154 347> 618 28<117 175 264 332>
 LayerCount: 2
 Fore
 SplineSet
 63 202 m 2
  428 437 l 1
- 430 434 433 428 436 420 c 0
- 439 412 440 407 438 406 c 2
+ 432 432 441 409 437 406 c 2
  73 174 l 1
- 70 178 68 183 65 190 c 0
- 62 197 61 201 63 202 c 2
+ 69 180 59 199 63 202 c 2
 EndSplineSet
 Refer: 43 76 N 1 0 0 1 -1 0 2
 EndChar

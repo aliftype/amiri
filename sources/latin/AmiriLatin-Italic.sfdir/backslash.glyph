@@ -1,18 +1,17 @@
 StartChar: backslash
 Encoding: 92 92 59
 Width: 359
-Flags: HW
+Flags: W
+VStem: 112 171
 LayerCount: 2
 Fore
 SplineSet
 283 -4 m 2
- 284 -11 282 -19 275 -27 c 128
- 268 -35 263 -39 257 -39 c 0
- 252 -39 248 -38 245 -36 c 1
- 112 737 l 1
- 115 742 120 744 126 744 c 0
- 135 744 143 740 150 731 c 128
- 157 722 161 715 162 708 c 2
+ 286 -20 268 -39 257 -39 c 0
+ 253 -39 249 -39 245 -36 c 1
+ 194 263 112 737 112 737 c 1
+ 114 740 120 744 126 744 c 0
+ 147 744 160 718 162 708 c 2
  283 -4 l 2
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" backslash.sc

@@ -1,19 +1,17 @@
 StartChar: period
 Encoding: 46 46 936
 Width: 202
-Flags: HW
+Flags: W
+HStem: -11 107<59 143>
+VStem: 47 107<1 85>
 LayerCount: 2
 Fore
 SplineSet
-47 44 m 128
- 47 59 52 71 63 81 c 128
- 74 91 87 97 102 97 c 128
- 117 97 129 91 139 81 c 128
- 149 71 154 59 154 44 c 128
- 154 29 149 17 139 6 c 128
- 129 -5 117 -11 102 -11 c 128
- 87 -11 74 -5 63 6 c 128
- 52 17 47 29 47 44 c 128
+47 44 m 0
+ 47 73 73 97 102 97 c 0
+ 131 97 154 73 154 44 c 0
+ 154 15 131 -11 102 -11 c 0
+ 73 -11 47 15 47 44 c 0
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" period.sc
 Substitution2: "'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable" period.sc

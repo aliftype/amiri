@@ -6,16 +6,12 @@ LayerCount: 2
 Fore
 SplineSet
 365 743 m 0
- 376 743 383 740 384 735 c 1
- 95 -14 l 1
- 94 -19 89 -24 81 -28 c 128
- 73 -32 61 -34 46 -34 c 0
- 42 -34 38 -33 35 -32 c 128
- 32 -31 31 -30 30 -29 c 2
- 28 -27 l 1
+ 379 743 383 739 384 735 c 1
+ 95 -14 l 2
+ 93 -21 80 -34 46 -34 c 0
+ 31 -34 28 -27 28 -27 c 1
  317 722 l 1
- 320 727 325 731 333 736 c 128
- 341 741 352 743 365 743 c 0
+ 321 730 336 743 365 743 c 0
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 0 subtable" slash.sc
 EndChar

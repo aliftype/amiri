@@ -1,25 +1,20 @@
 StartChar: comma
 Encoding: 44 44 12
 Width: 196
-Flags: HW
+Flags: W
+HStem: -136 256
+VStem: 78 68<-26 63>
 LayerCount: 2
 Fore
 SplineSet
 104 120 m 0
- 113 120 121 118 129 113 c 1
- 141 93 146 70 146 45 c 0
- 146 18 134 -15 108 -55 c 128
- 82 -95 56 -122 31 -136 c 1
- 28 -136 24 -133 21 -128 c 128
- 18 -123 17 -118 17 -115 c 1
- 24 -109 30 -104 35 -100 c 128
- 40 -96 46 -89 54 -80 c 128
- 62 -71 68 -59 72 -47 c 128
- 76 -35 78 -22 78 -7 c 0
- 78 3 73 16 62 31 c 128
- 51 46 46 59 46 72 c 0
- 46 83 51 95 62 105 c 128
- 73 115 87 120 104 120 c 0
+ 112 120 122 117 129 113 c 1
+ 136 101 146 82 146 45 c 0
+ 146 -11 81 -109 31 -136 c 1
+ 24 -136 17 -121 17 -115 c 1
+ 37 -100 78 -69 78 -7 c 0
+ 78 25 46 34 46 72 c 0
+ 46 93 69 120 104 120 c 0
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" comma.sc
 Substitution2: "'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable" comma.sc

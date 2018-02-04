@@ -1,18 +1,17 @@
 StartChar: fraction
 Encoding: 8260 8260 474
 Width: 503
-Flags: HW
+Flags: W
+HStem: -2 21G<42 57>
 LayerCount: 2
 Fore
 SplineSet
 481 704 m 1
  72 14 l 2
- 66 4 60 -2 53 -2 c 0
- 47 -2 41 -1 36 1 c 128
- 31 3 27 5 25 7 c 2
- 22 10 l 1
- 432 700 l 1
- 437 709 441 714 447 714 c 0
- 461 714 472 711 481 704 c 1
+ 68 7 62 -2 53 -2 c 0
+ 32 -2 22 10 22 10 c 1
+ 432 700 l 2
+ 435 706 441 714 447 714 c 0
+ 463 714 477 707 481 704 c 1
 EndSplineSet
 EndChar

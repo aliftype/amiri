@@ -1,7 +1,9 @@
 StartChar: cent
 Encoding: 162 162 97
 Width: 396
-Flags: HW
+Flags: W
+HStem: -6 81<113 210> 390 49<197 289>
+VStem: 24 123<88 240>
 LayerCount: 2
 Back
 SplineSet
@@ -13,12 +15,9 @@ EndSplineSet
 Fore
 SplineSet
 274 463 m 17
- 297 463 310 460 309 455 c 1
- 137 -44 l 1
- 135 -44 132 -43 128 -43 c 0
- 124 -43 120 -43 116 -42 c 0
- 112 -41 109 -40 106 -39 c 0
- 103 -38 103 -37 103 -35 c 2
+ 281 463 310 462 309 455 c 9
+ 137 -44 l 17
+ 129 -44 102 -42 103 -35 c 9
  274 463 l 17
 EndSplineSet
 Refer: 67 99 N 1 0 0 1 10 0 2

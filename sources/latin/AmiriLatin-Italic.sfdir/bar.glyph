@@ -1,19 +1,17 @@
 StartChar: bar
 Encoding: 124 124 91
 Width: 202
-Flags: HW
+Flags: W
+VStem: 0 223
 LayerCount: 2
 Fore
 SplineSet
 165 739 m 1
  175 749 190 755 208 755 c 0
- 212 755 215 754 218 753 c 128
- 221 752 223 750 223 748 c 2
+ 215 755 224 752 223 748 c 2
  59 -104 l 1
- 55 -108 49 -112 40 -115 c 128
- 31 -118 23 -120 14 -120 c 0
- 11 -120 7 -119 4 -118 c 128
- 1 -117 0 -114 0 -112 c 2
+ 52 -112 33 -120 14 -120 c 0
+ 8 -120 -1 -117 0 -112 c 2
  165 739 l 1
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" bar.sc

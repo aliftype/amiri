@@ -1,16 +1,17 @@
 StartChar: lslash
 Encoding: 322 322 405
 Width: 239
-Flags: HW
+Flags: W
+HStem: -6 54<59 121> 616 21<80 135> 649 20<202 215>
+VStem: 36 73<21 172> 140 79<532 651>
 LayerCount: 2
 Fore
 SplineSet
 41 281 m 2
  234 413 l 1
- 243 398 246 389 242 387 c 2
+ 237 408 247 390 242 387 c 2
  48 254 l 1
- 45 258 43 263 41 270 c 0
- 39 277 39 280 41 281 c 2
+ 44 260 36 278 41 281 c 2
 EndSplineSet
 Refer: 75 108 N 1 0 0 1 0 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin lookup 3-1" lslash.sc
