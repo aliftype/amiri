@@ -88,56 +88,56 @@ feature calt {
 # 
 feature kern {
   # Uniscribe or HarfBuzz ‘latn’
-  pos @EndOfAyah @Digits.small'  <-2210 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-1010 0 -600 0>;
-  pos @EndOfAyah @Digits.small'  <-1910 0 -600 0> @Digits.small'  <-1310 0 -600 0>;
-  pos @EndOfAyah @Digits.small'  <-1610 0 -600 0>;
+  pos @EndOfAyah @Digits.small'  <-1079 0 -292 0> @Digits.small'  <-786 0 -292 0> @Digits.small'  <-493 0 -292 0>;
+  pos @EndOfAyah @Digits.small'  <-933  0 -292 0> @Digits.small'  <-640 0 -292 0>;
+  pos @EndOfAyah @Digits.small'  <-786  0 -292 0>;
 
-  pos @FootNote @Digits.small'  <-1390 0 -600 0> @Digits.small'  <-790  0 -600 0>;
-  pos @FootNote @Digits.small'  <-1090 0 -600 0>;
+  pos @FootNote @Digits.small'  <-679 0 -292 0> @Digits.small'  <-386  0 -292 0>;
+  pos @FootNote @Digits.small'  <-532 0 -292 0>;
 
-  pos @NumSign4 @Digits.medium' <-4022 0 -900 0> @Digits.medium' <-3122 0 -900 0> @Digits.medium' <-2222 0 -900 0> @Digits.medium' <-1322 0 -900 0>;
-  pos @NumSign3 @Digits.medium' <-3122 0 -900 0> @Digits.medium' <-2222 0 -900 0> @Digits.medium' <-1322 0 -900 0>;
-  pos @NumSign  @Digits.medium' <-2272 0 -900 0> @Digits.medium' <-1372 0 -900 0>;
-  pos @NumSign  @Digits.medium' <-1822 0 -900 0>;
+  pos @NumSign4 @Digits.medium' <-1964 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-646 0 -439 0>;
+  pos @NumSign3 @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-646  0 -439 0>;
+  pos @NumSign  @Digits.medium' <-1109 0 -439 0> @Digits.medium' <-670  0 -439 0>;
+  pos @NumSign  @Digits.medium' <-890  0 -439 0>;
 
-  pos @YearSign @Digits.medium' <-3625 0 -900 0> @Digits.medium' <-2725 0 -900 0> @Digits.medium' <-1825 0 -900 0> @Digits.medium' <-925  0 -900 0>;
-  pos @YearSign @Digits.medium' <-3175 0 -900 0> @Digits.medium' <-2275 0 -900 0> @Digits.medium' <-1375 0 -900 0>;
-  pos @YearSign @Digits.medium' <-2725 0 -900 0> @Digits.medium' <-1825 0 -900 0>;
-  pos @YearSign @Digits.medium' <-2275 0 -900 0>;
+  pos @YearSign @Digits.medium' <-1770 0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-891 0 -439 0> @Digits.medium' <-452  0 -439 0>;
+  pos @YearSign @Digits.medium' <-1550 0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-671 0 -439 0>;
+  pos @YearSign @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-891  0 -439 0>;
+  pos @YearSign @Digits.medium' <-1111 0 -439 0>;
 
-  pos @SafhaSign3 @Digits.medium' <-3275 0 -900 0> @Digits.medium' <-2375 0 -900 0> @Digits.medium' <-1475 0 -900 0>;
-  pos @SafhaSign  @Digits.medium' <-2225 0 -900 0> @Digits.medium' <-1325 0 -900 0>;
-  pos @SafhaSign  @Digits.medium' <-1775 0 -900 0>;
+  pos @SafhaSign3 @Digits.medium' <-1599 0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-720 0 -439 0>;
+  pos @SafhaSign  @Digits.medium' <-1086 0 -439 0> @Digits.medium' <-647 0 -439 0>;
+  pos @SafhaSign  @Digits.medium' <-867  0 -439 0>;
 
-  pos @Samvat @Digits.medium' <-4536 0 -900 0> @Digits.medium' <-3636 0 -900 0> @Digits.medium' <-2736 0 -900 0> @Digits.medium' <-1836 0 -900 0>;
-  pos @Samvat @Digits.medium' <-4086 0 -900 0> @Digits.medium' <-3186 0 -900 0> @Digits.medium' <-2286 0 -900 0>;
-  pos @Samvat @Digits.medium' <-3636 0 -900 0> @Digits.medium' <-2736 0 -900 0>;
-  pos @Samvat @Digits.medium' <-3186 0 -900 0>;
+  pos @Samvat @Digits.medium' <-2215 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-896 0 -439 0>;
+  pos @Samvat @Digits.medium' <-1995 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1116 0 -439 0>;
+  pos @Samvat @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0>;
+  pos @Samvat @Digits.medium' <-1556 0 -439 0>;
 
   # HarfBuzz ‘arab’
-  pos @Digits.small'  <-1010 0 -600 0> @Digits.small'  <-1610 0 -600 0> @Digits.small'  <-2210 0 -600 0> @EndOfAyah;
-  pos @Digits.small'  <-1310 0 -600 0> @Digits.small'  <-1910 0 -600 0> @EndOfAyah;
-  pos @Digits.small'  <-1610 0 -600 0> @EndOfAyah;
+  pos @Digits.small'  <-493  0 -292 0> @Digits.small'  <-786 0 -292 0> @Digits.small'  <-1079 0 -292 0> @EndOfAyah;
+  pos @Digits.small'  <-640  0 -292 0> @Digits.small'  <-933 0 -292 0> @EndOfAyah;
+  pos @Digits.small'  <-786  0 -292 0> @EndOfAyah;
 
-  pos @Digits.small'  <-790  0 -600 0> @Digits.small'  <-1390 0 -600 0> @FootNote;
-  pos @Digits.small'  <-1090 0 -600 0> @FootNote;
+  pos @Digits.small'  <-386  0 -292 0> @Digits.small'  <-679 0 -292 0> @FootNote;
+  pos @Digits.small'  <-532  0 -292 0> @FootNote;
 
-  pos @Digits.medium' <-1322 0 -900 0> @Digits.medium' <-2222 0 -900 0> @Digits.medium' <-3122 0 -900 0> @Digits.medium' <-4022 0 -900 0> @NumSign4;
-  pos @Digits.medium' <-1322 0 -900 0> @Digits.medium' <-2222 0 -900 0> @Digits.medium' <-3122 0 -900 0> @NumSign3;
-  pos @Digits.medium' <-1372 0 -900 0> @Digits.medium' <-2272 0 -900 0> @NumSign;
-  pos @Digits.medium' <-1822 0 -900 0> @NumSign;
+  pos @Digits.medium' <-646  0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1964 0 -439 0> @NumSign4;
+  pos @Digits.medium' <-646  0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @NumSign3;
+  pos @Digits.medium' <-670  0 -439 0> @Digits.medium' <-1109 0 -439 0> @NumSign;
+  pos @Digits.medium' <-890  0 -439 0> @NumSign;
 
-  pos @Digits.medium' <-925  0 -900 0> @Digits.medium' <-1825 0 -900 0> @Digits.medium' <-2725 0 -900 0> @Digits.medium' <-3625 0 -900 0> @YearSign;
-  pos @Digits.medium' <-1375 0 -900 0> @Digits.medium' <-2275 0 -900 0> @Digits.medium' <-3175 0 -900 0> @YearSign;
-  pos @Digits.medium' <-1825 0 -900 0> @Digits.medium' <-2725 0 -900 0> @YearSign;
-  pos @Digits.medium' <-2275 0 -900 0> @YearSign;
+  pos @Digits.medium' <-452  0 -439 0> @Digits.medium' <-891  0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-1770 0 -439 0> @YearSign;
+  pos @Digits.medium' <-671  0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-1550 0 -439 0> @YearSign;
+  pos @Digits.medium' <-891  0 -439 0> @Digits.medium' <-1331 0 -439 0> @YearSign;
+  pos @Digits.medium' <-1111 0 -439 0> @YearSign;
 
-  pos @Digits.medium' <-1475 0 -900 0> @Digits.medium' <-2375 0 -900 0> @Digits.medium' <-3275 0 -900 0> @SafhaSign3;
-  pos @Digits.medium' <-1325 0 -900 0> @Digits.medium' <-2225 0 -900 0> @SafhaSign;
-  pos @Digits.medium' <-1775 0 -900 0> @SafhaSign;
+  pos @Digits.medium' <-720  0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-1599 0 -439 0> @SafhaSign3;
+  pos @Digits.medium' <-647  0 -439 0> @Digits.medium' <-1086 0 -439 0> @SafhaSign;
+  pos @Digits.medium' <-867  0 -439 0> @SafhaSign;
 
-  pos @Digits.medium' <-1836 0 -900 0> @Digits.medium' <-2736 0 -900 0> @Digits.medium' <-3636 0 -900 0> @Digits.medium' <-4536 0 -900 0> @Samvat;
-  pos @Digits.medium' <-2286 0 -900 0> @Digits.medium' <-3186 0 -900 0> @Digits.medium' <-4086 0 -900 0> @Samvat;
-  pos @Digits.medium' <-2736 0 -900 0> @Digits.medium' <-3636 0 -900 0> @Samvat;
-  pos @Digits.medium' <-3186 0 -900 0> @Samvat;
+  pos @Digits.medium' <-896  0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-2215 0 -439 0> @Samvat;
+  pos @Digits.medium' <-1116 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1995 0 -439 0> @Samvat;
+  pos @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Samvat;
+  pos @Digits.medium' <-1556 0 -439 0> @Samvat;
 } kern;
