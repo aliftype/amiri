@@ -157,7 +157,8 @@ def generateFeatures(font, feafile):
     return fea_text
 
 def generateFont(options, font, feastring):
-    os.environ["SOURCE_DATE_EPOCH"] = "%d" % os.stat(args.input).st_mtime
+    if os.environ.get("SOURCE_DATE_EPOCH") is None:
+        os.environ["SOURCE_DATE_EPOCH"] = "0"
 
     fea = generateFeatures(font, args.features)
     fea += feastring
