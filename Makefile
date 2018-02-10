@@ -87,12 +87,26 @@ $(WEB)/%.css: $(WOFF) $(MAKECSS)
 $(DOC)/FontTable-$(NAME)Quran.pdf: $(NAME)Quran.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@ --write-outline --use-pango
+	@fntsample --font-file $< --output-file $@.tmp                         \
+		   --write-outline --use-pango                                 \
+		   --style="header-font: Noto Sans Bold 12"                    \
+		   --style="font-name-font: Noto Serif Bold 12"                \
+		   --style="table-numbers-font: Noto Sans 10"                  \
+		   --style="cell-numbers-font:Noto Sans Mono 8"
+	@mutool clean -d -i -f -a $@.tmp $@
+	@rm -f $@.tmp
 
 $(DOC)/FontTable-$(NAME).pdf: $(NAME)-Regular.ttf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@ --write-outline --use-pango
+	@fntsample --font-file $< --output-file $@.tmp                         \
+		   --write-outline --use-pango                                 \
+		   --style="header-font: Noto Sans Bold 12"                    \
+		   --style="font-name-font: Noto Serif Bold 12"                \
+		   --style="table-numbers-font: Noto Sans 10"                  \
+		   --style="cell-numbers-font:Noto Sans Mono 8"
+	@mutool clean -d -i -f -a $@.tmp $@
+	@rm -f $@.tmp
 
 $(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(DTTF)
 	@echo "   GEN	$@"
