@@ -10,6 +10,9 @@ feature locl {
 } locl;
 #endif
 
+@comma = [uni060C uni061B];
+@comma.alt = [uni060C.alt uni061B.alt];
+
 feature locl {
   script arab;
   language URD exclude_dflt;
@@ -23,4 +26,5 @@ feature locl {
   language SND exclude_dflt;
   sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
   sub uni0657 by uni0657.urd;
+  sub @comma by @comma.alt;
 } locl;
