@@ -27,4 +27,7 @@ feature locl {
   sub [uni06F6 uni06F7] by [uni06F6.urd uni06F7.urd];
   sub uni0657 by uni0657.urd;
   sub @comma by @comma.alt;
+
+  language MLY exclude_dflt;
+  sub @comma by @comma.alt;
 } locl;
