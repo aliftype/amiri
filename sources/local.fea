@@ -7,6 +7,8 @@ feature locl {
   language ARA;
   language URD;
   language SND;
+  language KSH;
+  language MLY;
 } locl;
 #endif
 
