@@ -20,13 +20,33 @@ Amiri project aims at the revival of the aesthetics and traditions of Arabic
 typesetting, and adapting it to the era of digital typesetting, in a publicly
 available form.
 
+Latest version of the Amiri font can be optained from its web site:
+
+> http://amirifont.org
+
+Contribution
+============
 Amiri is a free and open source project that everyone is encouraged to use and
 modify. Amiri is avialable under the terms of [Open Font License][2], see the
 included license file for more details.
 
-Latest version of the Amiri font can be optained from its web site:
+Editing the Font Files
+--------------
+Before you can edit the font files, you need to prepare the environment:
 
-> http://amirifont.org
+
+    $ sudo apt-get install fontforge python-fontforge gpp
+    $ mkvirtualenv amiri --system-site-packages
+    $ pip install fonttools brotli
+
+The commands above assumes a Linux Debian OS, but should be portable to other
+Linux distros and possibly Mac OS.
+
+Edit the font files with `$ fontforge sources/Amiri-Regular.sfdir/`,
+save the changes.
+
+To create the font files run `$ make all`
+
 
 [1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
 [2]: http://scripts.sil.org/OFL "The Open Font License"
