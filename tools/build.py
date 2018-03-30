@@ -18,6 +18,7 @@ from __future__ import print_function
 import fontforge
 import psMat
 import os
+import re
 
 from fontTools.ttLib import TTFont
 from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
@@ -115,11 +116,16 @@ def updateInfo(font, version):
     font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (
         version, font.os2_vendor, font.fontname))
 
+BAD_LOOKUP_FLAG = re.compile(r"(RightToLeft|IgnoreBaseGlyphs|IgnoreLigatures|IgnoreMarks),")
+
 def generateFeatureString(font, lookup):
     with NamedTemporaryFile() as tmp:
         font.generateFeatureFile(tmp.name, lookup)
-        fea = tmp.read()
-        return fea.decode("utf-8")
+        fea = tmp.read().decode("utf-8")
+        # Older versions of FontForge incorrectly seperated lookup flags with
+        # coma.
+        fea = BAD_LOOKUP_FLAG.sub(r"\1", fea)
+        return fea
 
 def generateFeatures(font, feafile):
     """Generates feature text by merging feature file with mark positioning
