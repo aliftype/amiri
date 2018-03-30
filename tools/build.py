@@ -475,7 +475,8 @@ def mergeLatin(font, italic=False, glyphs=None, quran=False):
             latinfont.selection.select(name)
             latinfont.paste()
 
-            # Fixup for old FontForge
+            # Fixup for old FontForge that also renamed any other glyph that
+            # started with name!
             for other in latinfont.glyphs():
                 if other.glyphname.startswith(glyph.glyphname) and other != glyph:
                     other.glyphname = other.glyphname.replace(glyph.glyphname, name)
