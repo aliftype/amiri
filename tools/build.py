@@ -475,6 +475,11 @@ def mergeLatin(font, italic=False, glyphs=None, quran=False):
             latinfont.selection.select(name)
             latinfont.paste()
 
+            # Fixup for old FontForge
+            for other in latinfont.glyphs():
+                if other.glyphname.startswith(glyph.glyphname) and other != glyph:
+                    other.glyphname = other.glyphname.replace(glyph.glyphname, name)
+
             rtl = latinfont.createChar(-1, name + ".rtl")
             rtl.addReference(name, italic)
             rtl.useRefsMetrics(name)
