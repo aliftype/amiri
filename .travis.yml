@@ -1,0 +1,18 @@
+sudo: false
+dist: trusty
+language: python
+virtualenv:
+  system_site_packages: true
+
+addons:
+  apt:
+    packages:
+    - python-fontforge
+    - gpp
+
+install:
+  - pip install fonttools
+
+script:
+  - make ttf
+ #- make check
