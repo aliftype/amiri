@@ -33,3 +33,11 @@ feature locl {
   language MLY exclude_dflt;
   sub @comma by @comma.alt;
 } locl;
+
+feature ss08 {
+  featureNames {
+    name "Inverted Arabic comma";
+  };
+
+  sub @comma by @comma.alt;
+} ss08;
