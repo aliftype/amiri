@@ -92,6 +92,8 @@ GROUPS = {
     PAUSES_GLYPHS: BLUE,
 }
 
+HASHES = {}
+
 def newLayer(name, colorID):
     return getTableModule("COLR").LayerRecord(name=name, colorID=colorID)
 
@@ -146,8 +148,16 @@ def colorize(font):
                     # identical layers and avoid needless duplication.
                     width = hmtx[name][0]
                     lsb = hmtx[componentName][1] + trans[4]
-                    identifier = hash((trans, width, lsb))
-                    newName = "%s.%s" % (componentName, identifier)
+                    componentHash = hash((trans, width, lsb))
+
+                    if componentName not in HASHES:
+                        HASHES[componentName] = []
+
+                    if componentHash not in HASHES[componentName]:
+                        HASHES[componentName].append(componentHash)
+
+                    index = HASHES[componentName].index(componentHash)
+                    newName = "%s.l%s" % (componentName, index)
 
                     if newName not in font.glyphOrder:
                         font.glyphOrder.append(newName)
