@@ -34,6 +34,8 @@ FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
 
+export SOURCE_DATE_EPOCH ?= 0
+
 all: ttf web
 
 ttf: $(DTTF)
