@@ -3,11 +3,13 @@ Encoding: 2280 2280 6072
 Width: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "MarkAbove" 278 801 mark 0
-AnchorPoint: "TashkilAboveDot" 278 801 mark 0
-AnchorPoint: "TashkilAbove" 278 801 mark 0
+AnchorPoint: "TashkilTashkilAbove" 119 1159 basemark 0
+AnchorPoint: "TashkilTashkilAbove" 278 844 mark 0
+AnchorPoint: "MarkAbove" 278 844 mark 0
+AnchorPoint: "TashkilAboveDot" 278 844 mark 0
+AnchorPoint: "TashkilAbove" 278 844 mark 0
 LayerCount: 2
 Fore
-Refer: 6069 2277 N -1 0 0 -1 438 2189 2
+Refer: 6069 2277 N -1 0 0 -1 438 2049 2
 Refer: 6069 2277 N 1 0 0 1 0 0 2
 EndChar
