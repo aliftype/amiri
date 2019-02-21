@@ -52,6 +52,40 @@ To build the font files run:
 
     $ make ttf
 
+To build the font files along with the web files; run:
+
+    $ make web
+
+Ubuntu 16.04 Contributors
+-------------------------
+
+You might face an error with importing fontforge
+
+    File "tools/build.py", line 18, in <module>
+        import fontforge
+    ImportError: No module named fontforge
+
+This is because fontforge does not work properly with Python 3 on Ubuntu 16.04.
+To build the fonts with Python version 2.7 ; install FontForge Python
+module by following the instructions from the [official documentation][3]. But
+make sure to enable python extension and scripting for Python 2. Use the following
+commands instead of the original in the last step of the installation:
+
+    $ cd fontforge
+    $ ./bootstrap
+    $ ./configure --enable-python-extension --enable-python-scripting=2
+    $ make
+    $ sudo make install
+    $ sudo ldconfig 
+
+After that, return back to the directory of the amiri repository and continue
+with python-fontforge, gpp, and the virtual environment
+ 
+    $ sudo apt-get install python-fontforge gpp
+    $ virtualenv amiri --system-site-packages
+    $ . amiri/bin/activate
+    $ pip install fonttools brotli
 
 [1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
 [2]: http://scripts.sil.org/OFL "The Open Font License"
+[3]: https://github.com/fontforge/fontforge/blob/master/INSTALL-git.md "FontForge official documentation"
