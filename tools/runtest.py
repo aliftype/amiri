@@ -70,12 +70,14 @@ def runTest(test, fontname, positions):
 
     return passed, failed
 
-def initTest(test, font, positions):
+def initTest(test, fontname, positions):
     out = ""
+    font = getHbFont(fontname)
+    buf = hb.Buffer.create()
     for row in test:
         direction, script, language, features, enctext, reference = row
         text = enctext.encode().decode('unicode-escape') if '\\' in enctext else enctext
-        result = runHB(direction, script, language, features, text, font, positions)
+        result = runHB(font, buf, direction, script, language, features, text, positions)
         out += "%s;%s;%s\n" %(";".join(row[:4]), enctext, result)
 
     return out
