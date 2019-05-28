@@ -4,6 +4,8 @@
 feature locl {
   script arab;
   sub period by period.ara;
+  sub guillemotleft by guillemotleft.ara;
+  sub guillemotright by guillemotright.ara;
   language ARA;
   language URD;
   language SND;

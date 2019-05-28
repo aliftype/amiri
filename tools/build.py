@@ -556,7 +556,7 @@ def makeSlanted(options):
         font.removeGlyph(glyph)
 
     font.selection.all()
-    punct = ("exclam", "period", "guillemotleft", "guillemotright",
+    punct = ("exclam", "period.ara", "guillemotleft.ara", "guillemotright.ara",
              "braceleft", "bar", "braceright", "bracketleft", "bracketright",
              "parenleft", "parenright", "slash", "backslash", "brokenbar",
              "uni061F", "dot.1", "dot.2")
