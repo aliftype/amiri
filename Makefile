@@ -116,7 +116,7 @@ $(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(DTTF)
 
 check: $(TEST) $(DTTF)
 	@echo "running tests"
-	@$(foreach font,$(DTTF),echo "   OTS	$(font)" && ots-sanitize --quiet $(font) &&) true
+	@$(foreach font,$(DTTF),echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
 	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
