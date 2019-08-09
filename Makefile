@@ -29,7 +29,7 @@ DOTF=$(FONTS:%=%.otf)
 WOFF=$(FONTS:%=$(WEB)/%.woff)
 WOF2=$(FONTS:%=$(WEB)/%.woff2)
 CSSS=$(WEB)/$(NAME).css
-PDFS=$(DOC)/FontTable-$(NAME).pdf $(DOC)/FontTable-$(NAME)Quran.pdf $(DOC)/Documentation-Arabic.pdf
+PDFS=$(DOC)/Documentation-Arabic.pdf
 FEAT=$(wildcard $(SRC)/*.fea)
 TEST=$(wildcard $(TESTS)/*.test)
 TEST+=$(wildcard $(TESTS)/*.ptest)
@@ -85,30 +85,6 @@ $(WEB)/%.css: $(WOFF) $(MAKECSS)
 	@echo "   GEN	$@"
 	@mkdir -p $(WEB)
 	@$(PY) $(MAKECSS) --css=$@ --fonts="$(WOFF)"
-
-$(DOC)/FontTable-$(NAME)Quran.pdf: $(NAME)Quran.ttf
-	@echo "   GEN	$@"
-	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@.tmp                         \
-		   --write-outline --use-pango                                 \
-		   --style="header-font: Noto Sans Bold 12"                    \
-		   --style="font-name-font: Noto Serif Bold 12"                \
-		   --style="table-numbers-font: Noto Sans 10"                  \
-		   --style="cell-numbers-font:Noto Sans Mono 8"
-	@mutool clean -d -i -f -a $@.tmp $@
-	@rm -f $@.tmp
-
-$(DOC)/FontTable-$(NAME).pdf: $(NAME)-Regular.ttf
-	@echo "   GEN	$@"
-	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@.tmp                         \
-		   --write-outline --use-pango                                 \
-		   --style="header-font: Noto Sans Bold 12"                    \
-		   --style="font-name-font: Noto Serif Bold 12"                \
-		   --style="table-numbers-font: Noto Sans 10"                  \
-		   --style="cell-numbers-font:Noto Sans Mono 8"
-	@mutool clean -d -i -f -a $@.tmp $@
-	@rm -f $@.tmp
 
 $(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(DTTF)
 	@echo "   GEN	$@"
