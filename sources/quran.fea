@@ -4,15 +4,14 @@
 
 # In Quranic orthography, there are two forms of dagger alef; a superscript one
 # that is a combining mark and a spacing one that is regular alef letter, the
-# later is not encoded in Unicode yet. The spacing dagger alef is almost always
-# preceded by a fatha mark and we use this fact to replace the combing dagger
-# alef by a spacing one when preceded by fatha, a hack but should do the job
-# until the proper character get encoded.
+# later is represented in Unicode by using NBSP (for isolated) or Kashida (for
+# medial) before the coining mark.
 
-# substitute combining dagger alef preceded by fatha with the spacing one
-feature calt {
-  sub [uni064E] uni0670' by uni0670.isol;
-} calt;
+# substitute combining dagger alef by the spacing one
+feature ccmp {
+  sub uni00A0'   uni0670' by uni0670.isol;
+  sub @aKashida' uni0670' by uni0670.medi;
+} ccmp;
 
 #
 # floats
@@ -37,29 +36,6 @@ feature calt {
 # around the float with forms that they would normally take if it was not
 # there, and replace the float wit its medial glyph that has a connecting
 # stroke.
-
-# do dagger alef first since in Unicode it is a combining mark so it does not
-# break shaping, we just need to substitute it with the medial alternate
-@before = [@aAyn.init @aAyn.medi @aBaa.init @aBaa.medi @aFaa.init @aFaa.medi
-           @aHaa.init @aHaa.medi @aHeh.init @aHeh.medi @aKaf.init @aKaf.medi
-           @aLam.init @aLam.medi @aMem.init @aMem.medi @aSad.init @aSad.medi
-           @aSen.init @aSen.medi @aTaa.init @aTaa.medi];
-@after  = [@aAlf.fina @aAyn.fina @aAyn.medi @aBaa.fina @aBaa.medi @aDal.fina
-           @aFaa.fina @aFaa.medi @aHaa.fina @aHaa.medi @aHeh.fina @aHeh.medi
-           @aKaf.fina @aKaf.medi @aLam.fina @aLam.medi @aMem.fina @aMem.medi
-           @aNon.fina @aQaf.fina @aRaa.fina @aSad.fina @aSad.medi @aSen.fina
-           @aSen.medi @aTaa.fina @aTaa.medi @aWaw.fina @aYaa.fina uni0640];
-
-lookup MedialSmallAlef {
-  sub uni0670.isol by uni0670.medi;
-} MedialSmallAlef;
-
-feature calt {
-  lookupflag IgnoreMarks;
-  sub @before'
-      uni0670.isol' lookup MedialSmallAlef
-      @after;
-} calt;
 
 @before.isol = [uni0626 uni0628 uni062A uni062B uni062C uni062D uni062E uni0633
                 uni0634 uni0635 uni0636 uni0637 uni0638 uni0639 uni063A uni0641
@@ -152,12 +128,6 @@ feature kern {
   lookupflag IgnoreMarks;
   pos uni0621.float' <-146 0 0 0> @aAlf.fina_LamAlfFina;
 } kern;
-
-# turn kashida followed by small alef to medial small alef, a common hack to
-# get medial floating small alef.
-feature calt {
-  sub @aKashida uni0670 by uni0670.medi;
-} calt;
 
 #ifdef QURAN
 # if a hamza on yaa or waw is followed by kasra, the hamza goes bellow
