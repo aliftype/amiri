@@ -50,6 +50,7 @@ MARKS_GLYPHS = (
     "uni08F0",
     "uni08F1",
     "uni08F2",
+    "uni08F3",
     "hamza.wasl",
     "Dot",
     "TwoDots",

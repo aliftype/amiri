@@ -11,6 +11,7 @@
 feature ccmp {
   sub uni00A0'   uni0670' by uni0670.isol;
   sub @aKashida' uni0670' by uni0670.medi;
+  sub @aKashida' uni08F3' by uni08F3.medi;
 } ccmp;
 
 #
@@ -27,9 +28,8 @@ feature ccmp {
 # font to override shaping decisions by OpenType engine.
 #
 # This includes:
-# * the dagger alef above
 # * standalone hamza (U+0621)
-# * small waw and yaa (U+06E5, U+06E6)
+# * small yaa (U+06E6)
 #
 # Since the layout engine will consider those characters non-joiners, it will
 # break shaping between them, so we simply override this by replacing glyphs
@@ -63,11 +63,11 @@ feature ccmp {
                 uni0629.fina uni062F.fina uni0630.fina uni0631.fina uni0632.fina
                 uni0648.fina];
 
-@before = [@aKashida @before.isol @before.fina];
+@before = [@aKashida uni08F3.medi @before.isol @before.fina];
 @after  = [@aKashida uni0627.fina_Tatweel @after.isol @before.isol @before.init];
 
-@floats.isol = [uni0621 uni06E5 uni06E6 uni0670.isol];
-@floats.medi = [uni0621.medi uni06E5.medi uni06E6.medi uni0670.medi];
+@floats.isol = [uni0621 uni06E6 uni0670.isol];
+@floats.medi = [uni0621.medi uni06E6.medi uni0670.medi];
 
 lookup Before {
   sub @before.isol by @before.init;
