@@ -1,13 +1,16 @@
 #
-# dagger alef
+# Small letters
 #
 
 # In Quranic orthography, there are two forms of dagger alef; a superscript one
 # that is a combining mark and a spacing one that is regular alef letter, the
 # later is represented in Unicode by using NBSP (for isolated) or Kashida (for
-# medial) before the coining mark.
+# medial) before the combining mark.
+#
+# Other small letters have an encoded isolated form and only need medial form
+# with kashida.
 
-# substitute combining dagger alef by the spacing one
+# Substitute combining small letters by the spacing ones.
 feature ccmp {
   sub uni00A0'   uni0670' by uni0670.isol;
   sub @aKashida' uni0670' by uni0670.medi;
@@ -16,26 +19,22 @@ feature ccmp {
 } ccmp;
 
 #
-# floats
+# Floating hamza
 #
 
-# Some Arabic characters are shaping transparent, just like combining marks,
-# but are not combining marks, I call them float because they "float" between
-# adjacent characters. When a float comes between two characters that would
-# normally join, it will be placed between them over a connecting stroke, else
-# it will just set on the baseline.
+# Hamza should be shaping transparent, just like combining marks, while still
+# not a combining marks, I call t floating hamza because it "floats" between
+# adjacent letters. When a hamza comes between two letters that would normally
+# join, it will be placed between them over a connecting stroke, else it will
+# just set on the baseline.
 #
-# This concept is not recognized by Unicode, so we have to hack our way in the
-# font to override shaping decisions by OpenType engine.
+# This is not recognized by Unicode, so we have to hack our way in the font to
+# override shaping decisions by OpenType engine.
 #
-# This includes:
-# * standalone hamza (U+0621)
-#
-# Since the layout engine will consider those characters non-joiners, it will
-# break shaping between them, so we simply override this by replacing glyphs
-# around the float with forms that they would normally take if it was not
-# there, and replace the float wit its medial glyph that has a connecting
-# stroke.
+# Since the layout engine considers hamza non-joiner, it will break joining
+# around it, so we simply override this by replacing glyphs around the hamza
+# with the forms that they would normally take if it was not there, and replace
+# the hamza wit its medial glyph that has a connecting stroke.
 
 @before.isol = [uni0626 uni0628 uni062A uni062B uni062C uni062D uni062E uni0633
                 uni0634 uni0635 uni0636 uni0637 uni0638 uni0639 uni063A uni0641
@@ -63,11 +62,10 @@ feature ccmp {
                 uni0629.fina uni062F.fina uni0630.fina uni0631.fina uni0632.fina
                 uni0648.fina];
 
-@before = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi @before.isol @before.fina];
-@after  = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi uni0627.fina_Tatweel @after.isol @before.isol @before.init];
-
-@floats.isol = [uni0621];
-@floats.medi = [uni0621.medi];
+@before = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi @before.isol
+           @before.fina];
+@after  = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi
+           uni0627.fina_Tatweel @after.isol @before.isol @before.init];
 
 lookup Before {
   sub @before.isol by @before.init;
@@ -80,13 +78,13 @@ lookup After {
   sub @before.init by @before.medi;
 } After;
 
-lookup MedialFloats {
-  sub @floats.isol by @floats.medi;
-} MedialFloats;
+lookup MedialHAmza {
+  sub uni0621 by uni0621.medi;
+} MedialHAmza;
 
-lookup FloatHamza {
+lookup FloatingHamza {
   sub uni0621 by uni0621.float;
-} FloatHamza;
+} FloatingHamza;
 
 lookup LamAlefIsol {
   sub uni0644 by uni0644.init_LamAlfIsol;
@@ -101,25 +99,18 @@ lookup LamAlefFina {
 feature calt {
   lookupflag IgnoreMarks;
   # hamza between lam and alef needs special treatment as it should not have
-  # a connecting stroke to avoid breaking lam-alef. Other floats don't
-  # normally occur between lam and alef so we don't bother handling them
+  # a connecting stroke to avoid breaking lam-alef.
   sub uni0644'      lookup LamAlefIsol
-      uni0621'      lookup FloatHamza
+      uni0621'      lookup FloatingHamza
       uni0627'      lookup LamAlefIsol;
 
   sub uni0644.fina' lookup LamAlefFina
-      uni0621'      lookup FloatHamza
+      uni0621'      lookup FloatingHamza
       uni0627'      lookup LamAlefFina;
 
-  # everything else
+  # Medial hamza.
   sub @before'      lookup Before
-      @floats.isol' lookup MedialFloats
-      @after'       lookup After;
-
-  # handle two successive floats
-  sub @before'      lookup Before
-      @floats.isol' lookup MedialFloats
-      @floats.isol' lookup MedialFloats
+      uni0621'      lookup MedialHAmza
       @after'       lookup After;
 } calt;
 
