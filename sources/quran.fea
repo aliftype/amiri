@@ -11,6 +11,7 @@
 feature ccmp {
   sub uni00A0'   uni0670' by uni0670.isol;
   sub @aKashida' uni0670' by uni0670.medi;
+  sub @aKashida' uni06E7' by uni06E7.medi;
   sub @aKashida' uni08F3' by uni08F3.medi;
 } ccmp;
 
@@ -29,7 +30,6 @@ feature ccmp {
 #
 # This includes:
 # * standalone hamza (U+0621)
-# * small yaa (U+06E6)
 #
 # Since the layout engine will consider those characters non-joiners, it will
 # break shaping between them, so we simply override this by replacing glyphs
@@ -63,11 +63,11 @@ feature ccmp {
                 uni0629.fina uni062F.fina uni0630.fina uni0631.fina uni0632.fina
                 uni0648.fina];
 
-@before = [@aKashida uni0670.medi uni08F3.medi @before.isol @before.fina];
-@after  = [@aKashida uni0670.medi uni08F3.medi uni0627.fina_Tatweel @after.isol @before.isol @before.init];
+@before = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi @before.isol @before.fina];
+@after  = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi uni0627.fina_Tatweel @after.isol @before.isol @before.init];
 
-@floats.isol = [uni0621 uni06E6];
-@floats.medi = [uni0621.medi uni06E6.medi];
+@floats.isol = [uni0621];
+@floats.medi = [uni0621.medi];
 
 lookup Before {
   sub @before.isol by @before.init;
