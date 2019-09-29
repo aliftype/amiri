@@ -1,3 +1,19 @@
+Amiri 0.112 (2019-09-29)
+------------------------
+
+* Fix dot below (U+065C) and make it rounded not rectangular.
+* Add an Amiri.fontspec file for use with LaTeX fontspec package (#139).
+* Make the build reproducible.
+* Fix some misplaced Latin accents.
+* Add alternate comma and semicolon for Sindhi and Malay, and can be enabled
+  with “ss08” feature as well (#145).
+* Fix Rohingya tones positioning a bit (#155).
+* Don’t make rounded guillemots the default as they are meant to be only for
+  Arabic.
+* Make narrow no break space as wide as thin space (#177).
+* Fix handling of several Quranic small letters to follow latest Unicode
+  recommendations.
+
 Amiri 0.111 (2017-12-30)
 ------------------------
 
