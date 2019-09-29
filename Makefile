@@ -21,7 +21,6 @@ MAKECSS=$(TOOLS)/makecss.py
 MAKEWEB=$(TOOLS)/makeweb.py
 PY ?= python
 FF=$(PY) $(BUILD)
-PP=gpp -I$(SRC)
 
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 DTTF=$(FONTS:%=%.ttf)
@@ -45,8 +44,7 @@ doc: $(PDFS)
 
 $(NAME)Quran.ttf $(NAME)Quran.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) -DQURAN $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)Quran.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)Quran.fea.pp --version $(VERSION) --quran
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --quran
 
 $(NAME)QuranColored.ttf: $(NAME)Quran.ttf $(MAKECLR)
 	@echo "   FF	$@"
@@ -58,23 +56,19 @@ $(NAME)QuranColored.otf: $(NAME)Quran.otf $(MAKECLR)
 
 $(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Regular.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Regular.fea.pp --version $(VERSION)
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
 $(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Italic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Slanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Slanted.fea.pp --version $(VERSION) --slant=10
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
 $(NAME)-Bold.ttf $(NAME)-Bold.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-Bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-Bold.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-Bold.fea.pp --version $(VERSION)
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
 $(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldItalic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
-	@$(PP) -DITALIC $(SRC)/$(NAME).fea -o $(SRC)/$(NAME)-BoldSlanted.fea.pp
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME)-BoldSlanted.fea.pp --version $(VERSION) --slant=10
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
 $(WEB)/%.woff $(WEB)/%.woff2: %.ttf $(MAKEWEB)
 	@echo "   WEB	$*"

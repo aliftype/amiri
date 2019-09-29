@@ -8,7 +8,6 @@ addons:
   apt:
     packages:
     - python-fontforge
-    - gpp
 
 install:
   - pip install -r requirements.txt

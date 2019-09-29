@@ -121,7 +121,7 @@ feature kern {
 } kern;
 
 #ifdef QURAN
-# if a hamza on yaa or waw is followed by kasra, the hamza goes bellow
+# If a hamza on yaa or waw is followed by kasra, the hamza goes bellow
 lookup hamzakasra {
   sub uni0626.init by uni0649.init uni0655; # yaa
   sub uni0626.medi by uni0649.medi uni0655;

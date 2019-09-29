@@ -20,8 +20,10 @@ import psMat
 import os
 import re
 
-from fontTools.ttLib import TTFont
 from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
+from fontTools.misc.py23 import StringIO
+from fontTools.ttLib import TTFont
+from pcpp.preprocessor import Preprocessor
 from tempfile import NamedTemporaryFile
 
 def cleanAnchors(font):
@@ -127,7 +129,7 @@ def generateFeatureString(font, lookup):
         fea = BAD_LOOKUP_FLAG.sub(r"\1", fea)
         return fea
 
-def generateFeatures(font, feafile):
+def generateFeatures(font, args):
     """Generates feature text by merging feature file with mark positioning
     lookups (already in the font) and making sure they come after kerning
     lookups (from the feature file), which is required by Uniscribe to get
@@ -142,8 +144,16 @@ def generateFeatures(font, feafile):
 
     # open feature file and insert the generated GPOS features in place of the
     # placeholder text
-    with open(feafile, 'rb') as fea:
-        fea_text = fea.read().decode("utf-8")
+    with open(args.features) as f:
+        o = StringIO()
+        preprocessor = Preprocessor()
+        if args.quran:
+            preprocessor.define("QURAN")
+        elif args.slant:
+            preprocessor.define("ITALIC")
+        preprocessor.parse(f)
+        preprocessor.write(o)
+        fea_text = o.getvalue()
     fea_text = fea_text.replace("{%anchors%}", oldfea)
 
     bases = [g.glyphname for g in font.glyphs() if g.glyphclass != "mark"]
@@ -163,7 +173,7 @@ def generateFeatures(font, feafile):
     return fea_text
 
 def generateFont(options, font, feastring):
-    fea = generateFeatures(font, args.features)
+    fea = generateFeatures(font, args)
     fea += feastring
 
     flags = []
