@@ -15,7 +15,6 @@ WDIST=$(NAME)-$(VERSION)-WebFonts
 CDIST=$(NAME)-$(VERSION)-CTAN
 
 BUILD=$(TOOLS)/build.py
-RUNTEST=$(TOOLS)/runtest.py
 MAKECLR=$(TOOLS)/makeclr.py
 MAKECSS=$(TOOLS)/makecss.py
 MAKEWEB=$(TOOLS)/makeweb.py
@@ -84,10 +83,9 @@ $(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(DTTF)
 	@echo "   GEN	$@"
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
-check: $(TEST) $(DTTF)
+check: $(DTTF)
 	@echo "running tests"
 	@$(foreach font,$(DTTF),echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
-	@$(PY) $(RUNTEST) $(TEST)
 
 clean:
 	rm -rfv $(DTTF) $(WOFF) $(WOF2) $(CSSS) $(PDFS) $(SRC)/$(NAME)*.fea.pp
