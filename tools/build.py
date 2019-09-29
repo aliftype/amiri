@@ -21,7 +21,7 @@ import os
 import re
 
 from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
-from fontTools.misc.py23 import StringIO
+from fontTools.misc.py23 import StringIO, tounicode
 from fontTools.ttLib import TTFont
 from pcpp.preprocessor import Preprocessor
 from tempfile import NamedTemporaryFile
@@ -153,7 +153,7 @@ def generateFeatures(font, args):
             preprocessor.define("ITALIC")
         preprocessor.parse(f)
         preprocessor.write(o)
-        fea_text = o.getvalue()
+        fea_text = tounicode(o.getvalue(), "utf-8")
     fea_text = fea_text.replace("{%anchors%}", oldfea)
 
     bases = [g.glyphname for g in font.glyphs() if g.glyphclass != "mark"]
