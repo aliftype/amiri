@@ -21,10 +21,10 @@ typesetting, and adapting it to the era of digital typesetting, in a publicly
 available form.
 
 Amiri is a free and open source project that everyone is encouraged to use and
-modify. Amiri is avialable under the terms of [Open Font License][2], see the
+modify. Amiri is available under the terms of [Open Font License][2], see the
 included license file for more details.
 
-Latest version of the Amiri font can be optained from its web site:
+Latest version of the Amiri font can be obtained from its web site:
 
 > http://amirifont.org
 
@@ -41,12 +41,13 @@ GUI or from the command line:
 
     $ fontforge sources/Amiri-Regular.sfdir
 
-To build the fonts you need FontForge Python module, gpp and FontTools:
+To build the fonts you need FontForge Python module, and a few other Python
+packages:
 
-    $ sudo apt-get install python-fontforge gpp
+    $ sudo apt-get install python-fontforge
     $ python -m venv amiri --system-site-packages
     $ . amiri/bin/activate
-    $ pip install fonttools brotli
+    $ pip install -r requirements.txt
 
 To build the font files run:
 
@@ -65,27 +66,14 @@ You might face an error with importing fontforge
         import fontforge
     ImportError: No module named fontforge
 
-This is because fontforge does not work properly with Python 3 on Ubuntu 16.04.
-To build the fonts with Python version 2.7 ; install FontForge Python
+This is because FontForge does not work properly with Python 3 on Ubuntu 16.04.
+To build the fonts with Python version 2.7; install FontForge Python
 module by following the instructions from the [official documentation][3]. But
-make sure to enable python extension and scripting for Python 2. Use the following
-commands instead of the original in the last step of the installation:
+make sure to enable python extension and scripting for Python 2.
 
-    $ cd fontforge
-    $ ./bootstrap
-    $ ./configure --enable-python-extension --enable-python-scripting=2
-    $ make
-    $ sudo make install
-    $ sudo ldconfig 
-
-After that, return back to the directory of the amiri repository and continue
-with python-fontforge, gpp, and the virtual environment
- 
-    $ sudo apt-get install python-fontforge gpp
-    $ virtualenv amiri --system-site-packages
-    $ . amiri/bin/activate
-    $ pip install fonttools brotli
+After that, return back to the directory of the amiri repository and install
+the rest of dependencies and build the font as [above](#Contributing).
 
 [1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
 [2]: http://scripts.sil.org/OFL "The Open Font License"
-[3]: https://github.com/fontforge/fontforge/blob/master/INSTALL-git.md "FontForge official documentation"
+[3]: https://github.com/fontforge/fontforge/blob/master/INSTALL.md "FontForge official documentation"
