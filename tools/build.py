@@ -48,7 +48,6 @@ def cleanAnchors(font):
             "RingBelow",
             "RingDash",
             "Stroke",
-            "TaaAbove",
             "TaaBelow",
             "Tail",
             "TashkilAboveDot",

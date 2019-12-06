@@ -2,6 +2,7 @@ StartChar: uni0631.fina
 Encoding: 66222 -1 904
 Width: 343
 Flags: HW
+AnchorPoint: "TaaAbove" 320 300 basechar 0
 AnchorPoint: "TashkilAbove" 98 801 basechar 0
 AnchorPoint: "TashkilBelow" 244 -327 basechar 0
 LayerCount: 3
