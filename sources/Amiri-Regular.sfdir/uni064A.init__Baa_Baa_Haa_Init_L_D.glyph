@@ -2,6 +2,7 @@ StartChar: uni064A.init_BaaBaaHaaInitLD
 Encoding: 1118125 -1 4298
 Width: 161
 Flags: HW
+AnchorPoint: "DigitAbove" 95 615 basechar 0
 AnchorPoint: "TashkilAbove" 95 801 basechar 0
 AnchorPoint: "TashkilBelow" 110 -479 basechar 0
 LayerCount: 2

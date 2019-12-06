@@ -36,7 +36,6 @@ def cleanAnchors(font):
 
     klasses = (
             "Dash",
-            "DigitAbove",
             "DigitBelow",
             "DotAbove",
             "DotAlt",

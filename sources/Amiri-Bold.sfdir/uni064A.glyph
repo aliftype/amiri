@@ -2,6 +2,7 @@ StartChar: uni064A
 Encoding: 1610 1610 1059
 Width: 764
 Flags: HW
+AnchorPoint: "DigitAbove" 286 404 basechar 0
 AnchorPoint: "TashkilAbove" 391 801 basechar 0
 AnchorPoint: "TashkilBelow" 365 -458 basechar 0
 AnchorPoint: "AlefAbove" 293 171 basechar 0

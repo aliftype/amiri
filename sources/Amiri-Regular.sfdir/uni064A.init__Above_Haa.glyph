@@ -2,6 +2,7 @@ StartChar: uni064A.init_AboveHaa
 Encoding: 1116650 -1 2822
 Width: 543
 Flags: HW
+AnchorPoint: "DigitAbove" 327 697 basechar 0
 AnchorPoint: "cursive" 0 205 exit 0
 AnchorPoint: "TashkilAbove" 415 801 basechar 0
 AnchorPoint: "TashkilBelow" 476 -200 basechar 0

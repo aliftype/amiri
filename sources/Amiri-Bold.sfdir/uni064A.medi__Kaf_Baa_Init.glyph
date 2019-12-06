@@ -2,6 +2,7 @@ StartChar: uni064A.medi_KafBaaInit
 Encoding: 66822 -1 1570
 Width: 219
 Flags: HW
+AnchorPoint: "DigitAbove" 24 664 basechar 0
 AnchorPoint: "TashkilAbove" 24 801 basechar 0
 AnchorPoint: "TashkilBelow" 98 -327 basechar 0
 LayerCount: 3

@@ -1,3 +1,7 @@
+feature ccmp {
+  sub uni08BA by uni064A smallnoon.above;
+} ccmp;
+
 feature init {
   lookupflag IgnoreMarks;
   sub uni0620 by uni0620.init;

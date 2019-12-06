@@ -2,6 +2,7 @@ StartChar: uni064A.medi_YaaBari
 Encoding: 1118841 -1 5823
 Width: 205
 Flags: HW
+AnchorPoint: "DigitAbove" 39 425 basechar 0
 AnchorPoint: "TashkilBelow" 104 -493 basechar 0
 AnchorPoint: "TashkilAbove" 104 801 basechar 0
 LayerCount: 2

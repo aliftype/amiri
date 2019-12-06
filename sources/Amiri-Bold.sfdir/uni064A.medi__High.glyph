@@ -2,6 +2,7 @@ StartChar: uni064A.medi_High
 Encoding: 68351 -1 3099
 Width: 244
 Flags: HW
+AnchorPoint: "DigitAbove" 95 549 basechar 0
 AnchorPoint: "TashkilAbove" 95 801 basechar 0
 AnchorPoint: "TashkilBelow" 135 -327 basechar 0
 LayerCount: 3
