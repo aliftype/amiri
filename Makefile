@@ -17,7 +17,7 @@ FF=$(PY) $(BUILD)
 SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 TTF=$(FONTS:%=%.ttf)
 OTF=$(FONTS:%=%.otf)
-PDF=$(DOC)/Documentation-Arabic.pdf
+HTML=$(DOC)/Documentation-Arabic.html
 FEA=$(wildcard $(SRC)/*.fea)
 
 export SOURCE_DATE_EPOCH ?= 0
@@ -26,7 +26,7 @@ all: otf
 
 ttf: $(TTF)
 otf: $(OTF)
-doc: $(PDF)
+doc: $(HTML)
 
 $(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
 	@echo "   FF	$@"
@@ -56,16 +56,16 @@ $(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
-$(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(OTF)
+$(DOC)/Documentation-Arabic.html: $(DOC)/Documentation-Arabic.md
 	@echo "   GEN	$@"
-	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
+	@pandoc $< -o $@ -f markdown-smart -t html -s -c Documentation-Arabic.css
 
 check: $(TTF) $(OTF)
 	@echo "running tests"
 	@$(foreach font,$+,echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
 
 clean:
-	rm -rfv $(TTF) $(OTF) $(PDF)
+	rm -rfv $(TTF) $(OTF) $(HTML)
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean: clean
@@ -80,6 +80,6 @@ dist: otf check pack doc
 	@cp README-Arabic.md $(DIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
 	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
-	@cp $(PDF) $(DIST)
+	@cp $(HTML) $(DIST)
 	@echo "   ZIP  $(DIST)"
 	@zip -rq $(DIST).zip $(DIST)

@@ -1,0 +1,65 @@
+html {
+   direction: rtl;
+   line-height: 1.8;
+   width: 800px;
+   margin: 0 auto;
+   text-align: justify;
+   font-family: Amiri, serif;
+   font-size: 16pt;
+   color: #404040;
+   background-color: #fffef8;
+   font-feature-settings: "pnum" 1;
+}
+
+table {
+   width: 80%;
+   margin: auto;
+   border-collapse: collapse;
+}
+
+a {
+   text-decoration: none;
+   color: #ad000d;
+}
+
+tt, code {
+   background: #E6E6E6;
+   font-family: "NoName Fixed", monospace;
+   font-size: 90%;
+}
+
+table, td, th {
+/* border:1px solid black;*/
+   padding:0px 15px 10px; 
+}
+
+th {
+   border-bottom: 2px solid #ad000d;
+}
+
+td {
+   padding: 9px 8px 0px;
+}
+
+h1, h2, h3 {
+   font-weight: normal;
+   text-align: center;
+}
+
+h3 {
+   font-style: italic;
+}
+
+
+.tnum {
+   font-feature-settings: "pnum" 0;
+   font-feature-settings: "tnum" 1;
+}
+.ss01 { font-feature-settings: "ss01" 1; }
+.ss02 { font-feature-settings: "ss02" 1; }
+.ss03 { font-feature-settings: "ss03" 1; }
+.ss04 { font-feature-settings: "ss04" 1; }
+.ss05 { font-feature-settings: "ss05" 1; }
+.ss06 { font-feature-settings: "ss06" 1; }
+.ss07 { font-feature-settings: "ss07" 1; }
+.ss08 { font-feature-settings: "ss08" 1; }
