@@ -2,6 +2,7 @@ StartChar: uni066E.init_BaaBaaIsol
 Encoding: 67600 -1 2348
 Width: 247
 Flags: HW
+AnchorPoint: "TaaAbove" 148 305 basechar 0
 AnchorPoint: "TashkilAbove" 122 801 basechar 0
 AnchorPoint: "TashkilBelow" 73 -327 basechar 0
 LayerCount: 3
