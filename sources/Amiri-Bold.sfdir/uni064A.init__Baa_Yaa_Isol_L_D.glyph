@@ -2,6 +2,7 @@ StartChar: uni064A.init_BaaYaaIsolLD
 Encoding: 69725 -1 4474
 Width: 258
 Flags: HW
+AnchorPoint: "TaaAbove" 60 537 basechar 0
 AnchorPoint: "DigitAbove" 60 635 basechar 0
 AnchorPoint: "TashkilAbove" 16 801 basechar 0
 AnchorPoint: "TashkilBelow" 177 -479 basechar 0

@@ -2,6 +2,7 @@ StartChar: uni064A.medi_BaaMemAlfFina
 Encoding: 69071 -1 3819
 Width: 235
 Flags: HW
+AnchorPoint: "TaaAbove" 98 293 basechar 0
 AnchorPoint: "DigitAbove" 98 391 basechar 0
 AnchorPoint: "TashkilAbove" 187 801 basechar 0
 AnchorPoint: "TashkilBelow" 152 -405 basechar 0

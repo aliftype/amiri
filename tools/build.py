@@ -36,6 +36,7 @@ def cleanAnchors(font):
 
     klasses = (
             "Dash",
+           #"DigitAbove",
             "DigitBelow",
             "DotAbove",
             "DotAlt",
@@ -48,6 +49,7 @@ def cleanAnchors(font):
             "RingBelow",
             "RingDash",
             "Stroke",
+           #"TaaAbove",
             "TaaBelow",
             "Tail",
             "TashkilAboveDot",
