@@ -2,6 +2,7 @@ StartChar: uni067E.init_WideLD
 Encoding: 1118270 -1 4443
 Width: 285
 Flags: HW
+AnchorPoint: "TaaAbove" 115 403 basechar 0
 AnchorPoint: "TashkilAbove" 115 801 basechar 0
 AnchorPoint: "TashkilBelow" 203 -578 basechar 0
 LayerCount: 2

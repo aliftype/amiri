@@ -2,6 +2,7 @@ StartChar: uni067E.medi_BaaBaaMemInit
 Encoding: 1116284 -1 2456
 Width: 182
 Flags: HW
+AnchorPoint: "TaaAbove" -31 453 basechar 0
 AnchorPoint: "TashkilAbove" 76 801 basechar 0
 AnchorPoint: "TashkilBelow" 78 -353 basechar 0
 LayerCount: 2
