@@ -127,11 +127,17 @@ feature calt {
   sub @Li' lookup LamInitLellah uni064E' @Lm' lookup LamMediLellah uni0651' @xF' @Hf' lookup HehFinaLellah;
 
   # لِله
+  ignore sub @Ai @Li' uni0651' @Lm'               @Hf';
+  ignore sub @Ai @Li' uni0651' @Lm' uni0651'      @Hf';
+  ignore sub @Ai @Li' uni0651' @Lm' uni0651' @xF' @Hf';
   sub @Li' lookup LamInitLellah uni0650' @Lm' lookup LamMediLellah               @Hf' lookup HehFinaLellah;
   sub @Li' lookup LamInitLellah uni0650' @Lm' lookup LamMediLellah uni0651'      @Hf' lookup HehFinaLellah;
   sub @Li' lookup LamInitLellah uni0650' @Lm' lookup LamMediLellah uni0651' @xF' @Hf' lookup HehFinaLellah;
 
   # لِّله
+  ignore sub @Ai @Li' uni0651'uni0650' @Lm'               @Hf';
+  ignore sub @Ai @Li' uni0651'uni0650' @Lm' uni0651'      @Hf';
+  ignore sub @Ai @Li' uni0651'uni0650' @Lm' uni0651' @xF' @Hf';
   sub @Li' lookup LamInitLellah uni0651'uni0650' @Lm' lookup LamMediLellah               @Hf' lookup HehFinaLellah;
   sub @Li' lookup LamInitLellah uni0651'uni0650' @Lm' lookup LamMediLellah uni0651'      @Hf' lookup HehFinaLellah;
   sub @Li' lookup LamInitLellah uni0651'uni0650' @Lm' lookup LamMediLellah uni0651' @xF' @Hf' lookup HehFinaLellah;
