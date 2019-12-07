@@ -2,6 +2,7 @@ StartChar: uni0628.init_BaaYaaIsol
 Encoding: 68906 -1 3654
 Width: 258
 Flags: HW
+AnchorPoint: "TaaAbove" 60 537 basechar 0
 AnchorPoint: "TashkilAbove" 16 801 basechar 0
 AnchorPoint: "TashkilBelow" 167 -391 basechar 0
 LayerCount: 3

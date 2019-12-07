@@ -2,6 +2,7 @@ StartChar: uni0628.init_Wide
 Encoding: 1116987 -1 3159
 Width: 285
 Flags: HW
+AnchorPoint: "TaaAbove" 115 403 basechar 0
 AnchorPoint: "TashkilAbove" 146 801 basechar 0
 AnchorPoint: "TashkilBelow" 149 -327 basechar 0
 LayerCount: 2

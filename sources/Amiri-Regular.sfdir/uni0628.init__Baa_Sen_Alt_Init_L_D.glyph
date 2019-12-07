@@ -2,6 +2,7 @@ StartChar: uni0628.init_BaaSenAltInitLD
 Encoding: 1118184 -1 4357
 Width: 219
 Flags: HW
+AnchorPoint: "TaaAbove" 59 519 basechar 0
 AnchorPoint: "TashkilAbove" 70 801 basechar 0
 AnchorPoint: "TashkilBelow" 143 -454 basechar 0
 LayerCount: 2
