@@ -1,4 +1,9 @@
 lookup loclLtr {
+} loclLtr;
+
+feature locl {
+  script latn;
+
   sub zero by zero.ltr;
   sub one by one.ltr;
   sub two by two.ltr;
@@ -9,15 +14,13 @@ lookup loclLtr {
   sub seven by seven.ltr;
   sub eight by eight.ltr;
   sub nine by nine.ltr;
-} loclLtr;
 
-feature locl {
-  script latn;
-  lookup loclLtr;
   language TRK include_dflt;
 } locl;
 
-lookup loclRtl {
+feature locl {
+  script arab;
+
   sub zero by zero.rtl;
   sub one by one.rtl;
   sub two by two.rtl;
@@ -28,17 +31,11 @@ lookup loclRtl {
   sub seven by seven.rtl;
   sub eight by eight.rtl;
   sub nine by nine.rtl;
-} loclRtl;
-
-feature locl {
-  script arab;
 
   language ARA include_dflt;
-  lookup loclRtl;
-
   language URD include_dflt;
-  lookup loclRtl;
-
   language SND include_dflt;
-  lookup loclRtl;
+  language SND include_dflt;
+  language KSH include_dflt;
+  language MLY include_dflt;
 } locl;
