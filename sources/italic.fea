@@ -13,8 +13,8 @@ lookup loclLtr {
 
 feature locl {
   script latn;
-  language TRK include_dflt;
   lookup loclLtr;
+  language TRK include_dflt;
 } locl;
 
 lookup loclRtl {
