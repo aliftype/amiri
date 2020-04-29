@@ -6,11 +6,12 @@ feature locl {
   sub period by period.ara;
   sub guillemotleft by guillemotleft.ara;
   sub guillemotright by guillemotright.ara;
-  language ARA;
-  language URD;
-  language SND;
-  language KSH;
-  language MLY;
+
+  language ARA include_dflt;
+  language URD include_dflt;
+  language SND include_dflt;
+  language KSH include_dflt;
+  language MLY include_dflt;
 } locl;
 #endif
 
@@ -19,6 +20,7 @@ feature locl {
 
 feature locl {
   script arab;
+
   language URD exclude_dflt;
   sub [uni06F4 uni06F6 uni06F7] by [uni06F4.urd uni06F6.urd uni06F7.urd];
   sub uni0657 by uni0657.urd;
