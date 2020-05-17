@@ -270,7 +270,7 @@ def makeQuranSajdaLine(font, pos):
     return fea
 
 
-def subsetFont(path, unicodes, quran=False):
+def subsetFont(path, unicodes):
     from fontTools import subset
 
     font = TTFont(path, recalcTimestamp=False)
@@ -281,9 +281,6 @@ def subsetFont(path, unicodes, quran=False):
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(font)
-
-    if quran:
-        font["OS/2"].sTypoAscender = font["hhea"].ascent = font["head"].yMax
 
     font.save(path)
 
@@ -383,12 +380,9 @@ def makeQuran(options):
     font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
     font.familyname += " Quran"
     font.fullname += " Quran"
-
+    font.os2_typoascent = font.hhea_ascent = 1815
     sample = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
     font.appendSFNTName('English (US)', 'Sample Text', sample)
-
-    digits = ("zero", "one", "two", "three", "four", "five", "six",
-              "seven", "eight", "nine")
 
     fea = mergeLatin(font, quran=True)
 
@@ -408,8 +402,8 @@ def makeQuran(options):
     # vertically at the level of the base of waqf marks
     fea += makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
 
-    unicodes = [font[n].unicode for n in digits]
-    unicodes += ['.', '(', ')', '[', ']', '{', '}', '|', ' ', '/', '\\',
+    unicodes =  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+                 '.', '(', ')', '[', ']', '{', '}', '|', ' ', '/', '\\',
                  0x00A0,
                  0x00AB, 0x00BB, 0x0305, 0x030A, 0x0325, 0x060C, 0x0615,
                  0x0617, 0x0618, 0x0619, 0x061A, 0x061B, 0x061E, 0x061F,
@@ -437,7 +431,7 @@ def makeQuran(options):
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
 
     generateFont(options, font, fea)
-    subsetFont(options.output, unicodes, quran=True)
+    subsetFont(options.output, unicodes)
 
 def makeDesktop(options, generate=True):
     font = fontforge.open(options.input)
