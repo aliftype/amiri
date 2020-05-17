@@ -113,15 +113,6 @@ def validateGlyphs(font):
 
         glyph.round()
 
-def updateInfo(font, version):
-    from datetime import datetime
-
-    version = "%07.3f" % version
-    font.version = font.version % version
-    font.copyright = font.copyright % datetime.now().year
-    font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (
-        version, font.os2_vendor, font.fontname))
-
 BAD_LOOKUP_FLAG = re.compile(r"(RightToLeft|IgnoreBaseGlyphs|IgnoreLigatures|IgnoreMarks),")
 
 def generateFeatureString(font, lookup):
@@ -180,10 +171,6 @@ def generateFont(options, font, feastring):
     fea = generateFeatures(font, args)
     fea += feastring
 
-    flags = []
-    if args.output.endswith(".ttf"):
-        flags += ["opentype", "dummy-dsig", "omit-instructions"]
-
     font.selection.all()
     font.correctReferences()
     font.selection.none()
@@ -191,8 +178,14 @@ def generateFont(options, font, feastring):
     # fix some common font issues
     validateGlyphs(font)
 
-    updateInfo(font, args.version)
+    from datetime import datetime
+    version = "%07.3f" % args.version
+    font.version = font.version % version
+    font.copyright = font.copyright % datetime.now().year
+    font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (
+        version, font.os2_vendor, font.fontname))
 
+    flags = ["opentype", "dummy-dsig", "omit-instructions"]
     font.generate(args.output, flags=flags)
 
     try:
