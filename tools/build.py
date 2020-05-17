@@ -298,8 +298,6 @@ def mergeLatin(font, italic=False):
     fea = ""
     for lookup in latinfont.gpos_lookups:
         fea += generateFeatureString(latinfont, lookup)
-
-    for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
 
     from tempfile import mkstemp
