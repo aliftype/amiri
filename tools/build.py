@@ -303,14 +303,14 @@ def subsetFont(path, unicodes, quran=False):
     font.save(path)
 
 def makeNumerators(font):
-    digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
-              "eight", "nine",
+    digits = (
               "uni0660", "uni0661", "uni0662", "uni0663", "uni0664",
               "uni0665", "uni0666", "uni0667", "uni0668", "uni0669",
               "uni06F0", "uni06F1", "uni06F2", "uni06F3", "uni06F4",
               "uni06F5", "uni06F6", "uni06F7", "uni06F8", "uni06F9",
               "uni06F4.urd", "uni06F6.urd", "uni06F7.urd")
     for name in digits:
+        if name not in font: continue
         numr = font.createChar(-1, name + ".numr")
         small = font[name + ".small"]
         if not numr.isWorthOutputting():
@@ -332,9 +332,7 @@ def mergeLatin(font, italic=False, quran=False):
         for name in ("uni030A", "uni0325"):
             font.removeGlyph(name)
 
-    digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
-              "eight", "nine")
-
+    #latinfont.save(latinfont.path+".tmp")
     # copy kerning classes
     fea = ""
     for lookup in latinfont.gpos_lookups:
@@ -355,30 +353,6 @@ def mergeLatin(font, italic=False, quran=False):
     if "periodcentered" in font:
         font["periodcentered"].width = font["space"].width
         centerGlyph(font["periodcentered"])
-
-    # add Latin small and medium digits
-    for name in digits:
-        if italic:
-            # they are only used in Arabic contexts, so always reference the
-            # italic rtl variant
-            refname = name +".rtl"
-        else:
-            refname = name
-        small = font.createChar(-1, name + ".small")
-        if not small.isWorthOutputting():
-            small.clear()
-            small.addReference(refname, psMat.scale(0.6))
-            small.transform(psMat.translate(0, -40))
-            small.width = 600
-            centerGlyph(small)
-
-        medium = font.createChar(-1, name + ".medium")
-        if not medium.isWorthOutputting():
-            medium.clear()
-            medium.addReference(refname, psMat.scale(0.8))
-            medium.transform(psMat.translate(0, 50))
-            medium.width = 900
-            centerGlyph(medium)
 
     return fea
 

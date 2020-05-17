@@ -224,7 +224,7 @@ Grid
  -5.859375 438.4765625 l 1
  546.875 438.4765625 l 25
 EndSplineSet
-BeginChars: 65614 501
+BeginChars: 65644 531
 
 StartChar: space
 Encoding: 32 32 0
@@ -11300,6 +11300,306 @@ Flags: H
 LayerCount: 2
 Fore
 Refer: 499 -1 N 1 0 -0.176327 1 0 0 3
+EndChar
+
+StartChar: zero.small
+Encoding: 65614 -1 501
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 462 -1 N 0.6 0 0 0.6 19.1049 -40 2
+EndChar
+
+StartChar: one.small
+Encoding: 65615 -1 502
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 464 -1 N 0.6 0 0 0.6 14.9796 -40 2
+EndChar
+
+StartChar: two.small
+Encoding: 65616 -1 503
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 466 -1 N 0.6 0 0 0.6 15.3691 -40 2
+EndChar
+
+StartChar: three.small
+Encoding: 65617 -1 504
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 468 -1 N 0.6 0 0 0.6 15.4834 -40 2
+EndChar
+
+StartChar: four.small
+Encoding: 65618 -1 505
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 470 -1 N 0.6 0 0 0.6 5.48926 -40 2
+EndChar
+
+StartChar: five.small
+Encoding: 65619 -1 506
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 472 -1 N 0.6 0 0 0.6 2.5127 -40 2
+EndChar
+
+StartChar: six.small
+Encoding: 65620 -1 507
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 474 -1 N 0.6 0 0 0.6 9.32284 -40 2
+EndChar
+
+StartChar: seven.small
+Encoding: 65621 -1 508
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 476 -1 N 0.6 0 0 0.6 43.3359 -40 2
+EndChar
+
+StartChar: eight.small
+Encoding: 65622 -1 509
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 478 -1 N 0.6 0 0 0.6 11.4954 -40 2
+EndChar
+
+StartChar: nine.small
+Encoding: 65623 -1 510
+Width: 292
+VWidth: -40
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 480 -1 N 0.6 0 0 0.6 28.9767 -40 2
+EndChar
+
+StartChar: zero.medium
+Encoding: 65624 -1 511
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 462 -1 N 0.8 0 0 0.8 50.1404 50 2
+EndChar
+
+StartChar: one.medium
+Encoding: 65625 -1 512
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 464 -1 N 0.8 0 0 0.8 44.6393 50 2
+EndChar
+
+StartChar: two.medium
+Encoding: 65626 -1 513
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 466 -1 N 0.8 0 0 0.8 45.8262 50 2
+EndChar
+
+StartChar: three.medium
+Encoding: 65627 -1 514
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 468 -1 N 0.8 0 0 0.8 45.6445 50 2
+EndChar
+
+StartChar: four.medium
+Encoding: 65628 -1 515
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 470 -1 N 0.8 0 0 0.8 32.3193 50 2
+EndChar
+
+StartChar: five.medium
+Encoding: 65629 -1 516
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 472 -1 N 0.8 0 0 0.8 28.3496 50 2
+EndChar
+
+StartChar: six.medium
+Encoding: 65630 -1 517
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 474 -1 N 0.8 0 0 0.8 37.0973 50 2
+EndChar
+
+StartChar: seven.medium
+Encoding: 65631 -1 518
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 476 -1 N 0.8 0 0 0.8 82.7812 50 2
+EndChar
+
+StartChar: eight.medium
+Encoding: 65632 -1 519
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 478 -1 N 0.8 0 0 0.8 39.6605 50 2
+EndChar
+
+StartChar: nine.medium
+Encoding: 65633 -1 520
+Width: 439
+VWidth: 50
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 480 -1 N 0.8 0 0 0.8 63.3023 50 2
+EndChar
+
+StartChar: zero.numr
+Encoding: 65634 -1 521
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 501 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: one.numr
+Encoding: 65635 -1 522
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 502 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: two.numr
+Encoding: 65636 -1 523
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 503 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: three.numr
+Encoding: 65637 -1 524
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 504 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: four.numr
+Encoding: 65638 -1 525
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 505 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: five.numr
+Encoding: 65639 -1 526
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 506 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: six.numr
+Encoding: 65640 -1 527
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 507 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: seven.numr
+Encoding: 65641 -1 528
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 508 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: eight.numr
+Encoding: 65642 -1 529
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 509 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: nine.numr
+Encoding: 65643 -1 530
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 510 -1 N 1 0 0 1 0 550 2
 EndChar
 EndChars
 EndSplineFont
