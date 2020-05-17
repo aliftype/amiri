@@ -344,7 +344,7 @@ def mergeLatin(font, italic=False, quran=False):
 def makeSlanted(options):
     font = makeDesktop(options, False)
 
-    # compute amout of skew, magic formula copied from fontforge sources
+    # compute amount of skew, magic formula copied from fontforge sources
     import math
     skew = psMat.skew(-options.slant * math.pi/180.0)
 
