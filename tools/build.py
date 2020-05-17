@@ -285,7 +285,7 @@ def subsetFont(path, unicodes):
     font.save(path)
 
 
-def mergeLatin(font, italic=False, quran=False):
+def mergeLatin(font, italic=False):
     styles = {"Regular": "Regular",
               "Slanted": "Italic",
               "Bold": "Bold",
@@ -293,11 +293,6 @@ def mergeLatin(font, italic=False, quran=False):
 
     style = styles[font.fontname.split("-")[1]]
     latinfont = fontforge.open("sources/latin/AmiriLatin-%s.sfd" % style)
-
-    if not quran:
-        # we want our ring above and below in Quran font only
-        for name in ("uni030A", "uni0325"):
-            font.removeGlyph(name)
 
     # copy kerning classes
     fea = ""
@@ -384,12 +379,13 @@ def makeQuran(options):
     sample = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
     font.appendSFNTName('English (US)', 'Sample Text', sample)
 
-    fea = mergeLatin(font, quran=True)
-
     for glyph in font.glyphs():
-        if glyph.glyphname.endswith(".ara"):
-            glyph.glyphname = glyph.glyphname[:-4]
+        name = glyph.glyphname
+        if name.endswith(".ara") or name.endswith(".quran"):
+            glyph.glyphname = glyph.glyphname.rsplit(".", 1)[0]
             glyph.unicode = fontforge.unicodeFromName(glyph.glyphname)
+
+    fea = mergeLatin(font)
 
     # scale some vowel marks and dots down a bit
     scaleGlyph(font["uni0651"], 0.8)
