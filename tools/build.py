@@ -456,11 +456,6 @@ def makeDesktop(options, generate=True):
     # remove anchors that are not needed in the production font
     cleanAnchors(font)
 
-    # sample text to be used by font viewers
-    sample = 'صِفْ خَلْقَ خَوْدٍ كَمِثْلِ ٱلشَّمْسِ إِذْ بَزَغَتْ يَحْظَىٰ ٱلضَّجِيعُ بِهَا نَجْلَاءَ مِعْطَارِ.'
-
-    font.appendSFNTName('English (US)', 'Sample Text', sample)
-
     if generate:
         fea = mergeLatin(font)
         generateFont(options, font, fea)
