@@ -286,13 +286,8 @@ def subsetFont(path, unicodes):
 
 
 def mergeLatin(font, italic=False):
-    styles = {"Regular": "Regular",
-              "Slanted": "Italic",
-              "Bold": "Bold",
-              "BoldSlanted": "BoldItalic"}
-
-    style = styles[font.fontname.split("-")[1]]
-    latinfont = fontforge.open("sources/latin/AmiriLatin-%s.sfd" % style)
+    fontname = font.fontname.replace("Amiri", "AmiriLatin")
+    latinfont = fontforge.open("sources/latin/%s.sfd" % fontname)
 
     # copy kerning classes
     fea = ""
@@ -369,14 +364,6 @@ def scaleGlyph(glyph, amount):
 def makeQuran(options):
     font = makeDesktop(options, False)
 
-    # fix metadata
-    font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
-    font.familyname += " Quran"
-    font.fullname += " Quran"
-    font.os2_typoascent = font.hhea_ascent = 1815
-    sample = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
-    font.appendSFNTName('English (US)', 'Sample Text', sample)
-
     for glyph in font.glyphs():
         name = glyph.glyphname
         if name.endswith(".ara") or name.endswith(".quran"):
@@ -384,6 +371,14 @@ def makeQuran(options):
             glyph.unicode = fontforge.unicodeFromName(glyph.glyphname)
 
     fea = mergeLatin(font)
+
+    # fix metadata
+    font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
+    font.familyname += " Quran"
+    font.fullname += " Quran"
+    font.os2_typoascent = font.hhea_ascent = 1815
+    sample = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
+    font.appendSFNTName('English (US)', 'Sample Text', sample)
 
     # scale some vowel marks and dots down a bit
     scaleGlyph(font["uni0651"], 0.8)

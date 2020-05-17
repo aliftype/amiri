@@ -57,7 +57,7 @@ $(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/lat
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
-$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Slanted.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
@@ -65,7 +65,7 @@ $(NAME)-Bold.ttf $(NAME)-Bold.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATI
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
-$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldItalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldSlanted.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
