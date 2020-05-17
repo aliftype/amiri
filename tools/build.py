@@ -302,21 +302,6 @@ def subsetFont(path, unicodes, quran=False):
 
     font.save(path)
 
-def makeNumerators(font):
-    digits = (
-              "uni0660", "uni0661", "uni0662", "uni0663", "uni0664",
-              "uni0665", "uni0666", "uni0667", "uni0668", "uni0669",
-              "uni06F0", "uni06F1", "uni06F2", "uni06F3", "uni06F4",
-              "uni06F5", "uni06F6", "uni06F7", "uni06F8", "uni06F9",
-              "uni06F4.urd", "uni06F6.urd", "uni06F7.urd")
-    for name in digits:
-        if name not in font: continue
-        numr = font.createChar(-1, name + ".numr")
-        small = font[name + ".small"]
-        if not numr.isWorthOutputting():
-            numr.clear()
-            numr.addReference(small.glyphname, psMat.translate(0, 550))
-            numr.width = small.width
 
 def mergeLatin(font, italic=False, quran=False):
     styles = {"Regular": "Regular",
@@ -389,7 +374,6 @@ def makeSlanted(options):
         font.fontname = font.fontname.replace("Regular", "Slanted")
 
     fea = mergeLatin(font, italic=skew)
-    makeNumerators(font)
     generateFont(options, font, fea)
 
 def scaleGlyph(glyph, amount):
@@ -490,7 +474,6 @@ def makeDesktop(options, generate=True):
 
     if generate:
         fea = mergeLatin(font)
-        makeNumerators(font)
         generateFont(options, font, fea)
     else:
         return font
