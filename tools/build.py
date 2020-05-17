@@ -284,46 +284,8 @@ def centerGlyph(glyph):
     glyph.right_side_bearing = glyph.left_side_bearing = (glyph.right_side_bearing + glyph.left_side_bearing)/2
     glyph.width = width
 
-def subsetFont(font, glyphnames, similar=False):
-    # keep any glyph with the same base name
-    reported = []
 
-    if similar:
-        for name in glyphnames:
-            for glyph in font.glyphs():
-                if "." in glyph.glyphname and glyph.glyphname.split(".")[0] == name:
-                    glyphnames.append(glyph.glyphname)
-
-    # keep any glyph referenced requested glyphs
-    for name in glyphnames:
-        if name in font:
-            glyph = font[name]
-            for ref in glyph.references:
-                glyphnames.append(ref[0])
-        else:
-            if name not in reported:
-                print('Font ‘%s’ is missing glyph: %s' %(font.fontname, name))
-                reported.append(name)
-
-    # Prune kerning classes
-    for lookup in font.gpos_lookups:
-        for subtable in font.getLookupSubtables(lookup):
-            if font.isKerningClass(subtable):
-                first, second, offsets = font.getKerningClass(subtable)
-                first  = [[n for n in c if n in glyphnames] for c in first]
-                second = [[n for n in c if n in glyphnames] for c in second if c]
-                second.insert(0, None)
-                if all([first, second]):
-                    font.alterKerningClass(subtable, first, second, offsets)
-                else:
-                    font.removeLookupSubtable(subtable)
-
-    # remove everything else
-    for glyph in font.glyphs():
-        if glyph.glyphname not in glyphnames:
-            font.removeGlyph(glyph)
-
-def subsetFontFT(path, unicodes, quran=False):
+def subsetFont(path, unicodes, quran=False):
     from fontTools import subset
 
     font = TTFont(path, recalcTimestamp=False)
@@ -363,80 +325,12 @@ def mergeLatin(font, italic=False, quran=False):
               "BoldSlanted": "BoldItalic"}
 
     style = styles[font.fontname.split("-")[1]]
-
-    latinfile = "AmiriLatin-%s.sfd" %style
-
-    from tempfile import mkstemp
-    tmpfont = mkstemp(suffix=os.path.basename(latinfile))[1]
-    latinfont = fontforge.open("sources/latin/%s" %latinfile)
-
-    validateGlyphs(latinfont) # to flatten nested refs mainly
-
-    # collect latin glyphs we want to keep
-    latinglyphs = []
-
-    # we want all glyphs in latin0-9 encodings
-    for i in range(0, 9):
-        latinfont.encoding = 'latin%d' %i
-        for glyph in latinfont.glyphs("encoding"):
-            if glyph.encoding <= 255:
-                if glyph.glyphname not in latinglyphs:
-                    latinglyphs.append(glyph.glyphname)
-            elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
-                # keep also Unicode Latin Extended-A block
-                if glyph.glyphname not in latinglyphs:
-                    latinglyphs.append(glyph.glyphname)
-            elif glyph.unicode == -1 and '.prop' in glyph.glyphname:
-                # proportional digits
-                latinglyphs.append(glyph.glyphname)
-
-    # keep ligatures too
-    ligatures = ("f_b", "f_f_b",
-                 "f_h", "f_f_h",
-                 "f_i", "f_f_i",
-                 "f_j", "f_f_j",
-                 "f_k", "f_f_k",
-                 "f_l", "f_f_l",
-                 "f_f")
-
-    # and Arabic romanisation characters
-    romanisation = ("uni02BC", "uni02BE", "uni02BE", "amacron", "uni02BE",
-            "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
-            "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
-            "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
-            "uni1E0D", "uni1E6D", "uni1E93", "dcroat", "uni02BB", "uni02BF",
-            "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
-            "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
-            "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
-            "ygrave", "agrave", "uni02BE", "aacute", "Amacron", "Amacron",
-            "Eacute", "uni1E6E", "Ccedilla", "uni1E6E", "Gcaron",
-            "Ycircumflex", "uni1E28", "uni1E24", "uni1E2A", "uni1E0E",
-            "Dcroat", "Scaron", "Scedilla", "uni1E62", "uni1E10", "uni1E0C",
-            "uni1E6C", "uni1E92", "Dcroat", "Rcaron", "Gdotaccent", "Gbreve",
-            "Umacron", "Imacron", "Amacron", "Amacron", "Amacron",
-            "Acircumflex", "Amacron", "Tbar", "Aacute", "Amacron", "Ygrave",
-            "Agrave", "Aacute")
-
-    # and some typographic characters
-    typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
-            "uni2015", "quoteleft", "quoteright", "quotesinglbase",
-            "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
-            "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
-            "ellipsis", "uni202F", "perthousand", "minute", "second",
-            "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
-            "fraction", "i.TRK", "minus", "uni2213", "radical", "uni2042")
-
-    for l in (ligatures, romanisation, typographic):
-        for name in l:
-            if name not in latinglyphs:
-                latinglyphs.append(name)
+    latinfont = fontforge.open("sources/latin/AmiriLatin-%s.sfd" % style)
 
     if not quran:
         # we want our ring above and below in Quran font only
         for name in ("uni030A", "uni0325"):
             font.removeGlyph(name)
-
-    subsetFont(latinfont, latinglyphs)
 
     digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
               "eight", "nine")
@@ -517,6 +411,8 @@ def mergeLatin(font, italic=False, quran=False):
     for lookup in latinfont.gpos_lookups + latinfont.gsub_lookups:
         latinfont.removeLookup(lookup)
 
+    from tempfile import mkstemp
+    tmpfont = mkstemp(suffix=".sfd")[1]
     latinfont.save(tmpfont)
     latinfont.close()
 
@@ -672,7 +568,7 @@ def makeQuran(options):
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
 
     generateFont(options, font, fea)
-    subsetFontFT(options.output, unicodes, quran=True)
+    subsetFont(options.output, unicodes, quran=True)
 
 def makeDesktop(options, generate=True):
     font = fontforge.open(options.input)
