@@ -356,7 +356,7 @@ def makeNumerators(font):
             numr.addReference(small.glyphname, psMat.translate(0, 550))
             numr.width = small.width
 
-def mergeLatin(font, italic=False, glyphs=None, quran=False):
+def mergeLatin(font, italic=False, quran=False):
     styles = {"Regular": "Regular",
               "Slanted": "Italic",
               "Bold": "Bold",
@@ -372,67 +372,64 @@ def mergeLatin(font, italic=False, glyphs=None, quran=False):
 
     validateGlyphs(latinfont) # to flatten nested refs mainly
 
-    if glyphs:
-        latinglyphs = list(glyphs)
-    else:
-        # collect latin glyphs we want to keep
-        latinglyphs = []
+    # collect latin glyphs we want to keep
+    latinglyphs = []
 
-        # we want all glyphs in latin0-9 encodings
-        for i in range(0, 9):
-            latinfont.encoding = 'latin%d' %i
-            for glyph in latinfont.glyphs("encoding"):
-                if glyph.encoding <= 255:
-                    if glyph.glyphname not in latinglyphs:
-                        latinglyphs.append(glyph.glyphname)
-                elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
-                    # keep also Unicode Latin Extended-A block
-                    if glyph.glyphname not in latinglyphs:
-                        latinglyphs.append(glyph.glyphname)
-                elif glyph.unicode == -1 and '.prop' in glyph.glyphname:
-                    # proportional digits
+    # we want all glyphs in latin0-9 encodings
+    for i in range(0, 9):
+        latinfont.encoding = 'latin%d' %i
+        for glyph in latinfont.glyphs("encoding"):
+            if glyph.encoding <= 255:
+                if glyph.glyphname not in latinglyphs:
                     latinglyphs.append(glyph.glyphname)
+            elif glyph.unicode != -1 and glyph.unicode <= 0x017F:
+                # keep also Unicode Latin Extended-A block
+                if glyph.glyphname not in latinglyphs:
+                    latinglyphs.append(glyph.glyphname)
+            elif glyph.unicode == -1 and '.prop' in glyph.glyphname:
+                # proportional digits
+                latinglyphs.append(glyph.glyphname)
 
-        # keep ligatures too
-        ligatures = ("f_b", "f_f_b",
-                     "f_h", "f_f_h",
-                     "f_i", "f_f_i",
-                     "f_j", "f_f_j",
-                     "f_k", "f_f_k",
-                     "f_l", "f_f_l",
-                     "f_f")
+    # keep ligatures too
+    ligatures = ("f_b", "f_f_b",
+                 "f_h", "f_f_h",
+                 "f_i", "f_f_i",
+                 "f_j", "f_f_j",
+                 "f_k", "f_f_k",
+                 "f_l", "f_f_l",
+                 "f_f")
 
-        # and Arabic romanisation characters
-        romanisation = ("uni02BC", "uni02BE", "uni02BE", "amacron", "uni02BE",
-                "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
-                "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
-                "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
-                "uni1E0D", "uni1E6D", "uni1E93", "dcroat", "uni02BB", "uni02BF",
-                "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
-                "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
-                "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
-                "ygrave", "agrave", "uni02BE", "aacute", "Amacron", "Amacron",
-                "Eacute", "uni1E6E", "Ccedilla", "uni1E6E", "Gcaron",
-                "Ycircumflex", "uni1E28", "uni1E24", "uni1E2A", "uni1E0E",
-                "Dcroat", "Scaron", "Scedilla", "uni1E62", "uni1E10", "uni1E0C",
-                "uni1E6C", "uni1E92", "Dcroat", "Rcaron", "Gdotaccent", "Gbreve",
-                "Umacron", "Imacron", "Amacron", "Amacron", "Amacron",
-                "Acircumflex", "Amacron", "Tbar", "Aacute", "Amacron", "Ygrave",
-                "Agrave", "Aacute")
+    # and Arabic romanisation characters
+    romanisation = ("uni02BC", "uni02BE", "uni02BE", "amacron", "uni02BE",
+            "amacron", "eacute", "uni1E6F", "ccedilla", "uni1E6F", "gcaron",
+            "ycircumflex", "uni1E29", "uni1E25", "uni1E2B", "uni1E96",
+            "uni1E0F", "dcroat", "scaron", "scedilla", "uni1E63", "uni1E11",
+            "uni1E0D", "uni1E6D", "uni1E93", "dcroat", "uni02BB", "uni02BF",
+            "rcaron", "grave", "gdotaccent", "gbreve", "umacron", "imacron",
+            "amacron", "amacron", "uni02BE", "amacron", "uni02BE",
+            "acircumflex", "amacron", "uni1E97", "tbar", "aacute", "amacron",
+            "ygrave", "agrave", "uni02BE", "aacute", "Amacron", "Amacron",
+            "Eacute", "uni1E6E", "Ccedilla", "uni1E6E", "Gcaron",
+            "Ycircumflex", "uni1E28", "uni1E24", "uni1E2A", "uni1E0E",
+            "Dcroat", "Scaron", "Scedilla", "uni1E62", "uni1E10", "uni1E0C",
+            "uni1E6C", "uni1E92", "Dcroat", "Rcaron", "Gdotaccent", "Gbreve",
+            "Umacron", "Imacron", "Amacron", "Amacron", "Amacron",
+            "Acircumflex", "Amacron", "Tbar", "Aacute", "Amacron", "Ygrave",
+            "Agrave", "Aacute")
 
-        # and some typographic characters
-        typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
-                "uni2015", "quoteleft", "quoteright", "quotesinglbase",
-                "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
-                "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
-                "ellipsis", "uni202F", "perthousand", "minute", "second",
-                "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
-                "fraction", "i.TRK", "minus", "uni2213", "radical", "uni2042")
+    # and some typographic characters
+    typographic = ("uni2010", "uni2011", "figuredash", "endash", "emdash",
+            "uni2015", "quoteleft", "quoteright", "quotesinglbase",
+            "quotereversed", "quotedblleft", "quotedblright", "quotedblbase",
+            "uni201F", "dagger", "daggerdbl", "bullet", "onedotenleader",
+            "ellipsis", "uni202F", "perthousand", "minute", "second",
+            "uni2038", "guilsinglleft", "guilsinglright", "uni203E",
+            "fraction", "i.TRK", "minus", "uni2213", "radical", "uni2042")
 
-        for l in (ligatures, romanisation, typographic):
-            for name in l:
-                if name not in latinglyphs:
-                    latinglyphs.append(name)
+    for l in (ligatures, romanisation, typographic):
+        for name in l:
+            if name not in latinglyphs:
+                latinglyphs.append(name)
 
     if not quran:
         # we want our ring above and below in Quran font only
@@ -628,7 +625,7 @@ def makeQuran(options):
     digits = ("zero", "one", "two", "three", "four", "five", "six",
               "seven", "eight", "nine")
 
-    fea = mergeLatin(font, glyphs=digits, quran=True)
+    fea = mergeLatin(font, quran=True)
 
     for glyph in font.glyphs():
         if glyph.glyphname.endswith(".ara"):
