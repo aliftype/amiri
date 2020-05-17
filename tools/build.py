@@ -335,80 +335,13 @@ def mergeLatin(font, italic=False, quran=False):
     digits = ("zero", "one", "two", "three", "four", "five", "six", "seven",
               "eight", "nine")
 
-    # common characters that can be used in Arabic and Latin need to be handled
-    # carefully in the slanted font so that right leaning italic is used with
-    # Latin, and left leaning slanted is used with Arabic, using ltra and rtla
-    # features respectively, for less OpenType savvy apps we make the default
-    # upright so it works reasonably with bot scripts
-    if italic:
-        if "bold" in style:
-            upright = fontforge.open("sources/latin/AmiriLatin-Bold.sfd")
-        else:
-            upright = fontforge.open("sources/latin/AmiriLatin-Regular.sfd")
-
-        shared = ("exclam", "quotedbl", "numbersign", "dollar", "percent",
-                  "quotesingle", "asterisk", "plus", "colon", "semicolon",
-                  "less", "equal", "greater", "question", "at", "asciicircum",
-                  "exclamdown", "section", "copyright", "logicalnot", "registered",
-                  "plusminus", "uni00B2", "uni00B3", "paragraph", "uni00B9",
-                  "ordmasculine", "onequarter", "onehalf", "threequarters",
-                  "questiondown", "quoteleft", "quoteright", "quotesinglbase",
-                  "quotereversed", "quotedblleft", "quotedblright",
-                  "quotedblbase", "uni201F", "dagger", "daggerdbl",
-                  "perthousand", "minute", "second", "guilsinglleft",
-                  "guilsinglright", "fraction", "uni2213")
-
-        for name in shared:
-            glyph = latinfont[name]
-            glyph.clear()
-            upright.selection.select(name)
-            upright.copy()
-            latinfont.createChar(upright[name].encoding, name)
-            latinfont.selection.select(name)
-            latinfont.paste()
-
-        for name in digits:
-            glyph = latinfont[name]
-            glyph.glyphname += '.ltr'
-            glyph.unicode = -1
-            upright.selection.select(name)
-            upright.copy()
-            latinfont.createChar(upright[name].encoding, name)
-            latinfont.selection.select(name)
-            latinfont.paste()
-
-            # Fixup for old FontForge that also renamed any other glyph that
-            # started with name!
-            for other in latinfont.glyphs():
-                if other.glyphname.startswith(glyph.glyphname) and other != glyph:
-                    other.glyphname = other.glyphname.replace(glyph.glyphname, name)
-
-            rtl = latinfont.createChar(-1, name + ".rtl")
-            rtl.addReference(name, italic)
-            rtl.useRefsMetrics(name)
-
-        for name in digits:
-            pname = name + ".prop"
-            glyph = latinfont[pname]
-            glyph.glyphname = name + '.ltr.prop'
-            glyph.unicode = -1
-            upright.selection.select(pname)
-            upright.copy()
-            latinfont.createChar(-1, pname)
-            latinfont.selection.select(pname)
-            latinfont.paste()
-
-            rtl = latinfont.createChar(-1, name + ".rtl" + ".prop")
-            rtl.addReference(pname, italic)
-            rtl.useRefsMetrics(pname)
-
     # copy kerning classes
     fea = ""
     if not quran:
         for lookup in latinfont.gpos_lookups:
             fea += generateFeatureString(latinfont, lookup)
 
-    for lookup in latinfont.gpos_lookups + latinfont.gsub_lookups:
+    for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
 
     from tempfile import mkstemp

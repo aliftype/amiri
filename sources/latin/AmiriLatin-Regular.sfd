@@ -50,14 +50,6 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 258
 OS2Vendor: 'PfEd'
-Lookup: 1 0 0 "'ccmp' Turkish i" { "'ccmp' Turkish i-1"  } ['ccmp' ('latn' <'TRK ' > ) ]
-Lookup: 1 0 0 "'c2sc' Capitals to Small Capitals in Latin lookup 0" { "'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable"  } ['c2sc' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'smcp' Lowercase to Small Capitals lookup 2" { "'smcp' Lowercase to Small Capitals lookup 2-1" ("sc") } ['smcp' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures lookup 0" { "'liga' Standard Ligatures lookup 0-1"  } ['liga' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'pnum' Proportional Numbers lookup 12" { "'pnum' Proportional Numbers lookup 12-1" ("prop") } ['pnum' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'zero' Slashed Zero lookup 11" { "'zero' Slashed Zero lookup 11-1"  } ['zero' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'onum' Oldstyle Figures lookup 3" { "'onum' Oldstyle Figures lookup 3-1" ("onum") } ['onum' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'ordn' Ordinals lookup 0" { "'ordn' Ordinals lookup 0-1" ("ordn") } ['ordn' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0" { "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 4" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 6" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 7" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 10" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11" [78,0,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 12" [78,0,0] } ['kern' ('DFLT' <'dflt' > 'latn' <'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -544,7 +536,6 @@ SplineSet
  89 323 73 520 73 570 c 0xd0
  73 597 91 627 122 627 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" exclam.sc
 EndChar
 
 StartChar: quotedbl
@@ -738,7 +729,6 @@ SplineSet
  187 389 157 440 157 507 c 0
  157 581 219 641 301 641 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ampersand.sc
 EndChar
 
 StartChar: quotesingle
@@ -758,7 +748,6 @@ SplineSet
  51 538 38 587 38 614 c 0
  38 641 58 683 89 683 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" quotesingle.sc
 EndChar
 
 StartChar: parenleft
@@ -777,7 +766,6 @@ SplineSet
  238 698 251 683 250 683 c 1
  158 602 107 432 107 278 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" parenleft.sc
 EndChar
 
 StartChar: parenright
@@ -796,7 +784,6 @@ SplineSet
  5 683 17 698 24 702 c 1
  138 612 220 468 220 278 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" parenright.sc
 EndChar
 
 StartChar: asterisk
@@ -889,8 +876,6 @@ SplineSet
  78 25 46 34 46 72 c 0
  46 93 69 120 104 120 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" comma.sc
-Substitution2: "'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable" comma.sc
 EndChar
 
 StartChar: hyphen
@@ -927,7 +912,6 @@ SplineSet
  321 729 l 1
  322 732 337 743 360 743 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" slash.sc
 EndChar
 
 StartChar: zero
@@ -950,10 +934,6 @@ SplineSet
  133 -3 53 142 53 312 c 0
  53 482 131 626 266 626 c 0
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" zero.prop
-Substitution2: "'zero' Slashed Zero lookup 11-1" zero.slash
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" zero.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" zero.ordn
 EndChar
 
 StartChar: one
@@ -985,9 +965,6 @@ SplineSet
  185 25 232 30 235 41 c 0
  240 57 241 84 241 113 c 2
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" one.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" one.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" one.ordn
 EndChar
 
 StartChar: two
@@ -1017,9 +994,6 @@ SplineSet
  438 151 441 152 447 152 c 0
  451 152 463 149 467 146 c 1
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" two.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" two.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" two.ordn
 EndChar
 
 StartChar: three
@@ -1052,9 +1026,6 @@ SplineSet
  119 511 113 523 113 532 c 1
  143 577 199 627 275 627 c 0xf0
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" three.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" three.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" three.ordn
 EndChar
 
 StartChar: four
@@ -1086,9 +1057,6 @@ SplineSet
  334 226 l 25
  334 512 l 25
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" four.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" four.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" four.ordn
 EndChar
 
 StartChar: five
@@ -1122,9 +1090,6 @@ SplineSet
  185 484 174 422 162 367 c 1
  189 378 240 386 266 386 c 0xe8
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" five.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" five.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" five.ordn
 EndChar
 
 StartChar: six
@@ -1152,9 +1117,6 @@ SplineSet
  356 578 211 515 167 342 c 1
  201 370 249 386 282 386 c 0
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" six.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" six.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" six.ordn
 EndChar
 
 StartChar: seven
@@ -1180,9 +1142,6 @@ SplineSet
  78 525 95 587 102 618 c 9
  398 618 l 2
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" seven.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" seven.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" seven.ordn
 EndChar
 
 StartChar: eight
@@ -1220,9 +1179,6 @@ SplineSet
  168 340 109 397 109 469 c 0
  109 552 185 628 271 628 c 0
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" eight.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" eight.onum
-Substitution2: "'ordn' Ordinals lookup 0-1" eight.ordn
 EndChar
 
 StartChar: nine
@@ -1250,8 +1206,6 @@ SplineSet
  298 76 187 15 105 -6 c 1
  96 -6 94 16 94 22 c 1
 EndSplineSet
-Substitution2: "'pnum' Proportional Numbers lookup 12-1" nine.prop
-Substitution2: "'onum' Oldstyle Figures lookup 3-1" nine.onum
 EndChar
 
 StartChar: colon
@@ -1274,7 +1228,6 @@ SplineSet
  164 339 140 313 111 313 c 0
  82 313 57 339 57 368 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" colon.sc
 EndChar
 
 StartChar: semicolon
@@ -1300,7 +1253,6 @@ SplineSet
  167 339 143 313 114 313 c 0
  85 313 60 339 60 368 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" semicolon.sc
 EndChar
 
 StartChar: less
@@ -1325,7 +1277,6 @@ SplineSet
  431 40 l 1
  431 40 434 39 434 34 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" less.sc
 EndChar
 
 StartChar: equal
@@ -1347,7 +1298,6 @@ SplineSet
  480 312 l 17
  494 312 481 265 467 258 c 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" equal.sc
 EndChar
 
 StartChar: greater
@@ -1372,7 +1322,6 @@ SplineSet
  66 -14 64 -15 63 -15 c 0
  57 -15 47 26 47 34 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" greater.sc
 EndChar
 
 StartChar: question
@@ -1405,7 +1354,6 @@ SplineSet
  254 527 219 556 182 556 c 0xb4
  130 556 123 535 98 535 c 0xd4
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" question.sc
 EndChar
 
 StartChar: at
@@ -1445,7 +1393,6 @@ SplineSet
  468 367 l 17
  459 377 441 380 428 380 c 3
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" at.sc
 EndChar
 
 StartChar: A
@@ -2503,7 +2450,6 @@ SplineSet
  77 679 l 2
  77 680 78 701 96 701 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" bracketleft.sc
 EndChar
 
 StartChar: backslash
@@ -2522,7 +2468,6 @@ SplineSet
  331 -27 320 -21 317 -14 c 0
  209 268 116 511 30 732 c 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" backslash.sc
 EndChar
 
 StartChar: bracketright
@@ -2548,7 +2493,6 @@ SplineSet
  6 704 9 707 9 707 c 1
  9 707 78 701 158 701 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" bracketright.sc
 EndChar
 
 StartChar: asciicircum
@@ -2570,7 +2514,6 @@ SplineSet
  102 502 128 540 167 617 c 0
  171 625 177 630 182 630 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" asciicircum.sc
 EndChar
 
 StartChar: underscore
@@ -2638,7 +2581,6 @@ SplineSet
  51 326 54 341 58 346 c 1
  88 374 164 426 235 426 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" a.sc
 EndChar
 
 StartChar: b
@@ -2675,7 +2617,6 @@ SplineSet
  306 26 366 110 366 189 c 0
  366 302 309 370 222 370 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" b.sc
 EndChar
 
 StartChar: c
@@ -2702,7 +2643,6 @@ SplineSet
  309 428 340 420 363 404 c 1
  367 400 373 387 373 377 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" c.sc
 EndChar
 
 StartChar: d
@@ -2743,7 +2683,6 @@ SplineSet
  343 339 l 2
  343 361 294 387 239 387 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" d.sc
 EndChar
 
 StartChar: e
@@ -2772,7 +2711,6 @@ SplineSet
  378 267 373 250 354 249 c 0
  324 247 120 242 108 242 c 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" e.sc
 EndChar
 
 StartChar: f
@@ -2813,7 +2751,6 @@ SplineSet
  94 420 94 428 94 428 c 2
  94 570 203 681 263 681 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" f.sc
 EndChar
 
 StartChar: g
@@ -2859,7 +2796,6 @@ SplineSet
  120 90 140 65 179 65 c 0
  243 65 251 65 294 65 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" g.sc
 EndChar
 
 StartChar: h
@@ -2906,7 +2842,6 @@ SplineSet
  166 354 167 355 168 356 c 0
  188 377 253 428 300 428 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" h.sc
 EndChar
 
 StartChar: i
@@ -2917,8 +2852,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 381 44 2
-Substitution2: "'ccmp' Turkish i-1" i.TRK
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" i.sc
 EndChar
 
 StartChar: j
@@ -2929,7 +2862,6 @@ LayerCount: 2
 Fore
 Refer: 315 567 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 362 44 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" j.sc
 EndChar
 
 StartChar: k
@@ -2976,7 +2908,6 @@ SplineSet
  173 195 162 199 162 199 c 1
  162 113 l 2
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" k.sc
 EndChar
 
 StartChar: l
@@ -3006,7 +2937,6 @@ SplineSet
  87 57 87 84 87 113 c 2
  87 545 l 2
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" l.sc
 EndChar
 
 StartChar: m
@@ -3068,7 +2998,6 @@ SplineSet
  181 359 182 360 183 361 c 0
  207 382 259 428 312 428 c 0xbc
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" m.sc
 EndChar
 
 StartChar: n
@@ -3114,7 +3043,6 @@ SplineSet
  181 354 182 355 183 356 c 0
  203 377 268 428 315 428 c 0xb8
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" n.sc
 EndChar
 
 StartChar: o
@@ -3137,7 +3065,6 @@ SplineSet
  121 -7 40 86 40 208 c 0
  40 334 130 429 248 429 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" o.sc
 EndChar
 
 StartChar: p
@@ -3180,7 +3107,6 @@ SplineSet
  331 26 378 111 378 190 c 0
  378 306 316 370 242 370 c 0xdc
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" p.sc
 EndChar
 
 StartChar: q
@@ -3218,7 +3144,6 @@ SplineSet
  100 -7 38 107 38 194 c 0
  38 328 175 428 279 428 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" q.sc
 EndChar
 
 StartChar: r
@@ -3256,7 +3181,6 @@ SplineSet
  177 320 180 321 181 322 c 0
  200 364 252 427 296 427 c 0xd0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" r.sc
 EndChar
 
 StartChar: s
@@ -3288,7 +3212,6 @@ SplineSet
  84 225 49 256 49 308 c 0
  49 380 118 427 190 427 c 0xd8
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" s.sc
 EndChar
 
 StartChar: t
@@ -3322,7 +3245,6 @@ SplineSet
  146 554 156 554 156 550 c 2
  156 422 l 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" t.sc
 EndChar
 
 StartChar: u
@@ -3366,7 +3288,6 @@ SplineSet
  295 48 341 79 341 102 c 2
  341 312 l 2x9c
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" u.sc
 EndChar
 
 StartChar: v
@@ -3399,7 +3320,6 @@ SplineSet
  0 397 -2 410 2 420 c 1
  42 418 60 415 100 415 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" v.sc
 EndChar
 
 StartChar: w
@@ -3447,7 +3367,6 @@ SplineSet
  -1 398 -1 414 2 420 c 1
  42 418 59 415 99 415 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" w.sc
 EndChar
 
 StartChar: x
@@ -3495,7 +3414,6 @@ SplineSet
  20 392 20 414 23 420 c 1
  55 417 82 415 120 415 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" x.sc
 EndChar
 
 StartChar: y
@@ -3532,7 +3450,6 @@ SplineSet
  -1 392 -1 418 1 420 c 1
  20 418 59 415 99 415 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" y.sc
 EndChar
 
 StartChar: z
@@ -3565,7 +3482,6 @@ SplineSet
  46 328 55 377 58 429 c 1xb0
  58 429 110 421 145 421 c 2xd0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" z.sc
 EndChar
 
 StartChar: braceleft
@@ -3598,7 +3514,6 @@ SplineSet
  25 285 27 290 28 292 c 1
  66 302 102 322 102 374 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" braceleft.sc
 EndChar
 
 StartChar: bar
@@ -3618,7 +3533,6 @@ SplineSet
  125 754 124 748 124 748 c 1
  125 -104 l 2
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" bar.sc
 EndChar
 
 StartChar: braceright
@@ -3651,7 +3565,6 @@ SplineSet
  117 625 66 672 40 685 c 1
  40 694 48 703 56 703 c 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" braceright.sc
 EndChar
 
 StartChar: asciitilde
@@ -3674,7 +3587,6 @@ SplineSet
  509 288 445 244 384 244 c 0
  336 244 301 257 265 271 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" asciitilde.sc
 EndChar
 
 StartChar: uni00A0
@@ -3706,7 +3618,6 @@ SplineSet
  134 86 149 -111 149 -161 c 0xa0
  149 -188 132 -218 101 -218 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" exclamdown.sc
 EndChar
 
 StartChar: cent
@@ -4647,7 +4558,6 @@ SplineSet
  225 249 227 253 236 254 c 1
  241 252 246 249 249 243 c 1xb4
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" questiondown.sc
 EndChar
 
 StartChar: Agrave
@@ -4975,7 +4885,6 @@ SplineSet
  66 62 54 93 54 103 c 1
  54 103 190 237 194 241 c 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" multiply.sc
 EndChar
 
 StartChar: Oslash
@@ -5134,7 +5043,6 @@ SplineSet
  94 423 94 424 94 428 c 0
  94 547 183 677 261 677 c 0xfc
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" germandbls.sc
 EndChar
 
 StartChar: agrave
@@ -5145,7 +5053,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 323 768 N 1 0 0 1 432 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" agrave.sc
 EndChar
 
 StartChar: aacute
@@ -5156,7 +5063,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 459 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" aacute.sc
 EndChar
 
 StartChar: acircumflex
@@ -5167,7 +5073,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 470 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" acircumflex.sc
 EndChar
 
 StartChar: atilde
@@ -5178,7 +5083,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 326 771 N 1 0 0 1 448 -2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" atilde.sc
 EndChar
 
 StartChar: adieresis
@@ -5189,7 +5093,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 331 776 N 1 0 0 1 442 2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" adieresis.sc
 EndChar
 
 StartChar: aring
@@ -5200,7 +5103,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 332 778 N 1 0 0 1 468 -1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" aring.sc
 EndChar
 
 StartChar: ae
@@ -5249,7 +5151,6 @@ SplineSet
  275 426 307 396 324 365 c 1
  347 390 393 428 449 428 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ae.sc
 EndChar
 
 StartChar: ccedilla
@@ -5260,7 +5161,6 @@ LayerCount: 2
 Fore
 Refer: 66 99 N 1 0 0 1 0 0 2
 Refer: 337 807 N 1 0 0 1 484 4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ccedilla.sc
 EndChar
 
 StartChar: egrave
@@ -5271,7 +5171,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 323 768 N 1 0 0 1 447 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" egrave.sc
 EndChar
 
 StartChar: eacute
@@ -5282,7 +5181,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 484 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" eacute.sc
 EndChar
 
 StartChar: ecircumflex
@@ -5293,7 +5191,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 472 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ecircumflex.sc
 EndChar
 
 StartChar: edieresis
@@ -5304,7 +5201,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 331 776 N 1 0 0 1 470 2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" edieresis.sc
 EndChar
 
 StartChar: igrave
@@ -5315,7 +5211,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 2
 Refer: 323 768 N 1 0 0 1 362 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" igrave.sc
 EndChar
 
 StartChar: iacute
@@ -5326,7 +5221,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 394 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" iacute.sc
 EndChar
 
 StartChar: icircumflex
@@ -5337,7 +5231,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 406 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" icircumflex.sc
 EndChar
 
 StartChar: idieresis
@@ -5348,7 +5241,6 @@ LayerCount: 2
 Fore
 Refer: 404 -1 N 1 0 0 1 -15 28 2
 Refer: 238 305 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" idieresis.sc
 EndChar
 
 StartChar: eth
@@ -5382,7 +5274,6 @@ SplineSet
  117 -7 39 89 39 206 c 0
  39 311 105 429 241 429 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" eth.sc
 EndChar
 
 StartChar: ntilde
@@ -5393,7 +5284,6 @@ LayerCount: 2
 Fore
 Refer: 77 110 N 1 0 0 1 0 0 2
 Refer: 326 771 N 1 0 0 1 500 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ntilde.sc
 EndChar
 
 StartChar: ograve
@@ -5404,7 +5294,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 323 768 N 1 0 0 1 497 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ograve.sc
 EndChar
 
 StartChar: oacute
@@ -5415,7 +5304,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 521 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" oacute.sc
 EndChar
 
 StartChar: ocircumflex
@@ -5426,7 +5314,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 505 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ocircumflex.sc
 EndChar
 
 StartChar: otilde
@@ -5437,7 +5324,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 326 771 N 1 0 0 1 495 -1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" otilde.sc
 EndChar
 
 StartChar: odieresis
@@ -5448,7 +5334,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 331 776 N 1 0 0 1 493 2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" odieresis.sc
 EndChar
 
 StartChar: divide
@@ -5470,7 +5355,6 @@ SplineSet
 EndSplineSet
 Refer: 330 775 N 1 0 0 1 544 -107 2
 Refer: 330 775 N 1 0 0 1 544 -481 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" divide.sc
 EndChar
 
 StartChar: oslash
@@ -5489,7 +5373,6 @@ SplineSet
  126 -8 l 17x9c
 EndSplineSet
 Refer: 78 111 N 1 0 0 1 1 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" oslash.sc
 EndChar
 
 StartChar: ugrave
@@ -5500,7 +5383,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 323 768 N 1 0 0 1 468 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ugrave.sc
 EndChar
 
 StartChar: uacute
@@ -5511,7 +5393,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 527 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uacute.sc
 EndChar
 
 StartChar: ucircumflex
@@ -5522,7 +5403,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 502 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ucircumflex.sc
 EndChar
 
 StartChar: udieresis
@@ -5533,7 +5413,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 331 776 N 1 0 0 1 483 2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" udieresis.sc
 EndChar
 
 StartChar: yacute
@@ -5544,7 +5423,6 @@ LayerCount: 2
 Fore
 Refer: 88 121 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 539 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" yacute.sc
 EndChar
 
 StartChar: thorn
@@ -5588,7 +5466,6 @@ SplineSet
  317 26 364 111 364 190 c 0
  364 306 301 370 227 370 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" thorn.sc
 EndChar
 
 StartChar: ydieresis
@@ -5599,7 +5476,6 @@ LayerCount: 2
 Fore
 Refer: 88 121 N 1 0 0 1 0 0 2
 Refer: 331 776 N 1 0 0 1 490 2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ydieresis.sc
 EndChar
 
 StartChar: Amacron
@@ -5620,7 +5496,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 327 772 N 1 0 0 1 462 26 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" amacron.sc
 EndChar
 
 StartChar: Abreve
@@ -5641,7 +5516,6 @@ LayerCount: 2
 Fore
 Refer: 64 97 N 1 0 0 1 0 0 2
 Refer: 329 774 N 1 0 0 1 461 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" abreve.sc
 EndChar
 
 StartChar: Aogonek
@@ -5744,7 +5618,6 @@ SplineSet
  205 -100 259 -36 306 1 c 1
  289 11 273 35 271 58 c 1
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" aogonek.sc
 EndChar
 
 StartChar: Cacute
@@ -5765,7 +5638,6 @@ LayerCount: 2
 Fore
 Refer: 66 99 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 501 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" cacute.sc
 EndChar
 
 StartChar: Ccircumflex
@@ -5786,7 +5658,6 @@ LayerCount: 2
 Fore
 Refer: 66 99 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 486 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ccircumflex.sc
 EndChar
 
 StartChar: Cdotaccent
@@ -5807,7 +5678,6 @@ LayerCount: 2
 Fore
 Refer: 66 99 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 490 44 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" cdotaccent.sc
 EndChar
 
 StartChar: Ccaron
@@ -5828,7 +5698,6 @@ LayerCount: 2
 Fore
 Refer: 66 99 N 1 0 0 1 0 0 2
 Refer: 333 780 N 1 0 0 1 492 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ccaron.sc
 EndChar
 
 StartChar: Dcaron
@@ -5850,7 +5719,6 @@ LayerCount: 2
 Fore
 Refer: 67 100 N 1 0 0 1 0 0 2
 Refer: 335 789 N 1 0 0 1 761 40 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" dcaron.sc
 EndChar
 
 StartChar: Dcroat
@@ -5881,7 +5749,6 @@ SplineSet
  208 529 210 540 214 547 c 1x3f
 EndSplineSet
 Refer: 67 100 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" dcroat.sc
 EndChar
 
 StartChar: Emacron
@@ -5904,7 +5771,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 327 772 N 1 0 0 1 465 26 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" emacron.sc
 EndChar
 
 StartChar: Ebreve
@@ -5925,7 +5791,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 329 774 N 1 0 0 1 490 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ebreve.sc
 EndChar
 
 StartChar: Edotaccent
@@ -5946,7 +5811,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 490 44 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" edotaccent.sc
 EndChar
 
 StartChar: Eogonek
@@ -6044,7 +5908,6 @@ SplineSet
  296 324 275 393 215 393 c 0
  133 393 111 278 113 278 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" eogonek.sc
 EndChar
 
 StartChar: Ecaron
@@ -6065,7 +5928,6 @@ LayerCount: 2
 Fore
 Refer: 68 101 N 1 0 0 1 0 0 2
 Refer: 333 780 N 1 0 0 1 483 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ecaron.sc
 EndChar
 
 StartChar: Gcircumflex
@@ -6086,7 +5948,6 @@ LayerCount: 2
 Fore
 Refer: 70 103 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 475 24 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" gcircumflex.sc
 EndChar
 
 StartChar: Gbreve
@@ -6107,7 +5968,6 @@ LayerCount: 2
 Fore
 Refer: 70 103 N 1 0 0 1 0 0 2
 Refer: 329 774 N 1 0 0 1 484 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" gbreve.sc
 EndChar
 
 StartChar: Gdotaccent
@@ -6128,7 +5988,6 @@ LayerCount: 2
 Fore
 Refer: 70 103 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 471 44 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" gdotaccent.sc
 EndChar
 
 StartChar: uni0122
@@ -6149,7 +6008,6 @@ LayerCount: 2
 Fore
 Refer: 70 103 N 1 0 0 1 0 0 2
 Refer: 334 786 N 1 0 0 1 472 -15 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni0123.sc
 EndChar
 
 StartChar: Hcircumflex
@@ -6170,7 +6028,6 @@ LayerCount: 2
 Fore
 Refer: 71 104 N 1 0 0 1 1 0 2
 Refer: 398 -1 N 1 0 0 1 371 -1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" hcircumflex.sc
 EndChar
 
 StartChar: Hbar
@@ -6211,7 +6068,6 @@ SplineSet
  22 529 24 540 28 547 c 1
 EndSplineSet
 Refer: 71 104 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" hbar.sc
 EndChar
 
 StartChar: Itilde
@@ -6232,7 +6088,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 8 0 2
 Refer: 326 771 N 1 0 0 1 393 -2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" itilde.sc
 EndChar
 
 StartChar: Imacron
@@ -6253,7 +6108,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 8 0 2
 Refer: 327 772 N 1 0 0 1 387 26 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" imacron.sc
 EndChar
 
 StartChar: Ibreve
@@ -6274,7 +6128,6 @@ LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 7 0 2
 Refer: 329 774 N 1 0 0 1 404 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ibreve.sc
 EndChar
 
 StartChar: Iogonek
@@ -6330,7 +6183,6 @@ LayerCount: 2
 Fore
 Refer: 395 -1 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 386 44 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" iogonek.sc
 EndChar
 
 StartChar: Idotaccent
@@ -6341,7 +6193,6 @@ LayerCount: 2
 Fore
 Refer: 40 73 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 408 225 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" Idotaccent.sc
 EndChar
 
 StartChar: dotlessi
@@ -6372,7 +6223,6 @@ SplineSet
  183 407 177 360 177 350 c 2
  177 317 l 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" dotlessi.sc
 EndChar
 
 StartChar: IJ
@@ -6395,7 +6245,6 @@ Refer: 330 775 N 1 0 0 1 591 44 2
 Refer: 315 567 N 1 0 0 1 229 0 2
 Refer: 330 775 N 1 0 0 1 381 44 2
 Refer: 238 305 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ij.sc
 EndChar
 
 StartChar: Jcircumflex
@@ -6416,7 +6265,6 @@ LayerCount: 2
 Fore
 Refer: 315 567 N 1 0 0 1 3 0 2
 Refer: 325 770 N 1 0 0 1 385 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" jcircumflex.sc
 EndChar
 
 StartChar: uni0136
@@ -6437,7 +6285,6 @@ LayerCount: 2
 Fore
 Refer: 74 107 N 1 0 0 1 0 0 2
 Refer: 336 806 N 1 0 0 1 501 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni0137.sc
 EndChar
 
 StartChar: kgreenlandic
@@ -6484,7 +6331,6 @@ SplineSet
  178 430 184 419 184 414 c 1
  183 407 177 360 177 350 c 2xd8
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" kgreenlandic.sc
 EndChar
 
 StartChar: Lacute
@@ -6505,7 +6351,6 @@ LayerCount: 2
 Fore
 Refer: 75 108 N 1 0 0 1 0 0 2
 Refer: 397 -1 N 1 0 0 1 414 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" lacute.sc
 EndChar
 
 StartChar: uni013B
@@ -6526,7 +6371,6 @@ LayerCount: 2
 Fore
 Refer: 75 108 N 1 0 0 1 -1 0 2
 Refer: 336 806 N 1 0 0 1 377 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni013C.sc
 EndChar
 
 StartChar: Lcaron
@@ -6549,7 +6393,6 @@ LayerCount: 2
 Fore
 Refer: 75 108 N 1 0 0 1 0 0 2
 Refer: 335 789 N 1 0 0 1 510 20 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" lcaron.sc
 EndChar
 
 StartChar: Ldot
@@ -6571,7 +6414,6 @@ LayerCount: 2
 Fore
 Refer: 75 108 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 561 -248 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ldot.sc
 EndChar
 
 StartChar: Lslash
@@ -6608,7 +6450,6 @@ SplineSet
  34 254 l 1
 EndSplineSet
 Refer: 75 108 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" lslash.sc
 EndChar
 
 StartChar: Nacute
@@ -6629,7 +6470,6 @@ LayerCount: 2
 Fore
 Refer: 77 110 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 547 -2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" nacute.sc
 EndChar
 
 StartChar: uni0145
@@ -6650,7 +6490,6 @@ LayerCount: 2
 Fore
 Refer: 77 110 N 1 0 0 1 -1 0 2
 Refer: 336 806 N 1 0 0 1 517 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni0146.sc
 EndChar
 
 StartChar: Ncaron
@@ -6671,7 +6510,6 @@ LayerCount: 2
 Fore
 Refer: 77 110 N 1 0 0 1 0 0 2
 Refer: 333 780 N 1 0 0 1 529 2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ncaron.sc
 EndChar
 
 StartChar: Eng
@@ -6761,7 +6599,6 @@ SplineSet
  258 -209 258 -205 259 -204 c 1
  315 -164 366 -117 366 45 c 2xb8
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" eng.sc
 EndChar
 
 StartChar: Omacron
@@ -6782,7 +6619,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 327 772 N 1 0 0 1 508 26 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" omacron.sc
 EndChar
 
 StartChar: Obreve
@@ -6804,7 +6640,6 @@ LayerCount: 2
 Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 329 774 N 1 0 0 1 499 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" obreve.sc
 EndChar
 
 StartChar: Ohungarumlaut
@@ -6827,7 +6662,6 @@ Fore
 Refer: 78 111 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 478 -4 2
 Refer: 324 769 N 1 0 0 1 599 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ohungarumlaut.sc
 EndChar
 
 StartChar: OE
@@ -6943,7 +6777,6 @@ SplineSet
  667 248 487 243 448 242 c 1
  448 98 537 55 607 55 c 0xbe
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" oe.sc
 EndChar
 
 StartChar: Racute
@@ -6964,7 +6797,6 @@ LayerCount: 2
 Fore
 Refer: 81 114 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 499 1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" racute.sc
 EndChar
 
 StartChar: uni0156
@@ -6985,7 +6817,6 @@ LayerCount: 2
 Fore
 Refer: 81 114 N 1 0 0 1 -1 0 2
 Refer: 336 806 N 1 0 0 1 387 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni0157.sc
 EndChar
 
 StartChar: Rcaron
@@ -7006,7 +6837,6 @@ LayerCount: 2
 Fore
 Refer: 81 114 N 1 0 0 1 0 0 2
 Refer: 333 780 N 1 0 0 1 458 5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" rcaron.sc
 EndChar
 
 StartChar: Sacute
@@ -7027,7 +6857,6 @@ LayerCount: 2
 Fore
 Refer: 82 115 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 488 -3 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" sacute.sc
 EndChar
 
 StartChar: Scircumflex
@@ -7048,7 +6877,6 @@ LayerCount: 2
 Fore
 Refer: 82 115 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 440 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" scircumflex.sc
 EndChar
 
 StartChar: Scedilla
@@ -7069,7 +6897,6 @@ LayerCount: 2
 Fore
 Refer: 82 115 N 1 0 0 1 1 0 2
 Refer: 337 807 N 1 0 0 1 432 -2 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" scedilla.sc
 EndChar
 
 StartChar: Scaron
@@ -7091,7 +6918,6 @@ LayerCount: 2
 Fore
 Refer: 82 115 N 1 0 0 1 0 0 2
 Refer: 333 780 N 1 0 0 1 441 1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" scaron.sc
 EndChar
 
 StartChar: uni0162
@@ -7112,7 +6938,6 @@ LayerCount: 2
 Fore
 Refer: 83 116 N 1 0 0 1 1 0 2
 Refer: 337 807 N 1 0 0 1 423 4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uni0163.sc
 EndChar
 
 StartChar: Tcaron
@@ -7134,7 +6959,6 @@ LayerCount: 2
 Fore
 Refer: 83 116 N 1 0 0 1 0 0 2
 Refer: 335 789 N 1 0 0 1 547 10 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" tcaron.sc
 EndChar
 
 StartChar: Tbar
@@ -7173,7 +6997,6 @@ SplineSet
  21 280 21 292 27 301 c 1xf0
 EndSplineSet
 Refer: 83 116 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" tbar.sc
 EndChar
 
 StartChar: Utilde
@@ -7194,7 +7017,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 326 771 N 1 0 0 1 499 -1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" utilde.sc
 EndChar
 
 StartChar: Umacron
@@ -7215,7 +7037,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 327 772 N 1 0 0 1 498 26 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" umacron.sc
 EndChar
 
 StartChar: Ubreve
@@ -7236,7 +7057,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 329 774 N 1 0 0 1 509 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ubreve.sc
 EndChar
 
 StartChar: Uring
@@ -7257,7 +7077,6 @@ LayerCount: 2
 Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 332 778 N 1 0 0 1 500 -1 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uring.sc
 EndChar
 
 StartChar: Uhungarumlaut
@@ -7280,7 +7099,6 @@ Fore
 Refer: 84 117 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 459 -4 2
 Refer: 324 769 N 1 0 0 1 581 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uhungarumlaut.sc
 EndChar
 
 StartChar: Uogonek
@@ -7381,7 +7199,6 @@ SplineSet
  414 424 414 408 413 403 c 0
  409 372 407 366 407 333 c 2xde
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" uogonek.sc
 EndChar
 
 StartChar: Wcircumflex
@@ -7403,7 +7220,6 @@ LayerCount: 2
 Fore
 Refer: 86 119 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 645 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" wcircumflex.sc
 EndChar
 
 StartChar: Ycircumflex
@@ -7424,7 +7240,6 @@ LayerCount: 2
 Fore
 Refer: 88 121 N 1 0 0 1 0 0 2
 Refer: 325 770 N 1 0 0 1 511 -5 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" ycircumflex.sc
 EndChar
 
 StartChar: Ydieresis
@@ -7455,7 +7270,6 @@ LayerCount: 2
 Fore
 Refer: 89 122 N 1 0 0 1 0 0 2
 Refer: 324 769 N 1 0 0 1 491 -4 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" zacute.sc
 EndChar
 
 StartChar: Zdotaccent
@@ -7476,7 +7290,6 @@ LayerCount: 2
 Fore
 Refer: 89 122 N 1 0 0 1 0 0 2
 Refer: 330 775 N 1 0 0 1 495 44 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" zdotaccent.sc
 EndChar
 
 StartChar: Zcaron
@@ -8773,7 +8586,6 @@ SplineSet
  342 475 351 522 357 542 c 0
 EndSplineSet
 LCarets2: 1 259
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f
 EndChar
 
 StartChar: f_i
@@ -8830,7 +8642,6 @@ SplineSet
  282 409 l 0xdc
 EndSplineSet
 LCarets2: 1 269
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f i
 EndChar
 
 StartChar: f_f_i
@@ -8918,7 +8729,6 @@ SplineSet
  373 554 351 627 268 627 c 0
 EndSplineSet
 LCarets2: 2 269 537
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f i
 EndChar
 
 StartChar: f_l
@@ -8976,7 +8786,6 @@ SplineSet
  94 69 94 99 94 113 c 2
 EndSplineSet
 LCarets2: 1 273
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f l
 EndChar
 
 StartChar: f_f_l
@@ -9061,7 +8870,6 @@ SplineSet
  382 532 379 542 378 545 c 0
 EndSplineSet
 LCarets2: 2 273 547
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f l
 EndChar
 
 StartChar: f_b
@@ -9127,7 +8935,6 @@ SplineSet
  676 302 619 370 532 370 c 0xbe
 EndSplineSet
 LCarets2: 1 332
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f b
 EndChar
 
 StartChar: f_f_b
@@ -9219,7 +9026,6 @@ SplineSet
  382 532 379 542 378 545 c 0
 EndSplineSet
 LCarets2: 2 273 586
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f b
 EndChar
 
 StartChar: f_k
@@ -9295,7 +9101,6 @@ SplineSet
  379 488 l 2xbc
 EndSplineSet
 LCarets2: 1 293
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f k
 EndChar
 
 StartChar: f_f_k
@@ -9397,7 +9202,6 @@ SplineSet
  381 532 378 542 377 545 c 0
 EndSplineSet
 LCarets2: 2 269 566
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f k
 EndChar
 
 StartChar: f_h
@@ -9473,7 +9277,6 @@ SplineSet
  378 486 l 2xbe
 EndSplineSet
 LCarets2: 1 293
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f h
 EndChar
 
 StartChar: f_f_h
@@ -9575,7 +9378,6 @@ SplineSet
  381 532 378 542 377 545 c 0
 EndSplineSet
 LCarets2: 2 269 576
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f h
 EndChar
 
 StartChar: f_j
@@ -9632,7 +9434,6 @@ SplineSet
  358 303 l 2xbc
 EndSplineSet
 LCarets2: 1 278
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f j
 EndChar
 
 StartChar: f_f_j
@@ -9716,7 +9517,6 @@ SplineSet
  382 532 379 542 378 545 c 0
 EndSplineSet
 LCarets2: 2 269 552
-Ligature2: "'liga' Standard Ligatures lookup 0-1" f f j
 EndChar
 
 StartChar: iogonek.dotless
@@ -10463,8 +10263,6 @@ SplineSet
  154 15 131 -11 102 -11 c 0
  73 -11 47 15 47 44 c 0
 EndSplineSet
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" period.sc
-Substitution2: "'c2sc' Capitals to Small Capitals in Latin lookup 0 subtable" period.sc
 EndChar
 
 StartChar: Gcaron
@@ -10582,7 +10380,6 @@ LayerCount: 2
 Fore
 Refer: 330 775 N 1 0 0 1 381 44 2
 Refer: 238 305 N 1 0 0 1 0 0 2
-Substitution2: "'smcp' Lowercase to Small Capitals lookup 2-1" i.TRK.sc
 EndChar
 
 StartChar: napostrophe
