@@ -108,10 +108,7 @@ def validateGlyphs(font):
         for ref in glyph.references:
             for i in flattenNestedReferences(font, ref):
                 refs.append(i)
-        if refs:
-            glyph.references = refs
-
-        glyph.round()
+        glyph.references = refs
 
 BAD_LOOKUP_FLAG = re.compile(r"(RightToLeft|IgnoreBaseGlyphs|IgnoreLigatures|IgnoreMarks),")
 
