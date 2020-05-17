@@ -279,11 +279,6 @@ def makeQuranSajdaLine(font, pos):
     fea = "\n".join(fea)
     return fea
 
-def centerGlyph(glyph):
-    width = glyph.width
-    glyph.right_side_bearing = glyph.left_side_bearing = (glyph.right_side_bearing + glyph.left_side_bearing)/2
-    glyph.width = width
-
 
 def subsetFont(path, unicodes, quran=False):
     from fontTools import subset
@@ -317,7 +312,6 @@ def mergeLatin(font, italic=False, quran=False):
         for name in ("uni030A", "uni0325"):
             font.removeGlyph(name)
 
-    #latinfont.save(latinfont.path+".tmp")
     # copy kerning classes
     fea = ""
     for lookup in latinfont.gpos_lookups:
@@ -333,11 +327,6 @@ def mergeLatin(font, italic=False, quran=False):
 
     font.mergeFonts(tmpfont)
     os.remove(tmpfont)
-
-    # This is often used for visible space, so they better be the same width.
-    if "periodcentered" in font:
-        font["periodcentered"].width = font["space"].width
-        centerGlyph(font["periodcentered"])
 
     return fea
 

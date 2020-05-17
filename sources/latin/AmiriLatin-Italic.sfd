@@ -1,4 +1,4 @@
-SplineFontDB: 3.2
+SplineFontDB: 3.0
 FontName: AmiriLatin-Italic
 FullName: Amiri Latin Italic
 FamilyName: Amiri Latin
@@ -3557,7 +3557,7 @@ EndChar
 
 StartChar: uni00A0
 Encoding: 160 160 94
-Width: 221
+Width: 292
 VWidth: 0
 Flags: HW
 LayerCount: 2
@@ -4224,19 +4224,19 @@ EndChar
 
 StartChar: periodcentered
 Encoding: 183 183 116
-Width: 216
+Width: 292
 VWidth: 0
 Flags: HW
-HStem: 200 114<73 140>
-VStem: 53 107<220 295>
+HStem: 200 114<162.626 229.626>
+VStem: 142.626 107<220 295>
 LayerCount: 2
 Fore
 SplineSet
-53 246 m 0
- 53 282 86 314 118 314 c 0
- 143 314 160 295 160 270 c 0
- 160 234 128 200 96 200 c 0
- 71 200 53 220 53 246 c 0
+142.625976562 246 m 0
+ 142.625976562 282 175.625976562 314 207.625976562 314 c 0
+ 232.625976562 314 249.625976562 295 249.625976562 270 c 0
+ 249.625976562 234 217.625976562 200 185.625976562 200 c 0
+ 160.625976562 200 142.625976562 220 142.625976562 246 c 0
 EndSplineSet
 EndChar
 
@@ -5493,7 +5493,7 @@ EndChar
 
 StartChar: space
 Encoding: 32 32 189
-Width: 221
+Width: 292
 VWidth: 0
 Flags: HW
 LayerCount: 2
