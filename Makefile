@@ -41,7 +41,7 @@ otf: $(DOTF)
 web: $(WOFF) $(WOF2) $(CSSS)
 doc: $(PDFS)
 
-$(NAME)Quran.ttf $(NAME)Quran.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)Quran.ttf $(NAME)Quran.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --quran
 
@@ -53,19 +53,19 @@ $(NAME)QuranColored.otf: $(NAME)Quran.otf $(MAKECLR)
 	@echo "   FF	$@"
 	@$(PY) $(MAKECLR) $< $@
 
-$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
-$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Italic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Italic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
-$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-Bold.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-Bold.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
-$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldItalic.sfdir $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldItalic.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
