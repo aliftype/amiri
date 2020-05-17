@@ -337,9 +337,8 @@ def mergeLatin(font, italic=False, quran=False):
 
     # copy kerning classes
     fea = ""
-    if not quran:
-        for lookup in latinfont.gpos_lookups:
-            fea += generateFeatureString(latinfont, lookup)
+    for lookup in latinfont.gpos_lookups:
+        fea += generateFeatureString(latinfont, lookup)
 
     for lookup in latinfont.gpos_lookups:
         latinfont.removeLookup(lookup)
