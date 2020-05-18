@@ -7,7 +7,6 @@ VERSION=0.112
 TOOLS=tools
 SRC=sources
 DOC=documentation
-TESTS=test-suite
 FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
 CDIST=$(NAME)-$(VERSION)-CTAN
@@ -22,8 +21,6 @@ DTTF=$(FONTS:%=%.ttf)
 DOTF=$(FONTS:%=%.otf)
 PDFS=$(DOC)/Documentation-Arabic.pdf
 FEAT=$(wildcard $(SRC)/*.fea)
-TEST=$(wildcard $(TESTS)/*.test)
-TEST+=$(wildcard $(TESTS)/*.ptest)
 
 export SOURCE_DATE_EPOCH ?= 0
 
