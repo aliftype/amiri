@@ -62,7 +62,7 @@ Ubuntu 16.04 Contributors
 
 You might face an error with importing fontforge
 
-    File "tools/build.py", line 18, in <module>
+    File "build.py", line 18, in <module>
         import fontforge
     ImportError: No module named fontforge
 

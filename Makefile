@@ -4,15 +4,14 @@ NAME=Amiri
 LATIN=AmiriLatin
 VERSION=0.112
 
-TOOLS=tools
 SRC=sources
 DOC=documentation
 FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
 CDIST=$(NAME)-$(VERSION)-CTAN
 
-BUILD=$(TOOLS)/build.py
-MAKECLR=$(TOOLS)/makeclr.py
+BUILD=build.py
+MAKECLR=makeclr.py
 PY ?= python
 FF=$(PY) $(BUILD)
 
