@@ -164,9 +164,10 @@ def generateFeatures(font, args):
 
     return fea_text
 
-def generateFont(options, font, feastring):
+def generateFont(options, font, feastring=None):
     fea = generateFeatures(font, args)
-    fea += feastring
+    if feastring:
+        fea += feastring
 
     font.selection.all()
     font.correctReferences()
@@ -287,23 +288,8 @@ def subsetFont(path, unicodes):
 
 def mergeLatin(font):
     fontname = font.fontname.replace("Amiri", "AmiriLatin")
-    latinfont = fontforge.open("sources/latin/%s.sfd" % fontname)
+    font.mergeFonts(fontforge.open("sources/latin/%s.sfd" % fontname))
 
-    # copy kerning classes
-    fea = ""
-    for lookup in latinfont.gpos_lookups:
-        fea += generateFeatureString(latinfont, lookup)
-        latinfont.removeLookup(lookup)
-
-    from tempfile import mkstemp
-    tmpfont = mkstemp(suffix=".sfd")[1]
-    latinfont.save(tmpfont)
-    latinfont.close()
-
-    font.mergeFonts(tmpfont)
-    os.remove(tmpfont)
-
-    return fea
 
 def makeSlanted(options):
     font = makeDesktop(options, False)
@@ -337,8 +323,8 @@ def makeSlanted(options):
     else:
         font.fontname = font.fontname.replace("Regular", "Slanted")
 
-    fea = mergeLatin(font)
-    generateFont(options, font, fea)
+    mergeLatin(font)
+    generateFont(options, font)
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
@@ -363,7 +349,7 @@ def scaleGlyph(glyph, amount):
 
 def makeQuran(options):
     font = makeDesktop(options, False)
-    fea = mergeLatin(font)
+    mergeLatin(font)
 
     # fix metadata
     font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
@@ -382,7 +368,7 @@ def makeQuran(options):
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    fea += makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
+    fea = makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
     generateFont(options, font, fea)
 
     unicodes =  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -422,8 +408,8 @@ def makeDesktop(options, generate=True):
     cleanAnchors(font)
 
     if generate:
-        fea = mergeLatin(font)
-        generateFont(options, font, fea)
+        mergeLatin(font)
+        generateFont(options, font)
     else:
         return font
 
