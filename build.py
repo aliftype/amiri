@@ -294,24 +294,23 @@ def mergeLatin(font):
 def makeSlanted(options):
     font = makeDesktop(options, False)
 
-    # compute amount of skew, magic formula copied from fontforge sources
-    import math
-    skew = psMat.skew(-options.slant * math.pi/180.0)
-
     # Remove Arabic math alphanumerics, they are upright-only.
     font.selection.select(["ranges"], "u1EE00", "u1EEFF")
     for glyph in font.selection.byGlyphs:
         font.removeGlyph(glyph)
 
-    font.selection.all()
     punct = ("exclam", "period.ara", "guillemotleft.ara", "guillemotright.ara",
              "braceleft", "bar", "braceright", "bracketleft", "bracketright",
              "parenleft", "parenright", "slash", "backslash", "brokenbar",
              "uni061F", "dot.1", "dot.2")
 
+    font.selection.all()
     for name in punct:
         font.selection.select(["less"], name)
 
+    # compute amount of skew, magic formula copied from fontforge sources
+    import math
+    skew = psMat.skew(-options.slant * math.pi/180.0)
     font.transform(skew)
 
     # fix metadata
