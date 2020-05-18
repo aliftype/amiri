@@ -285,7 +285,7 @@ def subsetFont(path, unicodes):
     font.save(path)
 
 
-def mergeLatin(font, italic=False):
+def mergeLatin(font):
     fontname = font.fontname.replace("Amiri", "AmiriLatin")
     latinfont = fontforge.open("sources/latin/%s.sfd" % fontname)
 
@@ -337,7 +337,7 @@ def makeSlanted(options):
     else:
         font.fontname = font.fontname.replace("Regular", "Slanted")
 
-    fea = mergeLatin(font, italic=skew)
+    fea = mergeLatin(font)
     generateFont(options, font, fea)
 
 def scaleGlyph(glyph, amount):
