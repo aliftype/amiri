@@ -505,7 +505,7 @@ Grid
 -1000 806.640625 m 1
  2000 806.640625 l 1025
 EndSplineSet
-BeginChars: 65602 490
+BeginChars: 65602 491
 
 StartChar: space
 Encoding: 32 32 0
@@ -10712,6 +10712,15 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 469 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: uni0325
+Encoding: 805 805 490
+Width: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 332 778 N 1 0 0 1 0 -686 2
 EndChar
 EndChars
 EndSplineFont

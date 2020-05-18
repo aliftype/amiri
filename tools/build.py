@@ -363,13 +363,6 @@ def scaleGlyph(glyph, amount):
 
 def makeQuran(options):
     font = makeDesktop(options, False)
-
-    for glyph in font.glyphs():
-        name = glyph.glyphname
-        if name.endswith(".ara") or name.endswith(".quran"):
-            glyph.glyphname = glyph.glyphname.rsplit(".", 1)[0]
-            glyph.unicode = fontforge.unicodeFromName(glyph.glyphname)
-
     fea = mergeLatin(font)
 
     # fix metadata
@@ -390,6 +383,7 @@ def makeQuran(options):
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
     fea += makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
+    generateFont(options, font, fea)
 
     unicodes =  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                  '.', '(', ')', '[', ']', '{', '}', '|', ' ', '/', '\\',
@@ -418,8 +412,6 @@ def makeQuran(options):
                  0x202B, 0x202C, 0x202D, 0x202E, 0x202F, 0x25CC, 0xFD3E,
                  0xFD3F, 0xFDFA, 0xFDFD]
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
-
-    generateFont(options, font, fea)
     subsetFont(options.output, unicodes)
 
 def makeDesktop(options, generate=True):
