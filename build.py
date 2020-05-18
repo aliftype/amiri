@@ -43,7 +43,6 @@ def cleanAnchors(font):
             "DotBelow",
             "DotBelowAlt",
             "DotHmaza",
-            "HighHamza",
             "MarkDotAbove",
             "MarkDotBelow",
             "RingBelow",
