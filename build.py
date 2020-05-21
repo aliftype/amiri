@@ -104,7 +104,7 @@ def generateFont(options, font):
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
     else:
-        compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
+        otf = compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
 
     # Filter-out useless Macintosh names
