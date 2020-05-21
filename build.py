@@ -93,21 +93,12 @@ def generateFont(options, font, fea=None):
     info.versionMajor, info.versionMinor = int(major), int(minor)
     info.copyright = info.copyright % datetime.now().year
 
-    try:
-        if options.output.endswith(".ttf"):
-            otf = compileTTF(font, inplace=True, removeOverlaps=True,
-                overlapsBackend="pathops", featureWriters=[])
-        else:
-            compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
-                overlapsBackend="pathops", featureWriters=[])
-    except:
-        import os
-        from tempfile import NamedTemporaryFile
-        with NamedTemporaryFile(delete=False) as tmp:
-            tmp.write(font.features.text.encode("utf-8"))
-            print("Failed! Inspect temporary file: %r" % tmp.name)
-        os.remove(args.output)
-        raise
+    if options.output.endswith(".ttf"):
+        otf = compileTTF(font, inplace=True, removeOverlaps=True,
+            overlapsBackend="pathops", featureWriters=[])
+    else:
+        compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
+            overlapsBackend="pathops", featureWriters=[])
 
     # Filter-out useless Macintosh names
     name = otf["name"]
@@ -236,7 +227,21 @@ def mergeLatin(font):
     font.features.text = fea.asFea()
 
 
+def transformAnchor(anchor, matrix):
+    if not anchor:
+        return anchor
+
+    from fontTools.misc.fixedTools import otRound
+    anchor.x, anchor.y = matrix.transformPoint((anchor.x, anchor.y))
+    anchor.x = otRound(anchor.x)
+    anchor.y = otRound(anchor.y)
+
+    return anchor
+
+
 def makeSlanted(options):
+    from fontTools.feaLib import ast
+
     font = makeDesktop(options, False)
 
     exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
@@ -260,7 +265,21 @@ def makeSlanted(options):
     else:
         info.postscriptFontName = info.postscriptFontName.replace("Regular", "Slanted")
 
+    matrix = skew.context.matrix
     mergeLatin(font)
+    fea = parseFea(font.features.text)
+    for block in fea.statements:
+        if isinstance(block, (ast.LookupBlock, ast.FeatureBlock)):
+            for st in block.statements:
+                if isinstance(st, (ast.MarkMarkPosStatement, ast.MarkBasePosStatement)):
+                    st.marks = [(transformAnchor(a, matrix), m) for a, m in st.marks]
+                elif isinstance(st, ast.CursivePosStatement):
+                    st.entryAnchor = transformAnchor(st.entryAnchor, matrix)
+                    st.exitAnchor = transformAnchor(st.exitAnchor, matrix)
+
+    with open("f.fea", "w") as f:
+        f.write(fea.asFea())
+    font.features.text = fea.asFea()
     otf = generateFont(options, font)
     otf.save(options.output)
 
