@@ -79,13 +79,11 @@ def generateFeatures(font, args):
     o = StringIO()
     preprocessor.write(o)
     fea = o.getvalue()
-    font.features.text = fea.replace("{%anchors%}", font.features.text)
+    font.features.text = fea.replace("#{%anchors%}", font.features.text.asFea())
 
 
-def generateFont(options, font, fea=None):
+def generateFont(options, font):
     generateFeatures(font, options)
-    if fea:
-        font.features.text += fea
 
     from datetime import datetime
     info = font.info
@@ -224,7 +222,7 @@ def mergeLatin(font):
                     gdef.statements.append(st)
         else:
             fea.statements.append(block)
-    font.features.text = fea.asFea()
+    font.features.text = fea
 
 
 def transformAnchor(anchor, matrix):
@@ -267,7 +265,7 @@ def makeSlanted(options):
 
     matrix = skew.context.matrix
     mergeLatin(font)
-    fea = parseFea(font.features.text)
+    fea = font.features.text
     for block in fea.statements:
         if isinstance(block, (ast.LookupBlock, ast.FeatureBlock)):
             for st in block.statements:
@@ -277,9 +275,6 @@ def makeSlanted(options):
                     st.entryAnchor = transformAnchor(st.entryAnchor, matrix)
                     st.exitAnchor = transformAnchor(st.exitAnchor, matrix)
 
-    with open("f.fea", "w") as f:
-        f.write(fea.asFea())
-    font.features.text = fea.asFea()
     otf = generateFont(options, font)
     otf.save(options.output)
 

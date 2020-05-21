@@ -161,7 +161,7 @@ feature kern {
 } kern;
 
 # generated features for anchor points will be inserted here by build script
-{%anchors%}
+#{%anchors%}
 
 # With ss05 on, kasra is below shadda, so move the shadda up a bit to
 # compensate for the kasra.
