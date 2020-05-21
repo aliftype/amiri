@@ -287,7 +287,7 @@ def subsetFont(path, unicodes):
 
 def mergeLatin(font):
     fontname = font.fontname.replace("Amiri", "AmiriLatin")
-    font.mergeFonts(fontforge.open("sources/latin/%s.sfd" % fontname))
+    font.mergeFonts("sources/latin/%s.sfd" % fontname)
 
 
 def makeSlanted(options):
