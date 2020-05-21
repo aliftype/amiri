@@ -24,6 +24,7 @@ from sfdLib.parser import SFDParser
 from ufo2ft import compileOTF, compileTTF
 
 from ufo2ft.filters.transformations import TransformationsFilter
+from fontTools.feaLib import ast
 
 
 def cleanAnchors(font):
@@ -111,11 +112,14 @@ def generateFont(options, font):
 
 
 def drawOverline(font, name, uni, pos, thickness, width):
-    glyph = font.createChar(uni, name)
-    glyph.width = 0
-    glyph.glyphclass = "mark"
+    try:
+        glyph = font[name]
+    except KeyError:
+        glyph = font.newGlyph(name)
+        glyph.width = 0
+        #glyph.glyphclass = "mark"
 
-    pen = glyph.glyphPen()
+    pen = glyph.getPen()
 
     pen.moveTo((-50, pos))
     pen.lineTo((-50, pos + thickness))
@@ -126,43 +130,48 @@ def drawOverline(font, name, uni, pos, thickness, width):
     return glyph
 
 
-def makeQuranSajdaLine(font, pos):
-    thickness = font.uwidth # underline width (thickness)
+def makeQuranSajdaLine(font):
+    pos = font["uni06D7"].getBounds(font)[1]
+    thickness = font.info.postscriptUnderlineThickness
     minwidth = 100
 
+
+    _, gdefclasses = findGDEF(font)
     # collect glyphs grouped by their widths rounded by 100 units, we will use
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
-    for glyph in font.glyphs():
+    for glyph in font:
         u = glyph.unicode
-        if ((u < 0) or (0x0600 <= u <= 0x06FF) or u == ord(" ")) \
+        if ((u is None ) or (0x0600 <= u <= 0x06FF) or u == ord(" ")) \
         and glyph.width > 0:
             width = round(glyph.width / minwidth) * minwidth
             width = width > minwidth and width or minwidth
             if not width in widths:
                 widths[width] = []
-            widths[width].append(glyph.glyphname)
+            widths[width].append(glyph.name)
 
     base = 'uni0305'
     drawOverline(font, base, 0x0305, pos, thickness, 500)
 
-    fea = []
-    fea.append("@OverSet = [%s];" % base)
-    fea.append("feature mark {")
-    fea.append("  lookupflag UseMarkFilteringSet @OverSet;")
+    mark = ast.FeatureBlock("mark")
+    overset = ast.GlyphClassDefinition("OverSet", ast.GlyphClass([base]))
+    lookupflag = ast.LookupFlagStatement(markFilteringSet=ast.GlyphClassName(overset))
+    mark.statements.extend([overset, lookupflag])
 
     for width in sorted(widths.keys()):
         # for each width group we create an over/underline glyph with the same
         # width, and add a contextual substitution lookup to use it when an
         # over/underline follows any glyph in this group
-        name = 'uni0305.%d' % width
-        drawOverline(font, name, -1, pos, thickness, width)
-        fea.append("  sub [%s] %s' by %s;" % (" ".join(widths[width]), base, name))
+        replace = f"uni0305.{width}"
+        drawOverline(font, replace, None, pos, thickness, width)
+        sub = ast.SingleSubstStatement([ast.GlyphName(base)],
+                                       [ast.GlyphName(replace)],
+                                       [ast.GlyphClass(widths[width])],
+                                       [], False)
+        gdefclasses.markGlyphs.append(replace)
+        mark.statements.append(sub)
 
-    fea.append("} mark;")
-
-    fea = "\n".join(fea)
-    return fea
+    font.features.text.statements.append(mark)
 
 
 def subsetFont(otf, unicodes):
@@ -180,26 +189,17 @@ def subsetFont(otf, unicodes):
 def parseFea(text):
     from fontTools.feaLib.parser import Parser
 
+    if isinstance(text, ast.FeatureFile):
+        return text
     f = StringIO(text)
     fea = Parser(f).parse()
     return fea
 
 
-def mergeLatin(font):
-    from fontTools.feaLib import ast
-
-    fontname = font.info.postscriptFontName.replace("Amiri", "AmiriLatin")
-    latin = openFont("sources/latin/%s.sfd" % fontname)
-    for glyph in latin:
-        try:
-            font.addGlyph(glyph)
-        except KeyError:
-            pass
-
-    # Merge features
+def findGDEF(font):
+    fea = font.features.text = parseFea(font.features.text)
     gdef = None
     classes = None
-    fea = parseFea(font.features.text)
     for block in fea.statements:
         if isinstance(block, ast.TableBlock) and block.name == "GDEF":
             gdef = block
@@ -209,6 +209,21 @@ def mergeLatin(font):
                     break
             break
 
+    return gdef, classes
+
+
+def mergeLatin(font):
+    fontname = font.info.postscriptFontName.replace("Amiri", "AmiriLatin")
+    latin = openFont("sources/latin/%s.sfd" % fontname)
+    for glyph in latin:
+        try:
+            font.addGlyph(glyph)
+        except KeyError:
+            pass
+
+    # Merge features
+    gdef, classes = findGDEF(font)
+    fea = font.features.text
     latinfea = parseFea(latin.features.text)
     for block in latinfea.statements:
         if isinstance(block, ast.TableBlock) and block.name == "GDEF":
@@ -238,8 +253,6 @@ def transformAnchor(anchor, matrix):
 
 
 def makeSlanted(options):
-    from fontTools.feaLib import ast
-
     font = makeDesktop(options, False)
 
     exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
@@ -279,50 +292,34 @@ def makeSlanted(options):
     otf.save(options.output)
 
 
-def scaleGlyph(glyph, amount):
-    """Scales the glyph, but keeps it centered around its original bounding
-    box."""
-    import psMat
-
-    width = glyph.width
-    bbox = glyph.boundingBox()
-    x = (bbox[0] + bbox[2]) / 2
-    y = (bbox[1] + bbox[3]) / 2
-    move = psMat.translate(-x, -y)
-    scale = psMat.scale(amount)
-
-    matrix = list(scale)
-    matrix[4] = move[4] * scale[0] + x;
-    matrix[5] = move[5] * scale[3] + y;
-
-    glyph.transform(matrix)
-    if width == 0:
-        glyph.width = width
-
-
 def makeQuran(options):
     font = makeDesktop(options, False)
     mergeLatin(font)
 
     # fix metadata
-    font.fontname = font.fontname.replace("-Regular", "Quran-Regular")
-    font.familyname += " Quran"
-    font.fullname += " Quran"
-    font.os2_typoascent = font.hhea_ascent = 1815
-    sample = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
-    font.appendSFNTName('English (US)', 'Sample Text', sample)
+    info = font.info
+    info.postscriptFontName = info.postscriptFontName.replace("-Regular", "Quran-Regular")
+    info.familyName += " Quran"
+    info.postscriptFullName += " Quran"
+    info.openTypeNameSampleText  = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
+    info.openTypeOS2TypoAscender = info.openTypeHheaAscender = 1815
 
     # scale some vowel marks and dots down a bit
-    scaleGlyph(font["uni0651"], 0.8)
-    for mark in ("uni064B", "uni064C", "uni064E", "uni064F", "uni06E1",
-                 "uni08F0", "uni08F1", "uni08F2",
-                 "TwoDots.a", "ThreeDots.a", "vTwoDots.a"):
-        scaleGlyph(font[mark], 0.9)
+    marks = [
+        "uni064B", "uni064C", "uni064E", "uni064F", "uni06E1", "uni08F0",
+        "uni08F1", "uni08F2", "TwoDots.a", "ThreeDots.a", "vTwoDots.a",
+    ]
+    shadda = ["uni0651"]
+    for v, include in ((90, marks), (80, shadda)):
+        scale = TransformationsFilter(ScaleX=v, ScaleY=v,
+                Origin=TransformationsFilter.Origin.CAP_HEIGHT,
+                include=include)
+        scale(font)
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    fea = makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
-    otf = generateFont(options, font, fea)
+    makeQuranSajdaLine(font)
+    otf = generateFont(options, font)
 
     unicodes =  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                  '.', '(', ')', '[', ']', '{', '}', '|', ' ', '/', '\\',
