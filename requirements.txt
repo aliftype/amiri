@@ -1,3 +1,7 @@
-fonttools==3.42.0
-opentype-sanitizer==7.1.9
-pcpp==1.20.1
+fonttools[ufo,lxml]==4.10.0
+pcpp==1.21
+afdko==3.3.0
+skia-pathops==0.4.1
+ufo2ft==2.14.0
+ufoLib2==0.7.1
+git+git://github.com/alif-type/sfdLib.git@v1.0.2#egg=sfdLib

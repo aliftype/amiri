@@ -17,18 +17,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from __future__ import print_function
-
-import fontforge
-import psMat
-import os
-import re
-
-from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
-from fontTools.misc.py23 import StringIO, tounicode
-from fontTools.ttLib import TTFont
+from io import StringIO
 from pcpp.preprocessor import Preprocessor
-from tempfile import NamedTemporaryFile
+
+from sfdLib.parser import SFDParser
+from ufo2ft import compileOTF, compileTTF
+
+from ufo2ft.filters.transformations import TransformationsFilter
+
 
 def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
@@ -64,61 +60,6 @@ def cleanAnchors(font):
         lookup = font.getLookupOfSubtable(subtable)
         font.removeLookup(lookup)
 
-def flattenNestedReferences(font, ref, new_transform=(1, 0, 0, 1, 0, 0)):
-    """Flattens nested references by replacing them with the ultimate reference
-    and applying any transformation matrices involved, so that the final font
-    has only simple composite glyphs. This to work around what seems to be an
-    Apple bug that results in ignoring transformation matrix of nested
-    references."""
-
-    name = ref[0]
-    transform = ref[1]
-    glyph = font[name]
-    new_ref = []
-    if glyph.references and glyph.foreground.isEmpty():
-        for nested_ref in glyph.references:
-            for i in flattenNestedReferences(font, nested_ref, transform):
-                matrix = psMat.compose(i[1], new_transform)
-                new_ref.append((i[0], matrix))
-    else:
-        matrix = psMat.compose(transform, new_transform)
-        new_ref.append((name, matrix))
-
-    return new_ref
-
-def validateGlyphs(font):
-    """Fixes some common FontForge validation warnings, currently handles:
-        * wrong direction
-        * flipped references
-    In addition to flattening nested references."""
-
-    wrong_dir = 0x8
-    flipped_ref = 0x10
-    for glyph in font.glyphs():
-        state = glyph.validate(True)
-        refs = []
-
-        if state & flipped_ref:
-            glyph.unlinkRef()
-            glyph.correctDirection()
-        if state & wrong_dir:
-            glyph.correctDirection()
-
-        for ref in glyph.references:
-            for i in flattenNestedReferences(font, ref):
-                refs.append(i)
-        glyph.references = refs
-
-BAD_LOOKUP_FLAG = re.compile(r"(RightToLeft|IgnoreBaseGlyphs|IgnoreLigatures|IgnoreMarks),")
-
-def generateFeatureString(font, lookup):
-    with NamedTemporaryFile() as tmp:
-        font.generateFeatureFile(tmp.name, lookup)
-        fea = tmp.read().decode("utf-8")
-        # Older versions of FontForge incorrectly seperated lookup flags with
-        # coma.
-        fea = BAD_LOOKUP_FLAG.sub(r"\1", fea)
-        return fea
 
 def generateFeatures(font, args):
     """Generates feature text by merging feature file with mark positioning
@@ -126,91 +67,58 @@ def generateFeatures(font, args):
     lookups (from the feature file), which is required by Uniscribe to get
     correct mark positioning for kerned glyphs."""
 
-    oldfea = ""
-    for lookup in font.gpos_lookups:
-        oldfea += generateFeatureString(font, lookup)
-
-    for lookup in font.gpos_lookups + font.gsub_lookups:
-        font.removeLookup(lookup)
-
     # open feature file and insert the generated GPOS features in place of the
     # placeholder text
+    preprocessor = Preprocessor()
+    if args.quran:
+        preprocessor.define("QURAN")
+    elif args.slant:
+        preprocessor.define("ITALIC")
     with open(args.features) as f:
-        o = StringIO()
-        preprocessor = Preprocessor()
-        if args.quran:
-            preprocessor.define("QURAN")
-        elif args.slant:
-            preprocessor.define("ITALIC")
         preprocessor.parse(f)
-        preprocessor.write(o)
-        fea_text = tounicode(o.getvalue(), "utf-8")
-    fea_text = fea_text.replace("{%anchors%}", oldfea)
+    o = StringIO()
+    preprocessor.write(o)
+    fea = o.getvalue()
+    font.features.text = fea.replace("{%anchors%}", font.features.text)
 
-    bases = [g.glyphname for g in font.glyphs() if g.glyphclass != "mark"]
-    marks = [g.glyphname for g in font.glyphs() if g.glyphclass == "mark"]
-    carets = {g.glyphname: g.lcarets for g in font.glyphs() if any(g.lcarets)}
-    gdef = []
-    gdef.append("@GDEFBase = [%s];" % " ".join(bases))
-    gdef.append("@GDEFMark = [%s];" % " ".join(marks))
-    gdef.append("table GDEF {")
-    gdef.append("  GlyphClassDef @GDEFBase, , @GDEFMark, ;")
-    for k, v in carets.items():
-        gdef.append("  LigatureCaretByPos %s %s;" % (k, " ".join(map(str, v))))
-    gdef.append("} GDEF;")
 
-    fea_text += "\n".join(gdef)
-
-    return fea_text
-
-def generateFont(options, font, feastring=None):
-    fea = generateFeatures(font, args)
-    if feastring:
-        fea += feastring
-
-    font.selection.all()
-    font.correctReferences()
-    font.selection.none()
-
-    # fix some common font issues
-    validateGlyphs(font)
+def generateFont(options, font, fea=None):
+    generateFeatures(font, options)
+    if fea:
+        font.features.text += fea
 
     from datetime import datetime
-    version = "%07.3f" % args.version
-    font.version = font.version % version
-    font.copyright = font.copyright % datetime.now().year
-    font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (
-        version, font.os2_vendor, font.fontname))
-
-    flags = ["opentype", "dummy-dsig", "omit-instructions"]
-    font.generate(args.output, flags=flags)
+    info = font.info
+    major, minor = options.version.split(".")
+    info.versionMajor, info.versionMinor = int(major), int(minor)
+    info.copyright = info.copyright % datetime.now().year
 
     try:
-        ttfont = TTFont(args.output)
-        addOpenTypeFeaturesFromString(ttfont, fea)
-
-        # Filter-out useless Macintosh names
-        name = ttfont["name"]
-        name.names = [n for n in name.names if n.platformID != 1]
-
-        # https://github.com/fontforge/fontforge/pull/3235
-        head = ttfont["head"]
-        # fontDirectionHint is deprecated and must be set to 2
-        head.fontDirectionHint = 2
-        # unset bits 6..10
-        head.flags &= ~0x7e0
-
-        # Drop useless table with timestamp
-        if "FFTM" in ttfont:
-            del ttfont["FFTM"]
-
-        ttfont.save(args.output)
+        if options.output.endswith(".ttf"):
+            otf = compileTTF(font, inplace=True, removeOverlaps=True,
+                overlapsBackend="pathops", featureWriters=[])
+        else:
+            compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
+                overlapsBackend="pathops", featureWriters=[])
     except:
+        import os
+        from tempfile import NamedTemporaryFile
         with NamedTemporaryFile(delete=False) as tmp:
-            tmp.write(fea.encode("utf-8"))
+            tmp.write(font.features.text.encode("utf-8"))
             print("Failed! Inspect temporary file: %r" % tmp.name)
-            os.remove(args.output)
+        os.remove(args.output)
         raise
+
+    # Filter-out useless Macintosh names
+    name = otf["name"]
+    name.names = [n for n in name.names if n.platformID != 1]
+
+    head = otf["head"]
+    OS_2 = otf["OS/2"]
+    OS_2.usWinAscent += head.yMax
+    OS_2.usWinDescent += abs(head.yMin)
+
+    return otf
 
 
 def drawOverline(font, name, uni, pos, thickness, width):
@@ -228,10 +136,8 @@ def drawOverline(font, name, uni, pos, thickness, width):
 
     return glyph
 
-def makeQuranSajdaLine(font, pos):
-    # test string:
-    # صِ̅فْ̅ ̅خَ̅ل̅قَ̅ ̅بًّ̅ صِ̲فْ̲ ̲خَ̲ل̲قَ̲ ̲بِ̲
 
+def makeQuranSajdaLine(font, pos):
     thickness = font.uwidth # underline width (thickness)
     minwidth = 100
 
@@ -270,66 +176,100 @@ def makeQuranSajdaLine(font, pos):
     return fea
 
 
-def subsetFont(path, unicodes):
+def subsetFont(otf, unicodes):
     from fontTools import subset
-
-    font = TTFont(path, recalcTimestamp=False)
 
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', name_languages='*',
         notdef_outline=True, glyph_names=True)
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(unicodes=unicodes)
-    subsetter.subset(font)
+    subsetter.subset(otf)
+    return otf
 
-    font.save(path)
+
+def parseFea(text):
+    from fontTools.feaLib.parser import Parser
+
+    f = StringIO(text)
+    fea = Parser(f).parse()
+    return fea
 
 
 def mergeLatin(font):
-    fontname = font.fontname.replace("Amiri", "AmiriLatin")
-    font.mergeFonts("sources/latin/%s.sfd" % fontname)
+    from fontTools.feaLib import ast
+
+    fontname = font.info.postscriptFontName.replace("Amiri", "AmiriLatin")
+    latin = openFont("sources/latin/%s.sfd" % fontname)
+    for glyph in latin:
+        try:
+            font.addGlyph(glyph)
+        except KeyError:
+            pass
+
+    # Merge features
+    gdef = None
+    classes = None
+    fea = parseFea(font.features.text)
+    for block in fea.statements:
+        if isinstance(block, ast.TableBlock) and block.name == "GDEF":
+            gdef = block
+            for statement in block.statements:
+                if isinstance(statement, ast.GlyphClassDefStatement):
+                    classes = statement
+                    break
+            break
+
+    latinfea = parseFea(latin.features.text)
+    for block in latinfea.statements:
+        if isinstance(block, ast.TableBlock) and block.name == "GDEF":
+            for st in block.statements:
+                if isinstance(st, ast.GlyphClassDefStatement):
+                    classes.baseGlyphs.extend(st.baseGlyphs.glyphSet())
+                    classes.componentGlyphs.extend(st.componentGlyphs.glyphSet())
+                    classes.ligatureGlyphs.extend(st.ligatureGlyphs.glyphSet())
+                    classes.markGlyphs.extend(st.markGlyphs.glyphSet())
+                else:
+                    gdef.statements.append(st)
+        else:
+            fea.statements.append(block)
+    font.features.text = fea.asFea()
 
 
 def makeSlanted(options):
     font = makeDesktop(options, False)
 
-    # Remove Arabic math alphanumerics, they are upright-only.
-    font.selection.select(["ranges"], "u1EE00", "u1EEFF")
-    for glyph in font.selection.byGlyphs:
-        font.removeGlyph(glyph)
+    exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
+    exclude += [
+        "exclam", "period.ara", "guillemotleft.ara", "guillemotright.ara",
+        "braceleft", "bar", "braceright", "bracketleft", "bracketright",
+        "parenleft", "parenright", "slash", "backslash", "brokenbar",
+        "uni061F", "dot.1", "dot.2",
+    ]
 
-    punct = ("exclam", "period.ara", "guillemotleft.ara", "guillemotright.ara",
-             "braceleft", "bar", "braceright", "bracketleft", "bracketright",
-             "parenleft", "parenright", "slash", "backslash", "brokenbar",
-             "uni061F", "dot.1", "dot.2")
-
-    font.selection.all()
-    for name in punct:
-        font.selection.select(["less"], name)
-
-    # compute amount of skew, magic formula copied from fontforge sources
-    import math
-    skew = psMat.skew(-options.slant * math.pi/180.0)
-    font.transform(skew)
+    skew = TransformationsFilter(Slant=-options.slant, exclude=exclude)
+    skew(font)
 
     # fix metadata
-    font.italicangle = options.slant
-    font.fullname += " Slanted"
-    if font.weight == "Bold":
-        font.fontname = font.fontname.replace("Bold", "BoldSlanted")
-        font.appendSFNTName("English (US)",   "SubFamily", "Bold Slanted")
+    info = font.info
+    info.italicAngle = options.slant
+    info.postscriptFullName += " Slanted"
+    if info.postscriptWeightName == "Bold":
+        info.postscriptFontName = info.postscriptFontName.replace("Bold", "BoldSlanted")
+        info.styleName = "Bold Slanted"
     else:
-        font.fontname = font.fontname.replace("Regular", "Slanted")
+        info.postscriptFontName = info.postscriptFontName.replace("Regular", "Slanted")
 
     mergeLatin(font)
-    generateFont(options, font)
+    otf = generateFont(options, font)
+    otf.save(options.output)
+
 
 def scaleGlyph(glyph, amount):
     """Scales the glyph, but keeps it centered around its original bounding
-    box.
+    box."""
+    import psMat
 
-    Logic copied (and simplified for our simple case) from code of FontForge
-    transform dialog, since that logic is not exported to Python interface."""
     width = glyph.width
     bbox = glyph.boundingBox()
     x = (bbox[0] + bbox[2]) / 2
@@ -344,6 +284,7 @@ def scaleGlyph(glyph, amount):
     glyph.transform(matrix)
     if width == 0:
         glyph.width = width
+
 
 def makeQuran(options):
     font = makeDesktop(options, False)
@@ -367,7 +308,7 @@ def makeQuran(options):
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
     fea = makeQuranSajdaLine(font, font[0x06D7].boundingBox()[1])
-    generateFont(options, font, fea)
+    otf = generateFont(options, font, fea)
 
     unicodes =  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                  '.', '(', ')', '[', ']', '{', '}', '|', ' ', '/', '\\',
@@ -396,20 +337,34 @@ def makeQuran(options):
                  0x202B, 0x202C, 0x202D, 0x202E, 0x202F, 0x25CC, 0xFD3E,
                  0xFD3F, 0xFDFA, 0xFDFD]
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
-    subsetFont(options.output, unicodes)
+    otf = subsetFont(otf, unicodes)
+    otf.save(options.output)
+
+
+def openFont(path):
+    from ufoLib2 import Font
+
+    font = Font(validate=False)
+    parser = SFDParser(path, font, ignore_uvs=False, ufo_anchors=False,
+        ufo_kerning=False, minimal=True)
+    parser.parse()
+
+    return font
+
 
 def makeDesktop(options, generate=True):
-    font = fontforge.open(options.input)
-    font.encoding = "UnicodeFull" # avoid a crash if compact was set
+    font = openFont(options.input)
 
     # remove anchors that are not needed in the production font
-    cleanAnchors(font)
+    #cleanAnchors(font)
 
     if generate:
         mergeLatin(font)
-        generateFont(options, font)
+        otf = generateFont(options, font)
+        otf.save(options.output)
     else:
         return font
+
 
 if __name__ == "__main__":
     import argparse
@@ -417,7 +372,7 @@ if __name__ == "__main__":
     parser.add_argument("--input", metavar="FILE", required=True, help="input font to process")
     parser.add_argument("--output", metavar="FILE", required=True, help="ouput font to write")
     parser.add_argument("--features", metavar="FILE", required=True, help="feature file to include")
-    parser.add_argument("--version", type=float, required=True, help="font version")
+    parser.add_argument("--version", type=str, required=True, help="font version")
     parser.add_argument("--slant", type=float, required=False, help="font slant")
     parser.add_argument("--quran", action='store_true', required=False, help="build Quran variant")
 
