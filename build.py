@@ -31,35 +31,43 @@ def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
     internally for building composite glyph."""
 
-    klasses = (
-            "Dash",
-           #"DigitAbove",
-            "DigitBelow",
-            "DotAbove",
-            "DotAlt",
-            "DotBelow",
-            "DotBelowAlt",
-            "DotHmaza",
-            "MarkDotAbove",
-            "MarkDotBelow",
-            "RingBelow",
-            "RingDash",
-            "Stroke",
-           #"TaaAbove",
-            "TaaBelow",
-            "Tail",
-            "TashkilAboveDot",
-            "TashkilBelowDot",
-            "TwoDotsAbove",
-            "TwoDotsBelow",
-            "TwoDotsBelowAlt",
-            "VAbove",
+    lookups = (
+            "markDash",
+           #"markDigitAbove",
+            "markDigitBelow",
+            "markDotAbove",
+            "markDotAlt",
+            "markDotBelow",
+            "markDotBelowAlt",
+            "markDotHmaza",
+            "markMarkDotAbove",
+            "markMarkDotBelow",
+            "markRingBelow",
+            "markRingDash",
+            "markStroke",
+           #"markTaaAbove",
+            "markTaaBelow",
+            "markTail",
+            "markTashkilAboveDot",
+            "markTashkilBelowDot",
+            "markTwoDotsAbove",
+            "markTwoDotsBelow",
+            "markTwoDotsBelowAlt",
+            "markVAbove",
             )
 
-    for klass in klasses:
-        subtable = font.getSubtableOfAnchor(klass)
-        lookup = font.getLookupOfSubtable(subtable)
-        font.removeLookup(lookup)
+    def keep(s):
+        if isinstance(s, ast.LookupBlock) and s.name in lookups:
+            return False
+        if isinstance(s, ast.LookupReferenceStatement) and s.lookup.name in lookups:
+            return False
+        return True
+
+    fea = font.features.text = parseFea(font.features.text)
+    fea.statements = [s for s in fea.statements if  keep(s)]
+    for block in fea.statements:
+        if hasattr(block, "statements"):
+            block.statements = [s for s in block.statements if keep(s)]
 
 
 def generateFeatures(font, args):
@@ -367,7 +375,7 @@ def makeDesktop(options, generate=True):
     font = openFont(options.input)
 
     # remove anchors that are not needed in the production font
-    #cleanAnchors(font)
+    cleanAnchors(font)
 
     if generate:
         mergeLatin(font)
