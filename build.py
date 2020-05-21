@@ -139,7 +139,7 @@ def drawOverline(font, name, uni, pos, thickness, width):
 
 
 def makeQuranSajdaLine(font):
-    pos = font["uni06D7"].getBounds(font)[1]
+    pos = font["uni06D7"].getBounds(font).yMax
     thickness = font.info.postscriptUnderlineThickness
     minwidth = 100
 
@@ -300,6 +300,35 @@ def makeSlanted(options):
     otf.save(options.output)
 
 
+def scaleGlyph(font, glyph, scale):
+    """Scales the glyph, but keeps it centered around its original bounding
+    box."""
+    from fontTools.pens.recordingPen import RecordingPointPen
+    from fontTools.pens.transformPen import TransformPointPen
+    from fontTools.misc.transform import Identity
+
+    width = glyph.width
+    bbox = glyph.getBounds(font)
+    x = (bbox.xMin + bbox.xMax) / 2
+    y = (bbox.yMin + bbox.yMax) / 2
+    matrix = Identity
+    matrix = matrix.translate(-x * scale + x, -y * scale + y)
+    matrix = matrix.scale(scale)
+
+    rec = RecordingPointPen()
+    glyph.drawPoints(rec)
+    glyph.clearContours()
+    glyph.clearComponents()
+
+    pen = TransformPointPen(glyph.getPointPen(), matrix)
+    rec.replay(pen)
+
+    if width == 0:
+        glyph.width = width
+
+    return matrix
+
+
 def makeQuran(options):
     font = makeDesktop(options, False)
     mergeLatin(font)
@@ -313,16 +342,22 @@ def makeQuran(options):
     info.openTypeOS2TypoAscender = info.openTypeHheaAscender = 1815
 
     # scale some vowel marks and dots down a bit
+    fea = font.features.text
     marks = [
         "uni064B", "uni064C", "uni064E", "uni064F", "uni06E1", "uni08F0",
         "uni08F1", "uni08F2", "TwoDots.a", "ThreeDots.a", "vTwoDots.a",
     ]
     shadda = ["uni0651"]
-    for v, include in ((90, marks), (80, shadda)):
-        scale = TransformationsFilter(ScaleX=v, ScaleY=v,
-                Origin=TransformationsFilter.Origin.CAP_HEIGHT,
-                include=include)
-        scale(font)
+    for scale, names in ((0.9, marks), (0.8, shadda)):
+        for name in names:
+            matrix = scaleGlyph(font, font[name], scale)
+
+            for block in fea.statements:
+                for s in getattr(block, "statements", []):
+                    if isinstance(s, ast.MarkClassDefinition) and name in s.glyphSet():
+                        s.anchor = transformAnchor(s.anchor, matrix)
+                    if isinstance(s, ast.MarkMarkPosStatement) and name in s.baseMarks.glyphSet():
+                        s.marks = [(transformAnchor(a, matrix), m) for a, m in s.marks]
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
