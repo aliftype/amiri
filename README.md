@@ -41,11 +41,9 @@ GUI or from the command line:
 
     $ fontforge sources/Amiri-Regular.sfdir
 
-To build the fonts you need FontForge Python module, and a few other Python
-packages:
+To build the fonts you need a few Python packages:
 
-    $ sudo apt-get install python-fontforge
-    $ python -m venv amiri --system-site-packages
+    $ python -m venv amiri
     $ . amiri/bin/activate
     $ pip install -r requirements.txt
 
@@ -53,27 +51,5 @@ To build the font files run:
 
     $ make ttf
 
-To build the font files along with the web files; run:
-
-    $ make web
-
-Ubuntu 16.04 Contributors
--------------------------
-
-You might face an error with importing fontforge
-
-    File "build.py", line 18, in <module>
-        import fontforge
-    ImportError: No module named fontforge
-
-This is because FontForge does not work properly with Python 3 on Ubuntu 16.04.
-To build the fonts with Python version 2.7; install FontForge Python
-module by following the instructions from the [official documentation][3]. But
-make sure to enable python extension and scripting for Python 2.
-
-After that, return back to the directory of the amiri repository and install
-the rest of dependencies and build the font as [above](#Contributing).
-
 [1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
 [2]: http://scripts.sil.org/OFL "The Open Font License"
-[3]: https://github.com/fontforge/fontforge/blob/master/INSTALL.md "FontForge official documentation"

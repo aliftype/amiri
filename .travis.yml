@@ -1,17 +1,8 @@
-dist: xenial
 language: python
-python: 2.7
-virtualenv:
-  system_site_packages: true
-
-addons:
-  apt:
-    packages:
-    - python-fontforge
+python: 3.6
 
 install:
   - pip install -r requirements.txt
 
 script:
   - make ttf
- #- make check
