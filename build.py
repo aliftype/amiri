@@ -292,6 +292,8 @@ def makeSlanted(options):
             for st in block.statements:
                 if isinstance(st, (ast.MarkMarkPosStatement, ast.MarkBasePosStatement)):
                     st.marks = [(transformAnchor(a, matrix), m) for a, m in st.marks]
+                elif isinstance(st, ast.MarkClassDefinition):
+                    st.anchor = transformAnchor(st.anchor, matrix)
                 elif isinstance(st, ast.CursivePosStatement):
                     st.entryAnchor = transformAnchor(st.entryAnchor, matrix)
                     st.exitAnchor = transformAnchor(st.exitAnchor, matrix)
