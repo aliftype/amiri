@@ -21,6 +21,7 @@ from io import StringIO
 from pcpp.preprocessor import Preprocessor
 
 from sfdLib.parser import SFDParser
+from sfdLib.utils import sortGlyphs
 from ufo2ft import compileOTF, compileTTF
 
 from ufo2ft.filters.transformations import TransformationsFilter
@@ -246,6 +247,8 @@ def mergeLatin(font):
         else:
             fea.statements.append(block)
     font.features.text = fea
+    font.glyphOrder += latin.glyphOrder
+    font.glyphOrder = sortGlyphs(font)
 
 
 def transformAnchor(anchor, matrix):
