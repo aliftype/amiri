@@ -117,6 +117,15 @@ def generateFont(options, font):
     OS_2.usWinAscent += head.yMax
     OS_2.usWinDescent += abs(head.yMin)
 
+    glyf = otf.get("glyf")
+    if glyf:
+        from fontTools.ttLib.tables._g_l_y_f import UNSCALED_COMPONENT_OFFSET
+        for name, glyph in glyf.glyphs.items():
+            glyph.expand(glyf)
+            if glyph.isComposite():
+                for component in glyph.components:
+                    component.flags |= UNSCALED_COMPONENT_OFFSET
+
     return otf
 
 
@@ -126,7 +135,6 @@ def drawOverline(font, name, uni, pos, thickness, width):
     except KeyError:
         glyph = font.newGlyph(name)
         glyph.width = 0
-        #glyph.glyphclass = "mark"
 
     pen = glyph.getPen()
 
