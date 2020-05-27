@@ -23,7 +23,7 @@ FEAT=$(wildcard $(SRC)/*.fea)
 
 export SOURCE_DATE_EPOCH ?= 0
 
-all: ttf web
+all: ttf otf
 
 ttf: $(DTTF)
 otf: $(DOTF)
