@@ -351,7 +351,7 @@ def makeQuran(options):
     info.postscriptFontName = info.postscriptFontName.replace("-Regular", "QuranColored-Regular")
     info.familyName += " Quran Colored"
     info.postscriptFullName += " Quran Colored"
-    info.openTypeNameSampleText  = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
+    info.openTypeNameSampleText  = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَـٰلَمِینَ ۝٢"
     info.openTypeOS2TypoAscender = info.openTypeHheaAscender = 1815
 
     # scale some vowel marks and dots down a bit
