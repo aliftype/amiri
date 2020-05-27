@@ -11,7 +11,7 @@ DIST=$(NAME)-$(VERSION)
 CDIST=$(NAME)-$(VERSION)-CTAN
 
 BUILD=build.py
-MAKECLR=makeclr.py
+MAKEQURAN=mkquran.py
 PY ?= python
 FF=$(PY) $(BUILD)
 
@@ -29,17 +29,17 @@ ttf: $(DTTF)
 otf: $(DOTF)
 doc: $(PDFS)
 
-$(NAME)Quran.ttf $(NAME)Quran.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
+$(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --quran
 
-$(NAME)QuranColored.ttf: $(NAME)Quran.ttf $(MAKECLR)
+$(NAME)Quran.ttf: $(NAME)QuranColored.ttf $(MAKEQURAN)
 	@echo "   FF	$@"
-	@$(PY) $(MAKECLR) $< $@
+	@$(PY) $(MAKEQURAN) $< $@
 
-$(NAME)QuranColored.otf: $(NAME)Quran.otf $(MAKECLR)
+$(NAME)Quran.otf: $(NAME)QuranColored.otf $(MAKEQURAN)
 	@echo "   FF	$@"
-	@$(PY) $(MAKECLR) $< $@
+	@$(PY) $(MAKEQURAN) $< $@
 
 $(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEAT) $(BUILD)
 	@echo "   FF	$@"

@@ -348,9 +348,9 @@ def makeQuran(options):
 
     # fix metadata
     info = font.info
-    info.postscriptFontName = info.postscriptFontName.replace("-Regular", "Quran-Regular")
-    info.familyName += " Quran"
-    info.postscriptFullName += " Quran"
+    info.postscriptFontName = info.postscriptFontName.replace("-Regular", "QuranColored-Regular")
+    info.familyName += " Quran Colored"
+    info.postscriptFullName += " Quran Colored"
     info.openTypeNameSampleText  = "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ ۝١ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِینَ ۝٢"
     info.openTypeOS2TypoAscender = info.openTypeHheaAscender = 1815
 
@@ -375,7 +375,12 @@ def makeQuran(options):
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
     makeQuranSajdaLine(font)
+
+    COLR, CPAL = makeCOLR(font)
+
     otf = generateFont(options, font)
+    otf["COLR"] = COLR
+    otf["CPAL"] = CPAL
 
     unicodes =  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                  '.', '(', ')', '[', ']', '{', '}', '|', ' ', '/', '\\',
@@ -406,6 +411,107 @@ def makeQuran(options):
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
     otf = subsetFont(otf, unicodes)
     otf.save(options.output)
+
+
+def makeCOLR(font):
+    from fontTools.ttLib import getTableModule, newTable
+    from fontTools.misc.transform import Identity
+
+    Color = getTableModule("CPAL").Color
+
+    hamzas = ("uni0621", "uni0654", "uni0655", "hamza.above")
+    marks = (
+        "uni0618", "uni0619", "uni061A", "uni064B", "uni064C", "uni064D",
+        "uni064E", "uni064F", "uni0650", "uni0651", "uni0652", "uni0657",
+        "uni0658", "uni065C", "uni0670", "uni06DF", "uni06E0", "uni06E1",
+        "uni06E2", "uni06E3", "uni06E4", "uni06E5", "uni06E6", "uni06E7",
+        "uni06E8", "uni06EA", "uni06EB", "uni06EC", "uni06ED", "uni08F0",
+        "uni08F1", "uni08F2", "uni08F3",
+        "uni06DC", # XXX: can be both a mark and a pause
+        "hamza.wasl", "Dot", "TwoDots", "vTwoDots", "ThreeDots",
+    )
+
+    pauses = (
+        "uni0615", "uni0617", "uni06D6", "uni06D7", "uni06D8", "uni06D9",
+        "uni06DA", "uni06DB",
+    )
+
+    signs = (
+        "uni0305", "uni0660", "uni0661", "uni0662", "uni0663", "uni0664",
+        "uni0665", "uni0666", "uni0667", "uni0668", "uni0669", "uni06DD",
+        "uni06DE", "uni06E9",
+    )
+
+    groups = {
+        marks: Color(red=0xcc, green=0x33, blue=0x33, alpha=0xff), # red
+        signs: Color(red=0x00, green=0xa5, blue=0x50, alpha=0xff), # green
+        hamzas: Color(red=0xee, green=0x99, blue=0x33, alpha=0xff), # yellow
+        pauses: Color(red=0x33, green=0x66, blue=0x99, alpha=0xff), # blue
+    }
+
+
+    COLR = newTable("COLR")
+    CPAL = newTable("CPAL")
+    CPAL.version = 0
+    COLR.version = 0
+
+    palette = list(groups.values())
+    CPAL.palettes = [palette]
+    CPAL.numPaletteEntries = len(palette)
+
+    COLR.ColorLayers = {}
+
+    def newLayer(name, colorID):
+        return getTableModule("COLR").LayerRecord(name=name, colorID=colorID)
+
+
+    def getColor(glyphName):
+        for names, color in groups.items():
+            for name in names:
+                if glyphName == name or glyphName.startswith(name + "."):
+                    return palette.index(color)
+        return 0xFFFF
+
+
+    hashes = {}
+    glyphOrder = list(font.glyphOrder)
+    for name in glyphOrder:
+        glyph = font[name]
+        layers = []
+        components = [(c, getColor(c.baseGlyph)) for c in glyph.components]
+        if len(components) > 1 and any(c[1] != 0xFFFF for c in components):
+            for component, color in components:
+                componentName = component.baseGlyph
+                trans = component.transformation
+                if trans != Identity:
+                    # Unique identifier for each layer, so we can reuse
+                    # identical layers and avoid needless duplication.
+                    componentHash = hash((trans, glyph.width))
+
+                    if component.baseGlyph not in hashes:
+                        hashes[componentName] = []
+
+                    if componentHash not in hashes[componentName]:
+                        hashes[componentName].append(componentHash)
+
+                    index = hashes[componentName].index(componentHash)
+                    componentName = f"{componentName}.l{index}"
+
+                if componentName not in font:
+                    newGlyph = font.newGlyph(componentName)
+                    newGlyph.components = [component]
+                    newGlyph.width = glyph.width
+                layers.append(newLayer(componentName, color))
+
+        if not layers:
+            color = getColor(name)
+            if color != 0xFFFF:
+                layers = [newLayer(name, color)]
+
+        if layers:
+            COLR[name] = layers
+
+    return COLR, CPAL
 
 
 def openFont(path):
