@@ -103,15 +103,20 @@ def generateFont(options, font):
 
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
+        from fontTools.ttLib.tables import ttProgram
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
 
-        DSIG = newTable("DSIG")
+        otf["DSIG"] = DSIG = newTable("DSIG")
         DSIG.ulVersion = 1
         DSIG.usFlag = 0
         DSIG.usNumSigs = 0
         DSIG.signatureRecords = []
-        otf.tables["DSIG"] = DSIG
+
+        otf["prep"] = prep = newTable("prep")
+        prep.program = ttProgram.Program()
+        prep.program.fromAssembly([
+            'PUSHW[]', '511', 'SCANCTRL[]', 'PUSHB[]', '4', 'SCANTYPE[]'])
     else:
         import cffsubr
         otf = compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
