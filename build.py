@@ -99,7 +99,8 @@ def generateFont(options, font):
     info = font.info
     major, minor = options.version.split(".")
     info.versionMajor, info.versionMinor = int(major), int(minor)
-    info.copyright = info.copyright % datetime.now().year
+    year = datetime.now().year
+    info.copyright = f"Copyright 2010-{year} The Amiri Project Authors (https://github.com/alif-type/amiri)."
 
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
