@@ -105,8 +105,10 @@ def generateFont(options, font):
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
     else:
+        import cffsubr
         otf = compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
+        cffsubr.subroutinize(otf)
 
     # Filter-out useless Macintosh names
     name = otf["name"]
