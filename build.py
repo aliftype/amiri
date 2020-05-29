@@ -102,8 +102,16 @@ def generateFont(options, font):
     info.copyright = info.copyright % datetime.now().year
 
     if options.output.endswith(".ttf"):
+        from fontTools.ttLib import newTable
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
+
+        DSIG = newTable("DSIG")
+        DSIG.ulVersion = 1
+        DSIG.usFlag = 0
+        DSIG.usNumSigs = 0
+        DSIG.signatureRecords = []
+        otf.tables["DSIG"] = DSIG
     else:
         import cffsubr
         otf = compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
