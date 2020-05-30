@@ -124,10 +124,6 @@ def generateFont(options, font):
             overlapsBackend="pathops", featureWriters=[])
         cffsubr.subroutinize(otf)
 
-    # Filter-out useless Macintosh names
-    name = otf["name"]
-    name.names = [n for n in name.names if n.platformID != 1]
-
     glyf = otf.get("glyf")
     if glyf:
         from fontTools.ttLib.tables._g_l_y_f import UNSCALED_COMPONENT_OFFSET
