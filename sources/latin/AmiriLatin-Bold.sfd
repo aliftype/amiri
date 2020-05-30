@@ -297,7 +297,7 @@ Grid
  -6 438.4765625 l 1
  546.875 438.4765625 l 25
 EndSplineSet
-BeginChars: 65596 486
+BeginChars: 65601 486
 
 StartChar: space
 Encoding: 32 32 0
@@ -8669,7 +8669,7 @@ EndSplineSet
 EndChar
 
 StartChar: f_f
-Encoding: 64256 64256 390
+Encoding: 65557 -1 390
 Width: 654
 Flags: HW
 HStem: -4 36<24 89 231 296 332 396 539 604> 372 46<31 97 224 404 531 645> 611 70<542 622>
@@ -8725,11 +8725,11 @@ SplineSet
  98 608 214 648 294 653 c 0
  366 658 438 639 462 589 c 1
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 315
 EndChar
 
 StartChar: f_i
-Encoding: 64257 64257 391
+Encoding: 65558 -1 391
 Width: 613
 Flags: HW
 HStem: -4 36<24 89 231 296 332 396 539 597> 357 46<31 97 224 392> 416 20G<507 529> 634 49<271 372>
@@ -8777,11 +8777,11 @@ SplineSet
  32 384 42 393 54 403 c 1
  67 403 87 403 97 406 c 1xfa
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 314
 EndChar
 
 StartChar: f_f_i
-Encoding: 64259 64259 392
+Encoding: 65559 -1 392
 Width: 921
 Flags: HW
 HStem: -4 36<24 89 231 296 333 397 540 605 640 705 848 906> 359 46<31 97 224 404 532 701> 416 20G<815 837> 634 49<580 681>
@@ -8848,11 +8848,11 @@ SplineSet
  404 405 l 1
  404 442 409 477 417 507 c 1
 EndSplineSet
-LCarets2: 2 0 0
+LCarets2: 2 315 623
 EndChar
 
 StartChar: f_l
-Encoding: 64258 64258 393
+Encoding: 65560 -1 393
 Width: 616
 Flags: HW
 HStem: -4 36<24 89 231 296 331 396 538 603> 372 46<31 97 224 337> 659 20G<525 529>
@@ -8900,11 +8900,11 @@ SplineSet
  376 605 340 628 301 625 c 0
  247 621 233 582 225 529 c 0
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 314
 EndChar
 
 StartChar: f_f_l
-Encoding: 64260 64260 394
+Encoding: 65561 -1 394
 Width: 923
 Flags: HW
 HStem: -4 36<24 89 231 296 332 396 539 604 638 703 846 910> 372 46<31 97 224 404 531 645> 659 20G<833 837>
@@ -8971,11 +8971,11 @@ SplineSet
  98 608 214 648 294 653 c 0
  362 657 429 642 457 598 c 1
 EndSplineSet
-LCarets2: 2 0 0
+LCarets2: 2 315 623
 EndChar
 
 StartChar: f_b
-Encoding: 65557 -1 395
+Encoding: 65562 -1 395
 Width: 866
 Flags: HW
 HStem: -8 43<25 90 230 295 544 645> 366 72<572 646> 372 46<31 97 224 337> 659 20G<525 529>
@@ -9030,11 +9030,11 @@ SplineSet
  657 35 695 119 695 191 c 0
  695 325 645 366 584 366 c 0
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 320
 EndChar
 
 StartChar: f_f_b
-Encoding: 65558 -1 396
+Encoding: 65563 -1 396
 Width: 1173
 Flags: HW
 HStem: -4 36<25 88 233 295 333 395 540 603 858 943> 366 72<880 953> 372 46<31 97 224 404 531 645> 659 20G<833 837>
@@ -9108,11 +9108,11 @@ SplineSet
  98 608 214 648 294 653 c 0
  362 657 429 642 457 598 c 1
 EndSplineSet
-LCarets2: 2 0 0
+LCarets2: 2 627 316
 EndChar
 
 StartChar: f_k
-Encoding: 65559 -1 397
+Encoding: 65564 -1 397
 Width: 893
 Flags: HW
 HStem: -4 36<25 88 233 296 331 394 539 602 828 890> 372 46<31 97 224 337> 396 34<625 686 791 866> 659 20G<525 529>
@@ -9177,11 +9177,11 @@ SplineSet
  532 678 540 667 541 662 c 1
  541 662 530 601 530 562 c 2xdc
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 316
 EndChar
 
 StartChar: f_f_k
-Encoding: 65560 -1 398
+Encoding: 65565 -1 398
 Width: 1201
 Flags: HW
 HStem: -4 36<25 88 233 296 332 395 540 603 639 702 847 910 1136 1197> 372 46<31 97 224 404 531 645> 396 33<933 993 1100 1173> 659 20G<833 837>
@@ -9265,11 +9265,11 @@ SplineSet
  404 433 l 2
  404 459 408 484 414 507 c 1
 EndSplineSet
-LCarets2: 2 0 0
+LCarets2: 2 624 316
 EndChar
 
 StartChar: f_h
-Encoding: 65561 -1 399
+Encoding: 65566 -1 399
 Width: 886
 Flags: HW
 HStem: -4 36<24 89 231 296 331 396 538 596 621 674 816 881> 356 1<531 616> 372 46<31 97 224 337> 659 20G<525 529>
@@ -9334,11 +9334,11 @@ SplineSet
  532 678 540 667 541 662 c 1
  541 662 530 601 530 562 c 2
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 314
 EndChar
 
 StartChar: f_f_h
-Encoding: 65562 -1 400
+Encoding: 65567 -1 400
 Width: 1194
 Flags: HW
 HStem: -4 36<24 89 231 296 332 396 539 604 638 703 846 904 928 981 1124 1189> 356 1<839 924> 372 46<31 97 224 404 531 645> 659 20G<833 837>
@@ -9422,11 +9422,11 @@ SplineSet
  404 433 l 2
  404 459 408 484 414 507 c 1
 EndSplineSet
-LCarets2: 2 0 0
+LCarets2: 2 622 314
 EndChar
 
 StartChar: f_j
-Encoding: 65563 -1 401
+Encoding: 65568 -1 401
 Width: 596
 Flags: HW
 HStem: -213 23<307 322> -4 36<24 89 231 296> 357 46<31 97 224 392> 416 20G<507 529> 634 49<271 372>
@@ -9471,11 +9471,11 @@ SplineSet
  335 403 l 2
  412 403 488 417 525 436 c 1xfe
 EndSplineSet
-LCarets2: 1 0
+LCarets2: 1 322
 EndChar
 
 StartChar: f_f_j
-Encoding: 65564 -1 402
+Encoding: 65569 -1 402
 Width: 905
 Flags: HW
 HStem: -213 23<616 630> -4 36<24 89 231 296 333 397 540 605> 359 46<31 97 224 404 532 701> 416 20G<815 837> 634 49<580 681>
@@ -9539,7 +9539,7 @@ SplineSet
  404 405 l 1
  404 443 408 477 416 507 c 1
 EndSplineSet
-LCarets2: 2 0 0
+LCarets2: 2 316 638
 EndChar
 
 StartChar: uni202F
@@ -9569,7 +9569,7 @@ EndSplineSet
 EndChar
 
 StartChar: i.TRK
-Encoding: 65565 -1 405
+Encoding: 65570 -1 405
 Width: 307
 Flags: HW
 LayerCount: 2
@@ -10117,7 +10117,7 @@ Refer: 454 808 N 1 0 0 1 398 0 2
 EndChar
 
 StartChar: zero.small
-Encoding: 65566 -1 456
+Encoding: 65571 -1 456
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10127,7 +10127,7 @@ Refer: 16 48 N 0.6 0 0 0.6 -13.5996 -40 2
 EndChar
 
 StartChar: one.small
-Encoding: 65567 -1 457
+Encoding: 65572 -1 457
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10137,7 +10137,7 @@ Refer: 17 49 N 0.6 0 0 0.6 -14.3042 -40 2
 EndChar
 
 StartChar: two.small
-Encoding: 65568 -1 458
+Encoding: 65573 -1 458
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10147,7 +10147,7 @@ Refer: 18 50 N 0.6 0 0 0.6 -14 -40 2
 EndChar
 
 StartChar: three.small
-Encoding: 65569 -1 459
+Encoding: 65574 -1 459
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10157,7 +10157,7 @@ Refer: 19 51 N 0.6 0 0 0.6 -14.4004 -40 2
 EndChar
 
 StartChar: four.small
-Encoding: 65570 -1 460
+Encoding: 65575 -1 460
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10167,7 +10167,7 @@ Refer: 20 52 N 0.6 0 0 0.6 -14.2002 -40 2
 EndChar
 
 StartChar: five.small
-Encoding: 65571 -1 461
+Encoding: 65576 -1 461
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10177,7 +10177,7 @@ Refer: 21 53 N 0.6 0 0 0.6 -13.5996 -40 2
 EndChar
 
 StartChar: six.small
-Encoding: 65572 -1 462
+Encoding: 65577 -1 462
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10187,7 +10187,7 @@ Refer: 22 54 N 0.6 0 0 0.6 -13.7998 -40 2
 EndChar
 
 StartChar: seven.small
-Encoding: 65573 -1 463
+Encoding: 65578 -1 463
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10197,7 +10197,7 @@ Refer: 23 55 N 0.6 0 0 0.6 -14.2002 -40 2
 EndChar
 
 StartChar: eight.small
-Encoding: 65574 -1 464
+Encoding: 65579 -1 464
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10207,7 +10207,7 @@ Refer: 24 56 N 0.6 0 0 0.6 -14.2002 -40 2
 EndChar
 
 StartChar: nine.small
-Encoding: 65575 -1 465
+Encoding: 65580 -1 465
 Width: 292
 VWidth: -40
 Flags: HW
@@ -10217,7 +10217,7 @@ Refer: 25 57 N 0.6 0 0 0.6 -13.7998 -40 2
 EndChar
 
 StartChar: zero.medium
-Encoding: 65576 -1 466
+Encoding: 65581 -1 466
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10227,7 +10227,7 @@ Refer: 16 48 N 0.8 0 0 0.8 6.2002 50 2
 EndChar
 
 StartChar: one.medium
-Encoding: 65577 -1 467
+Encoding: 65582 -1 467
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10237,7 +10237,7 @@ Refer: 17 49 N 0.8 0 0 0.8 5.92777 50 2
 EndChar
 
 StartChar: two.medium
-Encoding: 65578 -1 468
+Encoding: 65583 -1 468
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10247,7 +10247,7 @@ Refer: 18 50 N 0.8 0 0 0.8 6 50 2
 EndChar
 
 StartChar: three.medium
-Encoding: 65579 -1 469
+Encoding: 65584 -1 469
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10257,7 +10257,7 @@ Refer: 19 51 N 0.8 0 0 0.8 5.7998 50 2
 EndChar
 
 StartChar: four.medium
-Encoding: 65580 -1 470
+Encoding: 65585 -1 470
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10267,7 +10267,7 @@ Refer: 20 52 N 0.8 0 0 0.8 5.40039 50 2
 EndChar
 
 StartChar: five.medium
-Encoding: 65581 -1 471
+Encoding: 65586 -1 471
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10277,7 +10277,7 @@ Refer: 21 53 N 0.8 0 0 0.8 6.2002 50 2
 EndChar
 
 StartChar: six.medium
-Encoding: 65582 -1 472
+Encoding: 65587 -1 472
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10287,7 +10287,7 @@ Refer: 22 54 N 0.8 0 0 0.8 6.59961 50 2
 EndChar
 
 StartChar: seven.medium
-Encoding: 65583 -1 473
+Encoding: 65588 -1 473
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10297,7 +10297,7 @@ Refer: 23 55 N 0.8 0 0 0.8 5.40039 50 2
 EndChar
 
 StartChar: eight.medium
-Encoding: 65584 -1 474
+Encoding: 65589 -1 474
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10307,7 +10307,7 @@ Refer: 24 56 N 0.8 0 0 0.8 5.40039 50 2
 EndChar
 
 StartChar: nine.medium
-Encoding: 65585 -1 475
+Encoding: 65590 -1 475
 Width: 439
 VWidth: 50
 Flags: HW
@@ -10317,7 +10317,7 @@ Refer: 25 57 N 0.8 0 0 0.8 6.59961 50 2
 EndChar
 
 StartChar: zero.numr
-Encoding: 65586 -1 476
+Encoding: 65591 -1 476
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10327,7 +10327,7 @@ Refer: 456 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: one.numr
-Encoding: 65587 -1 477
+Encoding: 65592 -1 477
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10337,7 +10337,7 @@ Refer: 457 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: two.numr
-Encoding: 65588 -1 478
+Encoding: 65593 -1 478
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10347,7 +10347,7 @@ Refer: 458 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: three.numr
-Encoding: 65589 -1 479
+Encoding: 65594 -1 479
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10357,7 +10357,7 @@ Refer: 459 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: four.numr
-Encoding: 65590 -1 480
+Encoding: 65595 -1 480
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10367,7 +10367,7 @@ Refer: 460 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: five.numr
-Encoding: 65591 -1 481
+Encoding: 65596 -1 481
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10377,7 +10377,7 @@ Refer: 461 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: six.numr
-Encoding: 65592 -1 482
+Encoding: 65597 -1 482
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10387,7 +10387,7 @@ Refer: 462 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: seven.numr
-Encoding: 65593 -1 483
+Encoding: 65598 -1 483
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10397,7 +10397,7 @@ Refer: 463 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: eight.numr
-Encoding: 65594 -1 484
+Encoding: 65599 -1 484
 Width: 292
 VWidth: 0
 Flags: HW
@@ -10407,7 +10407,7 @@ Refer: 464 -1 N 1 0 0 1 0 550 2
 EndChar
 
 StartChar: nine.numr
-Encoding: 65595 -1 485
+Encoding: 65600 -1 485
 Width: 292
 VWidth: 0
 Flags: HW
