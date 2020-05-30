@@ -126,6 +126,11 @@ def generateFont(options, font):
             overlapsBackend="pathops", featureWriters=[])
         cffsubr.subroutinize(otf)
 
+    if info.styleMapStyleName and "italic" in info.styleMapStyleName:
+        otf['name'].names = [n for n in otf['name'].names if n.nameID != 17]
+        for name in otf['name'].names:
+            if name.nameID == 2:
+                name.string = info.styleName
     glyf = otf.get("glyf")
     if glyf:
         from fontTools.ttLib.tables._g_l_y_f import UNSCALED_COMPONENT_OFFSET
@@ -301,8 +306,13 @@ def makeSlanted(options):
     if info.postscriptWeightName == "Bold":
         info.postscriptFontName = info.postscriptFontName.replace("Bold", "BoldSlanted")
         info.styleName = "Bold Slanted"
+        info.styleMapFamilyName = info.familyName
+        info.styleMapStyleName = "bold italic"
     else:
         info.postscriptFontName = info.postscriptFontName.replace("Regular", "Slanted")
+        info.styleName = "Slanted"
+        info.styleMapFamilyName = info.familyName
+        info.styleMapStyleName = "italic"
 
     matrix = skew.context.matrix
     mergeLatin(font)
