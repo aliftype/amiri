@@ -221,7 +221,7 @@ Grid
  -5.859375 438.4765625 l 1
  546.875 438.4765625 l 25
 EndSplineSet
-BeginChars: 65644 531
+BeginChars: 65644 535
 
 StartChar: space
 Encoding: 32 32 0
@@ -10311,6 +10311,7 @@ EndChar
 
 StartChar: fraction
 Encoding: 8260 8260 430
+AltUni2: 002215.ffffffff.0
 Width: 503
 Flags: W
 HStem: -2 21G<42 57>
@@ -10339,12 +10340,11 @@ EndChar
 
 StartChar: caron
 Encoding: 711 711 432
-Width: 239
-VWidth: 0
+Width: 302
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 228 780 N 1 0 0 1 358 0 2
+Refer: 228 780 N 1 0 0 1 400 -5 2
 EndChar
 
 StartChar: dotaccent
@@ -11597,6 +11597,45 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 510 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: circumflex
+Encoding: 710 710 531
+Width: 240
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 220 770 N 1 0 0 1 379 0 2
+EndChar
+
+StartChar: ring
+Encoding: 730 730 532
+Width: 268
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 227 778 N 1 0 0 1 384 4 2
+EndChar
+
+StartChar: tilde
+Encoding: 732 732 533
+Width: 435
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 221 771 S 1 0 0 1 464 0 2
+EndChar
+
+StartChar: uni2074
+Encoding: 8308 8308 534
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 469 52 S 0.6 0 0 0.6 -12 510 2
 EndChar
 EndChars
 EndSplineFont

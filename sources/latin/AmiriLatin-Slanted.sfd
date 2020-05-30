@@ -455,7 +455,7 @@ Grid
 27.34375 424.8046875 m 17
  529.296875 424.8046875 l 1025
 EndSplineSet
-BeginChars: 65643 531
+BeginChars: 65643 535
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -7246,7 +7246,7 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 256 808 N 1 0 0 1 682 0 2
+Refer: 256 808 S 1 0 0 1 352 0 2
 EndChar
 
 StartChar: hungarumlaut
@@ -10239,6 +10239,7 @@ EndChar
 
 StartChar: fraction
 Encoding: 8260 8260 456
+AltUni2: 002215.ffffffff.0
 Width: 503
 Flags: W
 HStem: -2 21G<42 57>
@@ -11175,7 +11176,7 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 505 -1 N 1 0 0 1 0 550 2
+Refer: 505 -1 S 1 0 0 1 0 550 2
 EndChar
 
 StartChar: five.numr
@@ -11226,6 +11227,46 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 510 -1 N 1 0 0 1 0 550 2
+EndChar
+
+StartChar: circumflex
+Encoding: 710 710 531
+Width: 240
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 220 770 N 1 0 0 1 379 0 2
+EndChar
+
+StartChar: ring
+Encoding: 730 730 532
+Width: 445
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 249 778 S 1 0 0 1 466.019 0 2
+EndChar
+
+StartChar: tilde
+Encoding: 732 732 533
+Width: 435
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 221 771 S 1 0 0 1 464 0 2
+EndChar
+
+StartChar: uni2074
+Encoding: 8308 8308 534
+Width: 292
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 469 52 S 0.6 0 0 0.6 -12 510 2
 EndChar
 EndChars
 EndSplineFont
