@@ -101,6 +101,8 @@ def generateFont(options, font):
     info.versionMajor, info.versionMinor = int(major), int(minor)
     year = datetime.now().year
     info.copyright = f"Copyright 2010-{year} The Amiri Project Authors (https://github.com/alif-type/amiri)."
+    info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+    info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
 
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
