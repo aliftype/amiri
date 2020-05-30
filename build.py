@@ -128,11 +128,6 @@ def generateFont(options, font):
     name = otf["name"]
     name.names = [n for n in name.names if n.platformID != 1]
 
-    head = otf["head"]
-    OS_2 = otf["OS/2"]
-    OS_2.usWinAscent += head.yMax
-    OS_2.usWinDescent += abs(head.yMin)
-
     glyf = otf.get("glyf")
     if glyf:
         from fontTools.ttLib.tables._g_l_y_f import UNSCALED_COMPONENT_OFFSET
