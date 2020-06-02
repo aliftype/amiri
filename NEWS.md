@@ -1,3 +1,13 @@
+Amiri 0.113 (2020-06-02)
+------------------------
+
+* Add U+08BA, U+08B6, U+08B7, U+08B8, and U+08B9.
+* Bug fixes:
+  - https://github.com/alif-type/amiri/issues/172
+  - https://github.com/alif-type/amiri/issues/187
+* Add ligature carets to Latin ligatures.
+* Building the fonts no longer requires FontForge.
+
 Amiri 0.112 (2019-09-29)
 ------------------------
 
