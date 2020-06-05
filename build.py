@@ -121,10 +121,10 @@ def generateFont(options, font):
         prep.program.fromAssembly([
             'PUSHW[]', '511', 'SCANCTRL[]', 'PUSHB[]', '4', 'SCANTYPE[]'])
     else:
-        import cffsubr
-        otf = compileOTF(font, inplace=True, optimizeCFF=0, removeOverlaps=True,
-            overlapsBackend="pathops", featureWriters=[])
-        cffsubr.subroutinize(otf)
+        otf = compileOTF(font, inplace=True,
+            optimizeCFF=2, subroutinizer="cffsubr",
+            removeOverlaps=True, overlapsBackend="pathops",
+            featureWriters=[])
 
     if info.styleMapStyleName and "italic" in info.styleMapStyleName:
         otf['name'].names = [n for n in otf['name'].names if n.nameID != 17]
