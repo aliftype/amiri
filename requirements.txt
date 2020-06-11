@@ -1,7 +1,5 @@
-cffsubr==0.2.6
-fonttools[ufo,lxml]==4.11.0
+fonttools[ufo,lxml]==4.12.0
 pcpp==1.21
-skia-pathops==0.4.1
-ufo2ft==2.15.0b1
+ufo2ft[pathops,cffsubr]==2.15.0
 ufoLib2==0.8.0
 git+git://github.com/alif-type/sfdLib.git@v1.0.5#egg=sfdLib
