@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/alif-type/amiri.svg?branch=master)](https://travis-ci.com/alif-type/amiri)
+[![Build Status](https://travis-ci.com/alif-type/amiri.svg?branch=main)](https://travis-ci.com/alif-type/amiri)
 
 Amiri Font
 ==========
