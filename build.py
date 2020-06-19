@@ -131,14 +131,6 @@ def generateFont(options, font):
         for name in otf['name'].names:
             if name.nameID == 2:
                 name.string = info.styleName
-    glyf = otf.get("glyf")
-    if glyf:
-        from fontTools.ttLib.tables._g_l_y_f import UNSCALED_COMPONENT_OFFSET
-        for name, glyph in glyf.glyphs.items():
-            glyph.expand(glyf)
-            if glyph.isComposite():
-                for component in glyph.components:
-                    component.flags |= UNSCALED_COMPONENT_OFFSET
 
     return otf
 
