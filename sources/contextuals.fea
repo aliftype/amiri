@@ -21,7 +21,7 @@ feature calt {
 
 # replace tashkil following hamza by smaller alternates
 feature calt {
-  sub @AlefHamzaAbove [uni064E uni064F uni0652]' by [uni064E.small2 uni064F.small uni0652.small2];
+  sub @AlefHamzaAbove [uni064E uni064E.small uni064F uni0652]' by [uni064E.small2 uni064E.small2 uni064F.small uni0652.small2];
   sub @AlefHamzaBelow [uni0650]'                 by [uni0650.small2];
   sub [uni0655]       [uni0650]'                 by [uni0650.small2];
 } calt;

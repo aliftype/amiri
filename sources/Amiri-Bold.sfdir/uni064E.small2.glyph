@@ -3,6 +3,9 @@ Encoding: 69832 -1 4588
 Width: 0
 GlyphClass: 4
 Flags: HW
+AnchorPoint: "TashkilAboveDot" -20 1067 mark 0
+AnchorPoint: "TashkilTashkilAbove" -20 1162 basemark 0
+AnchorPoint: "TashkilTashkilAbove2" -20 1235 basemark 0
 AnchorPoint: "MarkAbove" -20 1067 mark 0
 AnchorPoint: "TashkilAbove" -20 1067 mark 0
 AnchorPoint: "TashkilTashkilAbove" -20 1067 mark 0
