@@ -110,12 +110,6 @@ def generateFont(options, font):
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
 
-        otf["DSIG"] = DSIG = newTable("DSIG")
-        DSIG.ulVersion = 1
-        DSIG.usFlag = 0
-        DSIG.usNumSigs = 0
-        DSIG.signatureRecords = []
-
         otf["prep"] = prep = newTable("prep")
         prep.program = ttProgram.Program()
         prep.program.fromAssembly([
