@@ -8,6 +8,7 @@
 @FootNote  = [uni0602];
 @SafhaSign = [uni0603];
 @Samvat    = [uni0604];
+@Pound     = [uni0890 uni0891];
 
 @NumSign3  = [uni0600.3];
 @NumSign4  = [uni0600.4];
@@ -114,6 +115,11 @@ feature kern {
   pos @Samvat @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0>;
   pos @Samvat @Digits.medium' <-1556 0 -439 0>;
 
+# pos @Pound @Digits.all' <-1995 0 -585 0> @Digits.all' <-1410 0 -585 0> @Digits.all' <-825 0 -585 0> @Digits.all' <-240  0 -585 0>;
+  pos @Pound @Digits.all' <-1702 0 -585 0> @Digits.all' <-1117 0 -585 0> @Digits.all' <-532 0 -585 0>;
+  pos @Pound @Digits.all' <-1410 0 -585 0> @Digits.all' <-825  0 -585 0>;
+  pos @Pound @Digits.all' <-1117 0 -585 0>;
+
   # HarfBuzz ‘arab’
   pos @Digits.small'  <-493  0 -292 0> @Digits.small'  <-786 0 -292 0> @Digits.small'  <-1079 0 -292 0> @EndOfAyah;
   pos @Digits.small'  <-640  0 -292 0> @Digits.small'  <-933 0 -292 0> @EndOfAyah;
@@ -140,4 +146,9 @@ feature kern {
   pos @Digits.medium' <-1116 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1995 0 -439 0> @Samvat;
   pos @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Samvat;
   pos @Digits.medium' <-1556 0 -439 0> @Samvat;
+
+# pos @Digits.all' <-240  0 -585 0> @Digits.all' <-825  0 -585 0> @Digits.all' <-1410 0 -585 0> @Digits.all' <-1995 0 -585 0> @Pound;
+  pos @Digits.all' <-532  0 -585 0> @Digits.all' <-1117 0 -585 0> @Digits.all' <-1702 0 -585 0> @Pound;
+  pos @Digits.all' <-825  0 -585 0> @Digits.all' <-1410 0 -585 0> @Pound;
+  pos @Digits.all' <-1117 0 -585 0> @Pound;
 } kern;
