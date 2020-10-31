@@ -22,7 +22,7 @@ FEA=$(wildcard $(SRC)/*.fea)
 
 export SOURCE_DATE_EPOCH ?= 0
 
-all: ttf otf
+all: otf
 
 ttf: $(TTF)
 otf: $(OTF)
@@ -56,26 +56,26 @@ $(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
-$(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(TTF)
+$(DOC)/Documentation-Arabic.pdf: $(DOC)/Documentation-Arabic.tex $(OTF)
 	@echo "   GEN	$@"
 	@latexmk --norc --xelatex --quiet --output-directory=${DOC} $<
 
-check: $(TTF)
+check: $(TTF) $(OTF)
 	@echo "running tests"
-	@$(foreach font,$(TTF),echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
+	@$(foreach font,$+,echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
 
 clean:
-	rm -rfv $(TTF) $(PDF) $(SRC)/$(NAME)*.fea.pp
+	rm -rfv $(TTF) $(OTF) $(PDF)
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean: clean
 	rm -rf $(DIST){,.zip}
 
-dist: all check pack doc
+dist: otf check pack doc
 	@rm -rf $(DIST)
 	@mkdir -p $(DIST)
 	@cp OFL.txt $(DIST)
-	@cp $(TTF) $(DIST)
+	@cp $(OTF) $(DIST)
 	@cp README.md $(DIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
