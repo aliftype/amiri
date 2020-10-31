@@ -8,7 +8,6 @@ SRC=sources
 DOC=documentation
 FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
-CDIST=$(NAME)-$(VERSION)-CTAN
 
 BUILD=build.py
 MAKEQURAN=mkquran.py
@@ -70,27 +69,17 @@ clean:
 	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean: clean
-	rm -rf {$(DIST),$(CDIST)}{,.zip}
+	rm -rf $(DIST){,.zip}
 
 dist: all check pack doc
-	@rm -rf $(DIST) $(CDIST)
-	@mkdir -p $(DIST) $(CDIST)
+	@rm -rf $(DIST)
+	@mkdir -p $(DIST)
 	@cp OFL.txt $(DIST)
-	@cp OFL.txt $(CDIST)
 	@cp $(DTTF) $(DIST)
-	@cp $(DTTF) $(CDIST)
 	@cp README.md $(DIST)/README
-	@cp README.md $(CDIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
-	@cp README-Arabic.md $(CDIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
-	@cp NEWS.md $(CDIST)/NEWS
 	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
-	@cp NEWS-Arabic.md $(CDIST)/NEWS-Arabic
-	@cp $(NAME).fontspec $(CDIST)
 	@cp $(PDFS) $(DIST)
-	@cp $(PDFS) $(CDIST)
 	@echo "   ZIP  $(DIST)"
 	@zip -rq $(DIST).zip $(DIST)
-	@echo "   ZIP  $(CDIST)"
-	@zip -rq $(CDIST).zip $(CDIST)
