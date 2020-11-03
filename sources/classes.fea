@@ -22,11 +22,11 @@
 @aHeh.init = [ uni0647.init uni06C1.init ];
 @aHeh.isol = [ uni0647 uni06C1 uni06C3 uni06D5 uni0629 ];
 @aHeh.medi = [ uni0647.medi uni06C1.medi ];
-@aKaf.fina = [ uni077F.fina uni0643.fina uni06AB.fina uni06AC.fina uni06AD.fina uni06AE.fina ];
+@aKaf.fina = [ uni077F.fina uni0643.fina uni06AC.fina uni06AD.fina uni06AE.fina ];
 @aKaf.init = [ uni063B.init uni063C.init uni077F.init uni0764.init uni0643.init uni06B0.init uni06B3.init uni06B2.init uni06AB.init uni06AC.init uni06AD.init uni06AE.init uni06AF.init uni06A9.init uni06B4.init uni0763.init uni0762.init uni06B1.init ];
 @aKaf.isol = [ uni063B uni063C uni077F uni0764 uni0643 uni06B0 uni06B3 uni06B2 uni06AB uni06AC uni06AD uni06AE uni06AF uni06A9 uni06B4 uni0763 uni0762 uni06B1 ];
-@aGaf.isol = [ uni06A9 uni06AF uni06B0 uni06B1 uni06B2 uni06B3 uni06B4 uni0762 uni0763 uni0764 uni063B uni063C ];
-@aGaf.fina = [ uni06A9.fina uni06AF.fina uni06B0.fina uni06B1.fina uni06B2.fina uni06B3.fina uni06B4.fina uni0762.fina uni0763.fina uni0764.fina uni063B.fina uni063C.fina ];
+@aGaf.isol = [ uni06A9 uni06AB uni06AF uni06B0 uni06B1 uni06B2 uni06B3 uni06B4 uni0762 uni0763 uni0764 uni063B uni063C ];
+@aGaf.fina = [ uni06A9.fina uni06AB.fina uni06AF.fina uni06B0.fina uni06B1.fina uni06B2.fina uni06B3.fina uni06B4.fina uni0762.fina uni0763.fina uni0764.fina uni063B.fina uni063C.fina ];
 @aGaf.medi = [ uni06A9.medi uni06AF.medi uni06B0.medi uni06B1.medi uni06B2.medi uni06B3.medi uni06B4.medi uni0762.medi uni0763.medi uni0764.medi uni063B.medi uni063C.medi ];
 @aKaf.medi = [ uni063B.medi uni063C.medi uni077F.medi uni0764.medi uni0643.medi uni06B0.medi uni06B3.medi uni06B2.medi uni06AB.medi uni06AC.medi uni06AD.medi uni06AE.medi uni06AF.medi uni06A9.medi uni06B4.medi uni0763.medi uni0762.medi uni06B1.medi ];
 @aLam.fina = [ uni06B5.fina uni06B7.fina uni0644.fina uni06B8.fina uni06B6.fina uni076A.fina ];
@@ -165,12 +165,12 @@
 @aHeh.medi_PostTooth = [ uni0647.medi_PostTooth uni06C1.medi_PostTooth ];
 @aHeh.medi_PostToothHehYaa = [ uni0647.medi_PostToothHehYaa uni06C1.medi_PostToothHehYaa ];
 @aHeh.medi_HehYaaFina = [ uni0647.medi_HehYaaFina uni06C1.medi_HehYaaFina ];
-@aKaf.fina_KafKafFina = [ uni077F.fina_KafKafFina uni0643.fina_KafKafFina uni06AB.fina_KafKafFina uni06AC.fina_KafKafFina uni06AD.fina_KafKafFina uni06AE.fina_KafKafFina ];
-@aKaf.fina_LamKafFina = [ uni077F.fina_LamKafFina uni0643.fina_LamKafFina uni06AB.fina_LamKafFina uni06AC.fina_LamKafFina uni06AD.fina_LamKafFina uni06AE.fina_LamKafFina ];
-@aKaf.fina_LamKafIsol = [ uni077F.fina_LamKafIsol uni0643.fina_LamKafIsol uni06AB.fina_LamKafIsol uni06AC.fina_LamKafIsol uni06AD.fina_LamKafIsol uni06AE.fina_LamKafIsol ];
-@aGaf.fina_KafKafFina = [ uni06A9.fina_KafKafFina uni06AF.fina_KafKafFina uni06B0.fina_KafKafFina uni06B1.fina_KafKafFina uni06B2.fina_KafKafFina uni06B3.fina_KafKafFina uni06B4.fina_KafKafFina uni0762.fina_KafKafFina uni0763.fina_KafKafFina uni0764.fina_KafKafFina uni063B.fina_KafKafFina uni063C.fina_KafKafFina ];
-@aGaf.fina_LamKafFina = [ uni06A9.fina_LamKafFina uni06AF.fina_LamKafFina uni06B0.fina_LamKafFina uni06B1.fina_LamKafFina uni06B2.fina_LamKafFina uni06B3.fina_LamKafFina uni06B4.fina_LamKafFina uni0762.fina_LamKafFina uni0763.fina_LamKafFina uni0764.fina_LamKafFina uni063B.fina_LamKafFina uni063C.fina_LamKafFina ];
-@aGaf.fina_LamKafIsol = [ uni06A9.fina_LamKafIsol uni06AF.fina_LamKafIsol uni06B0.fina_LamKafIsol uni06B1.fina_LamKafIsol uni06B2.fina_LamKafIsol uni06B3.fina_LamKafIsol uni06B4.fina_LamKafIsol uni0762.fina_LamKafIsol uni0763.fina_LamKafIsol uni0764.fina_LamKafIsol uni063B.fina_LamKafIsol uni063C.fina_LamKafIsol ];
+@aKaf.fina_KafKafFina = [ uni077F.fina_KafKafFina uni0643.fina_KafKafFina uni06AC.fina_KafKafFina uni06AD.fina_KafKafFina uni06AE.fina_KafKafFina ];
+@aKaf.fina_LamKafFina = [ uni077F.fina_LamKafFina uni0643.fina_LamKafFina uni06AC.fina_LamKafFina uni06AD.fina_LamKafFina uni06AE.fina_LamKafFina ];
+@aKaf.fina_LamKafIsol = [ uni077F.fina_LamKafIsol uni0643.fina_LamKafIsol uni06AC.fina_LamKafIsol uni06AD.fina_LamKafIsol uni06AE.fina_LamKafIsol ];
+@aGaf.fina_KafKafFina = [ uni06A9.fina_KafKafFina uni06AB.fina_KafKafFina uni06AF.fina_KafKafFina uni06B0.fina_KafKafFina uni06B1.fina_KafKafFina uni06B2.fina_KafKafFina uni06B3.fina_KafKafFina uni06B4.fina_KafKafFina uni0762.fina_KafKafFina uni0763.fina_KafKafFina uni0764.fina_KafKafFina uni063B.fina_KafKafFina uni063C.fina_KafKafFina ];
+@aGaf.fina_LamKafFina = [ uni06A9.fina_LamKafFina uni06AB.fina_LamKafFina uni06AF.fina_LamKafFina uni06B0.fina_LamKafFina uni06B1.fina_LamKafFina uni06B2.fina_LamKafFina uni06B3.fina_LamKafFina uni06B4.fina_LamKafFina uni0762.fina_LamKafFina uni0763.fina_LamKafFina uni0764.fina_LamKafFina uni063B.fina_LamKafFina uni063C.fina_LamKafFina ];
+@aGaf.fina_LamKafIsol = [ uni06A9.fina_LamKafIsol uni06AB.fina_LamKafIsol uni06AF.fina_LamKafIsol uni06B0.fina_LamKafIsol uni06B1.fina_LamKafIsol uni06B2.fina_LamKafIsol uni06B3.fina_LamKafIsol uni06B4.fina_LamKafIsol uni0762.fina_LamKafIsol uni0763.fina_LamKafIsol uni0764.fina_LamKafIsol uni063B.fina_LamKafIsol uni063C.fina_LamKafIsol ];
 @aKaf.init_PreHeh = [ uni063B.init_PreHeh uni063C.init_PreHeh uni077F.init_PreHeh uni0764.init_PreHeh uni0643.init_PreHeh uni06B0.init_PreHeh uni06B3.init_PreHeh uni06B2.init_PreHeh uni06AB.init_PreHeh uni06AC.init_PreHeh uni06AD.init_PreHeh uni06AE.init_PreHeh uni06AF.init_PreHeh uni06A9.init_PreHeh uni06B4.init_PreHeh uni0763.init_PreHeh uni0762.init_PreHeh uni06B1.init_PreHeh ];
 @aKaf.init_AboveHaa = [ uni063B.init_AboveHaa uni063C.init_AboveHaa uni077F.init_AboveHaa uni0764.init_AboveHaa uni0643.init_AboveHaa uni06B0.init_AboveHaa uni06B3.init_AboveHaa uni06B2.init_AboveHaa uni06AB.init_AboveHaa uni06AC.init_AboveHaa uni06AD.init_AboveHaa uni06AE.init_AboveHaa uni06AF.init_AboveHaa uni06A9.init_AboveHaa uni06B4.init_AboveHaa uni0763.init_AboveHaa uni0762.init_AboveHaa uni06B1.init_AboveHaa ];
 @aKaf.init_KafBaaInit = [ uni063B.init_KafBaaInit uni063C.init_KafBaaInit uni077F.init_KafBaaInit uni0764.init_KafBaaInit uni0643.init_KafBaaInit uni06B0.init_KafBaaInit uni06B3.init_KafBaaInit uni06B2.init_KafBaaInit uni06AB.init_KafBaaInit uni06AC.init_KafBaaInit uni06AD.init_KafBaaInit uni06AE.init_KafBaaInit uni06AF.init_KafBaaInit uni06A9.init_KafBaaInit uni06B4.init_KafBaaInit uni0763.init_KafBaaInit uni0762.init_KafBaaInit uni06B1.init_KafBaaInit ];
@@ -336,8 +336,8 @@
 @AlefHamzaAbove = [ uni0623 uni0672 uni0675 uni0623.fina uni0675.fina uni0672.fina uni0623.fina_LamAlfIsol uni0675.fina_LamAlfIsol uni0672.fina_LamAlfIsol uni0623.fina_LamAlfFina uni0675.fina_LamAlfFina uni0672.fina_LamAlfFina uni0623.fina_KafAlf uni0675.fina_KafAlf uni0672.fina_KafAlf uni0623.fina_KafMemAlf uni0675.fina_KafMemAlf uni0672.fina_KafMemAlf uni0623.fina_MemAlfFina uni0675.fina_MemAlfFina uni0672.fina_MemAlfFina ];
 @AlefHamzaBelow = [ uni0625 uni0673 uni0625.fina uni0673.fina uni0625.fina_LamAlfIsol uni0673.fina_LamAlfIsol uni0625.fina_LamAlfFina uni0673.fina_LamAlfFina uni0625.fina_KafAlf uni0673.fina_KafAlf uni0625.fina_KafMemAlf uni0673.fina_KafMemAlf uni0625.fina_MemAlfFina uni0673.fina_MemAlfFina ];
 
-@aGaf.alt  = [ uni06A9.alt uni06AF.alt uni06B0.alt uni06B1.alt uni06B2.alt uni06B3.alt uni06B4.alt uni0762.alt uni0763.alt uni0764.alt uni063B.alt uni063C.alt ];
-@aGaf.alt.fina = [ uni06A9.alt.fina uni06AF.alt.fina uni06B0.alt.fina uni06B1.alt.fina uni06B2.alt.fina uni06B3.alt.fina uni06B4.alt.fina uni0762.alt.fina uni0763.alt.fina uni0764.alt.fina uni063B.alt.fina uni063C.alt.fina ];
+@aGaf.alt  = [ uni06A9.alt uni06AB.alt uni06AF.alt uni06B0.alt uni06B1.alt uni06B2.alt uni06B3.alt uni06B4.alt uni0762.alt uni0763.alt uni0764.alt uni063B.alt uni063C.alt ];
+@aGaf.alt.fina = [ uni06A9.alt.fina uni06AB.alt.fina uni06AF.alt.fina uni06B0.alt.fina uni06B1.alt.fina uni06B2.alt.fina uni06B3.alt.fina uni06B4.alt.fina uni0762.alt.fina uni0763.alt.fina uni0764.alt.fina uni063B.alt.fina uni063C.alt.fina ];
 
 @Digits = [ zero one two three four five six seven eight nine uni0660 uni0661 uni0662 uni0663 uni0664 uni0665 uni0666 uni0667 uni0668 uni0669 uni06F0 uni06F1 uni06F2 uni06F3 uni06F4 uni06F5 uni06F6 uni06F7 uni06F8 uni06F9 uni06F4.urd uni06F6.urd uni06F7.urd ];
 @Digits.small = [ zero.small one.small two.small three.small four.small five.small six.small seven.small eight.small nine.small uni0660.small uni0661.small uni0662.small uni0663.small uni0664.small uni0665.small uni0666.small uni0667.small uni0668.small uni0669.small uni06F0.small uni06F1.small uni06F2.small uni06F3.small uni06F4.small uni06F5.small uni06F6.small uni06F7.small uni06F8.small uni06F9.small uni06F4.urd.small uni06F6.urd.small uni06F7.urd.small ];
