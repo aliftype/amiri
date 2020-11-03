@@ -3,9 +3,9 @@ Encoding: 1117930 -1 4102
 Width: 69
 Flags: HW
 AnchorPoint: "TashkilAbove" 78 801 basechar 0
-AnchorPoint: "TashkilBelow" 78 -352 basechar 0
+AnchorPoint: "TashkilBelow" 208 -352 basechar 0
 LayerCount: 2
 Fore
-Refer: 196 -1 N 1 0 0 1 78 -205 2
+Refer: 196 -1 N 1 0 0 1 208 -205 2
 Refer: 182 -1 N 1 0 0 1 0 0 3
 EndChar
