@@ -109,8 +109,8 @@ feature kern {
 #ifndef QURAN
 feature kern {
   lookupflag IgnoreMarks;
-    pos period.ara' <-146 0 -146 0> [quotedblleft quoteleft];
-    pos period' -73 [quotedblright quoteright];
+    pos period' <-146 0 -146 0> [quotedblleft quoteleft];
+    pos period.latn' -73 [quotedblright quoteright];
 } kern;
 #endif
 

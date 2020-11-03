@@ -1,6 +1,10 @@
 feature locl {
   script latn;
-  language TRK exclude_dflt;
+  sub period by period.latn;
+  sub guillemotleft by guillemotleft.latn;
+  sub guillemotright by guillemotright.latn;
+
+  language TRK;
   sub i by i.TRK;
 } locl;
 

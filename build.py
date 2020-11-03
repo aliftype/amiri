@@ -276,7 +276,7 @@ def makeSlanted(options):
 
     exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
     exclude += [
-        "exclam", "period.ara", "guillemotleft.ara", "guillemotright.ara",
+        "exclam", "period", "guillemotleft", "guillemotright",
         "braceleft", "bar", "braceright", "bracketleft", "bracketright",
         "parenleft", "parenright", "slash", "backslash", "brokenbar",
         "uni061F", "dot.1", "dot.2",

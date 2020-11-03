@@ -111,7 +111,7 @@ KernClass2: 25+ 41 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11
  7 uni02BC
  22 quoteleft quotedblleft
  24 quoteright quotedblright
- 27 guillemotleft guilsinglleft
+ 32 guillemotleft.latn guilsinglleft
  0 
  0 
  0 
@@ -121,13 +121,13 @@ KernClass2: 25+ 41 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11
  0 
  0 
  10 parenright
- 49 comma period quotesinglbase quotedblbase ellipsis
+ 54 comma period.latn quotesinglbase quotedblbase ellipsis
  0 
  0 
  0 
  0 
  0 
- 29 guillemotright guilsinglright
+ 34 guillemotright.latn guilsinglright
  9 ampersand
  5 slash
  0 
@@ -187,16 +187,16 @@ KernClass2: 11+ 65 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 4"
  20 quotedbl quotesingle
  8 asterisk
  28 hyphen endash emdash uni2015
- 40 comma period quotesinglbase quotedblbase
+ 45 comma period.latn quotesinglbase quotedblbase
  5 slash
  15 colon semicolon
  9 backslash
  22 quoteleft quotedblleft
  24 quoteright quotedblright
- 27 guillemotleft guilsinglleft
- 29 guillemotright guilsinglright
+ 32 guillemotleft.latn guilsinglleft
+ 34 guillemotright.latn guilsinglright
  9 ampersand
- 49 comma period quotesinglbase quotedblbase ellipsis
+ 54 comma period.latn quotesinglbase quotedblbase ellipsis
  5 slash
  9 four.prop
  8 six.prop
@@ -211,7 +211,7 @@ KernClass2: 11+ 65 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 4"
  52 s sacute scircumflex scedilla scaron uni1E61 uni1E63
  2 AE
  0 
- 27 guillemotleft guilsinglleft
+ 32 guillemotleft.latn guilsinglleft
  0 
  0 
  0 
@@ -313,7 +313,7 @@ KernClass2: 29+ 45 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3"
  39 g gcircumflex gbreve gdotaccent uni0123
  166 e o egrave eacute ecircumflex edieresis eth ograve oacute ocircumflex otilde odieresis oslash emacron ebreve edotaccent eogonek ecaron omacron obreve ohungarumlaut oe
  1 q
- 27 guillemotleft guilsinglleft
+ 32 guillemotleft.latn guilsinglleft
  13 J Jcircumflex
  45 T uni0162 Tcaron Tbar uni1E6A uni1E6C uni1E6E
  1 V
@@ -326,7 +326,7 @@ KernClass2: 29+ 45 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3"
  35 l lacute uni013C lcaron ldot lslash
  21 j jcircumflex uni0237
  9 ampersand
- 49 comma period quotesinglbase quotedblbase ellipsis
+ 54 comma period.latn quotesinglbase quotedblbase ellipsis
  5 slash
  8 question
  76 a agrave aacute acircumflex atilde adieresis aring ae amacron abreve aogonek
@@ -388,7 +388,7 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  10 registered
  22 quoteleft quotedblleft
  24 quoteright quotedblright
- 27 guillemotleft guilsinglleft
+ 32 guillemotleft.latn guilsinglleft
  0 
  0 
  0 
@@ -420,7 +420,7 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  0 
  0 
  9 ampersand
- 49 comma period quotesinglbase quotedblbase ellipsis
+ 54 comma period.latn quotesinglbase quotedblbase ellipsis
  5 slash
  9 four.prop
  15 colon semicolon
@@ -435,7 +435,7 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  10 three.prop
  9 five.prop
  8 six.prop
- 29 guillemotright guilsinglright
+ 34 guillemotright.latn guilsinglright
  15 b thorn uni1E03
  10 eight.prop
  52 S Sacute Scircumflex Scedilla Scaron uni1E60 uni1E62
@@ -466,7 +466,7 @@ KernClass2: 14+ 24 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  9 backslash
  12 bracketright
  1 X
- 49 comma period quotesinglbase quotedblbase ellipsis
+ 54 comma period.latn quotesinglbase quotedblbase ellipsis
  9 M uni1E40
  13 J Jcircumflex
  87 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek
@@ -3925,8 +3925,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: guillemotleft
-Encoding: 171 171 105
+StartChar: guillemotleft.latn
+Encoding: 171 -1 105
 Width: 470
 Flags: HW
 LayerCount: 2
@@ -4333,8 +4333,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: guillemotright
-Encoding: 187 187 120
+StartChar: guillemotright.latn
+Encoding: 187 -1 120
 Width: 470
 Flags: HW
 LayerCount: 2
@@ -10246,8 +10246,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: period
-Encoding: 46 46 449
+StartChar: period.latn
+Encoding: 46 -1 449
 Width: 202
 Flags: HW
 HStem: -11 107<59 143>

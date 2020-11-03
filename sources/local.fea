@@ -1,26 +1,8 @@
 #ifdef QURAN
-# The Quran font does not have a separate period.ara glyph, it is the default
-# glyph.
 feature ccmp {
-  sub period by period.ara;
-  sub guillemotleft by guillemotleft.ara;
-  sub guillemotright by guillemotright.ara;
   sub uni030A by uni030A.quran;
   sub uni0325 by uni0325.quran;
 } ccmp;
-#else
-feature locl {
-  script arab;
-  sub period by period.ara;
-  sub guillemotleft by guillemotleft.ara;
-  sub guillemotright by guillemotright.ara;
-
-  language ARA include_dflt;
-  language URD include_dflt;
-  language SND include_dflt;
-  language KSH include_dflt;
-  language MLY include_dflt;
-} locl;
 #endif
 
 @comma = [uni060C uni061B];

@@ -113,14 +113,14 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  20 quotedbl quotesingle
  8 asterisk
  28 hyphen endash emdash uni2015
- 40 comma period quotesinglbase quotedblbase
+ 45 comma period.latn quotesinglbase quotedblbase
  5 slash
  15 colon semicolon
  9 backslash
  22 quoteleft quotedblleft
  24 quoteright quotedblright
- 27 guillemotleft guilsinglleft
- 29 guillemotright guilsinglright
+ 32 guillemotleft.latn guilsinglleft
+ 34 guillemotright.latn guilsinglright
  9 parenleft
  14 seven.ltr.prop
  13 nine.ltr.prop
@@ -162,7 +162,7 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  10 registered
  22 quoteleft quotedblleft
  24 quoteright quotedblright
- 27 guillemotleft guilsinglleft
+ 32 guillemotleft.latn guilsinglleft
  34 z zacute zdotaccent zcaron uni1E93
  1 x
  10 parenright
@@ -170,7 +170,7 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  1 X
  34 Z Zacute Zdotaccent Zcaron uni1E92
  2 AE
- 49 comma period quotesinglbase quotedblbase ellipsis
+ 54 comma period.latn quotesinglbase quotedblbase ellipsis
  73 a agrave aacute acircumflex atilde adieresis aring amacron abreve aogonek
  47 d dcaron dcroat uni1E0B uni1E0D uni1E0F uni1E11
  52 s sacute scircumflex scedilla scaron uni1E61 uni1E63
@@ -180,7 +180,7 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  9 ampersand
  15 colon semicolon
  60 h k hcircumflex hbar uni0137 uni1E25 uni1E29 uni1E2B uni1E96
- 29 guillemotright guilsinglright
+ 34 guillemotright.latn guilsinglright
  52 S Sacute Scircumflex Scedilla Scaron uni1E60 uni1E62
  10 braceright
  13 four.ltr.prop
@@ -645,8 +645,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: period
-Encoding: 46 46 14
+StartChar: period.latn
+Encoding: 46 -1 14
 Width: 211
 Flags: HW
 HStem: -11 135<32 104>
@@ -4236,8 +4236,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: guillemotleft
-Encoding: 171 171 106
+StartChar: guillemotleft.latn
+Encoding: 171 -1 106
 Width: 466
 Flags: HW
 LayerCount: 2
@@ -4724,8 +4724,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: guillemotright
-Encoding: 187 187 121
+StartChar: guillemotright.latn
+Encoding: 187 -1 121
 Width: 466
 Flags: HW
 LayerCount: 2
