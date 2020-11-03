@@ -9,28 +9,6 @@ feature pnum {
   sub seven by seven.prop;
   sub eight by eight.prop;
   sub nine by nine.prop;
-#ifdef ITALIC
-  sub zero.rtl by zero.rtl.prop;
-  sub one.rtl by one.rtl.prop;
-  sub two.rtl by two.rtl.prop;
-  sub three.rtl by three.rtl.prop;
-  sub four.rtl by four.rtl.prop;
-  sub five.rtl by five.rtl.prop;
-  sub six.rtl by six.rtl.prop;
-  sub seven.rtl by seven.rtl.prop;
-  sub eight.rtl by eight.rtl.prop;
-  sub nine.rtl by nine.rtl.prop;
-  sub zero.ltr by zero.ltr.prop;
-  sub one.ltr by one.ltr.prop;
-  sub two.ltr by two.ltr.prop;
-  sub three.ltr by three.ltr.prop;
-  sub four.ltr by four.ltr.prop;
-  sub five.ltr by five.ltr.prop;
-  sub six.ltr by six.ltr.prop;
-  sub seven.ltr by seven.ltr.prop;
-  sub eight.ltr by eight.ltr.prop;
-  sub nine.ltr by nine.ltr.prop;
-#endif
   sub uni0660 by uni0660.prop;
   sub uni0661 by uni0661.prop;
   sub uni0662 by uni0662.prop;

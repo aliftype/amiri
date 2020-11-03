@@ -15,26 +15,12 @@
 
 @SafhaSign3  = [uni0603.3];
 
-#ifdef ITALIC
-@Digits.all = [@Digits @Digits.rtl @Digits.ltr];
-#else
-@Digits.all = [@Digits];
-#endif
-
 lookup digit2small {
   sub @Digits by @Digits.small;
-#ifdef ITALIC
-  sub @Digits.rtl by @Digits.small2;
-  sub @Digits.ltr by @Digits.small2;
-#endif
 } digit2small;
 
 lookup digit2medi {
   sub @Digits by @Digits.medium;
-#ifdef ITALIC
-  sub @Digits.rtl by @Digits.medium2;
-  sub @Digits.ltr by @Digits.medium2;
-#endif
 } digit2medi;
 
 lookup Sign3 {
@@ -50,24 +36,24 @@ lookup Sign4 {
 # following a subtending sign by smaller alternates
 feature calt {
   # Uniscribe or HarfBuzz ‘latn’
-  sub [@EndOfAyah          ] @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
-  sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small @Digits.all' lookup digit2small;
-  sub [@EndOfAyah @FootNote] @Digits.all' lookup digit2small;
+  sub [@EndOfAyah          ] @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
+  sub [@EndOfAyah @FootNote] @Digits' lookup digit2small @Digits' lookup digit2small;
+  sub [@EndOfAyah @FootNote] @Digits' lookup digit2small;
 
-  sub [@NumSign @YearSign @Samvat] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits.all' lookup digit2medi;
+  sub [@NumSign @YearSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi;
+  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi;
 
   # HarfBuzz ‘arab’
-  sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah];
-  sub @Digits.all' lookup digit2small @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
-  sub @Digits.all' lookup digit2small [@EndOfAyah @FootNote];
+  sub @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small [@EndOfAyah];
+  sub @Digits' lookup digit2small @Digits' lookup digit2small [@EndOfAyah @FootNote];
+  sub @Digits' lookup digit2small [@EndOfAyah @FootNote];
 
-  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @Samvat]' lookup Sign4;
-  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat]' lookup Sign3;
-  sub @Digits.all' lookup digit2medi @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
-  sub @Digits.all' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
+  sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @Samvat]' lookup Sign4;
+  sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat]' lookup Sign3;
+  sub @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
+  sub @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
 } calt;
 
 # Should have been merged with the Uniscribe lookup above as we do for
@@ -115,10 +101,10 @@ feature kern {
   pos @Samvat @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0>;
   pos @Samvat @Digits.medium' <-1556 0 -439 0>;
 
-# pos @Pound @Digits.all' <-1995 0 -585 0> @Digits.all' <-1410 0 -585 0> @Digits.all' <-825 0 -585 0> @Digits.all' <-240  0 -585 0>;
-  pos @Pound @Digits.all' <-1702 0 -585 0> @Digits.all' <-1117 0 -585 0> @Digits.all' <-532 0 -585 0>;
-  pos @Pound @Digits.all' <-1410 0 -585 0> @Digits.all' <-825  0 -585 0>;
-  pos @Pound @Digits.all' <-1117 0 -585 0>;
+# pos @Pound @Digits' <-1995 0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-825 0 -585 0> @Digits' <-240  0 -585 0>;
+  pos @Pound @Digits' <-1702 0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-532 0 -585 0>;
+  pos @Pound @Digits' <-1410 0 -585 0> @Digits' <-825  0 -585 0>;
+  pos @Pound @Digits' <-1117 0 -585 0>;
 
   # HarfBuzz ‘arab’
   pos @Digits.small'  <-493  0 -292 0> @Digits.small'  <-786 0 -292 0> @Digits.small'  <-1079 0 -292 0> @EndOfAyah;
@@ -147,8 +133,8 @@ feature kern {
   pos @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Samvat;
   pos @Digits.medium' <-1556 0 -439 0> @Samvat;
 
-# pos @Digits.all' <-240  0 -585 0> @Digits.all' <-825  0 -585 0> @Digits.all' <-1410 0 -585 0> @Digits.all' <-1995 0 -585 0> @Pound;
-  pos @Digits.all' <-532  0 -585 0> @Digits.all' <-1117 0 -585 0> @Digits.all' <-1702 0 -585 0> @Pound;
-  pos @Digits.all' <-825  0 -585 0> @Digits.all' <-1410 0 -585 0> @Pound;
-  pos @Digits.all' <-1117 0 -585 0> @Pound;
+# pos @Digits' <-240  0 -585 0> @Digits' <-825  0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-1995 0 -585 0> @Pound;
+  pos @Digits' <-532  0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-1702 0 -585 0> @Pound;
+  pos @Digits' <-825  0 -585 0> @Digits' <-1410 0 -585 0> @Pound;
+  pos @Digits' <-1117 0 -585 0> @Pound;
 } kern;

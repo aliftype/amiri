@@ -12,10 +12,6 @@ languagesystem latn TRK;
 #include "composition.fea"
 #include "local.fea"
 
-#ifdef ITALIC
-#include "italic.fea"
-#endif
-
 #ifndef QURAN
 #include "digits.fea"
 #endif
