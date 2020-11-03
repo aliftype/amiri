@@ -1350,7 +1350,18 @@ lookup KasraAynFina {
   sub uni06ED by uni06ED uni0640.3;
 } KasraAynFina;
 
+# and final ح
+# see https://github.com/alif-type/amiri/issues/162#issuecomment-421769913
+lookup KasraHaaFina {
+  sub uni064D by uni064D uni0640.1;
+  sub uni0650 by uni0650 uni0640.1;
+  sub uni08F2 by uni08F2 uni0640.1;
+  sub uni06ED by uni06ED uni0640.2;
+} KasraHaaFina;
+
 feature calt {
   sub @Tashkil.below' lookup KasraAynFina
       @aAyn.fina;
+  sub @Tashkil.below' lookup KasraHaaFina
+      @aHaa.fina;
 } calt;
