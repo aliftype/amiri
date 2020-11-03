@@ -1,5 +1,5 @@
 StartChar: uni08FD
-Encoding: 2301 2301 5943
+Encoding: 2301 2301 5907
 Width: 0
 GlyphClass: 4
 Flags: HW
@@ -20,7 +20,7 @@ SplineSet
  -122 944 l 1
  -97 981 l 2
 EndSplineSet
-Refer: 5938 2296 N 1 0 0 1 0 0 2
+Refer: 5902 2296 N 1 0 0 1 0 0 2
 Layer: 2
 SplineSet
 -91.30859375 977.5390625 m 2
@@ -34,5 +34,5 @@ SplineSet
  -116.2109375 939.94140625 -116.047851562 940.4296875 -115.72265625 940.91796875 c 2
  -91.30859375 977.5390625 l 2
 EndSplineSet
-Refer: 5938 2296 N 1 0 0 1 0 0 2
+Refer: 5902 2296 N 1 0 0 1 0 0 2
 EndChar

@@ -1315,7 +1315,7 @@ feature calt {
 feature calt {
   sub [@aBaa.init_Wide]'
       [uni0622.fina uni0623.fina uni0627.fina uni0671.fina uni0672.fina
-       uni0675.fina uni0773.fina uni0774.fina]
+       uni0773.fina uni0774.fina]
    by [@aBaa.init];
 } calt;
 
