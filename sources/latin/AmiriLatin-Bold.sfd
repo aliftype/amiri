@@ -54,7 +54,7 @@ MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  9 ampersand
- 3 bar
+ 8 bar.latn
  10 exclamdown
  10 registered
  12 questiondown
@@ -118,14 +118,14 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  8 asterisk
  28 hyphen endash emdash uni2015
  45 comma period.latn quotesinglbase quotedblbase
- 5 slash
+ 10 slash.latn
  15 colon semicolon
- 9 backslash
+ 14 backslash.latn
  22 quoteleft quotedblleft
  24 quoteright quotedblright
  32 guillemotleft.latn guilsinglleft
  34 guillemotright.latn guilsinglright
- 9 parenleft
+ 14 parenleft.latn
  14 zero zero.prop
  8 one.prop
  8 two.prop
@@ -136,8 +136,8 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  10 seven.prop
  10 eight.prop
  9 nine.prop
- 11 bracketleft
- 9 braceleft
+ 16 bracketleft.latn
+ 14 braceleft.latn
  0 
  0 
  0 
@@ -186,7 +186,7 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  2 AE
  0 
  9 ampersand
- 10 parenright
+ 15 parenright.latn
  8 asterisk
  28 hyphen endash emdash uni2015
  14 zero zero.prop
@@ -198,8 +198,8 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  9 nine.prop
  173 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
  52 S Sacute Scircumflex Scedilla Scaron uni1E60 uni1E62
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  76 a agrave aacute acircumflex atilde adieresis aring ae amacron abreve aogonek
  15 b thorn uni1E03
  47 c ccedilla cacute ccircumflex cdotaccent ccaron
@@ -215,7 +215,7 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  1 v
  37 w wcircumflex wgrave wacute wdieresis
  37 y yacute ydieresis ycircumflex ygrave
- 10 braceright
+ 15 braceright.latn
  10 registered
  22 quoteleft quotedblleft
  24 quoteright quotedblright
@@ -241,15 +241,15 @@ KernClass2: 117+ 89 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1
  0 
  0 
  54 comma period.latn quotesinglbase quotedblbase ellipsis
- 5 slash
+ 10 slash.latn
  15 colon semicolon
  3 eth
  16 three three.prop
  14 five five.prop
  34 Z Zacute Zdotaccent Zcaron uni1E92
  12 one one.prop
- 6 exclam
- 3 bar
+ 11 exclam.latn
+ 8 bar.latn
  8 question
  0 
  2 at
@@ -306,8 +306,8 @@ Flags: HW
 LayerCount: 2
 EndChar
 
-StartChar: exclam
-Encoding: 33 33 1
+StartChar: exclam.latn
+Encoding: 33 -1 1
 Width: 263
 Flags: HW
 HStem: -11 146<79 182> 607 20G<117 150>
@@ -531,8 +531,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft
-Encoding: 40 40 8
+StartChar: parenleft.latn
+Encoding: 40 -1 8
 Width: 284
 Flags: HW
 VStem: 32 108<144 452>
@@ -549,8 +549,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenright
-Encoding: 41 41 9
+StartChar: parenright.latn
+Encoding: 41 -1 9
 Width: 284
 Flags: HW
 VStem: 144 108<144 452>
@@ -695,8 +695,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: slash
-Encoding: 47 47 15
+StartChar: slash.latn
+Encoding: 47 -1 15
 Width: 412
 Flags: HW
 LayerCount: 2
@@ -2221,8 +2221,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketleft
-Encoding: 91 91 59
+StartChar: bracketleft.latn
+Encoding: 91 -1 59
 Width: 301
 Flags: HW
 VStem: 73 104<-78 711>
@@ -2245,8 +2245,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: backslash
-Encoding: 92 92 60
+StartChar: backslash.latn
+Encoding: 92 -1 60
 Width: 409
 Flags: HW
 LayerCount: 2
@@ -2262,8 +2262,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketright
-Encoding: 93 93 61
+StartChar: bracketright.latn
+Encoding: 93 -1 61
 Width: 301
 Flags: HW
 VStem: 124 104<-78 711>
@@ -3363,8 +3363,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceleft
-Encoding: 123 123 91
+StartChar: braceleft.latn
+Encoding: 123 -1 91
 Width: 291
 Flags: HW
 HStem: -141 25<249 264> 717 25<249 264>
@@ -3396,8 +3396,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bar
-Encoding: 124 124 92
+StartChar: bar.latn
+Encoding: 124 -1 92
 Width: 197
 Flags: HW
 VStem: 73 52<-115 747>
@@ -3415,8 +3415,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceright
-Encoding: 125 125 93
+StartChar: braceright.latn
+Encoding: 125 -1 93
 Width: 291
 Flags: HW
 HStem: -141 25<28 43> 717 25<28 43>

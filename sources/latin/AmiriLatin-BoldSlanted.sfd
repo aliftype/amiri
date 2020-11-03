@@ -114,18 +114,18 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  8 asterisk
  28 hyphen endash emdash uni2015
  45 comma period.latn quotesinglbase quotedblbase
- 5 slash
+ 10 slash.latn
  15 colon semicolon
- 9 backslash
+ 14 backslash.latn
  22 quoteleft quotedblleft
  24 quoteright quotedblright
  32 guillemotleft.latn guilsinglleft
  34 guillemotright.latn guilsinglright
- 9 parenleft
+ 14 parenleft.latn
  14 seven.ltr.prop
  13 nine.ltr.prop
- 11 bracketleft
- 9 braceleft
+ 16 bracketleft.latn
+ 14 braceleft.latn
  0 
  2 mu
  73 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek
@@ -140,12 +140,12 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  20 quotedbl quotesingle
  8 asterisk
  28 hyphen endash emdash uni2015
- 5 slash
+ 10 slash.latn
  171 C G O Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
  1 Q
  1 V
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  9 b uni1E03
  47 c ccedilla cacute ccircumflex cdotaccent ccaron
  39 g gcircumflex gbreve gdotaccent uni0123
@@ -165,7 +165,7 @@ KernClass2: 75+ 59 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  32 guillemotleft.latn guilsinglleft
  34 z zacute zdotaccent zcaron uni1E93
  1 x
- 10 parenright
+ 15 parenright.latn
  9 M uni1E40
  1 X
  34 Z Zacute Zdotaccent Zcaron uni1E92
@@ -230,7 +230,7 @@ Flags: HW
 LayerCount: 2
 EndChar
 
-StartChar: exclam
+StartChar: exclam.latn
 Encoding: 33 33 1
 Width: 235
 Flags: W
@@ -481,8 +481,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft
-Encoding: 40 40 8
+StartChar: parenleft.latn
+Encoding: 40 -1 8
 Width: 270
 VWidth: 0
 Flags: HW
@@ -501,8 +501,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenright
-Encoding: 41 41 9
+StartChar: parenright.latn
+Encoding: 41 -1 9
 Width: 268
 VWidth: 0
 Flags: HW
@@ -662,8 +662,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: slash
-Encoding: 47 47 15
+StartChar: slash.latn
+Encoding: 47 -1 15
 Width: 394
 VWidth: 0
 Flags: HW
@@ -2704,8 +2704,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketleft
-Encoding: 91 91 59
+StartChar: bracketleft.latn
+Encoding: 91 -1 59
 Width: 256
 Flags: HW
 HStem: 690 51<215 320>
@@ -2730,8 +2730,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: backslash
-Encoding: 92 92 60
+StartChar: backslash.latn
+Encoding: 92 -1 60
 Width: 380
 Flags: HW
 VStem: 120 176
@@ -2748,8 +2748,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketright
-Encoding: 93 93 61
+StartChar: bracketright.latn
+Encoding: 93 -1 61
 Width: 253
 Flags: HW
 HStem: -130 41<-57 13> 711 36<92 172>
@@ -3794,8 +3794,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceleft
-Encoding: 123 123 91
+StartChar: braceleft.latn
+Encoding: 123 -1 91
 Width: 242
 Flags: HW
 HStem: -141 21<122 129> 701 21<279 295>
@@ -3827,8 +3827,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bar
-Encoding: 124 124 92
+StartChar: bar.latn
+Encoding: 124 -1 92
 Width: 195
 Flags: HW
 LayerCount: 2
@@ -3844,8 +3844,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceright
-Encoding: 125 125 93
+StartChar: braceright.latn
+Encoding: 125 -1 93
 Width: 242
 Flags: HW
 HStem: -141 21<-40 -23> 701 21<125 132>

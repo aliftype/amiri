@@ -3,6 +3,16 @@ feature locl {
   sub period by period.latn;
   sub guillemotleft by guillemotleft.latn;
   sub guillemotright by guillemotright.latn;
+  sub exclam by exclam.latn;
+  sub parenleft by parenleft.latn;
+  sub parenright by parenright.latn;
+  sub slash by slash.latn;
+  sub bracketleft by bracketleft.latn;
+  sub backslash by backslash.latn;
+  sub bracketright by bracketright.latn;
+  sub braceleft by braceleft.latn;
+  sub bar by bar.latn;
+  sub braceright by braceright.latn;
 
   language TRK;
   sub i by i.TRK;

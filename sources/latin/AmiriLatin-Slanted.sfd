@@ -80,11 +80,11 @@ KernClass2: 26+ 35 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  0 
  0 
  20 quotedbl quotesingle
- 10 parenright
+ 15 parenright.latn
  8 asterisk
  28 hyphen endash emdash uni2015
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  10 registered
  7 uni02BC
  22 quoteleft quotedblleft
@@ -107,9 +107,9 @@ KernClass2: 26+ 35 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  0 
  0 
  54 comma period.latn quotesinglbase quotedblbase ellipsis
- 10 braceright
+ 15 braceright.latn
  9 ampersand
- 5 slash
+ 10 slash.latn
  0 
  0 
  0 
@@ -129,11 +129,11 @@ KernClass2: 5+ 8 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 ker
  0 
  0 {} 13 {} -13 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} -19 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} -20 {} 0 {} -12 {} -11 {}
 KernClass2: 5+ 33 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 kerning class 7"
- 9 parenleft
+ 14 parenleft.latn
  9 seven.ltr
  8 nine.ltr
- 11 bracketleft
- 9 braceleft
+ 16 bracketleft.latn
+ 14 braceleft.latn
  171 C G O Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
  52 S Sacute Scircumflex Scedilla Scaron uni1E60 uni1E62
  45 T uni0162 Tcaron Tbar uni1E6A uni1E6C uni1E6E
@@ -172,16 +172,16 @@ KernClass2: 11+ 59 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  8 asterisk
  28 hyphen endash emdash uni2015
  45 comma period.latn quotesinglbase quotedblbase
- 5 slash
+ 10 slash.latn
  15 colon semicolon
- 9 backslash
+ 14 backslash.latn
  22 quoteleft quotedblleft
  24 quoteright quotedblright
  32 guillemotleft.latn guilsinglleft
  34 guillemotright.latn guilsinglright
  9 ampersand
  54 comma period.latn quotesinglbase quotedblbase ellipsis
- 5 slash
+ 10 slash.latn
  8 four.ltr
  7 six.ltr
  73 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek
@@ -266,11 +266,11 @@ KernClass2: 27+ 38 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  10 germandbls
  4 ldot
  3 eng
- 10 parenright
+ 15 parenright.latn
  171 C G O Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
  87 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  20 quotedbl quotesingle
  8 asterisk
  73 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek
@@ -300,7 +300,7 @@ KernClass2: 27+ 38 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  7 uni02BC
  21 j jcircumflex uni0237
  9 ampersand
- 5 slash
+ 10 slash.latn
  39 g gcircumflex gbreve gdotaccent uni0123
  39 v w wcircumflex wgrave wacute wdieresis
  0 {} -16 {} -6 {} -20 {} -33 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} -19 {} -33 {} -22 {} -13 {} -8 {} -14 {} -16 {} -7 {} -21 {} -19 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -21 {} -8 {} -13 {} -21 {} -16 {} 0 {} 0 {} 0 {} -16 {} -11 {} 0 {} 0 {} -14 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -28 {} 0 {} -20 {} -29 {} -21 {} 0 {} 0 {} -10 {} -9 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 19 {} 0 {} 0 {} 17 {} 0 {} -16 {} 5 {} 0 {} 0 {} 0 {} -21 {} 0 {} -8 {} -10 {} -8 {} -10 {} -6 {} -10 {} -5 {} -4 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 78 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -11 {} -20 {} 18 {} 0 {} 0 {} -8 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 38 {} 27 {} 64 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} -8 {} -21 {} -19 {} -11 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} -8 {} -20 {} -14 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -21 {} -9 {} -23 {} -40 {} -18 {} -15 {} -12 {} 0 {} 0 {} -4 {} -20 {} -19 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -13 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -16 {} -7 {} -20 {} -35 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} -57 {} -52 {} -42 {} -63 {} -65 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -32 {} 0 {} -21 {} -37 {} -23 {} 0 {} 0 {} -12 {} -15 {} -10 {} -14 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -4 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -32 {} 0 {} -20 {} -34 {} -23 {} 0 {} 0 {} -14 {} -16 {} -8 {} -11 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -7 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} -28 {} 0 {} -12 {} -20 {} -21 {} 0 {} 0 {} -36 {} -16 {} 0 {} 0 {} 0 {} -32 {} 0 {} -33 {} -11 {} -7 {} -12 {} -4 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -16 {} -20 {} 0 {} 0 {} 0 {} -26 {} 0 {} -21 {} -30 {} -21 {} 0 {} 0 {} 0 {} -6 {} 0 {} -8 {} 0 {} -11 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -21 {} 0 {} -13 {} -22 {} -19 {} 0 {} 0 {} -9 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -16 {} -6 {} -20 {} -32 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -33 {} 0 {} -19 {} -29 {} -24 {} 0 {} 0 {} -27 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} 0 {} 0 {} -33 {} 0 {} -18 {} -29 {} -23 {} 0 {} 0 {} -21 {} -19 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} -17 {} -20 {} -16 {} -22 {} -12 {} 0 {} 0 {} 0 {} -17 {} -18 {} 0 {} 0 {} -12 {} 0 {} 0 {} -9 {} -11 {} -9 {} -10 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} 0 {} -30 {} 0 {} -23 {} -32 {} -21 {} 0 {} 0 {} -15 {} -18 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} -20 {} -25 {} -21 {} 0 {} 0 {} -9 {} -7 {} 0 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} -19 {} -19 {} 0 {} 0 {} -18 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
@@ -332,10 +332,10 @@ KernClass2: 26+ 71 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  34 Z Zacute Zdotaccent Zcaron uni1E92
  5 Thorn
  20 quotedbl quotesingle
- 10 parenright
+ 15 parenright.latn
  8 asterisk
  28 hyphen endash emdash uni2015
- 5 slash
+ 10 slash.latn
  13 J Jcircumflex
  171 C G O Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
  1 Q
@@ -344,8 +344,8 @@ KernClass2: 26+ 71 "Crimson-Italic-'kern' Horizontal Kerning in Latin lookup 0 k
  1 V
  37 W Wcircumflex Wgrave Wacute Wdieresis
  37 Y Yacute Ycircumflex Ydieresis Ygrave
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  9 b uni1E03
  47 c ccedilla cacute ccircumflex cdotaccent ccaron
  90 f germandbls longs uni1E1F f_f f_i f_f_i f_l f_f_l f_b f_f_b f_k f_f_k f_h f_f_h f_j f_f_j
@@ -457,8 +457,8 @@ Grid
 EndSplineSet
 BeginChars: 65643 535
 
-StartChar: exclam
-Encoding: 33 33 0
+StartChar: exclam.latn
+Encoding: 33 -1 0
 Width: 235
 Flags: W
 HStem: -11 107<75 160> 607 20G<106 137>
@@ -691,8 +691,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft
-Encoding: 40 40 7
+StartChar: parenleft.latn
+Encoding: 40 -1 7
 Width: 253
 VWidth: 0
 Flags: HW
@@ -710,8 +710,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenright
-Encoding: 41 41 8
+StartChar: parenright.latn
+Encoding: 41 -1 8
 Width: 253
 VWidth: 0
 Flags: HW
@@ -860,8 +860,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: slash
-Encoding: 47 47 14
+StartChar: slash.latn
+Encoding: 47 -1 14
 Width: 373
 VWidth: 0
 Flags: HW
@@ -2430,8 +2430,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketleft
-Encoding: 91 91 58
+StartChar: bracketleft.latn
+Encoding: 91 -1 58
 Width: 253
 Flags: HW
 HStem: 679 44<204 308>
@@ -2457,8 +2457,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: backslash
-Encoding: 92 92 59
+StartChar: backslash.latn
+Encoding: 92 -1 59
 Width: 359
 Flags: HW
 VStem: 112 171
@@ -2475,8 +2475,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketright
-Encoding: 93 93 60
+StartChar: bracketright.latn
+Encoding: 93 -1 60
 Width: 251
 Flags: HW
 HStem: -100 44<-36 68> 679 44<110 203>
@@ -3452,8 +3452,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceleft
-Encoding: 123 123 90
+StartChar: braceleft.latn
+Encoding: 123 -1 90
 Width: 205
 Flags: HW
 LayerCount: 2
@@ -3483,8 +3483,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bar
-Encoding: 124 124 91
+StartChar: bar.latn
+Encoding: 124 -1 91
 Width: 202
 Flags: HW
 VStem: 0 223
@@ -3501,8 +3501,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceright
-Encoding: 125 125 92
+StartChar: braceright.latn
+Encoding: 125 -1 92
 Width: 207
 Flags: HW
 LayerCount: 2

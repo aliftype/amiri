@@ -104,9 +104,9 @@ KernClass2: 25+ 41 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11
  20 quotedbl quotesingle
  8 asterisk
  28 hyphen endash emdash uni2015
- 9 backslash
- 12 bracketright
- 10 braceright
+ 14 backslash.latn
+ 17 bracketright.latn
+ 15 braceright.latn
  10 registered
  7 uni02BC
  22 quoteleft quotedblleft
@@ -120,7 +120,7 @@ KernClass2: 25+ 41 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11
  0 
  0 
  0 
- 10 parenright
+ 15 parenright.latn
  54 comma period.latn quotesinglbase quotedblbase ellipsis
  0 
  0 
@@ -129,7 +129,7 @@ KernClass2: 25+ 41 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 11
  0 
  34 guillemotright.latn guilsinglright
  9 ampersand
- 5 slash
+ 10 slash.latn
  0 
  0 
  0 
@@ -142,9 +142,9 @@ KernClass2: 1+ 2 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 10"
  0 
  0 {} -10 {}
 KernClass2: 3+ 33 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 7"
- 9 parenleft
- 11 bracketleft
- 9 braceleft
+ 14 parenleft.latn
+ 16 bracketleft.latn
+ 14 braceleft.latn
  14 zero zero.prop
  13 J Jcircumflex
  173 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
@@ -188,16 +188,16 @@ KernClass2: 11+ 65 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 4"
  8 asterisk
  28 hyphen endash emdash uni2015
  45 comma period.latn quotesinglbase quotedblbase
- 5 slash
+ 10 slash.latn
  15 colon semicolon
- 9 backslash
+ 14 backslash.latn
  22 quoteleft quotedblleft
  24 quoteright quotedblright
  32 guillemotleft.latn guilsinglleft
  34 guillemotright.latn guilsinglright
  9 ampersand
  54 comma period.latn quotesinglbase quotedblbase ellipsis
- 5 slash
+ 10 slash.latn
  9 four.prop
  8 six.prop
  2 at
@@ -290,12 +290,12 @@ KernClass2: 29+ 45 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3"
  3 eng
  0 
  0 
- 10 parenright
+ 15 parenright.latn
  173 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE
  87 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek
  37 Y Yacute Ycircumflex Ydieresis Ygrave
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  1 v
  37 w wcircumflex wgrave wacute wdieresis
  37 y yacute ydieresis ycircumflex ygrave
@@ -321,13 +321,13 @@ KernClass2: 29+ 45 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 3"
  10 registered
  0 
  0 
- 10 braceright
+ 15 braceright.latn
  60 h k hcircumflex hbar uni0137 uni1E25 uni1E29 uni1E2B uni1E96
  35 l lacute uni013C lcaron ldot lslash
  21 j jcircumflex uni0237
  9 ampersand
  54 comma period.latn quotesinglbase quotedblbase ellipsis
- 5 slash
+ 10 slash.latn
  8 question
  76 a agrave aacute acircumflex atilde adieresis aring ae amacron abreve aogonek
  52 s sacute scircumflex scedilla scaron uni1E61 uni1E63
@@ -374,8 +374,8 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  1 V
  37 W Wcircumflex Wgrave Wacute Wdieresis
  37 Y Yacute Ycircumflex Ydieresis Ygrave
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  47 c ccedilla cacute ccircumflex cdotaccent ccaron
  47 d dcaron dcroat uni1E0B uni1E0D uni1E0F uni1E11
  166 e o egrave eacute ecircumflex edieresis eth ograve oacute ocircumflex otilde odieresis oslash emacron ebreve edotaccent eogonek ecaron omacron obreve ohungarumlaut oe
@@ -397,7 +397,7 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  0 
  0 
  0 
- 10 parenright
+ 15 parenright.latn
  73 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek
  361 B D E F H I K L P R Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Thorn Dcaron Dcroat Emacron Ebreve Edotaccent Eogonek Ecaron Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ uni0136 Lacute uni013B Lcaron Ldot Lslash Racute uni0156 Rcaron uni1E02 uni1E0A uni1E0C uni1E0E uni1E10 uni1E1E uni1E24 uni1E28 uni1E2A uni1E56
  9 M uni1E40
@@ -421,7 +421,7 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  0 
  9 ampersand
  54 comma period.latn quotesinglbase quotedblbase ellipsis
- 5 slash
+ 10 slash.latn
  9 four.prop
  15 colon semicolon
  76 a agrave aacute acircumflex atilde adieresis aring ae amacron abreve aogonek
@@ -439,7 +439,7 @@ KernClass2: 26+ 79 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 2"
  15 b thorn uni1E03
  10 eight.prop
  52 S Sacute Scircumflex Scedilla Scaron uni1E60 uni1E62
- 10 braceright
+ 15 braceright.latn
  0 {} -50 {} -40 {} -16 {} -10 {} 12 {} -10 {} -21 {} -51 {} -37 {} -62 {} -53 {} -59 {} -47 {} -16 {} -10 {} -9 {} -11 {} -9 {} -8 {} -12 {} -43 {} -43 {} -42 {} -33 {} -47 {} -44 {} -23 {} -46 {} -5 {} -10 {} -28 {} -18 {} -35 {} -30 {} -28 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} -8 {} -6 {} -21 {} -17 {} -27 {} -14 {} -21 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} -19 {} -18 {} -18 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} -12 {} 0 {} -8 {} -6 {} -11 {} -20 {} -10 {} -6 {} -7 {} -7 {} -34 {} -8 {} -7 {} -9 {} -6 {} -7 {} -8 {} -24 {} -10 {} -15 {} -14 {} -13 {} -5 {} -7 {} -6 {} -22 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} -14 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -5 {} -6 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} -6 {} -5 {} -25 {} -24 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} -20 {} -5 {} -16 {} -11 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -27 {} -26 {} -23 {} -26 {} -6 {} -8 {} -8 {} -8 {} -8 {} 0 {} 0 {} 0 {} -11 {} 0 {} -11 {} -17 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} -47 {} 0 {} 0 {} 0 {} 0 {} -11 {} 0 {} -5 {} 0 {} 0 {} -17 {} -14 {} -21 {} -69 {} -55 {} -69 {} -13 {} -19 {} -13 {} -6 {} -12 {} -11 {} -47 {} -21 {} -13 {} -8 {} -30 {} -26 {} -6 {} -25 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} -19 {} -13 {} -26 {} -10 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -11 {} -10 {} -11 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} -8 {} -16 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -11 {} 0 {} -5 {} -5 {} -9 {} 0 {} -5 {} 0 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -11 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -21 {} -20 {} -20 {} -20 {} -15 {} -13 {} -17 {} -17 {} -17 {} 0 {} 0 {} 0 {} -18 {} 0 {} -11 {} -16 {} -13 {} -14 {} -11 {} -8 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} -12 {} -7 {} -7 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -24 {} -23 {} -21 {} -23 {} -20 {} -16 {} -16 {} -16 {} -16 {} 0 {} 0 {} 0 {} -16 {} 0 {} -16 {} -17 {} -13 {} -16 {} -9 {} -7 {} -8 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -19 {} 0 {} -11 {} -7 {} 0 {} -18 {} -6 {} -21 {} -9 {} -9 {} -19 {} -16 {} -17 {} -15 {} 0 {} -15 {} -11 {} -8 {} 0 {} 0 {} 0 {} -21 {} -22 {} -14 {} -21 {} -16 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 12 {} 0 {} -52 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -33 {} -30 {} -38 {} -28 {} -9 {} -13 {} -72 {} -72 {} -70 {} 0 {} 0 {} 0 {} -38 {} 0 {} 0 {} -35 {} -53 {} -15 {} -63 {} -56 {} -37 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -67 {} -77 {} 0 {} 0 {} 0 {} -6 {} 0 {} -73 {} -12 {} -76 {} -55 {} -65 {} -40 {} -18 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -45 {} -45 {} -44 {} -24 {} -69 {} -71 {} 0 {} -75 {} 0 {} 0 {} -44 {} 0 {} -36 {} -28 {} -38 {} -13 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -11 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -19 {} -18 {} -19 {} -18 {} -14 {} -13 {} -19 {} -20 {} -20 {} -10 {} 0 {} 0 {} -19 {} 0 {} -10 {} -14 {} -14 {} -15 {} -13 {} -10 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -7 {} -9 {} -5 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -11 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -24 {} -23 {} -21 {} -23 {} -20 {} -19 {} -19 {} -19 {} -18 {} 0 {} 0 {} 0 {} -19 {} 0 {} -17 {} -18 {} -16 {} -19 {} -12 {} -9 {} -11 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -10 {} -6 {} 0 {} -19 {} -7 {} -23 {} -8 {} -8 {} -17 {} -17 {} -18 {} -16 {} 0 {} -17 {} -12 {} -9 {} 0 {} 0 {} 0 {} -24 {} -21 {} -14 {} -24 {} -18 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} -5 {} -7 {} -24 {} -18 {} -35 {} -17 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -22 {} -21 {} -9 {} -11 {} -11 {} -32 {} 0 {} -11 {} 0 {} 0 {} -11 {} 0 {} -21 {} 0 {} -36 {} -32 {} -26 {} 0 {} 0 {} 0 {} -14 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 6 {} -43 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} -17 {} -36 {} -36 {} -32 {} -36 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -45 {} -5 {} -9 {} -6 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -79 {} -71 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} -21 {} -69 {} -24 {} -19 {} 0 {} -19 {} -21 {} 0 {} -15 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -16 {} -9 {} 0 {} 29 {} -6 {} -15 {} -22 {} -20 {} -45 {} -32 {} -41 {} -27 {} -10 {} -9 {} -9 {} -11 {} -8 {} 0 {} -7 {} -35 {} -34 {} -35 {} -20 {} 0 {} 0 {} -35 {} -16 {} 0 {} -10 {} -21 {} -11 {} -22 {} -16 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 18 {} -10 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 5 {} 17 {} 18 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -5 {} -7 {} 0 {} -16 {} 0 {} 0 {} 0 {} 0 {} -6 {} -5 {} -21 {} -21 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} -11 {} 0 {} -8 {} -5 {} -8 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} -8 {} -6 {} 0 {} -8 {} -13 {} -10 {} 0 {} 0 {} -6 {} 0 {} -5 {} 0 {} 0 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -62 {} 0 {} 0 {} 0 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -99 {} -97 {} -99 {} -18 {} -66 {} -56 {} -55 {} -54 {} 0 {} 0 {} 0 {} -62 {} 0 {} -43 {} -77 {} -51 {} -39 {} -40 {} -35 {} -37 {} 0 {} -51 {} 0 {} 0 {} 0 {} 0 {} -22 {} 0 {} -19 {} -7 {} 0 {} -71 {} -59 {} -77 {} -74 {} -68 {} -82 {} -44 {} -53 {} -41 {} -36 {} -50 {} -21 {} -43 {} -26 {} -40 {} -34 {} -84 {} -84 {} -65 {} -80 {} -72 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -39 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -27 {} -27 {} -25 {} -27 {} -19 {} -14 {} -12 {} -12 {} -12 {} 0 {} 0 {} 0 {} -15 {} 0 {} -18 {} -20 {} -10 {} -13 {} -6 {} 0 {} -6 {} 0 {} -36 {} 0 {} 0 {} 0 {} 0 {} -21 {} 0 {} -8 {} 0 {} 0 {} -22 {} -14 {} -27 {} -38 {} -38 {} -36 {} -19 {} -23 {} -19 {} -8 {} -20 {} -12 {} -22 {} -17 {} 0 {} -9 {} -29 {} -26 {} -12 {} -28 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 8 {} 0 {} 0 {} 0 {} 0 {} 8 {} 0 {} -46 {} -14 {} 0 {} 0 {} -22 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -76 {} -75 {} -69 {} -76 {} -36 {} -40 {} -37 {} -38 {} -37 {} 0 {} 0 {} 0 {} -49 {} 12 {} -32 {} -61 {} -36 {} -34 {} -22 {} -20 {} -21 {} 0 {} -62 {} 0 {} 0 {} 0 {} 0 {} -34 {} 21 {} -8 {} 0 {} 21 {} -62 {} -38 {} -64 {} -91 {} -81 {} -107 {} -36 {} -45 {} -35 {} -22 {} -45 {} -28 {} -63 {} -37 {} -38 {} -30 {} -79 {} -68 {} -47 {} -73 {} -62 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -30 {} 37 {} -13 {} -8 {} 0 {} 0 {} 0 {} 0 {} -34 {} -12 {} 0 {} 0 {} -19 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -56 {} -56 {} -53 {} -56 {} -35 {} -33 {} -27 {} -28 {} -27 {} 0 {} 0 {} 0 {} -39 {} 0 {} -32 {} -45 {} -30 {} -31 {} -17 {} -15 {} -16 {} 0 {} -52 {} 0 {} 0 {} 0 {} 0 {} -31 {} 15 {} -9 {} 0 {} 15 {} -43 {} -26 {} -48 {} -80 {} -70 {} -77 {} -34 {} -34 {} -34 {} -21 {} -35 {} -26 {} -50 {} -32 {} -29 {} -24 {} -63 {} -53 {} -30 {} -58 {} -47 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} -24 {} 31 {} -12 {} -7 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 6 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -28 {} -25 {} -31 {} -23 {} -12 {} -13 {} -60 {} -59 {} -59 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} -27 {} -42 {} -15 {} -46 {} -36 {} -21 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -55 {} -18 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} -89 {} -88 {} -89 {} -60 {} -68 {} -60 {} -61 {} -61 {} 0 {} 0 {} 0 {} -59 {} 0 {} -59 {} -73 {} -58 {} -55 {} -36 {} -32 {} -34 {} 0 {} -51 {} 0 {} 0 {} 0 {} 0 {} -36 {} 11 {} -11 {} 0 {} 11 {} -69 {} -57 {} -77 {} -83 {} -75 {} -80 {} -56 {} -61 {} -52 {} -37 {} -61 {} -27 {} -35 {} -28 {} -43 {} -31 {} -79 {} -75 {} -62 {} -75 {} -64 {} 0 {} 0 {} 0 {} 0 {} 0 {} -34 {} -38 {} 27 {} -14 {} -8 {} 0 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -41 {} -41 {} -39 {} -10 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -36 {} -9 {} -33 {} -25 {} -32 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -8 {} 0 {} -5 {} 0 {} -8 {} 0 {} 0 {} 0 {} -5 {} 0 {} -5 {} 0 {} -6 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -16 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} -15 {} -6 {} -32 {} -22 {} -44 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -22 {} -10 {} -12 {} -12 {} -62 {} 0 {} -7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} 0 {} -32 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -45 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 6 {} 5 {} 13 {} 0 {} 0 {} -15 {} -15 {} -12 {} -15 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} -7 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} -8 {} -5 {} -13 {} -37 {} -37 {} -38 {} -10 {} -16 {} -11 {} 0 {} -6 {} 0 {} -24 {} -13 {} 0 {} 0 {} -15 {} -15 {} 0 {} -13 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} 0 {} 5 {} -8 {} 20 {} 14 {} 50 {} 48 {} 54 {} 38 {} 57 {} -27 {} -27 {} -25 {} -27 {} -23 {} -18 {} -16 {} -16 {} -16 {} 0 {} 0 {} 0 {} -17 {} 0 {} -21 {} -21 {} -14 {} -17 {} -9 {} -7 {} -9 {} 55 {} -39 {} 0 {} 0 {} 9 {} 11 {} -21 {} 0 {} -8 {} 0 {} 0 {} -24 {} -19 {} -32 {} -45 {} -38 {} -41 {} -22 {} -24 {} -21 {} -12 {} -23 {} -13 {} -22 {} -17 {} 0 {} -11 {} -33 {} -26 {} -16 {} -31 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 22 {}
 KernClass2: 14+ 24 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  9 ampersand
@@ -461,10 +461,10 @@ KernClass2: 14+ 24 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  1 V
  37 W Wcircumflex Wgrave Wacute Wdieresis
  37 Y Yacute Ycircumflex Ydieresis Ygrave
- 10 parenright
+ 15 parenright.latn
  73 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek
- 9 backslash
- 12 bracketright
+ 14 backslash.latn
+ 17 bracketright.latn
  1 X
  54 comma period.latn quotesinglbase quotedblbase ellipsis
  9 M uni1E40
@@ -511,8 +511,8 @@ Flags: HW
 LayerCount: 2
 EndChar
 
-StartChar: exclam
-Encoding: 33 33 1
+StartChar: exclam.latn
+Encoding: 33 -1 1
 Width: 235
 Flags: HW
 HStem: -11 107<75 160> 607 20G<106 137>
@@ -747,8 +747,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft
-Encoding: 40 40 8
+StartChar: parenleft.latn
+Encoding: 40 -1 8
 Width: 255
 Flags: HW
 VStem: 36 71<120 437>
@@ -765,8 +765,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenright
-Encoding: 41 41 9
+StartChar: parenright.latn
+Encoding: 41 -1 9
 Width: 255
 Flags: HW
 VStem: 148 71<120 437>
@@ -894,8 +894,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: slash
-Encoding: 47 47 14
+StartChar: slash.latn
+Encoding: 47 -1 14
 Width: 403
 Flags: HW
 LayerCount: 2
@@ -2424,8 +2424,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketleft
-Encoding: 91 91 58
+StartChar: bracketleft.latn
+Encoding: 91 -1 58
 Width: 252
 Flags: HW
 HStem: -141 24<191 248> 683 24<191 248>
@@ -2449,8 +2449,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: backslash
-Encoding: 92 92 59
+StartChar: backslash.latn
+Encoding: 92 -1 59
 Width: 391
 Flags: HW
 VStem: 30 330
@@ -2467,8 +2467,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bracketright
-Encoding: 93 93 60
+StartChar: bracketright.latn
+Encoding: 93 -1 60
 Width: 253
 Flags: HW
 HStem: -141 24<6 63> 683 24<6 63>
@@ -3481,8 +3481,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceleft
-Encoding: 123 123 90
+StartChar: braceleft.latn
+Encoding: 123 -1 90
 Width: 216
 Flags: HW
 VStem: 57 43<-55 69 494 618> 102 45<117 237 325 446>
@@ -3513,8 +3513,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bar
-Encoding: 124 124 91
+StartChar: bar.latn
+Encoding: 124 -1 91
 Width: 200
 Flags: HW
 VStem: 75 50<-115 747>
@@ -3532,8 +3532,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: braceright
-Encoding: 125 125 92
+StartChar: braceright.latn
+Encoding: 125 -1 92
 Width: 217
 Flags: HW
 VStem: 70 45<117 237 325 446> 117 43<-55 69 494 618>
