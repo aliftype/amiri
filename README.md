@@ -39,7 +39,7 @@ version. To install FontForge on Debian and Ubuntu:
 You can then open the source files in FontForge and start editing, either from
 GUI or from the command line:
 
-    $ fontforge sources/Amiri-Regular.sfdir
+    $ fontforge sources/Amiri-Regular.sfd
 
 To build the fonts you need a few Python packages:
 

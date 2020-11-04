@@ -14,7 +14,6 @@ MAKEQURAN=mkquran.py
 PY ?= python
 FF=$(PY) $(BUILD)
 
-SFDS=$(FONTS:%=$(SRC)/%.sfdir)
 TTF=$(FONTS:%=%.ttf)
 OTF=$(FONTS:%=%.otf)
 HTML=$(DOC)/Documentation-Arabic.html
@@ -28,7 +27,7 @@ ttf: $(TTF)
 otf: $(OTF)
 doc: $(HTML)
 
-$(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(SRC)/$(NAME)-Regular.sfd $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --quran
 
@@ -40,19 +39,19 @@ $(NAME)Quran.otf: $(NAME)QuranColored.otf $(MAKEQURAN)
 	@echo "   FF	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
-$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(SRC)/$(NAME)-Regular.sfd $(SRC)/latin/$(LATIN)-Regular.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
-$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfdir $(SRC)/latin/$(LATIN)-Slanted.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(SRC)/$(NAME)-Regular.sfd $(SRC)/latin/$(LATIN)-Slanted.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
-$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-Bold.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(SRC)/$(NAME)-Bold.sfd $(SRC)/latin/$(LATIN)-Bold.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
 
-$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfdir $(SRC)/latin/$(LATIN)-BoldSlanted.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(SRC)/$(NAME)-Bold.sfd $(SRC)/latin/$(LATIN)-BoldSlanted.sfd $(SRC)/$(NAME).fea $(FEA) $(BUILD)
 	@echo "   FF	$@"
 	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
 
