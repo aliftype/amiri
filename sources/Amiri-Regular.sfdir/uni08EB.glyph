@@ -2,7 +2,6 @@ StartChar: uni08EB
 Encoding: 2283 2283 6039
 Width: 0
 GlyphClass: 4
-Flags: HW
 AnchorPoint: "TashkilTashkilAbove" 184 990 basemark 0
 AnchorPoint: "TashkilTashkilAbove" 234 845 mark 0
 AnchorPoint: "MarkAbove" 234 845 mark 0
@@ -10,6 +9,6 @@ AnchorPoint: "TashkilAboveDot" 234 845 mark 0
 AnchorPoint: "TashkilAbove" 234 845 mark 0
 LayerCount: 2
 Fore
-Refer: 6038 2282 S 1 0 0 1 120 57 2
-Refer: 6038 2282 S 1 0 0 1 0 -10 2
+Refer: 6038 2282 N 1 0 0 1 120 57 2
+Refer: 6038 2282 N 1 0 0 1 0 -10 2
 EndChar
