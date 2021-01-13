@@ -6,7 +6,7 @@ feature ccmp {
 #endif
 
 @comma = [uni060C uni061B];
-@comma.alt = [uni060C.alt uni061B.alt];
+@comma.alt = [uni2E41 uni204F];
 
 feature locl {
   script arab;
