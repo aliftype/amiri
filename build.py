@@ -191,18 +191,6 @@ def makeQuranSajdaLine(font):
     font.features.text.statements.append(mark)
 
 
-def subsetFont(otf, unicodes):
-    from fontTools import subset
-
-    options = subset.Options()
-    options.set(layout_features='*', name_IDs='*', name_languages='*',
-        notdef_outline=True, glyph_names=True)
-    subsetter = subset.Subsetter(options=options)
-    subsetter.populate(unicodes=unicodes)
-    subsetter.subset(otf)
-    return otf
-
-
 def parseFea(text):
     from fontTools.feaLib.parser import Parser
 
@@ -348,6 +336,8 @@ def scaleGlyph(font, glyph, scale):
 
 
 def makeQuran(options):
+    from fontTools import subset
+
     font = makeDesktop(options, False)
     mergeLatin(font)
 
@@ -414,7 +404,13 @@ def makeQuran(options):
                  0x202B, 0x202C, 0x202D, 0x202E, 0x202F, 0x25CC, 0xFD3E,
                  0xFD3F, 0xFDFA, 0xFDFD]
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
-    otf = subsetFont(otf, unicodes)
+
+    opts = subset.Options()
+    opts.set(layout_features='*', name_IDs='*', name_languages='*',
+        notdef_outline=True, glyph_names=True, layout_scripts="*")
+    subsetter = subset.Subsetter(options=opts)
+    subsetter.populate(unicodes=unicodes)
+    subsetter.subset(otf)
     otf.save(options.output)
 
 
