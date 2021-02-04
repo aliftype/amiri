@@ -107,7 +107,7 @@ Grid
   Named: "Digits base"
 EndSplineSet
 AnchorClass2: "TashkilBelowHamza" "'mkmk' Tashkil below Hamza-1" "MarkAbove" "'mark' Generic Mark Anchor-1" "MarkBelow" "'mark' Generic Mark Anchor-2" "TashkilAbove" "'mark' Tashkil Above Base-1" "TashkilBelow" "'mark' Tashkil Below Base-1" "TashkilTashkilAbove" "'mkmk' Tashkil to Tashkil Above-1" "TashkilTashkilBelow" "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove2" "'mkmk' Tashkil to Tashkil Above 2-1" "TashkilAboveDot" "Tashkil Above Dot-1" "TashkilBelowDot" "Tashkil Below Dot-1" "HamzaAbove" "'mark' Hamza Above-1" "HamzaBelow" "'mark' Hamza Below-1" "DotAbove" "'mark' Dot Above-1" "DotBelow" "'mark' Dot Below-1" "DotBelowAlt" "'mark' Dot Below Alt-1" "TwoDotsAbove" "'mark' Two Dots Above-1" "TwoDotsBelow" "'mark' Two Dots Below-1" "TwoDotsBelowAlt" "'mark' Two Dots Below Alt-1" "DigitAbove" "'mark' Digit Above-1" "DigitBelow" "'mark' Digit Below-1" "MarkDotAbove" "'mkmk' Mark to Dot Above-1" "MarkDotBelow" "'mkmk' Mark to Dot Below-1" "TaaAbove" "'mark' Small Taa Above-1" "TaaBelow" "'mark' Small Taa Below-1" "AlefAbove" "'mark' Small Alef Above-1" "SeenAbove" "'mark' Seen Above-1" "SeenBelow" "'mark' Seen Below-1" "NoonAbove" "'mark' Noon Above-1" "VAbove" "'mark' V Mark Above-1" "RingDash" "'mkmk' Ring to Dash-1" "RingBelow" "'mark' Ring Below-1" "DotAlt" "'mark' Dot Alt-1" "DotHmaza" "'mkmk' Dot above Hamza-1" "Tail" "'mark' Yaa Tail-1" "Dash" "'mark' Dash-1" "Stroke" "'mark' Stroke-1" "cursive" "'curs' Cursive Attachment-1"
-BeginChars: 1119111 6274
+BeginChars: 1119111 6277
 
 StartChar: aAlf.fina.alt
 Encoding: 1114112 -1 0
@@ -90521,6 +90521,30 @@ SplineSet
  4686 -57 4689 -58 4693 -59 c 1
  4681 -39 4671 -14 4662 15 c 1
 EndSplineSet
+EndChar
+
+StartChar: uni08BB
+Encoding: 2235 2235 6274
+Width: 983
+LayerCount: 2
+Fore
+Refer: 652 1697 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni08BC
+Encoding: 2236 2236 6275
+Width: 687
+LayerCount: 2
+Fore
+Refer: 888 1647 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni08BD
+Encoding: 2237 2237 6276
+Width: 572
+LayerCount: 2
+Fore
+Refer: 874 1722 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont

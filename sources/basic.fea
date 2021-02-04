@@ -143,6 +143,9 @@ feature init {
   sub uni077E by uni077E.init;
   sub uni077F by uni077F.init;
   sub uni08A0 by uni08A0.init;
+  sub uni08BB by uni06A2.init;
+  sub uni08BC by uni06A7.init;
+  sub uni08BD by uni0646.init;
 } init;
 
 feature medi {
@@ -281,6 +284,9 @@ feature medi {
   sub uni077E by uni077E.medi;
   sub uni077F by uni077F.medi;
   sub uni08A0 by uni08A0.medi;
+  sub uni08BB by uni06A2.medi;
+  sub uni08BC by uni06A7.medi;
+  sub uni08BD by uni0646.medi;
 } medi;
 
 feature fina {
@@ -481,5 +487,8 @@ feature fina {
   sub uni077E by uni077E.fina;
   sub uni077F by uni077F.fina;
   sub uni08A0 by uni08A0.fina;
+  sub uni08BB by uni06A1.fina;
+  sub uni08BC by uni066F.fina;
+  sub uni08BD by uni06BA.fina;
 } fina;
 
