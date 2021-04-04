@@ -65,7 +65,6 @@ check: $(TTF) $(OTF)
 
 clean:
 	rm -rfv $(TTF) $(OTF) $(HTML)
-	rm -rfv $(DOC)/documentation-arabic.{aux,log,toc}
 
 distclean: clean
 	rm -rf $(DIST){,.zip}
