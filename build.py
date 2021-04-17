@@ -184,7 +184,7 @@ def makeQuranSajdaLine(font):
                                        [ast.GlyphName(replace)],
                                        [ast.GlyphClass(widths[width])],
                                        [], False)
-        gdefclasses.markGlyphs.append(replace)
+        gdefclasses.markGlyphs.glyphclass.glyphs.append(replace)
         mark.statements.append(sub)
 
     font.features.text.statements.append(mark)
@@ -233,10 +233,10 @@ def mergeLatin(font):
         if isinstance(block, ast.TableBlock) and block.name == "GDEF":
             for st in block.statements:
                 if isinstance(st, ast.GlyphClassDefStatement):
-                    classes.baseGlyphs.extend(st.baseGlyphs.glyphSet())
-                    classes.componentGlyphs.extend(st.componentGlyphs.glyphSet())
-                    classes.ligatureGlyphs.extend(st.ligatureGlyphs.glyphSet())
-                    classes.markGlyphs.extend(st.markGlyphs.glyphSet())
+                    for n in ("base", "component", "ligature", "mark"):
+                        this = getattr(classes, n + "Glyphs")
+                        other = getattr(st, n + "Glyphs")
+                        this.glyphclass.glyphs.extend(other.glyphSet())
                 else:
                     gdef.statements.append(st)
         else:
@@ -517,7 +517,7 @@ def openFont(path):
     from ufoLib2 import Font
 
     font = Font(validate=False)
-    parser = SFDParser(path, font, ignore_uvs=False, ufo_anchors=False,
+    parser = SFDParser(path, font, ufo_anchors=False,
         ufo_kerning=False, minimal=True)
     parser.parse()
 
