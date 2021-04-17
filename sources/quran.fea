@@ -11,11 +11,18 @@
 # with kashida.
 
 # Substitute combining small letters by the spacing ones.
+
+@small = [uni0670 uni06E7 uni08F3];
+@small.medi = [uni0670.medi uni06E7.medi uni08F3.medi];
+lookup small_medi {
+  sub uni0640 uni0670 by uni0670.medi;
+  sub uni0640 uni06E7 by uni06E7.medi;
+  sub uni0640 uni08F3 by uni08F3.medi;
+} small_medi;
+
 feature ccmp {
   sub [uni00A0 uni202F]' uni0670' by uni0670.isol;
-  sub @aKashida' uni0670' by uni0670.medi;
-  sub @aKashida' uni06E7' by uni06E7.medi;
-  sub @aKashida' uni08F3' by uni08F3.medi;
+  sub uni0640' [uni0670 uni06E7 uni08F3]' lookup small_medi;
 } ccmp;
 
 #
