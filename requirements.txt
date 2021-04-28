@@ -10,22 +10,19 @@ attrs==20.3.0
     # via ufolib2
 booleanoperations==0.9.0
     # via ufo2ft
-cffsubr==0.2.7
-    # via ufo2ft
-compreffor==0.5.1
+cffsubr==0.2.8
     # via ufo2ft
 cu2qu==1.6.7
     # via ufo2ft
-fonttools[lxml,ufo]==4.18.2
+fonttools[lxml,ufo]==4.22.1
     # via
     #   -r requirements.in
     #   booleanoperations
     #   cffsubr
-    #   compreffor
     #   cu2qu
     #   ufo2ft
     #   ufolib2
-fs==2.4.11
+fs==2.4.13
     # via fonttools
 lxml==4.6.3
     # via fonttools
@@ -35,15 +32,15 @@ pcpp==1.22
     # via -r requirements.in
 pyclipper==1.2.1
     # via booleanoperations
-pytz==2020.5
+pytz==2021.1
     # via fs
 git+git://github.com/alif-type/sfdLib.git@v1.2.0#egg=sfdLib
     # via -r requirements.in
 six==1.15.0
     # via fs
-skia-pathops==0.6.0.post1
+skia-pathops==0.6.0.post2
     # via ufo2ft
-ufo2ft[cffsubr,pathops]==2.19.1
+ufo2ft[cffsubr,pathops]==2.21.0
     # via -r requirements.in
 ufolib2==0.11.1
     # via -r requirements.in
