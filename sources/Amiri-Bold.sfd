@@ -108,7 +108,7 @@ Grid
   Named: "Digits base"
 EndSplineSet
 AnchorClass2: "TashkilBelowHamza" "'mkmk' Tashkil below Hamza-1" "MarkAbove" "'mark' Generic Mark Anchor-1" "MarkBelow" "'mark' Generic Mark Anchor-2" "TashkilAbove" "'mark' Tashkil Above Base-1" "TashkilBelow" "'mark' Tashkil Below Base-1" "TashkilTashkilAbove" "'mkmk' Tashkil to Tashkil Above-1" "TashkilTashkilBelow" "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove2" "'mkmk' Tashkil to Tashkil Above 2-1" "TashkilAboveDot" "Tashkil Above Dot-1" "TashkilBelowDot" "Tashkil Below Dot-1" "HamzaAbove" "'mark' Hamza Above-1" "HamzaBelow" "'mark' Hamza Below-1" "DotAbove" "'mark' Dot Above-1" "DotBelow" "'mark' Dot Below-1" "DotBelowAlt" "'mark' Dot Below Alt-1" "TwoDotsAbove" "'mark' Two Dots Above-1" "TwoDotsBelow" "'mark' Two Dots Below-1" "TwoDotsBelowAlt" "'mark' Two Dots Below Alt-1" "DigitAbove" "'mark' Digit Above-1" "DigitBelow" "'mark' Digit Below-1" "MarkDotAbove" "'mkmk' Mark to Dot Above-1" "MarkDotBelow" "'mkmk' Mark to Dot Below-1" "TaaAbove" "'mark' Small Taa Above-1" "TaaBelow" "'mark' Small Taa Below-1" "AlefAbove" "'mark' Small Alef Above-1" "SeenAbove" "'mark' Seen Above-1" "SeenBelow" "'mark' Seen Below-1" "NoonAbove" "'mark' Noon Above-1" "VAbove" "'mark' V Mark Above-1" "RingDash" "'mkmk' Ring to Dash-1" "RingBelow" "'mark' Ring Below-1" "DotAlt" "'mark' Dot Alt-1" "DotHmaza" "'mkmk' Dot above Hamza-1" "Tail" "'mark' Yaa Tail-1" "Dash" "'mark' Dash-1" "Stroke" "'mark' Stroke-1" "cursive" "'curs' Cursive Attachment-1"
-BeginChars: 70523 6122
+BeginChars: 70523 6123
 
 StartChar: aAlf.fina.alt
 Encoding: 65536 -1 0
@@ -93956,6 +93956,24 @@ Width: 572
 LayerCount: 3
 Fore
 Refer: 874 1722 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uyghur-hyphen
+Encoding: 62719 62719 6122
+Width: 371
+LayerCount: 3
+Fore
+SplineSet
+95 -15 m 2
+ 78 -15 70 -5 70 8 c 2
+ 70 81 l 2
+ 70 94 78 104 95 104 c 2
+ 276 104 l 2
+ 293 104 301 94 301 81 c 2
+ 301 8 l 2
+ 301 -5 293 -15 276 -15 c 2
+ 95 -15 l 2
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

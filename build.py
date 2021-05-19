@@ -63,7 +63,8 @@ def cleanAnchors(font):
             return False
         return True
 
-    fea = font.features.text = parseFea(font.features.text)
+    glyphnames = set(g.name for g in font)
+    fea = font.features.text = parseFea(font.features.text, glyphnames)
     fea.statements = [s for s in fea.statements if  keep(s)]
     for block in fea.statements:
         if hasattr(block, "statements"):
@@ -190,17 +191,18 @@ def makeQuranSajdaLine(font):
     font.features.text.statements.append(mark)
 
 
-def parseFea(text):
+def parseFea(text, font=None):
     from fontTools.feaLib.parser import Parser
 
     if isinstance(text, ast.FeatureFile):
         return text
     f = StringIO(text)
-    fea = Parser(f).parse()
+    fea = Parser(f, font or []).parse()
     return fea
 
 
 def findGDEF(font):
+    glyphnames = set(g.name for g in font)
     fea = font.features.text = parseFea(font.features.text)
     gdef = None
     classes = None
