@@ -1351,7 +1351,7 @@ lookup KasraAynFina {
 } KasraAynFina;
 
 # and final ح
-# see https://github.com/alif-type/amiri/issues/162#issuecomment-421769913
+# see https://github.com/aliftype/amiri/issues/162#issuecomment-421769913
 lookup KasraHaaFina {
   sub uni064D by uni064D uni0640.1;
   sub uni0650 by uni0650 uni0640.1;

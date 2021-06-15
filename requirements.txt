@@ -34,7 +34,7 @@ pyclipper==1.2.1
     # via booleanoperations
 pytz==2021.1
     # via fs
-git+git://github.com/alif-type/sfdLib.git@v1.2.2#egg=sfdLib
+git+git://github.com/aliftype/sfdLib.git@v1.2.2#egg=sfdLib
     # via -r requirements.in
 six==1.16.0
     # via fs

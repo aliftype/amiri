@@ -3,8 +3,8 @@ Amiri 0.113 (2020-06-02)
 
 * Add U+08BA, U+08B6, U+08B7, U+08B8, and U+08B9.
 * Bug fixes:
-  - https://github.com/alif-type/amiri/issues/172
-  - https://github.com/alif-type/amiri/issues/187
+  - https://github.com/aliftype/amiri/issues/172
+  - https://github.com/aliftype/amiri/issues/187
 * Add ligature carets to Latin ligatures.
 * Building the fonts no longer requires FontForge.
 
@@ -39,17 +39,17 @@ Amiri 0.111 (2017-12-30)
   this is needed.
 * Fix wrong glyph class for U+0674 ARABIC LETTER HIGH HAMZA, causing it to be
   incorrectly treated as a zero width mark:
-  https://github.com/alif-type/amiri/issues/138.
+  https://github.com/aliftype/amiri/issues/138.
 * Drop localized Arabic names from the font (like style names), their support
   in application is spotty, also it is a bit Ugly to have the font presented
   with mixed language name, e.g. “Amiri عادي”, in some applications under
   Arabic locales.
 * Allow Kashida around floating Hamza:
-  https://github.com/alif-type/amiri/issues/137
+  https://github.com/aliftype/amiri/issues/137
 * Colorize Hamza above mark in colored Quran font:
-  https://github.com/alif-type/amiri/issues/136
+  https://github.com/aliftype/amiri/issues/136
 * Change the shape of Damma used in U+06C7 & U+0677:
-  https://github.com/alif-type/amiri/issues/123
+  https://github.com/aliftype/amiri/issues/123
 * Other smaller fixes.
 * OpenType layout tables are now compiled with FontTool’s feaLib instead of my
   FontForge fork. This is an attempt to make building the fonts from source
@@ -104,8 +104,8 @@ Amiri 0.109 (2016-11-20)
     - Improve and redo most of the Arabic math alphanumeric symbols.
     - https://github.com/khaledhosny/quran-data/issues/1
     - https://github.com/khaledhosny/quran-data/issues/4
-    - https://github.com/alif-type/amiri-font/issues/90
-    - https://github.com/alif-type/amiri-font/issues/106
+    - https://github.com/aliftype/amiri/issues/90
+    - https://github.com/aliftype/amiri/issues/106
 
 Amiri 0.108 (2015-09-21)
 ------------------------

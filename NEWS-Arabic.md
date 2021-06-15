@@ -3,8 +3,8 @@
 
 * إضافة U+08BA، و U+08B6، و U+08B7، و U+08B8، و U+08B9.
 * إصلاح المشاكل:
-  - https://github.com/alif-type/amiri/issues/172
-  - https://github.com/alif-type/amiri/issues/187
+  - https://github.com/aliftype/amiri/issues/172
+  - https://github.com/aliftype/amiri/issues/187
 * بناء الخطوط لم يعد يتطلب فونتفورج.
 
 أميري ٠٫١١٢ (٢٩-٠٩-٢٠١٩)
@@ -23,15 +23,15 @@
 
 * تحسين اقتران الكافات التي أضيفت في الإصدارة السابقة.
 * إصلاح خطأ يجعل جرف الهمزة العالية (U+0674) يقترن بالهرف السابق عليه:
-  https://github.com/alif-type/amiri/issues/138.
+  https://github.com/aliftype/amiri/issues/138.
 * إزالة الأسماء العربية الداخلية للخط، لتفادي ازدواجية اللغة في اسم الخط في بعض
   التطبيقات عندما يكون النظام باللغة العربية، مثل ”Amiri عادي“.
 * السماح بأن تسبق أو تلحق همزة وسط الكلمة بالكشيدة:
-  https://github.com/alif-type/amiri/issues/137
+  https://github.com/aliftype/amiri/issues/137
 * تلوين علامة الهمزة المنفصلة في الخط القرآني الملون:
-  https://github.com/alif-type/amiri/issues/136
+  https://github.com/aliftype/amiri/issues/136
 * تغيير شكل الضمة في حرفي U+06C7 و U+0677:
-  https://github.com/alif-type/amiri/issues/123
+  https://github.com/aliftype/amiri/issues/123
 * تغييرات شغيرة أخرى، و تغييرات على نظام بناء الخط من المصدر.
 
 أميري ٠٫١١٠ (٢٠-١٢-٢٠١٧)
@@ -79,8 +79,8 @@
     - تحسينات و إعادة تصميم للكثير من رموز الرياضيات العربية.
     - https://github.com/khaledhosny/quran-data/issues/1
     - https://github.com/khaledhosny/quran-data/issues/4
-    - https://github.com/alif-type/amiri-font/issues/90
-    - https://github.com/alif-type/amiri-font/issues/106
+    - https://github.com/aliftype/amiri/issues/90
+    - https://github.com/aliftype/amiri/issues/106
 
 أميري ٠٫١٠٨ (٢١-٠٩-٢٠١٥)
 ------------------------
