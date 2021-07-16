@@ -1,4 +1,7 @@
 feature ccmp {
+  # Unicode discourages the use of U+0673 directly.
+  sub uni0627 uni065F by uni0673;
+
   sub uni08B6 by uni0628 smallmeem.above;
   sub uni08B7 by uni067E smallmeem.above;
   sub uni08B8 by uni066E smallteh.above;
