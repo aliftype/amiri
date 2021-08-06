@@ -116,7 +116,7 @@ def generateFont(options, font):
             'PUSHW[]', '511', 'SCANCTRL[]', 'PUSHB[]', '4', 'SCANTYPE[]'])
     else:
         otf = compileOTF(font, inplace=True,
-            optimizeCFF=2, subroutinizer="cffsubr",
+            optimizeCFF=1,
             removeOverlaps=True, overlapsBackend="pathops",
             featureWriters=[])
 
