@@ -65209,6 +65209,8 @@ EndChar
 StartChar: uni0640.1
 Encoding: 1118384 -1 4599
 Width: 185
+AnchorPoint: "HamzaAbove" 93 244 basechar 0
+AnchorPoint: "HamzaBelow" 93 -92.7734 basechar 0
 AnchorPoint: "NoonAbove" 93 244 basechar 0
 AnchorPoint: "AlefAbove" 93 244 basechar 0
 AnchorPoint: "MarkBelow" 93 -327 basechar 0
@@ -65233,6 +65235,8 @@ EndChar
 StartChar: uni0627.fina_Tatweel
 Encoding: 1118385 -1 4600
 Width: 786
+AnchorPoint: "HamzaBelow" 593 -92.7734 basechar 0
+AnchorPoint: "HamzaAbove" 593 244 basechar 0
 AnchorPoint: "TashkilAbove" 366 708 basechar 0
 AnchorPoint: "TashkilBelow" 233 -327 basechar 0
 LayerCount: 2
@@ -65243,6 +65247,8 @@ EndChar
 StartChar: uni0640.2
 Encoding: 1118386 -1 4601
 Width: 371
+AnchorPoint: "HamzaAbove" 186 244 basechar 0
+AnchorPoint: "HamzaBelow" 186 -92.7734 basechar 0
 AnchorPoint: "AlefAbove" 186 244 basechar 0
 AnchorPoint: "NoonAbove" 186 244 basechar 0
 AnchorPoint: "MarkAbove" 186 801 basechar 0
@@ -65267,6 +65273,8 @@ EndChar
 StartChar: uni0640.3
 Encoding: 1118387 -1 4602
 Width: 556
+AnchorPoint: "HamzaAbove" 278 244 basechar 0
+AnchorPoint: "HamzaBelow" 278 -92.7734 basechar 0
 AnchorPoint: "NoonAbove" 278 244 basechar 0
 AnchorPoint: "AlefAbove" 278 244 basechar 0
 AnchorPoint: "MarkAbove" 278 801 basechar 0
@@ -65291,6 +65299,8 @@ EndChar
 StartChar: uni0640.4
 Encoding: 1118388 -1 4603
 Width: 742
+AnchorPoint: "HamzaAbove" 371 244 basechar 0
+AnchorPoint: "HamzaBelow" 371 -92.7734 basechar 0
 AnchorPoint: "MarkBelow" 371 -327 basechar 0
 AnchorPoint: "MarkAbove" 371 801 basechar 0
 AnchorPoint: "AlefAbove" 371 244 basechar 0
@@ -87124,6 +87134,8 @@ EndChar
 StartChar: uni0640.0
 Encoding: 1119037 -1 6188
 Width: 185
+AnchorPoint: "HamzaBelow" 93 -92.7734 basechar 0
+AnchorPoint: "HamzaAbove" 93 244 basechar 0
 AnchorPoint: "NoonAbove" 93 244 basechar 0
 AnchorPoint: "AlefAbove" 93 244 basechar 0
 AnchorPoint: "MarkBelow" 93 -327 basechar 0
@@ -87146,6 +87158,8 @@ EndChar
 StartChar: uni0640.5
 Encoding: 1119038 -1 6189
 Width: 927
+AnchorPoint: "HamzaAbove" 464 244 basechar 0
+AnchorPoint: "HamzaBelow" 464 -92.7734 basechar 0
 AnchorPoint: "MarkBelow" 464 -327 basechar 0
 AnchorPoint: "MarkAbove" 464 801 basechar 0
 AnchorPoint: "AlefAbove" 464 244 basechar 0
@@ -87170,6 +87184,8 @@ EndChar
 StartChar: uni0640.6
 Encoding: 1119039 -1 6190
 Width: 1113
+AnchorPoint: "HamzaBelow" 557 -92.7734 basechar 0
+AnchorPoint: "HamzaAbove" 557 244 basechar 0
 AnchorPoint: "AlefAbove" 557 244 basechar 0
 AnchorPoint: "NoonAbove" 557 244 basechar 0
 AnchorPoint: "MarkAbove" 557 801 basechar 0
@@ -87196,6 +87212,8 @@ EndChar
 StartChar: uni0640.7
 Encoding: 1119040 -1 6191
 Width: 1298
+AnchorPoint: "HamzaBelow" 649 -92.7734 basechar 0
+AnchorPoint: "HamzaAbove" 649 244 basechar 0
 AnchorPoint: "MarkBelow" 649 -327 basechar 0
 AnchorPoint: "MarkAbove" 649 801 basechar 0
 AnchorPoint: "NoonAbove" 649 244 basechar 0
