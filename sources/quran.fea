@@ -16,6 +16,7 @@ feature ccmp {
   sub @aKashida' uni0670' by uni0670.medi;
   sub @aKashida' uni06E7' by uni06E7.medi;
   sub @aKashida' uni08F3' by uni08F3.medi;
+  sub @aKashida' uni0654' by uni0621.medi;
 } ccmp;
 
 #
