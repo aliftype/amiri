@@ -123,35 +123,35 @@ feature kern {
 
 # proportional digits
 feature kern {
-  pos uni0661.prop uni0662.prop -49;
-  pos uni0661.prop uni0663.prop -49;
-  pos uni0661.prop uni0666.prop -98;
-  pos uni0661.prop uni0669.prop -49;
+  pos uni0661.prop -49 uni0662.prop;
+  pos uni0661.prop -49 uni0663.prop;
+  pos uni0661.prop -98 uni0666.prop;
+  pos uni0661.prop -49 uni0669.prop;
 
-  pos uni0662.prop uni0667.prop  49;
-  pos uni0662.prop uni0668.prop -24;
+  pos uni0662.prop  49 uni0667.prop;
+  pos uni0662.prop -24 uni0668.prop;
 
-  pos uni0663.prop uni0667.prop  49;
+  pos uni0663.prop  49 uni0667.prop;
 
-  pos uni0664.prop uni0661.prop -24;
-  pos uni0664.prop uni0668.prop  24;
+  pos uni0664.prop -24 uni0661.prop;
+  pos uni0664.prop  24 uni0668.prop;
 
-  pos uni0666.prop uni0661.prop -24;
+  pos uni0666.prop -24 uni0661.prop;
 
-  pos uni0667.prop uni0661.prop -24;
-  pos uni0667.prop uni0668.prop -24;
+  pos uni0667.prop -24 uni0661.prop;
+  pos uni0667.prop -24 uni0668.prop;
 
-  pos uni0668.prop uni0661.prop -49;
-  pos uni0668.prop uni0662.prop -49;
-  pos uni0668.prop uni0663.prop -49;
-  pos uni0668.prop uni0666.prop -49;
-  pos uni0668.prop uni0667.prop -49;
+  pos uni0668.prop -49 uni0661.prop;
+  pos uni0668.prop -49 uni0662.prop;
+  pos uni0668.prop -49 uni0663.prop;
+  pos uni0668.prop -49 uni0666.prop;
+  pos uni0668.prop -49 uni0667.prop;
 
-  pos uni0669.prop uni0668.prop  24;
-  pos uni0669.prop uni0660.prop  24;
+  pos uni0669.prop  24 uni0668.prop;
+  pos uni0669.prop  24 uni0660.prop;
 
-  pos uni0660.prop uni0667.prop  24;
-  pos uni0660.prop uni0668.prop  24;
+  pos uni0660.prop  24 uni0667.prop;
+  pos uni0660.prop  24 uni0668.prop;
 } kern;
 
 # generated features for anchor points will be inserted here by build script
