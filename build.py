@@ -20,8 +20,8 @@
 from io import StringIO
 from pcpp.preprocessor import Preprocessor
 
-from sfdLib.parser import SFDParser
 from ufo2ft import compileOTF, compileTTF
+from ufoLib2 import Font
 
 from ufo2ft.filters.transformations import TransformationsFilter
 from fontTools.feaLib import ast
@@ -220,7 +220,7 @@ def findGDEF(font):
 
 def mergeLatin(font):
     fontname = font.info.postscriptFontName.replace("Amiri", "AmiriLatin")
-    latin = openFont("sources/latin/%s.sfd" % fontname)
+    latin = openFont("build/%s.ufo" % fontname)
     for glyph in latin:
         try:
             font.addGlyph(glyph)
@@ -516,12 +516,8 @@ def makeCOLR(font):
 
 
 def openFont(path):
-    from ufoLib2 import Font
-
-    font = Font(validate=False)
-    parser = SFDParser(path, font, ufo_anchors=False,
-        ufo_kerning=False, minimal=True)
-    parser.parse()
+#   font = Font(validate=False)
+    font = Font.open(path)
 
     return font
 
