@@ -1,6 +1,5 @@
 @Dal_1 = [@aDal.fina @aDal.fina_BaaDal @aDal.fina_KafDal @aDal.fina_LamDal
           @aDal.isol];
-@1st_2 = [@RaaWaw @AlefHamzaBelow];
 @1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
 
 # final alef with no hamza above
@@ -26,10 +25,32 @@
 
 feature kern {
   # we don't want to kern those if there is tashkil as it touches the kaf
-  pos @RaaWaw' <-293 0 -293 0>  @Kaf_1;
-  pos @RaaWaw' <-146 0 -146 0>  @Kaf_4;
-  pos @Dal_1'  <-293 0 -293 0>  @Kaf_1;
-  pos @Dal_1'  <-195 0 -195 0>  @Kaf_4;
+  pos @RaaWaw <-293 0 -293 0>  @Kaf_1;
+  pos @RaaWaw <-146 0 -146 0>  @Kaf_4;
+  pos @Dal_1  <-293 0 -293 0>  @Kaf_1;
+  pos @Dal_1  <-195 0 -195 0>  @Kaf_4;
+} kern;
+
+feature kern {
+  lookupflag IgnoreMarks;
+  pos @RaaWaw <-293 0 -293 0>  @Kaf_5;
+  pos @RaaWaw <-146 0 -146 0> [@Kaf_2 @Kaf_3];
+
+  pos @RaaWaw <-49  0 -49  0> @2nd_3;
+  pos @RaaWaw <39 0 39 0> @aYaa.init;
+  pos @RaaWaw <59 0 59 0> uni061B; # Arabic semicolon
+
+  pos @Dal_1  <-293 0 -293 0>  @Kaf_5;
+  pos @Dal_1  <-195 0 -195 0> [@Kaf_2 @Kaf_3];
+
+  pos @Raa_2  <-195 0 -195 0> [@Kaf_2 @Kaf_3 @Kaf_4];
+  pos @Raa_2  <-391 0 -391 0> [@Kaf_1 @Kaf_5];
+  pos @Raa_2  <-98  0 -98  0> @2nd_3;
+  pos @Raa_2  <-195 0 -195 0> @2nd_4;
+  pos @Raa_2  <88 0 88 0> @aBaaDotBelow;
+
+  # the dots of teh marbuta are very close to exclamation mark
+  pos @Teh_m  < 73 0   73  0> exclam;
 } kern;
 
 lookup YaaBari3Kern {
@@ -45,24 +66,8 @@ lookup YaaBari3Kern {
 
 feature kern {
   lookupflag IgnoreMarks;
-  pos @RaaWaw' <-293 0 -293 0>  @Kaf_5;
-  pos @RaaWaw' <-146 0 -146 0> [@Kaf_2 @Kaf_3];
-
-  pos @RaaWaw' <-49  0 -49  0> @2nd_3;
-
-  pos @Dal_1'  <-293 0 -293 0>  @Kaf_5;
-  pos @Dal_1'  <-195 0 -195 0> [@Kaf_2 @Kaf_3];
-
-  pos @Raa_2'  <-195 0 -195 0> [@Kaf_2 @Kaf_3 @Kaf_4];
-  pos @Raa_2'  <-391 0 -391 0> [@Kaf_1 @Kaf_5];
-  pos @Raa_2'  <-98  0 -98  0> @2nd_3;
-  pos @Raa_2'  <-195 0 -195 0> @2nd_4;
-
-  # the dots of teh marbuta are very close to exclamation mark
-  pos @Teh_m'  < 73 0   73  0> exclam;
-
   # +ve kern so that the tail of raa/waw does not touch the dot of baa
-  pos @1st_2'  < 83 0   83  0> @aBaaDotBelow;
+  pos [@RaaWaw @AlefHamzaBelow]  < 83 0   83  0> @aBaaDotBelow;
 
   # increase advance width for first glyph in 3-letter Baree Yaa ligatures
   pos [@aAyn.init @aFaa.init @aHeh.init @aLam.init
@@ -72,22 +77,16 @@ feature kern {
 
 # we don't want to ignore marks here
 feature kern {
-  pos @Alf_1' <-244 0 -244 0> [@Kaf_1 @Kaf_5];
-  pos @Alf_1' <-98  0 -98  0> @Kaf_2;
-  pos @Alf_1' <-122 0 -122 0> @Kaf_3;
-  pos @Alf_1' <-146 0 -146 0> @Kaf_4;
+  pos @Alf_1 <-244 0 -244 0> [@Kaf_1 @Kaf_5];
+  pos @Alf_1 <-98  0 -98  0> @Kaf_2;
+  pos @Alf_1 <-122 0 -122 0> @Kaf_3;
+  pos @Alf_1 <-146 0 -146 0> @Kaf_4;
 
   # raa/waw/dal followed by isolated dagger alef followed by madda needs some
   # space to avoid fatha/madda clash
   pos @Raa_1' < 98 0  98 0> uni064E uni0670.isol [uni0653 uni06E4];
 
   pos [uni0621]' < 98 0  98 0> uni064E uni0670.isol;
-} kern;
-
-feature kern {
-  lookupflag IgnoreMarks;
-  pos @RaaWaw' <39 0 39 0> @aYaa.init;
-  pos @RaaWaw' <59 0 59 0> uni061B; # Arabic semicolon
 } kern;
 
 feature kern {
@@ -101,16 +100,11 @@ feature kern {
   pos @1st_4         [@Kaf_1 @Kaf_2 @Kaf_3 @Kaf_4 @Kaf_5]' -244;
 } kern;
 
-feature kern {
-  lookupflag IgnoreMarks;
-    pos @Raa_2' <88 0 88 0> @aBaaDotBelow;
-} kern;
-
 #ifndef QURAN
 feature kern {
   lookupflag IgnoreMarks;
-    pos period' <-146 0 -146 0> [quotedblleft quoteleft];
-    pos period.latn' -73 [quotedblright quoteright];
+    pos period      <-146 0 -146 0> [quotedblleft quoteleft];
+    pos period.latn -73             [quotedblright quoteright];
 } kern;
 #endif
 
@@ -166,6 +160,6 @@ feature kern {
 # With ss05 on, kasra is below shadda, so move the shadda up a bit to
 # compensate for the kasra.
 feature ss05 {
-  pos uni0651' <0 103 0 0> [uni0650.small];
-  pos uni0651' <0 171 0 0> [uni064D.small];
+  pos uni0651 <0 103 0 0> [uni0650.small];
+  pos uni0651 <0 171 0 0> [uni064D.small];
 } ss05;
