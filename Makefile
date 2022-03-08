@@ -14,7 +14,6 @@ LICENSE=OFL.txt
 BUILD=build.py
 MAKEQURAN=mkquran.py
 PY ?= python
-FF=$(PY) $(BUILD)
 
 TTF=$(FONTS:%=%.ttf)
 OTF=$(FONTS:%=%.otf)
@@ -35,32 +34,32 @@ $(BUILDDIR)/%.ufo: $(SRC)/%.sfd
 	@sfd2ufo --minimal $< $@
 
 $(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
-	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --quran
+	@echo "   GEN	$@"
+	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --quran
 
 $(NAME)Quran.ttf: $(NAME)QuranColored.ttf $(MAKEQURAN)
-	@echo "   FF	$@"
+	@echo "   GEN	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
 $(NAME)Quran.otf: $(NAME)QuranColored.otf $(MAKEQURAN)
-	@echo "   FF	$@"
+	@echo "   GEN	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
 $(NAME)-Regular.ttf $(NAME)-Regular.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
-	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
+	@echo "   GEN	$@"
+	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
 $(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
-	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
+	@echo "   GEN	$@"
+	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
 $(NAME)-Bold.ttf $(NAME)-Bold.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(BUILDDIR)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
-	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
+	@echo "   GEN	$@"
+	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
 $(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(BUILDDIR)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
-	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
+	@echo "   GEN	$@"
+	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
 $(DOC)/Documentation-Arabic.html: $(DOC)/Documentation-Arabic.md
 	@echo "   GEN	$@"
