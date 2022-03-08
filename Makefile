@@ -9,6 +9,7 @@ BUILDDIR=build
 DOC=documentation
 FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
+LICENSE=OFL.txt
 
 BUILD=build.py
 MAKEQURAN=mkquran.py
@@ -33,9 +34,9 @@ $(BUILDDIR)/%.ufo: $(SRC)/%.sfd
 	@mkdir -p $(BUILDDIR)
 	@sfd2ufo --minimal $< $@
 
-$(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --quran
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --quran
 
 $(NAME)Quran.ttf: $(NAME)QuranColored.ttf $(MAKEQURAN)
 	@echo "   FF	$@"
@@ -45,21 +46,21 @@ $(NAME)Quran.otf: $(NAME)QuranColored.otf $(MAKEQURAN)
 	@echo "   FF	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
-$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
-$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(BUILDDIR)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(BUILDDIR)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION)
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(BUILDDIR)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(BUILD)
+$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(BUILDDIR)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   FF	$@"
-	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --slant=10
+	@$(FF) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
 $(DOC)/Documentation-Arabic.html: $(DOC)/Documentation-Arabic.md
 	@echo "   GEN	$@"
@@ -78,7 +79,7 @@ distclean: clean
 dist: otf check pack doc
 	@rm -rf $(DIST)
 	@mkdir -p $(DIST)
-	@cp OFL.txt $(DIST)
+	@cp $(LICENSE) $(DIST)
 	@cp $(OTF) $(DIST)
 	@cp README.md $(DIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic

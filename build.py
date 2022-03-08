@@ -100,7 +100,8 @@ def generateFont(options, font):
     major, minor = options.version.split(".")
     info.versionMajor, info.versionMinor = int(major), int(minor)
     year = datetime.now().year
-    info.copyright = f"Copyright 2010-{year} The Amiri Project Authors (https://github.com/aliftype/amiri)."
+    with open(options.license) as fp:
+        info.copyright = fp.readline().strip()
     info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
     info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
 
@@ -543,6 +544,7 @@ if __name__ == "__main__":
     parser.add_argument("--output", metavar="FILE", required=True, help="ouput font to write")
     parser.add_argument("--features", metavar="FILE", required=True, help="feature file to include")
     parser.add_argument("--version", type=str, required=True, help="font version")
+    parser.add_argument("--license", type=str, required=True, help="license file")
     parser.add_argument("--slant", type=float, required=False, help="font slant")
     parser.add_argument("--quran", action='store_true', required=False, help="build Quran variant")
 
