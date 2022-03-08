@@ -77,15 +77,15 @@ distclean: clean
 	rm -rf $(DIST){,.zip}
 
 dist: otf check pack doc
+	@echo "   DIST	$(DIST)"
 	@rm -rf $(DIST)
-	@mkdir -p $(DIST)/otf
-	@cp $(LICENSE) $(DIST)
-	@cp $(TTF) $(DIST)
-	@cp $(OTF) $(DIST)/otf
-	@cp README.md $(DIST)/README
-	@cp README-Arabic.md $(DIST)/README-Arabic
-	@cp NEWS.md $(DIST)/NEWS
-	@cp NEWS-Arabic.md $(DIST)/NEWS-Arabic
-	@cp $(HTML) $(DIST)
+	@install -Dm644 -t $(DIST) $(LICENSE)
+	@install -Dm644 -t $(DIST) $(TTF)
+	@install -Dm644 -t $(DIST)/otf $(OTF)
+	@install -Dm644 -t $(DIST) README.md
+	@install -Dm644 -t $(DIST) README-Arabic.md
+	@install -Dm644 -t $(DIST) NEWS.md
+	@install -Dm644 -t $(DIST) NEWS-Arabic.md
+	@install -Dm644 -t $(DIST) $(HTML)
 	@echo "   ZIP  $(DIST)"
 	@zip -rq $(DIST).zip $(DIST)
