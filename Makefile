@@ -23,7 +23,7 @@ FEA=$(wildcard $(SRC)/*.fea)
 
 export SOURCE_DATE_EPOCH ?= 0
 
-all: otf
+all: ttf
 
 ttf: $(TTF)
 otf: $(OTF)
@@ -78,9 +78,10 @@ distclean: clean
 
 dist: otf check pack doc
 	@rm -rf $(DIST)
-	@mkdir -p $(DIST)
+	@mkdir -p $(DIST)/otf
 	@cp $(LICENSE) $(DIST)
-	@cp $(OTF) $(DIST)
+	@cp $(TTF) $(DIST)
+	@cp $(OTF) $(DIST)/otf
 	@cp README.md $(DIST)/README
 	@cp README-Arabic.md $(DIST)/README-Arabic
 	@cp NEWS.md $(DIST)/NEWS
