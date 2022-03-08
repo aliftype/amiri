@@ -1,3 +1,27 @@
+Amiri 0.114 (2022-03-08)
+------------------------
+* Use font bounding box for OS/2.usWinAscent and OS/2.usWinDescent.
+* Improve fraction digits.
+* Improve fatha on damma (https://github.com/alif-type/amiri/issues/200).
+* Add ARABIC END OF TEXT MARK (U+061D).
+* Add ARABIC POUND MARK ABOVE and ARABIC PIASTRE MARK ABOVE (U+0890–0891).
+* Documentation is now in HTML format.
+* Arabic variants of common characters are now the default, and Latin variants are the localized alternates.
+* More common characters are now upright in the slanted fonts.
+* Make ARABIC LETTER KAF WITH RING (U+06AB) use gaf not kaf form (https://github.com/aliftype/amiri/issues/196).
+* Support marks over Alef Wasla (https://github.com/aliftype/amiri/issues/186).
+* Fix mark collision in “الحجى” (https://github.com/aliftype/amiri/issues/192).
+* Fix legacy characters that has high hamza (https://github.com/aliftype/amiri/issues/173).
+* Fix mark collision in “يِحِ يِحٍ يٍحِ يٍحٍ” (https://github.com/aliftype/amiri/issues/162).
+* Fix mark collision in “لَله” (https://github.com/aliftype/amiri/issues/184).
+* Fix basmala in Amiri Quran Colored.
+* Support reversed comma and semicolon (U+2E41 and U+204F).
+* Add U+08BB–08BD.
+* Fix below dot position in ARABIC LETTER FEH WITH DOT BELOW (U+06A3).
+* Allow narrow no break space as base for small alef (https://github.com/aliftype/amiri/issues/217).
+* Fix swapped LRM and RLM glyphs.
+* Fix fatha position over small hamza above (https://github.com/aliftype/amiri/issues/227).
+
 Amiri 0.113 (2020-06-02)
 ------------------------
 
