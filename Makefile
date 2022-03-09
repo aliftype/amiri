@@ -77,7 +77,7 @@ distclean: clean
 
 dist: otf check pack doc
 	@echo "   DIST	$(DIST)"
-	@rm -rf $(DIST)
+	@rm -rf $(DIST){,.zip}
 	@install -Dm644 -t $(DIST) $(LICENSE)
 	@install -Dm644 -t $(DIST) $(TTF)
 	@install -Dm644 -t $(DIST)/otf $(OTF)
