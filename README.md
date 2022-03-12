@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/aliftype/amiri.svg?branch=main)](https://travis-ci.com/aliftype/amiri)
+[![Build](https://github.com/aliftype/amiri/actions/workflows/build.yml/badge.svg)](https://github.com/aliftype/amiri/actions/workflows/build.yml)
 
 Amiri Font
 ==========
