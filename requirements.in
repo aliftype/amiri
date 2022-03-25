@@ -3,4 +3,4 @@ pcpp
 opentype-sanitizer
 ufo2ft[pathops]
 ufoLib2
-git+git://github.com/aliftype/sfdLib.git@v1.2.2#egg=sfdLib
+sfdLib @ git+https://github.com/aliftype/sfdLib.git@v1.2.2
