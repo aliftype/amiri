@@ -105,11 +105,13 @@ def generateFont(options, font):
     info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
     info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
 
+    featureWriters = []
+
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
         from fontTools.ttLib.tables import ttProgram
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
-            overlapsBackend="pathops", featureWriters=[])
+            overlapsBackend="pathops", featureWriters=featureWriters)
 
         otf["prep"] = prep = newTable("prep")
         prep.program = ttProgram.Program()
@@ -119,7 +121,7 @@ def generateFont(options, font):
         otf = compileOTF(font, inplace=True,
             optimizeCFF=1,
             removeOverlaps=True, overlapsBackend="pathops",
-            featureWriters=[])
+            featureWriters=featureWriters)
 
     if info.styleMapStyleName and "italic" in info.styleMapStyleName:
         otf['name'].names = [n for n in otf['name'].names if n.nameID != 17]
