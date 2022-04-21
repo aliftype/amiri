@@ -417,6 +417,14 @@ def makeQuran(options):
     subsetter = subset.Subsetter(options=opts)
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(otf)
+
+    # Use FontBBox for Win metrics since we use larger marks that can result in
+    # bigger font bbox that the regular fonts.
+    head = otf["head"]
+    os_2 = otf["OS/2"]
+    os_2.usWinAscent = head.yMax
+    os_2.usWinDescent = abs(head.yMin)
+
     otf.save(options.output)
 
 
