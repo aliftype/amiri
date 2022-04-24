@@ -155,9 +155,11 @@ lookup BaaHeh {
 } BaaHeh;
 
 feature calt {
-  lookupflag IgnoreMarks;
 #ifdef QURAN
-  ignore sub [uni0649.init uni0649.medi]' @aHeh.medi';
+  # https://github.com/aliftype/quran-data/issues/1
+  lookupflag UseMarkFilteringSet [uni0670];
+#else
+  lookupflag IgnoreMarks;
 #endif
   sub [@aBaa.init @aBaa.medi @aMem.init_dots]' lookup BaaHeh
       [@aHeh.medi]' lookup BaaHeh;
