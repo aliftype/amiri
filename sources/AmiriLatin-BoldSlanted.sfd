@@ -215,7 +215,7 @@ Grid
  -5.859375 438.4765625 l 1
  546.875 438.4765625 l 25
 EndSplineSet
-BeginChars: 65644 495
+BeginChars: 65644 496
 
 StartChar: space
 Encoding: 32 32 0
@@ -10086,6 +10086,24 @@ Width: 292
 LayerCount: 2
 Fore
 Refer: 445 52 N 0.6 0 0 0.6 -12 510 2
+EndChar
+
+StartChar: uni0305
+Encoding: 773 773 495
+Width: 0
+GlyphClass: 4
+LayerCount: 2
+Fore
+SplineSet
+-568 1462 m 4
+ -568 1464 -565 1522 -554 1522 c 6
+ 14 1522 l 6
+ 16 1522 20 1521 20 1513 c 4
+ 20 1495 13 1463 12 1459 c 4
+ 10 1453 5 1452 5 1452 c 5
+ -562 1452 l 5
+ -562 1452 -568 1452 -568 1462 c 4
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

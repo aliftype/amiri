@@ -153,11 +153,10 @@ def drawOverline(font, name, uni, pos, thickness, width):
     return glyph
 
 
-def makeQuranSajdaLine(font):
-    pos = font["uni06D7"].getBounds(font).yMax
+def makeOverLine(font, posGlyph="uni06D7"):
+    pos = font[posGlyph].getBounds(font).yMax
     thickness = font.info.postscriptUnderlineThickness
     minwidth = 100
-
 
     _, gdefclasses = findGDEF(font)
     # collect glyphs grouped by their widths rounded by 100 units, we will use
@@ -308,6 +307,7 @@ def makeSlanted(options):
                     st.entryAnchor = transformAnchor(st.entryAnchor, matrix)
                     st.exitAnchor = transformAnchor(st.exitAnchor, matrix)
 
+    makeOverLine(font, posGlyph="uni0305")
     otf = generateFont(options, font)
     otf.save(options.output)
 
@@ -375,7 +375,7 @@ def makeQuran(options):
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
-    makeQuranSajdaLine(font)
+    makeOverLine(font)
 
     COLR, CPAL = makeCOLR(font)
 
@@ -544,6 +544,7 @@ def makeDesktop(options, generate=True):
 
     if generate:
         mergeLatin(font)
+        makeOverLine(font, posGlyph="uni0305")
         otf = generateFont(options, font)
         otf.save(options.output)
     else:
