@@ -15848,7 +15848,7 @@ AnchorPoint: "TwoDotsBelowAlt" 197 -366 basechar 0
 AnchorPoint: "TwoDotsBelow" 197 -117 basechar 0
 AnchorPoint: "TwoDotsAbove" 172 439 basechar 0
 AnchorPoint: "DotAbove" 226 439 basechar 0
-AnchorPoint: "HamzaBelow" 250 -195 basechar 0
+AnchorPoint: "HamzaBelow" 250 -117 basechar 0
 AnchorPoint: "HamzaAbove" 226 439 basechar 0
 AnchorPoint: "DotBelow" 250 -195 basechar 0
 LayerCount: 2
@@ -55428,7 +55428,7 @@ EndChar
 StartChar: uni0649.init_BaaHehInit
 Encoding: 1117686 -1 3859
 Width: 384
-AnchorPoint: "HamzaBelow" 250 -195 basechar 0
+AnchorPoint: "HamzaBelow" 250 -117 basechar 0
 AnchorPoint: "AlefAbove" 215 479 basechar 0
 AnchorPoint: "TashkilAbove" 265 801 basechar 0
 AnchorPoint: "TashkilBelow" 250 -327 basechar 0
