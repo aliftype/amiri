@@ -107,7 +107,7 @@ Grid
   Named: "Digits base"
 EndSplineSet
 AnchorClass2: "TashkilBelowHamza" "'mkmk' Tashkil below Hamza-1" "MarkAbove" "'mark' Generic Mark Anchor-1" "MarkBelow" "'mark' Generic Mark Anchor-2" "TashkilAbove" "'mark' Tashkil Above Base-1" "TashkilBelow" "'mark' Tashkil Below Base-1" "TashkilTashkilAbove" "'mkmk' Tashkil to Tashkil Above-1" "TashkilTashkilBelow" "'mkmk' Tashkil to Tashkil Below-1" "TashkilTashkilAbove2" "'mkmk' Tashkil to Tashkil Above 2-1" "TashkilAboveDot" "Tashkil Above Dot-1" "TashkilBelowDot" "Tashkil Below Dot-1" "HamzaAbove" "'mark' Hamza Above-1" "HamzaBelow" "'mark' Hamza Below-1" "DotAbove" "'mark' Dot Above-1" "DotBelow" "'mark' Dot Below-1" "DotBelowAlt" "'mark' Dot Below Alt-1" "TwoDotsAbove" "'mark' Two Dots Above-1" "TwoDotsBelow" "'mark' Two Dots Below-1" "TwoDotsBelowAlt" "'mark' Two Dots Below Alt-1" "DigitAbove" "'mark' Digit Above-1" "DigitBelow" "'mark' Digit Below-1" "MarkDotAbove" "'mkmk' Mark to Dot Above-1" "MarkDotBelow" "'mkmk' Mark to Dot Below-1" "TaaAbove" "'mark' Small Taa Above-1" "TaaBelow" "'mark' Small Taa Below-1" "AlefAbove" "'mark' Small Alef Above-1" "SeenAbove" "'mark' Seen Above-1" "SeenBelow" "'mark' Seen Below-1" "NoonAbove" "'mark' Noon Above-1" "VAbove" "'mark' V Mark Above-1" "RingDash" "'mkmk' Ring to Dash-1" "RingBelow" "'mark' Ring Below-1" "DotAlt" "'mark' Dot Alt-1" "DotHmaza" "'mkmk' Dot above Hamza-1" "Tail" "'mark' Yaa Tail-1" "Dash" "'mark' Dash-1" "Stroke" "'mark' Stroke-1" "cursive" "'curs' Cursive Attachment-1"
-BeginChars: 1119111 6278
+BeginChars: 1119112 6279
 
 StartChar: aAlf.fina.alt
 Encoding: 1114112 -1 0
@@ -13221,16 +13221,8 @@ Encoding: 8234 8234 311
 Width: 0
 LayerCount: 2
 Fore
-SplineSet
-135 542 m 1
- 68 609 l 1
- 47 589 l 1
- 94 542 l 1
- 47 495 l 1
- 67 474 l 1
- 135 542 l 1
-EndSplineSet
-Refer: 307 8204 N -1 0 0 1 0 0 2
+Refer: 6278 -1 N 1 0 0 1 0 0 2
+Refer: 307 8204 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni202B
@@ -13238,7 +13230,8 @@ Encoding: 8235 8235 312
 Width: 0
 LayerCount: 2
 Fore
-Refer: 311 8234 N -1 0 0 1 0 0 2
+Refer: 6278 -1 N -1 0 0 -1 0.326172 1084 2
+Refer: 307 8204 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni202C
@@ -13246,20 +13239,8 @@ Encoding: 8236 8236 313
 Width: 0
 LayerCount: 2
 Fore
-SplineSet
-15 474 m 1
- 15 0 l 1
- -15 0 l 1
- -15 474 l 1
- 15 474 l 1
-68 515 m 1
- 47 495 l 1
- 0 542 l 1
- -47 495 l 1
- -68 515 l 1
- 0 583 l 1
- 68 515 l 1
-EndSplineSet
+Refer: 6278 -1 N 0 1 1 0 -541.839 474.835 2
+Refer: 307 8204 N 1 0 0 0.95 0 0 2
 EndChar
 
 StartChar: uni202D
@@ -13267,23 +13248,9 @@ Encoding: 8237 8237 314
 Width: 0
 LayerCount: 2
 Fore
-SplineSet
-223 542 m 1
- 156 609 l 1
- 135 589 l 1
- 182 542 l 1
- 135 495 l 1
- 155 474 l 1
- 223 542 l 1
-135 542 m 1
- 68 609 l 1
- 47 589 l 1
- 94 542 l 1
- 47 495 l 1
- 67 474 l 1
- 135 542 l 1
-EndSplineSet
-Refer: 307 8204 N -1 0 0 1 0 0 2
+Refer: 6278 -1 N 1 0 0 1 89 0 2
+Refer: 6278 -1 N 1 0 0 1 0 0 2
+Refer: 307 8204 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni202E
@@ -13291,7 +13258,9 @@ Encoding: 8238 8238 315
 Width: 0
 LayerCount: 2
 Fore
-Refer: 314 8237 N -1 0 0 1 0 0 2
+Refer: 307 8204 N 1 0 0 1 0 0 2
+Refer: 6278 -1 N -1 0 0 -1 -88.6738 1084 2
+Refer: 6278 -1 N -1 0 0 -1 0.326172 1084 2
 EndChar
 
 StartChar: uni2003
@@ -87885,7 +87854,22 @@ Encoding: 11841 11841 6233
 Width: 369
 LayerCount: 2
 Fore
-Refer: 167 1548 N 1 0 0 -1 0 166.048 3
+SplineSet
+206 -230.952148438 m 0
+ 186 -216.952148438 165 -191.952148438 141 -154.952148438 c 128
+ 117 -117.952148438 104 -78.9521484375 100 -38.9521484375 c 0
+ 93 49.0478515625 109 108.047851562 151 141.047851562 c 0
+ 166 152.047851562 186 158.047851562 211 159.047851562 c 0
+ 232 160.047851562 251 152.047851562 267 137.047851562 c 128
+ 283 122.047851562 291 104.047851562 291 83.0478515625 c 128
+ 291 62.0478515625 284 45.0478515625 269 30.0478515625 c 128
+ 254 15.0478515625 236 7.0478515625 215 7.0478515625 c 0
+ 191 7.0478515625 171 16.0478515625 156 35.0478515625 c 0
+ 151 40.0478515625 148 39.0478515625 145 31.0478515625 c 24
+ 119 -40.9521484375 147 -119.952148438 229 -204.952148438 c 0
+ 238 -213.952148438 240 -221.952148438 233 -229.952148438 c 128
+ 226 -237.952148438 217 -237.952148438 206 -230.952148438 c 0
+EndSplineSet
 EndChar
 
 StartChar: uni204F
@@ -87894,7 +87878,7 @@ Width: 369
 LayerCount: 2
 Fore
 Refer: 296 -1 N 1 0 0 1 44 322 2
-Refer: 167 1548 N 1 0 0 -1 0 166.048 3
+Refer: 6233 11841 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni00A0
@@ -88484,6 +88468,22 @@ SplineSet
  301 23 l 2
  301 10 293 0 276 0 c 2
  95 0 l 2
+EndSplineSet
+EndChar
+
+StartChar: _arrowhead
+Encoding: 1119111 -1 6278
+Width: 0
+LayerCount: 2
+Fore
+SplineSet
+67.6983130424 474.485893295 m 5
+ 46.2982041377 495.510561692 l 5
+ 91.9720382646 542 l 5
+ 46.2982041377 588.489438308 l 5
+ 46.2982041377 588.489438308 67.6947051818 609.510562141 67.7017958623 609.510561692 c 6
+ 134.027961735 542 l 5
+ 67.6983130424 474.485893295 l 5
 EndSplineSet
 EndChar
 EndChars
