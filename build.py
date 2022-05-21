@@ -112,7 +112,8 @@ def generateFont(options, font):
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
         from fontTools.ttLib.tables import ttProgram
-        otf = compileTTF(font, inplace=True, removeOverlaps=True,
+        otf = compileTTF(font, inplace=True, useProductionNames=True,
+            removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=featureWriters,
             filters=filters)
 
@@ -121,7 +122,7 @@ def generateFont(options, font):
         prep.program.fromAssembly([
             'PUSHW[]', '511', 'SCANCTRL[]', 'PUSHB[]', '4', 'SCANTYPE[]'])
     else:
-        otf = compileOTF(font, inplace=True,
+        otf = compileOTF(font, inplace=True, useProductionNames=True,
             optimizeCFF=1,
             removeOverlaps=True, overlapsBackend="pathops",
             featureWriters=featureWriters, filters=filters)
@@ -153,7 +154,7 @@ def drawOverline(font, name, uni, pos, thickness, width):
     return glyph
 
 
-def makeOverLine(font, posGlyph="uni06D7"):
+def makeOverLine(font, posGlyph="qafLamAlefMaksuraabove-ar"):
     pos = font[posGlyph].getBounds(font).yMax
     thickness = font.info.postscriptUnderlineThickness
     minwidth = 100
@@ -272,7 +273,7 @@ def makeSlanted(options):
         "exclam", "period", "guillemotleft", "guillemotright",
         "braceleft", "bar", "braceright", "bracketleft", "bracketright",
         "parenleft", "parenright", "slash", "backslash", "brokenbar",
-        "uni061F", "dot.1", "dot.2",
+        "question-ar", "dot.1", "dot.2",
     ]
 
     skew = TransformationsFilter(Slant=-options.slant, exclude=exclude)
@@ -358,10 +359,10 @@ def makeQuran(options):
     # scale some vowel marks and dots down a bit
     fea = font.features.text
     marks = [
-        "uni064B", "uni064C", "uni064E", "uni064F", "uni06E1", "uni08F0",
-        "uni08F1", "uni08F2", "TwoDots.a", "ThreeDots.a", "vTwoDots.a",
+        "fathatan-ar", "dammatan-ar", "fatha-ar", "damma-ar", "hahabove-ar", "openfathatan-ar",
+        "opendammatan-ar", "openkasratan-ar", "TwoDots.a", "ThreeDots.a", "vTwoDots.a",
     ]
-    shadda = ["uni0651"]
+    shadda = ["shadda-ar"]
     for scale, names in ((0.9, marks), (0.8, shadda)):
         for name in names:
             matrix = scaleGlyph(font, font[name], scale)
@@ -434,27 +435,75 @@ def makeCOLR(font):
 
     Color = getTableModule("CPAL").Color
 
-    hamzas = ("uni0621", "uni0654", "uni0655", "hamza.above")
+    hamzas = ("hamza-ar", "hamzaabove-ar", "hamzabelow-ar", "hamza.above")
     marks = (
-        "uni0618", "uni0619", "uni061A", "uni064B", "uni064C", "uni064D",
-        "uni064E", "uni064F", "uni0650", "uni0651", "uni0652", "uni0657",
-        "uni0658", "uni065C", "uni0670", "uni06DF", "uni06E0", "uni06E1",
-        "uni06E2", "uni06E3", "uni06E4", "uni06E5", "uni06E6", "uni06E7",
-        "uni06E8", "uni06EA", "uni06EB", "uni06EC", "uni06ED", "uni08F0",
-        "uni08F1", "uni08F2", "uni08F3",
-        "uni06DC", # XXX: can be both a mark and a pause
-        "hamza.wasl", "Dot", "TwoDots", "vTwoDots", "ThreeDots",
+        "fathasmall-ar",
+        "dammasmall-ar",
+        "kasrasmall-ar",
+        "fathatan-ar",
+        "dammatan-ar",
+        "kasratan-ar",
+        "fatha-ar",
+        "damma-ar",
+        "kasra-ar",
+        "shadda-ar",
+        "sukun-ar",
+        "dammainverted-ar",
+        "noonghunnaabove-ar",
+        "dotvowelbelow-ar",
+        "alefabove-ar",
+        "sukunround-ar",
+        "sukunoval-ar",
+        "hahabove-ar",
+        "meemStopabove-ar",
+        "seenbelow-ar",
+        "maddalong-ar", 
+        "wawSmall-ar",
+        "yehSmall-ar",
+        "yehabove-ar",
+        "noonabove-ar",
+        "rhombusStopbelow-ar",
+        "rhombusStopabove-ar",
+        "dotStopabove-ar",
+        "meembelow-ar",
+        "openfathatan-ar",
+        "opendammatan-ar",
+        "openkasratan-ar",
+        "highwaw-ar",
+        "seenabove-ar", # XXX: can be both a mark and a pause
+        "hamza.wasl",
+        "Dot",
+        "TwoDots",
+        "vTwoDots",
+        "ThreeDots",
     )
 
     pauses = (
-        "uni0615", "uni0617", "uni06D6", "uni06D7", "uni06D8", "uni06D9",
-        "uni06DA", "uni06DB",
+        "tahabove-ar",
+        "zainabove-ar",
+        "sadLamAlefMaksuraabove-ar",
+        "qafLamAlefMaksuraabove-ar",
+        "meemabove-ar",
+        "lamAlefabove-ar",
+        "jeemabove-ar",
+        "threedotsabove-ar",
     )
 
     signs = (
-        "uni0305", "uni0660", "uni0661", "uni0662", "uni0663", "uni0664",
-        "uni0665", "uni0666", "uni0667", "uni0668", "uni0669", "uni06DD",
-        "uni06DE", "uni06E9",
+        "uni0305",
+        "zero-ar",
+        "one-ar",
+        "two-ar",
+        "three-ar",
+        "four-ar",
+        "five-ar",
+        "six-ar",
+        "seven-ar",
+        "eight-ar",
+        "nine-ar",
+        "endofayah-ar",
+        "hizb-ar",
+        "sajdah-ar",
     )
 
     groups = {
@@ -529,9 +578,55 @@ def makeCOLR(font):
     return COLR, CPAL
 
 
+def _build_production_name(glyph, font):
+    """Build a production name for a single glyph."""
+
+    # use name derived from unicode value
+    unicode_val = glyph.unicode
+    if glyph.unicode is not None:
+        return "{}{:04X}".format(
+            "u" if unicode_val > 0xFFFF else "uni", unicode_val
+        )
+
+    # use production name + last (non-script) suffix if possible
+    parts = glyph.name.rsplit(".", 1)
+    if len(parts) == 2 and parts[0] in font:
+        return "{}.{}".format(
+            _build_production_name(font[parts[0]], font),
+            parts[1],
+        )
+
+    # use ligature name, making sure to look up components with suffixes
+    parts = glyph.name.split(".", 1)
+    if len(parts) == 2:
+        liga_parts = ["{}.{}".format(n, parts[1]) for n in parts[0].split("_")]
+    else:
+        liga_parts = glyph.name.split("_")
+    if len(liga_parts) > 1 and all(n in font for n in liga_parts):
+        unicode_vals = [font[n].unicode for n in liga_parts]
+        if all(v and v <= 0xFFFF for v in unicode_vals):
+            return "uni" + "".join("%04X" % v for v in unicode_vals)
+        return "_".join(
+            _build_production_name(font[n], font) for n in liga_parts
+        )
+
+    return glyph.name
+
 def openFont(path):
 #   font = Font(validate=False)
     font = Font.open(path)
+
+    from fontTools import agl
+
+    p = {}
+    for g in font:
+        if g.name not in agl.AGL2UV:
+            n = _build_production_name(g, font)
+        else:
+            n = g.name
+        p[g.name] = n
+    font.lib["public.postscriptNames"] = p
+
 
     return font
 

@@ -7,67 +7,63 @@
 # is no suitable kashida glyph, resorting back to regular justification
 # To get manually inserted kashida working we use an rlig feature to map to the
 # actual kashida glyph(s).
-
 feature rlig {
-  lookupflag IgnoreMarks;
-  sub uni0640 uni0640 uni0640 uni0640 uni0640 uni0640 uni0640 by uni0640.7;
-  sub uni0640 uni0640 uni0640 uni0640 uni0640 uni0640         by uni0640.6;
-  sub uni0640 uni0640 uni0640 uni0640 uni0640                 by uni0640.5;
-  sub uni0640 uni0640 uni0640 uni0640                         by uni0640.4;
-  sub uni0640 uni0640 uni0640                                 by uni0640.3;
-  sub uni0640 uni0640                                         by uni0640.2;
-  sub uni0640                                                 by uni0640.1;
+    lookupflag IgnoreMarks;
+    sub kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar by kashida-ar.7;
+    sub kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar by kashida-ar.6;
+    sub kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar by kashida-ar.5;
+    sub kashida-ar kashida-ar kashida-ar kashida-ar by kashida-ar.4;
+    sub kashida-ar kashida-ar kashida-ar by kashida-ar.3;
+    sub kashida-ar kashida-ar by kashida-ar.2;
+    sub kashida-ar by kashida-ar.1;
 } rlig;
-
 
 # If we got more kashidas than we have curved variants, break it back into
 # individual glyphs and replace them by a straight variant to avoid ugly bumps.
-
 lookup break_kashida {
-  sub uni0640.7 by uni0640 uni0640 uni0640 uni0640 uni0640 uni0640 uni0640;
-  sub uni0640.6 by uni0640 uni0640 uni0640 uni0640 uni0640 uni0640;
-  sub uni0640.5 by uni0640 uni0640 uni0640 uni0640 uni0640;
-  sub uni0640.4 by uni0640 uni0640 uni0640 uni0640;
-  sub uni0640.3 by uni0640 uni0640 uni0640;
-  sub uni0640.2 by uni0640 uni0640;
-  sub uni0640.1 by uni0640;
+    sub kashida-ar.7 by kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.6 by kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.5 by kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.4 by kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.3 by kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.2 by kashida-ar kashida-ar;
+    sub kashida-ar.1 by kashida-ar;
 } break_kashida;
 
-@kashida = [uni0640 @aCurvedKashida];
-
+@kashida = [kashida-ar @aCurvedKashida];
 feature rlig {
-  lookupflag IgnoreMarks;
-  sub @kashida @aCurvedKashida' lookup break_kashida;
+    lookupflag IgnoreMarks;
+    sub @kashida @aCurvedKashida' lookup break_kashida;
 } rlig;
 
 feature rlig {
-  lookupflag IgnoreMarks;
-  sub @aCurvedKashida' lookup break_kashida @kashida;
+    lookupflag IgnoreMarks;
+    sub @aCurvedKashida' lookup break_kashida @kashida;
 } rlig;
 
 feature rlig {
-  lookupflag IgnoreMarks;
-  sub uni0640 by uni0640.0;
+    lookupflag IgnoreMarks;
+    sub kashida-ar by kashida-ar.0;
 } rlig;
 
 # We have a ligature for 3 kashidas followed by alef.
 feature rlig {
-  lookupflag IgnoreMarks;
-  sub uni0640.3 uni0627.fina by uni0627.fina_Tatweel;
+    lookupflag IgnoreMarks;
+    sub kashida-ar.3 alef-ar.fina by alef-ar.fina_Tatweel;
 } rlig;
 
 feature ss07 {
-  featureNames {
-    name "Disable curvilinear Kashida";
-  };
+        featureNames {
+        name "Disable curvilinear Kashida";
+    };
 
-  lookupflag IgnoreMarks;
-  sub uni0640.7 by uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0;
-  sub uni0640.6 by uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0;
-  sub uni0640.5 by uni0640.0 uni0640.0 uni0640.0 uni0640.0 uni0640.0;
-  sub uni0640.4 by uni0640.0 uni0640.0 uni0640.0 uni0640.0;
-  sub uni0640.3 by uni0640.0 uni0640.0 uni0640.0;
-  sub uni0640.2 by uni0640.0 uni0640.0;
-  sub uni0640.1 by uni0640.0;
-  sub uni0627.fina_Tatweel by uni0640.0 uni0640.0 uni0640.0 uni0627.fina;
+    lookupflag IgnoreMarks;
+    sub kashida-ar.7 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
+    sub kashida-ar.6 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
+    sub kashida-ar.5 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
+    sub kashida-ar.4 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
+    sub kashida-ar.3 by kashida-ar.0 kashida-ar.0 kashida-ar.0;
+    sub kashida-ar.2 by kashida-ar.0 kashida-ar.0;
+    sub kashida-ar.1 by kashida-ar.0;
+    sub alef-ar.fina_Tatweel by kashida-ar.0 kashida-ar.0 kashida-ar.0 alef-ar.fina;
 } ss07;

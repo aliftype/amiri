@@ -1,116 +1,89 @@
 # Replace baa glyphs with dot below following a raa or waw by an alternate ones
 # with low dots.
 feature ss01 {
-  featureNames {
-    name "Low Baa dot following a Raa or Waw";
-  };
+        featureNames {
+        name "Low Baa dot following a Raa or Waw";
+    };
 
-  lookupflag IgnoreMarks;
-  sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
+    lookupflag IgnoreMarks;
+    sub @RaaWaw @aBaaDotBelow' by @aBaaLowDotBelow;
 } ss01;
 
 #
 lookup MemAlfFina {
-  sub @aAlf.fina by @aAlf.fina_MemAlfFina;
-  sub @aMem.medi by @aMem.medi_MemAlfFina;
-
-  sub @aSad.medi by @aSad.medi_PreYaa;
-  sub @aSen.medi by @aSen.medi_PreYaa;
-
-  sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
-  sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
+    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
+    sub @aMem.medi by @aMem.medi_MemAlfFina;
+    sub @aSad.medi by @aSad.medi_PreYaa;
+    sub @aSen.medi by @aSen.medi_PreYaa;
+    sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
+    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
 } MemAlfFina;
 
 lookup MemAlfFinaPostTooth {
-  sub @aMem.medi by @aMem.medi_AlfPostTooth;
+    sub @aMem.medi by @aMem.medi_AlfPostTooth;
 } MemAlfFinaPostTooth;
 
 lookup BaaMemAlfFina {
-  sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
-  sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
+    sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
+    sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
 } BaaMemAlfFina;
 
-@NoMemAlfFina = [@aMem.medi @aMem.medi_LamBaaMemInit @aMem.medi_LamMemInit
-                 @aMem.medi_LamHaaMemInit @aMem.medi_BaaMemInit
-                 @aMem.medi_LamMemMedi @aMem.medi_SenBaaMemInit
-                 @aMem.medi_BaaBaaMemInit @aMem.medi_LamMemInitTatweel
-                 @aMem.medi_KafMemMedi @aMem.medi_SenMemInit
-                 @aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth];
-
+@NoMemAlfFina = [@aMem.medi @aMem.medi_LamBaaMemInit @aMem.medi_LamMemInit @aMem.medi_LamHaaMemInit @aMem.medi_BaaMemInit @aMem.medi_LamMemMedi @aMem.medi_SenBaaMemInit @aMem.medi_BaaBaaMemInit @aMem.medi_LamMemInitTatweel @aMem.medi_KafMemMedi @aMem.medi_SenMemInit @aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth];
 feature ss02 {
-  featureNames {
-    name "Alternate medial Meem and final Alef combination";
-  };
+        featureNames {
+        name "Alternate medial Meem and final Alef combination";
+    };
 
-  lookupflag IgnoreMarks;
-  ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
-
-  sub @aBaa.medi' lookup BaaMemAlfFina
-      @aMem.medi' lookup BaaMemAlfFina
-      @aAlf.fina' lookup MemAlfFina;
-
-  sub [@aSad.medi @aSen.medi]' lookup MemAlfFina
-      @aMem.medi' lookup MemAlfFinaPostTooth
-      @aAlf.fina' lookup MemAlfFina;
-
-  sub @aBaa.init_BaaSenInit' lookup MemAlfFina
-      @aSen.medi_BaaSenInit' lookup MemAlfFina
-      @aMem.medi'            lookup MemAlfFinaPostTooth
-      @aAlf.fina'            lookup MemAlfFina;
-
-  sub @aMem.medi' lookup MemAlfFina
-      @aAlf.fina' lookup MemAlfFina;
+    lookupflag IgnoreMarks;
+    ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
+    sub @aBaa.medi' lookup BaaMemAlfFina @aMem.medi' lookup BaaMemAlfFina @aAlf.fina' lookup MemAlfFina;
+    sub [@aSad.medi @aSen.medi]' lookup MemAlfFina @aMem.medi' lookup MemAlfFinaPostTooth @aAlf.fina' lookup MemAlfFina;
+    sub @aBaa.init_BaaSenInit' lookup MemAlfFina @aSen.medi_BaaSenInit' lookup MemAlfFina @aMem.medi' lookup MemAlfFinaPostTooth @aAlf.fina' lookup MemAlfFina;
+    sub @aMem.medi' lookup MemAlfFina @aAlf.fina' lookup MemAlfFina;
 } ss02;
 
 #ifndef QURAN
 feature ss03 {
-  featureNames {
-    name "Localised @ and & symbols";
-  };
+        featureNames {
+        name "Localised @ and & symbols";
+    };
 
-  sub at by at.ara;
-  sub ampersand by ampersand.ara;
+    sub at by at.ara;
+    sub ampersand by ampersand.ara;
 } ss03;
 
 # alternate Gaf form
 feature ss04 {
-  featureNames {
-    name "Alternate, more naskh-like, Gaf form";
-  };
+        featureNames {
+        name "Alternate, more naskh-like, Gaf form";
+    };
 
-  sub @aGaf.isol by @aGaf.alt;
-  sub @aGaf.fina by @aGaf.alt.fina;
+    sub @aGaf.isol by @aGaf.alt;
+    sub @aGaf.fina by @aGaf.alt.fina;
 } ss04;
 
 lookup dummy {
-  sub uni0640.1 by uni0640;
+    sub kashida-ar.1 by kashida-ar;
 } dummy;
 
 feature ss04 {
-  sub @aLam.init' lookup LamLamInit
-      [uni0640.1]' lookup dummy
-      @aGaf.alt.fina 'lookup LamLamInit;
-
-  sub @aLam.medi' lookup LamLamMedi2
-      [uni0640.1]' lookup dummy
-      @aGaf.alt.fina' lookup LamLamMedi;
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      @aGaf.alt.fina' lookup KafLam;
+    sub @aLam.init' lookup LamLamInit [kashida-ar.1]' lookup dummy @aGaf.alt.fina' lookup LamLamInit;
+    sub @aLam.medi' lookup LamLamMedi2 [kashida-ar.1]' lookup dummy @aGaf.alt.fina' lookup LamLamMedi;
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam @aGaf.alt.fina' lookup KafLam;
 } ss04;
-#endif
 
+#endif
 lookup SSShaddaKasra {
-  sub uni064D by uni064D.small;
-  sub uni0650 by uni0650.small;
+    sub kasratan-ar by kasratan-ar.small;
+    sub kasra-ar by kasra-ar.small;
 } SSShaddaKasra;
 
 feature ss05 {
-  featureNames {
-    name "Kasra is placed below Shadda instead of base glyph";
-  };
+        featureNames {
+        name "Kasra is placed below Shadda instead of base glyph";
+    };
 
-  sub uni0651 [uni064D uni0650]' lookup SSShaddaKasra;
+    sub shadda-ar [kasratan-ar kasra-ar]' lookup SSShaddaKasra;
 } ss05;
 
 # ss06 is used in lellah.fea

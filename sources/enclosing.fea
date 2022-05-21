@@ -1,67 +1,60 @@
 #
 # subtending signs
 #
-
-@EndOfAyah = [uni06DD];
-@NumSign   = [uni0600];
-@YearSign  = [uni0601];
-@FootNote  = [uni0602];
-@SafhaSign = [uni0603];
-@Samvat    = [uni0604];
-@Pound     = [uni0890 uni0891];
-
-@NumSign3  = [uni0600.3];
-@NumSign4  = [uni0600.4];
-
-@SafhaSign3  = [uni0603.3];
-
+@EndOfAyah = [endofayah-ar];
+@NumSign = [number-ar];
+@YearSign = [year-ar];
+@FootNote = [footnotemarker-ar];
+@SafhaSign = [pagenumber-ar];
+@Samvat = [samvat-ar];
+@Pound = [uni0890 uni0891];
+@NumSign3 = [number-ar.3];
+@NumSign4 = [number-ar.4];
+@SafhaSign3 = [pagenumber-ar.3];
 lookup digit2small {
-  sub @Digits by @Digits.small;
+    sub @Digits by @Digits.small;
 } digit2small;
 
 lookup digit2medi {
-  sub @Digits by @Digits.medium;
+    sub @Digits by @Digits.medium;
 } digit2medi;
 
 lookup Sign3 {
-  sub @NumSign by @NumSign3;
-  sub @SafhaSign by @SafhaSign3;
+    sub @NumSign by @NumSign3;
+    sub @SafhaSign by @SafhaSign3;
 } Sign3;
 
 lookup Sign4 {
-  sub @NumSign by @NumSign4;
+    sub @NumSign by @NumSign4;
 } Sign4;
 
 # first we replace any sequence of digits (up to two, three or four places)
 # following a subtending sign by smaller alternates
 feature calt {
-  # Uniscribe or HarfBuzz ‘latn’
-  sub [@EndOfAyah          ] @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
-  sub [@EndOfAyah @FootNote] @Digits' lookup digit2small @Digits' lookup digit2small;
-  sub [@EndOfAyah @FootNote] @Digits' lookup digit2small;
-
-  sub [@NumSign @YearSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi;
-  sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi;
-
-  # HarfBuzz ‘arab’
-  sub @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small [@EndOfAyah];
-  sub @Digits' lookup digit2small @Digits' lookup digit2small [@EndOfAyah @FootNote];
-  sub @Digits' lookup digit2small [@EndOfAyah @FootNote];
-
-  sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @Samvat]' lookup Sign4;
-  sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat]' lookup Sign3;
-  sub @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
-  sub @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
+    # Uniscribe or HarfBuzz ‘latn’
+    sub [@EndOfAyah] @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
+    sub [@EndOfAyah @FootNote] @Digits' lookup digit2small @Digits' lookup digit2small;
+    sub [@EndOfAyah @FootNote] @Digits' lookup digit2small;
+    sub [@NumSign @YearSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
+    sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
+    sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi @Digits' lookup digit2medi;
+    sub [@NumSign @YearSign @SafhaSign @Samvat] @Digits' lookup digit2medi;
+    # HarfBuzz ‘arab’
+    sub @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small [@EndOfAyah];
+    sub @Digits' lookup digit2small @Digits' lookup digit2small [@EndOfAyah @FootNote];
+    sub @Digits' lookup digit2small [@EndOfAyah @FootNote];
+    sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @Samvat]' lookup Sign4;
+    sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat]' lookup Sign3;
+    sub @Digits' lookup digit2medi @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
+    sub @Digits' lookup digit2medi [@NumSign @YearSign @SafhaSign @Samvat];
 } calt;
 
 # Should have been merged with the Uniscribe lookup above as we do for
 # HarfBuzz, but then Uniscribe would crash
 feature calt {
-  sub @NumSign'   lookup Sign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium;
-  sub @NumSign'   lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
-  sub @SafhaSign' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
+    sub @NumSign' lookup Sign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium;
+    sub @NumSign' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
+    sub @SafhaSign' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
 } calt;
 
 # Then we contextually kern the sign with the digits so that they get enclosed by it
@@ -74,67 +67,54 @@ feature calt {
 # centering, add it to the sign advance.
 # 
 feature kern {
-  # Uniscribe or HarfBuzz ‘latn’
-  pos @EndOfAyah @Digits.small'  <-1079 0 -292 0> @Digits.small'  <-786 0 -292 0> @Digits.small'  <-493 0 -292 0>;
-  pos @EndOfAyah @Digits.small'  <-933  0 -292 0> @Digits.small'  <-640 0 -292 0>;
-  pos @EndOfAyah @Digits.small'  <-786  0 -292 0>;
-
-  pos @FootNote @Digits.small'  <-679 0 -292 0> @Digits.small'  <-386  0 -292 0>;
-  pos @FootNote @Digits.small'  <-532 0 -292 0>;
-
-  pos @NumSign4 @Digits.medium' <-1964 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-646 0 -439 0>;
-  pos @NumSign3 @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-646  0 -439 0>;
-  pos @NumSign  @Digits.medium' <-1109 0 -439 0> @Digits.medium' <-670  0 -439 0>;
-  pos @NumSign  @Digits.medium' <-890  0 -439 0>;
-
-  pos @YearSign @Digits.medium' <-1770 0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-891 0 -439 0> @Digits.medium' <-452  0 -439 0>;
-  pos @YearSign @Digits.medium' <-1550 0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-671 0 -439 0>;
-  pos @YearSign @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-891  0 -439 0>;
-  pos @YearSign @Digits.medium' <-1111 0 -439 0>;
-
-  pos @SafhaSign3 @Digits.medium' <-1599 0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-720 0 -439 0>;
-  pos @SafhaSign  @Digits.medium' <-1086 0 -439 0> @Digits.medium' <-647 0 -439 0>;
-  pos @SafhaSign  @Digits.medium' <-867  0 -439 0>;
-
-  pos @Samvat @Digits.medium' <-2215 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-896 0 -439 0>;
-  pos @Samvat @Digits.medium' <-1995 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1116 0 -439 0>;
-  pos @Samvat @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0>;
-  pos @Samvat @Digits.medium' <-1556 0 -439 0>;
-
-# pos @Pound @Digits' <-1995 0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-825 0 -585 0> @Digits' <-240  0 -585 0>;
-  pos @Pound @Digits' <-1702 0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-532 0 -585 0>;
-  pos @Pound @Digits' <-1410 0 -585 0> @Digits' <-825  0 -585 0>;
-  pos @Pound @Digits' <-1117 0 -585 0>;
-
-  # HarfBuzz ‘arab’
-  pos @Digits.small'  <-493  0 -292 0> @Digits.small'  <-786 0 -292 0> @Digits.small'  <-1079 0 -292 0> @EndOfAyah;
-  pos @Digits.small'  <-640  0 -292 0> @Digits.small'  <-933 0 -292 0> @EndOfAyah;
-  pos @Digits.small'  <-786  0 -292 0> @EndOfAyah;
-
-  pos @Digits.small'  <-386  0 -292 0> @Digits.small'  <-679 0 -292 0> @FootNote;
-  pos @Digits.small'  <-532  0 -292 0> @FootNote;
-
-  pos @Digits.medium' <-646  0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1964 0 -439 0> @NumSign4;
-  pos @Digits.medium' <-646  0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @NumSign3;
-  pos @Digits.medium' <-670  0 -439 0> @Digits.medium' <-1109 0 -439 0> @NumSign;
-  pos @Digits.medium' <-890  0 -439 0> @NumSign;
-
-  pos @Digits.medium' <-452  0 -439 0> @Digits.medium' <-891  0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-1770 0 -439 0> @YearSign;
-  pos @Digits.medium' <-671  0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-1550 0 -439 0> @YearSign;
-  pos @Digits.medium' <-891  0 -439 0> @Digits.medium' <-1331 0 -439 0> @YearSign;
-  pos @Digits.medium' <-1111 0 -439 0> @YearSign;
-
-  pos @Digits.medium' <-720  0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-1599 0 -439 0> @SafhaSign3;
-  pos @Digits.medium' <-647  0 -439 0> @Digits.medium' <-1086 0 -439 0> @SafhaSign;
-  pos @Digits.medium' <-867  0 -439 0> @SafhaSign;
-
-  pos @Digits.medium' <-896  0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-2215 0 -439 0> @Samvat;
-  pos @Digits.medium' <-1116 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1995 0 -439 0> @Samvat;
-  pos @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Samvat;
-  pos @Digits.medium' <-1556 0 -439 0> @Samvat;
-
-# pos @Digits' <-240  0 -585 0> @Digits' <-825  0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-1995 0 -585 0> @Pound;
-  pos @Digits' <-532  0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-1702 0 -585 0> @Pound;
-  pos @Digits' <-825  0 -585 0> @Digits' <-1410 0 -585 0> @Pound;
-  pos @Digits' <-1117 0 -585 0> @Pound;
+    # Uniscribe or HarfBuzz ‘latn’
+    pos @EndOfAyah @Digits.small' <-1079 0 -292 0> @Digits.small' <-786 0 -292 0> @Digits.small' <-493 0 -292 0>;
+    pos @EndOfAyah @Digits.small' <-933 0 -292 0> @Digits.small' <-640 0 -292 0>;
+    pos @EndOfAyah @Digits.small' <-786 0 -292 0>;
+    pos @FootNote @Digits.small' <-679 0 -292 0> @Digits.small' <-386 0 -292 0>;
+    pos @FootNote @Digits.small' <-532 0 -292 0>;
+    pos @NumSign4 @Digits.medium' <-1964 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-646 0 -439 0>;
+    pos @NumSign3 @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-646 0 -439 0>;
+    pos @NumSign @Digits.medium' <-1109 0 -439 0> @Digits.medium' <-670 0 -439 0>;
+    pos @NumSign @Digits.medium' <-890 0 -439 0>;
+    pos @YearSign @Digits.medium' <-1770 0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-891 0 -439 0> @Digits.medium' <-452 0 -439 0>;
+    pos @YearSign @Digits.medium' <-1550 0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-671 0 -439 0>;
+    pos @YearSign @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-891 0 -439 0>;
+    pos @YearSign @Digits.medium' <-1111 0 -439 0>;
+    pos @SafhaSign3 @Digits.medium' <-1599 0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-720 0 -439 0>;
+    pos @SafhaSign @Digits.medium' <-1086 0 -439 0> @Digits.medium' <-647 0 -439 0>;
+    pos @SafhaSign @Digits.medium' <-867 0 -439 0>;
+    pos @Samvat @Digits.medium' <-2215 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-896 0 -439 0>;
+    pos @Samvat @Digits.medium' <-1995 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1116 0 -439 0>;
+    pos @Samvat @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-1336 0 -439 0>;
+    pos @Samvat @Digits.medium' <-1556 0 -439 0>;
+    # pos @Pound @Digits' <-1995 0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-825 0 -585 0> @Digits' <-240  0 -585 0>;
+    pos @Pound @Digits' <-1702 0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-532 0 -585 0>;
+    pos @Pound @Digits' <-1410 0 -585 0> @Digits' <-825 0 -585 0>;
+    pos @Pound @Digits' <-1117 0 -585 0>;
+    # HarfBuzz ‘arab’
+    pos @Digits.small' <-493 0 -292 0> @Digits.small' <-786 0 -292 0> @Digits.small' <-1079 0 -292 0> @EndOfAyah;
+    pos @Digits.small' <-640 0 -292 0> @Digits.small' <-933 0 -292 0> @EndOfAyah;
+    pos @Digits.small' <-786 0 -292 0> @EndOfAyah;
+    pos @Digits.small' <-386 0 -292 0> @Digits.small' <-679 0 -292 0> @FootNote;
+    pos @Digits.small' <-532 0 -292 0> @FootNote;
+    pos @Digits.medium' <-646 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1964 0 -439 0> @NumSign4;
+    pos @Digits.medium' <-646 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @NumSign3;
+    pos @Digits.medium' <-670 0 -439 0> @Digits.medium' <-1109 0 -439 0> @NumSign;
+    pos @Digits.medium' <-890 0 -439 0> @NumSign;
+    pos @Digits.medium' <-452 0 -439 0> @Digits.medium' <-891 0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-1770 0 -439 0> @YearSign;
+    pos @Digits.medium' <-671 0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-1550 0 -439 0> @YearSign;
+    pos @Digits.medium' <-891 0 -439 0> @Digits.medium' <-1331 0 -439 0> @YearSign;
+    pos @Digits.medium' <-1111 0 -439 0> @YearSign;
+    pos @Digits.medium' <-720 0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-1599 0 -439 0> @SafhaSign3;
+    pos @Digits.medium' <-647 0 -439 0> @Digits.medium' <-1086 0 -439 0> @SafhaSign;
+    pos @Digits.medium' <-867 0 -439 0> @SafhaSign;
+    pos @Digits.medium' <-896 0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-2215 0 -439 0> @Samvat;
+    pos @Digits.medium' <-1116 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1995 0 -439 0> @Samvat;
+    pos @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Samvat;
+    pos @Digits.medium' <-1556 0 -439 0> @Samvat;
+    # pos @Digits' <-240  0 -585 0> @Digits' <-825  0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-1995 0 -585 0> @Pound;
+    pos @Digits' <-532 0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-1702 0 -585 0> @Pound;
+    pos @Digits' <-825 0 -585 0> @Digits' <-1410 0 -585 0> @Pound;
+    pos @Digits' <-1117 0 -585 0> @Pound;
 } kern;

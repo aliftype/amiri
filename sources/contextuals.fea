@@ -1,952 +1,702 @@
 # replace tashkil following shadda by smaller alternates
-
-@ShaddaTashkil = [uni064E uni064B uni064C uni064F uni08F0 uni08F1 uni0657];
-@ShaddaTashkil.small = [uni064E.small uni064B.small uni064C.small uni064F.small uni08F0.small uni08F1.small uni0657.small];
-
+@ShaddaTashkil = [fatha-ar fathatan-ar dammatan-ar damma-ar openfathatan-ar opendammatan-ar dammainverted-ar];
+@ShaddaTashkil.small = [fatha-ar.small fathatan-ar.small dammatan-ar.small damma-ar.small openfathatan-ar.small opendammatan-ar.small dammainverted-ar.small];
 lookup SamallTashkil {
-  sub @ShaddaTashkil by @ShaddaTashkil.small;
+    sub @ShaddaTashkil by @ShaddaTashkil.small;
 } SamallTashkil;
 
 feature calt {
-  sub [uni0651 uni06EC] @ShaddaTashkil' lookup SamallTashkil;
-  sub @ShaddaTashkil.small @ShaddaTashkil' lookup SamallTashkil;
-  sub @ShaddaTashkil' lookup SamallTashkil @ShaddaTashkil' lookup SamallTashkil;
+    sub [shadda-ar dotStopabove-ar] @ShaddaTashkil' lookup SamallTashkil;
+    sub @ShaddaTashkil.small @ShaddaTashkil' lookup SamallTashkil;
+    sub @ShaddaTashkil' lookup SamallTashkil @ShaddaTashkil' lookup SamallTashkil;
 } calt;
 
 #ifdef QURAN
 feature calt {
-  sub [uni065C] [uni0650]' by [uni0650.small2];
+    sub [dotvowelbelow-ar] [kasra-ar]' by [kasra-ar.small2];
 } calt;
-#endif
 
+#endif
 # replace tashkil following hamza by smaller alternates
 feature calt {
-  sub [@AlefHamzaAbove uni0654] [uni064E uni064E.small uni064F uni0652]' by [uni064E.small2 uni064E.small2 uni064F.small uni0652.small2];
-  sub [@AlefHamzaBelow uni0655] [uni0650]'                               by [uni0650.small2];
+    sub [@AlefHamzaAbove hamzaabove-ar] [fatha-ar fatha-ar.small damma-ar sukun-ar]' by [fatha-ar.small2 fatha-ar.small2 damma-ar.small sukun-ar.small2];
+    sub [@AlefHamzaBelow hamzabelow-ar] [kasra-ar]' by [kasra-ar.small2];
 } calt;
 
 # replace hamza mark when following a heh by a glyph that has only a
 # HamzaAbove mark so it will be positioned correctly
 feature ccmp {
-  sub [uni0647 uni06D5 uni06C1] [uni0654]' by hamza.above;
+    sub [heh-ar ae-ar hehgoal-ar] [hamzaabove-ar]' by hamza.above;
 } ccmp;
 
 lookup BaaInitWide {
-  sub @aBaa.init by @aBaa.init_Wide;
+    sub @aBaa.init by @aBaa.init_Wide;
 } BaaInitWide;
 
 feature calt {
-  sub @aBaa.init' lookup BaaInitWide @Tashkil.above' [@aGaf.medi @aGaf.fina]';
-  sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
-  sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
+    sub @aBaa.init' lookup BaaInitWide @Tashkil.above' [@aGaf.medi @aGaf.fina]';
+    sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
+    sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
 } calt;
 
 lookup AboveHaaInit {
-  sub @aBaa.init by @aBaa.init_BaaHaaInit;
-  sub @aHaa.medi by @aHaa.medi_SadHaaInit;
-  sub @aHeh.init by @aHeh.init_HehHaaInit;
-  sub @aMem.init by @aMem.init_MemHaaInit;
-  sub @aSad.init by @aSad.init_SadHaaInit;
-  sub @aSen.init by @aSen.init_SenHaaInit;
+    sub @aBaa.init by @aBaa.init_BaaHaaInit;
+    sub @aHaa.medi by @aHaa.medi_SadHaaInit;
+    sub @aHeh.init by @aHeh.init_HehHaaInit;
+    sub @aMem.init by @aMem.init_MemHaaInit;
+    sub @aSad.init by @aSad.init_SadHaaInit;
+    sub @aSen.init by @aSen.init_SenHaaInit;
 } AboveHaaInit;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaInit
-      [@aHaa.medi]' lookup AboveHaaInit;
+    lookupflag IgnoreMarks;
+    sub [@aBaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaInit [@aHaa.medi]' lookup AboveHaaInit;
 } calt;
 
 lookup BaaRaaFina {
-  sub @aBaa.medi by @aBaa.medi_BaaRaaFina;
-  sub @aRaa.fina by @aRaa.fina_BaaRaaFina;
+    sub @aBaa.medi by @aBaa.medi_BaaRaaFina;
+    sub @aRaa.fina by @aRaa.fina_BaaRaaFina;
 } BaaRaaFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.medi]' lookup BaaRaaFina
-      [@aRaa.fina]' lookup BaaRaaFina;
+    lookupflag IgnoreMarks;
+    sub [@aBaa.medi]' lookup BaaRaaFina [@aRaa.fina]' lookup BaaRaaFina;
 } calt;
 
 lookup BaaNonFina {
-  sub @aBaa.medi by @aBaa.medi_BaaNonFina;
-  sub @aNon.fina by @aNon.fina_BaaNonFina;
+    sub @aBaa.medi by @aBaa.medi_BaaNonFina;
+    sub @aNon.fina by @aNon.fina_BaaNonFina;
 } BaaNonFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.medi]' lookup BaaNonFina
-      [@aNon.fina]' lookup BaaNonFina;
+    lookupflag IgnoreMarks;
+    sub [@aBaa.medi]' lookup BaaNonFina [@aNon.fina]' lookup BaaNonFina;
 } calt;
 
 lookup BaaMemFina {
-  sub @aBaa.medi by @aBaa.medi_BaaMemFina;
-  sub @aMem.fina by @aMem.fina_BaaMemFina;
+    sub @aBaa.medi by @aBaa.medi_BaaMemFina;
+    sub @aMem.fina by @aMem.fina_BaaMemFina;
 } BaaMemFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.medi]' lookup BaaMemFina
-      [@aMem.fina]' lookup BaaMemFina;
+    lookupflag IgnoreMarks;
+    sub [@aBaa.medi]' lookup BaaMemFina [@aMem.fina]' lookup BaaMemFina;
 } calt;
 
 lookup KafBaaAlfIsol {
-  sub @aBaa.medi by @aBaa.medi_KafBaaInit;
-  sub @aKaf.init by @aKaf.init_KafBaaInit;
+    sub @aBaa.medi by @aBaa.medi_KafBaaInit;
+    sub @aKaf.init by @aKaf.init_KafBaaInit;
 } KafBaaAlfIsol;
 
 lookup KafBaaAlfFina {
-  sub @aBaa.medi by @aBaa.medi_KafBaaMedi;
-  sub @aKaf.medi by @aKaf.medi_KafBaaMedi;
+    sub @aBaa.medi by @aBaa.medi_KafBaaMedi;
+    sub @aKaf.medi by @aKaf.medi_KafBaaMedi;
 } KafBaaAlfFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aKaf.init]' lookup KafBaaAlfIsol
-      [@aBaa.medi]' lookup KafBaaAlfIsol
-      [@aAlf.fina @aLam.medi @aLam.fina];
-
-  sub [@aKaf.medi]' lookup KafBaaAlfFina
-      [@aBaa.medi]' lookup KafBaaAlfFina
-      [@aAlf.fina @aLam.medi @aLam.fina];
+    lookupflag IgnoreMarks;
+    sub [@aKaf.init]' lookup KafBaaAlfIsol [@aBaa.medi]' lookup KafBaaAlfIsol [@aAlf.fina @aLam.medi @aLam.fina];
+    sub [@aKaf.medi]' lookup KafBaaAlfFina [@aBaa.medi]' lookup KafBaaAlfFina [@aAlf.fina @aLam.medi @aLam.fina];
 } calt;
 
 lookup BaaBaa {
-  sub @aBaa.medi by @aBaa.medi_BaaBaaInit;
-  sub @aBaa.fina by @aBaa.fina_BaaBaaIsol;
-  sub @aBaa.init by @aBaa.init_BaaBaaIsol;
+    sub @aBaa.medi by @aBaa.medi_BaaBaaInit;
+    sub @aBaa.fina by @aBaa.fina_BaaBaaIsol;
+    sub @aBaa.init by @aBaa.init_BaaBaaIsol;
 } BaaBaa;
 
 lookup HighBaa {
-  sub @aBaa.init by @aBaa.init_High;
-  sub @aBaa.medi by @aBaa.medi_High;
+    sub @aBaa.init by @aBaa.init_High;
+    sub @aBaa.medi by @aBaa.medi_High;
 } HighBaa;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  # hack to prevent double high baa in سببس and likes
-  sub [@aSen.init @aSen.medi]'
-      [@aBaa.medi]'
-      [@aBaa.medi]' lookup HighBaa
-      [@aSen.medi @aSen.fina]';
-
-  # جرينتش
-  sub [@aBaa.init]' lookup BaaBaa
-      [@aBaa.medi]' lookup BaaBaa
-      [@aBaa.medi]' lookup HighBaa
-      [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
-
-  sub [@aBaa.medi @aSad.init @aSad.medi @aSen.init @aSen.medi @aBaa.medi_BaaBaaInit]
-      [@aBaa.medi]' lookup HighBaa
-      [@aBaa.fina @aBaa.medi @aSen.fina @aBaa.medi_BaaHehMedi @aSen.medi @aSen.medi_PreYaa];
-
-  sub [@aBaa.medi]' lookup HighBaa
-      [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
-
-  sub [@aBaa.init]' lookup HighBaa
-      [@aBaa.medi]' lookup HighBaa
-      [@aBaa.medi @aBaa.fina @aSen.medi @aSen.fina];
+    lookupflag IgnoreMarks;
+    # hack to prevent double high baa in سببس and likes
+    sub [@aSen.init @aSen.medi]' [@aBaa.medi]' [@aBaa.medi]' lookup HighBaa [@aSen.medi @aSen.fina]';
+    # جرينتش
+    sub [@aBaa.init]' lookup BaaBaa [@aBaa.medi]' lookup BaaBaa [@aBaa.medi]' lookup HighBaa [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
+    sub [@aBaa.medi @aSad.init @aSad.medi @aSen.init @aSen.medi @aBaa.medi_BaaBaaInit] [@aBaa.medi]' lookup HighBaa [@aBaa.fina @aBaa.medi @aSen.fina @aBaa.medi_BaaHehMedi @aSen.medi @aSen.medi_PreYaa];
+    sub [@aBaa.medi]' lookup HighBaa [@aSen.fina @aSen.medi @aSen.medi_PreYaa];
+    sub [@aBaa.init]' lookup HighBaa [@aBaa.medi]' lookup HighBaa [@aBaa.medi @aBaa.fina @aSen.medi @aSen.fina];
 } calt;
 
 lookup BaaHeh {
-  sub @aBaa.init by @aBaa.init_BaaHehInit;
-  sub @aMem.init_dots by @aMem.init_MemHehInit;
-  sub @aBaa.medi by @aBaa.medi_BaaHehMedi;
-  sub @aHeh.medi by @aHeh.medi_BaaHehMedi;
+    sub @aBaa.init by @aBaa.init_BaaHehInit;
+    sub @aMem.init_dots by @aMem.init_MemHehInit;
+    sub @aBaa.medi by @aBaa.medi_BaaHehMedi;
+    sub @aHeh.medi by @aHeh.medi_BaaHehMedi;
 } BaaHeh;
 
 feature calt {
-#ifdef QURAN
-  # https://github.com/aliftype/quran-data/issues/1
-  lookupflag UseMarkFilteringSet [uni0670];
-#else
-  lookupflag IgnoreMarks;
-#endif
-  sub [@aBaa.init @aBaa.medi @aMem.init_dots]' lookup BaaHeh
-      [@aHeh.medi]' lookup BaaHeh;
+    #ifdef QURAN
+    # https://github.com/aliftype/quran-data/issues/1
+    lookupflag UseMarkFilteringSet [alefabove-ar];
+    #else
+    lookupflag IgnoreMarks;
+    #endif
+    sub [@aBaa.init @aBaa.medi @aMem.init_dots]' lookup BaaHeh [@aHeh.medi]' lookup BaaHeh;
 } calt;
 
 lookup BaaBaaHeh {
-  sub @aBaa.init by @aBaa.init_BaaBaaHeh;
+    sub @aBaa.init by @aBaa.init_BaaBaaHeh;
 } BaaBaaHeh;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub @aBaa.init' lookup BaaBaaHeh
-      @aBaa.medi_BaaHehMedi;
+    lookupflag IgnoreMarks;
+    sub @aBaa.init' lookup BaaBaaHeh @aBaa.medi_BaaHehMedi;
 } calt;
 
 lookup LamAlfFina {
-  sub @aAlf.fina by @aAlf.fina_LamAlfFina;
-  sub @aLam.medi by @aLam.medi_LamAlfFina;
+    sub @aAlf.fina by @aAlf.fina_LamAlfFina;
+    sub @aLam.medi by @aLam.medi_LamAlfFina;
 } LamAlfFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aLam.medi]' lookup LamAlfFina
-      [@aAlf.fina]' lookup LamAlfFina;
+    lookupflag IgnoreMarks;
+    sub [@aLam.medi]' lookup LamAlfFina [@aAlf.fina]' lookup LamAlfFina;
 } calt;
 
 lookup KafLamHeh {
-  sub @aLam.medi by @aLam.medi_KafLamHehIsol;
+    sub @aLam.medi by @aLam.medi_KafLamHehIsol;
 } KafLamHeh;
 
 lookup BaaSenAltInit {
-  sub @aBaa.init by @aBaa.init_BaaSenAltInit;
-  sub @aRaa.fina by @aRaa.fina_PostTooth;
-  sub @aSen.medi by @aSen.medi_BaaSenAltInit;
-  sub @aHeh.medi by @aHeh.medi_PostTooth;
-  sub @aYaa.fina by @aYaa.fina_PostTooth;
-  sub @aMem.fina by @aMem.fina_PostTooth;
+    sub @aBaa.init by @aBaa.init_BaaSenAltInit;
+    sub @aRaa.fina by @aRaa.fina_PostTooth;
+    sub @aSen.medi by @aSen.medi_BaaSenAltInit;
+    sub @aHeh.medi by @aHeh.medi_PostTooth;
+    sub @aYaa.fina by @aYaa.fina_PostTooth;
+    sub @aMem.fina by @aMem.fina_PostTooth;
 } BaaSenAltInit;
 
 lookup LamHaaHaaInit {
-  sub @aHaa.medi by @aHaa.medi_1LamHaaHaaInit;
-  sub @aLam.init by @aLam.init_LamHaaHaaInit;
+    sub @aHaa.medi by @aHaa.medi_1LamHaaHaaInit;
+    sub @aLam.init by @aLam.init_LamHaaHaaInit;
 } LamHaaHaaInit;
 
 lookup LamHaaHaaInit2 {
-  sub @aHaa.medi by @aHaa.medi_2LamHaaHaaInit;
+    sub @aHaa.medi by @aHaa.medi_2LamHaaHaaInit;
 } LamHaaHaaInit2;
 
 lookup KafHeh {
-  sub @aKaf.init by @aKaf.init_KafHeh;
-  sub @aKaf.medi by @aKaf.medi_KafHeh;
-  sub @aHeh.fina by @aHeh.fina_KafHeh;
-  sub @aDal.fina by @aDal.fina_KafDal;
+    sub @aKaf.init by @aKaf.init_KafHeh;
+    sub @aKaf.medi by @aKaf.medi_KafHeh;
+    sub @aHeh.fina by @aHeh.fina_KafHeh;
+    sub @aDal.fina by @aDal.fina_KafDal;
 } KafHeh;
 
 lookup LamMemFina {
-  sub @aLam.medi by @aLam.medi_LamMemFina;
-  sub @aMem.fina by @aMem.fina_LamMemFina;
+    sub @aLam.medi by @aLam.medi_LamMemFina;
+    sub @aMem.fina by @aMem.fina_LamMemFina;
 } LamMemFina;
 
 lookup SenMemInit {
-  sub @aSen.init by @aSen.init_SenMemInit;
-  sub @aSad.init by @aSad.init_SadMemInit;
-  sub @aMem.init by @aMem.init_MemMemInit;
-  sub @aMem.medi by @aMem.medi_SenMemInit;
+    sub @aSen.init by @aSen.init_SenMemInit;
+    sub @aSad.init by @aSad.init_SadMemInit;
+    sub @aMem.init by @aMem.init_MemMemInit;
+    sub @aMem.medi by @aMem.medi_SenMemInit;
 } SenMemInit;
 
 lookup AllYaaIsol {
-  sub @aKaf.init by @aKaf.init_KafYaaIsol;
-  sub @aBaa.init by @aBaa.init_BaaYaaIsol;
-  sub @aFaa.init by @aFaa.init_FaaYaaIsol;
-  sub @aLam.init by @aLam.init_LamYaaIsol;
-  sub @aAyn.init by @aAyn.init_AynYaaIsol;
-  sub @aHaa.init by @aHaa.init_HaaYaaIsol;
-  sub @aHeh.init by @aHeh.init_HehYaaIsol;
-  sub @aMem.init_dots by @aMem.init_MemYaaIsol;
-  sub @aYaa.fina by @aYaa.fina_KafYaaIsol;
+    sub @aKaf.init by @aKaf.init_KafYaaIsol;
+    sub @aBaa.init by @aBaa.init_BaaYaaIsol;
+    sub @aFaa.init by @aFaa.init_FaaYaaIsol;
+    sub @aLam.init by @aLam.init_LamYaaIsol;
+    sub @aAyn.init by @aAyn.init_AynYaaIsol;
+    sub @aHaa.init by @aHaa.init_HaaYaaIsol;
+    sub @aHeh.init by @aHeh.init_HehYaaIsol;
+    sub @aMem.init_dots by @aMem.init_MemYaaIsol;
+    sub @aYaa.fina by @aYaa.fina_KafYaaIsol;
 } AllYaaIsol;
 
 lookup BaaRaaIsol {
-  sub @aBaa.init by @aBaa.init_BaaRaaIsol;
-  sub @aRaa.fina by @aRaa.fina_BaaRaaIsol;
+    sub @aBaa.init by @aBaa.init_BaaRaaIsol;
+    sub @aRaa.fina by @aRaa.fina_BaaRaaIsol;
 } BaaRaaIsol;
 
 lookup LamHehIsol {
-  sub @aLam.init by @aLam.init_LamHeh;
-  sub @aLam.medi by @aLam.medi_LamHeh;
-  sub @aLam.medi_LamLamInit by @aLam.medi_LamLamHehIsol;
-  sub @aHeh.fina by @aHeh.fina_LamHeh;
-  sub @aDal.fina by @aDal.fina_LamDal;
+    sub @aLam.init by @aLam.init_LamHeh;
+    sub @aLam.medi by @aLam.medi_LamHeh;
+    sub @aLam.medi_LamLamInit by @aLam.medi_LamLamHehIsol;
+    sub @aHeh.fina by @aHeh.fina_LamHeh;
+    sub @aDal.fina by @aDal.fina_LamDal;
 } LamHehIsol;
 
 lookup LamWawFina {
-  sub @aLam.medi by @aLam.medi_LamWawFina;
-  sub @aWaw.fina by @aWaw.fina_LamWawFina;
+    sub @aLam.medi by @aLam.medi_LamWawFina;
+    sub @aWaw.fina by @aWaw.fina_LamWawFina;
 } LamWawFina;
 
 lookup FaaYaaFina {
-  sub @aFaa.medi by @aFaa.medi_FaaYaaFina;
-  sub @aYaa.fina by @aYaa.fina_FaaYaaFina;
+    sub @aFaa.medi by @aFaa.medi_FaaYaaFina;
+    sub @aYaa.fina by @aYaa.fina_FaaYaaFina;
 } FaaYaaFina;
 
 lookup LamLamHaaInit {
-  sub @aHaa.medi by @aHaa.medi_LamLamHaaInit;
-  sub @aLam.init by @aLam.init_LamLamHaaInit;
-  sub @aLam.medi by @aLam.medi_LamLamHaaInit;
+    sub @aHaa.medi by @aHaa.medi_LamLamHaaInit;
+    sub @aLam.init by @aLam.init_LamLamHaaInit;
+    sub @aLam.medi by @aLam.medi_LamLamHaaInit;
 } LamLamHaaInit;
 
 lookup LamBaaMemInit {
-  sub @aBaa.medi by @aBaa.medi_LamBaaMemInit;
-  sub @aLam.init by @aLam.init_LamBaaMemInit;
-  sub @aMem.medi by @aMem.medi_LamBaaMemInit;
+    sub @aBaa.medi by @aBaa.medi_LamBaaMemInit;
+    sub @aLam.init by @aLam.init_LamBaaMemInit;
+    sub @aMem.medi by @aMem.medi_LamBaaMemInit;
 } LamBaaMemInit;
 
 lookup KafLamMemMedi {
-  sub @aLam.medi by @aLam.medi_KafLamMemMedi;
+    sub @aLam.medi by @aLam.medi_KafLamMemMedi;
 } KafLamMemMedi;
 
 lookup KafLamMemFina {
-  sub @aLam.medi by @aLam.medi_KafLamMemFina;
-  sub @aLam.medi_LamMemFina by @aLam.medi_KafLamMemFina;
+    sub @aLam.medi by @aLam.medi_KafLamMemFina;
+    sub @aLam.medi_LamMemFina by @aLam.medi_KafLamMemFina;
 } KafLamMemFina;
 
 lookup BaaDalIsol {
-  sub @aBaa.init by @aBaa.init_BaaDal;
-  sub @aDal.fina by @aDal.fina_BaaDal;
+    sub @aBaa.init by @aBaa.init_BaaDal;
+    sub @aDal.fina by @aDal.fina_BaaDal;
 } BaaDalIsol;
 
 lookup BaaMemHaaInit {
-  sub @aBaa.init by @aBaa.init_BaaMemHaaInit;
-  sub @aHaa.medi by @aHaa.medi_BaaMemHaaInit;
-  sub @aMem.medi by @aMem.medi_BaaMemHaaInit;
+    sub @aBaa.init by @aBaa.init_BaaMemHaaInit;
+    sub @aHaa.medi by @aHaa.medi_BaaMemHaaInit;
+    sub @aMem.medi by @aMem.medi_BaaMemHaaInit;
 } BaaMemHaaInit;
 
 lookup BaaBaaYaa {
-  sub @aBaa.init by @aBaa.init_BaaBaaYaa;
-  sub @aBaa.medi by @aBaa.medi_BaaBaaYaa;
-  sub @aYaa.fina by @aYaa.fina_BaaBaaYaa;
+    sub @aBaa.init by @aBaa.init_BaaBaaYaa;
+    sub @aBaa.medi by @aBaa.medi_BaaBaaYaa;
+    sub @aYaa.fina by @aYaa.fina_BaaBaaYaa;
 } BaaBaaYaa;
 
 @LamLamFoo = [@aLam.medi_LamMemMedi @aLam.medi_LamHeh @aLam.medi_LamYaaFina];
-
 lookup LamLamInit {
-  sub @aLam.init by @aLam.init_LamLamInit;
-  sub @aLam.medi by @aLam.medi_LamLamInit;
-  sub @aLam.fina by @aLam.fina_LamLamIsol;
-  sub @aKaf.fina by @aKaf.fina_LamKafIsol;
-  sub @aGaf.alt.fina by @aGaf.fina_LamKafIsol;
-  sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlfIsol;
-  sub @LamLamFoo by [@aLam.medi_LamLamMemInit @aLam.medi_LamLamHehIsol @aLam.medi_LamLamYaaIsol];
+    sub @aLam.init by @aLam.init_LamLamInit;
+    sub @aLam.medi by @aLam.medi_LamLamInit;
+    sub @aLam.fina by @aLam.fina_LamLamIsol;
+    sub @aKaf.fina by @aKaf.fina_LamKafIsol;
+    sub @aGaf.alt.fina by @aGaf.fina_LamKafIsol;
+    sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlfIsol;
+    sub @LamLamFoo by [@aLam.medi_LamLamMemInit @aLam.medi_LamLamHehIsol @aLam.medi_LamLamYaaIsol];
 } LamLamInit;
 
 lookup LamLamMedi {
-  sub @aLam.medi by @aLam.medi_LamLamMedi2;
-  sub @aLam.fina by @aLam.fina_LamLamFina;
-  sub @aKaf.fina by @aKaf.fina_LamKafFina;
-  sub @aGaf.alt.fina by @aGaf.fina_LamKafFina;
-  sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlefFina;
-  sub @LamLamFoo by [@aLam.medi_LamLamMemMedi @aLam.medi_LamLamHehFina @aLam.medi_LamLamYaaFina];
+    sub @aLam.medi by @aLam.medi_LamLamMedi2;
+    sub @aLam.fina by @aLam.fina_LamLamFina;
+    sub @aKaf.fina by @aKaf.fina_LamKafFina;
+    sub @aGaf.alt.fina by @aGaf.fina_LamKafFina;
+    sub @aLam.medi_LamAlfFina by @aLam.medi_LamLamAlefFina;
+    sub @LamLamFoo by [@aLam.medi_LamLamMemMedi @aLam.medi_LamLamHehFina @aLam.medi_LamLamYaaFina];
 } LamLamMedi;
 
 lookup LamLamMedi2 {
-  sub @aLam.medi by @aLam.medi_LamLamMedi;
+    sub @aLam.medi by @aLam.medi_LamLamMedi;
 } LamLamMedi2;
 
 lookup LamYaaFina {
-  sub @aLam.medi by @aLam.medi_LamYaaFina;
-  sub @aYaa.fina by @aYaa.fina_LamYaaFina;
+    sub @aLam.medi by @aLam.medi_LamYaaFina;
+    sub @aYaa.fina by @aYaa.fina_LamYaaFina;
 } LamYaaFina;
 
 lookup LamMemHaaInit {
-  sub @aHaa.medi by @aHaa.medi_LamMemHaaInit;
-  sub @aLam.init by @aLam.init_LamMemHaaInit;
-  sub @aMem.medi by @aMem.medi_LamMemHaaInit;
+    sub @aHaa.medi by @aHaa.medi_LamMemHaaInit;
+    sub @aLam.init by @aLam.init_LamMemHaaInit;
+    sub @aMem.medi by @aMem.medi_LamMemHaaInit;
 } LamMemHaaInit;
 
 #ifndef QURAN
 lookup LamMemInit {
-  sub @aLam.init by @aLam.init_LamMemInit;
-  sub @aMem.medi by @aMem.medi_LamMemInit;
+    sub @aLam.init by @aLam.init_LamMemInit;
+    sub @aMem.medi by @aMem.medi_LamMemInit;
 } LamMemInit;
-#endif
 
+#endif
 lookup LamAlfIsol {
-  sub @aAlf.fina by @aAlf.fina_LamAlfIsol;
-  sub @aLam.init by @aLam.init_LamAlfIsol;
+    sub @aAlf.fina by @aAlf.fina_LamAlfIsol;
+    sub @aLam.init by @aLam.init_LamAlfIsol;
 } LamAlfIsol;
 
 #ifndef QURAN
 lookup LamHaaMemInit {
-  sub @aHaa.medi by @aHaa.medi_LamHaaMemInit;
-  sub @aLam.init by @aLam.init_LamHaaMemInit;
-  sub @aMem.medi by @aMem.medi_LamHaaMemInit;
+    sub @aHaa.medi by @aHaa.medi_LamHaaMemInit;
+    sub @aLam.init by @aLam.init_LamHaaMemInit;
+    sub @aMem.medi by @aMem.medi_LamHaaMemInit;
 } LamHaaMemInit;
-#endif
 
+#endif
 lookup BaaBaaMemInit {
-  sub @aBaa.init by @aBaa.init_BaaBaaMemInit;
-  sub @aBaa.medi by @aBaa.medi_BaaBaaMemInit;
-  sub @aMem.medi by @aMem.medi_BaaBaaMemInit;
+    sub @aBaa.init by @aBaa.init_BaaBaaMemInit;
+    sub @aBaa.medi by @aBaa.medi_BaaBaaMemInit;
+    sub @aMem.medi by @aMem.medi_BaaBaaMemInit;
 } BaaBaaMemInit;
 
 lookup BaaBaaHaaInit {
-  sub @aBaa.init by @aBaa.init_BaaBaaHaaInit;
-  sub @aBaa.medi by @aBaa.medi_BaaBaaHaaInit;
-  sub @aHaa.medi by @aHaa.medi_BaaBaaHaaInit;
+    sub @aBaa.init by @aBaa.init_BaaBaaHaaInit;
+    sub @aBaa.medi by @aBaa.medi_BaaBaaHaaInit;
+    sub @aHaa.medi by @aHaa.medi_BaaBaaHaaInit;
 } BaaBaaHaaInit;
 
 lookup MemRaaIsol {
-  sub @aMem.init by @aMem.init_MemRaaIsol;
-  sub @aRaa.fina by @aRaa.fina_MemRaaIsol;
+    sub @aMem.init by @aMem.init_MemRaaIsol;
+    sub @aRaa.fina by @aRaa.fina_MemRaaIsol;
 } MemRaaIsol;
 
 lookup HaaHaaInit {
-  sub @aHaa.init by @aHaa.init_HaaHaaInit;
-  sub @aHaa.medi by @aHaa.medi_HaaHaaInit;
+    sub @aHaa.init by @aHaa.init_HaaHaaInit;
+    sub @aHaa.medi by @aHaa.medi_HaaHaaInit;
 } HaaHaaInit;
 
 lookup KafMemIsol {
-  sub @aKaf.init by @aKaf.init_KafMemIsol;
-  sub @aLam.init by @aLam.init_LamMemIsol;
-  sub @aBaa.init by @aBaa.init_BaaMemIsol;
-  sub @aMem.fina by @aMem.fina_KafMemIsol;
+    sub @aKaf.init by @aKaf.init_KafMemIsol;
+    sub @aLam.init by @aLam.init_LamMemIsol;
+    sub @aBaa.init by @aBaa.init_BaaMemIsol;
+    sub @aMem.fina by @aMem.fina_KafMemIsol;
 } KafMemIsol;
 
 lookup LamQafFina {
-  sub @aLam.medi by @aLam.medi_LamQafFina;
-  sub @aQaf.fina by @aQaf.fina_LamQafFina;
+    sub @aLam.medi by @aLam.medi_LamQafFina;
+    sub @aQaf.fina by @aQaf.fina_LamQafFina;
 } LamQafFina;
 
 lookup MemHaaMemInit {
-  sub @aHaa.medi by @aHaa.medi_MemHaaMemInit;
-  sub @aMem.init by @aMem.init_MemHaaMemInit;
-  sub @aMem.init_MemHaaInit by @aMem.init_MemHaaMemInit;
-  sub @aHaa.medi_SadHaaInit by @aHaa.medi_MemHaaMemInit;
+    sub @aHaa.medi by @aHaa.medi_MemHaaMemInit;
+    sub @aMem.init by @aMem.init_MemHaaMemInit;
+    sub @aMem.init_MemHaaInit by @aMem.init_MemHaaMemInit;
+    sub @aHaa.medi_SadHaaInit by @aHaa.medi_MemHaaMemInit;
 } MemHaaMemInit;
 
 lookup BaaNonIsol {
-  sub @aBaa.init by @aBaa.init_BaaNonIsol;
-  sub @aNon.fina by @aNon.fina_BaaNonIsol;
+    sub @aBaa.init by @aBaa.init_BaaNonIsol;
+    sub @aNon.fina by @aNon.fina_BaaNonIsol;
 } BaaNonIsol;
 
 lookup KafMemFina {
-  sub @aKaf.medi by @aKaf.medi_KafMemFina;
-  sub @aMem.fina by @aMem.fina_KafMemFina;
+    sub @aKaf.medi by @aKaf.medi_KafMemFina;
+    sub @aMem.fina by @aMem.fina_KafMemFina;
 } KafMemFina;
 
 lookup KafLamAlf {
-  sub @aLam.medi by @aLam.medi_KafLamAlf;
-  sub @aLam.medi_LamAlfFina by @aLam.medi_KafLamAlf;
+    sub @aLam.medi by @aLam.medi_KafLamAlf;
+    sub @aLam.medi_LamAlfFina by @aLam.medi_KafLamAlf;
 } KafLamAlf;
 
 lookup BaaSenInit {
-  sub @aBaa.init by @aBaa.init_BaaSenInit;
-  sub @aSen.fina by @aSen.fina_BaaSen;
-  sub @aSen.medi by @aSen.medi_BaaSenInit;
+    sub @aBaa.init by @aBaa.init_BaaSenInit;
+    sub @aSen.fina by @aSen.fina_BaaSen;
+    sub @aSen.medi by @aSen.medi_BaaSenInit;
 } BaaSenInit;
 
 lookup KafRaaFina {
-  sub @aKaf.medi by @aKaf.medi_KafRaaFina;
-  sub @aRaa.fina by @aRaa.fina_KafRaaFina;
+    sub @aKaf.medi by @aKaf.medi_KafRaaFina;
+    sub @aRaa.fina by @aRaa.fina_KafRaaFina;
 } KafRaaFina;
 
 lookup LamHehInit {
-  sub @aHeh.medi by @aHeh.medi_LamHehInit;
-  sub @aLam.init by @aLam.init_LamHehInit;
+    sub @aHeh.medi by @aHeh.medi_LamHehInit;
+    sub @aLam.init by @aLam.init_LamHehInit;
 } LamHehInit;
 
 lookup BaaMemInit {
-  sub @aBaa.init by @aBaa.init_BaaMemInit;
-  sub @aMem.medi by @aMem.medi_BaaMemInit;
+    sub @aBaa.init by @aBaa.init_BaaMemInit;
+    sub @aMem.medi by @aMem.medi_BaaMemInit;
 } BaaMemInit;
 
 lookup KafLam {
-  sub @aKaf.init by @aKaf.init_KafLam;
-  sub @aKaf.medi by @aKaf.medi_KafLam;
-  sub @aKaf.fina by @aKaf.fina_KafKafFina;
-  sub @aGaf.alt.fina by @aGaf.fina_KafKafFina;
-  sub @aLam.medi by @aLam.medi_KafLam;
-  sub @aLam.fina by @aLam.fina_KafLam;
-  sub @aAlf.fina by @aAlf.fina_KafAlf;
+    sub @aKaf.init by @aKaf.init_KafLam;
+    sub @aKaf.medi by @aKaf.medi_KafLam;
+    sub @aKaf.fina by @aKaf.fina_KafKafFina;
+    sub @aGaf.alt.fina by @aGaf.fina_KafKafFina;
+    sub @aLam.medi by @aLam.medi_KafLam;
+    sub @aLam.fina by @aLam.fina_KafLam;
+    sub @aAlf.fina by @aAlf.fina_KafAlf;
 } KafLam;
 
 lookup KafRaaIsol {
-  sub @aKaf.init by @aKaf.init_KafRaaIsol;
-  sub @aRaa.fina by @aRaa.fina_KafRaaIsol;
+    sub @aKaf.init by @aKaf.init_KafRaaIsol;
+    sub @aRaa.fina by @aRaa.fina_KafRaaIsol;
 } KafRaaIsol;
 
 lookup AynHaaInit {
-  sub @aAyn.init by @aAyn.init_AynHaaInit;
-  sub @aHaa.medi by @aHaa.medi_AynHaaInit;
+    sub @aAyn.init by @aAyn.init_AynHaaInit;
+    sub @aHaa.medi by @aHaa.medi_AynHaaInit;
 } AynHaaInit;
 
 lookup KafYaaFina {
-  sub @aKaf.medi by @aKaf.medi_KafYaaFina;
-  sub @aAyn.medi by @aAyn.medi_AynYaaFina;
-  sub @aYaa.fina by @aYaa.fina_KafYaaFina;
+    sub @aKaf.medi by @aKaf.medi_KafYaaFina;
+    sub @aAyn.medi by @aAyn.medi_AynYaaFina;
+    sub @aYaa.fina by @aYaa.fina_KafYaaFina;
 } KafYaaFina;
 
 lookup LamMemMedi {
-  sub @aLam.medi by @aLam.medi_LamMemMedi;
-  sub @aMem.medi_dots by @aMem.medi_LamMemMedi;
+    sub @aLam.medi by @aLam.medi_LamMemMedi;
+    sub @aMem.medi_dots by @aMem.medi_LamMemMedi;
 } LamMemMedi;
 
 lookup SenBaaMemInit {
-  sub @aSen.init by @aSen.init_SenBaaMemInit;
-  sub @aSad.init by @aSad.init_SenBaaMemInit;
-  sub @aBaa.medi by @aBaa.medi_SenBaaMemInit;
-  sub @aMem.medi by @aMem.medi_SenBaaMemInit;
+    sub @aSen.init by @aSen.init_SenBaaMemInit;
+    sub @aSad.init by @aSad.init_SenBaaMemInit;
+    sub @aBaa.medi by @aBaa.medi_SenBaaMemInit;
+    sub @aMem.medi by @aMem.medi_SenBaaMemInit;
 } SenBaaMemInit;
 
 lookup HaaRaaIsol {
-  sub @aHaa.init by @aHaa.init_HaaRaaIsol;
-  sub @aRaa.fina by @aRaa.fina_HaaRaaIsol;
+    sub @aHaa.init by @aHaa.init_HaaRaaIsol;
+    sub @aRaa.fina by @aRaa.fina_HaaRaaIsol;
 } HaaRaaIsol;
 
 lookup LamRaaIsol {
-  sub @aLam.init by @aLam.init_LamRaaIsol;
-  sub @aRaa.fina by @aRaa.fina_LamRaaIsol;
+    sub @aLam.init by @aLam.init_LamRaaIsol;
+    sub @aRaa.fina by @aRaa.fina_LamRaaIsol;
 } LamRaaIsol;
 
 lookup KafMemAlf {
-  sub @aKaf.medi by @aKaf.medi_KafMemAlf;
-  sub @aKaf.init by @aKaf.init_KafMemAlf;
-  sub @aMem.medi by @aMem.medi_KafMemAlf;
-  sub @aAlf.fina by @aAlf.fina_KafMemAlf;
-  sub @aLam.fina by @aLam.fina_KafMemLam;
-  sub @aLam.medi by @aLam.medi_KafMemLam;
+    sub @aKaf.medi by @aKaf.medi_KafMemAlf;
+    sub @aKaf.init by @aKaf.init_KafMemAlf;
+    sub @aMem.medi by @aMem.medi_KafMemAlf;
+    sub @aAlf.fina by @aAlf.fina_KafMemAlf;
+    sub @aLam.fina by @aLam.fina_KafMemLam;
+    sub @aLam.medi by @aLam.medi_KafMemLam;
 } KafMemAlf;
 
 lookup BaaHaaMemInit {
-  sub @aBaa.init by @aBaa.init_BaaHaaMemInit;
-  sub @aHaa.medi by @aHaa.medi_BaaHaaMemInit;
-  sub @aHaa.medi_SadHaaInit by @aHaa.medi_BaaHaaMemInit;
-  sub @aBaa.init_BaaHaaInit by @aBaa.init_BaaHaaMemInit;
+    sub @aBaa.init by @aBaa.init_BaaHaaMemInit;
+    sub @aHaa.medi by @aHaa.medi_BaaHaaMemInit;
+    sub @aHaa.medi_SadHaaInit by @aHaa.medi_BaaHaaMemInit;
+    sub @aBaa.init_BaaHaaInit by @aBaa.init_BaaHaaMemInit;
 } BaaHaaMemInit;
 
 lookup AboveHaaIsol {
-  sub @aAyn.init by @aAyn.init_AboveHaa;
-  sub @aBaa.init by @aBaa.init_AboveHaa;
-  sub @aFaa.init by @aFaa.init_FaaHaaInit;
-  sub @aHaa.init by @aHaa.init_AboveHaa;
-  sub @aHeh.init by @aHeh.init_AboveHaa;
-  sub @aKaf.init by @aKaf.init_AboveHaa;
-  sub @aLam.init by @aLam.init_LamHaaInit;
-  sub @aMem.init by @aMem.init_AboveHaa;
-  sub @aSad.init by @aSad.init_AboveHaa;
-  sub @aSen.init by @aSen.init_AboveHaa;
-  sub @aHaa.fina by @aHaa.fina_AboveHaaIsol;
+    sub @aAyn.init by @aAyn.init_AboveHaa;
+    sub @aBaa.init by @aBaa.init_AboveHaa;
+    sub @aFaa.init by @aFaa.init_FaaHaaInit;
+    sub @aHaa.init by @aHaa.init_AboveHaa;
+    sub @aHeh.init by @aHeh.init_AboveHaa;
+    sub @aKaf.init by @aKaf.init_AboveHaa;
+    sub @aLam.init by @aLam.init_LamHaaInit;
+    sub @aMem.init by @aMem.init_AboveHaa;
+    sub @aSad.init by @aSad.init_AboveHaa;
+    sub @aSen.init by @aSen.init_AboveHaa;
+    sub @aHaa.fina by @aHaa.fina_AboveHaaIsol;
 } AboveHaaIsol;
 
 lookup AboveHaaIsol2 {
-  sub @aHaa.fina by @aHaa.fina_AboveHaaIsol2;
-  sub @aHaa.medi by @aHaa.medi_FaaHaaInit;
+    sub @aHaa.fina by @aHaa.fina_AboveHaaIsol2;
+    sub @aHaa.medi by @aHaa.medi_FaaHaaInit;
 } AboveHaaIsol2;
 
 lookup SenYaaFina {
-  sub @aRaa.fina by @aRaa.fina_PostTooth;
-  sub @aSad.init by @aSad.init_PreYaa;
-  sub @aSad.medi by @aSad.medi_PreYaa;
-  sub @aSen.init by @aSen.init_PreYaa;
-  sub @aSen.medi by @aSen.medi_PreYaa;
-  sub @aYaa.fina by @aYaa.fina_PostTooth;
+    sub @aRaa.fina by @aRaa.fina_PostTooth;
+    sub @aSad.init by @aSad.init_PreYaa;
+    sub @aSad.medi by @aSad.medi_PreYaa;
+    sub @aSen.init by @aSen.init_PreYaa;
+    sub @aSen.medi by @aSen.medi_PreYaa;
+    sub @aYaa.fina by @aYaa.fina_PostTooth;
 } SenYaaFina;
 
 lookup KafMemInit {
-  sub @aKaf.init by @aKaf.init_KafMemInit;
-  sub @aKaf.medi by @aKaf.medi_KafMemMedi;
-  sub @aAyn.init by @aAyn.init_AynMemInit;
-  sub @aFaa.init by @aFaa.init_FaaMemInit;
-  sub @aHaa.init by @aHaa.init_HaaMemInit;
-  sub @aHeh.init by @aHeh.init_HehMemInit;
-  sub @aMem.medi by @aMem.medi_KafMemMedi;
+    sub @aKaf.init by @aKaf.init_KafMemInit;
+    sub @aKaf.medi by @aKaf.medi_KafMemMedi;
+    sub @aAyn.init by @aAyn.init_AynMemInit;
+    sub @aFaa.init by @aFaa.init_FaaMemInit;
+    sub @aHaa.init by @aHaa.init_HaaMemInit;
+    sub @aHeh.init by @aHeh.init_HehMemInit;
+    sub @aMem.medi by @aMem.medi_KafMemMedi;
 } KafMemInit;
 
 # the Lam.medi+Mem.fina is too narrow for tashkil, so we use a wider (extended)
 # meem when tashkil clash is anticipated.
 lookup LamMemFinaExtended {
-  sub @aMem.fina by @aMem.fina_LamMemFinaExtended;
+    sub @aMem.fina by @aMem.fina_LamMemFinaExtended;
 } LamMemFinaExtended;
 
 feature calt {
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above';
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above' @Tashkil.above'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above';
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above' @Tashkil.above'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above' @Tashkil.above';
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above' @Tashkil.above';
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.below' @Tashkil.above'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above';
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.above' @Tashkil.below'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.above';
-  sub @aLam.medi' lookup LamMemFina
-      @Tashkil.below'
-      @aMem.fina' lookup LamMemFinaExtended
-      @Tashkil.below';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above' @Tashkil.above';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above' @Tashkil.above';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.below' @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.above' @Tashkil.below' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
+    sub @aLam.medi' lookup LamMemFina @Tashkil.below' @aMem.fina' lookup LamMemFinaExtended @Tashkil.below';
 } calt;
 
 # ditto
 lookup MemExtended {
-  sub @aMem.fina by @aMem.fina_KafMemIsolExtended;
+    sub @aMem.fina by @aMem.fina_KafMemIsolExtended;
 } MemExtended;
 
 feature calt {
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.above';
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above' @Tashkil.above'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.above';
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above' @Tashkil.above'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.above' @Tashkil.above';
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.above' @Tashkil.above';
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.below' @Tashkil.above'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.above';
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.above' @Tashkil.below'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.above';
-  sub [@aLam.init @aKaf.init]' lookup KafMemIsol
-      @Tashkil.below'
-      @aMem.fina' lookup MemExtended
-      @Tashkil.below';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above' @Tashkil.above';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above' @Tashkil.above';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.below' @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @Tashkil.below' @aMem.fina' lookup MemExtended @Tashkil.above';
+    sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.below' @aMem.fina' lookup MemExtended @Tashkil.below';
 } calt;
 
 #ditto, but we don't have LamMemInit in Quran font
 #ifndef QURAN
 lookup LamMemInitTatweel {
-  sub @aMem.medi by @aMem.medi_LamMemInitTatweel;
+    sub @aMem.medi by @aMem.medi_LamMemInitTatweel;
 } LamMemInitTatweel;
 
 feature calt {
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.above'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above';
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.above' @Tashkil.above'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above';
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.above' @Tashkil.above'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above' @Tashkil.above';
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.above'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above' @Tashkil.above';
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.below' @Tashkil.above'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above';
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.above' @Tashkil.below'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.above';
-  sub @aLam.init' lookup LamMemInit
-      @Tashkil.below'
-      @aMem.medi' lookup LamMemInitTatweel
-      @Tashkil.below';
+    sub @aLam.init' lookup LamMemInit @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
+    sub @aLam.init' lookup LamMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
+    sub @aLam.init' lookup LamMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above' @Tashkil.above';
+    sub @aLam.init' lookup LamMemInit @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above' @Tashkil.above';
+    sub @aLam.init' lookup LamMemInit @Tashkil.below' @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
+    sub @aLam.init' lookup LamMemInit @Tashkil.above' @Tashkil.below' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
+    sub @aLam.init' lookup LamMemInit @Tashkil.below' @aMem.medi' lookup LamMemInitTatweel @Tashkil.below';
 } calt;
-#endif
 
+#endif
 # ditto
 lookup KafMemFinaExtended {
-  sub @aMem.fina by @aMem.fina_KafMemFinaExtended;
+    sub @aMem.fina by @aMem.fina_KafMemFinaExtended;
 } KafMemFinaExtended;
 
 feature calt {
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above';
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above' @Tashkil.above'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above';
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above' @Tashkil.above'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above' @Tashkil.above';
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above' @Tashkil.above';
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.below' @Tashkil.above'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above;
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.above' @Tashkil.below'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.above';
-  sub @aKaf.medi' lookup KafMemFina
-      @Tashkil.below'
-      @aMem.fina' lookup KafMemFinaExtended
-      @Tashkil.below';
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above';
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above';
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above' @Tashkil.above';
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above' @Tashkil.above';
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.below' @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above;
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @Tashkil.below' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above';
+    sub @aKaf.medi' lookup KafMemFina @Tashkil.below' @aMem.fina' lookup KafMemFinaExtended @Tashkil.below';
 } calt;
 
 # No IgnoreMarks here, to narrow to carry vowels
 feature calt {
-  sub [@aBaa.init]' lookup BaaMemHaaInit
-      [@aMem.medi]' lookup BaaMemHaaInit
-      [@aHaa.medi]' lookup BaaMemHaaInit;
+    sub [@aBaa.init]' lookup BaaMemHaaInit [@aMem.medi]' lookup BaaMemHaaInit [@aHaa.medi]' lookup BaaMemHaaInit;
 } calt;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      [@aLam.medi]' lookup KafLamHeh
-      [@aHeh.fina @aDal.fina]' lookup LamHehIsol;
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafMemAlf
-      [@aMem.medi]' lookup KafMemAlf
-      [@aLam.medi @aLam.fina @aAlf.fina]' lookup KafMemAlf;
-
-  sub [@aBaa.init]' lookup BaaSenAltInit
-      [@aSen.medi]' lookup BaaSenAltInit
-      [@aHeh.medi @aRaa.fina @aYaa.fina @aMem.fina]' lookup BaaSenAltInit;
-
-  sub [@aLam.init]' lookup LamHaaHaaInit
-      [@aHaa.medi]' lookup LamHaaHaaInit
-      [@aHaa.medi]' lookup LamHaaHaaInit2;
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafHeh
-      [@aHeh.fina @aDal.fina]' lookup KafHeh;
-
-  sub [@aLam.medi]' lookup LamMemFina
-      [@aMem.fina]' lookup LamMemFina;
-
-  sub [@aSen.init @aSad.init @aMem.init]' lookup SenMemInit
-      [@aMem.medi]' lookup SenMemInit;
-
-  sub [@aKaf.init @aBaa.init @aFaa.init @aLam.init @aAyn.init @aHaa.init @aHeh.init @aMem.init_dots]' lookup AllYaaIsol
-      [@aYaa.fina]' lookup AllYaaIsol;
-
-  sub [@aBaa.init]' lookup BaaRaaIsol
-      [@aRaa.fina]' lookup BaaRaaIsol;
-
-  sub [@aLam.init @aLam.medi @aLam.medi_LamLamInit]' lookup LamHehIsol
-      [@aHeh.fina @aDal.fina]' lookup LamHehIsol;
-
-  sub [@aLam.medi]' lookup LamWawFina
-      [@aWaw.fina]' lookup LamWawFina;
-
-  sub [@aFaa.medi]' lookup FaaYaaFina
-      [@aYaa.fina]' lookup FaaYaaFina;
-
-  sub [@aLam.init]' lookup LamLamHaaInit
-      [@aLam.medi]' lookup LamLamHaaInit
-      [@aHaa.medi]' lookup LamLamHaaInit;
-
-#ifndef QURAN
-  sub [@aLam.init]' lookup LamBaaMemInit
-      [@aBaa.medi]' lookup LamBaaMemInit
-      [@aMem.medi]' lookup LamBaaMemInit;
-#endif
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      [@aLam.medi]' lookup KafLamMemMedi
-      [@aMem.medi_dots]' lookup LamMemMedi;
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      [@aLam.medi @aLam.medi_LamMemFina]' lookup KafLamMemFina
-      [@aMem.fina @aMem.fina_LamMemFinaExtended]' lookup LamMemFina;
-
-  sub [@aBaa.init]' lookup BaaDalIsol
-      [@aDal.fina]' lookup BaaDalIsol;
-
-  sub [@aBaa.init]' lookup BaaBaaYaa
-      [@aBaa.medi]' lookup BaaBaaYaa
-      [@aYaa.fina]' lookup BaaBaaYaa;
-
-  sub [@aLam.medi]' lookup LamYaaFina
-      [@aYaa.fina]' lookup LamYaaFina;
-
-  sub [@aLam.init]' lookup LamMemHaaInit
-      [@aMem.medi]' lookup LamMemHaaInit
-      [@aHaa.medi]' lookup LamMemHaaInit;
-
-#ifndef QURAN
-  sub [@aLam.init]' lookup LamMemInit
-      [@aMem.medi]' lookup LamMemInit;
-#endif
-
-  sub [@aLam.init]' lookup LamAlfIsol
-      [@aAlf.fina]' lookup LamAlfIsol;
-
-#ifndef QURAN
-  sub [@aLam.init]' lookup LamHaaMemInit
-      [@aHaa.medi]' lookup LamHaaMemInit
-      [@aMem.medi]' lookup LamHaaMemInit;
-#endif
-
-  sub [@aBaa.init]' lookup BaaBaaMemInit
-      [@aBaa.medi]' lookup BaaBaaMemInit
-      [@aMem.medi]' lookup BaaBaaMemInit;
-
-#ifndef QURAN
-  sub [@aBaa.init]' lookup BaaBaaHaaInit
-      [@aBaa.medi]' lookup BaaBaaHaaInit
-      [@aHaa.medi]' lookup BaaBaaHaaInit;
-#endif
-
-  sub [@aMem.init]' lookup MemRaaIsol
-      [@aRaa.fina]' lookup MemRaaIsol;
-
-  sub [@aAyn.init]'
-      [@aRaa.fina]' lookup MemRaaIsol;
-
-  sub [@aHaa.init]' lookup HaaHaaInit
-      [@aHaa.medi]' lookup HaaHaaInit;
-
-  sub [@aKaf.init @aLam.init @aBaa.init]' lookup KafMemIsol
-      [@aMem.fina]' lookup KafMemIsol;
-
-  sub [@aLam.medi]' lookup LamQafFina
-      [@aQaf.fina]' lookup LamQafFina;
-
-  sub [@aMem.init @aMem.init_MemHaaInit]' lookup MemHaaMemInit
-      [@aHaa.medi @aHaa.medi_SadHaaInit]' lookup MemHaaMemInit
-      [@aMem.medi]' lookup KafMemInit;
-
-  sub [@aBaa.init]' lookup BaaNonIsol
-      [@aNon.fina]' lookup BaaNonIsol;
-
-  sub [@aKaf.medi]' lookup KafMemFina
-      [@aMem.fina]' lookup KafMemFina;
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf
-      [@aAlf.fina @aAlf.fina_LamAlfFina];
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf
-       # see float hamza in quran.fea
-       uni0621.float'
-      [@aAlf.fina @aAlf.fina_LamAlfFina];
-
-  sub [@aBaa.init]' lookup BaaSenInit
-      [@aSen.medi]' lookup BaaSenInit;
-
-  sub [@aBaa.init]' lookup BaaSenAltInit
-      [@aSen.fina]' lookup BaaSenInit;
-
-  sub [@aKaf.medi]' lookup KafRaaFina
-      [@aRaa.fina]' lookup KafRaaFina;
-
-  ignore sub [@aLam.init]' [uni06C1.medi]';
-  sub [@aLam.init]' lookup LamHehInit
-      [@aHeh.medi]' lookup LamHehInit;
-
-  sub [@aBaa.init]' lookup BaaMemInit
-      [@aMem.medi]' lookup BaaMemInit;
-
-  sub [@aKaf.init @aKaf.medi]' lookup KafLam
-      [@aLam.medi @aLam.fina @aAlf.fina @aKaf.fina]' lookup KafLam;
-
-  sub [@aKaf.init]' lookup KafRaaIsol
-      [@aRaa.fina]' lookup KafRaaIsol;
-
-  sub [@aAyn.init]' lookup AynHaaInit
-      [@aHaa.medi]' lookup AynHaaInit;
-
-  sub [@aKaf.medi @aAyn.medi]' lookup KafYaaFina
-      [@aYaa.fina]' lookup KafYaaFina;
-
-  sub [@aLam.medi]' lookup LamMemMedi
-      [@aMem.medi_dots]' lookup LamMemMedi;
-
-  sub [@aSen.init @aSad.init]' lookup SenBaaMemInit
-      [@aBaa.medi]' lookup SenBaaMemInit
-      [@aMem.medi]' lookup SenBaaMemInit;
-
-  sub [@aBaa.init]' lookup BaaBaa
-      [@aBaa.medi @aBaa.fina]' lookup BaaBaa;
-
-  sub [@aHaa.init]' lookup HaaRaaIsol
-      [@aRaa.fina]' lookup HaaRaaIsol;
-
-  sub [@aLam.init]' lookup LamRaaIsol
-      [@aRaa.fina]' lookup LamRaaIsol;
-
-  sub [@aBaa.init @aBaa.init_BaaHaaInit]' lookup BaaHaaMemInit
-      [@aHaa.medi @aHaa.medi_SadHaaInit]' lookup BaaHaaMemInit
-      [@aMem.medi]' lookup KafMemInit;
-
-  sub [@aAyn.init @aBaa.init @aHaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaIsol
-      [@aHaa.fina]' lookup AboveHaaIsol;
-
-  sub [@aFaa.init @aLam.init @aKaf.init]' lookup AboveHaaIsol
-      [@aHaa.medi @aHaa.fina]' lookup AboveHaaIsol2;
-
-  sub [@aSen.init @aSad.init @aSen.medi @aSad.medi]' lookup SenYaaFina
-      [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
+    lookupflag IgnoreMarks;
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi]' lookup KafLamHeh [@aHeh.fina @aDal.fina]' lookup LamHehIsol;
+    sub [@aKaf.init @aKaf.medi]' lookup KafMemAlf [@aMem.medi]' lookup KafMemAlf [@aLam.medi @aLam.fina @aAlf.fina]' lookup KafMemAlf;
+    sub [@aBaa.init]' lookup BaaSenAltInit [@aSen.medi]' lookup BaaSenAltInit [@aHeh.medi @aRaa.fina @aYaa.fina @aMem.fina]' lookup BaaSenAltInit;
+    sub [@aLam.init]' lookup LamHaaHaaInit [@aHaa.medi]' lookup LamHaaHaaInit [@aHaa.medi]' lookup LamHaaHaaInit2;
+    sub [@aKaf.init @aKaf.medi]' lookup KafHeh [@aHeh.fina @aDal.fina]' lookup KafHeh;
+    sub [@aLam.medi]' lookup LamMemFina [@aMem.fina]' lookup LamMemFina;
+    sub [@aSen.init @aSad.init @aMem.init]' lookup SenMemInit [@aMem.medi]' lookup SenMemInit;
+    sub [@aKaf.init @aBaa.init @aFaa.init @aLam.init @aAyn.init @aHaa.init @aHeh.init @aMem.init_dots]' lookup AllYaaIsol [@aYaa.fina]' lookup AllYaaIsol;
+    sub [@aBaa.init]' lookup BaaRaaIsol [@aRaa.fina]' lookup BaaRaaIsol;
+    sub [@aLam.init @aLam.medi @aLam.medi_LamLamInit]' lookup LamHehIsol [@aHeh.fina @aDal.fina]' lookup LamHehIsol;
+    sub [@aLam.medi]' lookup LamWawFina [@aWaw.fina]' lookup LamWawFina;
+    sub [@aFaa.medi]' lookup FaaYaaFina [@aYaa.fina]' lookup FaaYaaFina;
+    sub [@aLam.init]' lookup LamLamHaaInit [@aLam.medi]' lookup LamLamHaaInit [@aHaa.medi]' lookup LamLamHaaInit;
+    #ifndef QURAN
+    sub [@aLam.init]' lookup LamBaaMemInit [@aBaa.medi]' lookup LamBaaMemInit [@aMem.medi]' lookup LamBaaMemInit;
+    #endif
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi]' lookup KafLamMemMedi [@aMem.medi_dots]' lookup LamMemMedi;
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.medi_LamMemFina]' lookup KafLamMemFina [@aMem.fina @aMem.fina_LamMemFinaExtended]' lookup LamMemFina;
+    sub [@aBaa.init]' lookup BaaDalIsol [@aDal.fina]' lookup BaaDalIsol;
+    sub [@aBaa.init]' lookup BaaBaaYaa [@aBaa.medi]' lookup BaaBaaYaa [@aYaa.fina]' lookup BaaBaaYaa;
+    sub [@aLam.medi]' lookup LamYaaFina [@aYaa.fina]' lookup LamYaaFina;
+    sub [@aLam.init]' lookup LamMemHaaInit [@aMem.medi]' lookup LamMemHaaInit [@aHaa.medi]' lookup LamMemHaaInit;
+    #ifndef QURAN
+    sub [@aLam.init]' lookup LamMemInit [@aMem.medi]' lookup LamMemInit;
+    #endif
+    sub [@aLam.init]' lookup LamAlfIsol [@aAlf.fina]' lookup LamAlfIsol;
+    #ifndef QURAN
+    sub [@aLam.init]' lookup LamHaaMemInit [@aHaa.medi]' lookup LamHaaMemInit [@aMem.medi]' lookup LamHaaMemInit;
+    #endif
+    sub [@aBaa.init]' lookup BaaBaaMemInit [@aBaa.medi]' lookup BaaBaaMemInit [@aMem.medi]' lookup BaaBaaMemInit;
+    #ifndef QURAN
+    sub [@aBaa.init]' lookup BaaBaaHaaInit [@aBaa.medi]' lookup BaaBaaHaaInit [@aHaa.medi]' lookup BaaBaaHaaInit;
+    #endif
+    sub [@aMem.init]' lookup MemRaaIsol [@aRaa.fina]' lookup MemRaaIsol;
+    sub [@aAyn.init]' [@aRaa.fina]' lookup MemRaaIsol;
+    sub [@aHaa.init]' lookup HaaHaaInit [@aHaa.medi]' lookup HaaHaaInit;
+    sub [@aKaf.init @aLam.init @aBaa.init]' lookup KafMemIsol [@aMem.fina]' lookup KafMemIsol;
+    sub [@aLam.medi]' lookup LamQafFina [@aQaf.fina]' lookup LamQafFina;
+    sub [@aMem.init @aMem.init_MemHaaInit]' lookup MemHaaMemInit [@aHaa.medi @aHaa.medi_SadHaaInit]' lookup MemHaaMemInit [@aMem.medi]' lookup KafMemInit;
+    sub [@aBaa.init]' lookup BaaNonIsol [@aNon.fina]' lookup BaaNonIsol;
+    sub [@aKaf.medi]' lookup KafMemFina [@aMem.fina]' lookup KafMemFina;
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf [@aAlf.fina @aAlf.fina_LamAlfFina];
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.medi_LamAlfFina]' lookup KafLamAlf hamza-ar.float' [@aAlf.fina @aAlf.fina_LamAlfFina];
+    # see float hamza in quran.fea
+    sub [@aBaa.init]' lookup BaaSenInit [@aSen.medi]' lookup BaaSenInit;
+    sub [@aBaa.init]' lookup BaaSenAltInit [@aSen.fina]' lookup BaaSenInit;
+    sub [@aKaf.medi]' lookup KafRaaFina [@aRaa.fina]' lookup KafRaaFina;
+    ignore sub [@aLam.init] [hehgoal-ar.medi];
+    sub [@aLam.init]' lookup LamHehInit [@aHeh.medi]' lookup LamHehInit;
+    sub [@aBaa.init]' lookup BaaMemInit [@aMem.medi]' lookup BaaMemInit;
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.fina @aAlf.fina @aKaf.fina]' lookup KafLam;
+    sub [@aKaf.init]' lookup KafRaaIsol [@aRaa.fina]' lookup KafRaaIsol;
+    sub [@aAyn.init]' lookup AynHaaInit [@aHaa.medi]' lookup AynHaaInit;
+    sub [@aKaf.medi @aAyn.medi]' lookup KafYaaFina [@aYaa.fina]' lookup KafYaaFina;
+    sub [@aLam.medi]' lookup LamMemMedi [@aMem.medi_dots]' lookup LamMemMedi;
+    sub [@aSen.init @aSad.init]' lookup SenBaaMemInit [@aBaa.medi]' lookup SenBaaMemInit [@aMem.medi]' lookup SenBaaMemInit;
+    sub [@aBaa.init]' lookup BaaBaa [@aBaa.medi @aBaa.fina]' lookup BaaBaa;
+    sub [@aHaa.init]' lookup HaaRaaIsol [@aRaa.fina]' lookup HaaRaaIsol;
+    sub [@aLam.init]' lookup LamRaaIsol [@aRaa.fina]' lookup LamRaaIsol;
+    sub [@aBaa.init @aBaa.init_BaaHaaInit]' lookup BaaHaaMemInit [@aHaa.medi @aHaa.medi_SadHaaInit]' lookup BaaHaaMemInit [@aMem.medi]' lookup KafMemInit;
+    sub [@aAyn.init @aBaa.init @aHaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaIsol [@aHaa.fina]' lookup AboveHaaIsol;
+    sub [@aFaa.init @aLam.init @aKaf.init]' lookup AboveHaaIsol [@aHaa.medi @aHaa.fina]' lookup AboveHaaIsol2;
+    sub [@aSen.init @aSad.init @aSen.medi @aSad.medi]' lookup SenYaaFina [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
 } calt;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aKaf.init @aKaf.medi]' @aHeh.medi by [@aKaf.init_PreHeh @aKaf.medi_PreHeh];
+    lookupflag IgnoreMarks;
+    sub [@aKaf.init @aKaf.medi]' @aHeh.medi by [@aKaf.init_PreHeh @aKaf.medi_PreHeh];
 } calt;
 
 lookup ToothYaaBari {
-  sub @aSen.init by @aSen.init_YaaBari;
-  sub @aSad.init by @aSad.init_YaaBari;
-  sub @aYaaBari.fina by @aYaaBari.fina_PostTooth;
+    sub @aSen.init by @aSen.init_YaaBari;
+    sub @aSad.init by @aSad.init_YaaBari;
+    sub @aYaaBari.fina by @aYaaBari.fina_PostTooth;
 } ToothYaaBari;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aSen.init @aSad.init]' lookup ToothYaaBari
-      [@aYaaBari.fina]'      lookup ToothYaaBari;
+    lookupflag IgnoreMarks;
+    sub [@aSen.init @aSad.init]' lookup ToothYaaBari [@aYaaBari.fina]' lookup ToothYaaBari;
 } calt;
 
 lookup ToothYaaBariFina {
-  sub @aBaa.medi            by @aBaa.medi_YaaBari;
-  sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaYaaBari;
-  sub @aBaa.medi_BaaBaaInit by @aBaa.medi_YaaBari;
-  sub @aHaa.init_DotBelow   by @aHaa.init_BaaYaaBari;
-  sub @aYaaBari.fina      by @aYaaBari.fina_PostToothFina;
+    sub @aBaa.medi by @aBaa.medi_YaaBari;
+    sub @aBaa.init_BaaBaaIsol by @aBaa.init_BaaBaaYaaBari;
+    sub @aBaa.medi_BaaBaaInit by @aBaa.medi_YaaBari;
+    sub @aHaa.init_DotBelow by @aHaa.init_BaaYaaBari;
+    sub @aYaaBari.fina by @aYaaBari.fina_PostToothFina;
 } ToothYaaBariFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aHaa.init_DotBelow]' lookup ToothYaaBariFina
-      [@aBaa.medi]'          lookup ToothYaaBariFina
-      [@aYaaBari.fina]'    lookup ToothYaaBariFina;
-
-  sub [@aBaa.medi]'       lookup ToothYaaBariFina
-      [@aYaaBari.fina]' lookup ToothYaaBariFina;
-
-  sub [@aBaa.init_BaaBaaIsol]' lookup ToothYaaBariFina
-      [@aBaa.medi_BaaBaaInit]' lookup ToothYaaBariFina
-      [@aYaaBari.fina]'      lookup ToothYaaBariFina;
+    lookupflag IgnoreMarks;
+    sub [@aHaa.init_DotBelow]' lookup ToothYaaBariFina [@aBaa.medi]' lookup ToothYaaBariFina [@aYaaBari.fina]' lookup ToothYaaBariFina;
+    sub [@aBaa.medi]' lookup ToothYaaBariFina [@aYaaBari.fina]' lookup ToothYaaBariFina;
+    sub [@aBaa.init_BaaBaaIsol]' lookup ToothYaaBariFina [@aBaa.medi_BaaBaaInit]' lookup ToothYaaBariFina [@aYaaBari.fina]' lookup ToothYaaBariFina;
 } calt;
 
 lookup AscenderYaaBari {
-  sub @aBaa.init by @aBaa.init_YaaBari;
-  sub @aFaa.init by @aFaa.init_YaaBari;
-  sub @aLam.init by @aLam.init_YaaBari;
-  sub @aKaf.init by @aKaf.init_YaaBari;
-  sub @aYaaBari.fina by @aYaaBari.fina_PostAscender;
+    sub @aBaa.init by @aBaa.init_YaaBari;
+    sub @aFaa.init by @aFaa.init_YaaBari;
+    sub @aLam.init by @aLam.init_YaaBari;
+    sub @aKaf.init by @aKaf.init_YaaBari;
+    sub @aYaaBari.fina by @aYaaBari.fina_PostAscender;
 } AscenderYaaBari;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.init @aFaa.init @aLam.init @aKaf.init]' lookup AscenderYaaBari
-      [@aYaaBari.fina]'                            lookup AscenderYaaBari;
+    lookupflag IgnoreMarks;
+    sub [@aBaa.init @aFaa.init @aLam.init @aKaf.init]' lookup AscenderYaaBari [@aYaaBari.fina]' lookup AscenderYaaBari;
 } calt;
 
 lookup AynYaaBari {
-  sub @aHaa.init by @aHaa.init_YaaBari;
-  sub @aHeh.init by @aHeh.init_YaaBari;
-  sub uni06BE.init by uni06BE.init_YaaBari;
-  sub @aAyn.init by @aAyn.init_YaaBari;
-  sub @aTaa.init by @aTaa.init_YaaBari;
-  sub @aMem.init_dots by @aMem.init_YaaBari;
-  sub @aYaaBari.fina by @aYaaBari.fina_PostAyn;
+    sub @aHaa.init by @aHaa.init_YaaBari;
+    sub @aHeh.init by @aHeh.init_YaaBari;
+    sub hehDoachashmee-ar.init by hehDoachashmee-ar.init_YaaBari;
+    sub @aAyn.init by @aAyn.init_YaaBari;
+    sub @aTaa.init by @aTaa.init_YaaBari;
+    sub @aMem.init_dots by @aMem.init_YaaBari;
+    sub @aYaaBari.fina by @aYaaBari.fina_PostAyn;
 } AynYaaBari;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init_dots uni06BE.init]' lookup AynYaaBari
-       @aYaaBari.fina'                                                          lookup AynYaaBari;
+    lookupflag IgnoreMarks;
+    sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init_dots hehDoachashmee-ar.init]' lookup AynYaaBari @aYaaBari.fina' lookup AynYaaBari;
 } calt;
 
 # default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
@@ -954,415 +704,330 @@ feature calt {
 # we use an alternate wider Meem in such cases.
 # This covers فَمَا فَّمَا فَمَّا فَّمَّا فِّمَا فِمِا.
 lookup FaaMemTatweel {
-  sub @aMem.medi by @aMem.medi_KafMemMediTatweel;
+    sub @aMem.medi by @aMem.medi_KafMemMediTatweel;
 } FaaMemTatweel;
 
 feature calt {
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above';
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above' @Tashkil.above'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above';
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above' @Tashkil.above'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above' @Tashkil.above';
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above' @Tashkil.above';
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.below' @Tashkil.above'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above';
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.above' @Tashkil.below'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.above';
-  sub @aFaa.init' lookup KafMemInit
-      @Tashkil.below'
-      @aMem.medi' lookup FaaMemTatweel
-      @Tashkil.below';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above' @Tashkil.above';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above' @Tashkil.above';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.below' @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.above' @Tashkil.below' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
+    sub @aFaa.init' lookup KafMemInit @Tashkil.below' @aMem.medi' lookup FaaMemTatweel @Tashkil.below';
 } calt;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aKaf.init @aKaf.medi @aAyn.init @aFaa.init @aHaa.init @aHeh.init]' lookup KafMemInit
-      [@aMem.medi]' lookup KafMemInit;
+    lookupflag IgnoreMarks;
+    sub [@aKaf.init @aKaf.medi @aAyn.init @aFaa.init @aHaa.init @aHeh.init]' lookup KafMemInit [@aMem.medi]' lookup KafMemInit;
 } calt;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aLam.init]' lookup LamLamInit
-      [@LamLamFoo @aLam.medi @aKaf.fina @aLam.fina @aLam.medi_LamAlfFina]' lookup LamLamInit;
-
-  sub [@aLam.medi]' lookup LamLamMedi2
-      [@LamLamFoo @aLam.medi @aKaf.fina @aLam.fina @aLam.medi_LamAlfFina]' lookup LamLamMedi;
+    lookupflag IgnoreMarks;
+    sub [@aLam.init]' lookup LamLamInit [@LamLamFoo @aLam.medi @aKaf.fina @aLam.fina @aLam.medi_LamAlfFina]' lookup LamLamInit;
+    sub [@aLam.medi]' lookup LamLamMedi2 [@LamLamFoo @aLam.medi @aKaf.fina @aLam.fina @aLam.medi_LamAlfFina]' lookup LamLamMedi;
 } calt;
 
 lookup HehMediTooth {
-  sub @aHeh.medi by @aHeh.medi_PostTooth;
-  sub @aSad.init by @aSad.init_PreYaa;
-  sub @aSad.medi by @aSad.medi_PreYaa;
-  sub @aSen.init by @aSen.init_PreYaa;
-  sub @aSen.medi by @aSen.medi_PreYaa;
+    sub @aHeh.medi by @aHeh.medi_PostTooth;
+    sub @aSad.init by @aSad.init_PreYaa;
+    sub @aSad.medi by @aSad.medi_PreYaa;
+    sub @aSen.init by @aSen.init_PreYaa;
+    sub @aSen.medi by @aSen.medi_PreYaa;
 } HehMediTooth;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aSad.init @aSad.medi @aSen.init @aSen.medi]' lookup HehMediTooth
-      [@aHeh.medi]' lookup HehMediTooth;
+    lookupflag IgnoreMarks;
+    sub [@aSad.init @aSad.medi @aSen.init @aSen.medi]' lookup HehMediTooth [@aHeh.medi]' lookup HehMediTooth;
 } calt;
 
 # replace final alef followed by madda by a wider one
 feature calt {
-  sub @Tashkil.above [uni0627.fina]' [uni0653 uni06E4] by [uni0627.fina_Wide];
+    sub @Tashkil.above [alef-ar.fina]' [madda-ar maddalong-ar] by [alef-ar.fina_Wide];
 } calt;
 
 # Wider alef wasl and alef with hamza above after faa
 feature calt {
-  lookupflag IgnoreMarks;
-  sub @aFaa.init
-     [uni0671.fina uni0623.fina]'
-  by [uni0671.fina_Wide uni0623.fina_Wide];
+    lookupflag IgnoreMarks;
+    sub @aFaa.init [alefWasla-ar.fina alefHamzaabove-ar.fina]' by [alefWasla-ar.fina_Wide alefHamzaabove-ar.fina_Wide];
 } calt;
 
 # If there are no marks, revert the above substitution
 feature calt {
-  sub @aFaa.init
-     [uni0671.fina_Wide uni0623.fina_Wide]'
-  by [uni0671.fina uni0623.fina];
+    sub @aFaa.init [alefWasla-ar.fina_Wide alefHamzaabove-ar.fina_Wide]' by [alefWasla-ar.fina alefHamzaabove-ar.fina];
 } calt;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aAyn.init @aHaa.init @aHaa.medi]'
-      [@aAlf.fina @aDal.fina @aHeh.fina @aLam.fina @aLam.medi @aLam.medi_LamMemFina
-       @aLam.medi_LamWawFina @aLam.medi_LamHeh @aLam.medi_LamYaaFina @aKaf.fina
-       @aLam.medi_LamQafFina @aBaa.medi_BaaRaaFina @aLam.medi_LamAlfFina
-       @aLam.medi_LamMemMedi @aLam.medi_LamLamMedi @aBaa.medi_BaaNonFina @aBaa.medi_High
-       @aKaf.medi @aKaf.medi_KafMemAlf @aKaf.medi_KafMemMedi @aKaf.medi_KafMemFina
-       @aKaf.medi_KafLam @aKaf.medi_KafHeh @aKaf.medi_KafBaaMedi @aKaf.medi_KafRaaFina
-       @aKaf.medi_KafYaaFina @aKaf.medi_PreHeh]
-  by  [@aAyn.init_Finjani @aHaa.init_Finjani @aHaa.medi_Finjani];
+    lookupflag IgnoreMarks;
+    sub [@aAyn.init @aHaa.init @aHaa.medi]' [@aAlf.fina @aDal.fina @aHeh.fina @aLam.fina @aLam.medi @aLam.medi_LamMemFina @aLam.medi_LamWawFina @aLam.medi_LamHeh @aLam.medi_LamYaaFina @aKaf.fina @aLam.medi_LamQafFina @aBaa.medi_BaaRaaFina @aLam.medi_LamAlfFina @aLam.medi_LamMemMedi @aLam.medi_LamLamMedi @aBaa.medi_BaaNonFina @aBaa.medi_High @aKaf.medi @aKaf.medi_KafMemAlf @aKaf.medi_KafMemMedi @aKaf.medi_KafMemFina @aKaf.medi_KafLam @aKaf.medi_KafHeh @aKaf.medi_KafBaaMedi @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina @aKaf.medi_PreHeh] by [@aAyn.init_Finjani @aHaa.init_Finjani @aHaa.medi_Finjani];
 } calt;
 
 lookup BaaYaaFina {
-  sub @aBaa.medi by @aBaa.medi_BaaYaaFina;
-  sub @aYaa.fina by @aYaa.fina_BaaYaaFina;
+    sub @aBaa.medi by @aBaa.medi_BaaYaaFina;
+    sub @aYaa.fina by @aYaa.fina_BaaYaaFina;
 } BaaYaaFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aBaa.medi]' lookup BaaYaaFina
-      [@aYaa.fina]' lookup BaaYaaFina;
+    lookupflag IgnoreMarks;
+    sub [@aBaa.medi]' lookup BaaYaaFina [@aYaa.fina]' lookup BaaYaaFina;
 } calt;
 
 lookup ToothMem {
-  sub @aMem.fina by @aMem.fina_PostTooth;
-  sub @aSad.init by @aSad.init_PreYaa;
-  sub @aSad.medi by @aSad.medi_PreYaa;
-  sub @aSen.init by @aSen.init_PreYaa;
-  sub @aSen.medi by @aSen.medi_PreYaa;
+    sub @aMem.fina by @aMem.fina_PostTooth;
+    sub @aSad.init by @aSad.init_PreYaa;
+    sub @aSad.medi by @aSad.medi_PreYaa;
+    sub @aSen.init by @aSen.init_PreYaa;
+    sub @aSen.medi by @aSen.medi_PreYaa;
 } ToothMem;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aSen.init @aSen.medi @aSad.init @aSad.medi]' lookup ToothMem
-      [@aMem.fina]' lookup ToothMem;
+    lookupflag IgnoreMarks;
+    sub [@aSen.init @aSen.medi @aSad.init @aSad.medi]' lookup ToothMem [@aMem.fina]' lookup ToothMem;
 } calt;
 
 lookup KafLamYaa {
-  sub @aLam.medi_KafLam by @aLam.medi_KafLamYaa;
+    sub @aLam.medi_KafLam by @aLam.medi_KafLamYaa;
 } KafLamYaa;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aLam.medi_KafLam]' lookup KafLamYaa
-      [@aYaa.fina]' lookup LamYaaFina;
+    lookupflag IgnoreMarks;
+    sub [@aLam.medi_KafLam]' lookup KafLamYaa [@aYaa.fina]' lookup LamYaaFina;
 } calt;
 
 lookup LamKafInit {
-# XXX: sync with classes.fea
-
-  # @aLam.init
-  sub uni06B5.init by uni06B5.init uni0640.1;
-  sub uni06B7.init by uni06B7.init uni0640.1;
-  sub uni0644.init by uni0644.init uni0640.1;
-  sub uni06B8.init by uni06B8.init uni0640.1;
-  sub uni06B6.init by uni06B6.init uni0640.1;
-  sub uni076A.init by uni076A.init uni0640.1;
-
-  # @aLam.medi by
-  sub uni06B5.medi by uni06B5.medi uni0640.1;
-  sub uni06B7.medi by uni06B7.medi uni0640.1;
-  sub uni0644.medi by uni0644.medi uni0640.1;
-  sub uni06B8.medi by uni06B8.medi uni0640.1;
-  sub uni06B6.medi by uni06B6.medi uni0640.1;
-  sub uni076A.medi by uni076A.medi uni0640.1;
-
-  # @aLam.medi_KafLam
-  sub uni06B5.medi_KafLam by uni06B5.medi_KafLam uni0640.1;
-  sub uni06B7.medi_KafLam by uni06B7.medi_KafLam uni0640.1;
-  sub uni0644.medi_KafLam by uni0644.medi_KafLam uni0640.1;
-  sub uni06B8.medi_KafLam by uni06B8.medi_KafLam uni0640.1;
-  sub uni06B6.medi_KafLam by uni06B6.medi_KafLam uni0640.1;
-  sub uni076A.medi_KafLam by uni076A.medi_KafLam uni0640.1;
-
-  # @aLam.medi_KafMemLam
-  sub uni06B5.medi_KafMemLam by uni06B5.medi_KafMemLam uni0640.1;
-  sub uni06B7.medi_KafMemLam by uni06B7.medi_KafMemLam uni0640.1;
-  sub uni0644.medi_KafMemLam by uni0644.medi_KafMemLam uni0640.1;
-  sub uni06B8.medi_KafMemLam by uni06B8.medi_KafMemLam uni0640.1;
-  sub uni06B6.medi_KafMemLam by uni06B6.medi_KafMemLam uni0640.1;
-  sub uni076A.medi_KafMemLam by uni076A.medi_KafMemLam uni0640.1;
-
-  # @aLam.medi_LamLamInit
-  sub uni06B5.medi_LamLamInit by uni06B5.medi_LamLamInit uni0640.1;
-  sub uni06B7.medi_LamLamInit by uni06B7.medi_LamLamInit uni0640.1;
-  sub uni0644.medi_LamLamInit by uni0644.medi_LamLamInit uni0640.1;
-  sub uni06B8.medi_LamLamInit by uni06B8.medi_LamLamInit uni0640.1;
-  sub uni06B6.medi_LamLamInit by uni06B6.medi_LamLamInit uni0640.1;
-  sub uni076A.medi_LamLamInit by uni076A.medi_LamLamInit uni0640.1;
-
-  sub @aMem.medi_LamMemInit   by @aMem.medi_LamMemInitTatweel;
+    # XXX: sync with classes.fea
+    # @aLam.init
+    sub lamVabove-ar.init by lamVabove-ar.init kashida-ar.1;
+    sub lamThreedotsabove-ar.init by lamThreedotsabove-ar.init kashida-ar.1;
+    sub lam-ar.init by lam-ar.init kashida-ar.1;
+    sub lamThreedotsbelow-ar.init by lamThreedotsbelow-ar.init kashida-ar.1;
+    sub lamDotabove-ar.init by lamDotabove-ar.init kashida-ar.1;
+    sub lamBar-ar.init by lamBar-ar.init kashida-ar.1;
+    # @aLam.medi by
+    sub lamVabove-ar.medi by lamVabove-ar.medi kashida-ar.1;
+    sub lamThreedotsabove-ar.medi by lamThreedotsabove-ar.medi kashida-ar.1;
+    sub lam-ar.medi by lam-ar.medi kashida-ar.1;
+    sub lamThreedotsbelow-ar.medi by lamThreedotsbelow-ar.medi kashida-ar.1;
+    sub lamDotabove-ar.medi by lamDotabove-ar.medi kashida-ar.1;
+    sub lamBar-ar.medi by lamBar-ar.medi kashida-ar.1;
+    # @aLam.medi_KafLam
+    sub lamVabove-ar.medi_KafLam by lamVabove-ar.medi_KafLam kashida-ar.1;
+    sub lamThreedotsabove-ar.medi_KafLam by lamThreedotsabove-ar.medi_KafLam kashida-ar.1;
+    sub lam-ar.medi_KafLam by lam-ar.medi_KafLam kashida-ar.1;
+    sub lamThreedotsbelow-ar.medi_KafLam by lamThreedotsbelow-ar.medi_KafLam kashida-ar.1;
+    sub lamDotabove-ar.medi_KafLam by lamDotabove-ar.medi_KafLam kashida-ar.1;
+    sub lamBar-ar.medi_KafLam by lamBar-ar.medi_KafLam kashida-ar.1;
+    # @aLam.medi_KafMemLam
+    sub lamVabove-ar.medi_KafMemLam by lamVabove-ar.medi_KafMemLam kashida-ar.1;
+    sub lamThreedotsabove-ar.medi_KafMemLam by lamThreedotsabove-ar.medi_KafMemLam kashida-ar.1;
+    sub lam-ar.medi_KafMemLam by lam-ar.medi_KafMemLam kashida-ar.1;
+    sub lamThreedotsbelow-ar.medi_KafMemLam by lamThreedotsbelow-ar.medi_KafMemLam kashida-ar.1;
+    sub lamDotabove-ar.medi_KafMemLam by lamDotabove-ar.medi_KafMemLam kashida-ar.1;
+    sub lamBar-ar.medi_KafMemLam by lamBar-ar.medi_KafMemLam kashida-ar.1;
+    # @aLam.medi_LamLamInit
+    sub lamVabove-ar.medi_LamLamInit by lamVabove-ar.medi_LamLamInit kashida-ar.1;
+    sub lamThreedotsabove-ar.medi_LamLamInit by lamThreedotsabove-ar.medi_LamLamInit kashida-ar.1;
+    sub lam-ar.medi_LamLamInit by lam-ar.medi_LamLamInit kashida-ar.1;
+    sub lamThreedotsbelow-ar.medi_LamLamInit by lamThreedotsbelow-ar.medi_LamLamInit kashida-ar.1;
+    sub lamDotabove-ar.medi_LamLamInit by lamDotabove-ar.medi_LamLamInit kashida-ar.1;
+    sub lamBar-ar.medi_LamLamInit by lamBar-ar.medi_LamLamInit kashida-ar.1;
+    sub meem-ar.medi_LamMemInit by meem-ar.medi_LamMemInitTatweel;
 } LamKafInit;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
-       @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamKafInit
-      [@aKaf.medi @aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina
-       @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf @aKaf.medi_PreHeh @aGaf.fina];
+    lookupflag IgnoreMarks;
+    sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamKafInit [@aKaf.medi @aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina @aKaf.medi_KafMemAlf @aKaf.medi_PreHeh @aGaf.fina];
 } calt;
 
 lookup LamAynTatweel {
-# XXX: sync with classes.fea
-
-  # @aLam.init
-  sub uni06B5.init by uni06B5.init uni0640.2;
-  sub uni06B7.init by uni06B7.init uni0640.2;
-  sub uni0644.init by uni0644.init uni0640.2;
-  sub uni06B8.init by uni06B8.init uni0640.2;
-  sub uni06B6.init by uni06B6.init uni0640.2;
-  sub uni076A.init by uni076A.init uni0640.2;
-
-  # @aLam.medi by
-  sub uni06B5.medi by uni06B5.medi uni0640.2;
-  sub uni06B7.medi by uni06B7.medi uni0640.2;
-  sub uni0644.medi by uni0644.medi uni0640.2;
-  sub uni06B8.medi by uni06B8.medi uni0640.2;
-  sub uni06B6.medi by uni06B6.medi uni0640.2;
-  sub uni076A.medi by uni076A.medi uni0640.2;
-
-  # @aLam.medi_KafLam
-  sub uni06B5.medi_KafLam by uni06B5.medi_KafLam uni0640.2;
-  sub uni06B7.medi_KafLam by uni06B7.medi_KafLam uni0640.2;
-  sub uni0644.medi_KafLam by uni0644.medi_KafLam uni0640.2;
-  sub uni06B8.medi_KafLam by uni06B8.medi_KafLam uni0640.2;
-  sub uni06B6.medi_KafLam by uni06B6.medi_KafLam uni0640.2;
-  sub uni076A.medi_KafLam by uni076A.medi_KafLam uni0640.2;
-
-  # @aLam.medi_KafMemLam
-  sub uni06B5.medi_KafMemLam by uni06B5.medi_KafMemLam uni0640.2;
-  sub uni06B7.medi_KafMemLam by uni06B7.medi_KafMemLam uni0640.2;
-  sub uni0644.medi_KafMemLam by uni0644.medi_KafMemLam uni0640.2;
-  sub uni06B8.medi_KafMemLam by uni06B8.medi_KafMemLam uni0640.2;
-  sub uni06B6.medi_KafMemLam by uni06B6.medi_KafMemLam uni0640.2;
-  sub uni076A.medi_KafMemLam by uni076A.medi_KafMemLam uni0640.2;
-
-  # @aLam.medi_LamLamInit
-  sub uni06B5.medi_LamLamInit by uni06B5.medi_LamLamInit uni0640.2;
-  sub uni06B7.medi_LamLamInit by uni06B7.medi_LamLamInit uni0640.2;
-  sub uni0644.medi_LamLamInit by uni0644.medi_LamLamInit uni0640.2;
-  sub uni06B8.medi_LamLamInit by uni06B8.medi_LamLamInit uni0640.2;
-  sub uni06B6.medi_LamLamInit by uni06B6.medi_LamLamInit uni0640.2;
-  sub uni076A.medi_LamLamInit by uni076A.medi_LamLamInit uni0640.2;
-
-  sub @aMem.medi_LamMemInit   by @aMem.medi_LamMemInitTatweel;
+    # XXX: sync with classes.fea
+    # @aLam.init
+    sub lamVabove-ar.init by lamVabove-ar.init kashida-ar.2;
+    sub lamThreedotsabove-ar.init by lamThreedotsabove-ar.init kashida-ar.2;
+    sub lam-ar.init by lam-ar.init kashida-ar.2;
+    sub lamThreedotsbelow-ar.init by lamThreedotsbelow-ar.init kashida-ar.2;
+    sub lamDotabove-ar.init by lamDotabove-ar.init kashida-ar.2;
+    sub lamBar-ar.init by lamBar-ar.init kashida-ar.2;
+    # @aLam.medi by
+    sub lamVabove-ar.medi by lamVabove-ar.medi kashida-ar.2;
+    sub lamThreedotsabove-ar.medi by lamThreedotsabove-ar.medi kashida-ar.2;
+    sub lam-ar.medi by lam-ar.medi kashida-ar.2;
+    sub lamThreedotsbelow-ar.medi by lamThreedotsbelow-ar.medi kashida-ar.2;
+    sub lamDotabove-ar.medi by lamDotabove-ar.medi kashida-ar.2;
+    sub lamBar-ar.medi by lamBar-ar.medi kashida-ar.2;
+    # @aLam.medi_KafLam
+    sub lamVabove-ar.medi_KafLam by lamVabove-ar.medi_KafLam kashida-ar.2;
+    sub lamThreedotsabove-ar.medi_KafLam by lamThreedotsabove-ar.medi_KafLam kashida-ar.2;
+    sub lam-ar.medi_KafLam by lam-ar.medi_KafLam kashida-ar.2;
+    sub lamThreedotsbelow-ar.medi_KafLam by lamThreedotsbelow-ar.medi_KafLam kashida-ar.2;
+    sub lamDotabove-ar.medi_KafLam by lamDotabove-ar.medi_KafLam kashida-ar.2;
+    sub lamBar-ar.medi_KafLam by lamBar-ar.medi_KafLam kashida-ar.2;
+    # @aLam.medi_KafMemLam
+    sub lamVabove-ar.medi_KafMemLam by lamVabove-ar.medi_KafMemLam kashida-ar.2;
+    sub lamThreedotsabove-ar.medi_KafMemLam by lamThreedotsabove-ar.medi_KafMemLam kashida-ar.2;
+    sub lam-ar.medi_KafMemLam by lam-ar.medi_KafMemLam kashida-ar.2;
+    sub lamThreedotsbelow-ar.medi_KafMemLam by lamThreedotsbelow-ar.medi_KafMemLam kashida-ar.2;
+    sub lamDotabove-ar.medi_KafMemLam by lamDotabove-ar.medi_KafMemLam kashida-ar.2;
+    sub lamBar-ar.medi_KafMemLam by lamBar-ar.medi_KafMemLam kashida-ar.2;
+    # @aLam.medi_LamLamInit
+    sub lamVabove-ar.medi_LamLamInit by lamVabove-ar.medi_LamLamInit kashida-ar.2;
+    sub lamThreedotsabove-ar.medi_LamLamInit by lamThreedotsabove-ar.medi_LamLamInit kashida-ar.2;
+    sub lam-ar.medi_LamLamInit by lam-ar.medi_LamLamInit kashida-ar.2;
+    sub lamThreedotsbelow-ar.medi_LamLamInit by lamThreedotsbelow-ar.medi_LamLamInit kashida-ar.2;
+    sub lamDotabove-ar.medi_LamLamInit by lamDotabove-ar.medi_LamLamInit kashida-ar.2;
+    sub lamBar-ar.medi_LamLamInit by lamBar-ar.medi_LamLamInit kashida-ar.2;
+    sub meem-ar.medi_LamMemInit by meem-ar.medi_LamMemInitTatweel;
 } LamAynTatweel;
 
 # lam [shadda] kasra ayn.fina
 feature calt {
-  sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
-       @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamAynTatweel
-      [uni064D uni0650 uni065C]
-       @aAyn.fina;
-  sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam
-       @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamAynTatweel
-      [uni0651]
-      [uni064D uni0650 uni065C]
-       @aAyn.fina;
+    sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamAynTatweel [kasratan-ar kasra-ar dotvowelbelow-ar] @aAyn.fina;
+    sub [@aLam.init @aLam.medi @aLam.medi_KafLam @aLam.medi_KafMemLam @aLam.medi_LamLamInit @aMem.medi_LamMemInit]' lookup LamAynTatweel [shadda-ar] [kasratan-ar kasra-ar dotvowelbelow-ar] @aAyn.fina;
 } calt;
 
 #ifdef QURAN
 # alef lam meem raa (with madda)
 # we don't get plain aLam.init aMem.fina except in Quran font
 feature calt {
-  sub @aLam.init' lookup LamKafInit [uni0653 uni06E4]
-      @aMem.medi [uni0653 uni06E4];
+    sub @aLam.init' lookup LamKafInit [madda-ar maddalong-ar] @aMem.medi [madda-ar maddalong-ar];
 } calt;
-#endif
 
+#endif
 lookup HehYaaFina {
-  sub @aHeh.medi_BaaHehMedi by @aHeh.medi_HehYaaFina;
-  sub @aHeh.medi_PostTooth by @aHeh.medi_PostToothHehYaa;
+    sub @aHeh.medi_BaaHehMedi by @aHeh.medi_HehYaaFina;
+    sub @aHeh.medi_PostTooth by @aHeh.medi_PostToothHehYaa;
 } HehYaaFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aHeh.medi_PostTooth @aHeh.medi_BaaHehMedi]' lookup HehYaaFina
-      [@aYaa.fina]'                                 lookup BaaYaaFina;
+    lookupflag IgnoreMarks;
+    sub [@aHeh.medi_PostTooth @aHeh.medi_BaaHehMedi]' lookup HehYaaFina [@aYaa.fina]' lookup BaaYaaFina;
 } calt;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub @RaaWaw [uni0625 uni0673]' by @aAlf.isol_LowHamza;
+    lookupflag IgnoreMarks;
+    sub @RaaWaw [alefHamzabelow-ar alefWavyhamzabelow-ar]' by @aAlf.isol_LowHamza;
 } calt;
-
 
 # insert tatweel between ح and ك in فحك[ملير]
 lookup FaaHaaKaf {
-# XXX: sync with classes.fea
-# sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.1;
-  sub uni062E.medi_FaaHaaInit by uni062E.medi_FaaHaaInit uni0640.1;
-  sub uni062D.medi_FaaHaaInit by uni062D.medi_FaaHaaInit uni0640.1;
-  sub uni0681.medi_FaaHaaInit by uni0681.medi_FaaHaaInit uni0640.1;
-  sub uni0687.medi_FaaHaaInit by uni0687.medi_FaaHaaInit uni0640.1;
-  sub uni0685.medi_FaaHaaInit by uni0685.medi_FaaHaaInit uni0640.1;
-  sub uni062C.medi_FaaHaaInit by uni062C.medi_FaaHaaInit uni0640.1;
-  sub uni0682.medi_FaaHaaInit by uni0682.medi_FaaHaaInit uni0640.1;
-  sub uni0757.medi_FaaHaaInit by uni0757.medi_FaaHaaInit uni0640.1;
-  sub uni0684.medi_FaaHaaInit by uni0684.medi_FaaHaaInit uni0640.1;
-  sub uni076F.medi_FaaHaaInit by uni076F.medi_FaaHaaInit uni0640.1;
-  sub uni076E.medi_FaaHaaInit by uni076E.medi_FaaHaaInit uni0640.1;
-  sub uni0683.medi_FaaHaaInit by uni0683.medi_FaaHaaInit uni0640.1;
-  sub uni06BF.medi_FaaHaaInit by uni06BF.medi_FaaHaaInit uni0640.1;
-  sub uni077C.medi_FaaHaaInit by uni077C.medi_FaaHaaInit uni0640.1;
-  sub uni0758.medi_FaaHaaInit by uni0758.medi_FaaHaaInit uni0640.1;
-  sub uni0772.medi_FaaHaaInit by uni0772.medi_FaaHaaInit uni0640.1;
-  sub uni0686.medi_FaaHaaInit by uni0686.medi_FaaHaaInit uni0640.1;
+    # XXX: sync with classes.fea
+    # sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.1;
+    sub khah-ar.medi_FaaHaaInit by khah-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hah-ar.medi_FaaHaaInit by hah-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahHamzaabove-ar.medi_FaaHaaInit by hahHamzaabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub tcheheh-ar.medi_FaaHaaInit by tcheheh-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahThreedotsabove-ar.medi_FaaHaaInit by hahThreedotsabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub jeem-ar.medi_FaaHaaInit by jeem-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahTwodotsverticalabove-ar.medi_FaaHaaInit by hahTwodotsverticalabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahTwodotshorizontalabove-ar.medi_FaaHaaInit by hahTwodotshorizontalabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub dyeh-ar.medi_FaaHaaInit by dyeh-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahTahTwodotshorizontalabove-ar.medi_FaaHaaInit by hahTahTwodotshorizontalabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahTahbelow-ar.medi_FaaHaaInit by hahTahbelow-ar.medi_FaaHaaInit kashida-ar.1;
+    sub nyeh-ar.medi_FaaHaaInit by nyeh-ar.medi_FaaHaaInit kashida-ar.1;
+    sub tchehDotabove-ar.medi_FaaHaaInit by tchehDotabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahFourbelow-ar.medi_FaaHaaInit by hahFourbelow-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahThreedotsupbelow-ar.medi_FaaHaaInit by hahThreedotsupbelow-ar.medi_FaaHaaInit kashida-ar.1;
+    sub hahTahabove-ar.medi_FaaHaaInit by hahTahabove-ar.medi_FaaHaaInit kashida-ar.1;
+    sub tcheh-ar.medi_FaaHaaInit by tcheh-ar.medi_FaaHaaInit kashida-ar.1;
 } FaaHaaKaf;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub @aFaa.init_FaaHaaInit
-      @aHaa.medi_FaaHaaInit' lookup FaaHaaKaf
-     [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina @aKaf.medi_PreHeh];
+    lookupflag IgnoreMarks;
+    sub @aFaa.init_FaaHaaInit @aHaa.medi_FaaHaaInit' lookup FaaHaaKaf [@aKaf.medi_KafHeh @aKaf.medi_KafMemFina @aKaf.medi_KafRaaFina @aKaf.medi_KafYaaFina @aKaf.medi_PreHeh];
 } calt;
 
 # insert tatweel between ح and ت in [بمسصف]حت[رن]
 lookup AboveHaaTatweel {
-# XXX: sync with classes.fea
-# sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.05;
-  sub uni062E.medi_FaaHaaInit by uni062E.medi_FaaHaaInit uni0640.05;
-  sub uni062D.medi_FaaHaaInit by uni062D.medi_FaaHaaInit uni0640.05;
-  sub uni0681.medi_FaaHaaInit by uni0681.medi_FaaHaaInit uni0640.05;
-  sub uni0687.medi_FaaHaaInit by uni0687.medi_FaaHaaInit uni0640.05;
-  sub uni0685.medi_FaaHaaInit by uni0685.medi_FaaHaaInit uni0640.05;
-  sub uni062C.medi_FaaHaaInit by uni062C.medi_FaaHaaInit uni0640.05;
-  sub uni0682.medi_FaaHaaInit by uni0682.medi_FaaHaaInit uni0640.05;
-  sub uni0757.medi_FaaHaaInit by uni0757.medi_FaaHaaInit uni0640.05;
-  sub uni0684.medi_FaaHaaInit by uni0684.medi_FaaHaaInit uni0640.05;
-  sub uni076F.medi_FaaHaaInit by uni076F.medi_FaaHaaInit uni0640.05;
-  sub uni076E.medi_FaaHaaInit by uni076E.medi_FaaHaaInit uni0640.05;
-  sub uni0683.medi_FaaHaaInit by uni0683.medi_FaaHaaInit uni0640.05;
-  sub uni06BF.medi_FaaHaaInit by uni06BF.medi_FaaHaaInit uni0640.05;
-  sub uni077C.medi_FaaHaaInit by uni077C.medi_FaaHaaInit uni0640.05;
-  sub uni0758.medi_FaaHaaInit by uni0758.medi_FaaHaaInit uni0640.05;
-  sub uni0772.medi_FaaHaaInit by uni0772.medi_FaaHaaInit uni0640.05;
-  sub uni0686.medi_FaaHaaInit by uni0686.medi_FaaHaaInit uni0640.05;
-
-# sub @aHaa.medi_SadHaaInit   by @aHaa.medi_SadHaaInit   uni0640.05;
-  sub uni062E.medi_SadHaaInit by uni062E.medi_SadHaaInit uni0640.05;
-  sub uni062D.medi_SadHaaInit by uni062D.medi_SadHaaInit uni0640.05;
-  sub uni0681.medi_SadHaaInit by uni0681.medi_SadHaaInit uni0640.05;
-  sub uni0687.medi_SadHaaInit by uni0687.medi_SadHaaInit uni0640.05;
-  sub uni0685.medi_SadHaaInit by uni0685.medi_SadHaaInit uni0640.05;
-  sub uni062C.medi_SadHaaInit by uni062C.medi_SadHaaInit uni0640.05;
-  sub uni0682.medi_SadHaaInit by uni0682.medi_SadHaaInit uni0640.05;
-  sub uni0757.medi_SadHaaInit by uni0757.medi_SadHaaInit uni0640.05;
-  sub uni0684.medi_SadHaaInit by uni0684.medi_SadHaaInit uni0640.05;
-  sub uni076F.medi_SadHaaInit by uni076F.medi_SadHaaInit uni0640.05;
-  sub uni076E.medi_SadHaaInit by uni076E.medi_SadHaaInit uni0640.05;
-  sub uni0683.medi_SadHaaInit by uni0683.medi_SadHaaInit uni0640.05;
-  sub uni06BF.medi_SadHaaInit by uni06BF.medi_SadHaaInit uni0640.05;
-  sub uni077C.medi_SadHaaInit by uni077C.medi_SadHaaInit uni0640.05;
-  sub uni0758.medi_SadHaaInit by uni0758.medi_SadHaaInit uni0640.05;
-  sub uni0772.medi_SadHaaInit by uni0772.medi_SadHaaInit uni0640.05;
-  sub uni0686.medi_SadHaaInit by uni0686.medi_SadHaaInit uni0640.05;
+    # XXX: sync with classes.fea
+    # sub @aHaa.medi_FaaHaaInit   by @aHaa.medi_FaaHaaInit   uni0640.05;
+    sub khah-ar.medi_FaaHaaInit by khah-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hah-ar.medi_FaaHaaInit by hah-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahHamzaabove-ar.medi_FaaHaaInit by hahHamzaabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub tcheheh-ar.medi_FaaHaaInit by tcheheh-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahThreedotsabove-ar.medi_FaaHaaInit by hahThreedotsabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub jeem-ar.medi_FaaHaaInit by jeem-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahTwodotsverticalabove-ar.medi_FaaHaaInit by hahTwodotsverticalabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahTwodotshorizontalabove-ar.medi_FaaHaaInit by hahTwodotshorizontalabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub dyeh-ar.medi_FaaHaaInit by dyeh-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahTahTwodotshorizontalabove-ar.medi_FaaHaaInit by hahTahTwodotshorizontalabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahTahbelow-ar.medi_FaaHaaInit by hahTahbelow-ar.medi_FaaHaaInit kashida-ar.05;
+    sub nyeh-ar.medi_FaaHaaInit by nyeh-ar.medi_FaaHaaInit kashida-ar.05;
+    sub tchehDotabove-ar.medi_FaaHaaInit by tchehDotabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahFourbelow-ar.medi_FaaHaaInit by hahFourbelow-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahThreedotsupbelow-ar.medi_FaaHaaInit by hahThreedotsupbelow-ar.medi_FaaHaaInit kashida-ar.05;
+    sub hahTahabove-ar.medi_FaaHaaInit by hahTahabove-ar.medi_FaaHaaInit kashida-ar.05;
+    sub tcheh-ar.medi_FaaHaaInit by tcheh-ar.medi_FaaHaaInit kashida-ar.05;
+    # sub @aHaa.medi_SadHaaInit   by @aHaa.medi_SadHaaInit   uni0640.05;
+    sub khah-ar.medi_SadHaaInit by khah-ar.medi_SadHaaInit kashida-ar.05;
+    sub hah-ar.medi_SadHaaInit by hah-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahHamzaabove-ar.medi_SadHaaInit by hahHamzaabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub tcheheh-ar.medi_SadHaaInit by tcheheh-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahThreedotsabove-ar.medi_SadHaaInit by hahThreedotsabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub jeem-ar.medi_SadHaaInit by jeem-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahTwodotsverticalabove-ar.medi_SadHaaInit by hahTwodotsverticalabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahTwodotshorizontalabove-ar.medi_SadHaaInit by hahTwodotshorizontalabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub dyeh-ar.medi_SadHaaInit by dyeh-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahTahTwodotshorizontalabove-ar.medi_SadHaaInit by hahTahTwodotshorizontalabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahTahbelow-ar.medi_SadHaaInit by hahTahbelow-ar.medi_SadHaaInit kashida-ar.05;
+    sub nyeh-ar.medi_SadHaaInit by nyeh-ar.medi_SadHaaInit kashida-ar.05;
+    sub tchehDotabove-ar.medi_SadHaaInit by tchehDotabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahFourbelow-ar.medi_SadHaaInit by hahFourbelow-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahThreedotsupbelow-ar.medi_SadHaaInit by hahThreedotsupbelow-ar.medi_SadHaaInit kashida-ar.05;
+    sub hahTahabove-ar.medi_SadHaaInit by hahTahabove-ar.medi_SadHaaInit kashida-ar.05;
+    sub tcheh-ar.medi_SadHaaInit by tcheh-ar.medi_SadHaaInit kashida-ar.05;
 } AboveHaaTatweel;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aHaa.medi_FaaHaaInit @aHaa.medi_SadHaaInit]' lookup AboveHaaTatweel
-      [@aBaa.medi_BaaNonFina @aBaa.medi_BaaRaaFina];
+    lookupflag IgnoreMarks;
+    sub [@aHaa.medi_FaaHaaInit @aHaa.medi_SadHaaInit]' lookup AboveHaaTatweel [@aBaa.medi_BaaNonFina @aBaa.medi_BaaRaaFina];
 } calt;
-
 
 # When an initial Baa is followed by Alef, the dot clashes with the Hamza below
 # Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa
 # with a wider variant.
 feature calt {
-  lookupflag IgnoreMarks;
-  sub @aBaa.init' lookup BaaInitWide @aAlf.fina;
+    lookupflag IgnoreMarks;
+    sub @aBaa.init' lookup BaaInitWide @aAlf.fina;
 } calt;
 
 # If the Alef has no Hamza below, or there is no marks above the Baa, revert to
 # the original, non-wide form (notice there is no IgnoreMarks flag).
 feature calt {
-  sub [@aBaa.init_Wide]'
-      [uni0622.fina uni0623.fina uni0627.fina uni0671.fina uni0672.fina
-       uni0773.fina uni0774.fina]
-   by [@aBaa.init];
+    sub [@aBaa.init_Wide]' [alefMadda-ar.fina alefHamzaabove-ar.fina alef-ar.fina alefWasla-ar.fina alefWavyhamzaabove-ar.fina alefTwoabove-ar.fina alefThreeabove-ar.fina] by [@aBaa.init];
 } calt;
 
 # XXX: use a different glyph for PDF text extraction
 feature calt {
-  script arab;
-  language ARA;
-  lookupflag IgnoreMarks;
-
-  # Replace teh init following teh/theh medi by a teh init with two vertical
-  # dots.
-  sub uni062A.init_BaaBaaIsol'
-      [uni062A.medi_BaaBaaInit uni062B.medi_BaaBaaInit]
-   by uni067A.init_BaaBaaIsol;
-
-  sub uni062A.init_High'
-      [uni062A.medi_High uni062B.medi_High]
-   by uni067A.init_High;
-
-  # Ditto for يبين and co.
-  sub [uni0628.medi_BaaBaaInit uni064A.medi_BaaBaaInit]
-      [uni064A.medi_BaaNonFina uni064A.medi_BaaRaaFina]'
-   by [uni06D0.medi_BaaNonFina uni06D0.medi_BaaRaaFina];
+    script arab;
+    language ARA;
+    lookupflag IgnoreMarks;
+    # Replace teh init following teh/theh medi by a teh init with two vertical
+    # dots.
+    sub teh-ar.init_BaaBaaIsol' [teh-ar.medi_BaaBaaInit theh-ar.medi_BaaBaaInit] by tteheh-ar.init_BaaBaaIsol;
+    sub teh-ar.init_High' [teh-ar.medi_High theh-ar.medi_High] by tteheh-ar.init_High;
+    # Ditto for يبين and co.
+    sub [beh-ar.medi_BaaBaaInit yeh-ar.medi_BaaBaaInit] [yeh-ar.medi_BaaNonFina yeh-ar.medi_BaaRaaFina]' by [e-ar.medi_BaaNonFina e-ar.medi_BaaRaaFina];
 } calt;
 
 # Insert kashida between final ع and the kasra below the preceding letter
 # see https://github.com/khaledhosny/quran-data/issues/4
 lookup KasraAynFina {
-  sub uni064D by uni064D uni0640.2;
-  sub uni0650 by uni0650 uni0640.2;
-  sub uni08F2 by uni08F2 uni0640.2;
-  sub uni06ED by uni06ED uni0640.3;
+    sub kasratan-ar by kasratan-ar kashida-ar.2;
+    sub kasra-ar by kasra-ar kashida-ar.2;
+    sub openkasratan-ar by openkasratan-ar kashida-ar.2;
+    sub meembelow-ar by meembelow-ar kashida-ar.3;
 } KasraAynFina;
 
 # and final ح
 # see https://github.com/aliftype/amiri/issues/162#issuecomment-421769913
 lookup KasraHaaFina {
-  sub uni064D by uni064D uni0640.1;
-  sub uni0650 by uni0650 uni0640.1;
-  sub uni08F2 by uni08F2 uni0640.1;
-  sub uni06ED by uni06ED uni0640.2;
+    sub kasratan-ar by kasratan-ar kashida-ar.1;
+    sub kasra-ar by kasra-ar kashida-ar.1;
+    sub openkasratan-ar by openkasratan-ar kashida-ar.1;
+    sub meembelow-ar by meembelow-ar kashida-ar.2;
 } KasraHaaFina;
 
 feature calt {
-  sub @Tashkil.below' lookup KasraAynFina
-      @aAyn.fina;
-  sub @Tashkil.below' lookup KasraHaaFina
-      @aHaa.fina;
+    sub @Tashkil.below' lookup KasraAynFina @aAyn.fina;
+    sub @Tashkil.below' lookup KasraHaaFina @aHaa.fina;
 } calt;

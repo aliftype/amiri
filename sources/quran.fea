@@ -1,7 +1,6 @@
 #
 # Small letters
 #
-
 # In Quranic orthography, there are two forms of dagger alef; a superscript one
 # that is a combining mark and a spacing one that is regular alef letter, the
 # later is represented in Unicode by using NBSP (for isolated) or Kashida (for
@@ -9,20 +8,18 @@
 #
 # Other small letters have an encoded isolated form and only need medial form
 # with kashida.
-
 # Substitute combining small letters by the spacing ones.
 feature ccmp {
-  sub [uni00A0 uni202F] uni0670 by uni0670.isol;
-  sub uni0640 uni0670 by uni0670.medi;
-  sub uni0640 uni06E7 by uni06E7.medi;
-  sub uni0640 uni08F3 by uni08F3.medi;
-  sub uni0640 uni0654 by uni0621.medi;
+    sub [nbspace narrownbspace] alefabove-ar by alefabove-ar.isol;
+    sub kashida-ar alefabove-ar by alefabove-ar.medi;
+    sub kashida-ar yehabove-ar by yehabove-ar.medi;
+    sub kashida-ar highwaw-ar by highwaw-ar.medi;
+    sub kashida-ar hamzaabove-ar by hamza-ar.medi;
 } ccmp;
 
 #
 # Floating hamza
 #
-
 # Hamza should be shaping transparent, just like combining marks, while still
 # not a combining marks, I call t floating hamza because it "floats" between
 # adjacent letters. When a hamza comes between two letters that would normally
@@ -36,124 +33,92 @@ feature ccmp {
 # around it, so we simply override this by replacing glyphs around the hamza
 # with the forms that they would normally take if it was not there, and replace
 # the hamza wit its medial glyph that has a connecting stroke.
-
-@before.isol = [uni0626 uni0628 uni062A uni062B uni062C uni062D uni062E uni0633
-                uni0634 uni0635 uni0636 uni0637 uni0638 uni0639 uni063A uni0641
-                uni0642 uni0643 uni0644 uni0645 uni0646 uni0647 uni0649 uni064A
-                uni06CC];
-@before.init = [uni0626.init uni0628.init uni062A.init uni062B.init uni062C.init
-                uni062D.init uni062E.init uni0633.init uni0634.init uni0635.init
-                uni0636.init uni0637.init uni0638.init uni0639.init uni063A.init
-                uni0641.init uni0642.init uni0643.init uni0644.init uni0645.init
-                uni0646.init uni0647.init uni0649.init uni064A.init uni06CC.init];
-@before.medi = [uni0626.medi uni0628.medi uni062A.medi uni062B.medi uni062C.medi
-                uni062D.medi uni062E.medi uni0633.medi uni0634.medi uni0635.medi
-                uni0636.medi uni0637.medi uni0638.medi uni0639.medi uni063A.medi
-                uni0641.medi uni0642.medi uni0643.medi uni0644.medi uni0645.medi
-                uni0646.medi uni0647.medi uni0649.medi uni064A.medi uni06CC.medi];
-@before.fina = [uni0626.fina uni0628.fina uni062A.fina uni062B.fina uni062C.fina
-                uni062D.fina uni062E.fina uni0633.fina uni0634.fina uni0635.fina
-                uni0636.fina uni0637.fina uni0638.fina uni0639.fina uni063A.fina
-                uni0641.fina uni0642.fina uni0643.fina uni0644.fina uni0645.fina
-                uni0646.fina uni0647.fina uni0649.fina uni064A.fina uni06CC.fina];
-
-@after.isol =  [uni0622 uni0623 uni0624 uni0625 uni0627 uni0629 uni062F uni0630
-                uni0631 uni0632 uni0648];
-@after.fina =  [uni0622.fina uni0623.fina uni0624.fina uni0625.fina uni0627.fina
-                uni0629.fina uni062F.fina uni0630.fina uni0631.fina uni0632.fina
-                uni0648.fina];
-
-@before = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi @before.isol
-           @before.fina];
-@after  = [@aKashida uni0670.medi uni06E7.medi uni08F3.medi
-           uni0627.fina_Tatweel @after.isol @before.isol @before.init];
-
+@before.isol = [yehHamzaabove-ar beh-ar teh-ar theh-ar jeem-ar hah-ar khah-ar seen-ar sheen-ar sad-ar dad-ar tah-ar zah-ar ain-ar ghain-ar feh-ar qaf-ar kaf-ar lam-ar meem-ar noon-ar heh-ar alefMaksura-ar yeh-ar yehFarsi-ar];
+@before.init = [yehHamzaabove-ar.init beh-ar.init teh-ar.init theh-ar.init jeem-ar.init hah-ar.init khah-ar.init seen-ar.init sheen-ar.init sad-ar.init dad-ar.init tah-ar.init zah-ar.init ain-ar.init ghain-ar.init feh-ar.init qaf-ar.init kaf-ar.init lam-ar.init meem-ar.init noon-ar.init heh-ar.init alefMaksura-ar.init yeh-ar.init yehFarsi-ar.init];
+@before.medi = [yehHamzaabove-ar.medi beh-ar.medi teh-ar.medi theh-ar.medi jeem-ar.medi hah-ar.medi khah-ar.medi seen-ar.medi sheen-ar.medi sad-ar.medi dad-ar.medi tah-ar.medi zah-ar.medi ain-ar.medi ghain-ar.medi feh-ar.medi qaf-ar.medi kaf-ar.medi lam-ar.medi meem-ar.medi noon-ar.medi heh-ar.medi alefMaksura-ar.medi yeh-ar.medi yehFarsi-ar.medi];
+@before.fina = [yehHamzaabove-ar.fina beh-ar.fina teh-ar.fina theh-ar.fina jeem-ar.fina hah-ar.fina khah-ar.fina seen-ar.fina sheen-ar.fina sad-ar.fina dad-ar.fina tah-ar.fina zah-ar.fina ain-ar.fina ghain-ar.fina feh-ar.fina qaf-ar.fina kaf-ar.fina lam-ar.fina meem-ar.fina noon-ar.fina heh-ar.fina alefMaksura-ar.fina yeh-ar.fina yehFarsi-ar.fina];
+@after.isol = [alefMadda-ar alefHamzaabove-ar wawHamzaabove-ar alefHamzabelow-ar alef-ar tehMarbuta-ar dal-ar thal-ar reh-ar zain-ar waw-ar];
+@after.fina = [alefMadda-ar.fina alefHamzaabove-ar.fina wawHamzaabove-ar.fina alefHamzabelow-ar.fina alef-ar.fina tehMarbuta-ar.fina dal-ar.fina thal-ar.fina reh-ar.fina zain-ar.fina waw-ar.fina];
+@before = [@aKashida alefabove-ar.medi yehabove-ar.medi highwaw-ar.medi @before.isol @before.fina];
+@after = [@aKashida alefabove-ar.medi yehabove-ar.medi highwaw-ar.medi alef-ar.fina_Tatweel @after.isol @before.isol @before.init];
 lookup Before {
-  sub @before.isol by @before.init;
-  sub @before.fina by @before.medi;
+    sub @before.isol by @before.init;
+    sub @before.fina by @before.medi;
 } Before;
 
 lookup After {
-  sub @before.isol by @before.fina;
-  sub @after.isol  by @after.fina;
-  sub @before.init by @before.medi;
+    sub @before.isol by @before.fina;
+    sub @after.isol by @after.fina;
+    sub @before.init by @before.medi;
 } After;
 
 lookup MedialHAmza {
-  sub uni0621 by uni0621.medi;
+    sub hamza-ar by hamza-ar.medi;
 } MedialHAmza;
 
 lookup FloatingHamza {
-  sub uni0621 by uni0621.float;
+    sub hamza-ar by hamza-ar.float;
 } FloatingHamza;
 
 lookup LamAlefIsol {
-  sub uni0644 by uni0644.init_LamAlfIsol;
-  sub uni0627 by uni0627.fina_LamAlfIsol;
+    sub lam-ar by lam-ar.init_LamAlfIsol;
+    sub alef-ar by alef-ar.fina_LamAlfIsol;
 } LamAlefIsol;
 
 lookup LamAlefFina {
-  sub uni0644.fina by uni0644.medi_LamAlfFina;
-  sub uni0627      by uni0627.fina_LamAlfFina;
+    sub lam-ar.fina by lam-ar.medi_LamAlfFina;
+    sub alef-ar by alef-ar.fina_LamAlfFina;
 } LamAlefFina;
 
 feature calt {
-  lookupflag IgnoreMarks;
-  # hamza between lam and alef needs special treatment as it should not have
-  # a connecting stroke to avoid breaking lam-alef.
-  sub uni0644'      lookup LamAlefIsol
-      uni0621'      lookup FloatingHamza
-      uni0627'      lookup LamAlefIsol;
-
-  sub uni0644.fina' lookup LamAlefFina
-      uni0621'      lookup FloatingHamza
-      uni0627'      lookup LamAlefFina;
-
-  # Medial hamza.
-  sub @before'      lookup Before
-      uni0621'      lookup MedialHAmza
-      @after'       lookup After;
+    lookupflag IgnoreMarks;
+    # hamza between lam and alef needs special treatment as it should not have
+    # a connecting stroke to avoid breaking lam-alef.
+    sub lam-ar' lookup LamAlefIsol hamza-ar' lookup FloatingHamza alef-ar' lookup LamAlefIsol;
+    sub lam-ar.fina' lookup LamAlefFina hamza-ar' lookup FloatingHamza alef-ar' lookup LamAlefFina;
+    # Medial hamza.
+    sub @before' lookup Before hamza-ar' lookup MedialHAmza @after' lookup After;
 } calt;
 
 # kern floating hamza between final lam-alef to avoid glyph overlap
 feature kern {
-  lookupflag IgnoreMarks;
-  pos uni0621.float <-146 0 0 0> @aAlf.fina_LamAlfFina;
+    lookupflag IgnoreMarks;
+    pos hamza-ar.float @aAlf.fina_LamAlfFina <-146 0 0 0>;
 } kern;
 
 #ifdef QURAN
 # If a hamza on yaa or waw is followed by kasra, the hamza goes bellow
 lookup hamzakasra {
-  sub uni0626.init by uni0649.init uni0655; # yaa
-  sub uni0626.medi by uni0649.medi uni0655;
-  sub uni0626.fina by uni0649.fina uni0655;
-  sub uni0626      by uni0649      uni0655;
-  sub uni0624.fina by uni0648.fina uni0655; # waw
-  sub uni0624      by uni0648      uni0655;
+    sub yehHamzaabove-ar.init by alefMaksura-ar.init hamzabelow-ar;
+    # yaa
+    sub yehHamzaabove-ar.medi by alefMaksura-ar.medi hamzabelow-ar;
+    sub yehHamzaabove-ar.fina by alefMaksura-ar.fina hamzabelow-ar;
+    sub yehHamzaabove-ar by alefMaksura-ar hamzabelow-ar;
+    sub wawHamzaabove-ar.fina by waw-ar.fina hamzabelow-ar;
+    # waw
+    sub wawHamzaabove-ar by waw-ar hamzabelow-ar;
 } hamzakasra;
 
 feature calt {
-# lookupflag IgnoreMarks;
-  sub [uni0626 uni0626.init uni0626.medi uni0626.fina uni0624 uni0624.fina]' lookup hamzakasra
-      [uni0650 uni064D uni08F2];
+    # lookupflag IgnoreMarks;
+    sub [yehHamzaabove-ar yehHamzaabove-ar.init yehHamzaabove-ar.medi yehHamzaabove-ar.fina wawHamzaabove-ar wawHamzaabove-ar.fina]' lookup hamzakasra [kasra-ar kasratan-ar openkasratan-ar];
 } calt;
-#endif
 
+#endif
 # small waw after isolated/final heh is lower than usual, so we use an
 # alternate glyph for that
 feature calt {
-  lookupflag IgnoreMarks;
-  sub [@aHeh.isol @aHeh.fina] [uni06E5]' by [uni06E5.low];
+    lookupflag IgnoreMarks;
+    sub [@aHeh.isol @aHeh.fina] [wawSmall-ar]' by [wawSmall-ar.low];
 } calt;
 
 # some glyphs need more room to accommodate madda mark, so we change the advance
 # width on fly.
 feature mark {
-  # small waw
-  pos [uni06E5.low] <24 0 122 0> [uni06E4];
-
-  # alef
-  pos [uni0627.fina uni0627.fina_Wide uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina] <122 0 122 0> [uni06E4];
-  pos [uni0627.fina uni0627.fina_Wide uni0627.fina_KafMemAlf uni0627.fina_MemAlfFina] <171 0 171 0> [uni0653];
-  pos [uni0627] <73 0 146 0> [uni06E4];
+    # small waw
+    pos [wawSmall-ar.low] [maddalong-ar] <24 0 122 0>;
+    # alef
+    pos [alef-ar.fina alef-ar.fina_Wide alef-ar.fina_KafMemAlf alef-ar.fina_MemAlfFina] [maddalong-ar] <122 0 122 0>;
+    pos [alef-ar.fina alef-ar.fina_Wide alef-ar.fina_KafMemAlf alef-ar.fina_MemAlfFina] [madda-ar] <171 0 171 0>;
+    pos [alef-ar] [maddalong-ar] <73 0 146 0>;
 } mark;
