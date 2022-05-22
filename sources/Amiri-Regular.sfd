@@ -10795,7 +10795,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dash.gaf
+StartChar: gafsarkashabove-ar
 Encoding: 1114312 -1 210
 Width: 0
 GlyphClass: 4
@@ -11129,7 +11129,7 @@ Fore
 Refer: 191 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: dash.gaf.alt2
+StartChar: gafsarkashabove-ar.alt2
 Encoding: 1114322 -1 220
 Width: 0
 GlyphClass: 4
@@ -11149,7 +11149,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dash.gaf.alt1
+StartChar: gafsarkashabove-ar.alt1
 Encoding: 1114323 -1 221
 Width: 0
 GlyphClass: 4
@@ -11992,7 +11992,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: hamza.above.wavy
+StartChar: wavyhamzaabove-ar
 Encoding: 1114339 -1 248
 Width: 0
 GlyphClass: 4
@@ -12021,7 +12021,7 @@ Refer: 254 -1 N 1 0 0 1 264 -146 0
 Refer: 37 -1 N 1 0 0 1 -0 0 3
 EndChar
 
-StartChar: smallv.below
+StartChar: vbelow-ar
 Encoding: 1114340 -1 251
 Width: 0
 GlyphClass: 4
@@ -12032,7 +12032,7 @@ Fore
 Refer: 209 1626 N 1 0 0 1 0 -977 2
 EndChar
 
-StartChar: smallv.below.inverted
+StartChar: vinvertedbelow-ar
 Encoding: 1114341 -1 252
 Width: 0
 GlyphClass: 4
@@ -12044,7 +12044,7 @@ Fore
 Refer: 244 1627 N 1 0 0 1 0 -977 2
 EndChar
 
-StartChar: smalltaa.below
+StartChar: tahbelow-ar
 Encoding: 1114342 -1 253
 Width: 0
 GlyphClass: 4
@@ -12144,7 +12144,7 @@ Fore
 Refer: 255 1648 N 1 0 0 1 0 -1528 2
 EndChar
 
-StartChar: hamza.wasl
+StartChar: wasla-ar
 Encoding: 1114344 -1 257
 Width: 0
 GlyphClass: 4
@@ -13113,7 +13113,7 @@ Fore
 Refer: 242 -1 N 1 0 0 1 2 -23 2
 EndChar
 
-StartChar: smallv.below.inverted.low
+StartChar: vinvertedbelow-ar.low
 Encoding: 1114364 -1 305
 Width: 0
 GlyphClass: 4
@@ -13642,7 +13642,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: stroke
+StartChar: stroke-ar
 Encoding: 1114365 -1 342
 Width: 0
 GlyphClass: 4
@@ -13662,7 +13662,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: aTwo.above
+StartChar: twoabove-ar
 Encoding: 1114366 -1 343
 Width: 0
 GlyphClass: 4
@@ -13673,7 +13673,7 @@ Fore
 Refer: 280 1778 N 0.5 0 0 0.5 -128 109 2
 EndChar
 
-StartChar: aThree.above
+StartChar: threeabove-ar
 Encoding: 1114367 -1 344
 Width: 0
 GlyphClass: 4
@@ -13684,7 +13684,7 @@ Fore
 Refer: 281 1779 N 0.5 0 0 0.5 -128 112 2
 EndChar
 
-StartChar: aFour.above
+StartChar: fourabove-ar
 Encoding: 1114368 -1 345
 Width: 0
 GlyphClass: 4
@@ -13695,7 +13695,7 @@ Fore
 Refer: 347 -1 N 0.5 0 0 0.5 -127 112 2
 EndChar
 
-StartChar: aFour.below
+StartChar: fourbelow-ar
 Encoding: 1114369 -1 346
 Width: 0
 GlyphClass: 4
@@ -77754,7 +77754,7 @@ Refer: 251 -1 N 1 0 0 1 17 208 2
 Refer: 4649 -1 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: smallv.below.low
+StartChar: vbelow-ar.low
 Encoding: 1118669 -1 5646
 Width: 0
 GlyphClass: 4
