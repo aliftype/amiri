@@ -112,8 +112,7 @@ def generateFont(options, font):
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
         from fontTools.ttLib.tables import ttProgram
-        otf = compileTTF(font, inplace=True, useProductionNames=True,
-            removeOverlaps=True,
+        otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=featureWriters,
             filters=filters)
 
@@ -122,7 +121,7 @@ def generateFont(options, font):
         prep.program.fromAssembly([
             'PUSHW[]', '511', 'SCANCTRL[]', 'PUSHB[]', '4', 'SCANTYPE[]'])
     else:
-        otf = compileOTF(font, inplace=True, useProductionNames=True,
+        otf = compileOTF(font, inplace=True,
             optimizeCFF=1,
             removeOverlaps=True, overlapsBackend="pathops",
             featureWriters=featureWriters, filters=filters)
@@ -615,18 +614,6 @@ def _build_production_name(glyph, font):
 def openFont(path):
 #   font = Font(validate=False)
     font = Font.open(path)
-
-    from fontTools import agl
-
-    p = {}
-    for g in font:
-        if g.name not in agl.AGL2UV:
-            n = _build_production_name(g, font)
-        else:
-            n = g.name
-        p[g.name] = n
-    font.lib["public.postscriptNames"] = p
-
 
     return font
 
