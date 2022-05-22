@@ -358,8 +358,10 @@ def makeQuran(options):
     # scale some vowel marks and dots down a bit
     fea = font.features.text
     marks = [
-        "fathatan-ar", "dammatan-ar", "fatha-ar", "damma-ar", "hahabove-ar", "openfathatan-ar",
-        "opendammatan-ar", "openkasratan-ar", "TwoDots.a", "ThreeDots.a", "vTwoDots.a",
+        "fathatan-ar", "dammatan-ar", "fatha-ar", "damma-ar", "hahabove-ar",
+        "openfathatan-ar", "opendammatan-ar", "openkasratan-ar",
+        "twodotshorizontalabove-ar", "threedotsupabove-ar",
+        "twodotsverticalabove-ar",
     ]
     shadda = ["shadda-ar"]
     for scale, names in ((0.9, marks), (0.8, shadda)):

@@ -10290,7 +10290,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Dot.a
+StartChar: dotabove-ar
 Encoding: 1114299 -1 191
 Width: 0
 GlyphClass: 4
@@ -10313,7 +10313,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: TwoDots.a
+StartChar: twodotshorizontalabove-ar
 Encoding: 1114300 -1 192
 Width: 0
 GlyphClass: 4
@@ -10342,7 +10342,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ThreeDots.a
+StartChar: threedotsupabove-ar
 Encoding: 1114301 -1 193
 Width: 0
 GlyphClass: 4
@@ -10379,7 +10379,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Dot.b
+StartChar: dotbelow-ar
 Encoding: 1114302 -1 194
 Width: 0
 GlyphClass: 4
@@ -10390,7 +10390,7 @@ Fore
 Refer: 191 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: TwoDots.b
+StartChar: twodotshorizontalbelow-ar
 Encoding: 1114303 -1 195
 Width: 0
 GlyphClass: 4
@@ -10402,7 +10402,7 @@ Fore
 Refer: 192 -1 N 1 0 0 1 2 -23 2
 EndChar
 
-StartChar: ThreeDots.b
+StartChar: threedotsupbelow-ar
 Encoding: 1114304 -1 196
 Width: 0
 GlyphClass: 4
@@ -10686,7 +10686,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: iThreeDots.a
+StartChar: threedotsdownabove-ar
 Encoding: 1114310 -1 206
 Width: 0
 GlyphClass: 4
@@ -10722,7 +10722,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: iThreeDots.b
+StartChar: threedotsdownbelow-ar
 Encoding: 1114311 -1 207
 Width: 0
 GlyphClass: 4
@@ -10891,7 +10891,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: vTwoDots.a
+StartChar: twodotsverticalabove-ar
 Encoding: 1114315 -1 213
 Width: 0
 GlyphClass: 4
@@ -10918,7 +10918,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: vTwoDots.b
+StartChar: twodotsverticalbelow-ar
 Encoding: 1114316 -1 214
 Width: 0
 GlyphClass: 4
@@ -11721,7 +11721,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: FourDots.a
+StartChar: fourdotsabove-ar
 Encoding: 1114334 -1 240
 Width: 0
 GlyphClass: 4
@@ -11760,7 +11760,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: FourDots.b
+StartChar: fourdotsbelow-ar
 Encoding: 1114335 -1 241
 Width: 0
 GlyphClass: 4
@@ -11771,7 +11771,7 @@ Fore
 Refer: 240 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: hThreeDots.a
+StartChar: threedotshorizontalabove-ar
 Encoding: 1114336 -1 242
 Width: 0
 GlyphClass: 4
@@ -11804,7 +11804,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: hThreeDots.b
+StartChar: threedotshorizontalbelow-ar
 Encoding: 1114337 -1 243
 Width: 0
 GlyphClass: 4
@@ -13035,7 +13035,7 @@ Refer: 210 -1 N 1 0 0 1 -91 157 2
 Refer: 204 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Dot.b.l
+StartChar: dotbelow-ar.l
 Encoding: 1114357 -1 298
 Width: 0
 GlyphClass: 4
@@ -13046,7 +13046,7 @@ Fore
 Refer: 191 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: TwoDots.b.l
+StartChar: twodotshorizontalbelow-ar.l
 Encoding: 1114358 -1 299
 Width: 0
 GlyphClass: 4
@@ -13058,7 +13058,7 @@ Fore
 Refer: 192 -1 N 1 0 0 1 2 -23 2
 EndChar
 
-StartChar: ThreeDots.b.l
+StartChar: threedotsupbelow-ar.l
 Encoding: 1114359 -1 300
 Width: 0
 GlyphClass: 4
@@ -13069,7 +13069,7 @@ Fore
 Refer: 193 -1 N 1 0 0 1 1 -127 2
 EndChar
 
-StartChar: iThreeDots.b.l
+StartChar: threedotsdownbelow-ar.l
 Encoding: 1114360 -1 301
 Width: 0
 GlyphClass: 4
@@ -13080,7 +13080,7 @@ Fore
 Refer: 206 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: vTwoDots.b.l
+StartChar: twodotsverticalbelow-ar.l
 Encoding: 1114361 -1 302
 Width: 0
 GlyphClass: 4
@@ -13091,7 +13091,7 @@ Fore
 Refer: 214 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: FourDots.b.l
+StartChar: fourdotsbelow-ar.l
 Encoding: 1114362 -1 303
 Width: 0
 GlyphClass: 4
@@ -13102,7 +13102,7 @@ Fore
 Refer: 240 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: hThreeDots.b.l
+StartChar: threedotshorizontalbelow-ar.l
 Encoding: 1114363 -1 304
 Width: 0
 GlyphClass: 4
