@@ -66,7 +66,6 @@ $(DOC)/Documentation-Arabic.html: $(DOC)/Documentation-Arabic.md
 	@pandoc $< -o $@ -f markdown-smart -t html -s -c Documentation-Arabic.css
 
 check: $(TTF) $(OTF)
-	@echo "running tests"
 	@$(foreach font,$+,echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
 
 clean:
@@ -86,5 +85,7 @@ dist: otf check pack doc
 	@install -Dm644 -t $(DIST) NEWS.md
 	@install -Dm644 -t $(DIST) NEWS-Arabic.md
 	@install -Dm644 -t $(DIST) $(HTML)
+	@echo "   DROP GLYPH NAMES"
+	@$(PY) no-glyphnames.py $(DIST)/*.ttf
 	@echo "   ZIP  $(DIST)"
 	@zip -rq $(DIST).zip $(DIST)
