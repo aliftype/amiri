@@ -30,9 +30,6 @@ lookup LamMediLellah {
     sub lam-ar.medi by lam-ar.medi_Lellah;
 } LamMediLellah;
 
-# shortcuts
-@Li = [lam-ar.init];
-@Lm = [lam-ar.medi];
 # [اآٱ]
 @Ai = [alef-ar alefMadda-ar alefWasla-ar];
 # [ا]
@@ -46,9 +43,9 @@ lookup LamMediLellah {
 feature calt {
     lookupflag IgnoreMarks;
     # لله
-    sub @Li' lookup LamInitLellah @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
     # فلله
-    sub [feh-ar.init]' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub [feh-ar.init]' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
 } calt;
 
 #else
@@ -57,78 +54,69 @@ lookup LamLamInitX {
     sub lam-ar.medi by lam-ar.medi_LamLamInit;
 } LamLamInitX;
 
-# [و]
-@aWaw_isol = [waw-ar];
-@aWaw_fina = [waw-ar.fina];
 # [بت]
 @aBaa_init = [beh-ar.init teh-ar.init];
 @aBaa_medi = [beh-ar.medi teh-ar.medi];
-# [ف]
-@aFaa_init = [feh-ar.init];
-# [ه]
-@aHeh_init = [heh-ar.init];
-# define to not include [ك] and include [ڪ]
-@aKaf_init = [kaf-ar.init];
 @Ignore = [@aAyn.fina @aAyn.isol @aAlf.isol @aAlf.fina @aBaa.fina @aBaa.isol @aDal.fina @aDal.isol @aFaa.fina @aFaa.isol @aHaa.fina @aHaa.isol @aHeh.fina @aHeh.isol @aKaf.fina @aKaf.isol @aLam.fina @aLam.isol @aMem.fina @aMem.isol @aNon.fina @aNon.isol @aQaf.fina @aQaf.isol @aRaa.fina @aRaa.isol @aSad.fina @aSad.isol @aSen.fina @aSen.isol @aTaa.fina @aTaa.isol @aWaw.fina @aWaw.isol @aYaa.fina @aYaa.isol];
 feature calt {
     lookupflag IgnoreMarks;
     # Allow الله/ولله/ـالله
-    ignore sub [@Ai @Af @aWaw_isol] @Li' @Lm' @Hf;
+    ignore sub [@Ai @Af waw-ar] lam-ar.init' lam-ar.medi' @Hf;
     # Supress any remaining *لله
-    sub @Ignore @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+    sub @Ignore lam-ar.init' lookup LamLamInitX lam-ar.medi' lookup LamLamInitX @Hf;
     # Allow فوالله
-    ignore sub @aFaa_init @aWaw_fina @Ai' @Li' @Lm' @Hf;
+    ignore sub feh-ar.init waw-ar.fina @Ai' lam-ar.init' lam-ar.medi' @Hf;
     # Allow والله
-    ignore sub @aWaw_isol @Ai' @Li' @Lm' @Hf;
+    ignore sub waw-ar @Ai' lam-ar.init' lam-ar.medi' @Hf;
     # Supress any remaining *الله
-    sub @Ignore @Ai' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+    sub @Ignore @Ai' lam-ar.init' lookup LamLamInitX lam-ar.medi' lookup LamLamInitX @Hf;
     # Allow فتالله/فبالله
-    ignore sub @aFaa_init @aBaa_medi @Af' @Li' @Lm' @Hf;
+    ignore sub feh-ar.init @aBaa_medi @Af' lam-ar.init' lam-ar.medi' @Hf;
     # Allow تالله/بالله/كالله/فالله
-    ignore sub [@aBaa_init @aKaf_init @aFaa_init] @Af' @Li' @Lm' @Hf;
+    ignore sub [@aBaa_init kaf-ar.init feh-ar.init] @Af' lam-ar.init' lam-ar.medi' @Hf;
     # Supress any remaining *ـالله
-    sub @Af' @Li' lookup LamLamInitX @Lm' lookup LamLamInitX @Hf;
+    sub @Af' lam-ar.init' lookup LamLamInitX lam-ar.medi' lookup LamLamInitX @Hf;
 } calt;
 
 feature calt {
     # لله
-    sub @Li' lookup LamInitLellah @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
     # لَلهُ
-    ignore sub @Ai @Li' fatha-ar' @Lm' @Hf';
-    ignore sub @Ai @Li' fatha-ar' @Lm' shadda-ar' @Hf';
-    ignore sub @Ai @Li' fatha-ar' @Lm' shadda-ar' @xF' @Hf';
-    sub @Li' lookup LamInitLellah fatha-ar' @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah fatha-ar' @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah fatha-ar' @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    ignore sub @Ai lam-ar.init' fatha-ar' lam-ar.medi' @Hf';
+    ignore sub @Ai lam-ar.init' fatha-ar' lam-ar.medi' shadda-ar' @Hf';
+    ignore sub @Ai lam-ar.init' fatha-ar' lam-ar.medi' shadda-ar' @xF' @Hf';
+    sub lam-ar.init' lookup LamInitLellah fatha-ar' lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah fatha-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah fatha-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
     # لِله
-    ignore sub @Ai @Li' shadda-ar' @Lm' @Hf';
-    ignore sub @Ai @Li' shadda-ar' @Lm' shadda-ar' @Hf';
-    ignore sub @Ai @Li' shadda-ar' @Lm' shadda-ar' @xF' @Hf';
-    sub @Li' lookup LamInitLellah kasra-ar' @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    ignore sub @Ai lam-ar.init' shadda-ar' lam-ar.medi' @Hf';
+    ignore sub @Ai lam-ar.init' shadda-ar' lam-ar.medi' shadda-ar' @Hf';
+    ignore sub @Ai lam-ar.init' shadda-ar' lam-ar.medi' shadda-ar' @xF' @Hf';
+    sub lam-ar.init' lookup LamInitLellah kasra-ar' lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
     # لِّله
-    ignore sub @Ai @Li' shadda-ar' kasra-ar' @Lm' @Hf';
-    ignore sub @Ai @Li' shadda-ar' kasra-ar' @Lm' shadda-ar' @Hf';
-    ignore sub @Ai @Li' shadda-ar' kasra-ar' @Lm' shadda-ar' @xF' @Hf';
-    sub @Li' lookup LamInitLellah shadda-ar' kasra-ar' @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah shadda-ar' kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub @Li' lookup LamInitLellah shadda-ar' kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    ignore sub @Ai lam-ar.init' shadda-ar' kasra-ar' lam-ar.medi' @Hf';
+    ignore sub @Ai lam-ar.init' shadda-ar' kasra-ar' lam-ar.medi' shadda-ar' @Hf';
+    ignore sub @Ai lam-ar.init' shadda-ar' kasra-ar' lam-ar.medi' shadda-ar' @xF' @Hf';
+    sub lam-ar.init' lookup LamInitLellah shadda-ar' kasra-ar' lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah shadda-ar' kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub lam-ar.init' lookup LamInitLellah shadda-ar' kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
     # فلله
-    sub feh-ar.init' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' fatha-ar' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' fatha-ar' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' fatha-ar' @Lm' lookup LamMediFaLellah @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' @Lm' lookup LamMediFaLellah kasra-ar' @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' @Lm' lookup LamMediFaLellah kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' @Lm' lookup LamMediFaLellah kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' fatha-ar' @Lm' lookup LamMediFaLellah kasra-ar' @Lm' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' fatha-ar' @Lm' lookup LamMediFaLellah kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
-    sub feh-ar.init' fatha-ar' @Lm' lookup LamMediFaLellah kasra-ar' @Lm' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
+    sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
 } calt;
 
 # Now put shadda+dagger alef above the medial lam if there are no marks on it.
