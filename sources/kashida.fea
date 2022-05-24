@@ -49,7 +49,7 @@ feature rlig {
 # We have a ligature for 3 kashidas followed by alef.
 feature rlig {
     lookupflag IgnoreMarks;
-    sub kashida-ar.3 alef-ar.fina by alef-ar.fina_Tatweel;
+    sub kashida-ar.3 alef-ar.fina by alef-ar.fina.Tatweel;
 } rlig;
 
 feature ss07 {
@@ -65,5 +65,5 @@ feature ss07 {
     sub kashida-ar.3 by kashida-ar.0 kashida-ar.0 kashida-ar.0;
     sub kashida-ar.2 by kashida-ar.0 kashida-ar.0;
     sub kashida-ar.1 by kashida-ar.0;
-    sub alef-ar.fina_Tatweel by kashida-ar.0 kashida-ar.0 kashida-ar.0 alef-ar.fina;
+    sub alef-ar.fina.Tatweel by kashida-ar.0 kashida-ar.0 kashida-ar.0 alef-ar.fina;
 } ss07;

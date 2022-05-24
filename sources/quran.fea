@@ -40,7 +40,7 @@ feature ccmp {
 @after.isol = [alefMadda-ar alefHamzaabove-ar wawHamzaabove-ar alefHamzabelow-ar alef-ar tehMarbuta-ar dal-ar thal-ar reh-ar zain-ar waw-ar];
 @after.fina = [alefMadda-ar.fina alefHamzaabove-ar.fina wawHamzaabove-ar.fina alefHamzabelow-ar.fina alef-ar.fina tehMarbuta-ar.fina dal-ar.fina thal-ar.fina reh-ar.fina zain-ar.fina waw-ar.fina];
 @before = [@aKashida alefabove-ar.medi yehabove-ar.medi highwaw-ar.medi @before.isol @before.fina];
-@after = [@aKashida alefabove-ar.medi yehabove-ar.medi highwaw-ar.medi alef-ar.fina_Tatweel @after.isol @before.isol @before.init];
+@after = [@aKashida alefabove-ar.medi yehabove-ar.medi highwaw-ar.medi alef-ar.fina.Tatweel @after.isol @before.isol @before.init];
 lookup Before {
     sub @before.isol by @before.init;
     sub @before.fina by @before.medi;
@@ -61,13 +61,13 @@ lookup FloatingHamza {
 } FloatingHamza;
 
 lookup LamAlefIsol {
-    sub lam-ar by lam-ar.init_LamAlfIsol;
-    sub alef-ar by alef-ar.fina_LamAlfIsol;
+    sub lam-ar by lam-ar.init.LamAlfIsol;
+    sub alef-ar by alef-ar.fina.LamAlfIsol;
 } LamAlefIsol;
 
 lookup LamAlefFina {
-    sub lam-ar.fina by lam-ar.medi_LamAlfFina;
-    sub alef-ar by alef-ar.fina_LamAlfFina;
+    sub lam-ar.fina by lam-ar.medi.LamAlfFina;
+    sub alef-ar by alef-ar.fina.LamAlfFina;
 } LamAlefFina;
 
 feature calt {
@@ -83,7 +83,7 @@ feature calt {
 # kern floating hamza between final lam-alef to avoid glyph overlap
 feature kern {
     lookupflag IgnoreMarks;
-    pos hamza-ar.float @aAlf.fina_LamAlfFina <-146 0 0 0>;
+    pos hamza-ar.float @aAlf.fina.LamAlfFina <-146 0 0 0>;
 } kern;
 
 #ifdef QURAN
@@ -118,7 +118,7 @@ feature mark {
     # small waw
     pos [wawSmall-ar.low] [maddalong-ar] <24 0 122 0>;
     # alef
-    pos [alef-ar.fina alef-ar.fina_Wide alef-ar.fina_KafMemAlf alef-ar.fina_MemAlfFina] [maddalong-ar] <122 0 122 0>;
-    pos [alef-ar.fina alef-ar.fina_Wide alef-ar.fina_KafMemAlf alef-ar.fina_MemAlfFina] [madda-ar] <171 0 171 0>;
+    pos [alef-ar.fina alef-ar.fina.Wide alef-ar.fina.KafMemAlf alef-ar.fina.MemAlfFina] [maddalong-ar] <122 0 122 0>;
+    pos [alef-ar.fina alef-ar.fina.Wide alef-ar.fina.KafMemAlf alef-ar.fina.MemAlfFina] [madda-ar] <171 0 171 0>;
     pos [alef-ar] [maddalong-ar] <73 0 146 0>;
 } mark;

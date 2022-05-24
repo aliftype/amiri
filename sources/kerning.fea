@@ -1,18 +1,18 @@
-@Dal_1 = [@aDal.fina @aDal.fina_BaaDal @aDal.fina_KafDal @aDal.fina_LamDal @aDal.isol];
-@1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina_KafHeh @aHeh.fina_LamHeh];
+@Dal_1 = [@aDal.fina @aDal.fina.BaaDal @aDal.fina.KafDal @aDal.fina.LamDal @aDal.isol];
+@1st_4 = [@aHeh.isol @aHeh.fina @aHeh.fina.KafHeh @aHeh.fina.LamHeh];
 # final alef with no hamza above
-@Alf_1 = [alef-ar.fina_LamAlfFina alefHamzabelow-ar.fina_LamAlfFina];
-@Alf_2 = [@aAlf.fina @aAlf.fina_KafAlf @aAlf.fina_KafMemAlf @aAlf.fina_LamAlfFina @aAlf.fina_LamAlfIsol @aAlf.fina_MemAlfFina];
-@Kaf_1 = [@aKaf.init_KafHeh @aKaf.init_KafMemIsol];
-@Kaf_2 = [@aKaf.init_KafBaaInit @aKaf.init_KafMemAlf];
-@Kaf_3 = [@aKaf.init @aKaf.init_KafLam @aKaf.init_PreHeh @aGaf.isol];
-@Kaf_4 = [@aKaf.init_KafYaaIsol];
-@Kaf_5 = [@aKaf.init_KafMemInit @aKaf.init_KafRaaIsol];
-@Raa_1 = [@RaaWaw @aDal.fina @aDal.isol @aDal.fina_BaaDal @aDal.fina_KafDal @aDal.fina_LamDal];
-@Raa_2 = [@aRaa.fina_MemRaaIsol];
-@2nd_3 = [@aSen.init_SenHaaInit @aSad.init_SadHaaInit @aLam.init_LamHaaHaaInit];
-@2nd_4 = [@aSad.init_AboveHaa @aSen.init_AboveHaa @aHeh.init_AboveHaa @aHaa.init_AboveHaa @aMem.init_AboveHaa @aKaf.init_AboveHaa @aAyn.init_AboveHaa];
-@Teh_m = [tehMarbuta-ar.fina_LamHeh tehMarbuta-ar.fina_KafHeh tehMarbutagoal-ar.fina_LamHeh tehMarbutagoal-ar.fina_KafHeh];
+@Alf_1 = [alef-ar.fina.LamAlfFina alefHamzabelow-ar.fina.LamAlfFina];
+@Alf_2 = [@aAlf.fina @aAlf.fina.KafAlf @aAlf.fina.KafMemAlf @aAlf.fina.LamAlfFina @aAlf.fina.LamAlfIsol @aAlf.fina.MemAlfFina];
+@Kaf_1 = [@aKaf.init.KafHeh @aKaf.init.KafMemIsol];
+@Kaf_2 = [@aKaf.init.KafBaaInit @aKaf.init.KafMemAlf];
+@Kaf_3 = [@aKaf.init @aKaf.init.KafLam @aKaf.init.PreHeh @aGaf.isol];
+@Kaf_4 = [@aKaf.init.KafYaaIsol];
+@Kaf_5 = [@aKaf.init.KafMemInit @aKaf.init.KafRaaIsol];
+@Raa_1 = [@RaaWaw @aDal.fina @aDal.isol @aDal.fina.BaaDal @aDal.fina.KafDal @aDal.fina.LamDal];
+@Raa_2 = [@aRaa.fina.MemRaaIsol];
+@2nd_3 = [@aSen.init.SenHaaInit @aSad.init.SadHaaInit @aLam.init.LamHaaHaaInit];
+@2nd_4 = [@aSad.init.AboveHaa @aSen.init.AboveHaa @aHeh.init.AboveHaa @aHaa.init.AboveHaa @aMem.init.AboveHaa @aKaf.init.AboveHaa @aAyn.init.AboveHaa];
+@Teh_m = [tehMarbuta-ar.fina.LamHeh tehMarbuta-ar.fina.KafHeh tehMarbutagoal-ar.fina.LamHeh tehMarbutagoal-ar.fina.KafHeh];
 # teh marbuta
 feature kern {
     # we don't want to kern those if there is tashkil as it touches the kaf
@@ -57,7 +57,7 @@ feature kern {
     # +ve kern so that the tail of raa/waw does not touch the dot of baa
     pos [@RaaWaw @AlefHamzaBelow] @aBaaDotBelow <83 0 83 0>;
     # increase advance width for first glyph in 3-letter Baree Yaa ligatures
-    pos [@aAyn.init @aFaa.init @aHeh.init @aLam.init @aMem.init @aSen.init @aTaa.init hehDoachashmee-ar.init]' lookup YaaBari3Kern @aBaa.medi_YaaBari;
+    pos [@aAyn.init @aFaa.init @aHeh.init @aLam.init @aMem.init @aSen.init @aTaa.init hehDoachashmee-ar.init]' lookup YaaBari3Kern @aBaa.medi.YaaBari;
 } kern;
 
 # we don't want to ignore marks here

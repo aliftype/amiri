@@ -14,20 +14,20 @@
 # https://web.archive.org/web/20120724090018/http://graphics4arab.com/showthread.php?t=3975
 #  and I just adapted it for Amiri.
 lookup HehFinaLellah {
-    sub heh-ar.fina by heh-ar.fina_Lellah;
-    sub hehgoal-ar.fina by heh-ar.fina_Lellah;
+    sub heh-ar.fina by heh-ar.fina.Lellah;
+    sub hehgoal-ar.fina by heh-ar.fina.Lellah;
 } HehFinaLellah;
 
 lookup LamMediFaLellah {
-    sub lam-ar.medi by lam-ar.medi_FaLellah;
+    sub lam-ar.medi by lam-ar.medi.FaLellah;
 } LamMediFaLellah;
 
 lookup LamInitLellah {
-    sub lam-ar.init by lam-ar.init_Lellah;
+    sub lam-ar.init by lam-ar.init.Lellah;
 } LamInitLellah;
 
 lookup LamMediLellah {
-    sub lam-ar.medi by lam-ar.medi_Lellah;
+    sub lam-ar.medi by lam-ar.medi.Lellah;
 } LamMediLellah;
 
 # [اآٱ]
@@ -50,8 +50,8 @@ feature calt {
 
 #else
 lookup LamLamInitX {
-    sub lam-ar.init by lam-ar.init_LamLamInit;
-    sub lam-ar.medi by lam-ar.medi_LamLamInit;
+    sub lam-ar.init by lam-ar.init.LamLamInit;
+    sub lam-ar.medi by lam-ar.medi.LamLamInit;
 } LamLamInitX;
 
 # [بت]
@@ -121,7 +121,7 @@ feature calt {
 
 # Now put shadda+dagger alef above the medial lam if there are no marks on it.
 feature calt {
-    sub lam-ar.medi_Lellah' heh-ar.fina_Lellah by lam-ar.medi_Lellah2;
+    sub lam-ar.medi.Lellah' heh-ar.fina.Lellah by lam-ar.medi.Lellah2;
 } calt;
 
 # This stylistic set removes them.
@@ -130,7 +130,7 @@ feature ss06 {
         name "No automatic vowel insertion above name of God";
     };
 
-    sub lam-ar.medi_Lellah2' by lam-ar.medi_Lellah;
+    sub lam-ar.medi.Lellah2' by lam-ar.medi.Lellah;
 } ss06;
 
 #endif

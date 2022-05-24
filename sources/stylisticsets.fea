@@ -11,24 +11,24 @@ feature ss01 {
 
 #
 lookup MemAlfFina {
-    sub @aAlf.fina by @aAlf.fina_MemAlfFina;
-    sub @aMem.medi by @aMem.medi_MemAlfFina;
-    sub @aSad.medi by @aSad.medi_PreYaa;
-    sub @aSen.medi by @aSen.medi_PreYaa;
-    sub @aBaa.init_BaaSenInit by @aBaa.init_BaaSenAltInit;
-    sub @aSen.medi_BaaSenInit by @aSen.medi_BaaSenAltInit;
+    sub @aAlf.fina by @aAlf.fina.MemAlfFina;
+    sub @aMem.medi by @aMem.medi.MemAlfFina;
+    sub @aSad.medi by @aSad.medi.PreYaa;
+    sub @aSen.medi by @aSen.medi.PreYaa;
+    sub @aBaa.init.BaaSenInit by @aBaa.init.BaaSenAltInit;
+    sub @aSen.medi.BaaSenInit by @aSen.medi.BaaSenAltInit;
 } MemAlfFina;
 
 lookup MemAlfFinaPostTooth {
-    sub @aMem.medi by @aMem.medi_AlfPostTooth;
+    sub @aMem.medi by @aMem.medi.AlfPostTooth;
 } MemAlfFinaPostTooth;
 
 lookup BaaMemAlfFina {
-    sub @aBaa.medi by @aBaa.medi_BaaMemAlfFina;
-    sub @aMem.medi by @aMem.medi_BaaMemAlfFina;
+    sub @aBaa.medi by @aBaa.medi.BaaMemAlfFina;
+    sub @aMem.medi by @aMem.medi.BaaMemAlfFina;
 } BaaMemAlfFina;
 
-@NoMemAlfFina = [@aMem.medi @aMem.medi_LamBaaMemInit @aMem.medi_LamMemInit @aMem.medi_LamHaaMemInit @aMem.medi_BaaMemInit @aMem.medi_LamMemMedi @aMem.medi_SenBaaMemInit @aMem.medi_BaaBaaMemInit @aMem.medi_LamMemInitTatweel @aMem.medi_KafMemMedi @aMem.medi_SenMemInit @aHeh.medi_BaaHehMedi @aHeh.medi_PostTooth];
+@NoMemAlfFina = [@aMem.medi @aMem.medi.LamBaaMemInit @aMem.medi.LamMemInit @aMem.medi.LamHaaMemInit @aMem.medi.BaaMemInit @aMem.medi.LamMemMedi @aMem.medi.SenBaaMemInit @aMem.medi.BaaBaaMemInit @aMem.medi.LamMemInitTatweel @aMem.medi.KafMemMedi @aMem.medi.SenMemInit @aHeh.medi.BaaHehMedi @aHeh.medi.PostTooth];
 feature ss02 {
         featureNames {
         name "Alternate medial Meem and final Alef combination";
@@ -38,7 +38,7 @@ feature ss02 {
     ignore sub @NoMemAlfFina @aMem.medi' @aAlf.fina';
     sub @aBaa.medi' lookup BaaMemAlfFina @aMem.medi' lookup BaaMemAlfFina @aAlf.fina' lookup MemAlfFina;
     sub [@aSad.medi @aSen.medi]' lookup MemAlfFina @aMem.medi' lookup MemAlfFinaPostTooth @aAlf.fina' lookup MemAlfFina;
-    sub @aBaa.init_BaaSenInit' lookup MemAlfFina @aSen.medi_BaaSenInit' lookup MemAlfFina @aMem.medi' lookup MemAlfFinaPostTooth @aAlf.fina' lookup MemAlfFina;
+    sub @aBaa.init.BaaSenInit' lookup MemAlfFina @aSen.medi.BaaSenInit' lookup MemAlfFina @aMem.medi' lookup MemAlfFinaPostTooth @aAlf.fina' lookup MemAlfFina;
     sub @aMem.medi' lookup MemAlfFina @aAlf.fina' lookup MemAlfFina;
 } ss02;
 
