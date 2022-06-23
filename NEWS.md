@@ -1,3 +1,10 @@
+Amiri 0.115 (2022-06-23)
+------------------------
+* Various technical fixes for Google Fonts QA.
+* Improvements to small hamza position below alef maksura.
+* Support extensible overline for all fonts, not only Quran ones.
+* Add minimal set of Latin glyphs to Quran fonts.
+
 Amiri 0.114 (2022-03-08)
 ------------------------
 * Use font bounding box for OS/2.usWinAscent and OS/2.usWinDescent.
@@ -24,7 +31,6 @@ Amiri 0.114 (2022-03-08)
 
 Amiri 0.113 (2020-06-02)
 ------------------------
-
 * Add U+08BA, U+08B6, U+08B7, U+08B8, and U+08B9.
 * Bug fixes:
   - https://github.com/aliftype/amiri/issues/172
@@ -34,7 +40,6 @@ Amiri 0.113 (2020-06-02)
 
 Amiri 0.112 (2019-09-29)
 ------------------------
-
 * Fix dot below (U+065C) and make it rounded not rectangular.
 * Add an Amiri.fontspec file for use with LaTeX fontspec package (#139).
 * Make the build reproducible.
@@ -50,7 +55,6 @@ Amiri 0.112 (2019-09-29)
 
 Amiri 0.111 (2017-12-30)
 ------------------------
-
 * Drop TTF files from the web fonts archive, WOFF and WOFF2 should be all one
   needs now.
 * Cosmetic changes to the CSS snippet.
