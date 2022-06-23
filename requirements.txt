@@ -14,18 +14,29 @@ cffsubr==0.2.9.post1
     # via ufo2ft
 cu2qu==1.6.7.post1
     # via ufo2ft
-fonttools[lxml,ufo]==4.32.0
+defcon==0.10.1
+    # via glyphsets
+fonttools[lxml,ufo,unicode]==4.32.0
     # via
     #   -r requirements.in
     #   booleanoperations
     #   cffsubr
     #   cu2qu
+    #   defcon
+    #   glyphsets
+    #   glyphslib
     #   ufo2ft
     #   ufolib2
 fs==2.4.15
     # via fonttools
+glyphsets==0.5.1
+    # via -r requirements.in
+glyphslib==6.0.5
+    # via glyphsets
 lxml==4.8.0
     # via fonttools
+openstep-plist==0.3.0
+    # via glyphslib
 opentype-sanitizer==8.2.1
     # via -r requirements.in
 pcpp==1.30
@@ -43,7 +54,11 @@ skia-pathops==0.7.2
 ufo2ft[pathops]==2.27.0
     # via -r requirements.in
 ufolib2==0.13.1
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   glyphslib
+unicodedata2==14.0.0
+    # via fonttools
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
