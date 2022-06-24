@@ -2,7 +2,7 @@
 
 NAME=Amiri
 LATIN=AmiriLatin
-VERSION=0.115
+VERSION=0.116
 
 SRC=sources
 BUILDDIR=build
