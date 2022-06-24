@@ -477,11 +477,11 @@ def makeCOLR(font):
         "openkasratan-ar",
         "highwaw-ar",
         "seenabove-ar", # XXX: can be both a mark and a pause
-        "hamza.wasl",
-        "Dot",
-        "TwoDots",
-        "vTwoDots",
-        "ThreeDots",
+        "wasla-ar",
+        "madda-ar",
+        "dot",
+        "twodots",
+        "threedots",
     )
 
     pauses = (
@@ -538,7 +538,7 @@ def makeCOLR(font):
     def getColor(glyphName):
         for names, color in groups.items():
             for name in names:
-                if glyphName == name or glyphName.startswith(name + "."):
+                if glyphName.startswith(name):
                     return palette.index(color)
         return 0xFFFF
 
