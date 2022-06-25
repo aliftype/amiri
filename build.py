@@ -420,7 +420,8 @@ def makeQuran(options):
 
     opts = subset.Options()
     opts.set(layout_features='*', name_IDs='*', name_languages='*',
-        notdef_outline=True, glyph_names=True, layout_scripts="*")
+        notdef_outline=True, glyph_names=True, layout_scripts="*",
+        recalc_average_width=True, recalc_max_context=True)
     subsetter = subset.Subsetter(options=opts)
     subsetter.populate(unicodes=unicodes)
     subsetter.subset(otf)
