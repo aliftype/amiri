@@ -1,3 +1,11 @@
+Amiri 0.117 (2022-07-01)
+------------------------
+Fix erroneously colored glyphs in Amiri Quran Colred.
+
+Amiri 0.116 (2022-06-25)
+------------------------
+Fix missing dot colors in Amiri Quran Colored, a regression from 0.115 release.
+
 Amiri 0.115 (2022-06-23)
 ------------------------
 * Various technical fixes for Google Fonts QA.
