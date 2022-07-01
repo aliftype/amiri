@@ -437,6 +437,7 @@ def makeQuran(options):
 
 
 def makeCOLR(font):
+    import re
     from fontTools.ttLib import getTableModule, newTable
     from fontTools.misc.transform import Identity
 
@@ -480,9 +481,9 @@ def makeCOLR(font):
         "seenabove-ar", # XXX: can be both a mark and a pause
         "wasla-ar",
         "madda-ar",
-        "dot",
-        "twodots",
-        "threedots",
+        "dot.*.-ar",
+        "twodots.*.-ar",
+        "threedots.*.-ar",
     )
 
     pauses = (
@@ -539,7 +540,7 @@ def makeCOLR(font):
     def getColor(glyphName):
         for names, color in groups.items():
             for name in names:
-                if glyphName.startswith(name):
+                if glyphName == name or re.match(name, glyphName):
                     return palette.index(color)
         return 0xFFFF
 
