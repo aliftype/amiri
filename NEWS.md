@@ -1,6 +1,6 @@
 Amiri 0.117 (2022-07-01)
 ------------------------
-Fix erroneously colored glyphs in Amiri Quran Colred.
+Fix erroneously colored glyphs in Amiri Quran Colored.
 
 Amiri 0.116 (2022-06-25)
 ------------------------
