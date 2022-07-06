@@ -33,7 +33,7 @@ glyphsets==0.5.1
     # via -r requirements.in
 glyphslib==6.0.5
     # via glyphsets
-lxml==4.8.0
+lxml==4.9.1
     # via fonttools
 openstep-plist==0.3.0
     # via glyphslib
