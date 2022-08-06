@@ -22,30 +22,14 @@ lookup Sign4 {
 # first we replace any sequence of digits (up to two, three or four places)
 # following a subtending sign by smaller alternates
 feature calt {
-    # Uniscribe or HarfBuzz ‘latn’
-    sub [endofayah-ar] @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
-    sub [endofayah-ar footnotemarker-ar] @Digits' lookup digit2small @Digits' lookup digit2small;
-    sub [endofayah-ar footnotemarker-ar] @Digits' lookup digit2small;
-    sub [number-ar year-ar samvat-ar] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
-    sub [number-ar year-ar pagenumber-ar samvat-ar] @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi;
-    sub [number-ar year-ar pagenumber-ar samvat-ar] @Digits' lookup digit2medi @Digits' lookup digit2medi;
-    sub [number-ar year-ar pagenumber-ar samvat-ar] @Digits' lookup digit2medi;
-    # HarfBuzz ‘arab’
-    sub @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small [endofayah-ar];
-    sub @Digits' lookup digit2small @Digits' lookup digit2small [endofayah-ar footnotemarker-ar];
-    sub @Digits' lookup digit2small [endofayah-ar footnotemarker-ar];
-    sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [number-ar year-ar samvat-ar]' lookup Sign4;
-    sub @Digits' lookup digit2medi @Digits' lookup digit2medi @Digits' lookup digit2medi [number-ar year-ar pagenumber-ar samvat-ar]' lookup Sign3;
-    sub @Digits' lookup digit2medi @Digits' lookup digit2medi [number-ar year-ar pagenumber-ar samvat-ar];
-    sub @Digits' lookup digit2medi [number-ar year-ar pagenumber-ar samvat-ar];
-} calt;
+    sub [endofayah-ar]                                            @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
+    sub [endofayah-ar footnotemarker-ar]                          @Digits' lookup digit2small @Digits' lookup digit2small;
+    sub [endofayah-ar footnotemarker-ar]                          @Digits' lookup digit2small;
 
-# Should have been merged with the Uniscribe lookup above as we do for
-# HarfBuzz, but then Uniscribe would crash
-feature calt {
-    sub number-ar' lookup Sign4 @Digits.medium @Digits.medium @Digits.medium @Digits.medium;
-    sub number-ar' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
-    sub pagenumber-ar' lookup Sign3 @Digits.medium @Digits.medium @Digits.medium;
+    sub [number-ar year-ar samvat-ar]' lookup Sign4               @Digits' lookup digit2medi  @Digits' lookup digit2medi  @Digits' lookup digit2medi @Digits' lookup digit2medi;
+    sub [number-ar year-ar pagenumber-ar samvat-ar]' lookup Sign3 @Digits' lookup digit2medi  @Digits' lookup digit2medi  @Digits' lookup digit2medi;
+    sub [number-ar year-ar pagenumber-ar samvat-ar]               @Digits' lookup digit2medi  @Digits' lookup digit2medi;
+    sub [number-ar year-ar pagenumber-ar samvat-ar]               @Digits' lookup digit2medi;
 } calt;
 
 # Then we contextually kern the sign with the digits so that they get enclosed by it
@@ -58,7 +42,6 @@ feature calt {
 # centering, add it to the sign advance.
 # 
 feature kern {
-    # Uniscribe or HarfBuzz ‘latn’
     pos endofayah-ar @Digits.small' <-1079 0 -292 0> @Digits.small' <-786 0 -292 0> @Digits.small' <-493 0 -292 0>;
     pos endofayah-ar @Digits.small' <-933 0 -292 0> @Digits.small' <-640 0 -292 0>;
     pos endofayah-ar @Digits.small' <-786 0 -292 0>;
@@ -83,29 +66,4 @@ feature kern {
     pos @Pound @Digits' <-1702 0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-532 0 -585 0>;
     pos @Pound @Digits' <-1410 0 -585 0> @Digits' <-825 0 -585 0>;
     pos @Pound @Digits' <-1117 0 -585 0>;
-    # HarfBuzz ‘arab’
-    pos @Digits.small' <-493 0 -292 0> @Digits.small' <-786 0 -292 0> @Digits.small' <-1079 0 -292 0> endofayah-ar;
-    pos @Digits.small' <-640 0 -292 0> @Digits.small' <-933 0 -292 0> endofayah-ar;
-    pos @Digits.small' <-786 0 -292 0> endofayah-ar;
-    pos @Digits.small' <-386 0 -292 0> @Digits.small' <-679 0 -292 0> footnotemarker-ar;
-    pos @Digits.small' <-532 0 -292 0> footnotemarker-ar;
-    pos @Digits.medium' <-646 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> @Digits.medium' <-1964 0 -439 0> number-ar.4;
-    pos @Digits.medium' <-646 0 -439 0> @Digits.medium' <-1085 0 -439 0> @Digits.medium' <-1524 0 -439 0> number-ar.3;
-    pos @Digits.medium' <-670 0 -439 0> @Digits.medium' <-1109 0 -439 0> number-ar;
-    pos @Digits.medium' <-890 0 -439 0> number-ar;
-    pos @Digits.medium' <-452 0 -439 0> @Digits.medium' <-891 0 -439 0> @Digits.medium' <-1331 0 -439 0> @Digits.medium' <-1770 0 -439 0> year-ar;
-    pos @Digits.medium' <-671 0 -439 0> @Digits.medium' <-1111 0 -439 0> @Digits.medium' <-1550 0 -439 0> year-ar;
-    pos @Digits.medium' <-891 0 -439 0> @Digits.medium' <-1331 0 -439 0> year-ar;
-    pos @Digits.medium' <-1111 0 -439 0> year-ar;
-    pos @Digits.medium' <-720 0 -439 0> @Digits.medium' <-1160 0 -439 0> @Digits.medium' <-1599 0 -439 0> pagenumber-ar.3;
-    pos @Digits.medium' <-647 0 -439 0> @Digits.medium' <-1086 0 -439 0> pagenumber-ar;
-    pos @Digits.medium' <-867 0 -439 0> pagenumber-ar;
-    pos @Digits.medium' <-896 0 -439 0> @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> @Digits.medium' <-2215 0 -439 0> samvat-ar;
-    pos @Digits.medium' <-1116 0 -439 0> @Digits.medium' <-1556 0 -439 0> @Digits.medium' <-1995 0 -439 0> samvat-ar;
-    pos @Digits.medium' <-1336 0 -439 0> @Digits.medium' <-1775 0 -439 0> samvat-ar;
-    pos @Digits.medium' <-1556 0 -439 0> samvat-ar;
-    # pos @Digits' <-240  0 -585 0> @Digits' <-825  0 -585 0> @Digits' <-1410 0 -585 0> @Digits' <-1995 0 -585 0> @Pound;
-    pos @Digits' <-532 0 -585 0> @Digits' <-1117 0 -585 0> @Digits' <-1702 0 -585 0> @Pound;
-    pos @Digits' <-825 0 -585 0> @Digits' <-1410 0 -585 0> @Pound;
-    pos @Digits' <-1117 0 -585 0> @Pound;
 } kern;
