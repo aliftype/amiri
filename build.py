@@ -136,10 +136,9 @@ def generateFont(options, font):
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
         from fontTools.ttLib.tables import ttProgram
-        foo = open("foo.fea", "w")
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=featureWriters,
-            filters=filters, debugFeatureFile=foo)
+            filters=filters)
 
         otf["prep"] = prep = newTable("prep")
         prep.program = ttProgram.Program()
