@@ -1,12 +1,3 @@
-# Kashida justification as implemented in most, if not all, applications is
-# broken by design; it inserts kashidas *after* doing OT layout which makes it
-# impossible for OT code to interact with those kashidas breaking all sorts of
-# things.
-# To trick LibreOffice/MS Office to not do kashida justification we set the
-# default kashida to a zero width, blank glyph which makes them to think there
-# is no suitable kashida glyph, resorting back to regular justification
-# To get manually inserted kashida working we use an rlig feature to map to the
-# actual kashida glyph(s).
 feature rlig {
     lookupflag IgnoreMarks;
     sub kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar by kashida-ar.7;
@@ -41,11 +32,6 @@ feature rlig {
     sub @aCurvedKashida' lookup break_kashida @kashida;
 } rlig;
 
-feature rlig {
-    lookupflag IgnoreMarks;
-    sub kashida-ar by kashida-ar.0;
-} rlig;
-
 # We have a ligature for 3 kashidas followed by alef.
 feature rlig {
     lookupflag IgnoreMarks;
@@ -58,12 +44,12 @@ feature ss07 {
     };
 
     lookupflag IgnoreMarks;
-    sub kashida-ar.7 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
-    sub kashida-ar.6 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
-    sub kashida-ar.5 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
-    sub kashida-ar.4 by kashida-ar.0 kashida-ar.0 kashida-ar.0 kashida-ar.0;
-    sub kashida-ar.3 by kashida-ar.0 kashida-ar.0 kashida-ar.0;
-    sub kashida-ar.2 by kashida-ar.0 kashida-ar.0;
-    sub kashida-ar.1 by kashida-ar.0;
-    sub alef-ar.fina.Tatweel by kashida-ar.0 kashida-ar.0 kashida-ar.0 alef-ar.fina;
+    sub kashida-ar.7 by kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.6 by kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.5 by kashida-ar kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.4 by kashida-ar kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.3 by kashida-ar kashida-ar kashida-ar;
+    sub kashida-ar.2 by kashida-ar kashida-ar;
+    sub kashida-ar.1 by kashida-ar;
+    sub alef-ar.fina.Tatweel by kashida-ar kashida-ar kashida-ar alef-ar.fina;
 } ss07;

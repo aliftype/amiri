@@ -342,4 +342,4 @@
 @Tashkil.below = [kasratan-ar kasra-ar dotvowelbelow-ar rhombusStopbelow-ar meembelow-ar openkasratan-ar kasra-ar.small2];
 @RaaWaw = [@aRaa.fina @aRaa.isol @aWaw.fina @aWaw.isol @aRaa.fina.BaaRaaIsol @aWaw.fina.LamWawFina @aRaa.fina.BaaRaaFina @aRaa.fina.KafRaaFina @aRaa.fina.KafRaaIsol @aRaa.fina.HaaRaaIsol @aRaa.fina.LamRaaIsol @aRaa.fina.PostTooth];
 @aCurvedKashida = [kashida-ar.1 kashida-ar.2 kashida-ar.3 kashida-ar.4 kashida-ar.5 kashida-ar.6 kashida-ar.7];
-@aKashida = [kashida-ar kashida-ar.0 @aCurvedKashida];
+@aKashida = [kashida-ar @aCurvedKashida];
