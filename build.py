@@ -502,6 +502,8 @@ def makeCOLR(font):
     hashes = {}
     glyphOrder = list(font.glyphOrder)
     for name in glyphOrder:
+        if name not in font:
+            continue
         glyph = font[name]
         layers = []
         components = [(c, getColor(c.baseGlyph)) for c in glyph.components]
