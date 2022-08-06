@@ -28,9 +28,12 @@ ttf: $(TTF)
 otf: $(OTF)
 doc: $(HTML)
 
-$(BUILDDIR)/%.ufo: $(SRC)/%.glyphs
+$(BUILDDIR)/$(NAME).designspace: $(SRC)/$(NAME).glyphs
 	@echo "   UFO	$@"
 	@glyphs2ufo --minimal --generate-GDEF --output-dir=$(BUILDDIR) $<
+
+$(BUILDDIR)/%.ufo: $(BUILDDIR)/$(NAME).designspace
+	@echo "   UFO	$@"
 
 $(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"

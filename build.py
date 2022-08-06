@@ -29,6 +29,8 @@ from ufo2ft.filters.transformations import TransformationsFilter
 from ufoLib2 import Font
 
 
+REMOVE_GLYPHS = "com.schriftgestaltung.customParameter.GSFontMaster.Remove Glyphs"
+
 def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
     internally for building composite glyph."""
@@ -573,7 +575,17 @@ def _build_production_name(glyph, font):
     return glyph.name
 
 def openFont(path):
-    return Font.open(path, validate=False)
+    font = Font.open(path, validate=False)
+
+    if REMOVE_GLYPHS in font.lib:
+        import re
+        pat = re.compile("(" + "|".join(font.lib[REMOVE_GLYPHS]) + ")")
+        for name in list(font.keys()):
+            if pat.match(name):
+                del font[name]
+
+
+    return font
 
 
 def makeDesktop(options, generate=True):
