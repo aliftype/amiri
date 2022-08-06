@@ -21,55 +21,45 @@ from io import StringIO
 from pcpp.preprocessor import Preprocessor
 
 from ufo2ft import compileOTF, compileTTF
+from ufo2ft.featureWriters import (
+    KernFeatureWriter, MarkFeatureWriter, CursFeatureWriter, GdefFeatureWriter,
+)
 from ufo2ft.filters import FlattenComponentsFilter
-from ufoLib2 import Font
-
 from ufo2ft.filters.transformations import TransformationsFilter
-from fontTools.feaLib import ast
+from ufoLib2 import Font
 
 
 def cleanAnchors(font):
     """Removes anchor classes (and associated lookups) that are used only
     internally for building composite glyph."""
 
-    lookups = (
-            "markDash",
-           #"markDigitAbove",
-            "markDigitBelow",
-            "markDotAbove",
-            "markDotAlt",
-            "markDotBelow",
-            "markDotBelowAlt",
-            "markDotHmaza",
-            "markMarkDotAbove",
-            "markMarkDotBelow",
-            "markRingBelow",
-            "markRingDash",
-            "markStroke",
-           #"markTaaAbove",
-            "markTaaBelow",
-            "markTail",
-            "markTashkilAboveDot",
-            "markTashkilBelowDot",
-            "markTwoDotsAbove",
-            "markTwoDotsBelow",
-            "markTwoDotsBelowAlt",
-            "markVAbove",
-            )
+    anchors = {
+            "Dash",
+           #"DigitAbove",
+            "DigitBelow",
+            "DotAbove",
+            "DotAlt",
+            "DotBelow",
+            "DotBelowAlt",
+            "DotHmaza",
+            "MarkDotAbove",
+            "MarkDotBelow",
+            "RingBelow",
+            "RingDash",
+            "Stroke",
+           #"TaaAbove",
+            "TaaBelow",
+            "Tail",
+            "TashkilAboveDot",
+            "TashkilBelowDot",
+            "TwoDotsAbove",
+            "TwoDotsBelow",
+            "TwoDotsBelowAlt",
+            "VAbove",
+    }
 
-    def keep(s):
-        if isinstance(s, ast.LookupBlock) and s.name in lookups:
-            return False
-        if isinstance(s, ast.LookupReferenceStatement) and s.lookup.name in lookups:
-            return False
-        return True
-
-    glyphnames = set(g.name for g in font)
-    fea = font.features.text = parseFea(font.features.text, glyphnames)
-    fea.statements = [s for s in fea.statements if  keep(s)]
-    for block in fea.statements:
-        if hasattr(block, "statements"):
-            block.statements = [s for s in block.statements if keep(s)]
+    for glyph in font:
+        glyph.anchors = [a for a in glyph.anchors if a.name not in anchors]
 
 
 def generateFeatures(font, args):
@@ -89,8 +79,7 @@ def generateFeatures(font, args):
         preprocessor.parse(f)
     o = StringIO()
     preprocessor.write(o)
-    fea = o.getvalue()
-    font.features.text = fea.replace("#{%anchors%}", font.features.text.asFea())
+    font.features.text = o.getvalue() + font.features.text
 
 
 def generateFont(options, font):
@@ -106,15 +95,49 @@ def generateFont(options, font):
     info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
     info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
 
-    featureWriters = []
+    markWriter = MarkFeatureWriter(features=["mark", "mkmk"])
+    # ufo2ft mark feature writer decides what feature to use for what glyph
+    # based on script, and it classifies kashida-ar with scripts using abvm
+    # feature and doesn’t add it to mark feature, which is not what we want.
+    markWriter.scriptsUsingAbvm = set()
+
+    # Maintain our desired lookup order.
+    markWriter.anchorSortKey = {
+        "_MarkAbove": -1,
+        "_MarkBelow": -2,
+        "_HamzaAbove": -3,
+        "_TaaAbove": -4,
+        "_TashkilAbove": -5,
+        "_TashkilBelow": -6,
+        "_HamzaBelow": -7,
+        "_AlefAbove": -8,
+        "_DigitAbove": -9,
+
+        "_TashkilTashkilAbove": -10,
+        "_TashkilTashkilAbove2": -11,
+        "_TashkilTashkilBelow": -12,
+        "_TashkilBelowHamza": -13,
+
+        "_SeenAbove": -14,
+        "_SeenBelow": -15,
+        "_NoonAbove": -16,
+    }
+
+    featureWriters = [
+        GdefFeatureWriter(),
+        CursFeatureWriter(),
+        KernFeatureWriter(features=["kern"]),
+        markWriter,
+    ]
     filters = [..., FlattenComponentsFilter()]
 
     if options.output.endswith(".ttf"):
         from fontTools.ttLib import newTable
         from fontTools.ttLib.tables import ttProgram
+        foo = open("foo.fea", "w")
         otf = compileTTF(font, inplace=True, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=featureWriters,
-            filters=filters)
+            filters=filters, debugFeatureFile=foo)
 
         otf["prep"] = prep = newTable("prep")
         prep.program = ttProgram.Program()
@@ -143,6 +166,7 @@ def drawOverline(font, name, uni, pos, thickness, width):
         glyph.width = 0
 
     pen = glyph.getPen()
+    glyph.clear()
 
     pen.moveTo((-50, pos))
     pen.lineTo((-50, pos + thickness))
@@ -154,11 +178,12 @@ def drawOverline(font, name, uni, pos, thickness, width):
 
 
 def makeOverLine(font, posGlyph="qafLamAlefMaksuraabove-ar"):
+    from fontTools.feaLib import ast
+
     pos = font[posGlyph].getBounds(font).yMax
     thickness = font.info.postscriptUnderlineThickness
     minwidth = 100
 
-    _, gdefclasses = findGDEF(font)
     # collect glyphs grouped by their widths rounded by 100 units, we will use
     # them to decide the widths of over/underline glyphs we will draw
     widths = {}
@@ -190,37 +215,10 @@ def makeOverLine(font, posGlyph="qafLamAlefMaksuraabove-ar"):
                                        [ast.GlyphName(replace)],
                                        [ast.GlyphClass(widths[width])],
                                        [], False)
-        gdefclasses.markGlyphs.glyphclass.glyphs.append(replace)
+        font.lib["public.openTypeCategories"][replace] = "mark"
         mark.statements.append(sub)
 
-    font.features.text.statements.append(mark)
-
-
-def parseFea(text, font=None):
-    from fontTools.feaLib.parser import Parser
-
-    if isinstance(text, ast.FeatureFile):
-        return text
-    f = StringIO(text)
-    fea = Parser(f, font or []).parse()
-    return fea
-
-
-def findGDEF(font):
-    glyphnames = set(g.name for g in font)
-    fea = font.features.text = parseFea(font.features.text)
-    gdef = None
-    classes = None
-    for block in fea.statements:
-        if isinstance(block, ast.TableBlock) and block.name == "GDEF":
-            gdef = block
-            for statement in block.statements:
-                if isinstance(statement, ast.GlyphClassDefStatement):
-                    classes = statement
-                    break
-            break
-
-    return gdef, classes
+    font.features.text += str(mark)
 
 
 def mergeLatin(font):
@@ -232,36 +230,10 @@ def mergeLatin(font):
         except KeyError:
             pass
 
-    # Merge features
-    gdef, classes = findGDEF(font)
-    fea = font.features.text
-    latinfea = parseFea(latin.features.text)
-    for block in latinfea.statements:
-        if isinstance(block, ast.TableBlock) and block.name == "GDEF":
-            for st in block.statements:
-                if isinstance(st, ast.GlyphClassDefStatement):
-                    for n in ("base", "component", "ligature", "mark"):
-                        this = getattr(classes, n + "Glyphs")
-                        other = getattr(st, n + "Glyphs")
-                        this.glyphclass.glyphs.extend(other.glyphSet())
-                else:
-                    gdef.statements.append(st)
-        else:
-            fea.statements.append(block)
-    font.features.text = fea
     font.glyphOrder += latin.glyphOrder
-
-
-def transformAnchor(anchor, matrix):
-    if not anchor:
-        return anchor
-
-    from fontTools.misc.fixedTools import otRound
-    anchor.x, anchor.y = matrix.transformPoint((anchor.x, anchor.y))
-    anchor.x = otRound(anchor.x)
-    anchor.y = otRound(anchor.y)
-
-    return anchor
+    font.lib["public.openTypeCategories"].update(latin.lib["public.openTypeCategories"])
+    font.groups.update(latin.groups)
+    font.kerning.update(latin.kerning)
 
 
 def makeSlanted(options):
@@ -293,20 +265,7 @@ def makeSlanted(options):
         info.styleMapFamilyName = info.familyName
         info.styleMapStyleName = "italic"
 
-    matrix = skew.context.matrix
     mergeLatin(font)
-    fea = font.features.text
-    for block in fea.statements:
-        if isinstance(block, (ast.LookupBlock, ast.FeatureBlock)):
-            for st in block.statements:
-                if isinstance(st, (ast.MarkMarkPosStatement, ast.MarkBasePosStatement)):
-                    st.marks = [(transformAnchor(a, matrix), m) for a, m in st.marks]
-                elif isinstance(st, ast.MarkClassDefinition):
-                    st.anchor = transformAnchor(st.anchor, matrix)
-                elif isinstance(st, ast.CursivePosStatement):
-                    st.entryAnchor = transformAnchor(st.entryAnchor, matrix)
-                    st.exitAnchor = transformAnchor(st.exitAnchor, matrix)
-
     makeOverLine(font, posGlyph="uni0305")
     otf = generateFont(options, font)
     otf.save(options.output)
@@ -335,10 +294,11 @@ def scaleGlyph(font, glyph, scale):
     pen = TransformPointPen(glyph.getPointPen(), matrix)
     rec.replay(pen)
 
+    for a in glyph.anchors:
+        a.x, a.y = matrix.transformPoint((a.x, a.y))
+
     if width == 0:
         glyph.width = width
-
-    return matrix
 
 
 def makeQuran(options):
@@ -357,7 +317,6 @@ def makeQuran(options):
     info.openTypeOS2TypoAscender = info.openTypeHheaAscender = 1815
 
     # scale some vowel marks and dots down a bit
-    fea = font.features.text
     marks = [
         "fathatan-ar", "dammatan-ar", "fatha-ar", "damma-ar", "hahabove-ar",
         "openfathatan-ar", "opendammatan-ar", "openkasratan-ar",
@@ -367,14 +326,7 @@ def makeQuran(options):
     shadda = ["shadda-ar"]
     for scale, names in ((0.9, marks), (0.8, shadda)):
         for name in names:
-            matrix = scaleGlyph(font, font[name], scale)
-
-            for block in fea.statements:
-                for s in getattr(block, "statements", []):
-                    if isinstance(s, ast.MarkClassDefinition) and name in s.glyphSet():
-                        s.anchor = transformAnchor(s.anchor, matrix)
-                    if isinstance(s, ast.MarkMarkPosStatement) and name in s.baseMarks.glyphSet():
-                        s.marks = [(transformAnchor(a, matrix), m) for a, m in s.marks]
+            scaleGlyph(font, font[name], scale)
 
     # create overline glyph to be used for sajda line, it is positioned
     # vertically at the level of the base of waqf marks
@@ -621,8 +573,8 @@ def _build_production_name(glyph, font):
     return glyph.name
 
 def openFont(path):
-#   font = Font(validate=False)
-    font = Font.open(path)
+    font = Font.open(path, validate=False)
+    font.features.text = ""
 
     return font
 

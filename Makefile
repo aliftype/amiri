@@ -31,7 +31,7 @@ doc: $(HTML)
 $(BUILDDIR)/%.ufo: $(SRC)/%.sfd
 	@echo "   UFO	$@"
 	@mkdir -p $(BUILDDIR)
-	@sfd2ufo --minimal $< $@
+	@sfd2ufo --minimal --ufo-anchors --ufo-kerning $< $@
 
 $(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(BUILDDIR)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"

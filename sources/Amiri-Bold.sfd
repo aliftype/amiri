@@ -89,6 +89,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
+WinInfo: 1577 19 17
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -92534,6 +92535,7 @@ EndChar
 StartChar: kashida-ar
 Encoding: 1600 1600 6032
 Width: 185
+GlyphClass: 2
 AnchorPoint: "HamzaBelow" 93 -92.7734 basechar 0
 AnchorPoint: "HamzaAbove" 93 244 basechar 0
 AnchorPoint: "NoonAbove" 93 244 basechar 0
