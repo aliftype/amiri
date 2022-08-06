@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hahTahTwodotshorizontalabove-ar.medi.MemHaaMemInit" format="2">
+	<advance width="195"/>
+	<outline>
+		<component base="aHaa.medi.MemHaaMemInit"/>
+		<component base="tahbelow-ar" xOffset="282" yOffset="-170"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="297" yOffset="-299"/>
+	</outline>
+	<anchor name="TashkilAbove" x="122" y="801"/>
+	<anchor name="TashkilBelow" x="155" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="nyeh-ar.medi" format="2">
+	<advance width="610"/>
+	<outline>
+		<component base="aHaa.medi"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="293" yOffset="-161"/>
+	</outline>
+	<anchor name="TashkilAbove" x="317" y="801"/>
+	<anchor name="TashkilBelow" x="293" y="-327"/>
+</glyph>

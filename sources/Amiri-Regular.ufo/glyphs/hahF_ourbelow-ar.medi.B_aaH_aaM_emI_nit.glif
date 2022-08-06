@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hahFourbelow-ar.medi.BaaHaaMemInit" format="2">
+	<advance width="209"/>
+	<outline>
+		<component base="aHaa.medi.BaaHaaMemInit"/>
+		<component base="fourbelow-ar" xOffset="149" yOffset="-423"/>
+	</outline>
+	<anchor name="TashkilAbove" x="154" y="801"/>
+	<anchor name="TashkilBelow" x="149" y="-379"/>
+</glyph>

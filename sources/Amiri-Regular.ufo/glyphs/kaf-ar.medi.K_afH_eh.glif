@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kaf-ar.medi.KafHeh" format="2">
+	<advance width="463"/>
+	<outline>
+		<component base="aKaf.medi.KafHeh"/>
+	</outline>
+	<anchor name="TashkilAbove" x="172" y="801"/>
+	<anchor name="TashkilBelow" x="196" y="-327"/>
+</glyph>

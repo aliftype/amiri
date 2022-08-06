@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lam-ar.init.LamAlfIsol" format="2">
+	<advance width="302"/>
+	<outline>
+		<component base="aLam.init.LamAlfIsol"/>
+	</outline>
+	<anchor name="TashkilAbove" x="195" y="801"/>
+	<anchor name="TashkilBelow" x="117" y="-356"/>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dalDotbelowTah-ar" format="2">
+	<unicode hex="068B"/>
+	<advance width="450"/>
+	<outline>
+		<component base="aDal.isol"/>
+		<component base="smalltaa.above" xOffset="205" yOffset="537"/>
+		<component base="dotbelow-ar" xOffset="244" yOffset="-215"/>
+	</outline>
+	<anchor name="TashkilAbove" x="186" y="854"/>
+	<anchor name="TashkilBelow" x="244" y="-327"/>
+</glyph>

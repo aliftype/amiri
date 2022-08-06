@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="meemDotabove-ar.init" format="2">
+	<advance width="389"/>
+	<outline>
+		<component base="aMem.init"/>
+		<component base="dotabove-ar" xOffset="233" yOffset="376"/>
+	</outline>
+	<anchor name="TashkilAbove" x="195" y="801"/>
+	<anchor name="TashkilBelow" x="195" y="-327"/>
+</glyph>

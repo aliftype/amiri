@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aBaa.fina.BaaBaaIsol" format="2">
+	<advance width="772"/>
+	<outline>
+		<contour>
+			<point x="788" y="143" type="curve"/>
+			<point x="816" y="125"/>
+			<point x="819" y="95"/>
+			<point x="798" y="51" type="curve"/>
+			<point x="786" y="29"/>
+			<point x="770" y="22"/>
+			<point x="749" y="32" type="curve"/>
+			<point x="642" y="-37"/>
+			<point x="502" y="-72"/>
+			<point x="329" y="-72" type="curve"/>
+			<point x="171" y="-72"/>
+			<point x="81" y="-26"/>
+			<point x="59" y="65" type="curve" smooth="yes"/>
+			<point x="50" y="102"/>
+			<point x="51" y="139"/>
+			<point x="62" y="174" type="curve" smooth="yes"/>
+			<point x="73" y="209"/>
+			<point x="87" y="236"/>
+			<point x="106" y="256" type="curve" smooth="yes"/>
+			<point x="114" y="265"/>
+			<point x="123" y="266"/>
+			<point x="132" y="259" type="curve" smooth="yes"/>
+			<point x="141" y="252"/>
+			<point x="139" y="240"/>
+			<point x="128" y="226" type="curve" smooth="yes"/>
+			<point x="110" y="203"/>
+			<point x="102" y="179"/>
+			<point x="104" y="155" type="curve" smooth="yes"/>
+			<point x="109" y="87"/>
+			<point x="201" y="53"/>
+			<point x="381" y="53" type="curve" smooth="yes"/>
+			<point x="464" y="53"/>
+			<point x="548" y="64"/>
+			<point x="632" y="85" type="curve" smooth="yes"/>
+			<point x="679" y="97"/>
+			<point x="708" y="107"/>
+			<point x="718" y="116" type="curve" smooth="yes"/>
+			<point x="728" y="125"/>
+			<point x="738" y="143"/>
+			<point x="747" y="170" type="curve" smooth="yes"/>
+			<point x="753" y="187"/>
+			<point x="763" y="193"/>
+			<point x="778" y="188" type="curve" smooth="yes"/>
+			<point x="793" y="183"/>
+			<point x="797" y="168"/>
+		</contour>
+	</outline>
+	<anchor name="DigitBelow" x="415" y="-205"/>
+	<anchor name="VAbove" x="423" y="425"/>
+	<anchor name="RingBelow" x="381" y="-10"/>
+	<anchor name="TaaAbove" x="423" y="327"/>
+	<anchor name="TashkilBelow" x="464" y="-327"/>
+	<anchor name="TashkilAbove" x="423" y="801"/>
+	<anchor name="TwoDotsBelow" x="361" y="-156"/>
+	<anchor name="TwoDotsAbove" x="369" y="425"/>
+	<anchor name="DotBelow" x="415" y="-205"/>
+	<anchor name="HamzaBelow" x="415" y="-205"/>
+	<anchor name="DotAbove" x="423" y="425"/>
+	<anchor name="HamzaAbove" x="423" y="425"/>
+</glyph>

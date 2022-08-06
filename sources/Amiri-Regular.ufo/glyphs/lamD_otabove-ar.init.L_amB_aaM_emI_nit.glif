@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamDotabove-ar.init.LamBaaMemInit" format="2">
+	<advance width="190"/>
+	<outline>
+		<component base="aLam.init.LamBaaMemInit"/>
+		<component base="dotabove-ar" xOffset="59" yOffset="754"/>
+	</outline>
+	<anchor name="TashkilAbove" x="49" y="901"/>
+	<anchor name="TashkilBelow" x="176" y="-327"/>
+</glyph>

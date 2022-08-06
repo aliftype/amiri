@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehRohingya-ar" format="2">
+	<unicode hex="08AC"/>
+	<advance width="571"/>
+	<outline>
+		<contour>
+			<point x="431" y="273" type="curve"/>
+			<point x="399" y="276"/>
+			<point x="370" y="259"/>
+			<point x="344" y="222" type="curve"/>
+			<point x="337" y="213"/>
+			<point x="340" y="198"/>
+			<point x="355" y="178" type="curve" smooth="yes"/>
+			<point x="370" y="158"/>
+			<point x="386" y="148"/>
+			<point x="406" y="148" type="curve" smooth="yes"/>
+			<point x="426" y="148"/>
+			<point x="448" y="162"/>
+			<point x="472" y="187" type="curve"/>
+			<point x="474" y="238"/>
+			<point x="460" y="266"/>
+		</contour>
+		<contour>
+			<point x="476" y="379" type="curve" smooth="yes"/>
+			<point x="480" y="379"/>
+			<point x="483" y="378"/>
+			<point x="486" y="377" type="curve" smooth="yes"/>
+			<point x="502" y="367"/>
+			<point x="512" y="349"/>
+			<point x="517" y="322" type="curve" smooth="yes"/>
+			<point x="526" y="271"/>
+			<point x="520" y="223"/>
+			<point x="500" y="179" type="curve" smooth="yes"/>
+			<point x="490" y="158"/>
+			<point x="477" y="136"/>
+			<point x="463" y="115" type="curve"/>
+			<point x="504" y="100"/>
+			<point x="541" y="91"/>
+			<point x="572" y="90" type="curve" smooth="yes"/>
+			<point x="578" y="90"/>
+			<point x="582" y="81"/>
+			<point x="583" y="65" type="curve" smooth="yes"/>
+			<point x="587" y="22"/>
+			<point x="583" y="1"/>
+			<point x="572" y="0" type="curve" smooth="yes"/>
+			<point x="517" y="-6"/>
+			<point x="448" y="14"/>
+			<point x="365" y="58" type="curve"/>
+			<point x="281" y="14"/>
+			<point x="202" y="-3"/>
+			<point x="127" y="7" type="curve" smooth="yes"/>
+			<point x="120" y="8"/>
+			<point x="116" y="1"/>
+			<point x="113" y="-13" type="curve" smooth="yes"/>
+			<point x="111" y="-25"/>
+			<point x="109" y="-48"/>
+			<point x="110" y="-83" type="curve" smooth="yes"/>
+			<point x="111" y="-143"/>
+			<point x="111" y="-178"/>
+			<point x="111" y="-188" type="curve" smooth="yes"/>
+			<point x="111" y="-194"/>
+			<point x="109" y="-197"/>
+			<point x="104" y="-198" type="curve" smooth="yes"/>
+			<point x="99" y="-199"/>
+			<point x="96" y="-195"/>
+			<point x="95" y="-188" type="curve" smooth="yes"/>
+			<point x="82" y="-117"/>
+			<point x="71" y="-36"/>
+			<point x="63" y="56" type="curve" smooth="yes"/>
+			<point x="60" y="85"/>
+			<point x="72" y="99"/>
+			<point x="96" y="95" type="curve" smooth="yes"/>
+			<point x="165" y="84"/>
+			<point x="232" y="91"/>
+			<point x="299" y="116" type="curve"/>
+			<point x="294" y="146"/>
+			<point x="298" y="177"/>
+			<point x="311" y="211" type="curve" smooth="yes"/>
+			<point x="332" y="266"/>
+			<point x="369" y="314"/>
+			<point x="424" y="355" type="curve" smooth="yes"/>
+			<point x="445" y="371"/>
+			<point x="462" y="379"/>
+		</contour>
+		<component base="twodotshorizontalbelow-ar" xOffset="379" yOffset="-215"/>
+	</outline>
+	<anchor name="TashkilAbove" x="413" y="801"/>
+	<anchor name="TashkilBelow" x="354" y="-327"/>
+</glyph>

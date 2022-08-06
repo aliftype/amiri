@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonVabove-ar.medi.BaaMemAlfFina" format="2">
+	<advance width="235"/>
+	<outline>
+		<component base="aBaa.medi.BaaMemAlfFina"/>
+		<component base="dotabove-ar" xOffset="98" yOffset="322"/>
+		<component base="vabove-ar" xOffset="74" yOffset="54"/>
+	</outline>
+	<anchor name="TashkilAbove" x="187" y="801"/>
+	<anchor name="TashkilBelow" x="187" y="-327"/>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="peh-ar.init.BaaRaaIsol" format="2">
+	<advance width="185"/>
+	<outline>
+		<component base="aBaa.init.BaaRaaIsol"/>
+		<component base="threedotsdownbelow-ar" xOffset="136" yOffset="-288"/>
+	</outline>
+	<anchor name="TaaAbove" x="119" y="366"/>
+	<anchor name="TashkilAbove" x="119" y="801"/>
+	<anchor name="TashkilBelow" x="95" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCF2" format="2">
+	<unicode hex="FCF2"/>
+	<advance width="185"/>
+	<outline>
+		<component base="fatha-ar.small" xOffset="84" yOffset="51"/>
+		<component base="shadda-ar" xOffset="-116"/>
+		<component base="kashida-ar.1"/>
+	</outline>
+</glyph>

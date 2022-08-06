@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alef-ar.fina.MemAlfFina" format="2">
+	<advance width="194"/>
+	<outline>
+		<component base="aAlf.fina.MemAlfFina"/>
+	</outline>
+	<anchor name="entry" x="194" y="-102"/>
+	<anchor name="TashkilAbove" x="49" y="801"/>
+	<anchor name="TashkilBelow" x="132" y="-327"/>
+</glyph>

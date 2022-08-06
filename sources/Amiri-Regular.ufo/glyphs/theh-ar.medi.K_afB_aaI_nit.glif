@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="theh-ar.medi.KafBaaInit" format="2">
+	<advance width="219"/>
+	<outline>
+		<component base="aBaa.medi.KafBaaInit"/>
+		<component base="threedotsupabove-ar" xOffset="79" yOffset="596"/>
+	</outline>
+	<anchor name="TashkilAbove" x="21" y="868"/>
+	<anchor name="TashkilBelow" x="98" y="-327"/>
+</glyph>

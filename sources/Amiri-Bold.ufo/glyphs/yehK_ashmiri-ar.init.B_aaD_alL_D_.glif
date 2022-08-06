@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehKashmiri-ar.init.BaaDalLD" format="2">
+	<advance width="170"/>
+	<outline>
+		<component base="aBaa.init.BaaDal"/>
+		<component base="ring.below" xOffset="39" yOffset="-269"/>
+	</outline>
+	<anchor name="TashkilAbove" x="76" y="801"/>
+	<anchor name="TashkilBelow" x="39" y="-464"/>
+</glyph>

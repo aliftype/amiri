@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="beheh-ar.init.BaaBaaIsolLD" format="2">
+	<advance width="247"/>
+	<outline>
+		<component base="aBaa.init.BaaBaaIsol"/>
+		<component base="fourdotsbelow-ar.l" xOffset="127" yOffset="-537"/>
+	</outline>
+	<anchor name="exit" x="0" y="83"/>
+	<anchor name="TashkilAbove" x="122" y="801"/>
+	<anchor name="TashkilBelow" x="127" y="-581"/>
+</glyph>

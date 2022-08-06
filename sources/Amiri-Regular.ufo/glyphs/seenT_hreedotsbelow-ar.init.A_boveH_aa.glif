@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenThreedotsbelow-ar.init.AboveHaa" format="2">
+	<advance width="671"/>
+	<outline>
+		<component base="aSen.init.AboveHaa"/>
+		<component base="threedotsdownbelow-ar" xOffset="471" yOffset="-151"/>
+	</outline>
+	<anchor name="exit" x="0" y="203"/>
+	<anchor name="TashkilAbove" x="375" y="801"/>
+	<anchor name="TashkilBelow" x="510" y="-172"/>
+</glyph>

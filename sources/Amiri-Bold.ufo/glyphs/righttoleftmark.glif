@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="righttoleftmark" format="2">
+	<unicode hex="200F"/>
+	<outline>
+		<component base="lefttorightmark" xScale="-1"/>
+	</outline>
+</glyph>

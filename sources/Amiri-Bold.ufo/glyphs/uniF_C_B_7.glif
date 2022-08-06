@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCB7" format="2">
+	<unicode hex="FCB7"/>
+	<advance width="824"/>
+	<outline>
+		<component base="meem-ar.medi.SenMemInit"/>
+		<component base="dad-ar.init.SadMemInit" xOffset="174"/>
+	</outline>
+</glyph>

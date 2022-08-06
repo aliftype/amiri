@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefTwoabove-ar.fina.KafMemAlf" format="2">
+	<advance width="268"/>
+	<outline>
+		<component base="aAlf.fina.KafMemAlf" xOffset="96"/>
+		<component base="twoabove-ar" xOffset="91" yOffset="482"/>
+	</outline>
+	<anchor name="TashkilAbove" x="91" y="897"/>
+	<anchor name="TashkilBelow" x="96" y="-327"/>
+</glyph>

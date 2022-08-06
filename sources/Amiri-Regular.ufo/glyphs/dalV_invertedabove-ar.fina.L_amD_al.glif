@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dalVinvertedabove-ar.fina.LamDal" format="2">
+	<advance width="488"/>
+	<outline>
+		<component base="aDal.fina.LamDal"/>
+		<component base="vinvertedabove-ar" xOffset="240" yOffset="36"/>
+	</outline>
+	<anchor name="TashkilAbove" x="171" y="801"/>
+	<anchor name="TashkilBelow" x="216" y="-327"/>
+</glyph>

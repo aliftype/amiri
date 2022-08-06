@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathaCurly-ar" format="2">
+	<unicode hex="08E4"/>
+	<outline>
+		<contour>
+			<point x="329" y="1048" type="curve" smooth="yes"/>
+			<point x="358" y="1020"/>
+			<point x="370" y="992"/>
+			<point x="364" y="967" type="curve"/>
+			<point x="358" y="937"/>
+			<point x="325" y="917"/>
+			<point x="266" y="907" type="curve" smooth="yes"/>
+			<point x="232" y="901"/>
+			<point x="211" y="894"/>
+			<point x="202" y="883" type="curve"/>
+			<point x="190" y="865"/>
+			<point x="192" y="846"/>
+			<point x="209" y="824" type="curve" smooth="yes"/>
+			<point x="214" y="817"/>
+			<point x="216" y="812"/>
+			<point x="213" y="809" type="curve" smooth="yes"/>
+			<point x="210" y="806"/>
+			<point x="205" y="805"/>
+			<point x="199" y="805" type="curve" smooth="yes"/>
+			<point x="193" y="805"/>
+			<point x="182" y="815"/>
+			<point x="169" y="834" type="curve" smooth="yes"/>
+			<point x="142" y="872"/>
+			<point x="140" y="901"/>
+			<point x="160" y="923" type="curve"/>
+			<point x="171" y="937"/>
+			<point x="194" y="946"/>
+			<point x="227" y="952" type="curve" smooth="yes"/>
+			<point x="260" y="958"/>
+			<point x="283" y="965"/>
+			<point x="296" y="973" type="curve" smooth="yes"/>
+			<point x="315" y="985"/>
+			<point x="323" y="1000"/>
+			<point x="318" y="1019" type="curve" smooth="yes"/>
+			<point x="316" y="1025"/>
+			<point x="311" y="1030"/>
+			<point x="304" y="1037" type="curve" smooth="yes"/>
+			<point x="297" y="1044"/>
+			<point x="294" y="1052"/>
+			<point x="296" y="1058" type="curve" smooth="yes"/>
+			<point x="300" y="1069"/>
+			<point x="311" y="1066"/>
+		</contour>
+	</outline>
+	<anchor name="_TashkilAboveDot" x="271" y="801"/>
+	<anchor name="_TashkilAbove" x="271" y="801"/>
+	<anchor name="TashkilTashkilAbove" x="145" y="955"/>
+	<anchor name="_MarkAbove" x="268" y="801"/>
+</glyph>

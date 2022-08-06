@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDB8" format="2">
+	<unicode hex="FDB8"/>
+	<advance width="1253"/>
+	<outline>
+		<component base="hah-ar.medi"/>
+		<component base="jeem-ar.medi.SadHaaInit" xOffset="610"/>
+		<component base="noon-ar.init.BaaHaaInit" xOffset="666"/>
+	</outline>
+</glyph>

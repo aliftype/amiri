@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="doublerightarrowheadDotabove-ar" format="2">
+	<unicode hex="08FC"/>
+	<outline>
+		<contour>
+			<point x="-91" y="978" type="line" smooth="yes"/>
+			<point x="-90" y="979"/>
+			<point x="-90" y="979"/>
+			<point x="-89" y="979" type="curve" smooth="yes"/>
+			<point x="-78" y="979"/>
+			<point x="-66" y="972"/>
+			<point x="-52" y="958" type="curve" smooth="yes"/>
+			<point x="-50" y="956"/>
+			<point x="-50" y="954"/>
+			<point x="-51" y="953" type="curve" smooth="yes"/>
+			<point x="-75" y="916" type="line" smooth="yes"/>
+			<point x="-76" y="914"/>
+			<point x="-78" y="914"/>
+			<point x="-80" y="916" type="curve" smooth="yes"/>
+			<point x="-82" y="918"/>
+			<point x="-89" y="922"/>
+			<point x="-100" y="929" type="curve" smooth="yes"/>
+			<point x="-111" y="936"/>
+			<point x="-116" y="938"/>
+			<point x="-116" y="939" type="curve" smooth="yes"/>
+			<point x="-116" y="941" type="line" smooth="yes"/>
+		</contour>
+		<component base="doublerightarrowheadabove-ar"/>
+	</outline>
+	<anchor name="_TashkilTashkilAbove" x="107" y="845"/>
+	<anchor name="TashkilTashkilAbove" x="106" y="1060"/>
+	<anchor name="_MarkAbove" x="107" y="845"/>
+	<anchor name="_TashkilAboveDot" x="107" y="845"/>
+	<anchor name="_TashkilAbove" x="107" y="845"/>
+</glyph>

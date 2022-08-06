@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehVabove-ar.init.BaaHaaInit" format="2">
+	<advance width="587"/>
+	<outline>
+		<component base="aBaa.init.BaaHaaInit"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="464" yOffset="-166"/>
+		<component base="vabove-ar" xOffset="347" yOffset="220"/>
+	</outline>
+	<anchor name="TashkilAbove" x="347" y="903"/>
+	<anchor name="TashkilBelow" x="459" y="-327"/>
+</glyph>

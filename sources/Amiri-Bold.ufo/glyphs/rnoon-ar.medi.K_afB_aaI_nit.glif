@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rnoon-ar.medi.KafBaaInit" format="2">
+	<advance width="219"/>
+	<outline>
+		<component base="aBaa.medi.KafBaaInit"/>
+		<component base="smalltaa.above" xOffset="88" yOffset="591"/>
+	</outline>
+	<anchor name="TashkilAbove" x="68" y="908"/>
+	<anchor name="TashkilBelow" x="98" y="-327"/>
+</glyph>

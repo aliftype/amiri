@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC25" format="2">
+	<unicode hex="FC25"/>
+	<advance width="1098"/>
+	<outline>
+		<component base="meem-ar.fina.PostTooth"/>
+		<component base="dad-ar.init.PreYaa" xOffset="565"/>
+	</outline>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hahTahabove-ar.init.HaaMemInit" format="2">
+	<advance width="514"/>
+	<outline>
+		<component base="aHaa.init.HaaMemInit"/>
+		<component base="smalltaa.above" xOffset="387" yOffset="563"/>
+	</outline>
+	<anchor name="TashkilAbove" x="367" y="880"/>
+	<anchor name="TashkilBelow" x="333" y="-327"/>
+</glyph>

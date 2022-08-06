@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCD1" format="2">
+	<unicode hex="FCD1"/>
+	<advance width="454"/>
+	<outline>
+		<component base="meem-ar.medi.SenMemInit"/>
+		<component base="meem-ar.init.MemMemInit" xOffset="174"/>
+	</outline>
+</glyph>

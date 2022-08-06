@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seen-ar.init.SenMemInit" format="2">
+	<advance width="525"/>
+	<outline>
+		<component base="aSen.init.SenMemInit"/>
+	</outline>
+	<anchor name="TashkilAbove" x="249" y="801"/>
+	<anchor name="TashkilBelow" x="299" y="-327"/>
+</glyph>

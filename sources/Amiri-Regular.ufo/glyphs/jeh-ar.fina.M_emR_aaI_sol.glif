@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="jeh-ar.fina.MemRaaIsol" format="2">
+	<advance width="473"/>
+	<outline>
+		<component base="threedotsupabove-ar" xOffset="361" yOffset="348"/>
+		<component base="aRaa.fina.alt2" xOffset="-49"/>
+	</outline>
+	<anchor name="TashkilAbove" x="303" y="620"/>
+	<anchor name="TashkilBelow" x="210" y="-327"/>
+</glyph>

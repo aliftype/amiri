@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="veh-ar.init" format="2">
+	<advance width="295"/>
+	<outline>
+		<component base="aFaa.init"/>
+		<component base="threedotsupabove-ar" xOffset="113" yOffset="493"/>
+	</outline>
+	<anchor name="TashkilAbove" x="78" y="801"/>
+	<anchor name="TashkilBelow" x="146" y="-327"/>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefMadda-ar.fina.MemAlfFina" format="2">
+	<advance width="291"/>
+	<outline>
+		<component base="aAlf.fina.MemAlfFina" xOffset="98"/>
+		<component base="madda-ar" xOffset="146" yOffset="-5"/>
+	</outline>
+	<anchor name="entry" x="292" y="-102"/>
+</glyph>

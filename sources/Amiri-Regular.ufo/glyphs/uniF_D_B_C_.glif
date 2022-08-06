@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDBC" format="2">
+	<unicode hex="FDBC"/>
+	<advance width="1330"/>
+	<outline>
+		<component base="meem-ar.fina"/>
+		<component base="jeem-ar.medi" xOffset="522"/>
+		<component base="lam-ar.medi" xOffset="1133"/>
+	</outline>
+</glyph>

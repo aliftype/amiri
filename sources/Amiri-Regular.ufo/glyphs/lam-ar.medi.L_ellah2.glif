@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lam-ar.medi.Lellah2" format="2">
+	<advance width="230"/>
+	<outline>
+		<component base="alefabove-ar" xOffset="-130" yOffset="-79"/>
+		<component base="shadda-ar" xOffset="-135" yOffset="-215"/>
+		<component base="lam-ar.medi.Lellah"/>
+	</outline>
+</glyph>

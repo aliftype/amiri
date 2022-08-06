@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC2B" format="2">
+	<unicode hex="FC2B"/>
+	<advance width="681"/>
+	<outline>
+		<component base="jeem-ar.fina.AboveHaaIsol"/>
+		<component base="ghain-ar.init.AboveHaa" xOffset="136"/>
+	</outline>
+</glyph>

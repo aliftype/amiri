@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC89" format="2">
+	<unicode hex="FC89"/>
+	<advance width="986"/>
+	<outline>
+		<component base="meem-ar.fina"/>
+		<component base="meem-ar.medi" xOffset="522"/>
+	</outline>
+</glyph>

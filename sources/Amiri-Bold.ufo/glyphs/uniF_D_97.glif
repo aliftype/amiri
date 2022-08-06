@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD97" format="2">
+	<unicode hex="FD97"/>
+	<advance width="1376"/>
+	<outline>
+		<component base="meem-ar.fina"/>
+		<component base="jeem-ar.medi" xOffset="522"/>
+		<component base="noon-ar.medi" xOffset="1133"/>
+	</outline>
+</glyph>

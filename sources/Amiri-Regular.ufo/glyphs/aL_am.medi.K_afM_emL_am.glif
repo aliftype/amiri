@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aLam.medi.KafMemLam" format="2">
+	<advance width="189"/>
+	<outline>
+		<contour>
+			<point x="98" y="481" type="line" smooth="yes"/>
+			<point x="123" y="216"/>
+			<point x="159" y="68"/>
+			<point x="204" y="36" type="curve" smooth="yes"/>
+			<point x="217" y="27"/>
+			<point x="218" y="7"/>
+			<point x="206" y="-23" type="curve" smooth="yes"/>
+			<point x="193" y="-55"/>
+			<point x="180" y="-62"/>
+			<point x="166" y="-42" type="curve" smooth="yes"/>
+			<point x="135" y="3"/>
+			<point x="112" y="62"/>
+			<point x="98" y="138" type="curve"/>
+			<point x="73" y="46"/>
+			<point x="40" y="0"/>
+			<point x="0" y="0" type="curve" smooth="yes"/>
+			<point x="-7" y="0"/>
+			<point x="-13" y="7"/>
+			<point x="-18" y="20" type="curve" smooth="yes"/>
+			<point x="-36" y="67"/>
+			<point x="-29" y="89"/>
+			<point x="0" y="90" type="curve" smooth="yes"/>
+			<point x="41" y="91"/>
+			<point x="65" y="112"/>
+			<point x="72" y="152" type="curve" smooth="yes"/>
+			<point x="72" y="154"/>
+			<point x="65" y="238"/>
+			<point x="51" y="405" type="curve" smooth="yes"/>
+			<point x="38" y="551"/>
+			<point x="31" y="636"/>
+			<point x="30" y="661" type="curve" smooth="yes"/>
+			<point x="29" y="674"/>
+			<point x="30" y="683"/>
+			<point x="32" y="687" type="curve" smooth="yes"/>
+			<point x="58" y="743" type="line" smooth="yes"/>
+			<point x="66" y="761"/>
+			<point x="72" y="759"/>
+			<point x="74" y="736" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<anchor name="Stroke" x="62" y="599"/>
+	<anchor name="TwoDotsBelow" x="49" y="-73"/>
+	<anchor name="TwoDotsAbove" x="0" y="854"/>
+	<anchor name="DotAbove" x="59" y="854"/>
+	<anchor name="TashkilBelow" x="73" y="-327"/>
+	<anchor name="TashkilAbove" x="0" y="801"/>
+	<anchor name="VAbove" x="59" y="806"/>
+</glyph>

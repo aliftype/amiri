@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="highwaw-ar.medi" format="2">
+	<advance width="292"/>
+	<outline>
+		<component base="wawSmall-ar" xOffset="-49" yOffset="295"/>
+		<component base="kashida-ar.long1"/>
+	</outline>
+	<anchor name="TashkilBelow" x="146" y="-327"/>
+	<anchor name="TashkilAbove" x="146" y="684"/>
+</glyph>

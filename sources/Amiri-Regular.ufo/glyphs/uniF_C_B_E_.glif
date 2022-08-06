@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCBE" format="2">
+	<unicode hex="FCBE"/>
+	<advance width="657"/>
+	<outline>
+		<component base="jeem-ar.medi.FaaHaaInit"/>
+		<component base="feh-ar.init.FaaHaaInit" xOffset="73"/>
+	</outline>
+</glyph>

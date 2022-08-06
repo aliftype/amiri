@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gafRing-ar" format="2">
+	<unicode hex="06B0"/>
+	<advance width="1202"/>
+	<outline>
+		<component base="ring.below" xOffset="846" yOffset="604"/>
+		<component base="gaf-ar"/>
+	</outline>
+	<anchor name="TashkilAbove" x="519" y="801"/>
+	<anchor name="TashkilBelow" x="470" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hamza-ar.medi" format="2">
+	<advance width="292"/>
+	<outline>
+		<component base="hamza.above" xOffset="146" yOffset="-142"/>
+		<component base="kashida-ar.long1"/>
+	</outline>
+	<anchor name="TashkilBelow" x="146" y="-327"/>
+	<anchor name="TashkilAbove" x="127" y="801"/>
+</glyph>

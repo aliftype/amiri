@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kafDotabove-ar.init.KafLam" format="2">
+	<advance width="587"/>
+	<outline>
+		<component base="aKaf.init.KafLam"/>
+		<component base="dotabove-ar" xOffset="16" yOffset="606"/>
+	</outline>
+	<anchor name="TashkilAbove" x="199" y="801"/>
+	<anchor name="TashkilBelow" x="140" y="-327"/>
+</glyph>

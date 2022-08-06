@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamVabove-ar.init.LamHeh" format="2">
+	<advance width="141"/>
+	<outline>
+		<component base="aLam.init.LamHeh"/>
+		<component base="vabove-ar" xOffset="-37" yOffset="280"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-37" y="964"/>
+	<anchor name="TashkilBelow" x="49" y="-327"/>
+</glyph>

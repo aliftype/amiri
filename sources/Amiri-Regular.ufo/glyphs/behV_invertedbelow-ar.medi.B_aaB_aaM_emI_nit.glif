@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behVinvertedbelow-ar.medi.BaaBaaMemInit" format="2">
+	<advance width="182"/>
+	<outline>
+		<component base="aBaa.medi.BaaBaaMemInit"/>
+		<component base="vinvertedbelow-ar" xOffset="18" yOffset="156"/>
+	</outline>
+	<anchor name="TashkilAbove" x="76" y="801"/>
+	<anchor name="TashkilBelow" x="18" y="-381"/>
+</glyph>

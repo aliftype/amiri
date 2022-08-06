@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehDotabove-ar.fina" format="2">
+	<advance width="1132"/>
+	<outline>
+		<component base="dotabove-ar" xOffset="648" yOffset="640"/>
+		<component base="aGaf.fina"/>
+	</outline>
+	<anchor name="TashkilBelow" x="470" y="-327"/>
+	<anchor name="TashkilAbove" x="636" y="801"/>
+</glyph>

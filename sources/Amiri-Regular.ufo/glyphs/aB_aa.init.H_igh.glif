@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aBaa.init.High" format="2">
+	<advance width="147"/>
+	<outline>
+		<contour>
+			<point x="49" y="250" type="line" smooth="yes"/>
+			<point x="52" y="260"/>
+			<point x="56" y="262"/>
+			<point x="62" y="255" type="curve" smooth="yes"/>
+			<point x="72" y="243"/>
+			<point x="79" y="220"/>
+			<point x="84" y="188" type="curve" smooth="yes"/>
+			<point x="89" y="156"/>
+			<point x="88" y="128"/>
+			<point x="83" y="104" type="curve" smooth="yes"/>
+			<point x="70" y="42"/>
+			<point x="43" y="7"/>
+			<point x="0" y="0" type="curve" smooth="yes"/>
+			<point x="-8" y="-1"/>
+			<point x="-13" y="14"/>
+			<point x="-13" y="45" type="curve" smooth="yes"/>
+			<point x="-13" y="76"/>
+			<point x="-8" y="91"/>
+			<point x="0" y="90" type="curve"/>
+			<point x="15" y="88"/>
+			<point x="32" y="89"/>
+			<point x="53" y="93" type="curve"/>
+			<point x="48" y="121"/>
+			<point x="42" y="141"/>
+			<point x="35" y="152" type="curve" smooth="yes"/>
+			<point x="28" y="163"/>
+			<point x="26" y="172"/>
+			<point x="27" y="177" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<anchor name="TwoDotsAbove" x="20" y="391"/>
+	<anchor name="TaaAbove" x="46" y="342"/>
+	<anchor name="DigitAbove" x="46" y="439"/>
+	<anchor name="DotAbove" x="46" y="439"/>
+	<anchor name="TashkilAbove" x="46" y="801"/>
+	<anchor name="RingBelow" x="59" y="59"/>
+	<anchor name="VAbove" x="71" y="391"/>
+	<anchor name="HamzaAbove" x="71" y="391"/>
+	<anchor name="TwoDotsBelowAlt" x="83" y="-366"/>
+	<anchor name="TwoDotsBelow" x="83" y="-122"/>
+	<anchor name="DotBelowAlt" x="107" y="-366"/>
+	<anchor name="TashkilBelow" x="107" y="-327"/>
+	<anchor name="HamzaBelow" x="107" y="-171"/>
+	<anchor name="DigitBelow" x="107" y="-171"/>
+	<anchor name="DotBelow" x="107" y="-171"/>
+</glyph>

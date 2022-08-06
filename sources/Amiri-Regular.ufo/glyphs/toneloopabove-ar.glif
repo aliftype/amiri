@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="toneloopabove-ar" format="2">
+	<unicode hex="08EC"/>
+	<outline>
+		<contour>
+			<point x="272" y="967" type="curve" smooth="yes"/>
+			<point x="275" y="967"/>
+			<point x="277" y="966"/>
+			<point x="277" y="964" type="curve" smooth="yes"/>
+			<point x="277" y="962"/>
+			<point x="276" y="959"/>
+			<point x="274" y="955" type="curve" smooth="yes"/>
+			<point x="263" y="937"/>
+			<point x="251" y="920"/>
+			<point x="237" y="906" type="curve"/>
+			<point x="244" y="898"/>
+			<point x="250" y="889"/>
+			<point x="257" y="879" type="curve" smooth="yes"/>
+			<point x="258" y="877"/>
+			<point x="258" y="875"/>
+			<point x="256" y="871" type="curve" smooth="yes"/>
+			<point x="254" y="867"/>
+			<point x="252" y="864"/>
+			<point x="249" y="861" type="curve" smooth="yes"/>
+			<point x="246" y="858"/>
+			<point x="242" y="855"/>
+			<point x="239" y="854" type="curve" smooth="yes"/>
+			<point x="236" y="853"/>
+			<point x="233" y="853"/>
+			<point x="232" y="855" type="curve" smooth="yes"/>
+			<point x="225" y="865"/>
+			<point x="218" y="875"/>
+			<point x="211" y="884" type="curve"/>
+			<point x="187" y="866"/>
+			<point x="161" y="855"/>
+			<point x="133" y="850" type="curve" smooth="yes"/>
+			<point x="117" y="847"/>
+			<point x="103" y="849"/>
+			<point x="91" y="855" type="curve"/>
+			<point x="74" y="863"/>
+			<point x="66" y="876"/>
+			<point x="66" y="895" type="curve" smooth="yes"/>
+			<point x="66" y="901"/>
+			<point x="67" y="905"/>
+			<point x="68" y="910" type="curve" smooth="yes"/>
+			<point x="71" y="921"/>
+			<point x="76" y="930"/>
+			<point x="84" y="939" type="curve" smooth="yes"/>
+			<point x="90" y="945"/>
+			<point x="96" y="949"/>
+			<point x="103" y="953" type="curve" smooth="yes"/>
+			<point x="123" y="964"/>
+			<point x="147" y="964"/>
+			<point x="174" y="953" type="curve" smooth="yes"/>
+			<point x="193" y="945"/>
+			<point x="211" y="933"/>
+			<point x="227" y="917" type="curve"/>
+			<point x="236" y="927"/>
+			<point x="245" y="938"/>
+			<point x="253" y="952" type="curve" smooth="yes"/>
+			<point x="255" y="956"/>
+			<point x="258" y="959"/>
+			<point x="262" y="962" type="curve" smooth="yes"/>
+			<point x="266" y="965"/>
+			<point x="269" y="967"/>
+		</contour>
+		<contour>
+			<point x="200" y="895" type="curve"/>
+			<point x="185" y="910"/>
+			<point x="169" y="920"/>
+			<point x="152" y="927" type="curve" smooth="yes"/>
+			<point x="141" y="932"/>
+			<point x="129" y="935"/>
+			<point x="119" y="935" type="curve" smooth="yes"/>
+			<point x="109" y="935"/>
+			<point x="101" y="934"/>
+			<point x="96" y="930" type="curve"/>
+			<point x="94" y="926"/>
+			<point x="92" y="921"/>
+			<point x="92" y="913" type="curve" smooth="yes"/>
+			<point x="92" y="898"/>
+			<point x="99" y="887"/>
+			<point x="114" y="880" type="curve"/>
+			<point x="124" y="875"/>
+			<point x="135" y="874"/>
+			<point x="148" y="876" type="curve" smooth="yes"/>
+			<point x="167" y="879"/>
+			<point x="184" y="885"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilTashkilAbove" x="156" y="1020"/>
+	<anchor name="_TashkilTashkilAbove" x="156" y="845"/>
+	<anchor name="_MarkAbove" x="156" y="845"/>
+	<anchor name="_TashkilAboveDot" x="156" y="845"/>
+	<anchor name="_TashkilAbove" x="156" y="845"/>
+</glyph>

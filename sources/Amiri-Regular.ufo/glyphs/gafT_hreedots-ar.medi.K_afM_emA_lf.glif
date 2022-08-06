@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gafThreedots-ar.medi.KafMemAlf" format="2">
+	<advance width="549"/>
+	<outline>
+		<component base="aKaf.medi.KafMemAlf"/>
+		<component base="threedotsupabove-ar" xOffset="6" yOffset="611"/>
+		<component base="gafsarkashabove-ar.alt2" xOffset="294" yOffset="707"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-52" y="883"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+</glyph>

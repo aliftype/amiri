@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamThreedotsabove-ar.init.YaaBari" format="2">
+	<advance width="791"/>
+	<outline>
+		<component base="aLam.init.YaaBari"/>
+		<component base="threedotsupabove-ar" xOffset="-60" yOffset="792"/>
+	</outline>
+	<anchor name="TashkilBelow" x="98" y="-327"/>
+	<anchor name="TashkilAbove" x="-118" y="1064"/>
+</glyph>

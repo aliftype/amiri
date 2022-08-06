@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefWasla-ar.fina.MemAlfFina" format="2">
+	<advance width="248"/>
+	<outline>
+		<component base="aAlf.fina.MemAlfFina" xOffset="54"/>
+		<component base="wasla-ar" xOffset="-100" yOffset="127"/>
+	</outline>
+	<anchor name="TashkilBelow" x="186" y="-327"/>
+	<anchor name="TashkilAbove" x="148" y="945"/>
+	<anchor name="entry" x="248" y="-102"/>
+</glyph>

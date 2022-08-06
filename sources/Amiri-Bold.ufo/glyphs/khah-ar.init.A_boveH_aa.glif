@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="khah-ar.init.AboveHaa" format="2">
+	<advance width="731"/>
+	<outline>
+		<component base="aHaa.init.AboveHaa"/>
+		<component base="dotabove-ar" xOffset="619" yOffset="585"/>
+	</outline>
+	<anchor name="exit" x="0" y="205"/>
+	<anchor name="TashkilAbove" x="409" y="801"/>
+	<anchor name="TashkilBelow" x="461" y="-127"/>
+</glyph>

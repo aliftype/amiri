@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aHeh.medi.BaaHehMedi" format="2">
+	<advance width="147"/>
+	<outline>
+		<contour>
+			<point x="173" y="1" type="curve" smooth="yes"/>
+			<point x="141" y="-52"/>
+			<point x="139" y="-121"/>
+			<point x="167" y="-209" type="curve" smooth="yes"/>
+			<point x="170" y="-220"/>
+			<point x="170" y="-229"/>
+			<point x="166" y="-235" type="curve" smooth="yes"/>
+			<point x="125" y="-293" type="line" smooth="yes"/>
+			<point x="116" y="-305"/>
+			<point x="106" y="-305"/>
+			<point x="96" y="-293" type="curve" smooth="yes"/>
+			<point x="40" y="-227"/>
+			<point x="26" y="-129"/>
+			<point x="52" y="-2" type="curve"/>
+			<point x="9" y="-23"/>
+			<point x="-18" y="-20"/>
+			<point x="-27" y="11" type="curve" smooth="yes"/>
+			<point x="-33" y="31"/>
+			<point x="-36" y="49"/>
+			<point x="-37" y="66" type="curve" smooth="yes"/>
+			<point x="-38" y="83"/>
+			<point x="-31" y="94"/>
+			<point x="-17" y="101" type="curve" smooth="yes"/>
+			<point x="-12" y="103"/>
+			<point x="-7" y="104"/>
+			<point x="-1" y="105" type="curve" smooth="yes"/>
+			<point x="48" y="108"/>
+			<point x="96" y="143"/>
+			<point x="142" y="211" type="curve" smooth="yes"/>
+			<point x="153" y="228"/>
+			<point x="164" y="234"/>
+			<point x="176" y="226" type="curve" smooth="yes"/>
+			<point x="188" y="218"/>
+			<point x="187" y="204"/>
+			<point x="175" y="183" type="curve" smooth="yes"/>
+			<point x="150" y="139"/>
+			<point x="130" y="98"/>
+			<point x="115" y="61" type="curve" smooth="yes"/>
+			<point x="100" y="24"/>
+			<point x="92" y="-20"/>
+			<point x="91" y="-69" type="curve"/>
+			<point x="109" y="-25"/>
+			<point x="130" y="14"/>
+			<point x="155" y="46" type="curve" smooth="yes"/>
+			<point x="163" y="57"/>
+			<point x="172" y="57"/>
+			<point x="180" y="48" type="curve" smooth="yes"/>
+			<point x="188" y="39"/>
+			<point x="186" y="23"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilBelow" x="98" y="-327"/>
+	<anchor name="TashkilAbove" x="104" y="801"/>
+	<anchor name="HamzaAbove" x="189" y="430"/>
+</glyph>

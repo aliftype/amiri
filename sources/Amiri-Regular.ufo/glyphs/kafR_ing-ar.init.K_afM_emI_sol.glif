@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kafRing-ar.init.KafMemIsol" format="2">
+	<advance width="580"/>
+	<outline>
+		<component base="aKaf.init.KafMemIsol"/>
+		<component base="ring.below" xOffset="234" yOffset="774"/>
+	</outline>
+	<anchor name="TashkilAbove" x="171" y="854"/>
+	<anchor name="TashkilBelow" x="317" y="-327"/>
+</glyph>

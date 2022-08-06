@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tcheh-ar.init.AboveHaa" format="2">
+	<advance width="731"/>
+	<outline>
+		<component base="aHaa.init.AboveHaa"/>
+		<component base="threedotsdownbelow-ar" xOffset="626" yOffset="-249"/>
+	</outline>
+	<anchor name="exit" x="0" y="205"/>
+	<anchor name="TashkilAbove" x="409" y="801"/>
+	<anchor name="TashkilBelow" x="665" y="-270"/>
+</glyph>

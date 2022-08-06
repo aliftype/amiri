@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehRing-ar.fina.LamRaaIsol" format="2">
+	<advance width="292"/>
+	<outline>
+		<component base="aRaa.fina.LamRaaIsol" xOffset="-146"/>
+		<component base="ring.below" xOffset="85" yOffset="-139"/>
+	</outline>
+	<anchor name="TashkilAbove" x="74" y="801"/>
+	<anchor name="TashkilBelow" x="181" y="-327"/>
+</glyph>

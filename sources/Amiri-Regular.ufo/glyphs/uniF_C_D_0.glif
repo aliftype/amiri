@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCD0" format="2">
+	<unicode hex="FCD0"/>
+	<advance width="605"/>
+	<outline>
+		<component base="khah-ar.medi.SadHaaInit"/>
+		<component base="meem-ar.init.MemHaaInit" xOffset="55" yOffset="-20"/>
+	</outline>
+</glyph>

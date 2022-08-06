@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ibreve" format="2">
+	<unicode hex="012C"/>
+	<advance width="305"/>
+	<outline>
+		<component base="I"/>
+		<component base="uni0306.cap" xOffset="27" yOffset="198"/>
+	</outline>
+</glyph>

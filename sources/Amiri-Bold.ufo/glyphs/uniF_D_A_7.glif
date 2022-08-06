@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDA7" format="2">
+	<unicode hex="FDA7"/>
+	<advance width="1660"/>
+	<outline>
+		<component base="alefMaksura-ar.fina"/>
+		<component base="meem-ar.medi" xOffset="586"/>
+		<component base="jeem-ar.medi" xOffset="1050"/>
+	</outline>
+</glyph>

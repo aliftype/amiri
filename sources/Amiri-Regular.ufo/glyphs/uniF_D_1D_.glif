@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD1D" format="2">
+	<unicode hex="FD1D"/>
+	<advance width="1196"/>
+	<outline>
+		<component base="alefMaksura-ar.fina"/>
+		<component base="jeem-ar.medi" xOffset="586"/>
+	</outline>
+</glyph>

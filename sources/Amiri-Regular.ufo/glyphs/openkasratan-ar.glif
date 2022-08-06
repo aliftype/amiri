@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="openkasratan-ar" format="2">
+	<unicode hex="08F2"/>
+	<outline>
+		<component base="openfathatan-ar" yOffset="-1473"/>
+	</outline>
+	<anchor name="_TashkilBelowHamza" x="327" y="-278"/>
+	<anchor name="TashkilTashkilBelow" x="145" y="-434"/>
+	<anchor name="_TashkilBelowDot" x="327" y="-278"/>
+	<anchor name="_TashkilBelow" x="327" y="-278"/>
+	<anchor name="_MarkBelow" x="244" y="-278"/>
+</glyph>

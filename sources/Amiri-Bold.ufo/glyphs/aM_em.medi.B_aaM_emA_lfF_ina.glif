@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aMem.medi.BaaMemAlfFina" format="2">
+	<advance width="48"/>
+	<outline>
+		<contour>
+			<point x="156" y="-107" type="curve" smooth="yes"/>
+			<point x="167" y="-111"/>
+			<point x="175" y="-116"/>
+			<point x="179" y="-124" type="curve"/>
+			<point x="182" y="-130"/>
+			<point x="182" y="-136"/>
+			<point x="181" y="-142" type="curve" smooth="yes"/>
+			<point x="170" y="-225" type="line"/>
+			<point x="165" y="-253"/>
+			<point x="140" y="-257"/>
+			<point x="96" y="-238" type="curve" smooth="yes"/>
+			<point x="16" y="-203"/>
+			<point x="-37" y="-159"/>
+			<point x="-65" y="-107" type="curve"/>
+			<point x="-79" y="-79"/>
+			<point x="-75" y="-57"/>
+			<point x="-55" y="-39" type="curve"/>
+			<point x="-42" y="-29"/>
+			<point x="-30" y="-24"/>
+			<point x="-15" y="-25" type="curve"/>
+			<point x="-15" y="13"/>
+			<point x="-8" y="48"/>
+			<point x="4" y="81" type="curve" smooth="yes"/>
+			<point x="4" y="81"/>
+			<point x="4" y="82"/>
+			<point x="4" y="83" type="curve" smooth="yes"/>
+			<point x="5" y="90"/>
+			<point x="9" y="94"/>
+			<point x="17" y="96" type="curve" smooth="yes"/>
+			<point x="25" y="98"/>
+			<point x="31" y="97"/>
+			<point x="34" y="93" type="curve" smooth="yes"/>
+			<point x="37" y="89"/>
+			<point x="39" y="82"/>
+			<point x="38" y="72" type="curve"/>
+			<point x="38" y="71" type="line"/>
+			<point x="39" y="9"/>
+			<point x="48" y="-33"/>
+			<point x="66" y="-55" type="curve" smooth="yes"/>
+			<point x="84" y="-77"/>
+			<point x="113" y="-94"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilBelow" x="10" y="-327"/>
+	<anchor name="TashkilAbove" x="34" y="801"/>
+</glyph>

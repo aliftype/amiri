@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDC4" format="2">
+	<unicode hex="FDC4"/>
+	<advance width="1064"/>
+	<outline>
+		<component base="meem-ar.medi"/>
+		<component base="jeem-ar.medi.AynHaaInit" xOffset="464"/>
+		<component base="ain-ar.init.AynHaaInit" xOffset="519"/>
+	</outline>
+</glyph>

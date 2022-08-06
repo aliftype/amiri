@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC42" format="2">
+	<unicode hex="FC42"/>
+	<advance width="441"/>
+	<outline>
+		<component base="meem-ar.fina.KafMemIsol"/>
+		<component base="lam-ar.init.LamMemIsol" xOffset="203"/>
+	</outline>
+</glyph>

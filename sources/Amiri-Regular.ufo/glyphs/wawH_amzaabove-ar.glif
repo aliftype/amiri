@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="wawHamzaabove-ar" format="2">
+	<unicode hex="0624"/>
+	<advance width="400"/>
+	<outline>
+		<component base="aWaw.isol" xOffset="-146"/>
+		<component base="hamza.above" xOffset="200" yOffset="-24"/>
+	</outline>
+	<anchor name="TashkilAbove" x="186" y="801"/>
+	<anchor name="TashkilBelow" x="249" y="-327"/>
+</glyph>

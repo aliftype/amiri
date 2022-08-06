@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kasra-ar" format="2">
+	<unicode hex="0650"/>
+	<outline>
+		<component base="fatha-ar" yOffset="-1338"/>
+	</outline>
+	<anchor name="_MarkBelow" x="220" y="-327"/>
+	<anchor name="TashkilTashkilBelow" x="145" y="-400"/>
+	<anchor name="_TashkilBelowDot" x="261" y="-327"/>
+	<anchor name="_TashkilBelow" x="261" y="-327"/>
+</glyph>

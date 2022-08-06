@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rnoon-ar.init.BaaYaaIsol" format="2">
+	<advance width="258"/>
+	<outline>
+		<component base="aBaa.init.BaaYaaIsol"/>
+		<component base="smalltaa.above" xOffset="60" yOffset="537"/>
+	</outline>
+	<anchor name="TashkilAbove" x="41" y="854"/>
+	<anchor name="TashkilBelow" x="167" y="-391"/>
+</glyph>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030A.quran" format="2">
+	<outline>
+		<contour>
+			<point x="43" y="927" type="curve" smooth="yes"/>
+			<point x="43" y="907"/>
+			<point x="49" y="889"/>
+			<point x="62" y="874" type="curve" smooth="yes"/>
+			<point x="79" y="855"/>
+			<point x="100" y="846"/>
+			<point x="124" y="846" type="curve" smooth="yes"/>
+			<point x="144" y="846"/>
+			<point x="162" y="852"/>
+			<point x="177" y="865" type="curve" smooth="yes"/>
+			<point x="196" y="882"/>
+			<point x="205" y="903"/>
+			<point x="205" y="927" type="curve" smooth="yes"/>
+			<point x="205" y="947"/>
+			<point x="199" y="965"/>
+			<point x="186" y="980" type="curve" smooth="yes"/>
+			<point x="169" y="999"/>
+			<point x="148" y="1008"/>
+			<point x="124" y="1008" type="curve" smooth="yes"/>
+			<point x="104" y="1008"/>
+			<point x="86" y="1001"/>
+			<point x="71" y="988" type="curve" smooth="yes"/>
+			<point x="52" y="971"/>
+			<point x="43" y="951"/>
+		</contour>
+		<contour>
+			<point x="6" y="927" type="curve" smooth="yes"/>
+			<point x="6" y="963"/>
+			<point x="20" y="993"/>
+			<point x="47" y="1016" type="curve" smooth="yes"/>
+			<point x="69" y="1035"/>
+			<point x="95" y="1045"/>
+			<point x="124" y="1045" type="curve" smooth="yes"/>
+			<point x="160" y="1045"/>
+			<point x="190" y="1030"/>
+			<point x="213" y="1003" type="curve" smooth="yes"/>
+			<point x="232" y="981"/>
+			<point x="241" y="956"/>
+			<point x="242" y="927" type="curve" smooth="yes"/>
+			<point x="242" y="891"/>
+			<point x="228" y="860"/>
+			<point x="201" y="837" type="curve" smooth="yes"/>
+			<point x="179" y="818"/>
+			<point x="153" y="810"/>
+			<point x="124" y="809" type="curve" smooth="yes"/>
+			<point x="88" y="809"/>
+			<point x="58" y="823"/>
+			<point x="35" y="850" type="curve" smooth="yes"/>
+			<point x="16" y="872"/>
+			<point x="6" y="898"/>
+		</contour>
+	</outline>
+	<anchor name="_TashkilAbove" x="124" y="801"/>
+	<anchor name="_MarkAbove" x="124" y="801"/>
+	<anchor name="TashkilTashkilAbove" x="125" y="1081"/>
+</glyph>

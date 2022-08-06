@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotvowelbelow-ar" format="2">
+	<unicode hex="065C"/>
+	<outline>
+		<component base="dotStopabove-ar" xOffset="1" yOffset="-1349"/>
+	</outline>
+	<anchor name="TashkilTashkilBelow" x="110" y="-596"/>
+	<anchor name="_MarkBelow" x="110" y="-327"/>
+	<anchor name="_TashkilBelowDot" x="110" y="-327"/>
+	<anchor name="_TashkilBelow" x="110" y="-327"/>
+</glyph>

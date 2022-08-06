@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamBar-ar.fina" format="2">
+	<advance width="644"/>
+	<outline>
+		<component base="aLam.fina"/>
+		<component base="stroke-ar" xOffset="491" yOffset="424"/>
+	</outline>
+	<anchor name="TashkilAbove" x="293" y="801"/>
+	<anchor name="TashkilBelow" x="293" y="-376"/>
+</glyph>

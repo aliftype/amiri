@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="e-ar.fina.PostTooth" format="2">
+	<advance width="730"/>
+	<outline>
+		<component base="aYaa.fina.PostTooth"/>
+		<component base="twodotsverticalbelow-ar" xOffset="368" yOffset="-552"/>
+	</outline>
+	<anchor name="TashkilAbove" x="242" y="801"/>
+	<anchor name="AlefAbove" x="293" y="0"/>
+	<anchor name="TashkilBelow" x="388" y="-665"/>
+</glyph>

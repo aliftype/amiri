@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD5F" format="2">
+	<unicode hex="FD5F"/>
+	<advance width="1672"/>
+	<outline>
+		<component base="hah-ar.fina"/>
+		<component base="meem-ar.medi" xOffset="640"/>
+		<component base="seen-ar.medi" xOffset="1104"/>
+	</outline>
+</glyph>

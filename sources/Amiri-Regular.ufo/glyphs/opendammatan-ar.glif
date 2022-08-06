@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="opendammatan-ar" format="2">
+	<unicode hex="08F1"/>
+	<outline>
+		<component base="damma-ar.small" xOffset="320" yOffset="-73"/>
+		<component base="damma-ar.small" xOffset="156" yOffset="-76"/>
+	</outline>
+	<anchor name="TashkilTashkilAbove" x="83" y="1074"/>
+	<anchor name="_MarkAbove" x="239" y="801"/>
+	<anchor name="_TashkilAbove" x="239" y="801"/>
+	<anchor name="_TashkilAboveDot" x="239" y="801"/>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD32" format="2">
+	<unicode hex="FD32"/>
+	<advance width="805"/>
+	<outline>
+		<component base="heh-ar.medi.PostTooth"/>
+		<component base="sheen-ar.init.PreYaa" xOffset="461"/>
+	</outline>
+</glyph>

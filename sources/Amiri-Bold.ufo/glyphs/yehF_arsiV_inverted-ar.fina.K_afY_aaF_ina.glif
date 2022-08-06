@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehFarsiVinverted-ar.fina.KafYaaFina" format="2">
+	<advance width="471"/>
+	<outline>
+		<component base="aYaa.fina.KafYaaFina"/>
+		<component base="vinvertedabove-ar" xOffset="194" yOffset="-212"/>
+	</outline>
+	<anchor name="TashkilAbove" x="186" y="801"/>
+	<anchor name="TashkilBelow" x="361" y="-327"/>
+	<anchor name="AlefAbove" x="145" y="251"/>
+</glyph>

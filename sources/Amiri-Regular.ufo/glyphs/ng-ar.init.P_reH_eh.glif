@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng-ar.init.PreHeh" format="2">
+	<advance width="579"/>
+	<outline>
+		<component base="threedotsupabove-ar" yOffset="635"/>
+		<component base="aKaf.init.PreHeh"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-58" y="907"/>
+	<anchor name="TashkilBelow" x="195" y="-327"/>
+</glyph>

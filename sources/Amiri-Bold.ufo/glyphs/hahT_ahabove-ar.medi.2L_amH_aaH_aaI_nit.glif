@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hahTahabove-ar.medi.2LamHaaHaaInit" format="2">
+	<advance width="69"/>
+	<outline>
+		<component base="aHaa.medi.2LamHaaHaaInit"/>
+		<component base="smalltaa.above" xOffset="39" yOffset="591"/>
+	</outline>
+	<anchor name="TashkilAbove" x="20" y="908"/>
+	<anchor name="TashkilBelow" x="78" y="-327"/>
+</glyph>

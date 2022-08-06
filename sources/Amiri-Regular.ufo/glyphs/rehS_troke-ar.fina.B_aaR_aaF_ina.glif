@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehStroke-ar.fina.BaaRaaFina" format="2">
+	<advance width="291"/>
+	<outline>
+		<component base="aRaa.fina.BaaRaaFina" xOffset="-146"/>
+		<component base="stroke-ar" xOffset="244" yOffset="-34"/>
+	</outline>
+	<anchor name="TashkilAbove" x="173" y="801"/>
+	<anchor name="TashkilBelow" x="229" y="-327"/>
+</glyph>

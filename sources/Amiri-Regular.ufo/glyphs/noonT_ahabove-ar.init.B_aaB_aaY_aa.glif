@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonTahabove-ar.init.BaaBaaYaa" format="2">
+	<advance width="203"/>
+	<outline>
+		<component base="aBaa.init.BaaBaaYaa"/>
+		<component base="dotabove-ar" xOffset="63" yOffset="549"/>
+		<component base="smalltaa.above" xOffset="39" yOffset="745"/>
+	</outline>
+	<anchor name="TashkilAbove" x="19" y="1062"/>
+	<anchor name="TashkilBelow" x="72" y="-371"/>
+</glyph>

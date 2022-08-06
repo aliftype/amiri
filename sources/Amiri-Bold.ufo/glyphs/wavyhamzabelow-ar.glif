@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="wavyhamzabelow-ar" format="2">
+	<unicode hex="065F"/>
+	<outline>
+		<contour>
+			<point x="-87" y="-443" type="curve"/>
+			<point x="-84" y="-442"/>
+			<point x="-83" y="-441"/>
+			<point x="-81" y="-440" type="curve"/>
+			<point x="-102" y="-428"/>
+			<point x="-113" y="-414"/>
+			<point x="-116" y="-398" type="curve"/>
+			<point x="-121" y="-369"/>
+			<point x="-109" y="-334"/>
+			<point x="-80" y="-294" type="curve" smooth="yes"/>
+			<point x="-51" y="-254"/>
+			<point x="-19" y="-235"/>
+			<point x="15" y="-238" type="curve" smooth="yes"/>
+			<point x="40" y="-240"/>
+			<point x="51" y="-253"/>
+			<point x="49" y="-277" type="curve" smooth="yes"/>
+			<point x="47" y="-301"/>
+			<point x="41" y="-318"/>
+			<point x="34" y="-328" type="curve" smooth="yes"/>
+			<point x="27" y="-338"/>
+			<point x="22" y="-345"/>
+			<point x="19" y="-347" type="curve" smooth="yes"/>
+			<point x="9" y="-354"/>
+			<point x="1" y="-352"/>
+			<point x="-6" y="-342" type="curve" smooth="yes"/>
+			<point x="-13" y="-332"/>
+			<point x="-21" y="-326"/>
+			<point x="-32" y="-325" type="curve" smooth="yes"/>
+			<point x="-43" y="-324"/>
+			<point x="-51" y="-327"/>
+			<point x="-56" y="-333" type="curve" smooth="yes"/>
+			<point x="-61" y="-339"/>
+			<point x="-61" y="-344"/>
+			<point x="-56" y="-349" type="curve" smooth="yes"/>
+			<point x="-35" y="-369"/>
+			<point x="-3" y="-379"/>
+			<point x="37" y="-380" type="curve" smooth="yes"/>
+			<point x="44" y="-380"/>
+			<point x="53" y="-378"/>
+			<point x="67" y="-375" type="curve" smooth="yes"/>
+			<point x="81" y="-372"/>
+			<point x="90" y="-371"/>
+			<point x="97" y="-371" type="curve" smooth="yes"/>
+			<point x="104" y="-371"/>
+			<point x="110" y="-375"/>
+			<point x="114" y="-381" type="curve"/>
+			<point x="118" y="-388"/>
+			<point x="118" y="-393"/>
+			<point x="116" y="-399" type="curve" smooth="yes"/>
+			<point x="103" y="-428"/>
+			<point x="89" y="-444"/>
+			<point x="75" y="-447" type="curve"/>
+			<point x="25" y="-458"/>
+			<point x="-28" y="-475"/>
+			<point x="-84" y="-499" type="curve" smooth="yes"/>
+			<point x="-103" y="-507"/>
+			<point x="-131" y="-503"/>
+			<point x="-167" y="-488" type="curve" smooth="yes"/>
+			<point x="-181" y="-482"/>
+			<point x="-195" y="-484"/>
+			<point x="-205" y="-491" type="curve" smooth="yes"/>
+			<point x="-215" y="-498"/>
+			<point x="-227" y="-511"/>
+			<point x="-240" y="-530" type="curve" smooth="yes"/>
+			<point x="-245" y="-537"/>
+			<point x="-251" y="-538"/>
+			<point x="-257" y="-531" type="curve" smooth="yes"/>
+			<point x="-263" y="-524"/>
+			<point x="-264" y="-519"/>
+			<point x="-261" y="-513" type="curve" smooth="yes"/>
+			<point x="-237" y="-472"/>
+			<point x="-217" y="-446"/>
+			<point x="-199" y="-434" type="curve" smooth="yes"/>
+			<point x="-181" y="-422"/>
+			<point x="-164" y="-420"/>
+			<point x="-146" y="-427" type="curve" smooth="yes"/>
+			<point x="-116" y="-439"/>
+			<point x="-95" y="-444"/>
+		</contour>
+	</outline>
+	<anchor name="_TashkilBelow" x="0" y="-244"/>
+	<anchor name="_MarkBelow" x="0" y="-225"/>
+	<anchor name="TashkilTashkilBelow" x="0" y="-547"/>
+	<anchor name="_HamzaBelow" x="0" y="-244"/>
+</glyph>

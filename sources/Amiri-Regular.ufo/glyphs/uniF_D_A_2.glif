@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDA2" format="2">
+	<unicode hex="FDA2"/>
+	<advance width="1440"/>
+	<outline>
+		<component base="alefMaksura-ar.fina"/>
+		<component base="khah-ar.medi" xOffset="586"/>
+		<component base="teh-ar.medi" xOffset="1196"/>
+	</outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aHaa.medi.AynHaaInit" format="2">
+	<advance width="55"/>
+	<outline>
+		<component base="aHaa.medi.SadHaaInit"/>
+	</outline>
+	<anchor name="DigitBelow" x="215" y="-127"/>
+	<anchor name="TaaBelow" x="215" y="68"/>
+	<anchor name="TaaAbove" x="44" y="488"/>
+	<anchor name="TashkilBelow" x="215" y="-327"/>
+	<anchor name="TashkilAbove" x="68" y="801"/>
+	<anchor name="TwoDotsBelow" x="161" y="-127"/>
+	<anchor name="TwoDotsAbove" x="-20" y="488"/>
+	<anchor name="HamzaBelow" x="215" y="-127"/>
+	<anchor name="HamzaAbove" x="29" y="488"/>
+	<anchor name="DotBelow" x="215" y="-127"/>
+	<anchor name="DotAbove" x="44" y="488"/>
+</glyph>

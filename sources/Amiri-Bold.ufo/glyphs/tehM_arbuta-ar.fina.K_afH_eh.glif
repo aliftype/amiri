@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tehMarbuta-ar.fina.KafHeh" format="2">
+	<advance width="336"/>
+	<outline>
+		<component base="aHeh.fina.KafHeh"/>
+		<component base="twodotshorizontalabove-ar" xOffset="83" yOffset="356"/>
+	</outline>
+	<anchor name="TashkilAbove" x="161" y="801"/>
+	<anchor name="TashkilBelow" x="195" y="-327"/>
+</glyph>

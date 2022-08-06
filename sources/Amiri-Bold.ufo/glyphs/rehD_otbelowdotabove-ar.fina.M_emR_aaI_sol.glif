@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehDotbelowdotabove-ar.fina.MemRaaIsol" format="2">
+	<advance width="473"/>
+	<outline>
+		<component base="dotbelow-ar" xOffset="132" yOffset="-543"/>
+		<component base="dot.alt1" xOffset="163" yOffset="-144"/>
+		<component base="aRaa.fina.alt2" xOffset="-49"/>
+	</outline>
+	<anchor name="TashkilAbove" x="254" y="337"/>
+	<anchor name="TashkilBelow" x="146" y="-611"/>
+</glyph>

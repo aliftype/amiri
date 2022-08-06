@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehFarsiFourbelow-ar.init.High" format="2">
+	<advance width="262"/>
+	<outline>
+		<component base="aBaa.init.High"/>
+		<component base="fourbelow-ar" xOffset="107" yOffset="-513"/>
+	</outline>
+	<anchor name="TashkilAbove" x="46" y="801"/>
+	<anchor name="TashkilBelow" x="107" y="-469"/>
+</glyph>

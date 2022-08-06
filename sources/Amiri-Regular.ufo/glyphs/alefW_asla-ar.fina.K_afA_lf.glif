@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefWasla-ar.fina.KafAlf" format="2">
+	<advance width="246"/>
+	<outline>
+		<component base="aAlf.fina.KafAlf" xOffset="59"/>
+		<component base="wasla-ar" xOffset="-100" yOffset="127"/>
+	</outline>
+	<anchor name="TashkilBelow" x="59" y="-327"/>
+	<anchor name="TashkilAbove" x="148" y="945"/>
+</glyph>

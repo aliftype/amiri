@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behMeemabove-ar" format="2">
+	<unicode hex="08B6"/>
+	<advance width="926"/>
+	<outline>
+		<component base="beh-ar"/>
+		<component base="smallmeem.above" xOffset="470" yOffset="250"/>
+	</outline>
+</glyph>

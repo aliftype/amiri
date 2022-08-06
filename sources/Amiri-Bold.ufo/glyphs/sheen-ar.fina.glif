@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sheen-ar.fina" format="2">
+	<advance width="1079"/>
+	<outline>
+		<component base="aSen.fina"/>
+		<component base="threedotsupabove-ar" xOffset="779" yOffset="298"/>
+	</outline>
+	<anchor name="TashkilAbove" x="732" y="801"/>
+	<anchor name="TashkilBelow" x="312" y="-391"/>
+</glyph>

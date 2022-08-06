@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDBA" format="2">
+	<unicode hex="FDBA"/>
+	<advance width="650"/>
+	<outline>
+		<component base="meem-ar.medi.LamHaaMemInit"/>
+		<component base="jeem-ar.medi.LamHaaMemInit" xOffset="148"/>
+		<component base="lam-ar.init.LamHaaMemInit" xOffset="179"/>
+	</outline>
+</glyph>

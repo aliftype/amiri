@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="smalltaa.above" format="2">
+	<outline>
+		<contour>
+			<point x="-36" y="308" type="curve"/>
+			<point x="-25" y="313"/>
+			<point x="-19" y="307"/>
+			<point x="-16" y="290" type="curve" smooth="yes"/>
+			<point x="-5" y="210"/>
+			<point x="0" y="149"/>
+			<point x="-3" y="108" type="curve"/>
+			<point x="13" y="124"/>
+			<point x="30" y="138"/>
+			<point x="49" y="152" type="curve" smooth="yes"/>
+			<point x="68" y="166"/>
+			<point x="86" y="170"/>
+			<point x="103" y="163" type="curve" smooth="yes"/>
+			<point x="120" y="156"/>
+			<point x="132" y="143"/>
+			<point x="140" y="123" type="curve" smooth="yes"/>
+			<point x="148" y="103"/>
+			<point x="139" y="75"/>
+			<point x="113" y="42" type="curve" smooth="yes"/>
+			<point x="107" y="34"/>
+			<point x="84" y="25"/>
+			<point x="46" y="13" type="curve" smooth="yes"/>
+			<point x="8" y="1"/>
+			<point x="-32" y="-5"/>
+			<point x="-72" y="-7" type="curve" smooth="yes"/>
+			<point x="-73" y="-7"/>
+			<point x="-73" y="-7"/>
+			<point x="-74" y="-7" type="curve" smooth="yes"/>
+			<point x="-93" y="-4"/>
+			<point x="-109" y="4"/>
+			<point x="-123" y="17" type="curve" smooth="yes"/>
+			<point x="-137" y="30"/>
+			<point x="-144" y="39"/>
+			<point x="-144" y="47" type="curve"/>
+			<point x="-143" y="53"/>
+			<point x="-139" y="55"/>
+			<point x="-132" y="55" type="curve"/>
+			<point x="-109" y="53"/>
+			<point x="-85" y="52"/>
+			<point x="-61" y="54" type="curve"/>
+			<point x="-38" y="77" type="line"/>
+			<point x="-36" y="124"/>
+			<point x="-42" y="188"/>
+			<point x="-55" y="268" type="curve" smooth="yes"/>
+			<point x="-55" y="272"/>
+			<point x="-53" y="278"/>
+			<point x="-49" y="288" type="curve" smooth="yes"/>
+			<point x="-45" y="298"/>
+			<point x="-41" y="305"/>
+		</contour>
+		<contour>
+			<point x="50" y="104" type="curve"/>
+			<point x="40" y="100"/>
+			<point x="22" y="85"/>
+			<point x="-5" y="61" type="curve"/>
+			<point x="29" y="68"/>
+			<point x="61" y="79"/>
+			<point x="93" y="94" type="curve"/>
+			<point x="83" y="107"/>
+			<point x="69" y="111"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilAboveDot" x="-20" y="366"/>
+	<anchor name="_MarkDotAbove" x="0" y="0"/>
+	<anchor name="MarkDotAbove" x="-20" y="366"/>
+	<anchor name="_TaaAbove" x="0" y="0"/>
+</glyph>

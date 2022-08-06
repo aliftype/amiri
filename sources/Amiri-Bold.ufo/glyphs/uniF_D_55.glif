@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD55" format="2">
+	<unicode hex="FD55"/>
+	<advance width="654"/>
+	<outline>
+		<component base="jeem-ar.medi.BaaMemHaaInit"/>
+		<component base="meem-ar.medi.BaaMemHaaInit" xOffset="84"/>
+		<component base="teh-ar.init.BaaMemHaaInit" xOffset="344"/>
+	</outline>
+</glyph>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yen" format="2">
+	<unicode hex="00A5"/>
+	<advance width="675"/>
+	<outline>
+		<contour>
+			<point x="178" y="187" type="curve"/>
+			<point x="194" y="187"/>
+			<point x="476" y="187"/>
+			<point x="487" y="187" type="curve"/>
+			<point x="501" y="176"/>
+			<point x="483" y="150"/>
+			<point x="477" y="146" type="curve"/>
+			<point x="159" y="146" type="line"/>
+			<point x="153" y="152"/>
+			<point x="169" y="187"/>
+		</contour>
+		<contour>
+			<point x="178" y="265" type="curve"/>
+			<point x="194" y="265"/>
+			<point x="476" y="265"/>
+			<point x="487" y="265" type="curve"/>
+			<point x="501" y="254"/>
+			<point x="483" y="228"/>
+			<point x="477" y="224" type="curve"/>
+			<point x="159" y="224" type="line"/>
+			<point x="153" y="230"/>
+			<point x="169" y="265"/>
+		</contour>
+		<contour>
+			<point x="255" y="142" type="curve" smooth="yes"/>
+			<point x="255" y="258" type="line" smooth="yes"/>
+			<point x="255" y="259"/>
+			<point x="254" y="268"/>
+			<point x="252" y="273" type="curve" smooth="yes"/>
+			<point x="232" y="320"/>
+			<point x="127" y="506"/>
+			<point x="127" y="506" type="curve" smooth="yes"/>
+			<point x="112" y="533"/>
+			<point x="109" y="540"/>
+			<point x="97" y="560" type="curve" smooth="yes"/>
+			<point x="82" y="584"/>
+			<point x="44" y="591"/>
+			<point x="31" y="592" type="curve"/>
+			<point x="26" y="599"/>
+			<point x="27" y="622"/>
+			<point x="31" y="628" type="curve"/>
+			<point x="69" y="624"/>
+			<point x="129" y="621"/>
+			<point x="170" y="621" type="curve" smooth="yes"/>
+			<point x="211" y="621"/>
+			<point x="270" y="624"/>
+			<point x="308" y="628" type="curve"/>
+			<point x="312" y="622"/>
+			<point x="313" y="599"/>
+			<point x="308" y="592" type="curve"/>
+			<point x="295" y="591"/>
+			<point x="248" y="589"/>
+			<point x="248" y="565" type="curve" smooth="yes"/>
+			<point x="248" y="561"/>
+			<point x="251" y="557"/>
+			<point x="255" y="550" type="curve" smooth="yes"/>
+			<point x="372" y="334" type="line"/>
+			<point x="377" y="329"/>
+			<point x="453" y="468"/>
+			<point x="495" y="546" type="curve" smooth="yes"/>
+			<point x="499" y="554"/>
+			<point x="500" y="561"/>
+			<point x="500" y="568" type="curve" smooth="yes"/>
+			<point x="500" y="586"/>
+			<point x="441" y="591"/>
+			<point x="428" y="592" type="curve"/>
+			<point x="423" y="599"/>
+			<point x="424" y="622"/>
+			<point x="428" y="628" type="curve"/>
+			<point x="474" y="624"/>
+			<point x="493" y="621"/>
+			<point x="538" y="621" type="curve" smooth="yes"/>
+			<point x="581" y="621"/>
+			<point x="608" y="626"/>
+			<point x="648" y="628" type="curve"/>
+			<point x="652" y="622"/>
+			<point x="653" y="599"/>
+			<point x="648" y="592" type="curve"/>
+			<point x="635" y="591"/>
+			<point x="591" y="589"/>
+			<point x="576" y="567" type="curve" smooth="yes"/>
+			<point x="557" y="538"/>
+			<point x="425" y="327"/>
+			<point x="398" y="271" type="curve" smooth="yes"/>
+			<point x="395" y="265"/>
+			<point x="393" y="255"/>
+			<point x="393" y="253" type="curve" smooth="yes"/>
+			<point x="392" y="142" type="line" smooth="yes"/>
+			<point x="392" y="100"/>
+			<point x="392" y="70"/>
+			<point x="400" y="50" type="curve" smooth="yes"/>
+			<point x="405" y="37"/>
+			<point x="449" y="33"/>
+			<point x="462" y="32" type="curve"/>
+			<point x="467" y="25"/>
+			<point x="466" y="2"/>
+			<point x="462" y="-4" type="curve"/>
+			<point x="424" y="0"/>
+			<point x="364" y="3"/>
+			<point x="323" y="3" type="curve" smooth="yes"/>
+			<point x="282" y="3"/>
+			<point x="223" y="0"/>
+			<point x="185" y="-4" type="curve"/>
+			<point x="181" y="2"/>
+			<point x="180" y="25"/>
+			<point x="185" y="32" type="curve"/>
+			<point x="198" y="33"/>
+			<point x="242" y="37"/>
+			<point x="247" y="50" type="curve" smooth="yes"/>
+			<point x="255" y="70"/>
+			<point x="255" y="100"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>org.sfdlib.decomposeAndRemoveOverlap</key>
+			<true/>
+		</dict>
+	</lib>
+</glyph>

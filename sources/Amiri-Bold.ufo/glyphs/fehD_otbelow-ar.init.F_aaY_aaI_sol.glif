@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fehDotbelow-ar.init.FaaYaaIsol" format="2">
+	<advance width="237"/>
+	<outline>
+		<component base="aFaa.init.FaaYaaIsol"/>
+		<component base="dotabove-ar" yOffset="630"/>
+		<component base="dotbelow-ar" xOffset="146" yOffset="-288"/>
+	</outline>
+	<anchor name="TashkilAbove" x="0" y="801"/>
+	<anchor name="TashkilBelow" x="122" y="-396"/>
+</glyph>

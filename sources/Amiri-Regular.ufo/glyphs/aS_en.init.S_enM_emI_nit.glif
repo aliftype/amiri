@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aSen.init.SenMemInit" format="2">
+	<advance width="525"/>
+	<outline>
+		<contour>
+			<point x="-48" y="270" type="curve" smooth="yes"/>
+			<point x="-56" y="261"/>
+			<point x="-61" y="257"/>
+			<point x="-63" y="258" type="curve" smooth="yes"/>
+			<point x="-71" y="261"/>
+			<point x="-74" y="268"/>
+			<point x="-70" y="278" type="curve" smooth="yes"/>
+			<point x="-41" y="354"/>
+			<point x="3" y="393"/>
+			<point x="61" y="396" type="curve" smooth="yes"/>
+			<point x="78" y="397"/>
+			<point x="94" y="383"/>
+			<point x="109" y="355" type="curve" smooth="yes"/>
+			<point x="123" y="328"/>
+			<point x="143" y="315"/>
+			<point x="167" y="314" type="curve" smooth="yes"/>
+			<point x="210" y="312"/>
+			<point x="256" y="349"/>
+			<point x="303" y="425" type="curve" smooth="yes"/>
+			<point x="309" y="434"/>
+			<point x="314" y="436"/>
+			<point x="320" y="430" type="curve" smooth="yes"/>
+			<point x="326" y="424"/>
+			<point x="326" y="415"/>
+			<point x="320" y="403" type="curve" smooth="yes"/>
+			<point x="314" y="391"/>
+			<point x="311" y="384"/>
+			<point x="311" y="382" type="curve" smooth="yes"/>
+			<point x="311" y="372"/>
+			<point x="317" y="364"/>
+			<point x="327" y="360" type="curve" smooth="yes"/>
+			<point x="364" y="345"/>
+			<point x="391" y="341"/>
+			<point x="411" y="347" type="curve" smooth="yes"/>
+			<point x="417" y="349"/>
+			<point x="412" y="360"/>
+			<point x="394" y="381" type="curve" smooth="yes"/>
+			<point x="392" y="383"/>
+			<point x="392" y="385"/>
+			<point x="393" y="387" type="curve" smooth="yes"/>
+			<point x="429" y="446" type="line" smooth="yes"/>
+			<point x="431" y="448"/>
+			<point x="433" y="448"/>
+			<point x="435" y="445" type="curve" smooth="yes"/>
+			<point x="456" y="420"/>
+			<point x="458" y="380"/>
+			<point x="442" y="323" type="curve" smooth="yes"/>
+			<point x="434" y="293"/>
+			<point x="424" y="273"/>
+			<point x="414" y="262" type="curve" smooth="yes"/>
+			<point x="404" y="251"/>
+			<point x="389" y="247"/>
+			<point x="369" y="250" type="curve" smooth="yes"/>
+			<point x="324" y="257"/>
+			<point x="290" y="269"/>
+			<point x="266" y="286" type="curve" smooth="yes"/>
+			<point x="264" y="288"/>
+			<point x="262" y="287"/>
+			<point x="260" y="285" type="curve" smooth="yes"/>
+			<point x="226" y="237"/>
+			<point x="185" y="215"/>
+			<point x="136" y="220" type="curve" smooth="yes"/>
+			<point x="109" y="223"/>
+			<point x="86" y="243"/>
+			<point x="66" y="280" type="curve" smooth="yes"/>
+			<point x="59" y="292"/>
+			<point x="50" y="300"/>
+			<point x="37" y="303" type="curve" smooth="yes"/>
+			<point x="6" y="309"/>
+			<point x="-20" y="302"/>
+			<point x="-41" y="282" type="curve" smooth="yes"/>
+			<point x="-46" y="277"/>
+			<point x="-48" y="273"/>
+		</contour>
+	</outline>
+	<anchor name="DigitAbove" x="249" y="588"/>
+	<anchor name="VAbove" x="249" y="588"/>
+	<anchor name="TwoDotsBelow" x="250" y="49"/>
+	<anchor name="DotBelow" x="299" y="49"/>
+	<anchor name="TashkilBelow" x="299" y="-327"/>
+	<anchor name="TashkilAbove" x="249" y="801"/>
+	<anchor name="TwoDotsAbove" x="200" y="539"/>
+	<anchor name="DotAbove" x="249" y="588"/>
+	<anchor name="HamzaAbove" x="249" y="588"/>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="doublerightarrowheadabove-ar" format="2">
+	<unicode hex="08FB"/>
+	<outline>
+		<component base="rightarrowheadabove-ar" xOffset="190"/>
+		<component base="rightarrowheadabove-ar"/>
+	</outline>
+	<anchor name="_MarkAbove" x="205" y="801"/>
+	<anchor name="_TashkilAbove" x="205" y="801"/>
+	<anchor name="_TashkilAboveDot" x="205" y="801"/>
+</glyph>

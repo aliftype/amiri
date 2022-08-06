@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehVinvertedabove-ar.fina.MemRaaIsol" format="2">
+	<advance width="473"/>
+	<outline>
+		<component base="vinvertedabove-ar" xOffset="307" yOffset="-108"/>
+		<component base="aRaa.fina.alt2" xOffset="-49"/>
+	</outline>
+	<anchor name="TashkilAbove" x="307" y="307"/>
+	<anchor name="TashkilBelow" x="210" y="-327"/>
+</glyph>

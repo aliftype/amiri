@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenThreedotsbelow-ar.init.SenMemInit" format="2">
+	<advance width="525"/>
+	<outline>
+		<component base="aSen.init.SenMemInit"/>
+		<component base="threedotsdownbelow-ar" xOffset="307" yOffset="-142"/>
+	</outline>
+	<anchor name="TashkilAbove" x="249" y="801"/>
+	<anchor name="TashkilBelow" x="299" y="-327"/>
+</glyph>

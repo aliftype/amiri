@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tchehDotabove-ar.medi" format="2">
+	<advance width="610"/>
+	<outline>
+		<component base="aHaa.medi"/>
+		<component base="dotabove-ar" xOffset="317" yOffset="396"/>
+		<component base="threedotsdownbelow-ar" xOffset="295" yOffset="-283"/>
+	</outline>
+	<anchor name="TashkilAbove" x="317" y="801"/>
+	<anchor name="TashkilBelow" x="293" y="-327"/>
+</glyph>

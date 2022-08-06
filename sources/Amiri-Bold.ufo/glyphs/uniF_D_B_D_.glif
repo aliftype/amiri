@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDBD" format="2">
+	<unicode hex="FDBD"/>
+	<advance width="1494"/>
+	<outline>
+		<component base="hah-ar.fina"/>
+		<component base="jeem-ar.medi" xOffset="640"/>
+		<component base="noon-ar.medi" xOffset="1250"/>
+	</outline>
+</glyph>

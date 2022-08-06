@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aLam.init.LamLamInit" format="2">
+	<advance width="153"/>
+	<outline>
+		<contour>
+			<point x="1" y="615" type="curve" smooth="yes"/>
+			<point x="20" y="657" type="line" smooth="yes"/>
+			<point x="25" y="669"/>
+			<point x="33" y="675"/>
+			<point x="43" y="674" type="curve"/>
+			<point x="53" y="673"/>
+			<point x="60" y="666"/>
+			<point x="64" y="655" type="curve" smooth="yes"/>
+			<point x="75" y="624"/>
+			<point x="88" y="602"/>
+			<point x="101" y="588" type="curve" smooth="yes"/>
+			<point x="114" y="574"/>
+			<point x="108" y="552"/>
+			<point x="83" y="524" type="curve" smooth="yes"/>
+			<point x="81" y="521"/>
+			<point x="80" y="519"/>
+			<point x="80" y="516" type="curve" smooth="yes"/>
+			<point x="83" y="483"/>
+			<point x="86" y="439"/>
+			<point x="91" y="383" type="curve" smooth="yes"/>
+			<point x="100" y="290" type="line" smooth="yes"/>
+			<point x="108" y="203"/>
+			<point x="110" y="139"/>
+			<point x="104" y="99" type="curve" smooth="yes"/>
+			<point x="93" y="26"/>
+			<point x="64" y="-17"/>
+			<point x="16" y="-29" type="curve" smooth="yes"/>
+			<point x="11" y="-30"/>
+			<point x="5" y="-31"/>
+			<point x="0" y="-32" type="curve" smooth="yes"/>
+			<point x="-15" y="-34"/>
+			<point x="-26" y="-24"/>
+			<point x="-32" y="0" type="curve" smooth="yes"/>
+			<point x="-34" y="7"/>
+			<point x="-35" y="16"/>
+			<point x="-37" y="27" type="curve" smooth="yes"/>
+			<point x="-43" y="68"/>
+			<point x="-39" y="94"/>
+			<point x="-23" y="106" type="curve" smooth="yes"/>
+			<point x="-17" y="111"/>
+			<point x="-10" y="112"/>
+			<point x="-3" y="111" type="curve" smooth="yes"/>
+			<point x="16" y="108"/>
+			<point x="32" y="107"/>
+			<point x="42" y="111" type="curve"/>
+			<point x="44" y="148"/>
+			<point x="38" y="224"/>
+			<point x="26" y="337" type="curve" smooth="yes"/>
+			<point x="13" y="460"/>
+			<point x="5" y="537"/>
+			<point x="2" y="569" type="curve"/>
+			<point x="0" y="609" type="line" smooth="yes"/>
+			<point x="0" y="611"/>
+			<point x="0" y="613"/>
+		</contour>
+	</outline>
+	<anchor name="VAbove" x="27" y="713"/>
+	<anchor name="TashkilAbove" x="100" y="801"/>
+	<anchor name="TashkilBelow" x="90" y="-327"/>
+	<anchor name="DotAbove" x="27" y="762"/>
+	<anchor name="TwoDotsAbove" x="-32" y="762"/>
+	<anchor name="TwoDotsBelow" x="12" y="-73"/>
+	<anchor name="Stroke" x="40" y="481"/>
+</glyph>

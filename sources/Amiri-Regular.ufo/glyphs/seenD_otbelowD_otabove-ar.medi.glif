@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenDotbelowDotabove-ar.medi" format="2">
+	<advance width="568"/>
+	<outline>
+		<component base="aSen.medi"/>
+		<component base="dotabove-ar" xOffset="291" yOffset="311"/>
+		<component base="dotbelow-ar" xOffset="269" yOffset="-264"/>
+	</outline>
+	<anchor name="TashkilAbove" x="244" y="801"/>
+	<anchor name="TashkilBelow" x="303" y="-327"/>
+</glyph>

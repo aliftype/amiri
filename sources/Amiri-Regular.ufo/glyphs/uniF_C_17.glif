@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC17" format="2">
+	<unicode hex="FC17"/>
+	<advance width="835"/>
+	<outline>
+		<component base="jeem-ar.fina.AboveHaaIsol"/>
+		<component base="hah-ar.init.AboveHaa" xOffset="104"/>
+	</outline>
+</glyph>

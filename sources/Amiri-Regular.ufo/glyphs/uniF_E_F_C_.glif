@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFEFC" format="2">
+	<unicode hex="FEFC"/>
+	<advance width="691"/>
+	<outline>
+		<component base="alef-ar.fina.LamAlfFina"/>
+		<component base="lam-ar.medi.LamAlfFina" xOffset="447"/>
+	</outline>
+</glyph>

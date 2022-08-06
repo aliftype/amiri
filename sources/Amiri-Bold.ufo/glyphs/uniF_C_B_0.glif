@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCB0" format="2">
+	<unicode hex="FCB0"/>
+	<advance width="699"/>
+	<outline>
+		<component base="meem-ar.medi.SenMemInit"/>
+		<component base="seen-ar.init.SenMemInit" xOffset="174"/>
+	</outline>
+</glyph>

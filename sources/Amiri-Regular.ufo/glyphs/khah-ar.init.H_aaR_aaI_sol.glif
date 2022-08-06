@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="khah-ar.init.HaaRaaIsol" format="2">
+	<advance width="579"/>
+	<outline>
+		<component base="aHaa.init.HaaRaaIsol"/>
+		<component base="dotabove-ar" xOffset="346" yOffset="405"/>
+	</outline>
+	<anchor name="TashkilAbove" x="229" y="801"/>
+	<anchor name="TashkilBelow" x="288" y="-327"/>
+</glyph>

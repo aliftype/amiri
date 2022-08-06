@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehDotbelow-ar" format="2">
+	<unicode hex="0694"/>
+	<advance width="399"/>
+	<outline>
+		<component base="aRaa.isol"/>
+		<component base="dotbelow-ar" xOffset="273" yOffset="-333"/>
+	</outline>
+	<anchor name="TashkilAbove" x="195" y="801"/>
+	<anchor name="TashkilBelow" x="288" y="-401"/>
+</glyph>

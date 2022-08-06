@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dal-ar" format="2">
+	<unicode hex="062F"/>
+	<advance width="450"/>
+	<outline>
+		<component base="aDal.isol"/>
+	</outline>
+	<anchor name="TashkilAbove" x="205" y="801"/>
+	<anchor name="TashkilBelow" x="244" y="-327"/>
+</glyph>

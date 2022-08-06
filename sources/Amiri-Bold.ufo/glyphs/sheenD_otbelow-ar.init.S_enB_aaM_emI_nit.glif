@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sheenDotbelow-ar.init.SenBaaMemInit" format="2">
+	<advance width="568"/>
+	<outline>
+		<component base="dotbelow-ar" xOffset="317" yOffset="36"/>
+		<component base="threedotsupabove-ar" xOffset="332" yOffset="520"/>
+		<component base="aSen.init" yOffset="202"/>
+	</outline>
+	<anchor name="TashkilAbove" x="317" y="801"/>
+	<anchor name="TashkilBelow" x="293" y="-327"/>
+</glyph>

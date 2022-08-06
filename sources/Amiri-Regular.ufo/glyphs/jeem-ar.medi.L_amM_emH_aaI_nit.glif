@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="jeem-ar.medi.LamMemHaaInit" format="2">
+	<advance width="57"/>
+	<outline>
+		<component base="aHaa.medi.LamMemHaaInit"/>
+		<component base="dotbelow-ar" xOffset="309" yOffset="-166"/>
+	</outline>
+	<anchor name="TashkilAbove" x="55" y="801"/>
+	<anchor name="TashkilBelow" x="99" y="-327"/>
+</glyph>

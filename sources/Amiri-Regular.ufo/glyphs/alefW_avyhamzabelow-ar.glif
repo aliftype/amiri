@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefWavyhamzabelow-ar" format="2">
+	<unicode hex="0673"/>
+	<advance width="217"/>
+	<outline>
+		<component base="aAlf.isol"/>
+		<component base="wavyhamzabelow-ar" xOffset="161" yOffset="205"/>
+	</outline>
+	<anchor name="TashkilAbove" x="98" y="757"/>
+	<anchor name="TashkilBelow" x="161" y="-342"/>
+</glyph>

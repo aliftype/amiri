@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ddal-ar.fina.LamDal" format="2">
+	<advance width="488"/>
+	<outline>
+		<component base="aDal.fina.LamDal"/>
+		<component base="smalltaa.above" xOffset="240" yOffset="500"/>
+	</outline>
+	<anchor name="TashkilAbove" x="221" y="817"/>
+	<anchor name="TashkilBelow" x="216" y="-327"/>
+</glyph>

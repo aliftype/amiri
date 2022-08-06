@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni2015" format="2">
+	<unicode hex="2015"/>
+	<advance width="1118"/>
+	<outline>
+		<contour>
+			<point x="59" y="214" type="curve" smooth="yes"/>
+			<point x="59" y="216"/>
+			<point x="61" y="266"/>
+			<point x="72" y="266" type="curve" smooth="yes"/>
+			<point x="1052" y="266" type="line"/>
+			<point x="1052" y="266"/>
+			<point x="1060" y="266"/>
+			<point x="1060" y="257" type="curve" smooth="yes"/>
+			<point x="1060" y="239"/>
+			<point x="1052" y="216"/>
+			<point x="1051" y="212" type="curve" smooth="yes"/>
+			<point x="1049" y="206"/>
+			<point x="1044" y="205"/>
+			<point x="1044" y="205" type="curve"/>
+			<point x="64" y="205" type="line"/>
+			<point x="64" y="205"/>
+			<point x="59" y="204"/>
+		</contour>
+	</outline>
+</glyph>

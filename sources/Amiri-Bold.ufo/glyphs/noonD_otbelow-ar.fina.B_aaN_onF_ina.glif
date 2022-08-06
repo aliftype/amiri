@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonDotbelow-ar.fina.BaaNonFina" format="2">
+	<advance width="542"/>
+	<outline>
+		<component base="aNon.fina.BaaNonFina"/>
+		<component base="dotabove-ar" xOffset="311" yOffset="349"/>
+		<component base="dotbelow-ar" xOffset="274" yOffset="-419"/>
+	</outline>
+	<anchor name="TashkilAbove" x="257" y="801"/>
+	<anchor name="TashkilBelow" x="289" y="-438"/>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hehgoal-ar.init.AboveHaa" format="2">
+	<advance width="592"/>
+	<outline>
+		<component base="aHeh.init.AboveHaa"/>
+	</outline>
+	<anchor name="TashkilAbove" x="0" y="801"/>
+	<anchor name="exit" x="0" y="187"/>
+	<anchor name="HamzaAbove" x="312" y="771"/>
+	<anchor name="TashkilBelow" x="461" y="-127"/>
+</glyph>

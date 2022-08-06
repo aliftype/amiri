@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehFarsiTwoabove-ar.medi.BaaYaaFina" format="2">
+	<advance width="307"/>
+	<outline>
+		<component base="aBaa.medi.BaaYaaFina"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="250" yOffset="-459"/>
+		<component base="twoabove-ar" xOffset="98" yOffset="220"/>
+	</outline>
+	<anchor name="TashkilAbove" x="98" y="801"/>
+	<anchor name="TashkilBelow" x="259" y="-503"/>
+</glyph>

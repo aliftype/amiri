@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="e-ar.medi.BaaMemFina" format="2">
+	<advance width="337"/>
+	<outline>
+		<component base="aBaa.medi.BaaMemFina"/>
+		<component base="twodotsverticalbelow-ar" xOffset="218" yOffset="-352"/>
+	</outline>
+	<anchor name="TashkilAbove" x="146" y="801"/>
+	<anchor name="TashkilBelow" x="238" y="-464"/>
+</glyph>

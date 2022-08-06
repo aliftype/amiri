@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC2C" format="2">
+	<unicode hex="FC2C"/>
+	<advance width="1000"/>
+	<outline>
+		<component base="meem-ar.fina"/>
+		<component base="ghain-ar.init" xOffset="522"/>
+	</outline>
+</glyph>

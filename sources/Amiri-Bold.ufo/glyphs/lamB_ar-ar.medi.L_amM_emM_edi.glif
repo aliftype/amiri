@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamBar-ar.medi.LamMemMedi" format="2">
+	<advance width="232"/>
+	<outline>
+		<component base="aLam.medi.LamMemMedi"/>
+		<component base="stroke-ar" xOffset="111" yOffset="533"/>
+	</outline>
+	<anchor name="exit" x="0" y="83"/>
+	<anchor name="TashkilAbove" x="49" y="801"/>
+	<anchor name="TashkilBelow" x="132" y="-327"/>
+</glyph>

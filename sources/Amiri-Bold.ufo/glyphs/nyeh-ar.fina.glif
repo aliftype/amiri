@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="nyeh-ar.fina" format="2">
+	<advance width="639"/>
+	<outline>
+		<component base="aHaa.fina"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="391" yOffset="-225"/>
+	</outline>
+	<anchor name="TashkilAbove" x="342" y="801"/>
+	<anchor name="TashkilBelow" x="400" y="-565"/>
+</glyph>

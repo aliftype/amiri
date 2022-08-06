@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="beeh-ar.init.HighLD" format="2">
+	<advance width="147"/>
+	<outline>
+		<component base="aBaa.init.High"/>
+		<component base="twodotsverticalbelow-ar.l" xOffset="107" yOffset="-435"/>
+	</outline>
+	<anchor name="TashkilAbove" x="46" y="801"/>
+	<anchor name="TashkilBelow" x="127" y="-547"/>
+</glyph>

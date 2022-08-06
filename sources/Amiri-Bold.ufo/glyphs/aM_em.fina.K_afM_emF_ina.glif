@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aMem.fina.KafMemFina" format="2">
+	<advance width="225"/>
+	<outline>
+		<component base="aMem.fina.KafMemIsol" xOffset="16" yOffset="-67"/>
+	</outline>
+	<anchor name="TashkilBelow" x="229" y="-327"/>
+	<anchor name="TashkilAbove" x="107" y="801"/>
+	<anchor name="entry" x="226" y="106"/>
+</glyph>

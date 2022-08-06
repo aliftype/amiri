@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ainTwodotsverticalabove-ar.init.AynYaaIsol" format="2">
+	<advance width="596"/>
+	<outline>
+		<component base="aAyn.init.AynYaaIsol"/>
+		<component base="twodotsverticalabove-ar" xOffset="257" yOffset="613"/>
+	</outline>
+	<anchor name="TashkilAbove" x="237" y="852"/>
+	<anchor name="TashkilBelow" x="439" y="-327"/>
+</glyph>

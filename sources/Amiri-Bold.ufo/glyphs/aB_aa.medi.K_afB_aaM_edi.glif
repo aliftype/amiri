@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aBaa.medi.KafBaaMedi" format="2">
+	<advance width="179"/>
+	<outline>
+		<contour>
+			<point x="110" y="141" type="curve" smooth="yes"/>
+			<point x="136" y="124"/>
+			<point x="159" y="113"/>
+			<point x="182" y="108" type="curve" smooth="yes"/>
+			<point x="219" y="100"/>
+			<point x="229" y="73"/>
+			<point x="211" y="27" type="curve"/>
+			<point x="203" y="7"/>
+			<point x="191" y="0"/>
+			<point x="176" y="4" type="curve"/>
+			<point x="141" y="15"/>
+			<point x="113" y="30"/>
+			<point x="91" y="51" type="curve"/>
+			<point x="62" y="11"/>
+			<point x="33" y="-11"/>
+			<point x="2" y="-15" type="curve" smooth="yes"/>
+			<point x="-12" y="-17"/>
+			<point x="-22" y="-7"/>
+			<point x="-27" y="13" type="curve" smooth="yes"/>
+			<point x="-41" y="73"/>
+			<point x="-32" y="103"/>
+			<point x="0" y="105" type="curve"/>
+			<point x="33" y="106"/>
+			<point x="56" y="116"/>
+			<point x="72" y="136" type="curve"/>
+			<point x="76" y="141"/>
+			<point x="82" y="143"/>
+			<point x="90" y="144" type="curve" smooth="yes"/>
+			<point x="98" y="145"/>
+			<point x="105" y="144"/>
+		</contour>
+	</outline>
+	<anchor name="DigitBelow" x="103" y="-171"/>
+	<anchor name="DigitAbove" x="24" y="664"/>
+	<anchor name="VAbove" x="39" y="635"/>
+	<anchor name="RingBelow" x="88" y="73"/>
+	<anchor name="TaaAbove" x="88" y="591"/>
+	<anchor name="TashkilBelow" x="103" y="-327"/>
+	<anchor name="TashkilAbove" x="24" y="801"/>
+	<anchor name="DotAbove" x="24" y="664"/>
+	<anchor name="TwoDotsAbove" x="24" y="664"/>
+	<anchor name="HamzaAbove" x="73" y="635"/>
+	<anchor name="TwoDotsBelow" x="45" y="-122"/>
+	<anchor name="DotBelow" x="103" y="-171"/>
+	<anchor name="HamzaBelow" x="151" y="-98"/>
+</glyph>

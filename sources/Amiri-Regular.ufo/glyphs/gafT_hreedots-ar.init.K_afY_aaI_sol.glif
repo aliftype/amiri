@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gafThreedots-ar.init.KafYaaIsol" format="2">
+	<advance width="505"/>
+	<outline>
+		<component base="aKaf.init.KafYaaIsol"/>
+		<component base="gafsarkashabove-ar.alt2" xOffset="192" yOffset="854"/>
+		<component base="threedotsupabove-ar" xOffset="-157" yOffset="724"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-215" y="996"/>
+	<anchor name="TashkilBelow" x="146" y="-327"/>
+</glyph>

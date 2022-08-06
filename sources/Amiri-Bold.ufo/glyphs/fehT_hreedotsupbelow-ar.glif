@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fehThreedotsupbelow-ar" format="2">
+	<unicode hex="0761"/>
+	<advance width="983"/>
+	<outline>
+		<component base="aFaa.isol"/>
+		<component base="threedotsupbelow-ar" xOffset="835" yOffset="-117"/>
+	</outline>
+	<anchor name="TashkilAbove" x="635" y="801"/>
+	<anchor name="TashkilBelow" x="526" y="-327"/>
+</glyph>

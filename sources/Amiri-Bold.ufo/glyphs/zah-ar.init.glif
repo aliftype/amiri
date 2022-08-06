@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="zah-ar.init" format="2">
+	<advance width="567"/>
+	<outline>
+		<component base="aTaa.init"/>
+		<component base="dotabove-ar" xOffset="374" yOffset="420"/>
+	</outline>
+	<anchor name="TashkilAbove" x="342" y="801"/>
+	<anchor name="TashkilBelow" x="244" y="-327"/>
+</glyph>

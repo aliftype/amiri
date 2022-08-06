@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aLam.init" format="2">
+	<advance width="175"/>
+	<outline>
+		<contour>
+			<point x="16" y="660" type="curve" smooth="yes"/>
+			<point x="26" y="684"/>
+			<point x="32" y="699"/>
+			<point x="34" y="705" type="curve" smooth="yes"/>
+			<point x="36" y="711"/>
+			<point x="39" y="714"/>
+			<point x="44" y="714" type="curve" smooth="yes"/>
+			<point x="49" y="714"/>
+			<point x="53" y="711"/>
+			<point x="55" y="704" type="curve" smooth="yes"/>
+			<point x="65" y="674"/>
+			<point x="79" y="650"/>
+			<point x="98" y="631" type="curve" smooth="yes"/>
+			<point x="105" y="624"/>
+			<point x="104" y="617"/>
+			<point x="97" y="608" type="curve"/>
+			<point x="75" y="577" type="line"/>
+			<point x="79" y="540"/>
+			<point x="83" y="505"/>
+			<point x="87" y="473" type="curve" smooth="yes"/>
+			<point x="109" y="308"/>
+			<point x="117" y="207"/>
+			<point x="110" y="171" type="curve" smooth="yes"/>
+			<point x="89" y="66"/>
+			<point x="53" y="8"/>
+			<point x="0" y="0" type="curve" smooth="yes"/>
+			<point x="-12" y="-2"/>
+			<point x="-17" y="20"/>
+			<point x="-15" y="66" type="curve" smooth="yes"/>
+			<point x="-15" y="81"/>
+			<point x="-10" y="89"/>
+			<point x="0" y="90" type="curve" smooth="yes"/>
+			<point x="36" y="94"/>
+			<point x="62" y="109"/>
+			<point x="76" y="135" type="curve"/>
+			<point x="74" y="187"/>
+			<point x="65" y="270"/>
+			<point x="51" y="381" type="curve" smooth="yes"/>
+			<point x="37" y="492"/>
+			<point x="28" y="560"/>
+			<point x="25" y="585" type="curve"/>
+			<point x="15" y="642" type="line" smooth="yes"/>
+			<point x="14" y="650"/>
+			<point x="14" y="655"/>
+		</contour>
+	</outline>
+	<anchor name="Stroke" x="59" y="523"/>
+	<anchor name="TwoDotsBelow" x="39" y="-49"/>
+	<anchor name="TwoDotsAbove" x="-20" y="814"/>
+	<anchor name="DotAbove" x="39" y="814"/>
+	<anchor name="TashkilBelow" x="68" y="-327"/>
+	<anchor name="TashkilAbove" x="39" y="801"/>
+	<anchor name="VAbove" x="39" y="765"/>
+</glyph>

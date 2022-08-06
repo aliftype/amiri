@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behDotless-ar.init.BaaMemInit" format="2">
+	<advance width="265"/>
+	<outline>
+		<component base="aBaa.init.BaaMemInit"/>
+	</outline>
+	<anchor name="TaaAbove" x="64" y="527"/>
+	<anchor name="TashkilAbove" x="104" y="801"/>
+	<anchor name="TashkilBelow" x="143" y="-327"/>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kasra-ar.small2" format="2">
+	<outline>
+		<contour>
+			<point x="112" y="-232" type="curve" smooth="yes"/>
+			<point x="119" y="-229"/>
+			<point x="124" y="-228"/>
+			<point x="128" y="-229" type="curve"/>
+			<point x="134" y="-230"/>
+			<point x="137" y="-235"/>
+			<point x="136" y="-242" type="curve" smooth="yes"/>
+			<point x="131" y="-285" type="line" smooth="yes"/>
+			<point x="130" y="-293"/>
+			<point x="126" y="-299"/>
+			<point x="119" y="-303" type="curve"/>
+			<point x="119" y="-303" type="line"/>
+			<point x="-91" y="-399" type="line" smooth="yes"/>
+			<point x="-94" y="-400"/>
+			<point x="-97" y="-401"/>
+			<point x="-99" y="-401" type="curve" smooth="yes"/>
+			<point x="-107" y="-402"/>
+			<point x="-112" y="-398"/>
+			<point x="-113" y="-389" type="curve" smooth="yes"/>
+			<point x="-113" y="-388"/>
+			<point x="-113" y="-387"/>
+			<point x="-113" y="-386" type="curve" smooth="yes"/>
+			<point x="-116" y="-357" type="line"/>
+			<point x="-116" y="-350"/>
+			<point x="-111" y="-344"/>
+			<point x="-103" y="-340" type="curve" smooth="yes"/>
+			<point x="29" y="-274"/>
+			<point x="101" y="-237"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilTashkilBelow" x="-83" y="-269"/>
+	<anchor name="_TashkilBelow" x="0" y="-271"/>
+	<anchor name="_TashkilTashkilBelow" x="0" y="-271"/>
+</glyph>

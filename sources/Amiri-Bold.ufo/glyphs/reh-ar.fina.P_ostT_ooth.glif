@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="reh-ar.fina.PostTooth" format="2">
+	<advance width="553"/>
+	<outline>
+		<component base="aRaa.fina.PostTooth" xOffset="-146"/>
+	</outline>
+	<anchor name="TaaAbove" x="325" y="242"/>
+	<anchor name="TashkilAbove" x="179" y="801"/>
+	<anchor name="TashkilBelow" x="229" y="-327"/>
+</glyph>

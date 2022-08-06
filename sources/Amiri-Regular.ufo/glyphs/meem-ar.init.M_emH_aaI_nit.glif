@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="meem-ar.init.MemHaaInit" format="2">
+	<advance width="550"/>
+	<outline>
+		<component base="aMem.init.MemHaaInit"/>
+	</outline>
+	<anchor name="exit" x="0" y="254"/>
+	<anchor name="TashkilAbove" x="283" y="801"/>
+	<anchor name="TashkilBelow" x="400" y="-327"/>
+</glyph>

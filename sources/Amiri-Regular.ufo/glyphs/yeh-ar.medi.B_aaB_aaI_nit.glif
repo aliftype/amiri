@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yeh-ar.medi.BaaBaaInit" format="2">
+	<advance width="168"/>
+	<outline>
+		<component base="aBaa.medi.BaaBaaInit"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="103" yOffset="-171"/>
+	</outline>
+	<anchor name="TaaAbove" x="122" y="244"/>
+	<anchor name="DigitAbove" x="122" y="293"/>
+	<anchor name="TashkilAbove" x="122" y="801"/>
+	<anchor name="TashkilBelow" x="49" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tahThreedots-ar.medi" format="2">
+	<advance width="551"/>
+	<outline>
+		<component base="aTaa.medi"/>
+		<component base="threedotsupabove-ar" xOffset="342" yOffset="420"/>
+	</outline>
+	<anchor name="TashkilAbove" x="244" y="801"/>
+	<anchor name="TashkilBelow" x="220" y="-327"/>
+</glyph>

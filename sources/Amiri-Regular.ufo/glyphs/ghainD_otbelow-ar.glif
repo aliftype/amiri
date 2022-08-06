@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ghainDotbelow-ar" format="2">
+	<unicode hex="06FC"/>
+	<advance width="540"/>
+	<outline>
+		<component base="aAyn.isol"/>
+		<component base="dotabove-ar" xOffset="181" yOffset="532"/>
+		<component base="dotbelow-ar" xOffset="352" yOffset="-20"/>
+	</outline>
+	<anchor name="TashkilAbove" x="244" y="801"/>
+	<anchor name="TashkilBelow" x="366" y="-39"/>
+</glyph>

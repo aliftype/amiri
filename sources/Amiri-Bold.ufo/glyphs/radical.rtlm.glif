@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="radical.rtlm" format="2">
+	<advance width="514"/>
+	<outline>
+		<contour>
+			<point x="501" y="146" type="curve"/>
+			<point x="423" y="191" type="line"/>
+			<point x="260" y="-171" type="line" smooth="yes"/>
+			<point x="258" y="-174"/>
+			<point x="255" y="-176"/>
+			<point x="250" y="-176" type="curve" smooth="yes"/>
+			<point x="249" y="-176"/>
+			<point x="247" y="-176"/>
+			<point x="245" y="-175" type="curve" smooth="yes"/>
+			<point x="227" y="-170"/>
+			<point x="212" y="-161"/>
+			<point x="202" y="-149" type="curve"/>
+			<point x="20" y="766"/>
+			<point x="21" y="766"/>
+			<point x="21" y="766" type="curve"/>
+			<point x="77" y="772" type="line"/>
+			<point x="222" y="46" type="line"/>
+			<point x="309" y="248" type="line" smooth="yes"/>
+			<point x="314" y="259"/>
+			<point x="319" y="274"/>
+			<point x="324" y="292" type="curve" smooth="yes"/>
+			<point x="327" y="301"/>
+			<point x="329" y="309"/>
+			<point x="331" y="316" type="curve"/>
+			<point x="332" y="318"/>
+			<point x="334" y="320"/>
+			<point x="337" y="321" type="curve"/>
+			<point x="345" y="323"/>
+			<point x="352" y="321"/>
+			<point x="358" y="316" type="curve" smooth="yes"/>
+			<point x="360" y="314"/>
+			<point x="364" y="312"/>
+			<point x="369" y="308" type="curve" smooth="yes"/>
+			<point x="422" y="267"/>
+			<point x="467" y="233"/>
+			<point x="504" y="207" type="curve" smooth="yes"/>
+			<point x="504" y="207"/>
+			<point x="506" y="206"/>
+			<point x="509" y="204" type="curve" smooth="yes"/>
+			<point x="521" y="196"/>
+			<point x="526" y="188"/>
+			<point x="526" y="181" type="curve" smooth="yes"/>
+			<point x="526" y="178"/>
+			<point x="526" y="175"/>
+			<point x="524" y="171" type="curve" smooth="yes"/>
+			<point x="519" y="160"/>
+			<point x="511" y="152"/>
+		</contour>
+	</outline>
+</glyph>

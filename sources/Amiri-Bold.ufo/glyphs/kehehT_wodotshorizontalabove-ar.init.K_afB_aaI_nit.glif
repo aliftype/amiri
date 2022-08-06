@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehTwodotshorizontalabove-ar.init.KafBaaInit" format="2">
+	<advance width="349"/>
+	<outline>
+		<component base="aKaf.init.KafBaaInit"/>
+		<component base="twodotshorizontalabove-ar" xOffset="83" yOffset="796"/>
+	</outline>
+	<anchor name="TashkilAbove" x="74" y="967"/>
+	<anchor name="TashkilBelow" x="146" y="-327"/>
+</glyph>

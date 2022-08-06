@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kashida-ar.3" format="2">
+	<advance width="556"/>
+	<outline>
+		<contour>
+			<point x="557" y="0" type="curve"/>
+			<point x="453" y="-8"/>
+			<point x="360" y="-13"/>
+			<point x="278" y="-13" type="curve" smooth="yes"/>
+			<point x="196" y="-13"/>
+			<point x="104" y="-8"/>
+			<point x="0" y="0" type="curve"/>
+			<point x="-6" y="0"/>
+			<point x="-10" y="5"/>
+			<point x="-13" y="15" type="curve" smooth="yes"/>
+			<point x="-25" y="59" type="line" smooth="yes"/>
+			<point x="-31" y="82"/>
+			<point x="-23" y="92"/>
+			<point x="0" y="90" type="curve"/>
+			<point x="104" y="82"/>
+			<point x="196" y="78"/>
+			<point x="278" y="78" type="curve" smooth="yes"/>
+			<point x="360" y="78"/>
+			<point x="453" y="82"/>
+			<point x="557" y="90" type="curve"/>
+			<point x="579" y="91"/>
+			<point x="588" y="81"/>
+			<point x="582" y="59" type="curve" smooth="yes"/>
+			<point x="569" y="15" type="line" smooth="yes"/>
+			<point x="566" y="5"/>
+			<point x="563" y="0"/>
+		</contour>
+	</outline>
+	<anchor name="HamzaAbove" x="278" y="244"/>
+	<anchor name="HamzaBelow" x="278" y="-92.773"/>
+	<anchor name="NoonAbove" x="278" y="244"/>
+	<anchor name="AlefAbove" x="278" y="244"/>
+	<anchor name="MarkAbove" x="278" y="801"/>
+	<anchor name="MarkBelow" x="278" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="heh-ar.fina.LamHeh" format="2">
+	<advance width="404"/>
+	<outline>
+		<component base="aHeh.fina.LamHeh"/>
+	</outline>
+	<anchor name="HamzaAbove" x="82" y="402"/>
+	<anchor name="TashkilAbove" x="98" y="801"/>
+	<anchor name="TashkilBelow" x="195" y="-327"/>
+</glyph>

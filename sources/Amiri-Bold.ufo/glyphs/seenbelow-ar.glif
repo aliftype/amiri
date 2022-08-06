@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenbelow-ar" format="2">
+	<unicode hex="06E3"/>
+	<outline>
+		<component base="seenabove-ar" yOffset="-1777"/>
+	</outline>
+	<anchor name="_MarkBelow" x="269" y="-93"/>
+	<anchor name="_SeenBelow" x="249" y="-195"/>
+</glyph>

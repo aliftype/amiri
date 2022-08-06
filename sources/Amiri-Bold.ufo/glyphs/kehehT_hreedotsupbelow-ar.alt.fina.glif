@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehThreedotsupbelow-ar.alt.fina" format="2">
+	<advance width="822"/>
+	<outline>
+		<component base="threedotsupbelow-ar" xOffset="357" yOffset="-190"/>
+		<component base="keheh-ar.alt.fina"/>
+	</outline>
+	<anchor name="TashkilAbove" x="356" y="801"/>
+	<anchor name="TashkilBelow" x="391" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ainThreedots-ar.init.AynMemInit" format="2">
+	<advance width="490"/>
+	<outline>
+		<component base="aAyn.init.AynMemInit"/>
+		<component base="threedotsupabove-ar" xOffset="166" yOffset="650"/>
+	</outline>
+	<anchor name="TashkilAbove" x="108" y="922"/>
+	<anchor name="TashkilBelow" x="311" y="-327"/>
+</glyph>

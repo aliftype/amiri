@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kashida-ar.6" format="2">
+	<advance width="1113"/>
+	<outline>
+		<contour>
+			<point x="1113" y="90" type="curve"/>
+			<point x="1131" y="91"/>
+			<point x="1140" y="85"/>
+			<point x="1140" y="71" type="curve" smooth="yes"/>
+			<point x="1140" y="67"/>
+			<point x="1140" y="64"/>
+			<point x="1139" y="59" type="curve" smooth="yes"/>
+			<point x="1126" y="15" type="line" smooth="yes"/>
+			<point x="1123" y="5"/>
+			<point x="1119" y="0"/>
+			<point x="1113" y="0" type="curve"/>
+			<point x="1020" y="-13"/>
+			<point x="835" y="-20"/>
+			<point x="557" y="-20" type="curve" smooth="yes"/>
+			<point x="318" y="-20"/>
+			<point x="132" y="-13"/>
+			<point x="0" y="0" type="curve"/>
+			<point x="-6" y="0"/>
+			<point x="-10" y="5"/>
+			<point x="-13" y="15" type="curve" smooth="yes"/>
+			<point x="-25" y="59" type="line" smooth="yes"/>
+			<point x="-26" y="64"/>
+			<point x="-27" y="68"/>
+			<point x="-27" y="72" type="curve" smooth="yes"/>
+			<point x="-26" y="87"/>
+			<point x="-18" y="92"/>
+			<point x="0" y="90" type="curve"/>
+			<point x="85" y="78"/>
+			<point x="271" y="71"/>
+			<point x="557" y="71" type="curve" smooth="yes"/>
+			<point x="792" y="71"/>
+			<point x="977" y="77"/>
+		</contour>
+	</outline>
+	<anchor name="HamzaBelow" x="557" y="-92.773"/>
+	<anchor name="HamzaAbove" x="557" y="244"/>
+	<anchor name="AlefAbove" x="557" y="244"/>
+	<anchor name="NoonAbove" x="557" y="244"/>
+	<anchor name="MarkAbove" x="557" y="801"/>
+	<anchor name="MarkBelow" x="557" y="-327"/>
+</glyph>

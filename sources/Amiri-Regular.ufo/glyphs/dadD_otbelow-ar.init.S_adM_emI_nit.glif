@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dadDotbelow-ar.init.SadMemInit" format="2">
+	<advance width="650"/>
+	<outline>
+		<component base="aSad.init.SadMemInit"/>
+		<component base="dotabove-ar" xOffset="251" yOffset="632"/>
+		<component base="dotbelow-ar" xOffset="387" yOffset="-20"/>
+	</outline>
+	<anchor name="TashkilAbove" x="325" y="801"/>
+	<anchor name="TashkilBelow" x="396" y="-327"/>
+</glyph>

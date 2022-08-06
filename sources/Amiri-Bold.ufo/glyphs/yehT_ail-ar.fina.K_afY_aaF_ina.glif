@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehTail-ar.fina.KafYaaFina" format="2">
+	<advance width="471"/>
+	<outline>
+		<component base="aYaa.fina.KafYaaFina"/>
+		<component base="aYaa.tail" xOffset="58" yOffset="-6"/>
+	</outline>
+	<anchor name="TashkilAbove" x="186" y="801"/>
+	<anchor name="TashkilBelow" x="361" y="-327"/>
+	<anchor name="AlefAbove" x="145" y="251"/>
+</glyph>

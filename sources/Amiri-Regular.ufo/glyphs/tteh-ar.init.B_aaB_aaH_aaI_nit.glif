@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tteh-ar.init.BaaBaaHaaInit" format="2">
+	<advance width="161"/>
+	<outline>
+		<component base="aBaa.init.BaaBaaHaaInit"/>
+		<component base="smalltaa.above" xOffset="95" yOffset="518"/>
+	</outline>
+	<anchor name="TashkilAbove" x="76" y="835"/>
+	<anchor name="TashkilBelow" x="46" y="-327"/>
+</glyph>

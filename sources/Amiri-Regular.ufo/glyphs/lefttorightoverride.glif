@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lefttorightoverride" format="2">
+	<unicode hex="202D"/>
+	<outline>
+		<component base="zerowidthnonjoiner"/>
+		<component base="_arrowhead"/>
+		<component base="_arrowhead" xOffset="89"/>
+	</outline>
+</glyph>

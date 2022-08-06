@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="khah-ar.medi.SadHaaInit" format="2">
+	<advance width="55"/>
+	<outline>
+		<component base="aHaa.medi.SadHaaInit"/>
+		<component base="dotabove-ar" xOffset="88" yOffset="420"/>
+	</outline>
+	<anchor name="entry" x="55" y="235"/>
+	<anchor name="TashkilAbove" x="88" y="801"/>
+	<anchor name="TashkilBelow" x="166" y="-327"/>
+</glyph>

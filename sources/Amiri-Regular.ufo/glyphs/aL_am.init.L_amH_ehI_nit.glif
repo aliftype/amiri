@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aLam.init.LamHehInit" format="2">
+	<advance width="225"/>
+	<outline>
+		<contour>
+			<point x="-68" y="647" type="curve" smooth="yes"/>
+			<point x="-59" y="664"/>
+			<point x="-50" y="680"/>
+			<point x="-41" y="694" type="curve" smooth="yes"/>
+			<point x="-39" y="697"/>
+			<point x="-35" y="698"/>
+			<point x="-32" y="697" type="curve" smooth="yes"/>
+			<point x="-29" y="696"/>
+			<point x="-27" y="693"/>
+			<point x="-27" y="690" type="curve" smooth="yes"/>
+			<point x="-23" y="661"/>
+			<point x="-10" y="634"/>
+			<point x="11" y="609" type="curve" smooth="yes"/>
+			<point x="16" y="603"/>
+			<point x="15" y="597"/>
+			<point x="10" y="590" type="curve"/>
+			<point x="-15" y="564" type="line" smooth="yes"/>
+			<point x="-19" y="560"/>
+			<point x="-21" y="557"/>
+			<point x="-21" y="555" type="curve"/>
+			<point x="-13" y="430"/>
+			<point x="-3" y="344"/>
+			<point x="9" y="299" type="curve" smooth="yes"/>
+			<point x="11" y="291"/>
+			<point x="16" y="286"/>
+			<point x="23" y="283" type="curve" smooth="yes"/>
+			<point x="49" y="272"/>
+			<point x="59" y="255"/>
+			<point x="54" y="234" type="curve" smooth="yes"/>
+			<point x="50" y="218"/>
+			<point x="42" y="209"/>
+			<point x="28" y="206" type="curve" smooth="yes"/>
+			<point x="14" y="203"/>
+			<point x="2" y="207"/>
+			<point x="-10" y="219" type="curve" smooth="yes"/>
+			<point x="-28" y="237"/>
+			<point x="-40" y="280"/>
+			<point x="-45" y="345" type="curve" smooth="yes"/>
+			<point x="-53" y="442"/>
+			<point x="-58" y="504"/>
+			<point x="-60" y="533" type="curve" smooth="yes"/>
+			<point x="-61" y="562"/>
+			<point x="-62" y="583"/>
+			<point x="-64" y="595" type="curve" smooth="yes"/>
+			<point x="-69" y="626"/>
+			<point x="-70" y="642"/>
+		</contour>
+	</outline>
+	<anchor name="Stroke" x="-36" y="506"/>
+	<anchor name="TwoDotsBelow" x="0" y="-73"/>
+	<anchor name="TwoDotsAbove" x="-93" y="801"/>
+	<anchor name="DotAbove" x="-34" y="801"/>
+	<anchor name="TashkilBelow" x="88" y="-327"/>
+	<anchor name="TashkilAbove" x="112" y="801"/>
+	<anchor name="VAbove" x="-34" y="752"/>
+</glyph>

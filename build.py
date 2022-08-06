@@ -223,7 +223,7 @@ def makeOverLine(font, posGlyph="qafLamAlefMaksuraabove-ar"):
 
 def mergeLatin(font):
     fontname = font.info.postscriptFontName.replace("Amiri", "AmiriLatin")
-    latin = openFont("build/%s.ufo" % fontname)
+    latin = openFont("sources/%s.ufo" % fontname)
     for glyph in latin:
         try:
             font.addGlyph(glyph)
@@ -573,10 +573,7 @@ def _build_production_name(glyph, font):
     return glyph.name
 
 def openFont(path):
-    font = Font.open(path, validate=False)
-    font.features.text = ""
-
-    return font
+    return Font.open(path, validate=False)
 
 
 def makeDesktop(options, generate=True):

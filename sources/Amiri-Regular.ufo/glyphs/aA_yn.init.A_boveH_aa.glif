@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aAyn.init.AboveHaa" format="2">
+	<advance width="545"/>
+	<outline>
+		<component base="aAyn.init.AynHaaInit"/>
+	</outline>
+	<anchor name="TashkilBelow" x="461" y="-127"/>
+	<anchor name="DotBelow" x="513" y="312"/>
+	<anchor name="TashkilAbove" x="365" y="825"/>
+	<anchor name="TwoDotsAbove" x="155" y="725"/>
+	<anchor name="DotAbove" x="209" y="725"/>
+	<anchor name="HamzaAbove" x="209" y="725"/>
+	<anchor name="exit" x="-32" y="205"/>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefabove-ar.medi" format="2">
+	<advance width="292"/>
+	<outline>
+		<component base="alefabove-ar" xOffset="-37" yOffset="-624"/>
+		<component base="kashida-ar.long1"/>
+	</outline>
+	<anchor name="TashkilAbove" x="98" y="684"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehThreedotsabove-ar.init.AboveHaa" format="2">
+	<advance width="673"/>
+	<outline>
+		<component base="aKaf.init.AboveHaa"/>
+		<component base="threedotsupabove-ar" xOffset="-15" yOffset="734"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-73" y="1006"/>
+	<anchor name="TashkilBelow" x="460" y="-127"/>
+</glyph>

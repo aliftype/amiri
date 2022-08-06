@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="qafDotabove-ar" format="2">
+	<unicode hex="06A7"/>
+	<advance width="687"/>
+	<outline>
+		<component base="aQaf.isol"/>
+		<component base="dotabove-ar" xOffset="474" yOffset="469"/>
+	</outline>
+	<anchor name="TashkilAbove" x="439" y="801"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+</glyph>

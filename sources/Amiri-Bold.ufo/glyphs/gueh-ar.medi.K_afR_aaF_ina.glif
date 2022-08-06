@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gueh-ar.medi.KafRaaFina" format="2">
+	<advance width="386"/>
+	<outline>
+		<component base="aKaf.medi.KafRaaFina"/>
+		<component base="gafsarkashabove-ar.alt1" xOffset="263" yOffset="727"/>
+		<component base="twodotsverticalbelow-ar" xOffset="190" yOffset="-98"/>
+	</outline>
+	<anchor name="TashkilBelow" x="195" y="-327"/>
+	<anchor name="TashkilAbove" x="142" y="801"/>
+</glyph>

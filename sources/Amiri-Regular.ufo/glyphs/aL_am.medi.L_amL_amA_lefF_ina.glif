@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aLam.medi.LamLamAlefFina" format="2">
+	<advance width="210"/>
+	<outline>
+		<contour>
+			<point x="172" y="126" type="curve" smooth="yes"/>
+			<point x="181" y="105"/>
+			<point x="193" y="85"/>
+			<point x="208" y="64" type="curve" smooth="yes"/>
+			<point x="208" y="64"/>
+			<point x="213" y="58"/>
+			<point x="222" y="46" type="curve" smooth="yes"/>
+			<point x="238" y="25"/>
+			<point x="243" y="-8"/>
+			<point x="238" y="-53" type="curve" smooth="yes"/>
+			<point x="237" y="-59"/>
+			<point x="236" y="-61"/>
+			<point x="232" y="-61" type="curve" smooth="yes"/>
+			<point x="189" y="-59"/>
+			<point x="153" y="-16"/>
+			<point x="123" y="68" type="curve" smooth="yes"/>
+			<point x="111" y="103"/>
+			<point x="92" y="196"/>
+			<point x="68" y="347" type="curve"/>
+			<point x="47" y="189"/>
+			<point x="1" y="78"/>
+			<point x="-70" y="14" type="curve" smooth="yes"/>
+			<point x="-116" y="-27"/>
+			<point x="-197" y="-48"/>
+			<point x="-312" y="-48" type="curve" smooth="yes"/>
+			<point x="-321" y="-48"/>
+			<point x="-324" y="-44"/>
+			<point x="-323" y="-37" type="curve" smooth="yes"/>
+			<point x="-322" y="-33"/>
+			<point x="-320" y="-30"/>
+			<point x="-316" y="-29" type="curve" smooth="yes"/>
+			<point x="-240" y="-8"/>
+			<point x="-176" y="20"/>
+			<point x="-125" y="56" type="curve" smooth="yes"/>
+			<point x="-50" y="109"/>
+			<point x="-3" y="168"/>
+			<point x="18" y="235" type="curve" smooth="yes"/>
+			<point x="43" y="316"/>
+			<point x="48" y="429"/>
+			<point x="34" y="573" type="curve" smooth="yes"/>
+			<point x="32" y="589"/>
+			<point x="34" y="602"/>
+			<point x="39" y="610" type="curve" smooth="yes"/>
+			<point x="63" y="653" type="line" smooth="yes"/>
+			<point x="67" y="660"/>
+			<point x="71" y="662"/>
+			<point x="75" y="661" type="curve" smooth="yes"/>
+			<point x="79" y="660"/>
+			<point x="81" y="655"/>
+			<point x="82" y="647" type="curve" smooth="yes"/>
+			<point x="107" y="375"/>
+			<point x="137" y="202"/>
+		</contour>
+	</outline>
+	<anchor name="DotAbove" x="55" y="799"/>
+	<anchor name="TwoDotsAbove" x="-1" y="760"/>
+	<anchor name="Stroke" x="65" y="511"/>
+	<anchor name="TwoDotsBelow" x="10" y="-73"/>
+	<anchor name="TashkilBelow" x="-34" y="-327"/>
+	<anchor name="TashkilAbove" x="34" y="801"/>
+	<anchor name="VAbove" x="55" y="757"/>
+</glyph>

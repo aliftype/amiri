@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonThreedotsabove-ar.medi.BaaNonFina" format="2">
+	<advance width="218"/>
+	<outline>
+		<component base="threedotsdownbelow-ar" xOffset="80" yOffset="-327"/>
+		<component base="aBaa.medi.BaaNonFina"/>
+	</outline>
+	<anchor name="TashkilAbove" x="0" y="801"/>
+	<anchor name="TashkilBelow" x="119" y="-348"/>
+</glyph>

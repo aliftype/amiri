@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sad-ar.medi" format="2">
+	<advance width="722"/>
+	<outline>
+		<component base="aSad.medi"/>
+	</outline>
+	<anchor name="SeenBelow" x="361" y="-195"/>
+	<anchor name="SeenAbove" x="361" y="391"/>
+	<anchor name="TashkilAbove" x="361" y="801"/>
+	<anchor name="TashkilBelow" x="391" y="-327"/>
+</glyph>

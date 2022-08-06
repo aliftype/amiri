@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dalVinvertedbelow-ar.fina.KafDal" format="2">
+	<advance width="403"/>
+	<outline>
+		<component base="aDal.fina.KafDal"/>
+		<component base="vinvertedbelow-ar" xOffset="211" yOffset="176"/>
+	</outline>
+	<anchor name="TashkilAbove" x="181" y="801"/>
+	<anchor name="TashkilBelow" x="211" y="-391"/>
+</glyph>

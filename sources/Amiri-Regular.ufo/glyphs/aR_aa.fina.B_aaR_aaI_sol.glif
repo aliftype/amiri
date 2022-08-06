@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aRaa.fina.BaaRaaIsol" format="2">
+	<advance width="445"/>
+	<outline>
+		<contour>
+			<point x="440" y="196" type="curve" smooth="yes"/>
+			<point x="457" y="175"/>
+			<point x="467" y="155"/>
+			<point x="471" y="137" type="curve" smooth="yes"/>
+			<point x="475" y="119"/>
+			<point x="476" y="93"/>
+			<point x="473" y="57" type="curve" smooth="yes"/>
+			<point x="467" y="-5"/>
+			<point x="440" y="-63"/>
+			<point x="392" y="-116" type="curve" smooth="yes"/>
+			<point x="344" y="-169"/>
+			<point x="300" y="-196"/>
+			<point x="260" y="-198" type="curve" smooth="yes"/>
+			<point x="192" y="-201"/>
+			<point x="129" y="-183"/>
+			<point x="71" y="-146" type="curve" smooth="yes"/>
+			<point x="66" y="-143"/>
+			<point x="64" y="-141"/>
+			<point x="63" y="-137" type="curve" smooth="yes"/>
+			<point x="62" y="-133"/>
+			<point x="63" y="-130"/>
+			<point x="66" y="-128" type="curve" smooth="yes"/>
+			<point x="69" y="-126"/>
+			<point x="73" y="-126"/>
+			<point x="77" y="-128" type="curve" smooth="yes"/>
+			<point x="122" y="-142"/>
+			<point x="160" y="-147"/>
+			<point x="192" y="-141" type="curve" smooth="yes"/>
+			<point x="308" y="-120"/>
+			<point x="390" y="-59"/>
+			<point x="439" y="41" type="curve" smooth="yes"/>
+			<point x="440" y="44"/>
+			<point x="440" y="49"/>
+			<point x="440" y="57" type="curve" smooth="yes"/>
+			<point x="440" y="62"/>
+			<point x="432" y="70"/>
+			<point x="414" y="82" type="curve" smooth="yes"/>
+			<point x="406" y="89"/>
+			<point x="403" y="99"/>
+			<point x="406" y="114" type="curve" smooth="yes"/>
+			<point x="421" y="190" type="line" smooth="yes"/>
+			<point x="424" y="206"/>
+			<point x="431" y="208"/>
+		</contour>
+	</outline>
+	<anchor name="HamzaAbove" x="313" y="440"/>
+	<anchor name="Stroke" x="400" y="-27"/>
+	<anchor name="DotAlt" x="207" y="-2"/>
+	<anchor name="DotBelow" x="305" y="-319"/>
+	<anchor name="RingBelow" x="241" y="-144"/>
+	<anchor name="TaaAbove" x="313" y="343"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+	<anchor name="TashkilAbove" x="312" y="801"/>
+	<anchor name="TwoDotsAbove" x="259" y="440"/>
+	<anchor name="VAbove" x="313" y="440"/>
+	<anchor name="DotAbove" x="312" y="440"/>
+</glyph>

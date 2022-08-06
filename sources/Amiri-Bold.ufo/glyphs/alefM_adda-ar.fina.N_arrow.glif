@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefMadda-ar.fina.Narrow" format="2">
+	<advance width="278"/>
+	<outline>
+		<component base="aAlf.fina.Narrow" xOffset="98"/>
+		<component base="madda-ar" xOffset="159" yOffset="-5"/>
+	</outline>
+</glyph>

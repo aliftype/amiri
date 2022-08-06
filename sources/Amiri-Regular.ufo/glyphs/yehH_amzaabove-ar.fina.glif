@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehHamzaabove-ar.fina" format="2">
+	<advance width="585"/>
+	<outline>
+		<component base="aYaa.fina"/>
+		<component base="hamza.above" xOffset="161" yOffset="-220"/>
+	</outline>
+	<anchor name="TashkilAbove" x="137" y="498"/>
+	<anchor name="TashkilBelow" x="342" y="-376"/>
+	<anchor name="AlefAbove" x="161" y="244"/>
+</glyph>

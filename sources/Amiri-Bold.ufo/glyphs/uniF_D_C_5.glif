@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDC5" format="2">
+	<unicode hex="FDC5"/>
+	<advance width="1288"/>
+	<outline>
+		<component base="meem-ar.medi"/>
+		<component base="meem-ar.medi.SenMemInit" xOffset="464"/>
+		<component base="sad-ar.init.SadMemInit" xOffset="638"/>
+	</outline>
+</glyph>

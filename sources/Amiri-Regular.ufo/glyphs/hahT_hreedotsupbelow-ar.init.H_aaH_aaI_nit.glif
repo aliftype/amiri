@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hahThreedotsupbelow-ar.init.HaaHaaInit" format="2">
+	<advance width="653"/>
+	<outline>
+		<component base="aHaa.init.HaaHaaInit"/>
+		<component base="threedotsupbelow-ar" xOffset="546" yOffset="-190"/>
+	</outline>
+	<anchor name="TashkilAbove" x="399" y="801"/>
+	<anchor name="TashkilBelow" x="492" y="-327"/>
+</glyph>

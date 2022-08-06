@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="leftarrowheadabove-ar" format="2">
+	<unicode hex="08F7"/>
+	<outline>
+		<contour>
+			<point x="276" y="1032" type="line"/>
+			<point x="219" y="999" type="line"/>
+			<point x="146" y="964" type="line"/>
+			<point x="261" y="896" type="line"/>
+			<point x="273" y="876" type="line"/>
+			<point x="212" y="841" type="line"/>
+			<point x="61" y="929" type="line"/>
+			<point x="49" y="950" type="line"/>
+			<point x="107" y="983" type="line"/>
+			<point x="262" y="1057" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_MarkAbove" x="156" y="801"/>
+	<anchor name="_TashkilAboveDot" x="156" y="801"/>
+	<anchor name="_TashkilAbove" x="156" y="801"/>
+</glyph>

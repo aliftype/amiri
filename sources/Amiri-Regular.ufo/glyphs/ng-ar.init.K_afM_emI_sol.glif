@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng-ar.init.KafMemIsol" format="2">
+	<advance width="580"/>
+	<outline>
+		<component base="aKaf.init.KafMemIsol"/>
+		<component base="threedotsupabove-ar" xOffset="-121" yOffset="773"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-179" y="1045"/>
+	<anchor name="TashkilBelow" x="317" y="-327"/>
+</glyph>

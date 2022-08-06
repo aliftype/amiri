@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefMaksura-ar.medi.SenBaaMemInit" format="2">
+	<advance width="217"/>
+	<outline>
+		<component base="aBaa.medi.SenBaaMemInit"/>
+	</outline>
+	<anchor name="HamzaBelow" x="233" y="-107"/>
+	<anchor name="AlefAbove" x="73" y="542"/>
+	<anchor name="TashkilAbove" x="242" y="801"/>
+	<anchor name="TashkilBelow" x="233" y="-327"/>
+</glyph>

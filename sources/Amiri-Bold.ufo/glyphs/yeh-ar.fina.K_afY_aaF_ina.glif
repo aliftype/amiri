@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yeh-ar.fina.KafYaaFina" format="2">
+	<advance width="471"/>
+	<outline>
+		<component base="aYaa.fina.KafYaaFina"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="361" yOffset="-529"/>
+	</outline>
+	<anchor name="DigitAbove" x="243" y="251"/>
+	<anchor name="TashkilAbove" x="186" y="801"/>
+	<anchor name="TashkilBelow" x="371" y="-573"/>
+	<anchor name="AlefAbove" x="145" y="251"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lam-ar.medi.LamLamYaaFina" format="2">
+	<advance width="190"/>
+	<outline>
+		<component base="aLam.medi.LamLamYaaFina"/>
+	</outline>
+	<anchor name="exit" x="0" y="-71"/>
+	<anchor name="TashkilAbove" x="24" y="801"/>
+	<anchor name="TashkilBelow" x="107" y="-327"/>
+</glyph>

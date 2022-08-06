@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefbelow-ar" format="2">
+	<unicode hex="0656"/>
+	<outline>
+		<component base="alefabove-ar" yOffset="-1528"/>
+	</outline>
+	<anchor name="_MarkBelow" x="137" y="-327"/>
+	<anchor name="_TashkilBelowDot" x="156" y="-327"/>
+	<anchor name="_TashkilBelow" x="156" y="-327"/>
+</glyph>

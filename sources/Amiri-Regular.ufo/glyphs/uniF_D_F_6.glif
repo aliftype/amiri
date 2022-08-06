@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDF6" format="2">
+	<unicode hex="FDF6"/>
+	<advance width="1917"/>
+	<outline>
+		<component base="lam-ar"/>
+		<component base="waw-ar.fina" xOffset="604"/>
+		<component base="seen-ar.init" xOffset="949"/>
+		<component base="reh-ar" xOffset="1518"/>
+	</outline>
+</glyph>

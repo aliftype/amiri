@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD24" format="2">
+	<unicode hex="FD24"/>
+	<advance width="1241"/>
+	<outline>
+		<component base="yeh-ar.fina.PostTooth"/>
+		<component base="dad-ar.medi.PreYaa" xOffset="730"/>
+	</outline>
+</glyph>

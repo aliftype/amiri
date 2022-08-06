@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenFourabove-ar.fina" format="2">
+	<advance width="1079"/>
+	<outline>
+		<component base="aSen.fina"/>
+		<component base="fourabove-ar" xOffset="779" yOffset="195"/>
+	</outline>
+	<anchor name="TashkilAbove" x="732" y="801"/>
+	<anchor name="TashkilBelow" x="312" y="-391"/>
+</glyph>

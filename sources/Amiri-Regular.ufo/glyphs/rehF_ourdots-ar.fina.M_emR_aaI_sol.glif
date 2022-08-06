@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehFourdots-ar.fina.MemRaaIsol" format="2">
+	<advance width="473"/>
+	<outline>
+		<component base="fourdotsabove-ar" xOffset="361" yOffset="348"/>
+		<component base="aRaa.fina.alt2" xOffset="-49"/>
+	</outline>
+	<anchor name="TashkilAbove" x="332" y="641"/>
+	<anchor name="TashkilBelow" x="210" y="-327"/>
+</glyph>

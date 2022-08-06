@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamThreedotsbelow-ar.init.LamHeh" format="2">
+	<advance width="141"/>
+	<outline>
+		<component base="aLam.init.LamHeh"/>
+		<component base="threedotsdownbelow-ar" xOffset="56" yOffset="-352"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-37" y="801"/>
+	<anchor name="TashkilBelow" x="95" y="-373"/>
+</glyph>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefMadda-ar.fina.KafMemAlf" format="2">
+	<advance width="272"/>
+	<outline>
+		<component base="aAlf.fina.KafMemAlf" xOffset="98"/>
+		<component base="madda-ar" xOffset="156" yOffset="-5"/>
+	</outline>
+</glyph>

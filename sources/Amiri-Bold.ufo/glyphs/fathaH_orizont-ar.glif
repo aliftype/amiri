@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathaHorizont-ar" format="2">
+	<unicode hex="0659"/>
+	<outline>
+		<contour>
+			<point x="132" y="837" type="line" smooth="yes"/>
+			<point x="121" y="837"/>
+			<point x="113" y="840"/>
+			<point x="108" y="845" type="curve" smooth="yes"/>
+			<point x="103" y="850"/>
+			<point x="106" y="858"/>
+			<point x="116" y="868" type="curve" smooth="yes"/>
+			<point x="142" y="892" type="line"/>
+			<point x="150" y="899"/>
+			<point x="162" y="903"/>
+			<point x="177" y="903" type="curve"/>
+			<point x="411" y="903" type="line" smooth="yes"/>
+			<point x="422" y="903"/>
+			<point x="430" y="900"/>
+			<point x="435" y="895" type="curve" smooth="yes"/>
+			<point x="440" y="890"/>
+			<point x="437" y="882"/>
+			<point x="427" y="872" type="curve" smooth="yes"/>
+			<point x="401" y="849" type="line"/>
+			<point x="393" y="842"/>
+			<point x="381" y="837"/>
+			<point x="366" y="837" type="curve"/>
+		</contour>
+	</outline>
+	<anchor name="_MarkAbove" x="268" y="801"/>
+	<anchor name="_TashkilAbove" x="271" y="801"/>
+	<anchor name="_TashkilAboveDot" x="271" y="801"/>
+</glyph>

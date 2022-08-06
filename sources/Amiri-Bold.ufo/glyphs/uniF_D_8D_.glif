@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD8D" format="2">
+	<unicode hex="FD8D"/>
+	<advance width="731"/>
+	<outline>
+		<component base="meem-ar.medi.KafMemMedi"/>
+		<component base="jeem-ar.medi.MemHaaMemInit" xOffset="217"/>
+		<component base="meem-ar.init.MemHaaMemInit" xOffset="412"/>
+	</outline>
+</glyph>

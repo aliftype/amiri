@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sukunround-ar" format="2">
+	<unicode hex="06DF"/>
+	<outline>
+		<contour>
+			<point x="120" y="965" type="curve" smooth="yes"/>
+			<point x="145" y="1009"/>
+			<point x="178" y="1018"/>
+			<point x="218" y="989" type="curve" smooth="yes"/>
+			<point x="248" y="967"/>
+			<point x="261" y="943"/>
+			<point x="259" y="917" type="curve" smooth="yes"/>
+			<point x="256" y="884"/>
+			<point x="246" y="859"/>
+			<point x="228" y="842" type="curve" smooth="yes"/>
+			<point x="217" y="831"/>
+			<point x="197" y="826"/>
+			<point x="167" y="828" type="curve" smooth="yes"/>
+			<point x="116" y="830"/>
+			<point x="95" y="861"/>
+			<point x="105" y="922" type="curve" smooth="yes"/>
+			<point x="108" y="938"/>
+			<point x="113" y="952"/>
+		</contour>
+		<contour>
+			<point x="225" y="897" type="curve" smooth="yes"/>
+			<point x="237" y="900"/>
+			<point x="235" y="909"/>
+			<point x="220" y="925" type="curve" smooth="yes"/>
+			<point x="204" y="941"/>
+			<point x="187" y="949"/>
+			<point x="170" y="950" type="curve" smooth="yes"/>
+			<point x="144" y="950"/>
+			<point x="130" y="941"/>
+			<point x="128" y="920" type="curve" smooth="yes"/>
+			<point x="127" y="911"/>
+			<point x="130" y="904"/>
+			<point x="138" y="901" type="curve" smooth="yes"/>
+			<point x="162" y="891"/>
+			<point x="192" y="890"/>
+		</contour>
+	</outline>
+	<anchor name="_MarkAbove" x="180" y="801"/>
+	<anchor name="_TashkilAbove" x="182" y="801"/>
+</glyph>

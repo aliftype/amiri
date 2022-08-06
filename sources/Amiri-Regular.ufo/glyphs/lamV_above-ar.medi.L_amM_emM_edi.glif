@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamVabove-ar.medi.LamMemMedi" format="2">
+	<advance width="232"/>
+	<outline>
+		<component base="aLam.medi.LamMemMedi"/>
+		<component base="vabove-ar" xOffset="-37" yOffset="170"/>
+	</outline>
+	<anchor name="exit" x="0" y="83"/>
+	<anchor name="TashkilAbove" x="-37" y="854"/>
+	<anchor name="TashkilBelow" x="132" y="-327"/>
+</glyph>

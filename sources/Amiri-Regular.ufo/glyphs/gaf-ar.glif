@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gaf-ar" format="2">
+	<unicode hex="06AF"/>
+	<advance width="1202"/>
+	<outline>
+		<component base="aGaf.isol"/>
+		<component base="gafsarkashabove-ar" xOffset="923" yOffset="664"/>
+	</outline>
+	<anchor name="TashkilAbove" x="519" y="801"/>
+	<anchor name="TashkilBelow" x="470" y="-327"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamThreedotsabove-ar.init.LamYaaIsol" format="2">
+	<advance width="242"/>
+	<outline>
+		<component base="aLam.init.LamYaaIsol"/>
+		<component base="threedotsupabove-ar" xOffset="-11" yOffset="746"/>
+	</outline>
+	<anchor name="TashkilAbove" x="-69" y="1018"/>
+	<anchor name="TashkilBelow" x="117" y="-327"/>
+</glyph>

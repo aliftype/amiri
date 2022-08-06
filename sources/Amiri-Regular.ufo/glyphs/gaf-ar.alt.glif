@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gaf-ar.alt" format="2">
+	<advance width="657"/>
+	<outline>
+		<component base="keheh-ar.alt"/>
+		<component base="gafsarkashabove-ar" xOffset="827" yOffset="965"/>
+	</outline>
+	<anchor name="TashkilAbove" x="205" y="801"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+</glyph>

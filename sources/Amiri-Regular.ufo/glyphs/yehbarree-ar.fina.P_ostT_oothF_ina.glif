@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehbarree-ar.fina.PostToothFina" format="2">
+	<advance width="312"/>
+	<outline>
+		<component base="aYaaBari.fina.PostToothFina"/>
+	</outline>
+	<anchor name="TashkilBelow" x="244" y="-327"/>
+	<anchor name="TashkilAbove" x="244" y="801"/>
+	<anchor name="HamzaAbove" x="293" y="327"/>
+</glyph>

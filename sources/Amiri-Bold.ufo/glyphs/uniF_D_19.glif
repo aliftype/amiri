@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD19" format="2">
+	<unicode hex="FD19"/>
+	<advance width="1111"/>
+	<outline>
+		<component base="alefMaksura-ar.fina.PostTooth"/>
+		<component base="sheen-ar.medi.PreYaa" xOffset="730"/>
+	</outline>
+</glyph>

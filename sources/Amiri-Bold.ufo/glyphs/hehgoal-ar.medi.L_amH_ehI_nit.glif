@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hehgoal-ar.medi.LamHehInit" format="2">
+	<advance width="240"/>
+	<outline>
+		<component base="aHeh.medi.LamHehInit"/>
+	</outline>
+	<anchor name="HamzaAbove" x="39" y="352"/>
+	<anchor name="TashkilBelow" x="98" y="-327"/>
+	<anchor name="TashkilAbove" x="117" y="801"/>
+</glyph>

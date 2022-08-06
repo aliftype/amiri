@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefMaksura-ar" format="2">
+	<unicode hex="0649"/>
+	<advance width="764"/>
+	<outline>
+		<component base="aYaa.isol"/>
+	</outline>
+	<anchor name="HamzaBelow" x="545" y="-200"/>
+	<anchor name="TashkilAbove" x="391" y="801"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+	<anchor name="AlefAbove" x="293" y="171"/>
+</glyph>

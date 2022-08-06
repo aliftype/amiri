@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenFourdotsabove-ar.fina.BaaSen" format="2">
+	<advance width="961"/>
+	<outline>
+		<component base="aSen.fina.BaaSen"/>
+		<component base="fourdotsabove-ar" xOffset="778" yOffset="299"/>
+	</outline>
+	<anchor name="TashkilAbove" x="573" y="801"/>
+	<anchor name="TashkilBelow" x="508" y="-327"/>
+</glyph>

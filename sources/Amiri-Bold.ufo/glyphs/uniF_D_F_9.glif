@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFDF9" format="2">
+	<unicode hex="FDF9"/>
+	<advance width="1363"/>
+	<outline>
+		<component base="alefMaksura-ar.fina.LamYaaFina"/>
+		<component base="lam-ar.medi.LamYaaFina" xOffset="469"/>
+		<component base="sad-ar.init" xOffset="665"/>
+	</outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="u-ar" format="2">
+	<unicode hex="06C7"/>
+	<advance width="400"/>
+	<outline>
+		<component base="aWaw.isol" xOffset="-146"/>
+		<component base="dammainverted-ar.urd" xScale="-1" yScale="-1" xOffset="489" yOffset="1498"/>
+	</outline>
+	<anchor name="TashkilAbove" x="210" y="801"/>
+	<anchor name="TashkilBelow" x="249" y="-327"/>
+</glyph>

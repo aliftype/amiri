@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehbarreeThreeabove-ar.fina.PostAyn" format="2">
+	<advance width="127"/>
+	<outline>
+		<component base="aYaaBari.fina.PostAyn"/>
+		<component base="threeabove-ar" xOffset="66" yOffset="207"/>
+	</outline>
+	<anchor name="TashkilBelow" x="171" y="-327"/>
+	<anchor name="TashkilAbove" x="122" y="801"/>
+</glyph>

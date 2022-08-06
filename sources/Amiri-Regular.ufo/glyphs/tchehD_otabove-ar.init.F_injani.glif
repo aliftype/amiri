@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tchehDotabove-ar.init.Finjani" format="2">
+	<advance width="606"/>
+	<outline>
+		<component base="aHaa.init.Finjani"/>
+		<component base="dotabove-ar" xOffset="181" yOffset="382"/>
+		<component base="threedotsdownbelow-ar" xOffset="295" yOffset="-331"/>
+	</outline>
+	<anchor name="TashkilAbove" x="181" y="801"/>
+	<anchor name="TashkilBelow" x="334" y="-352"/>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCC4" format="2">
+	<unicode hex="FCC4"/>
+	<advance width="746"/>
+	<outline>
+		<component base="jeem-ar.medi.FaaHaaInit"/>
+		<component base="kaf-ar.init.AboveHaa" xOffset="73"/>
+	</outline>
+</glyph>

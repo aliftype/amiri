@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tehRing-ar.medi.LamBaaMemInit" format="2">
+	<advance width="140"/>
+	<outline>
+		<component base="aBaa.medi.LamBaaMemInit"/>
+		<component base="twodotshorizontalabove-ar" xOffset="8" yOffset="532"/>
+		<component base="ring.below" xOffset="51" yOffset="357"/>
+	</outline>
+	<anchor name="TashkilAbove" x="24" y="801"/>
+	<anchor name="TashkilBelow" x="142" y="-327"/>
+</glyph>

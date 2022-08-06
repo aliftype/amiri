@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCAF" format="2">
+	<unicode hex="FCAF"/>
+	<advance width="699"/>
+	<outline>
+		<component base="khah-ar.medi.SadHaaInit"/>
+		<component base="seen-ar.init.SenHaaInit" xOffset="55" yOffset="12"/>
+	</outline>
+</glyph>

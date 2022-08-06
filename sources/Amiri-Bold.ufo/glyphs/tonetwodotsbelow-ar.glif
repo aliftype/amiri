@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tonetwodotsbelow-ar" format="2">
+	<unicode hex="08EE"/>
+	<outline>
+		<component base="tonetwodotsabove-ar" yOffset="-1284"/>
+	</outline>
+	<anchor name="_MarkBelow" x="186" y="-278"/>
+	<anchor name="_TashkilBelow" x="186" y="-278"/>
+	<anchor name="_TashkilBelowDot" x="186" y="-278"/>
+</glyph>

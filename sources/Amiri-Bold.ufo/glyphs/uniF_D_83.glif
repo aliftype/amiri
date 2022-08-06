@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD83" format="2">
+	<unicode hex="FD83"/>
+	<advance width="671"/>
+	<outline>
+		<component base="jeem-ar.medi.2LamHaaHaaInit"/>
+		<component base="jeem-ar.medi.1LamHaaHaaInit" xOffset="70"/>
+		<component base="lam-ar.init.LamHaaHaaInit" xOffset="183"/>
+	</outline>
+</glyph>

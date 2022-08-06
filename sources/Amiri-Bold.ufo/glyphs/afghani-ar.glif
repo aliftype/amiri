@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="afghani-ar" format="2">
+	<unicode hex="060B"/>
+	<advance width="500"/>
+	<outline>
+		<contour>
+			<point x="312" y="322" type="curve" smooth="yes"/>
+			<point x="297" y="322"/>
+			<point x="288" y="307"/>
+			<point x="286" y="277" type="curve"/>
+			<point x="296" y="274"/>
+			<point x="308" y="273"/>
+			<point x="324" y="275" type="curve" smooth="yes"/>
+			<point x="340" y="277"/>
+			<point x="350" y="281"/>
+			<point x="354" y="287" type="curve"/>
+			<point x="339" y="310"/>
+			<point x="325" y="322"/>
+		</contour>
+		<contour>
+			<point x="416" y="181" type="curve"/>
+			<point x="412" y="212"/>
+			<point x="405" y="220"/>
+			<point x="396" y="203" type="curve" smooth="yes"/>
+			<point x="383" y="181"/>
+			<point x="367" y="167"/>
+			<point x="347" y="162" type="curve" smooth="yes"/>
+			<point x="282" y="146"/>
+			<point x="247" y="164"/>
+			<point x="243" y="214" type="curve" smooth="yes"/>
+			<point x="238" y="272"/>
+			<point x="246" y="325"/>
+			<point x="268" y="373" type="curve" smooth="yes"/>
+			<point x="290" y="421"/>
+			<point x="313" y="445"/>
+			<point x="337" y="445" type="curve" smooth="yes"/>
+			<point x="357" y="445"/>
+			<point x="374" y="438"/>
+			<point x="387" y="425" type="curve" smooth="yes"/>
+			<point x="440" y="371"/>
+			<point x="467" y="298"/>
+			<point x="467" y="206" type="curve" smooth="yes"/>
+			<point x="467" y="156"/>
+			<point x="457" y="116"/>
+			<point x="438" y="87" type="curve" smooth="yes"/>
+			<point x="383" y="4"/>
+			<point x="263" y="-28"/>
+			<point x="77" y="-10" type="curve" smooth="yes"/>
+			<point x="56" y="-8"/>
+			<point x="45" y="2"/>
+			<point x="41" y="20" type="curve" smooth="yes"/>
+			<point x="31" y="67" type="line" smooth="yes"/>
+			<point x="28" y="80"/>
+			<point x="31" y="92"/>
+			<point x="38" y="100" type="curve" smooth="yes"/>
+			<point x="45" y="108"/>
+			<point x="58" y="112"/>
+			<point x="76" y="110" type="curve" smooth="yes"/>
+			<point x="232" y="93"/>
+			<point x="345" y="117"/>
+		</contour>
+		<component base="alefabove-ar" xOffset="117" yOffset="-1226"/>
+		<component base="dotabove-ar" xOffset="303" yOffset="493"/>
+	</outline>
+</glyph>

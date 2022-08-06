@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bismillah-ar" format="2">
+	<unicode hex="FDFD"/>
+	<advance width="11435"/>
+	<outline>
+		<component base="hahabove-ar" xOffset="2686" yOffset="-425"/>
+		<component base="hahabove-ar" xOffset="10807" yOffset="-723"/>
+		<component base="wasla-ar" xOffset="1901" yOffset="118"/>
+		<component base="wasla-ar" xOffset="3365" yOffset="62"/>
+		<component base="wasla-ar" xOffset="4379" yOffset="138"/>
+		<component base="alefabove-ar" xOffset="2327" yOffset="-793"/>
+		<component base="shadda-ar" xOffset="1552" yOffset="-408"/>
+		<component base="fatha-ar.small" xOffset="1751" yOffset="-358"/>
+		<component base="shadda-ar" xOffset="2974" yOffset="-442"/>
+		<component base="fatha-ar.small" xOffset="3174" yOffset="-393"/>
+		<component base="shadda-ar" xOffset="3959" yOffset="-350"/>
+		<component base="fatha-ar.small" xOffset="4159" yOffset="-300"/>
+		<component base="fatha-ar" xOffset="-41" yOffset="-1220"/>
+		<component base="fatha-ar" xOffset="1222" yOffset="-1040"/>
+		<component base="fatha-ar" xOffset="2050" yOffset="-1372"/>
+		<component base="fatha-ar" xOffset="2429" yOffset="-331"/>
+		<component base="fatha-ar" xOffset="3595" yOffset="-1270"/>
+		<component base="fatha-ar" xOffset="4419" yOffset="-1302"/>
+		<component base="fatha-ar" xOffset="11088" yOffset="-1452"/>
+		<component base="aAlf.isol" xOffset="2052" yOffset="56"/>
+		<component base="aAlf.isol" xOffset="3494" yOffset="-38"/>
+		<component base="aAlf.isol" xOffset="4526" yOffset="85"/>
+		<component base="dotabove-ar" xOffset="2106" yOffset="-141"/>
+		<component base="twodotshorizontalabove-ar" xOffset="1111" yOffset="-235"/>
+		<component base="dotabove-ar" xOffset="11349" yOffset="-386"/>
+		<component base="aLam.init.LamRaaIsol" xOffset="1877" yOffset="-66"/>
+		<component base="aRaa.fina.LamRaaIsol" xOffset="1438" yOffset="-66"/>
+		<component base="aLam.init.LamRaaIsol" xOffset="3308" yOffset="-155"/>
+		<component base="aRaa.fina.LamRaaIsol" xOffset="2869" yOffset="-155"/>
+		<component base="heh-ar.fina.Lellah" xOffset="3698" yOffset="-149"/>
+		<component base="lam-ar.medi.Lellah" xOffset="4050" yOffset="-149"/>
+		<component base="lam-ar.init.Lellah" xOffset="4282" yOffset="-149"/>
+		<component base="aHaa.init.HaaMemInit" xOffset="2750" yOffset="-90"/>
+		<component base="_FDFD"/>
+	</outline>
+</glyph>

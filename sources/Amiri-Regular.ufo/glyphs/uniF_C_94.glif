@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC94" format="2">
+	<unicode hex="FC94"/>
+	<advance width="761"/>
+	<outline>
+		<component base="noon-ar.fina.BaaNonFina"/>
+		<component base="yeh-ar.medi.BaaNonFina" xOffset="543"/>
+	</outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hahTahTwodotshorizontalabove-ar.init.HaaHaaInit" format="2">
+	<advance width="653"/>
+	<outline>
+		<component base="aHaa.init.HaaHaaInit"/>
+		<component base="tahbelow-ar" xOffset="560" yOffset="-292"/>
+		<component base="twodotshorizontalbelow-ar" xOffset="575" yOffset="-421"/>
+	</outline>
+	<anchor name="TashkilAbove" x="399" y="801"/>
+	<anchor name="TashkilBelow" x="584" y="-465"/>
+</glyph>

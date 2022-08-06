@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="qafThreedotsabove-ar.fina" format="2">
+	<advance width="607"/>
+	<outline>
+		<component base="aQaf.fina"/>
+		<component base="threedotsupabove-ar" xOffset="469" yOffset="293"/>
+	</outline>
+	<anchor name="TashkilAbove" x="342" y="801"/>
+	<anchor name="TashkilBelow" x="293" y="-327"/>
+</glyph>

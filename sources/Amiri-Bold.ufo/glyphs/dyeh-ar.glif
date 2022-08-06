@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dyeh-ar" format="2">
+	<unicode hex="0684"/>
+	<advance width="661"/>
+	<outline>
+		<component base="aHaa.isol"/>
+		<component base="twodotsverticalbelow-ar" xOffset="391" yOffset="-176"/>
+	</outline>
+	<anchor name="TashkilAbove" x="342" y="801"/>
+	<anchor name="TashkilBelow" x="410" y="-563"/>
+</glyph>

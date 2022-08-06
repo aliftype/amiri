@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehKashmiri-ar.fina.FaaYaaFina" format="2">
+	<advance width="476"/>
+	<outline>
+		<component base="aYaa.fina.FaaYaaFina"/>
+		<component base="ring.below" xOffset="293" yOffset="-439"/>
+	</outline>
+	<anchor name="TashkilAbove" x="342" y="801"/>
+	<anchor name="TashkilBelow" x="293" y="-635"/>
+	<anchor name="AlefAbove" x="278" y="0"/>
+</glyph>

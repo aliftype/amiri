@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFD67" format="2">
+	<unicode hex="FD67"/>
+	<advance width="1701"/>
+	<outline>
+		<component base="meem-ar.fina"/>
+		<component base="hah-ar.medi" xOffset="522"/>
+		<component base="sheen-ar.medi" xOffset="1133"/>
+	</outline>
+</glyph>

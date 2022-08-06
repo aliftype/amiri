@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="meemDotbelow-ar.medi.LamMemMedi" format="2">
+	<advance width="236"/>
+	<outline>
+		<component base="aMem.medi.LamMemMedi"/>
+		<component base="dotbelow-ar" xOffset="269" yOffset="-291"/>
+	</outline>
+	<anchor name="TashkilAbove" x="103" y="801"/>
+	<anchor name="entry" x="237" y="83"/>
+	<anchor name="TashkilBelow" x="107" y="-327"/>
+</glyph>

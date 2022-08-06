@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC02" format="2">
+	<unicode hex="FC02"/>
+	<advance width="594"/>
+	<outline>
+		<component base="meem-ar.fina.KafMemIsol"/>
+		<component base="yehHamzaabove-ar.init.BaaMemIsol" xOffset="203"/>
+	</outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehFarsiVinverted-ar.init.BaaDalLD" format="2">
+	<advance width="170"/>
+	<outline>
+		<component base="aBaa.init.BaaDal"/>
+		<component base="twodotshorizontalbelow-ar.l" xOffset="39" yOffset="-435"/>
+		<component base="vinvertedabove-ar" xOffset="54" yOffset="36"/>
+	</outline>
+	<anchor name="TashkilAbove" x="76" y="801"/>
+	<anchor name="TashkilBelow" x="49" y="-479"/>
+</glyph>

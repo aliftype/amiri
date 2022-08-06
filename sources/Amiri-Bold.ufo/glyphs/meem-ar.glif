@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="meem-ar" format="2">
+	<unicode hex="0645"/>
+	<advance width="452"/>
+	<outline>
+		<component base="aMem.isol"/>
+	</outline>
+	<anchor name="TashkilAbove" x="195" y="801"/>
+	<anchor name="TashkilBelow" x="317" y="-391"/>
+</glyph>

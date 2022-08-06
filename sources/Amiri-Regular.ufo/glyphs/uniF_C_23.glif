@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFC23" format="2">
+	<unicode hex="FC23"/>
+	<advance width="953"/>
+	<outline>
+		<component base="hah-ar.fina.AboveHaaIsol"/>
+		<component base="dad-ar.init.AboveHaa" xOffset="104" yOffset="-2"/>
+	</outline>
+</glyph>

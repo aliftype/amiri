@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gafThreedots-ar" format="2">
+	<unicode hex="06B4"/>
+	<advance width="1202"/>
+	<outline>
+		<component base="threedotsupabove-ar" xOffset="544" yOffset="628"/>
+		<component base="gaf-ar"/>
+	</outline>
+	<anchor name="TashkilAbove" x="495" y="942"/>
+	<anchor name="TashkilBelow" x="470" y="-327"/>
+</glyph>

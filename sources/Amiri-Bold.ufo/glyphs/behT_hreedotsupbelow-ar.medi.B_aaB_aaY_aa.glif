@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behThreedotsupbelow-ar.medi.BaaBaaYaa" format="2">
+	<advance width="357"/>
+	<outline>
+		<component base="aBaa.medi.BaaBaaYaa"/>
+		<component base="threedotsupbelow-ar" xOffset="268" yOffset="-371"/>
+	</outline>
+	<anchor name="TashkilAbove" x="96" y="801"/>
+	<anchor name="TashkilBelow" x="268" y="-518"/>
+</glyph>

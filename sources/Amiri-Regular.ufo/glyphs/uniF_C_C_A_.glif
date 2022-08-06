@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCCA" format="2">
+	<unicode hex="FCCA"/>
+	<advance width="632"/>
+	<outline>
+		<component base="hah-ar.medi.FaaHaaInit"/>
+		<component base="lam-ar.init.LamHaaInit" xOffset="73"/>
+	</outline>
+</glyph>

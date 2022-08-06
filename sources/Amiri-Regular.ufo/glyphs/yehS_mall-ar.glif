@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehSmall-ar" format="2">
+	<unicode hex="06E6"/>
+	<advance width="407"/>
+	<outline>
+		<contour>
+			<point x="193" y="219" type="curve" smooth="yes"/>
+			<point x="204" y="245"/>
+			<point x="219" y="259"/>
+			<point x="236" y="259" type="curve" smooth="yes"/>
+			<point x="258" y="259"/>
+			<point x="272" y="246"/>
+			<point x="279" y="219" type="curve" smooth="yes"/>
+			<point x="284" y="200"/>
+			<point x="285" y="176"/>
+			<point x="284" y="148" type="curve" smooth="yes"/>
+			<point x="284" y="139"/>
+			<point x="281" y="135"/>
+			<point x="276" y="135" type="curve" smooth="yes"/>
+			<point x="271" y="135"/>
+			<point x="268" y="139"/>
+			<point x="267" y="147" type="curve" smooth="yes"/>
+			<point x="262" y="181"/>
+			<point x="250" y="198"/>
+			<point x="230" y="198" type="curve" smooth="yes"/>
+			<point x="216" y="198"/>
+			<point x="202" y="185"/>
+			<point x="188" y="159" type="curve" smooth="yes"/>
+			<point x="169" y="124"/>
+			<point x="132" y="92"/>
+			<point x="75" y="65" type="curve" smooth="yes"/>
+			<point x="68" y="62"/>
+			<point x="66" y="60"/>
+			<point x="68" y="58" type="curve"/>
+			<point x="144" y="41"/>
+			<point x="235" y="43"/>
+			<point x="342" y="62" type="curve" smooth="yes"/>
+			<point x="367" y="67"/>
+			<point x="372" y="60"/>
+			<point x="355" y="44" type="curve" smooth="yes"/>
+			<point x="354" y="44"/>
+			<point x="347" y="38"/>
+			<point x="332" y="26" type="curve" smooth="yes"/>
+			<point x="317" y="14"/>
+			<point x="303" y="8"/>
+			<point x="292" y="6" type="curve" smooth="yes"/>
+			<point x="255" y="0"/>
+			<point x="216" y="-3"/>
+			<point x="173" y="-2" type="curve" smooth="yes"/>
+			<point x="130" y="-1"/>
+			<point x="100" y="1"/>
+			<point x="83" y="6" type="curve"/>
+			<point x="48" y="17"/>
+			<point x="39" y="39"/>
+			<point x="56" y="71" type="curve" smooth="yes"/>
+			<point x="70" y="97"/>
+			<point x="84" y="114"/>
+			<point x="99" y="122" type="curve" smooth="yes"/>
+			<point x="145" y="149"/>
+			<point x="176" y="181"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilAbove" x="205" y="417"/>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehVbelow-ar.fina.BaaRaaFina" format="2">
+	<advance width="291"/>
+	<outline>
+		<component base="aRaa.fina.BaaRaaFina" xOffset="-146"/>
+		<component base="vbelow-ar" xOffset="103" yOffset="5"/>
+	</outline>
+	<anchor name="TashkilAbove" x="173" y="801"/>
+	<anchor name="TashkilBelow" x="103" y="-532"/>
+</glyph>

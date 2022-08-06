@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kafRing-ar" format="2">
+	<unicode hex="06AB"/>
+	<advance width="1202"/>
+	<outline>
+		<component base="aGaf.isol"/>
+		<component base="ring.below" xOffset="846" yOffset="604"/>
+	</outline>
+	<anchor name="TashkilBelow" x="470" y="-327"/>
+	<anchor name="TashkilAbove" x="519" y="801"/>
+</glyph>

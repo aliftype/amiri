@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aBaa.medi.BaaMemAlfFina" format="2">
+	<advance width="235"/>
+	<outline>
+		<contour>
+			<point x="-35" y="32" type="curve" smooth="yes"/>
+			<point x="-42" y="38"/>
+			<point x="-41" y="53"/>
+			<point x="-31" y="79" type="curve" smooth="yes"/>
+			<point x="-4" y="144"/>
+			<point x="50" y="177"/>
+			<point x="131" y="177" type="curve" smooth="yes"/>
+			<point x="144" y="177"/>
+			<point x="157" y="167"/>
+			<point x="169" y="146" type="curve" smooth="yes"/>
+			<point x="188" y="111"/>
+			<point x="211" y="93"/>
+			<point x="236" y="91" type="curve" smooth="yes"/>
+			<point x="253" y="90"/>
+			<point x="260" y="72"/>
+			<point x="260" y="39" type="curve" smooth="yes"/>
+			<point x="260" y="13"/>
+			<point x="252" y="0"/>
+			<point x="236" y="0" type="curve" smooth="yes"/>
+			<point x="194" y="0"/>
+			<point x="157" y="25"/>
+			<point x="125" y="76" type="curve" smooth="yes"/>
+			<point x="113" y="94"/>
+			<point x="81" y="93"/>
+			<point x="28" y="74" type="curve" smooth="yes"/>
+			<point x="4" y="65"/>
+			<point x="-13" y="53"/>
+			<point x="-24" y="38" type="curve" smooth="yes"/>
+			<point x="-28" y="31"/>
+			<point x="-31" y="29"/>
+		</contour>
+	</outline>
+	<anchor name="DigitBelow" x="142" y="-293"/>
+	<anchor name="DigitAbove" x="98" y="391"/>
+	<anchor name="VAbove" x="98" y="391"/>
+	<anchor name="RingBelow" x="89" y="122"/>
+	<anchor name="TaaAbove" x="98" y="293"/>
+	<anchor name="TashkilBelow" x="187" y="-327"/>
+	<anchor name="TashkilAbove" x="187" y="801"/>
+	<anchor name="DotAbove" x="98" y="391"/>
+	<anchor name="HamzaAbove" x="98" y="391"/>
+	<anchor name="TwoDotsAbove" x="44" y="391"/>
+	<anchor name="TwoDotsBelow" x="88" y="-293"/>
+	<anchor name="HamzaBelow" x="142" y="-293"/>
+	<anchor name="DotBelow" x="142" y="-293"/>
+</glyph>

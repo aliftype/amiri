@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seenTahTwodotshorizontalabove-ar.init.PreYaa" format="2">
+	<advance width="344"/>
+	<outline>
+		<component base="aSen.init.PreYaa"/>
+		<component base="twodotshorizontalabove-ar" xOffset="108" yOffset="356"/>
+		<component base="smalltaa.above" xOffset="98" yOffset="576"/>
+	</outline>
+	<anchor name="TashkilAbove" x="79" y="894"/>
+	<anchor name="TashkilBelow" x="0" y="-327"/>
+</glyph>

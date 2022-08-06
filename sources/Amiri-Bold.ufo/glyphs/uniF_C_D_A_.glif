@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uniFCDA" format="2">
+	<unicode hex="FCDA"/>
+	<advance width="643"/>
+	<outline>
+		<component base="jeem-ar.medi.SadHaaInit"/>
+		<component base="yeh-ar.init.BaaHaaInit" xOffset="55"/>
+	</outline>
+</glyph>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aBaa.init.Wide" format="2">
+	<advance width="285"/>
+	<outline>
+		<contour>
+			<point x="141" y="204" type="curve"/>
+			<point x="170" y="266" type="line" smooth="yes"/>
+			<point x="173" y="273"/>
+			<point x="177" y="277"/>
+			<point x="181" y="280" type="curve" smooth="yes"/>
+			<point x="193" y="288"/>
+			<point x="204" y="284"/>
+			<point x="214" y="268" type="curve" smooth="yes"/>
+			<point x="232" y="238"/>
+			<point x="240" y="192"/>
+			<point x="238" y="131" type="curve" smooth="yes"/>
+			<point x="237" y="100"/>
+			<point x="228" y="72"/>
+			<point x="210" y="49" type="curve" smooth="yes"/>
+			<point x="174" y="1"/>
+			<point x="103" y="-21"/>
+			<point x="-1" y="-15" type="curve" smooth="yes"/>
+			<point x="-18" y="-14"/>
+			<point x="-29" y="1"/>
+			<point x="-35" y="28" type="curve" smooth="yes"/>
+			<point x="-41" y="55"/>
+			<point x="-43" y="73"/>
+			<point x="-42" y="80" type="curve" smooth="yes"/>
+			<point x="-38" y="101"/>
+			<point x="-24" y="109"/>
+			<point x="-2" y="105" type="curve" smooth="yes"/>
+			<point x="45" y="96"/>
+			<point x="101" y="103"/>
+			<point x="166" y="126" type="curve"/>
+			<point x="160" y="142"/>
+			<point x="153" y="155"/>
+			<point x="145" y="166" type="curve" smooth="yes"/>
+			<point x="137" y="177"/>
+			<point x="135" y="190"/>
+		</contour>
+	</outline>
+	<anchor name="TwoDotsAbove" x="83" y="500"/>
+	<anchor name="TashkilBelow" x="105" y="-327"/>
+	<anchor name="TwoDotsBelowAlt" x="108" y="-366"/>
+	<anchor name="TaaAbove" x="115" y="403"/>
+	<anchor name="DigitAbove" x="115" y="500"/>
+	<anchor name="VAbove" x="115" y="500"/>
+	<anchor name="HamzaAbove" x="115" y="500"/>
+	<anchor name="DotAbove" x="115" y="500"/>
+	<anchor name="TashkilAbove" x="115" y="801"/>
+	<anchor name="DotBelowAlt" x="162" y="-366"/>
+	<anchor name="TwoDotsBelow" x="164" y="-171"/>
+	<anchor name="RingBelow" x="201" y="54"/>
+	<anchor name="HamzaBelow" x="203" y="-171"/>
+	<anchor name="DigitBelow" x="203" y="-171"/>
+	<anchor name="DotBelow" x="203" y="-171"/>
+</glyph>

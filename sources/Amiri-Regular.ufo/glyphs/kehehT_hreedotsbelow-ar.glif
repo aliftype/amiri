@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehThreedotsbelow-ar" format="2">
+	<unicode hex="063C"/>
+	<advance width="1202"/>
+	<outline>
+		<component base="aGaf.isol"/>
+		<component base="threedotsdownbelow-ar" xOffset="457" yOffset="-347"/>
+	</outline>
+	<anchor name="TashkilBelow" x="503" y="-386"/>
+	<anchor name="TashkilAbove" x="519" y="801"/>
+</glyph>

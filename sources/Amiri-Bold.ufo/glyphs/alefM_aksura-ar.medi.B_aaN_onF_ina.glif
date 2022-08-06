@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefMaksura-ar.medi.BaaNonFina" format="2">
+	<advance width="218"/>
+	<outline>
+		<component base="aBaa.medi.BaaNonFina"/>
+	</outline>
+	<anchor name="HamzaBelow" x="78" y="-186"/>
+	<anchor name="AlefAbove" x="73" y="479"/>
+	<anchor name="TashkilAbove" x="0" y="801"/>
+	<anchor name="TashkilBelow" x="19" y="-327"/>
+</glyph>

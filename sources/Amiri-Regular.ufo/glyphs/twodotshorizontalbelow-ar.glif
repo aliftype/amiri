@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="twodotshorizontalbelow-ar" format="2">
+	<outline>
+		<component base="twodotshorizontalabove-ar" xOffset="2" yOffset="-23"/>
+	</outline>
+	<anchor name="_MarkDotBelow" x="0" y="128"/>
+	<anchor name="TashkilBelowDot" x="10" y="-93"/>
+	<anchor name="_TwoDotsBelow" x="-54" y="68"/>
+</glyph>

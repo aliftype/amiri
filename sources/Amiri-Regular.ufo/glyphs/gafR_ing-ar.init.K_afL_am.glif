@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gafRing-ar.init.KafLam" format="2">
+	<advance width="587"/>
+	<outline>
+		<component base="aKaf.init.KafLam"/>
+		<component base="ring.below" xOffset="244" yOffset="622"/>
+		<component base="gafsarkashabove-ar.alt2" xOffset="258" yOffset="703"/>
+	</outline>
+	<anchor name="TashkilBelow" x="140" y="-327"/>
+	<anchor name="TashkilAbove" x="199" y="801"/>
+</glyph>

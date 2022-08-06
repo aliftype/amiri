@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ainThreedotsdownabove-ar.medi.AynYaaFina" format="2">
+	<advance width="410"/>
+	<outline>
+		<component base="aAyn.medi.AynYaaFina"/>
+		<component base="threedotsdownabove-ar" xOffset="206" yOffset="396"/>
+	</outline>
+	<anchor name="exit" x="0" y="0"/>
+	<anchor name="TashkilAbove" x="206" y="801"/>
+	<anchor name="TashkilBelow" x="195" y="-327"/>
+</glyph>

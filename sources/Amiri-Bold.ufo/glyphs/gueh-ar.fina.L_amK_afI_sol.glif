@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gueh-ar.fina.LamKafIsol" format="2">
+	<advance width="845"/>
+	<outline>
+		<component base="aKaf.fina.LamKafIsol"/>
+		<component base="dash.kaf_gaf" xOffset="1131" yOffset="678"/>
+		<component base="miniKeheh-ar" xOffset="326" yOffset="284"/>
+		<component base="twodotsverticalbelow-ar" xOffset="352" yOffset="-178"/>
+	</outline>
+	<anchor name="TashkilBelow" x="352" y="-361"/>
+	<anchor name="TashkilAbove" x="352" y="801"/>
+</glyph>

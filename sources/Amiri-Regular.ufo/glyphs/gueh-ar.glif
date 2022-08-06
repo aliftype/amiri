@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gueh-ar" format="2">
+	<unicode hex="06B3"/>
+	<advance width="1202"/>
+	<outline>
+		<component base="twodotsverticalbelow-ar" xOffset="454" yOffset="-202"/>
+		<component base="gaf-ar"/>
+	</outline>
+	<anchor name="TashkilAbove" x="519" y="801"/>
+	<anchor name="TashkilBelow" x="480" y="-327"/>
+</glyph>

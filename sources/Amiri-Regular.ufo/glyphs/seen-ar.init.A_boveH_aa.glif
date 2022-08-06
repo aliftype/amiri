@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="seen-ar.init.AboveHaa" format="2">
+	<advance width="671"/>
+	<outline>
+		<component base="aSen.init.AboveHaa"/>
+	</outline>
+	<anchor name="exit" x="0" y="203"/>
+	<anchor name="TashkilAbove" x="375" y="801"/>
+	<anchor name="TashkilBelow" x="503" y="-142"/>
+</glyph>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hehgoal-ar.fina" format="2">
+	<advance width="408"/>
+	<outline>
+		<contour>
+			<point x="421" y="105" type="curve" smooth="yes"/>
+			<point x="432" y="104"/>
+			<point x="440" y="102"/>
+			<point x="445" y="99" type="curve" smooth="yes"/>
+			<point x="457" y="91"/>
+			<point x="457" y="68"/>
+			<point x="444" y="31" type="curve" smooth="yes"/>
+			<point x="434" y="2"/>
+			<point x="418" y="-13"/>
+			<point x="395" y="-14" type="curve" smooth="yes"/>
+			<point x="319" y="-18"/>
+			<point x="258" y="11"/>
+			<point x="211" y="76" type="curve" smooth="yes"/>
+			<point x="208" y="79"/>
+			<point x="205" y="80"/>
+			<point x="202" y="79" type="curve"/>
+			<point x="195" y="73"/>
+			<point x="177" y="53"/>
+			<point x="149" y="19" type="curve" smooth="yes"/>
+			<point x="121" y="-15"/>
+			<point x="101" y="-38"/>
+			<point x="90" y="-50" type="curve" smooth="yes"/>
+			<point x="79" y="-62"/>
+			<point x="71" y="-66"/>
+			<point x="65" y="-62" type="curve" smooth="yes"/>
+			<point x="59" y="-58"/>
+			<point x="59" y="-51"/>
+			<point x="65" y="-41" type="curve" smooth="yes"/>
+			<point x="95" y="10"/>
+			<point x="126" y="59"/>
+			<point x="160" y="108" type="curve" smooth="yes"/>
+			<point x="194" y="157"/>
+			<point x="216" y="187"/>
+			<point x="228" y="199" type="curve" smooth="yes"/>
+			<point x="248" y="219"/>
+			<point x="265" y="218"/>
+			<point x="279" y="199" type="curve" smooth="yes"/>
+			<point x="299" y="171"/>
+			<point x="321" y="149"/>
+			<point x="346" y="132" type="curve" smooth="yes"/>
+			<point x="371" y="115"/>
+			<point x="395" y="106"/>
+		</contour>
+	</outline>
+	<anchor name="TashkilAbove" x="146" y="801"/>
+	<anchor name="HamzaAbove" x="171" y="334"/>
+	<anchor name="TashkilBelow" x="195" y="-237"/>
+</glyph>

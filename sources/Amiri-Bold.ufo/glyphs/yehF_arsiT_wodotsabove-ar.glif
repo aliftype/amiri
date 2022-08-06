@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehFarsiTwodotsabove-ar" format="2">
+	<unicode hex="063E"/>
+	<advance width="764"/>
+	<outline>
+		<component base="aYaa.isol"/>
+		<component base="twodotshorizontalabove-ar" xOffset="286" yOffset="336"/>
+	</outline>
+	<anchor name="TashkilAbove" x="391" y="801"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+	<anchor name="AlefAbove" x="188" y="404"/>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dammainverted-ar" format="2">
+	<unicode hex="0657"/>
+	<outline>
+		<component base="damma-ar" xScale="-1" yScale="-1" xOffset="501" yOffset="1985"/>
+	</outline>
+	<anchor name="_TashkilTashkilAbove" x="271" y="801"/>
+	<anchor name="TashkilTashkilAbove" x="300" y="1203"/>
+	<anchor name="_MarkAbove" x="268" y="801"/>
+	<anchor name="_TashkilAboveDot" x="271" y="801"/>
+	<anchor name="_TashkilAbove" x="271" y="801"/>
+</glyph>

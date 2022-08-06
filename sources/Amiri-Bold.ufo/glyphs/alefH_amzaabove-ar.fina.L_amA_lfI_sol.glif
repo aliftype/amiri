@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefHamzaabove-ar.fina.LamAlfIsol" format="2">
+	<advance width="340"/>
+	<outline>
+		<component base="aAlf.fina.LamAlfIsol"/>
+		<component base="hamza.above" xOffset="110" yOffset="322"/>
+	</outline>
+	<anchor name="TashkilAbove" x="85" y="1040"/>
+	<anchor name="TashkilBelow" x="151" y="-327"/>
+</glyph>

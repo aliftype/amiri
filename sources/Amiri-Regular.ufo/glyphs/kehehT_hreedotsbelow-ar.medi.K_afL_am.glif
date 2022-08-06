@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehThreedotsbelow-ar.medi.KafLam" format="2">
+	<advance width="529"/>
+	<outline>
+		<component base="aKaf.medi.KafLam"/>
+		<component base="threedotsdownbelow-ar" xOffset="313" yOffset="-288"/>
+	</outline>
+	<anchor name="TashkilAbove" x="213" y="801"/>
+	<anchor name="TashkilBelow" x="238" y="-327"/>
+</glyph>

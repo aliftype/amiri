@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehVabove-ar" format="2">
+	<unicode hex="06CE"/>
+	<advance width="764"/>
+	<outline>
+		<component base="aYaa.isol"/>
+		<component base="vabove-ar" xOffset="237" yOffset="-60"/>
+	</outline>
+	<anchor name="TashkilAbove" x="391" y="801"/>
+	<anchor name="TashkilBelow" x="342" y="-327"/>
+	<anchor name="AlefAbove" x="188" y="404"/>
+</glyph>

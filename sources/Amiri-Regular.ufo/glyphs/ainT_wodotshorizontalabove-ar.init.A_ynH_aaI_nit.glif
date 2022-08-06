@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ainTwodotshorizontalabove-ar.init.AynHaaInit" format="2">
+	<advance width="545"/>
+	<outline>
+		<component base="aAyn.init.AynHaaInit"/>
+		<component base="twodotshorizontalabove-ar" xOffset="209" yOffset="681"/>
+	</outline>
+	<anchor name="exit" x="0" y="244"/>
+	<anchor name="TashkilAbove" x="199" y="852"/>
+	<anchor name="TashkilBelow" x="439" y="-327"/>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Oacute" format="2">
+	<unicode hex="00D3"/>
+	<advance width="688"/>
+	<outline>
+		<component base="acutecomb.cap" xOffset="210" yOffset="-16"/>
+		<component base="O"/>
+	</outline>
+</glyph>

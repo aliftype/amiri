@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="teheh-ar.init.BaaRaaIsol" format="2">
+	<advance width="310"/>
+	<outline>
+		<component base="aBaa.init.BaaRaaIsol"/>
+		<component base="fourdotsabove-ar" xOffset="134" yOffset="396"/>
+	</outline>
+	<anchor name="TashkilAbove" x="119" y="801"/>
+	<anchor name="TashkilBelow" x="95" y="-327"/>
+</glyph>
