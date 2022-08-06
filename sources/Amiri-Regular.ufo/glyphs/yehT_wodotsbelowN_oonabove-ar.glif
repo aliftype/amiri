@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="yehTwodotsbelowNoonabove-ar" format="2">
-	<unicode hex="08BA"/>
-	<advance width="764"/>
-	<outline>
-		<component base="yeh-ar"/>
-		<component base="smallnoon.above" xOffset="340" yOffset="180"/>
-	</outline>
-</glyph>

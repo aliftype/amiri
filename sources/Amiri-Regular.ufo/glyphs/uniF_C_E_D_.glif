@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uniFCED" format="2">
-	<unicode hex="FCED"/>
-	<advance width="469"/>
-	<outline>
-		<component base="meem-ar.medi.LamMemMedi"/>
-		<component base="lam-ar.medi.LamMemMedi" xOffset="237"/>
-	</outline>
-</glyph>

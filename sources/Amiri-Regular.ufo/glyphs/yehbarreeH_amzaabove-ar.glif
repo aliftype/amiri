@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="yehbarreeHamzaabove-ar" format="2">
-	<unicode hex="06D3"/>
-	<advance width="1159"/>
-	<outline>
-		<component base="yehHamzaabove-ar.init.YaaBari" xOffset="369"/>
-		<component base="aYaaBari.fina.PostAscender"/>
-	</outline>
-</glyph>

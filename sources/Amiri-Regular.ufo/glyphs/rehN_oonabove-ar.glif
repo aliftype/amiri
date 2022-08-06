@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="rehNoonabove-ar" format="2">
-	<unicode hex="08B9"/>
-	<advance width="399"/>
-	<outline>
-		<component base="reh-ar"/>
-		<component base="smallnoon.above" xOffset="240" yOffset="180"/>
-	</outline>
-</glyph>

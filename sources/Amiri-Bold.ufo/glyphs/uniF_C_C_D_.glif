@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uniFCCD" format="2">
-	<unicode hex="FCCD"/>
-	<advance width="465"/>
-	<outline>
-		<component base="heh-ar.medi.LamHehInit"/>
-		<component base="lam-ar.init.LamHehInit" xOffset="240"/>
-	</outline>
-</glyph>
