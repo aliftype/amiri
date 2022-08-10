@@ -1,7 +1,7 @@
 #
 # subtending signs
 #
-@Pound = [uni0890 uni0891];
+@Pound = [pound-ar piastre-ar];
 lookup digit2small {
     sub @Digits by @Digits.small;
 } digit2small;
