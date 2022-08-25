@@ -126,8 +126,9 @@ feature calt {
 
 # This stylistic set removes them.
 feature ss06 {
-        featureNames {
-        name "No automatic vowel insertion above name of God";
+    featureNames {
+        name 3 1 0x0409 "No automatic vowel insertion above name of God";
+        name 3 1 0x0C01 "لفظ الجلالة بدون شدة وألف صغيرة";
     };
 
     sub lam-ar.medi.Lellah2' by lam-ar.medi.Lellah;

@@ -39,8 +39,9 @@ feature rlig {
 } rlig;
 
 feature ss07 {
-        featureNames {
-        name "Disable curvilinear Kashida";
+    featureNames {
+        name 3 1 0x0409 "Disable curvilinear Kashida";
+        name 3 1 0x0C01 "تعطيل الكشيدة المقوسة";
     };
 
     lookupflag IgnoreMarks;

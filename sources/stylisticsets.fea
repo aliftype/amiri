@@ -1,8 +1,9 @@
 # Replace baa glyphs with dot below following a raa or waw by an alternate ones
 # with low dots.
 feature ss01 {
-        featureNames {
-        name "Low Baa dot following a Raa or Waw";
+    featureNames {
+        name 3 1 0x0409 "Low Baa dot following a Raa or Waw";
+        name 3 1 0x0C01 "خفض نقطة الباء المسبوقة براء أو واو";
     };
 
     lookupflag IgnoreMarks;
@@ -28,10 +29,18 @@ lookup BaaMemAlfFina {
     sub @aMem.medi by @aMem.medi.BaaMemAlfFina;
 } BaaMemAlfFina;
 
-@NoMemAlfFina = [@aMem.medi @aMem.medi.LamBaaMemInit @aMem.medi.LamMemInit @aMem.medi.LamHaaMemInit @aMem.medi.BaaMemInit @aMem.medi.LamMemMedi @aMem.medi.SenBaaMemInit @aMem.medi.BaaBaaMemInit @aMem.medi.LamMemInitTatweel @aMem.medi.KafMemMedi @aMem.medi.SenMemInit @aHeh.medi.BaaHehMedi @aHeh.medi.PostTooth];
+@NoMemAlfFina = [
+  @aMem.medi @aMem.medi.LamBaaMemInit @aMem.medi.LamMemInit
+  @aMem.medi.LamHaaMemInit @aMem.medi.BaaMemInit @aMem.medi.LamMemMedi
+  @aMem.medi.SenBaaMemInit @aMem.medi.BaaBaaMemInit
+  @aMem.medi.LamMemInitTatweel @aMem.medi.KafMemMedi @aMem.medi.SenMemInit
+  @aHeh.medi.BaaHehMedi @aHeh.medi.PostTooth
+];
+
 feature ss02 {
-        featureNames {
-        name "Alternate medial Meem and final Alef combination";
+    featureNames {
+        name 3 1 0x0409 "Alternate medial Meem and final Alef combination";
+        name 3 1 0x0C01 "شكل بديل للميم المتوسطة مع الألف المنتهية";
     };
 
     lookupflag IgnoreMarks;
@@ -44,8 +53,9 @@ feature ss02 {
 
 #ifndef QURAN
 feature ss03 {
-        featureNames {
-        name "Localised @ and & symbols";
+    featureNames {
+        name 3 1 0x0409 "Localised @ and & symbols";
+        name 3 1 0x0C01 "شكل عربي لعلامتي @ و &";
     };
 
     sub at by at.ara;
@@ -54,8 +64,9 @@ feature ss03 {
 
 # alternate Gaf form
 feature ss04 {
-        featureNames {
-        name "Alternate, more naskh-like, Gaf form";
+    featureNames {
+        name 3 1 0x0409 "Alternate, more naskh-like, Gaf form";
+        name 3 1 0x0C01 "شكل بديل –نسخي– للگاف";
     };
 
     sub @aGaf.isol by @aGaf.alt;
@@ -79,8 +90,9 @@ lookup SSShaddaKasra {
 } SSShaddaKasra;
 
 feature ss05 {
-        featureNames {
-        name "Kasra is placed below Shadda instead of base glyph";
+    featureNames {
+        name 3 1 0x0409 "Kasra is placed below Shadda instead of base glyph";
+        name 3 1 0x0C01 "وضع الكسرة تحت الشدة بدلا من تحت الحرف";
     };
 
     sub shadda-ar [kasratan-ar kasra-ar]' lookup SSShaddaKasra;

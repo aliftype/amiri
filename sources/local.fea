@@ -17,8 +17,9 @@ feature locl {
 } locl;
 
 feature ss08 {
-        featureNames {
-        name "Inverted Arabic comma";
+    featureNames {
+        name 3 1 0x0409 "Inverted Arabic comma";
+        name 3 1 0x0C01 "فاصلة عربية مقلوبة";
     };
 
     sub @comma by @comma.alt;
