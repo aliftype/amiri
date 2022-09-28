@@ -155,6 +155,7 @@ lookup LamAlfFina {
 feature calt {
     lookupflag IgnoreMarks;
     sub [@aLam.medi]' lookup LamAlfFina [@aAlf.fina]' lookup LamAlfFina;
+    sub [@aLam.medi]' lookup LamAlfFina hamza-ar.float' [@aAlf.fina]' lookup LamAlfFina;
 } calt;
 
 lookup KafLamHeh {
@@ -311,8 +312,8 @@ lookup LamMemInit {
     sub @aLam.init by @aLam.init.LamMemInit;
     sub @aMem.medi by @aMem.medi.LamMemInit;
 } LamMemInit;
-
 #endif
+#
 lookup LamAlfIsol {
     sub @aAlf.fina by @aAlf.fina.LamAlfIsol;
     sub @aLam.init by @aLam.init.LamAlfIsol;
@@ -324,8 +325,8 @@ lookup LamHaaMemInit {
     sub @aLam.init by @aLam.init.LamHaaMemInit;
     sub @aMem.medi by @aMem.medi.LamHaaMemInit;
 } LamHaaMemInit;
-
 #endif
+#
 lookup BaaBaaMemInit {
     sub @aBaa.init by @aBaa.init.BaaBaaMemInit;
     sub @aBaa.medi by @aBaa.medi.BaaBaaMemInit;
@@ -601,6 +602,7 @@ feature calt {
     sub [@aLam.init]' lookup LamMemInit [@aMem.medi]' lookup LamMemInit;
     #endif
     sub [@aLam.init]' lookup LamAlfIsol [@aAlf.fina]' lookup LamAlfIsol;
+    sub [@aLam.init]' lookup LamAlfIsol hamza-ar.float' [@aAlf.fina]' lookup LamAlfIsol;
     #ifndef QURAN
     sub [@aLam.init]' lookup LamHaaMemInit [@aHaa.medi]' lookup LamHaaMemInit [@aMem.medi]' lookup LamHaaMemInit;
     #endif
@@ -617,8 +619,7 @@ feature calt {
     sub [@aBaa.init]' lookup BaaNonIsol [@aNon.fina]' lookup BaaNonIsol;
     sub [@aKaf.medi]' lookup KafMemFina [@aMem.fina]' lookup KafMemFina;
     sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.medi.LamAlfFina]' lookup KafLamAlf [@aAlf.fina @aAlf.fina.LamAlfFina];
-    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.medi.LamAlfFina]' lookup KafLamAlf hamza-ar.float' [@aAlf.fina @aAlf.fina.LamAlfFina];
-    # see float hamza in quran.fea
+    sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.medi.LamAlfFina]' lookup KafLamAlf hamza-ar.float' [@aAlf.fina @aAlf.fina.LamAlfFina]; # see float hamza in quran.fea
     sub [@aBaa.init]' lookup BaaSenInit [@aSen.medi]' lookup BaaSenInit;
     sub [@aBaa.init]' lookup BaaSenAltInit [@aSen.fina]' lookup BaaSenInit;
     sub [@aKaf.medi]' lookup KafRaaFina [@aRaa.fina]' lookup KafRaaFina;

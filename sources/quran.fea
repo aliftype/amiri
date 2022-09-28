@@ -18,10 +18,10 @@ feature ccmp {
 } ccmp;
 
 #
-# Floating hamza
+# Medial hamza
 #
 # Hamza should be shaping transparent, just like combining marks, while still
-# not a combining marks, I call t floating hamza because it "floats" between
+# not a combining marks, I call t medial hamza because it "floats" between
 # adjacent letters. When a hamza comes between two letters that would normally
 # join, it will be placed between them over a connecting stroke, else it will
 # just set on the baseline.
@@ -52,12 +52,13 @@ lookup After {
     sub @before.init by @before.medi;
 } After;
 
-lookup MedialHAmza {
+lookup MedialHamza {
     sub hamza-ar by hamza-ar.medi;
-} MedialHAmza;
+} MedialHamza;
 
 lookup FloatingHamza {
     sub hamza-ar by hamza-ar.float;
+    sub hamza-ar.medi by hamza-ar.float;
 } FloatingHamza;
 
 lookup LamAlefIsol {
@@ -77,10 +78,16 @@ feature calt {
     sub lam-ar' lookup LamAlefIsol hamza-ar' lookup FloatingHamza alef-ar' lookup LamAlefIsol;
     sub lam-ar.fina' lookup LamAlefFina hamza-ar' lookup FloatingHamza alef-ar' lookup LamAlefFina;
     # Medial hamza.
-    sub @before' lookup Before hamza-ar' lookup MedialHAmza @after' lookup After;
+    sub @before' lookup Before hamza-ar' lookup MedialHamza @after' lookup After;
 } calt;
 
-# kern floating hamza between final lam-alef to avoid glyph overlap
+# This is the Unicode-sanctioned way of lam-alef with medial hamza.
+feature ccmp {
+    lookupflag IgnoreMarks;
+    sub lam-ar hamza-ar.medi' lookup FloatingHamza alef-ar;
+} ccmp;
+
+# kern medial hamza between final lam-alef to avoid glyph overlap
 feature kern {
     lookupflag IgnoreMarks;
     pos hamza-ar.float @aAlf.fina.LamAlfFina <-146 0 0 0>;
