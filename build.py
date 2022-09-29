@@ -3,7 +3,7 @@
 #
 # build.py - Amiri font build utility
 #
-# Copyright 2010-2019 Khaled Hosny <khaledhosny@eglug.org>
+# Copyright 2010-2022 Khaled Hosny <khaled@aliftype.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
