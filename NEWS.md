@@ -1,3 +1,16 @@
+Amiri 0.900 (2022-10-05)
+------------------------
+This release is in preparation for frozen 1.0 release.
+
+* Remove zero-width Kashida hack needed for LibreOffice < 7.5, with this
+  release Kashida justification should be enabled for LibreOffice >= 7.5.
+* The font sources are now in Glyphs format, FontForge is no longer used for
+  editing the sources.
+* Remove the uyghur-hyphen PUA glyph.
+* Drop U+030A and U+0325 that were misused for Quranic symbols, and add U+08D1.
+* Localize stylistic set names.
+* Make medial hamza work with lam-alef ligature.
+
 Amiri 0.117 (2022-07-01)
 ------------------------
 Fix erroneously colored glyphs in Amiri Quran Colored.
