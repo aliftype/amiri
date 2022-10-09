@@ -2,7 +2,8 @@
 
 NAME=Amiri
 LATIN=AmiriLatin
-VERSION=$(shell git describe --tags --abbrev=0)
+TAG=$(shell git describe --tags --abbrev=0)
+VERSION=$(TAG:v%=%)
 
 SRC=sources
 BUILDDIR=build
