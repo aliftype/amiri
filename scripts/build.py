@@ -242,10 +242,14 @@ def makeItalic(options):
 
     exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
     exclude += [
-        "exclam", "period", "guillemotleft", "guillemotright",
-        "braceleft", "bar", "braceright", "bracketleft", "bracketright",
-        "parenleft", "parenright", "slash", "backslash", "brokenbar",
-        "question-ar", "dot.1", "dot.2",
+        "exclam", "period", "guillemotleft", "guillemotright", "braceleft",
+        "bar", "braceright", "bracketleft", "bracketright", "parenleft",
+        "parenright", "slash", "backslash", "brokenbar", "question-ar",
+        "dot.1", "dot.2", "zerowidthnonjoiner", "zerowidthjoiner",
+        "lefttorightmark", "righttoleftmark", "lefttorightembedding",
+        "righttoleftembedding", "popdirectionalformatting",
+        "lefttorightoverride", "righttoleftoverride", "_arrowhead",
+        "_arrowhead2", "_x",
     ]
 
     skew = TransformationsFilter(Slant=-options.slant, exclude=exclude)
