@@ -19,7 +19,6 @@ MAKEQURAN=${SCRIPTSDIR}/mkquran.py
 PY ?= python
 
 TTF=$(FONTS:%=${FONTSDIR}/%.ttf)
-OTF=$(FONTS:%=${FONTSDIR}/%.otf)
 HTML=$(DOC)/Documentation-Arabic.html
 FEA=$(wildcard $(SRC)/*.fea)
 
@@ -28,7 +27,6 @@ export SOURCE_DATE_EPOCH ?= 0
 all: ttf
 
 ttf: $(TTF)
-otf: $(OTF)
 doc: $(HTML)
 
 $(BUILDDIR)/$(NAME).designspace: $(SRC)/$(NAME).glyphs
@@ -38,7 +36,7 @@ $(BUILDDIR)/$(NAME).designspace: $(SRC)/$(NAME).glyphs
 $(BUILDDIR)/%.ufo: $(BUILDDIR)/$(NAME).designspace
 	@echo "   UFO	$@"
 
-${FONTSDIR}/$(NAME)QuranColored.ttf ${FONTSDIR}/$(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)QuranColored.ttf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --quran
 
@@ -46,23 +44,19 @@ ${FONTSDIR}/$(NAME)Quran.ttf: ${FONTSDIR}/$(NAME)QuranColored.ttf $(MAKEQURAN)
 	@echo "   GEN	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
-${FONTSDIR}/$(NAME)Quran.otf: ${FONTSDIR}/$(NAME)QuranColored.otf $(MAKEQURAN)
-	@echo "   GEN	$@"
-	@$(PY) $(MAKEQURAN) $< $@
-
-${FONTSDIR}/$(NAME)-Regular.ttf ${FONTSDIR}/$(NAME)-Regular.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Regular.ttf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-${FONTSDIR}/$(NAME)-Slanted.ttf ${FONTSDIR}/$(NAME)-Slanted.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Slanted.ttf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
-${FONTSDIR}/$(NAME)-Bold.ttf ${FONTSDIR}/$(NAME)-Bold.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Bold.ttf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-${FONTSDIR}/$(NAME)-BoldSlanted.ttf ${FONTSDIR}/$(NAME)-BoldSlanted.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-BoldSlanted.ttf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
@@ -70,21 +64,20 @@ $(DOC)/Documentation-Arabic.html: $(DOC)/Documentation-Arabic.md
 	@echo "   GEN	$@"
 	@pandoc $< -o $@ -f markdown-smart -t html -s -c Documentation-Arabic.css
 
-check: $(TTF) $(OTF)
+check: $(TTF)
 	@$(foreach font,$+,echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
 
 clean:
-	rm -rfv $(TTF) $(OTF) $(HTML)
+	rm -rfv $(TTF) $(HTML)
 
 distclean: clean
 	rm -rf $(DIST){,.zip}
 
-dist: otf check pack doc
+dist: ttf check pack doc
 	@echo "   DIST	$(DIST)"
 	@rm -rf $(DIST){,.zip}
 	@install -Dm644 -t $(DIST) $(LICENSE)
 	@install -Dm644 -t $(DIST) $(TTF)
-	@install -Dm644 -t $(DIST)/otf $(OTF)
 	@install -Dm644 -t $(DIST) README.md
 	@install -Dm644 -t $(DIST) README-Arabic.md
 	@install -Dm644 -t $(DIST) NEWS.md
