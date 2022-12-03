@@ -383,8 +383,8 @@ def makeQuran(options):
     # bigger font bbox that the regular fonts.
     head = otf["head"]
     os_2 = otf["OS/2"]
-    os_2.usWinAscent = head.yMax
-    os_2.usWinDescent = abs(head.yMin)
+    os_2.usWinAscent = max(head.yMax, os_2.usWinAscent)
+    os_2.usWinDescent = max(abs(head.yMin), os_2.usWinDescent)
 
     otf.save(options.output)
 
