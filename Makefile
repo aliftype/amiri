@@ -7,17 +7,19 @@ VERSION=$(TAG:v%=%)
 
 SRC=sources
 BUILDDIR=build
+SCRIPTSDIR=scripts
+FONTSDIR=fonts
 DOC=documentation
 FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
 LICENSE=OFL.txt
 
-BUILD=build.py
-MAKEQURAN=mkquran.py
+BUILD=${SCRIPTSDIR}/build.py
+MAKEQURAN=${SCRIPTSDIR}/mkquran.py
 PY ?= python
 
-TTF=$(FONTS:%=%.ttf)
-OTF=$(FONTS:%=%.otf)
+TTF=$(FONTS:%=${FONTSDIR}/%.ttf)
+OTF=$(FONTS:%=${FONTSDIR}/%.otf)
 HTML=$(DOC)/Documentation-Arabic.html
 FEA=$(wildcard $(SRC)/*.fea)
 
@@ -36,31 +38,31 @@ $(BUILDDIR)/$(NAME).designspace: $(SRC)/$(NAME).glyphs
 $(BUILDDIR)/%.ufo: $(BUILDDIR)/$(NAME).designspace
 	@echo "   UFO	$@"
 
-$(NAME)QuranColored.ttf $(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)QuranColored.ttf ${FONTSDIR}/$(NAME)QuranColored.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --quran
 
-$(NAME)Quran.ttf: $(NAME)QuranColored.ttf $(MAKEQURAN)
+${FONTSDIR}/$(NAME)Quran.ttf: ${FONTSDIR}/$(NAME)QuranColored.ttf $(MAKEQURAN)
 	@echo "   GEN	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
-$(NAME)Quran.otf: $(NAME)QuranColored.otf $(MAKEQURAN)
+${FONTSDIR}/$(NAME)Quran.otf: ${FONTSDIR}/$(NAME)QuranColored.otf $(MAKEQURAN)
 	@echo "   GEN	$@"
 	@$(PY) $(MAKEQURAN) $< $@
 
-$(NAME)-Regular.ttf $(NAME)-Regular.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Regular.ttf ${FONTSDIR}/$(NAME)-Regular.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Regular.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-$(NAME)-Slanted.ttf $(NAME)-Slanted.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Slanted.ttf ${FONTSDIR}/$(NAME)-Slanted.otf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
-$(NAME)-Bold.ttf $(NAME)-Bold.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Bold.ttf ${FONTSDIR}/$(NAME)-Bold.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-Bold.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-$(NAME)-BoldSlanted.ttf $(NAME)-BoldSlanted.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-BoldSlanted.ttf ${FONTSDIR}/$(NAME)-BoldSlanted.otf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
@@ -89,6 +91,6 @@ dist: otf check pack doc
 	@install -Dm644 -t $(DIST) NEWS-Arabic.md
 	@install -Dm644 -t $(DIST) $(HTML)
 	@echo "   DROP GLYPH NAMES"
-	@$(PY) no-glyphnames.py $(DIST)/*.ttf
+	@$(PY) ${SCRIPTSDIR}/no-glyphnames.py $(DIST)/*.ttf
 	@echo "   ZIP  $(DIST)"
 	@zip -rq $(DIST).zip $(DIST)
