@@ -1,6 +1,5 @@
 """
 Script to do changes required for Google Fonts that we can’t have by default.
-Currently just renames Slanted to Italic.
 """
 
 from fontTools.ttLib import TTFont
@@ -15,14 +14,7 @@ if os.path.exists(GF_DIR):
 os.mkdir(GF_DIR)
 
 
-for path in ("Amiri-Slanted.ttf", "Amiri-BoldSlanted.ttf"):
-  with TTFont(path) as font:
-    for name in font["name"].names:
-      if name.nameID in (2, 3, 4, 6):
-        name.string = str(name).replace("Slanted", "Italic")
-    font.save(os.path.join("gf_fonts", path.replace("Slanted", "Italic")))
-
-for path in ("Amiri-Regular.ttf", "Amiri-Bold.ttf"):
+for path in ("Amiri-Italic.ttf", "Amiri-BoldItalic.ttf", "Amiri-Regular.ttf", "Amiri-Bold.ttf"):
   shutil.copy(path, GF_DIR)
 
 

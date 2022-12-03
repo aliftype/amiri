@@ -10,7 +10,7 @@ BUILDDIR=build
 SCRIPTSDIR=scripts
 FONTSDIR=fonts
 DOC=documentation
-FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Slanted $(NAME)-BoldSlanted $(NAME)Quran $(NAME)QuranColored
+FONTS=$(NAME)-Regular $(NAME)-Bold $(NAME)-Italic $(NAME)-BoldItalic $(NAME)Quran $(NAME)QuranColored
 DIST=$(NAME)-$(VERSION)
 LICENSE=OFL.txt
 
@@ -48,7 +48,7 @@ ${FONTSDIR}/$(NAME)-Regular.ttf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-${FONTSDIR}/$(NAME)-Slanted.ttf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Slanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-Italic.ttf: $(BUILDDIR)/$(NAME)-Regular.ufo $(SRC)/$(LATIN)-Italic.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 
@@ -56,7 +56,7 @@ ${FONTSDIR}/$(NAME)-Bold.ttf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-Bold.
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE)
 
-${FONTSDIR}/$(NAME)-BoldSlanted.ttf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-BoldSlanted.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
+${FONTSDIR}/$(NAME)-BoldItalic.ttf: $(BUILDDIR)/$(NAME)-Bold.ufo $(SRC)/$(LATIN)-BoldItalic.ufo $(SRC)/$(NAME).fea $(FEA) $(LICENSE) $(BUILD)
 	@echo "   GEN	$@"
 	@$(PY) $(BUILD) --input $< --output $@ --features=$(SRC)/$(NAME).fea --version $(VERSION) --license $(LICENSE) --slant=10
 

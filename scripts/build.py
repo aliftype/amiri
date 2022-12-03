@@ -237,7 +237,7 @@ def mergeLatin(font):
     font.kerning.update(latin.kerning)
 
 
-def makeSlanted(options):
+def makeItalic(options):
     font = makeDesktop(options, False)
 
     exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
@@ -254,15 +254,15 @@ def makeSlanted(options):
     # fix metadata
     info = font.info
     info.italicAngle = options.slant
-    info.postscriptFullName += " Slanted"
+    info.postscriptFullName += " Italic"
     if info.postscriptWeightName == "Bold":
-        info.postscriptFontName = info.postscriptFontName.replace("Bold", "BoldSlanted")
-        info.styleName = "Bold Slanted"
+        info.postscriptFontName = info.postscriptFontName.replace("Bold", "BoldItalic")
+        info.styleName = "Bold Italic"
         info.styleMapFamilyName = info.familyName
         info.styleMapStyleName = "bold italic"
     else:
-        info.postscriptFontName = info.postscriptFontName.replace("Regular", "Slanted")
-        info.styleName = "Slanted"
+        info.postscriptFontName = info.postscriptFontName.replace("Regular", "Italic")
+        info.styleName = "Italic"
         info.styleMapFamilyName = info.familyName
         info.styleMapStyleName = "italic"
 
@@ -618,7 +618,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.slant:
-        makeSlanted(args)
+        makeItalic(args)
     elif args.quran:
         makeQuran(args)
     else:
