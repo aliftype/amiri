@@ -1,3 +1,11 @@
+Amiri 1.000 (2022-12-03)
+------------------------
+
+**This is the final version of Amiri fonts, no more development is expected**
+
+* Slanted fonts have been renamed Italic since this is less confusing.
+* Minor fixes.
+
 Amiri 0.900 (2022-10-05)
 ------------------------
 This release is in preparation for frozen 1.0 release.
