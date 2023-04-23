@@ -1,7 +1,7 @@
 [![Build](https://github.com/aliftype/amiri/actions/workflows/build.yml/badge.svg)](https://github.com/aliftype/amiri/actions/workflows/build.yml)
 
-Amiri Font
-==========
+Amiri
+=====
 
 Amiri (أميري) is a classical Arabic typeface in Naskh style for typesetting books and
 other running text.
@@ -27,6 +27,18 @@ included license file for more details.
 Latest version of the Amiri font can be obtained from its web site:
 
 > http://amirifont.org
+
+Development status
+------------------
+
+Amiri was actively developed between 2008–2022, when version 1 was released and
+it was then considered mature enough that not further development is planned.
+No typeface is ever complete, but maintaining Amiri is increasingly time and
+effort-consuming due to a combination of decisions taken early on due to
+software limitations at the time its development started, as well as extensive
+character and glyph coverage. Amiri development might be restarted in the
+future under a different name with less backward-compatibility constraints, but
+nothing concrete is currently planed.
 
 [1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
 [2]: http://scripts.sil.org/OFL "The Open Font License"
