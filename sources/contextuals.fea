@@ -840,52 +840,6 @@ feature calt {
     sub [@aLam.init @aLam.medi @aLam.medi.KafLam @aLam.medi.KafMemLam @aLam.medi.LamLamInit @aMem.medi.LamMemInit]' lookup LamKafInit [@aKaf.medi @aKaf.medi.KafHeh @aKaf.medi.KafMemFina @aKaf.medi.KafRaaFina @aKaf.medi.KafYaaFina @aKaf.medi.KafMemAlf @aKaf.medi.PreHeh @aGaf.fina];
 } calt;
 
-lookup LamAynTatweel {
-    # XXX: sync with classes.fea
-    # @aLam.init
-    sub lamVabove-ar.init by lamVabove-ar.init kashida-ar.2;
-    sub lamThreedotsabove-ar.init by lamThreedotsabove-ar.init kashida-ar.2;
-    sub lam-ar.init by lam-ar.init kashida-ar.2;
-    sub lamThreedotsbelow-ar.init by lamThreedotsbelow-ar.init kashida-ar.2;
-    sub lamDotabove-ar.init by lamDotabove-ar.init kashida-ar.2;
-    sub lamBar-ar.init by lamBar-ar.init kashida-ar.2;
-    # @aLam.medi by
-    sub lamVabove-ar.medi by lamVabove-ar.medi kashida-ar.2;
-    sub lamThreedotsabove-ar.medi by lamThreedotsabove-ar.medi kashida-ar.2;
-    sub lam-ar.medi by lam-ar.medi kashida-ar.2;
-    sub lamThreedotsbelow-ar.medi by lamThreedotsbelow-ar.medi kashida-ar.2;
-    sub lamDotabove-ar.medi by lamDotabove-ar.medi kashida-ar.2;
-    sub lamBar-ar.medi by lamBar-ar.medi kashida-ar.2;
-    # @aLam.medi.KafLam
-    sub lamVabove-ar.medi.KafLam by lamVabove-ar.medi.KafLam kashida-ar.2;
-    sub lamThreedotsabove-ar.medi.KafLam by lamThreedotsabove-ar.medi.KafLam kashida-ar.2;
-    sub lam-ar.medi.KafLam by lam-ar.medi.KafLam kashida-ar.2;
-    sub lamThreedotsbelow-ar.medi.KafLam by lamThreedotsbelow-ar.medi.KafLam kashida-ar.2;
-    sub lamDotabove-ar.medi.KafLam by lamDotabove-ar.medi.KafLam kashida-ar.2;
-    sub lamBar-ar.medi.KafLam by lamBar-ar.medi.KafLam kashida-ar.2;
-    # @aLam.medi.KafMemLam
-    sub lamVabove-ar.medi.KafMemLam by lamVabove-ar.medi.KafMemLam kashida-ar.2;
-    sub lamThreedotsabove-ar.medi.KafMemLam by lamThreedotsabove-ar.medi.KafMemLam kashida-ar.2;
-    sub lam-ar.medi.KafMemLam by lam-ar.medi.KafMemLam kashida-ar.2;
-    sub lamThreedotsbelow-ar.medi.KafMemLam by lamThreedotsbelow-ar.medi.KafMemLam kashida-ar.2;
-    sub lamDotabove-ar.medi.KafMemLam by lamDotabove-ar.medi.KafMemLam kashida-ar.2;
-    sub lamBar-ar.medi.KafMemLam by lamBar-ar.medi.KafMemLam kashida-ar.2;
-    # @aLam.medi.LamLamInit
-    sub lamVabove-ar.medi.LamLamInit by lamVabove-ar.medi.LamLamInit kashida-ar.2;
-    sub lamThreedotsabove-ar.medi.LamLamInit by lamThreedotsabove-ar.medi.LamLamInit kashida-ar.2;
-    sub lam-ar.medi.LamLamInit by lam-ar.medi.LamLamInit kashida-ar.2;
-    sub lamThreedotsbelow-ar.medi.LamLamInit by lamThreedotsbelow-ar.medi.LamLamInit kashida-ar.2;
-    sub lamDotabove-ar.medi.LamLamInit by lamDotabove-ar.medi.LamLamInit kashida-ar.2;
-    sub lamBar-ar.medi.LamLamInit by lamBar-ar.medi.LamLamInit kashida-ar.2;
-    sub meem-ar.medi.LamMemInit by meem-ar.medi.LamMemInitTatweel;
-} LamAynTatweel;
-
-# lam [shadda] kasra ayn.fina
-feature calt {
-    sub [@aLam.init @aLam.medi @aLam.medi.KafLam @aLam.medi.KafMemLam @aLam.medi.LamLamInit @aMem.medi.LamMemInit]' lookup LamAynTatweel [kasratan-ar kasra-ar dotvowelbelow-ar] @aAyn.fina;
-    sub [@aLam.init @aLam.medi @aLam.medi.KafLam @aLam.medi.KafMemLam @aLam.medi.LamLamInit @aMem.medi.LamMemInit]' lookup LamAynTatweel [shadda-ar] [kasratan-ar kasra-ar dotvowelbelow-ar] @aAyn.fina;
-} calt;
-
 #ifdef QURAN
 # alef lam meem raa (with madda)
 # we don't get plain aLam.init aMem.fina except in Quran font
@@ -1011,7 +965,7 @@ feature calt {
 } calt;
 
 # Insert kashida between final ع and the kasra below the preceding letter
-# see https://github.com/khaledhosny/quran-data/issues/4
+# see https://github.com/aliftype/quran-data/issues/4
 lookup KasraAynFina {
     sub kasratan-ar by kasratan-ar kashida-ar.2;
     sub kasra-ar by kasra-ar kashida-ar.2;
