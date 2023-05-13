@@ -795,49 +795,15 @@ feature calt {
     sub [@aLam.medi.KafLam]' lookup KafLamYaa [@aYaa.fina]' lookup LamYaaFina;
 } calt;
 
+@LamKafInit = [@aLam.init @aLam.medi @aLam.medi.KafLam @aLam.medi.KafMemLam @aLam.medi.LamLamInit];
 lookup LamKafInit {
-    # XXX: sync with classes.fea
-    # @aLam.init
-    sub lamVabove-ar.init by lamVabove-ar.init kashida-ar.1;
-    sub lamThreedotsabove-ar.init by lamThreedotsabove-ar.init kashida-ar.1;
-    sub lam-ar.init by lam-ar.init kashida-ar.1;
-    sub lamThreedotsbelow-ar.init by lamThreedotsbelow-ar.init kashida-ar.1;
-    sub lamDotabove-ar.init by lamDotabove-ar.init kashida-ar.1;
-    sub lamBar-ar.init by lamBar-ar.init kashida-ar.1;
-    # @aLam.medi by
-    sub lamVabove-ar.medi by lamVabove-ar.medi kashida-ar.1;
-    sub lamThreedotsabove-ar.medi by lamThreedotsabove-ar.medi kashida-ar.1;
-    sub lam-ar.medi by lam-ar.medi kashida-ar.1;
-    sub lamThreedotsbelow-ar.medi by lamThreedotsbelow-ar.medi kashida-ar.1;
-    sub lamDotabove-ar.medi by lamDotabove-ar.medi kashida-ar.1;
-    sub lamBar-ar.medi by lamBar-ar.medi kashida-ar.1;
-    # @aLam.medi.KafLam
-    sub lamVabove-ar.medi.KafLam by lamVabove-ar.medi.KafLam kashida-ar.1;
-    sub lamThreedotsabove-ar.medi.KafLam by lamThreedotsabove-ar.medi.KafLam kashida-ar.1;
-    sub lam-ar.medi.KafLam by lam-ar.medi.KafLam kashida-ar.1;
-    sub lamThreedotsbelow-ar.medi.KafLam by lamThreedotsbelow-ar.medi.KafLam kashida-ar.1;
-    sub lamDotabove-ar.medi.KafLam by lamDotabove-ar.medi.KafLam kashida-ar.1;
-    sub lamBar-ar.medi.KafLam by lamBar-ar.medi.KafLam kashida-ar.1;
-    # @aLam.medi.KafMemLam
-    sub lamVabove-ar.medi.KafMemLam by lamVabove-ar.medi.KafMemLam kashida-ar.1;
-    sub lamThreedotsabove-ar.medi.KafMemLam by lamThreedotsabove-ar.medi.KafMemLam kashida-ar.1;
-    sub lam-ar.medi.KafMemLam by lam-ar.medi.KafMemLam kashida-ar.1;
-    sub lamThreedotsbelow-ar.medi.KafMemLam by lamThreedotsbelow-ar.medi.KafMemLam kashida-ar.1;
-    sub lamDotabove-ar.medi.KafMemLam by lamDotabove-ar.medi.KafMemLam kashida-ar.1;
-    sub lamBar-ar.medi.KafMemLam by lamBar-ar.medi.KafMemLam kashida-ar.1;
-    # @aLam.medi.LamLamInit
-    sub lamVabove-ar.medi.LamLamInit by lamVabove-ar.medi.LamLamInit kashida-ar.1;
-    sub lamThreedotsabove-ar.medi.LamLamInit by lamThreedotsabove-ar.medi.LamLamInit kashida-ar.1;
-    sub lam-ar.medi.LamLamInit by lam-ar.medi.LamLamInit kashida-ar.1;
-    sub lamThreedotsbelow-ar.medi.LamLamInit by lamThreedotsbelow-ar.medi.LamLamInit kashida-ar.1;
-    sub lamDotabove-ar.medi.LamLamInit by lamDotabove-ar.medi.LamLamInit kashida-ar.1;
-    sub lamBar-ar.medi.LamLamInit by lamBar-ar.medi.LamLamInit kashida-ar.1;
-    sub meem-ar.medi.LamMemInit by meem-ar.medi.LamMemInitTatweel;
+    sub @LamKafInit by @LamKafInit kashida-ar.1;
+    sub @aMem.medi.LamMemInit by @aMem.medi.LamMemInitTatweel;
 } LamKafInit;
 
 feature calt {
     lookupflag IgnoreMarks;
-    sub [@aLam.init @aLam.medi @aLam.medi.KafLam @aLam.medi.KafMemLam @aLam.medi.LamLamInit @aMem.medi.LamMemInit]' lookup LamKafInit [@aKaf.medi @aKaf.medi.KafHeh @aKaf.medi.KafMemFina @aKaf.medi.KafRaaFina @aKaf.medi.KafYaaFina @aKaf.medi.KafMemAlf @aKaf.medi.PreHeh @aGaf.fina];
+    sub [@LamKafInit @aMem.medi.LamMemInit]' lookup LamKafInit [@aKaf.medi @aKaf.medi.KafHeh @aKaf.medi.KafMemFina @aKaf.medi.KafRaaFina @aKaf.medi.KafYaaFina @aKaf.medi.KafMemAlf @aKaf.medi.PreHeh @aGaf.fina];
 } calt;
 
 #ifdef QURAN
@@ -865,25 +831,7 @@ feature calt {
 
 # insert tatweel between ح and ك in فحك[ملير]
 lookup FaaHaaKaf {
-    # XXX: sync with classes.fea
-    # sub @aHaa.medi.FaaHaaInit   by @aHaa.medi.FaaHaaInit   uni0640.1;
-    sub khah-ar.medi.FaaHaaInit by khah-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hah-ar.medi.FaaHaaInit by hah-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahHamzaabove-ar.medi.FaaHaaInit by hahHamzaabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub tcheheh-ar.medi.FaaHaaInit by tcheheh-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahThreedotsabove-ar.medi.FaaHaaInit by hahThreedotsabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub jeem-ar.medi.FaaHaaInit by jeem-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahTwodotsverticalabove-ar.medi.FaaHaaInit by hahTwodotsverticalabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahTwodotshorizontalabove-ar.medi.FaaHaaInit by hahTwodotshorizontalabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub dyeh-ar.medi.FaaHaaInit by dyeh-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahTahTwodotshorizontalabove-ar.medi.FaaHaaInit by hahTahTwodotshorizontalabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahTahbelow-ar.medi.FaaHaaInit by hahTahbelow-ar.medi.FaaHaaInit kashida-ar.1;
-    sub nyeh-ar.medi.FaaHaaInit by nyeh-ar.medi.FaaHaaInit kashida-ar.1;
-    sub tchehDotabove-ar.medi.FaaHaaInit by tchehDotabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahFourbelow-ar.medi.FaaHaaInit by hahFourbelow-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahThreedotsupbelow-ar.medi.FaaHaaInit by hahThreedotsupbelow-ar.medi.FaaHaaInit kashida-ar.1;
-    sub hahTahabove-ar.medi.FaaHaaInit by hahTahabove-ar.medi.FaaHaaInit kashida-ar.1;
-    sub tcheh-ar.medi.FaaHaaInit by tcheh-ar.medi.FaaHaaInit kashida-ar.1;
+    sub @aHaa.medi.FaaHaaInit by @aHaa.medi.FaaHaaInit kashida-ar.1;
 } FaaHaaKaf;
 
 feature calt {
@@ -893,43 +841,8 @@ feature calt {
 
 # insert tatweel between ح and ت in [بمسصف]حت[رن]
 lookup AboveHaaTatweel {
-    # XXX: sync with classes.fea
-    # sub @aHaa.medi.FaaHaaInit   by @aHaa.medi.FaaHaaInit   uni0640.05;
-    sub khah-ar.medi.FaaHaaInit by khah-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hah-ar.medi.FaaHaaInit by hah-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahHamzaabove-ar.medi.FaaHaaInit by hahHamzaabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub tcheheh-ar.medi.FaaHaaInit by tcheheh-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahThreedotsabove-ar.medi.FaaHaaInit by hahThreedotsabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub jeem-ar.medi.FaaHaaInit by jeem-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahTwodotsverticalabove-ar.medi.FaaHaaInit by hahTwodotsverticalabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahTwodotshorizontalabove-ar.medi.FaaHaaInit by hahTwodotshorizontalabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub dyeh-ar.medi.FaaHaaInit by dyeh-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahTahTwodotshorizontalabove-ar.medi.FaaHaaInit by hahTahTwodotshorizontalabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahTahbelow-ar.medi.FaaHaaInit by hahTahbelow-ar.medi.FaaHaaInit kashida-ar.05;
-    sub nyeh-ar.medi.FaaHaaInit by nyeh-ar.medi.FaaHaaInit kashida-ar.05;
-    sub tchehDotabove-ar.medi.FaaHaaInit by tchehDotabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahFourbelow-ar.medi.FaaHaaInit by hahFourbelow-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahThreedotsupbelow-ar.medi.FaaHaaInit by hahThreedotsupbelow-ar.medi.FaaHaaInit kashida-ar.05;
-    sub hahTahabove-ar.medi.FaaHaaInit by hahTahabove-ar.medi.FaaHaaInit kashida-ar.05;
-    sub tcheh-ar.medi.FaaHaaInit by tcheh-ar.medi.FaaHaaInit kashida-ar.05;
-    # sub @aHaa.medi.SadHaaInit   by @aHaa.medi.SadHaaInit   uni0640.05;
-    sub khah-ar.medi.SadHaaInit by khah-ar.medi.SadHaaInit kashida-ar.05;
-    sub hah-ar.medi.SadHaaInit by hah-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahHamzaabove-ar.medi.SadHaaInit by hahHamzaabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub tcheheh-ar.medi.SadHaaInit by tcheheh-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahThreedotsabove-ar.medi.SadHaaInit by hahThreedotsabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub jeem-ar.medi.SadHaaInit by jeem-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahTwodotsverticalabove-ar.medi.SadHaaInit by hahTwodotsverticalabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahTwodotshorizontalabove-ar.medi.SadHaaInit by hahTwodotshorizontalabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub dyeh-ar.medi.SadHaaInit by dyeh-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahTahTwodotshorizontalabove-ar.medi.SadHaaInit by hahTahTwodotshorizontalabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahTahbelow-ar.medi.SadHaaInit by hahTahbelow-ar.medi.SadHaaInit kashida-ar.05;
-    sub nyeh-ar.medi.SadHaaInit by nyeh-ar.medi.SadHaaInit kashida-ar.05;
-    sub tchehDotabove-ar.medi.SadHaaInit by tchehDotabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahFourbelow-ar.medi.SadHaaInit by hahFourbelow-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahThreedotsupbelow-ar.medi.SadHaaInit by hahThreedotsupbelow-ar.medi.SadHaaInit kashida-ar.05;
-    sub hahTahabove-ar.medi.SadHaaInit by hahTahabove-ar.medi.SadHaaInit kashida-ar.05;
-    sub tcheh-ar.medi.SadHaaInit by tcheh-ar.medi.SadHaaInit kashida-ar.05;
+    sub @aHaa.medi.FaaHaaInit by @aHaa.medi.FaaHaaInit kashida-ar.05;
+    sub @aHaa.medi.SadHaaInit by @aHaa.medi.SadHaaInit kashida-ar.05;
 } AboveHaaTatweel;
 
 feature calt {
