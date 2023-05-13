@@ -623,7 +623,7 @@ feature calt {
     sub [@aBaa.init]' lookup BaaSenInit [@aSen.medi]' lookup BaaSenInit;
     sub [@aBaa.init]' lookup BaaSenAltInit [@aSen.fina]' lookup BaaSenInit;
     sub [@aKaf.medi]' lookup KafRaaFina [@aRaa.fina]' lookup KafRaaFina;
-    ignore sub [@aLam.init] [hehgoal-ar.medi];
+    ignore sub [@aLam.init]' [hehgoal-ar.medi];
     sub [@aLam.init]' lookup LamHehInit [@aHeh.medi]' lookup LamHehInit;
     sub [@aBaa.init]' lookup BaaMemInit [@aMem.medi]' lookup BaaMemInit;
     sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi @aLam.fina @aAlf.fina @aKaf.fina]' lookup KafLam;
