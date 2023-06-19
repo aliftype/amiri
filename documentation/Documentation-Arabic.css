@@ -2,28 +2,28 @@
   font-family: Amiri;
   font-style: normal;
   font-weight: 400;
-  src: local(Amiri), url('../Amiri-Regular.ttf');
+  src: local(Amiri), url('../fonts/Amiri-Regular.ttf');
 }
 
 @font-face {
   font-family: Amiri;
   font-style: normal;
   font-weight: 700;
-  src: local(Amiri Bold), url('../Amiri-Bold.ttf');
+  src: local(Amiri Bold), url('../fonts/Amiri-Bold.ttf');
 }
 
 @font-face {
   font-family: Amiri;
   font-style: italic;
   font-weight: 400;
-  src: local(Amiri Italic), url('../Amiri-Italic.ttf');
+  src: local(Amiri Italic), url('../fonts/Amiri-Italic.ttf');
 }
 
 @font-face {
   font-family: Amiri;
   font-style: italic;
   font-weight: 700;
-  src: local(Amiri Bold Italic), url('../Amiri-BoldItalic.ttf');
+  src: local(Amiri Bold Italic), url('../fonts/Amiri-BoldItalic.ttf');
 }
 
 html {
