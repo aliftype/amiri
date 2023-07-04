@@ -1,79 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dollar" format="2">
-	<unicode hex="0024"/>
-	<advance width="505"/>
-	<outline>
-		<contour>
-			<point x="259" y="626" type="curve" smooth="yes"/>
-			<point x="314" y="626"/>
-			<point x="359" y="612"/>
-			<point x="416" y="600" type="curve"/>
-			<point x="421" y="550"/>
-			<point x="423" y="501"/>
-			<point x="426" y="444" type="curve"/>
-			<point x="423" y="440"/>
-			<point x="420" y="439"/>
-			<point x="416" y="439" type="curve" smooth="yes"/>
-			<point x="413" y="439"/>
-			<point x="390" y="437"/>
-			<point x="388" y="445" type="curve" smooth="yes"/>
-			<point x="380" y="498"/>
-			<point x="336" y="587"/>
-			<point x="264" y="587" type="curve" smooth="yes"/>
-			<point x="228" y="587"/>
-			<point x="184" y="568"/>
-			<point x="184" y="506" type="curve" smooth="yes"/>
-			<point x="184" y="448"/>
-			<point x="257" y="392"/>
-			<point x="319" y="353" type="curve" smooth="yes"/>
-			<point x="381" y="313"/>
-			<point x="457" y="287"/>
-			<point x="457" y="163" type="curve" smooth="yes"/>
-			<point x="457" y="60"/>
-			<point x="356" y="-10"/>
-			<point x="253" y="-10" type="curve" smooth="yes"/>
-			<point x="198" y="-10"/>
-			<point x="131" y="2"/>
-			<point x="75" y="15" type="curve"/>
-			<point x="65" y="56"/>
-			<point x="55" y="148"/>
-			<point x="53" y="174" type="curve"/>
-			<point x="57" y="180"/>
-			<point x="75" y="187"/>
-			<point x="80" y="187" type="curve" smooth="yes"/>
-			<point x="87" y="187"/>
-			<point x="91" y="185"/>
-			<point x="92" y="179" type="curve" smooth="yes"/>
-			<point x="101" y="128"/>
-			<point x="159" y="29"/>
-			<point x="243" y="29" type="curve" smooth="yes"/>
-			<point x="278" y="29"/>
-			<point x="334" y="46"/>
-			<point x="334" y="121" type="curve" smooth="yes"/>
-			<point x="334" y="194"/>
-			<point x="243" y="243"/>
-			<point x="196" y="275" type="curve" smooth="yes"/>
-			<point x="128" y="321"/>
-			<point x="60" y="359"/>
-			<point x="60" y="457" type="curve" smooth="yes"/>
-			<point x="60" y="554"/>
-			<point x="162" y="626"/>
-		</contour>
-		<contour>
-			<point x="281" y="652" type="line"/>
-			<point x="289" y="652"/>
-			<point x="319" y="652"/>
-			<point x="319" y="645" type="curve"/>
-			<point x="208" y="-39" type="line"/>
-			<point x="199" y="-39"/>
-			<point x="170" y="-37"/>
-			<point x="170" y="-30" type="curve"/>
-		</contour>
-	</outline>
-	<lib>
-		<dict>
-			<key>org.sfdlib.decomposeAndRemoveOverlap</key>
-			<true/>
-		</dict>
-	</lib>
+  <advance width="505"/>
+  <unicode hex="0024"/>
+  <outline>
+    <contour>
+      <point x="259" y="626" type="curve" smooth="yes"/>
+      <point x="314" y="626"/>
+      <point x="359" y="612"/>
+      <point x="416" y="600" type="curve"/>
+      <point x="421" y="550"/>
+      <point x="423" y="501"/>
+      <point x="426" y="444" type="curve"/>
+      <point x="423" y="440"/>
+      <point x="420" y="439"/>
+      <point x="416" y="439" type="curve" smooth="yes"/>
+      <point x="413" y="439"/>
+      <point x="390" y="437"/>
+      <point x="388" y="445" type="curve" smooth="yes"/>
+      <point x="380" y="498"/>
+      <point x="336" y="587"/>
+      <point x="264" y="587" type="curve" smooth="yes"/>
+      <point x="228" y="587"/>
+      <point x="184" y="568"/>
+      <point x="184" y="506" type="curve" smooth="yes"/>
+      <point x="184" y="448"/>
+      <point x="257" y="392"/>
+      <point x="319" y="353" type="curve" smooth="yes"/>
+      <point x="381" y="313"/>
+      <point x="457" y="287"/>
+      <point x="457" y="163" type="curve" smooth="yes"/>
+      <point x="457" y="60"/>
+      <point x="356" y="-10"/>
+      <point x="253" y="-10" type="curve" smooth="yes"/>
+      <point x="198" y="-10"/>
+      <point x="131" y="2"/>
+      <point x="75" y="15" type="curve"/>
+      <point x="65" y="56"/>
+      <point x="55" y="148"/>
+      <point x="53" y="174" type="curve"/>
+      <point x="57" y="180"/>
+      <point x="75" y="187"/>
+      <point x="80" y="187" type="curve" smooth="yes"/>
+      <point x="87" y="187"/>
+      <point x="91" y="185"/>
+      <point x="92" y="179" type="curve" smooth="yes"/>
+      <point x="101" y="128"/>
+      <point x="159" y="29"/>
+      <point x="243" y="29" type="curve" smooth="yes"/>
+      <point x="278" y="29"/>
+      <point x="334" y="46"/>
+      <point x="334" y="121" type="curve" smooth="yes"/>
+      <point x="334" y="194"/>
+      <point x="243" y="243"/>
+      <point x="196" y="275" type="curve" smooth="yes"/>
+      <point x="128" y="321"/>
+      <point x="60" y="359"/>
+      <point x="60" y="457" type="curve" smooth="yes"/>
+      <point x="60" y="554"/>
+      <point x="162" y="626"/>
+    </contour>
+    <contour>
+      <point x="281" y="652" type="line"/>
+      <point x="289" y="652"/>
+      <point x="319" y="652"/>
+      <point x="319" y="645" type="curve"/>
+      <point x="208" y="-39" type="line"/>
+      <point x="199" y="-39"/>
+      <point x="170" y="-37"/>
+      <point x="170" y="-30" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.sfdlib.decomposeAndRemoveOverlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

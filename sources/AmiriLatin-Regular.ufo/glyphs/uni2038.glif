@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni2038" format="2">
-	<unicode hex="2038"/>
-	<advance width="415"/>
-	<outline>
-		<contour>
-			<point x="307" y="-35" type="curve" smooth="yes"/>
-			<point x="294" y="-35"/>
-			<point x="236" y="11"/>
-			<point x="201" y="46" type="curve"/>
-			<point x="170" y="10"/>
-			<point x="110" y="-35"/>
-			<point x="97" y="-35" type="curve" smooth="yes"/>
-			<point x="88" y="-35"/>
-			<point x="88" y="-19"/>
-			<point x="88" y="-19" type="curve"/>
-			<point x="95" y="-9"/>
-			<point x="154" y="31"/>
-			<point x="189" y="98" type="curve"/>
-			<point x="192" y="106"/>
-			<point x="193" y="107"/>
-			<point x="198" y="107" type="curve" smooth="yes"/>
-			<point x="217" y="107"/>
-			<point x="208" y="93"/>
-			<point x="255" y="40" type="curve" smooth="yes"/>
-			<point x="272" y="20"/>
-			<point x="315" y="-15"/>
-			<point x="317" y="-18" type="curve"/>
-			<point x="317" y="-22"/>
-			<point x="313" y="-35"/>
-		</contour>
-	</outline>
+  <advance width="415"/>
+  <unicode hex="2038"/>
+  <outline>
+    <contour>
+      <point x="307" y="-35" type="curve" smooth="yes"/>
+      <point x="294" y="-35"/>
+      <point x="236" y="11"/>
+      <point x="201" y="46" type="curve"/>
+      <point x="170" y="10"/>
+      <point x="110" y="-35"/>
+      <point x="97" y="-35" type="curve" smooth="yes"/>
+      <point x="88" y="-35"/>
+      <point x="88" y="-19"/>
+      <point x="88" y="-19" type="curve"/>
+      <point x="95" y="-9"/>
+      <point x="154" y="31"/>
+      <point x="189" y="98" type="curve"/>
+      <point x="192" y="106"/>
+      <point x="193" y="107"/>
+      <point x="198" y="107" type="curve" smooth="yes"/>
+      <point x="217" y="107"/>
+      <point x="208" y="93"/>
+      <point x="255" y="40" type="curve" smooth="yes"/>
+      <point x="272" y="20"/>
+      <point x="315" y="-15"/>
+      <point x="317" y="-18" type="curve"/>
+      <point x="317" y="-22"/>
+      <point x="313" y="-35"/>
+    </contour>
+  </outline>
 </glyph>

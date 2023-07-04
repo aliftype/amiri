@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Lslash" format="2">
-	<unicode hex="0141"/>
-	<advance width="550"/>
-	<outline>
-		<contour>
-			<point x="375" y="437" type="line"/>
-			<point x="380" y="432"/>
-			<point x="396" y="409"/>
-			<point x="392" y="406" type="curve"/>
-			<point x="49" y="174" type="line"/>
-			<point x="43" y="180"/>
-			<point x="29" y="199"/>
-			<point x="33" y="202" type="curve"/>
-		</contour>
-		<component base="L"/>
-	</outline>
+  <advance width="550"/>
+  <unicode hex="0141"/>
+  <outline>
+    <contour>
+      <point x="375" y="437" type="line"/>
+      <point x="380" y="432"/>
+      <point x="396" y="409"/>
+      <point x="392" y="406" type="curve"/>
+      <point x="49" y="174" type="line"/>
+      <point x="43" y="180"/>
+      <point x="29" y="199"/>
+      <point x="33" y="202" type="curve"/>
+    </contour>
+    <component base="L"/>
+  </outline>
 </glyph>

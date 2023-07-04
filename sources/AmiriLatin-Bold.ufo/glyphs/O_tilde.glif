@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Otilde" format="2">
-	<unicode hex="00D5"/>
-	<advance width="742"/>
-	<outline>
-		<component base="tildecomb.cap" xOffset="615" yOffset="5"/>
-		<component base="O"/>
-	</outline>
+  <advance width="742"/>
+  <unicode hex="00D5"/>
+  <outline>
+    <component base="tildecomb.cap" xOffset="615" yOffset="5"/>
+    <component base="O"/>
+  </outline>
 </glyph>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Udieresis" format="2">
-	<unicode hex="00DC"/>
-	<advance width="712"/>
-	<outline>
-		<component base="uni0308.cap" xOffset="196" yOffset="12"/>
-		<component base="U"/>
-	</outline>
+  <advance width="712"/>
+  <unicode hex="00DC"/>
+  <outline>
+    <component base="uni0308.cap" xOffset="196" yOffset="12"/>
+    <component base="U"/>
+  </outline>
 </glyph>

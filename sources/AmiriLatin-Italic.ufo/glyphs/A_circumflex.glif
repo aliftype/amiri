@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Acircumflex" format="2">
-	<unicode hex="00C2"/>
-	<advance width="572"/>
-	<outline>
-		<component base="uni0302.cap" xOffset="101"/>
-		<component base="A"/>
-	</outline>
+  <advance width="572"/>
+  <unicode hex="00C2"/>
+  <outline>
+    <component base="uni0302.cap" xOffset="101"/>
+    <component base="A"/>
+  </outline>
 </glyph>

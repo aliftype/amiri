@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Oslash" format="2">
-	<unicode hex="00D8"/>
-	<advance width="741"/>
-	<outline>
-		<contour>
-			<point x="528" y="660" type="line"/>
-			<point x="536" y="657"/>
-			<point x="567" y="647"/>
-			<point x="565" y="640" type="curve"/>
-			<point x="197" y="-18" type="line"/>
-			<point x="189" y="-15"/>
-			<point x="158" y="-3"/>
-			<point x="160" y="4" type="curve"/>
-		</contour>
-		<component base="O"/>
-	</outline>
+  <advance width="741"/>
+  <unicode hex="00D8"/>
+  <outline>
+    <contour>
+      <point x="528" y="660" type="line"/>
+      <point x="536" y="657"/>
+      <point x="567" y="647"/>
+      <point x="565" y="640" type="curve"/>
+      <point x="197" y="-18" type="line"/>
+      <point x="189" y="-15"/>
+      <point x="158" y="-3"/>
+      <point x="160" y="4" type="curve"/>
+    </contour>
+    <component base="O"/>
+  </outline>
 </glyph>

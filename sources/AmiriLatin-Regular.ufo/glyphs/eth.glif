@@ -1,66 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="eth" format="2">
-	<unicode hex="00F0"/>
-	<advance width="504"/>
-	<outline>
-		<contour>
-			<point x="338" y="683" type="line"/>
-			<point x="346" y="678"/>
-			<point x="362" y="658"/>
-			<point x="355" y="652" type="curve"/>
-			<point x="125" y="497" type="line"/>
-			<point x="118" y="502"/>
-			<point x="101" y="522"/>
-			<point x="108" y="528" type="curve"/>
-		</contour>
-		<contour>
-			<point x="229" y="396" type="curve" smooth="yes"/>
-			<point x="151" y="396"/>
-			<point x="123" y="312"/>
-			<point x="123" y="222" type="curve" smooth="yes"/>
-			<point x="123" y="126"/>
-			<point x="174" y="25"/>
-			<point x="253" y="25" type="curve" smooth="yes"/>
-			<point x="330" y="25"/>
-			<point x="366" y="101"/>
-			<point x="366" y="197" type="curve" smooth="yes"/>
-			<point x="366" y="251"/>
-			<point x="358" y="300"/>
-			<point x="347" y="321" type="curve" smooth="yes"/>
-			<point x="320" y="373"/>
-			<point x="282" y="396"/>
-		</contour>
-		<contour>
-			<point x="241" y="429" type="curve" smooth="yes"/>
-			<point x="269" y="429"/>
-			<point x="304" y="425"/>
-			<point x="324" y="413" type="curve"/>
-			<point x="302" y="471"/>
-			<point x="261" y="574"/>
-			<point x="79" y="648" type="curve"/>
-			<point x="79" y="655"/>
-			<point x="85" y="672"/>
-			<point x="93" y="672" type="curve"/>
-			<point x="178" y="653"/>
-			<point x="270" y="594"/>
-			<point x="339" y="514" type="curve" smooth="yes"/>
-			<point x="405" y="437"/>
-			<point x="451" y="341"/>
-			<point x="451" y="241" type="curve" smooth="yes"/>
-			<point x="451" y="83"/>
-			<point x="353" y="-7"/>
-			<point x="250" y="-7" type="curve" smooth="yes"/>
-			<point x="117" y="-7"/>
-			<point x="39" y="89"/>
-			<point x="39" y="206" type="curve" smooth="yes"/>
-			<point x="39" y="311"/>
-			<point x="105" y="429"/>
-		</contour>
-	</outline>
-	<lib>
-		<dict>
-			<key>org.sfdlib.decomposeAndRemoveOverlap</key>
-			<true/>
-		</dict>
-	</lib>
+  <advance width="504"/>
+  <unicode hex="00F0"/>
+  <outline>
+    <contour>
+      <point x="338" y="683" type="line"/>
+      <point x="346" y="678"/>
+      <point x="362" y="658"/>
+      <point x="355" y="652" type="curve"/>
+      <point x="125" y="497" type="line"/>
+      <point x="118" y="502"/>
+      <point x="101" y="522"/>
+      <point x="108" y="528" type="curve"/>
+    </contour>
+    <contour>
+      <point x="229" y="396" type="curve" smooth="yes"/>
+      <point x="151" y="396"/>
+      <point x="123" y="312"/>
+      <point x="123" y="222" type="curve" smooth="yes"/>
+      <point x="123" y="126"/>
+      <point x="174" y="25"/>
+      <point x="253" y="25" type="curve" smooth="yes"/>
+      <point x="330" y="25"/>
+      <point x="366" y="101"/>
+      <point x="366" y="197" type="curve" smooth="yes"/>
+      <point x="366" y="251"/>
+      <point x="358" y="300"/>
+      <point x="347" y="321" type="curve" smooth="yes"/>
+      <point x="320" y="373"/>
+      <point x="282" y="396"/>
+    </contour>
+    <contour>
+      <point x="241" y="429" type="curve" smooth="yes"/>
+      <point x="269" y="429"/>
+      <point x="304" y="425"/>
+      <point x="324" y="413" type="curve"/>
+      <point x="302" y="471"/>
+      <point x="261" y="574"/>
+      <point x="79" y="648" type="curve"/>
+      <point x="79" y="655"/>
+      <point x="85" y="672"/>
+      <point x="93" y="672" type="curve"/>
+      <point x="178" y="653"/>
+      <point x="270" y="594"/>
+      <point x="339" y="514" type="curve" smooth="yes"/>
+      <point x="405" y="437"/>
+      <point x="451" y="341"/>
+      <point x="451" y="241" type="curve" smooth="yes"/>
+      <point x="451" y="83"/>
+      <point x="353" y="-7"/>
+      <point x="250" y="-7" type="curve" smooth="yes"/>
+      <point x="117" y="-7"/>
+      <point x="39" y="89"/>
+      <point x="39" y="206" type="curve" smooth="yes"/>
+      <point x="39" y="311"/>
+      <point x="105" y="429"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.sfdlib.decomposeAndRemoveOverlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

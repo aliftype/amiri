@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="aring" format="2">
-	<unicode hex="00E5"/>
-	<advance width="438"/>
-	<outline>
-		<component base="uni030A" xOffset="538" yOffset="6"/>
-		<component base="a"/>
-	</outline>
+  <advance width="438"/>
+  <unicode hex="00E5"/>
+  <outline>
+    <component base="uni030A" xOffset="538" yOffset="6"/>
+    <component base="a"/>
+  </outline>
 </glyph>
