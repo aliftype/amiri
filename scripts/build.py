@@ -83,6 +83,15 @@ def generateFeatures(font, args):
     preprocessor.write(o)
     font.features.text = o.getvalue() + font.features.text
 
+def _groupMarkClasses(self, markGlyphToMarkClasses):
+    markClasses = set()
+    for x in markGlyphToMarkClasses.values():
+        markClasses.update(x)
+    # Sort them
+    return sorted(markClasses, key=lambda x: -self.anchorSortKey.get(self._removeClassPrefix(x), 0))
+
+# Monkey patch MarkFeatureWriter to not do any funny grouping business.
+MarkFeatureWriter._groupMarkClasses = _groupMarkClasses
 
 def generateFont(options, font):
     generateFeatures(font, options)
@@ -98,10 +107,6 @@ def generateFont(options, font):
     info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
 
     markWriter = MarkFeatureWriter(features=["mark", "mkmk"])
-    # ufo2ft mark feature writer decides what feature to use for what glyph
-    # based on script, and it classifies kashida-ar with scripts using abvm
-    # feature and doesn’t add it to mark feature, which is not what we want.
-    markWriter.scriptsUsingAbvm = set()
 
     # Maintain our desired lookup order.
     markWriter.anchorSortKey = {
