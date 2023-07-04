@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hcedilla" format="2">
+  <advance width="690"/>
+  <unicode hex="1E28"/>
+  <outline>
+    <component base="H"/>
+    <component base="cedillacomb.cap" xOffset="-60" yOffset="8"/>
+  </outline>
+</glyph>

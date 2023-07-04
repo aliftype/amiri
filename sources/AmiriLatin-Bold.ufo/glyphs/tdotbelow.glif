@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tdotbelow" format="2">
+  <advance width="333"/>
+  <unicode hex="1E6D"/>
+  <outline>
+    <component base="t" xOffset="1"/>
+    <component base="dotbelowcomb" xOffset="413" yOffset="-36"/>
+  </outline>
+</glyph>

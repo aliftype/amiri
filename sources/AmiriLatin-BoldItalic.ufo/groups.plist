@@ -16,7 +16,7 @@
       <string>Gcircumflex</string>
       <string>Gbreve</string>
       <string>Gdotaccent</string>
-      <string>uni0122</string>
+      <string>Gcommaaccent</string>
     </array>
     <key>public.kern1.kc0_11</key>
     <array>
@@ -33,8 +33,8 @@
       <string>Ibreve</string>
       <string>Iogonek</string>
       <string>Idotaccent</string>
-      <string>uni1E28</string>
-      <string>uni1E2A</string>
+      <string>Hbrevebelow</string>
+      <string>Hcedilla</string>
     </array>
     <key>public.kern1.kc0_12</key>
     <array>
@@ -45,30 +45,30 @@
     <key>public.kern1.kc0_13</key>
     <array>
       <string>K</string>
-      <string>uni0136</string>
+      <string>Kcommaaccent</string>
     </array>
     <key>public.kern1.kc0_14</key>
     <array>
       <string>L</string>
       <string>Lacute</string>
-      <string>uni013B</string>
       <string>Lcaron</string>
       <string>Ldot</string>
       <string>Lslash</string>
+      <string>Lcommaaccent</string>
     </array>
     <key>public.kern1.kc0_15</key>
     <array>
       <string>M</string>
-      <string>uni1E40</string>
+      <string>Mdotaccent</string>
     </array>
     <key>public.kern1.kc0_16</key>
     <array>
       <string>N</string>
       <string>Ntilde</string>
       <string>Nacute</string>
-      <string>uni0145</string>
       <string>Ncaron</string>
       <string>Eng</string>
+      <string>Ncommaaccent</string>
     </array>
     <key>public.kern1.kc0_17</key>
     <array>
@@ -86,7 +86,7 @@
     <key>public.kern1.kc0_18</key>
     <array>
       <string>P</string>
-      <string>uni1E56</string>
+      <string>Pdotaccent</string>
     </array>
     <key>public.kern1.kc0_19</key>
     <array>
@@ -100,8 +100,8 @@
     <array>
       <string>R</string>
       <string>Racute</string>
-      <string>uni0156</string>
       <string>Rcaron</string>
+      <string>Rcommaaccent</string>
     </array>
     <key>public.kern1.kc0_21</key>
     <array>
@@ -110,18 +110,18 @@
       <string>Scircumflex</string>
       <string>Scedilla</string>
       <string>Scaron</string>
-      <string>uni1E60</string>
-      <string>uni1E62</string>
+      <string>Sdotaccent</string>
+      <string>Sdotbelow</string>
     </array>
     <key>public.kern1.kc0_22</key>
     <array>
       <string>T</string>
-      <string>uni0162</string>
       <string>Tcaron</string>
       <string>Tbar</string>
-      <string>uni1E6A</string>
-      <string>uni1E6C</string>
-      <string>uni1E6E</string>
+      <string>Tcedilla</string>
+      <string>Tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>Tmacronbelow</string>
     </array>
     <key>public.kern1.kc0_23</key>
     <array>
@@ -167,7 +167,7 @@
       <string>Zacute</string>
       <string>Zdotaccent</string>
       <string>Zcaron</string>
-      <string>uni1E92</string>
+      <string>Zdotbelow</string>
     </array>
     <key>public.kern1.kc0_29</key>
     <array>
@@ -193,9 +193,9 @@
     <key>public.kern1.kc0_31</key>
     <array>
       <string>b</string>
-      <string>uni1E03</string>
       <string>f_b</string>
       <string>f_f_b</string>
+      <string>bdotaccent</string>
     </array>
     <key>public.kern1.kc0_32</key>
     <array>
@@ -211,10 +211,10 @@
       <string>d</string>
       <string>dcaron</string>
       <string>dcroat</string>
-      <string>uni1E0B</string>
-      <string>uni1E0D</string>
-      <string>uni1E0F</string>
-      <string>uni1E11</string>
+      <string>dcedilla</string>
+      <string>ddotaccent</string>
+      <string>ddotbelow</string>
+      <string>dmacronbelow</string>
     </array>
     <key>public.kern1.kc0_34</key>
     <array>
@@ -235,8 +235,8 @@
     <array>
       <string>f</string>
       <string>longs</string>
-      <string>uni1E1F</string>
       <string>f_f</string>
+      <string>fdotaccent</string>
     </array>
     <key>public.kern1.kc0_36</key>
     <array>
@@ -244,7 +244,7 @@
       <string>gcircumflex</string>
       <string>gbreve</string>
       <string>gdotaccent</string>
-      <string>uni0123</string>
+      <string>gcommaaccent</string>
     </array>
     <key>public.kern1.kc0_37</key>
     <array>
@@ -257,27 +257,27 @@
       <string>imacron</string>
       <string>ibreve</string>
       <string>iogonek</string>
-      <string>dotlessi</string>
       <string>f_i</string>
       <string>f_f_i</string>
       <string>i.TRK</string>
+      <string>idotless</string>
     </array>
     <key>public.kern1.kc0_38</key>
     <array>
       <string>j</string>
       <string>ij</string>
       <string>jcircumflex</string>
-      <string>uni0237</string>
       <string>f_j</string>
       <string>f_f_j</string>
+      <string>jdotless</string>
     </array>
     <key>public.kern1.kc0_39</key>
     <array>
       <string>k</string>
-      <string>uni0137</string>
       <string>kgreenlandic</string>
       <string>f_k</string>
       <string>f_f_k</string>
+      <string>kcommaaccent</string>
     </array>
     <key>public.kern1.kc0_4</key>
     <array>
@@ -296,11 +296,11 @@
     <array>
       <string>l</string>
       <string>lacute</string>
-      <string>uni013C</string>
       <string>lcaron</string>
       <string>lslash</string>
       <string>f_l</string>
       <string>f_f_l</string>
+      <string>lcommaaccent</string>
     </array>
     <key>public.kern1.kc0_41</key>
     <array>
@@ -311,16 +311,16 @@
       <string>hcircumflex</string>
       <string>hbar</string>
       <string>nacute</string>
-      <string>uni0146</string>
       <string>ncaron</string>
       <string>napostrophe</string>
-      <string>uni1E25</string>
-      <string>uni1E29</string>
-      <string>uni1E2B</string>
-      <string>uni1E41</string>
-      <string>uni1E96</string>
       <string>f_h</string>
       <string>f_f_h</string>
+      <string>hbrevebelow</string>
+      <string>hcedilla</string>
+      <string>hdotbelow</string>
+      <string>hmacronbelow</string>
+      <string>mdotaccent</string>
+      <string>ncommaaccent</string>
     </array>
     <key>public.kern1.kc0_42</key>
     <array>
@@ -339,7 +339,7 @@
     <array>
       <string>p</string>
       <string>thorn</string>
-      <string>uni1E57</string>
+      <string>pdotaccent</string>
     </array>
     <key>public.kern1.kc0_44</key>
     <array>
@@ -349,8 +349,8 @@
     <array>
       <string>r</string>
       <string>racute</string>
-      <string>uni0157</string>
       <string>rcaron</string>
+      <string>rcommaaccent</string>
     </array>
     <key>public.kern1.kc0_46</key>
     <array>
@@ -359,19 +359,19 @@
       <string>scircumflex</string>
       <string>scedilla</string>
       <string>scaron</string>
-      <string>uni1E61</string>
-      <string>uni1E63</string>
+      <string>sdotaccent</string>
+      <string>sdotbelow</string>
     </array>
     <key>public.kern1.kc0_47</key>
     <array>
       <string>t</string>
-      <string>uni0163</string>
       <string>tcaron</string>
       <string>tbar</string>
-      <string>uni1E6B</string>
-      <string>uni1E6D</string>
-      <string>uni1E6F</string>
-      <string>uni1E97</string>
+      <string>tcedilla</string>
+      <string>tdieresis</string>
+      <string>tdotaccent</string>
+      <string>tdotbelow</string>
+      <string>tmacronbelow</string>
     </array>
     <key>public.kern1.kc0_48</key>
     <array>
@@ -394,7 +394,7 @@
     <key>public.kern1.kc0_5</key>
     <array>
       <string>B</string>
-      <string>uni1E02</string>
+      <string>Bdotaccent</string>
     </array>
     <key>public.kern1.kc0_50</key>
     <array>
@@ -422,7 +422,7 @@
       <string>zacute</string>
       <string>zdotaccent</string>
       <string>zcaron</string>
-      <string>uni1E93</string>
+      <string>zdotbelow</string>
     </array>
     <key>public.kern1.kc0_54</key>
     <array>
@@ -450,7 +450,7 @@
       <string>hyphen</string>
       <string>endash</string>
       <string>emdash</string>
-      <string>uni2015</string>
+      <string>horizontalbar</string>
     </array>
     <key>public.kern1.kc0_6</key>
     <array>
@@ -464,9 +464,9 @@
     <key>public.kern1.kc0_60</key>
     <array>
       <string>comma</string>
-      <string>period.latn</string>
       <string>quotesinglbase</string>
       <string>quotedblbase</string>
+      <string>period.latn</string>
     </array>
     <key>public.kern1.kc0_61</key>
     <array>
@@ -493,13 +493,13 @@
     </array>
     <key>public.kern1.kc0_66</key>
     <array>
-      <string>guillemotleft.latn</string>
       <string>guilsinglleft</string>
+      <string>guillemetleft.latn</string>
     </array>
     <key>public.kern1.kc0_67</key>
     <array>
-      <string>guillemotright.latn</string>
       <string>guilsinglright</string>
+      <string>guillemetright.latn</string>
     </array>
     <key>public.kern1.kc0_68</key>
     <array>
@@ -515,10 +515,10 @@
       <string>Eth</string>
       <string>Dcaron</string>
       <string>Dcroat</string>
-      <string>uni1E0A</string>
-      <string>uni1E0C</string>
-      <string>uni1E0E</string>
-      <string>uni1E10</string>
+      <string>Dcedilla</string>
+      <string>Ddotaccent</string>
+      <string>Ddotbelow</string>
+      <string>Dmacronbelow</string>
     </array>
     <key>public.kern1.kc0_70</key>
     <array>
@@ -526,7 +526,7 @@
     </array>
     <key>public.kern1.kc0_71</key>
     <array>
-      <string>mu</string>
+      <string>micro</string>
     </array>
     <key>public.kern1.kc0_8</key>
     <array>
@@ -546,7 +546,7 @@
     <key>public.kern1.kc0_9</key>
     <array>
       <string>F</string>
-      <string>uni1E1E</string>
+      <string>Fdotaccent</string>
     </array>
     <key>public.kern2.kc0_1</key>
     <array>
@@ -575,7 +575,7 @@
       <string>hyphen</string>
       <string>endash</string>
       <string>emdash</string>
-      <string>uni2015</string>
+      <string>horizontalbar</string>
     </array>
     <key>public.kern2.kc0_13</key>
     <array>
@@ -600,11 +600,11 @@
       <string>Gcircumflex</string>
       <string>Gbreve</string>
       <string>Gdotaccent</string>
-      <string>uni0122</string>
       <string>Omacron</string>
       <string>Obreve</string>
       <string>Ohungarumlaut</string>
       <string>OE</string>
+      <string>Gcommaaccent</string>
     </array>
     <key>public.kern2.kc0_15</key>
     <array>
@@ -625,7 +625,7 @@
     <key>public.kern2.kc0_19</key>
     <array>
       <string>b</string>
-      <string>uni1E03</string>
+      <string>bdotaccent</string>
     </array>
     <key>public.kern2.kc0_2</key>
     <array>
@@ -664,24 +664,24 @@
       <string>Iogonek</string>
       <string>Idotaccent</string>
       <string>IJ</string>
-      <string>uni0136</string>
       <string>Lacute</string>
-      <string>uni013B</string>
       <string>Lcaron</string>
       <string>Ldot</string>
       <string>Lslash</string>
       <string>Racute</string>
-      <string>uni0156</string>
       <string>Rcaron</string>
-      <string>uni1E02</string>
-      <string>uni1E0A</string>
-      <string>uni1E0C</string>
-      <string>uni1E0E</string>
-      <string>uni1E10</string>
-      <string>uni1E1E</string>
-      <string>uni1E28</string>
-      <string>uni1E2A</string>
-      <string>uni1E56</string>
+      <string>Bdotaccent</string>
+      <string>Dcedilla</string>
+      <string>Ddotaccent</string>
+      <string>Ddotbelow</string>
+      <string>Dmacronbelow</string>
+      <string>Fdotaccent</string>
+      <string>Hbrevebelow</string>
+      <string>Hcedilla</string>
+      <string>Kcommaaccent</string>
+      <string>Lcommaaccent</string>
+      <string>Pdotaccent</string>
+      <string>Rcommaaccent</string>
     </array>
     <key>public.kern2.kc0_20</key>
     <array>
@@ -698,7 +698,7 @@
       <string>gcircumflex</string>
       <string>gbreve</string>
       <string>gdotaccent</string>
-      <string>uni0123</string>
+      <string>gcommaaccent</string>
     </array>
     <key>public.kern2.kc0_22</key>
     <array>
@@ -711,23 +711,23 @@
       <string>imacron</string>
       <string>ibreve</string>
       <string>iogonek</string>
-      <string>dotlessi</string>
       <string>ij</string>
+      <string>idotless</string>
     </array>
     <key>public.kern2.kc0_23</key>
     <array>
       <string>j</string>
       <string>jcircumflex</string>
-      <string>uni0237</string>
+      <string>jdotless</string>
     </array>
     <key>public.kern2.kc0_24</key>
     <array>
       <string>l</string>
       <string>lacute</string>
-      <string>uni013C</string>
       <string>lcaron</string>
       <string>ldot</string>
       <string>lslash</string>
+      <string>lcommaaccent</string>
     </array>
     <key>public.kern2.kc0_25</key>
     <array>
@@ -737,14 +737,14 @@
       <string>ntilde</string>
       <string>kgreenlandic</string>
       <string>nacute</string>
-      <string>uni0146</string>
       <string>ncaron</string>
       <string>napostrophe</string>
       <string>eng</string>
       <string>racute</string>
-      <string>uni0157</string>
       <string>rcaron</string>
-      <string>uni1E41</string>
+      <string>mdotaccent</string>
+      <string>ncommaaccent</string>
+      <string>rcommaaccent</string>
     </array>
     <key>public.kern2.kc0_26</key>
     <array>
@@ -773,18 +773,18 @@
     <key>public.kern2.kc0_27</key>
     <array>
       <string>p</string>
-      <string>uni1E57</string>
+      <string>pdotaccent</string>
     </array>
     <key>public.kern2.kc0_28</key>
     <array>
       <string>t</string>
-      <string>uni0163</string>
       <string>tcaron</string>
       <string>tbar</string>
-      <string>uni1E6B</string>
-      <string>uni1E6D</string>
-      <string>uni1E6F</string>
-      <string>uni1E97</string>
+      <string>tcedilla</string>
+      <string>tdieresis</string>
+      <string>tdotaccent</string>
+      <string>tdotbelow</string>
+      <string>tmacronbelow</string>
     </array>
     <key>public.kern2.kc0_29</key>
     <array>
@@ -838,8 +838,8 @@
     </array>
     <key>public.kern2.kc0_35</key>
     <array>
-      <string>guillemotleft.latn</string>
       <string>guilsinglleft</string>
+      <string>guillemetleft.latn</string>
     </array>
     <key>public.kern2.kc0_36</key>
     <array>
@@ -847,7 +847,7 @@
       <string>zacute</string>
       <string>zdotaccent</string>
       <string>zcaron</string>
-      <string>uni1E93</string>
+      <string>zdotbelow</string>
     </array>
     <key>public.kern2.kc0_37</key>
     <array>
@@ -860,16 +860,16 @@
     <key>public.kern2.kc0_39</key>
     <array>
       <string>M</string>
-      <string>uni1E40</string>
+      <string>Mdotaccent</string>
     </array>
     <key>public.kern2.kc0_4</key>
     <array>
       <string>N</string>
       <string>Ntilde</string>
       <string>Nacute</string>
-      <string>uni0145</string>
       <string>Ncaron</string>
       <string>Eng</string>
+      <string>Ncommaaccent</string>
     </array>
     <key>public.kern2.kc0_40</key>
     <array>
@@ -881,7 +881,7 @@
       <string>Zacute</string>
       <string>Zdotaccent</string>
       <string>Zcaron</string>
-      <string>uni1E92</string>
+      <string>Zdotbelow</string>
     </array>
     <key>public.kern2.kc0_42</key>
     <array>
@@ -890,10 +890,10 @@
     <key>public.kern2.kc0_43</key>
     <array>
       <string>comma</string>
-      <string>period.latn</string>
       <string>quotesinglbase</string>
       <string>quotedblbase</string>
       <string>ellipsis</string>
+      <string>period.latn</string>
     </array>
     <key>public.kern2.kc0_44</key>
     <array>
@@ -913,10 +913,10 @@
       <string>d</string>
       <string>dcaron</string>
       <string>dcroat</string>
-      <string>uni1E0B</string>
-      <string>uni1E0D</string>
-      <string>uni1E0F</string>
-      <string>uni1E11</string>
+      <string>dcedilla</string>
+      <string>ddotaccent</string>
+      <string>ddotbelow</string>
+      <string>dmacronbelow</string>
     </array>
     <key>public.kern2.kc0_46</key>
     <array>
@@ -925,8 +925,8 @@
       <string>scircumflex</string>
       <string>scedilla</string>
       <string>scaron</string>
-      <string>uni1E61</string>
-      <string>uni1E63</string>
+      <string>sdotaccent</string>
+      <string>sdotbelow</string>
     </array>
     <key>public.kern2.kc0_47</key>
     <array>
@@ -963,16 +963,16 @@
       <string>k</string>
       <string>hcircumflex</string>
       <string>hbar</string>
-      <string>uni0137</string>
-      <string>uni1E25</string>
-      <string>uni1E29</string>
-      <string>uni1E2B</string>
-      <string>uni1E96</string>
+      <string>hbrevebelow</string>
+      <string>hcedilla</string>
+      <string>hdotbelow</string>
+      <string>hmacronbelow</string>
+      <string>kcommaaccent</string>
     </array>
     <key>public.kern2.kc0_53</key>
     <array>
-      <string>guillemotright.latn</string>
       <string>guilsinglright</string>
+      <string>guillemetright.latn</string>
     </array>
     <key>public.kern2.kc0_54</key>
     <array>
@@ -981,12 +981,8 @@
       <string>Scircumflex</string>
       <string>Scedilla</string>
       <string>Scaron</string>
-      <string>uni1E60</string>
-      <string>uni1E62</string>
-    </array>
-    <key>public.kern2.kc0_55</key>
-    <array>
-      <string>braceright</string>
+      <string>Sdotaccent</string>
+      <string>Sdotbelow</string>
     </array>
     <key>public.kern2.kc0_56</key>
     <array>
@@ -1003,12 +999,12 @@
     <key>public.kern2.kc0_7</key>
     <array>
       <string>T</string>
-      <string>uni0162</string>
       <string>Tcaron</string>
       <string>Tbar</string>
-      <string>uni1E6A</string>
-      <string>uni1E6C</string>
-      <string>uni1E6E</string>
+      <string>Tcedilla</string>
+      <string>Tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>Tmacronbelow</string>
     </array>
     <key>public.kern2.kc0_8</key>
     <array>
@@ -1029,7 +1025,6 @@
       <string>f</string>
       <string>germandbls</string>
       <string>longs</string>
-      <string>uni1E1F</string>
       <string>f_f</string>
       <string>f_i</string>
       <string>f_f_i</string>
@@ -1043,6 +1038,7 @@
       <string>f_f_h</string>
       <string>f_j</string>
       <string>f_f_j</string>
+      <string>fdotaccent</string>
     </array>
   </dict>
 </plist>

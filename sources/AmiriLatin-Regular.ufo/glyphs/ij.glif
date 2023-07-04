@@ -3,9 +3,9 @@
   <advance width="461"/>
   <unicode hex="0133"/>
   <outline>
-    <component base="dotlessi"/>
-    <component base="uni0307" xOffset="381" yOffset="44"/>
-    <component base="uni0237" xOffset="229"/>
-    <component base="uni0307" xOffset="591" yOffset="44"/>
+    <component base="idotless"/>
+    <component base="dotaccentcomb" xOffset="381" yOffset="44"/>
+    <component base="jdotless" xOffset="229"/>
+    <component base="dotaccentcomb" xOffset="591" yOffset="44"/>
   </outline>
 </glyph>

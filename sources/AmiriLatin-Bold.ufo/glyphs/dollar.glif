@@ -70,10 +70,4 @@
       <point x="170" y="-30" type="curve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.sfdlib.decomposeAndRemoveOverlap</key>
-      <true/>
-    </dict>
-  </lib>
 </glyph>

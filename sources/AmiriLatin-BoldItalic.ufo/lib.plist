@@ -89,7 +89,7 @@
       <string>y</string>
       <string>z</string>
       <string>asciitilde</string>
-      <string>uni00A0</string>
+      <string>nbspace</string>
       <string>exclamdown</string>
       <string>cent</string>
       <string>sterling</string>
@@ -101,19 +101,19 @@
       <string>copyright</string>
       <string>ordfeminine</string>
       <string>logicalnot</string>
-      <string>uni00AD</string>
+      <string>softhyphen</string>
       <string>registered</string>
       <string>macron</string>
       <string>degree</string>
       <string>plusminus</string>
-      <string>uni00B2</string>
-      <string>uni00B3</string>
+      <string>twosuperior</string>
+      <string>threesuperior</string>
       <string>acute</string>
       <string>mu</string>
       <string>paragraph</string>
       <string>periodcentered</string>
       <string>cedilla</string>
-      <string>uni00B9</string>
+      <string>onesuperior</string>
       <string>ordmasculine</string>
       <string>onequarter</string>
       <string>onehalf</string>
@@ -217,8 +217,8 @@
       <string>gbreve</string>
       <string>Gdotaccent</string>
       <string>gdotaccent</string>
-      <string>uni0122</string>
-      <string>uni0123</string>
+      <string>Gcommaaccent</string>
+      <string>gcommaaccent</string>
       <string>Hcircumflex</string>
       <string>hcircumflex</string>
       <string>Hbar</string>
@@ -237,13 +237,13 @@
       <string>ij</string>
       <string>Jcircumflex</string>
       <string>jcircumflex</string>
-      <string>uni0136</string>
-      <string>uni0137</string>
+      <string>Kcommaaccent</string>
+      <string>kcommaaccent</string>
       <string>kgreenlandic</string>
       <string>Lacute</string>
       <string>lacute</string>
-      <string>uni013B</string>
-      <string>uni013C</string>
+      <string>Lcommaaccent</string>
+      <string>lcommaaccent</string>
       <string>Lcaron</string>
       <string>lcaron</string>
       <string>Ldot</string>
@@ -252,8 +252,8 @@
       <string>lslash</string>
       <string>Nacute</string>
       <string>nacute</string>
-      <string>uni0145</string>
-      <string>uni0146</string>
+      <string>Ncommaaccent</string>
+      <string>ncommaaccent</string>
       <string>Ncaron</string>
       <string>ncaron</string>
       <string>napostrophe</string>
@@ -269,8 +269,8 @@
       <string>oe</string>
       <string>Racute</string>
       <string>racute</string>
-      <string>uni0156</string>
-      <string>uni0157</string>
+      <string>Rcommaaccent</string>
+      <string>rcommaaccent</string>
       <string>Rcaron</string>
       <string>rcaron</string>
       <string>Sacute</string>
@@ -281,8 +281,8 @@
       <string>scedilla</string>
       <string>Scaron</string>
       <string>scaron</string>
-      <string>uni0162</string>
-      <string>uni0163</string>
+      <string>Tcedilla</string>
+      <string>tcedilla</string>
       <string>Tcaron</string>
       <string>tcaron</string>
       <string>Tbar</string>
@@ -313,11 +313,11 @@
       <string>longs</string>
       <string>Gcaron</string>
       <string>gcaron</string>
-      <string>uni0237</string>
-      <string>uni02BB</string>
-      <string>uni02BC</string>
-      <string>uni02BE</string>
-      <string>uni02BF</string>
+      <string>jdotless</string>
+      <string>commaturnedmod</string>
+      <string>apostrophemod</string>
+      <string>ringhalfright</string>
+      <string>ringhalfleft</string>
       <string>circumflex</string>
       <string>caron</string>
       <string>breve</string>
@@ -328,70 +328,70 @@
       <string>hungarumlaut</string>
       <string>gravecomb</string>
       <string>acutecomb</string>
-      <string>uni0302</string>
+      <string>circumflexcomb</string>
       <string>tildecomb</string>
-      <string>uni0304</string>
-      <string>uni0305</string>
-      <string>uni0306</string>
-      <string>uni0307</string>
-      <string>uni0308</string>
-      <string>uni030A</string>
-      <string>uni030C</string>
-      <string>uni0312</string>
-      <string>uni0315</string>
-      <string>uni0326</string>
-      <string>uni0327</string>
-      <string>uni0328</string>
-      <string>uni1E02</string>
-      <string>uni1E03</string>
-      <string>uni1E0A</string>
-      <string>uni1E0B</string>
-      <string>uni1E0C</string>
-      <string>uni1E0D</string>
-      <string>uni1E0E</string>
-      <string>uni1E0F</string>
-      <string>uni1E10</string>
-      <string>uni1E11</string>
-      <string>uni1E1E</string>
-      <string>uni1E1F</string>
-      <string>uni1E24</string>
-      <string>uni1E25</string>
-      <string>uni1E28</string>
-      <string>uni1E29</string>
-      <string>uni1E2A</string>
-      <string>uni1E2B</string>
-      <string>uni1E40</string>
-      <string>uni1E41</string>
-      <string>uni1E56</string>
-      <string>uni1E57</string>
-      <string>uni1E60</string>
-      <string>uni1E61</string>
-      <string>uni1E62</string>
-      <string>uni1E63</string>
-      <string>uni1E6A</string>
-      <string>uni1E6B</string>
-      <string>uni1E6C</string>
-      <string>uni1E6D</string>
-      <string>uni1E6E</string>
-      <string>uni1E6F</string>
+      <string>macroncomb</string>
+      <string>overlinecomb</string>
+      <string>brevecomb</string>
+      <string>dotaccentcomb</string>
+      <string>dieresiscomb</string>
+      <string>ringcomb</string>
+      <string>caroncomb</string>
+      <string>commaturnedabovecomb</string>
+      <string>commaaboverightcomb</string>
+      <string>commaaccentcomb</string>
+      <string>cedillacomb</string>
+      <string>ogonekcomb</string>
+      <string>Bdotaccent</string>
+      <string>bdotaccent</string>
+      <string>Ddotaccent</string>
+      <string>ddotaccent</string>
+      <string>Ddotbelow</string>
+      <string>ddotbelow</string>
+      <string>Dlinebelow</string>
+      <string>dlinebelow</string>
+      <string>Dcedilla</string>
+      <string>dcedilla</string>
+      <string>Fdotaccent</string>
+      <string>fdotaccent</string>
+      <string>Hdotbelow</string>
+      <string>hdotbelow</string>
+      <string>Hcedilla</string>
+      <string>hcedilla</string>
+      <string>Hbrevebelow</string>
+      <string>hbrevebelow</string>
+      <string>Mdotaccent</string>
+      <string>mdotaccent</string>
+      <string>Pdotaccent</string>
+      <string>pdotaccent</string>
+      <string>Sdotaccent</string>
+      <string>sdotaccent</string>
+      <string>Sdotbelow</string>
+      <string>sdotbelow</string>
+      <string>Tdotaccent</string>
+      <string>tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>tdotbelow</string>
+      <string>Tlinebelow</string>
+      <string>tlinebelow</string>
       <string>Wgrave</string>
       <string>wgrave</string>
       <string>Wacute</string>
       <string>wacute</string>
       <string>Wdieresis</string>
       <string>wdieresis</string>
-      <string>uni1E92</string>
-      <string>uni1E93</string>
-      <string>uni1E96</string>
-      <string>uni1E97</string>
+      <string>Zdotbelow</string>
+      <string>zdotbelow</string>
+      <string>hlinebelow</string>
+      <string>tdieresis</string>
       <string>Ygrave</string>
       <string>ygrave</string>
-      <string>uni2010</string>
-      <string>uni2011</string>
+      <string>hyphentwo</string>
+      <string>nonbreakinghyphen</string>
       <string>figuredash</string>
       <string>endash</string>
       <string>emdash</string>
-      <string>uni2015</string>
+      <string>horizontalbar</string>
       <string>quoteleft</string>
       <string>quoteright</string>
       <string>quotesinglbase</string>
@@ -399,26 +399,26 @@
       <string>quotedblleft</string>
       <string>quotedblright</string>
       <string>quotedblbase</string>
-      <string>uni201F</string>
+      <string>quotedblrightreversed</string>
       <string>dagger</string>
       <string>daggerdbl</string>
       <string>bullet</string>
       <string>onedotenleader</string>
       <string>ellipsis</string>
-      <string>uni202F</string>
+      <string>narrownbspace</string>
       <string>perthousand</string>
       <string>minute</string>
       <string>second</string>
-      <string>uni2038</string>
+      <string>caretSign</string>
       <string>guilsinglleft</string>
       <string>guilsinglright</string>
-      <string>uni203E</string>
-      <string>uni2042</string>
+      <string>overline</string>
+      <string>asterism</string>
       <string>fraction</string>
-      <string>uni2074</string>
+      <string>foursuperior</string>
       <string>Euro</string>
       <string>minus</string>
-      <string>uni2213</string>
+      <string>minusplus</string>
       <string>radical</string>
       <string>parenleft.latn</string>
       <string>parenright.latn</string>
@@ -434,18 +434,18 @@
       <string>guillemotright.latn</string>
       <string>gravecomb.cap</string>
       <string>acutecomb.cap</string>
-      <string>uni0302.cap</string>
-      <string>uni030A.cap</string>
+      <string>circumflexcomb.cap</string>
+      <string>ringcomb.cap</string>
       <string>tildecomb.cap</string>
-      <string>uni0304.cap</string>
-      <string>uni0306.cap</string>
-      <string>uni0327.cap</string>
-      <string>uni0307.cap</string>
-      <string>uni0323.cap</string>
-      <string>uni030B.cap</string>
-      <string>uni0308.cap</string>
-      <string>uni0308.narrow</string>
-      <string>uni030C.cap</string>
+      <string>macroncomb.cap</string>
+      <string>brevecomb.cap</string>
+      <string>cedillacomb.cap</string>
+      <string>dotaccentcomb.cap</string>
+      <string>dotbelowcomb.cap</string>
+      <string>hungarumlautcomb.cap</string>
+      <string>dieresiscomb.cap</string>
+      <string>dieresiscomb.narrow</string>
+      <string>caroncomb.cap</string>
       <string>f_f</string>
       <string>f_i</string>
       <string>f_f_i</string>
@@ -527,6 +527,8 @@
       <string>base</string>
       <key>B</key>
       <string>base</string>
+      <key>Bdotaccent</key>
+      <string>base</string>
       <key>C</key>
       <string>base</string>
       <key>Cacute</key>
@@ -543,7 +545,15 @@
       <string>base</string>
       <key>Dcaron</key>
       <string>base</string>
+      <key>Dcedilla</key>
+      <string>base</string>
       <key>Dcroat</key>
+      <string>base</string>
+      <key>Ddotaccent</key>
+      <string>base</string>
+      <key>Ddotbelow</key>
+      <string>base</string>
+      <key>Dmacronbelow</key>
       <string>base</string>
       <key>E</key>
       <string>base</string>
@@ -569,9 +579,9 @@
       <string>base</string>
       <key>Eth</key>
       <string>base</string>
-      <key>Euro</key>
-      <string>base</string>
       <key>F</key>
+      <string>base</string>
+      <key>Fdotaccent</key>
       <string>base</string>
       <key>G</key>
       <string>base</string>
@@ -581,13 +591,21 @@
       <string>base</string>
       <key>Gcircumflex</key>
       <string>base</string>
+      <key>Gcommaaccent</key>
+      <string>base</string>
       <key>Gdotaccent</key>
       <string>base</string>
       <key>H</key>
       <string>base</string>
       <key>Hbar</key>
       <string>base</string>
+      <key>Hbrevebelow</key>
+      <string>base</string>
+      <key>Hcedilla</key>
+      <string>base</string>
       <key>Hcircumflex</key>
+      <string>base</string>
+      <key>Hdotbelow</key>
       <string>base</string>
       <key>I</key>
       <string>base</string>
@@ -617,11 +635,15 @@
       <string>base</string>
       <key>K</key>
       <string>base</string>
+      <key>Kcommaaccent</key>
+      <string>base</string>
       <key>L</key>
       <string>base</string>
       <key>Lacute</key>
       <string>base</string>
       <key>Lcaron</key>
+      <string>base</string>
+      <key>Lcommaaccent</key>
       <string>base</string>
       <key>Ldot</key>
       <string>base</string>
@@ -629,11 +651,15 @@
       <string>base</string>
       <key>M</key>
       <string>base</string>
+      <key>Mdotaccent</key>
+      <string>base</string>
       <key>N</key>
       <string>base</string>
       <key>Nacute</key>
       <string>base</string>
       <key>Ncaron</key>
+      <string>base</string>
+      <key>Ncommaaccent</key>
       <string>base</string>
       <key>Ntilde</key>
       <string>base</string>
@@ -661,6 +687,8 @@
       <string>base</string>
       <key>P</key>
       <string>base</string>
+      <key>Pdotaccent</key>
+      <string>base</string>
       <key>Q</key>
       <string>base</string>
       <key>R</key>
@@ -668,6 +696,8 @@
       <key>Racute</key>
       <string>base</string>
       <key>Rcaron</key>
+      <string>base</string>
+      <key>Rcommaaccent</key>
       <string>base</string>
       <key>S</key>
       <string>base</string>
@@ -679,13 +709,25 @@
       <string>base</string>
       <key>Scircumflex</key>
       <string>base</string>
+      <key>Sdotaccent</key>
+      <string>base</string>
+      <key>Sdotbelow</key>
+      <string>base</string>
       <key>T</key>
       <string>base</string>
       <key>Tbar</key>
       <string>base</string>
       <key>Tcaron</key>
       <string>base</string>
+      <key>Tcedilla</key>
+      <string>base</string>
+      <key>Tdotaccent</key>
+      <string>base</string>
+      <key>Tdotbelow</key>
+      <string>base</string>
       <key>Thorn</key>
+      <string>base</string>
+      <key>Tmacronbelow</key>
       <string>base</string>
       <key>U</key>
       <string>base</string>
@@ -741,6 +783,8 @@
       <string>base</string>
       <key>Zdotaccent</key>
       <string>base</string>
+      <key>Zdotbelow</key>
+      <string>base</string>
       <key>a</key>
       <string>base</string>
       <key>aacute</key>
@@ -767,6 +811,8 @@
       <string>base</string>
       <key>aogonek</key>
       <string>base</string>
+      <key>apostrophemod</key>
+      <string>base</string>
       <key>aring</key>
       <string>base</string>
       <key>asciicircum</key>
@@ -774,6 +820,8 @@
       <key>asciitilde</key>
       <string>base</string>
       <key>asterisk</key>
+      <string>base</string>
+      <key>asterism</key>
       <string>base</string>
       <key>at</key>
       <string>base</string>
@@ -785,6 +833,8 @@
       <string>base</string>
       <key>bar.latn</key>
       <string>base</string>
+      <key>bdotaccent</key>
+      <string>base</string>
       <key>braceleft.latn</key>
       <string>base</string>
       <key>braceright.latn</key>
@@ -795,6 +845,10 @@
       <string>base</string>
       <key>breve</key>
       <string>base</string>
+      <key>brevecomb</key>
+      <string>mark</string>
+      <key>brevecomb.cap</key>
+      <string>mark</string>
       <key>brokenbar</key>
       <string>base</string>
       <key>bullet</key>
@@ -803,8 +857,14 @@
       <string>base</string>
       <key>cacute</key>
       <string>base</string>
+      <key>caretSign</key>
+      <string>base</string>
       <key>caron</key>
       <string>base</string>
+      <key>caroncomb</key>
+      <string>mark</string>
+      <key>caroncomb.cap</key>
+      <string>mark</string>
       <key>ccaron</key>
       <string>base</string>
       <key>ccedilla</key>
@@ -815,13 +875,29 @@
       <string>base</string>
       <key>cedilla</key>
       <string>base</string>
+      <key>cedillacomb</key>
+      <string>mark</string>
+      <key>cedillacomb.cap</key>
+      <string>mark</string>
       <key>cent</key>
       <string>base</string>
       <key>circumflex</key>
       <string>base</string>
+      <key>circumflexcomb</key>
+      <string>mark</string>
+      <key>circumflexcomb.cap</key>
+      <string>mark</string>
       <key>colon</key>
       <string>base</string>
       <key>comma</key>
+      <string>base</string>
+      <key>commaaboverightcomb</key>
+      <string>mark</string>
+      <key>commaaccentcomb</key>
+      <string>mark</string>
+      <key>commaturnedabovecomb</key>
+      <string>mark</string>
+      <key>commaturnedmod</key>
       <string>base</string>
       <key>copyright</key>
       <string>base</string>
@@ -835,20 +911,38 @@
       <string>base</string>
       <key>dcaron</key>
       <string>base</string>
+      <key>dcedilla</key>
+      <string>base</string>
       <key>dcroat</key>
+      <string>base</string>
+      <key>ddotaccent</key>
+      <string>base</string>
+      <key>ddotbelow</key>
       <string>base</string>
       <key>degree</key>
       <string>base</string>
       <key>dieresis</key>
       <string>base</string>
+      <key>dieresiscomb</key>
+      <string>mark</string>
+      <key>dieresiscomb.cap</key>
+      <string>mark</string>
+      <key>dieresiscomb.narrow</key>
+      <string>mark</string>
       <key>divide</key>
+      <string>base</string>
+      <key>dmacronbelow</key>
       <string>base</string>
       <key>dollar</key>
       <string>base</string>
       <key>dotaccent</key>
       <string>base</string>
-      <key>dotlessi</key>
-      <string>base</string>
+      <key>dotaccentcomb</key>
+      <string>mark</string>
+      <key>dotaccentcomb.cap</key>
+      <string>mark</string>
+      <key>dotbelowcomb.cap</key>
+      <string>mark</string>
       <key>e</key>
       <string>base</string>
       <key>eacute</key>
@@ -891,6 +985,8 @@
       <string>base</string>
       <key>eth</key>
       <string>base</string>
+      <key>euro</key>
+      <string>base</string>
       <key>exclam.latn</key>
       <string>base</string>
       <key>exclamdown</key>
@@ -923,6 +1019,8 @@
       <string>base</string>
       <key>f_l</key>
       <string>base</string>
+      <key>fdotaccent</key>
+      <string>base</string>
       <key>figuredash</key>
       <string>base</string>
       <key>five</key>
@@ -945,6 +1043,8 @@
       <string>base</string>
       <key>four.small</key>
       <string>base</string>
+      <key>foursuperior</key>
+      <string>base</string>
       <key>fraction</key>
       <string>base</string>
       <key>g</key>
@@ -954,6 +1054,8 @@
       <key>gcaron</key>
       <string>base</string>
       <key>gcircumflex</key>
+      <string>base</string>
+      <key>gcommaaccent</key>
       <string>base</string>
       <key>gdotaccent</key>
       <string>base</string>
@@ -979,11 +1081,25 @@
       <string>base</string>
       <key>hbar</key>
       <string>base</string>
+      <key>hbrevebelow</key>
+      <string>base</string>
+      <key>hcedilla</key>
+      <string>base</string>
       <key>hcircumflex</key>
+      <string>base</string>
+      <key>hdotbelow</key>
+      <string>base</string>
+      <key>hmacronbelow</key>
+      <string>base</string>
+      <key>horizontalbar</key>
       <string>base</string>
       <key>hungarumlaut</key>
       <string>base</string>
+      <key>hungarumlautcomb.cap</key>
+      <string>mark</string>
       <key>hyphen</key>
+      <string>base</string>
+      <key>hyphentwo</key>
       <string>base</string>
       <key>i</key>
       <string>base</string>
@@ -996,6 +1112,8 @@
       <key>icircumflex</key>
       <string>base</string>
       <key>idieresis</key>
+      <string>base</string>
+      <key>idotless</key>
       <string>base</string>
       <key>igrave</key>
       <string>base</string>
@@ -1011,7 +1129,11 @@
       <string>base</string>
       <key>jcircumflex</key>
       <string>base</string>
+      <key>jdotless</key>
+      <string>base</string>
       <key>k</key>
+      <string>base</string>
+      <key>kcommaaccent</key>
       <string>base</string>
       <key>kgreenlandic</key>
       <string>base</string>
@@ -1020,6 +1142,8 @@
       <key>lacute</key>
       <string>base</string>
       <key>lcaron</key>
+      <string>base</string>
+      <key>lcommaaccent</key>
       <string>base</string>
       <key>ldot</key>
       <string>base</string>
@@ -1035,11 +1159,19 @@
       <string>base</string>
       <key>macron</key>
       <string>base</string>
+      <key>macroncomb</key>
+      <string>mark</string>
+      <key>macroncomb.cap</key>
+      <string>mark</string>
+      <key>mdotaccent</key>
+      <string>base</string>
+      <key>micro</key>
+      <string>base</string>
       <key>minus</key>
       <string>base</string>
-      <key>minute</key>
+      <key>minusplus</key>
       <string>base</string>
-      <key>mu</key>
+      <key>minute</key>
       <string>base</string>
       <key>multiply</key>
       <string>base</string>
@@ -1049,7 +1181,13 @@
       <string>base</string>
       <key>napostrophe</key>
       <string>base</string>
+      <key>narrownbspace</key>
+      <string>base</string>
+      <key>nbspace</key>
+      <string>base</string>
       <key>ncaron</key>
+      <string>base</string>
+      <key>ncommaaccent</key>
       <string>base</string>
       <key>nine</key>
       <string>base</string>
@@ -1060,6 +1198,8 @@
       <key>nine.prop</key>
       <string>base</string>
       <key>nine.small</key>
+      <string>base</string>
+      <key>nonbreakinghyphen</key>
       <string>base</string>
       <key>ntilde</key>
       <string>base</string>
@@ -1079,6 +1219,8 @@
       <string>base</string>
       <key>ogonek</key>
       <string>base</string>
+      <key>ogonekcomb</key>
+      <string>mark</string>
       <key>ograve</key>
       <string>base</string>
       <key>ohungarumlaut</key>
@@ -1101,6 +1243,8 @@
       <string>base</string>
       <key>onequarter</key>
       <string>base</string>
+      <key>onesuperior</key>
+      <string>base</string>
       <key>ordfeminine</key>
       <string>base</string>
       <key>ordmasculine</key>
@@ -1109,6 +1253,10 @@
       <string>base</string>
       <key>otilde</key>
       <string>base</string>
+      <key>overline</key>
+      <string>base</string>
+      <key>overlinecomb</key>
+      <string>mark</string>
       <key>p</key>
       <string>base</string>
       <key>paragraph</key>
@@ -1116,6 +1264,8 @@
       <key>parenleft.latn</key>
       <string>base</string>
       <key>parenright.latn</key>
+      <string>base</string>
+      <key>pdotaccent</key>
       <string>base</string>
       <key>percent</key>
       <string>base</string>
@@ -1143,6 +1293,8 @@
       <string>base</string>
       <key>quotedblright</key>
       <string>base</string>
+      <key>quotedblrightreversed</key>
+      <string>base</string>
       <key>quoteleft</key>
       <string>base</string>
       <key>quotereversed</key>
@@ -1161,9 +1313,19 @@
       <string>base</string>
       <key>rcaron</key>
       <string>base</string>
+      <key>rcommaaccent</key>
+      <string>base</string>
       <key>registered</key>
       <string>base</string>
       <key>ring</key>
+      <string>base</string>
+      <key>ringcomb</key>
+      <string>mark</string>
+      <key>ringcomb.cap</key>
+      <string>mark</string>
+      <key>ringhalfleft</key>
+      <string>base</string>
+      <key>ringhalfright</key>
       <string>base</string>
       <key>s</key>
       <string>base</string>
@@ -1174,6 +1336,10 @@
       <key>scedilla</key>
       <string>base</string>
       <key>scircumflex</key>
+      <string>base</string>
+      <key>sdotaccent</key>
+      <string>base</string>
+      <key>sdotbelow</key>
       <string>base</string>
       <key>second</key>
       <string>base</string>
@@ -1203,6 +1369,8 @@
       <string>base</string>
       <key>slash.latn</key>
       <string>base</string>
+      <key>softhyphen</key>
+      <string>base</string>
       <key>space</key>
       <string>base</string>
       <key>sterling</key>
@@ -1212,6 +1380,14 @@
       <key>tbar</key>
       <string>base</string>
       <key>tcaron</key>
+      <string>base</string>
+      <key>tcedilla</key>
+      <string>base</string>
+      <key>tdieresis</key>
+      <string>base</string>
+      <key>tdotaccent</key>
+      <string>base</string>
+      <key>tdotbelow</key>
       <string>base</string>
       <key>thorn</key>
       <string>base</string>
@@ -1227,12 +1403,16 @@
       <string>base</string>
       <key>threequarters</key>
       <string>base</string>
+      <key>threesuperior</key>
+      <string>base</string>
       <key>tilde</key>
       <string>base</string>
       <key>tildecomb</key>
       <string>mark</string>
       <key>tildecomb.cap</key>
       <string>mark</string>
+      <key>tmacronbelow</key>
+      <string>base</string>
       <key>two</key>
       <string>base</string>
       <key>two.medium</key>
@@ -1242,6 +1422,8 @@
       <key>two.prop</key>
       <string>base</string>
       <key>two.small</key>
+      <string>base</string>
+      <key>twosuperior</key>
       <string>base</string>
       <key>u</key>
       <string>base</string>
@@ -1260,190 +1442,6 @@
       <key>umacron</key>
       <string>base</string>
       <key>underscore</key>
-      <string>base</string>
-      <key>uni00A0</key>
-      <string>base</string>
-      <key>uni00AD</key>
-      <string>base</string>
-      <key>uni00B2</key>
-      <string>base</string>
-      <key>uni00B3</key>
-      <string>base</string>
-      <key>uni00B9</key>
-      <string>base</string>
-      <key>uni0122</key>
-      <string>base</string>
-      <key>uni0123</key>
-      <string>base</string>
-      <key>uni0136</key>
-      <string>base</string>
-      <key>uni0137</key>
-      <string>base</string>
-      <key>uni013B</key>
-      <string>base</string>
-      <key>uni013C</key>
-      <string>base</string>
-      <key>uni0145</key>
-      <string>base</string>
-      <key>uni0146</key>
-      <string>base</string>
-      <key>uni0156</key>
-      <string>base</string>
-      <key>uni0157</key>
-      <string>base</string>
-      <key>uni0162</key>
-      <string>base</string>
-      <key>uni0163</key>
-      <string>base</string>
-      <key>uni0237</key>
-      <string>base</string>
-      <key>uni02BB</key>
-      <string>base</string>
-      <key>uni02BC</key>
-      <string>base</string>
-      <key>uni02BE</key>
-      <string>base</string>
-      <key>uni02BF</key>
-      <string>base</string>
-      <key>uni0302</key>
-      <string>mark</string>
-      <key>uni0302.cap</key>
-      <string>mark</string>
-      <key>uni0304</key>
-      <string>mark</string>
-      <key>uni0304.cap</key>
-      <string>mark</string>
-      <key>uni0305</key>
-      <string>mark</string>
-      <key>uni0306</key>
-      <string>mark</string>
-      <key>uni0306.cap</key>
-      <string>mark</string>
-      <key>uni0307</key>
-      <string>mark</string>
-      <key>uni0307.cap</key>
-      <string>mark</string>
-      <key>uni0308</key>
-      <string>mark</string>
-      <key>uni0308.cap</key>
-      <string>mark</string>
-      <key>uni0308.narrow</key>
-      <string>mark</string>
-      <key>uni030A</key>
-      <string>mark</string>
-      <key>uni030A.cap</key>
-      <string>mark</string>
-      <key>uni030B.cap</key>
-      <string>mark</string>
-      <key>uni030C</key>
-      <string>mark</string>
-      <key>uni030C.cap</key>
-      <string>mark</string>
-      <key>uni0312</key>
-      <string>mark</string>
-      <key>uni0315</key>
-      <string>mark</string>
-      <key>uni0323.cap</key>
-      <string>mark</string>
-      <key>uni0326</key>
-      <string>mark</string>
-      <key>uni0327</key>
-      <string>mark</string>
-      <key>uni0327.cap</key>
-      <string>mark</string>
-      <key>uni0328</key>
-      <string>mark</string>
-      <key>uni1E02</key>
-      <string>base</string>
-      <key>uni1E03</key>
-      <string>base</string>
-      <key>uni1E0A</key>
-      <string>base</string>
-      <key>uni1E0B</key>
-      <string>base</string>
-      <key>uni1E0C</key>
-      <string>base</string>
-      <key>uni1E0D</key>
-      <string>base</string>
-      <key>uni1E0E</key>
-      <string>base</string>
-      <key>uni1E0F</key>
-      <string>base</string>
-      <key>uni1E10</key>
-      <string>base</string>
-      <key>uni1E11</key>
-      <string>base</string>
-      <key>uni1E1E</key>
-      <string>base</string>
-      <key>uni1E1F</key>
-      <string>base</string>
-      <key>uni1E24</key>
-      <string>base</string>
-      <key>uni1E25</key>
-      <string>base</string>
-      <key>uni1E28</key>
-      <string>base</string>
-      <key>uni1E29</key>
-      <string>base</string>
-      <key>uni1E2A</key>
-      <string>base</string>
-      <key>uni1E2B</key>
-      <string>base</string>
-      <key>uni1E40</key>
-      <string>base</string>
-      <key>uni1E41</key>
-      <string>base</string>
-      <key>uni1E56</key>
-      <string>base</string>
-      <key>uni1E57</key>
-      <string>base</string>
-      <key>uni1E60</key>
-      <string>base</string>
-      <key>uni1E61</key>
-      <string>base</string>
-      <key>uni1E62</key>
-      <string>base</string>
-      <key>uni1E63</key>
-      <string>base</string>
-      <key>uni1E6A</key>
-      <string>base</string>
-      <key>uni1E6B</key>
-      <string>base</string>
-      <key>uni1E6C</key>
-      <string>base</string>
-      <key>uni1E6D</key>
-      <string>base</string>
-      <key>uni1E6E</key>
-      <string>base</string>
-      <key>uni1E6F</key>
-      <string>base</string>
-      <key>uni1E92</key>
-      <string>base</string>
-      <key>uni1E93</key>
-      <string>base</string>
-      <key>uni1E96</key>
-      <string>base</string>
-      <key>uni1E97</key>
-      <string>base</string>
-      <key>uni2010</key>
-      <string>base</string>
-      <key>uni2011</key>
-      <string>base</string>
-      <key>uni2015</key>
-      <string>base</string>
-      <key>uni201F</key>
-      <string>base</string>
-      <key>uni202F</key>
-      <string>base</string>
-      <key>uni2038</key>
-      <string>base</string>
-      <key>uni203E</key>
-      <string>base</string>
-      <key>uni2042</key>
-      <string>base</string>
-      <key>uni2074</key>
-      <string>base</string>
-      <key>uni2213</key>
       <string>base</string>
       <key>uogonek</key>
       <string>base</string>
@@ -1484,6 +1482,8 @@
       <key>zcaron</key>
       <string>base</string>
       <key>zdotaccent</key>
+      <string>base</string>
+      <key>zdotbelow</key>
       <string>base</string>
       <key>zero</key>
       <string>base</string>

@@ -2,7 +2,7 @@
 <glyph name="i.TRK" format="2">
   <advance width="263"/>
   <outline>
-    <component base="dotlessi"/>
-    <component base="uni0307" xOffset="381" yOffset="44"/>
+    <component base="idotless"/>
+    <component base="dotaccentcomb" xOffset="381" yOffset="44"/>
   </outline>
 </glyph>

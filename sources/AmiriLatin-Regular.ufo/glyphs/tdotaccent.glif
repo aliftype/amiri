@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tdotaccent" format="2">
+  <advance width="303"/>
+  <unicode hex="1E6B"/>
+  <outline>
+    <component base="dotaccentcomb" xOffset="400" yOffset="93"/>
+    <component base="t"/>
+  </outline>
+</glyph>

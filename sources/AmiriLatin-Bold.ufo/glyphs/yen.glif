@@ -117,10 +117,4 @@
       <point x="255" y="100"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.sfdlib.decomposeAndRemoveOverlap</key>
-      <true/>
-    </dict>
-  </lib>
 </glyph>

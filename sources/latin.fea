@@ -1,8 +1,8 @@
 feature locl {
   script latn;
   sub period by period.latn;
-  sub guillemotleft by guillemotleft.latn;
-  sub guillemotright by guillemotright.latn;
+  sub guillemetleft by guillemetleft.latn;
+  sub guillemetright by guillemetright.latn;
   sub exclam by exclam.latn;
   sub parenleft by parenleft.latn;
   sub parenright by parenright.latn;

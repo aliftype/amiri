@@ -198,7 +198,7 @@ def makeOverLine(font, posGlyph="qafLamAlefMaksuraabove-ar"):
                 widths[width] = []
             widths[width].append(glyph.name)
 
-    base = 'uni0305'
+    base = 'overlinecomb'
     drawOverline(font, base, 0x0305, pos, thickness, 500)
 
     mark = ast.FeatureBlock("mark")
@@ -210,7 +210,7 @@ def makeOverLine(font, posGlyph="qafLamAlefMaksuraabove-ar"):
         # for each width group we create an over/underline glyph with the same
         # width, and add a contextual substitution lookup to use it when an
         # over/underline follows any glyph in this group
-        replace = f"uni0305.{width}"
+        replace = f"overlinecomb.{width}"
         drawOverline(font, replace, None, pos, thickness, width)
         sub = ast.SingleSubstStatement([ast.GlyphName(base)],
                                        [ast.GlyphName(replace)],
@@ -242,7 +242,7 @@ def makeItalic(options):
 
     exclude = [f"u{i:X}" for i in range(0x1EE00, 0x1EEFF + 1)]
     exclude += [
-        "exclam", "period", "guillemotleft", "guillemotright", "braceleft",
+        "exclam", "period", "guillemetleft", "guillemetright", "braceleft",
         "bar", "braceright", "bracketleft", "bracketright", "parenleft",
         "parenright", "slash", "backslash", "brokenbar", "question-ar",
         "dot.1", "dot.2", "zerowidthnonjoiner", "zerowidthjoiner",
@@ -271,7 +271,7 @@ def makeItalic(options):
         info.styleMapStyleName = "italic"
 
     mergeLatin(font)
-    makeOverLine(font, posGlyph="uni0305")
+    makeOverLine(font, posGlyph="overlinecomb")
     otf = generateFont(options, font)
     otf.save(options.output)
 
@@ -455,7 +455,7 @@ def makeCOLR(font):
     )
 
     signs = (
-        "uni0305",
+        "overlinecomb",
         "zero-ar",
         "one-ar",
         "two-ar",
@@ -601,7 +601,7 @@ def makeDesktop(options, generate=True):
 
     if generate:
         mergeLatin(font)
-        makeOverLine(font, posGlyph="uni0305")
+        makeOverLine(font, posGlyph="overlinecomb")
         otf = generateFont(options, font)
         otf.save(options.output)
     else:
