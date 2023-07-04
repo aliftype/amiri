@@ -106,7 +106,7 @@ def generateFont(options, font):
     info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
     info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
 
-    markWriter = MarkFeatureWriter(features=["mark", "mkmk"])
+    markWriter = MarkFeatureWriter()
 
     # Maintain our desired lookup order.
     markWriter.anchorSortKey = {
