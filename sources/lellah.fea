@@ -5,7 +5,7 @@
 # including Tashkil marks that can't but be the name of Allah and ignore the
 # special form for any other occurrences, but this is far from being simple.
 #
-# The first calt substitutes any [<Alef>]<Lam><Lam><Heh> preceded by a letter
+# The first feature substitutes any [<Alef>]<Lam><Lam><Heh> preceded by a letter
 # that is known not to be part of any of the allowed words by a regular non
 # special form.  The next block will then substitute the allowed context, given
 # it meets a certain criteria.
@@ -40,13 +40,13 @@ lookup LamMediLellah {
 # This a stripped down version of the above for use in Amiri Quran,
 # because here we can safely assume the [<Faa>]<Lam><Lam><Heh> sequence always
 # mean the name of Allah.
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     # لله
     sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
     # فلله
     sub [feh-ar.init]' lam-ar.medi' lookup LamMediFaLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
-} calt;
+} rlig;
 
 #else
 lookup LamLamInitX {
@@ -58,7 +58,7 @@ lookup LamLamInitX {
 @aBaa_init = [beh-ar.init teh-ar.init];
 @aBaa_medi = [beh-ar.medi teh-ar.medi];
 @Ignore = [@aAyn.fina @aAyn.isol @aAlf.isol @aAlf.fina @aBaa.fina @aBaa.isol @aDal.fina @aDal.isol @aFaa.fina @aFaa.isol @aHaa.fina @aHaa.isol @aHeh.fina @aHeh.isol @aKaf.fina @aKaf.isol @aLam.fina @aLam.isol @aMem.fina @aMem.isol @aNon.fina @aNon.isol @aQaf.fina @aQaf.isol @aRaa.fina @aRaa.isol @aSad.fina @aSad.isol @aSen.fina @aSen.isol @aTaa.fina @aTaa.isol @aWaw.fina @aWaw.isol @aYaa.fina @aYaa.isol];
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     # Allow الله/ولله/ـالله
     ignore sub [@Ai @Af waw-ar] lam-ar.init' lam-ar.medi' @Hf;
@@ -76,9 +76,9 @@ feature calt {
     ignore sub [@aBaa_init kaf-ar.init feh-ar.init] @Af' lam-ar.init' lam-ar.medi' @Hf;
     # Supress any remaining *ـالله
     sub @Af' lam-ar.init' lookup LamLamInitX lam-ar.medi' lookup LamLamInitX @Hf;
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     # لله
     sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
     sub lam-ar.init' lookup LamInitLellah lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
@@ -117,12 +117,12 @@ feature calt {
     sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah @Hf' lookup HehFinaLellah;
     sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @Hf' lookup HehFinaLellah;
     sub feh-ar.init' fatha-ar' lam-ar.medi' lookup LamMediFaLellah kasra-ar' lam-ar.medi' lookup LamMediLellah shadda-ar' @xF' @Hf' lookup HehFinaLellah;
-} calt;
+} rlig;
 
 # Now put shadda+dagger alef above the medial lam if there are no marks on it.
-feature calt {
+feature rlig {
     sub lam-ar.medi.Lellah' heh-ar.fina.Lellah by lam-ar.medi.Lellah2;
-} calt;
+} rlig;
 
 # This stylistic set removes them.
 feature ss06 {

@@ -5,23 +5,23 @@ lookup SamallTashkil {
     sub @ShaddaTashkil by @ShaddaTashkil.small;
 } SamallTashkil;
 
-feature calt {
+feature rlig {
     sub [shadda-ar dotStopabove-ar] @ShaddaTashkil' lookup SamallTashkil;
     sub @ShaddaTashkil.small @ShaddaTashkil' lookup SamallTashkil;
     sub @ShaddaTashkil' lookup SamallTashkil @ShaddaTashkil' lookup SamallTashkil;
-} calt;
+} rlig;
 
 #ifdef QURAN
-feature calt {
+feature rlig {
     sub [dotvowelbelow-ar] [kasra-ar]' by [kasra-ar.small2];
-} calt;
+} rlig;
 
 #endif
 # replace tashkil following hamza by smaller alternates
-feature calt {
+feature rlig {
     sub [@AlefHamzaAbove hamzaabove-ar] [fatha-ar fatha-ar.small damma-ar sukun-ar]' by [fatha-ar.small2 fatha-ar.small2 damma-ar.small sukun-ar.small2];
     sub [@AlefHamzaBelow hamzabelow-ar] [kasra-ar]' by [kasra-ar.small2];
-} calt;
+} rlig;
 
 # replace hamza mark when following a heh by a glyph that has only a
 # HamzaAbove mark so it will be positioned correctly
@@ -33,11 +33,11 @@ lookup BaaInitWide {
     sub @aBaa.init by @aBaa.init.Wide;
 } BaaInitWide;
 
-feature calt {
+feature rlig {
     sub @aBaa.init' lookup BaaInitWide @Tashkil.above' [@aGaf.medi @aGaf.fina]';
     sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
     sub @aBaa.init' lookup BaaInitWide @Tashkil.above' @Tashkil.above' @Tashkil.above' [@aGaf.medi @aGaf.fina]';
-} calt;
+} rlig;
 
 lookup AboveHaaInit {
     sub @aBaa.init by @aBaa.init.BaaHaaInit;
@@ -48,40 +48,40 @@ lookup AboveHaaInit {
     sub @aSen.init by @aSen.init.SenHaaInit;
 } AboveHaaInit;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aBaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaInit [@aHaa.medi]' lookup AboveHaaInit;
-} calt;
+} rlig;
 
 lookup BaaRaaFina {
     sub @aBaa.medi by @aBaa.medi.BaaRaaFina;
     sub @aRaa.fina by @aRaa.fina.BaaRaaFina;
 } BaaRaaFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aBaa.medi]' lookup BaaRaaFina [@aRaa.fina]' lookup BaaRaaFina;
-} calt;
+} rlig;
 
 lookup BaaNonFina {
     sub @aBaa.medi by @aBaa.medi.BaaNonFina;
     sub @aNon.fina by @aNon.fina.BaaNonFina;
 } BaaNonFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aBaa.medi]' lookup BaaNonFina [@aNon.fina]' lookup BaaNonFina;
-} calt;
+} rlig;
 
 lookup BaaMemFina {
     sub @aBaa.medi by @aBaa.medi.BaaMemFina;
     sub @aMem.fina by @aMem.fina.BaaMemFina;
 } BaaMemFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aBaa.medi]' lookup BaaMemFina [@aMem.fina]' lookup BaaMemFina;
-} calt;
+} rlig;
 
 lookup KafBaaAlfIsol {
     sub @aBaa.medi by @aBaa.medi.KafBaaInit;
@@ -93,11 +93,11 @@ lookup KafBaaAlfFina {
     sub @aKaf.medi by @aKaf.medi.KafBaaMedi;
 } KafBaaAlfFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aKaf.init]' lookup KafBaaAlfIsol [@aBaa.medi]' lookup KafBaaAlfIsol [@aAlf.fina @aLam.medi @aLam.fina];
     sub [@aKaf.medi]' lookup KafBaaAlfFina [@aBaa.medi]' lookup KafBaaAlfFina [@aAlf.fina @aLam.medi @aLam.fina];
-} calt;
+} rlig;
 
 lookup BaaBaa {
     sub @aBaa.medi by @aBaa.medi.BaaBaaInit;
@@ -110,7 +110,7 @@ lookup HighBaa {
     sub @aBaa.medi by @aBaa.medi.High;
 } HighBaa;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     # hack to prevent double high baa in سببس and likes
     sub [@aSen.init @aSen.medi]' [@aBaa.medi]' [@aBaa.medi]' lookup HighBaa [@aSen.medi @aSen.fina]';
@@ -119,7 +119,7 @@ feature calt {
     sub [@aBaa.medi @aSad.init @aSad.medi @aSen.init @aSen.medi @aBaa.medi.BaaBaaInit] [@aBaa.medi]' lookup HighBaa [@aBaa.fina @aBaa.medi @aSen.fina @aBaa.medi.BaaHehMedi @aSen.medi @aSen.medi.PreYaa];
     sub [@aBaa.medi]' lookup HighBaa [@aSen.fina @aSen.medi @aSen.medi.PreYaa];
     sub [@aBaa.init]' lookup HighBaa [@aBaa.medi]' lookup HighBaa [@aBaa.medi @aBaa.fina @aSen.medi @aSen.fina];
-} calt;
+} rlig;
 
 lookup BaaHeh {
     sub @aBaa.init by @aBaa.init.BaaHehInit;
@@ -128,7 +128,7 @@ lookup BaaHeh {
     sub @aHeh.medi by @aHeh.medi.BaaHehMedi;
 } BaaHeh;
 
-feature calt {
+feature rlig {
     #ifdef QURAN
     # https://github.com/aliftype/quran-data/issues/1
     lookupflag UseMarkFilteringSet [alefabove-ar];
@@ -136,27 +136,27 @@ feature calt {
     lookupflag IgnoreMarks;
     #endif
     sub [@aBaa.init @aBaa.medi @aMem.init.dots]' lookup BaaHeh [@aHeh.medi]' lookup BaaHeh;
-} calt;
+} rlig;
 
 lookup BaaBaaHeh {
     sub @aBaa.init by @aBaa.init.BaaBaaHeh;
 } BaaBaaHeh;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub @aBaa.init' lookup BaaBaaHeh @aBaa.medi.BaaHehMedi;
-} calt;
+} rlig;
 
 lookup LamAlfFina {
     sub @aAlf.fina by @aAlf.fina.LamAlfFina;
     sub @aLam.medi by @aLam.medi.LamAlfFina;
 } LamAlfFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aLam.medi]' lookup LamAlfFina [@aAlf.fina]' lookup LamAlfFina;
     sub [@aLam.medi]' lookup LamAlfFina hamza-ar.float' [@aAlf.fina]' lookup LamAlfFina;
-} calt;
+} rlig;
 
 lookup KafLamHeh {
     sub @aLam.medi by @aLam.medi.KafLamHehIsol;
@@ -512,7 +512,7 @@ lookup LamMemFinaExtended {
     sub @aMem.fina by @aMem.fina.LamMemFinaExtended;
 } LamMemFinaExtended;
 
-feature calt {
+feature rlig {
     sub @aLam.medi' lookup LamMemFina @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
     sub @aLam.medi' lookup LamMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
     sub @aLam.medi' lookup LamMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above' @Tashkil.above';
@@ -520,14 +520,14 @@ feature calt {
     sub @aLam.medi' lookup LamMemFina @Tashkil.below' @Tashkil.above' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
     sub @aLam.medi' lookup LamMemFina @Tashkil.above' @Tashkil.below' @aMem.fina' lookup LamMemFinaExtended @Tashkil.above';
     sub @aLam.medi' lookup LamMemFina @Tashkil.below' @aMem.fina' lookup LamMemFinaExtended @Tashkil.below';
-} calt;
+} rlig;
 
 # ditto
 lookup MemExtended {
     sub @aMem.fina by @aMem.fina.KafMemIsolExtended;
 } MemExtended;
 
-feature calt {
+feature rlig {
     sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above';
     sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above';
     sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above' @Tashkil.above';
@@ -535,7 +535,7 @@ feature calt {
     sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.below' @Tashkil.above' @aMem.fina' lookup MemExtended @Tashkil.above';
     sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.above' @Tashkil.below' @aMem.fina' lookup MemExtended @Tashkil.above';
     sub [@aLam.init @aKaf.init]' lookup KafMemIsol @Tashkil.below' @aMem.fina' lookup MemExtended @Tashkil.below';
-} calt;
+} rlig;
 
 #ditto, but we don't have LamMemInit in Quran font
 #ifndef QURAN
@@ -543,7 +543,7 @@ lookup LamMemInitTatweel {
     sub @aMem.medi by @aMem.medi.LamMemInitTatweel;
 } LamMemInitTatweel;
 
-feature calt {
+feature rlig {
     sub @aLam.init' lookup LamMemInit @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
     sub @aLam.init' lookup LamMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
     sub @aLam.init' lookup LamMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above' @Tashkil.above';
@@ -551,7 +551,7 @@ feature calt {
     sub @aLam.init' lookup LamMemInit @Tashkil.below' @Tashkil.above' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
     sub @aLam.init' lookup LamMemInit @Tashkil.above' @Tashkil.below' @aMem.medi' lookup LamMemInitTatweel @Tashkil.above';
     sub @aLam.init' lookup LamMemInit @Tashkil.below' @aMem.medi' lookup LamMemInitTatweel @Tashkil.below';
-} calt;
+} rlig;
 
 #endif
 # ditto
@@ -559,7 +559,7 @@ lookup KafMemFinaExtended {
     sub @aMem.fina by @aMem.fina.KafMemFinaExtended;
 } KafMemFinaExtended;
 
-feature calt {
+feature rlig {
     sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above';
     sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above';
     sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above' @Tashkil.above';
@@ -567,14 +567,14 @@ feature calt {
     sub @aKaf.medi' lookup KafMemFina @Tashkil.below' @Tashkil.above' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above;
     sub @aKaf.medi' lookup KafMemFina @Tashkil.above' @Tashkil.below' @aMem.fina' lookup KafMemFinaExtended @Tashkil.above';
     sub @aKaf.medi' lookup KafMemFina @Tashkil.below' @aMem.fina' lookup KafMemFinaExtended @Tashkil.below';
-} calt;
+} rlig;
 
 # No IgnoreMarks here, to narrow to carry vowels
-feature calt {
+feature rlig {
     sub [@aBaa.init]' lookup BaaMemHaaInit [@aMem.medi]' lookup BaaMemHaaInit [@aHaa.medi]' lookup BaaMemHaaInit;
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aKaf.init @aKaf.medi]' lookup KafLam [@aLam.medi]' lookup KafLamHeh [@aHeh.fina @aDal.fina]' lookup LamHehIsol;
     sub [@aKaf.init @aKaf.medi]' lookup KafMemAlf [@aMem.medi]' lookup KafMemAlf [@aLam.medi @aLam.fina @aAlf.fina]' lookup KafMemAlf;
@@ -639,12 +639,12 @@ feature calt {
     sub [@aAyn.init @aBaa.init @aHaa.init @aHeh.init @aMem.init @aSad.init @aSen.init]' lookup AboveHaaIsol [@aHaa.fina]' lookup AboveHaaIsol;
     sub [@aFaa.init @aLam.init @aKaf.init]' lookup AboveHaaIsol [@aHaa.medi @aHaa.fina]' lookup AboveHaaIsol2;
     sub [@aSen.init @aSad.init @aSen.medi @aSad.medi]' lookup SenYaaFina [@aYaa.fina @aRaa.fina]' lookup SenYaaFina;
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aKaf.init @aKaf.medi]' @aHeh.medi by [@aKaf.init.PreHeh @aKaf.medi.PreHeh];
-} calt;
+} rlig;
 
 lookup ToothYaaBari {
     sub @aSen.init by @aSen.init.YaaBari;
@@ -652,10 +652,10 @@ lookup ToothYaaBari {
     sub @aYaaBari.fina by @aYaaBari.fina.PostTooth;
 } ToothYaaBari;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aSen.init @aSad.init]' lookup ToothYaaBari [@aYaaBari.fina]' lookup ToothYaaBari;
-} calt;
+} rlig;
 
 lookup ToothYaaBariFina {
     sub @aBaa.medi by @aBaa.medi.YaaBari;
@@ -665,12 +665,12 @@ lookup ToothYaaBariFina {
     sub @aYaaBari.fina by @aYaaBari.fina.PostToothFina;
 } ToothYaaBariFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aHaa.init.DotBelow]' lookup ToothYaaBariFina [@aBaa.medi]' lookup ToothYaaBariFina [@aYaaBari.fina]' lookup ToothYaaBariFina;
     sub [@aBaa.medi]' lookup ToothYaaBariFina [@aYaaBari.fina]' lookup ToothYaaBariFina;
     sub [@aBaa.init.BaaBaaIsol]' lookup ToothYaaBariFina [@aBaa.medi.BaaBaaInit]' lookup ToothYaaBariFina [@aYaaBari.fina]' lookup ToothYaaBariFina;
-} calt;
+} rlig;
 
 lookup AscenderYaaBari {
     sub @aBaa.init by @aBaa.init.YaaBari;
@@ -680,10 +680,10 @@ lookup AscenderYaaBari {
     sub @aYaaBari.fina by @aYaaBari.fina.PostAscender;
 } AscenderYaaBari;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aBaa.init @aFaa.init @aLam.init @aKaf.init]' lookup AscenderYaaBari [@aYaaBari.fina]' lookup AscenderYaaBari;
-} calt;
+} rlig;
 
 lookup AynYaaBari {
     sub @aHaa.init by @aHaa.init.YaaBari;
@@ -695,10 +695,10 @@ lookup AynYaaBari {
     sub @aYaaBari.fina by @aYaaBari.fina.PostAyn;
 } AynYaaBari;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aHaa.init @aHeh.init @aAyn.init @aTaa.init @aMem.init.dots hehDoachashmee-ar.init]' lookup AynYaaBari @aYaaBari.fina' lookup AynYaaBari;
-} calt;
+} rlig;
 
 # default Faa.init+Mem.medi ligature is too narrow leading to mark clash of
 # both glyphs have marks above or both have marks bellow at the same time. So
@@ -708,7 +708,7 @@ lookup FaaMemTatweel {
     sub @aMem.medi by @aMem.medi.KafMemMediTatweel;
 } FaaMemTatweel;
 
-feature calt {
+feature rlig {
     sub @aFaa.init' lookup KafMemInit @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
     sub @aFaa.init' lookup KafMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
     sub @aFaa.init' lookup KafMemInit @Tashkil.above' @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above' @Tashkil.above';
@@ -716,18 +716,18 @@ feature calt {
     sub @aFaa.init' lookup KafMemInit @Tashkil.below' @Tashkil.above' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
     sub @aFaa.init' lookup KafMemInit @Tashkil.above' @Tashkil.below' @aMem.medi' lookup FaaMemTatweel @Tashkil.above';
     sub @aFaa.init' lookup KafMemInit @Tashkil.below' @aMem.medi' lookup FaaMemTatweel @Tashkil.below';
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aKaf.init @aKaf.medi @aAyn.init @aFaa.init @aHaa.init @aHeh.init]' lookup KafMemInit [@aMem.medi]' lookup KafMemInit;
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aLam.init]' lookup LamLamInit [@LamLamFoo @aLam.medi @aKaf.fina @aLam.fina @aLam.medi.LamAlfFina]' lookup LamLamInit;
     sub [@aLam.medi]' lookup LamLamMedi2 [@LamLamFoo @aLam.medi @aKaf.fina @aLam.fina @aLam.medi.LamAlfFina]' lookup LamLamMedi;
-} calt;
+} rlig;
 
 lookup HehMediTooth {
     sub @aHeh.medi by @aHeh.medi.PostTooth;
@@ -737,41 +737,41 @@ lookup HehMediTooth {
     sub @aSen.medi by @aSen.medi.PreYaa;
 } HehMediTooth;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aSad.init @aSad.medi @aSen.init @aSen.medi]' lookup HehMediTooth [@aHeh.medi]' lookup HehMediTooth;
-} calt;
+} rlig;
 
 # replace final alef followed by madda by a wider one
-feature calt {
+feature rlig {
     sub @Tashkil.above [alef-ar.fina]' [madda-ar maddalong-ar] by [alef-ar.fina.Wide];
-} calt;
+} rlig;
 
 # Wider alef wasl and alef with hamza above after faa
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub @aFaa.init [alefWasla-ar.fina alefHamzaabove-ar.fina]' by [alefWasla-ar.fina.Wide alefHamzaabove-ar.fina.Wide];
-} calt;
+} rlig;
 
 # If there are no marks, revert the above substitution
-feature calt {
+feature rlig {
     sub @aFaa.init [alefWasla-ar.fina.Wide alefHamzaabove-ar.fina.Wide]' by [alefWasla-ar.fina alefHamzaabove-ar.fina];
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aAyn.init @aHaa.init @aHaa.medi]' [@aAlf.fina @aDal.fina @aHeh.fina @aLam.fina @aLam.medi @aLam.medi.LamMemFina @aLam.medi.LamWawFina @aLam.medi.LamHeh @aLam.medi.LamYaaFina @aKaf.fina @aLam.medi.LamQafFina @aBaa.medi.BaaRaaFina @aLam.medi.LamAlfFina @aLam.medi.LamMemMedi @aLam.medi.LamLamMedi @aBaa.medi.BaaNonFina @aBaa.medi.High @aKaf.medi @aKaf.medi.KafMemAlf @aKaf.medi.KafMemMedi @aKaf.medi.KafMemFina @aKaf.medi.KafLam @aKaf.medi.KafHeh @aKaf.medi.KafBaaMedi @aKaf.medi.KafRaaFina @aKaf.medi.KafYaaFina @aKaf.medi.PreHeh] by [@aAyn.init.Finjani @aHaa.init.Finjani @aHaa.medi.Finjani];
-} calt;
+} rlig;
 
 lookup BaaYaaFina {
     sub @aBaa.medi by @aBaa.medi.BaaYaaFina;
     sub @aYaa.fina by @aYaa.fina.BaaYaaFina;
 } BaaYaaFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aBaa.medi]' lookup BaaYaaFina [@aYaa.fina]' lookup BaaYaaFina;
-} calt;
+} rlig;
 
 lookup ToothMem {
     sub @aMem.fina by @aMem.fina.PostTooth;
@@ -781,19 +781,19 @@ lookup ToothMem {
     sub @aSen.medi by @aSen.medi.PreYaa;
 } ToothMem;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aSen.init @aSen.medi @aSad.init @aSad.medi]' lookup ToothMem [@aMem.fina]' lookup ToothMem;
-} calt;
+} rlig;
 
 lookup KafLamYaa {
     sub @aLam.medi.KafLam by @aLam.medi.KafLamYaa;
 } KafLamYaa;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aLam.medi.KafLam]' lookup KafLamYaa [@aYaa.fina]' lookup LamYaaFina;
-} calt;
+} rlig;
 
 @LamKafInit = [@aLam.init @aLam.medi @aLam.medi.KafLam @aLam.medi.KafMemLam @aLam.medi.LamLamInit];
 lookup LamKafInit {
@@ -801,17 +801,17 @@ lookup LamKafInit {
     sub @aMem.medi.LamMemInit by @aMem.medi.LamMemInitTatweel;
 } LamKafInit;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@LamKafInit @aMem.medi.LamMemInit]' lookup LamKafInit [@aKaf.medi @aKaf.medi.KafHeh @aKaf.medi.KafMemFina @aKaf.medi.KafRaaFina @aKaf.medi.KafYaaFina @aKaf.medi.KafMemAlf @aKaf.medi.PreHeh @aGaf.fina];
-} calt;
+} rlig;
 
 #ifdef QURAN
 # alef lam meem raa (with madda)
 # we don't get plain aLam.init aMem.fina except in Quran font
-feature calt {
+feature rlig {
     sub @aLam.init' lookup LamKafInit [madda-ar maddalong-ar] @aMem.medi [madda-ar maddalong-ar];
-} calt;
+} rlig;
 
 #endif
 lookup HehYaaFina {
@@ -819,25 +819,25 @@ lookup HehYaaFina {
     sub @aHeh.medi.PostTooth by @aHeh.medi.PostToothHehYaa;
 } HehYaaFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aHeh.medi.PostTooth @aHeh.medi.BaaHehMedi]' lookup HehYaaFina [@aYaa.fina]' lookup BaaYaaFina;
-} calt;
+} rlig;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub @RaaWaw [alefHamzabelow-ar alefWavyhamzabelow-ar]' by @aAlf.isol.LowHamza;
-} calt;
+} rlig;
 
 # insert tatweel between ح and ك in فحك[ملير]
 lookup FaaHaaKaf {
     sub @aHaa.medi.FaaHaaInit by @aHaa.medi.FaaHaaInit kashida-ar.1;
 } FaaHaaKaf;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub @aFaa.init.FaaHaaInit @aHaa.medi.FaaHaaInit' lookup FaaHaaKaf [@aKaf.medi.KafHeh @aKaf.medi.KafMemFina @aKaf.medi.KafRaaFina @aKaf.medi.KafYaaFina @aKaf.medi.PreHeh];
-} calt;
+} rlig;
 
 # insert tatweel between ح and ت in [بمسصف]حت[رن]
 lookup AboveHaaTatweel {
@@ -845,27 +845,27 @@ lookup AboveHaaTatweel {
     sub @aHaa.medi.SadHaaInit by @aHaa.medi.SadHaaInit kashida-ar.05;
 } AboveHaaTatweel;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aHaa.medi.FaaHaaInit @aHaa.medi.SadHaaInit]' lookup AboveHaaTatweel [@aBaa.medi.BaaNonFina @aBaa.medi.BaaRaaFina];
-} calt;
+} rlig;
 
 # When an initial Baa is followed by Alef, the dot clashes with the Hamza below
 # Alef, Also the marks above the Baa clash with the Alef, so we replace the Baa
 # with a wider variant.
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub @aBaa.init' lookup BaaInitWide @aAlf.fina;
-} calt;
+} rlig;
 
 # If the Alef has no Hamza below, or there is no marks above the Baa, revert to
 # the original, non-wide form (notice there is no IgnoreMarks flag).
-feature calt {
+feature rlig {
     sub [@aBaa.init.Wide]' [alefMadda-ar.fina alefHamzaabove-ar.fina alef-ar.fina alefWasla-ar.fina alefWavyhamzaabove-ar.fina alefTwoabove-ar.fina alefThreeabove-ar.fina] by [@aBaa.init];
-} calt;
+} rlig;
 
 # XXX: use a different glyph for PDF text extraction
-feature calt {
+feature rlig {
     script arab;
     language ARA;
     lookupflag IgnoreMarks;
@@ -875,7 +875,7 @@ feature calt {
     sub teh-ar.init.High' [teh-ar.medi.High theh-ar.medi.High] by tteheh-ar.init.High;
     # Ditto for يبين and co.
     sub [beh-ar.medi.BaaBaaInit yeh-ar.medi.BaaBaaInit] [yeh-ar.medi.BaaNonFina yeh-ar.medi.BaaRaaFina]' by [e-ar.medi.BaaNonFina e-ar.medi.BaaRaaFina];
-} calt;
+} rlig;
 
 # Insert kashida between final ع and the kasra below the preceding letter
 # see https://github.com/aliftype/quran-data/issues/4
@@ -895,7 +895,7 @@ lookup KasraHaaFina {
     sub meembelow-ar by meembelow-ar kashida-ar.2;
 } KasraHaaFina;
 
-feature calt {
+feature rlig {
     sub @Tashkil.below' lookup KasraAynFina @aAyn.fina;
     sub @Tashkil.below' lookup KasraHaaFina @aHaa.fina;
-} calt;
+} rlig;

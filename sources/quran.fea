@@ -71,7 +71,7 @@ lookup LamAlefFina {
     sub alef-ar by alef-ar.fina.LamAlfFina;
 } LamAlefFina;
 
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     # hamza between lam and alef needs special treatment as it should not have
     # a connecting stroke to avoid breaking lam-alef.
@@ -79,7 +79,7 @@ feature calt {
     sub lam-ar.fina' lookup LamAlefFina hamza-ar' lookup FloatingHamza alef-ar' lookup LamAlefFina;
     # Medial hamza.
     sub @before' lookup Before hamza-ar' lookup MedialHamza @after' lookup After;
-} calt;
+} rlig;
 
 # This is the Unicode-sanctioned way of lam-alef with medial hamza.
 feature ccmp {
@@ -106,18 +106,18 @@ lookup hamzakasra {
     sub wawHamzaabove-ar by waw-ar hamzabelow-ar;
 } hamzakasra;
 
-feature calt {
+feature rlig {
     # lookupflag IgnoreMarks;
     sub [yehHamzaabove-ar yehHamzaabove-ar.init yehHamzaabove-ar.medi yehHamzaabove-ar.fina wawHamzaabove-ar wawHamzaabove-ar.fina]' lookup hamzakasra [kasra-ar kasratan-ar openkasratan-ar];
-} calt;
+} rlig;
 
 #endif
 # small waw after isolated/final heh is lower than usual, so we use an
 # alternate glyph for that
-feature calt {
+feature rlig {
     lookupflag IgnoreMarks;
     sub [@aHeh.isol @aHeh.fina] [wawSmall-ar]' by [wawSmall-ar.low];
-} calt;
+} rlig;
 
 # some glyphs need more room to accommodate madda mark, so we change the advance
 # width on fly.

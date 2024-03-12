@@ -21,7 +21,7 @@ lookup Sign4 {
 
 # first we replace any sequence of digits (up to two, three or four places)
 # following a subtending sign by smaller alternates
-feature calt {
+feature rlig {
     sub [endofayah-ar]                                            @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
     sub [endofayah-ar footnotemarker-ar]                          @Digits' lookup digit2small @Digits' lookup digit2small;
     sub [endofayah-ar footnotemarker-ar]                          @Digits' lookup digit2small;
@@ -30,7 +30,7 @@ feature calt {
     sub [number-ar year-ar pagenumber-ar samvat-ar]' lookup Sign3 @Digits' lookup digit2medi  @Digits' lookup digit2medi  @Digits' lookup digit2medi;
     sub [number-ar year-ar pagenumber-ar samvat-ar]               @Digits' lookup digit2medi  @Digits' lookup digit2medi;
     sub [number-ar year-ar pagenumber-ar samvat-ar]               @Digits' lookup digit2medi;
-} calt;
+} rlig;
 
 # Then we contextually kern the sign with the digits so that they get enclosed by it
 #
