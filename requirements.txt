@@ -38,7 +38,7 @@ glyphslib==6.6.6
     # via
     #   -r requirements.in
     #   glyphsets
-idna==3.6
+idna==3.7
     # via requests
 lxml==5.1.0
     # via fonttools
