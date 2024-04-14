@@ -1,0 +1,146 @@
+{
+glyphname = "kashida-ar.6";
+layers = (
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{557, 244}";
+},
+{
+name = HamzaAbove;
+position = "{557, 244}";
+},
+{
+name = HamzaBelow;
+position = "{557, -92.773}";
+},
+{
+name = MarkAbove;
+position = "{557, 801}";
+},
+{
+name = MarkBelow;
+position = "{557, -327}";
+},
+{
+name = NoonAbove;
+position = "{557, 244}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"1131 91 OFFCURVE",
+"1140 85 OFFCURVE",
+"1140 71 CURVE SMOOTH",
+"1140 67 OFFCURVE",
+"1140 64 OFFCURVE",
+"1139 59 CURVE SMOOTH",
+"1126 15 LINE SMOOTH",
+"1123 5 OFFCURVE",
+"1119 0 OFFCURVE",
+"1113 0 CURVE",
+"1020 -13 OFFCURVE",
+"835 -20 OFFCURVE",
+"557 -20 CURVE SMOOTH",
+"318 -20 OFFCURVE",
+"132 -13 OFFCURVE",
+"0 0 CURVE",
+"-6 0 OFFCURVE",
+"-10 5 OFFCURVE",
+"-13 15 CURVE SMOOTH",
+"-25 59 LINE SMOOTH",
+"-26 64 OFFCURVE",
+"-27 68 OFFCURVE",
+"-27 72 CURVE SMOOTH",
+"-26 87 OFFCURVE",
+"-18 92 OFFCURVE",
+"0 90 CURVE",
+"85 78 OFFCURVE",
+"271 71 OFFCURVE",
+"557 71 CURVE SMOOTH",
+"792 71 OFFCURVE",
+"977 77 OFFCURVE",
+"1113 90 CURVE"
+);
+}
+);
+width = 1113;
+},
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{557, 244}";
+},
+{
+name = HamzaAbove;
+position = "{557, 244}";
+},
+{
+name = HamzaBelow;
+position = "{557, -92.773}";
+},
+{
+name = MarkAbove;
+position = "{557, 801}";
+},
+{
+name = MarkBelow;
+position = "{557, -327}";
+},
+{
+name = NoonAbove;
+position = "{557, 244}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"1124 106 OFFCURVE",
+"1134 103 OFFCURVE",
+"1142 97 CURVE SMOOTH",
+"1150 91 OFFCURVE",
+"1155 84 OFFCURVE",
+"1155 75 CURVE SMOOTH",
+"1155 66 OFFCURVE",
+"1154 59 OFFCURVE",
+"1153 54 CURVE SMOOTH",
+"1140 11 LINE",
+"1136 -5 OFFCURVE",
+"1128 -14 OFFCURVE",
+"1115 -15 CURVE",
+"1021 -29 OFFCURVE",
+"845 -34 OFFCURVE",
+"586 -34 CURVE SMOOTH",
+"327 -34 OFFCURVE",
+"132 -28 OFFCURVE",
+"0 -15 CURVE SMOOTH",
+"-14 -14 OFFCURVE",
+"-23 -5 OFFCURVE",
+"-27 11 CURVE",
+"-40 55 LINE",
+"-45 76 OFFCURVE",
+"-43 89 OFFCURVE",
+"-32 96 CURVE SMOOTH",
+"-21 103 OFFCURVE",
+"-10 107 OFFCURVE",
+"2 105 CURVE SMOOTH",
+"86 93 OFFCURVE",
+"259 86 OFFCURVE",
+"519 86 CURVE SMOOTH",
+"779 86 OFFCURVE",
+"977 92 OFFCURVE",
+"1112 105 CURVE"
+);
+}
+);
+width = 1113;
+}
+);
+}

@@ -1,0 +1,46 @@
+{
+glyphname = "seenbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _MarkBelow;
+position = "{269, -93}";
+},
+{
+name = _SeenBelow;
+position = "{249, -195}";
+}
+);
+components = (
+{
+name = "seenabove-ar";
+transform = "{1, 0, 0, 1, 0, -1777}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 0;
+},
+{
+anchors = (
+{
+name = _MarkBelow;
+position = "{269, -93}";
+},
+{
+name = _SeenBelow;
+position = "{249, -195}";
+}
+);
+components = (
+{
+name = "seenabove-ar";
+transform = "{1, 0, 0, 1, 0, -1777}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 0;
+}
+);
+unicode = 06E3;
+}

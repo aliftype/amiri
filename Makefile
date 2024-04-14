@@ -29,7 +29,7 @@ all: ttf
 ttf: $(TTF)
 doc: $(HTML)
 
-$(BUILDDIR)/$(NAME).designspace: $(SRC)/$(NAME).glyphs
+$(BUILDDIR)/$(NAME).designspace: $(SRC)/$(NAME).glyphspackage
 	@echo "   UFO	$@"
 	@glyphs2ufo --minimal --generate-GDEF --output-dir=$(BUILDDIR) $<
 

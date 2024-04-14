@@ -1,0 +1,41 @@
+{
+glyphname = uniFDBB;
+layers = (
+{
+components = (
+{
+name = "meem-ar.fina";
+},
+{
+name = "meem-ar.medi.KafMemMedi";
+transform = "{1, 0, 0, 1, 522, 0}";
+},
+{
+name = "kaf-ar.medi.KafMemMedi";
+transform = "{1, 0, 0, 1, 739, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 1304;
+},
+{
+components = (
+{
+name = "meem-ar.fina";
+},
+{
+name = "meem-ar.medi.KafMemMedi";
+transform = "{1, 0, 0, 1, 522, 0}";
+},
+{
+name = "kaf-ar.medi.KafMemMedi";
+transform = "{1, 0, 0, 1, 739, 0}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 1304;
+}
+);
+unicode = FDBB;
+subCategory = "";
+}

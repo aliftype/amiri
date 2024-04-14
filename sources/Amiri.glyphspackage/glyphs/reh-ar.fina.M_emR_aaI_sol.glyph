@@ -1,0 +1,53 @@
+{
+glyphname = "reh-ar.fina.MemRaaIsol";
+layers = (
+{
+anchors = (
+{
+name = TaaAbove;
+position = "{355, 355}";
+},
+{
+name = TashkilAbove;
+position = "{254, 337}";
+},
+{
+name = TashkilBelow;
+position = "{210, -327}";
+}
+);
+components = (
+{
+name = aRaa.fina.alt2;
+transform = "{1, 0, 0, 1, -49, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 473;
+},
+{
+anchors = (
+{
+name = TaaAbove;
+position = "{355, 355}";
+},
+{
+name = TashkilAbove;
+position = "{254, 337}";
+},
+{
+name = TashkilBelow;
+position = "{210, -327}";
+}
+);
+components = (
+{
+name = aRaa.fina.alt2;
+transform = "{1, 0, 0, 1, -49, 0}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 473;
+}
+);
+}

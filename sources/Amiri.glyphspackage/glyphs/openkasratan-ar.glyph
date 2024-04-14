@@ -1,0 +1,70 @@
+{
+glyphname = "openkasratan-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilBelow;
+position = "{145, -434}";
+},
+{
+name = _MarkBelow;
+position = "{244, -278}";
+},
+{
+name = _TashkilBelow;
+position = "{327, -278}";
+},
+{
+name = _TashkilBelowDot;
+position = "{327, -278}";
+},
+{
+name = _TashkilBelowHamza;
+position = "{327, -278}";
+}
+);
+components = (
+{
+name = "openfathatan-ar";
+transform = "{1, 0, 0, 1, 0, -1473}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilTashkilBelow;
+position = "{145, -434}";
+},
+{
+name = _MarkBelow;
+position = "{244, -278}";
+},
+{
+name = _TashkilBelow;
+position = "{327, -278}";
+},
+{
+name = _TashkilBelowDot;
+position = "{327, -278}";
+},
+{
+name = _TashkilBelowHamza;
+position = "{327, -278}";
+}
+);
+components = (
+{
+name = "openfathatan-ar";
+transform = "{1, 0, 0, 1, 0, -1473}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 0;
+}
+);
+unicode = 08F2;
+}

@@ -1,0 +1,51 @@
+{
+glyphname = "highhamzaYeh-ar.init.BaaBaaYaa";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{158, 872}";
+},
+{
+name = TashkilBelow;
+position = "{72, -371}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaBaaYaa;
+},
+{
+name = "highhamza-ar";
+transform = "{1, 0, 0, 1, 102, 70}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 483;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{158, 872}";
+},
+{
+name = TashkilBelow;
+position = "{72, -371}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaBaaYaa;
+},
+{
+name = "highhamza-ar";
+transform = "{1, 0, 0, 1, 102, 70}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 483;
+}
+);
+}

@@ -1,0 +1,51 @@
+{
+glyphname = "teheh-ar.init.BaaSenInit";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{29, 908}";
+},
+{
+name = TashkilBelow;
+position = "{145, -327}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaSenInit;
+},
+{
+name = "fourdotsabove-ar";
+transform = "{1, 0, 0, 1, 59, 615}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 219;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{29, 908}";
+},
+{
+name = TashkilBelow;
+position = "{145, -327}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaSenInit;
+},
+{
+name = "fourdotsabove-ar";
+transform = "{1, 0, 0, 1, 59, 615}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 219;
+}
+);
+}

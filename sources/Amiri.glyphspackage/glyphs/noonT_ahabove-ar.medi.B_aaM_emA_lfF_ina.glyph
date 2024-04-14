@@ -1,0 +1,59 @@
+{
+glyphname = "noonTahabove-ar.medi.BaaMemAlfFina";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{54, 835}";
+},
+{
+name = TashkilBelow;
+position = "{187, -327}";
+}
+);
+components = (
+{
+name = aBaa.medi.BaaMemAlfFina;
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, 98, 322}";
+},
+{
+name = smalltaa.above;
+transform = "{1, 0, 0, 1, 74, 518}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 235;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{54, 835}";
+},
+{
+name = TashkilBelow;
+position = "{187, -327}";
+}
+);
+components = (
+{
+name = aBaa.medi.BaaMemAlfFina;
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, 98, 322}";
+},
+{
+name = smalltaa.above;
+transform = "{1, 0, 0, 1, 74, 518}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 235;
+}
+);
+}

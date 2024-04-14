@@ -1,0 +1,44 @@
+{
+glyphname = "alef-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{98, 757}";
+},
+{
+name = TashkilBelow;
+position = "{122, -93}";
+}
+);
+components = (
+{
+name = aAlf.isol;
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 217;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{98, 757}";
+},
+{
+name = TashkilBelow;
+position = "{122, -93}";
+}
+);
+components = (
+{
+name = aAlf.isol;
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 217;
+}
+);
+unicode = "0627,FE8D";
+}

@@ -1,0 +1,52 @@
+{
+glyphname = "behVinvertedbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{461, 801}";
+},
+{
+name = TashkilBelow;
+position = "{469, -396}";
+}
+);
+components = (
+{
+name = aBaa.isol;
+},
+{
+name = "vinvertedbelow-ar";
+transform = "{1, 0, 0, 1, 469, 142}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 926;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{461, 801}";
+},
+{
+name = TashkilBelow;
+position = "{469, -396}";
+}
+);
+components = (
+{
+name = aBaa.isol;
+},
+{
+name = "vinvertedbelow-ar";
+transform = "{1, 0, 0, 1, 469, 142}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 926;
+}
+);
+unicode = 0755;
+}

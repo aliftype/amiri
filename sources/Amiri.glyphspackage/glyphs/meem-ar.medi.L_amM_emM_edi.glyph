@@ -1,0 +1,51 @@
+{
+glyphname = "meem-ar.medi.LamMemMedi";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{103, 801}";
+},
+{
+name = TashkilBelow;
+position = "{107, -327}";
+},
+{
+name = entry;
+position = "{237, 83}";
+}
+);
+components = (
+{
+name = aMem.medi.LamMemMedi;
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 236;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{103, 801}";
+},
+{
+name = TashkilBelow;
+position = "{107, -327}";
+},
+{
+name = entry;
+position = "{237, 83}";
+}
+);
+components = (
+{
+name = aMem.medi.LamMemMedi;
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 236;
+}
+);
+}

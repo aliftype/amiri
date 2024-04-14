@@ -1,0 +1,51 @@
+{
+glyphname = "yehbarreeTwoabove-ar.fina.PostAyn";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{122, 801}";
+},
+{
+name = TashkilBelow;
+position = "{171, -327}";
+}
+);
+components = (
+{
+name = aYaaBari.fina.PostAyn;
+},
+{
+name = "twoabove-ar";
+transform = "{1, 0, 0, 1, 66, 207}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 127;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{122, 801}";
+},
+{
+name = TashkilBelow;
+position = "{171, -327}";
+}
+);
+components = (
+{
+name = aYaaBari.fina.PostAyn;
+},
+{
+name = "twoabove-ar";
+transform = "{1, 0, 0, 1, 66, 207}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 127;
+}
+);
+}

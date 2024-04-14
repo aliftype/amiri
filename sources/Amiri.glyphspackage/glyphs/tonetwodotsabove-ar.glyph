@@ -1,0 +1,69 @@
+{
+glyphname = "tonetwodotsabove-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{184, 990}";
+},
+{
+name = _MarkAbove;
+position = "{234, 845}";
+},
+{
+name = _TashkilAbove;
+position = "{234, 845}";
+},
+{
+name = _TashkilAboveDot;
+position = "{234, 845}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{234, 845}";
+}
+);
+components = (
+{
+name = "toneonedotabove-ar";
+transform = "{1, 0, 0, 1, 0, -10}";
+},
+{
+name = "toneonedotabove-ar";
+transform = "{1, 0, 0, 1, 120, 57}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 0;
+},
+{
+anchors = (
+{
+name = _MarkAbove;
+position = "{234, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{234, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{234, 801}";
+}
+);
+components = (
+{
+name = "toneonedotabove-ar";
+transform = "{1, 0, 0, 1, 120, 67}";
+},
+{
+name = "toneonedotabove-ar";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 0;
+}
+);
+unicode = 08EB;
+}

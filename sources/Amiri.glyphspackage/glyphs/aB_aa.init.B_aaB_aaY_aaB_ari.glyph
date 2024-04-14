@@ -1,0 +1,131 @@
+{
+glyphname = aBaa.init.BaaBaaYaaBari;
+layers = (
+{
+anchors = (
+{
+name = DigitAbove;
+position = "{117, 391}";
+},
+{
+name = DigitBelow;
+position = "{96, -430}";
+},
+{
+name = DotAbove;
+position = "{137, 342}";
+},
+{
+name = DotBelow;
+position = "{96, -381}";
+},
+{
+name = HamzaAbove;
+position = "{137, 342}";
+},
+{
+name = HamzaBelow;
+position = "{96, -381}";
+},
+{
+name = RingBelow;
+position = "{91, 54}";
+},
+{
+name = TaaAbove;
+position = "{136, 361}";
+},
+{
+name = TashkilAbove;
+position = "{234, 801}";
+},
+{
+name = TashkilBelow;
+position = "{233, -493}";
+},
+{
+name = TwoDotsAbove;
+position = "{73, 342}";
+},
+{
+name = TwoDotsBelow;
+position = "{96, -381}";
+},
+{
+name = VAbove;
+position = "{137, 342}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaBaaHeh;
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 642;
+},
+{
+anchors = (
+{
+name = DigitAbove;
+position = "{117, 391}";
+},
+{
+name = DigitBelow;
+position = "{96, -430}";
+},
+{
+name = DotAbove;
+position = "{137, 342}";
+},
+{
+name = DotBelow;
+position = "{96, -381}";
+},
+{
+name = HamzaAbove;
+position = "{137, 342}";
+},
+{
+name = HamzaBelow;
+position = "{96, -381}";
+},
+{
+name = RingBelow;
+position = "{91, 54}";
+},
+{
+name = TaaAbove;
+position = "{136, 361}";
+},
+{
+name = TashkilAbove;
+position = "{234, 801}";
+},
+{
+name = TashkilBelow;
+position = "{233, -493}";
+},
+{
+name = TwoDotsAbove;
+position = "{73, 342}";
+},
+{
+name = TwoDotsBelow;
+position = "{96, -381}";
+},
+{
+name = VAbove;
+position = "{137, 342}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaBaaHeh;
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 642;
+}
+);
+}

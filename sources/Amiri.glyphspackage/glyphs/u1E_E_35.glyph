@@ -1,0 +1,28 @@
+{
+glyphname = u1EE35;
+layers = (
+{
+components = (
+{
+name = "twodotshorizontalabove-ar";
+transform = "{1, 0, 0, 1, 192, 322}";
+},
+{
+name = "kashida-ar.1";
+transform = "{1, 0, 0, 1, 86, 1}";
+},
+{
+name = aBaa.init;
+transform = "{1, 0, 0, 1, 244, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 433;
+},
+{
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 600;
+}
+);
+unicode = 1EE35;
+}

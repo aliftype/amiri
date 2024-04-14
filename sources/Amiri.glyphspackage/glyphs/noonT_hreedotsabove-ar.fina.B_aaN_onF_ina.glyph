@@ -1,0 +1,51 @@
+{
+glyphname = "noonThreedotsabove-ar.fina.BaaNonFina";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{257, 801}";
+},
+{
+name = TashkilBelow;
+position = "{239, -327}";
+}
+);
+components = (
+{
+name = aNon.fina.BaaNonFina;
+},
+{
+name = "threedotsupabove-ar";
+transform = "{1, 0, 0, 1, 311, 349}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 542;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{257, 801}";
+},
+{
+name = TashkilBelow;
+position = "{239, -327}";
+}
+);
+components = (
+{
+name = aNon.fina.BaaNonFina;
+},
+{
+name = "threedotsupabove-ar";
+transform = "{1, 0, 0, 1, 311, 349}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 542;
+}
+);
+}

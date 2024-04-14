@@ -1,0 +1,120 @@
+{
+glyphname = "dammaDot-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{195, 1074}";
+},
+{
+name = _MarkAbove;
+position = "{278, 845}";
+},
+{
+name = _TashkilAbove;
+position = "{278, 845}";
+},
+{
+name = _TashkilAboveDot;
+position = "{278, 845}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{278, 845}";
+}
+);
+components = (
+{
+name = "damma-ar";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"110 1076 OFFCURVE",
+"110 1077 OFFCURVE",
+"111 1077 CURVE SMOOTH",
+"122 1077 OFFCURVE",
+"134 1069 OFFCURVE",
+"148 1055 CURVE SMOOTH",
+"150 1053 OFFCURVE",
+"150 1052 OFFCURVE",
+"149 1051 CURVE SMOOTH",
+"125 1013 LINE SMOOTH",
+"124 1011 OFFCURVE",
+"123 1012 OFFCURVE",
+"121 1014 CURVE SMOOTH",
+"119 1016 OFFCURVE",
+"112 1019 OFFCURVE",
+"101 1026 CURVE SMOOTH",
+"90 1033 OFFCURVE",
+"84 1036 OFFCURVE",
+"84 1037 CURVE SMOOTH",
+"84 1039 LINE SMOOTH",
+"109 1075 LINE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{195, 1074}";
+},
+{
+name = _MarkAbove;
+position = "{278, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{278, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{278, 801}";
+}
+);
+components = (
+{
+name = "damma-ar";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"104 1082 OFFCURVE",
+"109 1083 OFFCURVE",
+"116 1083 CURVE SMOOTH",
+"123 1083 OFFCURVE",
+"136 1076 OFFCURVE",
+"153 1061 CURVE",
+"157 1056 OFFCURVE",
+"157 1052 OFFCURVE",
+"155 1047 CURVE",
+"131 1009 LINE",
+"127 1004 OFFCURVE",
+"124 1003 OFFCURVE",
+"119 1006 CURVE SMOOTH",
+"108 1013 OFFCURVE",
+"98 1019 OFFCURVE",
+"89 1023 CURVE",
+"81 1028 OFFCURVE",
+"77 1033 OFFCURVE",
+"76 1037 CURVE",
+"77 1042 LINE",
+"102 1079 LINE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 08FE;
+}

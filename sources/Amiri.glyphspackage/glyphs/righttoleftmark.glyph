@@ -1,0 +1,34 @@
+{
+glyphname = righttoleftmark;
+layers = (
+{
+components = (
+{
+name = _arrowhead2;
+transform = "{-1, 0, 0, -1, 0, 1084}";
+},
+{
+name = zerowidthnonjoiner;
+transform = "{1, 0, 0, 0.9, 0, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 0;
+},
+{
+components = (
+{
+name = zerowidthnonjoiner;
+transform = "{1, 0, 0, 0.9, 0, 0}";
+},
+{
+name = _arrowhead2;
+transform = "{-1, 0, 0, -1, 0, 1084}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 0;
+}
+);
+unicode = 200F;
+}

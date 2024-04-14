@@ -1,0 +1,115 @@
+{
+glyphname = "twodotsverticalabove-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilAboveDot;
+position = "{-20, 288}";
+},
+{
+name = _DotAbove;
+position = "{0, 68}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"-34 223 OFFCURVE",
+"-31 223 OFFCURVE",
+"-27 222 CURVE SMOOTH",
+"-1 213 OFFCURVE",
+"22 199 OFFCURVE",
+"43 180 CURVE SMOOTH",
+"46 177 OFFCURVE",
+"47 174 OFFCURVE",
+"45 171 CURVE SMOOTH",
+"13 121 LINE",
+"31 113 OFFCURVE",
+"48 101 OFFCURVE",
+"63 87 CURVE SMOOTH",
+"66 84 OFFCURVE",
+"66 82 OFFCURVE",
+"64 79 CURVE SMOOTH",
+"17 3 LINE SMOOTH",
+"15 0 OFFCURVE",
+"12 0 OFFCURVE",
+"7 4 CURVE SMOOTH",
+"2 8 OFFCURVE",
+"-21 23 OFFCURVE",
+"-63 48 CURVE SMOOTH",
+"-66 50 OFFCURVE",
+"-67 52 OFFCURVE",
+"-65 54 CURVE SMOOTH",
+"-29 108 LINE",
+"-41 115 OFFCURVE",
+"-59 126 OFFCURVE",
+"-83 141 CURVE SMOOTH",
+"-86 143 OFFCURVE",
+"-86 145 OFFCURVE",
+"-84 147 CURVE SMOOTH",
+"-36 220 LINE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilAboveDot;
+position = "{-20, 288}";
+},
+{
+name = _DotAbove;
+position = "{0, 68}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"-38 230 OFFCURVE",
+"-32 231 OFFCURVE",
+"-25 229 CURVE",
+"2 219 OFFCURVE",
+"27 205 OFFCURVE",
+"48 186 CURVE",
+"54 180 OFFCURVE",
+"55 174 OFFCURVE",
+"51 167 CURVE",
+"23 123 LINE",
+"39 115 OFFCURVE",
+"54 105 OFFCURVE",
+"68 93 CURVE",
+"74 87 OFFCURVE",
+"75 82 OFFCURVE",
+"71 75 CURVE",
+"23 -1 LINE",
+"18 -8 OFFCURVE",
+"12 -8 OFFCURVE",
+"5 -3 CURVE SMOOTH",
+"-2 2 OFFCURVE",
+"-26 17 OFFCURVE",
+"-67 42 CURVE SMOOTH",
+"-74 46 OFFCURVE",
+"-76 52 OFFCURVE",
+"-71 59 CURVE SMOOTH",
+"-39 106 LINE",
+"-51 113 OFFCURVE",
+"-67 123 OFFCURVE",
+"-87 135 CURVE SMOOTH",
+"-94 139 OFFCURVE",
+"-95 144 OFFCURVE",
+"-90 151 CURVE SMOOTH",
+"-42 224 LINE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+}

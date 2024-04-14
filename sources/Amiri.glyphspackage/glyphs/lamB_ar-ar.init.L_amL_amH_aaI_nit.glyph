@@ -1,0 +1,51 @@
+{
+glyphname = "lamBar-ar.init.LamLamHaaInit";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{107, 801}";
+},
+{
+name = TashkilBelow;
+position = "{98, -327}";
+}
+);
+components = (
+{
+name = aLam.init.LamLamHaaInit;
+},
+{
+name = "stroke-ar";
+transform = "{1, 0, 0, 1, 27, 548}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 202;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{107, 801}";
+},
+{
+name = TashkilBelow;
+position = "{98, -327}";
+}
+);
+components = (
+{
+name = aLam.init.LamLamHaaInit;
+},
+{
+name = "stroke-ar";
+transform = "{1, 0, 0, 1, 27, 548}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 202;
+}
+);
+}

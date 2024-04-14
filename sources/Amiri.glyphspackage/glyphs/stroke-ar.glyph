@@ -1,0 +1,59 @@
+{
+glyphname = "stroke-ar";
+layers = (
+{
+anchors = (
+{
+name = _Stroke;
+position = "{0, 12}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"-111 0 LINE SMOOTH",
+"-118 0 OFFCURVE",
+"-120 3 OFFCURVE",
+"-116 10 CURVE SMOOTH",
+"-103 32 LINE SMOOTH",
+"-99 38 OFFCURVE",
+"-93 42 OFFCURVE",
+"-83 42 CURVE SMOOTH",
+"111 42 LINE SMOOTH",
+"118 42 OFFCURVE",
+"120 39 OFFCURVE",
+"116 32 CURVE SMOOTH",
+"103 9 LINE SMOOTH",
+"99 3 OFFCURVE",
+"93 0 OFFCURVE",
+"83 0 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _Stroke;
+position = "{0, 21}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"144 76 LINE",
+"107 -15 LINE",
+"-144 -15 LINE",
+"-107 76 LINE"
+);
+}
+);
+width = 0;
+}
+);
+}

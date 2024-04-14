@@ -1,0 +1,59 @@
+{
+glyphname = "tehThreedotsupbelow-ar.init.WideLD";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{115, 801}";
+},
+{
+name = TashkilBelow;
+position = "{162, -582}";
+}
+);
+components = (
+{
+name = aBaa.init.Wide;
+},
+{
+name = "twodotshorizontalabove-ar";
+transform = "{1, 0, 0, 1, 137, 432}";
+},
+{
+name = "threedotsupbelow-ar.l";
+transform = "{1, 0, 0, 1, 162, -435}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 285;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{115, 801}";
+},
+{
+name = TashkilBelow;
+position = "{162, -582}";
+}
+);
+components = (
+{
+name = aBaa.init.Wide;
+},
+{
+name = "twodotshorizontalabove-ar";
+transform = "{1, 0, 0, 1, 137, 432}";
+},
+{
+name = "threedotsupbelow-ar.l";
+transform = "{1, 0, 0, 1, 162, -435}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 285;
+}
+);
+}

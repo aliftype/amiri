@@ -1,0 +1,101 @@
+{
+glyphname = "kasra-ar.small2";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilBelow;
+position = "{-83, -269}";
+},
+{
+name = _TashkilBelow;
+position = "{0, -271}";
+},
+{
+name = _TashkilTashkilBelow;
+position = "{0, -271}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"127 -231 OFFCURVE",
+"132 -232 OFFCURVE",
+"131 -241 CURVE SMOOTH",
+"126 -284 LINE SMOOTH",
+"125 -290 OFFCURVE",
+"123 -295 OFFCURVE",
+"117 -298 CURVE SMOOTH",
+"-93 -395 LINE SMOOTH",
+"-103 -400 OFFCURVE",
+"-107 -396 OFFCURVE",
+"-108 -386 CURVE SMOOTH",
+"-111 -356 LINE SMOOTH",
+"-111 -351 OFFCURVE",
+"-108 -347 OFFCURVE",
+"-101 -344 CURVE SMOOTH",
+"31 -278 OFFCURVE",
+"103 -242 OFFCURVE",
+"114 -237 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilTashkilBelow;
+position = "{-83, -269}";
+},
+{
+name = _TashkilBelow;
+position = "{0, -271}";
+},
+{
+name = _TashkilTashkilBelow;
+position = "{0, -271}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"119 -229 OFFCURVE",
+"124 -228 OFFCURVE",
+"128 -229 CURVE",
+"134 -230 OFFCURVE",
+"137 -235 OFFCURVE",
+"136 -242 CURVE SMOOTH",
+"131 -285 LINE SMOOTH",
+"130 -293 OFFCURVE",
+"126 -299 OFFCURVE",
+"119 -303 CURVE",
+"119 -303 LINE",
+"-91 -399 LINE SMOOTH",
+"-94 -400 OFFCURVE",
+"-97 -401 OFFCURVE",
+"-99 -401 CURVE SMOOTH",
+"-107 -402 OFFCURVE",
+"-112 -398 OFFCURVE",
+"-113 -389 CURVE SMOOTH",
+"-113 -388 OFFCURVE",
+"-113 -387 OFFCURVE",
+"-113 -386 CURVE SMOOTH",
+"-116 -357 LINE",
+"-116 -350 OFFCURVE",
+"-111 -344 OFFCURVE",
+"-103 -340 CURVE SMOOTH",
+"29 -274 OFFCURVE",
+"101 -237 OFFCURVE",
+"112 -232 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+}

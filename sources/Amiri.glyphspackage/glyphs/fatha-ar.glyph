@@ -1,0 +1,102 @@
+{
+glyphname = "fatha-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{145, 955}";
+},
+{
+name = _MarkAbove;
+position = "{268, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{271, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{271, 801}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"371 1031 OFFCURVE",
+"377 1028 OFFCURVE",
+"372 1011 CURVE SMOOTH",
+"362 979 LINE SMOOTH",
+"360 971 OFFCURVE",
+"352 962 OFFCURVE",
+"340 955 CURVE SMOOTH",
+"146 843 LINE SMOOTH",
+"134 836 OFFCURVE",
+"128 839 OFFCURVE",
+"128 852 CURVE SMOOTH",
+"128 869 LINE SMOOTH",
+"128 876 OFFCURVE",
+"135 883 OFFCURVE",
+"146 892 CURVE SMOOTH",
+"354 1021 LINE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{145, 955}";
+},
+{
+name = _MarkAbove;
+position = "{268, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{271, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{271, 801}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"359 1034 OFFCURVE",
+"367 1035 OFFCURVE",
+"374 1033 CURVE SMOOTH",
+"381 1031 OFFCURVE",
+"382 1023 OFFCURVE",
+"378 1009 CURVE SMOOTH",
+"369 977 LINE SMOOTH",
+"366 967 OFFCURVE",
+"357 957 OFFCURVE",
+"344 949 CURVE",
+"149 836 LINE SMOOTH",
+"144 833 OFFCURVE",
+"140 832 OFFCURVE",
+"136 832 CURVE",
+"127 833 OFFCURVE",
+"122 840 OFFCURVE",
+"121 852 CURVE",
+"121 869 LINE",
+"122 879 OFFCURVE",
+"129 889 OFFCURVE",
+"142 898 CURVE",
+"350 1028 LINE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 064E;
+}

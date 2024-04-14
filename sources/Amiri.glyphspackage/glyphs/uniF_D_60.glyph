@@ -1,0 +1,41 @@
+{
+glyphname = uniFD60;
+layers = (
+{
+components = (
+{
+name = "hah-ar.medi";
+},
+{
+name = "meem-ar.medi.SenMemInit";
+transform = "{1, 0, 0, 1, 610, 0}";
+},
+{
+name = "seen-ar.init.SenMemInit";
+transform = "{1, 0, 0, 1, 784, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 1310;
+},
+{
+components = (
+{
+name = "hah-ar.medi";
+},
+{
+name = "meem-ar.medi.SenMemInit";
+transform = "{1, 0, 0, 1, 610, 0}";
+},
+{
+name = "seen-ar.init.SenMemInit";
+transform = "{1, 0, 0, 1, 784, 0}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 1310;
+}
+);
+unicode = FD60;
+subCategory = "";
+}

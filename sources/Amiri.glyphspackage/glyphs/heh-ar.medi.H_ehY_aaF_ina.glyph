@@ -1,0 +1,51 @@
+{
+glyphname = "heh-ar.medi.HehYaaFina";
+layers = (
+{
+anchors = (
+{
+name = HamzaAbove;
+position = "{483, 430}";
+},
+{
+name = TashkilAbove;
+position = "{376, 801}";
+},
+{
+name = TashkilBelow;
+position = "{370, -327}";
+}
+);
+components = (
+{
+name = aHeh.medi.HehYaaFina;
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 438;
+},
+{
+anchors = (
+{
+name = HamzaAbove;
+position = "{483, 430}";
+},
+{
+name = TashkilAbove;
+position = "{376, 801}";
+},
+{
+name = TashkilBelow;
+position = "{370, -327}";
+}
+);
+components = (
+{
+name = aHeh.medi.HehYaaFina;
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 438;
+}
+);
+}

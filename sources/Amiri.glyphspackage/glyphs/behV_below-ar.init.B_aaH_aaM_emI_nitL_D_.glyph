@@ -1,0 +1,51 @@
+{
+glyphname = "behVbelow-ar.init.BaaHaaMemInitLD";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{178, 801}";
+},
+{
+name = TashkilBelow;
+position = "{194, -596}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaHaaMemInit;
+},
+{
+name = "vbelow-ar.low";
+transform = "{1, 0, 0, 1, 194, -29}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 354;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{178, 801}";
+},
+{
+name = TashkilBelow;
+position = "{194, -596}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaHaaMemInit;
+},
+{
+name = "vbelow-ar.low";
+transform = "{1, 0, 0, 1, 194, -29}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 354;
+}
+);
+}

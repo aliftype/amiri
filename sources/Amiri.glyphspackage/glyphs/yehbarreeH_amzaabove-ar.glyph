@@ -1,0 +1,32 @@
+{
+glyphname = "yehbarreeHamzaabove-ar";
+layers = (
+{
+components = (
+{
+name = "yehHamzaabove-ar.init.YaaBari";
+transform = "{1, 0, 0, 1, 369, 0}";
+},
+{
+name = aYaaBari.fina.PostAscender;
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 1159;
+},
+{
+components = (
+{
+name = "yehHamzaabove-ar.init.YaaBari";
+transform = "{1, 0, 0, 1, 369, 0}";
+},
+{
+name = aYaaBari.fina.PostAscender;
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 1159;
+}
+);
+unicode = "06D3,FBB0";
+}

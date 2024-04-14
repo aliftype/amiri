@@ -1,0 +1,59 @@
+{
+glyphname = "dad-ar.init.AboveHaa";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{453, 801}";
+},
+{
+name = TashkilBelow;
+position = "{586, -137}";
+},
+{
+name = exit;
+position = "{0, 207}";
+}
+);
+components = (
+{
+name = aSad.init.AboveHaa;
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, 453, 620}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 849;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{453, 801}";
+},
+{
+name = TashkilBelow;
+position = "{586, -137}";
+},
+{
+name = exit;
+position = "{0, 207}";
+}
+);
+components = (
+{
+name = aSad.init.AboveHaa;
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, 453, 620}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 849;
+}
+);
+}

@@ -1,0 +1,59 @@
+{
+glyphname = "nyeh-ar.medi.SadHaaInit";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{88, 801}";
+},
+{
+name = TashkilBelow;
+position = "{166, -327}";
+},
+{
+name = entry;
+position = "{55, 235}";
+}
+);
+components = (
+{
+name = aHaa.medi.SadHaaInit;
+},
+{
+name = "twodotshorizontalbelow-ar";
+transform = "{1, 0, 0, 1, 234, -195}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 55;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{88, 801}";
+},
+{
+name = TashkilBelow;
+position = "{166, -327}";
+},
+{
+name = entry;
+position = "{55, 235}";
+}
+);
+components = (
+{
+name = aHaa.medi.SadHaaInit;
+},
+{
+name = "twodotshorizontalbelow-ar";
+transform = "{1, 0, 0, 1, 234, -195}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 55;
+}
+);
+}

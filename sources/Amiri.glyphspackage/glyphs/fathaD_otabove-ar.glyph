@@ -1,0 +1,114 @@
+{
+glyphname = "fathaDotabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _MarkAbove;
+position = "{271, 845}";
+},
+{
+name = _TashkilAbove;
+position = "{271, 845}";
+},
+{
+name = _TashkilAboveDot;
+position = "{271, 845}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{271, 845}";
+}
+);
+components = (
+{
+name = "fatha-ar";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"202 1086 OFFCURVE",
+"203 1086 OFFCURVE",
+"204 1086 CURVE SMOOTH",
+"213 1086 OFFCURVE",
+"225 1079 OFFCURVE",
+"241 1065 CURVE SMOOTH",
+"242 1064 OFFCURVE",
+"243 1063 OFFCURVE",
+"242 1061 CURVE SMOOTH",
+"218 1023 LINE SMOOTH",
+"217 1021 OFFCURVE",
+"215 1021 OFFCURVE",
+"213 1023 CURVE SMOOTH",
+"211 1025 OFFCURVE",
+"204 1029 OFFCURVE",
+"193 1036 CURVE SMOOTH",
+"182 1043 OFFCURVE",
+"177 1046 OFFCURVE",
+"177 1047 CURVE SMOOTH",
+"177 1048 OFFCURVE",
+"177 1048 OFFCURVE",
+"177 1048 CURVE SMOOTH",
+"202 1085 LINE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _MarkAbove;
+position = "{268, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{271, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{271, 801}";
+}
+);
+components = (
+{
+name = "fatha-ar";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"196 1091 OFFCURVE",
+"201 1093 OFFCURVE",
+"208 1093 CURVE SMOOTH",
+"215 1093 OFFCURVE",
+"228 1085 OFFCURVE",
+"245 1070 CURVE",
+"249 1065 OFFCURVE",
+"250 1062 OFFCURVE",
+"248 1057 CURVE",
+"224 1019 LINE",
+"220 1014 OFFCURVE",
+"216 1013 OFFCURVE",
+"211 1016 CURVE SMOOTH",
+"200 1023 OFFCURVE",
+"191 1029 OFFCURVE",
+"182 1033 CURVE",
+"174 1038 OFFCURVE",
+"169 1043 OFFCURVE",
+"168 1047 CURVE",
+"169 1052 LINE",
+"194 1088 LINE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 08F5;
+}

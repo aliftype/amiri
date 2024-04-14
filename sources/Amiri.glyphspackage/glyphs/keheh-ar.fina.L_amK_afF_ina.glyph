@@ -1,0 +1,59 @@
+{
+glyphname = "keheh-ar.fina.LamKafFina";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{366, 801}";
+},
+{
+name = TashkilBelow;
+position = "{366, -327}";
+}
+);
+components = (
+{
+name = aKaf.fina.LamKafFina;
+},
+{
+name = dash.kaf;
+transform = "{1, 0, 0, 1, 1124, 693}";
+},
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 363, 285}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 813;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{366, 801}";
+},
+{
+name = TashkilBelow;
+position = "{366, -327}";
+}
+);
+components = (
+{
+name = aKaf.fina.LamKafFina;
+},
+{
+name = dash.kaf;
+transform = "{1, 0, 0, 1, 1124, 693}";
+},
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 363, 285}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 813;
+}
+);
+}

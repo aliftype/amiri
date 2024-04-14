@@ -1,0 +1,24 @@
+{
+glyphname = uniFEDF;
+layers = (
+{
+components = (
+{
+name = "lam-ar.init";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 175;
+},
+{
+components = (
+{
+name = "lam-ar.init";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 175;
+}
+);
+unicode = FEDF;
+}

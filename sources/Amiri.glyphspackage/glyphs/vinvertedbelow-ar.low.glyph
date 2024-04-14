@@ -1,0 +1,45 @@
+{
+glyphname = "vinvertedbelow-ar.low";
+layers = (
+{
+anchors = (
+{
+name = TashkilBelowDot;
+position = "{0, -566}";
+},
+{
+name = _DotBelowAlt;
+position = "{20, -337}";
+}
+);
+components = (
+{
+name = "vinvertedabove-ar";
+transform = "{1, 0, 0, 1, 0, -977}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilBelowDot;
+position = "{0, -566}";
+},
+{
+name = _DotBelowAlt;
+position = "{20, -337}";
+}
+);
+components = (
+{
+name = "vinvertedabove-ar";
+transform = "{1, 0, 0, 1, 0, -977}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 0;
+}
+);
+}

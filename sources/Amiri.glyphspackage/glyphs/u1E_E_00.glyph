@@ -1,0 +1,36 @@
+{
+glyphname = u1EE00;
+layers = (
+{
+components = (
+{
+name = "alef-ar";
+transform = "{1, 0, 0, 1, -6, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"151 537 LINE SMOOTH",
+"155 525 OFFCURVE",
+"154 517 OFFCURVE",
+"150 515 CURVE SMOOTH",
+"146 513 OFFCURVE",
+"140 517 OFFCURVE",
+"132 527 CURVE SMOOTH",
+"78 597 LINE",
+"107 683 LINE"
+);
+}
+);
+width = 207;
+},
+{
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 600;
+}
+);
+unicode = 1EE00;
+}

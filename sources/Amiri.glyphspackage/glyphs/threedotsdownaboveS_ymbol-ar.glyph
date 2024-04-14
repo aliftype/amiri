@@ -1,0 +1,26 @@
+{
+glyphname = "threedotsdownaboveSymbol-ar";
+layers = (
+{
+components = (
+{
+name = "threedotsdownabove-ar";
+transform = "{1, 0, 0, 1, 137, 732}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 274;
+},
+{
+components = (
+{
+name = "threedotsdownabove-ar";
+transform = "{1, 0, 0, 1, 137, 732}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 274;
+}
+);
+unicode = FBB8;
+}

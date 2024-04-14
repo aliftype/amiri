@@ -1,0 +1,59 @@
+{
+glyphname = "alefHamzabelow-ar.fina.MemAlfFina";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{49, 801}";
+},
+{
+name = TashkilBelow;
+position = "{132, -491}";
+},
+{
+name = entry;
+position = "{194, -102}";
+}
+);
+components = (
+{
+name = aAlf.fina.MemAlfFina;
+},
+{
+name = "hamzabelow-ar";
+transform = "{1, 0, 0, 1, 132, 56}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 194;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{49, 801}";
+},
+{
+name = TashkilBelow;
+position = "{132, -491}";
+},
+{
+name = entry;
+position = "{194, -102}";
+}
+);
+components = (
+{
+name = aAlf.fina.MemAlfFina;
+},
+{
+name = "hamzabelow-ar";
+transform = "{1, 0, 0, 1, 132, 56}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 194;
+}
+);
+}

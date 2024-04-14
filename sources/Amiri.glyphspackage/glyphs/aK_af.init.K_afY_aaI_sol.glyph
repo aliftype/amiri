@@ -1,0 +1,215 @@
+{
+glyphname = aKaf.init.KafYaaIsol;
+layers = (
+{
+anchors = (
+{
+name = Dash;
+position = "{146, 889}";
+},
+{
+name = DotAbove;
+position = "{-118, 792}";
+},
+{
+name = DotBelow;
+position = "{195, -146}";
+},
+{
+name = RingBelow;
+position = "{137, 767}";
+},
+{
+name = TashkilAbove;
+position = "{49, 854}";
+},
+{
+name = TashkilBelow;
+position = "{146, -327}";
+},
+{
+name = TwoDotsAbove;
+position = "{-172, 792}";
+},
+{
+name = TwoDotsBelow;
+position = "{195, -146}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"438 942 OFFCURVE",
+"444 937 OFFCURVE",
+"442 922 CURVE SMOOTH",
+"434 853 LINE SMOOTH",
+"433 846 OFFCURVE",
+"429 841 OFFCURVE",
+"420 838 CURVE SMOOTH",
+"185 752 OFFCURVE",
+"6 671 OFFCURVE",
+"-115 595 CURVE SMOOTH",
+"-121 591 OFFCURVE",
+"-120 587 OFFCURVE",
+"-113 582 CURVE SMOOTH",
+"-54 539 OFFCURVE",
+"-11 504 OFFCURVE",
+"16 479 CURVE SMOOTH",
+"102 399 OFFCURVE",
+"139 313 OFFCURVE",
+"129 219 CURVE SMOOTH",
+"126 194 OFFCURVE",
+"116 172 OFFCURVE",
+"97 155 CURVE SMOOTH",
+"60 121 OFFCURVE",
+"13 97 OFFCURVE",
+"-44 83 CURVE SMOOTH",
+"-46 82 OFFCURVE",
+"-47 84 OFFCURVE",
+"-48 86 CURVE SMOOTH",
+"-48 88 OFFCURVE",
+"-49 89 OFFCURVE",
+"-48 91 CURVE SMOOTH",
+"-24 145 LINE",
+"4 155 OFFCURVE",
+"45 174 OFFCURVE",
+"99 201 CURVE SMOOTH",
+"101 202 OFFCURVE",
+"102 204 OFFCURVE",
+"102 207 CURVE SMOOTH",
+"96 291 OFFCURVE",
+"38 369 OFFCURVE",
+"-72 439 CURVE SMOOTH",
+"-76 441 OFFCURVE",
+"-78 441 OFFCURVE",
+"-79 438 CURVE SMOOTH",
+"-97 400 LINE SMOOTH",
+"-98 397 OFFCURVE",
+"-101 397 OFFCURVE",
+"-104 399 CURVE SMOOTH",
+"-128 415 OFFCURVE",
+"-145 428 OFFCURVE",
+"-157 439 CURVE SMOOTH",
+"-169 450 OFFCURVE",
+"-178 462 OFFCURVE",
+"-183 475 CURVE SMOOTH",
+"-192 498 OFFCURVE",
+"-190 529 OFFCURVE",
+"-178 569 CURVE SMOOTH",
+"-166 609 OFFCURVE",
+"-152 635 OFFCURVE",
+"-138 647 CURVE SMOOTH",
+"-39 731 OFFCURVE",
+"148 828 OFFCURVE",
+"425 937 CURVE SMOOTH"
+);
+}
+);
+width = 505;
+},
+{
+anchors = (
+{
+name = Dash;
+position = "{146, 889}";
+},
+{
+name = DotAbove;
+position = "{-118, 792}";
+},
+{
+name = DotBelow;
+position = "{195, -146}";
+},
+{
+name = RingBelow;
+position = "{137, 767}";
+},
+{
+name = TashkilAbove;
+position = "{49, 854}";
+},
+{
+name = TashkilBelow;
+position = "{146, -327}";
+},
+{
+name = TwoDotsAbove;
+position = "{-172, 792}";
+},
+{
+name = TwoDotsBelow;
+position = "{195, -146}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"426 953 OFFCURVE",
+"432 953 OFFCURVE",
+"436 953 CURVE SMOOTH",
+"452 952 OFFCURVE",
+"458 941 OFFCURVE",
+"456 920 CURVE SMOOTH",
+"449 851 LINE SMOOTH",
+"447 838 OFFCURVE",
+"439 829 OFFCURVE",
+"425 824 CURVE SMOOTH",
+"197 741 OFFCURVE",
+"22 662 OFFCURVE",
+"-98 588 CURVE",
+"-42 547 OFFCURVE",
+"0 514 OFFCURVE",
+"26 490 CURVE SMOOTH",
+"115 407 OFFCURVE",
+"153 316 OFFCURVE",
+"143 217 CURVE SMOOTH",
+"140 188 OFFCURVE",
+"128 163 OFFCURVE",
+"107 144 CURVE SMOOTH",
+"68 109 OFFCURVE",
+"19 84 OFFCURVE",
+"-40 69 CURVE SMOOTH",
+"-47 67 OFFCURVE",
+"-53 69 OFFCURVE",
+"-58 75 CURVE SMOOTH",
+"-63 81 OFFCURVE",
+"-65 89 OFFCURVE",
+"-62 97 CURVE",
+"-35 157 LINE",
+"-5 168 OFFCURVE",
+"36 186 OFFCURVE",
+"87 211 CURVE",
+"79 286 OFFCURVE",
+"26 357 OFFCURVE",
+"-71 421 CURVE",
+"-83 394 LINE SMOOTH",
+"-87 386 OFFCURVE",
+"-94 383 OFFCURVE",
+"-104 385 CURVE SMOOTH",
+"-107 386 OFFCURVE",
+"-116 390 OFFCURVE",
+"-129 399 CURVE SMOOTH",
+"-165 423 OFFCURVE",
+"-187 446 OFFCURVE",
+"-197 471 CURVE SMOOTH",
+"-207 496 OFFCURVE",
+"-205 530 OFFCURVE",
+"-192 573 CURVE SMOOTH",
+"-179 616 OFFCURVE",
+"-163 644 OFFCURVE",
+"-147 658 CURVE SMOOTH",
+"-47 744 OFFCURVE",
+"142 841 OFFCURVE",
+"420 951 CURVE SMOOTH"
+);
+}
+);
+width = 505;
+}
+);
+}

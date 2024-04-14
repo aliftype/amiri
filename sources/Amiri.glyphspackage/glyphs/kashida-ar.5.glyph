@@ -1,0 +1,137 @@
+{
+glyphname = "kashida-ar.5";
+layers = (
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{464, 244}";
+},
+{
+name = HamzaAbove;
+position = "{464, 244}";
+},
+{
+name = HamzaBelow;
+position = "{464, -92.773}";
+},
+{
+name = MarkAbove;
+position = "{464, 801}";
+},
+{
+name = MarkBelow;
+position = "{464, -327}";
+},
+{
+name = NoonAbove;
+position = "{464, 244}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"824 -8 OFFCURVE",
+"669 -13 OFFCURVE",
+"464 -13 CURVE SMOOTH",
+"259 -13 OFFCURVE",
+"104 -8 OFFCURVE",
+"0 0 CURVE",
+"-6 0 OFFCURVE",
+"-10 5 OFFCURVE",
+"-13 15 CURVE SMOOTH",
+"-25 59 LINE SMOOTH",
+"-31 82 OFFCURVE",
+"-23 92 OFFCURVE",
+"0 90 CURVE",
+"104 82 OFFCURVE",
+"259 78 OFFCURVE",
+"464 78 CURVE SMOOTH",
+"669 78 OFFCURVE",
+"824 82 OFFCURVE",
+"928 90 CURVE",
+"950 91 OFFCURVE",
+"959 81 OFFCURVE",
+"953 59 CURVE SMOOTH",
+"940 15 LINE SMOOTH",
+"937 5 OFFCURVE",
+"934 0 OFFCURVE",
+"928 0 CURVE"
+);
+}
+);
+width = 927;
+},
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{464, 244}";
+},
+{
+name = HamzaAbove;
+position = "{464, 244}";
+},
+{
+name = HamzaBelow;
+position = "{464, -92.773}";
+},
+{
+name = MarkAbove;
+position = "{464, 801}";
+},
+{
+name = MarkBelow;
+position = "{464, -327}";
+},
+{
+name = NoonAbove;
+position = "{464, 244}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"825 -23 OFFCURVE",
+"670 -27 OFFCURVE",
+"464 -27 CURVE SMOOTH",
+"258 -27 OFFCURVE",
+"104 -23 OFFCURVE",
+"0 -15 CURVE",
+"-13 -15 OFFCURVE",
+"-22 -6 OFFCURVE",
+"-27 11 CURVE",
+"-40 55 LINE",
+"-44 72 OFFCURVE",
+"-42 84 OFFCURVE",
+"-34 93 CURVE SMOOTH",
+"-26 102 OFFCURVE",
+"-15 106 OFFCURVE",
+"1 105 CURVE SMOOTH",
+"105 97 OFFCURVE",
+"259 92 OFFCURVE",
+"464 92 CURVE SMOOTH",
+"669 92 OFFCURVE",
+"823 97 OFFCURVE",
+"927 105 CURVE",
+"948 106 OFFCURVE",
+"960 100 OFFCURVE",
+"966 86 CURVE SMOOTH",
+"970 77 OFFCURVE",
+"970 67 OFFCURVE",
+"967 55 CURVE",
+"955 11 LINE",
+"950 -6 OFFCURVE",
+"942 -14 OFFCURVE",
+"929 -15 CURVE"
+);
+}
+);
+width = 927;
+}
+);
+}

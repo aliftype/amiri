@@ -1,0 +1,149 @@
+{
+glyphname = aBaa.init.BaaNonIsol;
+layers = (
+{
+anchors = (
+{
+name = DigitAbove;
+position = "{100, 508}";
+},
+{
+name = DigitBelow;
+position = "{104, -161}";
+},
+{
+name = DotAbove;
+position = "{100, 508}";
+},
+{
+name = DotBelow;
+position = "{104, -161}";
+},
+{
+name = DotBelowAlt;
+position = "{104, -366}";
+},
+{
+name = HamzaAbove;
+position = "{100, 508}";
+},
+{
+name = HamzaBelow;
+position = "{104, -161}";
+},
+{
+name = RingBelow;
+position = "{80, 191}";
+},
+{
+name = TaaAbove;
+position = "{100, 410}";
+},
+{
+name = TashkilAbove;
+position = "{0, 801}";
+},
+{
+name = TashkilBelow;
+position = "{104, -327}";
+},
+{
+name = TwoDotsAbove;
+position = "{45, 508}";
+},
+{
+name = TwoDotsBelow;
+position = "{49, -112}";
+},
+{
+name = TwoDotsBelowAlt;
+position = "{49, -366}";
+},
+{
+name = VAbove;
+position = "{100, 508}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaRaaIsol;
+transform = "{1, 0, 0, 1, -10, 73}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 176;
+},
+{
+anchors = (
+{
+name = DigitAbove;
+position = "{100, 508}";
+},
+{
+name = DigitBelow;
+position = "{104, -161}";
+},
+{
+name = DotAbove;
+position = "{100, 508}";
+},
+{
+name = DotBelow;
+position = "{104, -161}";
+},
+{
+name = DotBelowAlt;
+position = "{104, -366}";
+},
+{
+name = HamzaAbove;
+position = "{100, 508}";
+},
+{
+name = HamzaBelow;
+position = "{104, -161}";
+},
+{
+name = RingBelow;
+position = "{80, 191}";
+},
+{
+name = TaaAbove;
+position = "{100, 410}";
+},
+{
+name = TashkilAbove;
+position = "{0, 801}";
+},
+{
+name = TashkilBelow;
+position = "{104, -327}";
+},
+{
+name = TwoDotsAbove;
+position = "{45, 508}";
+},
+{
+name = TwoDotsBelow;
+position = "{49, -112}";
+},
+{
+name = TwoDotsBelowAlt;
+position = "{49, -366}";
+},
+{
+name = VAbove;
+position = "{100, 508}";
+}
+);
+components = (
+{
+name = aBaa.init.BaaRaaIsol;
+transform = "{1, 0, 0, 1, -10, 73}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 176;
+}
+);
+}

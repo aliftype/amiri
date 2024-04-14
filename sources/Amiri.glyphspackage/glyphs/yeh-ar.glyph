@@ -1,0 +1,68 @@
+{
+glyphname = "yeh-ar";
+layers = (
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{293, 171}";
+},
+{
+name = DigitAbove;
+position = "{286, 404}";
+},
+{
+name = TashkilAbove;
+position = "{391, 801}";
+},
+{
+name = TashkilBelow;
+position = "{365, -458}";
+}
+);
+components = (
+{
+name = aYaa.isol;
+},
+{
+name = "twodotshorizontalbelow-ar";
+transform = "{1, 0, 0, 1, 355, -415}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 764;
+},
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{293, 171}";
+},
+{
+name = DigitAbove;
+position = "{286, 404}";
+},
+{
+name = TashkilAbove;
+position = "{391, 801}";
+},
+{
+name = TashkilBelow;
+position = "{365, -458}";
+}
+);
+components = (
+{
+name = aYaa.isol;
+},
+{
+name = "twodotshorizontalbelow-ar";
+transform = "{1, 0, 0, 1, 355, -415}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 764;
+}
+);
+unicode = "064A,FEF1";
+}

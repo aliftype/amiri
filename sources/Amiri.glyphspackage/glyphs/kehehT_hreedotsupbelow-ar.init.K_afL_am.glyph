@@ -1,0 +1,51 @@
+{
+glyphname = "kehehThreedotsupbelow-ar.init.KafLam";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{199, 801}";
+},
+{
+name = TashkilBelow;
+position = "{111, -420}";
+}
+);
+components = (
+{
+name = aKaf.init.KafLam;
+},
+{
+name = "threedotsupbelow-ar";
+transform = "{1, 0, 0, 1, 111, -225}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 587;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{199, 801}";
+},
+{
+name = TashkilBelow;
+position = "{111, -420}";
+}
+);
+components = (
+{
+name = aKaf.init.KafLam;
+},
+{
+name = "threedotsupbelow-ar";
+transform = "{1, 0, 0, 1, 111, -225}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 587;
+}
+);
+}

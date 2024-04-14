@@ -1,0 +1,148 @@
+{
+glyphname = aAlf.fina.KafAlf;
+layers = (
+{
+anchors = (
+{
+name = DigitAbove;
+position = "{-12, 644}";
+},
+{
+name = HamzaAbove;
+position = "{62, 766}";
+},
+{
+name = HamzaBelow;
+position = "{171, -39}";
+},
+{
+name = TashkilAbove;
+position = "{0, 801}";
+},
+{
+name = TashkilBelow;
+position = "{0, -327}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"211 90 OFFCURVE",
+"225 69 OFFCURVE",
+"229 32 CURVE SMOOTH",
+"233 1 OFFCURVE",
+"218 -14 OFFCURVE",
+"188 -11 CURVE SMOOTH",
+"158 -8 OFFCURVE",
+"132 4 OFFCURVE",
+"111 27 CURVE SMOOTH",
+"75 64 OFFCURVE",
+"58 150 OFFCURVE",
+"60 284 CURVE SMOOTH",
+"61 358 OFFCURVE",
+"59 427 OFFCURVE",
+"52 489 CURVE SMOOTH",
+"43 572 OFFCURVE",
+"35 625 OFFCURVE",
+"30 647 CURVE SMOOTH",
+"24 671 OFFCURVE",
+"24 686 OFFCURVE",
+"27 691 CURVE SMOOTH",
+"56 737 LINE SMOOTH",
+"62 746 OFFCURVE",
+"66 746 OFFCURVE",
+"69 735 CURVE SMOOTH",
+"87 669 OFFCURVE",
+"97 548 OFFCURVE",
+"98 372 CURVE SMOOTH",
+"99 246 OFFCURVE",
+"107 170 OFFCURVE",
+"120 143 CURVE SMOOTH",
+"133 116 OFFCURVE",
+"155 100 OFFCURVE",
+"188 94 CURVE SMOOTH"
+);
+}
+);
+width = 187;
+},
+{
+anchors = (
+{
+name = DigitAbove;
+position = "{-12, 644}";
+},
+{
+name = HamzaAbove;
+position = "{62, 766}";
+},
+{
+name = HamzaBelow;
+position = "{171, -39}";
+},
+{
+name = TashkilAbove;
+position = "{0, 801}";
+},
+{
+name = TashkilBelow;
+position = "{0, -327}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"101 672 OFFCURVE",
+"111 563 OFFCURVE",
+"112 414 CURVE SMOOTH",
+"113 265 OFFCURVE",
+"120 178 OFFCURVE",
+"131 153 CURVE SMOOTH",
+"142 128 OFFCURVE",
+"163 112 OFFCURVE",
+"192 107 CURVE SMOOTH",
+"221 102 OFFCURVE",
+"238 77 OFFCURVE",
+"243 33 CURVE SMOOTH",
+"246 2 OFFCURVE",
+"236 -17 OFFCURVE",
+"211 -24 CURVE SMOOTH",
+"204 -26 OFFCURVE",
+"196 -26 OFFCURVE",
+"187 -25 CURVE SMOOTH",
+"153 -22 OFFCURVE",
+"125 -8 OFFCURVE",
+"101 17 CURVE",
+"62 57 OFFCURVE",
+"43 146 OFFCURVE",
+"45 284 CURVE SMOOTH",
+"46 358 OFFCURVE",
+"43 431 OFFCURVE",
+"35 503 CURVE SMOOTH",
+"27 575 OFFCURVE",
+"21 623 OFFCURVE",
+"16 645 CURVE SMOOTH",
+"11 667 OFFCURVE",
+"9 680 OFFCURVE",
+"10 686 CURVE SMOOTH",
+"11 692 OFFCURVE",
+"12 696 OFFCURVE",
+"14 699 CURVE SMOOTH",
+"43 745 LINE SMOOTH",
+"47 752 OFFCURVE",
+"52 756 OFFCURVE",
+"57 758 CURVE SMOOTH",
+"70 762 OFFCURVE",
+"78 755 OFFCURVE",
+"83 739 CURVE"
+);
+}
+);
+width = 187;
+}
+);
+}

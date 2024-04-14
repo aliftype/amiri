@@ -1,0 +1,130 @@
+{
+glyphname = "kasraDotbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilBelow;
+position = "{169, -519}";
+},
+{
+name = _MarkBelow;
+position = "{38, -220}";
+},
+{
+name = _TashkilBelow;
+position = "{121, -220}";
+},
+{
+name = _TashkilBelowDot;
+position = "{121, -220}";
+},
+{
+name = _TashkilTashkilBelow;
+position = "{121, -220}";
+}
+);
+components = (
+{
+name = "fatha-ar";
+transform = "{1, 0, 0, 1, -142, -1274}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"151 -425 OFFCURVE",
+"151 -425 OFFCURVE",
+"152 -425 CURVE SMOOTH",
+"153 -425 OFFCURVE",
+"157 -426 OFFCURVE",
+"165 -429 CURVE SMOOTH",
+"173 -432 OFFCURVE",
+"179 -435 OFFCURVE",
+"184 -440 CURVE SMOOTH",
+"189 -446 OFFCURVE",
+"191 -450 OFFCURVE",
+"190 -451 CURVE SMOOTH",
+"167 -488 LINE SMOOTH",
+"167 -489 OFFCURVE",
+"166 -489 OFFCURVE",
+"165 -489 CURVE SMOOTH",
+"164 -489 OFFCURVE",
+"161 -486 OFFCURVE",
+"154 -481 CURVE SMOOTH",
+"147 -476 OFFCURVE",
+"142 -473 OFFCURVE",
+"135 -470 CURVE SMOOTH",
+"128 -467 OFFCURVE",
+"125 -465 OFFCURVE",
+"125 -464 CURVE SMOOTH",
+"125 -463 OFFCURVE",
+"125 -463 OFFCURVE",
+"125 -463 CURVE SMOOTH",
+"150 -426 LINE SMOOTH"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilTashkilBelow;
+position = "{-62, -376}";
+},
+{
+name = _MarkBelow;
+position = "{38, -220}";
+},
+{
+name = _TashkilBelow;
+position = "{121, -220}";
+},
+{
+name = _TashkilBelowDot;
+position = "{121, -220}";
+}
+);
+components = (
+{
+name = "fatha-ar";
+transform = "{1, 0, 0, 1, -142, -1274}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"145 -421 OFFCURVE",
+"150 -419 OFFCURVE",
+"157 -419 CURVE SMOOTH",
+"164 -419 OFFCURVE",
+"177 -427 OFFCURVE",
+"194 -442 CURVE",
+"198 -447 OFFCURVE",
+"198 -451 OFFCURVE",
+"196 -456 CURVE",
+"172 -493 LINE",
+"168 -498 OFFCURVE",
+"165 -499 OFFCURVE",
+"160 -496 CURVE SMOOTH",
+"149 -489 OFFCURVE",
+"139 -483 OFFCURVE",
+"130 -479 CURVE",
+"122 -474 OFFCURVE",
+"118 -469 OFFCURVE",
+"117 -465 CURVE",
+"118 -460 LINE",
+"143 -424 LINE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 08F6;
+}

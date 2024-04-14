@@ -1,0 +1,51 @@
+{
+glyphname = "lamDotabove-ar.init.LamHehInit";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{-59, 879}";
+},
+{
+name = TashkilBelow;
+position = "{88, -327}";
+}
+);
+components = (
+{
+name = aLam.init.LamHehInit;
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, -34, 732}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 225;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{-59, 879}";
+},
+{
+name = TashkilBelow;
+position = "{88, -327}";
+}
+);
+components = (
+{
+name = aLam.init.LamHehInit;
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, -34, 732}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 225;
+}
+);
+}

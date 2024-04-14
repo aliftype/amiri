@@ -1,0 +1,70 @@
+{
+glyphname = "dammainverted-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{300, 1203}";
+},
+{
+name = _MarkAbove;
+position = "{268, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{271, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{271, 801}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{271, 801}";
+}
+);
+components = (
+{
+name = "damma-ar";
+transform = "{-1, 0, 0, -1, 501, 1985}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{300, 1203}";
+},
+{
+name = _MarkAbove;
+position = "{268, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{271, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{271, 801}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{271, 801}";
+}
+);
+components = (
+{
+name = "damma-ar";
+transform = "{-1, 0, 0, -1, 501, 1985}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 0;
+}
+);
+unicode = 0657;
+}

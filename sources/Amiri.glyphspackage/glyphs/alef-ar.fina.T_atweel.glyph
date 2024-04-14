@@ -1,0 +1,59 @@
+{
+glyphname = "alef-ar.fina.Tatweel";
+layers = (
+{
+anchors = (
+{
+name = HamzaAbove;
+position = "{593, 244}";
+},
+{
+name = HamzaBelow;
+position = "{593, -92.773}";
+},
+{
+name = TashkilAbove;
+position = "{366, 708}";
+},
+{
+name = TashkilBelow;
+position = "{233, -327}";
+}
+);
+components = (
+{
+name = aAlf.fina.alt;
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 786;
+},
+{
+anchors = (
+{
+name = HamzaAbove;
+position = "{593, 244}";
+},
+{
+name = HamzaBelow;
+position = "{593, -92.773}";
+},
+{
+name = TashkilAbove;
+position = "{366, 708}";
+},
+{
+name = TashkilBelow;
+position = "{233, -327}";
+}
+);
+components = (
+{
+name = aAlf.fina.alt;
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 786;
+}
+);
+}

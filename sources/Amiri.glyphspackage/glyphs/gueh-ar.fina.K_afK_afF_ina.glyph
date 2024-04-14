@@ -1,0 +1,67 @@
+{
+glyphname = "gueh-ar.fina.KafKafFina";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{366, 801}";
+},
+{
+name = TashkilBelow;
+position = "{444, -327}";
+}
+);
+components = (
+{
+name = aKaf.fina.KafKafFina;
+},
+{
+name = dash.kaf_gaf;
+transform = "{1, 0, 0, 1, 1145, 753}";
+},
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 357, 332}";
+},
+{
+name = "twodotsverticalbelow-ar";
+transform = "{1, 0, 0, 1, 366, -166}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 829;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{366, 801}";
+},
+{
+name = TashkilBelow;
+position = "{444, -327}";
+}
+);
+components = (
+{
+name = aKaf.fina.KafKafFina;
+},
+{
+name = dash.kaf_gaf;
+transform = "{1, 0, 0, 1, 1145, 753}";
+},
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 357, 332}";
+},
+{
+name = "twodotsverticalbelow-ar";
+transform = "{1, 0, 0, 1, 366, -166}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 829;
+}
+);
+}

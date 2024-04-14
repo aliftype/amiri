@@ -1,0 +1,51 @@
+{
+glyphname = "yehKashmiri-ar.medi.SenBaaMemInit";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{242, 801}";
+},
+{
+name = TashkilBelow;
+position = "{233, -327}";
+}
+);
+components = (
+{
+name = aBaa.medi.SenBaaMemInit;
+},
+{
+name = ring.below;
+transform = "{1, 0, 0, 1, 233, -10}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 217;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{242, 801}";
+},
+{
+name = TashkilBelow;
+position = "{233, -327}";
+}
+);
+components = (
+{
+name = aBaa.medi.SenBaaMemInit;
+},
+{
+name = ring.below;
+transform = "{1, 0, 0, 1, 233, -10}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 217;
+}
+);
+}

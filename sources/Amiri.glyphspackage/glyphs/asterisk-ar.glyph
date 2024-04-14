@@ -1,0 +1,48 @@
+{
+glyphname = "asterisk-ar";
+layers = (
+{
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"218 371 LINE",
+"272 537 LINE",
+"327 371 LINE",
+"502 371 LINE",
+"361 267 LINE",
+"415 101 LINE",
+"272 204 LINE",
+"130 101 LINE",
+"184 267 LINE",
+"42 371 LINE"
+);
+}
+);
+width = 544;
+},
+{
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"207 385 LINE",
+"272 584 LINE",
+"338 385 LINE",
+"547 385 LINE",
+"378 262 LINE",
+"443 62 LINE",
+"272 186 LINE",
+"102 62 LINE",
+"167 262 LINE",
+"-2 385 LINE"
+);
+}
+);
+width = 544;
+}
+);
+unicode = 066D;
+}

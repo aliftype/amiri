@@ -1,0 +1,115 @@
+{
+glyphname = "kashida-ar.05";
+layers = (
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{46, 244}";
+},
+{
+name = MarkAbove;
+position = "{46, 801}";
+},
+{
+name = MarkBelow;
+position = "{46, -327}";
+},
+{
+name = NoonAbove;
+position = "{46, 244}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"-6 1 OFFCURVE",
+"-10 6 OFFCURVE",
+"-13 15 CURVE SMOOTH",
+"-25 59 LINE SMOOTH",
+"-32 83 OFFCURVE",
+"-24 93 OFFCURVE",
+"0 90 CURVE SMOOTH",
+"7 89 OFFCURVE",
+"22 88 OFFCURVE",
+"46 88 CURVE SMOOTH",
+"66 88 OFFCURVE",
+"82 89 OFFCURVE",
+"93 90 CURVE SMOOTH",
+"117 92 OFFCURVE",
+"125 82 OFFCURVE",
+"118 59 CURVE SMOOTH",
+"105 15 LINE SMOOTH",
+"103 6 OFFCURVE",
+"99 1 OFFCURVE",
+"93 0 CURVE SMOOTH",
+"79 -2 OFFCURVE",
+"63 -3 OFFCURVE",
+"46 -3 CURVE SMOOTH",
+"29 -3 OFFCURVE",
+"14 -2 OFFCURVE",
+"0 0 CURVE SMOOTH"
+);
+}
+);
+width = 92;
+},
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{46, 244}";
+},
+{
+name = MarkAbove;
+position = "{46, 801}";
+},
+{
+name = MarkBelow;
+position = "{46, -327}";
+},
+{
+name = NoonAbove;
+position = "{46, 244}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"-13 -14 OFFCURVE",
+"-21 -5 OFFCURVE",
+"-26 11 CURVE SMOOTH",
+"-42 64 LINE SMOOTH",
+"-50 92 OFFCURVE",
+"-36 105 OFFCURVE",
+"0 103 CURVE SMOOTH",
+"16 102 OFFCURVE",
+"31 102 OFFCURVE",
+"46 102 CURVE SMOOTH",
+"56 102 OFFCURVE",
+"72 102 OFFCURVE",
+"93 104 CURVE SMOOTH",
+"128 107 OFFCURVE",
+"142 94 OFFCURVE",
+"134 65 CURVE SMOOTH",
+"119 11 LINE SMOOTH",
+"114 -5 OFFCURVE",
+"106 -14 OFFCURVE",
+"93 -15 CURVE SMOOTH",
+"80 -17 OFFCURVE",
+"65 -17 OFFCURVE",
+"47 -17 CURVE SMOOTH",
+"35 -17 OFFCURVE",
+"19 -17 OFFCURVE",
+"0 -15 CURVE SMOOTH"
+);
+}
+);
+width = 92;
+}
+);
+}

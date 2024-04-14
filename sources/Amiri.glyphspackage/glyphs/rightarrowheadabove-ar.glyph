@@ -1,0 +1,86 @@
+{
+glyphname = "rightarrowheadabove-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{156, 1060}";
+},
+{
+name = _MarkAbove;
+position = "{156, 845}";
+},
+{
+name = _TashkilAbove;
+position = "{156, 845}";
+},
+{
+name = _TashkilAboveDot;
+position = "{156, 845}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{156, 845}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"95 1048 LINE",
+"244 977 LINE",
+"252 964 LINE",
+"106 878 LINE",
+"55 849 LINE",
+"48 862 LINE",
+"185 942 LINE",
+"52 1006 LINE",
+"45 1019 LINE"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _MarkAbove;
+position = "{156, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{156, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{156, 801}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{156, 801}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"95 1056 LINE",
+"250 982 LINE",
+"262 961 LINE",
+"110 872 LINE",
+"53 839 LINE",
+"38 864 LINE",
+"169 942 LINE",
+"47 1000 LINE",
+"35 1021 LINE"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 08F8;
+}

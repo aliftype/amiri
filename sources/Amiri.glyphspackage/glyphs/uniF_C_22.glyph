@@ -1,0 +1,33 @@
+{
+glyphname = uniFC22;
+layers = (
+{
+components = (
+{
+name = "jeem-ar.fina.AboveHaaIsol";
+},
+{
+name = "dad-ar.init.AboveHaa";
+transform = "{1, 0, 0, 1, 104, -2}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 953;
+},
+{
+components = (
+{
+name = "jeem-ar.fina.AboveHaaIsol";
+},
+{
+name = "dad-ar.init.AboveHaa";
+transform = "{1, 0, 0, 1, 104, -2}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 953;
+}
+);
+unicode = FC22;
+subCategory = "";
+}

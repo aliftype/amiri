@@ -1,0 +1,59 @@
+{
+glyphname = "yehFarsiTwoabove-ar.fina.PostTooth";
+layers = (
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{173, 269}";
+},
+{
+name = TashkilAbove;
+position = "{242, 801}";
+},
+{
+name = TashkilBelow;
+position = "{368, -361}";
+}
+);
+components = (
+{
+name = aYaa.fina.PostTooth;
+},
+{
+name = "twoabove-ar";
+transform = "{1, 0, 0, 1, 271, 98}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 730;
+},
+{
+anchors = (
+{
+name = AlefAbove;
+position = "{173, 269}";
+},
+{
+name = TashkilAbove;
+position = "{242, 801}";
+},
+{
+name = TashkilBelow;
+position = "{368, -361}";
+}
+);
+components = (
+{
+name = aYaa.fina.PostTooth;
+},
+{
+name = "twoabove-ar";
+transform = "{1, 0, 0, 1, 271, 98}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 730;
+}
+);
+}

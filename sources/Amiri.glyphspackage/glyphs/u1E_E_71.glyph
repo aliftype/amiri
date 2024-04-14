@@ -1,0 +1,24 @@
+{
+glyphname = u1EE71;
+layers = (
+{
+components = (
+{
+name = "alef-ar.fina";
+transform = "{1, 0, 0, 1, 18, 0}";
+},
+{
+name = "sad-ar.init";
+transform = "{1, 0, 0, 1, 247, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 941;
+},
+{
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 600;
+}
+);
+unicode = 1EE71;
+}

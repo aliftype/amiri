@@ -1,0 +1,139 @@
+{
+glyphname = ring.below;
+layers = (
+{
+anchors = (
+{
+name = TashkilBelowDot;
+position = "{0, -195}";
+},
+{
+name = _RingBelow;
+position = "{0, 0}";
+},
+{
+name = _RingDash;
+position = "{0, 0}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"70 -98 OFFCURVE",
+"69 -112 OFFCURVE",
+"66 -122 CURVE SMOOTH",
+"57 -156 OFFCURVE",
+"32 -172 OFFCURVE",
+"-10 -170 CURVE SMOOTH",
+"-50 -169 OFFCURVE",
+"-67 -145 OFFCURVE",
+"-63 -100 CURVE SMOOTH",
+"-58 -55 OFFCURVE",
+"-45 -24 OFFCURVE",
+"-24 -8 CURVE SMOOTH",
+"-3 8 OFFCURVE",
+"20 7 OFFCURVE",
+"43 -14 CURVE SMOOTH",
+"60 -28 OFFCURVE",
+"69 -51 OFFCURVE",
+"70 -81 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"41 -66 OFFCURVE",
+"24 -46 OFFCURVE",
+"0 -45 CURVE SMOOTH",
+"-15 -44 OFFCURVE",
+"-26 -50 OFFCURVE",
+"-33 -60 CURVE SMOOTH",
+"-40 -70 OFFCURVE",
+"-43 -82 OFFCURVE",
+"-41 -97 CURVE SMOOTH",
+"-39 -112 OFFCURVE",
+"-27 -121 OFFCURVE",
+"-5 -123 CURVE SMOOTH",
+"17 -125 OFFCURVE",
+"34 -121 OFFCURVE",
+"46 -112 CURVE SMOOTH",
+"49 -110 OFFCURVE",
+"50 -108 OFFCURVE",
+"50 -106 CURVE"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = TashkilBelowDot;
+position = "{0, -195}";
+},
+{
+name = _RingBelow;
+position = "{0, 0}";
+},
+{
+name = _RingDash;
+position = "{0, 0}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"-58 -175 OFFCURVE",
+"-77 -149 OFFCURVE",
+"-72 -100 CURVE SMOOTH",
+"-67 -51 OFFCURVE",
+"-52 -18 OFFCURVE",
+"-28 1 CURVE SMOOTH",
+"-4 20 OFFCURVE",
+"22 17 OFFCURVE",
+"50 -7 CURVE SMOOTH",
+"69 -24 OFFCURVE",
+"78 -47 OFFCURVE",
+"79 -76 CURVE SMOOTH",
+"80 -105 OFFCURVE",
+"78 -126 OFFCURVE",
+"72 -137 CURVE SMOOTH",
+"56 -169 OFFCURVE",
+"27 -183 OFFCURVE",
+"-16 -179 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"41 -66 OFFCURVE",
+"24 -46 OFFCURVE",
+"0 -45 CURVE SMOOTH",
+"-15 -44 OFFCURVE",
+"-26 -50 OFFCURVE",
+"-33 -60 CURVE SMOOTH",
+"-40 -70 OFFCURVE",
+"-43 -82 OFFCURVE",
+"-41 -97 CURVE SMOOTH",
+"-39 -112 OFFCURVE",
+"-27 -121 OFFCURVE",
+"-5 -123 CURVE SMOOTH",
+"17 -125 OFFCURVE",
+"34 -121 OFFCURVE",
+"46 -112 CURVE SMOOTH",
+"49 -110 OFFCURVE",
+"50 -108 OFFCURVE",
+"50 -106 CURVE"
+);
+}
+);
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+}

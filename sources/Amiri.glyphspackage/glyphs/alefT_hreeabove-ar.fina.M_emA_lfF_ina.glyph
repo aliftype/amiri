@@ -1,0 +1,61 @@
+{
+glyphname = "alefThreeabove-ar.fina.MemAlfFina";
+layers = (
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{121, 903}";
+},
+{
+name = TashkilBelow;
+position = "{233, -327}";
+},
+{
+name = entry;
+position = "{295, -102}";
+}
+);
+components = (
+{
+name = aAlf.fina.MemAlfFina;
+transform = "{1, 0, 0, 1, 101, 0}";
+},
+{
+name = "threeabove-ar";
+transform = "{1, 0, 0, 1, 91, 488}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+width = 295;
+},
+{
+anchors = (
+{
+name = TashkilAbove;
+position = "{121, 903}";
+},
+{
+name = TashkilBelow;
+position = "{233, -327}";
+},
+{
+name = entry;
+position = "{295, -102}";
+}
+);
+components = (
+{
+name = aAlf.fina.MemAlfFina;
+transform = "{1, 0, 0, 1, 101, 0}";
+},
+{
+name = "threeabove-ar";
+transform = "{1, 0, 0, 1, 91, 488}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+width = 295;
+}
+);
+}

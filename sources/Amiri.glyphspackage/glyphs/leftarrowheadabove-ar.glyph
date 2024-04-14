@@ -1,0 +1,84 @@
+{
+glyphname = "leftarrowheadabove-ar";
+layers = (
+{
+anchors = (
+{
+name = TashkilTashkilAbove;
+position = "{156, 1060}";
+},
+{
+name = _MarkAbove;
+position = "{156, 845}";
+},
+{
+name = _TashkilAbove;
+position = "{156, 845}";
+},
+{
+name = _TashkilAboveDot;
+position = "{156, 845}";
+},
+{
+name = _TashkilTashkilAbove;
+position = "{156, 845}";
+}
+);
+layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
+paths = (
+{
+closed = 1;
+nodes = (
+"216 1006 LINE",
+"130 965 LINE",
+"256 891 LINE",
+"263 878 LINE",
+"212 849 LINE",
+"67 935 LINE",
+"59 947 LINE",
+"110 977 LINE",
+"259 1048 LINE",
+"266 1035 LINE"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _MarkAbove;
+position = "{156, 801}";
+},
+{
+name = _TashkilAbove;
+position = "{156, 801}";
+},
+{
+name = _TashkilAboveDot;
+position = "{156, 801}";
+}
+);
+layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
+paths = (
+{
+closed = 1;
+nodes = (
+"219 999 LINE",
+"146 964 LINE",
+"261 896 LINE",
+"273 876 LINE",
+"212 841 LINE",
+"61 929 LINE",
+"49 950 LINE",
+"107 983 LINE",
+"262 1057 LINE",
+"276 1032 LINE"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 08F7;
+}
