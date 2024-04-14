@@ -585,7 +585,7 @@ def _build_production_name(glyph, font):
     return glyph.name
 
 def openFont(path):
-    font = Font.open(path, validate=False)
+    font = Font.open(path)
 
     if REMOVE_GLYPHS in font.lib:
         import re
