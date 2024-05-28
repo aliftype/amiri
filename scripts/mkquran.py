@@ -4,7 +4,7 @@ import re
 from fontTools.ttLib import TTFont
 from fontTools import subset
 
-LAYER = re.compile('.*\.l\d+$')
+LAYER = re.compile(r'.*\.l\d+$')
 
 def rename(font):
     names = set()
