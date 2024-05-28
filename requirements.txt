@@ -35,7 +35,7 @@ fs==2.4.16
     # via fonttools
 gflanguages==0.6.1
     # via glyphsets
-glyphsets==1.0.0
+glyphsets==0.6.18
     # via -r requirements.in
 glyphslib==6.7.1
     # via
