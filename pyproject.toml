@@ -1,0 +1,34 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "amiri"
+description = "Amiri (أميري) is a body text Naskh typeface "
+authors = [{ name = "Khaled Hosny", email = "khaled@aliftype.com" }]
+dependencies = [
+    "fonttools[lxml]",
+    "pcpp",
+    "opentype-sanitizer",
+    "ufo2ft[pathops]",
+    "ufoLib2",
+    "glyphsets==0.6.18",
+    "glyphsLib",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = { text = "OFL-1.1" }
+
+dynamic = ["version"]
+
+[tool.pdm.scripts]
+start = { cmd = "make {args}" } # So we access the Python env
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.build]
+source-includes = ["scripts/"]
+
+[tool.pdm.version]
+source = "scm"
