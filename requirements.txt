@@ -73,7 +73,7 @@ unicodedata2==15.1.0
     # via
     #   fonttools
     #   glyphsets
-urllib3==2.2.1
+urllib3==2.2.2
     # via requests
 
 # The following packages are considered to be unsafe in a requirements file:
