@@ -10,7 +10,7 @@ attrs==23.2.0
     # via ufolib2
 booleanoperations==0.9.0
     # via ufo2ft
-certifi==2024.6.2
+certifi==2024.7.4
     # via requests
 cffsubr==0.3.0
     # via ufo2ft
