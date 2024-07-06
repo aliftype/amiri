@@ -10,7 +10,7 @@ attrs==23.2.0
     # via ufolib2
 booleanoperations==0.9.0
     # via ufo2ft
-certifi==2024.6.2
+certifi==2024.7.4
     # via requests
 cffsubr==0.3.0
     # via ufo2ft
@@ -20,7 +20,7 @@ defcon==0.10.3
     # via glyphsets
 fontmath==0.9.3
     # via ufo2ft
-fonttools[lxml,ufo,unicode]==4.53.0
+fonttools[lxml,ufo,unicode]==4.53.1
     # via
     #   -r requirements.in
     #   booleanoperations
