@@ -22,7 +22,7 @@
 
 يمكن الحصول على آخر إصدارات الخط الأميري من موقعه:
 
-> http://amirifont.org
+> https://aliftype.com/amiri
 
 وضع التطوير
 -----------
@@ -35,5 +35,5 @@
 الخط. قد ينشط تطوير الخط الأميري تحت اسم مختلف في المستقبل و غير مقيد بقيود
 التوافق مع الإصدارات السابقة، لكن لا توجد أي خطط محددة حاليا.
 
-[1]: http://www.bibalex.org/bulaqpress/ar/bulaq.htm "مطبعة بولاق"
-[2]: http://scripts.sil.org/OFL "رخصة الخطوط المفتوحة"
+[1]: https://www.bibalex.org/bulaqpress/ar/bulaq.htm "مطبعة بولاق"
+[2]: https://openfontlicense.org "رخصة الخطوط المفتوحة"

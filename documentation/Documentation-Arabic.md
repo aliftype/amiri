@@ -229,6 +229,6 @@ keywords: [خط, عربی, مطبعة, أمیریة, أمیری, یونیكود,
 
 
 [أوبن تیب]: https://ar.wikipedia.org/wiki/%D8%A3%D8%A8%D9%86%E2%80%8C_%D8%AA%D9%8A%D8%A8 "صفحة ویكیبیدیا عن أوبن تیب"
-[یونیكود]: http://unicode.org/versions/Unicode6.0.0 "یونیكود 6.0"
+[یونیكود]: https://unicode.org/versions/Unicode6.0.0 "یونیكود 6.0"
 [هذا النقاش]: https://web.archive.org/web/20120724090018/graphics4arab.com/showthread.php?t=3975
 

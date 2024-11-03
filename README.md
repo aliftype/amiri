@@ -26,7 +26,7 @@ included license file for more details.
 
 Latest version of the Amiri font can be obtained from its web site:
 
-> http://amirifont.org
+> https://aliftype.com/amiri
 
 Development status
 ------------------
@@ -40,5 +40,5 @@ character and glyph coverage. Amiri development might be restarted in the
 future under a different name with less backward-compatibility constraints, but
 nothing concrete is currently planed.
 
-[1]: http://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
-[2]: http://scripts.sil.org/OFL "The Open Font License"
+[1]: https://www.bibalex.org/bulaqpress/en/bulaq.htm "The Bulaq Press"
+[2]: https://openfontlicense.org "The Open Font License"
