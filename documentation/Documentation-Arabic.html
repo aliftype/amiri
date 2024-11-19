@@ -13,8 +13,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -22,9 +25,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="Documentation-Arabic.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
@@ -137,7 +137,7 @@ href="https://web.archive.org/web/20120724090018/graphics4arab.com/showthread.ph
 فاصل بینها و لا حتىٰ مسافة فارغة.</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th style="text-align: right;">           </th>
 <th style="text-align: center;">یونیكود</th>
 <th style="text-align: center;">عدد الأرقام</th>
@@ -145,37 +145,37 @@ href="https://web.archive.org/web/20120724090018/graphics4arab.com/showthread.ph
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: right;">علامة الرقم</td>
 <td style="text-align: center;"><code>U+0600</code></td>
 <td style="text-align: center;">٤</td>
 <td style="text-align: center;">؀١٢٣٤</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: right;">علامة السنة</td>
 <td style="text-align: center;"><code>U+0601</code></td>
 <td style="text-align: center;">٤</td>
 <td style="text-align: center;">؁١٢٣٤</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: right;">علامة الحاشیة</td>
 <td style="text-align: center;"><code>U+0602</code></td>
 <td style="text-align: center;">٢</td>
 <td style="text-align: center;">؂١٢</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: right;">علامة الصفحة</td>
 <td style="text-align: center;"><code>U+0603</code></td>
 <td style="text-align: center;">٣</td>
 <td style="text-align: center;">؃١٢٣</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: right;">علامة سموت</td>
 <td style="text-align: center;"><code>U+0604</code></td>
 <td style="text-align: center;">٤</td>
 <td style="text-align: center;">؄١٢٣٤</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: right;">رقم الآیة</td>
 <td style="text-align: center;"><code>U+06DD</code></td>
 <td style="text-align: center;">٣</td>
@@ -198,23 +198,23 @@ href="https://web.archive.org/web/20120724090018/graphics4arab.com/showthread.ph
 <dd>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th style="text-align: center;">ثابتة</th>
 <th style="text-align: right;">متغیرة</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: center;"><span
 class="tnum">٠١٢٣٤٥٦٧٨٩</span></td>
 <td style="text-align: right;">٠١٢٣٤٥٦٧٨٩</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;"><span
 class="tnum">١١١١١١١١١١</span></td>
 <td style="text-align: right;">١١١١١١١١١١</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;"><span
 class="tnum">٨٨٨٨٨٨٨٨٨٨</span></td>
 <td style="text-align: right;">٨٨٨٨٨٨٨٨٨٨</td>
