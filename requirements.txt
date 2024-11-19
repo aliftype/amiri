@@ -6,21 +6,21 @@
 #
 appdirs==1.4.4
     # via fs
-attrs==23.2.0
+attrs==24.2.0
     # via ufolib2
 booleanoperations==0.9.0
     # via ufo2ft
-certifi==2024.7.4
+certifi==2024.8.30
     # via requests
 cffsubr==0.3.0
     # via ufo2ft
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
 defcon==0.10.3
     # via glyphsets
-fontmath==0.9.3
+fontmath==0.9.4
     # via ufo2ft
-fonttools[lxml,ufo,unicode]==4.53.1
+fonttools[lxml,ufo,unicode]==4.55.0
     # via
     #   -r requirements.in
     #   booleanoperations
@@ -33,39 +33,39 @@ fonttools[lxml,ufo,unicode]==4.53.1
     #   ufolib2
 fs==2.4.16
     # via fonttools
-gflanguages==0.6.2
+gflanguages==0.7.1
     # via glyphsets
 glyphsets==0.6.18
     # via -r requirements.in
-glyphslib==6.7.1
+glyphslib==6.9.5
     # via
     #   -r requirements.in
     #   glyphsets
-idna==3.7
+idna==3.10
     # via requests
-lxml==5.2.2
+lxml==5.3.0
     # via fonttools
-openstep-plist==0.3.1
+openstep-plist==0.4.0
     # via glyphslib
-opentype-sanitizer==9.1.0
+opentype-sanitizer==9.2.0
     # via -r requirements.in
 pcpp==1.30
     # via -r requirements.in
 protobuf==3.20.3
     # via gflanguages
-pyclipper==1.3.0.post5
+pyclipper==1.3.0.post6
     # via booleanoperations
-pyyaml==6.0.1
+pyyaml==6.0.2
     # via glyphsets
 requests==2.32.3
     # via glyphsets
 six==1.16.0
     # via fs
-skia-pathops==0.8.0.post1
+skia-pathops==0.8.0.post2
     # via ufo2ft
-ufo2ft[pathops]==3.2.5
+ufo2ft[pathops]==3.3.1
     # via -r requirements.in
-ufolib2==0.16.0
+ufolib2==0.16.1
     # via
     #   -r requirements.in
     #   glyphslib
@@ -73,7 +73,7 @@ unicodedata2==15.1.0
     # via
     #   fonttools
     #   glyphsets
-urllib3==2.2.2
+urllib3==2.2.3
     # via requests
 
 # The following packages are considered to be unsafe in a requirements file:
