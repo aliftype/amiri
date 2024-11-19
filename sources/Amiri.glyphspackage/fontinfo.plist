@@ -1,5 +1,5 @@
 {
-.appVersion = "3300";
+.appVersion = "3324";
 customParameters = (
 {
 name = hheaAscender;
@@ -6916,8 +6916,12 @@ name = Bold;
 weightClass = Bold;
 }
 );
+manufacturer = "Alif Type";
 manufacturerURL = "https://aliftype.com";
 unitsPerEm = 1000;
+userData = {
+GSDontShowVersionAlert = 1;
+};
 versionMajor = 1;
 versionMinor = 0;
 }
