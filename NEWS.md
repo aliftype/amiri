@@ -1,3 +1,12 @@
+Amiri 1.001 (2024-11-19)
+------------------------
+
+Version 1.000 was supposed to be the final release, but a few issues appeared in it that necessitate a bug fix release. Hopefully this is really the final release.
+
+* Fix broken mark positioning in some versions of Adobe InDesign.
+* Fix double insertion of kashida before the _ain_ in words like يبلِّغ.
+* Use `rlig` feature not `calt` since our contextual substitutions are all required and should not be allowed to be disabled.
+
 Amiri 1.000 (2022-12-03)
 ------------------------
 
