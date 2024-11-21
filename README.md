@@ -45,9 +45,9 @@ Building
 
 To build the fonts you need a few Python packages:
 
-    $ python -m venv amiri
-    $ . amiri/bin/activate
-    $ pip install -r requirements.txt
+    $ python3 -m venv amiri-venv
+    $ . amiri-venv/bin/activate
+    $ pip3 install -r requirements.txt
 
 To build the font files run:
 
