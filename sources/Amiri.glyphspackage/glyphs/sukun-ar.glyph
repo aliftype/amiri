@@ -17,7 +17,7 @@ position = "{182, 801}";
 },
 {
 name = _TashkilTashkilAbove;
-position = "{112, 791}";
+position = "{181, 802}";
 }
 );
 layerId = "7FE84AD5-D318-40C5-A81A-3CDC73FF77D2";
@@ -66,25 +66,25 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 264;
 },
 {
 anchors = (
 {
 name = _MarkAbove;
-position = "{180, 801}";
+position = "{180, 800}";
 },
 {
 name = _TashkilAbove;
-position = "{182, 801}";
+position = "{180, 800}";
 },
 {
 name = _TashkilAboveDot;
-position = "{182, 801}";
+position = "{180, 800}";
 },
 {
 name = _TashkilTashkilAbove;
-position = "{112, 791}";
+position = "{180, 800}";
 }
 );
 layerId = "037FF2D3-C03F-44B0-90AB-89AFD43EFA27";
@@ -145,7 +145,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 270;
 }
 );
 unicode = 0652;
