@@ -103,8 +103,8 @@ def generateFont(options, font):
     year = datetime.now().year
     with open(options.license) as fp:
         info.copyright = fp.readline().strip()
-    info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
-    info.openTypeNameLicenseURL = "https://scripts.sil.org/OFL"
+    info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+    info.openTypeNameLicenseURL = "https://openfontlicense.org"
 
     markWriter = MarkFeatureWriter()
 
