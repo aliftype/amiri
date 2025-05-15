@@ -1,3 +1,12 @@
+Amiri 1.002 (2025-05-15)
+------------------------
+
+Another minor bug fix release.
+
+* Improve sukun/jamz mkmk positioning.
+* Don’t kern tabular numbers.
+* Fix wrong glyph class for ringcomb in bold.
+
 Amiri 1.001 (2024-11-19)
 ------------------------
 
