@@ -13,8 +13,8 @@ named.
 The uniqueness of this typeface comes from its superb balance between the
 beauty of Naskh calligraphy on one hand, the constraints and requirements of
 elegant typography on the other. Also, it is one of the few metal typefaces
-that were used in typesetting the Koran, making it a good source for a digital
-typeface to be used in typesetting Koranic verses.
+that were used in typesetting the Quran, making it a good source for a digital
+typeface to be used in typesetting Quranic verses.
 
 Amiri project aims at the revival of the aesthetics and traditions of Arabic
 typesetting, and adapting it to the era of digital typesetting, in a publicly
