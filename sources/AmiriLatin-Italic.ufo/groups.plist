@@ -681,15 +681,44 @@
       <string>Eng</string>
     </array>
     <key>public.kern2.kc1_1</key>
-    <array/>
+    <array>
+      <string>quotedbl</string>
+      <string>quotesingle</string>
+    </array>
     <key>public.kern2.kc1_10</key>
-    <array/>
+    <array>
+      <string>U</string>
+      <string>Ugrave</string>
+      <string>Uacute</string>
+      <string>Ucircumflex</string>
+      <string>Udieresis</string>
+      <string>Utilde</string>
+      <string>Umacron</string>
+      <string>Ubreve</string>
+      <string>Uring</string>
+      <string>Uhungarumlaut</string>
+      <string>Uogonek</string>
+    </array>
     <key>public.kern2.kc1_11</key>
-    <array/>
+    <array>
+      <string>V</string>
+    </array>
     <key>public.kern2.kc1_12</key>
-    <array/>
+    <array>
+      <string>W</string>
+      <string>Wcircumflex</string>
+      <string>Wgrave</string>
+      <string>Wacute</string>
+      <string>Wdieresis</string>
+    </array>
     <key>public.kern2.kc1_13</key>
-    <array/>
+    <array>
+      <string>Y</string>
+      <string>Yacute</string>
+      <string>Ycircumflex</string>
+      <string>Ydieresis</string>
+      <string>Ygrave</string>
+    </array>
     <key>public.kern2.kc1_14</key>
     <array>
       <string>backslash.latn</string>
@@ -713,7 +742,25 @@
       <string>ccaron</string>
     </array>
     <key>public.kern2.kc1_18</key>
-    <array/>
+    <array>
+      <string>f</string>
+      <string>germandbls</string>
+      <string>longs</string>
+      <string>fdotaccent</string>
+      <string>f_f</string>
+      <string>f_i</string>
+      <string>f_f_i</string>
+      <string>f_l</string>
+      <string>f_f_l</string>
+      <string>f_b</string>
+      <string>f_f_b</string>
+      <string>f_k</string>
+      <string>f_f_k</string>
+      <string>f_h</string>
+      <string>f_f_h</string>
+      <string>f_j</string>
+      <string>f_f_j</string>
+    </array>
     <key>public.kern2.kc1_19</key>
     <array>
       <string>g</string>
@@ -777,7 +824,13 @@
       <string>wdieresis</string>
     </array>
     <key>public.kern2.kc1_24</key>
-    <array/>
+    <array>
+      <string>y</string>
+      <string>yacute</string>
+      <string>ydieresis</string>
+      <string>ycircumflex</string>
+      <string>ygrave</string>
+    </array>
     <key>public.kern2.kc1_25</key>
     <array>
       <string>registered</string>
@@ -798,7 +851,18 @@
       <string>guilsinglleft</string>
     </array>
     <key>public.kern2.kc1_29</key>
-    <array/>
+    <array>
+      <string>A</string>
+      <string>Agrave</string>
+      <string>Aacute</string>
+      <string>Acircumflex</string>
+      <string>Atilde</string>
+      <string>Adieresis</string>
+      <string>Aring</string>
+      <string>Amacron</string>
+      <string>Abreve</string>
+      <string>Aogonek</string>
+    </array>
     <key>public.kern2.kc1_3</key>
     <array>
       <string>asterisk</string>
@@ -861,11 +925,23 @@
       <string>Pdotaccent</string>
     </array>
     <key>public.kern2.kc1_31</key>
-    <array/>
+    <array>
+      <string>M</string>
+      <string>Mdotaccent</string>
+    </array>
     <key>public.kern2.kc1_32</key>
-    <array/>
+    <array>
+      <string>N</string>
+      <string>Ntilde</string>
+      <string>Nacute</string>
+      <string>Ncommaaccent</string>
+      <string>Ncaron</string>
+      <string>Eng</string>
+    </array>
     <key>public.kern2.kc1_33</key>
-    <array/>
+    <array>
+      <string>X</string>
+    </array>
     <key>public.kern2.kc1_34</key>
     <array>
       <string>s</string>
@@ -938,7 +1014,15 @@
       <string>aogonek</string>
     </array>
     <key>public.kern2.kc1_43</key>
-    <array/>
+    <array>
+      <string>d</string>
+      <string>dcaron</string>
+      <string>dcroat</string>
+      <string>ddotaccent</string>
+      <string>ddotbelow</string>
+      <string>dmacronbelow</string>
+      <string>dcedilla</string>
+    </array>
     <key>public.kern2.kc1_44</key>
     <array>
       <string>q</string>
@@ -1009,7 +1093,17 @@
       <string>guilsinglright</string>
     </array>
     <key>public.kern2.kc1_53</key>
-    <array/>
+    <array>
+      <string>h</string>
+      <string>k</string>
+      <string>hcircumflex</string>
+      <string>hbar</string>
+      <string>kcommaaccent</string>
+      <string>hdotbelow</string>
+      <string>hcedilla</string>
+      <string>hbrevebelow</string>
+      <string>hmacronbelow</string>
+    </array>
     <key>public.kern2.kc1_54</key>
     <array>
       <string>S</string>
@@ -1055,163 +1149,769 @@
       <string>Q</string>
     </array>
     <key>public.kern2.kc1_9</key>
-    <array/>
+    <array>
+      <string>T</string>
+      <string>Tcedilla</string>
+      <string>Tcaron</string>
+      <string>Tbar</string>
+      <string>Tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>Tmacronbelow</string>
+    </array>
     <key>public.kern2.kc2_1</key>
-    <array/>
+    <array>
+      <string>parenright.latn</string>
+    </array>
     <key>public.kern2.kc2_10</key>
-    <array/>
+    <array>
+      <string>x</string>
+    </array>
     <key>public.kern2.kc2_11</key>
-    <array/>
+    <array>
+      <string>quoteleft</string>
+      <string>quotedblleft</string>
+    </array>
     <key>public.kern2.kc2_12</key>
-    <array/>
+    <array>
+      <string>quoteright</string>
+      <string>quotedblright</string>
+    </array>
     <key>public.kern2.kc2_13</key>
-    <array/>
+    <array>
+      <string>hyphen</string>
+      <string>endash</string>
+      <string>emdash</string>
+      <string>horizontalbar</string>
+    </array>
     <key>public.kern2.kc2_14</key>
-    <array/>
+    <array>
+      <string>p</string>
+      <string>pdotaccent</string>
+    </array>
     <key>public.kern2.kc2_15</key>
-    <array/>
+    <array>
+      <string>comma</string>
+      <string>period.latn</string>
+      <string>quotesinglbase</string>
+      <string>quotedblbase</string>
+      <string>ellipsis</string>
+    </array>
     <key>public.kern2.kc2_16</key>
-    <array/>
+    <array>
+      <string>a</string>
+      <string>agrave</string>
+      <string>aacute</string>
+      <string>acircumflex</string>
+      <string>atilde</string>
+      <string>adieresis</string>
+      <string>aring</string>
+      <string>amacron</string>
+      <string>abreve</string>
+      <string>aogonek</string>
+    </array>
     <key>public.kern2.kc2_17</key>
-    <array/>
+    <array>
+      <string>c</string>
+      <string>ccedilla</string>
+      <string>cacute</string>
+      <string>ccircumflex</string>
+      <string>cdotaccent</string>
+      <string>ccaron</string>
+    </array>
     <key>public.kern2.kc2_18</key>
-    <array/>
+    <array>
+      <string>d</string>
+      <string>dcaron</string>
+      <string>dcroat</string>
+      <string>ddotaccent</string>
+      <string>ddotbelow</string>
+      <string>dmacronbelow</string>
+      <string>dcedilla</string>
+    </array>
     <key>public.kern2.kc2_19</key>
-    <array/>
+    <array>
+      <string>e</string>
+      <string>o</string>
+      <string>egrave</string>
+      <string>eacute</string>
+      <string>ecircumflex</string>
+      <string>edieresis</string>
+      <string>ograve</string>
+      <string>oacute</string>
+      <string>ocircumflex</string>
+      <string>otilde</string>
+      <string>odieresis</string>
+      <string>oslash</string>
+      <string>emacron</string>
+      <string>ebreve</string>
+      <string>edotaccent</string>
+      <string>eogonek</string>
+      <string>ecaron</string>
+      <string>omacron</string>
+      <string>obreve</string>
+      <string>ohungarumlaut</string>
+      <string>oe</string>
+    </array>
     <key>public.kern2.kc2_2</key>
-    <array/>
+    <array>
+      <string>C</string>
+      <string>G</string>
+      <string>O</string>
+      <string>Ccedilla</string>
+      <string>Ograve</string>
+      <string>Oacute</string>
+      <string>Ocircumflex</string>
+      <string>Otilde</string>
+      <string>Odieresis</string>
+      <string>Oslash</string>
+      <string>Cacute</string>
+      <string>Ccircumflex</string>
+      <string>Cdotaccent</string>
+      <string>Ccaron</string>
+      <string>Gcircumflex</string>
+      <string>Gbreve</string>
+      <string>Gdotaccent</string>
+      <string>Gcommaaccent</string>
+      <string>Omacron</string>
+      <string>Obreve</string>
+      <string>Ohungarumlaut</string>
+      <string>OE</string>
+    </array>
     <key>public.kern2.kc2_20</key>
-    <array/>
+    <array>
+      <string>q</string>
+    </array>
     <key>public.kern2.kc2_21</key>
-    <array/>
+    <array>
+      <string>eth</string>
+    </array>
     <key>public.kern2.kc2_22</key>
     <array>
       <string>thorn</string>
     </array>
     <key>public.kern2.kc2_23</key>
-    <array/>
+    <array>
+      <string>f</string>
+      <string>germandbls</string>
+      <string>longs</string>
+      <string>fdotaccent</string>
+      <string>f_f</string>
+      <string>f_i</string>
+      <string>f_f_i</string>
+      <string>f_l</string>
+      <string>f_f_l</string>
+      <string>f_b</string>
+      <string>f_f_b</string>
+      <string>f_k</string>
+      <string>f_f_k</string>
+      <string>f_h</string>
+      <string>f_f_h</string>
+      <string>f_j</string>
+      <string>f_f_j</string>
+    </array>
     <key>public.kern2.kc2_24</key>
-    <array/>
+    <array>
+      <string>y</string>
+      <string>yacute</string>
+      <string>ydieresis</string>
+      <string>ycircumflex</string>
+    </array>
     <key>public.kern2.kc2_25</key>
-    <array/>
+    <array>
+      <string>registered</string>
+    </array>
     <key>public.kern2.kc2_26</key>
-    <array/>
+    <array>
+      <string>J</string>
+      <string>Jcircumflex</string>
+    </array>
     <key>public.kern2.kc2_27</key>
-    <array/>
+    <array>
+      <string>T</string>
+      <string>Tcedilla</string>
+      <string>Tcaron</string>
+      <string>Tbar</string>
+      <string>Tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>Tmacronbelow</string>
+    </array>
     <key>public.kern2.kc2_28</key>
-    <array/>
+    <array>
+      <string>V</string>
+    </array>
     <key>public.kern2.kc2_29</key>
-    <array/>
+    <array>
+      <string>W</string>
+      <string>Wcircumflex</string>
+      <string>Wgrave</string>
+      <string>Wacute</string>
+      <string>Wdieresis</string>
+    </array>
     <key>public.kern2.kc2_3</key>
-    <array/>
+    <array>
+      <string>U</string>
+      <string>Ugrave</string>
+      <string>Uacute</string>
+      <string>Ucircumflex</string>
+      <string>Udieresis</string>
+      <string>Utilde</string>
+      <string>Umacron</string>
+      <string>Ubreve</string>
+      <string>Uring</string>
+      <string>Uhungarumlaut</string>
+      <string>Uogonek</string>
+    </array>
     <key>public.kern2.kc2_30</key>
-    <array/>
+    <array>
+      <string>Y</string>
+      <string>Yacute</string>
+      <string>Ycircumflex</string>
+      <string>Ydieresis</string>
+      <string>Ygrave</string>
+    </array>
     <key>public.kern2.kc2_31</key>
-    <array/>
+    <array>
+      <string>apostrophemod</string>
+    </array>
     <key>public.kern2.kc2_32</key>
-    <array/>
+    <array>
+      <string>j</string>
+      <string>jcircumflex</string>
+      <string>jdotless</string>
+    </array>
     <key>public.kern2.kc2_33</key>
-    <array/>
+    <array>
+      <string>ampersand</string>
+    </array>
     <key>public.kern2.kc2_34</key>
-    <array/>
+    <array>
+      <string>slash.latn</string>
+    </array>
     <key>public.kern2.kc2_35</key>
-    <array/>
+    <array>
+      <string>g</string>
+      <string>gcircumflex</string>
+      <string>gbreve</string>
+      <string>gdotaccent</string>
+      <string>gcommaaccent</string>
+    </array>
     <key>public.kern2.kc2_36</key>
-    <array/>
+    <array>
+      <string>v</string>
+      <string>w</string>
+      <string>wcircumflex</string>
+      <string>wgrave</string>
+      <string>wacute</string>
+      <string>wdieresis</string>
+    </array>
     <key>public.kern2.kc2_4</key>
-    <array/>
+    <array>
+      <string>backslash.latn</string>
+    </array>
     <key>public.kern2.kc2_5</key>
-    <array/>
+    <array>
+      <string>bracketright.latn</string>
+    </array>
     <key>public.kern2.kc2_6</key>
-    <array/>
+    <array>
+      <string>quotedbl</string>
+      <string>quotesingle</string>
+    </array>
     <key>public.kern2.kc2_7</key>
-    <array/>
+    <array>
+      <string>asterisk</string>
+    </array>
     <key>public.kern2.kc2_8</key>
-    <array/>
+    <array>
+      <string>A</string>
+      <string>Agrave</string>
+      <string>Aacute</string>
+      <string>Acircumflex</string>
+      <string>Atilde</string>
+      <string>Adieresis</string>
+      <string>Aring</string>
+      <string>Amacron</string>
+      <string>Abreve</string>
+      <string>Aogonek</string>
+    </array>
     <key>public.kern2.kc2_9</key>
-    <array/>
+    <array>
+      <string>B</string>
+      <string>D</string>
+      <string>E</string>
+      <string>F</string>
+      <string>H</string>
+      <string>I</string>
+      <string>K</string>
+      <string>L</string>
+      <string>P</string>
+      <string>R</string>
+      <string>Egrave</string>
+      <string>Eacute</string>
+      <string>Ecircumflex</string>
+      <string>Edieresis</string>
+      <string>Igrave</string>
+      <string>Iacute</string>
+      <string>Icircumflex</string>
+      <string>Idieresis</string>
+      <string>Eth</string>
+      <string>Thorn</string>
+      <string>Dcaron</string>
+      <string>Dcroat</string>
+      <string>Emacron</string>
+      <string>Ebreve</string>
+      <string>Edotaccent</string>
+      <string>Eogonek</string>
+      <string>Ecaron</string>
+      <string>Hcircumflex</string>
+      <string>Hbar</string>
+      <string>Itilde</string>
+      <string>Imacron</string>
+      <string>Ibreve</string>
+      <string>Iogonek</string>
+      <string>Idotaccent</string>
+      <string>IJ</string>
+      <string>Kcommaaccent</string>
+      <string>Lacute</string>
+      <string>Lcommaaccent</string>
+      <string>Lcaron</string>
+      <string>Ldot</string>
+      <string>Lslash</string>
+      <string>Racute</string>
+      <string>Rcommaaccent</string>
+      <string>Rcaron</string>
+      <string>Bdotaccent</string>
+      <string>Ddotaccent</string>
+      <string>Ddotbelow</string>
+      <string>Dmacronbelow</string>
+      <string>Dcedilla</string>
+      <string>Fdotaccent</string>
+      <string>Hdotbelow</string>
+      <string>Hcedilla</string>
+      <string>Hbrevebelow</string>
+      <string>Pdotaccent</string>
+    </array>
     <key>public.kern2.kc3_1</key>
-    <array/>
+    <array>
+      <string>ampersand</string>
+    </array>
     <key>public.kern2.kc3_10</key>
-    <array/>
+    <array>
+      <string>B</string>
+      <string>D</string>
+      <string>E</string>
+      <string>F</string>
+      <string>H</string>
+      <string>I</string>
+      <string>K</string>
+      <string>L</string>
+      <string>P</string>
+      <string>R</string>
+      <string>Egrave</string>
+      <string>Eacute</string>
+      <string>Ecircumflex</string>
+      <string>Edieresis</string>
+      <string>Igrave</string>
+      <string>Iacute</string>
+      <string>Icircumflex</string>
+      <string>Idieresis</string>
+      <string>Eth</string>
+      <string>Thorn</string>
+      <string>Dcaron</string>
+      <string>Dcroat</string>
+      <string>Emacron</string>
+      <string>Ebreve</string>
+      <string>Edotaccent</string>
+      <string>Eogonek</string>
+      <string>Ecaron</string>
+      <string>Hcircumflex</string>
+      <string>Hbar</string>
+      <string>Itilde</string>
+      <string>Imacron</string>
+      <string>Ibreve</string>
+      <string>Iogonek</string>
+      <string>Idotaccent</string>
+      <string>IJ</string>
+      <string>Kcommaaccent</string>
+      <string>Lacute</string>
+      <string>Lcommaaccent</string>
+      <string>Lcaron</string>
+      <string>Ldot</string>
+      <string>Lslash</string>
+      <string>Racute</string>
+      <string>Rcommaaccent</string>
+      <string>Rcaron</string>
+      <string>Bdotaccent</string>
+      <string>Ddotaccent</string>
+      <string>Ddotbelow</string>
+      <string>Dmacronbelow</string>
+      <string>Dcedilla</string>
+      <string>Fdotaccent</string>
+      <string>Hdotbelow</string>
+      <string>Hcedilla</string>
+      <string>Hbrevebelow</string>
+      <string>Pdotaccent</string>
+    </array>
     <key>public.kern2.kc3_11</key>
-    <array/>
+    <array>
+      <string>J</string>
+      <string>Jcircumflex</string>
+    </array>
     <key>public.kern2.kc3_12</key>
-    <array/>
+    <array>
+      <string>M</string>
+      <string>Mdotaccent</string>
+    </array>
     <key>public.kern2.kc3_13</key>
-    <array/>
+    <array>
+      <string>N</string>
+      <string>Ntilde</string>
+      <string>Nacute</string>
+      <string>Ncommaaccent</string>
+      <string>Ncaron</string>
+      <string>Eng</string>
+    </array>
     <key>public.kern2.kc3_14</key>
-    <array/>
+    <array>
+      <string>T</string>
+      <string>Tcedilla</string>
+      <string>Tcaron</string>
+      <string>Tbar</string>
+      <string>Tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>Tmacronbelow</string>
+    </array>
     <key>public.kern2.kc3_15</key>
-    <array/>
+    <array>
+      <string>V</string>
+    </array>
     <key>public.kern2.kc3_16</key>
-    <array/>
+    <array>
+      <string>W</string>
+      <string>Wcircumflex</string>
+      <string>Wgrave</string>
+      <string>Wacute</string>
+      <string>Wdieresis</string>
+    </array>
     <key>public.kern2.kc3_17</key>
-    <array/>
+    <array>
+      <string>X</string>
+    </array>
     <key>public.kern2.kc3_18</key>
-    <array/>
+    <array>
+      <string>Y</string>
+      <string>Yacute</string>
+      <string>Ycircumflex</string>
+      <string>Ydieresis</string>
+      <string>Ygrave</string>
+    </array>
     <key>public.kern2.kc3_19</key>
-    <array/>
+    <array>
+      <string>Z</string>
+      <string>Zacute</string>
+      <string>Zdotaccent</string>
+      <string>Zcaron</string>
+      <string>Zdotbelow</string>
+    </array>
     <key>public.kern2.kc3_2</key>
-    <array/>
+    <array>
+      <string>comma</string>
+      <string>period.latn</string>
+      <string>quotesinglbase</string>
+      <string>quotedblbase</string>
+      <string>ellipsis</string>
+    </array>
     <key>public.kern2.kc3_20</key>
-    <array/>
+    <array>
+      <string>f</string>
+      <string>germandbls</string>
+      <string>fdotaccent</string>
+      <string>f_f</string>
+      <string>f_i</string>
+      <string>f_f_i</string>
+      <string>f_l</string>
+      <string>f_f_l</string>
+      <string>f_b</string>
+      <string>f_f_b</string>
+      <string>f_k</string>
+      <string>f_f_k</string>
+      <string>f_h</string>
+      <string>f_f_h</string>
+      <string>f_j</string>
+      <string>f_f_j</string>
+    </array>
     <key>public.kern2.kc3_21</key>
-    <array/>
+    <array>
+      <string>j</string>
+      <string>jcircumflex</string>
+      <string>jdotless</string>
+    </array>
     <key>public.kern2.kc3_22</key>
-    <array/>
+    <array>
+      <string>t</string>
+      <string>tcedilla</string>
+      <string>tcaron</string>
+      <string>tbar</string>
+      <string>tdotaccent</string>
+      <string>tdotbelow</string>
+      <string>tmacronbelow</string>
+      <string>tdieresis</string>
+    </array>
     <key>public.kern2.kc3_23</key>
-    <array/>
+    <array>
+      <string>z</string>
+      <string>zacute</string>
+      <string>zdotaccent</string>
+      <string>zcaron</string>
+      <string>zdotbelow</string>
+    </array>
     <key>public.kern2.kc3_24</key>
-    <array/>
+    <array>
+      <string>quotedbl</string>
+      <string>quotesingle</string>
+    </array>
     <key>public.kern2.kc3_25</key>
-    <array/>
+    <array>
+      <string>C</string>
+      <string>G</string>
+      <string>O</string>
+      <string>Ccedilla</string>
+      <string>Ograve</string>
+      <string>Oacute</string>
+      <string>Ocircumflex</string>
+      <string>Otilde</string>
+      <string>Odieresis</string>
+      <string>Oslash</string>
+      <string>Cacute</string>
+      <string>Ccircumflex</string>
+      <string>Cdotaccent</string>
+      <string>Ccaron</string>
+      <string>Gcircumflex</string>
+      <string>Gbreve</string>
+      <string>Gdotaccent</string>
+      <string>Gcommaaccent</string>
+      <string>Omacron</string>
+      <string>Obreve</string>
+      <string>Ohungarumlaut</string>
+      <string>OE</string>
+    </array>
     <key>public.kern2.kc3_26</key>
-    <array/>
+    <array>
+      <string>Q</string>
+    </array>
     <key>public.kern2.kc3_27</key>
-    <array/>
+    <array>
+      <string>U</string>
+      <string>Ugrave</string>
+      <string>Uacute</string>
+      <string>Ucircumflex</string>
+      <string>Udieresis</string>
+      <string>Utilde</string>
+      <string>Umacron</string>
+      <string>Ubreve</string>
+      <string>Uring</string>
+      <string>Uhungarumlaut</string>
+      <string>Uogonek</string>
+    </array>
     <key>public.kern2.kc3_28</key>
-    <array/>
+    <array>
+      <string>v</string>
+      <string>w</string>
+      <string>wcircumflex</string>
+      <string>wgrave</string>
+      <string>wacute</string>
+      <string>wdieresis</string>
+    </array>
     <key>public.kern2.kc3_29</key>
-    <array/>
+    <array>
+      <string>y</string>
+      <string>yacute</string>
+      <string>ydieresis</string>
+      <string>ycircumflex</string>
+      <string>ygrave</string>
+    </array>
     <key>public.kern2.kc3_3</key>
-    <array/>
+    <array>
+      <string>slash.latn</string>
+    </array>
     <key>public.kern2.kc3_30</key>
-    <array/>
+    <array>
+      <string>quoteleft</string>
+      <string>quotedblleft</string>
+    </array>
     <key>public.kern2.kc3_31</key>
-    <array/>
+    <array>
+      <string>quoteright</string>
+      <string>quotedblright</string>
+    </array>
     <key>public.kern2.kc3_32</key>
-    <array/>
+    <array>
+      <string>c</string>
+      <string>ccedilla</string>
+      <string>cacute</string>
+      <string>ccircumflex</string>
+      <string>cdotaccent</string>
+      <string>ccaron</string>
+    </array>
     <key>public.kern2.kc3_33</key>
-    <array/>
+    <array>
+      <string>g</string>
+      <string>gcircumflex</string>
+      <string>gbreve</string>
+      <string>gdotaccent</string>
+      <string>gcommaaccent</string>
+    </array>
     <key>public.kern2.kc3_34</key>
-    <array/>
+    <array>
+      <string>m</string>
+      <string>n</string>
+      <string>r</string>
+      <string>ntilde</string>
+      <string>kgreenlandic</string>
+      <string>nacute</string>
+      <string>ncommaaccent</string>
+      <string>ncaron</string>
+      <string>eng</string>
+      <string>racute</string>
+      <string>rcommaaccent</string>
+      <string>rcaron</string>
+      <string>mdotaccent</string>
+    </array>
     <key>public.kern2.kc3_35</key>
-    <array/>
+    <array>
+      <string>e</string>
+      <string>o</string>
+      <string>egrave</string>
+      <string>eacute</string>
+      <string>ecircumflex</string>
+      <string>edieresis</string>
+      <string>ograve</string>
+      <string>oacute</string>
+      <string>ocircumflex</string>
+      <string>otilde</string>
+      <string>odieresis</string>
+      <string>oslash</string>
+      <string>emacron</string>
+      <string>ebreve</string>
+      <string>edotaccent</string>
+      <string>eogonek</string>
+      <string>ecaron</string>
+      <string>omacron</string>
+      <string>obreve</string>
+      <string>ohungarumlaut</string>
+      <string>oe</string>
+    </array>
     <key>public.kern2.kc3_36</key>
-    <array/>
+    <array>
+      <string>p</string>
+      <string>pdotaccent</string>
+    </array>
     <key>public.kern2.kc3_37</key>
-    <array/>
+    <array>
+      <string>s</string>
+      <string>sacute</string>
+      <string>scircumflex</string>
+      <string>scedilla</string>
+      <string>scaron</string>
+      <string>sdotaccent</string>
+      <string>sdotbelow</string>
+    </array>
     <key>public.kern2.kc3_38</key>
-    <array/>
+    <array>
+      <string>u</string>
+      <string>ugrave</string>
+      <string>uacute</string>
+      <string>ucircumflex</string>
+      <string>udieresis</string>
+      <string>utilde</string>
+      <string>umacron</string>
+      <string>ubreve</string>
+      <string>uring</string>
+      <string>uhungarumlaut</string>
+      <string>uogonek</string>
+    </array>
     <key>public.kern2.kc3_39</key>
-    <array/>
+    <array>
+      <string>x</string>
+    </array>
     <key>public.kern2.kc3_4</key>
-    <array/>
+    <array>
+      <string>A</string>
+      <string>Agrave</string>
+      <string>Aacute</string>
+      <string>Acircumflex</string>
+      <string>Atilde</string>
+      <string>Adieresis</string>
+      <string>Aring</string>
+      <string>Amacron</string>
+      <string>Abreve</string>
+      <string>Aogonek</string>
+    </array>
     <key>public.kern2.kc3_40</key>
-    <array/>
+    <array>
+      <string>ae</string>
+    </array>
     <key>public.kern2.kc3_5</key>
-    <array/>
+    <array>
+      <string>a</string>
+      <string>agrave</string>
+      <string>aacute</string>
+      <string>acircumflex</string>
+      <string>atilde</string>
+      <string>adieresis</string>
+      <string>aring</string>
+      <string>amacron</string>
+      <string>abreve</string>
+      <string>aogonek</string>
+    </array>
     <key>public.kern2.kc3_6</key>
-    <array/>
+    <array>
+      <string>d</string>
+      <string>dcaron</string>
+      <string>dcroat</string>
+      <string>ddotaccent</string>
+      <string>ddotbelow</string>
+      <string>dmacronbelow</string>
+      <string>dcedilla</string>
+    </array>
     <key>public.kern2.kc3_7</key>
-    <array/>
+    <array>
+      <string>q</string>
+    </array>
     <key>public.kern2.kc3_8</key>
-    <array/>
+    <array>
+      <string>AE</string>
+    </array>
     <key>public.kern2.kc3_9</key>
-    <array/>
+    <array>
+      <string>guillemotleft.latn</string>
+      <string>guilsinglleft</string>
+    </array>
     <key>public.kern2.kc4_1</key>
-    <array/>
+    <array>
+      <string>C</string>
+      <string>G</string>
+      <string>O</string>
+      <string>Ccedilla</string>
+      <string>Ograve</string>
+      <string>Oacute</string>
+      <string>Ocircumflex</string>
+      <string>Otilde</string>
+      <string>Odieresis</string>
+      <string>Oslash</string>
+      <string>Cacute</string>
+      <string>Ccircumflex</string>
+      <string>Cdotaccent</string>
+      <string>Ccaron</string>
+      <string>Gcircumflex</string>
+      <string>Gbreve</string>
+      <string>Gdotaccent</string>
+      <string>Gcommaaccent</string>
+      <string>Omacron</string>
+      <string>Obreve</string>
+      <string>Ohungarumlaut</string>
+      <string>OE</string>
+    </array>
     <key>public.kern2.kc4_10</key>
     <array>
       <string>i</string>
@@ -1227,42 +1927,210 @@
       <string>ij</string>
     </array>
     <key>public.kern2.kc4_11</key>
-    <array/>
+    <array>
+      <string>m</string>
+      <string>n</string>
+      <string>r</string>
+      <string>ntilde</string>
+      <string>kgreenlandic</string>
+      <string>nacute</string>
+      <string>ncommaaccent</string>
+      <string>ncaron</string>
+      <string>eng</string>
+      <string>racute</string>
+      <string>rcommaaccent</string>
+      <string>rcaron</string>
+      <string>mdotaccent</string>
+    </array>
     <key>public.kern2.kc4_12</key>
-    <array/>
+    <array>
+      <string>e</string>
+      <string>o</string>
+      <string>egrave</string>
+      <string>eacute</string>
+      <string>ecircumflex</string>
+      <string>edieresis</string>
+      <string>ograve</string>
+      <string>oacute</string>
+      <string>ocircumflex</string>
+      <string>otilde</string>
+      <string>odieresis</string>
+      <string>oslash</string>
+      <string>emacron</string>
+      <string>ebreve</string>
+      <string>edotaccent</string>
+      <string>eogonek</string>
+      <string>ecaron</string>
+      <string>omacron</string>
+      <string>obreve</string>
+      <string>ohungarumlaut</string>
+      <string>oe</string>
+    </array>
     <key>public.kern2.kc4_13</key>
-    <array/>
+    <array>
+      <string>s</string>
+      <string>sacute</string>
+      <string>scircumflex</string>
+      <string>scedilla</string>
+      <string>scaron</string>
+      <string>sdotaccent</string>
+      <string>sdotbelow</string>
+    </array>
     <key>public.kern2.kc4_14</key>
-    <array/>
+    <array>
+      <string>t</string>
+      <string>tcedilla</string>
+      <string>tcaron</string>
+      <string>tbar</string>
+      <string>tdotaccent</string>
+      <string>tdotbelow</string>
+      <string>tmacronbelow</string>
+      <string>tdieresis</string>
+    </array>
     <key>public.kern2.kc4_15</key>
-    <array/>
+    <array>
+      <string>u</string>
+      <string>ugrave</string>
+      <string>uacute</string>
+      <string>ucircumflex</string>
+      <string>udieresis</string>
+      <string>utilde</string>
+      <string>umacron</string>
+      <string>ubreve</string>
+      <string>uring</string>
+      <string>uhungarumlaut</string>
+      <string>uogonek</string>
+    </array>
     <key>public.kern2.kc4_16</key>
-    <array/>
+    <array>
+      <string>v</string>
+      <string>w</string>
+      <string>wcircumflex</string>
+      <string>wgrave</string>
+      <string>wacute</string>
+      <string>wdieresis</string>
+    </array>
     <key>public.kern2.kc4_17</key>
-    <array/>
+    <array>
+      <string>x</string>
+    </array>
     <key>public.kern2.kc4_18</key>
-    <array/>
+    <array>
+      <string>y</string>
+      <string>yacute</string>
+      <string>ydieresis</string>
+      <string>ycircumflex</string>
+    </array>
     <key>public.kern2.kc4_19</key>
-    <array/>
+    <array>
+      <string>z</string>
+      <string>zacute</string>
+      <string>zdotaccent</string>
+      <string>zcaron</string>
+      <string>zdotbelow</string>
+    </array>
     <key>public.kern2.kc4_2</key>
-    <array/>
+    <array>
+      <string>S</string>
+      <string>Sacute</string>
+      <string>Scircumflex</string>
+      <string>Scedilla</string>
+      <string>Scaron</string>
+      <string>Sdotaccent</string>
+      <string>Sdotbelow</string>
+    </array>
     <key>public.kern2.kc4_20</key>
-    <array/>
+    <array>
+      <string>comma</string>
+      <string>period.latn</string>
+      <string>quotesinglbase</string>
+      <string>quotedblbase</string>
+      <string>ellipsis</string>
+    </array>
     <key>public.kern2.kc4_21</key>
-    <array/>
+    <array>
+      <string>A</string>
+      <string>Agrave</string>
+      <string>Aacute</string>
+      <string>Acircumflex</string>
+      <string>Atilde</string>
+      <string>Adieresis</string>
+      <string>Aring</string>
+      <string>Amacron</string>
+      <string>Abreve</string>
+      <string>Aogonek</string>
+    </array>
     <key>public.kern2.kc4_3</key>
-    <array/>
+    <array>
+      <string>T</string>
+      <string>Tcedilla</string>
+      <string>Tcaron</string>
+      <string>Tbar</string>
+      <string>Tdotaccent</string>
+      <string>Tdotbelow</string>
+      <string>Tmacronbelow</string>
+    </array>
     <key>public.kern2.kc4_4</key>
-    <array/>
+    <array>
+      <string>U</string>
+      <string>Ugrave</string>
+      <string>Uacute</string>
+      <string>Ucircumflex</string>
+      <string>Udieresis</string>
+      <string>Utilde</string>
+      <string>Umacron</string>
+      <string>Ubreve</string>
+      <string>Uring</string>
+      <string>Uhungarumlaut</string>
+      <string>Uogonek</string>
+    </array>
     <key>public.kern2.kc4_5</key>
-    <array/>
+    <array>
+      <string>W</string>
+      <string>Wcircumflex</string>
+      <string>Wgrave</string>
+      <string>Wacute</string>
+      <string>Wdieresis</string>
+    </array>
     <key>public.kern2.kc4_6</key>
-    <array/>
+    <array>
+      <string>a</string>
+      <string>agrave</string>
+      <string>aacute</string>
+      <string>acircumflex</string>
+      <string>atilde</string>
+      <string>adieresis</string>
+      <string>aring</string>
+      <string>amacron</string>
+      <string>abreve</string>
+      <string>aogonek</string>
+    </array>
     <key>public.kern2.kc4_7</key>
-    <array/>
+    <array>
+      <string>c</string>
+      <string>ccedilla</string>
+      <string>cacute</string>
+      <string>ccircumflex</string>
+      <string>cdotaccent</string>
+      <string>ccaron</string>
+    </array>
     <key>public.kern2.kc4_8</key>
-    <array/>
+    <array>
+      <string>d</string>
+      <string>dcaron</string>
+      <string>dcroat</string>
+      <string>ddotaccent</string>
+      <string>ddotbelow</string>
+      <string>dmacronbelow</string>
+      <string>dcedilla</string>
+    </array>
     <key>public.kern2.kc4_9</key>
-    <array/>
+    <array>
+      <string>g</string>
+      <string>gcircumflex</string>
+      <string>gbreve</string>
+      <string>gdotaccent</string>
+      <string>gcommaaccent</string>
+    </array>
   </dict>
 </plist>
