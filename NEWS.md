@@ -1,3 +1,8 @@
+Amiri 1.003 (2025-05-15)
+------------------------
+
+Restore Latin kerning that was broken since 1.001.
+
 Amiri 1.002 (2025-05-15)
 ------------------------
 
