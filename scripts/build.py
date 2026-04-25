@@ -313,7 +313,7 @@ def scaleGlyph(font, glyph, scale):
 
 def makeQuran(options):
     from fontTools import subset
-    from glyphsets import GFGlyphData
+    from glyphsets import glyphs_in_glyphsets, get_glyph
 
     font = makeDesktop(options, False)
     mergeLatin(font)
@@ -375,8 +375,9 @@ def makeQuran(options):
                  0x202B, 0x202C, 0x202D, 0x202E, 0x202F, 0x25CC, 0xFD3E,
                  0xFD3F, 0xFDFA, 0xFDFD]
 
-    gf_latin_kernel = GFGlyphData.glyphs_in_glyphsets(["GF_Latin_Kernel"])
-    unicodes += [g["unicode"] for g in gf_latin_kernel if g["nice_name"] != ".notdef"]
+    gf_latin_kernel = glyphs_in_glyphsets(["GF_Latin_Kernel"])
+    unicodes += [int(get_glyph(n).unicode, 16) for n in gf_latin_kernel
+                 if n != ".notdef" and get_glyph(n) and get_glyph(n).unicode]
 
     unicodes = [isinstance(u, str) and ord(u) or u for u in unicodes]
 
