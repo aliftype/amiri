@@ -65,7 +65,7 @@ $(DOC)/Documentation-Arabic.html: $(DOC)/Documentation-Arabic.md
 	@pandoc $< -o $@ -f markdown-smart -t html -s -c Documentation-Arabic.css
 
 check: $(TTF)
-	@$(foreach font,$+,echo "   OTS	$(font)" && python -m ots --quiet $(font) &&) true
+	@$(foreach font,$+,echo "   OTS	$(font)" && $(PY) -m ots --quiet $(font) &&) true
 
 clean:
 	rm -rfv $(TTF) $(HTML)
