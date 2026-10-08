@@ -26,9 +26,9 @@ fonttools[lxml,ufo,unicode]==4.43.1
     #   ufolib2
 fs==2.4.16
     # via fonttools
-glyphsets==0.6.4
+glyphsets==1.1.3
     # via -r requirements.in
-glyphslib==6.4.1
+glyphslib==6.9.5
     # via
     #   -r requirements.in
     #   glyphsets
